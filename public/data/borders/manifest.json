@@ -1,0 +1,90 @@
+{
+ "source": "European borders during the Second World War, month by month: The Spatial History Project, Stanford University (copies held by the University of Maine CLIR Geospatial Hub)",
+ "note": "Documented border states. The map shows the state closest in time to the month you picked and says how far away it is.",
+ "snapshots": [
+  {
+   "id": "WWII_Borders_April_1938",
+   "date": "1938-04-30",
+   "label": "April 1938",
+   "file": "/data/borders/1938-04-30.json",
+   "countries": 33
+  },
+  {
+   "id": "WWII_Borders_April_1939",
+   "date": "1939-04-30",
+   "label": "April 1939",
+   "file": "/data/borders/1939-04-30.json",
+   "countries": 34
+  },
+  {
+   "id": "October_31_1939",
+   "date": "1939-10-31",
+   "label": "October 1939",
+   "file": "/data/borders/1939-10-31.json",
+   "countries": 33
+  },
+  {
+   "id": "WWII_Borders_April_1940",
+   "date": "1940-04-30",
+   "label": "April 1940",
+   "file": "/data/borders/1940-04-30.json",
+   "countries": 33
+  },
+  {
+   "id": "WWII_Borders_April_1941",
+   "date": "1941-04-30",
+   "label": "April 1941",
+   "file": "/data/borders/1941-04-30.json",
+   "countries": 33
+  },
+  {
+   "id": "September_30_1941",
+   "date": "1941-09-30",
+   "label": "September 1941",
+   "file": "/data/borders/1941-09-30.json",
+   "countries": 36
+  },
+  {
+   "id": "WWII_Borders_April_1942",
+   "date": "1942-04-30",
+   "label": "April 1942",
+   "file": "/data/borders/1942-04-30.json",
+   "countries": 36
+  },
+  {
+   "id": "WWII_Borders_April_1943",
+   "date": "1943-04-30",
+   "label": "April 1943",
+   "file": "/data/borders/1943-04-30.json",
+   "countries": 34
+  },
+  {
+   "id": "June_30_1943",
+   "date": "1943-06-30",
+   "label": "June 1943",
+   "file": "/data/borders/1943-06-30.json",
+   "countries": 34
+  },
+  {
+   "id": "WWII_Borders_October_1943",
+   "date": "1943-10-31",
+   "label": "October 1943",
+   "file": "/data/borders/1943-10-31.json",
+   "countries": 35
+  },
+  {
+   "id": "WWII_Borders_April_1944",
+   "date": "1944-04-30",
+   "label": "April 1944",
+   "file": "/data/borders/1944-04-30.json",
+   "countries": 33
+  },
+  {
+   "id": "WWII_Borders_April_1945",
+   "date": "1945-04-30",
+   "label": "April 1945",
+   "file": "/data/borders/1945-04-30.json",
+   "countries": 33
+  }
+ ]
+}

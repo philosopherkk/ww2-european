@@ -1,8 +1,10 @@
 @import "tailwindcss";
 
+@import 'leaflet/dist/leaflet.css';
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f5f5f4;
+  --foreground: #1c1917;
 }
 
 @theme inline {
@@ -12,15 +14,49 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* One palette for every scheme: the map and the paper panels are designed
+ * light, and inverting them would make the territory colours unreadable. */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+/* Keep every Leaflet pane inside the map box so the panes cannot paint over
+ * the sticky month bar or the tabs. */
+.leaflet-container {
+  position: relative;
+  z-index: 1;
+  font: inherit;
+  background: #e7e5e4;
+}
+
+.leaflet-popup-content {
+  margin: 10px 12px;
+  max-width: 320px;
+}
+
+.leaflet-tooltip {
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+/* Marching armies: the dash offsets creep forward along the route. Leaflet
+ * only writes the stroke-dasharray attribute for layers that ask for a dashed
+ * style, i.e. the campaign lines, never for the territory polygons. */
+@keyframes campaign-march {
+  to {
+    stroke-dashoffset: -28;
+  }
+}
+
+.leaflet-overlay-pane path[stroke-dasharray] {
+  animation: campaign-march 2.4s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .leaflet-overlay-pane path[stroke-dasharray] {
+    animation: none;
+  }
 }

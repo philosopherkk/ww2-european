@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# raw ArcGIS downloads used by scripts/build-border-data.mjs
+/scripts/.cache/
