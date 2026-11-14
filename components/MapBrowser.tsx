@@ -168,8 +168,9 @@ export default function MapBrowser({ monthKey, showCampaigns, showBorders }: Pro
               <span className="ml-2 font-normal text-stone-500">
                 ({gapMonths} {gapMonths === 1 ? 'month' : 'months'}{' '}
                 {isEarlier ? 'before' : 'after'} the month you picked — the dataset records{' '}
-                {SNAPSHOTS.length} dated states, and the one shown is always the closest one that
-                had already happened)
+                {SNAPSHOTS.length} dated states, and the map always shows the one nearest in time,
+                whether that falls before or after your month. The months in between are described
+                in the events)
               </span>
             )}
           </p>
