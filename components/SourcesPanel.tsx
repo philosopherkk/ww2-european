@@ -55,6 +55,26 @@ const MAP_LIMITS: { head: string; body: string }[] = [
     body:
       'A dashed line that reads in one direction cannot tell you which way an army was moving, so withdrawals are left to the events, and the date window on a line is its official operational dates — a line can still be showing in a month when the offensive had already been called off.',
   },
+  {
+    head: 'A line is an axis, not a route march',
+    body:
+      'Each line joins five to eight real places along an axis of advance, with the geocoded coordinates in the data file as comments. Armies did not walk straight lines: they moved on roads, converged, split again and were counterattacked sideways. So a line answers “which way was this offensive going and how far did it get”, and the ring on it marks the point the advance had reached by the end of the selected month. It does not answer “which towns were occupied on 14 March”.',
+  },
+  {
+    head: 'Axis lines that were not German are drawn in the German colour',
+    body:
+      'The legend has three colours — German, Soviet, Western Allied — because those are the three things a reader can use to read the map. Romania attacked Odessa, Hungary fought on the Danube and in the Balaton fighting, Finland defended Karelia, and the 17th Army that was destroyed in the Crimea in 1944 contained German and Romanian units alike. Those operations are drawn in the German colour and the text says who was actually fighting.',
+  },
+  {
+    head: 'Air and sea battles have no lines',
+    body:
+      'Lines are ground axes of advance, so the battles at sea and in the air are carried by the events instead. That means no track for the Bismarck’s last voyage, whose Denmark Strait position at 63.3° N, 31.8° W sits at the rim of the area this map frames, and a ship’s wake is not an axis of advance anyway; no patrol lines for the U-boat war in the Atlantic; no arcs for the Battle of Britain or the bombing offensive; and no ring round the Courland pocket, where a blockade by sea and air — not an advance — is what kept Army Group Centre trapped there from October 1944 to May 1945. The one exception is the Channel Dash of 11-13 February 1942, which was a movement of ships through a strait that any army map can place, so it is drawn.',
+  },
+  {
+    head: 'A month with no lines is a month with no ground offensive',
+    body:
+      'Lines exist only where an army moved on prepared ground in an operation with a name. That leaves the eight peace months of 1939, the five months after the fall of France when nothing moved on land in western Europe, the pause before Kursk in June 1943, and the months after 8 May 1945 empty. Those blanks are a claim about the war, not a gap in the data: the fighting in those months was at sea, in the air, behind the lines, or in the occupied countries, and it is carried by the timeline instead.',
+  },
 ];
 
 export default function SourcesPanel() {

@@ -507,7 +507,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
   },
   {
     id: 'channel_dash',
-    date: '1941-02-12',
+    date: '1942-02-12',
     precision: 'day',
     title: 'The Channel Dash: three German capital ships escape from Brest',
     kind: 'battle',
@@ -517,19 +517,19 @@ export const EVENTS_1941_1942: WW2Event[] = [
     note: 'Scharnhorst, Gneisenau and Prinz Eugen ran up Channel at 27 knots in daylight under an air umbrella, having mined the route beforehand, in a degree of inter-service co-operation the German armed forces rarely managed. Fighter Command failed to intercept the capital ships in time - Bomber Command\'s raids on the harbour had been planned as cover for a departure expected on 11 February. Two of the three struck mines on 15-16 February off the German coast. Churchill criticised the service chiefs in the Commons on 13 February.',
     levels: {
       primary: {
-        cause: 'Three large German warships had been hiding in the French port of Brest, where the Royal Navy could not easily reach them, and Germany wanted them home.',
-        what: 'In February 1941 the three ships sailed straight through the English Channel in daylight, with fighter cover overhead, and got back to Germany.',
+        cause: 'Three large German warships had been lying in the French port of Brest, where the Royal Navy could not easily reach them, and Germany wanted them home.',
+        what: 'In February 1942 the three ships sailed straight through the English Channel in daylight, with fighter cover overhead, and got back to Germany.',
         consequence: 'The British public was shocked, because the Royal Navy had seemed to control these waters; the German ships were then damaged by mines and air attack and became much less useful.',
       },
       secondary: {
-        cause: 'Based in Brest since March 1940, the battlecruisers and the heavy cruiser were a threat to Atlantic convoys and to the Home Fleet\'s anchorage, but they were also within reach of Bomber Command and of mines.',
+        cause: 'Based in Brest since March 1941, the battlecruisers and the heavy cruiser were a threat to Atlantic convoys and to the Home Fleet\'s anchorage, but they were also within reach of Bomber Command and of mines.',
         what: 'The German operation combined air, naval and mine warfare planning, with a dense fighter umbrella flown the length of the route and destroyers meeting the ships off the Netherlands. British warning was late and the interception was uncoordinated.',
-        consequence: 'The propaganda effect was real and short-lived: the ships spent 1941 in repair yards, Gneisenau was crippled by a bomb in Brest harbour, and Scharnhorst and Gneisenau were finished as capital ships by the air attack on Kiel in February 1945.',
+        consequence: 'The propaganda effect was real and short-lived: both battleships were damaged by mines within four days, the three ships spent the rest of 1942 in repair yards or in Norwegian fjords, Gneisenau was crippled by a bomb in Brest harbour before she could sail again, and Scharnhorst was sunk off North Cape in December 1943.',
       },
       university: {
         cause: 'The action is usually treated as an embarrassment, but its significance for the air-land-sea argument is larger: it demonstrated that a determined air umbrella could neutralise surface superiority in coastal waters, which is the argument that made the Royal Navy so anxious about air power in 1942 when it was sent to the Far East.',
         what: 'British counter-measures - bombing the harbour, minelaying, and Coastal Command\'s attack on the shipping channel - are the beginning of the long air campaign against the U-boat bases on the French coast.',
-        consequence: 'The episode also matters for civil-military relations: the Commons debate of February 1941 is a documented case of a prime minister publicly disciplining his service chiefs, which is a useful counterweight to the image of wartime unanimity.',
+        consequence: 'The episode also matters for civil-military relations: the Commons debate of 13 February 1942, in which Churchill criticised the service chiefs in front of the House, is a documented case of a prime minister publicly disciplining his service chiefs, which is a useful counterweight to the image of wartime unanimity.',
       },
     },
   },
