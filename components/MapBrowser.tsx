@@ -205,10 +205,12 @@ export default function MapBrowser({ monthKey, showCampaigns, showBorders }: Pro
           maxBoundsViscosity={0.8}
           className="h-full w-full"
         >
+          {/* CARTO's basemaps began demanding an API key and now serve a watermarked
+              "API KEY REQUIRED" tile, so the base layer is Wikimedia's pale OpenStreetMap
+              render instead: no key, and pale enough to read the fill colours against. */}
           <TileLayer
-            url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
-            subdomains="abcd"
+            url="https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png"
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="https://maps.wikimedia.org">Wikimedia maps</a>'
           />
 
           {showBorders &&

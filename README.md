@@ -65,6 +65,7 @@ production deployment automatically.
 
 ## Sources
 
-Maps: Stanford Spatial History Project (after U. Maine / Rutgers), OpenStreetMap, CARTO.
+Maps: Stanford Spatial History Project (after U. Maine / Rutgers), OpenStreetMap data via
+Wikimedia map tiles.
 Text and figures: Oxford, Cambridge and Cambridge History of the Second World War; Beevor;
 Glantz; Snyder; Tooze; Longerich; and the published archival figures listed in the Sources panel.
