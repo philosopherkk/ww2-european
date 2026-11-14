@@ -206,11 +206,16 @@ export default function MapBrowser({ monthKey, showCampaigns, showBorders }: Pro
           className="h-full w-full"
         >
           {/* CARTO's basemaps began demanding an API key and now serve a watermarked
-              "API KEY REQUIRED" tile, so the base layer is Wikimedia's pale OpenStreetMap
-              render instead: no key, and pale enough to read the fill colours against. */}
+              "API KEY REQUIRED" tile, and Wikimedia's tileserver answers a public
+              deployment's referrer with a 403 HTML page that Chrome then blocks as an
+              image. The OpenStreetMap tiles need no key and send permissive CORS and an
+              image content type from any referrer, so they are the base layer; the grey
+              wash is in globals.css. */}
           <TileLayer
-            url="https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png"
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="https://maps.wikimedia.org">Wikimedia maps</a>'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            subdomains="abc"
+            className="basemap-tiles"
           />
 
           {showBorders &&

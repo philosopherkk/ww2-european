@@ -31,6 +31,13 @@ body {
   background: #e7e5e4;
 }
 
+/* The basemap shows *today's* roads and place names, so it is context, not
+ * content: drained to grey and faded so the 1938-1945 fills are what reads
+ * first. Without this the modern motorway network shouts over the borders. */
+.basemap-tiles {
+  filter: grayscale(0.95) opacity(0.5) contrast(1.05) brightness(1.08);
+}
+
 .leaflet-popup-content {
   margin: 10px 12px;
   max-width: 320px;

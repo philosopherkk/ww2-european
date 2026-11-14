@@ -33,12 +33,17 @@ const MAP_LIMITS: { head: string; body: string }[] = [
   {
     head: 'Two labels were corrected against the map',
     body:
-      'In the September 1941 and April 1942 states the source puts the names of the two Reichskommissariate, and the names of their Reichskommissars, on each other&rsquo;s polygons: the shape reaching the Baltic coast is labelled Reichskommissariat Ukraine and headed by Erich Koch, though that was Hinrich Lohse&rsquo;s territory, and the shape covering Ukraine is the other way round. The build script labels both by geography rather than by the attribute, and says so in its log.',
+      'In the September 1941 and April 1942 states the source puts the names of the two Reichskommissariate, and the names of their Reichskommissars, on each other’s polygons: the shape reaching the Baltic coast is labelled Reichskommissariat Ukraine and headed by Erich Koch, though that was Hinrich Lohse’s territory, and the shape covering Ukraine is the other way round. The build script labels both by geography rather than by the attribute, and says so in its log.',
   },
   {
     head: 'Micro-states are not drawn',
     body:
       'Gibraltar, Monaco, San Marino, Vatican City and Liechtenstein are in the source layer but are under the minimum area this map keeps, so they have no polygon. They are neither white nor guessed at — they are simply absent.',
+  },
+  {
+    head: 'The basemap underneath is today’s world',
+    body:
+      'Roads, rivers and place names come from live OpenStreetMap tiles, drawn in grey and faded so the 1938-1945 fills read first. They are there to tell you where a town is, not to tell you anything about 1943: the borders that matter on this map are the coloured ones we draw ourselves, and the modern names sit under them.',
   },
   {
     head: 'Lines show advance only',
