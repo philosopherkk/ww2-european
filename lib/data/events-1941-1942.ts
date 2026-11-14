@@ -10,7 +10,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['balkans'],
     countries: ['Germany', 'Yugoslavia', 'Greece', 'Italy', 'Bulgaria', 'Hungary'],
     figures: ['hitler', 'list'],
-    note: 'Yugoslavia was defeated in eleven days; Greece capitulated on 20 April (mainland) after the British expeditionary force (about 58,000 men) was evacuated from the Peloponnese, with some 7,800 troops left behind. Crete fell in the first large-scale airborne assault, 20-31 May, at a cost of about 6,000 German paratrooper casualties.',
+    note: 'Yugoslavia was defeated in eleven days; Tsolakoglou offered to surrender on 20 April; the armistice/capitulation took effect 23 April 1941 after the British expeditionary force (about 58,000 men) was evacuated from the Peloponnese, with some 7,800 troops left behind. Crete fell in the first large-scale airborne assault, 20-31 May, at a cost of about 6,000 German paratrooper casualties.',
     levels: {
       primary: {
         cause: 'A coup in Yugoslavia overthrew the government that had joined the Axis, which made Hitler furious.',
@@ -18,7 +18,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
         consequence: 'Both countries were carved up and occupied very brutally for the rest of the war.',
       },
       secondary: {
-        cause: 'A coup in Belgrade on 27 March 1941 removed the regent Prince Paul hours after Yugoslavia signed the Tripartite Pact. Hitler saw this as an insult and ordered the destruction of Yugoslavia as a power.',
+        cause: 'Yugoslavia acceded to the Tripartite Pact on 25 March 1941; the coup came two days later, on 27 March. Hitler saw this as an insult and ordered the destruction of Yugoslavia as a power.',
         what: 'Luftwaffe bombing devastated Belgrade ("Operation Punishment") while armies advanced from Bulgaria, Romania and Austria. Greek forces, already fighting the Italians, were outflanked through Yugoslavia and British troops were evacuated.',
         consequence: 'Germany and its allies split the country; Serbia came under direct military administration while the Independent State of Croatia was proclaimed on 10 April, beginning a savage ethnic war. Crete fell in May, giving Germany its southern flank before the attack on the USSR.',
       },
@@ -241,7 +241,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
       },
       secondary: {
         cause: 'Dönitz sent wolfpacks to the thinly protected Atlantic and Caribbean after the United States entered the war without coastal blackout or convoys.',
-        what: 'In the first half of 1942 the U-boats sank about 480,000 tons a month off the American and Caribbean coasts, and some 640,000 tons a month from July to September — the second German “happy time”.',
+        what: 'In the first half of 1942 the U-boats the whole Second Happy Time yielded 609 ships / 3.1 million tons for the loss of 22 U-boats, and some 640,000 tons a month from July to September — the second German “happy time”.',
         consequence: 'Allied shipbuilding, escort carriers, hedgehog mortars, centimetric radar and the capture of Enigma materials reversed the balance by mid-1943, allowing the invasion build-up in Britain.',
       },
       university: {
@@ -372,7 +372,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['mediterranean'],
     countries: ['United Kingdom', 'Germany', 'Italy', 'Egypt'],
     figures: ['montgomery', 'rommel'],
-    note: 'The attack opened at 21:40 on 23 October with a 45-minute barrage from about 1,000 guns. Eighth Army had some 195,000 effectives and 1,046 tanks; the Panzerarmee Afrika about 104,000 men, of whom roughly a third were German, and under 300 serviceable tanks. The Axis minefields held some half a million mines. Axis losses were about 20,000 killed and wounded and some 30,000 prisoners; some 20,000-30,000 Axis troops were evacuated from Tunisia in January-May 1943 to fight again in Italy. The Commonwealth War Graves Commission records nearly 2,400 burials at Alamein.',
+    note: 'The attack opened at 21:40 on 23 October with a 45-minute barrage from about 1,000 guns. Eighth Army had some 195,000 effectives and 1,046 tanks; Panzerarmee Afrika ~116,000 men (Playfair: 54,000 Italian + 50,000 German — roughly half), and under 300 serviceable tanks. The Axis minefields held some half a million mines. Axis losses were about 20,000 killed and wounded and some 30,000 prisoners; some 20,000-30,000 Axis troops were evacuated from Tunisia in January-May 1943 to fight again in Italy. The Commonwealth War Graves Commission records nearly 2,400 burials at Alamein.',
     levels: {
       primary: {
         cause: 'German and Italian armies had pushed across the desert to El Alamein, only about 100 km from Alexandria and the Suez Canal, and Britain had to stop them there.',
@@ -514,7 +514,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['atlantic', 'air_war'],
     countries: ['Germany', 'United Kingdom'],
     figures: ['raeder'],
-    note: 'Scharnhorst, Gneisenau and Prinz Eugen ran up Channel at 27 knots in daylight under an air umbrella, having mined the route beforehand, in a degree of inter-service co-operation the German armed forces rarely managed. Fighter Command failed to intercept the capital ships in time - Bomber Command\'s raids on the harbour had been planned as cover for a departure expected on 11 February. Two of the three struck mines on 15-16 February off the German coast. Churchill criticised the service chiefs in the Commons on 13 February.',
+    note: 'Scharnhorst, Gneisenau and Prinz Eugen ran up Channel at 27 knots in daylight under an air umbrella, the Germans chose the best route to avoid British minefields; minesweepers cleared channels through British mines, in a degree of inter-service co-operation the German armed forces rarely managed. Fighter Command failed to intercept the capital ships in time - Bomber Command\'s raids on the harbour had been planned as cover for a departure expected on 11 February. Two of the three struck mines on 15-16 February off the German coast. Churchill criticised the service chiefs in the Commons on 13 February.',
     levels: {
       primary: {
         cause: 'Three large German warships had been lying in the French port of Brest, where the Royal Navy could not easily reach them, and Germany wanted them home.',
@@ -555,7 +555,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
         consequence: 'Lend-lease ended the possibility of an American-brokered peace, and it created a debt structure the United States deliberately refused to settle in a way that left Britain dependent after 1945 - a serious subject in British postwar economic history.',
       },
       university: {
-        cause: 'The argument about how decisive Lend-Lease was for the USSR divides quantitatively: Soviet transport and industrial output were enormous in their own right, but American 40-ton Studebaker lorries carried the majority of Red Army logistics by 1944-45, and without tinned food, explosives, aviation fuel and railway equipment the 1944 offensive calendar is not reproducible.',
+        cause: 'The argument about how decisive Lend-Lease was for the USSR divides quantitatively: Soviet transport and industrial output were enormous in their own right, but The Studebaker US6 was a 2½-ton 6×6 carried the majority of Red Army logistics by 1944-45, and without tinned food, explosives, aviation fuel and railway equipment the 1944 offensive calendar is not reproducible.',
         what: 'The historiography also has to handle the fact that most aid arrived after the outcome had been decided, which is precisely the Soviet argument, and the counter-argument that the First and Second Protocols sustained the 1941-42 crisis when it was still open.',
         consequence: 'In a European-theatre reading, Lend-Lease belongs with the Battle of the Atlantic as one half of a single system: the aid was only real to the extent that ships got through, and the shipping battle of 1941-43 decided how much of the Act became hardware.',
       },
@@ -570,7 +570,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['mediterranean', 'air_war'],
     countries: ['Germany', 'United Kingdom', 'Greece', 'New Zealand', 'Australia'],
     figures: [],
-    note: 'About 22,000 Fallschirmjager and glider troops were dropped on 20 May 1941 against some 40,000 British, Dominion and Greek troops, and the island fell on 1 June after fierce fighting around Maleme airfield. German airborne losses were about 6,000 killed and wounded, of which some 4,000 fell in the first two days; the Allies lost some 1,750 killed, about 10,000 taken prisoner - many of them troops evacuated from the Greek mainland - and eleven warships sunk by air attack, including the cruisers Fiji, Calypso and Greyhound and the destroyers Kelly, Kashmir and Khedive. Hitler forbade further large-scale airborne operations after the island was taken.',
+    note: 'About 22,000 Fallschirmjager and glider troops were dropped on 20 May 1941 against some 40,000 British, Dominion and Greek troops, and the island fell on 1 June after fierce fighting around Maleme airfield. German airborne losses were about 6,000 killed and wounded, of which some 4,000 fell in the first two days; the Allies lost some 1,750 killed, about 10,000 taken prisoner - many of them troops evacuated from the Greek mainland - and eleven warships sunk by air attack, including the cruisers Gloucester, Fiji, Calcutta and the destroyers Kelly, Greyhound, Kashmir, Juno, Kipling. Hitler forbade further large-scale airborne operations after the island was taken.',
     levels: {
       primary: {
         cause: 'Germany had taken Greece, and the island of Crete was the base from which British ships and planes could attack the routes Germany needed in the eastern Mediterranean.',
@@ -606,7 +606,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
         consequence: 'Almost all of her crew drowned. Germany\'s big warships never again tried to break out into the Atlantic in force, and the U-boats became the real naval threat.',
       },
       secondary: {
-        cause: 'The Bismarck and Prinz Eugen had broken out through the Denmark Strait on 21 May to attack the North Atlantic convoys, the route on which Britain depended for food, oil and munitions.',
+        cause: 'The Bismarck and Prinz Eugen left Bergen at 19:30 on 21 May, entered the Denmark Strait on 23 May and fought the Hood action on 24 May to attack the North Atlantic convoys, the route on which Britain depended for food, oil and munitions.',
         what: 'The sinking of Hood on 24 May made pursuit a matter of prestige; a Catalina found her, and a torpedo from Ark Royal jammed her steering on the evening of 26 May, so that she had to be fought going in circles at 10 knots.',
         consequence: 'The Battle of the Atlantic was decided by the U-boat and the air, not by capital ships, and after 27 May 1941 Raeder\'s surface strategy was effectively dead - which is the context for the Channel Dash of February and the Norwegian fjords of 1942-44.',
       },
@@ -626,7 +626,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['eastern', 'politics'],
     countries: ['Germany', 'Poland', 'Czechoslovakia'],
     figures: ['himmler'],
-    note: 'From 15-18 October 1941 transports left Berlin, Frankfurt, Vienna and Prague for the Lodz ghetto, about 5,000 people in the first five trains; by the summer of 1942 about 100,000 Jews had been deported from the Reich, the Protectorate and Austria into ghettos in occupied Poland, where most were murdered - in Chelmno, which opened in December 1941 only 60 km from Lodz. Theresienstadt, opened as a "model ghetto" for Jews over 65 and decorated veterans in November 1941, took another 55,000; 33,000 died there.',
+    note: 'From 15-18 October 1941 transports left Berlin, Frankfurt, Vienna and Prague for the Lodz ghetto, about 5,000 people in the first five trains; by the summer of 1942 about 100,000 Jews had been deported from the Reich, the Protectorate and Austria into ghettos in occupied Poland, where most were murdered - in Chełmno was situated about 50 km north of Łódź. Theresienstadt, opened as a "model ghetto" for Jews over 65 and decorated veterans in November 1941, took another 55,000; 33,000 died there.',
     levels: {
       primary: {
         cause: 'For years the Nazis had tried to force Jewish people to leave Germany. By the autumn of 1941 they decided to send them away to the east instead.',
@@ -654,7 +654,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['eastern'],
     countries: ['Germany', 'Soviet Union', 'Latvia'],
     figures: ['himmler'],
-    note: 'On 30 November and 8 December 1941 some 25,000 Jews from the Riga ghetto and 1,000 from Berlin were shot in the pine forest at Rumbula by Arajs Kommando and Latvian auxiliaries under German command, with Friedrich Jeckeln personally organising the shooting lines after the first day had descended into confusion. It was the largest single mass shooting on Soviet territory after Babi Yar. Jeckeln was tried and hanged in Riga in February 1944.',
+    note: 'On 30 November and 8 December 1941 some 25,000 Jews from the Riga ghetto and 1,000 from Berlin were shot in the pine forest at Rumbula by Arajs Kommando and Latvian auxiliaries under German command, with Friedrich Jeckeln personally organising the shooting lines after the first day had descended into confusion. It was the largest single mass shooting on Soviet territory after Babi Yar. Jeckeln was tried at the Riga Trial and hanged on 3 February 1946.',
     levels: {
       primary: {
         cause: 'Germany had occupied Latvia, and its leaders decided to kill the Jewish people of Riga, telling them they were being moved to another camp.',
@@ -669,7 +669,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
       university: {
         cause: 'Rumbula is the empirical hinge of Christopher Browning\'s argument about the extermination camps: the shooting of 25,000 people over two weekends was judged inefficient and psychologically damaging to the shooters by Himmler and Jeckeln themselves, and the camp system was in part a technical answer to that complaint.',
         what: 'The site also sits inside the historiography of Baltic collaboration - the Arajs Kommando, the question of how far local participation was spontaneous or German-organised, and the Latvian and Estonian units that later served in the Waffen-SS.',
-        consequence: 'Rumbula has become a contested memory site in Latvia since 1991, and one of the very few photographs that shows the shooting itself, taken at the Duenemuende action near Riga on 27 November 1941, is held in the archives at Yad Vashem.',
+        consequence: 'Rumbula has become a contested memory site in Latvia since 1991, and one of the very few photographs that shows the shooting itself, taken at the Dünamünde Action on 15 and 26 March 1942, in Biķernieki forest (3,740 victims), is held in the archives at Yad Vashem.',
       },
     },
   },
@@ -710,7 +710,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['eastern', 'politics'],
     countries: ['Poland', 'Germany', 'Soviet Union'],
     figures: ['bor_komorowski'],
-    note: 'The ZWZ was renamed Armia Krajowa on 14 February 1942 under General Stefan "Grot" Rowecki, who was arrested by the Gestapo in June 1943 and died in Sachsenhausen in August 1944. By mid-1944 the AK had some 380,000 sworn members and was the largest resistance army in occupied Europe; its underground state ran courts, schools, universities, theatres, printing presses and a weapons industry, and reported the extermination to London, from where Jan Karski carried the news to Roosevelt in December 1942.',
+    note: 'The ZWZ was renamed Armia Krajowa on 14 February 1942 under General Stefan "Grot" Rowecki, who was arrested by the Gestapo in June 1943 and died in Sachsenhausen in August 1944. By mid-1944 the AK had some 380,000 sworn members and was the largest resistance army in occupied Europe; its underground state ran courts, schools, universities, theatres, printing presses and a weapons industry, and Jan Karski met Roosevelt on 28 July 1943; in December 1942 the report reached the Allies via Raczyński\'s Note (10 Dec 1942).',
     levels: {
       primary: {
         cause: 'Poland had been conquered and was being ruled very brutally, and Poles organised secretly to fight back and to keep their country\'s government alive.',
@@ -766,7 +766,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['mediterranean'],
     countries: ['United Kingdom', 'Germany', 'Italy'],
     figures: ['kesselring'],
-    note: 'Some 6,000 tons of bombs fell on Malta in April 1942, more than in the whole of the previous year, and the island\'s fighter strength fell to a couple of dozen serviceable Hurricanes by mid-April against several hundred Axis aircraft based in Sicily. Spitfires had to be flown off carriers to replenish them, some of them lost on the way, and of the thirteen merchant ships that sailed in the two June convoys only two reached the island. The George Cross was awarded to the island in April 1942.',
+    note: 'Some 6,000 tons of bombs fell on Malta in April 1942, more than in the whole of the previous year, and the island\'s fighter strength fell to a couple of dozen serviceable Hurricanes by mid-April against several hundred Axis aircraft based in Sicily. By 21 April only 27 Spitfires were airworthy (Operation Calendar delivered 47 on 13 April); Spitfires had to be flown off carriers to replenish them, some of them lost on the way, and Operation Harpoon: 6 merchants (4 sunk, 2 reached); Operation Vigorous: 11, turned back — 17 total, 2 got through. The George Cross was awarded to the island in April 1942.',
     levels: {
       primary: {
         cause: 'Malta is a small island in the middle of the Mediterranean, and from it British planes and ships could attack the supply boats taking German and Italian supplies to the desert war.',
@@ -794,7 +794,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['eastern', 'politics'],
     countries: ['Germany', 'Czechoslovakia', 'United Kingdom'],
     figures: ['heydrich', 'hitler'],
-    note: 'Two Slovak-born British paratroopers, Jozef Gabcik and Jan Kubis, ambushed Reinhard Heydrich\'s open car in the Prague suburbs on 27 May 1942; he died of septicaemia on 4 June. The murderers and their helpers were surrounded in the Orthodox cathedral of Saints Cyril and Methodius and died fighting on 18 June. Reprisals included the destruction of the villages of Lidice on 10 June - the men shot, the women sent to Ravensbrueck, the children either killed or sent for Germanisation - and Leza, and some 1,300 executions in the Protectorate.',
+    note: 'Two paratroopers of the Czechoslovak government-in-exile: Jozef Gabčík (Slovak) and Jan Kubiš (Czech), ambushed Reinhard Heydrich\'s open car in the Prague suburbs on 27 May 1942; he died of septicaemia on 4 June. The murderers and their helpers were surrounded in the Orthodox cathedral of Saints Cyril and Methodius and died fighting on 18 June. Reprisals included the destruction of the villages of Lidice on 10 June - the men shot, the women sent to Ravensbrueck, the children either killed or sent for Germanisation - and Leza, and an estimated 5,000 executed and 13,000 arrested and interrogated.',
     levels: {
       primary: {
         cause: 'Heydrich was one of the most powerful and cruel men in the Nazi regime, and he had been sent to rule the Czech lands. Two Czechoslovak soldiers, trained in Britain, were parachuted in to stop him.',
@@ -817,12 +817,12 @@ export const EVENTS_1941_1942: WW2Event[] = [
     id: 'dieppe',
     date: '1942-08-19',
     precision: 'day',
-    title: 'The Dieppe raid: 3,367 casualties in six hours',
+    title: 'The Dieppe raid: 6,086 landed, 3,623 Allied casualties in ten hours',
     kind: 'battle',
     fronts: ['western', 'air_war'],
     countries: ['United Kingdom', 'Canada', 'Germany', 'United States'],
     figures: [],
-    note: 'Operation Jubilee landed 4,963 troops, mostly the Canadian 2nd Division, at Dieppe on 19 August 1942; 3,367 became casualties, including 1,874 captured, and 28 of the 58 Churchill tanks that landed were destroyed or abandoned. The RAF committed 1,700 aircraft and lost 106 against 48 Luftwaffe losses. Lord Mountbatten was the overall commander; the United States sent 50 Rangers.',
+    note: 'Operation Jubilee landed 6,086 troops, mostly the Canadian 2nd Division, at Dieppe on 19 August 1942; 3,623 Allied casualties within ten hours (3,367 is the Canadian contingent), including 1,874 captured, and 28 of the 58 Churchill tanks that landed were destroyed or abandoned. The RAF committed 1,700 aircraft and lost 106 against 48 Luftwaffe losses. Lord Mountbatten was the overall commander; the United States sent 50 Rangers.',
     levels: {
       primary: {
         cause: 'The Allies wanted to find out whether they could land an army on a coast held by Germany, and they also wanted to test new landing craft and gather information.',
@@ -850,7 +850,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['eastern'],
     countries: ['Germany', 'Soviet Union', 'Romania', 'Hungary', 'Italy'],
     figures: ['chuykov', 'zhukov', 'paulus', 'hitler'],
-    note: 'German aircraft bombed the city on 23 August 1942, killing some 1,000 people in the first hour and destroying most of the centre; by mid-September Sixth Army held 90 per cent of the built-up area and reached the Volga north and south of the city. Chuikov\'s 62nd Army fought for the Barrikady ordnance works, the Tractor Factory and the Red October steelworks, where the life expectancy of a newly-arrived man was popularly quoted as a day. On 28 July Stalin had issued Order No. 227, "Not one step back", and penal companies and blocking measures were used against troops who withdrew without orders.',
+    note: 'German aircraft bombed the city on 23 August 1942, Soviet reports give 955 killed and 1,181 wounded between 23 and 26 August (Luftflotte 4 dropped ~1,000 tons on 23 August) and destroying most of the centre; by mid-September Sixth Army held 90 per cent of the built-up area and reached the Volga north and south of the city. Chuikov\'s 62nd Army fought for the Barrikady ordnance works, the Tractor Factory and the Red October steelworks, where the life expectancy of a newly-arrived man was popularly quoted as a day. On 28 July Stalin had issued Order No. 227, "Not one step back", and penal companies and blocking measures were used against troops who withdrew without orders.',
     levels: {
       primary: {
         cause: 'Hitler wanted the city on the Volga that carried oil and grain from the south, and it also had his rival\'s name, so he would not give up trying to take it.',

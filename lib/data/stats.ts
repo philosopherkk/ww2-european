@@ -186,8 +186,8 @@ export const COUNTRY_STATS: CountryStat[] = [
       { year: 1940, population: 15.7, armedForces: 0.6 },
       { year: 1941, population: 15.8, armedForces: 1.0, note: 'Mobilised about 1 million in April 1941; defeated in eleven days' },
       { year: 1942, population: 15.0, armedForces: 0.12, note: 'Chetnik and Partisan forces; the Independent State of Croatia carried out its own killing' },
-      { year: 1943, population: 15.0, armedForces: 0.15, note: 'Partisans about 150,000 by late 1943' },
-      { year: 1944, population: 15.2, armedForces: 0.3, note: 'Partisan army about 400,000, later a million' },
+      { year: 1943, population: 15.0, armedForces: 0.15, note: '100,000 (1943)' },
+      { year: 1944, population: 15.2, armedForces: 0.3, note: '800,000 (1945)' },
       { year: 1945, population: 15.2, armedForces: 0.8 },
     ],
     peakForces: 1.0,
@@ -217,7 +217,7 @@ export const COUNTRY_STATS: CountryStat[] = [
     militaryDeaths: 0.3,
     civilianDeaths: 0.28,
     deathsNote:
-      'Romanian military deaths 1941-45 are usually put near 370,000-400,000: about 180,000 in the war against the USSR before August 1944, some 166,000 after Romania changed sides, and about 216,000 who died in Soviet captivity — categories that overlap and are counted differently by different historians. Between about 114,000 and 165,000 Jews and some 11,000 Roma were killed by Romanian troops and administration in Bessarabia, Bukovina and Transnistria; the larger range of 265,000-380,000 sometimes quoted includes deaths in occupied territory at German hands.',
+      'Romanian military deaths 1941-45 are usually put near 370,000-400,000: about 180,000 in the war against the USSR before August 1944, 167,000 killed, wounded or missing, and about 216,000 who died in Soviet captivity — categories that overlap and are counted differently by different historians. Between about 114,000 and 165,000 Jews and some 11,000 Roma were killed by Romanian troops and administration in Bessarabia, Bukovina and Transnistria; the larger range of 265,000-380,000 sometimes quoted includes deaths in occupied territory at German hands.',
     simple: 'Joined Germany to recover lost land, then switched to the Allies in 1944.',
   },
   {
@@ -344,7 +344,7 @@ export const BLOCS: Record<Bloc, { label: string; members: string[]; blurb: stri
     label: 'Collaboration',
     members: ['France (Vichy)', 'Norway (Quisling)', 'Serbia (Nedić)', 'Italian Social Republic'],
     blurb:
-      'Regimes that shared power with the occupier. Vichy France was never an ally of Germany and was itself occupied in November 1942, yet it wrote its own anti-Jewish statutes in June and October 1940 and handed over Jews from the unoccupied zone when asked. Calling a regime a collaborator is a judgement about who really held power, and the argument about Vichy in particular is still running.',
+      'Regimes that shared power with the occupier. Vichy France was never an ally of Germany and was itself occupied in November 1942, yet it wrote its own anti-Jewish statutes on 3 October 1940 and 2 June 1941 and handed over Jews from the unoccupied zone when asked. Calling a regime a collaborator is a judgement about who really held power, and the argument about Vichy in particular is still running.',
   },
   occupied: {
     label: 'Occupied',

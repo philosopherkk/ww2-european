@@ -322,7 +322,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bio: {
       primary: 'Jodl was Hitler’s chief operations officer and signed the German surrender documents. He was tried and executed after the war.',
       secondary: 'As head of the Wehrmacht operations staff he was present at almost every strategic conference and signed the criminal directives of the eastern campaign, including the Barbarossa Jurisdiction Order and the Commando Order.',
-      university: 'Jodl’s Nuremberg defence — that a soldier’s duty limited him to advice and execution — was rejected by the tribunal; his 1953 posthumous " exoneration" by a German denazification court was reversed in 2024-25 after the intervention of the Bavarian justice ministry and Jewish organisations.',
+      university: 'Jodl’s Nuremberg defence — that a soldier’s duty limited him to advice and execution — was rejected by the tribunal; the 1953 posthumous exoneration by a German denazification court was revoked on 3 September 1953 by the Bavarian Minister of Political Liberation, after objections from the United States.',
     },
   },
   {
@@ -432,7 +432,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
   {
     id: 'guzzoni',
     name: 'Alfredo Guzzoni',
-    birthDeath: '1877-1953',
+    birthDeath: '1877-1965',
     role: 'General; commander of Italian forces in Sicily, 1943',
     country: 'Italy',
     bloc: 'axis',
@@ -523,7 +523,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
   {
     id: 'bittrich',
     name: 'Wilhelm Bittrich',
-    birthDeath: '1914-1979',
+    birthDeath: '1894-1979',
     role: 'SS General; commanded II SS Panzer Corps at Arnhem',
     country: 'Germany',
     bloc: 'axis',

@@ -134,7 +134,7 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
   {
     id: 'chuykov',
     name: 'Vasily Chuykov',
-    birthDeath: '1900-1948',
+    birthDeath: '1900-1982',
     role: 'Colonel General; commander of the 62nd Army at Stalingrad',
     country: 'Soviet Union',
     bloc: 'soviet',
@@ -150,7 +150,7 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
     birthDeath: '1867-1951',
     role: 'Commander-in-Chief of the Finnish army; President of Finland 1944-1946',
     country: 'Finland',
-    bloc: 'neutral',
+    bloc: 'co_belligerent',
     bio: {
       primary: 'Mannerheim led the Finnish army against the Soviet Union. He was an older man who had once been a general in the Russian army.',
       secondary: 'The former tsarist cavalry general commanded the defence in the Winter War of 1939-40 and again in the Continuation War of 1941-44, in which Finland fought as a co-belligerent alongside Germany without ever signing the Tripartite Pact\. As president from August 1944 he made peace with the USSR and preserved Finnish independence.',
@@ -166,7 +166,7 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
     bloc: 'allies',
     bio: {
       primary: 'Montgomery was the British general who beat Rommel at El Alamein and then commanded all the land troops in the Normandy campaign.',
-      secondary: 'He took command of Eighth Army in August 1942, won Second El Alamein in October-November 1942 with roughly a three-to-one advantage in men and guns, landed the Allied armies in Italy, and commanded 21st Army Group, and commanded 21st Army Group and all Allied ground forces from D-Day to the Rhine. Market Garden’s failure damaged him permanently.',
+      secondary: 'He took command of Eighth Army in August 1942, won Second El Alamein in October-November 1942 with roughly a 1.7:1 advantage in men and guns, landed the Allied armies in Italy, and commanded 21st Army Group and all Allied ground forces from D-Day to the Rhine. Market Garden’s failure damaged him permanently.',
       university: 'Montgomery was the best-trained British operational commander of the war and the most politically difficult: his quarrels with Eisenhower, Bradley and Air Chief Marshal Sir Trafford Leigh-Mallory over the width of front, strategic bombing and the use of airborne forces shaped decisions at the highest level, and his insistence on being the sole source of the official story made British accounts of the campaign partisan for a generation, and his postwar memoir made him the leading source for decades of Allied campaign history.',
     },
   },
@@ -251,7 +251,7 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
   {
     id: 'park',
     name: 'Keith Park',
-    birthDeath: '1891-1975',
+    birthDeath: '1892-1975',
     role: 'Air Vice-Marshal; officer commanding No. 11 Group in the Battle of Britain',
     country: 'United Kingdom',
     bloc: 'allies',
@@ -355,7 +355,7 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
   {
     id: 'senger_etterlin',
     name: 'Frido von Senger und Etterlin',
-    birthDeath: '1900-1963',
+    birthDeath: '1891-1963',
     role: 'German General; commander of the XIV Panzer Corps at Monte Cassino',
     country: 'Germany',
     bloc: 'axis',

@@ -73,8 +73,8 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [49.84, 24.03], // Lwów, the southern front's objective
     ],
     summary:
-      'The Red Army crossed on 17 September to the line agreed in the German-Soviet Frontier Treaty of 28 September. Some 12-13 million people, of whom barely half were ethnic Poles, passed under Soviet rule; 230,000 Polish soldiers were taken prisoner, and in March-April 1940 about 22,000 Polish officers and prisoners were shot in the Katyn forest and elsewhere.',
-    strength: '~466,000 committed troops, ~2,300 tanks',
+      'The Red Army crossed on 17 September to the line agreed in the German-Soviet Frontier Treaty of 28 September. Some 12-13 million people, of whom barely half were ethnic Poles, passed under Soviet rule; some 320,000 Polish soldiers were taken prisoner, and in March-April 1940 about 22,000 Polish officers and prisoners were shot in the Katyn forest and elsewhere.',
+    strength: 'Seven Soviet field armies: 600,000-800,000 men, 4,736 tanks and 3,300 aircraft, against far weaker Polish border and reserve units',
   },
   {
     id: 'winter_war',
@@ -107,7 +107,8 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     ],
     summary:
       'Germany struck to keep iron ore from Sweden and to pre-empt a British mine, and took six ports in one night. It was the first combined seaborne, airborne and amphibious operation of the war — and the biggest German naval loss of it: the heavy cruiser Blücher, the light cruisers Karlsruhe and Königsberg, and ten destroyers, which left the Kriegsmarine too weak to resist the later invasions it had just secured.',
-    strength: '~100,000 men in seven divisions for Norway; two brigades for Denmark',
+    strength:
+      'About 100,000 men in seven divisions for Norway; for Denmark the 170th and 198th Infantry Divisions and the 11th Schützen Brigade, with 527 aircraft',
   },
   {
     id: 'fall_gelb',
@@ -118,7 +119,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     to: '1940-05-21',
     path: [
       [50.94, 6.96], // Cologne, assembly behind the Rhine
-      [50.25, 5.7], // Gembloux gap, where the Allies went forward to meet the feint
+      [50.56, 4.69], // Gembloux gap, where the Allies went forward to meet the feint
       [49.7, 4.94], // Sedan, the Meuse crossed on 13 May
       [49.56, 3.62], // Laon, the French reserve counter-attack broken on 16 May
       [49.89, 2.3], // Amiens, taken 20 May
@@ -140,7 +141,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [51.12, 1.31], // Dover, the crossing took under two hours in daylight
     ],
     summary:
-      '338,226 men were taken off in nine days, about a third of them French, mostly by naval vessels and the 700 small ships whose owners answered the Admiralty\'s call. The army escaped but left 2,400 guns, 64,000 vehicles and its reserves of ammunition behind; the RAF flew 3,500 sorties in five days claiming 240 aircraft destroyed, at a cost of 106 of its own.',
+      '338,226 men were taken off in nine days, about a third of them French, mostly by naval vessels and the 700 small ships whose owners answered the Admiralty\'s call. The army escaped but left 2,400 guns, 64,000 vehicles and its reserves of ammunition behind; the RAF flew over 3,500 sorties in the nine days and lost 145 aircraft; the Luftwaffe lost 156.',
   },
   {
     id: 'fall_rot',
@@ -169,9 +170,9 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     path: [
       [42.7, 23.32], // Sofia, where the Twelfth Army had been assembling since March
       [42.28, 22.8], // Kyustendil, into the Struma valley
-      [40.64, 22.94], // Thessaloniki, taken on the second day, before the British arrived
+      [40.64, 22.94], // Thessaloniki, taken on 9 April by the 2nd Panzer Division, before the British reached the city
       [39.64, 22.42], // Larissa, the British expeditionary force's last depot
-      [38.8, 22.05], // Thermopylae, held for two days in April as in 480 BC
+      [38.81, 22.56], // Thermopylae, held for two days in April as in 480 BC
       [37.98, 23.73], // Athens, entered on 27 April
     ],
     summary:
@@ -284,7 +285,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     from: '1942-11-19',
     to: '1942-11-23',
     path: [
-      [49.87, 42.73], // Serafimovich, the Don bridgehead held since September, from which the northern pincer struck
+      [49.58, 42.73], // Serafimovich, the Don bridgehead held since September, from which the northern pincer struck
       [48.69, 43.52], // Kalach, where the pincers met on 23 November
       [48.71, 44.51], // Stalingrad, inside the ring
     ],
@@ -416,15 +417,16 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     path: [
       [55.19, 30.2], // Vitebsk, reduced 24 June, the northern shoulder
       [53.15, 29.22], // Bobruisk, the southern pincer\'s first encirclement
-      [53.9, 27.57], // Minsk, taken 3 July; 100,000 German prisoners marched through Moscow on 17 July
+      [53.9, 27.57], // Minsk, taken 3 July; prisoners taken here were marched through Moscow on 17 July
       [52.1, 23.7], // Brest-Litovsk, reached on 28 July — the old 1939 frontier line
-      [52.23, 21.02], // Luków, taken 30 July by the 4th Tank Corps, which was counterattacked here
+      [51.93, 22.38], // Luków, on the Warsaw railway, reached on 30 July by the 4th Tank Corps
       [52.42, 21.18], // Radzymin, the limit of the armoured spearhead in early August, thrown back by GMXVI Panzer Corps
       [52.26, 21.05], // Praga, the Warsaw suburb on the east bank, where the front stood until January 1945
     ],
     summary:
       'The largest German defeat of the war, and almost the largest battle: four successive encirclements destroyed Army Group Centre in ten days, at the same moment as the Normandy break-out and on the anniversary of Barbarossa. The Red Army used deception and a combined-arms "deep battle" method it had taken two years to learn, and advanced 600 km. Partisans cut the railways behind the front on the night of 19 June. Its end is where the postwar map of Europe was decided: the 4th Tank Corps was counterattacked at Luków and Radzymin in the first days of August, the spearhead was spent, and the front stood on the Vistula until January 1945, with Praga taken only on 14 September. Whether Stalin halted because he could not advance or because he chose not to is still argued; the fact both sides accept is that the Red Army stood 30 km from the Warsaw Uprising, which began on 1 August, and did not reach it. The Germans crushed the Uprising street by street, which destroyed Poland\'s non-communist resistance before the communist government took power in 1944-45.',
-    strength: '~1.2 million Soviet men and ~4,000 tanks; Army Group Centre ~340,000 men, losing 25-28 divisions',
+    strength:
+      'Soviet: 1,670,300 men, 3,841 tanks and 1,977 assault guns at the start. Army Group Centre: 486,493 combat troops, about 849,000 in all, with 118 tanks; it lost 25-28 divisions and was destroyed as a fighting force',
   },
   {
     id: 'lvov_sandomierz_1944',
@@ -610,13 +612,13 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     from: '1944-12-26',
     to: '1945-02-13',
     path: [
-      [46.77, 20.15], // Szeged, in the plain south-east of the city
+      [46.26, 20.14], // Szeged, in the plain south-east of the city
       [47.22, 19.04], // Budapest itself, encircled on 26 December
       [47.48, 18.98], // the Buda heights west of the Danube, the last German-Hungarian position
     ],
     summary:
       'The city was encircled on 26 December and the relief attempts failed: two panzer attacks from the west ran out of fuel and infantry inside three weeks. The Hungarian and German garrison refused to surrender and the siege lasted fifty days of street fighting that destroyed most of what remained of the city and killed some 38,000 civilians. About 25,000 Jews who had been shut into the "international ghettos" of central Budapest were freed when Soviet troops arrived; in the ten weeks before that the Arrow Cross regime had shot some 10,000-15,000 Budapest Jews, many of them on the ice of the Danube bank.',
-    strength: '2nd and 3rd Ukrainian Fronts; ~80,000 German and Hungarian defenders, ~76,000 taken prisoner',
+    strength: '2nd and 3rd Ukrainian Fronts; a garrison of about 79,000 German and Hungarian troops, of whom roughly 40,000 were taken prisoner',
   },
 
   /* ---- 1943-1945: the campaigns that had no line before ---- */
@@ -627,13 +629,13 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     from: '1943-01-18',
     to: '1943-01-24',
     path: [
-      [59.91, 28.97], // Lomonosov-Oranienbaum, the pocket behind German lines
+      [59.91, 29.76], // Lomonosov-Oranienbaum, the pocket behind German lines
       [59.85, 31.13], // Siniavino, where the two fronts met on 23 January
       [59.95, 31.04], // Shlisselburg-Petrokrepost, on the only railway into the city
     ],
     summary:
       'The first successful relief attempt of the siege: Leningrad\'s and Volkhov\'s fronts attacked 12 km towards each other across the Neva and met west of Siniavino on 23 January, opening a corridor 8-11 km wide. A railway was laid across it in seventeen days and the first train reached the city on 7 February, though people were still dying of hunger at 300 a day and the city was not free until January 1944. Iskra shows what the Red Army had learned: an artillery preparation, a limited objective, and no attempt at the grand encirclement that had failed in 1942.',
-    strength: '~320,000 Soviet men; up to 1,700 guns and mortars per kilometre on the breakthrough front',
+    strength: 'The two Soviet fronts committed 26 divisions with about 700 guns and 50 tanks; the German 18th Army held the corridor and its sector with 20 divisions and 15 brigades',
   },
   {
     id: 'third_kharkov_1943',
@@ -642,14 +644,14 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     from: '1943-02-20',
     to: '1943-03-15',
     path: [
-      [50.6, 36.59], // Belgorod, given up on 8 February and retaken on 15 March
-      [49.74, 35.57], // Merefa, cutting the railway north of Kharkov
+      [50.6, 36.59], // Belgorod, lost in February and recovered in the days after Kharkov fell
+      [49.82, 36.06], // Merefa, on the railway south-west of Kharkov
       [49.99, 36.23], // Kharkov, taken after four days of street fighting
     ],
     summary:
-      'The operational masterpiece of the German war, and the reason the front in the east was restored after Stalingrad. Manstein refused Hitler\'s order to stand fast, gave ground deliberately to stretch the Soviet advance — whose tank corps had run out of fuel and infantry — and then struck the exposed flank of the Soviet South-Western Front with two panzer corps. Kharkov was retaken on 15 March and Belgorod on the 16th, leaving the Kursk salient that would be fought over in July. The human cost of the same months went the other way: some 500,000 Soviet casualties in the winter battles, and a German retreat punctuated by the demolition of everything left behind.',
+      'The operational masterpiece of the German war, and the reason the front in the east was restored after Stalingrad. Manstein refused Hitler\'s order to stand fast, gave ground deliberately to stretch the Soviet advance — whose tank corps had run out of fuel and infantry — and then struck the exposed flank of the Soviet South-Western Front with two panzer corps. Kharkov was retaken on 15 March and Belgorod recovered in the days that followed, leaving the Kursk salient that would be fought over in July. The human cost of the same months went the other way: some 500,000 Soviet casualties in the winter battles, and a German retreat punctuated by the demolition of everything left behind.',
     strength:
-      'Manstein’s ~125,000 men with about 350 serviceable tanks, including the II SS Panzer Corps moved from the Leningrad front; the Voronezh and Southwestern Fronts had ~210,000 men in the engaged armies, low on fuel. Losses: 86,469 Soviet, about 11,500 German',
+      'Manstein’s ~125,000 men with about 350 serviceable tanks, including the II SS Panzer Corps, whose Totenkopf division came from the Leningrad sector while Das Reich refitted in the west; the Voronezh and Southwestern Fronts had ~210,000 men in the engaged armies, low on fuel. Losses: 86,469 Soviet, about 11,500 German',
   },
   {
     id: 'kursk_north_1943',
@@ -660,8 +662,8 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     to: '1943-07-13',
     path: [
       [52.96, 36.07], // Orel, the start line on the salient's northern shoulder
-      [51.62, 36.63], // Olkhovatka, the ridge that broke 9 July's tank attack
-      [51.56, 36.68], // Ponyri station, a railway junction fought over twelve times in two days
+      [52.32, 36.31], // Ponyri station, a railway junction fought over twelve times in two days
+      [52.26, 36.13], // Olkhovatka, where 9 July's attack on the second defensive belt was broken
     ],
     summary:
       'The Germans attacked to cut the Kursk salient off, on ground they had chosen, weeks later than planned because they waited for new tanks. The Soviets knew the plan — from intelligence and from German radio traffic — and had built eight defensive belts 300 km deep, laid some 400,000 mines and massed 20,000 guns. Model\'s Ninth Army advanced 10 km and was stopped at Olkhovatka and Ponyri by anti-tank fronts and mines, not by air power, which never gained the superiority the plan assumed. Citadel had failed in the north before Prokhorovka was fought.',
@@ -676,7 +678,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     to: '1943-07-16',
     path: [
       [50.6, 36.59], // Belgorod, start line of the II SS Panzer Corps
-      [50.84, 36.57], // Tomarovka, broken through on the first day by the engineering groups
+      [50.68, 36.23], // Tomarovka, broken through on the first day by the engineering groups
       [51.02, 36.74], // Prokhorovka, reached on 12 July and no further
     ],
     summary:
@@ -691,7 +693,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     to: '1943-08-23',
     path: [
       [50.6, 36.59], // Belgorod, entered on 5 August by the Steppe Front
-      [49.74, 35.57], // Merefa, the railway junction south-west of Kharkov
+      [49.82, 36.06], // Merefa, the railway junction south-west of Kharkov
       [49.99, 36.23], // Kharkov, taken for the last time on 23 August
     ],
     summary:
@@ -723,7 +725,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     to: '1944-02-17',
     path: [
       [50.08, 29.93], // Fastiv, where 6th Tank Corps swung south
-      [49.72, 30.27], // Skvyra, its railway junction taken on 27 January
+      [49.72, 29.67], // Skvyra, its railway junction taken on 27 January
       [49.07, 30.98], // Zvenigorodka, where the pincers closed on 28 January
     ],
     summary:
@@ -737,7 +739,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     from: '1944-01-14',
     to: '1944-03-01',
     path: [
-      [59.91, 28.97], // Lomonosov-Oranienbaum, whose coastal guns covered the attack
+      [59.91, 29.76], // Lomonosov-Oranienbaum, whose coastal guns covered the attack
       [59.77, 30.07], // Krasnoye Selo-Pushkin, taken on the second day
       [59.38, 30.13], // Gatchina, 45 km south of the city, taken 26 January
       [58.52, 31.28], // Novgorod, entered on 20 January, its cathedral a ruin
@@ -858,7 +860,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [31.76, 25.08], // Bardia, assaulted on 3 January, and its 40,000 defenders captured
       [32.08, 23.96], // Tobruk, taken on 22 January with the harbour intact
       [32.12, 20.07], // Benghazi, entered on 7 February as the Italian retreat went past it
-      [30.75, 20.22], // the coast road south of Benghazi, blocked at Beda Fomm on 7 February
+      [31.24, 20.31], // Beda Fomm, where the coast road south of Benghazi was blocked on 7 February
       [30.26, 19.20], // El Agheila, where the pursuit halted on 9 February for lack of transport
     ],
     summary:
@@ -1377,14 +1379,14 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     from: '1943-10-03',
     to: '1943-12-28',
     path: [
-      [42.0, 14.99], // Termoli, landed on 3 October by the 78th Division and the 8th Indian Division
+      [42.0, 14.99], // Termoli, landed on 3 October by No. 3 and No. 40 (Royal Marine) Commando and the Special Raiding Squadron
       [42.35, 14.4], // Ortona, the “little Stalingrad”, fought for 20-28 December
       [42.46, 14.21], // Pescara and the Adriatic valleys, held by the Germans through the winter
     ],
     summary:
       'While the main Allied advance crawled up the west coast towards Cassino, the Eighth Army swung down the Adriatic, hoping to turn the German flank and take the ports behind it. A seaborne landing at Termoli on 3 October got a brigade ashore and held it against German counterattacks, and the advance then took Pescara; but the mountain rivers, the autumn rain and one prepared town stopped the army at Ortona. There the 1st Canadian Division fought house by house in December in what the Canadians called “a little Stalingrad”, and invented the tactics — the Bangalore torpedo and the “mouseholing” through party walls — that the Allies then used in Italy and north-west Europe. The campaign shows why the Italian campaign became what Churchill’s opponents feared: a place to absorb German divisions, but not the route to the Balkans he had promised.',
     strength:
-      '78th and 8th Indian Divisions at Termoli, the 1st Canadian Division at Ortona; the German 1st Parachute Division and LXXVI Panzer Corps, fighting a deliberate delaying action',
+      'Termoli was stormed by two brigades of 2nd Special Service Brigade - commandos and marines - and then reinforced by brigades of the 78th Division; the 1st Canadian Division fought at Ortona. The German defence was Kampfgruppe Rau of the 1st Parachute Division, 16th Panzer Division and LXXVI Panzer Corps, fighting a deliberate delaying action',
   },
   {
     id: 'anzio_1944',
