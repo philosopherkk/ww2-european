@@ -1,7 +1,12 @@
 'use client';
 
-import { SOURCES, UNCERTAINTIES } from '@/lib/data';
+import { SOURCES, UNCERTAINTIES, FIGURES, FIGURE_BY_ID } from '@/lib/data';
+import { PORTRAITS } from '@/lib/data/portraits';
 import { MONTHS, SNAPSHOTS } from '@/lib/site';
+
+const PORTRAIT_LIST = Object.values(PORTRAITS).sort((a, b) =>
+  (FIGURE_BY_ID[a.id]?.name ?? a.id).localeCompare(FIGURE_BY_ID[b.id]?.name ?? b.id)
+);
 
 /** Disclosed rather than hidden: everything a reader could reasonably catch us on. */
 const MAP_LIMITS: { head: string; body: string }[] = [
@@ -157,6 +162,47 @@ export default function SourcesPanel() {
             </li>
           ))}
         </ul>
+      </section>
+
+      <section className="rounded-lg border border-stone-300 bg-white p-4 shadow-sm">
+        <h2 className="text-lg font-bold text-stone-900">Photographs of the people</h2>
+        <p className="mt-2 text-[15px] leading-relaxed text-stone-700">
+          {PORTRAIT_LIST.length} of the {FIGURES.length} biographies carry a photograph. Each one is
+          the lead image of that person&rsquo;s English Wikipedia article, which means it is a file
+          on Wikimedia Commons, public domain or freely licensed. The copies are downloaded once at
+          build time and served from this site rather than hotlinked, and the credit Wikimedia gives
+          for each file travels with it. {FIGURES.length - PORTRAIT_LIST.length} people have no
+          usable photograph there and are shown as their initials instead.
+        </p>
+        <p className="mt-2 text-[15px] leading-relaxed text-stone-700">
+          The photograph is chosen by Wikipedia, not by us, so a few are studio portraits and a few
+          show the person in the field. Where an article has no lead image, the build script looks
+          through the images the article actually uses and takes the first named after the person;
+          those choices are listed below so you can check them.
+        </p>
+        <details className="mt-3">
+          <summary className="cursor-pointer text-sm font-semibold text-stone-700">
+            Every photograph and its credit
+          </summary>
+          <ul className="mt-2 space-y-1 text-[13px] leading-snug text-stone-600">
+            {PORTRAIT_LIST.map((p) => (
+              <li key={p.id}>
+                <span className="font-medium text-stone-800">
+                  {FIGURE_BY_ID[p.id]?.name ?? p.id}
+                </span>{' '}
+                — {p.credit},{' '}
+                <a
+                  href={p.page}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-stone-900"
+                >
+                  {p.file}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </details>
       </section>
 
       <section className="rounded-lg border border-amber-300 bg-amber-50 p-4">

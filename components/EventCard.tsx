@@ -4,6 +4,8 @@ import { useState } from 'react';
 import { ChevronDown, Layers, Users } from 'lucide-react';
 import type { Level, LevelText, WW2Event } from '@/lib/data';
 import { FIGURE_BY_ID } from '@/lib/data';
+import { PORTRAITS } from '@/lib/data/portraits';
+import { FigurePortrait } from './FigurePortrait';
 import { FRONT_META, KIND_META, LEVELS, longDate } from '@/lib/site';
 
 const HEADINGS: Record<Level, { cause: string; what: string; consequence: string }> = {
@@ -125,8 +127,12 @@ export default function EventCard({ event, level, onOpenFigure, defaultOpen = fa
                     key={id}
                     type="button"
                     onClick={() => onOpenFigure?.(id)}
-                    className="rounded-full border border-stone-300 bg-white px-2 py-0.5 text-xs font-medium text-stone-700 hover:border-stone-500 hover:bg-stone-100"
+                    title={`Open ${figure.name}`}
+                    className="flex items-center gap-1.5 rounded-full border border-stone-300 bg-white py-0.5 pl-0.5 pr-2 text-xs font-medium text-stone-700 hover:border-stone-500 hover:bg-stone-100"
                   >
+                    <span className="relative h-5 w-5 shrink-0">
+                      <FigurePortrait portrait={PORTRAITS[id]} name={figure.name} />
+                    </span>
                     {figure.name}
                   </button>
                 );

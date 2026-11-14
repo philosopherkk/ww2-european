@@ -4,6 +4,8 @@ import { useMemo, useState } from 'react';
 import { Search, X } from 'lucide-react';
 import type { Bloc, Level } from '@/lib/data';
 import { EVENTS, FIGURES, FIGURE_BY_ID } from '@/lib/data';
+import { PORTRAITS } from '@/lib/data/portraits';
+import { FigurePortrait } from './FigurePortrait';
 import { longDate } from '@/lib/site';
 
 const BLOC_META: Record<Bloc, { label: string; color: string }> = {
@@ -59,11 +61,16 @@ export default function PeoplePanel({ level, focusId, onFocus, onOpenEvent }: Pr
 
         <div className="rounded-lg border border-stone-300 bg-white p-4 shadow-sm">
           <div className="flex flex-wrap items-start justify-between gap-2">
-            <div>
-              <h2 className="text-xl font-bold text-stone-900">{figure.name}</h2>
-              <p className="text-sm text-stone-600">
-                {figure.birthDeath} · {figure.country}
-              </p>
+            <div className="flex items-center gap-3">
+              <div className="relative h-16 w-16 shrink-0">
+                <FigurePortrait portrait={PORTRAITS[figure.id]} name={figure.name} showCredit />
+              </div>
+              <div>
+                <h2 className="text-xl font-bold text-stone-900">{figure.name}</h2>
+                <p className="text-sm text-stone-600">
+                  {figure.birthDeath} · {figure.country}
+                </p>
+              </div>
             </div>
             <span
               className="rounded-full px-2.5 py-0.5 text-xs font-semibold text-white"
@@ -73,6 +80,20 @@ export default function PeoplePanel({ level, focusId, onFocus, onOpenEvent }: Pr
             </span>
           </div>
           <p className="mt-1 text-sm font-medium text-stone-700">{figure.role}</p>
+
+          {PORTRAITS[figure.id] && (
+            <p className="mt-2 text-[11px] leading-snug text-stone-500">
+              Photograph: {PORTRAITS[figure.id].credit},{" "}
+              <a
+                href={PORTRAITS[figure.id].page}
+                target="_blank"
+                rel="noreferrer"
+                className="underline"
+              >
+                Wikimedia Commons
+              </a>
+            </p>
+          )}
 
           <p className="mt-3 text-[15px] leading-relaxed text-stone-800">{figure.bio[level]}</p>
 
@@ -157,19 +178,26 @@ export default function PeoplePanel({ level, focusId, onFocus, onOpenEvent }: Pr
               onClick={() => onFocus(f.id)}
               className="h-full w-full rounded-md border border-stone-300 bg-white p-3 text-left hover:border-stone-500 hover:shadow-sm"
             >
-              <div className="flex items-start justify-between gap-2">
-                <p className="font-semibold leading-snug text-stone-900">{f.name}</p>
-                <span
-                  className="mt-0.5 shrink-0 rounded-full px-2 py-px text-[10px] font-semibold text-white"
-                  style={{ background: BLOC_META[f.bloc].color }}
-                >
-                  {BLOC_META[f.bloc].label}
-                </span>
+              <div className="flex items-start gap-2.5">
+                <div className="relative h-10 w-10 shrink-0">
+                  <FigurePortrait portrait={PORTRAITS[f.id]} name={f.name} />
+                </div>
+                <div className="min-w-0 flex-1">
+                  <div className="flex items-start justify-between gap-2">
+                    <p className="font-semibold leading-snug text-stone-900">{f.name}</p>
+                    <span
+                      className="mt-0.5 shrink-0 rounded-full px-2 py-px text-[10px] font-semibold text-white"
+                      style={{ background: BLOC_META[f.bloc].color }}
+                    >
+                      {BLOC_META[f.bloc].label}
+                    </span>
+                  </div>
+                  <p className="text-xs text-stone-500">
+                    {f.birthDeath} · {f.country}
+                  </p>
+                  <p className="mt-1 text-[13px] leading-snug text-stone-700">{f.role}</p>
+                </div>
               </div>
-              <p className="text-xs text-stone-500">
-                {f.birthDeath} · {f.country}
-              </p>
-              <p className="mt-1 text-[13px] leading-snug text-stone-700">{f.role}</p>
             </button>
           </li>
         ))}

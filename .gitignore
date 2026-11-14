@@ -42,3 +42,4 @@ next-env.d.ts
 
 # raw ArcGIS downloads used by scripts/build-border-data.mjs
 /scripts/.cache/
+scripts/.portrait-cache/
