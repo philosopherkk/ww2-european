@@ -1,90 +1,377 @@
 {
- "source": "European borders during the Second World War, month by month: The Spatial History Project, Stanford University (copies held by the University of Maine CLIR Geospatial Hub)",
- "note": "Documented border states. The map shows the state closest in time to the month you picked and says how far away it is.",
+ "source": "Boundaries of Europe in July 1914: Jack Kavanagh, \"Map of Europe, c. 1914\", University College Dublin, Zenodo, DOI 10.5281/zenodo.20119653 (CC BY 4.0). Clipped to the European theatre and simplified.",
+ "note": "One boundary state — Europe as it stood on 1 July 1914 — drawn for every month of the war. What changes month by month is who is at war with whom and whose army holds the ground, which is carried by the colours in lib/data/status.ts. The front line and its movement are drawn as campaign lines.",
  "snapshots": [
   {
-   "id": "WWII_Borders_April_1938",
-   "date": "1938-04-30",
-   "label": "April 1938",
-   "file": "/data/borders/1938-04-30.json",
-   "countries": 33
+   "id": "WW1_July_1914",
+   "date": "1914-07-31",
+   "label": "July 1914",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
   },
   {
-   "id": "WWII_Borders_April_1939",
-   "date": "1939-04-30",
-   "label": "April 1939",
-   "file": "/data/borders/1939-04-30.json",
-   "countries": 34
+   "id": "WW1_August_1914",
+   "date": "1914-08-31",
+   "label": "August 1914",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
   },
   {
-   "id": "October_31_1939",
-   "date": "1939-10-31",
-   "label": "October 1939",
-   "file": "/data/borders/1939-10-31.json",
-   "countries": 33
+   "id": "WW1_September_1914",
+   "date": "1914-09-30",
+   "label": "September 1914",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
   },
   {
-   "id": "WWII_Borders_April_1940",
-   "date": "1940-04-30",
-   "label": "April 1940",
-   "file": "/data/borders/1940-04-30.json",
-   "countries": 33
+   "id": "WW1_October_1914",
+   "date": "1914-10-31",
+   "label": "October 1914",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
   },
   {
-   "id": "WWII_Borders_April_1941",
-   "date": "1941-04-30",
-   "label": "April 1941",
-   "file": "/data/borders/1941-04-30.json",
-   "countries": 33
+   "id": "WW1_November_1914",
+   "date": "1914-11-30",
+   "label": "November 1914",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
   },
   {
-   "id": "September_30_1941",
-   "date": "1941-09-30",
-   "label": "September 1941",
-   "file": "/data/borders/1941-09-30.json",
-   "countries": 36
+   "id": "WW1_December_1914",
+   "date": "1914-12-31",
+   "label": "December 1914",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
   },
   {
-   "id": "WWII_Borders_April_1942",
-   "date": "1942-04-30",
-   "label": "April 1942",
-   "file": "/data/borders/1942-04-30.json",
-   "countries": 36
+   "id": "WW1_January_1915",
+   "date": "1915-01-31",
+   "label": "January 1915",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
   },
   {
-   "id": "WWII_Borders_April_1943",
-   "date": "1943-04-30",
-   "label": "April 1943",
-   "file": "/data/borders/1943-04-30.json",
-   "countries": 34
+   "id": "WW1_February_1915",
+   "date": "1915-02-28",
+   "label": "February 1915",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
   },
   {
-   "id": "June_30_1943",
-   "date": "1943-06-30",
-   "label": "June 1943",
-   "file": "/data/borders/1943-06-30.json",
-   "countries": 34
+   "id": "WW1_March_1915",
+   "date": "1915-03-31",
+   "label": "March 1915",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
   },
   {
-   "id": "WWII_Borders_October_1943",
-   "date": "1943-10-31",
-   "label": "October 1943",
-   "file": "/data/borders/1943-10-31.json",
-   "countries": 35
+   "id": "WW1_April_1915",
+   "date": "1915-04-30",
+   "label": "April 1915",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
   },
   {
-   "id": "WWII_Borders_April_1944",
-   "date": "1944-04-30",
-   "label": "April 1944",
-   "file": "/data/borders/1944-04-30.json",
-   "countries": 33
+   "id": "WW1_May_1915",
+   "date": "1915-05-31",
+   "label": "May 1915",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
   },
   {
-   "id": "WWII_Borders_April_1945",
-   "date": "1945-04-30",
-   "label": "April 1945",
-   "file": "/data/borders/1945-04-30.json",
-   "countries": 33
+   "id": "WW1_June_1915",
+   "date": "1915-06-30",
+   "label": "June 1915",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_July_1915",
+   "date": "1915-07-31",
+   "label": "July 1915",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_August_1915",
+   "date": "1915-08-31",
+   "label": "August 1915",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_September_1915",
+   "date": "1915-09-30",
+   "label": "September 1915",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_October_1915",
+   "date": "1915-10-31",
+   "label": "October 1915",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_November_1915",
+   "date": "1915-11-30",
+   "label": "November 1915",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_December_1915",
+   "date": "1915-12-31",
+   "label": "December 1915",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_January_1916",
+   "date": "1916-01-31",
+   "label": "January 1916",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_February_1916",
+   "date": "1916-02-29",
+   "label": "February 1916",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_March_1916",
+   "date": "1916-03-31",
+   "label": "March 1916",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_April_1916",
+   "date": "1916-04-30",
+   "label": "April 1916",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_May_1916",
+   "date": "1916-05-31",
+   "label": "May 1916",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_June_1916",
+   "date": "1916-06-30",
+   "label": "June 1916",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_July_1916",
+   "date": "1916-07-31",
+   "label": "July 1916",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_August_1916",
+   "date": "1916-08-31",
+   "label": "August 1916",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_September_1916",
+   "date": "1916-09-30",
+   "label": "September 1916",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_October_1916",
+   "date": "1916-10-31",
+   "label": "October 1916",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_November_1916",
+   "date": "1916-11-30",
+   "label": "November 1916",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_December_1916",
+   "date": "1916-12-31",
+   "label": "December 1916",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_January_1917",
+   "date": "1917-01-31",
+   "label": "January 1917",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_February_1917",
+   "date": "1917-02-28",
+   "label": "February 1917",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_March_1917",
+   "date": "1917-03-31",
+   "label": "March 1917",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_April_1917",
+   "date": "1917-04-30",
+   "label": "April 1917",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_May_1917",
+   "date": "1917-05-31",
+   "label": "May 1917",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_June_1917",
+   "date": "1917-06-30",
+   "label": "June 1917",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_July_1917",
+   "date": "1917-07-31",
+   "label": "July 1917",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_August_1917",
+   "date": "1917-08-31",
+   "label": "August 1917",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_September_1917",
+   "date": "1917-09-30",
+   "label": "September 1917",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_October_1917",
+   "date": "1917-10-31",
+   "label": "October 1917",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_November_1917",
+   "date": "1917-11-30",
+   "label": "November 1917",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_December_1917",
+   "date": "1917-12-31",
+   "label": "December 1917",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_January_1918",
+   "date": "1918-01-31",
+   "label": "January 1918",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_February_1918",
+   "date": "1918-02-28",
+   "label": "February 1918",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_March_1918",
+   "date": "1918-03-31",
+   "label": "March 1918",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_April_1918",
+   "date": "1918-04-30",
+   "label": "April 1918",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_May_1918",
+   "date": "1918-05-31",
+   "label": "May 1918",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_June_1918",
+   "date": "1918-06-30",
+   "label": "June 1918",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_July_1918",
+   "date": "1918-07-31",
+   "label": "July 1918",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_August_1918",
+   "date": "1918-08-31",
+   "label": "August 1918",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_September_1918",
+   "date": "1918-09-30",
+   "label": "September 1918",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_October_1918",
+   "date": "1918-10-31",
+   "label": "October 1918",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
+  },
+  {
+   "id": "WW1_November_1918",
+   "date": "1918-11-30",
+   "label": "November 1918",
+   "file": "/data/borders/1914-07-01.json",
+   "countries": 22
   }
  ]
 }

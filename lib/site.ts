@@ -1,9 +1,9 @@
 import manifest from '@/public/data/borders/manifest.json';
 import type { CampaignLine, Front, Kind, Level } from '@/lib/data';
 
-/** The whole timeline runs from January 1938 to August 1945, month by month. */
-export const TIMELINE_START = { year: 1938, month: 1 };
-export const TIMELINE_END = { year: 1945, month: 8 };
+/** The whole timeline runs from July 1914 to November 1918, month by month. */
+export const TIMELINE_START = { year: 1914, month: 7 };
+export const TIMELINE_END = { year: 1918, month: 11 };
 
 export interface MonthCell {
   /** e.g. "1939-09" */

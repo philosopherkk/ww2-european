@@ -12,8 +12,8 @@ import {
 } from 'react-leaflet';
 import { Info } from 'lucide-react';
 import type { CampaignLine, Side, TerritoryStatus } from '@/lib/data';
-import { CAMPAIGN_LINES, STATUS_META, STATUS_ORDER, SNAPSHOT_NOTES, statusFor } from '@/lib/data';
-import { campaignVisible, nearestSnapshot, SIDE_META, SNAPSHOTS } from '@/lib/site';
+import { CAMPAIGN_LINES, GEOMETRY_NOTE, STATUS_META, STATUS_ORDER, SNAPSHOT_NOTES, statusFor } from '@/lib/data';
+import { campaignVisible, nearestSnapshot, SIDE_META } from '@/lib/site';
 
 /* The border files are GeoJSON: coordinates are [lng, lat], Leaflet wants [lat, lng]. */
 type Ring = number[][];
@@ -101,10 +101,7 @@ interface Props {
 }
 
 export default function MapBrowser({ monthKey, showCampaigns, showBorders }: Props) {
-  const { snapshot, gapMonths, isEarlier } = useMemo(
-    () => nearestSnapshot(monthKey),
-    [monthKey]
-  );
+  const { snapshot } = useMemo(() => nearestSnapshot(monthKey), [monthKey]);
   const [data, setData] = useState<FeatureCollection | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [showNote, setShowNote] = useState(false);
@@ -156,23 +153,21 @@ export default function MapBrowser({ monthKey, showCampaigns, showBorders }: Pro
     [lines]
   );
 
-  const note = SNAPSHOT_NOTES[snapshot.date];
+  // The shapes never move in this dataset, so the geometry caveat is stated for
+  // every month; the month's own note is appended when there is one.
+  const monthNote = SNAPSHOT_NOTES[snapshot.date];
+  const note = monthNote ? `${GEOMETRY_NOTE} ${monthNote}` : GEOMETRY_NOTE;
 
   return (
     <div className="flex h-full flex-col gap-2">
       <div className="rounded-lg border border-stone-300 bg-white px-3 py-2 text-sm shadow-sm">
         <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
           <p className="font-semibold text-stone-800">
-            Borders as of {snapshot.label}
-            {gapMonths > 0 && (
-              <span className="ml-2 font-normal text-stone-500">
-                ({gapMonths} {gapMonths === 1 ? 'month' : 'months'}{' '}
-                {isEarlier ? 'before' : 'after'} the month you picked — the dataset records{' '}
-                {SNAPSHOTS.length} dated states, and the map always shows the one nearest in time,
-                whether that falls before or after your month. The months in between are described
-                in the events)
-              </span>
-            )}
+            Europe at the end of {snapshot.label}
+            <span className="ml-2 font-normal text-stone-500">
+              (as at the last day of the month, so the colours and the events for
+              {` ${snapshot.label}`} describe the same moment)
+            </span>
           </p>
           {note && (
             <button
@@ -200,8 +195,8 @@ export default function MapBrowser({ monthKey, showCampaigns, showBorders }: Pro
           maxZoom={8}
           scrollWheelZoom={false}
           maxBounds={[
-            [30, -34],
-            [74, 68],
+            [28, -16],
+            [70, 50],
           ]}
           maxBoundsViscosity={0.8}
           className="h-full w-full"
