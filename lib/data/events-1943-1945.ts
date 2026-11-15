@@ -30,6 +30,34 @@ export const EVENTS_1943_1945: WW2Event[] = [
     },
   },
   {
+    id: 'medenine',
+    date: '1943-03-06',
+    precision: 'day',
+    title: 'Rommel’s last attack: the Battle of Medenine',
+    kind: 'battle',
+    fronts: ['mediterranean'],
+    countries: ['Germany', 'Italy', 'United Kingdom'],
+    figures: ['rommel', 'montgomery'],
+    note: 'Unternehmen Capri was a spoiling attack meant to push Eighth Army back before it could assault the Mareth Line. Ultra had read the signals traffic: Montgomery massed some 500 six-pounder anti-tank guns and about 400 tanks in the path of the attack and brought armour forward from Tripolitania. The Axis force of three understrength panzer divisions lost 635 men and between 41 and 52 tanks in a single day for almost no ground; British losses were 130 men, six tanks, 49 vehicles and 32 anti-tank guns. Rommel flew out on 10 March, for good, and General von Arnim took command of Army Group Africa. Montgomery’s own attack on Mareth, Operation Pugilist, began on 19 March, and US II Corps moved on Gafsa on the 17th; Brooke later rebuked him for handling that exposed the source.',
+    levels: {
+      primary: {
+        cause: 'German and Italian soldiers had fallen back to a strong line of ditches, mines and guns in southern Tunisia called the Mareth Line, and their commander was afraid the British were about to attack it.',
+        what: 'So he attacked first, sending his tanks forward at the town of Medenine. But the British knew the plan in advance because they had read the German radio messages, and they waited with hundreds of anti-tank guns hidden in the desert.',
+        consequence: 'The attack failed in a single day with heavy losses of tanks the Axis could not replace. A few days later the German commander left Africa for good, and the British attacked the Mareth Line.',
+      },
+      secondary: {
+        cause: 'Army Group Africa had to hold the Mareth Line with three understrength panzer divisions, and Rommel hoped a surprise blow would disorder Montgomery’s preparations and delay the coming assault.',
+        what: 'The attack of 6 March was made by 15th and 21st Panzer and the Italian 132nd Armoured Division “Ariete” against a defence built around massed anti-tank guns. Ultra had warned Montgomery, who moved armour and guns forward in the night; the Axis tanks found a wall of fire, and the attack was given up at dusk.',
+        consequence: 'It was the last battle Rommel commanded in Africa. The failure cost irreplaceable tanks and left Army Group Africa on the defensive for the battles of Mareth and the Mareth breakthrough, the US II Corps setback at Kasserine, and the final surrender in May.',
+      },
+      university: {
+        cause: 'A spoiling attack was the only option open to a commander whose divisions were below establishment and whose ammunition and fuel had to come through a shrinking port system under allied air attack. Rommel’s operational logic — dislocate the attacker before he is ready — assumed tactical surprise that signals intelligence had already denied him.',
+        what: 'Medenine is a clean illustration of the relationship between Ultra and Eighth Army doctrine: foreknowledge converted into a deliberate anti-tank ambush, with some 500 six-pounders sited in depth and armour used as a manoeuvre reserve, rather than into a pre-emptive attack of one’s own. The Desert Air Force’s effort and the failure of the Regia Aeronautica and Luftwaffe to affect the gun-line show how far the air balance had moved.',
+        consequence: 'Medenine, Kasserine Pass three weeks later and Mareth fixed the shape of the Tunisia campaign. It also left a lasting intelligence problem: Montgomery’s handling of the warning prompted Brooke’s rebuke over source protection, and it sharpened the postwar debate about how far Ultra shortened the North African campaign.',
+      },
+    },
+  },
+  {
     id: 'warsaw_ghetto_uprising',
     date: '1943-04-19',
     precision: 'day',

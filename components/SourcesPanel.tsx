@@ -182,6 +182,21 @@ export default function SourcesPanel() {
             </li>
           ))}
         </ul>
+        <p className="mt-4 text-sm leading-snug text-stone-600">
+          <span className="font-semibold text-stone-900">The fact-checking this text went through.</span>{' '}
+          Every event card and biography was re-checked line by line against published sources, and the
+          corrections were then checked again. Dates were the most common error: the Second Battle of Sirte
+          was a March 1942 battle that had wandered into 1943, Rommel left Tunisia in March 1943 and not
+          October 1942, and the Soviet refusal of landing rights to the Warsaw Uprising came on 22 August,
+          not the 18th. Units were the next: one general had been given a division he never commanded, and
+          another had his eastern and western commands in the wrong order. Two claims were reversed because
+          the sources said the opposite — the Czechoslovak president of 1939 was tried and convicted, not
+          left untried, and Ribbentrop pressed Tokyo towards war with the United States rather than warning
+          against it. Where a number could not be traced to a solid source at all, it was cut rather than
+          quietly kept: no aircraft figure for the Ardennes offensive, no count of Danish SS volunteers. The
+          Dresden figure of 200,000 is now given for what it is — a postwar report the 2010 historians’
+          commission found to be a forgery.
+        </p>
       </section>
 
       <section className="rounded-lg border border-stone-300 bg-white p-4 shadow-sm">

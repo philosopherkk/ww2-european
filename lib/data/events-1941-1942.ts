@@ -2,6 +2,34 @@ import type { WW2Event } from './events-1938-1940';
 
 export const EVENTS_1941_1942: WW2Event[] = [
   {
+    id: 'afrikakorps_lands',
+    date: '1941-02-11',
+    precision: 'day',
+    title: 'The Afrika Korps lands at Tripoli',
+    kind: 'alliance',
+    fronts: ['mediterranean'],
+    countries: ['Germany', 'Italy', 'United Kingdom'],
+    figures: ['hitler', 'mussolini', 'rommel'],
+    note: 'The Deutsches Afrikakorps was formed on 11 January 1941 and Erwin Rommel was named to command it on 11 February, the day the first troops reached Tripoli; he arrived himself on the 12th with orders to hold Tripolitania by aggressive tactics. Aufklärungsbataillon 3 and Panzerjägerabteilung 39 landed on 14 February and were sent straight forward to the line east of Sirte. The 5th Light Division detrained in Naples between 10 February and 12 March and the 15th Panzer Division followed in the spring, while British intelligence at first under-strength the force that was arriving. General Italo Gariboldi replaced Marshal Graziani as Governor-General of Libya on 25 March.',
+    levels: {
+      primary: {
+        cause: 'Italy’s army in North Africa had been wiped out, and Britain was free to take over all of Libya. Hitler did not want to lose Italy’s colony, because it would have brought the war to Italy sooner.',
+        what: 'In February 1941 German soldiers and tanks began landing at the port of Tripoli. Their commander was Erwin Rommel, who was told to hold the ground he had and to attack as soon as he could.',
+        consequence: 'Instead of one short victorious campaign, the desert war went on for two more years, and German soldiers had to be fed and fuelled across the sea for all of that time.',
+      },
+      secondary: {
+        cause: 'Operation Compass had destroyed the Italian Tenth Army, and Hitler feared that if Libya fell, Britain and Turkey might join hands and the Balkans would be exposed. A “blocking force” was authorised in January.',
+        what: 'The first German troops landed at Tripoli on 11 February 1941, followed over the next weeks by the reconnaissance battalion and anti-tank battalion of the 5th Light Division. Rommel arrived on 12 February with a thin force and wide orders. He used the delay caused by the slow unloading at Tripoli to move what he had forward to Sirte, and then, as soon as he had any armour at all, attacked.',
+        consequence: 'A diversion intended to hold a front became a famous armoured war of manoeuvre, and one that tied down Axis shipping that was needed elsewhere. It also began the quarrel over priorities between the desert and the Russian front.',
+      },
+      university: {
+        cause: 'Italian defeat exposed the Regio Esercito’s structural weakness — insufficient motor transport, anti-tank guns and signals — to a British force that had just demonstrated what combined-arms manoeuvre could do. OKW’s remedy was a limited, politically framed force under a commander chosen for audacity rather than logistics training, with the sea crossing to Libya unguarded in daylight.',
+        what: 'Operation Sonnenblume put a cadre ashore at Tripoli from 11 February and a division piecemeal over the following month, in the teeth of an intelligence picture that credited the Germans with far less than was coming. Rommel’s decision to push to Sirte, and then to attack with incomplete formations, exploited British relief and redeployment to Cyrenaica, and established the pattern of the desert war — manoeuvre decisive at corps scale, and logistics decisive at operational scale.',
+        consequence: 'The German presence in the Mediterranean turned a peripheral campaign into a permanent strategic commitment, deepened the air-and-submarine battle for the sea routes to Malta and Alexandria, and made the fall of Tobruk in June 1942 a matter of allied strategic consequence rather than of theatre importance.',
+      },
+    },
+  },
+  {
     id: 'operation_marita',
     date: '1941-04-06',
     precision: 'day',
