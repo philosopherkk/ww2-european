@@ -35,7 +35,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bloc: 'axis',
     bio: {
       primary: 'Hitler was the dictator of Germany who started the Second World War and ordered the killing of millions of Jewish and other people.',
-      secondary: 'Hitler came to power in 1933 by legal means and quickly made himself a dictator. He broke the Treaty of Versailles, rearmament, took Austria and Czechoslovakia, and attacked Poland in 1939. He directed strategy personally and increasingly erratically, and killed himself in Berlin on 30 April 1945.',
+      secondary: 'Hitler came to power in 1933 by legal means and quickly made himself a dictator. He broke the Treaty of Versailles, rearmed, took Austria and Czechoslovakia, and attacked Poland in 1939. He directed strategy personally and increasingly erratically, and killed himself in Berlin on 30 April 1945.',
       university: 'Hitler’s dictatorship operated through the polycratic competition of rival party and state agencies, with his authority as the source of legitimacy rather than systematic administration. His ideological commitments — racial war in the east, the destruction of "Judeo-Bolshevism" — were not incidental to strategy but its organising framework, which is why German decision-making repeatedly subordinated economic and military logic to ideological priority.',
     },
   },
@@ -88,7 +88,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bio: {
       primary: 'Heydrich ran the Nazi secret police and the camp system, and he chaired the meeting at Wannsee where the murder of the Jews of Europe was planned in detail. Agents trained in Britain attacked him in Prague and he died of his wounds.',
       secondary: 'Heydrich headed the Reich Main Security Office, which combined the SD, the Gestapo and the Kripo, and from September 1941 he ran Bohemia and Moravia as Reich Deputy Protector, enforcing the regime’s most violent line of occupation there. He chaired the Wannsee Conference in January 1942. Two Czechoslovak agents trained in Britain attacked his car in Prague on 27 May 1942 and he died on 4 June.',
-      university: 'Heydrich was the operational architect of the security apparatus: the Einsatzgruppen were created under his authority, and the transition from forced emigration to deportation and murder passed through his office. The reprisals after Heydrich’s assassination — the killing of the village of Lidice and the execution of about 1,300 Czechs — illustrate the terror logic of occupation in the Protectorate.',
+      university: 'Heydrich was the operational architect of the security apparatus: the Einsatzgruppen were created under his authority, and the transition from forced emigration to deportation and murder passed through his office. The reprisals after Heydrich’s assassination — the destruction of the villages of Lidice and Lezaky and the execution of some 5,000 Czechs — illustrate the terror logic of occupation in the Protectorate.',
     },
   },
   {
@@ -100,7 +100,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bloc: 'axis',
     bio: {
       primary: 'Ribbentrop was Hitler’s foreign minister. He signed the treaty with Stalin that secretly divided Poland, and helped make the alliance with Italy and Japan.',
-      secondary: 'Ribbentrop negotiated the pact with the Soviet Union in August 1939 and the Tripartite Pact in September 1940. He was a persistent advocate of close alignment with Japan and of pressure on Turkey, and his warnings to Japan not to attack the United States were ignored.',
+      secondary: 'Ribbentrop negotiated the pact with the Soviet Union in August 1939 and the Tripartite Pact in September 1940. He was a persistent advocate of close alignment with Japan and of pressure on Turkey, and his pressure on Tokyo to open war against the United States only bound Germany more tightly to a war it had not chosen.',
       university: 'Ribbentrop’s Foreign Office was progressively marginalised by Ribbentrop’s own bureau, the party’s foreign policy office and the SS, an example of institutional erosion under National Socialism. He was the first defendant sentenced to death at Nuremberg.',
     },
   },
@@ -126,7 +126,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bloc: 'axis',
     bio: {
       primary: 'Manstein was the German general who planned the 1940 attack through the Ardennes, and later the general who stabilised the German front in the east after Stalingrad.',
-      secondary: 'Manstein’s plan for the 1940 campaign — attack through the Ardennes and cut the Allied armies off in the north — became the basis of the French defeat. He took Leningrad’s siege command, then Sevastopol, and in early 1943 recovered the eastern front at Kharkov.',
+      secondary: 'Manstein’s plan for the 1940 campaign — attack through the Ardennes and cut the Allied armies off in the north — became the basis of the French defeat. He took Sevastopol, then the attack on Leningrad, and in early 1943 recovered the eastern front at Kharkov.',
       university: 'Manstein is the most studied case of the tension between operational brilliance and strategic criminality: he issued and enforced the Reichenau Order, and his commands were sites of mass murder. His memoir, Lost Victories, shaped Western Cold War narratives of an apoliticalWehrmacht and a "clean" eastern campaign, and has been substantially criticised by later archival research.',
     },
   },
@@ -165,7 +165,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bloc: 'axis',
     bio: {
       primary: 'Rundstedt was the senior-most German general. He commanded the armies that defeated Poland and France.',
-      secondary: 'Rundstedt commanded Army Group South in Poland and Army Group A in France, and was commander-in-chief in the west in 1944. He was dismissed twice by Hitler and finally removed in March 1945 for saying the war could not be won.',
+      secondary: 'Rundstedt commanded Army Group South in Poland and Army Group A in France, and was commander-in-chief in the west in 1944. He was dismissed by Hitler in 1944 and again in March 1945, the last time for telling him the war could not be won.',
       university: 'His relationship with the regime illustrates the conservative officer corps’ progression from contempt for Hitler to complicity and finally fatalism. At his 1945 British internment interrogation he gave the classic account of "military honour" that later critics have challenged against the documentary record of criminal orders.',
     },
   },
@@ -179,7 +179,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bio: {
       primary: 'Brauchitsch was the head of the German army when the war began. He argued with Hitler about how to attack the Soviet Union and was replaced.',
       secondary: 'He commanded the army through Poland and France. In December 1941 Hitler dismissed him after the failure before Moscow and took personal command of the army, a decisive change in the conduct of the war.',
-      university: 'Brauchitsch signed the Commissar Order and the jurisdictional agreements that placed Wehrmacht security operations beyond military justice, making him a documented participant in the criminal character of the eastern campaign. He died in British custody before the High Command Trial concluded.',
+      university: 'Brauchitsch signed the Commissar Order and the jurisdictional agreements that placed Wehrmacht security operations beyond military justice, making him a documented participant in the criminal character of the eastern campaign. He died in British custody in 1948 before he could stand trial.',
     },
   },
   {
@@ -199,7 +199,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     id: 'paulus',
     name: 'Friedrich Paulus',
     birthDeath: '1890-1957',
-    role: 'Colonel General; commander of the Sixth Army at Stalingrad',
+    role: 'Field Marshal from 30 January 1943; commander of the Sixth Army at Stalingrad',
     country: 'Germany',
     bloc: 'axis',
     bio: {
@@ -244,7 +244,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bio: {
       primary: 'Bock led the German armies that invaded Poland, France and the Soviet Union. He was dismissed twice by Hitler.',
       secondary: 'He commanded Army Group Centre during Barbarossa and was relieved in January 1942 after the counter-offensive before Moscow, then given Army Group South, from which he was dismissed again in July 1942.',
-      university: 'Bock’s diaries record both misgivings about the eastern campaign’s political aims and full compliance with its criminal orders, including the transfer of Jewish population to the SD and the enforcement of anti-partisan reprisals. He died in a bomb attack in Pomerania in May 1945.',
+      university: 'Bock’s diaries record both misgivings about the eastern campaign’s political aims and full compliance with its criminal orders, including the transfer of Jewish population to the SD and the enforcement of anti-partisan reprisals. He was killed by a strafing aircraft at Lensahn in Holstein on 4 May 1945.',
     },
   },
   {
@@ -256,8 +256,8 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bloc: 'axis',
     bio: {
       primary: 'Hoth commanded tank armies in the drive on Moscow and in the attempt to rescue the army trapped at Stalingrad.',
-      secondary: 'He led the Third Panzer Group through Belarus in 1941, the Fifteenth Panzer Division toward Rostov in 1941, and Fourth Panzer Army, first to the Volga and then in the failed December 1942 relief attempt.',
-      university: 'Hoth’s 17 November 1941 order to his corps spelled out that the war in the east was a fight of ideologies demanding "unpunished acts of brutality" against "Asiatic" methods; it is one of the clearest documents of deliberate criminalisation at army level.',
+      secondary: 'He led the Third Panzer Group through Belarus in 1941, the Seventeenth Army toward Rostov late in 1941, and Fourth Panzer Army, first to the Volga and then in the failed December 1942 relief attempt.',
+      university: 'Hoth’s order of the day of 17 November 1941 to the Seventeenth Army spelled out that the war in the east was a fight of ideologies demanding "unpunished acts of brutality" against "Asiatic" methods; it is one of the clearest documents of deliberate criminalisation at army level.',
     },
   },
   {
@@ -269,7 +269,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bloc: 'axis',
     bio: {
       primary: 'Leeb commanded the German army group that advanced on Leningrad and took part in the blockade of the city.',
-      secondary: 'Army Group North reached the approaches to Leningrad in September 1941; in January 1942 he was replaced and in 1945 he was sentenced to twenty years’ imprisonment at the High Command Trial, released in 1951.',
+      secondary: 'Army Group North reached the approaches to Leningrad in September 1941; in January 1942 he was replaced and at the High Command Trial in 1948 he was sentenced to three years’ imprisonment, time served, and was released at the end of the trial.',
       university: 'Leeb’s case turns on the "Severity Order" of his army group of May 1941, which granted immunity for acts against "enemy civilians": he contested knowledge of its criminal effect, while the tribunal held that command responsibility and the order itself established guilt.',
     },
   },
@@ -277,11 +277,11 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     id: 'kluge',
     name: 'Günther von Kluge',
     birthDeath: '1882-1944',
-    role: 'Field Marshal; commander in the west, then Army Group Centre',
+    role: 'Field Marshal; commander of Army Group Centre 1941-43, then OB West and Army Group B in the west',
     country: 'Germany',
     bloc: 'axis',
     bio: {
-      primary: 'Kluge commanded German armies in France after the D-Day landings and was later sent to command on the eastern front.',
+      primary: 'Kluge commanded Army Group Centre on the eastern front in 1941-43 and then German armies in France after the D-Day landings.',
       secondary: 'He commanded Army Group B after Rommel was wounded, and was dismissed in August 1944 after the Falaise collapse. Suspected of links to the 20 July plotters, he killed himself on his way back to Germany.',
       university: 'Kluge’s role in the Normandy campaign is used to examine the limits of German command autonomy: he was unable to release Panzer Group West without Hitler’s approval, while also being an aware, if non-participating, member of the conspiracy circle.',
     },
@@ -348,7 +348,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bio: {
       primary: 'Von Choltitz was the German commander in Paris in 1944. He surrendered the city instead of destroying it as Hitler ordered.',
       secondary: 'He was given command of Greater Paris as the Allies approached and, after the uprising of 19-25 August, surrendered without destroying the bridges and the city’s infrastructure. Hitler asked in fury whether Paris was burning.',
-      university: 'Choltitz’s postwar self-presentation as the "saviour of Paris" is now widely contested: he had no practical means to hold the city and demolition was logistically impossible before the German position collapsed. His 1965 memoir Is Paris Burning? and the film that followed are treated as constructed memory rather than evidence.',
+      university: 'Choltitz’s postwar self-presentation as the "saviour of Paris" is now widely contested: he had no practical means to hold the city and demolition was logistically impossible before the German position collapsed. His own 1950 memoir ...brennt Paris?, and the 1965 bestseller and 1966 film Is Paris Burning? by Larry Collins and Dominique Lapierre that drew on it, are treated as constructed memory rather than evidence.',
     },
   },
   {
@@ -517,7 +517,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bio: {
       primary: 'Winkelman commanded the Dutch army during the five days of fighting in May 1940, when Germany invaded the Netherlands.',
       secondary: 'The Dutch army, largely unmechanised and equipped for a defence-in-depth of the "Fortress Holland" water line, was overcome after the German airborne attacks and the bombing of Rotterdam on 14 May. He signed the capitulation on 15 May.',
-      university: 'The Dutch defeat illustrates the limits of a neutrality strategy in an industrialised war: five days of resistance, 900 military dead, and the deliberate use of terror bombing to compel capitulation, which German doctrine later claimed as legal and which the Dutch government contested at Nuremberg.',
+      university: 'The Dutch defeat illustrates the limits of a neutrality strategy in an industrialised war: five days of resistance, about 2,300 military dead, and the deliberate use of terror bombing to compel capitulation, which German doctrine later claimed as legal and which the Dutch government contested at Nuremberg.',
     },
   },
   {
@@ -568,7 +568,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bloc: 'collaboration',
     bio: {
       primary: 'Darlan was the French admiral who commanded the French navy after France surrendered in 1940, and who in North Africa in 1942 ordered French troops to stop fighting the Allies and to join them instead.',
-      secondary: 'Darlan ran the Vichy government from 1940 to 1941 and kept the French fleet out of the war, which is why the British attacked it at Mers-el-Kébir in July 1940. In November 1942, with Allied landings in North Africa and German troops marching into unoccupied France, he ordered a ceasefire and co-operated with the Allies, bringing tens of thousands of French troops over to their side at a stroke. He was shot dead in Algiers on 24 December 1942 by a young royalist.',
+      secondary: 'Darlan ran the Vichy government from February 1941 to April 1942 and kept the French fleet out of the war, which is why the British attacked it at Mers-el-Kébir in July 1940. In November 1942, with Allied landings in North Africa and German troops marching into unoccupied France, he ordered a ceasefire and co-operated with the Allies, bringing tens of thousands of French troops over to their side at a stroke. He was shot dead in Algiers on 24 December 1942 by a young royalist.',
       university: 'The "Darlan deal" of November 1942 - Eisenhower\'s arrangement with the most senior French authority on the spot, negotiated through Robert Murphy and the American consulate in Algiers - is the founding case in the argument about the moral cost of Realpolitik in coalition warfare: the acceptance of a collaborationist administrator to save Allied lives, at the price of the political credibility of the war aims, with consequences at the Casablanca conference in January 1943, where the insistence on unconditional surrender was in part an answer to the criticism. What is disputed is how far Darlan\'s authority was real, since Vichy disavowed him and his orders carried weight only through his personal prestige and the shock of the German occupation of the free zone.',
     },
   },

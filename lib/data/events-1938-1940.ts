@@ -177,7 +177,7 @@ export const EVENTS: WW2Event[] = [
       },
       secondary: {
         cause: 'Hitler exploited Slovak separatism and a Hungarian ultimatum to finish off the rump state, summoning President Hacha to Berlin and threatening to bomb Prague.',
-        what: 'On 15 March Hitler proclaimed the "Protectorate of Bohemia and Moravia" from Prague Castle, while Tiso’s Slovak state became a German client and Hungary took Carpathian Ruthenia.',
+        what: 'On 15 March German troops occupied Prague, and on the 16th Hitler proclaimed the "Protectorate of Bohemia and Moravia" from Prague Castle, while Tiso’s Slovak state became a German client and Hungary took Carpathian Ruthenia.',
         consequence: 'The breach of Munich ended appeasement. Britain guaranteed Poland on 30 March and France followed on 19 May, beginning the alliance system of 1939; France’s earlier treaty with Prague had been voided at Munich and was not honoured.',
       },
       university: {
@@ -202,7 +202,7 @@ export const EVENTS: WW2Event[] = [
         consequence: 'Germany gained a naval base on the Baltic, close to the port of Gdynia in Poland.',
       },
       secondary: {
-        cause: 'Since 1926 Lithuania had controlled the territory, which Germany had lost in 1919; after Prague fell, Lithuania could expect no help.',
+        cause: 'Since 1923 Lithuania had controlled the territory, which Germany had lost in 1919; after Prague fell, Lithuania could expect no help.',
         what: 'A German ultimatum on 22 March forced cession; Hitler sailed into the port the next day.',
         consequence: 'Germany now threatened Poland from the north-west and could base warships and aircraft directly opposite the Polish coast.',
       },
@@ -264,7 +264,7 @@ export const EVENTS: WW2Event[] = [
       },
       university: {
         cause: 'The campaign tested combined-arms operational methods developed since 1935; the role of Guderian and the Reichswehr’s earlier co-operation with the Red Army at Kazan shaped German armour doctrine.',
-        what: 'Wehrmacht losses were heavier than propaganda admitted (about 11,000 dead, 30,000 wounded, 600 tanks damaged or destroyed) and Polish field units fought effectively in several local counter-attacks, e.g. at Ława.',
+        what: 'Wehrmacht losses were heavier than propaganda admitted (about 11,000 dead, 30,000 wounded, 600 tanks damaged or destroyed) and Polish field units fought effectively in several local counter-attacks, most seriously the Bzura counter-offensive of 9-22 September.',
         consequence: 'The campaign produced the myth of an unstoppable Blitzkrieg; in reality, most German divisions still depended on horse-drawn logistics. Soviet intervention on 17 September made Polish defeat irreversible and established the German-Soviet frontier that lasted until 1941.',
       },
     },
@@ -428,7 +428,7 @@ export const EVENTS: WW2Event[] = [
       },
       secondary: {
         cause: 'German planners abandoned a repeat of the 1914 Schlieffen thrust and adopted Manstein’s plan: let the Allies rush into Belgium, then cut through their rear at Sedan.',
-        what: 'Paratroopers seized bridges and the Eben Emael fortress, while Kleist’s panzer corps crossed the Meuse at Sedan on 13-15 May and then raced to the Channel, reaching Abbeville on 20 May.',
+        what: 'Paratroopers and glider-borne assault parties seized the bridges and the Eben Emael fortress, while Kleist’s panzer corps crossed the Meuse at Sedan on 13-15 May and then raced to the Channel, reaching Abbeville on 20 May.',
         consequence: 'The Belgian army capitulated on 28 May and the Dutch on 15 May. France had to fight on alone, and the British Expeditionary Force had to be evacuated.',
       },
       university: {
@@ -488,7 +488,7 @@ export const EVENTS: WW2Event[] = [
       },
       university: {
         cause: 'The halt order was multi-causal: Guderian’s Corps needed refit, Kleist’s armour was exhausted, terrain favoured defence, and Brauchitsch’s army-group command wanted infantry to hold the encirclement.',
-        what: 'The evacuation depended on the Royal Navy’s destroyers and on RAF patrols from Fighter Command, which flew some 2,500 sorties over the last week of May and the first days of June at a cost of 106 aircraft, though the troops on the beach rarely saw it and resented its absence.',
+        what: 'The evacuation depended on the Royal Navy’s destroyers and on RAF patrols from Fighter Command, which flew some 2,700 sorties over the last week of May and the first days of June at a cost of 106 fighters, though the troops on the beach rarely saw it and resented its absence.',
         consequence: 'The loss of heavy equipment made 1940-41 a period of desperate rearmament in Britain and drove the emphasis on anti-invasion defences, minefields and mass-produced weapons that lasted until 1942.',
       },
     },
@@ -502,7 +502,7 @@ export const EVENTS: WW2Event[] = [
     fronts: ['mediterranean'],
     countries: ['Italy', 'France', 'United Kingdom'],
     figures: ['mussolini', 'grandi', 'badoglio'],
-    note: 'Mussolini mobilised 1.4 million men but only 32 of 73 divisions were usable; the Italian offensive of 21-25 June gained 832 km2 at a cost of about 6,000 Italian casualties.',
+    note: 'Mussolini mobilised 1.4 million men, but far fewer than half the army’s divisions were fit for modern operations; the Italian offensive of 21-25 June gained 832 km2 at a cost of about 6,000 Italian casualties.',
     levels: {
       primary: {
         cause: 'Mussolini wanted Italy to win land and colonies in a war that looked nearly over.',
@@ -530,7 +530,7 @@ export const EVENTS: WW2Event[] = [
     fronts: ['western', 'home'],
     countries: ['France', 'Germany', 'Italy'],
     figures: ['petain', 'hitler', 'weygand', 'mussolini'],
-    note: 'The armistice left Vichy France with an unoccupied zone, its navy, its merchant fleet and its empire, plus an obligation to pay German occupation costs of 400 million francs a day.',
+    note: 'The armistice left Vichy France with an unoccupied zone, its navy, its merchant fleet and its empire, plus an obligation under Article 18 to pay the costs of the German occupation, a figure fixed after the armistice, from August 1940, at 400 million francs a day.',
     levels: {
       primary: {
         cause: 'The French army had been defeated and its government wanted the fighting to stop.',
@@ -558,7 +558,7 @@ export const EVENTS: WW2Event[] = [
     fronts: ['home', 'western'],
     countries: ['United Kingdom', 'Germany'],
     figures: ['dowding', 'park', 'hitler'],
-    note: 'From July to October 1940 the Luftwaffe lost about 1,733 aircraft destroyed against 915 British; 544 Allied aircrew were killed, and in the last week of August alone Fighter Command lost 103 pilots killed and 128 badly wounded. On 7 September London became the main target, giving Fighter Command time to rebuild.',
+    note: 'From July to October 1940 the Luftwaffe lost about 1,733 aircraft destroyed against 915 British; 544 Allied aircrew were killed, and from 24 August to 6 September Fighter Command lost 103 pilots killed or missing and 128 badly wounded. On 7 September London became the main target, giving Fighter Command time to rebuild.',
     levels: {
       primary: {
         cause: 'Germany needed control of the air before it could send an army across the sea to invade Britain.',
@@ -613,7 +613,7 @@ export const EVENTS: WW2Event[] = [
     fronts: ['balkans', 'mediterranean'],
     countries: ['Italy', 'Greece'],
     figures: ['mussolini', 'metaxas', 'guzzoni'],
-    note: 'Italy committed about 140,000 men initially against 15 Greek divisions. By March 1941 Greek counter-offensives had taken about a quarter of Albania; Italian losses to March 1941 exceeded 53,000.',
+    note: 'Italy committed about 140,000 men initially in the Pindus and Epirus sectors against a Greek covering force outnumbered roughly two to one. By March 1941 Greek counter-offensives had pushed into Albania and held much of its south; Italian losses to March 1941 exceeded 53,000.',
     levels: {
       primary: {
         cause: 'Mussolini wanted to show he could win an empire like Hitler, and Italy already controlled Albania next door.',
@@ -621,7 +621,7 @@ export const EVENTS: WW2Event[] = [
         consequence: 'Germany had to send its own armies to help Italy in the spring of 1941. Some historians say that delayed the attack on the Soviet Union.',
       },
       secondary: {
-        cause: 'Mussolini was jealous of German successes and hoped to take Greece before Britain could help; the pretext was the murder of an Italian officer at the Greek border.',
+        cause: 'Mussolini was jealous of German successes and hoped to take Greece before Britain could help; the pretext was a propaganda campaign over staged border incidents and the sinking of the Greek cruiser Elli at Tinos on 15 August 1940.',
         what: 'When the Greek premier Metaxas refused the ultimatum ("Then it will be war" — "Alors, c’est la guerre"), the Italian army advanced into the Pindus mountains and was stopped and driven back.',
         consequence: 'Britain sent air and later expeditionary forces to Greece. The need to rescue Italy in the Balkans led to Operation Marita in April 1941. Whether it also delayed Barbarossa is disputed: some historians hold that the start date was fixed by the weather, others that the Balkans fighting cost Germany the weeks it needed before Moscow.',
       },
@@ -654,7 +654,7 @@ export const EVENTS: WW2Event[] = [
       },
       university: {
         cause: 'For the USSR the war delivered the strategic buffer sought in April 1939 but at enormous reputational cost, while exposing the operational confusion of the post-purge officer corps.',
-        what: 'At its closest the new frontier lay 32 km from Leningrad’s southern suburbs, so the territorial gain had limited military value and became a factor in the 1941 siege geography.',
+        what: 'The pre-war frontier had stood 32 km from Leningrad’s suburbs; the new one ran some 120-150 km north-west of it, and set the line from which the Finnish siege axis advanced in 1941.',
         consequence: 'Finland’s survival as a non-communist state adjacent to the USSR became a permanent anomaly in Stalin’s postwar security system, and Finnish rearmament in 1940-41 was financed largely by foreign purchases.',
       },
     },
@@ -670,7 +670,7 @@ export const EVENTS: WW2Event[] = [
     fronts: ['politics'],
     countries: ['Czechoslovakia', 'Germany'],
     figures: ['hitler'],
-    note: 'Konrad Henlein\'s Sudetendeutsche Partei had 1.46 million votes in May 1938, roughly two-thirds of the Sudeten German electorate, and was funded and directed from Berlin. The Karlsbad Programme of 24 April demanded autonomy, the right to use German in public life, and compensation for years of alleged discrimination - demands Prague could not accept without ending the state as a nation-state. Hitler told Henlein on 28 May to demand so much that Prague could never agree.',
+    note: 'Konrad Henlein\'s Sudetendeutsche Partei took 88 per cent of the ethnic-German vote in the communal elections of 22 and 29 May 1938 and counted some 1.35 million members, and was funded and directed from Berlin. The Karlsbad Programme of 24 April demanded autonomy, the right to use German in public life, and compensation for years of alleged discrimination - demands Prague could not accept without ending the state as a nation-state. Hitler told Henlein on 28 May - as Henlein testified after the war - to demand so much that Prague could never agree.',
     levels: {
       primary: {
         cause: 'Germany wanted an excuse to take parts of Czechoslovakia, so it encouraged the Germans who lived there to complain and ask for self-government.',
@@ -684,7 +684,7 @@ export const EVENTS: WW2Event[] = [
       },
       university: {
         cause: 'The historiographical argument is whether Henlein was an instrument of Berlin or an opportunist who used Berlin for his own aims - Isabel Heinrich\'s biography of him leans to the second, and the Sudeten German Party\'s own finances, printed from Berlin through the German Office for Foreign Policy, make the dependence concrete.',
-        what: 'What matters structurally is the timing: the programme was published two weeks after Prague had begun discussing a minority statute, and Henlein\'s instruction to make demands "sufficient to swallow" comes from Hitler\'s conversation with him on 28 May, recorded in the German minutes.',
+        what: 'What matters structurally is the timing: the programme was published two weeks after Prague had begun discussing a minority statute, and Henlein\'s instruction to make demands "sufficient to swallow" comes from Hitler\'s conversation with him on 28 May, of which the German record was lost; the claim rests on Henlein’s own postwar testimony, though the party’s dependence on Berlin is documented independently.',
         consequence: 'May 1938 also exposed the assumption that did most of the real damage: no one in London or Paris believed Czechoslovakia could be defended, so the debate was about how to press Prague to concede, not whether German demands were lawful.',
       },
     },
@@ -726,7 +726,7 @@ export const EVENTS: WW2Event[] = [
     fronts: ['politics'],
     countries: ['Czechoslovakia', 'Germany', 'Hungary', 'Poland'],
     figures: [],
-    note: 'Benes handed over to General Rudolf Syrovy on 5 October and left for the United States on 22 October; he was never formally deposed and remained the recognised president of the government-in-exile after 1941. Slovakia received autonomy on 7 October under Jozef Tiso\'s Hlinka Party; Carpatho-Ukraine was handed to Hungary in November; the First Vienna Award of 2 November gave Hungary southern Slovakia and southern Carpathian Ruthenia. Poland had taken Teschen Silesia on 2 October 1938.',
+    note: 'Benes handed over to General Jan Syrovy on 5 October and left for the United States on 22 October; he was never formally deposed and remained the recognised president of the government-in-exile after 1941. Slovakia received autonomy on 7 October under Jozef Tiso\'s Hlinka Party; Carpatho-Ukraine was proclaimed autonomous in October and was occupied by Hungary only on 15 March 1939; the First Vienna Award of 2 November had given Hungary southern Slovakia and the southern strip of Carpathian Ruthenia. Poland had taken Teschen Silesia on 2 October 1938.',
     levels: {
       primary: {
         cause: 'A few days after Munich, the Czech president went away, and the parts of the country that Germany, Poland and Hungary had been promised were taken.',
@@ -782,7 +782,7 @@ export const EVENTS: WW2Event[] = [
     fronts: ['politics', 'eastern'],
     countries: ['Germany', 'Poland', 'United Kingdom'],
     figures: ['hitler'],
-    note: 'Hitler had told the Polish foreign minister Jozef Beck on 19 October 1938 that Poland must accept the return of Danzig and an extraterritorial road - and, in private, that Poland would be dealt with "at the first suitable opportunity". On 28 April 1939 Germany denounced the 1934 non-aggression declaration; on 28-29 May Hitler told his commanders that Danzig was not the object but the free hand for the east. Beck\'s reply on 26 March, after the British guarantee of 31 March, was that Poland would fight.',
+    note: 'Hitler had told the Polish foreign minister Jozef Beck on 19 October 1938 that Poland must accept the return of Danzig and an extraterritorial road - and, in private, that Poland would be dealt with "at the first suitable opportunity". On 28 April 1939 Germany denounced the 1934 non-aggression declaration; on 23 May Hitler told his commanders that Danzig was not the object but the free hand for the east. Beck\'s reply came on 26 March, five days before - not after - the British guarantee of 31 March, and was that Poland would fight.',
     levels: {
       primary: {
         cause: 'Germany wanted the port of Danzig back, and a road and railway across the strip of land that gave Poland its sea coast.',
@@ -791,7 +791,7 @@ export const EVENTS: WW2Event[] = [
       },
       secondary: {
         cause: 'Germany wanted Danzig and the Polish Corridor back, and more importantly wanted Poland neutral or destroyed before it attacked the west. Poland\'s leaders had seen Czechoslovakia destroyed after accepting pressure, so they refused, calculating that being attacked in alliance with Britain and France was better than being partitioned quietly.',
-        what: 'Germany denounced the German-Polish declaration of 1934 on 28 April. Britain guaranteed Polish independence on 31 March, extended to the Soviet Union and Romania on 13 April, and France confirmed its alliance obligations.',
+        what: 'Germany denounced the German-Polish declaration of 1934 on 28 April. Britain guaranteed Polish independence on 31 March, extended to Greece and Romania on 13 April, and France confirmed its alliance obligations.',
         consequence: 'The guarantee made the Polish question a European one. It also removed the option Poland had kept between 1934 and 1939 of balancing Germany and the Soviet Union, which is the central criticism of Beck\'s policy.',
       },
       university: {
@@ -960,7 +960,7 @@ export const EVENTS: WW2Event[] = [
       secondary: {
         cause: 'The Luftwaffe had spent August attacking radar stations, airfields and fighter factories, and was beginning to starve No. 11 Group of pilots. The accidental bombing of London on 24 August, and Churchill\'s raid on Berlin two nights later, gave Goering a target that suited his propaganda and rested his crews.',
         what: 'From 7 September 1940 London was attacked in force by day and then nightly. The British fighters had time to rebuild, the airfields were largely left alone, and the Germans never found a way to destroy the radar early-warning system or control the night sky.',
-        consequence: 'The Blitz killed about 14,000 Londoners and destroyed or damaged a million homes, but it did not stop aircraft production, which peaked in 1940 and again in 1943. Britain gained time, and Germany lost the only air campaign of the war in which it chose its target for political rather than military reasons.',
+        consequence: 'The Blitz killed about 14,000 Londoners and destroyed or damaged a million homes, but it did not stop aircraft production, which rose year on year until it peaked in 1944. Britain gained time, and Germany lost the only air campaign of the war in which it chose its target for political rather than military reasons.',
       },
       university: {
         cause: 'The switch of 24 August is the pivot of the Battle of Britain narrative, and the counter-argument - that Fighter Command was near collapse but not past recovery, and that the Germans would have lost anyway - rests on the postwar reconstruction of losses and pilot strength by Wood, Dempster and Richards.',
@@ -988,7 +988,7 @@ export const EVENTS: WW2Event[] = [
       secondary: {
         cause: 'The Italian battleship fleet outnumbered the Mediterranean Fleet in capital ships, and Italy had refused to attack convoys decisively - a pattern of using the fleet as a "fleet in being" rather than fighting.',
         what: 'Admiral Cunningham and the air commander Lyster sent 21 Swordfish in two waves at 15-minute intervals against a harbour protected by nets. Shallow-water torpedoes with modified motors ran under the moored ships.',
-        consequence: 'Italy lost half its battleships for two aircraft; the Mediterranean was contested rather than denied until mid-1941, and the value of the carrier - already shown at the Battle of the Denmark Strait\'s absence of one - was demonstrated to every navy in the world.',
+        consequence: 'Italy lost half its battleships for two aircraft; the Mediterranean was contested rather than denied until mid-1941, and the value of the carrier was demonstrated to every navy in the world.',
       },
       university: {
         cause: 'Taranto is the standard example of asymmetric innovation under material constraint: the aircraft were obsolete in every other role, and the operation depended on reconnaissance photographs, night navigation practice and a torpedo modified to run in 25 metres of water.',
@@ -1006,7 +1006,7 @@ export const EVENTS: WW2Event[] = [
     fronts: ['eastern', 'politics'],
     countries: ['Germany', 'Soviet Union'],
     figures: ['hitler', 'stalin', 'brauchitsch', 'zhukov'],
-    note: 'Barbarossa Directive No. 21, issued 18 December 1940, told the army to be ready "in a rapid campaign" before Britain was defeated - the assumption being that Britain\'s last hope lay in Soviet reserves and that crushing the USSR would end British resistance. The Wehrmacht moved 3.3 million men east between February and June 1941. Hitler told Jodl on 31 July 1940 that the quicker Russia went down the better, and the decision dates from the summer of 1940, not from the failure of the air war.',
+    note: 'Barbarossa Directive No. 21, issued 18 December 1940, told the army to be ready "in a rapid campaign" before Britain was defeated - the assumption being that Britain\'s last hope lay in Soviet reserves and that crushing the USSR would end British resistance. The Wehrmacht moved 3.3 million men east between February and June 1941. At the Berghof conference of 31 July 1940 with his service chiefs, Hitler said the sooner Russia was crushed the better, and the decision dates from the summer of 1940, not from the failure of the air war.',
     levels: {
       primary: {
         cause: 'Britain had not surrendered, and Hitler thought that if he destroyed the Soviet Union, Britain would lose its last hope and give up.',
@@ -1015,7 +1015,7 @@ export const EVENTS: WW2Event[] = [
       },
       secondary: {
         cause: 'Hitler had always wanted territory in the east and saw the Nazi-Soviet pact as temporary. Britain\'s survival, the Royal Navy\'s strength and the failure to invade in 1940 pushed him towards a decision he was already inclined to take: knock out the Soviet Union and hope Japan would finish Britain in the east.',
-        what: 'The directive of 18 December assumed three army groups advancing to the Archangel-Astrakhan line in 22 weeks. It was issued to a general staff that was already working on the problem since July, and to an army that had not finished fighting in the west.',
+        what: 'The directive of 18 December assumed three army groups advancing to the Archangel-Astrakhan line in one short campaign, before Britain was defeated. It was issued to a general staff that was already working on the problem since July, and to an army that had not finished fighting in the west.',
         consequence: 'The decision committed Germany to a war of the kind it had lost before, over distances it could not supply, while the Luftwaffe was still engaged over Britain and the U-boat war was at its height - a choice the German naval command formally objected to.',
       },
       university: {
@@ -1092,7 +1092,7 @@ export const EVENTS: WW2Event[] = [
     fronts: ['politics'],
     countries: ['Germany', 'Austria'],
     figures: ['hitler', 'schuschnigg'],
-    note: 'Chancellor Kurt Schuschnigg was taken to the Berghof above Berchtesgaden on 12 February 1938 and told that Germany would settle the "Austrian question" one way or another. His terms, implemented at Vienna on 18 February, gave Arthur Seyss-Inquart and other Austrian National Socialists cabinet posts, control of the police, and amnesty for imprisoned Nazis. Schuschnigg tried to break the impasse by calling a plebiscite on Austrian independence for 13 March 1938; Hitler demanded it be cancelled on 11 March, forced his resignation, and German troops crossed the frontier that night. Britain and France offered protest only.',
+    note: 'Chancellor Kurt Schuschnigg was taken to the Berghof above Berchtesgaden on 12 February 1938 and told that Germany would settle the "Austrian question" one way or another. His terms, brought into effect at Vienna on 16 February, gave Arthur Seyss-Inquart and other Austrian National Socialists cabinet posts, control of the police, and amnesty for imprisoned Nazis. Schuschnigg tried to break the impasse by calling a plebiscite on Austrian independence for 13 March 1938; Hitler demanded it be cancelled on 11 March, forced his resignation, and German troops crossed the frontier that night. Britain and France offered protest only.',
     levels: {
       primary: {
         cause: 'Germany wanted to take over Austria, and its leader invited the Austrian chancellor to his mountain house and told him to hand power to Austrian Nazis or expect an invasion.',
@@ -1101,7 +1101,7 @@ export const EVENTS: WW2Event[] = [
       },
       secondary: {
         cause: 'Austrian Nazis had been terrorising the country with German money since 1933-34, and Mussolini, who had guaranteed Austrian independence in 1934, had moved closer to Germany after the conquest of Ethiopia and the intervention in Spain. A rump Austria could not be defended.',
-        what: 'The Berchtesgaden agreement of 12 February, implemented on 18 February, turned Austria into a German client state from the inside. Seyss-Inquart, inside the cabinet, then invited German troops in on 12 March.',
+        what: 'The Berchtesgaden agreement of 12 February, implemented on 16 February, turned Austria into a German client state from the inside. Seyss-Inquart, inside the cabinet, then invited German troops in on 12 March.',
         consequence: 'The absorption of Austria brought the Reich a new frontier with Czechoslovakia, 7 million more people, Austria\'s gold reserves and its foreign exchange, and it showed every neighbouring state that the Western democracies would not act.',
       },
       university: {
@@ -1199,16 +1199,16 @@ export const EVENTS: WW2Event[] = [
     id: 'second_republic_election',
     date: '1938-12-18',
     precision: 'day',
-    title: 'The rump republic holds a one-list election and calls itself Czecho-Slovakia',
+    title: 'The rump republic holds a one-list Slovak election and calls itself Czecho-Slovakia',
     kind: 'politics',
     fronts: ['politics'],
     countries: ['Czechoslovakia', 'Germany', 'Hungary', 'Poland'],
     figures: ['hacha'],
-    note: 'Emil Hácha, former president of the Constitutional Court, was elected president of the rump state on 30 November 1938 and General Rudolf Syrovy formed the government. Elections to the National Assembly on 18 and 19 December 1938 were held on a single list of the "Party of National Unity" in the Czech lands, with separate Slovak and Hungarian minority parties, and with the Communist Party banned; the state took the hyphenated name Czecho-Slovakia to mark the Slovak autonomy granted on 7 October. The Second Republic had no army to speak of, no fortifications, and no possibility of acting against Germany. Hácha, ill and threatened in Berlin on 14-15 March 1939, signed the declaration creating the Protectorate; he lived through the war in internal exile and died in custody in Prague before he could be tried.',
+    note: 'Emil Hácha, former president of the Constitutional Court, was elected president of the rump state on 30 November 1938, and Rudolf Beran formed the government on 1 December. There was no general election: the National Assembly authorised rule by presidential decree on 15 December 1938 and never met again, and the only ballot of the winter was for the new Slovak Diet on 18 December 1938, held on a single "Party of National Unity" list with the Communists banned; the state had taken the hyphenated name Czecho-Slovakia under the autonomy constitution of 22 November. The Second Republic had no army to speak of, no fortifications, and no possibility of acting against Germany. Hácha, ill and threatened in Berlin on 14-15 March 1939, signed the declaration creating the Protectorate; he lived through the war in internal exile, was tried and convicted in October 1945 and sentenced to life imprisonment, and died in Prague’s Pankrác prison on 26 June 1946 in circumstances still debated.',
     levels: {
       primary: {
         cause: 'After Munich, what was left of Czechoslovakia held an election - but only one list of candidates was allowed, and some parties were banned.',
-        what: 'In December 1938 the rump country voted for a single national list and renamed itself to give the Slovaks a say.',
+        what: 'In December 1938 Slovakia, the one part of the country allowed a vote, chose a single national list, and the rump state renamed itself to give the Slovaks a say.',
         consequence: 'The country that had been the only democracy in central Europe had become a weakened authoritarian state, which is why it could not resist when Germany took the rest in March 1939.',
       },
       secondary: {
@@ -1218,8 +1218,8 @@ export const EVENTS: WW2Event[] = [
       },
       university: {
         cause: 'The Second Republic is under-studied in English and important for two arguments: the collapse of Czechoslovak democracy, which cannot be dated only to Munich, and the question of legal continuity, on which the postwar constitution and the Beneš decrees rest.',
-        what: 'The Syrovy regime\'s anti-Jewish measures in late 1938 and 1939, and its participation in the exclusion of Jews from universities and professions before the occupation, are documented and complicate the national narrative of unblemished victimhood - a subject reopened in Czech historiography after 1989.',
-        consequence: 'Hácha\'s signature in March 1939 is the central case in the ethics of collaboration under duress: the postwar trial courts had to decide whether a coerced signature was treason, and the answer given in 1945 - that it was not - took a decision about the limits of consent.',
+        what: 'The Beran regime\'s anti-Jewish measures in late 1938 and 1939, and its participation in the exclusion of Jews from universities and professions before the occupation, are documented and complicate the national narrative of unblemished victimhood - a subject reopened in Czech historiography after 1989.',
+        consequence: 'Hácha\'s signature in March 1939 is the central case in the ethics of collaboration under duress: the postwar National Court rejected the duress defence in October 1945 and sentenced him to life imprisonment, leaving an unresolved argument about the limits of coerced consent.',
       },
     },
   },
@@ -1260,7 +1260,7 @@ export const EVENTS: WW2Event[] = [
     fronts: ['politics', 'home'],
     countries: ['Czechoslovakia', 'Germany'],
     figures: ['hacha'],
-    note: 'By the spring of 1939 something like 200,000 Czechs had left or been driven out of the annexed borderlands and were crowded into the rump state, which had lost its fortifications, its heavy industry and its exports. The customs and currency arrangements fixed the Reichsmark at ten koruna, which made Czech assets cheap for German buyers and Czech exports dear; the Skoda works, the largest arms complex in Europe outside the Reich, had its orders from Romania, Yugoslavia and Poland diverted into German hands, and a supervisory apparatus in Berlin controlled credit. What was left of the National Bank\'s gold was removed to Berlin within days of the occupation in March 1939.',
+    note: 'By the spring of 1939 something like 200,000 Czechs had left or been driven out of the annexed borderlands and were crowded into the rump state, which had lost its fortifications, its heavy industry and its exports. The customs and currency arrangements fixed the Reichsmark at ten koruna, which made Czech assets cheap for German buyers and Czech exports dear; the Skoda works, the largest arms complex in Europe outside the Reich, had its orders from Romania, Yugoslavia and Poland diverted into German hands, and a supervisory apparatus in Berlin controlled credit. What was left of the National Bank\'s gold was already largely abroad when the occupation came: the roughly 23 tonnes held in London were handed to the Reichsbank in 1939 after Germany forced the order through the Bank for International Settlements, and the remainder in the Prague vaults followed to Berlin only in June 1940.',
     levels: {
       primary: {
         cause: 'Germany had taken the border districts of Czechoslovakia, so hundreds of thousands of Czech people left their homes and moved into what was left of the country.',
@@ -1269,7 +1269,7 @@ export const EVENTS: WW2Event[] = [
       },
       secondary: {
         cause: 'Munich made the rump economy dependent on Germany by geography and by exchange rate: with the frontier moved and the currency tied at ten koruna to the Reichsmark, German industry could buy Czech plants for a fraction of their worth.',
-        what: 'Czech arms exports - a major source of foreign currency since 1918 - were taken over, and German banks took control of credit. The Syrovy government had no way to resist, because it had no army and no market except the German one.',
+        what: 'Czech arms exports - a major source of foreign currency since 1918 - were taken over, and German banks took control of credit. The Beran government had no way to resist, because it had no army and no market except the German one.',
         consequence: 'The occupation of March 1939 completed an economic takeover that was already two-thirds done. Bohemia and Moravia then supplied machine tools, trucks, small arms and aircraft components to Germany throughout the war, which is one reason the Luftwaffe stayed in the field after 1943.',
       },
       university: {

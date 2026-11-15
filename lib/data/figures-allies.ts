@@ -10,7 +10,7 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
     bloc: 'allies',
     bio: {
       primary: 'Churchill became Britain’s leader in 1940 and promised to keep fighting until Hitler was beaten. His speeches gave people courage.',
-      secondary: 'He became prime minister on 10 May 1940, on the day of the German attack in the west. He refused all ideas of a negotiated peace, held the country through the Blitz, and became the junior partner in an alliance whose industrial weight came from the United States and whose manpower came from the Soviet Union. He was defeated in the election of July 1945, five weeks after Victory in Europe, so it was Clement Attlee who shared the British seat at Potsdam.',
+      secondary: 'He became prime minister on 10 May 1940, on the day of the German attack in the west. He refused all ideas of a negotiated peace, held the country through the Blitz, and became the junior partner in an alliance whose industrial weight came from the United States and whose manpower came from the Soviet Union. He was defeated at the poll of 5 July 1945, whose results came eleven weeks after Victory in Europe, so it was Clement Attlee who shared the British seat at Potsdam.',
       university: 'Churchill’s power rested on rhetorical leadership and on control of the machinery of the war cabinet rather than on party strength; he was a poor manager of detail but decisive in crises. His insistence on a peripheral strategy in the Mediterranean, on the Balkans, and on an anti-communist postwar settlement produced repeated friction with Roosevelt and with his own chiefs of staff.',
     },
   },
@@ -62,7 +62,7 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
     bloc: 'allies',
     bio: {
       primary: 'Truman became president when Roosevelt died. He met Stalin at Potsdam and made the decision to use the atomic bomb.',
-      secondary: 'He took office on 12 April 1945, carried the United States delegation at Potsdam, where a harder line towards the Soviet Union replaced Roosevelt’s approach \(the atomic bombings he authorised fall in the Pacific war, which this site does not cover, but they framed everything he said there\), and met Stalin as the leader of a state that now had the largest economy and the smallest commitment to a European settlement, where a harder line towards the Soviet Union replaced Roosevelt’s approach.',
+      secondary: 'He took office on 12 April 1945, carried the United States delegation at Potsdam, where a harder line towards the Soviet Union replaced Roosevelt’s approach \(the atomic bombings he authorised fall in the Pacific war, which this site does not cover, but they framed everything he said there\), and met Stalin as the leader of a state that now had the largest economy and the smallest commitment to a European settlement.',
       university: 'Truman’s 1945 diplomacy is studied through the "atomic diplomacy" debate: whether possession of the bomb made Soviet concessions more or less likely, and whether the Potsdam failure was structural, given Soviet security aims in eastern Europe, or contingent on personalities.',
     },
   },
@@ -101,7 +101,7 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
     bloc: 'soviet',
     bio: {
       primary: 'Vasilevsky was the chief planner of the Soviet army. He planned the great counter-attacks at Stalingrad and in Belarus.',
-      secondary: 'As chief of the General Staff from 1942 he was the principal author of Uranus and later of Bagration, coordinating fronts in Ukraine and East Prussia. He became minister of defence after the war.',
+      secondary: 'As chief of the General Staff from July 1942 he was the principal author of Uranus and ran the General Staff work behind the later offensives, coordinating fronts in Ukraine and East Prussia. He became minister of defence after the war.',
       university: 'Vasilevsky is the key figure in the recovery of Soviet operational art after the purges: his staff work institutionalised the planning process — wargaming, maskirovka, timed artillery preparation — that made the 1944 campaigns possible.',
     },
   },
@@ -166,8 +166,8 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
     bloc: 'allies',
     bio: {
       primary: 'Montgomery was the British general who beat Rommel at El Alamein and then commanded all the land troops in the Normandy campaign.',
-      secondary: 'He took command of Eighth Army in August 1942, won Second El Alamein in October-November 1942 with roughly a 1.7:1 advantage in men and guns, landed the Allied armies in Italy, and commanded 21st Army Group and all Allied ground forces from D-Day to the Rhine. Market Garden’s failure damaged him permanently.',
-      university: 'Montgomery was the best-trained British operational commander of the war and the most politically difficult: his quarrels with Eisenhower, Bradley and Air Chief Marshal Sir Trafford Leigh-Mallory over the width of front, strategic bombing and the use of airborne forces shaped decisions at the highest level, and his insistence on being the sole source of the official story made British accounts of the campaign partisan for a generation, and his postwar memoir made him the leading source for decades of Allied campaign history.',
+      secondary: 'He took command of Eighth Army in August 1942, won Second El Alamein in October-November 1942 with roughly a 1.7:1 advantage in men and guns, landed the British Eighth Army in Italy alongside the US Fifth Army, and commanded 21st Army Group — and all Allied ground forces until September 1944 — from D-Day to the Rhine. Market Garden’s failure damaged him permanently.',
+      university: 'Montgomery was the best-trained British operational commander of the war and the most politically difficult: his quarrels with Eisenhower and Bradley over the width of the front and the use of airborne forces, and with Air Chief Marshal Sir Trafford Leigh-Mallory over air support shaped decisions at the highest level, and his insistence on being the sole source of the official story made British accounts of the campaign partisan for a generation, and his postwar memoir made him the leading source for decades of Allied campaign history.',
     },
   },
   {
@@ -192,7 +192,7 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
     bloc: 'allies',
     bio: {
       primary: 'Patton was an American general who led fast tank attacks in Sicily, France and Germany. He was very aggressive and very blunt.',
-      secondary: 'He commanded the landings in Sicily, then Third Army, whose rapid advance from Normandy to the Falaise pocket and across France in 1944 was the fastest exploitation of the war in the west. He was relieved of the Fifteenth Army after the slapping incidents and died after a car crash.',
+      secondary: 'He commanded the landings in Sicily, then Third Army, whose rapid advance from Normandy to the Falaise pocket and across France in 1944 was the fastest exploitation of the war in the west. He was removed from battlefield command after the slapping incidents, was given the phantom Fifteenth Army for the Fortitude deception, and died after a car crash.',
       university: 'Patton is a case of the "exploitation commander": superb at mobile offensive once logistics permitted, and repeatedly frustrated by the supply system that prioritised Montgomery’s thrust. Postwar hagiography also obscured the two soldiers he assaulted in August 1944 — the contemporary press inflated the count to twenty — his advocacy of using the German army against the Soviet Union, and his contempt for denazification.',
     },
   },
@@ -205,7 +205,7 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
     bloc: 'allies',
     bio: {
       primary: 'Alexander commanded all the Allied armies in the Mediterranean, including at Monte Cassino and the march on Rome.',
-      secondary: 'He commanded Fourteenth Army in the retreat from Burma in 1942, then First Army in Tunisia and the 15th Army Group in North Africa and Italy, and accepted the German surrender in Italy in April 1945\. Afterwards he was the last British Viceroy and first Governor-General of India, and Chief of the Imperial General Staff from 1952\.',
+      secondary: 'He commanded the British forces in the retreat from Burma in 1942, then First Army in Tunisia and the 15th Army Group in North Africa and Italy, and accepted the German surrender in Italy in April 1945\. Afterwards he was the last British Viceroy and first Governor-General of India, and from 1952 Minister of Defence and Supreme Allied Commander Europe.',
       university: 'Alexander’s command is a study in managing a coalition army of fifteen national contingents under a strategically subordinate role; the decisions at Anzio and on Route 6 in June 1944 remain the contested elements of the Italian campaign’s historiography.',
     },
   },
@@ -309,7 +309,7 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
     bloc: 'collaboration',
     bio: {
       primary: 'Weygand was sent to command the French army in May 1940 when the battle was being lost, but he could not save France.',
-      secondary: 'He replaced Gamelin on 19 May 1940 and attempted to establish a "Weygand front" by holding the channel ports, an attempt that came too late. He later became Vichy’s minister of defence and was imprisoned by the Germans.',
+      secondary: 'He replaced Gamelin on 20 May 1940 and attempted to establish a "Weygand front" by holding the channel ports, an attempt that came too late. He later became Vichy’s minister of defence and was imprisoned by the Germans.',
       university: 'Weygand’s appointment illustrates the French command’s belief that a change of personnel could substitute for a change of doctrine; the failure of the Weygand plan is used to show that the defeat was doctrinal and not merely a matter of generalship.',
     },
   },
@@ -335,7 +335,7 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
     bloc: 'allies',
     bio: {
       primary: 'Leclerc was a French general who marched his small force across the Sahara to fight the Italians, and later led the first Allied armoured division into Paris.',
-      secondary: 'After the Kufra oath of 1941 — not to sheathe his sword until French flag flew over Strasbourg — he took the oasis of Kufra and joined the Burma campaign, then commanded the 2nd Armoured Division in Normandy and the liberation of Paris.',
+      secondary: 'After taking the oasis of Kufra in March 1941 he swore not to sheathe his sword until the French flag flew over Strasbourg, and later joined the Burma campaign, then commanded the 2nd Armoured Division in Normandy and the liberation of Paris.',
       university: 'The 2nd Armoured Division, deliberately officered by Free French and manned largely by Spaniards and North Africans, was both a fighting formation and a political instrument for asserting French belligerency; the ethnic composition of the division complicates the postwar French memory of liberation.',
     },
   },
@@ -361,7 +361,7 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
     bloc: 'axis',
     bio: {
       primary: 'Senger was the German general who defended the abbey of Monte Cassino against the Allied attacks in 1944.',
-      secondary: 'He commanded the 71st Infantry and then the XIV Panzer Corps in the Gustav Line battles, and his defence of the abbey heights made the position extremely costly to attack.',
+      secondary: 'He commanded the 17th Panzer Division and then, from October 1943, the XIV Panzer Corps in the Gustav Line battles, and his defence of the abbey heights made the position extremely costly to attack.',
       university: 'Senger’s postwar memoirs are a standard source for German tactical practice in Italy, and his account of the decision to occupy the abbey after the bombing is central to the debate about whether the attack on the monastery was a military blunder.',
     },
   },
@@ -426,7 +426,7 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
     bloc: 'soviet',
     bio: {
       primary: 'Molotov signed the pact with Nazi Germany in 1939 and later became Stalin’s foreign minister at the wartime conferences.',
-      secondary: 'He signed the non-aggression pact and its secret protocols in August 1939, announced the German invasion on 22 June 1941, and represented the USSR at Moscow, Tehran, San Francisco and Potsdam. He was replaced as foreign minister in 1949 and survived Stalin by only a year in political life.',
+      secondary: 'He signed the non-aggression pact and its secret protocols in August 1939, announced the German invasion on 22 June 1941, and represented the USSR at Moscow, Tehran, San Francisco and Potsdam. He was replaced as foreign minister in 1949 and fell from power with the Anti-Party Group in 1957.',
       university: 'Molotov is the key source and actor for the Soviet negotiating record: his 1940 interview with Schulenburg, the secret protocols, and his "spheres of influence" diplomacy are central to the historiography of Soviet aims in 1939-41.',
     },
   },
@@ -434,7 +434,7 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
     id: 'cripps',
     name: 'Sir Stafford Cripps',
     birthDeath: '1889-1952',
-    role: 'Labour leader; ambassador to the Soviet Union 1940-42, then Minister of Aircraft Production',
+    role: 'Labour statesman; ambassador to the Soviet Union 1940-42, then Leader of the House of Commons and Minister of Aircraft Production',
     country: 'United Kingdom',
     bloc: 'allies',
     bio: {

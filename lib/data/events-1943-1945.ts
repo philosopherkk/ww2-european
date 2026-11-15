@@ -19,7 +19,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
       },
       secondary: {
         cause: 'The Soviet winter offensives of January-February 1943 had outrun their supply, and Stavka refused to let the fronts consolidate.',
-        what: 'Manstein counter-attacked with freshly refitted panzer corps, destroying overextended Soviet formations and re-entering Kharkov on 15 March.',
+        what: 'Manstein counter-attacked with freshly refitted panzer corps, destroying overextended Soviet formations and re-entering Kharkov on 14 March.',
         consequence: 'The recovery created the Kursk salient, which Germany planned to attack in Operation Citadel, and it restored confidence in the Wehrmacht’s ability to win operational victories.',
       },
       university: {
@@ -75,7 +75,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
       },
       secondary: {
         cause: 'Hitler delayed the offensive until July to wait for new Tiger and Panther tanks, which destroyed any chance of surprise.',
-        what: 'German attacks north and south of the salient ground to a halt against minefields, anti-tank guns and air attack. On 12 July the Soviets counter-attacked at Orel and, two days later, at Belgorod.',
+        what: 'German attacks north and south of the salient ground to a halt against minefields, anti-tank guns and air attack. On 12 July the Soviets counter-attacked at Orel and, on 3 August, at Belgorod.',
         consequence: 'Citadel failed. Mussolini’s fall on 25 July and the Allied landing in Sicily on 10 July meant Germany could not replace the loss, and the Red Army kept the initiative for the rest of the war.',
       },
       university: {
@@ -94,7 +94,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['mediterranean'],
     countries: ['United Kingdom', 'United States', 'Italy', 'Germany'],
     figures: ['eisenhower', 'montgomery', 'patton', 'kesselring', 'guzzoni'],
-    note: 'About 160,000 assault troops and 3,000 ships. Axis losses were some 167,000 prisoners; Allied casualties about 31,000. The evacuation across the Strait of Messina, begun on 1 August, saved most German troops.',
+    note: 'About 160,000 assault troops and 3,000 ships. Axis losses were some 167,000 prisoners; Allied casualties about 31,000. The evacuation across the Strait of Messina, begun on 11 August, saved most German troops.',
     levels: {
       primary: {
         cause: 'Once North Africa was clear, the Allies wanted to attack Italy, which they thought was the weakest Axis power.',
@@ -122,7 +122,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['politics', 'home'],
     countries: ['Italy'],
     figures: ['mussolini', 'viktor_emmanuel', 'badoglio', 'grandi'],
-    note: 'The Grand Council voted 19-7 for the Ordine del Gran Consiglio restoring military authority to the king. Mussolini was arrested at the villa Ada. In German-occupied northern Italy he headed the Italian Social Republic until April 1945.',
+    note: 'The Grand Council voted 19-7 for the Ordine del Gran Consiglio restoring military authority to the king. Mussolini was arrested at Villa Savoia. In German-occupied northern Italy he headed the Italian Social Republic until April 1945.',
     levels: {
       primary: {
         cause: 'Italians were angry about bombing, defeat and the invasion of their own islands, and the king and his own party lost confidence in Mussolini.',
@@ -150,11 +150,11 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['mediterranean', 'home'],
     countries: ['Italy', 'Germany', 'United Kingdom', 'United States'],
     figures: ['badoglio', 'viktor_emmanuel', 'eisenhower', 'kesselring'],
-    note: 'The Italian fleet sailed to Malta under armistice terms. German forces disarmed about 650,000 Italian soldiers; some 40,000 were killed in the process and most of the rest became forced labourers in the Reich.',
+    note: 'The Italian fleet sailed to Malta under armistice terms. German forces disarmed about 650,000 Italian soldiers; some 40,000 of them died in captivity and most of the rest became forced labourers in the Reich.',
     levels: {
       primary: {
         cause: 'The new Italian government wanted out of the war and made a secret deal with the Allies.',
-        what: 'The armistice was announced on 8 September, the same day Allied troops landed at Salerno. Italian troops had no orders and were captured by the Germans.',
+        what: 'The armistice was announced on 8 September, the day before Allied troops landed at Salerno. Italian troops had no orders and were captured by the Germans.',
         consequence: 'Italy changed sides, and for two more years the war was fought on Italian soil.',
       },
       secondary: {
@@ -163,7 +163,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
         consequence: 'Italy declared war on Germany on 13 October and became a co-belligerent. The royal government’s authority was limited to the south, while a mass partisan movement developed in the centre and north.',
       },
       university: {
-        cause: 'The eight-month delay between the armistice and final victory in April 1945 reflected the Allied decision to treat Italy as a secondary theatre and Kesselring’s skilful use of interior lines and terrain.',
+        cause: 'The twenty-month delay between the armistice and final victory in April 1945 reflected the Allied decision to treat Italy as a secondary theatre and Kesselring’s skilful use of interior lines and terrain.',
         what: 'The "badoglio" settlement preserved the monarchy and much of the Fascist administrative and police apparatus, which was then used against the partisans.',
         consequence: 'The Togliatti amnesty of June 1946 and the continuity of the state explain why Italy never underwent a thorough reckoning with Fascism, unlike Germany.',
       },
@@ -178,7 +178,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['eastern'],
     countries: ['Poland', 'Germany', 'Soviet Union'],
     figures: ['bor_komorowski', 'stalin', 'hitler'],
-    note: 'The Home Army had some 40,000-50,000 fighters with about 10% armed. Polish losses were about 150,000-200,000 civilians and 16,000-18,000 insurgents killed, with some 5,000 wounded and around 500,000 expelled or deported. Soviet help was limited and late: General Berling’s corps crossed the Vistula at Praga on 14 September and was thrown back with heavy losses, and the Soviet air force flew some 1,300 low, unescorted resupply sorties from mid-September, most of the loads falling to the Germans.',
+    note: 'The Home Army had some 40,000-50,000 fighters with about 10% armed. Polish losses were about 150,000-200,000 civilians and 16,000-18,000 insurgents killed, with some 5,000 wounded and around 500,000 expelled or deported. Soviet help was limited and late: General Berling’s corps crossed the Vistula at Praga on 14 September and was thrown back with heavy losses, and the Soviet air force flew some 2,500 resupply sorties by slow Po-2 biplanes from mid-September, many of the loads falling to the Germans.',
     levels: {
       primary: {
         cause: 'Polish fighters in Warsaw rose up against the Germans as the Soviet army drew near, hoping to free their own capital.',
@@ -192,7 +192,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
       },
       university: {
         cause: 'The decision to rise remains bitterly debated in Poland: Bór-Komorowski’s critics argue that the Home Army leadership underestimated Soviet intentions, while defenders point to the reality of Soviet sponsorship of the Lublin committee.',
-        what: 'The Soviet halting of the winter offensive, the refusal of landing rights for American shuttle bombers on 18 August, and the NKVD’s arrest of Home Army officers after the joint fighting in Vilnius in July 1944 all indicate a deliberate Soviet policy.',
+        what: 'The Soviet halting of the winter offensive, the refusal of landing rights for American shuttle bombers on 22 August, and the NKVD’s arrest of Home Army officers after the joint fighting in Vilnius in July 1944 all indicate a deliberate Soviet policy.',
         consequence: 'The uprising fixed the postwar frontier of memory as well as politics: it confirmed Polish distrust of Moscow and the West, and the communist authorities refused until 1989 to commemorate it honestly.',
       },
     },
@@ -205,7 +205,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     kind: 'evacuation',
     fronts: ['home', 'politics'],
     countries: ['Denmark', 'Germany', 'Sweden'],
-    note: 'Some 7,200 of the roughly 7,800 Jews living in Denmark reached Sweden in the last days of September and October 1943; Sweden announced its offer of asylum on 2 October and had received 7,742 Danish refugees by the 20th. The roundup of the night of 1-2 October caught 464 people, and about 500 elderly or sick Jews were later deported to Theresienstadt in March 1944, where 51 died — a concession bought by the Danish authorities in negotiation. The leak of the deportation date is usually credited to Georg Ferdinand Duckwitz, the German naval attaché, with Werner Best, the plenipotentiary, postponing and then deliberately under-strengthing the operation.',
+    note: 'Some 7,200 of the roughly 7,800 Jews living in Denmark reached Sweden in the last days of September and October 1943. The roundup of the night of 1-2 October caught 464 people, who were deported to Theresienstadt, where 51 died. The leak of the deportation date is usually credited to Georg Ferdinand Duckwitz, the German naval attaché, with Werner Best, the plenipotentiary, postponing and then deliberately undermining the operation.',
     levels: {
       primary: {
         cause: 'The Germans planned to arrest the Jewish families of Denmark, but ordinary Danes found out the night before and hid them.',
@@ -220,7 +220,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
       university: {
         cause: 'The Danish case is the limit case for two arguments about occupation. First, that an intact and non-collaborating administration could obstruct a deportation order: Danish ministers, judges, police and civil servants refused to co-operate, and Best\'s own staff recommended delay because Danish agricultural and industrial output and political quiet mattered more than 8,000 victims. Second, that Danish Jewry was unusually small, urban, integrated and citizenry-heavy — about two-thirds held Danish citizenship — so that rescue was logistically possible in a way it was not in Poland or the Baltic states.',
         what: 'The evacuation was organised in days by a spontaneous network rather than by one committee: the municipal authorities, the Danish resistance councils, the fishing fleets of Zealand, Swedish volunteers and the Swedish government\'s broadcast offer of asylum on 2 October. German manpower was deliberately thin — Best sent a few hundred men, and the Kriegsmarine and some Party officials objected to the operation from the start.',
-        consequence: 'The "Danish exception" is real but narrow, and it required a leaked timetable, a neutral neighbour sixteen kilometres away and an occupier that valued Danish food. Since the 1990s Danish scholarship has qualified the founding national story with the other side of the record: the anti-sabotage law of August 1943, the handing over of Danish communists to the Gestapo in 1941, and some 5,000 Danes who served in the Germanic SS and Waffen-SS. Rescue and collaboration existed in the same small society at the same time.',
+        consequence: 'The "Danish exception" is real but narrow, and it required a leaked timetable, a narrow sea crossing to a neutral neighbour, and an occupier that valued Danish food. Since the 1990s Danish scholarship has qualified the founding national story with the other side of the record: the anti-sabotage law of August 1943 and the handing over of Danish communists to the Gestapo in 1941. Rescue and collaboration existed in the same small society at the same time.',
       },
     },
   },
@@ -261,7 +261,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['mediterranean'],
     countries: ['United Kingdom', 'United States', 'Germany', 'Italy'],
     figures: ['alexander', 'kesselring', 'hitler'],
-    note: 'Six divisions landed on 22 January 1944 but Lucas consolidated instead of striking for the Alban Hills, giving Kesselring time to contain the bridgehead. The breakout on 23 May came only after the fall of Monte Cassino and cost the Allies about 44,000 casualties.',
+    note: 'Two American infantry divisions, with Ranger and Commando groups, landed on 22 January 1944 against almost no opposition - some 36,000 men on the first day - but Lucas consolidated instead of striking for the Alban Hills, giving Kesselring time to contain the bridgehead. The breakout on 23 May came only after the fall of Monte Cassino and cost the Allies some 34,000 casualties in the four-month battle.',
     levels: {
       primary: {
         cause: 'The Allies were stuck at Monte Cassino and tried landing troops behind German lines to get round them.',
@@ -332,7 +332,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
       university: {
         cause: 'The battle is central to the multi-national memory of the Italian campaign: the Polish II Corps at Cassino became the symbol of Poland’s fight despite the loss of its government’s position at home.',
         what: 'The bombing of the abbey on 15 February remains controversial: German officers later testified they had not occupied it before the attack and used the ruins to advantage afterwards.',
-        consequence: 'The collapse of the Gustav Line, combined with Operation Bagration beginning three weeks later, produced the worst crisis the German army experienced in the whole war.',
+        consequence: 'The collapse of the Gustav Line, combined with Operation Bagration beginning six weeks later, produced the worst crisis the German army experienced in the whole war.',
       },
     },
   },
@@ -345,7 +345,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['western'],
     countries: ['United Kingdom', 'United States', 'Canada', 'France', 'Germany'],
     figures: ['eisenhower', 'montgomery', 'rommel'],
-    note: 'The assault wave landed 156,000 men with 5,000 ships and 11,000 aircraft; 23,400 landed on the five beaches on 6 June. Allied casualties on D-Day were about 10,000, of whom some 4,400 were killed. German forces in the west numbered about 58 divisions by June, of which 19 were armoured, most of them in reserve.',
+    note: 'The assault wave landed 156,000 men — of whom 23,400 were airborne troops dropped inland — with 5,000 ships and 11,000 aircraft. Allied casualties on D-Day were about 10,000, of whom some 4,400 were killed. German forces in the west numbered about 58 divisions by June, of which ten were armoured, most of them in reserve.',
     levels: {
       primary: {
         cause: 'The Western Allies finally gathered enough ships, planes and soldiers to cross the sea and free Europe from German rule.',
@@ -400,7 +400,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     kind: 'battle',
     fronts: ['western'],
     countries: ['United States', 'United Kingdom', 'Poland', 'Canada', 'Germany', 'France'],
-    figures: ['patton', 'montgomery', 'model', 'clark'],
+    figures: ['patton', 'montgomery', 'model'],
     note: 'Some 50,000 German troops were captured and about 10,000 killed in the pocket, and most heavy equipment was lost, though perhaps 20,000-40,000 escaped. Allied advance guards reached the Seine by 25-26 August.',
     levels: {
       primary: {
@@ -485,7 +485,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['eastern'],
     countries: ['Poland', 'Germany'],
     figures: ['bor_komorowski', 'von_dem_bach', 'stalin'],
-    note: 'Under the surrender terms signed on 2 October — the Germans tore up the document signed by the Polish delegate Colonel Stanisław Czerwiński and insisted on signing with the commander of the Warsaw garrison, General Rainer Stahel, on 5 October — the remaining 15,000-17,000 insurgents were recognised as prisoners of war. Between October 1944 and January 1945 German demolition units destroyed roughly three-quarters of the city, including about 85% of its historic buildings, including the Royal Castle and the National Library.',
+    note: 'Under the surrender terms signed on 2 October — the Germans tore up the document signed by the Polish delegate Colonel Stanisław Czerwiński and insisted on signing with the commander of the Warsaw garrison, General Rainer Stahel, on 5 October — the remaining 15,000-17,000 insurgents were recognised as prisoners of war. Between October 1944 and January 1945 German demolition units destroyed between 85 and 90 per cent of the city\'s buildings and 90 per cent of its historic monuments, among them the Royal Castle and the National Library.',
     levels: {
       primary: {
         cause: 'After two months of hopeless fighting, the Polish fighters had to surrender to the Germans.',
@@ -494,11 +494,11 @@ export const EVENTS_1943_1945: WW2Event[] = [
       },
       secondary: {
         cause: 'The Home Army had no chance of holding the city against SS and police divisions without outside help, which never came.',
-        what: 'The surrender of 2 October was followed by methodical demolition: by January 1945 three-quarters of Warsaw’s buildings were gone.',
+        what: 'The surrender of 2 October was followed by methodical demolition: by January 1945 between 85 and 90 per cent of Warsaw’s buildings were gone.',
         consequence: 'Poland lost its capital, its archives and much of its cultural heritage, and the prewar elite that had led the underground was destroyed or exiled.',
       },
       university: {
-        cause: 'The destruction was carried out under Hitler’s order of 8 October 1944 that Warsaw be "levelled to the ground", part of a wider programme of cultural annihilation in the east.',
+        cause: 'The destruction was carried out under Hitler’s October 1944 order that Warsaw be "levelled to the ground", part of a wider programme of cultural annihilation in the east.',
         what: 'The deliberate demolition of museums, libraries and archives was ordered by Hitler and Himmler and carried out by von dem Bach’s command, following detailed demolition plans drawn up within weeks of the uprising.',
         consequence: 'The postwar reconstruction of the old town, using Canaletto’s paintings, became a UNESCO-listed symbol of national recovery and of the political will to restore what had been deliberately erased.',
       },
@@ -513,7 +513,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['western'],
     countries: ['Germany', 'United States', 'United Kingdom', 'Belgium'],
     figures: ['hitler', 'rundstedt', 'model', 'patton'],
-    note: 'Germany committed about 410,000 men, 1,500 tanks and 2,400 aircraft in its last major offensive in the west. Allied losses about 81,000 (19,000 killed); German losses are generally put at 60,000-85,000 men, and up to 100,000 if the captured are counted, together with most of the armour, fuel and trained crews available in the west.',
+    note: 'Germany committed about 410,000 men and just over 1,400 tanks and assault guns in its last major offensive in the west. Allied losses about 81,000 (19,000 killed); German losses are generally put at 60,000-85,000 men, and up to 100,000 if the captured are counted, together with most of the armour, fuel and trained crews available in the west.',
     levels: {
       primary: {
         cause: 'Hitler wanted one last big surprise attack in the west to split the British and Americans and force them to negotiate.',
@@ -527,7 +527,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
       },
       university: {
         cause: 'Hitler planned the offensive on the assumption of political fracture in the Grand Alliance, an assumption based on his reading of 1918 rather than on any reliable intelligence about Allied cohesion.',
-        what: 'The offensive also masked the transfer of forces east, and its failure deprived Germany of the mobile reserves that might have delayed the Soviet January offensive on the Vistula-Oder.',
+        what: 'The offensive was built largely from divisions transferred from the east, and its failure squandered the very mobile reserves Germany needed against the Soviet January offensive on the Vistula-Oder.',
         consequence: 'The battle is the last great German strategic offensive of the war and the largest and bloodiest battle the United States Army fought in the European theatre.',
       },
     },
@@ -597,7 +597,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['air_war'],
     countries: ['Germany', 'United Kingdom', 'United States'],
     figures: ['harris', 'churchill'],
-    note: 'Two RAF Bomber Command raids on the night of 13-14 February, a third on 14-15 February and two USAAF attacks by B-17s on 14 February created a fire storm. Recent official research puts deaths at about 24,000-25,000, revising the 200,000 figure propagated by Nazi propaganda and repeated during the Cold War.',
+    note: 'Two RAF Bomber Command raids on the nights of 13-14 and 14-15 February and two USAAF attacks by B-17s on 14 February created a fire storm. Recent official research puts deaths at about 24,000-25,000, revising the 200,000 figure derived from a report the 2010 historians\' commission found to be a postwar forgery, long attributed to Nazi propaganda.',
     levels: {
       primary: {
         cause: 'Allied bombers were attacking German cities to destroy the will and the ability to keep fighting.',
@@ -612,7 +612,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
       university: {
         cause: 'The historiography turns on the debate about the legitimacy of area bombing, on the accuracy of the casualty figures, and on the instrumental use of Dresden by the East German and West German right.',
         what: 'The 1945 report by the Luftwaffe and the 2010 study by the Dresden Historikerkommission are the key sources for the revised figures.',
-        consequence: 'Dresden has become the central case in the German debate about the Bombenkrieg — the bombing war — and its memory and in the broader question of how Allied and German civilian suffering are remembered together.',
+        consequence: 'Dresden has become the central case in the German debate about the Bombenkrieg — the bombing war — and its memory in the broader question of how Allied and German civilian suffering are remembered together.',
       },
     },
   },
@@ -635,7 +635,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
       secondary: {
         cause: 'Demolition charges had been fired only partly, and German units on the east bank were disorganised and retreating.',
         what: 'Elements of the 9th Armored Division crossed under fire and expanded a bridgehead that the Germans could not close despite counter-attacks.',
-        consequence: 'The crossing allowed the Western Allies to encircle the Ruhr, 20 miles to the north, weeks ahead of the planned Operation Plunder crossings.',
+        consequence: 'The crossing allowed the Western Allies to encircle the Ruhr, weeks ahead of the planned Operation Plunder crossings.',
       },
       university: {
         cause: 'Remagen’s strategic significance is debated: some historians argue the bridgehead had little effect because Allied planning already contemplated a broad advance, while others see it as an operational accident that materially accelerated the campaign.',
@@ -681,7 +681,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['eastern'],
     countries: ['Czechoslovakia', 'Germany', 'Soviet Union'],
     figures: ['stalin', 'hitler'],
-    note: 'The Prague Uprising of 5-9 May involved some 20,000 Czech insurgents against about 40,000 German troops. Konev’s 1st Ukrainian Front entered the city on 9 May; the US Third Army halted at Pilsen, some 90 km west, in line with Eisenhower’s decision, in line with Eisenhower’s decision not to take Prague.',
+    note: 'The Prague Uprising of 5-9 May involved some 20,000 Czech insurgents against about 40,000 German troops. Konev’s 1st Ukrainian Front entered the city on 9 May; the US Third Army halted at Pilsen, some 90 km west, in line with Eisenhower’s decision not to take Prague.',
     levels: {
       primary: {
         cause: 'Even after Germany surrendered in the west, people in Prague rose up against the German troops still in their city.',
@@ -695,7 +695,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
       },
       university: {
         cause: 'The episode is a key case in the counterfactual debate about whether a Western advance on Prague would have changed postwar Czechoslovakia. Eisenhower’s decision rested on military economy and on the existing agreement about occupation zones.',
-        what: 'Some 2\.9 million German-speaking civilians fled or were expelled from Czechoslovakia in 1945-46, one of the largest forced migrations of the war’s aftermath.',
+        what: 'Some 2.9 million German-speaking civilians fled or were expelled from Czechoslovakia in 1945-46, one of the largest forced migrations of the war’s aftermath.',
         consequence: 'The "liberation" of Prague became the founding myth of the Communist regime and the object of a fiercely contested counter-memory after 1968 and 1989.',
       },
     },
@@ -713,7 +713,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     levels: {
       primary: {
         cause: 'After Germany gave up, the winners met to decide how Germany would be governed and what its borders would be.',
-        what: 'At Potsdam they agreed on the four Ds — demilitarisation, denazification, democracy and decentralisation — and moved Poland’s border westwards.',
+        what: 'At Potsdam they agreed on the four Ds — demilitarisation, denazification, democratisation and decentralisation — and moved Poland’s border westwards.',
         consequence: 'Millions of Germans were forced to leave land in the east, and Germany stayed divided for forty-five years.',
       },
       secondary: {
@@ -739,7 +739,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['eastern'],
     countries: ['Soviet Union', 'Germany'],
     figures: ['zhukov'],
-    note: 'At 9.30 on 18 January 1943 the Leningrad Front\'s 67th Army attacked across the Neva from the Shlisselburg side and the Volkhov Front\'s 2nd Shock Army attacked from the east; the two met the same afternoon near Workers\' Settlement No. 1, west of Shlisselburg, and a corridor 8 to 11 kilometres wide was cleared along the ridge. A railway line was laid across the frozen Neva in seventeen days and the first train reached Leningrad on 7 February 1943. Iskra did not raise the siege - the Germans held the Shlisselburg ridge and the city continued to be shelled and bombed until 27 January 1944 - but it ended the starvation: rations were raised, artillery and reinforcements came in by rail, and the death rate of the second winter fell sharply.',
+    note: 'At 9.30 on 18 January 1943 the Leningrad Front\'s 67th Army attacked east across the Neva toward Shlisselburg and the Volkhov Front\'s 2nd Shock Army attacked from the east; the two met the same afternoon near Workers\' Settlement No. 1, west of Shlisselburg, and a corridor 8 to 11 kilometres wide was cleared along the ridge. A railway line was laid across the frozen Neva in seventeen days and the first train reached Leningrad on 7 February 1943. Iskra did not raise the siege - the Germans held the Shlisselburg ridge and the city continued to be shelled and bombed until 27 January 1944 - but it ended the starvation: rations were raised, artillery and reinforcements came in by rail, and the death rate of the second winter fell sharply.',
     levels: {
       primary: {
         cause: 'Leningrad had been cut off and starving for nearly two years, and the Soviet armies on both sides of the German lines were told to cut through and join hands.',
@@ -752,32 +752,32 @@ export const EVENTS_1943_1945: WW2Event[] = [
         consequence: 'The corridor let the Leningrad and Volkhov fronts build up for the January 1944 offensive that finally pushed the Germans away from the city. It also meant that the siege, which had become a symbol of civilian endurance, ended in a military operation rather than a relief.',
       },
       university: {
-        cause: 'The siege is the best-documented case of a city as a political object: Soviet sources long gave a death figure of about 630,000, and the post-1991 archival work, and the Nurnberg-era evidence, has pushed serious estimates towards a million, which changes how the blockade is classified as a policy rather than a by-product.',
-        what: 'Iskra also illustrates the operational learning of 1942-43 - massed artillery, air support flown in close cooperation with the advance, and the refusal to attempt a deep encirclement before the flanks were secure - which is the same method used at Stalingrad three weeks later.',
+        cause: 'The siege is the best-documented case of a city as a political object: Soviet sources long gave a death figure of about 630,000, and the post-1991 archival work, and the Nuremberg-era evidence, has pushed serious estimates towards a million, which changes how the blockade is classified as a policy rather than a by-product.',
+        what: 'Iskra also illustrates the operational learning of 1942-43 - massed artillery, air support flown in close cooperation with the advance, and the refusal to attempt a deep encirclement before the flanks were secure - the same method being proved at Stalingrad even as Iskra was fought.',
         consequence: 'The memory politics matter: Leningrad is the central sacred site of Russian wartime memory, and the siege\'s history was distorted by the Zhdanov-era account, which suppressed both the scale of the cannibalism and the responsibility of the city and front commanders.',
       },
     },
   },
   {
     id: 'second_battle_of_sirte',
-    date: '1943-03-22',
+    date: '1942-03-22',
     precision: 'day',
-    title: 'Malta\'s last dangerous convoy: the Second Battle of Sirte',
+    title: 'The Second Battle of Sirte: the Malta convoy of March 1942',
     kind: 'battle',
     fronts: ['mediterranean', 'air_war'],
     countries: ['United Kingdom', 'Italy', 'Germany'],
     figures: ['kesselring'],
-    note: 'A convoy of sixteen merchantmen running from Alexandria to Malta under a covering force that included two battleships was attacked from the air and then, on 22 March, off the Tunisian coast, by an Italian surface force built round the battleship Vittorio Veneto. Admiral Sir Philip Vian\'s escort - four light cruisers and seventeen destroyers - stood out repeatedly into torpedo ranges and smoke to cover the turn for the night, in a snowstorm that cancelled the Italians\' gunnery advantage, and the Italian squadron withdrew. Only two merchantmen reached Valletta. Air and surface attack continued over the next four days, and by April the island\'s fuel was so short that sorties had to be flown in batches to save it.',
+    note: 'A convoy of four merchantmen - Clan Campbell, Breconshire, Pampas and Talabot - ran from Alexandria to Malta, and Captain Philip Vian\'s escort of four light cruisers, an anti-aircraft cruiser and seventeen destroyers fought off heavy air attack before Admiral Iachino\'s Italian squadron, built round the battleship Vittorio Veneto, came out to cut it off. On 22 March, off the Libyan coast near Sirte, Vian turned his destroyers repeatedly into torpedo range and laid smoke, and the Italian squadron, its formation broken and unsure of the British strength, withdrew; no British warship was lost. The convoy was not saved: air attack over the next five days sank all four merchantmen, two of them in Grand Harbour after reaching it, and only some 5,000 tons of stores got through. The island\'s fuel was so short in April that sorties had to be flown in batches to save it.',
     levels: {
       primary: {
         cause: 'The island of Malta was starving because German and Italian planes and ships attacked every supply convoy sent to it.',
-        what: 'In March 1943 a big British escort force fought an Italian battle fleet off the coast of Tunisia to let a convoy through to Malta. Most of the supply ships were sunk.',
-        consequence: 'It was the high point of the blockade of Malta. Within a few months the Allies had won the air battle, and the island became a base for attacking the routes to North Africa.',
+        what: 'In March 1942 a British escort force fought an Italian battle fleet off the coast of Libya to let a convoy through to Malta. Most of the supply ships were sunk.',
+        consequence: 'It was the high point of the blockade of Malta. Over the following months the air battle over the island turned, and by the spring of 1943 it was again a base for attacking the routes to North Africa.',
       },
       secondary: {
-        cause: 'After Operation Pedestal in October 1942 the Axis kept air strength in Sicily - Fliegerkorps X and the Regia Aeronautica - and the central Mediterranean convoy route was contested by air, submarine, mine and surface force at once. Malta\'s aircraft and submarines were the reason, because they were sinking the tonnage Rommel needed.',
-        what: 'The action of 22 March is the last fleet-versus-escort battle of the Mediterranean war. The Italian fleet fought well and withdrew when its formation broke up in the snow; the British lost no warships and the convoy lost most of its ships.',
-        consequence: 'The episode settles an argument: the Axis blockade of Malta was militarily possible and was not exploited, because the Luftwaffe was being pulled to Tunisia and to Russia and because Hitler refused the airborne operation against the island. Four months later Sicily was invaded and the blockade was over.',
+        cause: 'From December 1941 Fliegerkorps X was based in Sicily alongside the Regia Aeronautica, and the central Mediterranean convoy route was contested by air, submarine, mine and surface force at once. Malta\'s aircraft and submarines were the reason, because they were sinking the tonnage Rommel needed.',
+        what: 'The action of 22 March was the only battle of the war in which an Italian battleship force fought against a British convoy escort. The Italian squadron fought well and withdrew when a torpedo attack and smoke broke up its formation; the British lost no warships in the surface action, and air attack over the following five days sank every merchantman in the convoy.',
+        consequence: 'The episode shows how close Malta came in 1942: the joint German-Italian plan to invade the island, Operation Herkules, was agreed in April 1942 and put off because of the fighting at Tobruk, and never launched. The blockade was not broken until the Pedestal convoy of August 1942 turned the air battle, and by the spring of 1943 it was over.',
       },
       university: {
         cause: 'The battle sits inside the still-active Italian argument about the Regia Marina\'s use: whether the fleet was deliberately husbanded for national defence, as the Italians have claimed, or whether fuel shortage and the absence of air cover made any fleet action a formality, as the British official history implied.',
@@ -803,7 +803,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
         consequence: 'North Africa was clear, and the Allies could invade Sicily and Italy that summer - the first Axis soil to be invaded.',
       },
       secondary: {
-        cause: 'The Axis lost the campaign because it was supplied across a short but contested sea passage while Malta stayed in Allied hands, and because Hitler would not evacuate an army he considered a diversion. Rommel had been flown out in October 1942; the troops left had no transport fuel and no air cover.',
+        cause: 'The Axis lost the campaign because it was supplied across a short but contested sea passage while Malta stayed in Allied hands, and because Hitler would not evacuate an army he considered a diversion. Rommel had been flown out in March 1943; the troops left had no transport fuel and no air cover.',
         what: 'Alexander\'s 15th Army Group closed on the Tunis port area from the west and north-west, where Anderson\'s First Army carried the main weight, and from the south-east, where Montgomery\'s Eighth Army pushed up from the Gabes line; the final blow in early May was preceded by a bombing and naval blockade which sank the last of the Axis transports in April, the evacuation of Tunis being carried out only at the cost of abandoning equipment.',
         consequence: 'The prisoners included trained pilots and ground crews the Luftwaffe could not replace, and the campaign destroyed the Axis\' Mediterranean air bases and shipping. The cost to the Allies was a long delay: a Mediterranean invasion in 1943 rather than a cross-Channel one, which is the heart of the "second front" argument.',
       },
@@ -851,7 +851,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['eastern'],
     countries: ['Soviet Union', 'Germany'],
     figures: ['zhukov'],
-    note: 'On 5 August 1943, on the twentieth day of Operation Kutuzov, Soviet forces took Orel, and that evening Moscow fired the first artillery salute of the war - 120 guns - a practice that then accompanied every major liberation. Belgorod was taken the same day, and on 23 August the fourth and final battle for Kharkov ended with the city in Soviet hands, so that within six weeks of the failure of Citadel the front had moved several hundred kilometres west. For the German side this was the end of the Orel salient as a jumping-off point and, as Manstein\'s subsequent withdrawals show, the loss of any freedom to choose where the fighting took place.',
+    note: 'On 5 August 1943, in the Orel phase of Operation Kutuzov, Soviet forces took Orel, and that evening Moscow fired the first artillery salute of the war - 120 guns - a practice that then accompanied every major liberation. Belgorod was taken the same day, and on 23 August the fourth and final battle for Kharkov ended with the city in Soviet hands, so that within six weeks of the failure of Citadel the front had moved several hundred kilometres west. For the German side this was the end of the Orel salient as a jumping-off point and, as Manstein\'s subsequent withdrawals show, the loss of any freedom to choose where the fighting took place.',
     levels: {
       primary: {
         cause: 'After the German attack at Kursk failed, the Soviet army attacked the towns that the attack had been launched from.',
@@ -938,11 +938,11 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['eastern'],
     countries: ['Soviet Union', 'Germany'],
     figures: ['konev', 'zhukov', 'hitler'],
-    note: 'The 1st and 2nd Ukrainian Fronts closed the ring round Group Stemmermann near Zvenigorodka on 24 January 1944 - some 80,000 to 86,000 Axis troops in a pocket roughly 35 to 40 kilometres across. Hitler at first forbade any breakout, then authorised one only after Manstein persuaded him; the relief attack by III Panzer Corps got to within a few dozen kilometres before being stopped on 17 February. The breakout began on the night of 16-17 February, in deep mud and snow, across the frozen Ros and through a forest where the Soviets had guns waiting: something like 10,000 to 12,000 men got out, with most of their weapons abandoned; the rest were killed or captured, and Soviet claims of 20,000 dead and 48,000 prisoners in the pocket are higher than German records support. Contemporaries called it a "little Stalingrad", and the comparison is the point: this time part of the encircled force was allowed to fight its way out, which is what Manstein argued for at Stalingrad and was refused.',
+    note: 'The 1st and 2nd Ukrainian Fronts closed the ring round Group Stemmermann near Zvenigorodka on 24 January 1944 and completed the encirclement on the 28th - some 60,000 German troops in six divisions in a pocket roughly 35 to 40 kilometres across. Hitler at first forbade any breakout, then authorised one only after Manstein persuaded him; the relief attack by III Panzer Corps got to within a few kilometres of the pocket before being stopped on 17 February. The breakout began on the night of 16-17 February, in deep mud and snow, across the frozen Ros and the Gniloy Tikich and through a forest where the Soviets had guns waiting: something like 27,000 to 40,000 men got out, with most of their weapons abandoned; the rest were killed or captured, and Soviet claims of 55,000 dead and 18,000 prisoners in the pocket are higher than German records support. Contemporaries called it a "little Stalingrad", and the comparison is the point: this time part of the encircled force was allowed to fight its way out, which is what Manstein argued for at Stalingrad and was refused.',
     levels: {
       primary: {
         cause: 'Two big Soviet attacks met behind the German lines and shut a whole force inside a ring of steel, as had happened at Stalingrad.',
-        what: 'In January and February 1944 about 80,000 German troops were surrounded near the town of Korsun. They were told to break out, and in the end roughly one in eight fought their way through.',
+        what: 'In January and February 1944 about 60,000 German troops were surrounded near the town of Korsun. They were told to break out, and in the end roughly half fought their way out.',
         consequence: 'It showed that the Red Army could now encircle large forces anywhere it chose. It also showed that Hitler had learned a little from Stalingrad - he let them try to escape.',
       },
       secondary: {
@@ -976,7 +976,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
       secondary: {
         cause: 'Hungary\'s Jewish community had survived the war so far mainly because Horthy and the Hungarian elite refused German demands, partly from antisemitism of a different kind - they wanted to keep Jewish property for Hungarians - and partly because the army needed the labour.',
         what: 'Occupation removed that protection in days. The Hungarian gendarmerie carried out the ghettoisation and the round-ups in the countryside, and the Reichsbahn organised the trains; the Jewish Councils in Budapest were asked to compile the registration lists, which is the most painful chapter of the whole story.',
-        consequence: 'Roughly 560,000 Hungarian Jews were killed, about one in every six Jews murdered in the Holocaust. The case also produced the most famous "help" story of the war, Raoul Wallenberg in Budapest, and the postwar argument over how much the Western allies could have done - including the refusal to bomb the railway lines.',
+        consequence: 'about 560,000 Hungarian Jews were killed, close to one in every ten Jews murdered in the Holocaust. The case also produced the most famous "help" story of the war, Raoul Wallenberg in Budapest, and the postwar argument over how much the Western allies could have done - including the refusal to bomb the railway lines.',
       },
       university: {
         cause: 'The Hungarian case is the strongest evidence in the functionalist-intentionalist debate for how much difference local administration makes: the same German apparatus that had taken years in France and the Netherlands completed the destruction of Hungarian Jewry in weeks because a functioning Hungarian state did the work voluntarily.',
@@ -1007,7 +1007,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
         consequence: 'For Romania, the loss of two of its best mountain divisions in the Crimea was decisive in convincing the king, the politicians and much of the army that the war had to be ended, which happened on 23 August 1944. For the Crimean Tatars the consequence was catastrophe, since the whole community was accused of collaboration and deported in May.',
       },
       university: {
-        cause: 'The military history is comparatively settled; what is contested is the classification of what followed. The deportation of the Crimean Tatars began on 18 May 1944, four days after Sevastopol fell: some 180,000 to 191,000 people were loaded into goods trains for Uzbekistan and the Urals in a few days, with most of the remainder of the population classified and moved.',
+        cause: 'The military history is comparatively settled; what is contested is the classification of what followed. The deportation of the Crimean Tatars began on 18 May 1944, nine days after Sevastopol fell: some 180,000 to 191,000 people were loaded into goods trains for Uzbekistan and the Urals in a few days, with most of the remainder of the population classified and moved.',
         what: 'Death rates in the trains and in the first years of exile are the subject of real dispute: Soviet figures put the deaths in the first months at well under 10,000, while Tatar estimates, based on the special-settlement registers, put the loss over the first few years at between a fifth and a half of the deported population, with about a third the figure many scholars use.',
         consequence: 'The Crimean Tatars were not allowed to return until 1989, and their return and citizenship is one of the live problems in Crimea today. That makes the 1944 deportation history with a present, which is why the classification question - genocide, crime against humanity, or a national security measure wrongly applied - is politically charged rather than academic.',
       },
@@ -1022,7 +1022,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['home', 'politics'],
     countries: ['Germany'],
     figures: ['hitler', 'goebbels'],
-    note: 'At 12:42 on 20 July 1944 Colonel Claus Schenk von Stauffenberg left a briefcase containing a British plastic explosive charge, with its chemical fuse delayed, in the conference room of the Wolfsschanze. A heavy oak table leg and the fact that the case had been moved shielded Hitler; four people died and Hitler was burned, deafened and thrown, but alive. The coup that was supposed to follow - Operation Valkyrie, using the Reserve Army to seize Berlin - collapsed within hours, partly because the conspirators could not get the code-word out and partly because Goebbels got through to Hitler on the phone and proved he was alive. Stauffenberg and three others were shot in the courtyard of the Bendler Block that night, and General Erich Fellgiebel, who had cut the communications and thereby helped cause the failure, was executed with them. In the following months some 200 people were executed and several thousand arrested, with families imprisoned under Sippenhaft - kinship liability. Hitler\'s response was to put Himmler at the head of the army, and to distrust the officer corps for the rest of the war.',
+    note: 'At 12:42 on 20 July 1944 Colonel Claus Schenk von Stauffenberg left a briefcase containing a British plastic explosive charge, with its chemical fuse delayed, in the conference room of the Wolfsschanze. A heavy oak table leg and the fact that the case had been moved shielded Hitler; four people died and Hitler was burned, deafened and thrown, but alive. The coup that was supposed to follow - Operation Valkyrie, using the Reserve Army to seize Berlin - collapsed within hours, partly because the conspirators could not get the code-word out and partly because Goebbels got through to Hitler on the phone and proved he was alive. Stauffenberg and three others were shot in the courtyard of the Bendler Block that night, and General Erich Fellgiebel, who had cut the communications and thereby helped cause the failure, was arrested and executed weeks later. In the following months some 200 people were executed and several thousand arrested, with families imprisoned under Sippenhaft - kinship liability. Hitler\'s response was to put Himmler at the head of the army, and to distrust the officer corps for the rest of the war.',
     levels: {
       primary: {
         cause: 'A group of German officers had decided that their country\'s leader was leading Germany to ruin, and that the war had to end.',
@@ -1050,7 +1050,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['western', 'air_war'],
     countries: ['United States', 'Germany', 'United Kingdom'],
     figures: ['eisenhower', 'patton', 'kluge'],
-    note: 'The breakout from the Normandy bocage was attempted across a seven-kilometre gap south of Saint Lo, already in American hands, on 24-25 July 1944, with about 1,500 heavy and medium bombers dropping some 4,000 tons of bombs behind the German positions. On both days the bombing fell short: on 24 July 25 Americans were killed, and on 25 July some 111 more, including Lieutenant General Leslie McNair, killed in his command car while taking part in a deception designed to convince the Germans that the main blow was coming at Pas-de-Calais. Manton Eddy\'s 4th Armored and the 2nd Armored Division went through the cratered ground on 25 and 26 July, and Avranches, at the bottom of the Cotentin peninsula, fell on 30 July, which opened the road into Brittany and out into France. George S. Patton\'s Third Army was activated on 1 August, and within six weeks the German army in France was destroyed at Falaise.',
+    note: 'The breakout from the Normandy bocage was attempted across a seven-kilometre gap south of Saint Lo, already in American hands, on 24-25 July 1944, with about 1,500 heavy and medium bombers dropping some 4,000 tons of bombs behind the German positions. On both days the bombing fell short: on 24 July 25 Americans were killed, and on 25 July some 111 more, including Lieutenant General Leslie McNair, killed in his command car while taking part in a deception designed to convince the Germans that the main blow was coming at Pas-de-Calais. The 4th Armored and the 2nd Armored Division went through the cratered ground on 26 and 27 July, and Avranches, at the bottom of the Cotentin peninsula, fell on 30 July, which opened the road into Brittany and out into France. George S. Patton\'s Third Army was activated on 1 August, and within six weeks the German army in France was destroyed at Falaise.',
     levels: {
       primary: {
         cause: 'The Allied armies in Normandy were stuck in fields divided by thick old hedges, where the defenders could hide and the attackers could not move. Somebody had to blast a hole in the German lines.',
@@ -1078,7 +1078,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['balkans', 'eastern', 'politics'],
     countries: ['Romania', 'Soviet Union', 'Germany'],
     figures: ['antonescu', 'stalin', 'hitler'],
-    note: 'King Michael I, with the Communist and peasant-party politicians and much of the general staff, arrested Marshal Ion Antonescu at midnight on 23 August 1944, having negotiated an armistice in Cairo. The Romanian army was ordered to cease fighting the Soviets and to resist German units, and the Red Army entered Bucharest on 31 August. Two things made this decisive. The first was oil: Romania had supplied the largest single source of German crude, and Ploiesti was lost to Germany in a single stroke, with much of the refining capacity destroyed by the American low-level raids of April and August 1944. The second was strategic: the Soviet advance through Romania outflanked the whole German position in the Balkans, opened the road to Bulgaria, Yugoslavia and Hungary, and made the Danube the axis of the 1945 campaign. Romania then fought on the Allied side until May 1945 with some 540,000 men, suffering around 170,000 casualties. The armistice signed in Moscow on 12 September 1944 restored the 1940 frontier with the Soviet Union, returned Northern Transylvania conditionally, placed Romania under Allied - meaning Soviet - control commission, and fixed reparations of 300 million dollars payable over six years.',
+    note: 'King Michael I, with the Communist and peasant-party politicians and much of the general staff, arrested Marshal Ion Antonescu at midnight on 23 August 1944, having negotiated an armistice in Cairo. The Romanian army was ordered to cease fighting the Soviets and to resist German units, and the Red Army entered Bucharest on 31 August. Two things made this decisive. The first was oil: Romania had supplied the largest single source of German crude, and Ploiesti was lost to Germany in a single stroke, with much of the refining capacity worn down by American day bombing from April to August 1944. The second was strategic: the Soviet advance through Romania outflanked the whole German position in the Balkans, opened the road to Bulgaria, Yugoslavia and Hungary, and made the Danube the axis of the 1945 campaign. Romania then fought on the Allied side until May 1945 with some 540,000 men, suffering around 170,000 casualties. The armistice signed in Moscow on 12 September 1944 restored the 1940 frontier with the Soviet Union, returned Northern Transylvania conditionally, placed Romania under Allied - meaning Soviet - control commission, and fixed reparations of 300 million dollars payable over six years.',
     levels: {
       primary: {
         cause: 'Romania had fought beside Germany, but by the summer of 1944 the war was clearly lost, and the king decided to change sides before the Soviet army arrived as an enemy.',
@@ -1162,7 +1162,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['western', 'home'],
     countries: ['Netherlands', 'Germany'],
     figures: [],
-    note: 'The famine in the western Netherlands - the Hongerwinter - was made by three decisions taken on top of each other. The Dutch government-in-exile called a railway strike on 17 September 1944 to support Operation Market Garden; the German Reich Commissar Arthur Seyss-Inquart responded by blocking all inland transport of food and fuel into the cities of North and South Holland and by confiscating coal, seed and livestock; and the front stabilised on the Scheldt and the Rhine, so that Rotterdam and Amsterdam lay behind German lines and out of reach of advancing Allied armies. By November the cities had essentially no food. Rations fell to 400-500 calories a day and in some places to under 200; people ate tulip bulbs, sugar beets, and the glue from wallpaper, and some 7,000 children were sent out to the countryside to be fed. Official postwar investigations counted around 20,000 deaths attributable to the famine, and estimates run higher, in a country that had not been starving since the 1840s. Hitler\'s decree of 19 March 1945 ordered the Netherlands to be devastated as it was abandoned. Relief came only at the end: British and Canadian airdrops over German-held territory from 30 April 1945 and armistice convoys in the first week of May, negotiated with the German commander in the west. The famine is one of the best-documented nutritional disasters in history, and its survivors\' medical records have produced decades of research into the effects of hunger before birth.',
+    note: 'The famine in the western Netherlands - the Hongerwinter - was made by three decisions taken on top of each other. The Dutch government-in-exile called a railway strike on 17 September 1944 to support Operation Market Garden; the German Reich Commissar Arthur Seyss-Inquart responded by blocking all inland transport of food and fuel into the cities of North and South Holland and by confiscating coal, seed and livestock; and the front stabilised on the Scheldt and the Rhine, so that Rotterdam and Amsterdam lay behind German lines and out of reach of advancing Allied armies. By November the cities had essentially no food. Rations fell to 400-500 calories a day and in some places to under 200; people ate tulip bulbs, sugar beets, and the glue from wallpaper, and some 7,000 children were sent out to the countryside to be fed. Official postwar investigations counted around 20,000 deaths attributable to the famine, and estimates run higher, in a country that had not been starving since the 1840s. Hitler\'s decree of 19 March 1945 ordered the Netherlands to be devastated as it was abandoned. Relief came only at the end: British and Canadian airdrops over German-held territory from 1 May 1945 and armistice convoys in the first week of May, negotiated with the German commander in the west. The famine is one of the best-documented nutritional disasters in history, and its survivors\' medical records have produced decades of research into the effects of hunger before birth.',
     levels: {
       primary: {
         cause: 'Dutch railway workers went on strike to help the Allies, and the German occupiers punished the whole country by stopping food and coal from reaching the cities.',
@@ -1177,7 +1177,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
       university: {
         cause: 'The famine is a case study in the ethics of resistance and reprisal - the same argument raised in Czechoslovakia after Heydrich\'s assassination and in Italy after 8 September 1943 - and in the history of occupation economics, since the Dutch case shows the requisition system collapsing into starvation with almost no military purpose.',
         what: 'The evidence base is unusually strong, because the Dutch population was already well-recorded and the postwar government commissioned a formal enquiry. The Dutch Famine Birth Cohort study, following people conceived or born during the winter of 1944-45 into adulthood, is one of the foundations of the "developmental origins of health and disease" literature.',
-        consequence: 'The long-run findings - higher rates of heart disease, diabetes and obesity among people who were in the womb during the famine - have made the Hongerwinter scientifically important far outside the history of the war, and ethically uncomfortable, since the cohort\'s existence depends on a punishment that killed tens of thousands.',
+        consequence: 'The long-run findings - higher rates of heart disease, diabetes and obesity among people who were in the womb during the famine - have made the Hongerwinter scientifically important far outside the history of the war, and ethically uncomfortable, since the cohort\'s existence depends on a punishment that killed some 20,000 people.',
       },
     },
   },
@@ -1246,7 +1246,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['eastern'],
     countries: ['Soviet Union', 'Germany', 'Poland'],
     figures: ['zhukov', 'konev', 'stalin'],
-    note: 'The Berlin strategic offensive opened on 16 April 1945 with a forty-minute artillery barrage on Zhukov\'s 1st Belorussian Front - some half a million shells - followed by an attack up the three ridges of the Seelow Heights, 60 kilometres east of the city, over ground that the Oder flood had turned to marsh. Zhukov had massed about a million men, 3,000 tanks and an enormous artillery density, and had some 140 anti-aircraft searchlights brought forward to dazzle the defenders; the beams lit up his own tanks as much as the enemy\'s and the first day was a costly failure, with several thousand Soviet casualties. Zhukov attacked again on 17 April, using the artillery to destroy the German positions by direct fire, and took the heights. Meanwhile Konev\'s 1st Ukrainian Front broke through south of the city and drove north-west, which is the reason for the quarrel that has coloured the history ever since: Stalin had promised the capture of Berlin to Zhukov and Konev both, and the race to take the city produced a chaotic street battle in which Konev\'s spearheads swung north to the Spandau side. The whole Berlin operation cost the Soviet side some 350,000 casualties, of whom something like 80,000 were killed, and the German side lost some half a million men killed, wounded and captured over the operation as a whole.',
+    note: 'The Berlin strategic offensive opened on 16 April 1945 with a forty-minute artillery barrage on Zhukov\'s 1st Belorussian Front - some half a million shells - followed by an attack up the three ridges of the Seelow Heights, 60 kilometres east of the city, over ground that the Oder flood had turned to marsh. Zhukov had massed about a million men, 3,000 tanks and an enormous artillery density, and had some 140 anti-aircraft searchlights brought forward to dazzle the defenders; the beams lit up his own tanks as much as the enemy\'s and the first day was a costly failure, with several thousand Soviet casualties. Zhukov renewed the attack on 18 April, using the artillery to destroy the German positions by direct fire, and took the heights by 19 April. Meanwhile Konev\'s 1st Ukrainian Front broke through south of the city and drove north-west, which is the reason for the quarrel that has coloured the history ever since: Stalin had promised the capture of Berlin to Zhukov and Konev both, and the race to take the city produced a chaotic street battle in which Konev\'s spearheads swung north to the Spandau side. The whole Berlin operation cost the Soviet side some 350,000 casualties, of whom something like 80,000 were killed, and the German side lost some half a million men killed, wounded and captured over the operation as a whole.',
     levels: {
       primary: {
         cause: 'Berlin was 60 kilometres away, and the Germans held three high ridges and a flooded river in the way. Everything the Red Army had was put into breaking through.',
@@ -1255,13 +1255,13 @@ export const EVENTS_1943_1945: WW2Event[] = [
       },
       secondary: {
         cause: 'Stalin wanted the city taken quickly, for the political reason that the Red Army should be there when the war ended in Europe, and he set two fronts - Zhukov\'s and Konev\'s - against each other by promising the capture of Berlin to whichever got there first.',
-        what: 'Zhukov attacked frontally because he had no time to manoeuvre, on ground chosen by the defenders, in flood, with his armour committed to the ridges. The searchlights were an improvised idea that backfired. He took the heights on 17 April by putting artillery guns into the streets and firing directly at the bunkers.',
+        what: 'Zhukov attacked frontally because he had no time to manoeuvre, on ground chosen by the defenders, in flood, with his armour committed to the ridges. The searchlights were an improvised idea that backfired. He took the heights by 19 April by putting artillery guns into direct fire against the bunkers.',
         consequence: 'The price is the real subject: Seelow is where the Red Army\'s 1945 learning curve met a defended river line, and the losses were appalling. It is also where the "race for Berlin" between the two marshals, and the quarrel over who took the Reichstag, began - a quarrel that Soviet memoirs distorted for forty years.',
       },
       university: {
         cause: 'The battle matters to the biggest argument about the Eastern Front in 1945: whether the Soviet army\'s final campaigns represent the maturity of deep operations, as the Soviet and Russian accounts insist, or a brute-force attrition in which manpower was substituted for skill, as the older Western literature said.',
         what: 'The evidence is now available on both sides and the truth is inconvenient to both: the operations were skilfully planned at the front and army level, and the political demands from above - speed, the capture of named cities, the two-front race - destroyed the option of manoeuvre and raised the cost of every set-piece.',
-        consequence: 'The human consequences are still argued: the treatment of German civilians in the spring of 1945, and the scale of mass rape, are now documented and accepted by serious Russian and German historians, and remain a live political problem in Russian-German memory. The Polish 1st Army fighting at Seelow and in Berlin, whose losses are commemorated on the Kustrin heights, is remembered in Poland and was written out of Soviet accounts.',
+        consequence: 'The human consequences are still argued: the treatment of German civilians in the spring of 1945, and the scale of mass rape, are now documented and accepted by serious Russian and German historians, and remain a live political problem in Russian-German memory. The Polish 1st Army fighting at Seelow and in Berlin, whose losses are commemorated on the Küstrin heights, is remembered in Poland and was written out of Soviet accounts.',
       },
     },
   },
@@ -1330,7 +1330,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['politics'],
     countries: ['Germany', 'Poland', 'Soviet Union', 'United Kingdom', 'United States'],
     figures: ['truman', 'stalin', 'churchill', 'attlee'],
-    note: 'The Potsdam Conference ran from 17 July to 2 August 1945, and its most lasting decision was the one Stalin had already made on the ground. Poland\'s frontier was moved west to the Oder and the Western Neisse, so that Germany lost Silesia, Pomerania, East Brandenburg, southern East Prussia and Danzig - roughly a quarter of the territory of the 1937 Reich - and the Poles who had lived east of the Curzon line, which the USSR kept, were resettled in it. The agreement used careful language: the transfer was described as "final" only pending a peace treaty, and it required that transfers be conducted "in an orderly and humane manner". Neither condition was met, and the peace treaty never came. Some 5 to 7 million people of German language and identity left or were driven out of what became Poland, and across east-central Europe, including the Sudetenland, the figure is perhaps three times that; Poles moving west were between 4 and 5 million, and some 1.5 million Ukrainians were moved east inside Poland and Soviet Ukraine. The other Potsdam decisions - the four D\'s, reparations to be taken from each zone with the western zones paying the Soviet share in industrial plant, the trial of major war criminals, and the rejection of any German central government - were carried out in the west and abandoned in the east within three years. Churchill was replaced on 26 July by Clement Attlee after the British election, which is why the conference\'s photographs show two British prime ministers and why the Soviet negotiators found the American delegation noticeably changed.',
+    note: 'The Potsdam Conference ran from 17 July to 2 August 1945, and its most lasting decision was the one Stalin had already made on the ground. Poland\'s frontier was moved west to the Oder and the Western Neisse, so that Germany lost Silesia, Pomerania, East Brandenburg, southern East Prussia and Danzig - roughly a quarter of the territory of the 1937 Reich - and the Poles who had lived east of the Curzon line, which the USSR kept, were resettled in it. The agreement used careful language: the transfer was described as "final" only pending a peace treaty, and it required that transfers be conducted "in an orderly and humane manner". Neither condition was met, and the peace treaty never came. Some 5 to 7 million people of German language and identity left or were driven out of what became Poland, and across east-central Europe, including the Sudetenland, the figure is perhaps two and a half times that; Poles moving west were between 4 and 5 million, and some 1.5 million Ukrainians were moved east inside Poland and Soviet Ukraine. The other Potsdam decisions - the four D\'s, reparations to be taken from each zone with the western zones paying the Soviet share in industrial plant, the trial of major war criminals, and the rejection of any German central government - were carried out in the west and abandoned in the east within three years. Churchill was replaced on 26 July by Clement Attlee after the British election, which is why the conference\'s photographs show two British prime ministers and why the Soviet negotiators found the American delegation noticeably changed.',
     levels: {
       primary: {
         cause: 'The countries that won the war had to decide where Germany\'s border would be, and the Soviet army was standing on the land in question.',
