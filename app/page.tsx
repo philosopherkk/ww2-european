@@ -20,7 +20,7 @@ import PeoplePanel from '@/components/PeoplePanel';
 import SourcesPanel from '@/components/SourcesPanel';
 import type { Level } from '@/lib/data';
 import { EVENTS } from '@/lib/data';
-import { LEVELS, MONTHS, monthKeyOf } from '@/lib/site';
+import { LEVELS, MONTHS, MONTH_INDEX, monthKeyOf, STAT_YEARS } from '@/lib/site';
 
 /* Leaflet touches `window` as soon as it loads, so the map is only ever
  * mounted in the browser. */
@@ -33,7 +33,8 @@ const MapBrowser = dynamic(() => import('@/components/MapBrowser'), {
   ),
 });
 
-const START = MONTHS.findIndex((m) => m.key === '1939-09');
+/* July 1914, so the first thing a reader sees is the month the war began. */
+const START = MONTHS.findIndex((m) => m.key === '1914-07');
 
 type Tab = 'map' | 'people' | 'numbers' | 'sources';
 
@@ -62,7 +63,7 @@ export default function Home() {
   const [playing, setPlaying] = useState(false);
   const [focusFigure, setFocusFigure] = useState<string | null>(null);
   const [openEvent, setOpenEvent] = useState<string | null>(null);
-  const [statYear, setStatYear] = useState(1939);
+  const [statYear, setStatYear] = useState(1914);
   const listRef = useRef<HTMLDivElement>(null);
 
   const month = MONTHS[monthIdx];
@@ -91,6 +92,33 @@ export default function Home() {
 
   // Keep the numbers tab in step with the month being read.
   useEffect(() => setStatYear(Number(monthKey.slice(0, 4))), [monthKey]);
+
+  /* The month belongs in the address bar, so that a teacher can copy the URL and
+     send someone straight to July 1916. Written with the History API rather than
+     useSearchParams: this page is one client component, and useSearchParams would
+     put the whole map behind a Suspense boundary for the prerender, while the
+     month can only be read in the browser anyway. replaceState rather than
+     pushState, because playing the war would otherwise add 53 history entries. */
+  useEffect(() => {
+    const monthInUrl = () => {
+      const key = new URLSearchParams(window.location.search).get('m');
+      return key && key in MONTH_INDEX ? MONTH_INDEX[key] : null;
+    };
+    const initial = monthInUrl();
+    if (initial !== null) setMonthIdx(initial);
+    const onPop = () => {
+      const idx = monthInUrl();
+      if (idx !== null) setMonthIdx(idx);
+    };
+    window.addEventListener('popstate', onPop);
+    return () => window.removeEventListener('popstate', onPop);
+  }, []);
+
+  useEffect(() => {
+    const url = new URL(window.location.href);
+    url.searchParams.set('m', monthKey);
+    window.history.replaceState(null, '', url.toString());
+  }, [monthKey]);
 
   const openEventFrom = useCallback((id: string) => {
     const event = EVENTS.find((e) => e.id === id);
@@ -128,11 +156,11 @@ export default function Home() {
         <div className="mx-auto flex max-w-[1400px] flex-wrap items-center justify-between gap-3 px-4 py-3">
           <div>
             <h1 className="text-lg font-bold leading-tight sm:text-xl">
-              The Second World War in Europe
+              The First World War in Europe
             </h1>
             <p className="text-xs text-stone-300 sm:text-[13px]">
-              Month by month, {MONTHS[0].label} to {MONTHS[MONTHS.length - 1].label} · borders,
-              armies, causes and consequences
+              Month by month, {MONTHS[0].label} to {MONTHS[MONTHS.length - 1].label} · empires at
+              war, front lines, causes and consequences
             </p>
           </div>
           <div
@@ -209,7 +237,7 @@ export default function Home() {
           </label>
 
           <span className="hidden gap-1 text-xs text-stone-500 sm:flex">
-            {[1938, 1939, 1940, 1941, 1942, 1943, 1944, 1945].map((y) => (
+            {STAT_YEARS.map((y) => (
               <button
                 key={y}
                 type="button"
@@ -253,16 +281,16 @@ export default function Home() {
                 <Toggle
                   on={showBorders}
                   onClick={() => setShowBorders((v) => !v)}
-                  label="Territories"
+                  label="Who was at war"
                 />
                 <Toggle
                   on={showCampaigns}
                   onClick={() => setShowCampaigns((v) => !v)}
-                  label="Army movements"
+                  label="Fronts and movements"
                 />
                 <span className="ml-auto text-xs text-stone-500">
                   {monthCount} {monthCount === 1 ? 'event' : 'events'} this month · click a country
-                  or a line for details
+                  or a line for details · the frontiers are those of July 1914
                 </span>
               </div>
               <div className="min-h-[460px] flex-1">
@@ -311,9 +339,9 @@ export default function Home() {
               >
                 {visibleEvents.length === 0 && (
                   <p className="rounded-lg border border-dashed border-stone-300 bg-white p-4 text-sm text-stone-500">
-                    Nothing dated to {month.label} in this database. Use the year or whole-war view,
-                    or step to a neighbouring month — the armies were usually doing something the
-                    month before.
+                    Nothing dated to {month.label} in this database. Use the year or whole-war
+                    view, or step to a neighbouring month — a battle that began at the end of one
+                    month is usually dated to the day it opened.
                   </p>
                 )}
                 {visibleEvents.map((e) => (
@@ -353,15 +381,15 @@ export default function Home() {
       <footer className="border-t border-stone-300 bg-white">
         <div className="mx-auto max-w-[1400px] px-4 py-4 text-xs leading-relaxed text-stone-500">
           <p>
-            An educational resource on the Second World War in Europe. Text written for three
-            reading levels; dates, strengths and casualty figures checked against the published
-            sources listed under &ldquo;Sources &amp; how to read&rdquo;, where the figures still
-            argued over by historians are set out as ranges.
+            An educational resource on the First World War in Europe and the empires drawn into
+            it. Text written for three reading levels; dates, strengths and casualty figures checked
+            against the published sources listed under &ldquo;Sources &amp; how to read&rdquo;, where
+            the figures still argued over by historians are set out as ranges.
           </p>
           <p className="mt-1">
-            Border geometry: European Borders During World War II (Stanford Spatial History
-            Project / ArcGIS feature layer). Territory status and all text: written and checked for
-            this site.
+            Border geometry: Jack Kavanagh, &ldquo;Map of Europe, c. 1914&rdquo; (University College
+            Dublin, Zenodo, CC BY 4.0), one boundary state for July 1914 drawn for every month. Who
+            was at war with whom, the front lines and all text: written and checked for this site.
           </p>
         </div>
       </footer>

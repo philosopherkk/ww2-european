@@ -14,15 +14,15 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "The Second World War in Europe · month by month",
-    template: "%s · The Second World War in Europe",
+    default: "The First World War in Europe · month by month",
+    template: "%s · The First World War in Europe",
   },
   description:
-    "An interactive map and timeline of the Second World War in Europe, 1938 to 1945: month-by-month borders, army movements, causes and consequences of each event, the people involved, and the population and army figures behind them. Written at three reading levels.",
+    "An interactive map and timeline of the First World War in Europe, July 1914 to November 1918: who was at war with whom each month, the front lines and offensives, the causes and consequences of each event, the people involved, and the population and army figures behind them. Written at three reading levels.",
   openGraph: {
-    title: "The Second World War in Europe, month by month",
+    title: "The First World War in Europe, month by month",
     description:
-      "Month-by-month borders, army movements, causes and consequences, people and figures — at three reading levels.",
+      "Month-by-month allegiances, front lines, causes and consequences, people and figures — at three reading levels.",
     type: "website",
     locale: "en_GB",
   },

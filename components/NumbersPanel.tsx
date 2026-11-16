@@ -1,20 +1,9 @@
 'use client';
 
 import { useMemo } from 'react';
-import type { Bloc, CountryStat, Level } from '@/lib/data';
-import { BLOCS, COUNTRY_STATS } from '@/lib/data';
-import { formatMillions, STAT_YEARS } from '@/lib/site';
-
-const BLOC_ORDER: Bloc[] = ['allies', 'soviet', 'axis', 'co_belligerent'];
-const BLOC_COLOR: Record<Bloc, string> = {
-  axis: '#A93226',
-  allies: '#2E6F9E',
-  soviet: '#C8791A',
-  co_belligerent: '#6E7F2B',
-  collaboration: '#8B5E3C',
-  occupied: '#5B6B73',
-  neutral: '#8C979B',
-};
+import type { CountryStat, Level } from '@/lib/data';
+import { COUNTRY_STATS } from '@/lib/data';
+import { BLOC_META, BLOC_ORDER, formatMillions, STAT_YEARS } from '@/lib/site';
 
 function Bar({
   value,
@@ -62,10 +51,10 @@ export default function NumbersPanel({
   const maxForces = Math.max(...rows.map((r) => r.year.armedForces));
 
   const blocTotals = useMemo(() => {
-    return BLOC_ORDER.map((bloc) => {
-      const members = rows.filter(
-        (r) => r.stat.bloc === bloc && BLOCS[bloc].members.includes(r.stat.name)
-      );
+    return BLOC_ORDER.filter((bloc) => COUNTRY_STATS.some((s) => s.bloc === bloc)).map((bloc) => {
+      /* Membership comes from the stats file itself, not a separate list, so
+         the two cannot drift apart. */
+      const members = rows.filter((r) => r.stat.bloc === bloc);
       return {
         bloc,
         forces: members.reduce((sum, r) => sum + r.year.armedForces, 0),
@@ -97,9 +86,12 @@ export default function NumbersPanel({
           ))}
         </div>
         <p className="mt-2 text-xs leading-relaxed text-stone-500">
-          Population is on that year&rsquo;s borders, so it moves when a country is invaded,
-          partitioned or annexed. Armed forces are personnel under arms in all services. Figures are
-          rounded estimates; see Sources for the ranges.
+          The outlines on the map never change, because only the frontiers of July 1914 are
+          drawn: a country&rsquo;s borders did move under occupation, but that is shown by who
+          held it, not by a new outline. Population is therefore on 1914 borders throughout. Armed
+          forces are personnel under arms in all services, at or near the year&rsquo;s height.
+          Figures are rounded estimates, and where historians differ the range is given under
+          &ldquo;Sources &amp; how to read&rdquo;.
         </p>
       </div>
 
@@ -107,13 +99,13 @@ export default function NumbersPanel({
         {blocTotals.map(({ bloc, forces, names }) => (
           <div key={bloc} className="rounded-lg border border-stone-300 bg-white p-3 shadow-sm">
             <div className="flex items-baseline justify-between">
-              <h3 className="font-semibold text-stone-800">{BLOCS[bloc].label}</h3>
-              <span className="text-sm font-bold tabular-nums" style={{ color: BLOC_COLOR[bloc] }}>
+              <h3 className="font-semibold text-stone-800">{BLOC_META[bloc].label}</h3>
+              <span className="text-sm font-bold tabular-nums" style={{ color: BLOC_META[bloc].color }}>
                 {forces > 0 ? `${forces.toFixed(1)} m under arms` : 'n/a'}
               </span>
             </div>
             <p className="mt-1 text-xs text-stone-500">{names.join(', ') || 'no member state with figures for this year'}</p>
-            <p className="mt-1 text-[13px] leading-snug text-stone-600">{BLOCS[bloc].blurb}</p>
+            <p className="mt-1 text-[13px] leading-snug text-stone-600">{BLOC_META[bloc].blurb}</p>
           </div>
         ))}
       </div>
@@ -153,9 +145,9 @@ function CountryRow({
         </h3>
         <span
           className="rounded-full px-2 py-px text-[10px] font-semibold text-white"
-          style={{ background: BLOC_COLOR[stat.bloc] }}
+          style={{ background: BLOC_META[stat.bloc].color }}
         >
-          {BLOCS[stat.bloc]?.label ?? stat.bloc}
+          {BLOC_META[stat.bloc].label}
         </span>
       </div>
 
@@ -178,7 +170,7 @@ function CountryRow({
           <Bar
             value={forces}
             max={maxForces}
-            color={BLOC_COLOR[stat.bloc]}
+            color={BLOC_META[stat.bloc].color}
             label={formatMillions(forces)}
           />
         </div>

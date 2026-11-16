@@ -15,7 +15,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync, readdirSync } from 
 import { join } from "node:path";
 
 const WIDTH = 320;
-const UA = "ww2-european-educational/1.0 (static educational site; portrait fetched once at build time)";
+const UA = "ww1-european-educational/1.0 (static educational site; portrait fetched once at build time)";
 
 const root = join(import.meta.dirname, "..");
 const imgDir = join(root, "public/data/portraits");
@@ -24,17 +24,51 @@ mkdirSync(imgDir, { recursive: true });
 mkdirSync(cacheDir, { recursive: true });
 const force = process.argv.includes("--force");
 
-// id -> Wikipedia article title. Defaults to the name in the data files; the
-// entries below are the titles that differ from it.
+/* The Great War cast: regnal numbers, Ottoman pashas and British peerages
+ * mean the article title is not the display name. A miss here shows up as a
+ * reader seeing initials instead of a photograph, so each one was checked
+ * against en.wikipedia.org before being written down. Defaults to the name in
+ * the data files. */
 const OVERRIDES = {
-  harris: "Arthur Harris",
-  gort: "John Gort, 1st Viscount Gort",
-  alexander: "Harold Alexander, 1st Earl Alexander of Tunis",
-  cripps: "Stafford Cripps",
-  haakon: "Haakon VII",
-  viktor_emmanuel: "Victor Emmanuel III of Italy",
-  leclerc: "Philippe Leclerc de Hauteclocque",
-  attlee: "Clement Attlee",
+  /* Regnal numbers and peerages: the article is named for the title, the display
+   * name is not, and a miss here means the reader sees initials instead of a
+   * photograph. Each of these was checked against en.wikipedia.org. */
+  wilhelm_ii: 'Wilhelm II',
+  nicholas_ii: 'Nicholas II of Russia',
+  franz_joseph: 'Franz Joseph I of Austria',
+  karl_i: 'Charles I of Austria',
+  ferdinand_bulgaria: 'Ferdinand I of Bulgaria',
+  mehmed_v: 'Mehmed V',
+  enver_pasha: 'Enver Pasha',
+  djemal_pasha: 'Ahmed Djemal Pasha',
+  talat_pasha: 'Mehmed Talaat Pasha',
+  boroevic: 'Svetozar Boroević',
+  moltke_the_younger: 'Helmuth von Moltke the Younger',
+  constantine_greece: 'Constantine I of Greece',
+  vittorio_emmanuele_iii: 'Victor Emmanuel III of Italy',
+  alexander_serbia: 'Alexander I of Serbia',
+  husayn_mecca: 'Hussein bin Ali, King of Hejaz',
+  feisal: 'Faisal I of Iraq',
+  grey: 'Edward Grey, 1st Viscount Grey of Fallodon',
+  kitchener: 'Horatio Herbert Kitchener, 1st Earl Kitchener',
+  french_john: 'John French, 1st Earl of Ypres',
+  haig: 'Douglas Haig, 1st Earl Haig',
+  robertson: 'Sir William Robertson, 1st Baronet',
+  gough: 'Hubert Gough',
+  alekseev_mikhail: 'Mikhail Alekseyev',
+  pilsudski_jozef: 'Józef Piłsudski',
+  mannerheim_carl: 'Carl Gustaf Emil Mannerheim',
+  george_v: 'George V',
+};
+
+/* id -> a specific Commons file, for the handful of people whose article lead
+ * image is a coat of arms, a recruiting poster, or a photograph in which
+ * somebody else is the first face you see. Every file below is used on the
+ * person's own article, so the credit Wikimedia gives still applies. */
+const FILE_OVERRIDES = {
+  franz_joseph: "Emperor Francis Joseph.jpg",
+  kitchener: "Horatio Herbert Kitchener, 1st Earl Kitchener of Khartoum, 1901.jpg",
+  nicholas_ii: "Nicholas II, 1914.jpg",
 };
 
 // Read id -> name straight out of the figure data rather than restating it here.
@@ -49,13 +83,18 @@ for (const f of readdirSync(figDir).filter((f) => f.startsWith("figures-"))) {
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 // Wikimedia rate-limits aggressively, so back off rather than hammer.
-async function withRetry(fn, tries = 4) {
+async function withRetry(fn, tries = 7) {
   for (let i = 0; ; i++) {
     try {
       return await fn();
     } catch (e) {
-      if (i >= tries || !/\b(429|503)\b/.test(String(e.message ?? e))) throw e;
-      const wait = 2000 * 2 ** i;
+      const msg = String(e.message ?? e);
+      if (i >= tries || !/\b(429|503)\b/.test(msg)) throw e;
+      /* Honour the server's own instruction when it sends one; otherwise back
+         off for up to a minute and a half. A Wikimedia 429 clears within a couple
+         of minutes of stopping, so the right response is simply to wait. */
+      const after = /Retry-After:(\d+)/i.exec(msg);
+      const wait = Math.min(90_000, after ? Number(after[1]) * 1000 : 5000 * 2 ** i);
       console.log(`   rate limited, waiting ${wait / 1000}s`);
       await sleep(wait);
     }
@@ -67,11 +106,14 @@ async function getJson(url) {
   if (existsSync(key) && !force) return JSON.parse(readFileSync(key, "utf8"));
   const j = await withRetry(async () => {
     const res = await fetch(url, { headers: { "user-agent": UA } });
-    if (!res.ok) throw new Error(`${res.status} for ${url}`);
+    if (!res.ok) {
+      const ra = res.headers.get("retry-after");
+      throw new Error(`${res.status} for ${url}${ra ? ` Retry-After:${ra}` : ""}`);
+    }
     return res.json();
   });
   writeFileSync(key, JSON.stringify(j));
-  await sleep(700);
+  await sleep(1500);
   return j;
 }
 
@@ -128,6 +170,19 @@ for (const f of noLead) {
   }
 }
 
+// 1c. A hand-picked file beats both of the above: the surname match takes the
+// first image on the page alphabetically, which for Kitchener is a poster and
+// for Franz Joseph a coat of arms.
+for (const [id, file] of Object.entries(FILE_OVERRIDES)) {
+  const f = figures.find((x) => x.id === id);
+  if (!f) {
+    console.log(`   override for ${id} ignored: no such figure in the data`);
+    continue;
+  }
+  lead[OVERRIDES[f.id] ?? f.name.trim()] = { file };
+  console.log(`   chosen file for ${id}: ${file}`);
+}
+
 // 2. attribution + sized preview for each file. converttitles and redirects matter:
 // the title Wikipedia gives can differ in case or underscores from the Commons page.
 const fileOf = (u) => decodeURIComponent(new URL(u).pathname.split("/").pop());
@@ -150,7 +205,27 @@ for (let i = 0; i < wanted.length; i += 20) {
   }
 }
 
-const clean = (v) => (v?.value ?? "").replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim();
+/* Commons returns these fields as escaped HTML, so "&" in a studio name comes
+   back as "&amp;" and a credit reads "Elliott amp; Fry" unless it is decoded. */
+const ENTITIES = {
+  "&amp;": "&",
+  "&quot;": '"',
+  "&#34;": '"',
+  "&#39;": "'",
+  "&apos;": "'",
+  "&lt;": "<",
+  "&gt;": ">",
+  "&nbsp;": " ",
+  "&#160;": " ",
+  "&#x2019;": "’",
+  "&rsquo;": "’",
+};
+const clean = (v) =>
+  (v?.value ?? "")
+    .replace(/<[^>]*>/g, "")
+    .replace(/&(?:[a-z]+|#x?[0-9]+);/gi, (m) => ENTITIES[m] ?? ENTITIES[m.toLowerCase()] ?? m)
+    .replace(/\s+/g, " ")
+    .trim();
 const entries = [];
 const missing = [];
 for (const { id, name } of figures) {
@@ -179,8 +254,36 @@ for (const { id, name } of figures) {
   // Commons puts the credit in Artist for some files and in Credit for others, and
   // fills unused ones with "Unknown author", which is not a credit we need to repeat.
   const rawArtist = clean(em.Artist) || clean(em.Credit) || "";
-  const artist = /^unknown/i.test(rawArtist) || rawArtist.length < 3 ? "" : rawArtist;
-  const licence = clean(em.LicenseShortName) || clean(em.UsageTerms) || "";
+  /* A Commons file with no licence template hands back the template's own warning
+     — "This tag does not indicate the copyright status of the attached work…" —
+     and it lands in the Artist field as often as in the licence field. It is not a
+     licence and not a credit, so it is dropped wherever it appears; the credit then
+     falls back to pointing at the file page, which is the only honest thing left. */
+  const NOTICE = /does not indicate|copyright status|no license|permission is required/i;
+  /* Commons fills an unused author field with placeholders: "Unknown author",
+     "Anonymous", "Not stated", "Original photographer", "presumably official" —
+     and when both Artist and Credit are empty it joins two of them, giving
+     "AnonymousUnknown author" or "Unknown authorUnknown author". None of those is
+     a credit, and printing one reads like an invented name, so strip every
+     occurrence and keep only what is left. */
+  const artist = NOTICE.test(rawArtist)
+    ? ""
+    : rawArtist
+        .replace(/[{}]/g, " ")
+        .replace(
+          /(unknown author|anonymous|unknown|inconnu|n\/a|n\.a\.|\bna\b|no author|not stated|presumably official|original photographer)/gi,
+          " "
+        )
+        .replace(/\s{2,}/g, " ")
+        .replace(/^[\s,;&/"“”()-]+|[\s,;&/"“”()-]+$/g, "")
+        /* An "&" left dangling by a placeholder goes, but an "&" inside a studio name
+           is part of the credit: Harris & Ewing, Underwood & Underwood, Elliott & Fry. */
+        .replace(/^&\s*/, "")
+        .replace(/\s*&$/, "")
+        .replace(/^[\s,;&/"“”()-]+|[\s,;&/"“”()-]+$/g, "")
+        .trim();
+  const rawLicence = clean(em.LicenseShortName) || clean(em.UsageTerms) || "";
+  const licence = NOTICE.test(rawLicence) ? "" : rawLicence;
   entries.push({
     id,
     src: `/data/portraits/${id}.${ext}`,

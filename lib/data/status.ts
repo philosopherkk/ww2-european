@@ -123,7 +123,7 @@ export const STATUS_META: Record<TerritoryStatus, StatusMeta> = {
     color: '#FFFFFF',
     stroke: '#78716C',
     legend:
-      'A territory the status table has never heard of. Land with no fill at all is simply outside this border dataset — Ireland, Iceland, the successor states of 1918, the North African coast.',
+      'A territory the status table has never heard of. Land with no fill at all is outside this border dataset: everything south of the 34th parallel (Egypt, Palestine, the Hejaz), everything east of the 45th meridian (Persia, Baku and the Caspian), the North African coast, Iceland and Malta, and every state that appeared in 1918 inside the old imperial shapes.',
   },
 };
 
@@ -142,8 +142,7 @@ export const GEOMETRY_NOTE =
  */
 const TIMELINES: Record<string, [string, TerritoryStatus][]> = {
   'Austria-Hungary': [
-    ['1914-07', 'at_peace'],
-    ['1914-08', 'central'], // war on Serbia 28 July, on Russia 5 August, on France 12 August 1914
+    ['1914-07', 'central'], // war on Serbia 28 July 1914, so a belligerent in the first snapshot too; on Russia 5 August, on France 12 August
     ['1918-11', 'dissolved'], // republics proclaimed 12 and 16 November 1918
   ],
   Serbia: [
@@ -185,9 +184,25 @@ const TIMELINES: Record<string, [string, TerritoryStatus][]> = {
     ['1916-01', 'occupied'], // the country overrun January 1916; the government goes into exile in Italy
     ['1918-11', 'entente'], // Podgorica reached 26 November 1918
   ],
+  Albania: [
+    ['1914-07', 'at_peace'],
+    // One colour for the whole war: whoever held the ground, Albania itself had
+    // no government at war with anyone. Serbian and Montenegrin armies invade
+    // August 1914, Prince Wied leaves 3 September, Italy takes Vlorë 28 December
+    // 1914; Austria-Hungary occupies Durrës in December 1915 and most of the
+    // interior in 1916, while France sets up a district at Korçë in December 1916.
+    ['1914-08', 'occupied'],
+    ['1918-09', 'at_peace'], // the last Central Powers troops are gone by late September 1918; French, Italian and Serbian troops stayed on
+  ],
   'Ottoman Empire': [
     ['1914-07', 'at_peace'],
-    ['1914-11', 'central'], // the Goeben and Breslau enter the Dardanelles; war on Russia 2 November, on Britain and France 5 November 1914
+    // October, not November: the Goeben and Breslau, flown by German crews and
+    // bought on 16 August, bombard the Russian Black Sea ports on 29 October
+    // 1914, which is the month this site dates the entry into the war. Russia
+    // declares war on 2 November and Britain and France on 5 November, so a
+    // reader who wants the declarations rather than the first shots will find
+    // the change one month later, and the October card says so.
+    ['1914-10', 'central'],
     ['1918-11', 'armistice'], // Mudros 30 October 1918; the Straits garrisoned from 1918-12
   ],
   Italy: [

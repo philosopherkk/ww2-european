@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { ChevronDown, Layers, Users } from 'lucide-react';
-import type { Level, LevelText, WW2Event } from '@/lib/data';
+import type { Level, LevelText, WW1Event } from '@/lib/data';
 import { FIGURE_BY_ID } from '@/lib/data';
 import { PORTRAITS } from '@/lib/data/portraits';
 import { FigurePortrait } from './FigurePortrait';
@@ -27,7 +27,7 @@ const HEADINGS: Record<Level, { cause: string; what: string; consequence: string
 };
 
 interface Props {
-  event: WW2Event;
+  event: WW1Event;
   level: Level;
   onOpenFigure?: (id: string) => void;
   defaultOpen?: boolean;

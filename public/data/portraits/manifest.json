@@ -1,394 +1,403 @@
 [
   {
-    "id": "alexander",
-    "src": "/data/portraits/alexander.jpg",
-    "file": "Harold Alexander E010750678-v8.jpg",
-    "artist": "Department of National Defence of Canada",
-    "licence": "Public domain",
-    "credit": "Department of National Defence of Canada, Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Harold_Alexander_E010750678-v8.jpg"
-  },
-  {
-    "id": "anders",
-    "src": "/data/portraits/anders.jpg",
-    "file": "Wladyslaw Anders.jpg",
+    "id": "alekseev_mikhail",
+    "src": "/data/portraits/alekseev_mikhail.jpg",
+    "file": "Начальник штаба Верховного главнокомандующего генерал Алексеев.jpg",
     "artist": "",
     "licence": "Public domain",
     "credit": "Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Wladyslaw_Anders.jpg"
+    "page": "https://commons.wikimedia.org/wiki/File:%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA_%D1%88%D1%82%D0%B0%D0%B1%D0%B0_%D0%92%D0%B5%D1%80%D1%85%D0%BE%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE_%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%83%D1%8E%D1%89%D0%B5%D0%B3%D0%BE_%D0%B3%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D0%BB_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B5%D0%B2.jpg"
   },
   {
-    "id": "antonescu",
-    "src": "/data/portraits/antonescu.jpg",
-    "file": "Ion Antonescu 1941.jpg",
+    "id": "alexander_serbia",
+    "src": "/data/portraits/alexander_serbia.jpg",
+    "file": "AlejandroIDeSerbiaEn1900.jpg",
+    "artist": "Mijatovic, Cedomilj, 1842-1932",
+    "licence": "Public domain",
+    "credit": "Mijatovic, Cedomilj, 1842-1932, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:AlejandroIDeSerbiaEn1900.jpg"
+  },
+  {
+    "id": "asquith",
+    "src": "/data/portraits/asquith.jpg",
+    "file": "Herbert Henry Asquith.jpg",
+    "artist": "Bain News Service",
+    "licence": "Public domain",
+    "credit": "Bain News Service, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Herbert_Henry_Asquith.jpg"
+  },
+  {
+    "id": "averescu",
+    "src": "/data/portraits/averescu.jpg",
+    "file": "Le général Averescu, commandant du 1er corps d'armée roumain (cleanup).jpg",
+    "artist": "Agence Rol",
+    "licence": "Public domain",
+    "credit": "Agence Rol, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Le_g%C3%A9n%C3%A9ral_Averescu,_commandant_du_1er_corps_d%27arm%C3%A9e_roumain_(cleanup).jpg"
+  },
+  {
+    "id": "bethmann_hollweg",
+    "src": "/data/portraits/bethmann_hollweg.jpg",
+    "file": "Theobald von Bethmann Hollweg(cropped).jpg",
+    "artist": "Image originally uploaded to Wikimedia commons by Lucius Castus; cropped and reuploaded by Emiya1980",
+    "licence": "CC BY-SA 3.0",
+    "credit": "Image originally uploaded to Wikimedia commons by Lucius Castus; cropped and reuploaded by Emiya1980, CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Theobald_von_Bethmann_Hollweg(cropped).jpg"
+  },
+  {
+    "id": "boroevic",
+    "src": "/data/portraits/boroevic.jpg",
+    "file": "Svetozar Boroëvić von Bojna 1914.jpg",
+    "artist": "George Grantham Bain Collection (Library of Congress",
+    "licence": "Public domain",
+    "credit": "George Grantham Bain Collection (Library of Congress, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Svetozar_Boro%C3%ABvi%C4%87_von_Bojna_1914.jpg"
+  },
+  {
+    "id": "bratianu_ion",
+    "src": "/data/portraits/bratianu_ion.jpg",
+    "file": "IonelBratianu3b40761r.jpg",
+    "artist": "Harris & Ewing Collection",
+    "licence": "Public domain",
+    "credit": "Harris & Ewing Collection, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:IonelBratianu3b40761r.jpg"
+  },
+  {
+    "id": "briand",
+    "src": "/data/portraits/briand.png",
+    "file": "Aristide Briand.png",
     "artist": "",
     "licence": "Public domain",
     "credit": "Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Ion_Antonescu_1941.jpg"
+    "page": "https://commons.wikimedia.org/wiki/File:Aristide_Briand.png"
   },
   {
-    "id": "attlee",
-    "src": "/data/portraits/attlee.jpg",
-    "file": "Person attlee2.jpg",
-    "artist": "Presumably Yousuf Karsh",
-    "licence": "Public domain",
-    "credit": "Presumably Yousuf Karsh, Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Person_attlee2.jpg"
-  },
-  {
-    "id": "auchinleck",
-    "src": "/data/portraits/auchinleck.jpg",
-    "file": "Claude Auchinleck Cecil Beaton photo.jpg",
-    "artist": "Cecil Beaton",
-    "licence": "Public domain",
-    "credit": "Cecil Beaton, Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Claude_Auchinleck_Cecil_Beaton_photo.jpg"
-  },
-  {
-    "id": "badoglio",
-    "src": "/data/portraits/badoglio.jpg",
-    "file": "Pietro Badoglio 3.jpg",
+    "id": "brusilov",
+    "src": "/data/portraits/brusilov.jpg",
+    "file": "Aleksei Brusilov at Rivne Railway Station (October 1915).jpg",
     "artist": "",
     "licence": "Public domain",
     "credit": "Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Pietro_Badoglio_3.jpg"
+    "page": "https://commons.wikimedia.org/wiki/File:Aleksei_Brusilov_at_Rivne_Railway_Station_(October_1915).jpg"
   },
   {
-    "id": "beria",
-    "src": "/data/portraits/beria.jpg",
-    "file": "Lavrentiy Beria portrait 2.jpg",
+    "id": "cadorna",
+    "src": "/data/portraits/cadorna.jpg",
+    "file": "Luigi Cadorna 02.jpg",
     "artist": "",
     "licence": "Public domain",
     "credit": "Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Lavrentiy_Beria_portrait_2.jpg"
+    "page": "https://commons.wikimedia.org/wiki/File:Luigi_Cadorna_02.jpg"
   },
   {
-    "id": "bittrich",
-    "src": "/data/portraits/bittrich.jpg",
-    "file": "Bittrich.jpg",
-    "artist": "",
+    "id": "cavell",
+    "src": "/data/portraits/cavell.jpg",
+    "file": "Edith Cavell.jpg",
+    "artist": "The original uploader was Vivedatica at Dutch Wikipedia.",
     "licence": "Public domain",
-    "credit": "Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Bittrich.jpg"
+    "credit": "The original uploader was Vivedatica at Dutch Wikipedia., Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Edith_Cavell.jpg"
   },
   {
-    "id": "bor_komorowski",
-    "src": "/data/portraits/bor_komorowski.jpg",
-    "file": "Tadeusz Bor Komorowski.jpg",
-    "artist": "",
+    "id": "clemenceau",
+    "src": "/data/portraits/clemenceau.jpg",
+    "file": "Georges Clemenceau par Nadar.jpg",
+    "artist": "Paul Nadar",
     "licence": "Public domain",
-    "credit": "Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Tadeusz_Bor_Komorowski.jpg"
+    "credit": "Paul Nadar, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Georges_Clemenceau_par_Nadar.jpg"
   },
   {
-    "id": "brauchitsch",
-    "src": "/data/portraits/brauchitsch.jpg",
-    "file": "Bundesarchiv Bild 183-E00780, Walther von Brauchitsch (cropped).jpg",
+    "id": "conrad_hoetzendorf",
+    "src": "/data/portraits/conrad_hoetzendorf.jpg",
+    "file": "HOTZENDORF, GEN. CONRAD VON. GENERAL STAFF, GERMANY (cropped).jpg",
+    "artist": "Harris & Ewing Collection",
+    "licence": "Public domain",
+    "credit": "Harris & Ewing Collection, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:HOTZENDORF,_GEN._CONRAD_VON._GENERAL_STAFF,_GERMANY_(cropped).jpg"
+  },
+  {
+    "id": "constantine_greece",
+    "src": "/data/portraits/constantine_greece.jpg",
+    "file": "Constantine I of Greece in 1914.jpg",
+    "artist": "Harris & Ewing Collection",
+    "licence": "Public domain",
+    "credit": "Harris & Ewing Collection, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Constantine_I_of_Greece_in_1914.jpg"
+  },
+  {
+    "id": "diaz",
+    "src": "/data/portraits/diaz.jpg",
+    "file": "Armando Diaz 01.jpg",
+    "artist": "Mario Nunes Vais",
+    "licence": "Public domain",
+    "credit": "Mario Nunes Vais, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Armando_Diaz_01.jpg"
+  },
+  {
+    "id": "djemal_pasha",
+    "src": "/data/portraits/djemal_pasha.jpg",
+    "file": "Ahmet Cemal Paşa on the shore of the Dead Sea2.jpg",
+    "artist": "American Colony (Jerusalem). Photo Department, photographer",
+    "licence": "Public domain",
+    "credit": "American Colony (Jerusalem). Photo Department, photographer, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Ahmet_Cemal_Pa%C5%9Fa_on_the_shore_of_the_Dead_Sea2.jpg"
+  },
+  {
+    "id": "enver_pasha",
+    "src": "/data/portraits/enver_pasha.jpg",
+    "file": "Enver Pasha 1911 (cropped).jpg",
+    "artist": "Nicola Perscheid",
+    "licence": "Public domain",
+    "credit": "Nicola Perscheid, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Enver_Pasha_1911_(cropped).jpg"
+  },
+  {
+    "id": "falkenhayn",
+    "src": "/data/portraits/falkenhayn.jpg",
+    "file": "Erich von Falkenhayn-retouched (cropped)(2).jpg",
+    "artist": "Albert Meyer",
+    "licence": "Public domain",
+    "credit": "Albert Meyer, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Erich_von_Falkenhayn-retouched_(cropped)(2).jpg"
+  },
+  {
+    "id": "feisal",
+    "src": "/data/portraits/feisal.jpg",
+    "file": "Bundesarchiv Bild 102-14113, Faisal I. König des Irak.jpg",
     "artist": "",
     "licence": "CC BY-SA 3.0 de",
     "credit": "CC BY-SA 3.0 de",
-    "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-E00780,_Walther_von_Brauchitsch_(cropped).jpg"
+    "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_102-14113,_Faisal_I._K%C3%B6nig_des_Irak.jpg"
   },
   {
-    "id": "chamberlain",
-    "src": "/data/portraits/chamberlain.jpg",
-    "file": "Neville-Chamberlain.jpg",
+    "id": "ferdinand_bulgaria",
+    "src": "/data/portraits/ferdinand_bulgaria.jpg",
+    "file": "Zar Ferdinand Bulgarien.jpg",
+    "artist": "",
+    "licence": "Public domain",
+    "credit": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Zar_Ferdinand_Bulgarien.jpg"
+  },
+  {
+    "id": "foch",
+    "src": "/data/portraits/foch.jpg",
+    "file": "Maarschalk Ferdinand Foch (1851-1929), Bestanddeelnr 158-1095 (cropped).jpg",
+    "artist": "Nationaal Archief",
+    "licence": "CC0",
+    "credit": "Nationaal Archief, CC0",
+    "page": "https://commons.wikimedia.org/wiki/File:Maarschalk_Ferdinand_Foch_(1851-1929),_Bestanddeelnr_158-1095_(cropped).jpg"
+  },
+  {
+    "id": "franz_joseph",
+    "src": "/data/portraits/franz_joseph.jpg",
+    "file": "Emperor Francis Joseph.jpg",
+    "artist": "Bain News Service, publisher",
+    "licence": "Public domain",
+    "credit": "Bain News Service, publisher, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Emperor_Francis_Joseph.jpg"
+  },
+  {
+    "id": "french_john",
+    "src": "/data/portraits/french_john.jpg",
+    "file": "Field Marshal Sir John French 2.jpg",
+    "artist": "Hainer, Paris",
+    "licence": "Public domain",
+    "credit": "Hainer, Paris, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Field_Marshal_Sir_John_French_2.jpg"
+  },
+  {
+    "id": "gallieni",
+    "src": "/data/portraits/gallieni.jpg",
+    "file": "Gen. Gallieni LCCN2014697689 (cropped).jpg",
+    "artist": "Bain News Service, publisher",
+    "licence": "Public domain",
+    "credit": "Bain News Service, publisher, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Gen._Gallieni_LCCN2014697689_(cropped).jpg"
+  },
+  {
+    "id": "george_v",
+    "src": "/data/portraits/george_v.jpg",
+    "file": "King George 1923 LCCN2014715558 (cropped).jpg",
     "artist": "Bassano Ltd",
     "licence": "Public domain",
     "credit": "Bassano Ltd, Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Neville-Chamberlain.jpg"
+    "page": "https://commons.wikimedia.org/wiki/File:King_George_1923_LCCN2014715558_(cropped).jpg"
   },
   {
-    "id": "churchill",
-    "src": "/data/portraits/churchill.jpg",
-    "file": "Sir Winston Churchill - 19086236948 (restored).jpg",
-    "artist": "Flickr: Sir Winston Churchill",
+    "id": "gough",
+    "src": "/data/portraits/gough.jpg",
+    "file": "The Battle of the Somme, July-November 1916 (IWM Q 35825D) (cropped).jpg",
+    "artist": "British Official Photographer",
     "licence": "Public domain",
-    "credit": "Flickr: Sir Winston Churchill, Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Sir_Winston_Churchill_-_19086236948_(restored).jpg"
+    "credit": "British Official Photographer, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:The_Battle_of_the_Somme,_July-November_1916_(IWM_Q_35825D)_(cropped).jpg"
   },
   {
-    "id": "clark",
-    "src": "/data/portraits/clark.jpg",
-    "file": "General Mark W. Clark (cropped).jpg",
-    "artist": "U.S. Army",
-    "licence": "Public domain",
-    "credit": "U.S. Army, Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:General_Mark_W._Clark_(cropped).jpg"
-  },
-  {
-    "id": "cripps",
-    "src": "/data/portraits/cripps.jpg",
-    "file": "Stafford Cripps 1947.jpg",
-    "artist": "Yousuf Karsh",
-    "licence": "CC0",
-    "credit": "Yousuf Karsh, CC0",
-    "page": "https://commons.wikimedia.org/wiki/File:Stafford_Cripps_1947.jpg"
-  },
-  {
-    "id": "daladier",
-    "src": "/data/portraits/daladier.jpg",
-    "file": "Édouard Daladier.jpg",
-    "artist": "Henri Manuel",
-    "licence": "Public domain",
-    "credit": "Henri Manuel, Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:%C3%89douard_Daladier.jpg"
-  },
-  {
-    "id": "darlan",
-    "src": "/data/portraits/darlan.jpg",
-    "file": "François Darlan.jpg",
-    "artist": "AnonymousUnknown author",
-    "licence": "Public domain",
-    "credit": "AnonymousUnknown author, Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Darlan.jpg"
-  },
-  {
-    "id": "de_gaulle",
-    "src": "/data/portraits/de_gaulle.jpg",
-    "file": "De Gaulle-OWI (cropped) (c)(2).jpg",
-    "artist": "Office of War Information, Overseas Picture Division. [1] The image prefix (LC-USW3) at the Library of Congress image page matches that of pictures from the OWI collection (see prefix list here.",
-    "licence": "Public domain",
-    "credit": "Office of War Information, Overseas Picture Division. [1] The image prefix (LC-USW3) at the Library of Congress image page matches that of pictures from the OWI collection (see prefix list here., Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:De_Gaulle-OWI_(cropped)_(c)(2).jpg"
-  },
-  {
-    "id": "donitz",
-    "src": "/data/portraits/donitz.jpg",
-    "file": "Bundesarchiv Bild 146-1976-127-06A, Karl Dönitz (cropped)(3) (cropped).jpg",
-    "artist": "",
-    "licence": "CC BY-SA 3.0 de",
-    "credit": "CC BY-SA 3.0 de",
-    "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1976-127-06A,_Karl_D%C3%B6nitz_(cropped)(3)_(cropped).jpg"
-  },
-  {
-    "id": "dowding",
-    "src": "/data/portraits/dowding.jpg",
-    "file": "Hugh Dowding.jpg",
-    "artist": "Ministry of Information official photographer",
-    "licence": "Public domain",
-    "credit": "Ministry of Information official photographer, Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Hugh_Dowding.jpg"
-  },
-  {
-    "id": "eisenhower",
-    "src": "/data/portraits/eisenhower.jpg",
-    "file": "Dwight D. Eisenhower, official photo portrait, May 29, 1959.jpg",
-    "artist": "White House",
-    "licence": "Public domain",
-    "credit": "White House, Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Dwight_D._Eisenhower,_official_photo_portrait,_May_29,_1959.jpg"
-  },
-  {
-    "id": "goebbels",
-    "src": "/data/portraits/goebbels.jpg",
-    "file": "Bundesarchiv Bild 146-1968-101-20A, Joseph Goebbels (cropped)(b).jpg",
-    "artist": "Heinrich Hoffmann",
-    "licence": "CC BY-SA 3.0 de",
-    "credit": "Heinrich Hoffmann, CC BY-SA 3.0 de",
-    "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1968-101-20A,_Joseph_Goebbels_(cropped)(b).jpg"
-  },
-  {
-    "id": "goering",
-    "src": "/data/portraits/goering.jpg",
-    "file": "Hermann Goering - Nuremberg 2 (cropped).jpg",
-    "artist": "Charles Alexander, Office of the United States Chief of Counsel",
-    "licence": "Public domain",
-    "credit": "Charles Alexander, Office of the United States Chief of Counsel, Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Hermann_Goering_-_Nuremberg_2_(cropped).jpg"
-  },
-  {
-    "id": "grandi",
-    "src": "/data/portraits/grandi.png",
-    "file": "Conte Dino Grandi (cropped).png",
-    "artist": "Herbert Vandyk",
-    "licence": "Public domain",
-    "credit": "Herbert Vandyk, Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Conte_Dino_Grandi_(cropped).png"
-  },
-  {
-    "id": "guderian",
-    "src": "/data/portraits/guderian.jpg",
-    "file": "Heinz Guderian portrait (cropped).jpg",
+    "id": "grey",
+    "src": "/data/portraits/grey.jpg",
+    "file": "Portrait of Edward Grey, 1st Viscount Grey of Fallodon.jpg",
     "artist": "",
     "licence": "Public domain",
     "credit": "Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Heinz_Guderian_portrait_(cropped).jpg"
+    "page": "https://commons.wikimedia.org/wiki/File:Portrait_of_Edward_Grey,_1st_Viscount_Grey_of_Fallodon.jpg"
   },
   {
-    "id": "guzzoni",
-    "src": "/data/portraits/guzzoni.jpg",
-    "file": "Alfredo guzzoni.jpg",
-    "artist": "Regio Esercito",
+    "id": "haig",
+    "src": "/data/portraits/haig.jpg",
+    "file": "Sir Douglas Haig.jpg",
+    "artist": "Elliott & Fry",
     "licence": "Public domain",
-    "credit": "Regio Esercito, Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Alfredo_guzzoni.jpg"
+    "credit": "Elliott & Fry, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Sir_Douglas_Haig.jpg"
   },
   {
-    "id": "haakon",
-    "src": "/data/portraits/haakon.jpg",
-    "file": "Portrett av Kong Haakon VII - King Haakon VII, 1946 (6817780248) (cropped).jpg",
-    "artist": "National Library of Norway",
-    "licence": "No restrictions",
-    "credit": "National Library of Norway, No restrictions",
-    "page": "https://commons.wikimedia.org/wiki/File:Portrett_av_Kong_Haakon_VII_-_King_Haakon_VII,_1946_(6817780248)_(cropped).jpg"
+    "id": "hindenburg",
+    "src": "/data/portraits/hindenburg.jpg",
+    "file": "Bundesarchiv Bild 183-C06886, Paul v. Hindenburg (cropped)(2).jpg",
+    "artist": ".",
+    "licence": "CC BY-SA 3.0 de",
+    "credit": "., CC BY-SA 3.0 de",
+    "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-C06886,_Paul_v._Hindenburg_(cropped)(2).jpg"
   },
   {
-    "id": "hacha",
-    "src": "/data/portraits/hacha.jpg",
-    "file": "Emil Hácha 5.jpg",
+    "id": "husayn_mecca",
+    "src": "/data/portraits/husayn_mecca.jpg",
+    "file": "Hussein bin Ali, Sharif of Mecca.jpg",
     "artist": "",
     "licence": "Public domain",
     "credit": "Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Emil_H%C3%A1cha_5.jpg"
+    "page": "https://commons.wikimedia.org/wiki/File:Hussein_bin_Ali,_Sharif_of_Mecca.jpg"
   },
   {
-    "id": "harris",
-    "src": "/data/portraits/harris.jpg",
-    "file": "Air Chief Marshal Sir Arthur Harris.jpg",
-    "artist": "Fg Off Stannus, Royal Air Force official photographer",
+    "id": "jaures",
+    "src": "/data/portraits/jaures.jpg",
+    "file": "Jean Jaurès, 1904, by Nadar.jpg",
+    "artist": "Nadar",
     "licence": "Public domain",
-    "credit": "Fg Off Stannus, Royal Air Force official photographer, Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Air_Chief_Marshal_Sir_Arthur_Harris.jpg"
+    "credit": "Nadar, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Jean_Jaur%C3%A8s,_1904,_by_Nadar.jpg"
   },
   {
-    "id": "heydrich",
-    "src": "/data/portraits/heydrich.jpg",
-    "file": "Reinhard Heydrich 1940 Portrait (3x4 cropped) (2).jpg",
-    "artist": "Uncredited photographer. US National Archives and Records Administration (NARA ): Unrestricted access and use.",
-    "licence": "Public domain",
-    "credit": "Uncredited photographer. US National Archives and Records Administration (NARA ): Unrestricted access and use., Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Reinhard_Heydrich_1940_Portrait_(3x4_cropped)_(2).jpg"
-  },
-  {
-    "id": "himmler",
-    "src": "/data/portraits/himmler.jpg",
-    "file": "Heinrich Himmler (3x4 cropped) (2).jpg",
-    "artist": "Friedrich Franz Bauer",
-    "licence": "CC BY-SA 3.0 de",
-    "credit": "Friedrich Franz Bauer, CC BY-SA 3.0 de",
-    "page": "https://commons.wikimedia.org/wiki/File:Heinrich_Himmler_(3x4_cropped)_(2).jpg"
-  },
-  {
-    "id": "hitler",
-    "src": "/data/portraits/hitler.jpg",
-    "file": "Hitler portrait crop (cropped)(2).jpg",
-    "artist": "Heinrich Hoffmann",
-    "licence": "CC BY-SA 3.0 de",
-    "credit": "Heinrich Hoffmann, CC BY-SA 3.0 de",
-    "page": "https://commons.wikimedia.org/wiki/File:Hitler_portrait_crop_(cropped)(2).jpg"
-  },
-  {
-    "id": "hodges",
-    "src": "/data/portraits/hodges.jpg",
-    "file": "Lt. Gen. Courtney H. Hodges (cropped).jpg",
-    "artist": "U.S. Army",
-    "licence": "Public domain",
-    "credit": "U.S. Army, Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Lt._Gen._Courtney_H._Hodges_(cropped).jpg"
-  },
-  {
-    "id": "horthy",
-    "src": "/data/portraits/horthy.jpg",
-    "file": "TF 62 2304 Nr001.jpg",
-    "artist": "Magyar Film Iroda",
-    "licence": "Public domain",
-    "credit": "Magyar Film Iroda, Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:TF_62_2304_Nr001.jpg"
-  },
-  {
-    "id": "hoss",
-    "src": "/data/portraits/hoss.jpg",
-    "file": "Rudolf Hoess, Auschwitz. Album Höcker (cropped)(2).jpg",
-    "artist": "Bernhard Walther or Ernst Hofmann or Karl-Friedrich Höcker",
-    "licence": "Public domain",
-    "credit": "Bernhard Walther or Ernst Hofmann or Karl-Friedrich Höcker, Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Rudolf_Hoess,_Auschwitz._Album_H%C3%B6cker_(cropped)(2).jpg"
-  },
-  {
-    "id": "hoth",
-    "src": "/data/portraits/hoth.jpg",
-    "file": "Hermann Hoth, defendant in High Command Trial.jpg",
-    "artist": "Office of Military Government for Germany, United States",
-    "licence": "Public domain",
-    "credit": "Office of Military Government for Germany, United States, Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Hermann_Hoth,_defendant_in_High_Command_Trial.jpg"
-  },
-  {
-    "id": "jodl",
-    "src": "/data/portraits/jodl.jpg",
-    "file": "Bundesarchiv Bild 146-1971-033-01, Alfred Jodl (cropped) (2).jpg",
+    "id": "joffre",
+    "src": "/data/portraits/joffre.jpg",
+    "file": "Portrait de Joseph Joffre (cropped)(b).jpg",
     "artist": "",
-    "licence": "CC BY-SA 3.0 de",
-    "credit": "CC BY-SA 3.0 de",
-    "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1971-033-01,_Alfred_Jodl_(cropped)_(2).jpg"
-  },
-  {
-    "id": "keitel",
-    "src": "/data/portraits/keitel.jpg",
-    "file": "Bundesarchiv Bild 183-H30220, Wilhelm Keitel (cropped)(2).jpg",
-    "artist": "",
-    "licence": "CC BY-SA 3.0 de",
-    "credit": "CC BY-SA 3.0 de",
-    "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-H30220,_Wilhelm_Keitel_(cropped)(2).jpg"
-  },
-  {
-    "id": "kesselring",
-    "src": "/data/portraits/kesselring.jpg",
-    "file": "Bundesarchiv Bild 183-R93434, Albert Kesselring (cropped)(2)(b).jpg",
-    "artist": "",
-    "licence": "CC BY-SA 3.0 de",
-    "credit": "CC BY-SA 3.0 de",
-    "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-R93434,_Albert_Kesselring_(cropped)(2)(b).jpg"
-  },
-  {
-    "id": "kluge",
-    "src": "/data/portraits/kluge.jpg",
-    "file": "Bundesarchiv Bild 146-1973-139-14, Günther v. Kluge (cropped)(3).jpg",
-    "artist": "",
-    "licence": "CC BY-SA 3.0 de",
-    "credit": "CC BY-SA 3.0 de",
-    "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1973-139-14,_G%C3%BCnther_v._Kluge_(cropped)(3).jpg"
-  },
-  {
-    "id": "konev",
-    "src": "/data/portraits/konev.jpg",
-    "file": "Ivan Stepanovich Konev (cropped).jpg",
-    "artist": "",
-    "licence": "CC BY 4.0",
-    "credit": "CC BY 4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Ivan_Stepanovich_Konev_(cropped).jpg"
-  },
-  {
-    "id": "leclerc",
-    "src": "/data/portraits/leclerc.jpg",
-    "file": "Leclerc-casque.jpg",
-    "artist": "Downey John, from the US Office of War Information",
     "licence": "Public domain",
-    "credit": "Downey John, from the US Office of War Information, Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Leclerc-casque.jpg"
+    "credit": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Portrait_de_Joseph_Joffre_(cropped)(b).jpg"
   },
   {
-    "id": "leeb",
-    "src": "/data/portraits/leeb.jpg",
-    "file": "Bundesarchiv Bild 101I-212-0214-08A, Russland-Nord, v. Leeb u.a. beim Kartenstudium.jpg",
-    "artist": "Hansen",
-    "licence": "CC BY-SA 3.0 de",
-    "credit": "Hansen, CC BY-SA 3.0 de",
-    "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-212-0214-08A,_Russland-Nord,_v._Leeb_u.a._beim_Kartenstudium.jpg"
+    "id": "karl_i",
+    "src": "/data/portraits/karl_i.jpg",
+    "file": "Karl I., Kaiser von Österreich (1887-1922).jpg",
+    "artist": "Hermann Clemens Kosel",
+    "licence": "Public domain",
+    "credit": "Hermann Clemens Kosel, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Karl_I.,_Kaiser_von_%C3%96sterreich_(1887-1922).jpg"
   },
   {
-    "id": "list",
-    "src": "/data/portraits/list.jpg",
-    "file": "Bundesarchiv Bild 183-S36487, Wilhelm List (cropped).jpg",
+    "id": "kerensky",
+    "src": "/data/portraits/kerensky.jpg",
+    "file": "Alexander Kerensky 1917 Crop.jpg",
+    "artist": "Karl Bulla",
+    "licence": "Public domain",
+    "credit": "Karl Bulla, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Alexander_Kerensky_1917_Crop.jpg"
+  },
+  {
+    "id": "kitchener",
+    "src": "/data/portraits/kitchener.jpg",
+    "file": "Horatio Herbert Kitchener, 1st Earl Kitchener of Khartoum, 1901.jpg",
+    "artist": "Duffus Bros",
+    "licence": "Public domain",
+    "credit": "Duffus Bros, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Horatio_Herbert_Kitchener,_1st_Earl_Kitchener_of_Khartoum,_1901.jpg"
+  },
+  {
+    "id": "kornilov",
+    "src": "/data/portraits/kornilov.jpg",
+    "file": "Kornilov1916.jpeg",
     "artist": "",
-    "licence": "CC BY-SA 3.0 de",
-    "credit": "CC BY-SA 3.0 de",
-    "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-S36487,_Wilhelm_List_(cropped).jpg"
+    "licence": "Public domain",
+    "credit": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Kornilov1916.jpeg"
   },
   {
-    "id": "mannerheim",
-    "src": "/data/portraits/mannerheim.jpg",
+    "id": "kuhlmann",
+    "src": "/data/portraits/kuhlmann.jpg",
+    "file": "Richard von Kühlmann cph,3b32192.jpg",
+    "artist": "Underwood & Underwood",
+    "licence": "Public domain",
+    "credit": "Underwood & Underwood, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Richard_von_K%C3%BChlmann_cph,3b32192.jpg"
+  },
+  {
+    "id": "lawrence",
+    "src": "/data/portraits/lawrence.jpg",
+    "file": "Te lawrence.jpg",
+    "artist": "Harris & Ewing",
+    "licence": "Public domain",
+    "credit": "Harris & Ewing, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Te_lawrence.jpg"
+  },
+  {
+    "id": "lenin",
+    "src": "/data/portraits/lenin.jpg",
+    "file": "Lenin in 1920 (cropped).jpg",
+    "artist": "",
+    "licence": "Public domain",
+    "credit": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Lenin_in_1920_(cropped).jpg"
+  },
+  {
+    "id": "liebknecht_karl",
+    "src": "/data/portraits/liebknecht_karl.jpg",
+    "file": "Karl Liebknecht portrait (cropped).jpg",
+    "artist": "",
+    "licence": "Public domain",
+    "credit": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Karl_Liebknecht_portrait_(cropped).jpg"
+  },
+  {
+    "id": "liman_von_sanders",
+    "src": "/data/portraits/liman_von_sanders.jpg",
+    "file": "Otto Liman Von Sanders.jpg",
+    "artist": "Photo © by American Press Assn.",
+    "licence": "Public domain",
+    "credit": "Photo © by American Press Assn., Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Otto_Liman_Von_Sanders.jpg"
+  },
+  {
+    "id": "loyd_george",
+    "src": "/data/portraits/loyd_george.jpg",
+    "file": "David Lloyd George.jpg",
+    "artist": "Harris & Ewing",
+    "licence": "Public domain",
+    "credit": "Harris & Ewing, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:David_Lloyd_George.jpg"
+  },
+  {
+    "id": "luddendorff",
+    "src": "/data/portraits/luddendorff.jpg",
+    "file": "Erich Ludendorff 1924 Portrait (3x4 cropped)(2)(b).jpg",
+    "artist": "",
+    "licence": "CC BY-SA 4.0",
+    "credit": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Erich_Ludendorff_1924_Portrait_(3x4_cropped)(2)(b).jpg"
+  },
+  {
+    "id": "luxemburg_rosa",
+    "src": "/data/portraits/luxemburg_rosa.jpg",
+    "file": "Rosa Luxemburg (cropped).jpg",
+    "artist": "",
+    "licence": "Public domain",
+    "credit": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Rosa_Luxemburg_(cropped).jpg"
+  },
+  {
+    "id": "mannerheim_carl",
+    "src": "/data/portraits/mannerheim_carl.jpg",
     "file": "Mannerheim1940.jpg",
     "artist": "sa-kuva",
     "licence": "Public domain",
@@ -396,85 +405,58 @@
     "page": "https://commons.wikimedia.org/wiki/File:Mannerheim1940.jpg"
   },
   {
-    "id": "manstein",
-    "src": "/data/portraits/manstein.jpg",
-    "file": "Bundesarchiv Bild 183-H01757, Erich von Manstein.jpg",
-    "artist": "",
-    "licence": "CC BY-SA 3.0 de",
-    "credit": "CC BY-SA 3.0 de",
-    "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-H01757,_Erich_von_Manstein.jpg"
-  },
-  {
-    "id": "metaxas",
-    "src": "/data/portraits/metaxas.jpg",
-    "file": "Ioannis Metaxas 1937 cropped.jpg",
-    "artist": "The Archaeological Society at Athens / εν Aθήναις Aρχαιολογική Eταιρεία, 1937",
+    "id": "mehmed_v",
+    "src": "/data/portraits/mehmed_v.jpg",
+    "file": "Sultan Muhammed Chan V., Kaiser der Osmanen 1915 C. Pietzner.jpg",
+    "artist": "Carl Pietzner",
     "licence": "Public domain",
-    "credit": "The Archaeological Society at Athens / εν Aθήναις Aρχαιολογική Eταιρεία, 1937, Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Ioannis_Metaxas_1937_cropped.jpg"
+    "credit": "Carl Pietzner, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Sultan_Muhammed_Chan_V.,_Kaiser_der_Osmanen_1915_C._Pietzner.jpg"
   },
   {
-    "id": "model",
-    "src": "/data/portraits/model.jpg",
-    "file": "Walther Model on the front (b) (cropped).jpg",
-    "artist": "",
+    "id": "moltke_the_younger",
+    "src": "/data/portraits/moltke_the_younger.jpg",
+    "file": "Generalleutnant von Moltke, der neue Chef des Generalstabs, 1906 (cropped).jpg",
+    "artist": "E. Bieber",
     "licence": "Public domain",
-    "credit": "Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Walther_Model_on_the_front_(b)_(cropped).jpg"
+    "credit": "E. Bieber, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Generalleutnant_von_Moltke,_der_neue_Chef_des_Generalstabs,_1906_(cropped).jpg"
   },
   {
-    "id": "molotov",
-    "src": "/data/portraits/molotov.jpg",
-    "file": "V.M. Molotov TASS Portrait Trim Edit Crop.jpg",
-    "artist": "G. Weil for TASS",
+    "id": "mustafa_kemal",
+    "src": "/data/portraits/mustafa_kemal.jpg",
+    "file": "Alexander I of Yugoslavia and Mustafa Kemal in 1933.jpg",
+    "artist": ".",
     "licence": "Public domain",
-    "credit": "G. Weil for TASS, Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:V.M._Molotov_TASS_Portrait_Trim_Edit_Crop.jpg"
+    "credit": "., Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Alexander_I_of_Yugoslavia_and_Mustafa_Kemal_in_1933.jpg"
   },
   {
-    "id": "montgomery",
-    "src": "/data/portraits/montgomery.jpg",
-    "file": "General Sir Bernard Montgomery in England, 1943 TR1036 (cropped).jpg",
-    "artist": "Possibly Edward George William Malindine",
+    "id": "nicholas_ii",
+    "src": "/data/portraits/nicholas_ii.jpg",
+    "file": "Nicholas II, 1914.jpg",
+    "artist": "Romanov court photographer",
     "licence": "Public domain",
-    "credit": "Possibly Edward George William Malindine, Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:General_Sir_Bernard_Montgomery_in_England,_1943_TR1036_(cropped).jpg"
+    "credit": "Romanov court photographer, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Nicholas_II,_1914.jpg"
   },
   {
-    "id": "mussolini",
-    "src": "/data/portraits/mussolini.jpg",
-    "file": "Mussolini mezzobusto.jpg",
+    "id": "nivelle",
+    "src": "/data/portraits/nivelle.jpg",
+    "file": "Robert Georges Nivelle.jpg",
     "artist": "",
     "licence": "Public domain",
     "credit": "Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Mussolini_mezzobusto.jpg"
+    "page": "https://commons.wikimedia.org/wiki/File:Robert_Georges_Nivelle.jpg"
   },
   {
-    "id": "park",
-    "src": "/data/portraits/park.jpg",
-    "file": "Air Marshal Sir Keith Park.jpg",
-    "artist": "Royal Air Force official photographer",
+    "id": "pershing",
+    "src": "/data/portraits/pershing.jpg",
+    "file": "General John Joseph Pershing head on shoulders.jpg",
+    "artist": "Bain News Service, publisher",
     "licence": "Public domain",
-    "credit": "Royal Air Force official photographer, Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Air_Marshal_Sir_Keith_Park.jpg"
-  },
-  {
-    "id": "patton",
-    "src": "/data/portraits/patton.jpg",
-    "file": "General George Patton by Robert F. Cranston, Lee Elkins, and Harry Warnecke, 1945, color carbro print, from the National Portrait Gallery - NPG-NPG 95 404Patton-000002.jpg",
-    "artist": "Robert F. Cranston / Harry Warnecke",
-    "licence": "CC0",
-    "credit": "Robert F. Cranston / Harry Warnecke, CC0",
-    "page": "https://commons.wikimedia.org/wiki/File:General_George_Patton_by_Robert_F._Cranston,_Lee_Elkins,_and_Harry_Warnecke,_1945,_color_carbro_print,_from_the_National_Portrait_Gallery_-_NPG-NPG_95_404Patton-000002.jpg"
-  },
-  {
-    "id": "paulus",
-    "src": "/data/portraits/paulus.jpg",
-    "file": "Friedrich Paulus.jpg",
-    "artist": "",
-    "licence": "Public domain",
-    "credit": "Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Friedrich_Paulus.jpg"
+    "credit": "Bain News Service, publisher, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:General_John_Joseph_Pershing_head_on_shoulders.jpg"
   },
   {
     "id": "petain",
@@ -486,174 +468,183 @@
     "page": "https://commons.wikimedia.org/wiki/File:P%C3%A9tain_-_portrait_photographique.jpg"
   },
   {
-    "id": "raeder",
-    "src": "/data/portraits/raeder.jpg",
-    "file": "Bundesarchiv Bild 146-1980-128-63, Erich Raeder (cropped)(b).jpg",
-    "artist": "Ernst Sandau Jr.",
-    "licence": "CC BY-SA 3.0 de",
-    "credit": "Ernst Sandau Jr., CC BY-SA 3.0 de",
-    "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1980-128-63,_Erich_Raeder_(cropped)(b).jpg"
-  },
-  {
-    "id": "ribbentrop",
-    "src": "/data/portraits/ribbentrop.jpg",
-    "file": "Bundesarchiv Bild 183-H04810, Joachim von Ribbentrop (cropped).jpg",
-    "artist": "",
-    "licence": "CC BY-SA 3.0 de",
-    "credit": "CC BY-SA 3.0 de",
-    "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-H04810,_Joachim_von_Ribbentrop_(cropped).jpg"
-  },
-  {
-    "id": "rokossovsky",
-    "src": "/data/portraits/rokossovsky.jpg",
-    "file": "Маршал Советского Союза дважды Герой Советского Союза Константин Константинович Рокоссовский (cropped).jpg",
-    "artist": "",
-    "licence": "CC BY 4.0",
-    "credit": "CC BY 4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%B0%D1%80%D1%88%D0%B0%D0%BB_%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%A1%D0%BE%D1%8E%D0%B7%D0%B0_%D0%B4%D0%B2%D0%B0%D0%B6%D0%B4%D1%8B_%D0%93%D0%B5%D1%80%D0%BE%D0%B9_%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%A1%D0%BE%D1%8E%D0%B7%D0%B0_%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%B8%D0%BD_%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%B8%D0%BD%D0%BE%D0%B2%D0%B8%D1%87_%D0%A0%D0%BE%D0%BA%D0%BE%D1%81%D1%81%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_(cropped).jpg"
-  },
-  {
-    "id": "rommel",
-    "src": "/data/portraits/rommel.jpg",
-    "file": "Erwin-Rommel-1941.jpg",
+    "id": "pilsudski_jozef",
+    "src": "/data/portraits/pilsudski_jozef.jpg",
+    "file": "Józef Piłsudski (-1930).jpg",
     "artist": "",
     "licence": "Public domain",
     "credit": "Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Erwin-Rommel-1941.jpg"
+    "page": "https://commons.wikimedia.org/wiki/File:J%C3%B3zef_Pi%C5%82sudski_(-1930).jpg"
   },
   {
-    "id": "roosevelt",
-    "src": "/data/portraits/roosevelt.jpg",
-    "file": "FDR-1944-Campaign-Portrait (3x4 retouched, cropped).jpg",
-    "artist": "Leon Perskie",
-    "licence": "CC BY 2.0",
-    "credit": "Leon Perskie, CC BY 2.0",
-    "page": "https://commons.wikimedia.org/wiki/File:FDR-1944-Campaign-Portrait_(3x4_retouched,_cropped).jpg"
+    "id": "poincare",
+    "src": "/data/portraits/poincare.jpg",
+    "file": "Raymond Poincaré officiel (cropped).jpg",
+    "artist": "Braun",
+    "licence": "Public domain",
+    "credit": "Braun, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Raymond_Poincar%C3%A9_officiel_(cropped).jpg"
   },
   {
-    "id": "rundstedt",
-    "src": "/data/portraits/rundstedt.jpg",
-    "file": "Bundesarchiv Bild 183-S37772, Gerd v. Rundstedt (cropped).jpg",
+    "id": "potiorek",
+    "src": "/data/portraits/potiorek.jpg",
+    "file": "Potiorek oskar fzm 1853 1933 photo2.jpg",
+    "artist": "Carl Pietzner",
+    "licence": "Public domain",
+    "credit": "Carl Pietzner, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Potiorek_oskar_fzm_1853_1933_photo2.jpg"
+  },
+  {
+    "id": "putnik",
+    "src": "/data/portraits/putnik.jpg",
+    "file": "Radomir Putnik3.jpg",
+    "artist": "Brock1990",
+    "licence": "CC BY-SA 4.0",
+    "credit": "Brock1990, CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Radomir_Putnik3.jpg"
+  },
+  {
+    "id": "rasputin",
+    "src": "/data/portraits/rasputin.jpg",
+    "file": "Rasputin PA.jpg",
+    "artist": "",
+    "licence": "Public domain",
+    "credit": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Rasputin_PA.jpg"
+  },
+  {
+    "id": "robertson",
+    "src": "/data/portraits/robertson.jpg",
+    "file": "Sir William Robertson negative (cropped).jpg",
+    "artist": "",
+    "licence": "Public domain",
+    "credit": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Sir_William_Robertson_negative_(cropped).jpg"
+  },
+  {
+    "id": "ruzsky",
+    "src": "/data/portraits/ruzsky.jpg",
+    "file": "Рузский Николай Владимирович (cropped).jpg",
+    "artist": "",
+    "licence": "Public domain",
+    "credit": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:%D0%A0%D1%83%D0%B7%D1%81%D0%BA%D0%B8%D0%B9_%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9_%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B8%D1%87_(cropped).jpg"
+  },
+  {
+    "id": "salandra",
+    "src": "/data/portraits/salandra.jpg",
+    "file": "Antonio Salandra.jpg",
+    "artist": "Camera dei Deputati",
+    "licence": "Public domain",
+    "credit": "Camera dei Deputati, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Antonio_Salandra.jpg"
+  },
+  {
+    "id": "sarrail",
+    "src": "/data/portraits/sarrail.jpg",
+    "file": "Maurice Sarrail.jpg",
+    "artist": "Bain News Service, publisher",
+    "licence": "Public domain",
+    "credit": "Bain News Service, publisher, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Maurice_Sarrail.jpg"
+  },
+  {
+    "id": "sazonov",
+    "src": "/data/portraits/sazonov.jpg",
+    "file": "Sergei Dmitrievich Sazonov (cropped).jpg",
+    "artist": "",
+    "licence": "Public domain",
+    "credit": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Sergei_Dmitrievich_Sazonov_(cropped).jpg"
+  },
+  {
+    "id": "scheer",
+    "src": "/data/portraits/scheer.jpg",
+    "file": "Almirante Reinhard Scheer.jpg",
+    "artist": "The European Library",
+    "licence": "CC0",
+    "credit": "The European Library, CC0",
+    "page": "https://commons.wikimedia.org/wiki/File:Almirante_Reinhard_Scheer.jpg"
+  },
+  {
+    "id": "scheidemann",
+    "src": "/data/portraits/scheidemann.jpg",
+    "file": "Bundesarchiv Bild 146-1979-122-29A, Philipp Scheidemann (cropped).jpg",
+    "artist": "",
+    "licence": "Public domain",
+    "credit": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1979-122-29A,_Philipp_Scheidemann_(cropped).jpg"
+  },
+  {
+    "id": "sonino",
+    "src": "/data/portraits/sonino.jpg",
+    "file": "Sidney sonnino.jpg",
+    "artist": "",
+    "licence": "Public domain",
+    "credit": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Sidney_sonnino.jpg"
+  },
+  {
+    "id": "talat_pasha",
+    "src": "/data/portraits/talat_pasha.jpg",
+    "file": "Mehmed talat.jpg",
+    "artist": "",
+    "licence": "Public domain",
+    "credit": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Mehmed_talat.jpg"
+  },
+  {
+    "id": "tirpitz",
+    "src": "/data/portraits/tirpitz.jpg",
+    "file": "Bundesarchiv Bild 134-C1743, Alfred von Tirpitz (cropped).jpg",
     "artist": "",
     "licence": "CC BY-SA 3.0 de",
     "credit": "CC BY-SA 3.0 de",
-    "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-S37772,_Gerd_v._Rundstedt_(cropped).jpg"
+    "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_134-C1743,_Alfred_von_Tirpitz_(cropped).jpg"
   },
   {
-    "id": "schuschnigg",
-    "src": "/data/portraits/schuschnigg.jpg",
-    "file": "KurtVonSchuschnigg1936-3.jpg",
-    "artist": "KurtVonSchuschnigg1936.jpg: Not stated by seller, may be unknown derivative work: Mario Link2012-07-20 09:22 (UTC)",
-    "licence": "Copyrighted free use",
-    "credit": "KurtVonSchuschnigg1936.jpg: Not stated by seller, may be unknown derivative work: Mario Link2012-07-20 09:22 (UTC), Copyrighted free use",
-    "page": "https://commons.wikimedia.org/wiki/File:KurtVonSchuschnigg1936-3.jpg"
+    "id": "trotsky",
+    "src": "/data/portraits/trotsky.jpg",
+    "file": "Leon Trotsky 1918 (3x4 rotated cropped b).jpg",
+    "artist": "Rijksmuseum",
+    "licence": "CC0",
+    "credit": "Rijksmuseum, CC0",
+    "page": "https://commons.wikimedia.org/wiki/File:Leon_Trotsky_1918_(3x4_rotated_cropped_b).jpg"
   },
   {
-    "id": "senger_etterlin",
-    "src": "/data/portraits/senger_etterlin.jpg",
-    "file": "Lieutenant General von Senger und Etterlin receiving instructions regarding surrender of German forces in Italy and western Austria.jpg",
-    "artist": "Sgt Bowman, No 2 Army Film &amp; Photographic Unit",
+    "id": "venizelos",
+    "src": "/data/portraits/venizelos.jpg",
+    "file": "Eleftherios Venizelos 1919 (3x4 cropped).jpg",
+    "artist": "Photoprint copyrighted by Harris & Ewing (No known restrictions on publication",
     "licence": "Public domain",
-    "credit": "Sgt Bowman, No 2 Army Film &amp; Photographic Unit, Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Lieutenant_General_von_Senger_und_Etterlin_receiving_instructions_regarding_surrender_of_German_forces_in_Italy_and_western_Austria.jpg"
+    "credit": "Photoprint copyrighted by Harris & Ewing (No known restrictions on publication, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Eleftherios_Venizelos_1919_(3x4_cropped).jpg"
   },
   {
-    "id": "stalin",
-    "src": "/data/portraits/stalin.jpg",
-    "file": "StalinCropped1943.jpg",
-    "artist": "Franklin D. Roosevelt Library Public Domain Photographs",
-    "licence": "Public domain",
-    "credit": "Franklin D. Roosevelt Library Public Domain Photographs, Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:StalinCropped1943.jpg"
-  },
-  {
-    "id": "tiso",
-    "src": "/data/portraits/tiso.jpg",
-    "file": "Bundesarchiv Bild 146-2010-0049, Josef Tiso.jpg",
-    "artist": "",
-    "licence": "CC BY-SA 3.0 de",
-    "credit": "CC BY-SA 3.0 de",
-    "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-2010-0049,_Josef_Tiso.jpg"
-  },
-  {
-    "id": "truman",
-    "src": "/data/portraits/truman.jpg",
-    "file": "TRUMAN 58-766-06 (cropped).jpg",
-    "artist": "National Archives and Records Administration. Office of Presidential Libraries. Harry S. Truman Library.",
-    "licence": "Public domain",
-    "credit": "National Archives and Records Administration. Office of Presidential Libraries. Harry S. Truman Library., Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:TRUMAN_58-766-06_(cropped).jpg"
-  },
-  {
-    "id": "vasilevsky",
-    "src": "/data/portraits/vasilevsky.jpg",
-    "file": "Aleksandr Vasilevsky 4.jpg",
-    "artist": "",
-    "licence": "CC BY 4.0",
-    "credit": "CC BY 4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Aleksandr_Vasilevsky_4.jpg"
-  },
-  {
-    "id": "viktor_emmanuel",
-    "src": "/data/portraits/viktor_emmanuel.jpg",
+    "id": "vittorio_emmanuele_iii",
+    "src": "/data/portraits/vittorio_emmanuele_iii.jpg",
     "file": "Albert I and Victor Emmanuel III.jpg",
-    "artist": "{Enrico D'Albertis}",
+    "artist": "Enrico D'Albertis",
     "licence": "Public domain",
-    "credit": "{Enrico D'Albertis}, Public domain",
+    "credit": "Enrico D'Albertis, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Albert_I_and_Victor_Emmanuel_III.jpg"
   },
   {
-    "id": "von_bock",
-    "src": "/data/portraits/von_bock.jpg",
-    "file": "Bundesarchiv Bild 146-1977-120-11, Fedor von Bock (cropped).jpg",
-    "artist": "",
-    "licence": "CC BY-SA 3.0 de",
-    "credit": "CC BY-SA 3.0 de",
-    "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1977-120-11,_Fedor_von_Bock_(cropped).jpg"
-  },
-  {
-    "id": "von_choltitz",
-    "src": "/data/portraits/von_choltitz.png",
-    "file": "Bundesarchiv Bild 183-2003-1112-500, Dietrich v. Choltitz-2 (cropped).png",
-    "artist": "Bundesarchiv_Bild_183-2003-1112-500,_Dietrich_v._Choltitz-2.jpg: *Bundesarchiv_Bild_183-2003-1112-500,_Dietrich_v._Choltitz.jpg: UnknownUnknown derivative work: PawełMM (talk) derivative work: PawełMM (talk)",
-    "licence": "CC BY-SA 3.0 de",
-    "credit": "Bundesarchiv_Bild_183-2003-1112-500,_Dietrich_v._Choltitz-2.jpg: *Bundesarchiv_Bild_183-2003-1112-500,_Dietrich_v._Choltitz.jpg: UnknownUnknown derivative work: PawełMM (talk) derivative work: PawełMM (talk), CC BY-SA 3.0 de",
-    "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-2003-1112-500,_Dietrich_v._Choltitz-2_(cropped).png"
-  },
-  {
-    "id": "von_dem_bach",
-    "src": "/data/portraits/von_dem_bach.jpg",
-    "file": "Bundesarchiv Bild 183-S73507, Erich von dem Bach-Zelewski.jpg",
-    "artist": "Unger",
-    "licence": "CC BY-SA 3.0 de",
-    "credit": "Unger, CC BY-SA 3.0 de",
-    "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-S73507,_Erich_von_dem_Bach-Zelewski.jpg"
-  },
-  {
-    "id": "weygand",
-    "src": "/data/portraits/weygand.jpg",
-    "file": "Maxime Weygand - portrait en pied (cropped) (2)(b).jpg",
-    "artist": "",
+    "id": "wilhelm_ii",
+    "src": "/data/portraits/wilhelm_ii.jpg",
+    "file": "Kaiser Wilhelm II of Germany - 1902 (3x4 cropped).jpg",
+    "artist": "Studio of Thomas Heinrich Voigt",
     "licence": "Public domain",
-    "credit": "Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Maxime_Weygand_-_portrait_en_pied_(cropped)_(2)(b).jpg"
+    "credit": "Studio of Thomas Heinrich Voigt, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Kaiser_Wilhelm_II_of_Germany_-_1902_(3x4_cropped).jpg"
   },
   {
-    "id": "winkelman",
-    "src": "/data/portraits/winkelman.jpg",
-    "file": "Henri Winkelman.jpg",
-    "artist": "",
+    "id": "wilson_us",
+    "src": "/data/portraits/wilson_us.jpg",
+    "file": "President Woodrow Wilson Harris & Ewing (3x4 cropped b).jpg",
+    "artist": "Harris & Ewing, photographer",
     "licence": "Public domain",
-    "credit": "Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Henri_Winkelman.jpg"
-  },
-  {
-    "id": "zhukov",
-    "src": "/data/portraits/zhukov.jpg",
-    "file": "Георгий Константинович Жуков в военной форме (cropped).jpg",
-    "artist": "не указан",
-    "licence": "CC BY 4.0",
-    "credit": "не указан, CC BY 4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:%D0%93%D0%B5%D0%BE%D1%80%D0%B3%D0%B8%D0%B9_%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%B8%D0%BD%D0%BE%D0%B2%D0%B8%D1%87_%D0%96%D1%83%D0%BA%D0%BE%D0%B2_%D0%B2_%D0%B2%D0%BE%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9_%D1%84%D0%BE%D1%80%D0%BC%D0%B5_(cropped).jpg"
+    "credit": "Harris & Ewing, photographer, Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:President_Woodrow_Wilson_Harris_%26_Ewing_(3x4_cropped_b).jpg"
   }
 ]

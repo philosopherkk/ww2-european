@@ -1,0 +1,1772 @@
+{
+ "Nieuwpoort": {
+  "lat": 51.1294306,
+  "lon": 2.751666,
+  "via": "osm:administrative Nieuwpoort, Veurne, West-Vlaanderen, Vlaanderen, 8620, "
+ },
+ "Ypres": {
+  "lat": 50.85083333,
+  "lon": 2.885,
+  "via": "wiki:Ypres"
+ },
+ "La Bassée": {
+  "lat": 50.5316305,
+  "lon": 2.8046597,
+  "via": "osm:administrative La Bassée, Lille, Nord, Hauts-de-France, France métropo"
+ },
+ "Arras": {
+  "lat": 50.292,
+  "lon": 2.78,
+  "via": "wiki:Arras"
+ },
+ "Carency": {
+  "lat": 50.3792,
+  "lon": 2.705,
+  "via": "wiki:Carency"
+ },
+ "Craonne": {
+  "lat": 49.4393721,
+  "lon": 3.7872093,
+  "via": "osm:administrative Craonne, Laon, Aisne, Hauts-de-France, France métropoli"
+ },
+ "Verdun": {
+  "lat": 49.162,
+  "lon": 5.3876,
+  "via": "wiki:Verdun"
+ },
+ "Badonviller": {
+  "lat": 48.5004262,
+  "lon": 6.892622,
+  "via": "osm:administrative Badonviller, Lunéville, Meurthe-et-Moselle, Grand Est, "
+ },
+ "Pfetterhouse": {
+  "lat": 47.502561,
+  "lon": 7.1667318,
+  "via": "osm:administrative Pfetterhouse, Altkirch, Haut-Rhin, Collectivité europée"
+ },
+ "Givenchy-lès-la-Bassée": {
+  "lat": 50.5289471,
+  "lon": 2.757521,
+  "via": "osm:administrative Givenchy-lès-la-Bassée, Béthune, Pas-de-Calais, Hauts-d"
+ },
+ "Vimy": {
+  "lat": 50.3733,
+  "lon": 2.8114,
+  "via": "wiki:Vimy"
+ },
+ "Quéant": {
+  "lat": 50.1803041,
+  "lon": 2.9823435,
+  "via": "osm:administrative Quéant, Arras, Pas-de-Calais, Hauts-de-France, France m"
+ },
+ "Épehy": {
+  "lat": 50.00752,
+  "lon": 3.12822,
+  "via": "osm:administrative Épehy, Péronne, Somme, Hauts-de-France, France métropol"
+ },
+ "Marcoing": {
+  "lat": 50.1224659,
+  "lon": 3.1725391,
+  "via": "osm:administrative Marcoing, Cambrai, Nord, Hauts-de-France, France métrop"
+ },
+ "Havrincourt": {
+  "lat": 50.1119,
+  "lon": 3.0869,
+  "via": "wiki:Havrincourt"
+ },
+ "Saint-Quentin": {
+  "lat": 49.8465253,
+  "lon": 3.2876843,
+  "via": "osm:administrative Saint-Quentin, Aisne, Hauts-de-France, France métropoli"
+ },
+ "La Fère": {
+  "lat": 49.6625,
+  "lon": 3.3664,
+  "via": "wiki:La Fère"
+ },
+ "Cerny": {
+  "lat": 48.4762984,
+  "lon": 2.3296911,
+  "via": "osm:administrative Cerny, Étampes, Essonne, Île-de-France, France métropol"
+ },
+ "Chemin des Dames": {
+  "lat": 49.44305556,
+  "lon": 3.71027778,
+  "via": "wiki:Chemin des Dames"
+ },
+ "Berry-au-Bac": {
+  "lat": 49.4031827,
+  "lon": 3.899841,
+  "via": "osm:administrative Berry-au-Bac, Laon, Aisne, Hauts-de-France, France métr"
+ },
+ "Massiges": {
+  "lat": 49.18703,
+  "lon": 4.74891,
+  "via": "osm:administrative Massiges, Châlons-en-Champagne, Marne, Grand Est, Franc"
+ },
+ "Douaumont": {
+  "lat": 49.2208,
+  "lon": 5.4322,
+  "via": "wiki:Douaumont"
+ },
+ "Fleury-devant-Douaumont": {
+  "lat": 49.19801,
+  "lon": 5.42883,
+  "via": "wiki:Fleury-devant-Douaumont"
+ },
+ "Souville": {
+  "lat": 48.1616488,
+  "lon": 2.3406155,
+  "via": "osm:hamlet Souville, Yèvre-le-Châtel, Yèvre-la-Ville, Pithiviers, "
+ },
+ "Thiaucourt-Regniéville": {
+  "lat": 48.9544506,
+  "lon": 5.8675157,
+  "via": "osm:administrative Thiaucourt-Regniéville, Toul, Meurthe-et-Moselle, Grand"
+ },
+ "Le Bonhomme": {
+  "lat": 48.1725057,
+  "lon": 7.1139949,
+  "via": "osm:administrative Le Bonhomme, Colmar-Ribeauvillé, Haut-Rhin, Collectivit"
+ },
+ "Narva": {
+  "lat": 59.37583333,
+  "lon": 28.19611111,
+  "via": "wiki:Narva"
+ },
+ "Pskov": {
+  "lat": 57.81666667,
+  "lon": 28.33333333,
+  "via": "wiki:Pskov"
+ },
+ "Daugavpils": {
+  "lat": 55.875,
+  "lon": 26.53555556,
+  "via": "wiki:Daugavpils"
+ },
+ "Jēkabpils": {
+  "lat": 56.49944444,
+  "lon": 25.87833333,
+  "via": "wiki:Jēkabpils"
+ },
+ "Riga": {
+  "lat": 56.94888889,
+  "lon": 24.10638889,
+  "via": "wiki:Riga"
+ },
+ "Baranovichi": {
+  "lat": 53.1322925,
+  "lon": 26.0184156,
+  "via": "osm:administrative Баранавічы, Брэсцкая вобласць, Беларусь"
+ },
+ "Pinsk": {
+  "lat": 53.01757,
+  "lon": 17.66409,
+  "via": "osm:administrative Pińsko, gmina Szubin, powiat nakielski, województwo kuj"
+ },
+ "Dubno": {
+  "lat": 49.6958519,
+  "lon": 14.0517442,
+  "via": "osm:administrative Dubno, okres Příbram, Středočeský kraj, Česko"
+ },
+ "Tarnopol": {
+  "lat": 52.9067178,
+  "lon": 23.7766515,
+  "via": "osm:administrative Tarnopol, gmina Narewka, powiat hajnowski, województwo "
+ },
+ "Lutsk": {
+  "lat": 50.7450733,
+  "lon": 25.320078,
+  "via": "osm:city Луцьк, Луцька міська громада, Луцький район, Волинська "
+ },
+ "Brody": {
+  "lat": 51.7867086,
+  "lon": 14.7743044,
+  "via": "osm:administrative Brody, gmina Brody, powiat żarski, województwo lubuskie"
+ },
+ "Chernivtsi": {
+  "lat": 48.2864702,
+  "lon": 25.9376532,
+  "via": "osm:administrative Чернівці, Чернівецька міська громада, Чернівецький райо"
+ },
+ "Rădăuți": {
+  "lat": 47.8461055,
+  "lon": 25.9181822,
+  "via": "osm:administrative Rădăuți, Suceava, 725400, România"
+ },
+ "Kolomyia": {
+  "lat": 48.5259211,
+  "lon": 25.0380538,
+  "via": "osm:administrative Коломия, Коломийська міська громада, Коломийський район"
+ },
+ "Pinsk, Belarus": {
+  "lat": 52.1113862,
+  "lon": 26.1025274,
+  "via": "osm:administrative Пінск, Брэсцкая вобласць, Беларусь"
+ },
+ "Dubno, Ukraine": {
+  "lat": 50.4187918,
+  "lon": 25.7455972,
+  "via": "osm:town Дубно, Дубенська міська громада, Дубенський район, Рівн"
+ },
+ "Ternopil": {
+  "lat": 49.56666667,
+  "lon": 25.6,
+  "via": "wiki:Ternopil"
+ },
+ "Brody, Ukraine": {
+  "lat": 50.0833041,
+  "lon": 25.1437921,
+  "via": "osm:administrative Броди, Бродівська міська громада, Золочівський район, Л"
+ },
+ "Ratne, Ukraine": {
+  "lat": 51.67145,
+  "lon": 24.52458,
+  "via": "osm:town Ратне, Ратнівська селищна громада, Ковельський район, У"
+ },
+ "Kovel, Ukraine": {
+  "lat": 51.2120807,
+  "lon": 24.7088806,
+  "via": "osm:town Ковель, Ковельська міська громада, Ковельський район, У"
+ },
+ "Olevsk, Ukraine": {
+  "lat": 51.22272,
+  "lon": 27.64881,
+  "via": "osm:administrative Олевськ, Олевська міська громада, Коростенський район, "
+ },
+ "Ruzhyn, Ukraine": {
+  "lat": 49.7230517,
+  "lon": 29.2095565,
+  "via": "osm:town Ружин, Ружинська селищна громада, Бердичівський район, "
+ },
+ "Monfalcone": {
+  "lat": 45.8049454,
+  "lon": 13.5330592,
+  "via": "osm:administrative Monfalcone, Gorizia, Friuli-Venezia Giulia, 34074, Ital"
+ },
+ "Gorizia": {
+  "lat": 45.93333333,
+  "lon": 13.61666667,
+  "via": "wiki:Gorizia"
+ },
+ "Tolmin": {
+  "lat": 46.1437264,
+  "lon": 13.789284,
+  "via": "osm:administrative Tolmin, Slovenija"
+ },
+ "Kobarid": {
+  "lat": 46.246,
+  "lon": 13.578,
+  "via": "wiki:Kobarid"
+ },
+ "Cividale del Friuli": {
+  "lat": 46.0731464,
+  "lon": 13.4387878,
+  "via": "osm:administrative Cividale del Friuli, Udine, Friuli-Venezia Giulia, 3304"
+ },
+ "Udine": {
+  "lat": 46.06666667,
+  "lon": 13.23333333,
+  "via": "wiki:Udine"
+ },
+ "Codroipo": {
+  "lat": 45.9545896,
+  "lon": 12.996359,
+  "via": "osm:administrative Codroipo, Udine, Friuli-Venezia Giulia, 33033, Italia"
+ },
+ "Conegliano": {
+  "lat": 45.9037297,
+  "lon": 12.2653108,
+  "via": "osm:administrative Conegliano, Treviso, Veneto, 31015, Italia"
+ },
+ "Vittorio Veneto": {
+  "lat": 45.98333333,
+  "lon": 12.3,
+  "via": "wiki:Vittorio Veneto"
+ },
+ "Monte Grappa": {
+  "lat": 45.8734305,
+  "lon": 11.7992028,
+  "via": "osm:peak Monte Grappa, Pieve del Grappa, Treviso, Veneto, 31017,"
+ },
+ "Asiago": {
+  "lat": 45.9133079,
+  "lon": 11.5025191,
+  "via": "osm:administrative Asiago, Vicenza, Veneto, 36012, Italia"
+ },
+ "San Donà di Piave": {
+  "lat": 45.6264384,
+  "lon": 12.6038371,
+  "via": "osm:administrative San Donà di Piave, Venezia, Veneto, 30027, Italia"
+ },
+ "Nervesa della Battaglia": {
+  "lat": 45.8216448,
+  "lon": 12.1951374,
+  "via": "osm:administrative Nervesa della Battaglia, Treviso, Veneto, 31040, Italia"
+ },
+ "Jesolo": {
+  "lat": 45.5347443,
+  "lon": 12.6538449,
+  "via": "osm:administrative Jesolo, Venezia, Veneto, 30016, Italia"
+ },
+ "Trento": {
+  "lat": 46.06666667,
+  "lon": 11.11666667,
+  "via": "wiki:Trento"
+ },
+ "Passo del Tonale": {
+  "lat": 46.2580068,
+  "lon": 10.5818471,
+  "via": "osm:yes Passo del Tonale, Ponte di Legno, Comunità montana dell"
+ },
+ "Passo dello Stelvio": {
+  "lat": 46.5286176,
+  "lon": 10.4532056,
+  "via": "osm:yes Passo dello Stelvio - Stilfser Joch, Passo Stelvio - St"
+ },
+ "Monte Adamello": {
+  "lat": 46.1561524,
+  "lon": 10.4963733,
+  "via": "osm:peak Monte Adamello, Saviore dell'Adamello, Comunità montana"
+ },
+ "Trieste": {
+  "lat": 45.65027778,
+  "lon": 13.77027778,
+  "via": "wiki:Trieste"
+ },
+ "Tarvisio": {
+  "lat": 46.505,
+  "lon": 13.57833333,
+  "via": "wiki:Tarvisio"
+ },
+ "Piave": {
+  "lat": 46.1349433,
+  "lon": 12.2277777,
+  "via": "osm:river Piave, Italia"
+ },
+ "Thessaloniki": {
+  "lat": 40.6403,
+  "lon": 22.9356,
+  "via": "wiki:Thessaloniki"
+ },
+ "Gevgelija": {
+  "lat": 41.1388664,
+  "lon": 22.5033192,
+  "via": "osm:administrative Гевгелија, Општина Гевгелија, 1480, Северна Македонија"
+ },
+ "Krivolak, North Macedonia": {
+  "lat": 41.5272796,
+  "lon": 22.1214028,
+  "via": "osm:administrative Криволак, Општина Неготино, Северна Македонија"
+ },
+ "Lake Doiran": {
+  "lat": 41.2115442,
+  "lon": 22.7464103,
+  "via": "osm:lake Дојранско Езеро / Λίμνη Δοϊράνη, Стар Дојран, Општина Д"
+ },
+ "Bitola": {
+  "lat": 41.03194444,
+  "lon": 21.33472222,
+  "via": "wiki:Bitola"
+ },
+ "Lake Prespa": {
+  "lat": 40.8858654,
+  "lon": 21.0351679,
+  "via": "osm:lake Преспанско Езеро / Λίμνες Πρέσπες / Liqeni i Prespës, С"
+ },
+ "Korçë": {
+  "lat": 40.61666667,
+  "lon": 20.76666667,
+  "via": "wiki:Korçë"
+ },
+ "Dobro Pole, North Macedonia": {
+  "lat": 41.0416132,
+  "lon": 21.88391,
+  "via": "osm:barracks Караула Добро поле, Градешница, Општина Новаци, Северна"
+ },
+ "Kaymakchalan": {
+  "lat": 43.2197633,
+  "lon": 27.9292842,
+  "via": "osm:residential Каймакчалан, кв. Левски, Варна, Район Приморски, Варна,"
+ },
+ "Erzurum": {
+  "lat": 39.90861111,
+  "lon": 41.27694444,
+  "via": "wiki:Erzurum"
+ },
+ "Erzincan": {
+  "lat": 39.6073429,
+  "lon": 39.2013209,
+  "via": "osm:administrative Erzincan, Doğu Anadolu Bölgesi, Türkiye"
+ },
+ "Giresun": {
+  "lat": 40.6531617,
+  "lon": 38.5172032,
+  "via": "osm:administrative Giresun, Karadeniz Bölgesi, Türkiye"
+ },
+ "Trabzon": {
+  "lat": 41.005,
+  "lon": 39.7225,
+  "via": "wiki:Trabzon"
+ },
+ "Tercan": {
+  "lat": 39.7764866,
+  "lon": 40.383,
+  "via": "osm:administrative Tercan, Erzincan, Doğu Anadolu Bölgesi, Türkiye"
+ },
+ "Hınıs": {
+  "lat": 39.3584857,
+  "lon": 41.7003273,
+  "via": "osm:administrative Hınıs, Erzurum, Doğu Anadolu Bölgesi, 25600, Türkiye"
+ },
+ "Malazgirt": {
+  "lat": 39.1461406,
+  "lon": 42.5409459,
+  "via": "osm:administrative Malazgirt, Muş, Doğu Anadolu Bölgesi, Türkiye"
+ },
+ "Muş": {
+  "lat": 38.9740786,
+  "lon": 41.9590433,
+  "via": "osm:administrative Muş, Doğu Anadolu Bölgesi, Türkiye"
+ },
+ "Bitlis": {
+  "lat": 38.4950867,
+  "lon": 42.1678372,
+  "via": "osm:administrative Bitlis, Doğu Anadolu Bölgesi, Türkiye"
+ },
+ "Van": {
+  "lat": 38.3249599,
+  "lon": 43.6589825,
+  "via": "osm:administrative Van, Doğu Anadolu Bölgesi, Türkiye"
+ },
+ "Batumi": {
+  "lat": 41.64583333,
+  "lon": 41.64166667,
+  "via": "wiki:Batumi"
+ },
+ "Ardahan": {
+  "lat": 41.0372501,
+  "lon": 42.7462189,
+  "via": "osm:administrative Ardahan, Doğu Anadolu Bölgesi, Türkiye"
+ },
+ "Kars": {
+  "lat": 40.60777778,
+  "lon": 43.09583333,
+  "via": "wiki:Kars"
+ },
+ "Gyumri": {
+  "lat": 40.7852085,
+  "lon": 43.8416095,
+  "via": "osm:administrative Գյումրի, Գյումրի-Ախուրյան սահման, Շիրակի մարզ, Հայաստան"
+ },
+ "Baku": {
+  "lat": 40.37555556,
+  "lon": 49.8325,
+  "via": "wiki:Baku"
+ },
+ "Basra": {
+  "lat": 30.515,
+  "lon": 47.81,
+  "via": "wiki:Basra"
+ },
+ "Kut": {
+  "lat": 49.8760429,
+  "lon": 35.8870942,
+  "via": "osm:administrative Кут, Нововодолазька селищна громада, Харківський район,"
+ },
+ "Amarah": {
+  "lat": 24.5978515,
+  "lon": 81.9168732,
+  "via": "osm:administrative Amarah, Hanumana Tahsil, Mauganj, Madhya Pradesh, India"
+ },
+ "Ali Al Gharbi": {
+  "lat": 32.461863,
+  "lon": 46.687938,
+  "via": "osm:administrative ناحية مرکز القضاء علي الغربي, قضاء علي الفربي, محافظة م"
+ },
+ "Ctesiphon": {
+  "lat": 33.09361111,
+  "lon": 44.58055556,
+  "via": "wiki:Ctesiphon"
+ },
+ "Baghdad": {
+  "lat": 33.31527778,
+  "lon": 44.36611111,
+  "via": "wiki:Baghdad"
+ },
+ "Tikrit": {
+  "lat": 34.615807,
+  "lon": 43.678606,
+  "via": "osm:city تكريت, ناحية مرکز قضاء تكريت, قضاء تكريت, محافظة صلاح ا"
+ },
+ "Kirkuk": {
+  "lat": 35.46666667,
+  "lon": 44.31666667,
+  "via": "wiki:Kirkuk"
+ },
+ "Mosul": {
+  "lat": 43.1901693,
+  "lon": 19.2889138,
+  "via": "osm:peak Mosul, Opština Pljevlja, Crna Gora / Црна Гора"
+ },
+ "Khanaqin": {
+  "lat": 34.3475129,
+  "lon": 45.3919154,
+  "via": "osm:town خانقين, ناحية مرکز قضاء خانقين, قضاء خانقین, محافظة ديا"
+ },
+ "Hamadan": {
+  "lat": 16.8584669,
+  "lon": -16.094523,
+  "via": "osm:village Hamadan همدان, الترارزة, Mauritanie موريتانيا"
+ },
+ "Kermanshah": {
+  "lat": 34.3789744,
+  "lon": 46.7010122,
+  "via": "osm:administrative استان کرمانشاه, ایران"
+ },
+ "Bandar-e Anzali": {
+  "lat": 37.4716356,
+  "lon": 49.4685904,
+  "via": "osm:administrative شهر بندر انزلی, بخش مرکزی بندر انزلی, شهرستان بندر انزل"
+ },
+ "Abadan": {
+  "lat": 40.116222,
+  "lon": 32.86544,
+  "via": "osm:administrative Abadan Mahallesi, Pursaklar, Ankara, İç Anadolu Bölgesi"
+ },
+ "Ahvaz": {
+  "lat": 31.3230637,
+  "lon": 48.67932,
+  "via": "osm:administrative شهر اهواز, بخش مرکزی, شهرستان اهواز, استان خوزستان, ایر"
+ },
+ "Kut, Iraq": {
+  "lat": 32.5010274,
+  "lon": 45.8296334,
+  "via": "osm:administrative ناحية مرکز قضاء الكوت, قضاء الكوت, محافظة واسط, العراق"
+ },
+ "Amarah, Iraq": {
+  "lat": 31.8497708,
+  "lon": 47.1496466,
+  "via": "osm:city العمارة, ناحية مرکز قضاء العمارة, قضاء العمارة, محافظة "
+ },
+ "Mosul, Iraq": {
+  "lat": 36.343694,
+  "lon": 43.0997156,
+  "via": "osm:residential الموصل, حي السكك, الموصل, ناحية مرکز قضاء الموصل, قضاء "
+ },
+ "Hamadan, Iran": {
+  "lat": 34.9726302,
+  "lon": 48.6563818,
+  "via": "osm:administrative استان همدان, ایران"
+ },
+ "Abadan, Iran": {
+  "lat": 30.34694444,
+  "lon": 48.2825,
+  "via": "wiki:Abadan, Iran"
+ },
+ "Najaf, Iraq": {
+  "lat": 32.0010227,
+  "lon": 44.3299926,
+  "via": "osm:city النجف, ناحية مرکز قضاء النجف, قضاء النجف, محافظة النجف,"
+ },
+ "Nasiriyah, Iraq": {
+  "lat": 31.0439957,
+  "lon": 46.2399386,
+  "via": "osm:city الناصرية, ناحية مرکز قضاء الناصرية, قضاء الناصرية, محاف"
+ },
+ "Qurna, Iraq": {
+  "lat": 30.9843712,
+  "lon": 47.4248651,
+  "via": "osm:industrial Al-Qurna Diesel Power Station, ناحية الأمام الصادق, قضا"
+ },
+ "Gaza": {
+  "lat": -23.328398,
+  "lon": 32.8066057,
+  "via": "osm:administrative Gaza, Zona Sul, Moçambique"
+ },
+ "Beersheba": {
+  "lat": 31.2457442,
+  "lon": 34.7925181,
+  "via": "osm:administrative באר שבע, נפת באר שבע, מחוז הדרום, ישראל"
+ },
+ "Jerusalem": {
+  "lat": 31.77888889,
+  "lon": 35.22555556,
+  "via": "wiki:Jerusalem"
+ },
+ "Jaffa": {
+  "lat": -17.7867205,
+  "lon": 146.0064418,
+  "via": "osm:administrative Jaffa, El Arish, Queensland, Australia"
+ },
+ "Tulkarm": {
+  "lat": 32.3106038,
+  "lon": 35.0214896,
+  "via": "osm:cemetery Tulkarm, خربة التيا, حدود مدينة طولكرم, منطقة أ, الضفة "
+ },
+ "Nazareth": {
+  "lat": 32.70194444,
+  "lon": 35.30333333,
+  "via": "wiki:Nazareth"
+ },
+ "Afula": {
+  "lat": 32.6075587,
+  "lon": 35.2890861,
+  "via": "osm:administrative עפולה, נפת יזרעאל, מחוז הצפון, ישראל"
+ },
+ "Beit She'an": {
+  "lat": 32.4967519,
+  "lon": 35.4973022,
+  "via": "osm:administrative בית שאן, נפת יזרעאל, מחוז הצפון, ישראל"
+ },
+ "Haifa": {
+  "lat": 32.81916667,
+  "lon": 34.99916667,
+  "via": "wiki:Haifa"
+ },
+ "Damascus": {
+  "lat": 33.51305556,
+  "lon": 36.30944444,
+  "via": "wiki:Damascus"
+ },
+ "Aleppo": {
+  "lat": 39.8239684,
+  "lon": -80.4461845,
+  "via": "osm:village Aleppo, Aleppo Township, Greene County, Pennsylvania, 1"
+ },
+ "Amman": {
+  "lat": 31.94972222,
+  "lon": 35.93277778,
+  "via": "wiki:Amman"
+ },
+ "Daraa": {
+  "lat": 32.6227776,
+  "lon": 36.1067639,
+  "via": "osm:city درعا, ناحية مركز درعا, منطقة درعا, محافظة درعا, سوريا"
+ },
+ "Ma'an": {
+  "lat": 30.2,
+  "lon": 35.7333329,
+  "via": "osm:city معان, Ma'an Sub-District, لواء قصبة معان, معان, الأردن"
+ },
+ "Aqaba": {
+  "lat": 32.35068,
+  "lon": 35.3497657,
+  "via": "osm:village Aqqaba, منطقة أ, الضفة الغربية, الأراضي الفلسطينية"
+ },
+ "Gaza City": {
+  "lat": 31.5075,
+  "lon": 34.45972222,
+  "via": "wiki:Gaza City"
+ },
+ "Jaffa, Tel Aviv": {
+  "lat": 32.0443395,
+  "lon": 34.7509908,
+  "via": "osm:administrative יפו, תל־אביב–יפו, נפת תל אביב, מחוז תל אביב, ישראל"
+ },
+ "Aleppo, Syria": {
+  "lat": 36.19924,
+  "lon": 37.1637253,
+  "via": "osm:city حلب, ناحية مركز جبل سمعان, منطقة جبل سمعان, محافظة حلب,"
+ },
+ "Aqaba, Jordan": {
+  "lat": 29.5266483,
+  "lon": 35.0075433,
+  "via": "osm:city العقبة, قضاء العقبة, لواء قصبة العقبة, العقبة, 77100, ا"
+ },
+ "Homs, Syria": {
+  "lat": 34.7333334,
+  "lon": 36.7166667,
+  "via": "osm:city حمص, ناحية مركز حمص, منطقة حمص, محافظة حمص, سوريا"
+ },
+ "Deraa, Syria": {
+  "lat": 32.6227776,
+  "lon": 36.1067639,
+  "via": "osm:city درعا, ناحية مركز درعا, منطقة درعا, محافظة درعا, سوريا"
+ },
+ "Tiberias": {
+  "lat": 32.79444444,
+  "lon": 35.53333333,
+  "via": "wiki:Tiberias"
+ },
+ "Beersheba, Israel": {
+  "lat": 31.2457442,
+  "lon": 34.7925181,
+  "via": "osm:administrative באר שבע, נפת באר שבע, מחוז הדרום, ישראל"
+ },
+ "Gaza Strip": {
+  "lat": 31.5,
+  "lon": 34.45,
+  "via": "wiki:Gaza Strip"
+ },
+ "Mecca": {
+  "lat": 21.4225,
+  "lon": 39.82333333,
+  "via": "wiki:Mecca"
+ },
+ "Medina": {
+  "lat": 24.47,
+  "lon": 39.61,
+  "via": "wiki:Medina"
+ },
+ "Yanbu": {
+  "lat": 24.08944444,
+  "lon": 38.06194444,
+  "via": "wiki:Yanbu"
+ },
+ "Al Wajh": {
+  "lat": 26.6270634,
+  "lon": 36.66529,
+  "via": "osm:administrative محافظة الوجه, منطقة تبوك, السعودية"
+ },
+ "Tabuk": {
+  "lat": 17.4111502,
+  "lon": 121.4414409,
+  "via": "osm:city Tabuk, Kalinga, Cordillera Administrative Region, 3800,"
+ },
+ "Al-'Ula": {
+  "lat": 26.5588965,
+  "lon": 37.9596519,
+  "via": "osm:town العلا, محافظة العلا, منطقة المدينة المنورة, 43522, السع"
+ },
+ "Mudawwara": {
+  "lat": 29.3342245,
+  "lon": 36.0232178,
+  "via": "osm:town مدورة, قضاء الجفر, لواء قصبة معان, معان, الأردن"
+ },
+ "Azraq": {
+  "lat": 31.9014764,
+  "lon": 36.5849074,
+  "via": "osm:refugee_site Azraq, طريق الزرقاء - الارزق - العمري السريع, قضاء الأز"
+ },
+ "Karak": {
+  "lat": 4.358344,
+  "lon": 96.019455,
+  "via": "osm:village Karak, Woyla Barat, Aceh Barat, Aceh, Indonesia"
+ },
+ "Riyadh": {
+  "lat": 24.6383,
+  "lon": 46.715,
+  "via": "wiki:Riyadh"
+ },
+ "Aachen": {
+  "lat": 50.77555556,
+  "lon": 6.08361111,
+  "via": "wiki:Aachen"
+ },
+ "Liège": {
+  "lat": 50.6450944,
+  "lon": 5.5736112,
+  "via": "osm:administrative Liège, Wallonie, 4000, België / Belgique / Belgien"
+ },
+ "Namur": {
+  "lat": 50.4665284,
+  "lon": 4.8661892,
+  "via": "osm:administrative Namur, Wallonie, België / Belgique / Belgien"
+ },
+ "Charleroi": {
+  "lat": 50.4116233,
+  "lon": 4.444528,
+  "via": "osm:administrative Charleroi, Hainaut, Wallonie, België / Belgique / Belgi"
+ },
+ "Le Cateau-Cambrésis": {
+  "lat": 50.1058353,
+  "lon": 3.5417479,
+  "via": "osm:administrative Le Cateau-Cambrésis, Cambrai, Nord, Hauts-de-France, Fr"
+ },
+ "Guise": {
+  "lat": 49.8982325,
+  "lon": 3.6262542,
+  "via": "osm:administrative Guise, Vervins, Aisne, Hauts-de-France, France métropol"
+ },
+ "Château-Thierry": {
+  "lat": 49.04,
+  "lon": 3.4,
+  "via": "wiki:Château-Thierry"
+ },
+ "Dormans": {
+  "lat": 49.0745659,
+  "lon": 3.6383732,
+  "via": "osm:administrative Dormans, Épernay, Marne, Grand Est, France métropolitai"
+ },
+ "Reims": {
+  "lat": 49.2628,
+  "lon": 4.0347,
+  "via": "wiki:Reims"
+ },
+ "Péronne": {
+  "lat": 49.9290847,
+  "lon": 2.9323535,
+  "via": "osm:administrative Péronne, Somme, Hauts-de-France, France métropolitaine,"
+ },
+ "Bapaume": {
+  "lat": 50.1035984,
+  "lon": 2.849369,
+  "via": "osm:administrative Bapaume, Arras, Pas-de-Calais, Hauts-de-France, France "
+ },
+ "Cambrai": {
+  "lat": 50.1767,
+  "lon": 3.2356,
+  "via": "wiki:Cambrai"
+ },
+ "Lille": {
+  "lat": 50.6278,
+  "lon": 3.0583,
+  "via": "wiki:Lille"
+ },
+ "Dixmude": {
+  "lat": 51.0333408,
+  "lon": 2.8647185,
+  "via": "osm:administrative Diksmuide, West-Vlaanderen, Vlaanderen, 8600, België / "
+ },
+ "Menen": {
+  "lat": 50.7937353,
+  "lon": 3.1670445,
+  "via": "osm:administrative Menen, Kortrijk, West-Vlaanderen, Vlaanderen, 8930, Bel"
+ },
+ "Mława": {
+  "lat": 53.1116182,
+  "lon": 20.3831732,
+  "via": "osm:administrative Mława, powiat mławski, województwo mazowieckie, 06-500,"
+ },
+ "Nidzica": {
+  "lat": 53.3613838,
+  "lon": 20.4275719,
+  "via": "osm:administrative Nidzica, gmina Nidzica, powiat nidzicki, województwo wa"
+ },
+ "Olsztyn": {
+  "lat": 53.77777778,
+  "lon": 20.47916667,
+  "via": "wiki:Olsztyn"
+ },
+ "Działdowo": {
+  "lat": 53.2346517,
+  "lon": 20.1817841,
+  "via": "osm:administrative Działdowo, powiat działdowski, województwo warmińsko-ma"
+ },
+ "Warsaw": {
+  "lat": 52.23,
+  "lon": 21.01111111,
+  "via": "wiki:Warsaw"
+ },
+ "Lublin": {
+  "lat": 51.25,
+  "lon": 22.56666667,
+  "via": "wiki:Lublin"
+ },
+ "Chełm": {
+  "lat": 51.1355883,
+  "lon": 23.4939364,
+  "via": "osm:administrative Chełm, województwo lubelskie, Polska"
+ },
+ "Lviv": {
+  "lat": 49.8425,
+  "lon": 24.03222222,
+  "via": "wiki:Lviv"
+ },
+ "Przemyśl": {
+  "lat": 49.7835475,
+  "lon": 22.7885036,
+  "via": "osm:administrative Przemyśl, województwo podkarpackie, Polska"
+ },
+ "Limanowa": {
+  "lat": 49.7061713,
+  "lon": 20.4217266,
+  "via": "osm:administrative Limanowa, powiat limanowski, województwo małopolskie, P"
+ },
+ "Nowy Sącz": {
+  "lat": 49.6249173,
+  "lon": 20.691346,
+  "via": "osm:administrative Nowy Sącz, województwo małopolskie, Polska"
+ },
+ "Gorlice": {
+  "lat": 49.6663323,
+  "lon": 21.1634843,
+  "via": "osm:administrative Gorlice, powiat gorlicki, województwo małopolskie, Pols"
+ },
+ "Tarnów": {
+  "lat": 50.0259883,
+  "lon": 20.9640584,
+  "via": "osm:administrative Tarnów, województwo małopolskie, Polska"
+ },
+ "Kielce": {
+  "lat": 50.87416667,
+  "lon": 20.63333333,
+  "via": "wiki:Kielce"
+ },
+ "Sochaczew": {
+  "lat": 52.2296562,
+  "lon": 20.2379379,
+  "via": "osm:administrative Sochaczew, powiat sochaczewski, województwo mazowieckie"
+ },
+ "Belgrade": {
+  "lat": 44.81777778,
+  "lon": 20.45694444,
+  "via": "wiki:Belgrade"
+ },
+ "Zemun": {
+  "lat": 44.8444,
+  "lon": 20.4123996,
+  "via": "osm:administrative Београд (Земун), Градска општина Земун, Град Београд, Ц"
+ },
+ "Šabac": {
+  "lat": 44.75,
+  "lon": 19.7,
+  "via": "wiki:Šabac"
+ },
+ "Loznica": {
+  "lat": 43.0349145,
+  "lon": 19.7598809,
+  "via": "osm:suburb Loznica, Opština Bijelo Polje, 84000, Crna Gora / Црна "
+ },
+ "Valjevo": {
+  "lat": 44.2708719,
+  "lon": 19.8863297,
+  "via": "osm:administrative Ваљево, Град Ваљево, Колубарски управни округ, Централн"
+ },
+ "Užice": {
+  "lat": 43.8564957,
+  "lon": 19.840273,
+  "via": "osm:administrative Градска општина Ужице, Град Ужице, Златиборски управни "
+ },
+ "Smederevo": {
+  "lat": 43.171974,
+  "lon": 19.4649842,
+  "via": "osm:peak Smederevo, Borova, Opština Pljevlja, 84223, Crna Gora /"
+ },
+ "Sremska Mitrovica": {
+  "lat": 44.9685558,
+  "lon": 19.6083864,
+  "via": "osm:administrative Сремска Митровица, Град Сремска Митровица, Сремски упра"
+ },
+ "Niš": {
+  "lat": 43.32083333,
+  "lon": 21.89583333,
+  "via": "wiki:Niš"
+ },
+ "Kragujevac": {
+  "lat": 44.01008333,
+  "lon": 20.91719444,
+  "via": "wiki:Kragujevac"
+ },
+ "Pirot": {
+  "lat": 46.1871142,
+  "lon": 4.3556876,
+  "via": "osm:hamlet Pirot, Chauffailles, Charolles, Saône-et-Loire, Bourgog"
+ },
+ "Kumanovo": {
+  "lat": 42.135913,
+  "lon": 21.7185474,
+  "via": "osm:administrative Куманово, Општина Куманово, Северна Македонија"
+ },
+ "Skopje": {
+  "lat": 41.99611111,
+  "lon": 21.43166667,
+  "via": "wiki:Skopje"
+ },
+ "Kolubara": {
+  "lat": 44.358907,
+  "lon": 20.1421297,
+  "via": "osm:river Колубара, Централна Србија, Србија"
+ },
+ "Loznica, Serbia": {
+  "lat": 44.5309221,
+  "lon": 19.2237478,
+  "via": "osm:administrative Лозница, Град Лозница, Мачвански управни округ, Централ"
+ },
+ "Smederevo, Serbia": {
+  "lat": 44.6651048,
+  "lon": 20.9271115,
+  "via": "osm:administrative Смедерево, Град Смедерево, Подунавски управни округ, Це"
+ },
+ "Pirot, Serbia": {
+  "lat": 43.1547342,
+  "lon": 22.5865039,
+  "via": "osm:administrative Пирот, Град Пирот, Пиротски управни округ, Централна Ср"
+ },
+ "Sibiu": {
+  "lat": 45.7973912,
+  "lon": 24.1519202,
+  "via": "osm:administrative Sibiu, România"
+ },
+ "Brașov": {
+  "lat": 45.66666667,
+  "lon": 25.61666667,
+  "via": "wiki:Brașov"
+ },
+ "Turnu Roșu Pass": {
+  "lat": 45.5475305,
+  "lon": 24.2707498,
+  "via": "osm:locality Pasul Turnu Roșu, Câineni, Vâlcea, 247091, România"
+ },
+ "Sălătrucu": {
+  "lat": 45.3203233,
+  "lon": 24.5136271,
+  "via": "osm:administrative Sălătrucu, Argeș, România"
+ },
+ "Pitești": {
+  "lat": 44.8572882,
+  "lon": 24.8721156,
+  "via": "osm:administrative Pitești, Argeș, România"
+ },
+ "Bucharest": {
+  "lat": 44.4325,
+  "lon": 26.10388889,
+  "via": "wiki:Bucharest"
+ },
+ "Ploiești": {
+  "lat": 44.9417468,
+  "lon": 26.0236504,
+  "via": "osm:administrative Ploiești, Prahova, România"
+ },
+ "Focșani": {
+  "lat": 45.697274,
+  "lon": 27.1856921,
+  "via": "osm:administrative Focșani, Vrancea, România"
+ },
+ "Mărășești": {
+  "lat": 45.8740808,
+  "lon": 27.2184171,
+  "via": "osm:administrative Mărășești, Vrancea, România"
+ },
+ "Predeal": {
+  "lat": 45.50444444,
+  "lon": 25.57833333,
+  "via": "wiki:Predeal"
+ },
+ "Brăila": {
+  "lat": 45.26919444,
+  "lon": 27.95747222,
+  "via": "wiki:Brăila"
+ },
+ "Laffaux": {
+  "lat": 49.4491667,
+  "lon": 3.4261111,
+  "via": "osm:administrative Laffaux, Soissons, Aisne, Hauts-de-France, France métro"
+ },
+ "Soissons": {
+  "lat": 49.3817,
+  "lon": 3.3236,
+  "via": "wiki:Soissons"
+ },
+ "Amiens": {
+  "lat": 49.892,
+  "lon": 2.299,
+  "via": "wiki:Amiens"
+ },
+ "Villers-Bretonneux": {
+  "lat": 49.8680878,
+  "lon": 2.518383,
+  "via": "osm:administrative Villers-Bretonneux, Amiens, Somme, Hauts-de-France, Fra"
+ },
+ "Roye": {
+  "lat": 49.6986186,
+  "lon": 2.7930755,
+  "via": "osm:administrative Roye, Montdidier, Somme, Hauts-de-France, France métrop"
+ },
+ "Nesle": {
+  "lat": 49.7576856,
+  "lon": 2.9087229,
+  "via": "osm:administrative Nesle, Péronne, Somme, Hauts-de-France, France métropol"
+ },
+ "Ham": {
+  "lat": 49.746322,
+  "lon": 3.0733031,
+  "via": "osm:administrative Ham, Péronne, Somme, Hauts-de-France, France métropolit"
+ },
+ "Noyon": {
+  "lat": 49.5817,
+  "lon": 2.9997,
+  "via": "wiki:Noyon"
+ },
+ "Laon": {
+  "lat": 49.5644,
+  "lon": 3.6206,
+  "via": "wiki:Laon"
+ },
+ "Montdidier": {
+  "lat": 49.6460204,
+  "lon": 2.570196,
+  "via": "osm:administrative Montdidier, Somme, Hauts-de-France, France métropolitai"
+ },
+ "Fismes": {
+  "lat": 49.3072444,
+  "lon": 3.6802766,
+  "via": "osm:administrative Fismes, Reims, Marne, Grand Est, France métropolitaine,"
+ },
+ "Vouziers": {
+  "lat": 49.3980838,
+  "lon": 4.7003648,
+  "via": "osm:administrative Vouziers, Ardennes, Grand Est, France métropolitaine, 0"
+ },
+ "Sedan": {
+  "lat": 49.7033759,
+  "lon": 4.9433409,
+  "via": "osm:administrative Sedan, Ardennes, Grand Est, France métropolitaine, 0820"
+ },
+ "Grandpré": {
+  "lat": 49.3413715,
+  "lon": 4.8682209,
+  "via": "osm:administrative Grandpré, Vouziers, Ardennes, Grand Est, France métropo"
+ },
+ "Varennes-en-Argonne": {
+  "lat": 49.2269,
+  "lon": 5.035,
+  "via": "wiki:Varennes-en-Argonne"
+ },
+ "Buzancy": {
+  "lat": 49.3133767,
+  "lon": 3.345959,
+  "via": "osm:administrative Buzancy, Soissons, Aisne, Hauts-de-France, France métro"
+ },
+ "Thiepval": {
+  "lat": 50.0542332,
+  "lon": 2.6888876,
+  "via": "osm:administrative Thiepval, Péronne, Somme, Hauts-de-France, France métro"
+ },
+ "Bazentin-le-Petit": {
+  "lat": 50.0319289,
+  "lon": 2.767516,
+  "via": "osm:cemetery Bazentin-le-Petit Communal Cemetery Extension, Bazentin"
+ },
+ "Ginchy": {
+  "lat": 50.0237552,
+  "lon": 2.8317895,
+  "via": "osm:administrative Ginchy, Péronne, Somme, Hauts-de-France, France métropo"
+ },
+ "Guillemont": {
+  "lat": 50.0147775,
+  "lon": 2.8255029,
+  "via": "osm:administrative Guillemont, Péronne, Somme, Hauts-de-France, France mét"
+ },
+ "Beaucourt-sur-l'Ancre": {
+  "lat": 50.0798546,
+  "lon": 2.6871206,
+  "via": "osm:administrative Beaucourt-sur-l'Ancre, Péronne, Somme, Hauts-de-France,"
+ },
+ "Albert": {
+  "lat": 50.0018022,
+  "lon": 2.6509223,
+  "via": "osm:administrative Albert, Péronne, Somme, Hauts-de-France, France métropo"
+ },
+ "Messines": {
+  "lat": 50.759827,
+  "lon": 2.8998324,
+  "via": "osm:administrative Mesen, Mesen - Messines, Mesen, Ieper, West-Vlaanderen,"
+ },
+ "Wervik": {
+  "lat": 50.78333333,
+  "lon": 3.03333333,
+  "via": "wiki:Wervik"
+ },
+ "Zonnebeke": {
+  "lat": 50.86666667,
+  "lon": 2.98333333,
+  "via": "wiki:Zonnebeke"
+ },
+ "Passendale": {
+  "lat": 50.9003015,
+  "lon": 3.0203891,
+  "via": "osm:administrative Passendale, Zonnebeke, Ieper, West-Vlaanderen, Vlaander"
+ },
+ "Bailleul": {
+  "lat": 50.7396668,
+  "lon": 2.7349286,
+  "via": "osm:administrative Bailleul, Dunkerque, Nord, Hauts-de-France, France métr"
+ },
+ "Kemmel": {
+  "lat": 50.7828552,
+  "lon": 2.8258709,
+  "via": "osm:administrative Kemmel, Heuvelland, Ieper, West-Vlaanderen, Vlaanderen,"
+ },
+ "Hazebrouck": {
+  "lat": 50.7226113,
+  "lon": 2.5360331,
+  "via": "osm:administrative Hazebrouck, Dunkerque, Nord, Hauts-de-France, France mé"
+ },
+ "Armentières": {
+  "lat": 50.6867281,
+  "lon": 2.882169,
+  "via": "osm:administrative Armentières, Lille, Nord, Hauts-de-France, France métro"
+ },
+ "Fort de Vaux": {
+  "lat": 49.2004911,
+  "lon": 5.4701354,
+  "via": "osm:fort Fort de Vaux, D 913a, Damloup, Verdun, Meuse, Grand Est"
+ },
+ "Fort de Souville": {
+  "lat": 49.1878344,
+  "lon": 5.4392279,
+  "via": "osm:fortress Fort de Souville, Chemin Départemental Stratégique N° 2"
+ },
+ "Maubeuge": {
+  "lat": 50.2785723,
+  "lon": 3.974307,
+  "via": "osm:administrative Maubeuge, Avesnes-sur-Helpe, Nord, Hauts-de-France, Fra"
+ },
+ "Dinant": {
+  "lat": 50.26666667,
+  "lon": 4.91666667,
+  "via": "wiki:Dinant"
+ },
+ "Landrecies": {
+  "lat": 50.1250142,
+  "lon": 3.6913023,
+  "via": "osm:administrative Landrecies, Avesnes-sur-Helpe, Nord, Hauts-de-France, F"
+ },
+ "Charleville-Mézières": {
+  "lat": 49.7735712,
+  "lon": 4.7206939,
+  "via": "osm:administrative Charleville-Mézières, Ardennes, Grand Est, France métro"
+ },
+ "Stenay": {
+  "lat": 49.4916388,
+  "lon": 5.1883537,
+  "via": "osm:administrative Stenay, Verdun, Meuse, Grand Est, France métropolitaine"
+ },
+ "Thann": {
+  "lat": 47.8101008,
+  "lon": 7.1020957,
+  "via": "osm:administrative Thann, Thann-Guebwiller, Haut-Rhin, Collectivité europé"
+ },
+ "Kuressaare": {
+  "lat": 58.25,
+  "lon": 22.48333333,
+  "via": "wiki:Kuressaare"
+ },
+ "Taga Bay": {
+  "lat": -9.3675663,
+  "lon": -171.2657747,
+  "via": "osm:bay Fatu O Te Taga, Fakaofo, Tokelau"
+ },
+ "Muhu": {
+  "lat": 58.5959044,
+  "lon": 23.2196461,
+  "via": "osm:island Muhu, Saare maakond, Eesti"
+ },
+ "Hiiumaa": {
+  "lat": 58.88416667,
+  "lon": 22.64444444,
+  "via": "wiki:Hiiumaa"
+ },
+ "Rohuküla": {
+  "lat": 58.9135167,
+  "lon": 23.4436396,
+  "via": "osm:administrative Rohuküla, Haapsalu linn, Lääne maakond, 90441, Eesti"
+ },
+ "Liepāja": {
+  "lat": 56.51166667,
+  "lon": 21.01388889,
+  "via": "wiki:Liepāja"
+ },
+ "Saaremaa": {
+  "lat": 58.41666667,
+  "lon": 22.5,
+  "via": "wiki:Saaremaa"
+ },
+ "Gallipoli": {
+  "lat": 40.35,
+  "lon": 26.45,
+  "via": "wiki:Gallipoli"
+ },
+ "Cape Helles": {
+  "lat": 40.0430167,
+  "lon": 26.1752383,
+  "via": "osm:cape Mehmetçik Burnu, Seddülbahir Köyü, Eceabat, Çanakkale, "
+ },
+ "Anzac Cove": {
+  "lat": 40.2359296,
+  "lon": 26.2768101,
+  "via": "osm:bay Anzak Koyu, Çanakkale, Marmara Bölgesi, Türkiye"
+ },
+ "Krithia": {
+  "lat": 40.094914,
+  "lon": 26.2272995,
+  "via": "osm:village Alçıtepe, Eceabat, Çanakkale, Marmara Bölgesi, Türkiye"
+ },
+ "Chunuk Bair": {
+  "lat": 40.2519917,
+  "lon": 26.308637,
+  "via": "osm:cemetery Chunuk Bair Cemetery, Büyükanafarta Köyü, Eceabat, Çana"
+ },
+ "Sedd el Bahr": {
+  "lat": 40.0446676,
+  "lon": 26.1889171,
+  "via": "osm:village Seddülbahir, Eceabat, Çanakkale, Marmara Bölgesi, Türki"
+ },
+ "Kum Kale": {
+  "lat": 38.2275252,
+  "lon": 36.9568313,
+  "via": "osm:industrial Afşin Belediyesi Asfalt, Kum ve Çakıl Şantiyesi, Kale, "
+ },
+ "Gaba Tepe": {
+  "lat": 40.2067286,
+  "lon": 26.2680319,
+  "via": "osm:cape Gaba Tepe, Eceabat, Çanakkale, Marmara Bölgesi, Türkiye"
+ },
+ "Kosturino": {
+  "lat": 41.35007,
+  "lon": 25.30209,
+  "via": "osm:hamlet мах.Костурино, Кирково, Кърджали, 6887, България"
+ },
+ "Kosovska Mitrovica": {
+  "lat": 42.8790424,
+  "lon": 20.8657862,
+  "via": "osm:city Mitrovicë, Komuna e Mitrovicës / Opština Kosovska Mitro"
+ },
+ "Cer": {
+  "lat": 45.8855692,
+  "lon": 15.9506436,
+  "via": "osm:peak Cer, Grad Zagreb, 10168, Hrvatska"
+ },
+ "Grunwald": {
+  "lat": 53.4852657,
+  "lon": 20.0915287,
+  "via": "osm:administrative Grunwald, gmina Grunwald, powiat ostródzki, województwo"
+ },
+ "Penza": {
+  "lat": -8.0109704,
+  "lon": 15.7215976,
+  "via": "osm:village Penza, Uíge, Angola"
+ },
+ "Syzran": {
+  "lat": 53.15538,
+  "lon": 48.474121,
+  "via": "osm:city Сызрань, городской округ Сызрань, Самарская область, Пр"
+ },
+ "Samara": {
+  "lat": 53.20277778,
+  "lon": 50.14083333,
+  "via": "wiki:Samara"
+ },
+ "Tbilisi": {
+  "lat": 41.7225,
+  "lon": 44.7925,
+  "via": "wiki:Tbilisi"
+ },
+ "Hebron": {
+  "lat": 31.52861111,
+  "lon": 35.09694444,
+  "via": "wiki:Hebron"
+ },
+ "Lod": {
+  "lat": 31.95194444,
+  "lon": 34.88805556,
+  "via": "wiki:Lod"
+ },
+ "Rasht": {
+  "lat": 37.27444444,
+  "lon": 49.58888889,
+  "via": "wiki:Rasht"
+ },
+ "Qazvin": {
+  "lat": 36.28861111,
+  "lon": 50.00694444,
+  "via": "wiki:Qazvin"
+ },
+ "Feltre": {
+  "lat": 46.0463692,
+  "lon": 11.9323564,
+  "via": "osm:administrative Feltre, Belluno, Veneto, 32032, Italia"
+ },
+ "Belluno": {
+  "lat": 46.2805407,
+  "lon": 12.0789137,
+  "via": "osm:administrative Belluno, Veneto, Italia"
+ },
+ "Brest": {
+  "lat": 48.3912324,
+  "lon": -4.4851141,
+  "via": "osm:administrative Brest, Finistère, Bretagne, France métropolitaine, 2920"
+ },
+ "Penza city": {
+  "lat": 53.1937836,
+  "lon": 45.0067413,
+  "via": "osm:city Пенза, Пензенская область, Приволжский федеральный окру"
+ },
+ "Ulyanovsk": {
+  "lat": 54.3150278,
+  "lon": 48.403373,
+  "via": "osm:city Ульяновск, городской округ Ульяновск, Ульяновская облас"
+ },
+ "Saratov": {
+  "lat": 51.53,
+  "lon": 46.035,
+  "via": "wiki:Saratov"
+ },
+ "Klaipėda": {
+  "lat": 55.7125,
+  "lon": 21.135,
+  "via": "wiki:Klaipėda"
+ },
+ "Chernyakhovsk": {
+  "lat": 54.63472222,
+  "lon": 21.81194444,
+  "via": "wiki:Chernyakhovsk"
+ },
+ "Łomża": {
+  "lat": 53.17638889,
+  "lon": 22.07305556,
+  "via": "wiki:Łomża"
+ },
+ "Pułtusk": {
+  "lat": 52.7051109,
+  "lon": 21.0840274,
+  "via": "osm:administrative Pułtusk, gmina Pułtusk, powiat pułtuski, województwo ma"
+ },
+ "Bolimów": {
+  "lat": 52.0762415,
+  "lon": 20.163478,
+  "via": "osm:administrative Bolimów, gmina Bolimów, powiat skierniewicki, województ"
+ },
+ "Miechów": {
+  "lat": 50.3566016,
+  "lon": 20.0276912,
+  "via": "osm:administrative Miechów, gmina Miechów, powiat miechowski, województwo "
+ },
+ "Kraśnik": {
+  "lat": 50.91666667,
+  "lon": 22.21666667,
+  "via": "wiki:Kraśnik"
+ },
+ "Megiddo": {
+  "lat": -26.0796128,
+  "lon": 27.9384455,
+  "via": "osm:residential Megiddo, Sundowner, Johannesburg Ward 114, Randburg, Ci"
+ },
+ "Samogneux": {
+  "lat": 49.25438,
+  "lon": 5.33782,
+  "via": "osm:administrative Samogneux, Verdun, Meuse, Grand Est, France métropolita"
+ },
+ "Ornes": {
+  "lat": 49.252814,
+  "lon": 5.4718272,
+  "via": "osm:administrative Ornes, Verdun, Meuse, Grand Est, France métropolitaine,"
+ },
+ "Cumières-le-Mort-Homme": {
+  "lat": 49.2321,
+  "lon": 5.2805,
+  "via": "osm:administrative Cumières-le-Mort-Homme, Verdun, Meuse, Grand Est, Franc"
+ },
+ "Brabant-sur-Meuse": {
+  "lat": 49.2722741,
+  "lon": 5.3115481,
+  "via": "osm:administrative Brabant-sur-Meuse, Verdun, Meuse, Grand Est, France mét"
+ },
+ "Vacherauville": {
+  "lat": 49.22068,
+  "lon": 5.35964,
+  "via": "osm:administrative Vacherauville, Verdun, Meuse, Grand Est, France métropo"
+ },
+ "Étain": {
+  "lat": 49.21335,
+  "lon": 5.6363489,
+  "via": "osm:administrative Étain, Verdun, Meuse, Grand Est, France métropolitaine,"
+ },
+ "Damvillers": {
+  "lat": 49.3426678,
+  "lon": 5.400463,
+  "via": "osm:administrative Damvillers, Verdun, Meuse, Grand Est, France métropolit"
+ },
+ "Sivry-sur-Meuse": {
+  "lat": 49.3213973,
+  "lon": 5.2680077,
+  "via": "osm:administrative Sivry-sur-Meuse, Verdun, Meuse, Grand Est, France métro"
+ },
+ "Mons": {
+  "lat": 50.4549568,
+  "lon": 3.951958,
+  "via": "osm:administrative Mons, Hainaut, Wallonie, België / Belgique / Belgien"
+ },
+ "Longuyon": {
+  "lat": 49.4461066,
+  "lon": 5.600732,
+  "via": "osm:administrative Longuyon, Val-de-Briey, Meurthe-et-Moselle, Grand Est, "
+ },
+ "Bellicourt": {
+  "lat": 49.9610878,
+  "lon": 3.2342681,
+  "via": "osm:administrative Bellicourt, Saint-Quentin, Aisne, Hauts-de-France, Fran"
+ },
+ "Riqueval": {
+  "lat": 49.9513476,
+  "lon": 3.2361656,
+  "via": "osm:isolated_dwelling Riqueval, Bellicourt, Saint-Quentin, Aisne, Hauts-de-Fr"
+ },
+ "Villers-Cotterêts": {
+  "lat": 49.26,
+  "lon": 3.0906,
+  "via": "wiki:Villers-Cotterêts"
+ },
+ "Chaudun": {
+  "lat": 49.3181784,
+  "lon": 3.2650577,
+  "via": "osm:administrative Chaudun, Soissons, Aisne, Hauts-de-France, France métro"
+ },
+ "Attichy": {
+  "lat": 49.4119135,
+  "lon": 3.048782,
+  "via": "osm:administrative Attichy, Compiègne, Oise, Hauts-de-France, France métro"
+ },
+ "Hannut": {
+  "lat": 50.66666667,
+  "lon": 5.08333333,
+  "via": "wiki:Hannut"
+ },
+ "Gelibolu": {
+  "lat": 40.41388889,
+  "lon": 26.67027778,
+  "via": "wiki:Gelibolu"
+ },
+ "Suvla": {
+  "lat": 40.3031,
+  "lon": 26.23,
+  "via": "wiki:Suvla"
+ },
+ "Sari Bair": {
+  "lat": 40.2557422,
+  "lon": 26.312198,
+  "via": "osm:ridge Sari Bair Ridge, Büyükanafarta Köyü, Eceabat, Çanakkale"
+ },
+ "Demirel?": {
+  "lat": 36.9818112,
+  "lon": 30.7167965,
+  "via": "osm:administrative Demirel Mahallesi, Kepez, Antalya, Akdeniz Bölgesi, Tür"
+ },
+ "Morava river": {
+  "lat": 49.3597062,
+  "lon": 17.3094202,
+  "via": "osm:river Morava, Česko"
+ },
+ "Nišava river": {
+  "lat": 43.2178129,
+  "lon": 22.4795786,
+  "via": "osm:river Нишава, Централна Србија, Србија"
+ },
+ "Kyiv": {
+  "lat": 50.45,
+  "lon": 30.52333333,
+  "via": "wiki:Kyiv"
+ },
+ "Brest, Belarus": {
+  "lat": 52.13472222,
+  "lon": 23.65694444,
+  "via": "wiki:Brest, Belarus"
+ },
+ "Brest Fortress": {
+  "lat": 52.082,
+  "lon": 23.658,
+  "via": "wiki:Brest Fortress"
+ },
+ "Minsk": {
+  "lat": 53.90055556,
+  "lon": 27.55861111,
+  "via": "wiki:Minsk"
+ },
+ "Kazan": {
+  "lat": 55.79638889,
+  "lon": 49.10888889,
+  "via": "wiki:Kazan"
+ },
+ "Lemnos": {
+  "lat": 39.91666667,
+  "lon": 25.25,
+  "via": "wiki:Lemnos"
+ },
+ "Mudros": {
+  "lat": 53.2375414,
+  "lon": -0.7609937,
+  "via": "osm:yes Mudros, Collingham Road, North Clifton, Newton on Trent"
+ },
+ "Sembab?": {
+  "lat": -0.7909025,
+  "lon": 133.6785737,
+  "via": "osm:village Sembab, Manokwari, Papua Barat, Indonesia"
+ },
+ "Strumica": {
+  "lat": 41.4390081,
+  "lon": 22.6374139,
+  "via": "osm:administrative Струмица, Општина Струмица, Северна Македонија"
+ },
+ "Kavala": {
+  "lat": 40.93333333,
+  "lon": 24.4,
+  "via": "wiki:Kavala"
+ },
+ "Serres": {
+  "lat": 41.08333333,
+  "lon": 23.55,
+  "via": "wiki:Serres"
+ },
+ "Drama": {
+  "lat": 40.2149642,
+  "lon": 28.3599186,
+  "via": "osm:administrative Drama Mahallesi, Karacabey, Bursa, Marmara Bölgesi, Tür"
+ },
+ "Kilkis": {
+  "lat": 40.9935874,
+  "lon": 22.8741455,
+  "via": "osm:city Κιλκίς, Δήμος Κιλκίς, Περιφερειακή Ενότητα Κιλκίς, Περι"
+ },
+ "Durrës": {
+  "lat": 41.31333333,
+  "lon": 19.44583333,
+  "via": "wiki:Durrës"
+ },
+ "Prilep": {
+  "lat": 41.34444444,
+  "lon": 21.55277778,
+  "via": "wiki:Prilep"
+ },
+ "Ohrid": {
+  "lat": 41.11694444,
+  "lon": 20.80166667,
+  "via": "wiki:Ohrid"
+ },
+ "Vranje": {
+  "lat": 42.55,
+  "lon": 21.9,
+  "via": "wiki:Vranje"
+ },
+ "Făgăraș": {
+  "lat": 45.84472222,
+  "lon": 24.97416667,
+  "via": "wiki:Făgăraș"
+ },
+ "Târgu Jiu": {
+  "lat": 45.03416667,
+  "lon": 23.27472222,
+  "via": "wiki:Târgu Jiu"
+ },
+ "Craiova": {
+  "lat": 44.33333333,
+  "lon": 23.81666667,
+  "via": "wiki:Craiova"
+ },
+ "Acre, Israel": {
+  "lat": 32.92777778,
+  "lon": 35.08166667,
+  "via": "wiki:Acre, Israel"
+ },
+ "Turtucaia": {
+  "lat": 44.04596,
+  "lon": 26.6162765,
+  "via": "osm:administrative Тутракан, Силистра, 7600, България"
+ },
+ "Miercurea Ciuc": {
+  "lat": 46.35944444,
+  "lon": 25.80166667,
+  "via": "wiki:Miercurea Ciuc"
+ },
+ "Chaulnes": {
+  "lat": 49.8186295,
+  "lon": 2.7995776,
+  "via": "osm:administrative Chaulnes, Péronne, Somme, Hauts-de-France, France métro"
+ },
+ "Rosières-en-Santerre": {
+  "lat": 49.8130117,
+  "lon": 2.7020278,
+  "via": "osm:administrative Rosières-en-Santerre, Péronne, Somme, Hauts-de-France, "
+ },
+ "Corbie": {
+  "lat": 49.9097,
+  "lon": 2.5081,
+  "via": "wiki:Corbie"
+ },
+ "Moreuil": {
+  "lat": 49.7705466,
+  "lon": 2.486822,
+  "via": "osm:administrative Moreuil, Montdidier, Somme, Hauts-de-France, France mét"
+ },
+ "Montfaucon d'Argonne": {
+  "lat": 49.2702276,
+  "lon": 5.1347285,
+  "via": "osm:administrative Montfaucon-d'Argonne, Verdun, Meuse, Grand Est, France "
+ },
+ "Kortrijk": {
+  "lat": 50.8276429,
+  "lon": 3.2659884,
+  "via": "osm:administrative Kortrijk, West-Vlaanderen, Vlaanderen, België / Belgiqu"
+ },
+ "Dendermonde": {
+  "lat": 51.03333333,
+  "lon": 4.1,
+  "via": "wiki:Dendermonde"
+ },
+ "Pilckem": {
+  "lat": 30.466023,
+  "lon": -84.2570591,
+  "via": "osm:neighbourhood Pilckem Ridge, Tallahassee, Leon County, Florida, Unite"
+ },
+ "Langemark": {
+  "lat": 50.9135381,
+  "lon": 2.9183672,
+  "via": "osm:administrative Langemark, Langemark-Poelkapelle, Ieper, West-Vlaandere"
+ },
+ "Bolzano": {
+  "lat": 46.5,
+  "lon": 11.35,
+  "via": "wiki:Bolzano"
+ },
+ "Wadi Musa": {
+  "lat": 30.3358828,
+  "lon": 35.4371693,
+  "via": "osm:stream Wadi Mousa, أم صيحون, Petra Sub-District, لواء البتراء,"
+ },
+ "Fort de Douaumont": {
+  "lat": 49.2168233,
+  "lon": 5.4388194,
+  "via": "osm:fort Fort de Douaumont, D 913d, Douaumont, Douaumont-Vaux, V"
+ },
+ "Bras-sur-Meuse": {
+  "lat": 49.2111,
+  "lon": 5.3775,
+  "via": "wiki:Bras-sur-Meuse"
+ },
+ "Albert, Somme": {
+  "lat": 50.0028,
+  "lon": 2.6528,
+  "via": "wiki:Albert, Somme"
+ },
+ "Bazentin le Petit": {
+  "lat": 50.0319289,
+  "lon": 2.767516,
+  "via": "osm:cemetery Bazentin-le-Petit Communal Cemetery Extension, Bazentin"
+ },
+ "Grandcourt, Somme": {
+  "lat": 50.0803,
+  "lon": 2.7103,
+  "via": "wiki:Grandcourt, Somme"
+ },
+ "Bourlon": {
+  "lat": 50.1786,
+  "lon": 3.1175,
+  "via": "wiki:Bourlon"
+ },
+ "Estaires": {
+  "lat": 50.6444,
+  "lon": 2.7236,
+  "via": "wiki:Estaires"
+ },
+ "Neuve-Église": {
+  "lat": 48.33,
+  "lon": 7.3144,
+  "via": "wiki:Neuve-Église"
+ },
+ "Comines": {
+  "lat": 50.7653265,
+  "lon": 3.0066319,
+  "via": "osm:administrative Comines, Lille, Nord, Hauts-de-France, France métropoli"
+ },
+ "Brieulles-sur-Meuse": {
+  "lat": 49.3367,
+  "lon": 5.1822,
+  "via": "wiki:Brieulles-sur-Meuse"
+ },
+ "Dun-sur-Meuse": {
+  "lat": 49.3867,
+  "lon": 5.1839,
+  "via": "wiki:Dun-sur-Meuse"
+ }
+}

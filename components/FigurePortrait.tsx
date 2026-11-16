@@ -2,9 +2,10 @@ import type { Portrait } from '../lib/data/portrait-types';
 
 /**
  * Photograph of a historical figure, with the credit Wikimedia gives us for the file.
- * Pass the entry from PORTRAITS; when there is none (three people have no usable
- * photograph on Wikimedia) a letter block is drawn instead, so the layout never
- * depends on an image loading.
+ * Pass the entry from PORTRAITS; when there is none a letter block is drawn
+ * instead, so the layout never depends on an image loading. Every figure in the
+ * data has a photograph now; the fallback is what a reader sees if a file is
+ * ever dropped, and for anyone added before their portrait is fetched.
  *
  * The img is absolutely positioned, so the wrapper you give it must be relative and
  * have a size. That keeps the component usable at 18px in a chip and 96px in a header.

@@ -10,11 +10,12 @@
  *   North African coast, WGS 84, high resolution (150k points for Russia alone).
  *
  * What this script does to it:
- *  - keeps only the polities inside the European theatre (the North African
- *    colonies and Iran are dropped; the OpenStreetMap tiles underneath already
- *    show that coastline), and drops the micro-states — Liechtenstein, Andorra,
- *    San Marino, Monaco — which are smaller than the island cut-off below and
- *    invisible at this zoom;
+ *  - keeps only the polities inside the European theatre. The source has 29
+ *    features: Europe plus Algeria, Tunisia, Libya, Morocco, Egypt and Iran, and
+ *    those six are dropped, which is why Sinai, Palestine, Mesopotamia and Persia
+ *    have no coloured land under them; Liechtenstein is in the source but falls
+ *    under the island cut-off below, and Monaco, San Marino, Andorra, Vatican
+ *    City, Iceland and Malta are not in the source at all;
  *  - clips everything to the theatre box and throws away islands under ~900 km²,
  *    which is what makes the file small enough for a browser;
  *  - simplifies with turf, so the outlines are for reading, not surveying;

@@ -1,26 +1,34 @@
-# The Second World War in Europe — month by month
+# The Great War in Europe — month by month
 
-An interactive teaching site about the European theatre of the Second World War: a monthly
-timeline from January 1938 to August 1945, period border states on a real map, army movement
-lines, the people involved, and every event written three times over for three reading levels.
-
-**Live site:** <https://ww2-european.vercel.app>
+An interactive teaching site about the First World War: a monthly timeline from July 1914 to
+November 1918, the borders of July 1914 on a real map with the belligerents re-coloured every
+month, front lines and offensives drawn as arrows, the people involved, and every event written
+three times over for three reading levels.
 
 ## What is here
 
 | Part | Contents |
 | --- | --- |
-| Map & timeline | 92 months on a slider, borders coloured by who held the territory, dashed lines for offensives underway that month, click any country or line for detail |
-| Events | 125 events, each split into **why it happened**, **what happened** and **what followed** |
-| People | 76 biographies, from heads of state to partisans, economists and camp survivors |
-| Numbers | Population, armed-forces and casualty tables, with ranges where historians disagree |
+| Map & timeline | 53 months on a slider, one boundary state coloured by who is at war with whom, solid lines for held fronts and dashed ones for offensives underway that month, click any country or line for detail |
+| Events | 89 events, each split into **why it happened**, **what happened** and **what followed** |
+| People | 72 biographies with 71 period photographs, from emperors and field marshals to pashas, prime ministers, a nurse and two revolutionaries |
+| Numbers | Population, mobilisation and casualty tables for 16 states, with ranges wherever historians disagree and a note on each figure saying whether influenza deaths are inside it or outside |
 | Sources & how to read | What the map data is, what it cannot show, and every source used |
 
 Reading levels are genuine rewrites, not tooltips: **primary school** (age 7-11), **secondary
-school** (age 11-16) and **university**. An event card can show all three side by side.
+school** (age 11-16) and **university**. An event card can show all three side by side. The
+university level carries the argument — the Verdun attrition memorandum, whether the Somme's
+first-day figure is a count or a compilation, what "mutiny" means in the 1917 French army returns.
 
-The site covers the European theatre. The Pacific war, China and the colonial campaigns beyond
-Europe are out of scope except where they bear on the fighting here; that boundary is stated in
+No month of the war is left empty: the smallest month has one event, and the quietest months are
+the ones where the fighting genuinely was quiet.
+
+## Scope
+
+The theatre is Europe, plus the Ottoman, Caucasus, Persian and Mesopotamian campaigns, the Arab
+Revolt, the African campaigns and the naval war, because all of them were decided by European
+decisions and all of them changed the map this site draws. The Pacific, China and the Western
+Front's colonial recruiting outside those campaigns are out of scope; the boundary is stated in
 the Sources panel rather than left to the reader to infer.
 
 ## Running it
@@ -34,29 +42,32 @@ npx tsc --noEmit # typecheck
 
 ## The border data
 
-Country outlines come from a published GIS dataset of monthly European border states during the
-war, served as an ArcGIS feature layer and mirrored by the Stanford Spatial History Project. The
-twelve states that are published without a licence were downloaded, clipped to the European
-extent, simplified and dissolved into static GeoJSON that this site serves from
-`public/data/borders/`.
+Country outlines come from one published dataset: Jack Kavanagh, *"Map of Europe, c. 1914"*,
+University College Dublin, Zenodo, DOI [10.5281/zenodo.20119653](https://zenodo.org/records/20119653),
+CC BY 4.0. It is clipped to the European extent, simplified and dissolved into static GeoJSON that
+this site serves from `public/data/borders/`.
 
 ```bash
-node scripts/build-border-data.mjs           # uses scripts/.cache/border-src/
-node scripts/build-border-data.mjs --refresh # re-download from the source
+node scripts/build-ww1-border-data.mjs           # uses scripts/.cache/
+node scripts/build-ww1-border-data.mjs --refresh # re-download from the source
 ```
 
-Two things about this data are worth knowing before changing it:
+Two decisions in that script are deliberate and will look like bugs:
 
-- The source's own `Political_Status` field is wrong in places (Italy is labelled "Allies" in
-  April 1942), so fill colour comes from the hand-written status table in `lib/data/status.ts`,
-  never from the source attribute.
-- In the September 1941 and April 1942 states the source puts each Reichskommissariat's name and
-  Reichskommissar on the other's polygon, so `correctLabels()` in the build script labels both by
-  geography instead. That is deliberate — do not "fix" it back.
+- The source carries a 1914 status field. It is not used. Fill colour always comes from the
+  hand-written belligerent table in `lib/data/status.ts`, because a status frozen at July 1914
+  would tell a reader that the United States was at peace in 1918.
+- The source's Ottoman polygon stops at the 34th parallel and its Russian one at the 45th
+  meridian, so there is no land to colour under Jerusalem, Baghdad or Baku. The script clips to
+  that extent rather than inventing geometry, and the lines and cards that run past it say so.
 
-Everything the map cannot show is disclosed in `components/SourcesPanel.tsx`: which months have
-no published state, the two shapes frozen in the April 1945 snapshot, the missing Austria and
-Poland polygons, dropped micro-states, and the smoothing tolerance.
+Portraits are cached from Wikipedia by `scripts/fetch-portraits.mjs` into
+`public/data/portraits/`, with `manifest.json` recording each file's Wikipedia page, author and
+licence.
+
+Everything the map cannot show is disclosed in `components/SourcesPanel.tsx`: the single boundary
+state, the clipped Ottoman and Russian edges, the micro-states and islands the source does not
+carry, Rhodes drawn inside the wrong polygon, and the smoothing tolerance.
 
 ## Deploy
 
@@ -65,7 +76,14 @@ production deployment automatically.
 
 ## Sources
 
-Maps: Stanford Spatial History Project (after U. Maine / Rutgers), and OpenStreetMap map tiles
-for the modern basemap underneath.
-Text and figures: Oxford, Cambridge and Cambridge History of the Second World War; Beevor;
-Glantz; Snyder; Tooze; Longerich; and the published archival figures listed in the Sources panel.
+Maps: Jack Kavanagh (UCD, Zenodo) for the July 1914 boundaries, and OpenStreetMap map tiles for
+the modern basemap underneath. Photographs: Wikimedia Commons, public domain and freely licensed
+images, credited individually in the Sources panel.
+
+Text and figures: the British War Office *Statistics of the Military Effort* (1922), the US War
+Department returns of 1924, the International Labour Office questionnaire of 1923-25, the German
+*Sanitätsbericht* (1934), Huber, Mortara, Hersch, Urlanis and Erlikman for the population and
+loss tables, and Erickson and Haythornthwaite for the Ottoman and imperial armies. Narrative and
+argument: Strachan, Stevenson, Herwig, Clark, Fromkin, McMeekin, Suny, and the *Cambridge History
+of the First World War*, with 1914-1918-online for the questions historians still argue about.
+The full list, with what each source was used for, is in the Sources panel.

@@ -13,16 +13,24 @@ import {
 import { Info } from 'lucide-react';
 import type { CampaignLine, Side, TerritoryStatus } from '@/lib/data';
 import { CAMPAIGN_LINES, GEOMETRY_NOTE, STATUS_META, STATUS_ORDER, SNAPSHOT_NOTES, statusFor } from '@/lib/data';
-import { campaignVisible, nearestSnapshot, SIDE_META } from '@/lib/site';
+import {
+  campaignVisible,
+  LINE_KIND_META,
+  lineKindOf,
+  lineShowsProgress,
+  nearestSnapshot,
+  type LineKind,
+  SIDE_META,
+} from '@/lib/site';
 
 /* The border files are GeoJSON: coordinates are [lng, lat], Leaflet wants [lat, lng]. */
 type Ring = number[][];
 type LatLng = [number, number];
 interface FeatureProps {
   name: string;
-  controller: string | null;
-  headOfState: string | null;
-  govtInExile: string | null;
+  iso3: string;
+  snapshot: string;
+  source: string;
 }
 interface Feature {
   type: 'Feature';
@@ -92,7 +100,7 @@ function progressThrough(line: CampaignLine, monthKey: string) {
   return Math.min(1, Math.max(0, (monthEnd - from) / (to - from)));
 }
 
-const SIDE_ORDER: Side[] = ['german', 'soviet', 'western'];
+const SIDE_ORDER: Side[] = ['central', 'entente', 'russia'];
 
 interface Props {
   monthKey: string;
@@ -132,8 +140,6 @@ export default function MapBrowser({ monthKey, showCampaigns, showBorders }: Pro
     return data.features.map((f) => ({
       name: f.properties.name,
       status: statusFor(snapshot.date, f.properties.name),
-      headOfState: f.properties.headOfState,
-      govtInExile: f.properties.govtInExile,
       polys: toLatLngPolys(f.geometry),
     }));
   }, [data, snapshot.date]);
@@ -148,10 +154,17 @@ export default function MapBrowser({ monthKey, showCampaigns, showBorders }: Pro
     [territories]
   );
 
-  const presentSides = useMemo(
-    () => SIDE_ORDER.filter((s) => lines.some((l) => l.side === s)),
-    [lines]
-  );
+  /* One legend entry per side and per kind of line actually on the map this
+     * month: a side that both holds a front and attacks somewhere needs both
+     * keys, or the reader cannot tell the solid line from the dashed one. */
+  const legendLines = useMemo(() => {
+    const present = new Set<string>();
+    for (const l of lines) present.add(`${l.side}|${lineKindOf(l)}`);
+    const kinds: LineKind[] = ['front', 'advance'];
+    return SIDE_ORDER.flatMap((side) =>
+      kinds.filter((kind) => present.has(`${side}|${kind}`)).map((kind) => ({ side, kind }))
+    );
+  }, [lines]);
 
   // The shapes never move in this dataset, so the geometry caveat is stated for
   // every month; the month's own note is appended when there is one.
@@ -240,21 +253,9 @@ export default function MapBrowser({ monthKey, showCampaigns, showBorders }: Pro
                       <p className="font-medium" style={{ color: meta.stroke }}>
                         {meta.label}
                       </p>
-                      {t.headOfState && (
-                        <p>
-                          <span className="text-stone-500">Head of state / authority: </span>
-                          {t.headOfState}
-                        </p>
-                      )}
-                      {t.govtInExile && (
-                        <p>
-                          <span className="text-stone-500">Government in exile: </span>
-                          {t.govtInExile}
-                        </p>
-                      )}
                       <p className="pt-1 text-xs text-stone-500">
-                        Status as recorded for {snapshot.label}. Land with no colour is outside
-                        this border dataset, not empty.
+                        Frontier of July 1914, status as recorded for {snapshot.label}. Land with
+                        no colour is outside this border dataset, not empty.
                       </p>
                     </div>
                   </Popup>
@@ -264,17 +265,18 @@ export default function MapBrowser({ monthKey, showCampaigns, showBorders }: Pro
 
           {lines.map((line) => {
             const side = SIDE_META[line.side];
-            const progress = progressThrough(line, monthKey);
-            const tip = pointAlong(line.path, progress);
+            const kind = LINE_KIND_META[lineKindOf(line)];
+            const showsProgress = lineShowsProgress(line);
+            const tip = pointAlong(line.path, progressThrough(line, monthKey));
             return (
               <div key={line.id}>
                 <Polyline
                   positions={line.path}
                   pathOptions={{
                     color: side.color,
-                    weight: 3.5,
+                    weight: kind.weight,
                     opacity: 0.9,
-                    dashArray: '8 6',
+                    dashArray: kind.dash,
                   }}
                 >
                   <Tooltip sticky>
@@ -287,7 +289,7 @@ export default function MapBrowser({ monthKey, showCampaigns, showBorders }: Pro
                         className="text-xs font-medium uppercase tracking-wide"
                         style={{ color: side.color }}
                       >
-                        {side.label}
+                        {side.label} · {kind.label}
                         {line.operation ? ` · ${line.operation}` : ''}
                       </p>
                       <p className="text-xs text-stone-500">
@@ -300,24 +302,28 @@ export default function MapBrowser({ monthKey, showCampaigns, showBorders }: Pro
                           {line.strength}
                         </p>
                       )}
-                      <p className="pt-1 text-xs text-stone-500">
-                        The dashed line is the whole axis of the operation; the ring marks roughly
-                        where it stood by the month you are reading.
-                      </p>
+                      <p className="pt-1 text-xs text-stone-500">{kind.explanation}</p>
                     </div>
                   </Popup>
                 </Polyline>
-                <CircleMarker
-                  center={tip}
-                  radius={5}
-                  pathOptions={{ color: side.color, fillColor: '#fff', fillOpacity: 1, weight: 2.5 }}
-                >
-                  <Tooltip direction="top" opacity={1}>
-                    <span className="text-[11px]">
-                      {line.name}: approximate position by the end of this month
-                    </span>
-                  </Tooltip>
-                </CircleMarker>
+                {showsProgress && (
+                  <CircleMarker
+                    center={tip}
+                    radius={5}
+                    pathOptions={{
+                      color: side.color,
+                      fillColor: '#fff',
+                      fillOpacity: 1,
+                      weight: 2.5,
+                    }}
+                  >
+                    <Tooltip direction="top" opacity={1}>
+                      <span className="text-[11px]">
+                        {line.name}: approximate position by the end of this month
+                      </span>
+                    </Tooltip>
+                  </CircleMarker>
+                )}
               </div>
             );
           })}
@@ -326,7 +332,7 @@ export default function MapBrowser({ monthKey, showCampaigns, showBorders }: Pro
         <div className="pointer-events-none absolute bottom-0 left-0 right-0 z-[400]">
           <div className="m-2 rounded-md border border-stone-300 bg-white/95 p-2 text-xs shadow">
             <p className="mb-1 font-semibold text-stone-700">
-              {showBorders ? 'Who held the territory' : 'Army movements'}
+              {showBorders ? 'Who was at war, and where the lines were' : 'Fronts and movements'}
             </p>
             <ul className="flex flex-wrap gap-x-4 gap-y-1">
               {presentStatuses.map((s) => (
@@ -338,8 +344,8 @@ export default function MapBrowser({ monthKey, showCampaigns, showBorders }: Pro
                   {STATUS_META[s].label}
                 </li>
               ))}
-              {presentSides.map((side) => (
-                <li key={side} className="flex items-center gap-1.5">
+              {legendLines.map(({ side, kind }) => (
+                <li key={`${side}-${kind}`} className="flex items-center gap-1.5">
                   <svg width="22" height="6" aria-hidden>
                     <line
                       x1="0"
@@ -348,15 +354,15 @@ export default function MapBrowser({ monthKey, showCampaigns, showBorders }: Pro
                       y2="3"
                       stroke={SIDE_META[side].color}
                       strokeWidth="3"
-                      strokeDasharray="6 4"
+                      strokeDasharray={LINE_KIND_META[kind].dash}
                     />
                   </svg>
-                  {SIDE_META[side].label}
+                  {SIDE_META[side].label} · {LINE_KIND_META[kind].label}
                 </li>
               ))}
               {lines.length === 0 && (
                 <li className="text-stone-500">
-                  No major offensive was underway in this month — read the events for what was
+                  No front or offensive is drawn for this month — read the events for what was
                   happening instead.
                 </li>
               )}
