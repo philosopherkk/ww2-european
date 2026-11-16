@@ -71,8 +71,13 @@ carry, Rhodes drawn inside the wrong polygon, and the smoothing tolerance.
 
 ## Deploy
 
-The Vercel project is connected to this repository, so a push to `main` builds and promotes a
-production deployment automatically.
+Live at **https://ww1-european.vercel.app** — production deployment
+`ww1-european-71mewde6v-basedkk`, built from commit `3e3e5cb` on the `ww1-european` branch.
+
+It is a separate Vercel project from the Second World War site and is not Git-connected, so
+updates go out with `npx vercel --prod --yes --name ww1-european` from a checkout of this
+branch. A month can be linked directly with `?m=YYYY-MM`, for example
+`https://ww1-european.vercel.app/?m=1916-07`.
 
 ## Sources
 
