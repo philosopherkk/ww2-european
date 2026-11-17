@@ -36,8 +36,8 @@ interface Props {
 function Section({ label, text }: { label: string; text: string }) {
   return (
     <div>
-      <h4 className="text-[11px] font-bold uppercase tracking-wider text-stone-500">{label}</h4>
-      <p className="mt-0.5 text-[15px] leading-relaxed text-stone-800">{text}</p>
+      <h4 className="text-xs font-bold uppercase tracking-wider text-stone-600">{label}</h4>
+      <p className="mt-1 text-[15px] leading-relaxed text-stone-800">{text}</p>
     </div>
   );
 }
@@ -50,26 +50,36 @@ export default function EventCard({ event, level, onOpenFigure, defaultOpen = fa
   const kind = KIND_META[event.kind];
 
   return (
-    <article className="rounded-lg border border-stone-300 bg-white shadow-sm">
+    <article
+      className="overflow-hidden rounded-xl border border-stone-300 border-l-4 bg-white shadow-sm"
+      style={{ borderLeftColor: FRONT_META[event.fronts[0]]?.color ?? '#a8a29e' }}
+    >
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
-        className="flex w-full items-start gap-3 rounded-t-lg px-3 py-2.5 text-left hover:bg-stone-50"
+        className="flex w-full items-start gap-3 px-3.5 py-3 text-left hover:bg-stone-50"
       >
-        <span className="mt-0.5 text-lg leading-none" aria-hidden>
-          {kind.emoji}
-        </span>
         <span className="min-w-0 flex-1">
-          <span className="block text-xs font-medium text-stone-500">
+          <span className="flex items-center gap-1.5 text-xs font-medium text-stone-600">
+            <span aria-hidden className="text-sm leading-none">
+              {kind.emoji}
+            </span>
             {longDate(event.date, event.precision)} · {kind.label}
           </span>
-          <span className="block font-semibold leading-snug text-stone-900">{event.title}</span>
-          <span className="mt-1 flex flex-wrap gap-1">
+          <span className="mt-0.5 block font-serif text-lg font-semibold leading-snug text-stone-900 sm:text-xl">
+            {event.title}
+          </span>
+          {!open && (
+            <span className="mt-1 line-clamp-2 text-sm leading-snug text-stone-600">
+              {text.what}
+            </span>
+          )}
+          <span className="mt-2 flex flex-wrap gap-1">
             {event.fronts.map((f) => (
               <span
                 key={f}
-                className="rounded-full px-2 py-px text-[11px] font-medium text-white"
+                className="rounded-full px-2 py-0.5 text-xs font-medium text-white"
                 style={{ background: FRONT_META[f].color }}
               >
                 {FRONT_META[f].label}
@@ -78,17 +88,18 @@ export default function EventCard({ event, level, onOpenFigure, defaultOpen = fa
           </span>
         </span>
         <ChevronDown
-          size={18}
-          className={`mt-1 shrink-0 text-stone-400 transition-transform ${open ? 'rotate-180' : ''}`}
+          size={20}
+          aria-hidden
+          className={`mt-1 shrink-0 text-stone-500 transition-transform ${open ? 'rotate-180' : ''}`}
         />
       </button>
 
       {open && (
-        <div className="space-y-3 border-t border-stone-200 px-3 py-3">
+        <div className="space-y-4 border-t border-stone-200 px-3.5 py-3.5">
           {showAllLevels ? (
             LEVELS.map((l) => (
-              <div key={l.id} className="rounded-md border border-stone-200 bg-stone-50 p-2.5">
-                <p className="mb-1.5 text-[11px] font-bold uppercase tracking-wider text-stone-500">
+              <div key={l.id} className="rounded-lg border border-stone-200 bg-stone-50 p-3">
+                <p className="mb-2 text-xs font-bold uppercase tracking-wider text-stone-600">
                   {l.label} · {l.hint}
                 </p>
                 <div className="space-y-2">
@@ -107,7 +118,7 @@ export default function EventCard({ event, level, onOpenFigure, defaultOpen = fa
               <Section label={headings.what} text={text.what} />
               <Section label={headings.consequence} text={text.consequence} />
               {event.note && (
-                <p className="rounded-md border border-stone-200 bg-stone-50 px-2.5 py-2 text-[13px] leading-relaxed text-stone-600">
+                <p className="rounded-lg border border-stone-200 bg-stone-50 px-3 py-2.5 text-sm leading-relaxed text-stone-700">
                   <span className="font-semibold text-stone-700">Figure for the record: </span>
                   {event.note}
                 </p>
@@ -116,9 +127,9 @@ export default function EventCard({ event, level, onOpenFigure, defaultOpen = fa
           )}
 
           {(event.figures?.length ?? 0) > 0 && (
-            <div className="flex flex-wrap items-center gap-1.5 border-t border-stone-100 pt-2">
-              <Users size={14} className="text-stone-400" aria-hidden />
-              <span className="text-xs text-stone-500">People involved:</span>
+            <div className="flex flex-wrap items-center gap-2 border-t border-stone-100 pt-3">
+              <Users size={14} className="text-stone-500" aria-hidden />
+              <span className="text-sm text-stone-600">People involved:</span>
               {event.figures?.map((id) => {
                 const figure = FIGURE_BY_ID[id];
                 if (!figure) return null;
@@ -128,9 +139,9 @@ export default function EventCard({ event, level, onOpenFigure, defaultOpen = fa
                     type="button"
                     onClick={() => onOpenFigure?.(id)}
                     title={`Open ${figure.name}`}
-                    className="flex items-center gap-1.5 rounded-full border border-stone-300 bg-white py-0.5 pl-0.5 pr-2 text-xs font-medium text-stone-700 hover:border-stone-500 hover:bg-stone-100"
+                    className="flex min-h-9 items-center gap-2 rounded-full border border-stone-300 bg-white py-1 pl-1 pr-3 text-sm font-medium text-stone-700 hover:border-stone-500 hover:bg-stone-100"
                   >
-                    <span className="relative h-5 w-5 shrink-0">
+                    <span className="relative h-7 w-7 shrink-0">
                       <FigurePortrait portrait={PORTRAITS[id]} name={figure.name} />
                     </span>
                     {figure.name}
@@ -140,16 +151,16 @@ export default function EventCard({ event, level, onOpenFigure, defaultOpen = fa
             </div>
           )}
 
-          <div className="flex flex-wrap items-center gap-2 border-t border-stone-100 pt-2">
+          <div className="flex flex-wrap items-center gap-2 border-t border-stone-100 pt-3">
             <button
               type="button"
               onClick={() => setShowAllLevels((v) => !v)}
-              className="inline-flex items-center gap-1 rounded border border-stone-300 px-2 py-0.5 text-xs font-medium text-stone-700 hover:bg-stone-100"
+              className="inline-flex min-h-9 items-center gap-1.5 rounded-lg border border-stone-300 px-3 text-sm font-medium text-stone-700 hover:bg-stone-100"
             >
               <Layers size={13} />
               {showAllLevels ? 'Show only my reading level' : 'Compare all three reading levels'}
             </button>
-            <span className="text-[11px] text-stone-400">
+            <span className="text-xs text-stone-600">
               Reading level: {LEVELS.find((l) => l.id === level)?.label}
             </span>
           </div>

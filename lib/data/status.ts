@@ -64,57 +64,57 @@ export const STATUS_ORDER: TerritoryStatus[] = [
 export const STATUS_META: Record<TerritoryStatus, StatusMeta> = {
   at_peace: {
     label: 'At peace',
-    color: '#CEC7BA',
-    stroke: '#8E8577',
+    color: '#CAC4B8',
+    stroke: '#81796D',
     legend:
       'Only the July 1914 map uses this colour: on 31 July 1914 Austria-Hungary was at war with Serbia and Russia was mobilising, but Germany, France and Britain had not yet declared war. From August 1914 onwards every state in Europe is either at war, occupied or neutral.',
   },
   entente: {
     label: 'At war with the Central Powers',
-    color: '#2E6F9E',
-    stroke: '#1B4A6E',
+    color: '#61849F',
+    stroke: '#405D72',
     legend:
       'The Entente and the powers that joined it: Serbia, Russia, France, Belgium and Britain in 1914, Montenegro in August 1914, Italy in May 1915, Portugal in March 1916, Romania in August 1916, Greece in July 1917. The United States, associated from April 1917 rather than an ally, is outside the European map.',
   },
   central: {
     label: 'Central Powers and their allies',
-    color: '#A93226',
-    stroke: '#6E2018',
+    color: '#9B5B50',
+    stroke: '#6E3A32',
     legend:
       'Germany and Austria-Hungary, joined by the Ottoman Empire in November 1914 and Bulgaria in October 1915. This is the colour for the war against them, not for any particular claim about their internal constitution.',
   },
   occupied: {
     label: 'Under military occupation',
-    color: '#DFA58F',
-    stroke: '#A8705A',
+    color: '#C9A093',
+    stroke: '#9B6A59',
     legend:
       'Ground held by an army that is not the government of that state: Belgium and Luxembourg from August 1914, Serbia from November 1915 and Montenegro from January 1916, and the occupied part of Romania from December 1916, where the government survived in Iași under Russian protection. Occupied here means occupied by the Central Powers except where the note says otherwise.',
   },
   separate_peace: {
     label: 'Out of the war by separate peace',
-    color: '#C8791A',
-    stroke: '#8A5310',
+    color: '#A98145',
+    stroke: '#775A30',
     legend:
       'Russia after the armistice of 15 December 1917 and the Treaty of Brest-Litovsk of 3 March 1918, and Romania after the Treaty of Bucharest of 7 May 1918. Neither state gave up its claim to be at war with the Allies; both were treated as enemies by them.',
   },
   armistice: {
     label: 'Armistice in force',
-    color: '#6E7F2B',
-    stroke: '#4C5A1D',
+    color: '#7C8754',
+    stroke: '#545E36',
     legend:
       'Bulgaria from 29 September 1918, the Ottoman Empire from 30 October 1918 and Germany from 11 November 1918. Fighting had stopped, the governments remained in place, and the peace treaties that settled the war came later, in 1919 and 1920.',
   },
   dissolved: {
     label: 'Government dissolved, successor states not drawn',
-    color: '#9B8FA6',
-    stroke: '#6A6173',
+    color: '#948C9B',
+    stroke: '#6C6472',
     legend:
       'Austria-Hungary in November 1918. The Habsburg state had ceased to function: German-Austria and Hungary proclaimed republics on 12 and 16 November, and the Czechs, Slovanes, Croats and Poles had already proclaimed their own states in October. This map has no polygons for those successor states, so the old shape is shown in a colour that says plainly that the thing it names no longer exists.',
   },
   neutral: {
     label: 'Neutral',
-    color: '#8C979B',
-    stroke: '#5D6769',
+    color: '#949A9A',
+    stroke: '#646A6B',
     legend:
       'The Netherlands, Denmark, Norway, Sweden, Spain and Switzerland stayed out of the war throughout. Neutrality was not the same as inactivity: Swedish volunteers went to Finland, Danish and Norwegian merchants carried goods under British contract, and the Netherlands became the escape route for airdropped Allied airmen.',
   },
@@ -132,7 +132,7 @@ export const STATUS_META: Record<TerritoryStatus, StatusMeta> = {
  * Rendered in the map header so it cannot be missed.
  */
 export const GEOMETRY_NOTE =
-  'The shapes are those of July 1914 and do not move; what changes month by month is the colour, which records who is at war and whose army holds the ground.';
+  'The shapes are those of July 1914 and do not move; what changes month by month is the colour, which records who is at war and whose army holds the ground. In months when the colours change, the panel above the event cards names the real event that explains the change.';
 
 /**
  * Change points per polity, keyed by month: the entry takes effect for that

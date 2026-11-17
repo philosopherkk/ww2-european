@@ -1,4 +1,4 @@
-import type { Bloc, CountryStat, YearStat } from './types';
+import type { Bloc, CountryStat } from './types';
 
 /**
  * Manpower and loss figures for the Great War, on the borders of 1914.

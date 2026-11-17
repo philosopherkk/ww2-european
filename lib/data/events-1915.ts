@@ -49,7 +49,7 @@ export const EVENTS_1915: WW1Event[] = [
     fronts: ['air', 'home'],
     countries: ['Germany', 'United Kingdom'],
     figures: ['wilhelm_ii'],
-    note: 'Bad weather deflected the raiders from their intended targets to Great Yarmouth, Sherringham and King’s Lynn; four people were killed, sixteen injured, and damage was returned at about £7,740. The Kaiser had approved bombing of England on 7 January, and an attempt on 13 January had failed in the weather. German and British publicity each overstated the raid’s effects in opposite directions.',
+    note: 'Bad weather deflected the raiders from their intended targets to Great Yarmouth, Sheringham and King’s Lynn; four people were killed, sixteen injured, and damage was returned at about £7,740. The Kaiser had approved bombing of England on 7 January, and an attempt on 13 January had failed in the weather. German and British publicity each overstated the raid’s effects in opposite directions.',
     levels: {
       primary: {
         cause: 'Germany wanted to frighten Britain into giving up the war without having to fight its army in France.',
@@ -58,7 +58,7 @@ export const EVENTS_1915: WW1Event[] = [
       },
       secondary: {
         cause: 'The Kaiser approved raids on England on 7 January in the hope of forcing Britain to sue for peace, or at least of drawing ships, guns and factories away from the western front.',
-        what: 'Fog and cloud over the North Sea pushed the Zeppelins away from their intended targets onto Great Yarmouth, Sherringham and King’s Lynn. Four people were killed, sixteen injured, and property damage came to roughly £7,740.',
+        what: 'Fog and cloud over the North Sea pushed the Zeppelins away from their intended targets onto Great Yarmouth, Sheringham and King’s Lynn. Four people were killed, sixteen injured, and property damage came to roughly £7,740.',
         consequence: 'Newspapers made far more of the raid than its damage justified, while German claims were larger still. Night bombing of cities had begun, and with it the arms race between bombers and defences.',
       },
       university: {
@@ -100,7 +100,7 @@ export const EVENTS_1915: WW1Event[] = [
     id: 'dardanelles_naval_assault',
     date: '1915-03-18',
     precision: 'day',
-    title: 'The Dardanelles forced by sea: 18 March',
+    title: 'The attempt to force the Dardanelles by sea fails: 18 March',
     kind: 'battle',
     fronts: ['middle_east', 'naval'],
     countries: ['United Kingdom', 'France', 'Ottoman Empire', 'India'],

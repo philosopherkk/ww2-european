@@ -508,4 +508,90 @@ export const EVENTS_1916: WW1Event[] = [
       },
     },
   },
+
+  {
+    id: 'third_ohl_appointment',
+    date: '1916-08-29',
+    precision: 'day',
+    title: 'Hindenburg and Ludendorff take command of Germany’s war effort',
+    kind: 'politics',
+    fronts: ['politics', 'western'],
+    countries: ['Germany'],
+    figures: ['hindenburg', 'luddendorff'],
+    note: 'On 29 August 1916 Paul von Hindenburg became Chief of the General Staff and Erich Ludendorff First Quartermaster General, after Falkenhayn was removed following the failure at Verdun and the Romanian entry. The two men ran the army and much of the civilian war effort until 1918; historians call the arrangement a "silent dictatorship" because it was military power exercised through civilian institutions rather than a formal coup.',
+    levels: {
+      primary: {
+        cause: 'Germany’s commander had failed to win the war, and the generals wanted more control over how it was fought.',
+        what: 'In August 1916 two generals, Hindenburg and Ludendorff, were put in charge of the German army and its war plans.',
+        consequence: 'They made most of the important decisions for the rest of the war, including about food, factories and peace talks.',
+      },
+      secondary: {
+        cause: 'The stalemate at Verdun, the exhaustion of the army and Romania’s entry into the war destroyed Falkenhayn’s standing.',
+        what: 'Hindenburg became Chief of Staff and Ludendorff his deputy, but the two shared decisions; Ludendorff drove the daylight submarine campaign, the unrestricted U-boat campaign of 1917, and the offensives of 1918.',
+        consequence: 'Their authority reached beyond the army into labour policy, food supplies and diplomacy, and they forced the government to accept terms that civilians could not easily refuse.',
+      },
+      university: {
+        cause: 'The appointment marks the shift from a war run by a chief of staff to one run by an army triumvirate that answered to itself and to the Kaiser only nominally.',
+        what: 'Hindenburg supplied the prestige and Ludendorff the detail; the division of labour is why the period is sometimes called the dictatorship of Hindenburg and Ludendorff and sometimes simply Ludendorff’s dictatorship.',
+        consequence: 'Their decision to resume unrestricted submarine warfare in 1917, taken against the wishes of the civilian government, brought the United States into the war — the clearest example of military authority overriding political judgement.',
+      },
+    },
+  },
+  {
+    id: 'lloyd_george_premiership',
+    date: '1916-12-07',
+    precision: 'day',
+    title: 'Lloyd George becomes British prime minister',
+    kind: 'politics',
+    fronts: ['politics'],
+    countries: ['United Kingdom'],
+    note: 'David Lloyd George replaced H. H. Asquith as prime minister on 7 December 1916, after disagreement over the conduct of the war and the formation of a small war cabinet. At the time Britain had suffered a year of heavy losses on the Somme and was short of men and munitions; Lloyd George promised a more vigorous prosecution of the war, but his authority was greatest in 1917-18 when he forced the creation of the Supreme War Council and drove the negotiations that ended the war.',
+    levels: {
+      primary: {
+        cause: 'Many people in Britain thought the government was not running the war well enough.',
+        what: 'In December 1916 David Lloyd George became prime minister and formed a small group of ministers to make the main decisions.',
+        consequence: 'Britain’s war effort was now directed more tightly from the centre, though the fighting did not improve quickly.',
+      },
+      secondary: {
+        cause: 'Asquith’s coalition had failed to agree on strategy or to impose civilian control over the generals, and the Somme campaign had cost a great deal for little ground.',
+        what: 'Lloyd George formed a five-member War Cabinet and pressed for convoys, for a unified command on the Western Front and for better coordination with France and Italy.',
+        consequence: 'He won the 1918 election and led the negotiations at Paris; his reputation as the man who won the war rests on the last year as much as on his earlier reforms.',
+      },
+      university: {
+        cause: 'The change of government is part of the wider argument about whether the war was won by generals or by statesmen who organised industry, shipping and finance.',
+        what: 'Lloyd George’s promise of a more vigorous war did not produce a quick victory: 1917 brought French mutinies, the U-boat crisis and the failure at Passchendaele.',
+        consequence: 'His later claim to have directed the victory is contested by historians who emphasise the army’s recovery in 1918, but no British prime minister before him had built such a powerful peacetime state in so short a time.',
+      },
+    },
+  },
+
+
+  {
+    id: 'portugal_enters_war',
+    date: '1916-03-09',
+    precision: 'day',
+    title: 'Germany declares war on Portugal',
+    kind: 'politics',
+    fronts: ['politics', 'naval'],
+    countries: ['Portugal', 'Germany'],
+    note: 'Germany declared war on Portugal on 9 March 1916 after the Portuguese government, under Allied pressure, requisitioned German and Austro-Hungarian ships in its ports on 23 February. Portugal seized German shipping in reply, joined the Allied war effort and sent an expeditionary corps to France in 1917; fighting also continued between Portuguese and German forces in Angola and Mozambique. The change of colour on the map is dated to the declaration, not to the ship seizures.',
+    levels: {
+      primary: {
+        cause: 'Portugal had been neutral, but Germany and the Allies were both trying to use its ports and ships.',
+        what: 'After Portugal took over German ships in its harbours, Germany declared war on 9 March 1916.',
+        consequence: 'Portugal joined the Allies and later sent soldiers to fight in France and in Africa.',
+      },
+      secondary: {
+        cause: 'Britain wanted German shipping denied to Germany, while Portugal was exposed to German attack in its African colonies and depended on sea trade with Britain.',
+        what: 'The requisition of enemy shipping in February was followed by a German declaration of war on 9 March; Portugal then confiscated German ships and entered the war on the Allied side.',
+        consequence: 'The Portuguese Expeditionary Corps reached Flanders in 1917 and suffered heavy losses in the German Lys offensive of April 1918; the war strained the young republic at home.',
+      },
+      university: {
+        cause: 'Portugal shows how neutrality could be eroded by economic dependence and colonial vulnerability rather than by a decision about the central European balance of power.',
+        what: 'The government’s choice was contested at the time and contributed to the political crisis that brought Sidónio Pais to power in December 1917.',
+        consequence: 'The war did not solve Portugal’s colonial or financial problems; the map records a single colour change, while the real process ran through shipping law, colonial campaigns and domestic politics.',
+      },
+    },
+  },
+
 ];

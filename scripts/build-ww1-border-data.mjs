@@ -102,17 +102,10 @@ const ISO3 = {
   Portugal: 'PRT',
 };
 
-/**
- * lng/lat box we keep. The east stop is the 45th meridian: beyond it lies
- * Siberia and Central Asia, which no front of this war reached and which the map
- * cannot show anyway (see maxBounds in components/MapBrowser.tsx).
- */
-const EXTENT = [-25, 34, 45, 71.5];
-const BOX = turf.bboxPolygon(EXTENT);
 const MIN_ISLAND_KM2 = 900;
 const SIMPLIFY_TOLERANCE = 0.03;
 
-/** Rings smaller than MIN_ISLAND_KM2, and rings outside BOX, are dropped. */
+/** Rings smaller than MIN_ISLAND_KM2 are dropped. */
 function dropSmallRings(poly) {
   const polys = poly.geometry.type === 'MultiPolygon' ? poly.geometry.coordinates : [poly.geometry.coordinates];
   const kept = polys.filter((rings) => {

@@ -9,8 +9,8 @@ three times over for three reading levels.
 
 | Part | Contents |
 | --- | --- |
-| Map & timeline | 53 months on a slider, one boundary state coloured by who is at war with whom, solid lines for held fronts and dashed ones for offensives underway that month, click any country or line for detail |
-| Events | 89 events, each split into **why it happened**, **what happened** and **what followed** |
+| Map & timeline | turning-point panels explain every month in which the map colours change; 53 months on a slider, one boundary state coloured by who is at war with whom, solid lines for held fronts and dashed ones for offensives underway that month, click any country or line for detail |
+| Events | 102 events, each split into **why it happened**, **what happened** and **what followed** |
 | People | 72 biographies with 71 period photographs, from emperors and field marshals to pashas, prime ministers, a nurse and two revolutionaries |
 | Numbers | Population, mobilisation and casualty tables for 16 states, with ranges wherever historians disagree and a note on each figure saying whether influenza deaths are inside it or outside |
 | Sources & how to read | What the map data is, what it cannot show, and every source used |

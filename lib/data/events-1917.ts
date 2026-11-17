@@ -664,7 +664,7 @@ export const EVENTS_1917: WW1Event[] = [
     fronts: ['western'],
     countries: ['United Kingdom', 'Germany', 'France', 'Belgium', 'India'],
     figures: ['haig', 'luddendorff'],
-    note: 'The end of the campaign is dated two ways in the same sources: the last substantial attack was made on 10 November, and the offensive is often described as having been called off on 20 November, by which day the German counter-attack at Cambrai had begun. Losses for the fighting on the ridge are given separately from the campaign totals on the 31 July card: the Canadian Corps lost 15,654 men from 26 October to 10 November, and British formations engaged with it rather more again, while the German figures for the same fortnight, 20,500 for 21 to 31 October and 9,500 for 1 to 10 November, come from the German official history and are hospital admissions rather than a head count, so they cannot be added to British returns. Passchendaele village lies about five miles east of Roulers, on the railway that supplied the German Fourth Army.',
+    note: 'The end of the campaign is dated two ways in the same sources: the last substantial attack was made on 10 November, and the offensive is often described as having been called off on 20 November, by which day the Battle of Cambrai had begun. Losses for the fighting on the ridge are given separately from the campaign totals on the 31 July card: the Canadian Corps lost 15,654 men from 26 October to 10 November, and British formations engaged with it rather more again, while the German figures for the same fortnight, 20,500 for 21 to 31 October and 9,500 for 1 to 10 November, come from the German official history and are hospital admissions rather than a head count, so they cannot be added to British returns. Passchendaele lies on the last ridge east of Ypres, about five miles from Roulers (Roeselare), a railway junction on the main supply route of the German Fourth Army.',
     levels: {
       primary:
         {
@@ -676,12 +676,12 @@ export const EVENTS_1917: WW1Event[] = [
         {
           cause: 'The Passchendaele ridge commanded the flooded ground of Flanders and threatened the railway junction at Roulers, five miles to the east, which supplied the German Fourth Army. By late October the Anzac and British corps in the line had spent themselves in the fighting of September and early October, so General Currie’s Canadian Corps was brought back from the Arras front: it was the only formation in Flanders with rested, trained infantry and communications that still worked in mud.',
           what: 'The Canadians attacked on a narrow front on 26 and 30 October, taking the spurs south of the summit, and on 6 November took the village and the ridge itself, with the final objectives cleared on 10 November. The attack was carefully prepared: guns were registered by sound ranging and aerial photography rather than by trying them out in front of the enemy, infantry practised crossing the ground they would have to cross, and the bombardment was heavy but short, so that the element of surprise was partly kept. The Canadian Corps lost 15,654 men in the fortnight of the fighting, and the British formations engaged alongside it lost a good deal more. The advance stopped just short of the Westrozebeke position, the next German line to the east.',
-          consequence: 'Third Ypres was over, and the reason was manpower rather than weather. Five British divisions were sent to Italy after Caporetto and four were held back for Byng’s attack at Cambrai on 20 November, which left nothing for a continuation. Wynne, writing in 1939 in the British official history of the campaign, judged that the first German defensive zone had been taken, that the second and third had not, that the coast had never been seriously threatened, and that the campaign had nevertheless forced the German army to fight and be worn down in Flanders where the attacker chose the ground. The ground won at such cost was overrun by the Germans on 10 April 1918.',
+          consequence: 'Third Ypres was over, and the reason was manpower rather than weather. Five British divisions were sent to Italy after Caporetto and four were held back for Byng’s attack at Cambrai on 20 November, which left nothing for a continuation. Wynne, writing in 1948 in the British official history of the campaign, judged that the first German defensive zone had been taken, that the second and third had not, that the coast had never been seriously threatened, and that the campaign had nevertheless forced the German army to fight and be worn down in Flanders where the attacker chose the ground. The ground won at such cost was overrun by the Germans on 10 April 1918.',
         },
       university:
         {
           cause: 'What Passchendaele means depends on what Third Ypres is taken to have been for. One reading treats it as a breakthrough attempt that failed in the mud; another, following the British official history and Wynne, treats it as attrition, in which the ridge was worth little but the compulsion on the German army to feed divisions into Flanders was worth a great deal. The German record was rewritten before it was published: the postwar German official history explained the losses by the failure of General von Loßberg’s defensive methods, which left the Third Supreme Command unblamed, although that command had itself imposed a new defensive scheme on 7 October, during the fighting.',
-          what: 'This phase is better documented than most of the campaign, because the Canadian Corps kept detailed records and because Der Weltkrieg worked from divisional war diaries. Its returns are also the least comparable: Canadian and British losses are daily head counts, while the German figures of 20,500 for 21 to 31 October and 9,500 for 1 to 10 November are admissions to medical facilities on a cycle of roughly ten days. The end of the campaign is variously dated to the last substantial attack on 10 November or to a decision taken on 20 November after the German counter-attack at Cambrai, and both appear in the accounts of the same battle.',
+          what: 'This phase is better documented than most of the campaign, because the Canadian Corps kept detailed records and because Der Weltkrieg worked from divisional war diaries. Its returns are also the least comparable: Canadian and British losses are daily head counts, while the German figures of 20,500 for 21 to 31 October and 9,500 for 1 to 10 November are admissions to medical facilities on a cycle of roughly ten days. The end of the campaign is variously dated to the last substantial attack on 10 November or to a decision taken on 20 November after the British attack at Cambrai began, and both appear in the accounts of the same battle.',
           consequence: 'The argument is now mostly arithmetic and the argument about what the arithmetic means. Prior and Wilson, writing in 1997, put British and German losses for the campaign at about 275,000 and 200,000, reviving the case that the attacker lost more than a British army could afford; other writers, with Sheldon, hold that relative casualties are the wrong measure, since the German army had fewer men and could not replace them at all. Lloyd George’s verdict in his 1938 memoirs, that the campaign was one of the greatest disasters of the war, settled the popular judgement, and much recent British scholarship is written against that verdict rather than against the German account of the fighting.',
         },
     },
@@ -717,4 +717,172 @@ export const EVENTS_1917: WW1Event[] = [
         },
     },
   },
+
+  {
+    id: 'reichstag_peace_resolution',
+    date: '1917-07-19',
+    precision: 'day',
+    title: 'The Reichstag votes for peace without annexations',
+    kind: 'politics',
+    fronts: ['politics', 'home'],
+    countries: ['Germany'],
+    figures: ['bethmann_hollweg'],
+    note: 'On 19 July 1917 the Reichstag passed a resolution calling for peace without annexations or indemnities, by 212 votes to 126, with the Catholic Centre and the SPD supporting it. It was a signal that the parliamentary majority no longer trusted the government’s war aims; Bethmann Hollweg, who had backed the resolution, lost the confidence of Ludendorff and was dismissed in July. The resolution did not end the war, and the Treaty of Brest-Litovsk in 1918 imposed exactly the kind of eastern settlement it had rejected.',
+    levels: {
+      primary: {
+        cause: 'After three years of war, many Germans wanted peace and did not want to go on fighting for more land.',
+        what: 'The German parliament voted in July 1917 for a peace with no land grabs and no payments.',
+        consequence: 'The generals no longer trusted the government, and the chancellor was forced out soon after.',
+      },
+      secondary: {
+        cause: 'The U-boat campaign had failed to knock Britain out, the United States had entered the war, and food shortages at home were worsening.',
+        what: 'The Reichstag passed the peace resolution, but the army leadership treated it as a statement that the government had lost its nerve.',
+        consequence: 'Bethmann Hollweg was replaced by Michaelis, a chancellor who did little more than carry out Ludendorff’s instructions; the gap between parliamentary opinion and military power widened.',
+      },
+      university: {
+        cause: 'The resolution is the best single measure of the collapse of the Bundestag majority’s wartime consensus: the parties that had voted war credits in 1914 now set conditions for continuing.',
+        what: 'Its wording was deliberately vague about borders, and different parties read different things into it; the army treated the vote as evidence that civilians could not be trusted with strategy.',
+        consequence: 'The episode is central to the argument about Germany’s "silent dictatorship": the vote showed that parliament existed, and the dismissal of the chancellor showed where power lay.',
+      },
+    },
+  },
+  {
+    id: 'corfu_declaration',
+    date: '1917-07-20',
+    precision: 'day',
+    title: 'The Corfu Declaration plans a South Slav state',
+    kind: 'politics',
+    fronts: ['politics', 'balkans'],
+    countries: ['Serbia'],
+    note: 'On 20 July 1917 the Serbian government in exile and the Yugoslav Committee, a group of South Slav politicians from Austria-Hungary, signed the Corfu Declaration. It agreed to work for a single state of Serbs, Croats and Slovenes after the war, with a constituent assembly to decide its constitution. The declaration was a political programme, not a state: the Kingdom of Serbs, Croats and Slovenes was proclaimed in December 1918.',
+    levels: {
+      primary: {
+        cause: 'South Slav peoples lived in several different empires, and their leaders wanted to be together after the war.',
+        what: 'On the island of Corfu, Serbian ministers and South Slav exiles agreed in July 1917 to work for one state after the war.',
+        consequence: 'The plan was the beginning of Yugoslavia, though the new country was only created in 1918.',
+      },
+      secondary: {
+        cause: 'Serbia’s government and army had been driven into exile in 1915, while South Slav politicians from Austria-Hungary wanted to break with Vienna.',
+        what: 'The declaration set out a common aim, a future constituent assembly and a temporary arrangement under the Serbian dynasty, leaving the form of government undecided.',
+        consequence: 'It gave the South Slav cause diplomatic weight with the Allies and became the basis for the union of December 1918; disagreements over centralisation versus federalism were built into the settlement.',
+      },
+      university: {
+        cause: 'The declaration was a compromise made in exile between a victorious but weakened state and a committee without territory or an electorate.',
+        what: 'Its vagueness about the future constitution was deliberate, but it stored up the argument between the Serbian centralists and the Croatian federalists that shaped Yugoslav politics until 1941.',
+        consequence: 'The union of 1918 followed from the defeat of Austria-Hungary rather than from a plebiscite, which is why the new state’s legitimacy was contested from the start.',
+      },
+    },
+  },
+  {
+    id: 'selective_service_act',
+    date: '1917-05-18',
+    precision: 'day',
+    title: 'The United States introduces conscription',
+    kind: 'politics',
+    fronts: ['politics', 'home'],
+    countries: ['United States'],
+    note: 'The Selective Service Act of 18 May 1917 authorised the president to draft men into the army after the United States entered the war in April; local boards registered and exempted men under a system that was controversial but produced the force deployed in France in 1918. Conscription also became a rallying point for opponents of the war, who argued that a republic should not force citizens to fight overseas.',
+    levels: {
+      primary: {
+        cause: 'The United States had entered the war but had only a small standing army.',
+        what: 'In May 1917 Congress passed a law allowing the government to call up men for military service.',
+        consequence: 'Millions of men were registered and hundreds of thousands were sent to France in 1918.',
+      },
+      secondary: {
+        cause: 'Volunteering alone could not raise the army needed to send a substantial force to Europe quickly.',
+        what: 'The act required male citizens to register, and local boards decided who would serve and who would be exempted on grounds such as occupation, health or conscience.',
+        consequence: 'The draft produced the army that fought at Cantigny, the Marne and the Meuse-Argonne, and it gave the American expeditionary force a weight Germany could not ignore.',
+      },
+      university: {
+        cause: 'The act settled a long American argument about whether a citizen army could be raised by compulsion in a war declared to defend liberty.',
+        what: 'Local administration made the system acceptable to many communities but also produced unequal treatment, particularly of Black Americans and of men with fewer resources to claim exemptions.',
+        consequence: 'The speed of American mobilisation changed the strategic balance in 1918; the political argument it created did not end with the war, and conscription returned only with the draft of 1940.',
+      },
+    },
+  },
+
+
+  {
+    id: 'clemenceau_premiership',
+    date: '1917-11-16',
+    precision: 'day',
+    title: 'Clemenceau returns to power in France',
+    kind: 'politics',
+    fronts: ['politics'],
+    countries: ['France'],
+    figures: ['clemenceau'],
+    note: 'Georges Clemenceau became prime minister of France on 16 November 1917, after the Nivelle offensive, the French army mutinies and the loss of the government’s confidence. He had been out of office since 1909 and was seventy-six; his government lasted until the armistice and then led the French delegation at Paris. His authority rested on a refusal to negotiate a compromise peace with Germany.',
+    levels: {
+      primary: {
+        cause: 'France had suffered a terrible year and its government had lost the confidence of the army and the public.',
+        what: 'In November 1917 Georges Clemenceau, an old and forceful politician, became prime minister again.',
+        consequence: 'He held France to the war until Germany was defeated and then led the French delegation at the peace talks.',
+      },
+      secondary: {
+        cause: 'The failure of the Nivelle offensive in April and the mutinies that followed had discredited the government, while the army needed a political leader who would not press for premature attacks.',
+        what: 'Clemenceau formed a government of experienced ministers, visited the front immediately, and gave the new commander Pétain room to restore the army before the next offensives.',
+        consequence: 'His determination to fight on until victory shaped the peace settlement: France demanded security and reparations rather than a negotiated compromise.',
+      },
+      university: {
+        cause: 'Clemenceau’s return is a case of political will mattering in a war of attrition: he did not change the material balance, but he made it impossible for France to seek a separate settlement.',
+        what: 'His government survived scandals and parliamentary challenges, and he used the crisis of 1918, including the German spring offensives, to press for a unified Allied command.',
+        consequence: 'His postwar reputation rests on the Treaty of Versailles, which he defended as the security France needed; the severity of its terms remains one of the central arguments about the peace.',
+      },
+    },
+  },
+  {
+    id: 'pope_benedict_xv_peace_note',
+    date: '1917-08-01',
+    precision: 'month',
+    title: 'Pope Benedict XV proposes a negotiated peace',
+    kind: 'diplomacy',
+    fronts: ['politics', 'italian'],
+    countries: ['Italy'],
+    note: 'On 1 August 1917 Pope Benedict XV addressed the belligerents with a peace note calling for a return to the pre-war frontiers, arbitration, freedom of the seas and a league of nations; it was published in mid-August. Germany and Austria-Hungary saw it as a basis for talks, but the Western powers rejected a settlement that would have left Germany in occupation of Belgian and French territory; the United States entered the war before it could be pursued.',
+    levels: {
+      primary: {
+        cause: 'The Pope wanted the killing to stop and thought the countries could agree to return to their old borders.',
+        what: 'In August 1917 he sent a peace proposal to the countries fighting, asking them to talk instead of continuing the war.',
+        consequence: 'Both sides said they wanted peace, but neither accepted the terms, and the war went on.',
+      },
+      secondary: {
+        cause: 'By 1917 neither coalition could win quickly, and neutrals and religious leaders pressed for a negotiated settlement.',
+        what: 'The note proposed arbitration, the restoration of occupied territory and an international organisation to prevent future wars — ideas close to those later attached to the League of Nations.',
+        consequence: 'The offer failed because it could not bridge the difference between a return to 1914 frontiers and the war aims each side now claimed; it nevertheless prepared the language of postwar internationalism.',
+      },
+      university: {
+        cause: 'The note matters less as a diplomatic event than as evidence of how early a "league of nations" solution was on the table, before either the Fourteen Points or the League Covenant.',
+        what: 'The Central Powers welcomed it as a way to keep occupied territory as a bargaining counter, while Britain and France regarded that as rewarding aggression — a disagreement no formula could resolve in 1917.',
+        consequence: 'Historians of the peace movement treat the failed note as one of the missed opportunities of 1917; it is a useful corrective to accounts that begin the history of the League only with Wilson.',
+      },
+    },
+  },
+  {
+    id: 'treaty_of_bucharest_1918',
+    date: '1918-05-07',
+    precision: 'day',
+    title: 'Romania signs the Treaty of Bucharest',
+    kind: 'diplomacy',
+    fronts: ['politics', 'balkans'],
+    countries: ['Romania', 'Germany', 'Austria-Hungary', 'Bulgaria', 'Ottoman Empire'],
+    note: 'Romania signed a separate peace with the Central Powers at Bucharest on 7 May 1918, after its army had been driven into Moldavia in 1916 and Russia had collapsed. The terms gave Germany control of Romanian oil and granted Austria-Hungary rights in the Carpathians; Transylvania remained with Austria-Hungary. Romania’s government returned to war in November 1918, days before the armistice, and the union of Transylvania with Romania followed at the end of the month.',
+    levels: {
+      primary: {
+        cause: 'Romania had been defeated and its ally Russia had collapsed, so its government could not go on fighting.',
+        what: 'Romania signed a separate peace with Germany and its allies in May 1918.',
+        consequence: 'Germany took control of Romanian oil until the war ended, and Romania rejoined the Allies in November.',
+      },
+      secondary: {
+        cause: 'The Romanian army still existed in Moldavia, but it could not hold out without Russian support, and the government wanted to preserve the state.',
+        what: 'The treaty handed economic concessions to Germany and left the disputed frontier questions unsettled; it was signed under the pressure of occupation rather than as a free settlement.',
+        consequence: 'The agreement freed German divisions for the Western Front and became the basis for the argument in Romania about whether the government had saved the country or surrendered it.',
+      },
+      university: {
+        cause: 'Bucharest is one of several separate peaces imposed on eastern Europe in 1918, and it shows how the collapse of Russia decided the fate of states that had entered the war on the Allied side.',
+        what: 'The treaty was never fully put into effect: the defeat of Germany in November allowed Romania to re-enter the war and to claim Transylvania in the union of 1 December.',
+        consequence: 'Romanian historians still debate the responsibility of the government that signed it, and the argument is inseparable from the later question of whether the settlement of Transylvania was just.',
+      },
+    },
+  },
+
 ];

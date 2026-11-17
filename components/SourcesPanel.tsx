@@ -1,5 +1,6 @@
 'use client';
 
+import { ChevronDown } from 'lucide-react';
 import {
   FIGURES,
   FIGURE_BY_ID,
@@ -86,10 +87,36 @@ const MAP_LIMITS: { head: string; body: string }[] = [
   },
 ];
 
+const SECTIONS = [
+  { id: 'how-to-read', label: 'How to read' },
+  { id: 'map-limits', label: 'Map limits' },
+  { id: 'sources', label: 'Sources' },
+  { id: 'photographs', label: 'Photographs' },
+  { id: 'disputed', label: 'Still argued over' },
+  { id: 'content-notes', label: 'Content notes' },
+];
+
+const CARD = 'scroll-mt-16 rounded-xl border border-stone-300 bg-white p-4 shadow-sm sm:p-5';
+
 export default function SourcesPanel() {
   return (
     <div className="space-y-5">
-      <section className="rounded-lg border border-stone-300 bg-white p-4 shadow-sm">
+      <div className="mx-auto max-w-3xl space-y-4">
+      <nav
+        aria-label="On this page"
+        className="no-scrollbar sticky top-0 z-20 -mx-3 flex gap-1.5 overflow-x-auto border-b border-stone-200 bg-stone-100/95 px-3 py-2.5 backdrop-blur sm:-mx-4 sm:px-4 lg:mx-0 lg:px-0"
+      >
+        {SECTIONS.map((sec) => (
+          <a
+            key={sec.id}
+            href={`#${sec.id}`}
+            className="inline-flex h-9 shrink-0 items-center rounded-full border border-stone-300 bg-white px-3.5 text-sm font-medium text-stone-700 hover:bg-stone-100"
+          >
+            {sec.label}
+          </a>
+        ))}
+      </nav>
+      <section id="how-to-read" className={CARD}>
         <h2 className="text-lg font-bold text-stone-900">How to read this site</h2>
         <ol className="mt-2 list-decimal space-y-1.5 pl-5 text-[15px] leading-relaxed text-stone-700">
           <li>
@@ -121,7 +148,7 @@ export default function SourcesPanel() {
         </ol>
       </section>
 
-      <section className="rounded-lg border border-stone-300 bg-white p-4 shadow-sm">
+      <section id="map-limits" className={CARD}>
         <h2 className="text-lg font-bold text-stone-900">The map data and its limits</h2>
         <p className="mt-2 text-[15px] leading-relaxed text-stone-700">
           The outlines come from one published file: Jack Kavanagh,{' '}
@@ -147,18 +174,26 @@ export default function SourcesPanel() {
         <h3 className="mt-4 text-base font-semibold text-stone-900">
           Known limits, stated plainly
         </h3>
-        <ul className="mt-1.5 space-y-1.5 text-[14px] leading-relaxed text-stone-700">
+        <div className="mt-2 divide-y divide-stone-200 rounded-lg border border-stone-200">
           {MAP_LIMITS.map((limit) => (
-            <li key={limit.head} className="pl-3">
-              <strong className="font-semibold">{limit.head}.</strong> {limit.body}
-            </li>
+            <details key={limit.head} className="group">
+              <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 px-3 py-2 text-[15px] font-semibold text-stone-800 hover:bg-stone-50 [&::-webkit-details-marker]:hidden">
+                <span>{limit.head}</span>
+                <ChevronDown
+                  size={18}
+                  aria-hidden
+                  className="shrink-0 text-stone-500 transition-transform group-open:rotate-180"
+                />
+              </summary>
+              <p className="px-3 pb-3 text-[15px] leading-relaxed text-stone-700">{limit.body}</p>
+            </details>
           ))}
-        </ul>
+        </div>
         <details className="mt-3">
           <summary className="cursor-pointer text-sm font-semibold text-stone-700">
             The {NOTED_MONTHS.length} months with a note of their own
           </summary>
-          <ul className="mt-2 space-y-1.5 text-[13px] leading-relaxed text-stone-600">
+          <ul className="mt-2 space-y-1.5 text-[13px] leading-relaxed text-stone-700">
             {NOTED_MONTHS.map((s) => (
               <li key={s.id}>
                 <span className="font-medium text-stone-800">{s.label}</span>
@@ -167,16 +202,16 @@ export default function SourcesPanel() {
             ))}
           </ul>
         </details>
-        <p className="mt-3 text-[13px] leading-snug text-stone-500">
+        <p className="mt-3 text-[13px] leading-snug text-stone-600">
           Every month in the timeline has a snapshot entry: {SNAPSHOTS.length} months,{' '}
           {SNAPSHOTS[0]?.countries} territories drawn in each of them, all from the same July 1914
           geometry.
         </p>
       </section>
 
-      <section className="rounded-lg border border-stone-300 bg-white p-4 shadow-sm">
+      <section id="sources" className={CARD}>
         <h2 className="text-lg font-bold text-stone-900">Where the numbers and the text come from</h2>
-        <p className="mt-1 text-sm text-stone-600">
+        <p className="mt-1 text-sm text-stone-700">
           Every figure on this site was taken from a published source rather than estimated. Where a
           total is genuinely argued over, the range is given rather than a single number, and the two
           names behind the range are usually named. Casualty totals say whether they include deaths
@@ -187,13 +222,13 @@ export default function SourcesPanel() {
           {SOURCES.map((s) => (
             <li key={s.citation} className="border-l-2 border-stone-300 pl-3">
               <p className="text-[15px] font-medium leading-snug text-stone-900">{s.citation}</p>
-              <p className="text-xs text-stone-500">{s.publisher}</p>
-              <p className="mt-0.5 text-[13px] leading-snug text-stone-600">{s.usedFor}</p>
+              <p className="text-xs text-stone-600">{s.publisher}</p>
+              <p className="mt-0.5 text-[13px] leading-snug text-stone-700">{s.usedFor}</p>
               <a
                 href={s.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="break-all text-xs text-blue-700 underline hover:text-blue-900"
+                className="inline-block break-all py-1.5 text-xs text-blue-700 underline hover:text-blue-900"
               >
                 {s.url}
               </a>
@@ -202,7 +237,7 @@ export default function SourcesPanel() {
         </ul>
       </section>
 
-      <section className="rounded-lg border border-stone-300 bg-white p-4 shadow-sm">
+      <section id="photographs" className={CARD}>
         <h2 className="text-lg font-bold text-stone-900">Photographs of the people</h2>
         <p className="mt-2 text-[15px] leading-relaxed text-stone-700">
           {PORTRAIT_LIST.length} of the {FIGURES.length} biographies carry a photograph. Each one is
@@ -224,7 +259,7 @@ export default function SourcesPanel() {
           <summary className="cursor-pointer text-sm font-semibold text-stone-700">
             Every photograph and its credit
           </summary>
-          <ul className="mt-2 space-y-1 text-[13px] leading-snug text-stone-600">
+          <ul className="mt-2 space-y-1 text-[13px] leading-snug text-stone-700">
             {PORTRAIT_LIST.map((p) => (
               <li key={p.id}>
                 <span className="font-medium text-stone-800">
@@ -245,7 +280,7 @@ export default function SourcesPanel() {
         </details>
       </section>
 
-      <section className="rounded-lg border border-amber-300 bg-amber-50 p-4">
+      <section id="disputed" className="scroll-mt-16 rounded-xl border border-amber-300 bg-amber-50 p-4 sm:p-5">
         <h2 className="text-lg font-bold text-stone-900">What is still argued over</h2>
         <p className="mt-1 text-sm text-stone-700">
           Historians do not agree on all of these numbers, and several of them are argued over
@@ -262,7 +297,7 @@ export default function SourcesPanel() {
         </dl>
       </section>
 
-      <section className="rounded-lg border border-stone-300 bg-white p-4 shadow-sm">
+      <section id="content-notes" className={CARD}>
         <h2 className="text-lg font-bold text-stone-900">Content warnings and language</h2>
         <p className="mt-2 text-[15px] leading-relaxed text-stone-700">
           The Armenian genocide and the killing of the Assyrian and Greek populations of the Ottoman
@@ -281,6 +316,7 @@ export default function SourcesPanel() {
           the fighting here.
         </p>
       </section>
+      </div>
     </div>
   );
 }

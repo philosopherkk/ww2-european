@@ -169,7 +169,7 @@ export const SOURCES: Source[] = [  {
   },
   {
     citation:
-      'James E. Edmonds and A. F. Becke, _History of the Great War based on Official Documents: Military Operations France and Belgium, 1918, volume I: The German March Offensive and its Preliminaries_ (London: His Majesty\'s Stationery Office, 1935)',
+      'James E. Edmonds, _History of the Great War based on Official Documents: Military Operations France and Belgium, 1918, volume I: The German March Offensive and its Preliminaries_ (London: His Majesty\'s Stationery Office, 1935)',
     publisher: 'His Majesty\'s Stationery Office, London',
     url: 'https://archive.org/details/historyofgreatwa0000unse_r2f1',
     usedFor:
@@ -278,7 +278,7 @@ export const SOURCES: Source[] = [  {
   {
     citation: 'Christopher Clark, _The Sleepwalkers: How Europe Went to War in 1914_ (London: Allen Lane, 2012)',
     publisher: 'Allen Lane, London',
-    url: 'https://www.penguinrandomhouse.com/books/55416/the-sleepwalkers-by-christopher-clark/',
+    url: 'https://www.penguin.co.uk/books/55884/the-sleepwalkers-by-clark-christopher/9780141027821',
     usedFor:
       'The July crisis of 1914 and the question of how far each government chose war: the serial failures of the Austro-Serbian exchange, the German backing for Vienna, the Russian partial then general mobilisation, and the decision-making in Paris, London and Berlin. It is the main support for the site\'s treatment of who was responsible, against the Fischer thesis and its critics.',
   },

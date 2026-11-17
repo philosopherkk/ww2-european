@@ -170,7 +170,7 @@ export const LINE_KIND_META: Record<
     weight: 3.5,
     dash: '8 6',
     explanation:
-      'The dashed line is the whole axis of the operation; the ring marks roughly where it had got to by the month you are reading.',
+      'The dashed line is the whole schematic axis of the operation through named places; the ring marks an interpolated position by date, not a documented map reference for that morning.',
   },
   front: {
     label: 'holding this line',
