@@ -12,7 +12,7 @@ import {
   useMap,
   useMapEvents,
 } from 'react-leaflet';
-import { ChevronDown, Info, ListTree } from 'lucide-react';
+import { ChevronDown, Info, ListTree, Maximize2, Minimize2 } from 'lucide-react';
 import type { CampaignLine, Side } from '@/lib/data';
 import { CAMPAIGN_LINES, GEOMETRY_NOTE, STATUS_META, STATUS_ORDER, SNAPSHOT_NOTES, statusFor } from '@/lib/data';
 import { PLACES } from '@/lib/data/places';
@@ -111,6 +111,9 @@ interface Props {
   detailed: boolean;
   /** Dots for the named places the campaign lines run through. */
   showPlaces: boolean;
+  /** Phones: the pinned map is taller when true. */
+  tall?: boolean;
+  onToggleTall?: () => void;
 }
 
 export default function MapBrowser({
@@ -119,6 +122,8 @@ export default function MapBrowser({
   showBorders,
   detailed,
   showPlaces,
+  tall = false,
+  onToggleTall,
 }: Props) {
   const { snapshot } = useMemo(() => nearestSnapshot(monthKey), [monthKey]);
   const [data, setData] = useState<FeatureCollection | null>(null);
@@ -193,7 +198,7 @@ export default function MapBrowser({
   const showMarkers = showPlaces && zoom >= 7;
 
   return (
-    <div className="flex h-full flex-col gap-2">
+    <div className="contents lg:flex lg:h-full lg:flex-col lg:gap-2">
       <div className="text-[13px]">
         <div className="flex items-center justify-between gap-2">
           <p className="min-w-0 font-semibold leading-snug text-stone-800">
@@ -223,7 +228,7 @@ export default function MapBrowser({
         )}
       </div>
 
-      <div className="relative isolate h-[50vh] min-h-[300px] overflow-hidden rounded-xl border border-stone-300 bg-stone-100 shadow-sm lg:h-auto lg:min-h-0 lg:flex-1">
+      <div className="sticky top-[var(--bar-h,5.2rem)] isolate z-30 h-[var(--map-h,50vh)] overflow-hidden rounded-xl border border-stone-300 bg-stone-100 shadow-sm lg:relative lg:top-auto lg:z-auto lg:h-auto lg:min-h-0 lg:flex-1">
         <MapContainer
           center={[50.5, 14]}
           zoom={4}
@@ -239,6 +244,7 @@ export default function MapBrowser({
           className="h-full w-full"
         >
           <ZoomReporter onZoom={setZoom} />
+          <MapResizer />
           {/* CARTO's basemaps began demanding an API key and now serve a watermarked
               "API KEY REQUIRED" tile, and Wikimedia's tileserver answers a public
               deployment's referrer with a 403 HTML page that Chrome then blocks as an
@@ -385,6 +391,23 @@ export default function MapBrowser({
             ))}
         </MapContainer>
 
+        <div className="absolute right-2 top-2 z-[450] flex items-start gap-1.5 lg:hidden">
+          <span className="rounded-md border border-stone-300 bg-white/90 px-2 py-1 text-[11px] font-semibold leading-none text-stone-800 shadow-sm backdrop-blur">
+            Borders as of {snapshot.label}
+          </span>
+          {onToggleTall && (
+            <button
+              type="button"
+              onClick={onToggleTall}
+              aria-pressed={tall}
+              aria-label={tall ? 'Make the map smaller' : 'Make the map taller'}
+              className="grid h-9 w-9 place-items-center rounded-full border border-stone-300 bg-white/95 text-stone-800 shadow-md backdrop-blur"
+            >
+              {tall ? <Minimize2 size={16} aria-hidden /> : <Maximize2 size={16} aria-hidden />}
+            </button>
+          )}
+        </div>
+
         {!data && !error && (
           <div className="absolute inset-0 z-[500] flex items-center justify-center bg-stone-100/80 text-sm text-stone-700">
             Loading {snapshot.label} borders…
@@ -398,7 +421,7 @@ export default function MapBrowser({
 
         <div className="absolute bottom-6 left-2 z-[450] max-w-[min(86%,20rem)] sm:bottom-7">
           {keyOpen && (
-            <div className="mb-1.5 max-h-[60vh] overflow-y-auto rounded-lg border border-stone-300 bg-white/95 p-2.5 text-xs shadow-md backdrop-blur">
+            <div className="mb-1.5 max-h-[calc(var(--map-h,60vh)-4.5rem)] overflow-y-auto lg:max-h-[60vh] rounded-lg border border-stone-300 bg-white/95 p-2.5 text-xs shadow-md backdrop-blur">
               <p className="mb-1.5 font-semibold text-stone-800">
                 {showBorders ? 'Who was at war, and where the lines were' : 'Fronts and movements'}
               </p>
@@ -468,6 +491,18 @@ export default function MapBrowser({
       </p>
     </div>
   );
+}
+
+/** The map box changes height (pinned, taller, rotated phone); tell Leaflet. */
+function MapResizer() {
+  const map = useMap();
+  useEffect(() => {
+    const el = map.getContainer();
+    const ro = new ResizeObserver(() => map.invalidateSize());
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, [map]);
+  return null;
 }
 
 /** Reports zoom changes without touching React state inside an effect. */
