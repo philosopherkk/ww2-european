@@ -6,6 +6,7 @@ import {
   ChevronLeft,
   ChevronRight,
   ChevronDown,
+  GraduationCap,
   Layers3,
   Map as MapIcon,
   MapPin,
@@ -83,6 +84,11 @@ export default function Home() {
   // browser history with 92 entries.
   const [urlHydrated, setUrlHydrated] = useState(false);
   const listRef = useRef<HTMLDivElement>(null);
+  // On phones the map is pinned under the month bar while the events scroll
+  // beneath it; the reader can make it taller to look at it properly.
+  const [mapTall, setMapTall] = useState(false);
+  const [barH, setBarH] = useState(82);
+  const barRef = useRef<HTMLDivElement>(null);
 
   const month = MONTHS[monthIdx];
   const monthKey = month.key;
@@ -213,12 +219,25 @@ export default function Home() {
     return out;
   }, [visibleEvents]);
 
+  // The month bar is taller where the year marks show, so the pinned map
+  // measures it instead of guessing.
+  useEffect(() => {
+    const el = barRef.current;
+    if (!el) return;
+    const ro = new ResizeObserver(() => setBarH(Math.round(el.getBoundingClientRect().height)));
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, [tab]);
+
   // Scroll the list back to the top whenever the month changes.
   useEffect(() => {
     if (scope === 'month') listRef.current?.scrollTo({ top: 0 });
   }, [monthKey, scope]);
   return (
-    <div className="pb-nav min-h-screen bg-stone-100 text-stone-900">
+    <div
+      className="pb-nav min-h-screen bg-stone-100 text-stone-900"
+      style={{ '--bar-h': `${barH}px` } as React.CSSProperties}
+    >
       <header className="bg-stone-900 text-stone-50">
         <div className="mx-auto flex max-w-[1400px] flex-wrap items-center gap-x-5 gap-y-2 px-3 py-2.5 sm:px-4 xl:flex-nowrap xl:py-3">
           <div className="w-full min-w-0 xl:w-auto">
@@ -237,7 +256,7 @@ export default function Home() {
           <TabButtons tab={tab} onChange={setTab} variant="header" />
 
           <div
-            className="flex w-full items-stretch overflow-hidden rounded-lg border border-stone-600 xl:w-auto"
+            className="hidden items-stretch overflow-hidden rounded-lg border border-stone-600 xl:flex"
             role="group"
             aria-label="Reading level"
           >
@@ -264,7 +283,10 @@ export default function Home() {
       </header>
 
       {tab === 'map' && (
-        <div className="sticky top-0 z-[500] border-b border-stone-300 bg-white/95 shadow-sm backdrop-blur">
+        <div
+          ref={barRef}
+          className="sticky top-0 z-[500] border-b border-stone-300 bg-white/95 shadow-sm backdrop-blur"
+        >
           <div className="mx-auto flex max-w-[1400px] flex-wrap items-center gap-x-3 gap-y-0 px-3 pb-1 pt-2 sm:px-4 lg:flex-nowrap lg:gap-x-4 lg:pb-2">
             <div className="flex flex-1 items-center gap-1.5 lg:flex-none">
               <button
@@ -358,10 +380,17 @@ export default function Home() {
 
       <main className="mx-auto max-w-[1400px] px-3 py-3 sm:px-4 sm:py-4">
         {tab === 'map' && (
-          <div className="grid gap-4 lg:grid-cols-[minmax(0,1.4fr)_minmax(380px,1fr)]">
+          <div
+            className="flex flex-col gap-2 lg:grid lg:grid-cols-[minmax(0,1.4fr)_minmax(380px,1fr)] lg:gap-4"
+            style={
+              {
+                '--map-h': mapTall ? 'clamp(300px, 62dvh, 560px)' : 'clamp(210px, 34dvh, 340px)',
+              } as React.CSSProperties
+            }
+          >
             <section
               aria-label="Map"
-              className="flex min-w-0 flex-col gap-2 lg:sticky lg:top-[6rem] lg:h-[calc(100vh-14rem)] xl:h-[calc(100vh-10.5rem)] lg:min-h-[480px]"
+              className="contents min-w-0 lg:flex lg:flex-col lg:gap-2 lg:sticky lg:top-[6rem] lg:h-[calc(100vh-14rem)] xl:h-[calc(100vh-10.5rem)] lg:min-h-[480px]"
             >
               <div className="no-scrollbar -mx-3 flex gap-1.5 overflow-x-auto px-3 pb-0.5 sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0">
                 <Toggle
@@ -389,13 +418,15 @@ export default function Home() {
                   icon={MapPin}
                 />
               </div>
-              <div className="min-h-0 lg:flex-1">
+              <div className="contents lg:block lg:min-h-0 lg:flex-1">
                 <MapBrowser
                   monthKey={monthKey}
                   showCampaigns={showCampaigns}
                   showBorders={showBorders}
                   detailed={detailed}
                   showPlaces={showPlaces}
+                  tall={mapTall}
+                  onToggleTall={() => setMapTall((v) => !v)}
                 />
               </div>
             </section>
@@ -417,21 +448,6 @@ export default function Home() {
                       {visibleEvents.length} {visibleEvents.length === 1 ? 'event' : 'events'}
                     </span>
                   </h2>
-                  <label className="flex items-center gap-1.5 text-xs text-stone-600 xl:hidden">
-                    Level
-                    <select
-                      aria-label="Reading level for event cards"
-                      value={level}
-                      onChange={(e) => setLevel(e.target.value as Level)}
-                      className="h-9 rounded-lg border border-stone-300 bg-white px-2 text-sm font-medium text-stone-800"
-                    >
-                      {LEVELS.map((l) => (
-                        <option key={l.id} value={l.id}>
-                          {l.short}
-                        </option>
-                      ))}
-                    </select>
-                  </label>
                 </div>
                 <div
                   className="grid grid-cols-3 overflow-hidden rounded-lg border border-stone-300 bg-white"
@@ -471,12 +487,16 @@ export default function Home() {
                 {groups.map((g) => (
                   <div key={g.key} className="space-y-2.5">
                     {scope !== 'month' && (
-                      <h3 className="sticky top-[5.4rem] z-10 -mx-1 bg-stone-100/95 px-1 py-1.5 text-xs font-bold uppercase tracking-wider text-stone-600 backdrop-blur lg:top-0">
+                      <h3 className="sticky top-[calc(var(--bar-h)+var(--map-h))] z-10 -mx-1 bg-stone-100/95 px-1 py-1.5 text-xs font-bold uppercase tracking-wider text-stone-600 backdrop-blur lg:top-0">
                         {g.label}
                       </h3>
                     )}
                     {g.events.map((e) => (
-                      <div key={e.id} id={`event-${e.id}`} className="scroll-mt-28">
+                      <div
+                        key={e.id}
+                        id={`event-${e.id}`}
+                        className="scroll-mt-[calc(var(--bar-h)+var(--map-h)+0.5rem)] lg:scroll-mt-28"
+                      >
                         <EventCard
                           event={e}
                           level={level}
@@ -527,7 +547,7 @@ export default function Home() {
         </div>
       </footer>
 
-      <TabButtons tab={tab} onChange={setTab} variant="bottom" />
+      <TabButtons tab={tab} onChange={setTab} variant="bottom" level={level} onLevel={setLevel} />
     </div>
   );
 }
@@ -560,10 +580,14 @@ function TabButtons({
   tab,
   onChange,
   variant,
+  level,
+  onLevel,
 }: {
   tab: Tab;
   onChange: (t: Tab) => void;
   variant: 'header' | 'bottom';
+  level?: Level;
+  onLevel?: (l: Level) => void;
 }) {
   if (variant === 'header') {
     return (
@@ -597,7 +621,7 @@ function TabButtons({
       role="tablist"
       aria-label="Sections"
     >
-      <div className="mx-auto grid max-w-xl grid-cols-4">
+      <div className="mx-auto grid max-w-xl grid-cols-5">
         {TABS.map(({ id, short, icon: Icon }) => (
           <button
             key={id}
@@ -613,8 +637,76 @@ function TabButtons({
             {short}
           </button>
         ))}
+        {level && onLevel && <LevelPicker level={level} onLevel={onLevel} />}
       </div>
     </nav>
+  );
+}
+
+/* The reading level lives in the bottom bar on phones so it costs no space at
+ * the top; the three choices open in a small panel above the bar. */
+function LevelPicker({ level, onLevel }: { level: Level; onLevel: (l: Level) => void }) {
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (!open) return;
+    const onDown = (e: PointerEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+    };
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setOpen(false);
+    };
+    document.addEventListener('pointerdown', onDown);
+    document.addEventListener('keydown', onKey);
+    return () => {
+      document.removeEventListener('pointerdown', onDown);
+      document.removeEventListener('keydown', onKey);
+    };
+  }, [open]);
+  const current = LEVELS.find((l) => l.id === level) ?? LEVELS[1];
+  return (
+    <div ref={ref} className="relative">
+      <button
+        type="button"
+        onClick={() => setOpen((v) => !v)}
+        aria-expanded={open}
+        aria-haspopup="true"
+        aria-label={`Reading level: ${current.label}. Change`}
+        className={`flex w-full flex-col items-center gap-0.5 border-t-2 pb-2 pt-2 text-xs font-medium ${
+          open ? 'border-stone-900 text-stone-900' : 'border-transparent text-stone-600'
+        }`}
+      >
+        <GraduationCap size={22} aria-hidden strokeWidth={open ? 2.4 : 1.8} />
+        {current.short}
+      </button>
+      {open && (
+        <div
+          role="group"
+          aria-label="Reading level"
+          className="absolute bottom-full right-2 mb-2 w-[min(18rem,calc(100vw-1.5rem))] rounded-xl border border-stone-300 bg-white p-1.5 shadow-lg"
+        >
+          {LEVELS.map((l) => (
+            <button
+              key={l.id}
+              type="button"
+              aria-pressed={level === l.id}
+              onClick={() => {
+                onLevel(l.id);
+                setOpen(false);
+              }}
+              className={`block w-full rounded-lg px-3 py-2.5 text-left ${
+                level === l.id ? 'bg-stone-900 text-white' : 'text-stone-800 hover:bg-stone-100'
+              }`}
+            >
+              <span className="block text-sm font-semibold">{l.label}</span>
+              <span className={`block text-xs ${level === l.id ? 'text-stone-300' : 'text-stone-600'}`}>
+                {l.hint}
+              </span>
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
   );
 }
 
