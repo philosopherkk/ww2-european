@@ -63,7 +63,6 @@ const label = (iso) => `${MONTH_NAMES[Number(iso.slice(5, 7)) - 1]} ${iso.slice(
 // European theatre extent (lng/lat). Reaches past Arkhangelsk and includes
 // Moscow so the Eastern Front is visible; North Africa sits below as backdrop.
 const CLIP = [-25, 33, 62, 71];
-const clipBox = turf.bboxPolygon([CLIP[0] - 0.001, CLIP[1] - 0.001, CLIP[2] + 0.001, CLIP[3] + 0.001]);
 
 // Kept at a finer tolerance because the blanket cut-off below would delete them.
 const KEEP_TINY = { Malta: { tolerance: 0.002, minAreaKm2: 3, decimals: 4 } };

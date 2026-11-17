@@ -9,10 +9,13 @@ import {
   Popup,
   TileLayer,
   Tooltip,
+  useMap,
+  useMapEvents,
 } from 'react-leaflet';
-import { Info } from 'lucide-react';
-import type { CampaignLine, Side, TerritoryStatus } from '@/lib/data';
+import { ChevronDown, Info, ListTree } from 'lucide-react';
+import type { CampaignLine, Side } from '@/lib/data';
 import { CAMPAIGN_LINES, STATUS_META, STATUS_ORDER, SNAPSHOT_NOTES, statusFor } from '@/lib/data';
+import { PLACES } from '@/lib/data/places';
 import { campaignVisible, nearestSnapshot, SIDE_META, SNAPSHOTS } from '@/lib/site';
 
 /* The border files are GeoJSON: coordinates are [lng, lat], Leaflet wants [lat, lng]. */
@@ -80,8 +83,6 @@ function pointAlong(path: LatLng[], fraction: number): LatLng {
   return path[path.length - 1];
 }
 
-const DAY = 86_400_000;
-
 /** How far through an operation the end of the selected month is, 0 to 1. */
 function progressThrough(line: CampaignLine, monthKey: string) {
   const [y, m] = monthKey.split('-').map(Number);
@@ -98,20 +99,35 @@ interface Props {
   monthKey: string;
   showCampaigns: boolean;
   showBorders: boolean;
+  /** Keep the modern place names legible under the territory fills. */
+  detailed: boolean;
+  /** Dots for the named places the campaign lines run through. */
+  showPlaces: boolean;
 }
 
-export default function MapBrowser({ monthKey, showCampaigns, showBorders }: Props) {
+export default function MapBrowser({
+  monthKey,
+  showCampaigns,
+  showBorders,
+  detailed,
+  showPlaces,
+}: Props) {
   const { snapshot, gapMonths, isEarlier } = useMemo(
     () => nearestSnapshot(monthKey),
     [monthKey]
   );
   const [data, setData] = useState<FeatureCollection | null>(null);
-  const [error, setError] = useState<string | null>(null);
+  const [errorInfo, setErrorInfo] = useState<{ file: string; message: string } | null>(null);
   const [showNote, setShowNote] = useState(false);
+  const [zoom, setZoom] = useState(4);
+  // The key is open on wide screens and tucked behind a button on phones and tablets,
+  // where an open key would cover a third of the map.
+  const [keyOpen, setKeyOpen] = useState(
+    () => typeof window !== 'undefined' && window.matchMedia('(min-width: 1280px)').matches
+  );
 
   useEffect(() => {
     let cancelled = false;
-    setError(null);
     fetch(snapshot.file)
       .then((r) => {
         if (!r.ok) throw new Error(`${r.status} ${r.statusText}`);
@@ -121,7 +137,8 @@ export default function MapBrowser({ monthKey, showCampaigns, showBorders }: Pro
         if (!cancelled) setData(json);
       })
       .catch((e: unknown) => {
-        if (!cancelled) setError(e instanceof Error ? e.message : String(e));
+        if (!cancelled)
+          setErrorInfo({ file: snapshot.file, message: e instanceof Error ? e.message : String(e) });
       });
     return () => {
       cancelled = true;
@@ -157,20 +174,23 @@ export default function MapBrowser({ monthKey, showCampaigns, showBorders }: Pro
   );
 
   const note = SNAPSHOT_NOTES[snapshot.date];
+  const error = errorInfo?.file === snapshot.file ? errorInfo.message : null;
+  const showMarkers = showPlaces && zoom >= 7;
 
   return (
     <div className="flex h-full flex-col gap-2">
-      <div className="rounded-lg border border-stone-300 bg-white px-3 py-2 text-sm shadow-sm">
-        <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
-          <p className="font-semibold text-stone-800">
-            Borders as of {snapshot.label}
+      <div className="text-[13px]">
+        <div className="flex items-center justify-between gap-2">
+          <p className="min-w-0 leading-snug text-stone-800">
+            <span className="font-semibold">Borders as of {snapshot.label}</span>
             {gapMonths > 0 && (
-              <span className="ml-2 font-normal text-stone-500">
-                ({gapMonths} {gapMonths === 1 ? 'month' : 'months'}{' '}
-                {isEarlier ? 'before' : 'after'} the month you picked — the dataset records{' '}
-                {SNAPSHOTS.length} dated states, and the map always shows the one nearest in time,
-                whether that falls before or after your month. The months in between are described
-                in the events)
+              <span className="text-stone-600">
+                {' '}
+                · {gapMonths} {gapMonths === 1 ? 'month' : 'months'} {isEarlier ? 'before' : 'after'}
+                <span className="sr-only"> the month you picked — the dataset records{' '}
+                {SNAPSHOTS.length} dated states, and the map always shows the nearest one dated
+                on or before your month, or, only for the first three months of 1938, the state
+                that follows them. The months in between are described in the events</span>
               </span>
             )}
           </p>
@@ -178,27 +198,30 @@ export default function MapBrowser({ monthKey, showCampaigns, showBorders }: Pro
             <button
               type="button"
               onClick={() => setShowNote((v) => !v)}
-              className="inline-flex items-center gap-1 rounded border border-stone-300 px-2 py-0.5 text-xs font-medium text-stone-700 hover:bg-stone-100"
+              className="inline-flex h-8 shrink-0 items-center gap-1 rounded-full border border-stone-300 bg-white px-2.5 text-xs font-medium text-stone-700 hover:bg-stone-100"
               aria-expanded={showNote}
             >
-              <Info size={13} /> What this map does and does not show
+              <Info size={14} aria-hidden />
+              <span className="hidden sm:inline">What this map does and does not show</span>
+              <span className="sm:hidden">About this map</span>
             </button>
           )}
         </div>
         {showNote && note && (
-          <p className="mt-2 border-t border-stone-200 pt-2 text-xs leading-relaxed text-stone-600">
+          <p className="mt-2 rounded-lg border border-stone-200 bg-white p-2.5 text-xs leading-relaxed text-stone-700">
             {note}
           </p>
         )}
       </div>
 
-      <div className="relative min-h-[420px] flex-1 overflow-hidden rounded-lg border border-stone-300 bg-stone-100 shadow-sm">
+      <div className="relative isolate h-[50vh] min-h-[300px] overflow-hidden rounded-xl border border-stone-300 bg-stone-100 shadow-sm lg:h-auto lg:min-h-0 lg:flex-1">
         <MapContainer
           center={[50.5, 14]}
           zoom={4}
           minZoom={3}
-          maxZoom={8}
-          scrollWheelZoom={false}
+          maxZoom={16}
+          zoomSnap={0.5}
+          scrollWheelZoom
           maxBounds={[
             [30, -34],
             [74, 68],
@@ -206,6 +229,7 @@ export default function MapBrowser({ monthKey, showCampaigns, showBorders }: Pro
           maxBoundsViscosity={0.8}
           className="h-full w-full"
         >
+          <ZoomReporter onZoom={setZoom} />
           {/* CARTO's basemaps began demanding an API key and now serve a watermarked
               "API KEY REQUIRED" tile, and Wikimedia's tileserver answers a public
               deployment's referrer with a 403 HTML page that Chrome then blocks as an
@@ -216,7 +240,8 @@ export default function MapBrowser({ monthKey, showCampaigns, showBorders }: Pro
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             subdomains="abc"
-            className="basemap-tiles"
+            key={detailed ? 'detailed-basemap' : 'faded-basemap'}
+            className={detailed ? 'basemap-tiles basemap-detailed' : 'basemap-tiles'}
           />
 
           {showBorders &&
@@ -230,7 +255,7 @@ export default function MapBrowser({ monthKey, showCampaigns, showBorders }: Pro
                     color: meta.stroke,
                     weight: 1,
                     fillColor: meta.color,
-                    fillOpacity: 0.66,
+                    fillOpacity: detailed ? 0.2 : 0.52,
                   }}
                 >
                   {/* Colour is never the only channel: the status is spelled out
@@ -247,17 +272,17 @@ export default function MapBrowser({ monthKey, showCampaigns, showBorders }: Pro
                       </p>
                       {t.headOfState && (
                         <p>
-                          <span className="text-stone-500">Head of state / authority: </span>
+                          <span className="text-stone-600">Head of state / authority: </span>
                           {t.headOfState}
                         </p>
                       )}
                       {t.govtInExile && (
                         <p>
-                          <span className="text-stone-500">Government in exile: </span>
+                          <span className="text-stone-600">Government in exile: </span>
                           {t.govtInExile}
                         </p>
                       )}
-                      <p className="pt-1 text-xs text-stone-500">
+                      <p className="pt-1 text-xs text-stone-600">
                         Status as recorded for {snapshot.label}. Land with no colour is outside
                         this border dataset, not empty.
                       </p>
@@ -284,6 +309,9 @@ export default function MapBrowser({ monthKey, showCampaigns, showBorders }: Pro
                 >
                   <Tooltip sticky>
                     <span className="text-xs font-semibold">{line.name}</span>
+                    <span className="mt-0.5 block text-[10px] font-normal text-stone-700">
+                      Schematic axis through named places; the ring is an interpolated position by date.
+                    </span>
                   </Tooltip>
                   <Popup>
                     <div className="space-y-1 text-sm">
@@ -295,7 +323,7 @@ export default function MapBrowser({ monthKey, showCampaigns, showBorders }: Pro
                         {side.label}
                         {line.operation ? ` · ${line.operation}` : ''}
                       </p>
-                      <p className="text-xs text-stone-500">
+                      <p className="text-xs text-stone-600">
                         {line.from} to {line.to}
                       </p>
                       <p className="pt-1">{line.summary}</p>
@@ -305,9 +333,10 @@ export default function MapBrowser({ monthKey, showCampaigns, showBorders }: Pro
                           {line.strength}
                         </p>
                       )}
-                      <p className="pt-1 text-xs text-stone-500">
-                        The dashed line is the whole axis of the operation; the ring marks roughly
-                        where it stood by the month you are reading.
+                      <p className="pt-1 text-xs text-stone-600">
+                        This is a schematic axis of advance through named places, not a surveyed daily
+                        front line. The ring marks an interpolated position along that axis by date,
+                        not a documented map reference for that morning.
                       </p>
                     </div>
                   </Popup>
@@ -326,51 +355,33 @@ export default function MapBrowser({ monthKey, showCampaigns, showBorders }: Pro
               </div>
             );
           })}
+
+          {showMarkers &&
+            PLACES.map((place) => (
+              <CircleMarker
+                key={place.name}
+                center={[place.lat, place.lng]}
+                radius={detailed ? 3 : 2.5}
+                pathOptions={{
+                  color: detailed ? '#1c1917' : '#44403c',
+                  fillColor: '#fff',
+                  fillOpacity: 0.9,
+                  weight: 1.5,
+                  opacity: detailed ? 0.9 : 0.6,
+                }}
+              >
+                <Tooltip direction="top" offset={[0, -3]} opacity={1}>
+                  <span className="text-[11px] font-semibold">{place.name}</span>
+                  <span className="mt-0.5 block text-[10px] font-normal text-stone-600">
+                    Place marker from campaign waypoint data · not a front line or event pin
+                  </span>
+                </Tooltip>
+              </CircleMarker>
+            ))}
         </MapContainer>
 
-        <div className="pointer-events-none absolute bottom-0 left-0 right-0 z-[400]">
-          <div className="m-2 rounded-md border border-stone-300 bg-white/95 p-2 text-xs shadow">
-            <p className="mb-1 font-semibold text-stone-700">
-              {showBorders ? 'Who held the territory' : 'Army movements'}
-            </p>
-            <ul className="flex flex-wrap gap-x-4 gap-y-1">
-              {presentStatuses.map((s) => (
-                <li key={s} className="flex items-center gap-1.5">
-                  <span
-                    className="inline-block h-3 w-3 rounded-sm border"
-                    style={{ background: STATUS_META[s].color, borderColor: STATUS_META[s].stroke }}
-                  />
-                  {STATUS_META[s].label}
-                </li>
-              ))}
-              {presentSides.map((side) => (
-                <li key={side} className="flex items-center gap-1.5">
-                  <svg width="22" height="6" aria-hidden>
-                    <line
-                      x1="0"
-                      y1="3"
-                      x2="22"
-                      y2="3"
-                      stroke={SIDE_META[side].color}
-                      strokeWidth="3"
-                      strokeDasharray="6 4"
-                    />
-                  </svg>
-                  {SIDE_META[side].label}
-                </li>
-              ))}
-              {lines.length === 0 && (
-                <li className="text-stone-500">
-                  No major offensive was underway in this month — read the events for what was
-                  happening instead.
-                </li>
-              )}
-            </ul>
-          </div>
-        </div>
-
         {!data && !error && (
-          <div className="absolute inset-0 z-[500] flex items-center justify-center bg-stone-100/80 text-sm text-stone-600">
+          <div className="absolute inset-0 z-[500] flex items-center justify-center bg-stone-100/80 text-sm text-stone-700">
             Loading {snapshot.label} borders…
           </div>
         )}
@@ -379,7 +390,85 @@ export default function MapBrowser({ monthKey, showCampaigns, showBorders }: Pro
             The border data for {snapshot.label} could not be loaded ({error}).
           </div>
         )}
+
+        <div className="absolute bottom-6 left-2 z-[450] max-w-[min(86%,20rem)] sm:bottom-7">
+          {keyOpen && (
+            <div className="mb-1.5 rounded-lg border border-stone-300 bg-white/95 p-2.5 text-xs shadow-md backdrop-blur">
+              <p className="mb-1.5 font-semibold text-stone-800">
+                {showBorders ? 'Who held the territory' : 'Army movements'}
+              </p>
+              <ul className="space-y-1">
+                {showBorders &&
+                  presentStatuses.map((s) => (
+                    <li key={s} className="flex items-center gap-2 leading-tight">
+                      <span
+                        className="inline-block h-3 w-4 shrink-0 rounded-sm border"
+                        style={{ background: STATUS_META[s].color, borderColor: STATUS_META[s].stroke }}
+                      />
+                      {STATUS_META[s].label}
+                    </li>
+                  ))}
+                {presentSides.map((side) => (
+                  <li key={side} className="flex items-center gap-2 leading-tight">
+                    <svg width="16" height="6" aria-hidden className="shrink-0">
+                      <line
+                        x1="0"
+                        y1="3"
+                        x2="16"
+                        y2="3"
+                        stroke={SIDE_META[side].color}
+                        strokeWidth="3"
+                        strokeDasharray="5 3"
+                      />
+                    </svg>
+                    {SIDE_META[side].label}
+                  </li>
+                ))}
+                {showCampaigns && lines.length === 0 && (
+                  <li className="leading-snug text-stone-600">
+                    No major offensive this month — read the events for what was happening.
+                  </li>
+                )}
+                {showPlaces && zoom < 7 && (
+                  <li className="leading-snug text-stone-600">
+                    Zoom in to 7 or closer for place markers.
+                  </li>
+                )}
+              </ul>
+            </div>
+          )}
+          <button
+            type="button"
+            onClick={() => setKeyOpen((v) => !v)}
+            aria-expanded={keyOpen}
+            className="inline-flex h-9 items-center gap-1.5 rounded-full border border-stone-300 bg-white/95 px-3 text-xs font-semibold text-stone-800 shadow-md backdrop-blur hover:bg-white"
+          >
+            <ListTree size={14} aria-hidden /> Key
+            <ChevronDown
+              size={14}
+              aria-hidden
+              className={`transition-transform ${keyOpen ? '' : 'rotate-180'}`}
+            />
+          </button>
+        </div>
       </div>
+
+      {/* Always visible, never behind a disclosure: the snapshot caveat is part of the
+          map (PACK B 1A). */}
+      <p className="text-xs leading-relaxed text-stone-600">
+        The colours are one dated state ({snapshot.label}), not the month&rsquo;s daily front.
+        Frontiers changed on particular days, sometimes several times in a month; the event cards
+        name the changes in between. Select a country or a line for details.
+      </p>
     </div>
   );
+}
+
+/** Reports zoom changes without touching React state inside an effect. */
+function ZoomReporter({ onZoom }: { onZoom: (zoom: number) => void }) {
+  const map = useMap();
+  useMapEvents({
+    zoomend: () => onZoom(map.getZoom()),
+  });
+  return null;
 }

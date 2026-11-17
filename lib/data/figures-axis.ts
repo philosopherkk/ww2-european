@@ -1,5 +1,3 @@
-import type { Level } from './events-1938-1940';
-
 export interface FigureBio {
   primary: string;
   secondary: string;

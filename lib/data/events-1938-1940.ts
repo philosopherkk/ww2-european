@@ -525,7 +525,7 @@ export const EVENTS: WW2Event[] = [
     id: 'french_armistice',
     date: '1940-06-22',
     precision: 'day',
-    title: 'Franco-German armistice at Compiegne',
+    title: 'Franco-German armistice at Compiègne',
     kind: 'politics',
     fronts: ['western', 'home'],
     countries: ['France', 'Germany', 'Italy'],
@@ -539,7 +539,7 @@ export const EVENTS: WW2Event[] = [
       },
       secondary: {
         cause: 'The French government, now headed by Marshal Petain, asked for terms after the army disintegrated and refugees filled the roads.',
-        what: 'Hitler chose the Compiegne site deliberately as an act of symbolism. France was divided into occupied and unoccupied zones, its army cut to 100,000 men.',
+        what: 'Hitler chose the Compiègne site deliberately as an act of symbolism. France was divided into occupied and unoccupied zones, its army cut to 100,000 men.',
         consequence: 'Petain’s regime pursued a "National Revolution" and collaborated with Germany, while de Gaulle, from London, called on the French to keep fighting on 18 June.',
       },
       university: {
@@ -721,12 +721,12 @@ export const EVENTS: WW2Event[] = [
     id: 'benes_resigns',
     date: '1938-10-05',
     precision: 'day',
-    title: 'After Munich: Benes resigns, Slovakia is autonomous',
+    title: 'After Munich: Beneš resigns, Slovakia is autonomous',
     kind: 'politics',
     fronts: ['politics'],
     countries: ['Czechoslovakia', 'Germany', 'Hungary', 'Poland'],
     figures: [],
-    note: 'Benes handed over to General Jan Syrovy on 5 October and left for the United States on 22 October; he was never formally deposed and remained the recognised president of the government-in-exile after 1941. Slovakia received autonomy on 7 October under Jozef Tiso\'s Hlinka Party; Carpatho-Ukraine was proclaimed autonomous in October and was occupied by Hungary only on 15 March 1939; the First Vienna Award of 2 November had given Hungary southern Slovakia and the southern strip of Carpathian Ruthenia. Poland had taken Teschen Silesia on 2 October 1938.',
+    note: 'Beneš handed over to General Jan Syrovy on 5 October and left for the United States on 22 October; he was never formally deposed and remained the recognised president of the government-in-exile after 1941. Slovakia received autonomy on 7 October under Jozef Tiso\'s Hlinka Party; Carpatho-Ukraine was proclaimed autonomous in October and was occupied by Hungary only on 15 March 1939; the First Vienna Award of 2 November had given Hungary southern Slovakia and the southern strip of Carpathian Ruthenia. Poland had taken Teschen Silesia on 2 October 1938.',
     levels: {
       primary: {
         cause: 'A few days after Munich, the Czech president went away, and the parts of the country that Germany, Poland and Hungary had been promised were taken.',
@@ -735,12 +735,12 @@ export const EVENTS: WW2Event[] = [
       },
       secondary: {
         cause: 'Munich had cost Czechoslovakia its fortifications, its industry and 3 million people; the rump state could not function as a unitary republic once the Germans and Hungarians had been given what they wanted.',
-        what: 'Benes resigned on 5 October and left for America on the 22nd. Autonomy for Slovakia was granted on 7 October under Tiso; Poles took Teschen; the First Vienna Award of 2 November transferred southern Slovakia and Ruthenia to Hungary.',
+        what: 'Beneš resigned on 5 October and left for America on the 22nd. Autonomy for Slovakia was granted on 7 October under Tiso; Poles took Teschen; the First Vienna Award of 2 November transferred southern Slovakia and Ruthenia to Hungary.',
         consequence: 'What was left - the "Second Republic" - depended on Germany to exist, which is why March 1939 produced a rump Slovakia as a German state rather than resistance.',
       },
       university: {
         cause: 'The October 1938 settlement is usually treated as a footnote to Munich, but it is where the internal Czech and Slovak argument was settled by force: Slovak autonomy was granted by Prague in a week, having been refused for twenty years, because German pressure had made central government impossible.',
-        what: 'The legal niceties matter for the postwar state: Benes resigned but never abdicated, and the postwar constitution accordingly treated the wartime Slovak state and the "Second Republic" as illegal interruptions of legal continuity rather than successor states.',
+        what: 'The legal niceties matter for the postwar state: Beneš resigned but never abdicated, and the postwar constitution accordingly treated the wartime Slovak state and the "Second Republic" as illegal interruptions of legal continuity rather than successor states.',
         consequence: 'It also fixed the borders problem that the Allies inherited in 1945: with no Austria and no reliable frontier in the west, the postwar frontier of Czechoslovakia - and later of Poland - could only be settled by moving populations.',
       },
     },
@@ -838,7 +838,7 @@ export const EVENTS: WW2Event[] = [
     fronts: ['eastern', 'politics'],
     countries: ['Germany', 'Poland'],
     figures: ['hitler'],
-    note: 'The decree of 12 October 1939 placed the unannexed 94,000 square kilometres with 10 million people under Hans Frank as Governor-General, formally outside the Reich and under the Fuhrer rather than the Reich government. The annexed provinces - Wartheland, Danzig-West Prussia, East Upper Silesia - were placed under Gauleiters with instructions to Germanise them "within ten years". By 1941 the General Government held some 2 million Jews; the extermination camps of Belzec, Sobibor, Treblinka and Majdanek were all built inside its borders, and the SS and police, not Frank, ran them.',
+    note: 'The decree of 12 October 1939 placed the unannexed 94,000 square kilometres with 10 million people under Hans Frank as Governor-General, formally outside the Reich and under the Führer rather than the Reich government. The annexed provinces - Wartheland, Danzig-West Prussia, East Upper Silesia - were placed under Gauleiters with instructions to Germanise them "within ten years". By 1941 the General Government held some 2 million Jews; the extermination camps of Belzec, Sobibor, Treblinka and Majdanek were all built inside its borders, and the SS and police, not Frank, ran them.',
     levels: {
       primary: {
         cause: 'Germany had conquered Poland, and its leaders decided to keep part of the country for themselves and rule the rest as a colony.',
@@ -1046,7 +1046,7 @@ export const EVENTS: WW2Event[] = [
       secondary: {
         cause: 'Hitler had told his government in 1936 that Germany must be ready to fight within four years, but rearmament was outrunning the economy: the state could not pay for imported oil and ore without exporting, and armaments had crowded out the goods Germany sold abroad.',
         what: 'The dispute inside the government in 1937-38 was between those who wanted to slow rearmament and restore normal trade - Schacht - and those who wanted autarky and, if necessary, seizure of foreign assets - Goering. The second group won.',
-        consequence: 'Germany\'s economy was organized for plunder as well as production, which made further aggression more attractive, not less. The Anschluss of March 1938 paid for rearmament immediately, and the occupation of Czechoslovakia in March 1939 added the Skoda arms complex.',
+        consequence: 'Germany\'s economy was organised for plunder as well as production, which made further aggression more attractive, not less. The Anschluss of March 1938 paid for rearmament immediately, and the occupation of Czechoslovakia in March 1939 added the Skoda arms complex.',
       },
       university: {
         cause: 'The "rearmament crisis" of 1938 is a live historiographical question: Martin Broszat and Avraham Barkai documented the foreign-exchange shortage and the disputes inside the economic leadership, while Adam Tooze\'s "The Wages of Destruction" (2006) made the chronic shortage of hard currency central to the whole Nazi war economy and to its willingness to loot.',
@@ -1141,28 +1141,28 @@ export const EVENTS: WW2Event[] = [
   },
   {
     id: 'first_citizenship_regulation',
-    date: '1938-07-26',
+    date: '1938-07-25',
     precision: 'day',
-    title: 'The state defines who is a Jew - by grandparents, not by belief',
+    title: 'Summer 1938: the professions and the economy close to Jews',
     kind: 'war_crime',
     fronts: ['home', 'politics'],
     countries: ['Germany'],
     figures: [],
-    note: 'The First Regulation under the Nuremberg Laws, issued on 26 July 1938, settled the definition: a person with three or four Jewish grandparents, or who belonged to the Jewish religious community, was a Jew - regardless of what that person believed, spoke, or had served. A further regulation in August 1938 required Jews to add the names Israel or Sara from 1 January 1939, and the passports of Jews were stamped with a "J" on 5 October 1938. Throughout 1938 and 1939 Jews were struck off the registers of the professions, the universities and the economy. Because the definition was bureaucratic, it travelled: in every country Germany occupied, officials asked the same question of the civil register.',
+    note: 'The legal exclusion of Jews from German economic and professional life was completed in the summer of 1938, regulation by regulation. A decree of 26 April 1938 forced every Jew to register domestic and foreign property above 5,000 Reichsmarks. The Third Regulation of the Reich Citizenship Law, of 14 June 1938, put Jewish-owned enterprises on a register for closure and "Arisation". The Fourth Regulation, issued on 25 July 1938, cancelled the medical licences of Jewish doctors from 30 September 1938, leaving those with special permission to treat Jewish patients only; on 23 July a compulsory identity card marked with a "J" was introduced, and on 27 July streets named after Jews were renamed. In August 1938 Jews were required to take the additional names Israel or Sara from 1 January 1939, and their passports were stamped with a "J" on 5 October 1938. All of this ran on definitions settled years before: the First Regulation of 14 November 1935 had made a Jew anyone with three or four Jewish grandparents or anyone who had belonged to the Jewish religious community, whatever that person believed, spoke or had served. Because the exclusion was bureaucratic, it travelled: in every country Germany occupied, officials asked the same question of the civil register.',
     levels: {
       primary: {
-        cause: 'The Nazi rulers wanted a clear rule for who counted as a Jewish person, so they could take away jobs, homes and eventually lives in an orderly way.',
-        what: 'In July 1938 Germany made a law saying that being Jewish was about who your grandparents were, not about what you believed. Jewish people also had to carry special identity papers.',
-        consequence: 'Ordinary record-keeping became dangerous. Teachers, registrars and clerks helped identify people they had known all their lives.',
+        cause: 'The Nazi government wanted Jews out of German business and jobs, and in 1938 it wrote that demand into a string of new laws.',
+        what: 'In the summer of 1938 Jewish doctors were banned from most medical practice, Jewish-owned shops and firms were closed down, and everyone had to carry an identity card marked with the letter J.',
+        consequence: 'Families who had lived in Germany for centuries lost their work and their savings, which made it harder to get out - and easier for neighbours to take what was left.',
       },
       secondary: {
-        cause: 'The Nuremberg Laws of 1935 had made Jews "subjects" rather than citizens but had not said who was a Jew; the government issued the definitions in the following years as persecution was stepped up, and pressure from local officials and the party pushed the definitions wider.',
-        what: 'The regulation turned ancestry into legal status and made the churches\' baptism records and town-hall registers part of the machinery of persecution. It also created the grey categories - "Mischling", mixed marriage, "privileged" Jews - whose fates were argued over in German offices until 1945.',
-        consequence: 'The definitions were exported across occupied Europe, and the willingness of local administrations to apply them made a decisive difference to survival rates in the Holocaust - in some countries, for example, Jews with a Christian grandparent were protected, and the argument about those cases delayed deportations.',
+        cause: 'The Nuremberg Laws of 1935 had made Jews subjects rather than citizens, and their First Regulation of 14 November 1935 had settled who counted as a Jew - three or four Jewish grandparents, whatever the person believed or had done in the war. The regulations of 1938 applied that definition to the whole economy.',
+        what: 'In a single summer the last openings closed: property was registered in April, businesses put on a closure list in June, doctors\' licences were cancelled on 25 July, and from 1 January 1939 Jews had to carry the additional names Israel and Sara. The regime called its theft by another name - "Arisation" - and kept the proceeds.',
+        consequence: 'Poverty made flight harder, so the decrees both expelled Jews and trapped them; and the grey categories they created - the "Mischling", the mixed marriage, the "privileged" Jew - were still being argued over in German offices in 1945.',
       },
       university: {
-        cause: 'The legal history matters because it undermines the "ordinary antisemitism without a plan" reading: the definition was drafted in the Interior Ministry with Wilhelm Stuckart playing a leading part, and its logic - ancestry, registration, staged exclusion - was applied in sequence in Germany, in the annexed territories, in the Protectorate and in France.',
-        what: 'The "Mischling" and mixed-marriage cases produced prolonged conflict between the RSHA, the Interior Ministry and the churches, and the 1943 "Fabrikaktion" in Berlin ended with the sterilisation of the Jewish partners in privileged mixed marriages - the clearest evidence that the categories were being narrowed as murder began.',
+        cause: 'The legal history matters because it undermines the "ordinary antisemitism without a plan" reading: the definitions and registrations were drafted in the Interior Ministry with Wilhelm Stuckart playing a leading part, and their sequence - registration, closure, professional exclusion - was applied in turn in Germany, the annexed territories, the Protectorate and France.',
+        what: 'The summer of 1938 is the administrative version of "working towards the regime": party offices and local officials demanded harsher measures and rival ministries competed to enact them, while the "Mischling" and mixed-marriage cases produced prolonged conflict between the RSHA, the Interior Ministry and the churches.',
         consequence: 'The postwar consequences are still visible: the Federal Republic had to decide who was a victim under the same categories, and litigation over the status of "Mischlinge" and of converts ran into the 1960s.',
       },
     },
@@ -1214,7 +1214,7 @@ export const EVENTS: WW2Event[] = [
       secondary: {
         cause: 'Munich had taken the border fortifications, most of the heavy industry and three million people. The remaining parties, fearing internal division as the cause of the defeat, joined a single national list and banned the left.',
         what: 'Hácha, a non-political judge, was chosen president to stand above the quarrel. Slovak autonomy under Jozef Tiso\'s Hlinka Party was a fact of German power rather than a settlement, and Prague spent the winter of 1938-39 unable to pay for the refugees and the army it still had to maintain.',
-        consequence: 'The experiment in authoritarian national unity bought nothing. In March 1939 Slovakia became a German state and the Czech lands became a Protectorate, and the interwar republic was treated after 1945 as legally continuous - which is why Benes returned rather than a new state being founded.',
+        consequence: 'The experiment in authoritarian national unity bought nothing. In March 1939 Slovakia became a German state and the Czech lands became a Protectorate, and the interwar republic was treated after 1945 as legally continuous - which is why Beneš returned rather than a new state being founded.',
       },
       university: {
         cause: 'The Second Republic is under-studied in English and important for two arguments: the collapse of Czechoslovak democracy, which cannot be dated only to Munich, and the question of legal continuity, on which the postwar constitution and the Beneš decrees rest.',
@@ -1232,7 +1232,7 @@ export const EVENTS: WW2Event[] = [
     fronts: ['politics', 'home'],
     countries: ['Germany'],
     figures: ['hitler', 'goebbels'],
-    note: 'In the Reichstag on the sixth anniversary of the seizure of power, Hitler declared that if "international finance Judaism" succeeded in plunging the nations into a world war, the consequence would be "the annihilation of the Jewish race in Europe". The same day he renounced the Anglo-German naval agreement of 1935. The sentence appears in slightly different wording in the version published in the Völkischer Beobachter and in the parliamentary record, a discrepancy seized on by postwar apologists; that Hitler delivered something of the kind, to the Reichstag, in public, is not in doubt. He repeated the formula on 30 January 1941, on 30 January 1942 and on 30 January 1943, by which time the mass deportations to the extermination camps had begun and had been under way for months.',
+    note: 'In the Reichstag on the sixth anniversary of the seizure of power, Hitler declared that if "international finance Judaism" succeeded in plunging the nations into a world war, the consequence would be "the annihilation of the Jewish race in Europe". On 28 April 1939 he renounced the Anglo-German naval agreement of 1935. The sentence appears in slightly different wording in the version published in the Völkischer Beobachter and in the parliamentary record, a discrepancy seized on by postwar apologists; that Hitler delivered something of the kind, to the Reichstag, in public, is not in doubt. He repeated the formula on 30 January 1941, on 30 January 1942 and on 30 January 1943, by which time the mass deportations to the extermination camps had begun and had been under way for months.',
     levels: {
       primary: {
         cause: 'As Europe moved closer to war, Germany\'s dictator spoke in public about what he said would happen to Jewish people if there was a war.',
@@ -1309,14 +1309,14 @@ export const EVENTS: WW2Event[] = [
   },
   {
     id: 'reichszentrale',
-    date: '1939-07-24',
+    date: '1939-01-24',
     precision: 'day',
-    title: 'A central office for expelling Jews opens in Berlin',
+    title: 'A central office for expelling Jews is created in Berlin',
     kind: 'war_crime',
     fronts: ['home', 'politics'],
     countries: ['Germany', 'Austria', 'Czechoslovakia'],
     figures: ['heydrich'],
-    note: 'The Reich Central Office for Jewish Emigration opened in Berlin on 24 July 1939, modelled on the Central Office Adolf Eichmann had set up in Vienna in 1938 and in Prague after March 1939. Its method was terror plus paperwork: emigration was possible only for Jews who surrendered their property, paid the Reich flight tax, and cleared a queue of competing agencies, and the newly created Reich Association of the Jews in Germany, formed on 4 July 1939, was forced to act as the office\'s implementing arm. When the war closed the frontiers and the British blocked emigration from 1940, the same offices, the same files and the same officials were turned to deportation; Eichmann\'s section became RSHA Referent IV B 4.',
+    note: 'Hermann Göring\'s decree of 24 January 1939 created a Reich Central Office for Jewish Emigration under Reinhard Heydrich, modelled on the Central Office Adolf Eichmann had set up in Vienna in 1938; the Berlin office took over buildings on Kurfürstenstraße in February, began work in March 1939, and a Prague branch followed in July 1939. Its method was terror plus paperwork: emigration was possible only for Jews who surrendered their property, paid the Reich flight tax, and cleared a queue of competing agencies, and the newly created Reich Association of the Jews in Germany, formed on 4 July 1939, was forced to act as the office\'s implementing arm. When the war closed the frontiers and the British blocked emigration from 1940, the same offices, the same files and the same officials were turned to deportation; Eichmann\'s section became RSHA Referent IV B 4.',
     levels: {
       primary: {
         cause: 'For years the Nazi government tried to force Jewish people to leave Germany. In 1939 it set up one big office to organise it.',
@@ -1329,10 +1329,516 @@ export const EVENTS: WW2Event[] = [
         consequence: 'The bureaucratic continuity is the point: deportation was not improvised by different men in 1941. It was run out of the same registry offices, with the same transport contacts in the Reichsbahn, by officials who had spent three years learning exactly where the Jews were.',
       },
       university: {
-        cause: 'The office is a cornerstone of the "Brutalisierung"/bureaucracy literature: Christopher Browning, Christopher R. Browning and Adler\'s "the Eichmann network" studies, and the more recent work on the Reich Association as a coerced instrument, rest on these files.',
+        cause: 'The office is a cornerstone of the bureaucracy-and-murder literature: Christopher R. Browning\'s work on the German administration of the Jewish question, and the studies of the Eichmann Referat and of the Reich Association as a coerced instrument, rest on these files.',
         what: 'The Emigration Office also forces the question of alternatives. The Madagascar plan and the Nisko reservation of 1939-40 were not fantasies of the radical fringe but proposals worked up by the same desks; they failed for logistical and inter-agency reasons, and the failure narrowed the options to murder.',
         consequence: 'The institutional history also has a postwar afterlife: several of these officials resumed senior careers in the Federal administration, which is one reason West German trials over deportations took so long and produced such light sentences.',
       },
     },
   },
+  {
+    id: 'moscow_military_talks',
+    date: '1939-07-25',
+    precision: 'month',
+    title: 'Three-power staff talks open in Moscow - and the West travels by slow ship',
+    kind: 'politics',
+    fronts: ['politics'],
+    countries: ['Soviet Union', 'United Kingdom', 'France'],
+    figures: ['stalin', 'molotov'],
+    note: 'The political conversations between Britain, France and the Soviet Union, running in Moscow since April 1939, gave way to naval and military staff talks at the end of July. The measure of intent was travel: the British military mission under Admiral Sir Reginald Drax crossed to the Black Sea by slow merchant ship rather than by air, arriving only on 5 August, and the French general at its head, Joseph Doumenc, went by plane and carried no more authority than his colleagues. The question the talks foundered on was structural and was raised from the first session: Soviet help against Germany meant the Red Army crossing Poland and Romania, and Warsaw and Bucharest refused flatly, doubting - as events proved - whether they would ever get their countries back afterwards. The Western governments would not press them, and their delegations had no plenipotentiary powers. While the staffs argued, Moscow kept the German channel open - the trade and credit talks of June ran on, and the German-Soviet credit agreement was signed on 19 August 1939. By the time the Western missions were abandoned at the end of August, Stalin had the Molotov-Ribbentrop Pact before him.',
+    levels: {
+      primary: {
+        cause: 'Britain and France wanted to know whether the Soviet Union would fight with them if Germany attacked, so they sent their soldiers and sailors to talk to Soviet officers in Moscow.',
+        what: 'In July 1939 the three countries began military talks about how they would fight Germany together. But the British delegation travelled by slow ship, and Poland refused to let Soviet troops cross its land.',
+        consequence: 'Stalin decided the Western powers were not serious. A month later he signed an agreement with Hitler instead, and Britain and France got the war they had failed to avert.',
+      },
+      secondary: {
+        cause: 'France and Britain had promised to help the Soviet Union negotiate, but Poland and Romania - the only countries a Soviet army could march through to reach Germany - refused transit rights and believed, correctly, that Soviet troops might never leave. The Western democracies refused to force the issue.',
+        what: 'The military talks that opened at the end of July 1939 therefore deadlocked almost at once: the Soviet commanders asked for transit and got nothing, while the British and French missions travelled slowly and negotiated without real authority. At the same time Moscow was bargaining with Berlin for credits and raw materials.',
+        consequence: 'When the talks were recalled in late August, the Western democracies had spent three months proving to Stalin that they were weak, slow and unreliable; the pact with Ribbentrop was the answer, and Poland paid the price of the transit question first.',
+      },
+      university: {
+        cause: 'The staff talks are central to the historiography of collective security\'s failure: A. J. P. Taylor located responsibility in Western hesitancy, the transit question was argued into the 1980s on Polish and Romanian documents, and the Soviet archives opened after 1991 show Stalin negotiating on two tracks simultaneously and taking the offer that paid sooner and more.',
+        what: 'The records also show that the failure was structural rather than personal: Soviet strategy against Germany ran through Poland and Romania, states whose governments judged - and the next two years proved them half-right - that Soviet occupation could outlast the Wehrmacht. British and French planners knew the transit demand was unanswerable and preferred to keep negotiating rather than settle it.',
+        consequence: 'The episode underwrites the central counterfactual of 1939: an August 1939 Western-Soviet military convention would not have cancelled Hitler\'s decision for war, but it would have raised its risks and changed its date - and after 1941 it fed the Soviet charge, repeated from wartime propaganda into Cold War historiography, that the West had meant the Wehrmacht and the Red Army to bleed each other white.',
+      },
+    },
+  },
+
+  {
+    id: 'british_guarantee_poland',
+    date: '1939-04-06',
+    precision: 'day',
+    title: 'Britain guarantees Poland',
+    kind: 'politics',
+    fronts: ['politics'],
+    countries: ['United Kingdom', 'Poland', 'Germany'],
+    figures: ['chamberlain', 'hitler'],
+    note: 'The guarantee of 6 April 1939, announced by Chamberlain on 31 March after German demands for Danzig and the Corridor, extended to Greece and Romania on 13 April. It was deliberately general: it named no mechanism for assisting Poland, which is why the declarations of 3 September 1939 followed rather than automatic intervention in March.',
+    levels: {
+      primary: {
+        cause: 'Germany was demanding the free city of Danzig and a road across Poland, and Poland refused.',
+        what: 'Britain promised on 6 April 1939 that it would help Poland if its independence was threatened.',
+        consequence: 'Germany now had to reckon with Britain if it attacked Poland, but the promise did not say how Britain would help.',
+      },
+      secondary: {
+        cause: 'After the occupation of the Czech lands in March 1939, Britain abandoned appeasement and tried to deter further German expansion by drawing a line at Poland.',
+        what: 'Chamberlain announced the guarantee on 31 March and signed the Anglo-Polish agreement on 6 April; France reaffirmed its own commitments to Poland in the days that followed.',
+        consequence: 'Poland gained a diplomatic shield but no immediate military help; the guarantee became the stated reason Britain declared war on 3 September 1939.',
+      },
+      university: {
+        cause: 'The guarantee was both a deterrent and a signal to the Soviet Union that Britain would resist further German expansion eastward — which is why Moscow drew a different conclusion and opened talks with Berlin that summer.',
+        what: 'The terms were deliberately vague about the form of assistance, and Britain kept pressing Poland to negotiate with Germany rather than treating the guarantee as a blank cheque.',
+        consequence: 'Whether the declaration strengthened deterrence or made war more likely by removing Poland’s room to concede is a genuine argument; what is certain is that it tied British credibility to Poland and made the crisis of August 1939 European rather than local.',
+      },
+    },
+  },
+  {
+    id: 'suomussalmi',
+    date: '1939-12-08',
+    precision: 'day',
+    title: 'The Battle of Suomussalmi: Finland stops one Soviet army',
+    kind: 'battle',
+    fronts: ['arctic'],
+    countries: ['Finland', 'Soviet Union'],
+    note: 'The fighting of 8 December 1939 to 8 January 1940 ended in the destruction of much of the Soviet 163rd Rifle Division on the road through Suomussalmi. Soviet strength and loss figures for the Winter War vary widely between Finnish and Russian accounts; the battle is described here without a claimed exact total.',
+    levels: {
+      primary: {
+        cause: 'The Soviet Union had invaded Finland, and one army was pushing through forests towards the centre of the country.',
+        what: 'Finnish troops cut the road, split the advancing force into pockets and attacked the separated columns in deep snow.',
+        consequence: 'A much smaller Finnish force stopped that advance and destroyed its supplies, which surprised the Soviet command.',
+      },
+      secondary: {
+        cause: 'The Soviet plan for a quick invasion assumed the Finnish army would collapse; the terrain, the cold and poor Soviet logistics made a road-bound advance extremely vulnerable.',
+        what: 'Finnish ski troops blocked the two columns at Suomussalmi, cut the supply route at the Raate road and destroyed the stranded units in successive attacks through December and early January.',
+        consequence: 'The battle did not win the war — the Soviet Union eventually broke through with overwhelming force — but it destroyed the myth of an easy victory and shaped Soviet operational reforms before 1941.',
+      },
+      university: {
+        cause: 'Suomussalmi is the classic case of an operational success achieved by a smaller force through interior lines, interdiction of a single road and the exploitation of an enemy who had not prepared for winter warfare.',
+        what: 'Finnish accounts emphasise the annihilation of the 163rd Division; Russian accounts stress the broader strategic outcome, in which the Red Army massed sufficient forces elsewhere to compel Finland to negotiate in March 1940.',
+        consequence: 'The campaign made a deep impression in Berlin and is often cited, with caution, as one influence on German expectations in 1941 — though the Wehrmacht that invaded the Soviet Union was far larger and better equipped than the forces defeated in the Finnish forests.',
+      },
+    },
+  },
+  {
+    id: 'sedan_1940',
+    date: '1940-05-13',
+    precision: 'day',
+    title: 'German armour crosses the Meuse at Sedan',
+    kind: 'battle',
+    fronts: ['western'],
+    countries: ['Germany', 'France'],
+    figures: ['guderian'],
+    note: 'The crossing of 13 May was followed by an armoured thrust through a weakly held sector towards the Channel coast; the French 55th Division, a reserve formation, collapsed under the attack. German panzer losses in the breakthrough were small compared with the operational effect, but the figure should always be read as an estimate.',
+    levels: {
+      primary: {
+        cause: 'Germany attacked France through the Ardennes, where the French defences were weak.',
+        what: 'On 13 May German armour crossed the River Meuse at Sedan and broke through the French line.',
+        consequence: 'Within days the German tanks were racing towards the sea, cutting off the best Allied armies in the north.',
+      },
+      secondary: {
+        cause: 'The main Allied armies had advanced into Belgium to meet the German feint, leaving the Ardennes sector to reserve divisions with little artillery and no experience.',
+        what: 'After aerial bombardment, German infantry crossed the Meuse on the evening of 13 May and panzer divisions poured through the gap, supported by dive-bombers rather than by infantry following on foot.',
+        consequence: 'The breakthrough separated the Allied armies in Belgium from France, forced the evacuation at Dunkirk and made the fall of France a matter of weeks.',
+      },
+      university: {
+        cause: 'Sedan worked because German operational doctrine concentrated armour and air support at a single Schwerpunkt while France distributed its armour among infantry formations — a difference in doctrine as much as in numbers.',
+        what: 'The collapse was not instantaneous: French counter-attacks were attempted, and the German bridgehead was vulnerable for a time, but communications and command failed faster than the defenders could organise.',
+        consequence: 'Postwar accounts turned Sedan into a simple story of German brilliance and French incompetence; the archival literature is more careful, pointing to French force allocation, the effects of the air offensive and the speed of German exploitation as separate causes.',
+      },
+    },
+  },
+  {
+    id: 'bessarabia_baltic_1940',
+    date: '1940-06-28',
+    precision: 'day',
+    title: 'The Soviet Union occupies the Baltic states and Bessarabia',
+    kind: 'invasion',
+    fronts: ['eastern', 'politics'],
+    countries: ['Soviet Union', 'Estonia', 'Latvia', 'Lithuania', 'Romania'],
+    note: 'Soviet ultimatums to Estonia, Latvia and Lithuania were delivered in mid-June, and Soviet troops occupied the three capitals on 14-17 June; an ultimatum to Romania followed on 26 June, with Soviet forces entering Bessarabia and northern Bukovina from 28 June. The map has no June 1940 border state, so this map cannot draw these changes.',
+    levels: {
+      primary: {
+        cause: 'The Soviet Union wanted land it had lost after the First World War and used the weakness of its neighbours after France fell.',
+        what: 'In June 1940 Soviet troops took over Estonia, Latvia and Lithuania, then occupied Bessarabia and northern Bukovina from Romania.',
+        consequence: 'Millions of people came under Soviet rule, and the map in this site still shows April 1940 borders — it cannot show this enlargement.',
+      },
+      secondary: {
+        cause: 'The 1939 secret protocol had placed these territories in the Soviet sphere; the German victory in the west removed the only power that might have objected.',
+        what: 'The Baltic governments received ultimatums and accepted them under military pressure; new pro-Soviet governments then requested admission to the USSR. Romania accepted the Soviet ultimatum of 26 June after consulting Germany, and Soviet troops occupied the disputed provinces from 28 June.',
+        consequence: 'The annexations were followed by rapid sovietisation, arrests and mass deportations in 1940-41, and they remain disputed in international law because they were imposed by force.',
+      },
+      university: {
+        cause: 'The sequence is a direct consequence of the Molotov-Ribbentrop protocol, and it shows how the pact divided eastern Europe into German and Soviet spheres rather than merely keeping the two states at peace.',
+        what: 'Moscow presented each step as a lawful request accepted by a sovereign government, which is the language still used in Russian accounts; the Baltic states and Romania treated the ultimatums as occupation.',
+        consequence: 'The annexations changed borders but not loyalty: when Germany attacked in June 1941, many people in the newly occupied regions welcomed it, before German occupation proved equally destructive.',
+      },
+    },
+  },
+  {
+    id: 'mers_el_kebir',
+    date: '1940-07-03',
+    precision: 'day',
+    title: 'Britain attacks the French fleet at Mers-el-Kébir',
+    kind: 'battle',
+    fronts: ['atlantic', 'mediterranean'],
+    countries: ['United Kingdom', 'France'],
+    figures: ['churchill'],
+    note: 'The attack of 3 July 1940, intended to prevent the French fleet from joining Germany, killed more than a thousand French sailors and poisoned Anglo-French relations for months. The subsequent landing at Dakar in September failed; the fleet at Alexandria was later demobilised by agreement with the British commander.',
+    levels: {
+      primary: {
+        cause: 'After France surrendered, Britain feared the French navy might be used against it.',
+        what: 'British warships opened fire on French ships in the Algerian harbour of Mers-el-Kébir when their commander refused British terms.',
+        consequence: 'Many French sailors were killed, and France was angry with its former ally — but Germany did not get the fleet.',
+      },
+      secondary: {
+        cause: 'The armistice left Vichy in control of a modern fleet; Churchill could not accept the risk that Germany would seize it, despite the French assurance that it would not.',
+        what: 'A British squadron attacked the main French base at Oran and Mers-el-Kébir on 3 July after negotiations failed; one battleship was sunk and others were damaged.',
+        consequence: 'Britain demonstrated that it would act alone, and Vichy retaliated politically, but Germany never obtained the French battle fleet.',
+      },
+      university: {
+        cause: 'The decision is one of the clearest examples of Churchill calculating that long-term sea control outweighed the immediate diplomatic cost; the French fleet was the one asset that could have shifted the naval balance in the Mediterranean.',
+        what: 'The attack was legally controversial, and the losses among French sailors remain disputed in detail; what is not in doubt is that the order came from the British War Cabinet and that the French admiral had no authority to accept the terms without his government.',
+        consequence: 'It convinced Vichy that Britain was an enemy and hardened French collaboration, while proving to Washington and the Dominions that Britain intended to continue the war by any means available.',
+      },
+    },
+  },
+  {
+    id: 'battle_of_britain_day',
+    date: '1940-09-15',
+    precision: 'day',
+    title: 'Battle of Britain Day: 15 September 1940',
+    kind: 'battle',
+    fronts: ['air_war'],
+    countries: ['United Kingdom', 'Germany'],
+    note: '15 September is commemorated in Britain as Battle of Britain Day: large German raids were met by concentrated fighter interception, and the Luftwaffe withdrew from the daylight offensive. The RAF’s official commemoration uses 10 July 1940 as the campaign’s start, the date already carried by the battle_of_britain card; German chronologies divide the campaign differently. Fighter Command’s claims of enemy aircraft destroyed that day were higher than German losses recorded after the war, so no exact loss figure is given here.',
+    levels: {
+      primary: {
+        cause: 'Germany was trying to defeat British aircraft so it could invade Britain.',
+        what: 'On 15 September large formations of German bombers were met by British fighters, and the raids were driven off with heavy losses.',
+        consequence: 'Hitler put off the invasion; Britain was not conquered in 1940.',
+      },
+      secondary: {
+        cause: 'After failing to destroy the RAF on the ground and switching to attacks on London, the Luftwaffe needed a decisive daylight victory before an invasion could be attempted.',
+        what: 'On 15 September two large German attacks were intercepted in tightly controlled formations over south-east England; the bombers suffered heavily and the fighter force was not destroyed.',
+        consequence: 'The invasion was postponed and then abandoned. Britain kept control of its own air space, which made a cross-Channel invasion impossible for as long as the RAF remained intact.',
+      },
+      university: {
+        cause: 'The battle was decided as much by the system — radar, the operations rooms, sector control and the earlier decision not to waste fighters in France — as by the courage or skill of individual pilots.',
+        what: 'Claims of German aircraft shot down on 15 September were greatly inflated in wartime reporting; post-war study of German records gives much lower losses, though still enough to make the daylight campaign unsustainable.',
+        consequence: 'The RAF dates the campaign from 10 July and the Luftwaffe uses other boundaries, so 15 September is a British commemoration rather than a universal military date. What it marks is real: the end of the attempt to win air superiority by day.',
+      },
+    },
+  },
+  {
+    id: 'sidi_barrani',
+    date: '1940-12-09',
+    precision: 'day',
+    title: 'Operation Compass opens with the attack at Sidi Barrani',
+    kind: 'battle',
+    fronts: ['mediterranean'],
+    countries: ['United Kingdom', 'Italy'],
+    note: 'The assault of 9-11 December 1940 by the Western Desert Force was intended as a short raid against the Italian advanced positions. Its success led to a much larger operation that reached Tobruk in January 1941, in which many thousands of Italian soldiers were taken prisoner; totals differ between British and Italian records.',
+    levels: {
+      primary: {
+        cause: 'The Italian army in Egypt had advanced and then stopped, and the British had a small but better-equipped force ready.',
+        what: 'On 9 December British and Commonwealth troops attacked the Italian camp at Sidi Barrani and broke through.',
+        consequence: 'A raid meant to last days turned into a campaign that pushed the Italians back across Libya.',
+      },
+      secondary: {
+        cause: 'Mussolini’s invasion of Egypt in September 1940 had outrun its supplies, and the Italian army had fortified a series of isolated camps rather than a continuous front.',
+        what: 'The Western Desert Force passed between the camps, attacked Sidi Barrani from the rear and captured thousands of prisoners in three days of fast-moving operations.',
+        consequence: 'The campaign showed that Italian forces in North Africa could not hold against armoured and artillery tactics, and it forced Germany to send the Afrika Korps in February 1941.',
+      },
+      university: {
+        cause: 'Compass succeeded because British planning exploited the gaps between Italian camps and because the Italian command had no mobile reserve able to intervene — an early demonstration that logistics and mobility, not a continuous front, decided desert war.',
+        what: 'The operation was planned as a five-day raid and then expanded as the Italian position collapsed; the pursuit continued along the coast road towards Tobruk and beyond.',
+        consequence: 'The British victory created a new strategic problem: the troops used for the advance were needed in Greece, which is why the force sent to halt the German relief soon after was small and untried.',
+      },
+    },
+  },
+
+
+  {
+    id: 'polish_government_in_exile',
+    date: '1939-09-30',
+    precision: 'day',
+    title: 'Poland’s government-in-exile is formed',
+    kind: 'politics',
+    fronts: ['politics'],
+    countries: ['Poland', 'United Kingdom', 'France'],
+    note: 'General Władysław Sikorski formed a government in Paris on 30 September 1939, with representatives of the main parties; it moved to London in 1940 after France fell. Britain and France recognised it, and it carried Poland’s legal personality through the war, which is why the Polish underground state claimed to act in its name. The recognition did not give Poland a seat at the major Allied conferences of 1943-45.',
+    levels: {
+      primary: {
+        cause: 'Poland had been defeated and occupied, but its soldiers and leaders were still fighting outside the country.',
+        what: 'A Polish government was formed in Paris in September 1939 and was recognised by Britain and France.',
+        consequence: 'Poland still had a government that other countries accepted, and Polish soldiers kept fighting under its authority.',
+      },
+      secondary: {
+        cause: 'The occupation destroyed Poland’s institutions at home, while the Allied powers still needed a Polish state to fight for.',
+        what: 'Sikorski headed a coalition government abroad; after the fall of France it moved to London, where it directed the underground state and the Polish forces in the west.',
+        consequence: 'It preserved legal continuity but had little bargaining power: Poland’s frontiers were settled at Yalta and Potsdam without its government’s agreement.',
+      },
+      university: {
+        cause: 'The government-in-exile is the clearest case of the distinction between a state’s legal existence and its territory: Poland never ceased to be recognised, even though its borders were redrawn by two victorious neighbours.',
+        what: 'Its authority rested on Allied recognition and on the underground administration at home, not on control of Polish soil, and that weakness mattered when Soviet-backed institutions were set up in 1944.',
+        consequence: 'The dispute over which Polish government represented the country was one of the first open breaches in the wartime alliance, and it remains a central subject of Polish postwar memory.',
+      },
+    },
+  },
+  {
+    id: 'atlantic_charter',
+    date: '1941-08-14',
+    precision: 'day',
+    title: 'The Atlantic Charter is issued',
+    kind: 'politics',
+    fronts: ['politics', 'atlantic'],
+    countries: ['United Kingdom', 'United States'],
+    figures: ['churchill', 'roosevelt'],
+    note: 'Roosevelt and Churchill met in Placentia Bay, Newfoundland, aboard USS Augusta and HMS Prince of Wales, and issued a joint declaration of eight principles on 14 August 1941. It was a statement of common purpose, not a treaty, and deliberately left the question of how far its promises of self-determination applied to the British and French empires to later argument.',
+    levels: {
+      primary: {
+        cause: 'Britain was fighting Germany and wanted the United States openly on its side, even before America entered the war.',
+        what: 'The British and American leaders met at sea and issued a list of eight aims for the world after the war.',
+        consequence: 'The two countries now said publicly what they wanted, and other Allied countries later signed up to the same aims.',
+      },
+      secondary: {
+        cause: 'Lend-Lease and the Atlantic naval war had already made the United States a partner in all but name; the declaration put that partnership into words.',
+        what: 'The eight points promised no territorial gain, self-determination, economic cooperation, disarmament and a general system of security after the war.',
+        consequence: 'The Charter fed into the Declaration by United Nations of January 1942 and ultimately into the United Nations Charter; it also raised expectations among colonial peoples that Britain could not satisfy.',
+      },
+      university: {
+        cause: 'The Charter was a coalition document with two audiences: it reassured the British public that America was committed, and it reassured Washington that Britain was not fighting for imperial restoration.',
+        what: 'Churchill later argued that self-determination applied only to states occupied by Germany, while Roosevelt read it more widely; the ambiguity was present in the text from the start.',
+        consequence: 'Whether the Charter created postwar obligations or merely stated aspirations is still argued, but its language was used by independence movements from India to Africa within a year.',
+      },
+    },
+  },
+  {
+    id: 'declaration_by_united_nations',
+    date: '1942-01-01',
+    precision: 'day',
+    title: 'Twenty-six states sign the Declaration by United Nations',
+    kind: 'alliance',
+    fronts: ['politics'],
+    countries: ['United Kingdom', 'United States', 'Soviet Union', 'Poland', 'France'],
+    figures: ['roosevelt', 'churchill'],
+    note: 'Signed in Washington on 1 January 1942 by twenty-six states, the declaration bound them to the Atlantic Charter’s purposes, to use their full resources against the Axis, and not to conclude a separate peace. The name "United Nations" was used here for the first time in its wartime sense; the organisation founded in 1945 grew out of this coalition.',
+    levels: {
+      primary: {
+        cause: 'The countries fighting Germany, Italy and Japan needed one public promise that they would stay together.',
+        what: 'On 1 January 1942 twenty-six countries signed a declaration promising not to make a separate peace.',
+        consequence: 'They called themselves the United Nations, the name the postwar organisation later took.',
+      },
+      secondary: {
+        cause: 'After Pearl Harbor and Germany’s declaration of war on the United States, the coalition needed a formal statement of common war aims.',
+        what: 'The declaration tied the signatories to the Atlantic Charter and to fighting until the Axis was defeated, with no separate negotiations.',
+        consequence: 'It turned a set of bilateral alliances into a named coalition and provided the language and membership base for the United Nations after the war.',
+      },
+      university: {
+        cause: 'The declaration was as much about preventing a repeat of 1918, when separate settlements and withdrawn commitments shaped the peace, as about winning the war.',
+        what: 'The signatories ranged from the great powers to states in exile, and later governments joined as the war widened; the wording bound governments rather than parliaments.',
+        consequence: 'The coalition’s unity should not be overstated — disagreements over Poland, the Mediterranean and the timing of the second front were constant — but the no-separate-peace pledge held, which mattered for the settlement that followed.',
+      },
+    },
+  },
+
+
+  {
+    id: 'aktion_t4',
+    date: '1939-10-01',
+    precision: 'month',
+    title: 'The “euthanasia” programme begins its main phase',
+    kind: 'war_crime',
+    fronts: ['home'],
+    countries: ['Germany', 'Austria'],
+    note: 'Hitler authorised the killing of disabled patients in October 1939, in a document backdated to 1 September, and the programme took its name from the Berlin address of its headquarters, Tiergartenstraße 4. The killing centres and the personnel who staffed them supplied the gas vans and the method later used at Chełmno; an official halt was ordered on 24 August 1941, though killings continued in other forms. Historians dispute how far the programme was a direct rehearsal for the extermination of the Jews and how far an independent enterprise in Nazi racial policy.',
+    levels: {
+      primary: {
+        cause: 'The Nazi regime believed that disabled people were a burden and had promoted the idea that some lives were not worth living.',
+        what: 'From October 1939 doctors and nurses in Germany killed thousands of patients in specially set up centres, using gas.',
+        consequence: 'The same methods and some of the same staff were later used to kill Jews in occupied Poland.',
+      },
+      secondary: {
+        cause: 'The regime’s racial ideology and its wish to free resources for the war drove a programme that began with children and then extended to adults.',
+        what: 'Six killing centres operated in Germany and Austria; patients were transferred from hospitals under deception and killed in gas chambers disguised as showers.',
+        consequence: 'A formal stop in August 1941 did not end the practice, and the technical and organisational experience passed directly into the killing centres of Operation Reinhard.',
+      },
+      university: {
+        cause: 'T4 is central to the argument about how the Holocaust was made possible: the machinery of killing was created in Germany against German victims before it was turned on Jews in the occupied east.',
+        what: 'The programme was never a secret from the relevant ministries or from local clergy, and protests did reach the regime; the August 1941 halt was a response to publicity and public unease rather than a change of principle.',
+        consequence: 'The debate is over continuity, not chronology: T4 did not itself decide the Final Solution, but without its staff, transport arrangements and deception methods the later camps would have had to invent them.',
+      },
+    },
+  },
+  {
+    id: 'second_vienna_award',
+    date: '1940-08-30',
+    precision: 'day',
+    title: 'The Second Vienna Award transfers northern Transylvania',
+    kind: 'politics',
+    fronts: ['politics', 'balkans'],
+    countries: ['Romania', 'Hungary', 'Germany', 'Italy'],
+    note: 'Germany and Italy arbitrated the disputed frontier between Romania and Hungary at Vienna on 30 August 1940, awarding northern Transylvania, with a substantial Hungarian and Jewish population, to Hungary. Romania had no practical means of refusal after the Soviet annexation of Bessarabia in June; the grievance drove Romanian politics towards the German alliance and helps explain the switch of 23 August 1944.',
+    levels: {
+      primary: {
+        cause: 'Hungary wanted back land it had lost after the First World War, and Germany and Italy wanted to keep both countries on their side.',
+        what: 'The German and Italian foreign ministers met in Vienna and gave northern Transylvania to Hungary on 30 August 1940.',
+        consequence: 'Romania lost a large region and never forgave the decision, even while it stayed allied to Germany.',
+      },
+      secondary: {
+        cause: 'The First Vienna Award of 1938 had already returned Slovak territory to Hungary; the Romanian defeat of 1940 left Bucharest unable to resist a second arbitration.',
+        what: 'A roughly defined zone of northern Transylvania was transferred, followed by population exchanges, influxes of refugees and acts of violence against Jews in the transferred area.',
+        consequence: 'The award did not settle the frontier question, it stored it up: recovering the lost territory became a Romanian war aim, achieved in 1944 only through a change of alliance.',
+      },
+      university: {
+        cause: 'The award is an example of Axis "arbitration" as an instrument of empire: the two dictatorships settled a dispute between smaller states by depriving one of them.',
+        what: 'The boundary was drawn with little regard for local economic connections, and both states treated the decision as temporary; minorities on both sides were expelled or killed.',
+        consequence: 'Because the settlement was imposed rather than negotiated, it weakened Romanian commitment to the Axis. Any account of Romania’s 1944 switch that ignores the Vienna awards misses a durable cause.',
+      },
+    },
+  },
+  {
+    id: 'vichy_jewish_statute',
+    date: '1940-10-03',
+    precision: 'day',
+    title: 'Vichy enacts its first Jewish Statute',
+    kind: 'politics',
+    fronts: ['home'],
+    countries: ['France'],
+    figures: ['petain'],
+    note: 'The law of 3 October 1940, promulgated by the Vichy government, defined who counted as a Jew and excluded Jews from public office, the professions, the press and the army; a second statute followed in June 1941. It was French legislation, not a German order, and it made the later deportations administratively possible. See Paxton, Vichy France: Old Guard and New Order, and Marrus and Paxton, Vichy France and the Jews.',
+    levels: {
+      primary: {
+        cause: 'The new French government wanted to show Germany that it was building a new order of its own.',
+        what: 'On 3 October 1940 Vichy passed a law that removed Jewish people from many jobs and public life.',
+        consequence: 'French officials now had a legal definition of who was a Jew, which made later exclusion and deportation easier.',
+      },
+      secondary: {
+        cause: 'Vichy’s "National Revolution" sought to reshape French society, and antisemitic legislation was presented as a domestic initiative rather than a concession to the occupier.',
+        what: 'The statute excluded Jews from the civil service, the armed forces, teaching, journalism and other professions, and required a census of Jewish populations.',
+        consequence: 'The law created the registers and categories used in the round-ups of 1942 and 1943; Vichy thus bears direct responsibility for the machinery of persecution.',
+      },
+      university: {
+        cause: 'The statute is the decisive evidence against the old claim that Vichy merely shielded France from worse German demands: the initiative for this law was French.',
+        what: 'Its definition was racial rather than religious and was more sweeping than the rules applied in the occupied zone at first; a second statute in June 1941 widened it further.',
+        consequence: 'The argument among historians is about motive — opportunistic collaboration, ideological conviction or a mixture — not about authorship. What is not in doubt is that French administration carried it out.',
+      },
+    },
+  },
+
+
+  {
+    id: 'italian_racial_laws',
+    date: '1938-11-17',
+    precision: 'day',
+    title: 'Italy’s racial laws are enacted',
+    kind: 'politics',
+    fronts: ['home'],
+    countries: ['Italy'],
+    figures: ['mussolini'],
+    note: 'Decrees of 17-18 November 1938, usually called the Leggi Razziali, removed Italian Jews from public office, teaching, the professions and many forms of economic life, and prohibited intermarriage; a census and a body of racial doctrine accompanied them. The laws were enacted by the Fascist regime before Italy entered the war and were enforced with varying enthusiasm; after the armistice some Jews were protected by Italians, while the German occupiers and the Italian Social Republic resumed deportations.',
+    levels: {
+      primary: {
+        cause: 'Mussolini’s government wanted to copy Nazi Germany’s racial policies and blame Jews for its problems.',
+        what: 'In November 1938 new laws took away Italian Jews’ jobs, rights and property.',
+        consequence: 'Thousands of Italian Jews were driven from public life and had to hide or leave the country.',
+      },
+      secondary: {
+        cause: 'The alliance with Germany and Mussolini’s wish to present Fascism as a revolutionary movement pushed the regime towards a policy it had not previously needed.',
+        what: 'The decrees excluded Jews from schools, universities, government and the professions, restricted property and marriage, and required registration.',
+        consequence: 'Italian Jews lost their livelihoods and some fled; when Germany occupied northern Italy in 1943 the deportations began from a community that had already been registered and impoverished.',
+      },
+      university: {
+        cause: 'The suddenness of the laws in 1938, after two decades in which many Italian Jews had been integrated into Fascist society, makes them a case study in how a regime can manufacture a racial policy for strategic ends.',
+        what: 'Italian antisemitism was never identical to the German version — the regime’s own racial doctrine was inconsistent, and enforcement varied — but the practical effect of exclusion and registration was the same.',
+        consequence: 'Postwar Italian accounts long stressed that many Italians sheltered Jews, which is true; the laws of 1938 and the collaboration of the Italian Social Republic are the other half of the same history.',
+      },
+    },
+  },
+  {
+    id: 'de_gaulle_appeal',
+    date: '1940-06-18',
+    precision: 'day',
+    title: 'De Gaulle’s appeal from London',
+    kind: 'politics',
+    fronts: ['politics', 'home'],
+    countries: ['France', 'United Kingdom'],
+    figures: ['de_gaulle'],
+    note: 'On 18 June 1940, the day after Pétain’s armistice broadcast, Charles de Gaulle spoke on the BBC in London and told the French not to accept defeat; only a small minority heard the broadcast at the time. He was not yet the recognised leader of Free France — that position was built over the following years and confirmed in 1944 — and the appeal mattered first as a claim that France could continue the war from abroad.',
+    levels: {
+      primary: {
+        cause: 'France had signed an armistice and its government told the French people to stop fighting.',
+        what: 'A French general in London, Charles de Gaulle, spoke on the radio and told the French not to give up.',
+        consequence: 'A few people heard him at first, but his appeal became the beginning of Free France.',
+      },
+      secondary: {
+        cause: 'De Gaulle had been a junior minister in the French government and had flown to London rather than accept the armistice; Britain needed a French political figure around which to build a resistance force.',
+        what: 'His broadcast of 18 June argued that France had lost a battle, not the war, and called on soldiers and civilians to continue the fight.',
+        consequence: 'Free France grew slowly and was weakened by quarrels with other French factions, but de Gaulle’s claim to speak for France was eventually accepted by the Allies in 1944.',
+      },
+      university: {
+        cause: 'The appeal is a founding act of political legitimacy as much as a military event: it asserted that a government that had signed an armistice no longer represented the French Republic.',
+        what: 'The speech was poorly transmitted and little heard; its importance was created afterwards, through the institutions of Free France, the Resistance and the liberation of Paris in August 1944.',
+        consequence: 'Historians disagree about how much de Gaulle represented French opinion in 1940 and how much he imposed himself with Allied backing; both are needed to explain why his claim eventually prevailed.',
+      },
+    },
+  },
+
+
+  {
+    id: 'neutrality_act_1939',
+    date: '1939-11-04',
+    precision: 'day',
+    title: 'The 1939 Neutrality Act permits “cash and carry”',
+    kind: 'politics',
+    fronts: ['politics', 'atlantic'],
+    countries: ['United States', 'United Kingdom', 'France', 'Germany'],
+    note: 'Roosevelt signed the Neutrality Act of 4 November 1939 after Congress debated the earlier embargo for months. It repealed the arms embargo and allowed belligerents to buy American war materiel if they paid in cash and carried it in their own ships — a rule that favoured Britain and France, whose navies controlled the Atlantic. The 1935-37 Acts had been intended to keep the United States out of foreign wars; the 1939 revision moved American policy towards open support short of belligerency.',
+    levels: {
+      primary: {
+        cause: 'American law had forbidden arms sales to countries at war, but Britain and France needed American supplies.',
+        what: 'In November 1939 President Roosevelt signed a law allowing countries to buy American weapons if they paid cash and carried them away themselves.',
+        consequence: 'Britain and France could now buy war supplies from the United States, while America still said it was neutral.',
+      },
+      secondary: {
+        cause: 'The arms embargo of the 1930s had treated aggressor and victim alike, which many in the United States came to think favoured Germany.',
+        what: 'The new act removed the embargo but kept the formal machinery of neutrality: cash payment and transport in the buyer’s ships kept American vessels and credit out of the war.',
+        consequence: 'It helped Britain and France in the first winter of the war and prepared the way for Lend-Lease in March 1941; American neutrality was narrowing by stages.',
+      },
+      university: {
+        cause: 'The revision is best read as the point at which neutrality became a device for managing involvement rather than avoiding it.',
+        what: 'Congressional support was built on the promise that no American ships or soldiers would be at risk, which is why the cash-and-carry formula mattered as much as the repeal of the embargo.',
+        consequence: 'The change favoured the side that held the sea, and could not have helped Germany; its practical effect was to make the Atlantic campaign and the later Lend-Lease debates part of American domestic politics.',
+      },
+    },
+  },
+  {
+    id: 'destroyers_for_bases',
+    date: '1940-09-03',
+    precision: 'day',
+    title: 'Fifty American destroyers go to Britain',
+    kind: 'alliance',
+    fronts: ['politics', 'atlantic'],
+    countries: ['United States', 'United Kingdom'],
+    figures: ['roosevelt', 'churchill'],
+    note: 'On 3 September 1940 the United States transferred fifty First World War-era destroyers to the Royal Navy in exchange for ninety-nine-year leases on bases in the Caribbean and Newfoundland. The destroyers were old and several needed extensive refit, but the deal gave Britain escort capacity at a critical moment and gave Roosevelt basing rights in the western Atlantic. It was an executive agreement rather than a treaty, which raised constitutional objections in the United States.',
+    levels: {
+      primary: {
+        cause: 'Britain urgently needed ships to protect its supply lines, and the United States wanted to help without joining the war.',
+        what: 'America gave Britain fifty old destroyers in exchange for the use of naval bases in the Atlantic.',
+        consequence: 'Britain gained escorts for its convoys, and the United States gained bases closer to the Atlantic shipping routes.',
+      },
+      secondary: {
+        cause: 'After the fall of France, the Royal Navy was short of escorts while German submarines were ranging further west.',
+        what: 'Roosevelt used an executive agreement to exchange the ships for base leases, bypassing a Congress that was still reluctant to aid belligerents openly.',
+        consequence: 'The deal alarmed Germany and drew the United States further into the Atlantic war; within months Congress passed Lend-Lease.',
+      },
+      university: {
+        cause: 'The destroyers were of limited military value and the bases were the real prize: they let the United States Navy plan convoy escort and air patrols in waters previously beyond its reach.',
+        what: 'The legal device mattered as much as the ships; using an executive agreement avoided the treaty clause and set a pattern for later presidential initiatives.',
+        consequence: 'German declarations that the transaction made the United States a belligerent were propaganda, but the undeclared naval war in the Atlantic was real by the autumn of 1941.',
+      },
+    },
+  },
+
 ];

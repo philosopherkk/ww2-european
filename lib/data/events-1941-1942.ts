@@ -10,7 +10,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['mediterranean'],
     countries: ['Germany', 'Italy', 'United Kingdom'],
     figures: ['hitler', 'mussolini', 'rommel'],
-    note: 'The Deutsches Afrikakorps was formed on 11 January 1941 and Erwin Rommel was named to command it on 11 February, the day the first troops reached Tripoli; he arrived himself on the 12th with orders to hold Tripolitania by aggressive tactics. Aufklärungsbataillon 3 and Panzerjägerabteilung 39 landed on 14 February and were sent straight forward to the line east of Sirte. The 5th Light Division detrained in Naples between 10 February and 12 March and the 15th Panzer Division followed in the spring, while British intelligence at first under-strength the force that was arriving. General Italo Gariboldi replaced Marshal Graziani as Governor-General of Libya on 25 March.',
+    note: 'The Deutsches Afrikakorps was formed on 11 January 1941 and Erwin Rommel was named to command it on 11 February, the day the first troops reached Tripoli; he arrived himself on the 12th with orders to hold Tripolitania by aggressive tactics. Aufklärungsbataillon 3 and Panzerjägerabteilung 39 landed on 14 February and were sent straight forward to the line east of Sirte. The 5th Light Division detrained in Naples between 10 February and 12 March and the 15th Panzer Division followed in the spring, while British intelligence at first underestimated the force that was arriving. General Italo Gariboldi replaced Marshal Graziani as Governor-General of Libya on 25 March.',
     levels: {
       primary: {
         cause: 'Italy’s army in North Africa had been wiped out, and Britain was free to take over all of Libya. Hitler did not want to lose Italy’s colony, because it would have brought the war to Italy sooner.',
@@ -233,7 +233,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['politics', 'home'],
     countries: ['Germany'],
     figures: ['heydrich', 'himmler', 'hitler'],
-    note: 'The surviving copy of the minutes (copy No. 16 of the thirty circulated) lists about 11 million Jews in Europe and the Soviet Union as targets for "evacuation to the East". By January 1942 mass shootings in the occupied East had already killed more than half a million Jews, and the Chelmno gas-van site had been running since December 1941; the conference regulated the bureaucratic co-ordination of deportation across the rest of Europe.',
+    note: 'The surviving copy of the minutes (copy No. 16 of the thirty circulated) lists about 11 million Jews in Europe and the Soviet Union as targets for "evacuation to the East". By January 1942 mass shootings in the occupied East had already killed more than half a million Jews, and the Chełmno gas-van site had been running since December 1941; the conference regulated the bureaucratic co-ordination of deportation across the rest of Europe.',
     levels: {
       primary: {
         cause: 'By 1942 the Nazi leaders had decided to murder all the Jewish people in Europe.',
@@ -259,7 +259,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
     title: 'Operation Paukenschlag: U-boats attack the American Atlantic coast',
     kind: 'battle',
     fronts: ['atlantic', 'home'],
-    countries: ['Germany', 'United Kingdom'],
+    countries: ['Germany', 'United Kingdom', 'United States'],
     figures: ['donitz', 'churchill'],
     levels: {
       primary: {
@@ -269,7 +269,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
       },
       secondary: {
         cause: 'Dönitz sent wolfpacks to the thinly protected Atlantic and Caribbean after the United States entered the war without coastal blackout or convoys.',
-        what: 'In the first half of 1942 the U-boats the whole Second Happy Time yielded 609 ships / 3.1 million tons for the loss of 22 U-boats, and some 640,000 tons a month from July to September — the second German “happy time”.',
+        what: 'In the Second Happy Time of January-August 1942 the U-boats off the American coast sank 609 ships of 3.1 million tons for the loss of 22 U-boats; sinkings fell to about 640,000 tons a month from July to September as convoys and coastal blackout took effect.',
         consequence: 'Allied shipbuilding, escort carriers, hedgehog mortars, centimetric radar and the capture of Enigma materials reversed the balance by mid-1943, allowing the invasion build-up in Britain.',
       },
       university: {
@@ -357,7 +357,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
         consequence: 'Between 254,000 and 265,000 people were murdered, most of them in the first weeks of Treblinka\'s operation. The surviving workers founded the Jewish Combat Organisation (ZOB) on 28 July, while the trains were still running, and began storing the pistols and homemade bombs they used in the uprising of April 1943. A hidden archive, Oneg Shabbat, buried its records in milk cans during the action; part of it was dug up in 1946 and again in 1950.',
       },
       university: {
-        cause: 'The Grossaktion was the largest single operation of Operation Reinhard, the murder of the Jews of the General Government, whose camps had been running since December 1941. Its timing in Warsaw is tied to Himmler\'s visit to the Fuhrer headquarters on 16 July and his order of the 19th, and to the SS\'s wish to demonstrate that the biggest ghetto in Europe could be cleared; the release of housing and of registered labour for the German administration was a secondary argument used by the participants.',
+        cause: 'The Grossaktion was the largest single operation of Operation Reinhard, the murder of the Jews of the General Government, whose camps had been running since December 1941. Its timing in Warsaw is tied to Himmler\'s visit to the Führer headquarters on 16 July and his order of the 19th, and to the SS\'s wish to demonstrate that the biggest ghetto in Europe could be cleared; the release of housing and of registered labour for the German administration was a secondary argument used by the participants.',
         what: 'The mechanics depended on German direction and Jewish compulsion rather than on large German manpower: a few hundred German and Latvian police, Order Police battalions and Trawniki-trained guards, with the Jewish Order Service doing the street-level roundups under the threat that the Council itself would be deported. This is the empirical core of the postwar debate about the Jewish Councils, and it cannot be read as "collaboration" without attending to the fact that the process was deliberately described to its victims as resettlement.',
         consequence: 'Warsaw became both the model and the argument. Armed resistance became possible only after the majority of the ghetto\'s population had already been murdered, which is the chronogram of the Holocaust in Poland; the debates between Hilberg and Rubenstein over the Councils, and Samuel Kassow\'s later edition of the Ringelblum archive, are still the terms in which the question is discussed. The Polish government-in-exile and the Polish Socialist Party issued a documented protest note in September 1942, one of the earliest public denunciations of the extermination by any belligerent government.',
       },
@@ -400,7 +400,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['mediterranean'],
     countries: ['United Kingdom', 'Germany', 'Italy', 'Egypt'],
     figures: ['montgomery', 'rommel'],
-    note: 'The attack opened at 21:40 on 23 October with a 45-minute barrage from about 1,000 guns. Eighth Army had some 195,000 effectives and 1,046 tanks; Panzerarmee Afrika ~116,000 men (Playfair: 54,000 Italian + 50,000 German — roughly half), and under 300 serviceable tanks. The Axis minefields held some half a million mines. Axis losses were about 20,000 killed and wounded and some 30,000 prisoners; some 20,000-30,000 Axis troops were evacuated from Tunisia in January-May 1943 to fight again in Italy. The Commonwealth War Graves Commission records nearly 2,400 burials at Alamein.',
+    note: 'The attack opened at 21:40 on 23 October with a 45-minute barrage from about 1,000 guns. Eighth Army had some 195,000 effectives and 1,046 tanks; Panzerarmee Afrika ~116,000 men (Playfair: 54,000 Italian + 50,000 German — roughly half), and under 300 serviceable tanks. The Axis minefields held some half a million mines. Axis losses were about 20,000 killed and wounded and some 30,000 prisoners; some 20,000-30,000 Axis troops were evacuated from Tunisia in January-May 1943 to fight again in Italy. The Commonwealth War Graves Commission records 7,240 Commonwealth burials at Alamein, about 6,480 of them identified.',
     levels: {
       primary: {
         cause: 'German and Italian armies had pushed across the desert to El Alamein, only about 100 km from Alexandria and the Suez Canal, and Britain had to stop them there.',
@@ -542,7 +542,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['atlantic', 'air_war'],
     countries: ['Germany', 'United Kingdom'],
     figures: ['raeder'],
-    note: 'Scharnhorst, Gneisenau and Prinz Eugen ran up Channel at 27 knots in daylight under an air umbrella, the Germans chose the best route to avoid British minefields; minesweepers cleared channels through British mines, in a degree of inter-service co-operation the German armed forces rarely managed. Fighter Command failed to intercept the capital ships in time - Bomber Command\'s raids on the harbour had been planned as cover for a departure expected on 11 February. Two of the three struck mines on 15-16 February off the German coast. Churchill criticised the service chiefs in the Commons on 13 February.',
+    note: 'Scharnhorst, Gneisenau and Prinz Eugen ran up Channel at 27 knots in daylight under an air umbrella, the Germans chose the best route to avoid British minefields; minesweepers cleared channels through British mines, in a degree of inter-service co-operation the German armed forces rarely managed. Fighter Command failed to intercept the capital ships in time - Bomber Command\'s raids on the harbour had been planned as cover for a departure expected on 11 February. Scharnhorst and Gneisenau struck mines on 12 February, off the Dutch and Frisian coast — Scharnhorst twice and Gneisenau once. Churchill criticised the service chiefs in the Commons on 13 February.',
     levels: {
       primary: {
         cause: 'Three large German warships had been lying in the French port of Brest, where the Royal Navy could not easily reach them, and Germany wanted them home.',
@@ -552,7 +552,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
       secondary: {
         cause: 'Based in Brest since March 1941, the battlecruisers and the heavy cruiser were a threat to Atlantic convoys and to the Home Fleet\'s anchorage, but they were also within reach of Bomber Command and of mines.',
         what: 'The German operation combined air, naval and mine warfare planning, with a dense fighter umbrella flown the length of the route and destroyers meeting the ships off the Netherlands. British warning was late and the interception was uncoordinated.',
-        consequence: 'The propaganda effect was real and short-lived: both battleships were damaged by mines within four days, the three ships spent the rest of 1942 in repair yards or in Norwegian fjords, Gneisenau was crippled by a bomb in Brest harbour before she could sail again, and Scharnhorst was sunk off North Cape in December 1943.',
+        consequence: 'The propaganda effect was real and short-lived: both battleships were damaged by mines during the dash, the three ships spent the rest of 1942 in repair yards or in Norwegian fjords, Gneisenau was crippled by a bomb in Brest harbour before she could sail again, and Scharnhorst was sunk off North Cape in December 1943.',
       },
       university: {
         cause: 'The action is usually treated as an embarrassment, but its significance for the air-land-sea argument is larger: it demonstrated that a determined air umbrella could neutralise surface superiority in coastal waters, which is the argument that made the Royal Navy so anxious about air power in 1942 when it was sent to the Far East.',
@@ -654,7 +654,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['eastern', 'politics'],
     countries: ['Germany', 'Poland', 'Czechoslovakia'],
     figures: ['himmler'],
-    note: 'From 15-18 October 1941 transports left Berlin, Frankfurt, Vienna and Prague for the Lodz ghetto, about 5,000 people in the first five trains; by the summer of 1942 about 100,000 Jews had been deported from the Reich, the Protectorate and Austria into ghettos in occupied Poland, where most were murdered - in Chełmno was situated about 50 km north of Łódź. Theresienstadt, opened as a "model ghetto" for Jews over 65 and decorated veterans in November 1941, took another 55,000; 33,000 died there.',
+    note: 'From 15-18 October 1941 transports left Berlin, Frankfurt, Vienna and Prague for the Lodz ghetto, about 5,000 people in the first five trains; by the summer of 1942 about 100,000 Jews had been deported from the Reich, the Protectorate and Austria into ghettos in occupied Poland, where most were murdered - Chełmno was situated about 50 km north of Łódź. Theresienstadt, opened as a "model ghetto" for Jews over 65 and decorated veterans in November 1941, took another 55,000; 33,000 died there.',
     levels: {
       primary: {
         cause: 'For years the Nazis had tried to force Jewish people to leave Germany. By the autumn of 1941 they decided to send them away to the east instead.',
@@ -668,7 +668,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
       },
       university: {
         cause: 'The October 1941 transports sit at the centre of the debate about the date and structure of the decision: the lack of a single written order has produced two decades of argument between those who date the decision to the summer and those who read the autumn deportations as the step that radicalised the policy into systematic gassing.',
-        what: 'The evidence is cumulative rather than documentary - Himmler\'s notes of 18 December 1941 ("Jewish question - to be solved in Europe"), the gas-van trials, the Chelmno opening on 8 December, and Goebbels\' diary entries of December 1941 which state the Fuhrer\'s decision to make a clean sweep.',
+        what: 'The evidence is cumulative rather than documentary - Himmler\'s notes of 18 December 1941 ("Jewish question - to be solved in Europe"), the gas-van trials, the Chełmno opening on 8 December, and Goebbels\' diary entries of December 1941 which state the Führer\'s decision to make a clean sweep.',
         consequence: 'It is also the strongest case against the "ordinary Germans did not know" position: the deportations were public, organised through the Reichsbahn, announced in the newspapers, and the property of the deported was auctioned locally.',
       },
     },
@@ -702,30 +702,58 @@ export const EVENTS_1941_1942: WW2Event[] = [
     },
   },
   {
+    id: 'germany_declares_war_on_usa',
+    date: '1941-12-11',
+    precision: 'day',
+    title: 'Germany and Italy declare war on the United States',
+    kind: 'politics',
+    fronts: ['politics', 'atlantic'],
+    countries: ['Germany', 'Italy', 'United States', 'United Kingdom'],
+    figures: ['hitler', 'roosevelt'],
+    note: 'Nothing compelled the declaration. The Tripartite Pact of 27 September 1940 obliged Germany, Italy and Japan to assist only if one of the three was attacked — and Japan had struck first, without warning, despite German requests for one. Hitler made the choice himself in a Reichstag speech on 11 December 1941; Congress approved declarations of war against Germany and Italy the same day. American neutrality had already ended in practice: Lend-Lease had been signed on 11 March 1941, and the Atlantic had been an undeclared naval war since the “shoot at sight” and convoy orders of September 1941.',
+    levels: {
+      primary: {
+        cause: 'Japan attacked the American fleet at Pearl Harbor on 7 December 1941, and four days later Germany declared war on America even though nothing made it do so.',
+        what: 'On 11 December 1941 Germany and Italy declared war on the United States, and the American Congress answered with declarations of war of its own the same day.',
+        consequence: 'The United States was now in the European war as well as the Pacific war, and its huge factories began to work for Britain and the Soviet Union too.',
+      },
+      secondary: {
+        cause: 'The Tripartite Pact required help only if one of the three partners was attacked; because Japan had attacked first, Hitler was not obliged to declare war, and the Japanese strike had in fact surprised him.',
+        what: 'Hitler announced the declaration in a speech to the Reichstag on 11 December 1941; Italy declared war the same day, and the US Congress approved war resolutions that afternoon without serious debate.',
+        consequence: 'The strongest industrial power in the world joined the war in Europe, not only the Pacific. The weight came in 1942-45, not at once: no significant US ground forces fought in Europe until late 1942 (see Operation Torch).',
+      },
+      university: {
+        cause: 'The declaration is explained by Hitler’s judgement that war with the United States was unavoidable and should not be entered at America’s choosing, by his reading of Japan as a partner that would fight on regardless, and by open underestimation of American mobilisation — not by the letter of the pact, which Japan’s own requests had already narrowed.',
+        what: 'Congress responded the same day; the “Germany first” priority had already been settled in the ABC-1 staff conversations of March 1941 and was confirmed at the Arcadia conference within the fortnight, so the strategic direction of US participation preceded the declarations.',
+        consequence: 'The European war became an attritional contest among the largest economies, with American strength figures to be read as 1942-45 rather than December 1941. Whether the declaration was a blunder or merely the earliest unavoidable date is a live argument; that US entry was coming in 1942 is not.',
+      },
+    },
+  },
+  {
     id: 'chelmno',
     date: '1941-12-08',
     precision: 'day',
-    title: 'Chelmno opens: the first killing centre begins gassing',
+    title: 'Chełmno opens: the first killing centre begins gassing',
     kind: 'war_crime',
     fronts: ['eastern'],
     countries: ['Germany', 'Poland'],
     figures: [],
-    note: 'Chelmno, in the Wartheland annexed from Poland, began killing on 8 December 1941, six weeks before the Wannsee conference met, using three gas vans in which victims were asphyxiated by exhaust fumes. The toll is disputed - Polish postwar investigations put it near 300,000 and the German trials at about 152,000 - and almost all the victims were Jews from the Lodz region and from the Reich transports. Chelmno was not part of Operation Reinhard, and its commandant Herbert Lange had already run gassing operations in the "euthanasia" programme.',
+    note: 'Chełmno, in the Wartheland annexed from Poland, began killing on 8 December 1941, six weeks before the Wannsee conference met, using three gas vans in which victims were asphyxiated by exhaust fumes. The toll is disputed - Polish postwar investigations put it near 300,000 and the German trials at about 152,000 - and almost all the victims were Jews from the Lodz region and from the Reich transports. Chełmno was not part of Operation Reinhard, and its commandant Herbert Lange had already run gassing operations in the "euthanasia" programme.',
     levels: {
       primary: {
         cause: 'The Germans who ran the area around Lodz wanted to kill the Jews in it, and shooting them one by one was too slow.',
         what: 'In December 1941 the Germans began using sealed vans with exhaust pipes led into the back, so that people died of the fumes while the van drove to a wood where the bodies were buried.',
-        consequence: 'More than 150,000 people were killed at Chelmno. It was the first place built for killing people with gas, and it was not far from a big city - which is why local people knew.',
+        consequence: 'More than 150,000 people were killed at Chełmno. It was the first place built for killing people with gas, and it was not far from a big city - which is why local people knew.',
       },
       secondary: {
         cause: 'The Lodz ghetto was the last major ghetto in the annexed east still functioning, and the German civilian administration wanted it cleared for German settlers and for labour. Gas vans had already been used in the "euthanasia" programme against disabled people in 1940.',
-        what: 'Victims were told they were being resettled and taken to a labour camp, then herded into the vans in the reception building at Chelmno; bodies were buried in mass graves in the forest, later dug up and burned.',
-        consequence: 'Chelmno established the method - deception, a fixed killing site, killing by gas, and the use of Jewish prisoners to sort property and burn bodies - that was then applied on an industrial scale at Belzec, Sobibor and Treblinka in 1942.',
+        what: 'Victims were told they were being resettled and taken to a labour camp, then herded into the vans in the reception building at Chełmno; bodies were buried in mass graves in the forest, later dug up and burned.',
+        consequence: 'Chełmno established the method - deception, a fixed killing site, killing by gas, and the use of Jewish prisoners to sort property and burn bodies - that was then applied on an industrial scale at Belzec, Sobibor and Treblinka in 1942.',
       },
       university: {
-        cause: 'Chelmno\'s place in the chronology is a key argument in the debate about the origins of the "Final Solution": its opening in December 1941 preceded the construction of Reinhard, and its technology came from T4, which links the murder of disabled people to the extermination of the Jews institutionally rather than only ideologically.',
-        what: 'The camp also produced the earliest survivor testimony and the earliest documentation - the Chelmno Chronicle, and the 1942 report by the Polish courier Jan Karski, which is the moment when the Western Allies first learned of the extermination.',
-        consequence: 'The postwar trials in Germany produced small sentences and no recognition of the camp\'s significance until the 1980s, which makes Chelmno a useful case study in the failure of West German justice as well as in the killing itself.',
+        cause: 'Chełmno\'s place in the chronology is a key argument in the debate about the origins of the "Final Solution": its opening in December 1941 preceded the construction of Reinhard, and its technology came from T4, which links the murder of disabled people to the extermination of the Jews institutionally rather than only ideologically.',
+        what: 'The camp also produced the earliest survivor testimony and the earliest documentation - the Chełmno Chronicle, and the 1942 report by the Polish courier Jan Karski, which is the moment when the Western Allies first learned of the extermination.',
+        consequence: 'The postwar trials in Germany produced small sentences and no recognition of the camp\'s significance until the 1980s, which makes Chełmno a useful case study in the failure of West German justice as well as in the killing itself.',
       },
     },
   },
@@ -794,7 +822,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['mediterranean'],
     countries: ['United Kingdom', 'Germany', 'Italy'],
     figures: ['kesselring'],
-    note: 'Some 6,000 tons of bombs fell on Malta in April 1942, more than in the whole of the previous year, and the island\'s fighter strength fell to a couple of dozen serviceable Hurricanes by mid-April against several hundred Axis aircraft based in Sicily. By 21 April only 27 Spitfires were airworthy (Operation Calendar delivered 47 on 13 April); Spitfires had to be flown off carriers to replenish them, some of them lost on the way, and Operation Harpoon: 6 merchants (4 sunk, 2 reached); Operation Vigorous: 11, turned back — 17 total, 2 got through. The George Cross was awarded to the island in April 1942.',
+    note: 'Some 6,000 tons of bombs fell on Malta in April 1942, more than in the whole of the previous year, and the island\'s fighter strength fell to a couple of dozen serviceable Hurricanes by mid-April against several hundred Axis aircraft based in Sicily. By 21 April only 27 Spitfires were airworthy (Operation Calendar delivered 47 on 20 April); Spitfires had to be flown off carriers to replenish them, some of them lost on the way, and Operation Harpoon: 6 merchants (4 sunk, 2 reached); Operation Vigorous: 11, turned back — 17 total, 2 got through. The George Cross was awarded to the island in April 1942.',
     levels: {
       primary: {
         cause: 'Malta is a small island in the middle of the Mediterranean, and from it British planes and ships could attack the supply boats taking German and Italian supplies to the desert war.',
@@ -822,7 +850,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['eastern', 'politics'],
     countries: ['Germany', 'Czechoslovakia', 'United Kingdom'],
     figures: ['heydrich', 'hitler'],
-    note: 'Two paratroopers of the Czechoslovak government-in-exile: Jozef Gabčík (Slovak) and Jan Kubiš (Czech), ambushed Reinhard Heydrich\'s open car in the Prague suburbs on 27 May 1942; he died of septicaemia on 4 June. The murderers and their helpers were surrounded in the Orthodox cathedral of Saints Cyril and Methodius and died fighting on 18 June. Reprisals included the destruction of the villages of Lidice on 10 June - the men shot, the women sent to Ravensbrueck, the children either killed or sent for Germanisation - and Leza, and an estimated 5,000 executed and 13,000 arrested and interrogated.',
+    note: 'Two paratroopers of the Czechoslovak government-in-exile: Jozef Gabčík (Slovak) and Jan Kubiš (Czech), ambushed Reinhard Heydrich\'s open car in the Prague suburbs on 27 May 1942; he died of septicaemia on 4 June. The murderers and their helpers were surrounded in the Orthodox cathedral of Saints Cyril and Methodius and died fighting on 18 June. Reprisals included the destruction of the villages of Lidice on 10 June - the men shot, the women sent to Ravensbrück, the children either killed or sent for Germanisation - and Ležáky, and an estimated 5,000 executed and 13,000 arrested and interrogated.',
     levels: {
       primary: {
         cause: 'Heydrich was one of the most powerful and cruel men in the Nazi regime, and he had been sent to rule the Czech lands. Two Czechoslovak soldiers, trained in Britain, were parachuted in to stop him.',
@@ -830,12 +858,12 @@ export const EVENTS_1941_1942: WW2Event[] = [
         consequence: 'Two villages were destroyed and their inhabitants killed. The Czech underground was badly damaged - but the killing of Heydrich became the most famous act of resistance in the occupied lands.',
       },
       secondary: {
-        cause: 'Heydrich, as Reich Protector of Bohemia and Moravia, had combined concessions to Czech workers with brutal repression, and the Czech government-in-exile under Benes wanted an operation that would prove Czechoslovakia was not a collaborator and would undo the Munich settlement.',
+        cause: 'Heydrich, as Reich Protector of Bohemia and Moravia, had combined concessions to Czech workers with brutal repression, and the Czech government-in-exile under Beneš wanted an operation that would prove Czechoslovakia was not a collaborator and would undo the Munich settlement.',
         what: 'The SOE-trained paratroopers attacked with a machine gun that jammed and an anti-tank grenade whose firing mechanism had been modified. The Gestapo then destroyed the resistance network it had been tolerating, and the betrayal by a single informant, Karel Curda, led to the cathedral siege.',
         consequence: 'In 1942 the Allies formally repudiated Munich. But the price was severe: the Czech resistance inside the Protectorate was effectively finished for the war, and Lidice became one of the defining images of occupation policy.',
       },
       university: {
-        cause: 'Anthropoid is the sharpest case in the argument about the cost of spectacular resistance: the operation succeeded tactically and destroyed the indigenous network in the process, and Benes\'s willingness to spend lives on a diplomatic result has been re-assessed by Czech historians since 1989.',
+        cause: 'Anthropoid is the sharpest case in the argument about the cost of spectacular resistance: the operation succeeded tactically and destroyed the indigenous network in the process, and Beneš\'s willingness to spend lives on a diplomatic result has been re-assessed by Czech historians since 1989.',
         what: 'It also has an important place in the history of the Protectorate\'s economy: Heydrich\'s "carrot and stick" line was a deliberate attempt to make Czech heavy industry, which was a fifth of German output, work willingly, and his successors continued it without him.',
         consequence: 'The postwar politics of the paratroopers is its own story - the communist regime used them and then suppressed the accounts of the SOE connection, and the British SOE records on the operation were closed until 2007.',
       },
@@ -897,4 +925,284 @@ export const EVENTS_1941_1942: WW2Event[] = [
       },
     },
   },
+
+  {
+    id: 'bardia_1941',
+    date: '1941-01-03',
+    precision: 'day',
+    title: 'The Battle of Bardia opens the exploitation of Compass',
+    kind: 'battle',
+    fronts: ['mediterranean'],
+    countries: ['Australia', 'United Kingdom', 'Italy'],
+    note: 'Bardia was attacked on 3 January 1941 by Australian troops supported by British armour, and fell on 5 January; the Italian garrison commander had begun evacuating but the port was closed by the attack. Italian and British prisoner totals differ, so no exact number is given.',
+    levels: {
+      primary: {
+        cause: 'The Italian army had retreated into its fortified port of Bardia on the Libyan coast.',
+        what: 'Australian soldiers, with British tanks, attacked the stronghold on 3 January and captured it within two days.',
+        consequence: 'Thousands of Italian soldiers were taken prisoner, and the British advance into Libya continued.',
+      },
+      secondary: {
+        cause: 'Operation Compass had driven the Italians out of Egypt, but Bardia was a fortified position that had to be cleared before the advance could continue along the coast.',
+        what: 'The assault combined infantry, artillery and tanks against the perimeter; the defenders had prepared minefields and wire but little effective mobile response.',
+        consequence: 'The fall of Bardia opened the road to Tobruk, which fell later in January, and left the Italian army in Cyrenaica collapsing.',
+      },
+      university: {
+        cause: 'The battle is a study in the limits of static defence: the Italian fortifications were substantial, but the garrison lacked the training and command cohesion to use them under a coordinated armoured attack.',
+        what: 'Australian accounts stress the infantry assault; British accounts emphasise the armour and artillery that made the breach possible, and the two are complementary rather than competing explanations.',
+        consequence: 'The speed of the victory encouraged planners to expect a general Italian collapse, which contributed to the decision to send forces from North Africa to Greece just as Germany was preparing to intervene there.',
+      },
+    },
+  },
+  {
+    id: 'siege_of_tobruk',
+    date: '1941-04-10',
+    precision: 'day',
+    title: 'The siege of Tobruk begins',
+    kind: 'battle',
+    fronts: ['mediterranean'],
+    countries: ['United Kingdom', 'Australia', 'Germany', 'Italy'],
+    note: 'Axis forces invested the port on 10 April 1941 after the British retreat from Cyrenaica; the garrison, including the Australian 9th Division, held until its relief in October. The siege was supplied by sea from Egypt, and its endurance mattered as much as the front line held inside Libya.',
+    levels: {
+      primary: {
+        cause: 'German and Italian forces had pushed the British back, and the port of Tobruk was left behind their advance.',
+        what: 'The Axis army surrounded Tobruk on 10 April, but the soldiers inside refused to surrender and held the port.',
+        consequence: 'The siege lasted for months, and the supply ships that reached the harbour became as important as the fighting on land.',
+      },
+      secondary: {
+        cause: 'The British withdrawal from Cyrenaica left a garrison in Tobruk that could threaten the Axis supply line towards Egypt.',
+        what: 'Repeated German and Italian attacks failed to break the perimeter, while a sea link from Egypt kept the garrison supplied despite air attack.',
+        consequence: 'Tobruk became a symbol of resistance and a strategic obstacle: Rommel could not advance on Egypt while a hostile port lay behind him.',
+      },
+      university: {
+        cause: 'The defence rested on a combination of fixed fortifications, aggressive patrolling and sea supply, all of which the Axis underestimated; the port also absorbed Italian and German divisions that might otherwise have been available elsewhere.',
+        what: 'Relief attempts in June and August 1941 failed at the frontier, and the garrison was eventually withdrawn by sea and replaced, ending a siege that had lasted more than six months.',
+        consequence: 'The history of the siege is contested between accounts that celebrate the endurance of the garrison and those that ask whether holding the port was worth the losses imposed on the wider position in Libya.',
+      },
+    },
+  },
+  {
+    id: 'minsk_encirclement',
+    date: '1941-06-28',
+    precision: 'day',
+    title: 'German armies close the pocket at Minsk',
+    kind: 'battle',
+    fronts: ['eastern'],
+    countries: ['Germany', 'Soviet Union'],
+    figures: ['hitler'],
+    note: 'The encirclement around Minsk was closed on 28 June 1941 by the 2nd and 3rd Panzer Groups of Army Group Centre. The number of Soviet soldiers trapped is estimated in the hundreds of thousands, but German and Soviet counts differ substantially; no single figure is asserted.',
+    levels: {
+      primary: {
+        cause: 'The German attack had driven deep into Belarus faster than the Soviet command expected.',
+        what: 'Two German pincers met near Minsk and surrounded large Soviet forces west of the city.',
+        consequence: 'Soviet armies were cut off and destroyed, and the German advance continued towards Smolensk.',
+      },
+      secondary: {
+        cause: 'Soviet forces in Belarus were still deploying when the invasion began, and orders to counter-attack exposed them to German armoured thrusts that closed behind them.',
+        what: 'The pincers met east of Minsk, cutting off several Soviet armies; organised resistance continued in the pocket for days after the ring closed.',
+        consequence: 'The scale of the encirclement stunned both sides, but it did not destroy the Red Army: fresh formations were already moving from the interior.',
+      },
+      university: {
+        cause: 'Minsk is one of the largest encirclements in military history and shows both the effectiveness of German operational art in 1941 and the catastrophic effect of Soviet deployment too far forward with inadequate transport and command control.',
+        what: 'Soviet accounts treat the pocket as a series of separate armies failing mutually to support each other rather than one uniform collapse; German after-action reports exaggerate the completeness of the victory.',
+        consequence: 'The huge prisoner counts shaped German expectations of a short campaign, which in turn made the failure to plan for winter and prolonged logistics more likely.',
+      },
+    },
+  },
+  {
+    id: 'smolensk_1941',
+    date: '1941-07-10',
+    precision: 'day',
+    title: 'The Battle of Smolensk begins',
+    kind: 'battle',
+    fronts: ['eastern'],
+    countries: ['Germany', 'Soviet Union'],
+    figures: ['zhukov'],
+    note: 'The fighting around Smolensk lasted from 10 July to early September 1941, comprising a German encirclement and repeated Soviet counter-attacks. It delayed the German advance on Moscow for weeks; both sides claimed success, and loss estimates vary widely.',
+    levels: {
+      primary: {
+        cause: 'The German army was advancing towards Moscow and had to break the Soviet line at Smolensk.',
+        what: 'German forces encircled Soviet armies near the city, but the fighting went on for weeks as Soviet units counter-attacked.',
+        consequence: 'The advance was delayed, and the war clearly was not going to be over in a few weeks.',
+      },
+      secondary: {
+        cause: 'Stalin committed fresh armies to hold the Smolensk line and launched counter-attacks before they were fully prepared.',
+        what: 'German armoured pincers closed around parts of the Soviet front, yet Soviet attacks continued against the German flanks and made the pocket expensive to reduce.',
+        consequence: 'The delay gave the Soviet Union time to prepare the defences of Moscow, and it forced German planners to reconsider the timetable for the campaign.',
+      },
+      university: {
+        cause: 'Smolensk is where the German blitzkrieg first met an opponent able to keep feeding new formations into the battle, even at terrible cost.',
+        what: 'German reports describe a series of encirclements; Soviet history describes a defensive operation with counter-strokes that fixed German forces, and both framings describe real aspects of the fighting.',
+        consequence: 'The argument matters because the delay is one of the reasons the German army reached Moscow in December with exhausted troops — a point that later commanders and historians used to explain the failure of Barbarossa.',
+      },
+    },
+  },
+  {
+    id: 'uman_pocket',
+    date: '1941-08-15',
+    precision: 'day',
+    title: 'The Uman pocket closes in Ukraine',
+    kind: 'battle',
+    fronts: ['eastern'],
+    countries: ['Germany', 'Soviet Union'],
+    note: 'In the second half of August 1941 German and Romanian forces encircled Soviet armies near Uman in central Ukraine, taking a large number of prisoners. Figures for the pocket are estimates and differ between German and Soviet records.',
+    levels: {
+      primary: {
+        cause: 'German forces were sweeping across Ukraine, and two Soviet armies were trying to withdraw eastwards.',
+        what: 'German pincers met near Uman on 15 August and surrounded the retreating armies.',
+        consequence: 'Many Soviet soldiers were captured, and the German army pressed on towards Kiev and the lower Dnieper.',
+      },
+      secondary: {
+        cause: 'The Soviet South-western Front had been ordered to hold positions that German armour had already turned, leaving its armies exposed as they withdrew.',
+        what: 'The pocket closed within days, and although some units broke out, most of the encircled force was lost; the fighting continued eastwards through late August.',
+        consequence: 'The loss weakened Soviet defences in Ukraine and encouraged the German command to turn south towards Kiev before resuming the drive on Moscow.',
+      },
+      university: {
+        cause: 'Uman is best read as part of the same pattern as Minsk: an army ordered to stand where it had no operational depth, then caught while attempting to move.',
+        what: 'The Soviet high command issued counter-attacking orders late and through communications that were repeatedly cut, and German air superiority made daylight movement costly.',
+        consequence: 'The decision to turn south towards Kiev remains one of the debated choices of the 1941 campaign: it brought a large victory but consumed the weeks before the autumn mud and winter.',
+      },
+    },
+  },
+  {
+    id: 'operation_typhoon',
+    date: '1941-10-02',
+    precision: 'day',
+    title: 'Operation Typhoon: the German drive on Moscow begins',
+    kind: 'battle',
+    fronts: ['eastern'],
+    countries: ['Germany', 'Soviet Union'],
+    figures: ['hitler', 'zhukov'],
+    note: 'The offensive opened on 2 October 1941, promising a final push before winter. It bogged down in the autumn mud, then met the Soviet counter-offensive of 5 December; the event moscow_counteroffensive carries that outcome. German strength estimates for Typhoon are order-of-battle approximations, not exact counts.',
+    levels: {
+      primary: {
+        cause: 'Germany believed the Soviet army was nearly beaten and wanted to take Moscow before winter.',
+        what: 'On 2 October the German armies attacked towards the capital from three directions.',
+        consequence: 'They came close to Moscow, but the mud slowed them and the winter counter-attack drove them back.',
+      },
+      secondary: {
+        cause: 'After the victories at Minsk, Smolensk and Kiev, the German command expected one more encirclement to decide the campaign.',
+        what: 'Typhoon encircled large Soviet forces at Vyazma and Bryansk and reached within sight of Moscow, but the roads turned to mud and the leading divisions ran out of fuel and winter equipment.',
+        consequence: 'The offensive stalled, and the Soviet counter-offensive of 5 December ended any chance of taking the capital in 1941.',
+      },
+      university: {
+        cause: 'Typhoon was planned on the assumption that Soviet reserves were exhausted, which was wrong: Stavka was forming fresh formations in the interior and transferring divisions from the Far East after Sorge’s intelligence that Japan would strike south.',
+        what: 'German operational planning also assumed the campaign would end before winter, so no adequate provision was made for cold-weather clothing, lubricants or road maintenance.',
+        consequence: 'The failure is the central example of the argument between historians who emphasise German logistics and those who emphasise Soviet operational resilience; both are needed, and neither alone explains December.',
+      },
+    },
+  },
+  {
+    id: 'moscow_november_parade',
+    date: '1941-11-07',
+    precision: 'day',
+    title: 'The 7 November parade in Moscow',
+    kind: 'home_front',
+    fronts: ['eastern', 'home'],
+    countries: ['Soviet Union'],
+    figures: ['stalin'],
+    note: 'The annual October Revolution parade was held on Red Square on 7 November 1941 while German forces were within reach of Moscow; troops marched from the square towards the front. Stalin’s speech invoked earlier Russian defenders of the country. It was a political act of defiance rather than a map change.',
+    levels: {
+      primary: {
+        cause: 'German armies were close to Moscow, and people were afraid the city would fall.',
+        what: 'On 7 November the Soviet government held its usual parade in Red Square, and soldiers marched straight from it to the battlefield.',
+        consequence: 'The parade showed that the government had not given up, and it became a symbol of the defence of Moscow.',
+      },
+      secondary: {
+        cause: 'Stalin wanted to demonstrate that the capital was not evacuated and to raise morale at a moment when the German advance seemed unstoppable.',
+        what: 'Troops from the guards formations paraded in snow on Red Square, with the leadership watching from the Kremlin wall; some units went directly to the front afterwards.',
+        consequence: 'The spectacle mattered for Soviet morale and for foreign observers, but it did not change the military situation, which worsened before the December counter-offensive.',
+      },
+      university: {
+        cause: 'The parade belongs to the history of wartime legitimacy: the regime deliberately staged continuity with the revolution and with earlier Russian military heroes even as it relied on a patriotic, rather than purely ideological, appeal.',
+        what: 'German radio reported the event as evidence of Soviet desperation; Soviet accounts turned it into a founding legend of the Great Patriotic War, and both readings are political rather than operational.',
+        consequence: 'The parade should not be confused with a turning point: within days the German front was closer to the city, and the military change came in December, not on 7 November.',
+      },
+    },
+  },
+
+
+  {
+    id: 'case_anton',
+    date: '1942-11-11',
+    precision: 'day',
+    title: 'Case Anton: Germany occupies Vichy France',
+    kind: 'invasion',
+    fronts: ['home', 'mediterranean'],
+    countries: ['Germany', 'Italy', 'France'],
+    note: 'After the Allied landings in French North Africa on 8 November, German and Italian forces occupied the unoccupied zone of France on 11 November 1942, ending Vichy’s nominal independence while leaving Pétain as head of state. The French fleet at Toulon was scuttled on 27 November; see the separate card. This map has no November 1942 border state, so the change is carried by the events, not by the border fills.',
+    levels: {
+      primary: {
+        cause: 'The Allies had landed in French North Africa, and Germany no longer trusted Vichy to stay neutral.',
+        what: 'On 11 November German troops marched into the part of France that had not been occupied since 1940, and Italian troops occupied the south-east.',
+        consequence: 'Vichy lost the last of its independence, though Pétain officially stayed in office.',
+      },
+      secondary: {
+        cause: 'Operation Torch had made France a battlefield; Germany needed to secure the Mediterranean coast and prevent the French army in North Africa from being reinforced from the homeland.',
+        what: 'German forces crossed the demarcation line on 11 November and occupied the whole country, while the French army offered no organised resistance and the fleet at Toulon prepared to deny it to the Germans.',
+        consequence: 'The occupation ended the fiction of an independent Vichy state and made collaboration an open military occupation; it also drove many French officials and officers towards the Resistance.',
+      },
+      university: {
+        cause: 'Case Anton shows the limit of Paxton’s argument about Vichy’s room for manoeuvre: the regime had pursued its own policy while Germany was otherwise engaged, but that autonomy lasted only as long as German strategic interests allowed.',
+        what: 'Vichy ordered the army not to resist and ordered the fleet to scuttle; both orders were carried out within days, which tells us as much about the delegation of authority in the French state as about German military strength.',
+        consequence: 'The occupation radicalised the Resistance and changed the political question in France from how to preserve sovereignty to how to end the war and punish collaboration.',
+      },
+    },
+  },
+  {
+    id: 'toulon_fleet_scuttled',
+    date: '1942-11-27',
+    precision: 'day',
+    title: 'The French fleet is scuttled at Toulon',
+    kind: 'battle',
+    fronts: ['mediterranean'],
+    countries: ['France', 'Germany'],
+    note: 'On 27 November 1942, German troops moved to seize the French fleet at Toulon; French commanders opened sea valves and set charges, sinking or disabling the greater part of the force before it could be captured. Some small vessels were later salvaged and used by Germany, but the main surface ships did not enter German service.',
+    levels: {
+      primary: {
+        cause: 'German troops had occupied the whole of France and were trying to take the French warships at Toulon.',
+        what: 'The French sailors sank their own ships and opened the sea valves so the Germans could not use them.',
+        consequence: 'Germany failed to seize the fleet, and the French navy ceased to be a fighting force.',
+      },
+      secondary: {
+        cause: 'The fleet had been demobilised in port under the 1940 armistice, and after Case Anton the Germans intended to take it intact for use in the Mediterranean.',
+        what: 'When German forces entered the naval base on 27 November, the French commanders carried out a prearranged scuttling order; most battleships, cruisers and destroyers sank at their moorings.',
+        consequence: 'The action denied Germany a significant naval reinforcement, but it also removed the last independent instrument of French state power.',
+      },
+      university: {
+        cause: 'The scuttling is often narrated as a final act of national honour, and it was that for the officers concerned; it is also a case of a state destroying its own assets because it lacked the means either to fight or to hand them over.',
+        what: 'The order came from Vichy and was executed with remarkable discipline, though a few vessels were salvaged and commissioned by Germany, so the phrase “the whole fleet” is too broad.',
+        consequence: 'The episode settled the question raised by Mers-el-Kébir in 1940: the French fleet would neither join Germany nor return to the Allied side as an intact force.',
+      },
+    },
+  },
+
+
+  {
+    id: 'quisling_government',
+    date: '1942-02-01',
+    precision: 'day',
+    title: 'Quisling is appointed minister-president in Norway',
+    kind: 'politics',
+    fronts: ['home', 'politics'],
+    countries: ['Norway', 'Germany'],
+    note: 'On 1 February 1942 the Reichskommissar Josef Terboven installed Vidkun Quisling, leader of the Nasjonal Samling party, as minister-president of Norway. The country had been occupied since April 1940 and the king and government were in exile in London; the appointment made collaboration explicit, although real power remained with the German occupation authorities. Quisling’s name became the English word for a collaborator.',
+    levels: {
+      primary: {
+        cause: 'Germany had occupied Norway and wanted a Norwegian government that would do what it said.',
+        what: 'The German governor made Vidkun Quisling, the head of a small pro-Nazi party, the leader of the Norwegian government.',
+        consequence: 'Norwegians who opposed the occupation now had a clear collaborationist regime to resist, while the real king and government were in London.',
+      },
+      secondary: {
+        cause: 'Terboven had ruled through a German-controlled council and wanted a more legitimate-looking administration as the occupation settled in.',
+        what: 'Quisling’s Nasjonal Samling was given control of ministries and propaganda, but the German Reichskommissar retained authority over security and the economy.',
+        consequence: 'The appointment sharpened domestic opposition and helped unify the resistance, while the government in exile gained legitimacy by contrast.',
+      },
+      university: {
+        cause: 'Norway is a useful test of the idea of collaborationist autonomy: the regime had a Norwegian face and its own ideology, but no freedom to end the occupation or moderate German demands.',
+        what: 'Quisling had tried a similar coup in 1940 and failed; the 1942 appointment came from the occupier, not from an election, which is why his government never gained broad acceptance.',
+        consequence: 'The postwar legal settlement in Norway treated his followers as traitors, establishing a boundary between legitimate political change and serving a foreign occupation that remains a reference point in debates about collaboration.',
+      },
+    },
+  },
+
 ];

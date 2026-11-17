@@ -18,7 +18,7 @@ export const SOURCES: Source[] = [
     publisher: 'Stanford Spatial History Project dataset mirrored as an ArcGIS service',
     url: 'https://services6.arcgis.com/HvbabY0grzgZwGW1/ArcGIS/rest/services',
     usedFor:
-      'The country outlines. Nine snapshots between April 1938 and April 1945 were downloaded as GeoJSON and simplified; see scripts/build-border-data.mjs.',
+      'The country outlines. Twelve month-end states between April 1938 and April 1945 were downloaded as GeoJSON and simplified; see scripts/build-border-data.mjs.',
   },
   {
     citation:
@@ -89,9 +89,9 @@ export const SOURCES: Source[] = [
       'Economic and armaments comparison between the dictators, and the 1930s political background.',
   },
   {
-    citation: 'Marrus, Michael and Paxton, Robert O., Vichy France: Old Guard and New Order, 1940-1944',
-    publisher: 'Stanford University Press',
-    url: 'https://search.worldcat.org/search?q=Vichy+France+Old+Guard+and+New+Order+Marrus+Paxton',
+    citation: 'Paxton, Robert O., Vichy France: Old Guard and New Order, 1940-1944; and Marrus, Michael R. and Paxton, Robert O., Vichy France and the Jews',
+    publisher: 'Knopf; later Stanford University Press editions',
+    url: 'https://search.worldcat.org/search?q=Paxton+Vichy+France+Old+Guard+and+New+Order',
     usedFor: 'The Vichy regime, French collaboration and the responsibility for deportation.',
   },
   {
@@ -147,9 +147,9 @@ export const SOURCES: Source[] = [
       "The 1943 Warsaw Ghetto Uprising: the January action, the ZOB's arms and numbers, and the sewers route out of the ghetto.",
   },
   {
-    citation: 'Kassow, Samuel D., Who Will Write Our Life?: The Oneg Shabbat Archive and the Jews of Warsaw',
-    publisher: 'Yale University Press',
-    url: 'https://search.worldcat.org/search?q=Who+Will+Write+Our+Life+Kassow',
+    citation: 'Kassow, Samuel D., Who Will Write Our History?: Emanuel Ringelblum, the Warsaw Ghetto, and the Oyneg Shabes Archive',
+    publisher: 'Indiana University Press',
+    url: 'https://search.worldcat.org/search?q=Who+Will+Write+Our+History+Kassow',
     usedFor:
       'The 1942 deportations from the Warsaw Ghetto as they were recorded while they were happening, and the fate of the buried archive.',
   },
@@ -206,6 +206,6 @@ export const UNCERTAINTIES = [
   {
     topic: 'Soviet planning in June 1941',
     range:
-      'Whether Stavka intended a preventive strike in July 1941 remains unresolved; the argument rests largely on the Surkov letter controversy and on the "Reiter memorandum" of questionable authenticity.',
+      'Whether Stavka intended a preventive strike in July 1941 remains unresolved; the argument rests largely on the Surkov letter controversy — the letter of 24 June 1941 from the Soviet ambassador in London, Alexander Surkov, which Viktor Suvorov made the centrepiece of his "Icebreaker" thesis — on the "Considerations" document of 15 May 1941, whose very existence and status as an approved plan are themselves disputed, and on the "Reiter memorandum" of questionable authenticity. Glantz and House, When Titans Clashed, give the standard operational counter-reading: the forward deployments the thesis points to were a massing for an unready counter-stroke, not an attack posture in June 1941.',
   },
 ];

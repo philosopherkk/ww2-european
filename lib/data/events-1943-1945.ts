@@ -2,10 +2,38 @@ import type { WW2Event } from './events-1938-1940';
 
 export const EVENTS_1943_1945: WW2Event[] = [
   {
+    id: 'stalingrad_surrender',
+    date: '1943-02-02',
+    precision: 'day',
+    title: 'The German Sixth Army surrenders at Stalingrad',
+    kind: 'battle',
+    fronts: ['eastern'],
+    countries: ['Germany', 'Soviet Union'],
+    figures: ['paulus', 'hitler', 'zhukov'],
+    note: 'The ring had closed around about 265,000 men of Sixth Army and part of the Fourth Panzer Army in Operation Uranus — an estimate, not a headcount; see that card. Paulus capitulated on 31 January 1943 and the last pockets on 2 February. Roughly 91,000 prisoners were taken in January and February 1943, of whom only about 5,000-6,000 ever returned home. This map draws month-end borders only: neither the pocket nor the November 1942 high-water mark of the German advance can appear on it.',
+    levels: {
+      primary: {
+        cause: 'The German army trapped in Stalingrad had run out of food, ammunition and warm clothes, and the rescue army had been turned back.',
+        what: 'The German commander, Field Marshal Paulus, gave in on 31 January, and the last German soldiers in the city surrendered on 2 February 1943.',
+        consequence: 'A whole German army had been destroyed, and it was now clear to everyone that the war against the Soviet Union had not been won.',
+      },
+      secondary: {
+        cause: 'The Luftwaffe could not deliver the promised daily supplies, the December relief attempt failed, and Hitler expected Sixth Army to fight to the last man rather than surrender.',
+        what: 'Paulus, promoted to field marshal with the understood expectation that he would not be taken alive, capitulated in the northern pocket on 31 January; the southern pocket followed on 2 February. About 91,000 men went into captivity, and only 5,000-6,000 of them ever came home.',
+        consequence: 'Goebbels answered with his “total war” speech of 18 February 1943 — a political consequence, not a map change. But within days Manstein’s counterstroke was under way before Kharkov (19 February), so the surrender gave the Red Army the initiative without yet making it safe to keep.',
+      },
+      university: {
+        cause: 'The capitulation was the endpoint of Uranus, not of a defensive battle alone: deep operations against the Romanian-held flanks, the failure of the Luftwaffe’s transport promise, and Hitler’s refusal of a breakout converted a symbolic river city into the Wehrmacht’s greatest single disaster.',
+        what: 'The chronology matters for the historiography: pocket sealed 23 November 1942, relief attempt broken off in December, city split 26 January, Paulus capitulated 31 January, last units 2 February. German losses in the Stalingrad operation are reported in wide ranges depending on whether the winter campaign as a whole is included.',
+        consequence: '“Turning point” is best read here as the loss of the operational initiative and of irreplaceable trained troops, plus the shock to the credibility of German arms among allies and occupied peoples; Kharkov and Kursk showed the Red Army could still be beaten tactically for another year, and the eastern war continued for two and a half.',
+      },
+    },
+  },
+  {
     id: 'kharkov_1943',
     date: '1943-02-19',
     precision: 'day',
-    title: 'Manstein retakes Kharkov',
+    title: 'Manstein’s counterstroke begins before Kharkov',
     kind: 'battle',
     fronts: ['eastern'],
     countries: ['Germany', 'Soviet Union'],
@@ -74,7 +102,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
         consequence: 'Almost all of the fighters died, and the Germans destroyed the ghetto street by street anyway. But their stand became the best-known act of Jewish resistance to the Holocaust.',
       },
       secondary: {
-        cause: 'After the deportations of 1942 the ghetto had been reduced to a few tens of thousands of workers used in German factories. When the Germans returned on 18 January 1943 to clear it, small ZOB groups opened fire and the action had to be called off after four weeks. Himmler then ordered the ghetto razed and its inhabitants deported.',
+        cause: 'After the deportations of 1942 the ghetto had been reduced to a few tens of thousands of workers used in German factories. When the Germans returned on 18 January 1943 to clear it, small ZOB groups opened fire and the action had to be called off after four days. Himmler then ordered the ghetto razed and its inhabitants deported.',
         what: 'From 19 April, the eve of Passover, fighters commanded by the 24-year-old Mordechai Anielewicz held bunkers and house ruins with petrol bombs and sniping, while the right-wing ZZW held the Muranowski square position for several days. The Germans could not clear the cellars, so they burned the district block by block and drove survivors into the open. Some 1,000 fighters and civilians escaped through the sewers to the Polish side.',
         consequence: 'About 56,000 survivors were rounded up and sent to Treblinka and Majdanek. The uprising saved nobody, and the ghetto was destroyed; what it produced was a record that Jews had fought, which mattered to the survivors, to the Jewish survivors who took part in the Warsaw Uprising of August 1944, and to the memory of the Holocaust afterwards.',
       },
@@ -89,12 +117,12 @@ export const EVENTS_1943_1945: WW2Event[] = [
     id: 'kursk',
     date: '1943-07-05',
     precision: 'day',
-    title: 'The Battle of Kursk: the largest tank battle of the war',
+    title: 'The Battle of Kursk: Germany’s last strategic offensive in the east',
     kind: 'battle',
     fronts: ['eastern'],
     countries: ['Germany', 'Soviet Union'],
     figures: ['hitler', 'manstein', 'zhukov', 'model'],
-    note: 'Germany committed about 780,000 men and 2,900 tanks and assault guns; the USSR about 1.9 million men and 5,100 tanks. Soviet losses were far higher (about 860,000 casualties), but Germany lost irreplaceable armour and trained crews.',
+    note: 'Germany committed about 780,000 men and 2,900 tanks and assault guns; the USSR about 1.9 million men and 5,100 tanks. Soviet losses were far higher (about 860,000 casualties), but Germany lost irreplaceable armour and trained crews. Popular accounts still call Kursk the largest tank battle of the war; the comparison is disputed — the June 1941 frontier battles around Dubno, Lutsk and Brody involved comparable numbers of armour, and Prokhorovka has been revised down in the archival literature — which is why this card describes the battle by what it was: Germany’s last strategic offensive in the east.',
     levels: {
       primary: {
         cause: 'Germany wanted to take revenge for Stalingrad by cutting out a big Soviet bulge around the town of Kursk.',
@@ -173,7 +201,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     id: 'italy_armistice',
     date: '1943-09-08',
     precision: 'day',
-    title: 'Italy signs the armistice; Germany occupies Rome',
+    title: 'Italy’s armistice is announced; Germany occupies Rome',
     kind: 'politics',
     fronts: ['mediterranean', 'home'],
     countries: ['Italy', 'Germany', 'United Kingdom', 'United States'],
@@ -561,6 +589,34 @@ export const EVENTS_1943_1945: WW2Event[] = [
     },
   },
   {
+    id: 'vistula_oder_opens',
+    date: '1945-01-12',
+    precision: 'day',
+    title: 'The Vistula-Oder offensive begins',
+    kind: 'battle',
+    fronts: ['eastern'],
+    countries: ['Soviet Union', 'Poland', 'Germany'],
+    figures: ['zhukov', 'rokossovsky'],
+    note: 'The campaign line “Vistula-Oder: twenty-two days to the gates of Berlin” on this map shows the axis of the advance; its strength figures are order-of-battle approximations, as all figures here are. Warsaw fell on 17 January, Krakow on 18 January, and the leading corps of the 1st Belorussian Front reached the Oder at Küstrin on 1 February, less than 100 km from Berlin. No map in this dataset can show the advance from day to day: the nearest border state is drawn fifteen months earlier.',
+    levels: {
+      primary: {
+        cause: 'In the winter of 1945 the Soviet Union was ready to attack from the Vistula river in Poland straight towards Germany, and there were few German soldiers opposite.',
+        what: 'The attack began on 12 January 1945 and crossed Poland in weeks, taking Warsaw and Krakow and reaching the river Oder by early February.',
+        consequence: 'Most of Poland was free, and the road to Berlin was open — though the city was not taken until April.',
+      },
+      secondary: {
+        cause: 'Stalin promised to attack “earlier than planned” to relieve the pressure on the Western Allies in the Ardennes, and the Germans had moved armour away to Hungary, leaving a weak front in central Poland.',
+        what: 'Two Soviet fronts — the 1st Belorussian under Zhukov and the 1st Ukrainian under Konev — broke out of the Vistula bridgeheads and advanced 450-500 km in twenty-two days, taking Warsaw on 17 January and Krakow on 18 January before reaching the Oder.',
+        consequence: 'The offensive stopped on the Oder in February, partly because the supply trucks could not keep up with the tanks; Berlin fell only to the April-May 1945 operation, after East Pomerania and Silesia had been cleared.',
+      },
+      university: {
+        cause: 'The advance was deep-operational practice matured in 1944 — reinforced breakthrough, mobile groups exploiting before the enemy re-forms — against a German front denuded by the failed Budapest relief attacks and Hitler’s refusal to evacuate bridgeheads; the intelligence failure on the German side, which expected the main blow further north and south, is as much a cause as Soviet skill.',
+        what: 'The operational pause on the Oder in February 1945 is the genuine debate: was it the unavoidable check of overextended logistics, or a choice about the timing of Berlin? Soviet memoirs and the post-Soviet archival literature pull in different directions.',
+        consequence: 'The offensive settled the Polish question de facto, with the Lublin government installed as the fronts advanced, and left every other question for Yalta and after. Casualty and strength figures for the operation are approximations; where this site uses ~, that is what it means.',
+      },
+    },
+  },
+  {
     id: 'auschwitz',
     date: '1945-01-27',
     precision: 'day',
@@ -592,7 +648,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     id: 'yalta',
     date: '1945-02-04',
     precision: 'day',
-    title: 'The Yalta Conference divides postwar Europe',
+    title: 'The Yalta Conference: occupation, Poland and the United Nations',
     kind: 'conference',
     fronts: ['politics'],
     countries: ['United Kingdom', 'United States', 'Soviet Union'],
@@ -776,7 +832,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
       },
       secondary: {
         cause: 'Every earlier attempt had failed because the passes to the city were only a few kilometres wide and the Germans held the heights above the Neva. Soviet strategy in 1942 had been to hold the city at almost any cost because losing it would free German divisions and cost the Baltic Fleet its base.',
-        what: 'Zhukov, as Stavka representative, coordinated the two fronts, and the attack used the new heavy artillery regiments of the Reserve of the High Command. The fighting in the frozen marsh and on the ridge was some of the ugliest of the war; the 2nd Shock Army, twice destroyed in 1942, took Shlisselburg on 28 January.',
+        what: 'Zhukov, as Stavka representative, coordinated the two fronts, and the attack used the new heavy artillery regiments of the Reserve of the High Command. The fighting in the frozen marsh and on the ridge was some of the ugliest of the war; the 2nd Shock Army, twice destroyed in 1942, took Shlisselburg on 18 January, the day of the link-up.',
         consequence: 'The corridor let the Leningrad and Volkhov fronts build up for the January 1944 offensive that finally pushed the Germans away from the city. It also meant that the siege, which had become a symbol of civilian endurance, ended in a military operation rather than a relief.',
       },
       university: {
@@ -851,7 +907,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['eastern'],
     countries: ['Soviet Union', 'Germany'],
     figures: ['hitler', 'zhukov', 'manstein'],
-    note: 'Hitler\'s order of 15 April 1943 set an attack on the Kursk salient for mid-May; it was postponed twice, to 23 June and then to 5 July, to wait for new tanks - the Panther and the Ferdinand tank destroyer - whose arrival was late and whose mechanical record was awful. Manstein argued for the alternative: give up the offensive, let the Soviets attack into prepared defences, and strike their over-extended flanks, which is broadly what the southern side did later in the month. The Soviets knew the plan well enough to prepare for it: the Stavka built up to eight defensive belts with a total depth over 150 kilometres, laid hundreds of thousands of mines, and massed a large Steppe Front behind the salient as a reserve. Between them the two sides put something like three million men and five thousand tanks and assault guns into the greatest tank battle of the war.',
+    note: 'Hitler\'s order of 15 April 1943 set an attack on the Kursk salient for mid-May; it was postponed twice, to 23 June and then to 5 July, to wait for new tanks - the Panther and the Ferdinand tank destroyer - whose arrival was late and whose mechanical record was awful. Manstein argued for the alternative: give up the offensive, let the Soviets attack into prepared defences, and strike their over-extended flanks, which is broadly what the southern side did later in the month. The Soviets knew the plan well enough to prepare for it: the Stavka built up to eight defensive belts with a total depth over 150 kilometres, laid hundreds of thousands of mines, and massed a large Steppe Front behind the salient as a reserve. Between them the two sides put something like three million men and five thousand tanks and assault guns into Germany’s last strategic offensive in the east.',
     levels: {
       primary: {
         cause: 'After their defeat at Stalingrad, the Germans wanted to attack again in the summer and cut out a big bulge in the front at the town of Kursk. Both sides spent the spring getting ready.',
@@ -1050,7 +1106,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['home', 'politics'],
     countries: ['Germany'],
     figures: ['hitler', 'goebbels'],
-    note: 'At 12:42 on 20 July 1944 Colonel Claus Schenk von Stauffenberg left a briefcase containing a British plastic explosive charge, with its chemical fuse delayed, in the conference room of the Wolfsschanze. A heavy oak table leg and the fact that the case had been moved shielded Hitler; four people died and Hitler was burned, deafened and thrown, but alive. The coup that was supposed to follow - Operation Valkyrie, using the Reserve Army to seize Berlin - collapsed within hours, partly because the conspirators could not get the code-word out and partly because Goebbels got through to Hitler on the phone and proved he was alive. Stauffenberg and three others were shot in the courtyard of the Bendler Block that night, and General Erich Fellgiebel, who had cut the communications and thereby helped cause the failure, was arrested and executed weeks later. In the following months some 200 people were executed and several thousand arrested, with families imprisoned under Sippenhaft - kinship liability. Hitler\'s response was to put Himmler at the head of the army, and to distrust the officer corps for the rest of the war.',
+    note: 'At 12:42 on 20 July 1944 Colonel Claus Schenk von Stauffenberg left a briefcase containing a British plastic explosive charge, with its chemical fuse delayed, in the conference room of the Wolfsschanze. A heavy oak table leg and the fact that the case had been moved shielded Hitler; four people died and Hitler was burned, deafened and thrown, but alive. The coup that was supposed to follow - Operation Valkyrie, using the Reserve Army to seize Berlin - collapsed within hours, partly because the conspirators could not get the code-word out and partly because Goebbels got through to Hitler on the phone and proved he was alive. Stauffenberg and three others were shot in the courtyard of the Bendler Block that night, and General Erich Fellgiebel, who had cut the communications and thereby helped cause the failure, was arrested and executed weeks later. In the following months some 200 people were executed and several thousand arrested, with relatives imprisoned under Sippenhaft - kinship liability. Hitler\'s response was to give Himmler command of the Reserve Army and Army Equipment, and to distrust the officer corps for the rest of the war.',
     levels: {
       primary: {
         cause: 'A group of German officers had decided that their country\'s leader was leading Germany to ruin, and that the war had to end.',
@@ -1078,7 +1134,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['western', 'air_war'],
     countries: ['United States', 'Germany', 'United Kingdom'],
     figures: ['eisenhower', 'patton', 'kluge'],
-    note: 'The breakout from the Normandy bocage was attempted across a seven-kilometre gap south of Saint Lo, already in American hands, on 24-25 July 1944, with about 1,500 heavy and medium bombers dropping some 4,000 tons of bombs behind the German positions. On both days the bombing fell short: on 24 July 25 Americans were killed, and on 25 July some 111 more, including Lieutenant General Leslie McNair, killed in his command car while taking part in a deception designed to convince the Germans that the main blow was coming at Pas-de-Calais. The 4th Armored and the 2nd Armored Division went through the cratered ground on 26 and 27 July, and Avranches, at the bottom of the Cotentin peninsula, fell on 30 July, which opened the road into Brittany and out into France. George S. Patton\'s Third Army was activated on 1 August, and within six weeks the German army in France was destroyed at Falaise.',
+    note: 'The breakout from the Normandy bocage was attempted across a seven-kilometre gap south of Saint-Lô, already in American hands, on 24-25 July 1944, with about 1,500 heavy and medium bombers dropping some 4,000 tons of bombs behind the German positions. On both days the bombing fell short: on 24 July 25 Americans were killed, and on 25 July some 111 more, including Lieutenant General Leslie McNair, killed in his command car while taking part in a deception designed to convince the Germans that the main blow was coming at Pas-de-Calais. The 4th Armored and the 2nd Armored Division went through the cratered ground on 26 and 27 July, and Avranches, at the bottom of the Cotentin peninsula, fell on 30 July, which opened the road into Brittany and out into France. George S. Patton\'s Third Army was activated on 1 August, and within six weeks the German army in France was destroyed at Falaise.',
     levels: {
       primary: {
         cause: 'The Allied armies in Normandy were stuck in fields divided by thick old hedges, where the defenders could hide and the attackers could not move. Somebody had to blast a hole in the German lines.',
@@ -1310,12 +1366,12 @@ export const EVENTS_1943_1945: WW2Event[] = [
         consequence: 'There was no longer anyone in charge who could decide anything. Germany surrendered eight days later.',
       },
       secondary: {
-        cause: 'Hitler had refused every offer to retreat or negotiate, and had ordered scorched-earth destruction inside Germany - the Neroda decree of 19 March 1945, which Albert Speer hid - on the theory that the German people had failed him and did not deserve to survive.',
+        cause: 'Hitler had refused every offer to retreat or negotiate, and had ordered scorched-earth destruction inside Germany - the Nero Decree (Nerobefehl) of 19 March 1945, which Albert Speer hid - on the theory that the German people had failed him and did not deserve to survive.',
         what: 'His will is worth reading: it blames "the other countries" and the Jews for the war, forbids any capitulation, and appoints a government made of loyalists with no power, no army and no territory.',
         consequence: 'The decision to name a government rather than to surrender created a fortnight of ambiguity in which Donitz tried to get German troops into Western captivity, and it is the reason the surrender had to be signed twice - at Reims on 7 May and in Berlin on 8 May - because Stalin distrusted the first.',
       },
       university: {
-        cause: 'The death itself has a long historiography because the Soviet Union kept the truth ambiguous for political reasons: Stalin told Roosevelt and Truman at Yalta and Potsdam that he was not certain Hitler was dead, and SMERSH and later the KGB conducted investigations, staged identification tests, and ran files on the "sightings" to serve intelligence purposes.',
+        cause: 'The death itself has a long historiography because the Soviet Union kept the truth ambiguous for political reasons: Stalin told Roosevelt at Yalta and Truman at Potsdam that he was not certain Hitler was dead, and SMERSH and later the KGB conducted investigations, staged identification tests, and ran files on the "sightings" to serve intelligence purposes.',
         what: 'The Soviet records, opened in the 1990s, together with the dental evidence held in Moscow - examined by a French team using the dental records in 2018 - settle the matter in ordinary legal terms. The fragments of skull in Russian archives are Hitler\'s.',
         consequence: 'The "did he escape" question is a genuinely interesting example of how secret police create myth, and of how it survives: it is a staple of conspiracy literature, and the answer has to be argued from documents that were produced by an institution with an interest in keeping the question open.',
       },
@@ -1330,7 +1386,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['politics', 'western', 'eastern'],
     countries: ['Germany', 'United States', 'United Kingdom', 'Soviet Union', 'France'],
     figures: ['truman', 'churchill', 'stalin', 'de_gaulle'],
-    note: 'The Berlin Declaration of 5 June 1945 was the legal end of the Third Reich. Signed by the four foreign ministers - Byrnes, Eden, Molotov and Bidault - and by the four commanders-in-chief, Eisenhower, Montgomery, Zhukov and de Lattre, following the plan worked out by the European Advisory Commission at the end of 1944, it recorded the abolition of the German government, the assumption of "supreme authority" by the four commanders, the boundaries of the four occupation zones and the special status of Berlin, and the terms on which the war would end without a peace treaty. The Flensburg government of Grand Admiral Donitz was arrested on 23 May and never recognised. The declaration is the founding document of postwar Germany, and its odd form - no surrender terms imposed on Germany as a state, no peace treaty, four authorities claiming to govern in the name of a Germany whose existence they denied - created a legal problem that lasted until 1990. The Basic Law of 1949 was drafted as a provisional constitution for exactly this reason, and the Two-plus-Four Treaty of 1990 had to be called a treaty "on the final settlement with respect to Germany" rather than a peace treaty for the same reason.',
+    note: 'The Berlin Declaration of 5 June 1945 was the legal end of the Third Reich. Signed by the four commanders-in-chief, Eisenhower, Montgomery, Zhukov and de Lattre de Tassigny, following the plan worked out by the European Advisory Commission at the end of 1944, it recorded the abolition of the German government, the assumption of "supreme authority" by the four commanders, the boundaries of the four occupation zones and the special status of Berlin, and the terms on which the war would end without a peace treaty. The Flensburg government of Grand Admiral Donitz was arrested on 23 May and never recognised. The declaration is the founding document of postwar Germany, and its odd form - no surrender terms imposed on Germany as a state, no peace treaty, four authorities claiming to govern in the name of a Germany whose existence they denied - created a legal problem that lasted until 1990. The Basic Law of 1949 was drafted as a provisional constitution for exactly this reason, and the Two-plus-Four Treaty of 1990 had to be called a treaty "on the final settlement with respect to Germany" rather than a peace treaty for the same reason.',
     levels: {
       primary: {
         cause: 'After Germany surrendered, somebody had to be in charge of the country, and four countries had armies there.',
@@ -1377,4 +1433,256 @@ export const EVENTS_1943_1945: WW2Event[] = [
       },
     },
   },
+
+  {
+    id: 'casablanca_conference',
+    date: '1943-01-14',
+    precision: 'day',
+    title: 'The Casablanca Conference: the “unconditional surrender” formula',
+    kind: 'conference',
+    fronts: ['politics'],
+    countries: ['United Kingdom', 'United States', 'France'],
+    figures: ['churchill', 'roosevelt', 'de_gaulle'],
+    note: 'Roosevelt and Churchill met at Casablanca from 14 to 24 January 1943 and agreed to demand unconditional surrender, to press the attack on U-boats, and to plan the invasion of Sicily after Tunisia. The phrase had been used earlier, including by Churchill in 1941 and in earlier declarations; Casablanca made it the public formula of Allied policy, not the moment it was invented. De Gaulle attended separately and was not admitted to the military discussions.',
+    levels: {
+      primary: {
+        cause: 'The Allied leaders needed to agree what to do next after landing in North Africa.',
+        what: 'They met in Casablanca in January 1943 and said publicly that Germany, Italy and Japan would have to surrender without conditions.',
+        consequence: 'The Allies now had a shared public aim, and they planned to attack Sicily after winning in Tunisia.',
+      },
+      secondary: {
+        cause: 'The war was shifting from defence to coalition offensive, but Britain and the United States still disagreed about where to strike next and about how to deal with the Vichy regime and de Gaulle.',
+        what: 'The conference settled on Sicily as the next operation, gave priority to the Battle of the Atlantic and announced the policy of unconditional surrender at a press conference on 24 January.',
+        consequence: 'The formula reassured the Soviet Union that the Western Allies would not negotiate a separate peace, and it committed the Allies to occupying and reconstructing the defeated states rather than striking a bargain with their regimes.',
+      },
+      university: {
+        cause: 'The declaration was a coalition-management device as much as a strategy: it bound the partners together and denied German attempts to split them, but it also removed the possibility of a negotiated end short of total victory.',
+        what: 'Unconditional surrender had a history before Casablanca, and the wording at the press conference was less precise than later memory suggests; historians differ over how much the formula lengthened the war and how much it simply described the military reality of 1943.',
+        consequence: 'The conference also exposed the limits of Free French inclusion, which mattered for postwar French legitimacy, while the decision to invade Sicily rather than cross the Channel shaped the whole Mediterranean campaign of 1943.',
+      },
+    },
+  },
+  {
+    id: 'kasserine_pass',
+    date: '1943-02-19',
+    precision: 'day',
+    title: 'The Battle of the Kasserine Pass',
+    kind: 'battle',
+    fronts: ['mediterranean'],
+    countries: ['Germany', 'Italy', 'United States', 'United Kingdom'],
+    figures: ['rommel', 'eisenhower'],
+    note: 'Axis forces attacked through the Kasserine Pass in western Tunisia from 19 February 1943, driving back inexperienced American units before a defensive line held and the attack was called off. American and German casualty figures for the battle are reported in different ways; no exact total is given here.',
+    levels: {
+      primary: {
+        cause: 'German and Italian forces in Tunisia counter-attacked against American troops who were fighting in North Africa for the first time.',
+        what: 'From 19 February they drove through a mountain pass and pushed the Americans back before the line held.',
+        consequence: 'The American army learned hard lessons about command and combined arms before the later campaigns in Italy and France.',
+      },
+      secondary: {
+        cause: 'The Axis command hoped that a striking victory over the newcomers would buy time in Tunisia and shake Allied confidence before an invasion of Sicily.',
+        what: 'Armoured attacks broke through the pass on 19-20 February and exploited towards the interior, but the advance outran its supplies and met stronger resistance at the approaches to the Allied positions.',
+        consequence: 'The battle was an Axis tactical success that failed strategically; the Allied front recovered, and Tunisia fell in May 1943.',
+      },
+      university: {
+        cause: 'Kasserine is usually discussed as a story of American inexperience, but the Axis attack also suffered from divided command, inadequate fuel and a plan that changed objectives after its initial success.',
+        what: 'The American command was reorganised after the battle, and lessons about artillery, air support and the use of reserves were applied conspicuously in later campaigns — though historians caution against treating one defeat as the sole cause of later improvement.',
+        consequence: 'The battle is a useful corrective to a purely material explanation of 1943: superior Allied resources did not prevent a severe local defeat when command and training failed.',
+      },
+    },
+  },
+  {
+    id: 'sicily_campaign_ends',
+    date: '1943-08-17',
+    precision: 'day',
+    title: 'The Allied conquest of Sicily is completed',
+    kind: 'battle',
+    fronts: ['mediterranean'],
+    countries: ['United Kingdom', 'United States', 'Italy', 'Germany'],
+    note: 'Allied forces entered Messina on 17 August 1943, ending the 38-day campaign for Sicily begun by Operation Husky on 10 July. A large part of the Axis garrison was evacuated across the Strait of Messina with much of its equipment; the campaign opened the way for the invasion of mainland Italy but did not by itself bring Italy out of the war.',
+    levels: {
+      primary: {
+        cause: 'The Allies had landed on Sicily to open a route into Italy.',
+        what: 'After five weeks of fighting they captured Messina, the last Axis-held city on the island.',
+        consequence: 'The way to mainland Italy was open, though many Axis soldiers escaped across the narrow strait.',
+      },
+      secondary: {
+        cause: 'The campaign aimed to secure the Mediterranean sea routes and to put pressure on Italy after the North African victory.',
+        what: 'British and American forces fought up the island while German and Italian troops defended successive lines and then evacuated across the strait; Messina fell on 17 August.',
+        consequence: 'Mussolini was deposed a week later and the Allies prepared to land on the Italian mainland, but the German army remained in the war in Italy for another twenty months.',
+      },
+      university: {
+        cause: 'The campaign showed both the strength of Allied amphibious power and its limits: the island could be taken, but the evacuation of Axis forces meant that Italy would not be cleared by a single stroke.',
+        what: 'The decision to press on to Sicily rather than to cross the Channel in 1943 is still debated; its defenders point to the collapse of Mussolini and the diversion of German divisions, its critics to the long and costly Italian campaign that followed.',
+        consequence: 'Sicily should not be confused with the fall of Italy: the armistice was only announced on 8 September, and German forces occupied much of the peninsula immediately afterwards.',
+      },
+    },
+  },
+
+
+  {
+    id: 'first_monte_cassino',
+    date: '1944-01-17',
+    precision: 'day',
+    title: 'The first battle of Monte Cassino begins',
+    kind: 'battle',
+    fronts: ['mediterranean'],
+    countries: ['United Kingdom', 'United States', 'Germany'],
+    note: 'The first assault on the Gustav Line around Monte Cassino began on 17 January 1944 and failed to break the German defences; the Anzio landing on 22 January was intended to outflank them. Three further battles followed before the line broke in May, and the abbey was destroyed by Allied bombing on 15 February during the second battle.',
+    levels: {
+      primary: {
+        cause: 'The German army had built a strong defensive line across Italy, with a monastery on a hill at its centre.',
+        what: 'From 17 January Allied armies attacked the line around Monte Cassino, but the defenders held the high ground.',
+        consequence: 'The advance towards Rome stopped for months, and the fighting became a series of costly battles.',
+      },
+      secondary: {
+        cause: 'The Gustav Line blocked the route north to Rome, and the mountainous ground favoured the defender.',
+        what: 'The first attack failed, and a landing at Anzio further north did not break the deadlock; German troops occupied the abbey’s ruins and turned the hillside into a fortress.',
+        consequence: 'The campaign absorbed Allied resources for four months and became one of the most controversial of the Italian war.',
+      },
+      university: {
+        cause: 'The decision to attack the Gustav Line head-on reflected the Allied need to keep pressure on Italy and to draw German divisions away from France, not an expectation of an easy breakthrough.',
+        what: 'The bombing of the abbey remains contested: its military necessity was argued at the time and afterwards, and the decision destroyed a historical monument without preventing a German defensive position on the same ridge.',
+        consequence: 'The four battles should be read as one attritional campaign rather than four separate failures; the final breakthrough came on 18 May 1944, and Rome fell on 4 June, two days before the Normandy landings.',
+      },
+    },
+  },
+  {
+    id: 'operation_dragoon',
+    date: '1944-08-15',
+    precision: 'day',
+    title: 'Operation Dragoon: the Allied landing in southern France',
+    kind: 'invasion',
+    fronts: ['mediterranean'],
+    countries: ['United States', 'France', 'Germany'],
+    note: 'Dragoon began on 15 August 1944, when Allied forces landed on the French Riviera between Nice and Marseille; the German 19th Army withdrew northwards, and the port of Marseille was captured in late August. The operation was debated before it happened because the resources might have been used in Italy or in the north-west European campaign.',
+    levels: {
+      primary: {
+        cause: 'After the Normandy landings, the Allies also wanted to open the southern French ports and advance north through France.',
+        what: 'On 15 August American and French troops landed on the Mediterranean coast of France and met little resistance on the beaches.',
+        consequence: 'Marseille and Lyon were soon reached, and more Allied armies could be supplied from French ports.',
+      },
+      secondary: {
+        cause: 'The Mediterranean campaign had been planned for months, and the Allies wanted to secure ports closer to the German frontier than those in Normandy.',
+        what: 'The landing was accompanied by airborne drops and by resistance activity in the interior; German forces withdrew up the Rhône valley rather than holding the coast.',
+        consequence: 'The southern and northern Allied advances eventually met, and the German army in France was forced back towards its own border.',
+      },
+      university: {
+        cause: 'Dragoon remains controversial because it drew divisions away from the Italian front at the moment when the Gothic Line might have been broken, and because Winston Churchill argued the same forces should have been used in the Adriatic.',
+        what: 'Its military results were substantial — the rapid capture of Marseille shortened Allied supply lines — but the political effect also mattered: a French army liberated part of French territory and the Resistance gained ground before the north-west campaign reached Paris.',
+        consequence: 'The operation should be read alongside Overlord and Bagration as part of the summer of 1944, not as a separate sideshow: by the end of August Germany had lost France and was retreating on every front.',
+      },
+    },
+  },
+  {
+    id: 'scheldt_campaign',
+    date: '1944-10-02',
+    precision: 'day',
+    title: 'The Battle of the Scheldt opens',
+    kind: 'battle',
+    fronts: ['western'],
+    countries: ['Canada', 'United Kingdom', 'Germany'],
+    note: 'The campaign to clear the Scheldt estuary began in early October 1944 and lasted until 8 November; after minesweeping, the first convoy reached Antwerp on 28 November. The delay meant that Allied armies in the north-west were still supplied over the Normandy beaches and through the fragile port of Cherbourg well into the autumn.',
+    levels: {
+      primary: {
+        cause: 'The Allies had captured Antwerp, but German guns on the islands at the mouth of the river stopped ships reaching its docks.',
+        what: 'Canadian and British troops fought through flooded islands and beaches to drive the Germans from the estuary.',
+        consequence: 'Antwerp became a working port at last, which made it much easier to supply the armies advancing into Germany.',
+      },
+      secondary: {
+        cause: 'Antwerp had been taken almost intact in September, but the German 15th Army held the banks of the Scheldt and could deny the Allies its use for months.',
+        what: 'Canadian forces cleared the area north of the Albert Canal and then the islands of Walcheren and Zuid-Beveland, making amphibious assaults across flooded ground against strongly held positions.',
+        consequence: 'The campaign consumed weeks at a critical moment, delaying the advance into the Netherlands and allowing Germany to regroup on the frontier.',
+      },
+      university: {
+        cause: 'The Scheldt is the clearest example in the north-west campaign of how a decision taken for tactical reasons — advancing past Antwerp towards Arnhem in September — created a logistical crisis that had to be paid for in October.',
+        what: 'German defence of the estuary was stubborn and skilful, and the flooded terrain manufactured by the Germans made the assault unusually costly; the Canadian official history records the battle in detail.',
+        consequence: 'Debate continues over whether the Allied advance should have halted to clear the estuary in September; what is not disputed is that the port could not handle convoys until 28 November.',
+      },
+    },
+  },
+  {
+    id: 'arrow_cross_coup',
+    date: '1944-10-15',
+    precision: 'day',
+    title: 'The Arrow Cross seizes power in Budapest',
+    kind: 'politics',
+    fronts: ['home', 'eastern'],
+    countries: ['Hungary', 'Germany'],
+    note: 'On 15 October 1944 Horthy announced that Hungary had asked for an armistice; German forces immediately occupied key points in Budapest, and the far-right Arrow Cross party took power under Ferenc Szálasi. The deportation of Hungarian Jews, largely completed in the spring, resumed on a smaller scale, and thousands were killed or forced on marches towards the Austrian border.',
+    levels: {
+      primary: {
+        cause: 'Hungary wanted to leave the war now that the Soviet army was near, but Germany would not let it.',
+        what: 'German troops seized Budapest and a pro-German party, the Arrow Cross, took over the government on 15 October.',
+        consequence: 'Hungary stayed in the war, and Jews in Budapest were again hunted and killed.',
+      },
+      secondary: {
+        cause: 'The regent Horthy had opened secret armistice talks with the Allies, which the German command had anticipated and prepared to prevent.',
+        what: 'German forces occupied the city and forced Horthy to appoint Szálasi; the new government continued the war and restarted anti-Jewish persecution in the capital.',
+        consequence: 'The change of government prolonged the fighting in Hungary into 1945 and exposed the Jews of Budapest to a final wave of violence before the Soviet army liberated the city in February.',
+      },
+      university: {
+        cause: 'The coup shows the limits of Hungarian autonomy within the Axis: the German intervention of March 1944 had installed a compliant government, and the October action removed the one that tried to change sides.',
+        what: 'Horthy’s broadcast was contradicted within hours by the German occupation, and the speed of the coup owed much to the absence of an organised armed force loyal to the regent.',
+        consequence: 'The episode is central to Hungarian debates about responsibility for the Holocaust: the deportations of spring 1944 were carried out by Hungarian authorities under German pressure, and the Arrow Cross period that followed remains a separate and equally painful subject.',
+      },
+    },
+  },
+  {
+    id: 'operation_plunder',
+    date: '1945-03-23',
+    precision: 'day',
+    title: 'Operation Plunder: the Allies cross the Rhine',
+    kind: 'battle',
+    fronts: ['western'],
+    countries: ['United Kingdom', 'United States', 'Canada', 'Germany'],
+    note: 'The main Allied crossing of the Rhine began on the night of 23 March 1945 near Rees and Wesel, after the capture of the Remagen bridge on 7 March had already given the Americans a foothold on the eastern bank. Airborne drops supported the crossing. Once across, Allied armies advanced rapidly into the Ruhr and towards the Elbe.',
+    levels: {
+      primary: {
+        cause: 'The Allies had reached the Rhine, the last great natural barrier before the heart of Germany.',
+        what: 'On 23 March British and American forces crossed the river in boats and aircraft while German defences were weakened by bombing and shortages.',
+        consequence: 'The German army in the west could no longer hold a river line, and the Allied armies raced into Germany.',
+      },
+      secondary: {
+        cause: 'After the Ardennes fighting and the clearance of the Rhineland, the Allied armies were ready to cross into Germany, and the bridge at Remagen had already shown that the German defence was breaking.',
+        what: 'Operation Plunder combined a large airborne drop with river crossings at several points; German air and artillery resistance was limited, and bridgeheads were established within days.',
+        consequence: 'The Ruhr was encircled in April, and the western Allies advanced eastwards towards the Elbe, where they met Soviet forces late in April.',
+      },
+      university: {
+        cause: 'The crossing is often treated as an inevitable consequence of Allied material superiority, but it also rested on the German decision to defend the river with exhausted divisions and on the destruction of the transport network that might have moved reserves.',
+        what: 'Plunder and the earlier Remagen crossing are separate operations: the Americans exploited a bridge they happened to capture, while the planned crossing was a set-piece assault two weeks later.',
+        consequence: 'The speed of the subsequent advance created a new political question — how far east the Western Allies should go before meeting the Red Army — which was settled on the ground in April and at Yalta on paper in February.',
+      },
+    },
+  },
+
+
+  {
+    id: 'italian_social_republic',
+    date: '1943-09-23',
+    precision: 'day',
+    title: 'Mussolini heads the Italian Social Republic',
+    kind: 'politics',
+    fronts: ['politics', 'mediterranean'],
+    countries: ['Italy', 'Germany'],
+    figures: ['mussolini'],
+    note: 'After the armistice was announced on 8 September 1943 and German forces occupied northern and central Italy, Mussolini was installed by the Germans as head of the Italian Social Republic, based at Salò on Lake Garda, on 23 September. It had no real independence: German commanders controlled military and economic policy, and the regime’s forces fought alongside German troops until its collapse in April 1945.',
+    levels: {
+      primary: {
+        cause: 'Germany did not want Italy to leave the war and put Mussolini back in charge of the north.',
+        what: 'On 23 September 1943 a new Italian state was announced, with Mussolini at its head and its government at Salò.',
+        consequence: 'Italy stayed in the war, with Italians fighting on both sides until the German defeat in 1945.',
+      },
+      secondary: {
+        cause: 'The Italian king and Badoglio had signed an armistice and moved south; German forces seized the north and needed a façade of Italian government there.',
+        what: 'The new republic introduced its own administration, conscription and propaganda while depending entirely on German military support.',
+        consequence: 'It prolonged the Italian campaign by eighteen months and made the struggle a civil war as well as a war of liberation.',
+      },
+      university: {
+        cause: 'The Salò Republic is the clearest case in western Europe of a puppet state created to keep a defeated ally fighting after its government changed sides.',
+        what: 'Its sovereignty was nominal: German authorities controlled the army, the economy and the deportation of Jews from northern Italy, and its own officials were often former Fascists seeking to recover power.',
+        consequence: 'Its collapse in April 1945, and the partisan liberation that accompanied it, shaped postwar Italian politics by giving the Resistance a founding place in the Republic’s memory.',
+      },
+    },
+  },
+
 ];

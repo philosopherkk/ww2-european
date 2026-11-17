@@ -1,5 +1,6 @@
 'use client';
 
+import { ChevronDown } from 'lucide-react';
 import { SOURCES, UNCERTAINTIES, FIGURES, FIGURE_BY_ID } from '@/lib/data';
 import { PORTRAITS } from '@/lib/data/portraits';
 import { MONTHS, SNAPSHOTS } from '@/lib/site';
@@ -48,7 +49,12 @@ const MAP_LIMITS: { head: string; body: string }[] = [
   {
     head: 'The basemap underneath is today’s world',
     body:
-      'Roads, rivers and place names come from live OpenStreetMap tiles, drawn in grey and faded so the 1938-1945 fills read first. They are there to tell you where a town is, not to tell you anything about 1943: the borders that matter on this map are the coloured ones we draw ourselves, and the modern names sit under them.',
+      'Roads, rivers and place names come from live OpenStreetMap tiles. The faded view drains them to grey so the 1938-1945 fills read first; switch on “Detailed map” in the map controls to see the place names and geography clearly while zooming in. Either way the tiles are today’s world, there to tell you where a town is, not what it was in 1943: the borders that matter here are the coloured ones we draw ourselves.',
+  },
+  {
+    head: 'The ring on a line is an interpolation',
+    body:
+      'This is a schematic axis of advance through named places, not a surveyed daily front line. The ring marks an interpolated position along that axis by date, not a documented map reference for that morning. The fraction of the line travelled is a linear reading of the campaign’s date window, which is a teaching device rather than a record of where troops stood on a particular day.',
   },
   {
     head: 'Lines show advance only',
@@ -77,10 +83,36 @@ const MAP_LIMITS: { head: string; body: string }[] = [
   },
 ];
 
+const SECTIONS = [
+  { id: 'how-to-read', label: 'How to read' },
+  { id: 'map-limits', label: 'Map limits' },
+  { id: 'sources', label: 'Sources' },
+  { id: 'photographs', label: 'Photographs' },
+  { id: 'disputed', label: 'Still argued over' },
+  { id: 'content-notes', label: 'Content notes' },
+];
+
+const CARD = 'scroll-mt-16 rounded-xl border border-stone-300 bg-white p-4 shadow-sm sm:p-5';
+
 export default function SourcesPanel() {
   return (
     <div className="space-y-5">
-      <section className="rounded-lg border border-stone-300 bg-white p-4 shadow-sm">
+      <div className="mx-auto max-w-3xl space-y-4">
+      <nav
+        aria-label="On this page"
+        className="no-scrollbar sticky top-0 z-20 -mx-3 flex gap-1.5 overflow-x-auto border-b border-stone-200 bg-stone-100/95 px-3 py-2.5 backdrop-blur sm:-mx-4 sm:px-4 lg:mx-0 lg:px-0"
+      >
+        {SECTIONS.map((sec) => (
+          <a
+            key={sec.id}
+            href={`#${sec.id}`}
+            className="inline-flex h-9 shrink-0 items-center rounded-full border border-stone-300 bg-white px-3.5 text-sm font-medium text-stone-700 hover:bg-stone-100"
+          >
+            {sec.label}
+          </a>
+        ))}
+      </nav>
+      <section id="how-to-read" className={CARD}>
         <h2 className="text-lg font-bold text-stone-900">How to read this site</h2>
         <ol className="mt-2 list-decimal space-y-1.5 pl-5 text-[15px] leading-relaxed text-stone-700">
           <li>
@@ -110,7 +142,7 @@ export default function SourcesPanel() {
         </ol>
       </section>
 
-      <section className="rounded-lg border border-stone-300 bg-white p-4 shadow-sm">
+      <section id="map-limits" className={CARD}>
         <h2 className="text-lg font-bold text-stone-900">The map data and its limits</h2>
         <p className="mt-2 text-[15px] leading-relaxed text-stone-700">
           The outlines come from a published GIS dataset of monthly European border states during
@@ -141,27 +173,40 @@ export default function SourcesPanel() {
         <h3 className="mt-4 text-base font-semibold text-stone-900">
           Known limits, stated plainly
         </h3>
-        <ul className="mt-1.5 space-y-1.5 text-[14px] leading-relaxed text-stone-700">
+        <div className="mt-2 divide-y divide-stone-200 rounded-lg border border-stone-200">
           {MAP_LIMITS.map((limit) => (
-            <li key={limit.head} className="pl-3">
-              <strong className="font-semibold">{limit.head}.</strong> {limit.body}
-            </li>
+            <details key={limit.head} className="group">
+              <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 px-3 py-2 text-[15px] font-semibold text-stone-800 hover:bg-stone-50 [&::-webkit-details-marker]:hidden">
+                <span>{limit.head}</span>
+                <ChevronDown
+                  size={18}
+                  aria-hidden
+                  className="shrink-0 text-stone-500 transition-transform group-open:rotate-180"
+                />
+              </summary>
+              <p className="px-3 pb-3 text-[15px] leading-relaxed text-stone-700">{limit.body}</p>
+            </details>
           ))}
-        </ul>
-        <ul className="mt-3 space-y-1 text-sm text-stone-600">
-          {SNAPSHOTS.map((s) => (
-            <li key={s.id} className="flex flex-wrap gap-x-2">
-              <span className="font-medium text-stone-700">{s.label}</span>
-              <span className="text-stone-400">{s.date}</span>
-              <span className="text-stone-500">{s.countries} territories</span>
-            </li>
-          ))}
-        </ul>
+        </div>
+        <details className="mt-3">
+          <summary className="cursor-pointer text-sm font-semibold text-stone-700">
+            The {SNAPSHOTS.length} dated map states
+          </summary>
+          <ul className="mt-2 grid gap-x-4 gap-y-1 text-sm text-stone-700 sm:grid-cols-2">
+            {SNAPSHOTS.map((s) => (
+              <li key={s.id} className="flex flex-wrap gap-x-2">
+                <span className="font-medium text-stone-800">{s.label}</span>
+                <span className="text-stone-500">{s.date}</span>
+                <span className="text-stone-600">{s.countries} territories</span>
+              </li>
+            ))}
+          </ul>
+        </details>
       </section>
 
-      <section className="rounded-lg border border-stone-300 bg-white p-4 shadow-sm">
+      <section id="sources" className={CARD}>
         <h2 className="text-lg font-bold text-stone-900">Where the numbers and the text come from</h2>
-        <p className="mt-1 text-sm text-stone-600">
+        <p className="mt-1 text-sm text-stone-700">
           Every figure on this site was taken from a published source rather than estimated. Where a
           total is genuinely argued over, the range is given rather than a single number.
         </p>
@@ -169,20 +214,20 @@ export default function SourcesPanel() {
           {SOURCES.map((s) => (
             <li key={s.citation} className="border-l-2 border-stone-300 pl-3">
               <p className="text-[15px] font-medium leading-snug text-stone-900">{s.citation}</p>
-              <p className="text-xs text-stone-500">{s.publisher}</p>
-              <p className="mt-0.5 text-[13px] leading-snug text-stone-600">{s.usedFor}</p>
+              <p className="text-xs text-stone-600">{s.publisher}</p>
+              <p className="mt-0.5 text-[13px] leading-snug text-stone-700">{s.usedFor}</p>
               <a
                 href={s.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="break-all text-xs text-blue-700 underline hover:text-blue-900"
+                className="inline-block break-all py-1.5 text-xs text-blue-700 underline hover:text-blue-900"
               >
                 {s.url}
               </a>
             </li>
           ))}
         </ul>
-        <p className="mt-4 text-sm leading-snug text-stone-600">
+        <p className="mt-4 text-sm leading-snug text-stone-700">
           <span className="font-semibold text-stone-900">The fact-checking this text went through.</span>{' '}
           Every event card and biography was re-checked line by line against published sources, and the
           corrections were then checked again. Dates were the most common error: the Second Battle of Sirte
@@ -199,7 +244,7 @@ export default function SourcesPanel() {
         </p>
       </section>
 
-      <section className="rounded-lg border border-stone-300 bg-white p-4 shadow-sm">
+      <section id="photographs" className={CARD}>
         <h2 className="text-lg font-bold text-stone-900">Photographs of the people</h2>
         <p className="mt-2 text-[15px] leading-relaxed text-stone-700">
           {PORTRAIT_LIST.length} of the {FIGURES.length} biographies carry a photograph. Each one is
@@ -219,7 +264,7 @@ export default function SourcesPanel() {
           <summary className="cursor-pointer text-sm font-semibold text-stone-700">
             Every photograph and its credit
           </summary>
-          <ul className="mt-2 space-y-1 text-[13px] leading-snug text-stone-600">
+          <ul className="mt-2 space-y-1 text-[13px] leading-snug text-stone-700">
             {PORTRAIT_LIST.map((p) => (
               <li key={p.id}>
                 <span className="font-medium text-stone-800">
@@ -240,7 +285,7 @@ export default function SourcesPanel() {
         </details>
       </section>
 
-      <section className="rounded-lg border border-amber-300 bg-amber-50 p-4">
+      <section id="disputed" className="scroll-mt-16 rounded-xl border border-amber-300 bg-amber-50 p-4 sm:p-5">
         <h2 className="text-lg font-bold text-stone-900">What is still argued over</h2>
         <p className="mt-1 text-sm text-stone-700">
           Historians do not agree on all of these numbers. If a source gives you one figure without
@@ -256,7 +301,7 @@ export default function SourcesPanel() {
         </dl>
       </section>
 
-      <section className="rounded-lg border border-stone-300 bg-white p-4 shadow-sm">
+      <section id="content-notes" className={CARD}>
         <h2 className="text-lg font-bold text-stone-900">Content warnings and language</h2>
         <p className="mt-2 text-[15px] leading-relaxed text-stone-700">
           The genocide of the Jews of Europe, the murder of disabled people, the treatment of Soviet
@@ -271,6 +316,7 @@ export default function SourcesPanel() {
           where they bear on the fighting here.
         </p>
       </section>
+      </div>
     </div>
   );
 }

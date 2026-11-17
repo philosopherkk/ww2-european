@@ -49,6 +49,13 @@ function buildMonths(): MonthCell[] {
   return out;
 }
 
+/** The WW1 sister site's timeline (1914-07 to 1918-11), used only to carry a
+ * reader's approximate place in the war across the cross-site switch. */
+export const WW1_MONTH_KEYS: string[] = Array.from({ length: 53 }, (_, i) => {
+  const n = 1914 * 12 + 6 + i; // July 1914 is month index 6 of 1914
+  return `${Math.floor(n / 12)}-${String((n % 12) + 1).padStart(2, '0')}`;
+});
+
 export const MONTHS = buildMonths();
 export const MONTH_INDEX: Record<string, number> = Object.fromEntries(
   MONTHS.map((m, i) => [m.key, i])
@@ -103,21 +110,45 @@ const monthsBetween = (a: string, b: string) => {
  * The border dataset is a handful of dated states, not a continuous series, so
  * we show the state closest in time to the month the reader has picked and say
  * so plainly in the UI rather than pretending to a precision we do not have.
+ *
+ * Among snapshots dated on or before the selected month the nearest one wins,
+ * and a snapshot dated *after* it is only ever used when there is no earlier
+ * one to show — that is, for January to March 1938, which precede the earliest
+ * state in the dataset (30 April 1938). Reading the slider at January 1938
+ * must never present the reader with the borders of a later month as though
+ * they predated it; when the fallback does apply, the UI still names the
+ * snapshot and says how many months after the chosen month it falls.
  */
 export function nearestSnapshot(monthKey: string): SnapshotChoice {
-  let best = SNAPSHOTS[0];
+  let best: Snapshot | null = null;
   let bestGap = Number.POSITIVE_INFINITY;
+
+  // First choice: the nearest snapshot on or before the selected month.
   for (const s of SNAPSHOTS) {
-    const gap = Math.abs(monthsBetween(monthKey, s.date.slice(0, 7)));
-    if (gap < bestGap) {
-      bestGap = gap;
+    const delta = monthsBetween(monthKey, s.date.slice(0, 7)); // snapshot - month
+    if (delta <= 0 && -delta < bestGap) {
+      bestGap = -delta;
       best = s;
+      if (bestGap === 0) break; // an exact month needs nothing better
     }
   }
+
+  // Fallback: months earlier than the first snapshot, so the nearest state
+  // postdates them. Documented in components/SourcesPanel.tsx.
+  if (!best) {
+    for (const s of SNAPSHOTS) {
+      const delta = monthsBetween(monthKey, s.date.slice(0, 7));
+      if (delta > 0 && delta < bestGap) {
+        bestGap = delta;
+        best = s;
+      }
+    }
+  }
+
   return {
-    snapshot: best,
+    snapshot: best ?? SNAPSHOTS[0],
     gapMonths: bestGap,
-    isEarlier: best.date.slice(0, 7) <= monthKey,
+    isEarlier: (best?.date.slice(0, 7) ?? '') <= monthKey,
   };
 }
 
@@ -177,7 +208,7 @@ export const FRONT_META: Record<Front, { label: string; color: string }> = {
   arctic: { label: 'Arctic & Atlantic', color: '#0E7490' },
   politics: { label: 'Diplomacy & politics', color: '#475569' },
   atlantic: { label: 'Atlantic', color: '#0C4A6E' },
-  air_war: { label: 'Air war over Germany', color: '#6D28D9' },
+  air_war: { label: 'Air war', color: '#6D28D9' },
 };
 
 export const KIND_META: Record<Kind, { label: string; emoji: string }> = {

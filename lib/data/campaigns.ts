@@ -36,13 +36,13 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     from: '1939-09-01',
     to: '1939-10-06',
     path: [
-      [53.35, 13.08], // Neustrelitz, Army Group North's headquarters
-      [52.41, 16.93], // Poznań, by-passed and encircled
-      [51.75, 19.47], // Łódź, taken 8 September
-      [52.23, 21.01], // Warsaw, invested in the first days
+      [53.77, 16.10], // Bad Polzin / Połczyn-Zdrój, Army Group North HQ at the opening of the campaign
+      [53.12, 18.01], // Bydgoszcz (Bromberg), the Polish Corridor
+      [52.44, 20.68], // Modlin, northern approach to Warsaw
+      [52.23, 21.01], // Warsaw, invested from the north in the first days
     ],
     summary:
-      'Two army groups attacked into the Polish corridor from Pomerania and East Prussia. Armoured spearheads by-passed the Polish armies instead of meeting them, and met east of the Vistula; the Polish army was destroyed in five weeks, while the Luftwaffe destroyed most of the Polish air force on the ground.',
+      'Army Group North attacked from Pomerania (4th Army) and East Prussia (3rd Army) through the Polish Corridor and towards Warsaw from the north; its headquarters opened at Bad Polzin, now Połczyn-Zdrój. Polish field armies were by-passed rather than destroyed in the opening week, and Warsaw was invested in the first days. This is a schematic axis of advance through named places, not a surveyed daily front line. The ring marks an interpolated position along that axis by date, not a documented map reference for that morning.',
     strength: '~1.5 million German men, some 2,100 aircraft; ~1 million Polish soldiers engaged',
   },
   {
@@ -58,7 +58,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [49.84, 24.03], // Lwów, besieged 12-22 September
     ],
     summary:
-      'Army Group South drove from Silesia and Slovakia towards Kraków and Lwów, and had to fight hard at the Bzura, where the Poles counter-attacked on 9 September and came within a day of succeeding.',
+      'Army Group South drove from Silesia and Slovakia towards Kraków and Lwów, taking Kraków on 6 September. The Bzura counter-offensive of 9-22 September belongs west of Warsaw, not on this southern axis, and is described in the invasion of Poland event. This is a schematic axis of advance through named places, not a surveyed daily front line. The ring marks an interpolated position along that axis by date, not a documented map reference for that morning.',
     strength: '~55 divisions, including four panzer and four light divisions',
   },
   {
@@ -99,7 +99,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     from: '1940-04-09',
     to: '1940-06-10',
     path: [
-      [54.35, 18.65], // Gdynia, the embarkation port for Oslo
+      [54.52, 18.54], // Gdynia, the embarkation port for Oslo
       [55.68, 12.57], // Copenhagen, taken in hours
       [59.91, 10.75], // Oslo, where the Blücher was sunk in the Oslofjord
       [63.43, 10.39], // Trondheim
@@ -252,7 +252,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     from: '1942-06-28',
     to: '1942-11-18',
     path: [
-      [49.99, 36.23], // Kharkov, taken 28 July after the Soviet offensive there failed
+      [49.99, 36.23], // Kharkov, the jumping-off point after the failed Soviet spring offensive
       [51.67, 39.21], // Voronezh, by-passed on 5 July, which Hitler counted as a mistake
       [51.37, 40.54], // Borisoglebsk, on the Don
       [48.71, 44.51], // Stalingrad: the Volga reached north and south of the city on 23 August
@@ -527,7 +527,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     strength: '~410,000 men, ~1,500 tanks and assault guns; US losses ~81,000 casualties, German 60,000-85,000',
   },
   {
-    id: 'vistula_odera',
+    id: 'vistula_oder',
     name: 'Vistula-Oder: twenty-two days to the gates of Berlin',
     side: 'soviet',
     from: '1945-01-12',
@@ -856,7 +856,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     to: '1941-02-09',
     path: [
       [31.61, 25.93], // Sidi Barrani, where the Italian forward positions were overrun on 9 December
-      [31.55, 25.15], // Sollum, the frontier post, taken on 11 January
+      [31.55, 25.15], // Sollum, the frontier post, occupied 15-16 December
       [31.76, 25.08], // Bardia, assaulted on 3 January, and its 40,000 defenders captured
       [32.08, 23.96], // Tobruk, taken on 22 January with the harbour intact
       [32.12, 20.07], // Benghazi, entered on 7 February as the Italian retreat went past it
@@ -876,8 +876,8 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     to: '1941-05-27',
     path: [
       [30.26, 19.20], // El Agheila, where Rommel attacked on 31 March against his orders to hold
-      [31.58, 21.01], // Msus, crux of the British attempt to slow the panzers, 8 April
       [32.12, 20.07], // Benghazi, retaken on 4 April
+      [31.58, 21.01], // Msus, crux of the British attempt to slow the panzers, 8 April
       [32.76, 22.64], // Derna and Mechili, where the 3rd Indian Motor Brigade was overrun
       [32.08, 23.96], // Tobruk, reached on 10 April and besieged from land and sea for 241 days
       [31.50, 25.19], // Halfaya Pass and Sollum, the Egyptian frontier, held by the end of May
@@ -896,7 +896,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     to: '1941-12-16',
     path: [
       [31.50, 25.19], // the start line east of the Halfaya-Sollum wire, 18 November
-      [31.61, 23.50], // Bir Hakeim and the Free French rearguard on the western flank
+      [31.54, 24.03], // Bir el Gubi, where the Italian Ariete division held the western flank on 19 November
       [32.08, 23.96], // Tobruk, relieved on 26 November after 241 days
       [31.58, 21.01], // Msus, on the pursuit towards Benghazi, entered on 24 November
       [32.12, 20.07], // Benghazi, abandoned by Rommel on 24 November
@@ -1203,7 +1203,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     summary:
       'The Soviet counter-offensive at Orel began on 12 July, before the German attack at Kursk had been called off, and it was meant to encircle the Orel salient. That failed — Mtsensk cost the Bryansk Front 17,000 men — but once Citadel was abandoned the salient became indefensible. Model conducted a series of fighting withdrawals to shorter lines, giving up Orel on 5 August and Bryansk on 17 September without allowing an encirclement, so the German centre survived to fight another year. The strategic result was the rail network: Orel and Bryansk were the junctions that fed Army Group Centre, and their loss put the front on the Desna and Sozh, 300 km closer to the Dnieper, which the Red Army crossed in the following two months.',
     strength:
-      'Western and Bryansk Fronts, over 1 million men in the two operations; Ninth and Second Panzer Armies, already bled by Citadel, in organized withdrawal to prepared lines behind',
+      'Western and Bryansk Fronts, over 1 million men in the two operations; Ninth and Second Panzer Armies, already bled by Citadel, in organised withdrawal to prepared lines behind',
   },
   {
     id: 'smolensk_1943',
@@ -1501,7 +1501,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     path: [
       [49.49, 0.1], // Le Havre, taken on 12 September after a Bomber Command opening attack
       [50.73, 1.61], // Boulogne, stormed 17-22 September by the Canadians with heavy artillery
-      [50.95, 1.85], // Calais, taken 25-30 September by the 3rd Canadian Division’s Polish brigade
+      [50.95, 1.85], // Calais, taken 25-30 September by the 3rd Canadian Infantry Division
       [51.03, 2.38], // Dunkirk, besieged and left to surrender only on 9 May 1945
     ],
     summary:
@@ -1518,12 +1518,12 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     to: '1945-03-10',
     path: [
       [51.68, 6.16], // Goch, cleared 8-10 February, the first objective of the Reichswald attack
-      [51.79, 6.14], // Kleve-Cleve, taken 10 February, with the Roar and Reichswald forest behind it
+      [51.79, 6.14], // Kleve-Cleve, taken 10 February, with the Roer and Reichswald forest behind it
       [51.33, 6.56], // Krefeld, entered 3 March, as the western bank was cleared
-      [50.94, 6.95], // Cologne, occupied on 7 March, its cathedral and its population destroyed
+      [50.94, 6.95], // Cologne, occupied on 7 March after heavy bombing
     ],
     summary:
-      'The battle to clear the west bank of the Rhine north of the Moselle was the largest British offensive of the war: three armies, after the largest artillery concentration of the campaign, attacked south-east through the Reichswald forest while Montgomery waited for the Roar river to fall. The advance took Goch and Cleve in three days, but the weather, flooded country and German resistance slowed it, and the American attack across the Rur dam — delayed while the Germans held the dams upstream and flooded the ground — came two weeks late. By 10 March the west bank was clear and 280,000 prisoners had been taken; on 7 March the Americans had already crossed the Ludendorff bridge at Remagen, an opportunity Montgomery did not exploit. The Rhineland battle is the least-remembered great British battle of the war and the one that destroyed the last German industrial region west of the Rhine, including the Ruhr’s outlying factories, before the Ruhr itself was encircled.',
+      'The battle to clear the west bank of the Rhine north of the Moselle was the largest British offensive of the war: three armies, after the largest artillery concentration of the campaign, attacked south-east through the Reichswald forest while Montgomery waited for the Roer river to fall. The advance took Goch and Cleve in three days, but the weather, flooded country and German resistance slowed it, and the American attack across the Rur dam — delayed while the Germans held the dams upstream and flooded the ground — came two weeks late. By 10 March the west bank was clear and 280,000 prisoners had been taken; on 7 March the Americans had already crossed the Ludendorff bridge at Remagen, an opportunity Montgomery did not exploit. The Rhineland battle is the least-remembered great British battle of the war and the one that destroyed the last German industrial region west of the Rhine, including the Ruhr’s outlying factories, before the Ruhr itself was encircled.',
     strength:
       '21st Army Group — First Canadian and Second British Armies, ~500,000 men, 3,300 guns and 1,500 tanks, with Ninth US Army on the right; First Parachute Army and Fifteenth Army, about half the Allied strength',
   },

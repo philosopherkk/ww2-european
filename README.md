@@ -10,14 +10,14 @@ lines, the people involved, and every event written three times over for three r
 
 | Part | Contents |
 | --- | --- |
-| Map & timeline | 92 months on a slider, borders coloured by who held the territory, dashed lines for offensives underway that month, click any country or line for detail |
-| Events | 125 events, each split into **why it happened**, **what happened** and **what followed** |
+| Map & timeline | 92 months on a slider, borders coloured by who held the territory, dashed lines for offensives underway that month, turning-point panels on the twenty-one months when the war or the map changed, click any country or line for detail |
+| Events | 167 events, each split into **why it happened**, **what happened** and **what followed** |
 | People | 76 biographies, from heads of state to partisans, economists and camp survivors |
 | Numbers | Population, armed-forces and casualty tables, with ranges where historians disagree |
 | Sources & how to read | What the map data is, what it cannot show, and every source used |
 
-Reading levels are genuine rewrites, not tooltips: **primary school** (age 7-11), **secondary
-school** (age 11-16) and **university**. An event card can show all three side by side.
+Reading levels are genuine rewrites, not tooltips: **primary school** (ages 7-11), **secondary
+school** (ages 12-16) and **university**. An event card can show all three side by side.
 
 The site covers the European theatre. The Pacific war, China and the colonial campaigns beyond
 Europe are out of scope except where they bear on the fighting here; that boundary is stated in

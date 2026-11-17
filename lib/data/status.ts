@@ -56,64 +56,64 @@ export const STATUS_ORDER: TerritoryStatus[] = [
 export const STATUS_META: Record<TerritoryStatus, StatusMeta> = {
   at_peace: {
     label: 'At peace',
-    color: '#CEC7BA',
-    stroke: '#8E8577',
+    color: '#CAC4B8',
+    stroke: '#81796D',
     legend:
       'States that were not at war in April 1938 or April 1939. Nothing was fighting in Europe yet on either date, but Germany had already annexed Austria in March 1938, taken the Sudetenland in September 1938 and occupied Prague on 15 March 1939, so the German Reich and its client states are shown in red from the outset.',
   },
   axis: {
     label: 'Axis powers and German allies',
-    color: '#A93226',
-    stroke: '#6E2018',
+    color: '#9B5B50',
+    stroke: '#6E3A32',
     legend:
       'Germany, Italy and the states bound to them, whether as allies, client states or collaborationist regimes. The Tripartite Pact of 27 September 1940 joined Germany, Italy and Japan; Hungary and Romania joined in November 1940, Slovakia and Bulgaria in November and March 1941. Finland fought the Soviet Union alongside Germany without ever joining the Pact, and is shown separately.',
   },
   german_administered: {
     label: 'Under direct German administration',
-    color: '#3F120C',
-    stroke: '#260C07',
+    color: '#5A3A33',
+    stroke: '#36221D',
     legend:
       'Territory annexed into the Reich, or ruled as German occupation administration rather than as a state: the Protectorate of Bohemia and Moravia, the General Government in occupied Poland, and the Reichskommissariate in the east. None of these were states in international law.',
   },
   german_occupied: {
     label: 'German-occupied',
-    color: '#DFA58F',
-    stroke: '#A93226',
+    color: '#C9A093',
+    stroke: '#9B5B50',
     legend:
       'States under German military or civil occupation, with their governments in exile or in resistance. Occupied populations were subject to forced labour, reprisals and, for the Jews of Europe, deportation. Denmark and Norway, the Low Countries, France, Greece, Albania after September 1943 and Serbia all appear in this colour at some point.',
   },
   italian_occupied: {
     label: 'Italian-occupied or annexed',
-    color: '#8A6D3B',
-    stroke: '#5A4624',
+    color: '#8A754F',
+    stroke: '#5B4B33',
     legend:
       'Territory held by Italy rather than Germany: Albania from April 1939, and the parts of Yugoslavia occupied in April 1941, including Montenegro and most of Dalmatia. This distinction disappears after the Italian armistice of 8 September 1943, when Germany took over the Italian occupation zones.',
   },
   soviet: {
     label: 'Soviet Union',
-    color: '#C8791A',
-    stroke: '#8A5310',
+    color: '#A98145',
+    stroke: '#775A30',
     legend:
       'The USSR. Between August 1939 and June 1941 it was not at war, but it had occupied eastern Poland, the Baltic states, Bessarabia and northern Bukovina under the secret protocol to the German-Soviet pact. From 22 June 1941 it was an Allied power, and it bore about three quarters of all German military losses in the war.',
   },
   ally: {
     label: 'Allied',
-    color: '#2E6F9E',
-    stroke: '#1B4A6E',
+    color: '#61849F',
+    stroke: '#405D72',
     legend:
       'States at war with Germany, including the United Kingdom and its empire, the Soviet Union from June 1941 and the United States from December 1941, and after 1944 the liberated states of western Europe. From October 1943 the royal government of southern Italy counts here as a co-belligerent.',
   },
   co_belligerent: {
     label: 'Finland, co-belligerent with Germany',
-    color: '#6E7F2B',
-    stroke: '#4C5A1D',
+    color: '#7C8754',
+    stroke: '#545E36',
     legend:
       'Finland fought the Soviet Union alongside Germany from June 1941 without ever signing the Tripartite Pact, and kept its democratic government and its Jewish citizens throughout — the only state bordering the USSR to do so. After the armistice of 19 September 1944 Finland was in turn at war with Germany in Lapland.',
   },
   neutral: {
     label: 'Neutral',
-    color: '#8C979B',
-    stroke: '#5D6769',
+    color: '#949A9A',
+    stroke: '#646A6B',
     legend:
       'Ireland, Portugal, Spain, Sweden, Switzerland, Andorra and Iceland until 1940 stayed out of the war. Neutrality did not keep them untouched: Sweden supplied Germany by rail, Turkey moved to the Allies in February 1945, and Portugal hosted intelligence services from both sides.',
   },

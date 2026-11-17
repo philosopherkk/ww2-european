@@ -28,7 +28,7 @@ export function FigurePortrait({
     return (
       <span
         aria-hidden
-        className={`grid h-full w-full place-items-center bg-stone-200 text-[0.7em] font-bold text-stone-500 ${shape} ${className}`}
+        className={`grid h-full w-full place-items-center bg-stone-200 text-[0.7em] font-bold text-stone-600 ${shape} ${className}`}
       >
         {initials(name)}
       </span>
