@@ -40,8 +40,8 @@ export const SOURCES: Source[] = [  {
   },
   {
     citation:
-      'Great Britain, War Office, _Statistics of the Military Effort of the British Empire during the Great War, 1914–1920_ (London: His Majesty\'s Stationery Office, 1922)',
-    publisher: 'His Majesty\'s Stationery Office, London',
+      'Great Britain, War Office, _Statistics of the Military Effort of the British Empire during the Great War, 1914–1920_ (London: His Majesty’s Stationery Office, 1922)',
+    publisher: 'His Majesty’s Stationery Office, London',
     url: 'https://archive.org/details/statisticsofmili00grea',
     usedFor:
       'British and imperial mobilised strength and deaths; the returns for the dominions and India; the German, Austro-Hungarian, Turkish, Bulgarian and Belgian figures this site quotes for the other side, including the Bulgarian War Office breakdown of killed, dead of wounds and dead of disease.',
@@ -78,7 +78,7 @@ export const SOURCES: Source[] = [  {
     publisher: 'Heeres-Sanitätsinspektion des Reichswehrministeriums, Berlin',
     url: 'https://portal.dnb.de/opac/simpleSearch?query=Sanit%C3%A4tsbericht%20%C3%BCber%20das%20deutsche%20Heer',
     usedFor:
-      'The German medical department\'s accounting for the war, printed 1934–38, which is the origin of the German military total of 2,037,000 as Urlanis reads it, of whom about 1,796,000 were killed or died of wounds and gas. It also gives the German wounded by cause and the prisoners who died in captivity. Rüdiger Overmans, James McRandle, James Quirk and Antoine Prost revised these registers upwards to the 2,037,000 this site prints; the volumes do not print that total themselves, so the series is quoted here through Urlanis and through the German war-losses survey named below. A set is held in the library of the Australian War Memorial at https://www.awm.gov.au/collection/LIB8823',
+      'The German medical department’s accounting for the war, printed 1934–38, which is the origin of the German military total of 2,037,000 as Urlanis reads it, of whom about 1,796,000 were killed or died of wounds and gas. It also gives the German wounded by cause and the prisoners who died in captivity. Rüdiger Overmans, James McRandle, James Quirk and Antoine Prost revised these registers upwards to the 2,037,000 this site prints; the volumes do not print that total themselves, so the series is quoted here through Urlanis and through the German war-losses survey named below. A set is held in the library of the Australian War Memorial at https://www.awm.gov.au/collection/LIB8823',
   },
   {
     citation: 'Boris Urlanis, _Wars and Population_ (Moscow, 1971)',
@@ -169,24 +169,24 @@ export const SOURCES: Source[] = [  {
   },
   {
     citation:
-      'James E. Edmonds, _History of the Great War based on Official Documents: Military Operations France and Belgium, 1918, volume I: The German March Offensive and its Preliminaries_ (London: His Majesty\'s Stationery Office, 1935)',
-    publisher: 'His Majesty\'s Stationery Office, London',
+      'James E. Edmonds, _History of the Great War based on Official Documents: Military Operations France and Belgium, 1918, volume I: The German March Offensive and its Preliminaries_ (London: His Majesty’s Stationery Office, 1935)',
+    publisher: 'His Majesty’s Stationery Office, London',
     url: 'https://archive.org/details/historyofgreatwa0000unse_r2f1',
     usedFor:
       'The German spring offensives of 1918 from the British and German documents: the preliminary bombardment, the attack on the Fifth Army positions in March, the returns of prisoners and guns taken, and the instructions under which the assault divisions were trained.',
   },
   {
     citation:
-      'Brigadier-General Sir James E. Edmonds and Lieutenant-Colonel R. Maxwell-Hyslop, _Military Operations France and Belgium, 1918, volume V: 26th September – 11th November. The Advance to Victory_ (London: His Majesty\'s Stationery Office, 1947)',
-    publisher: 'His Majesty\'s Stationery Office, London',
+      'Brigadier-General Sir James E. Edmonds and Lieutenant-Colonel R. Maxwell-Hyslop, _Military Operations France and Belgium, 1918, volume V: 26th September – 11th November. The Advance to Victory_ (London: His Majesty’s Stationery Office, 1947)',
+    publisher: 'His Majesty’s Stationery Office, London',
     url: 'https://archive.org/details/mil-op-fb-1918-v5',
     usedFor:
       'The Hundred Days from the Hindenburg Line to the Armistice, the relief and refit of German divisions behind each army front, and the Armistice terms as the Armistice Commission recorded them day by day.',
   },
   {
     citation:
-      'Cyril Falls, _History of the Great War based on Official Documents: Military Operations Macedonia, from the Outbreak of War to the Spring of 1917_ (London: His Majesty\'s Stationery Office, 1933)',
-    publisher: 'His Majesty\'s Stationery Office, London',
+      'Cyril Falls, _History of the Great War based on Official Documents: Military Operations Macedonia, from the Outbreak of War to the Spring of 1917_ (London: His Majesty’s Stationery Office, 1933)',
+    publisher: 'His Majesty’s Stationery Office, London',
     url: 'https://archive.org/details/military-operations-macedonia-vol-1',
     usedFor:
       'The Salonika expedition and the Serbian campaign from the Allied documents: the landings, Kosturino and the Doiran fighting, the Serbian retreat of 1915 and the reconstitution of the Serbian army in Corfu. It is the Allied companion to the Serbian official history.',
@@ -197,7 +197,7 @@ export const SOURCES: Source[] = [  {
     publisher: 'Imprimerie Nationale, Paris',
     url: 'https://archive.org/details/lesarmeesfrancaisesdanslagrandeguerrep38',
     usedFor:
-      'The French official narrative of the western and Balkan fronts, built from the daily reports and divisional diaries held by the Ministry of War: Verdun including Fort Douaumont and Fort Vaux, the Somme, the Second Battle of Champagne and the planning behind the Chemin des Dames assault, and the volumes on the Armée d\'Orient behind the Salonika account.',
+      'The French official narrative of the western and Balkan fronts, built from the daily reports and divisional diaries held by the Ministry of War: Verdun including Fort Douaumont and Fort Vaux, the Somme, the Second Battle of Champagne and the planning behind the Chemin des Dames assault, and the volumes on the Armée d’Orient behind the Salonika account.',
   },
   {
     citation:
@@ -280,7 +280,7 @@ export const SOURCES: Source[] = [  {
     publisher: 'Allen Lane, London',
     url: 'https://www.penguin.co.uk/books/55884/the-sleepwalkers-by-clark-christopher/9780141027821',
     usedFor:
-      'The July crisis of 1914 and the question of how far each government chose war: the serial failures of the Austro-Serbian exchange, the German backing for Vienna, the Russian partial then general mobilisation, and the decision-making in Paris, London and Berlin. It is the main support for the site\'s treatment of who was responsible, against the Fischer thesis and its critics.',
+      'The July crisis of 1914 and the question of how far each government chose war: the serial failures of the Austro-Serbian exchange, the German backing for Vienna, the Russian partial then general mobilisation, and the decision-making in Paris, London and Berlin. It is the main support for the site’s treatment of who was responsible, against the Fischer thesis and its critics.',
   },
   {
     citation:
@@ -288,14 +288,14 @@ export const SOURCES: Source[] = [  {
     publisher: 'Arnold, London',
     url: 'https://archive.org/details/firstworldwarger0000herw',
     usedFor:
-      'The Central Powers as the narrative spine: the failure of German resources and management, Austria-Hungary\'s dependence on Germany, the campaigns of 1914 including Tannenberg and the Marne, the blockade and the home fronts, the offensives of 1918 and the revolutions that ended the war.',
+      'The Central Powers as the narrative spine: the failure of German resources and management, Austria-Hungary’s dependence on Germany, the campaigns of 1914 including Tannenberg and the Marne, the blockade and the home fronts, the offensives of 1918 and the revolutions that ended the war.',
   },
   {
     citation: 'Hew Strachan, _The First World War, volume I: To Arms_ (Oxford: Oxford University Press, 2001)',
     publisher: 'Oxford University Press, Oxford',
     url: 'https://archive.org/details/the-first-world-war-vol.-i-to-arms-hew-strachan',
     usedFor:
-      'The war\'s first years and what kind of war the staffs had prepared for: the mobilisation figures, the economics of the coming conflict, the campaigns of 1914 in the east and the Balkans, the colonial theatres, and the Ottoman entry down to Sarikamish.',
+      'The war’s first years and what kind of war the staffs had prepared for: the mobilisation figures, the economics of the coming conflict, the campaigns of 1914 in the east and the Balkans, the colonial theatres, and the Ottoman entry down to Sarikamish.',
   },
   {
     citation:
@@ -326,7 +326,7 @@ export const SOURCES: Source[] = [  {
     publisher: 'Yale University Press, New Haven',
     url: 'https://yalebooks.yale.edu/book/9780300168779/the-russian-origins-of-the-first-world-war/',
     usedFor:
-      'The case that Saint Petersburg chose war for Constantinople and the straits, which is the site\'s counterweight to the Fischer thesis and to Clark\'s reading of 1914, and the source of the argument about Russian mobilisation and war aims in July 1914.',
+      'The case that Saint Petersburg chose war for Constantinople and the straits, which is the site’s counterweight to the Fischer thesis and to Clark’s reading of 1914, and the source of the argument about Russian mobilisation and war aims in July 1914.',
   },
   {
     citation:
