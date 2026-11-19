@@ -42,7 +42,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
     levels: {
       primary: {
         cause: 'A coup in Yugoslavia overthrew the government that had joined the Axis, which made Hitler furious.',
-        what: 'Germany attacked Yugoslavia and Greece in April 1941, helped by Italy and Bulgaria.',
+        what: 'Germany attacked Yugoslavia and Greece in April 1941, with Italian forces and Bulgarian bases.',
         consequence: 'Both countries were carved up and occupied very brutally for the rest of the war.',
       },
       secondary: {
