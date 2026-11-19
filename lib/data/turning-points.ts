@@ -91,7 +91,7 @@ export const TURNING_POINTS: TurningPoint[] = [
       secondary:
         'Germany invaded the Soviet Union on 22 June 1941, breaking the 1939 pact. This was not only a new front. The campaign had been planned, from the Commissar Order and the guidelines of March 1941 onward, as a war of annihilation against the Soviet state and against Jews and other civilians in the occupied east.',
       university:
-        'Barbarossa fused conventional and ideological war from the planning stage: the Economic Exhaustion programme, the jurisdiction decrees and the deployment of the Einsatzgruppen made annihilation policy, not by-product. That is the point of consensus; what remains contested is whether Stalin was himself preparing to strike first in July 1941.',
+        'Barbarossa fused conventional and ideological war from the planning stage: the economic plans later called the Hunger Plan, the jurisdiction decrees and the deployment of the Einsatzgruppen made annihilation policy, not by-product. That is the point of consensus; what remains contested is whether Stalin was himself preparing to strike first in July 1941.',
     },
     unsettled: {
       primary:
@@ -220,7 +220,7 @@ export const TURNING_POINTS: TurningPoint[] = [
     },
     unsettled: {
       primary:
-        'Neither battle ended the war. The Allies were still stuck in the Normandy fields for weeks, and the Red Army was still 600 km from Berlin.',
+        'Neither battle ended the war. The Allies were still stuck in the Normandy fields for weeks, and the Red Army was still more than a thousand kilometres to the east.',
       secondary:
         'It did not end the war: the breakout from Normandy came in August, not in June; Warsaw was not taken until January 1945; and the eastern front stabilised on the Vistula for four months while the Polish uprising was crushed. Fighting in the west continued for another eleven months.',
       university:
@@ -239,7 +239,7 @@ export const TURNING_POINTS: TurningPoint[] = [
       primary:
         'On 12 January the Soviet armies in Poland attacked and raced across the country towards Germany, reaching the river Oder within three weeks. On 27 January Soviet soldiers reached the camp at Auschwitz and freed the prisoners there.',
       secondary:
-        'The Vistula-Oder offensive, launched on 12 January to relieve pressure on the Ardennes front, carried the 1st Belorussian and 1st Ukrainian fronts from the Vistula to the Oder — 450 to 500 km in twenty-two days — taking Warsaw on 17 January and Krakow on the 18th. On 27 January, as the 100th Guards Division approached Oswiecim, the camp complex of Auschwitz was liberated; most prisoners had already been marched west in the days before.',
+        'The Vistula-Oder offensive, launched on 12 January at the Western Allies’ request to ease pressure in the Ardennes, carried the 1st Belorussian and 1st Ukrainian fronts from the Vistula to the Oder — 450 to 500 km in twenty-two days — taking Warsaw on 17 January and Krakow on the 18th. On 27 January, as the 100th Rifle Division approached Oswiecim, the camp complex of Auschwitz was liberated; most prisoners had already been marched west in the days before.',
       university:
         'Two different histories met in this month: the military one, in which the February pause on the Oder is the genuine subject of debate — whether it was an unavoidable logistical check or a political choice about the timing of Berlin — and the camp one, in which the liberation is neither Soviet triumphalism nor simple rescue: the guards had mostly fled, but most of the prisoners had already been driven out on the death marches of 17-21 January. The campaign line on the map shows the offensive; its strength figures are approximations, as all figures on this site are.',
     },
@@ -247,9 +247,9 @@ export const TURNING_POINTS: TurningPoint[] = [
       primary:
         'Reaching the Oder did not mean taking Berlin. The attack stopped for two months and the city fell only in May.',
       secondary:
-        'The offensive stopped on the Oder in February; Berlin was not taken until the operation of April-May 1945, and eastern Pomerania, East Prussia and Silesia still had to be cleared first. Auschwitz was freed, but the rest of the camp system was still being emptied westward, and Bergen-Belsen and Theresienstadt were not liberated until April.',
+        'The offensive stopped on the Oder in February; Berlin was not taken until the operation of April-May 1945, and eastern Pomerania, East Prussia and Silesia still had to be cleared first. Auschwitz was freed, but the rest of the camp system was still being emptied westward, and Bergen-Belsen was freed in April and Theresienstadt not until May.',
       university:
-        'The month settled the Polish question de facto — the Lublin government was installed as the offensive advanced — and settled nothing else: the Oder pause, the Yalta settlement to come, and the continuing death marches mean January 1945 is a hinge, not a conclusion. The operational debate over the pause remains open because the Soviet archival record is contested.',
+        'The month settled the Polish question de facto — the Lublin government was installed as the offensive advanced — and settled nothing else: the Oder pause, the Yalta settlement to come, and the continuing death marches mean January 1945 is a hinge, not a conclusion. The operational debate over the pause remains open because the Soviet archival record is contested; so does the reason for the 12 January date, which some writers attribute to the Yalta appeal for help in the Ardennes and others doubt moved Stalin at all.',
     },
     mapNote:
       'The dataset has no winter 1944-45 border state: this month is drawn with the October 1943 borders — fifteen months earlier — so the map still looks like 1943 while the Red Army stands on the Oder. The campaign line, not the border fills, is what shows the offensive.',
@@ -338,7 +338,7 @@ export const TURNING_POINTS: TurningPoint[] = [
       primary:
         'Poland no longer appears as a country. Germany and the Soviet Union have divided its land between them, and the Germans have set up a government in the part they occupied.',
       secondary:
-        'Germany attacked Poland on 1 September, the Soviet Union on 17 September, and Warsaw surrendered on 27 September. The German occupation created the General Government on 26 October for the unannexed centre; the west was annexed to the Reich. In October 1939 Hitler also authorised the killing of disabled people in the programme known as T4.',
+        'Germany attacked Poland on 1 September, the Soviet Union on 17 September, and Warsaw surrendered on 28 September. The German occupation created the General Government on 26 October for the unannexed centre; the west was annexed to the Reich. In October 1939 Hitler also authorised the killing of disabled people in the programme known as T4.',
       university:
         'The first new border state of the war is a map of partition, not of battle: it shows the result of the secret protocol of August 1939, and the disappearance of Poland is the fact that the map records most plainly. The occupation administration was prepared while the fighting was still going on.',
     },
@@ -495,7 +495,7 @@ export const TURNING_POINTS: TurningPoint[] = [
         'The map shows a state, not a front: the German, Italian and partisan struggles inside the same polygon cannot be drawn, so the armed resistance and the German reprisals are left to the event cards.',
     },
     mapNote:
-      'The October 1943 border state is the first to show the Italian armistice; its southern polygon is drawn smaller than the territory the Allies actually held, a known limit disclosed in the Sources panel.',
+      'The October 1943 border state is the first to show the Italian armistice; its southern polygon is drawn smaller than the territory the Allies actually held, a coarseness of the source geometry rather than a fact about the armistice.',
     eventIds: ['italy_armistice', 'italian_social_republic', 'danish_rescue'],
     sources: ['The Oxford Companion to World War II', 'USHMM Holocaust Encyclopedia'],
   },
@@ -507,7 +507,7 @@ export const TURNING_POINTS: TurningPoint[] = [
       primary:
         'This is the border state the map shows for D-Day: the Reichskommissariat Ukraine has disappeared from the outline, but Romania, Hungary and Bulgaria are still in the Axis camp.',
       secondary:
-        'The April 1944 state follows the disappearance of the Reichskommissariat Ukraine and the Soviet advance into the Balkans and Poland. The Crimea was cleared in April and the Crimean Tatars were deported; Germany had occupied Hungary in March, but its allies had not yet changed sides.',
+        'The April 1944 state follows the disappearance of the Reichskommissariat Ukraine and the Soviet advance into the Balkans and Poland. The Crimea was cleared by early May and the Crimean Tatars were deported that month; Germany had occupied Hungary in March, but its allies had not yet changed sides.',
       university:
         'The snapshot is two months before Overlord and Bagration and a few months before Romania and Bulgaria switched sides. It is the last state before the rapid collapse of 1944, which is why the June panel has to tell readers that the map still shows these April borders.',
     },

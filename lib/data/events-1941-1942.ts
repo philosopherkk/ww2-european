@@ -48,7 +48,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
       secondary: {
         cause: 'Yugoslavia acceded to the Tripartite Pact on 25 March 1941; the coup came two days later, on 27 March. Hitler saw this as an insult and ordered the destruction of Yugoslavia as a power.',
         what: 'Luftwaffe bombing devastated Belgrade ("Operation Punishment") while armies advanced from Bulgaria, Romania and Austria. Greek forces, already fighting the Italians, were outflanked through Yugoslavia and British troops were evacuated.',
-        consequence: 'Germany and its allies split the country; Serbia came under direct military administration while the Independent State of Croatia was proclaimed on 10 April, beginning a savage ethnic war. Crete fell in May, giving Germany its southern flank before the attack on the USSR.',
+        consequence: 'Germany and its allies split the country; Serbia came under direct military administration while the Independent State of Croatia was proclaimed on 10 April, beginning a savage ethnic war. Crete fell at the beginning of June, giving Germany its southern flank before the attack on the USSR.',
       },
       university: {
         cause: 'The Balkan campaigns were strategically defensive in German terms — securing oilfields, airfields and lines of communication — but they consumed mobile forces and air fleets needed for Barbarossa, and they created the conditions for four years of anti-partisan warfare that tied down Axis divisions.',
@@ -150,7 +150,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['eastern'],
     countries: ['Romania', 'Soviet Union', 'Germany'],
     figures: ['antonescu'],
-    note: 'The Romanian Third and Fourth Armies invested Odessa with about 340,000 men; Romanian casualties to the fall of the city on 16 October were roughly 93,000. After the siege, Romanian troops shot between 19,000 and 25,000 Jews in and around the city.',
+    note: 'Romanian and German forces invested Odessa with about 340,000 men, the bulk of them Romanian; Romanian casualties to the fall of the city on 16 October were roughly 93,000. After the siege, Romanian troops shot between 19,000 and 25,000 Jews in and around the city.',
     levels: {
       primary: {
         cause: 'Romania had joined Germany’s attack on the Soviet Union to win back land it had lost the year before.',
@@ -163,7 +163,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
         consequence: 'Odessa became a Soviet hero-city. The massacre that followed, and the deportations into Transnistria, showed that Romania carried out its own, locally initiated violence against Jews.',
       },
       university: {
-        cause: 'Historians debate the extent of German direction versus Romanian initiative; the Odessa massacre of 22-24 October, ordered as reprisal for a Soviet bombing of Romanian headquarters, is usually read as autonomous Romanian policy.',
+        cause: 'Historians debate the extent of German direction versus Romanian initiative; the Odessa massacre of 22-24 October, ordered as reprisal for a Soviet mine explosion in the Romanian headquarters building in the city, is usually read as autonomous Romanian policy.',
         what: 'Transnistria became a Romanian-administered killing zone where an estimated 145,000-280,000 Jews died of shooting, starvation and typhus.',
         consequence: 'Romania is thus a central case for the study of secondary-axis agency and for postwar memory politics, since postwar communist Romania minimised the Romanian role in the Holocaust.',
       },
@@ -344,20 +344,20 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['eastern'],
     countries: ['Germany', 'Poland'],
     figures: ['himmler'],
-    note: 'The deportations ran from 22 July to 21 September 1942. Between 254,000 and 265,000 people were deported from the Warsaw Ghetto to Treblinka, which began killing on 23 July, and some 11,000-20,000 were shot in the ghetto itself. Adam Czerniaków, chairman of the Jewish Council, shot himself on 23 July when he was told that the "resettlement to the east" included the hospital and the children. The ghetto’s population fell from some 400,000 to roughly 50,000-60,000 workers housed in the smaller "residual ghetto".',
+    note: 'The deportations ran from 22 July to 21 September 1942. Between 254,000 and 265,000 people were deported from the Warsaw Ghetto to Treblinka, which began killing on 23 July, and some 11,000-20,000 were shot in the ghetto itself. Adam Czerniaków, chairman of the Jewish Council, took a cyanide pill on 23 July when he was told that the "resettlement to the east" included the hospital and the children. The ghetto’s population fell from some 400,000 to roughly 50,000-60,000 workers housed in the smaller "residual ghetto".',
     levels: {
       primary: {
         cause: 'Germany had shut the Jews of Warsaw into a crowded district of the city, and in the summer of 1942 decided to send them all away.',
-        what: 'From 22 July, German police and their helpers forced tens of thousands of Jewish families each day to march to a railway loading yard, and put them in goods wagons bound for Treblinka, a killing site 100 km away.',
+        what: 'From 22 July, German police and their helpers forced several thousand Jewish men, women and children each day to march to a railway loading yard, and put them in goods wagons bound for Treblinka, a killing site 100 km away.',
         consequence: 'Almost nobody came back. The ghetto was five-sixths empty afterwards, and the people kept alive there were the ones used for work.',
       },
       secondary: {
         cause: 'By mid-1942 the SS had finished building extermination camps in the Lublin district and wanted them used. The Warsaw Ghetto, the largest in occupied Europe with some 400,000 Jews crammed into 3.4 square kilometres, was chosen first, on an order Himmler gave on 19 July.',
-        what: 'The Jewish Council was told to supply 6,000 names a day for "resettlement in the east". Its chairman Adam Czerniaków shot himself the next day when he understood what that meant and was refused any guarantee for the children in his orphanage. For nine weeks trains left the Umschlagplatz loading yard; Jewish police were forced to help round people up, and gangs of children smugglers risked death to bring food back in.',
+        what: 'The Jewish Council was told to supply 6,000 names a day for "resettlement in the east". Its chairman Adam Czerniaków took a cyanide pill the next day when he understood what that meant and was refused any guarantee for the children in his orphanage. For nine weeks trains left the Umschlagplatz loading yard; Jewish police were forced to help round people up, and gangs of children smugglers risked death to bring food back in.',
         consequence: 'Between 254,000 and 265,000 people were murdered, most of them in the first weeks of Treblinka’s operation. The surviving workers founded the Jewish Combat Organisation (ZOB) on 28 July, while the trains were still running, and began storing the pistols and homemade bombs they used in the uprising of April 1943. A hidden archive, Oneg Shabbat, buried its records in milk cans during the action; part of it was dug up in 1946 and again in 1950.',
       },
       university: {
-        cause: 'The Grossaktion was the largest single operation of Operation Reinhard, the murder of the Jews of the General Government, whose camps had been running since December 1941. Its timing in Warsaw is tied to Himmler’s visit to the Führer headquarters on 16 July and his order of the 19th, and to the SS’s wish to demonstrate that the biggest ghetto in Europe could be cleared; the release of housing and of registered labour for the German administration was a secondary argument used by the participants.',
+        cause: 'The Grossaktion was the largest single operation of Operation Reinhard, the murder of the Jews of the General Government, whose camps had been gassing since March 1942. Its timing in Warsaw is tied to Himmler’s visit to the Führer headquarters on 16 July and his order of the 19th, and to the SS’s wish to demonstrate that the biggest ghetto in Europe could be cleared; the release of housing and of registered labour for the German administration was a secondary argument used by the participants.',
         what: 'The mechanics depended on German direction and Jewish compulsion rather than on large German manpower: a few hundred German and Latvian police, Order Police battalions and Trawniki-trained guards, with the Jewish Order Service doing the street-level roundups under the threat that the Council itself would be deported. This is the empirical core of the postwar debate about the Jewish Councils, and it cannot be read as "collaboration" without attending to the fact that the process was deliberately described to its victims as resettlement.',
         consequence: 'Warsaw became both the model and the argument. Armed resistance became possible only after the majority of the ghetto’s population had already been murdered, which is the chronogram of the Holocaust in Poland; the debates between Hilberg and Rubenstein over the Councils, and Samuel Kassow’s later edition of the Ringelblum archive, are still the terms in which the question is discussed. The Polish government-in-exile and the Polish Socialist Party issued a documented protest note in September 1942, one of the earliest public denunciations of the extermination by any belligerent government.',
       },
