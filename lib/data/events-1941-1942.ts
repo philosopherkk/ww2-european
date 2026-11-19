@@ -38,7 +38,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['balkans'],
     countries: ['Germany', 'Yugoslavia', 'Greece', 'Italy', 'Bulgaria', 'Hungary'],
     figures: ['hitler', 'list'],
-    note: 'Yugoslavia was defeated in eleven days; Tsolakoglou offered to surrender on 20 April; the armistice/capitulation took effect 23 April 1941 after the British expeditionary force (about 58,000 men) was evacuated from the Peloponnese, with some 7,800 troops left behind. Crete fell in the first large-scale airborne assault, 20-31 May, at a cost of about 6,000 German paratrooper casualties.',
+    note: 'Yugoslavia was defeated in eleven days; Tsolakoglou offered to surrender on 20 April; the armistice signed on 23 April 1941 took effect the next day, while the British evacuation (about 58,000 men) was still running and ended only on 30 April, with some 7,800 troops left behind. Crete fell in the first large-scale airborne assault, 20 May-1 June, at a cost of about 6,000 German paratrooper casualties.',
     levels: {
       primary: {
         cause: 'A coup in Yugoslavia overthrew the government that had joined the Axis, which made Hitler furious.',
@@ -400,10 +400,10 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['mediterranean'],
     countries: ['United Kingdom', 'Germany', 'Italy', 'Egypt'],
     figures: ['montgomery', 'rommel'],
-    note: 'The attack opened at 21:40 on 23 October with a 45-minute barrage from about 1,000 guns. Eighth Army had some 195,000 effectives and 1,046 tanks; Panzerarmee Afrika ~116,000 men (Playfair: 54,000 Italian + 50,000 German — roughly half), and under 300 serviceable tanks. The Axis minefields held some half a million mines. Axis losses were about 20,000 killed and wounded and some 30,000 prisoners; some 20,000-30,000 Axis troops were evacuated from Tunisia in January-May 1943 to fight again in Italy. The Commonwealth War Graves Commission records 7,240 Commonwealth burials at Alamein, about 6,480 of them identified.',
+    note: 'The attack opened at 21:40 on 23 October with a barrage from about 1,000 guns, the first twenty minutes a general bombardment before precision targets. Eighth Army had some 195,000 effectives and 1,046 tanks; Panzerarmee Afrika ~116,000 men (Playfair: 54,000 Italian + 50,000 German — roughly half), and under 300 serviceable tanks. The Axis minefields held some half a million mines. Axis losses were about 20,000 killed and wounded and some 30,000 prisoners; some 20,000-30,000 Axis troops were evacuated from Tunisia in January-May 1943 to fight again in Italy. The Commonwealth War Graves Commission records 7,240 Commonwealth burials at Alamein, about 6,480 of them identified.',
     levels: {
       primary: {
-        cause: 'German and Italian armies had pushed across the desert to El Alamein, only about 100 km from Alexandria and the Suez Canal, and Britain had to stop them there.',
+        cause: 'German and Italian armies had pushed across the desert to El Alamein, about 100 km west of Alexandria and the last place to stop them before Cairo and the Suez Canal, and Britain had to stop them there.',
         what: 'In October and November 1942 the British and Empire army attacked with far more guns, tanks and aircraft, and drove the Axis army back across the desert.',
         consequence: 'The Axis armies were pushed into Tunisia and surrendered there in May 1943. For people in Britain it was the first clear victory they had heard about in a long time.',
       },

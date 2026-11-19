@@ -32,19 +32,19 @@ export const TURNING_POINTS: TurningPoint[] = [
     title: 'The war in Europe begins',
     matters: {
       primary:
-        'Germany attacked Poland on 1 September. Britain and France kept their promise to Poland and declared war on Germany on 3 September. On 17 September the Soviet Union attacked Poland from the east as well.',
+        'Germany attacked Poland on 1 September; Britain and France declared war on 3 September.',
       secondary:
-        'Germany invaded Poland on 1 September 1939; Britain and France, bound by their guarantee to Poland, declared war on 3 September; the Soviet Union invaded eastern Poland on 17 September under the secret protocol attached to the German-Soviet pact of 23 August. Poland as an independent state was destroyed within five weeks.',
+        'Germany invaded Poland on 1 September 1939; Britain and France declared war on 3 September; the USSR invaded on 17 September. Poland ceased to exist in five weeks.',
       university:
-        'September 1939 converted a German-Polish crisis into a European war because the declarations of 3 September engaged the British and French empires automatically; the Soviet invasion of 17 September completed the partition agreed in the secret protocol of 23 August. Contemporaries did not experience the month as decisive — no battle had yet been fought in the west, and the belligerents had committed to a war whose shape none of them could describe.',
+        'September turned a German-Polish crisis into a European war because the declarations of 3 September engaged both empires; 17 September completed the partition the secret protocol promised.',
     },
     unsettled: {
       primary:
-        'The United States stayed out of the war, and the Soviet Union and Germany were still partners, not enemies. Almost no fighting happened in western Europe that autumn.',
+        'The Soviet Union attacked from the east on 17 September; little fighting reached the west.',
       secondary:
-        'It did not make the war a German-Soviet conflict — the two regimes traded with each other until June 1941 — and it did not bring the United States in. On the western front almost nothing happened in the months that followed, which were later nicknamed the “phony war”.',
+        'The Soviet stroke came under the pact’s secret protocol; the two regimes traded until 1941, and the west sat through a phony war.',
       university:
-        'September settled none of the questions that later decided the war: whether the German-Soviet relationship would survive (it did not, until June 1941); whether the United States would intervene (not until December 1941); and when Britain and France would fight on land. The campaign lasted five weeks; the naval and economic war that began on 3 September lasted six more years.',
+        'Contemporaries did not feel the month as decisive, and it settled none of the questions that later decided the war: the German-Soviet relationship, American intervention, and when Britain and France would fight on land.',
     },
     mapNote:
       'Until the October snapshot the map draws this month with April 1939 borders — Poland still appears whole on the map while it was being partitioned.',
@@ -62,19 +62,19 @@ export const TURNING_POINTS: TurningPoint[] = [
     title: 'France is defeated; Britain stays in the war',
     matters: {
       primary:
-        'Italy joined the war on 10 June, hoping to win land in a war that looked finished. On 22 June France signed an armistice, and Germany occupied the north and west of the country. Britain refused to give in.',
+        'Italy joined on 10 June hoping to profit; on 22 June France signed an armistice.',
       secondary:
-        'Italy declared war on 10 June; the Franco-German armistice was signed in the Forest of Compiègne on 22 June and came into force on 25 June. A French government under Marshal Pétain, based at Vichy, remained a sovereign state with an unoccupied zone, a fleet and an empire — not merely a German prefecture. The Low Countries and Norway were already under German occupation, but Britain stayed in the war.',
+        'The armistice signed at Compiègne on 22 June took effect on the 25th; Pétain’s Vichy government kept a sovereign state, an unoccupied zone, a fleet and an empire. Britain stayed in the war.',
       university:
-        'The defeat of France in six weeks removed the continental second front from the war for four years and left Britain as the only belligerent facing Germany from the Atlantic. The armistice terms — which preserved French sovereignty, the fleet and the empire — are the reason Vichy could function as a regime with its own policy for the next four years, which is exactly what Robert Paxton’s research established against the older “shield of France” apologetics.',
+        'France’s defeat removed the second front for four years and left Britain alone. The armistice preserved sovereignty, the fleet and the empire, which is why Vichy ran its own policy — as Paxton argued against the shield-of-France apologetics.',
     },
     unsettled: {
       primary:
-        'The war did not end. Germany had not invaded Britain, and the future of the French empire was still open.',
+        'Britain refused to give in, and the French empire was still unsettled.',
       secondary:
-        'It did not end the war, conquer Britain, or decide the future of the French empire. The Battle of Britain had not even begun; the air fighting of July to October 1940 would determine whether an invasion was ever possible.',
+        'The Battle of Britain had not begun; the air fighting of July to October decided whether invasion was possible.',
       university:
-        'June 1940 decided nothing about the postwar order and little about the military issue — German victory in 1940 was an operational result without a strategic settlement, as the contested status of the French fleet, the empire and the United States all showed over the following year.',
+        'June 1940 settled nothing about the postwar order: the French fleet, the empire and the United States all stayed contested through the following year.',
     },
     mapNote:
       'There is no June 1940 border snapshot; the map still shows the April 1940 state and cannot show the partition of France. Do not read the map lines as the occupation frontier.',
@@ -87,19 +87,19 @@ export const TURNING_POINTS: TurningPoint[] = [
     title: 'Barbarossa opens a war of annihilation in the east',
     matters: {
       primary:
-        'On 22 June 1941 Germany attacked the Soviet Union, breaking its pact with Stalin. This was not just a new front: the army was ordered to destroy the Soviet state and to kill Jews and other civilians in the lands it occupied.',
+        'On 22 June 1941 Germany attacked the Soviet Union, breaking its pact with Stalin.',
       secondary:
-        'Germany invaded the Soviet Union on 22 June 1941, breaking the 1939 pact. This was not only a new front. The campaign had been planned, from the Commissar Order and the guidelines of March 1941 onward, as a war of annihilation against the Soviet state and against Jews and other civilians in the occupied east.',
+        'Germany invaded on 22 June 1941, breaking the 1939 pact. From the March 1941 guidelines and the Commissar Order it was planned as a war of annihilation.',
       university:
-        'Barbarossa fused conventional and ideological war from the planning stage: the economic plans later called the Hunger Plan, the jurisdiction decrees and the deployment of the Einsatzgruppen made annihilation policy, not by-product. That is the point of consensus; what remains contested is whether Stalin was himself preparing to strike first in July 1941.',
+        'Barbarossa fused conventional and ideological war from the planning stage: the economic plans later called the Hunger Plan, the jurisdiction decrees and the Einsatzgruppen made annihilation policy, not by-product — the one point of consensus.',
     },
     unsettled: {
       primary:
-        'The attack did not destroy the Red Army that year. Moscow did not fall, and the United States was still not fighting in Europe.',
+        'The army had been ordered to destroy the Soviet state and kill Jews and other civilians.',
       secondary:
-        'It did not destroy the Red Army in 1941, and Moscow did not fall; the Soviet counter-offensive of 5 December ended the idea of a quick victory. The United States was still not a belligerent in Europe.',
+        'It did not destroy the Red Army: Moscow held, and the counter-offensive of 5 December ended any quick victory. America was not yet a belligerent.',
       university:
-        'The “preventive strike” thesis — that Stalin was about to attack and so Hitler’s blow of 22 June was anticipatory — has never been accepted by the operational historians: Glantz and House’s reading remains the standard, that the Red Army was massing for a counter-stroke but was nowhere near ready in June 1941. See “Soviet planning in June 1941” under Sources & how to read.',
+        'The preventive-strike thesis, that Hitler’s blow anticipated a Soviet attack, has never been accepted by operational historians; Glantz and House remain the standard reading.',
     },
     mapNote:
       'The nearest border state is April 1941 — two months before the attack — so the map shows the frontier as it stood before Barbarossa, not the conquests of June 1941; the campaign lines show the direction of the three army groups, not the daily front.',
@@ -112,19 +112,19 @@ export const TURNING_POINTS: TurningPoint[] = [
     title: 'Germany brings the United States into the European war',
     matters: {
       primary:
-        'Japan attacked the American fleet at Pearl Harbor on 7 December. Four days later Germany declared war on the United States, even though nothing made it do so, and America answered with declarations of war of its own.',
+        'Japan attacked Pearl Harbor on 7 December, and Germany declared war on the United States four days later.',
       secondary:
-        'Four days after the Japanese attack on Pearl Harbor, Hitler declared war on the United States in the Reichstag on 11 December 1941, and Italy did the same day; the US Congress declared war on Germany and Italy later that day. The Tripartite Pact did not legally require Germany to act, because Japan had struck first. This was a European-war event: it made the United States a full belligerent in the war already being fought in the Atlantic, and soon in North Africa and western Europe.',
+        'Hitler declared war on the United States on 11 December 1941, four days after Pearl Harbor; Italy followed, and Congress answered at once. The Tripartite Pact did not require Germany to act.',
       university:
-        'The decision was Hitler’s own and was not forced by the pact, by Japanese requests (Tokyo asked Germany to hold back from America while it fought Britain), or by facts on the ground; it followed instead from Hitler’s reading that war with the United States was coming anyway and that a Germany at war could not choose its date. The undeclared Atlantic shooting war since September 1941 and Lend-Lease since 11 March meant American neutrality had already ended in substance; 11 December made it end in law, and “Germany first” had already been agreed in the ABC-1 staff conversations of March 1941.',
+        'The decision was Hitler’s own, forced neither by the pact nor by Japanese requests, and it followed from his reading that war with America was coming anyway.',
     },
     unsettled: {
       primary:
-        'American armies were still small in December 1941. The strength the United States would use in Europe came in 1942 to 1945, not at once.',
+        'Nothing obliged Germany to do that; America answered in kind.',
       secondary:
-        'It did not put American soldiers in Europe that winter; the first major US ground operations came with Torch in November 1942. The military weight of the United States in Europe belongs to 1942-45 — strength figures for December 1941 would mislead.',
+        'It made the United States a full belligerent in Europe, but put no soldiers there until Torch in November 1942.',
       university:
-        'The card makes the United States a co-belligerent, not a battlefield: US ground forces in the west were negligible until late 1942, and the conversion of industry to war production — the real subject of 1942 — lay ahead. Whether Hitler’s declaration was a strategic blunder or merely the earliest of several unavoidable dates is a genuine argument; that American entry was coming in 1942 is not.',
+        'Lend-Lease and the undeclared Atlantic shooting war had ended neutrality in substance; 11 December ended it in law. Whether the declaration was a blunder, rather than merely early, is the live argument.',
     },
     mapNote:
       'The nearest border state is September 1941 — three months earlier — so the map shows nothing of the German advance on Moscow or the winter fighting; read the campaign line for Moscow, not the border fills.',
@@ -137,19 +137,19 @@ export const TURNING_POINTS: TurningPoint[] = [
     title: 'El Alamein, Torch and Uranus: the initiative shifts',
     matters: {
       primary:
-        'In one month the Allies won three big battles. British forces beat the Germans and Italians at El Alamein in Egypt, American and British troops landed in French North Africa, and the Soviets surrounded the whole German Sixth Army at Stalingrad.',
+        'In one month the Allies won three battles: El Alamein, the North Africa landings, and Stalingrad.',
       secondary:
-        'November 1942 delivered three blows in quick succession: the Second Battle of El Alamein (begun 23 October) broke the Axis position in Egypt; Operation Torch landed Western Allied forces in French North Africa on 8 November; and Operation Uranus, launched on 19 November, encircled Sixth Army at Stalingrad. The desert war turned, the Allies gained a foothold in the Mediterranean, and Germany lost the strategic initiative on two fronts at once.',
+        'Second El Alamein from 23 October broke the Axis in Egypt; Torch landed in North Africa on 8 November; Uranus encircled Sixth Army at Stalingrad on 19 November.',
       university:
-        'The month matters less for any single battle than for the simultaneity: after Uranus the German field army in the east could not replace its losses, while Torch committed the Western Allies to a continental land war in 1943. Note the ordering in the sources — El Alamein began on 23 October and is filed there, and its result, including the fall of Tobruk in the second week of November, overlapped with Uranus, which is the one genuinely new fact of November.',
+        'The month matters for simultaneity, not for any one battle: after Uranus the German army in the east could not replace its losses, and Torch committed the Western Allies to a continental land war in 1943. Tobruk fell on 13 November, inside that overlap.',
     },
     unsettled: {
       primary:
-        'None of these battles ended the war. German troops still held most of Europe, and the fighting in North Africa went on until May 1943.',
+        'None ended the war: fighting in North Africa went on until May 1943.',
       secondary:
-        'None of the three operations ended the war: the Axis was not expelled from Tunisia until May 1943, the encirclement at Stalingrad had still to be liquidated (February 1943), and German troops still occupied France, the Low Countries, Norway and most of the Soviet west.',
+        'None ended the war: Tunisia was not cleared until May 1943, the Stalingrad pocket had to be liquidated, and Germany held Europe.',
       university:
-        'The cluster framing is deliberate: “Stalingrad alone won the war” cannot be squared with the fact that the Wehrmacht recovered at Kharkov within weeks and attacked again at Kursk in July 1943. What November 1942 changed was the distribution of the initiative, not the territorial or material odds, which still favoured Germany through 1943.',
+        'November 1942 changed the distribution of the initiative, not the material odds, which still favoured Germany through 1943.',
     },
     mapNote:
       'This month is drawn with the April 1942 border state — seven months earlier, close to the Axis high-water mark — and the map cannot show the encirclement at Stalingrad or the landings in North Africa.',
@@ -162,19 +162,19 @@ export const TURNING_POINTS: TurningPoint[] = [
     title: 'Sixth Army surrenders; the German front recovers at Kharkov',
     matters: {
       primary:
-        'The German army trapped at Stalingrad ran out of food and ammunition, and its commander surrendered. A few days later the Germans attacked again further north and took back the city of Kharkov.',
+        'The German army trapped at Stalingrad ran out of food and ammunition; its commander surrendered.',
       secondary:
-        'The last of the Sixth Army capitulated on 2 February 1943, the day after its commander, now Field Marshal Paulus, had surrendered; about 91,000 prisoners marched out, of whom only 5,000-6,000 ever came home. Seventeen days later Manstein’s counterstroke (19 February) struck the overextended Soviet spearheads and began the fighting that retook Kharkov on 14 March.',
+        'Sixth Army capitulated on 2 February 1943, two days after Paulus surrendered; about 91,000 prisoners marched out, of whom only 5,000-6,000 came home.',
       university:
-        'The pair of events — capitulation on 2 February, counterstroke from 19 February — is the essential February 1943 reading: the destruction of Sixth Army was the greatest single shock to German arms since the war began, and it was followed within three weeks by an operational recovery that created the Kursk salient. The overextended Soviet winter offensive of January-February 1943 and Manstein’s recovery from 19 February together show a Red Army that had learned to encircle but had not yet learned to consolidate.',
+        'Read February 1943 as a pair: capitulation on 2 February, counterstroke from the 19th. The destruction of Sixth Army was the greatest shock to German arms since the war began, and an operational recovery inside three weeks created the Kursk salient.',
     },
     unsettled: {
       primary:
-        'Losing Sixth Army did not end the war in the east. Germany still had millions of soldiers there, and it attacked again the next summer.',
+        'Germany attacked again at Kharkov; the eastern war ran two and a half more years.',
       secondary:
-        'It did not end the eastern war, which continued for two and a half more years; Manstein’s counterstroke at Kharkov, the loss of Kharkov again in August, and Kursk in July all lay ahead. Goebbels’s “total war” speech of 18 February answered the defeat politically — it was not a map change.',
+        'Manstein’s counterstroke from 19 February retook Kharkov on 14 March, and Goebbels’s total-war speech of 18 February answered the defeat without changing any map.',
       university:
-        'Treat the month as a pair, not as “Stalingrad won the war”: the surrender fixed the verdict on Stalingrad itself, while Kharkov showed the German operational art could still impose a costly defeat on the Red Army in open manoeuvre, and the initiative of spring 1943 was genuinely contested. What Stalingrad settled — the reliability of Germany’s allies, the credibility of the Wehrmacht in occupied Europe — took months to become visible.',
+        'What Stalingrad settled — the reliability of Germany’s allies, the credibility of the Wehrmacht in occupied Europe — became visible only over months.',
     },
     mapNote:
       'This month is drawn with the April 1942 border state — ten months earlier — so the map shows neither the Stalingrad pocket nor the territory the front had lost by February 1943; the next state in the dataset is April 1943.',
@@ -187,19 +187,19 @@ export const TURNING_POINTS: TurningPoint[] = [
     title: 'Kursk and Sicily: the last German offensive, and the landing in Italy',
     matters: {
       primary:
-        'Germany made its last big attack in the east at Kursk, and the Allies landed on the island of Sicily. Both happened this month, and the German attack was stopped after only a few days.',
+        'The German attack at Kursk was stopped in days, and the Allies landed in Sicily.',
       secondary:
-        'Operation Citadel began on 5 July against the Kursk salient and was abandoned within days against prepared defences; on 10 July the Allies landed in Sicily. Within three weeks Mussolini had fallen (25 July) and the grand alliance was negotiating Italy’s exit, while the Red Army had recovered the initiative at Orel and Belgorod.',
+        'Citadel began on 5 July and was abandoned within days; the Allies landed in Sicily on 10 July, Mussolini fell on 25 July, and Orel and Belgorod fell by early August.',
       university:
-        'The month’s significance is the pairing of a failed offensive and an Allied landing: Citadel had no operational reserve behind it, and Husky opened a theatre Germany had not prepared for, so Germany lost the ability to mass in either theatre. The popular label “largest tank battle of the war” is disputed — the frontier battles of June 1941 were comparable in armour committed, and the archival literature has revised Prokhorovka down sharply — and it is used on this site nowhere, because it says less than “Germany’s last strategic offensive in the east” does.',
+        'The significance is the pairing: Citadel had no operational reserve, and Husky opened a theatre Germany had not prepared for, so Germany lost the ability to mass in either. The disputed largest-tank-battle label says less than that.',
     },
     unsettled: {
       primary:
-        'Italy was still in the war this month, and Rome was not taken. The eastern front did not collapse.',
+        'Italy was still in the war, and the eastern front did not collapse.',
       secondary:
-        'Neither operation ended its war: Italy fought on as a co-belligerent only from October, Rome did not fall until June 1944, and the eastern front after Kursk retreated in order rather than collapsed.',
+        'Neither operation ended its war: Italy fought on until September, and after Kursk the eastern front retreated in order.',
       university:
-        'Kursk did not produce a Soviet 1944-style breakthrough in 1943; the counterstrokes at Orel and Belgorod were immediate but shallow, and the German army withdrew largely intact to the Panther line. The Red Army’s ability to follow a defensive victory with deep exploitation is a 1944 achievement (Bagration), not a July 1943 one.',
+        'Kursk produced no 1944-style breakthrough: the counterstrokes were shallow, and the German army withdrew intact to the Panther line. Deep exploitation is a 1944 achievement.',
     },
     mapNote:
       'The nearest border state is June 1943 — one month earlier, one of the closest matches in the dataset — but no border map can show the Kursk salient as a battle front; the campaign lines for Citadel come closest.',
@@ -212,19 +212,19 @@ export const TURNING_POINTS: TurningPoint[] = [
     title: 'Normandy and Bagration: two offensives in one month',
     matters: {
       primary:
-        'In the same month the Allies landed in Normandy, on 6 June, and the Soviet Union launched a huge attack in Belarus, on 22 June. Germany was now in a war it had to fight with everything on all sides.',
+        'Allied landings in Normandy on 6 June; the Red Army attacked in Belarus on 22 June.',
       secondary:
-        'Overlord began on 6 June 1944; Operation Bagration, timed to its two- and-a-half-week anniversary, began on 22 June. They were separate operations planned separately, but their effect in the same month was to destroy the German position in Normandy and to annihilate Army Group Centre. The war in Europe became a true two-front material contest in June 1944, which is what Germany’s strategic planning had tried to prevent since 1938.',
+        'Overlord began on 6 June 1944; Bagration, timed to its two-and-a-half-week anniversary, on 22 June. Together they destroyed the German position in Normandy and annihilated Army Group Centre.',
       university:
-        'The simultaneity was not coordination — Stalin timed Bagration partly for its anniversary symbolism, and Overlord had its own weather window — but the effect on German resource allocation was identical, and the Luftwaffe’s collapse in the west was a precondition of Overlord and no part of Bagration. Read the two operations together to see why 1944, not 1943, is the year the material argument closed.',
+        'The simultaneity was not coordination: Stalin timed Bagration partly for the anniversary and Overlord had its own weather window. The Luftwaffe’s collapse in the west was a precondition of Overlord and no part of Bagration.',
     },
     unsettled: {
       primary:
-        'Neither battle ended the war. The Allies were still stuck in the Normandy fields for weeks, and the Red Army was still more than a thousand kilometres to the east.',
+        'Both stalled: the Allies in the Normandy fields, the Red Army far from Berlin.',
       secondary:
-        'It did not end the war: the breakout from Normandy came in August, not in June; Warsaw was not taken until January 1945; and the eastern front stabilised on the Vistula for four months while the Polish uprising was crushed. Fighting in the west continued for another eleven months.',
+        'It did not end the war: the breakout came in August, and the front steadied on the Vistula while the Polish uprising was crushed.',
       university:
-        'June 1944 did not make the war “decided” in any simple sense — German resistance lasted another eleven months, and the operational problems of the Allied advance (port capacity, the single-road breakout, the failure at Market Garden in September) were all still unresolved. What the month settled was the destruction of two German field armies’ coherence, which no later German offensive could replace.',
+        'June 1944 did not decide the war: German resistance lasted eleven more months, and the ports, the breakout and Market Garden were unresolved.',
     },
     mapNote:
       'The map still draws this month with the April 1944 border state — two months earlier; the next state in the dataset is April 1945, so the outline of Poland and France on screen reflects neither of June 1944’s operations.',
@@ -237,19 +237,19 @@ export const TURNING_POINTS: TurningPoint[] = [
     title: 'The Vistula-Oder offensive and the liberation of Auschwitz',
     matters: {
       primary:
-        'On 12 January the Soviet armies in Poland attacked and raced across the country towards Germany, reaching the river Oder within three weeks. On 27 January Soviet soldiers reached the camp at Auschwitz and freed the prisoners there.',
+        'From 12 January the Soviet armies reached the Oder in three weeks.',
       secondary:
-        'The Vistula-Oder offensive, launched on 12 January at the Western Allies’ request to ease pressure in the Ardennes, carried the 1st Belorussian and 1st Ukrainian fronts from the Vistula to the Oder — 450 to 500 km in twenty-two days — taking Warsaw on 17 January and Krakow on the 18th. On 27 January, as the 100th Rifle Division approached Oswiecim, the camp complex of Auschwitz was liberated; most prisoners had already been marched west in the days before.',
+        'The Vistula-Oder offensive, launched on 12 January at the Western Allies’ request, though writers disagree whether the Ardennes crisis fixed that date, advanced 450 to 500 km in twenty-two days, taking Warsaw on 17 January and Krakow on the 18th.',
       university:
-        'Two different histories met in this month: the military one, in which the February pause on the Oder is the genuine subject of debate — whether it was an unavoidable logistical check or a political choice about the timing of Berlin — and the camp one, in which the liberation is neither Soviet triumphalism nor simple rescue: the guards had mostly fled, but most of the prisoners had already been driven out on the death marches of 17-21 January. The campaign line on the map shows the offensive; its strength figures are approximations, as all figures on this site are.',
+        'The February pause on the Oder is the real argument: logistical check or political choice over Berlin. And Auschwitz was neither triumph nor simple rescue: most prisoners had already gone west on the death marches.',
     },
     unsettled: {
       primary:
-        'Reaching the Oder did not mean taking Berlin. The attack stopped for two months and the city fell only in May.',
+        'The Oder was not Berlin: the attack paused two months, and Auschwitz was freed on 27 January.',
       secondary:
-        'The offensive stopped on the Oder in February; Berlin was not taken until the operation of April-May 1945, and eastern Pomerania, East Prussia and Silesia still had to be cleared first. Auschwitz was freed, but the rest of the camp system was still being emptied westward, and Bergen-Belsen was freed in April and Theresienstadt not until May.',
+        'It stopped on the Oder in February; Berlin waited for April, and the camps were still being emptied westward.',
       university:
-        'The month settled the Polish question de facto — the Lublin government was installed as the offensive advanced — and settled nothing else: the Oder pause, the Yalta settlement to come, and the continuing death marches mean January 1945 is a hinge, not a conclusion. The operational debate over the pause remains open because the Soviet archival record is contested; so does the reason for the 12 January date, which some writers attribute to the Yalta appeal for help in the Ardennes and others doubt moved Stalin at all.',
+        'January settled the Polish question de facto, with the Lublin government installed as the offensive advanced; nothing else, not even why it began on 12 January.',
     },
     mapNote:
       'The dataset has no winter 1944-45 border state: this month is drawn with the October 1943 borders — fifteen months earlier — so the map still looks like 1943 while the Red Army stands on the Oder. The campaign line, not the border fills, is what shows the offensive.',
@@ -262,19 +262,19 @@ export const TURNING_POINTS: TurningPoint[] = [
     title: 'Germany surrenders, at two desks, on two dates',
     matters: {
       primary:
-        'Germany gave up without conditions. The papers were signed on 7 May and the fighting stopped on 8 May, which is why Britain, America and France celebrate on 8 May and Russia celebrates on 9 May.',
+        'Germany gave up without conditions on 7 May, and the fighting stopped on 8 May.',
       secondary:
-        'Unconditional surrender was signed at Reims on 7 May 1945 and ratified at Karlshorst near Berlin on 8 May at Soviet insistence; the ceasefire took effect at 23:01 Central European Time on 8 May, which is why the USSR marks Victory Day on 9 May. It came after Hitler’s death on 30 April, the fall of Berlin on 2 May and the Prague rising on 5 May.',
+        'Surrender was signed at Reims on 7 May 1945 and ratified at Karlshorst on 8 May; the ceasefire took effect at 23:01 Central European Time, hence Victory Day on 9 May.',
       university:
-        'May 1945 closed the European war through two instruments and two calendars, and the difference between them is not a trivia point but the last substantive act of the alliance: Soviet insistence on Karlshorst pre-empted any separate peace with the West that the Flensburg government had still tried to engineer. Fighting and local surrenders did not finish on one morning — Prague fought its own battle from 5 May, Breslau held until 6 May, and the Army Group Centre capitulation came only on 11 May after Prague had already been liberated.',
+        'May 1945 closed the European war through two instruments and two calendars, and the difference was the alliance’s last substantive act: Soviet insistence on Karlshorst pre-empted a separate peace that Flensburg was still trying to engineer.',
     },
     unsettled: {
       primary:
-        'The end of the fighting did not end the suffering. Many soldiers were still prisoners, millions of people were still away from home, and the borders of Europe were not settled yet.',
+        'That is why the western Allies celebrate on 8 May and Russia on 9 May.',
       secondary:
-        'It did not end the war in the Pacific, and in Europe it did not end displacement, captivity or poverty: millions of prisoners of war, displaced persons and refugees were still in motion in May 1945, and the German borders and occupation zones were not settled until Potsdam later that summer.',
+        'It followed Hitler’s death, the fall of Berlin and the Prague rising; it ended neither the Pacific war nor displacement.',
       university:
-        'The surrender is the end of military history and the start of the political arguments it left open — the Oder-Neisse line, Poland’s government, the status of Germany — none of which was decided at Reims or Karlshorst. Read the 8 May card first, then the Prague and Flensburg material in its secondary text; the “one clean end date” is a calendar convention, not what happened.',
+        'Fighting ended piecemeal — Prague on 5 May, Breslau on the 6th, Army Group Centre on 11 May — and the political arguments were left to Potsdam.',
     },
     mapNote:
       'The last border snapshot in the dataset is the state at the end of April 1945; May 1945 and the last months of the timeline are all drawn with those borders. The changes agreed later at Potsdam are not shown anywhere on this site.',
@@ -288,18 +288,18 @@ export const TURNING_POINTS: TurningPoint[] = [
     title: 'The first border state: after Anschluss, before Munich',
     matters: {
       primary:
-        'Germany had already taken over Austria in March 1938, so Austria is part of Germany on this map. Czechoslovakia still exists, and no country in Europe is at war on this date.',
+        'Austria is part of Germany here, after the March 1938 annexation. Czechoslovakia still exists, and Europe is at peace.',
       secondary:
-        'This is the earliest border state in the dataset, dated 30 April 1938. It follows the Anschluss of 12-13 March but precedes the Munich Agreement of September. The Sudeten German leader Konrad Henlein demanded autonomy for the Sudetenland in the Karlsbad Programme of 24 April.',
+        'The earliest border state, dated 30 April 1938: it follows the Anschluss of 12-13 March and precedes Munich. On 24 April Konrad Henlein demanded Sudeten autonomy in the Karlsbad Programme.',
       university:
-        'The first state on the map is a snapshot of appeasement before the crisis, not a picture of a stable Europe: Germany had already destroyed the 1919 settlement in Austria, and the Karlsbad demands were the opening move in the destruction of Czechoslovakia.',
+        'The first state on the map is a snapshot of appeasement before the crisis, not a stable Europe: Germany had already destroyed the 1919 settlement in Austria, and the Karlsbad demands opened the destruction of Czechoslovakia.',
     },
     unsettled: {
-      primary: 'The map does not show the fighting that was still to come, and it cannot show how quickly Czechoslovakia would disappear.',
+      primary: 'It shows none of the fighting still to come.',
       secondary:
-        'Munich was still five months away, the occupation of Prague almost a year, and war over Poland a year and a half. The “at peace” colour is accurate for this date and misleading as a picture of the following months.',
+        'Munich was five months off, the occupation of Prague almost a year; the “at peace” colour holds only for this date.',
       university:
-        'The border state cannot show the effect of the Anschluss on Czechoslovak strategy — encirclement on three sides, the loss of Austrian reserves and oil — which is why the event cards carry what this map cannot.',
+        'A border state cannot show what the Anschluss did to Czechoslovak strategy — encirclement, the loss of Austrian reserves and oil — so the event cards carry it.',
     },
     mapNote:
       'This is the first of the twelve dated states; January to March 1938 are drawn with these April borders, which is disclosed in the map banner as a state after the month selected.',
@@ -312,21 +312,21 @@ export const TURNING_POINTS: TurningPoint[] = [
     title: 'The last border state before the war: Prague and Albania',
     matters: {
       primary:
-        'The map now shows Czechoslovakia broken up: Bohemia and Moravia are under German rule and Slovakia is a separate German ally. Italy has taken Albania, and Germany has taken Memel.',
+        'Czechoslovakia is broken up: Bohemia and Moravia are under German rule, Slovakia a German ally. Italy has taken Albania.',
       secondary:
-        'Between the April 1938 and April 1939 states, Munich handed the Sudetenland to Germany in October 1938, German forces occupied Prague on 15 March 1939, Lithuania ceded Memel on 23 March and Italy invaded Albania on 7 April. Britain guaranteed Poland on 6 April after Germany demanded Danzig.',
+        'Munich handed the Sudetenland to Germany in October 1938, German forces occupied Prague on 15 March 1939, Lithuania ceded Memel on 23 March and Italy invaded Albania on 7 April.',
       university:
-        'This snapshot records the colossal change produced by Munich and its aftermath: the destruction of the only remaining eastern European democracy with a functioning army, and the creation of a German protectorate on its territory. The guarantee to Poland that followed turned the next crisis into a European war.',
+        'This snapshot records the result of Munich and its aftermath: the destruction of the only eastern European democracy with a functioning army, and a German protectorate on its territory.',
     },
     unsettled: {
-      primary: 'There was still no fighting in Europe on this date, and Italy and the Soviet Union were not yet in the war.',
+      primary: 'Memel had just been taken; Europe was not yet at war.',
       secondary:
-        'The Nazi-Soviet Pact was still four months away, and the invasion of Poland five. The new borders were the product of threats and treaties rather than battles, and they were not accepted by the states that lost them.',
+        'The Nazi-Soviet Pact was four months away and the invasion of Poland five; these borders came from threats, not battles.',
       university:
-        'Whether Britain and France could still have deterred Germany in 1939 is a debated question; the map cannot show the diplomatic exchanges, only the territorial result, so the cards on the guarantee and the Polish refusal carry that argument.',
+        'The guarantee to Poland that followed turned the next crisis into a European war; whether Britain and France could still have deterred Germany in 1939 is debated, and the map cannot say.',
     },
     mapNote:
-      'The map shows the state as at 30 April 1939: Czechoslovakia has vanished as a shape, Albania has been absorbed into Italy, and Poland still appears intact until the October 1939 state.',
+      'The map shows the state as at 30 April 1939: Czechoslovakia has vanished as a shape, Albania is coloured as Italian territory, though it was kept as a kingdom in personal union with the Italian crown rather than annexed, and Poland still appears intact until the October 1939 state.',
     eventIds: ['italy_albania', 'poland_refuses_germany', 'british_guarantee_poland'],
     sources: ['The Oxford Companion to World War II', 'Overy, The Dictators'],
   },
@@ -336,18 +336,18 @@ export const TURNING_POINTS: TurningPoint[] = [
     title: 'The map after five weeks of war: Poland divided',
     matters: {
       primary:
-        'Poland no longer appears as a country. Germany and the Soviet Union have divided its land between them, and the Germans have set up a government in the part they occupied.',
+        'Poland no longer appears as a country: Germany and the Soviet Union have divided its land between them.',
       secondary:
-        'Germany attacked Poland on 1 September, the Soviet Union on 17 September, and Warsaw surrendered on 28 September. The German occupation created the General Government on 26 October for the unannexed centre; the west was annexed to the Reich. In October 1939 Hitler also authorised the killing of disabled people in the programme known as T4.',
+        'Germany invaded Poland on 1 September, the Soviet Union on 17 September; Warsaw fell on 28 September. The General Government was set up on 26 October; the north-west went into the Reich.',
       university:
-        'The first new border state of the war is a map of partition, not of battle: it shows the result of the secret protocol of August 1939, and the disappearance of Poland is the fact that the map records most plainly. The occupation administration was prepared while the fighting was still going on.',
+        'The first new border state of the war is a map of partition, not of battle: it records the result of the secret protocol of August 1939, and the occupation administration was ready before the fighting ended.',
     },
     unsettled: {
-      primary: 'The war did not stop when Poland was beaten; fighting had barely begun in the west.',
+      primary: 'The war did not stop with Poland; fighting had barely begun.',
       secondary:
-        'The western front was still largely quiet, and Italy and the Soviet Union were not yet at war with the Western Allies. The map cannot show the secret protocol or the fate of Polish Jews under both occupiers.',
+        'The west was still quiet, and the map cannot show the secret protocol or the fate of Poland’s Jews.',
       university:
-        'The General Government on the map is a shape, not a state: it was a colonial administration without international standing. The T4 killing programme, authorised in the same month, belongs to the history of how occupation became extermination, which the border layer cannot carry.',
+        'Poland’s disappearance is what this map states most plainly; T4, authorised in the same month, belongs to the history of how occupation became extermination.',
     },
     mapNote:
       'October 1939 is the first border state dated after September 1939; it drops the Polish polygon entirely and paints the occupied territory according to which power took it.',
@@ -360,21 +360,21 @@ export const TURNING_POINTS: TurningPoint[] = [
     title: 'The state before the western offensive: Denmark and Norway occupied',
     matters: {
       primary:
-        'Germany has taken Denmark and Norway, but Belgium, the Netherlands and France are still shown as they were before the attack in the west. This is the last border state before the Blitzkrieg through the Low Countries.',
+        'Germany has taken Denmark and Norway; Belgium, the Netherlands and France are still neutral on this map.',
       secondary:
-        'Weserübung began on 9 April 1940: Denmark surrendered in hours, while Norway fought until June. The map dated 30 April records those occupations but still shows the Low Countries as neutral, because the German attack there began on 10 May, eleven days later.',
+        'Weserübung began on 9 April 1940: Denmark surrendered in hours, Norway fought until June. The map of 30 April still shows the Low Countries neutral, because the attack there began on 10 May.',
       university:
-        'The snapshot is a study in bad timing: it captures the war between the Scandinavian campaign and the western offensive, which is why it is useful for asking what changed in May — and why any reader who stays on this state through June will be shown borders that no longer describe the war.',
+        'The snapshot is a study in bad timing: it sits between the Scandinavian campaign and the western offensive, so June readers see borders that no longer describe the war.',
     },
     unsettled: {
-      primary: 'France had not yet fallen, and Britain was still fighting with France.',
+      primary: 'France had not yet fallen, and the western offensive had not begun.',
       secondary:
-        'The Battle of France, Dunkirk and the armistice of June all lie ahead; Norway was not finally cleared of German forces until the end of June.',
+        'The Battle of France, Dunkirk and the armistice all lie ahead of this date.',
       university:
-        'The map cannot show the sea war or the occupation of the Norwegian coast, both of which mattered more than the inland border: Germany’s hold on Norwegian airfields and iron ore routes shaped the rest of the war in the north.',
+        'It cannot show the sea war or the Norwegian coast, which mattered more than the inland border: German hold of Norwegian airfields and iron-ore routes shaped the war in the north.',
     },
     mapNote:
-      'April 1940 is the closest border state for March, April and May 1940; the Netherlands, Belgium and Luxembourg are still neutral on it even though they were overrun in May.',
+      'April 1940 is the border state the map shows from April 1940 to March 1941 — March 1940 is still drawn with the October 1939 state; the Netherlands, Belgium and Luxembourg are still neutral on it even though they were overrun in May.',
     eventIds: ['weserubung'],
     sources: ['The Oxford Companion to World War II'],
   },
@@ -384,21 +384,21 @@ export const TURNING_POINTS: TurningPoint[] = [
     title: 'The state after the Balkans campaign',
     matters: {
       primary:
-        'Yugoslavia has been broken up into several states and occupied zones, and Greece is under attack. The Soviet Union is still formally at peace with Germany on this map.',
+        'Yugoslavia has been broken up into states and occupation zones, and Greece is under attack.',
       secondary:
-        'Germany and its allies invaded Yugoslavia and Greece in April 1941; the Independent State of Croatia was proclaimed on 10 April, and Montenegro and Serbia were occupied. The map shows that partition but draws Greece as a single undivided shape, understating the German, Italian and Bulgarian zones.',
+        'Germany and its allies invaded Yugoslavia and Greece in April 1941; Croatia was proclaimed independent on 10 April, and Serbia was occupied. The map draws Greece as one shape, understating the German, Italian and Bulgarian zones.',
       university:
-        'The Balkan campaign delayed Barbarossa and created four years of anti-partisan war in mountainous country. The snapshot captures the territorial settlement of a few weeks, not the guerrilla war that made the occupation expensive.',
+        'The Balkan campaign is often said to have delayed Barbarossa, and it opened four years of anti-partisan war: the snapshot captures a territorial settlement of a few weeks, not the guerrilla war.',
     },
     unsettled: {
-      primary: 'The Soviet Union had not yet been invaded, and the war in the east had not begun.',
+      primary: 'The Soviet Union was still at peace with Germany, and had not been invaded.',
       secondary:
-        'Barbarossa began on 22 June 1941, two months after this state; the siege of Leningrad and the encirclements at Minsk and Smolensk were still ahead.',
+        'Barbarossa began on 22 June 1941, two months later; the Minsk and Smolensk encirclements lay ahead.',
       university:
-        'The map cannot show the German, Italian and Bulgarian occupation zones inside Greece, which the source layer never drew; a reader should treat the single Greek shape as understated rather than as a correct description of who held what.',
+        'The German, Italian and Bulgarian zones inside Greece were never drawn in the source layer: treat the single Greek shape as understated, not as a description of who held what.',
     },
     mapNote:
-      'The April 1941 border state is the one the map shows for months before and after the Balkan campaign; it records the break-up of Yugoslavia but not the occupation zones inside Greece.',
+      'The April 1941 border state is the one the map shows from April to August 1941, the month of the Balkan campaign and those after it — February and March 1941 are still drawn with the April 1940 state; it records the break-up of Yugoslavia but not the occupation zones inside Greece.',
     eventIds: ['operation_marita', 'siege_of_tobruk'],
     sources: ['The Oxford Companion to World War II', 'Glantz and House, When Titans Clashed'],
   },
@@ -408,21 +408,21 @@ export const TURNING_POINTS: TurningPoint[] = [
     title: 'The state at the high-water mark in the east',
     matters: {
       primary:
-        'The Baltic states have been absorbed into the Soviet Union and German occupation administrations have been set up in the east. Leningrad is surrounded, and the Germans are close to Moscow.',
+        'The Baltic states, taken into the Soviet Union in 1940, have been under German occupation since June, and German occupation administrations now cover the occupied east.',
       secondary:
-        'The September 1941 border state follows the Baltic campaigns and the first months of Barbarossa. It adds the Reichskommissariate Ostland and Ukraine to the map and removes the Baltic states as separate polygons; Leningrad was cut off on 8 September, and the mass shooting at Babi Yar took place on 29-30 September.',
+        'The September 1941 state follows the Baltic campaigns and the first months of Barbarossa. It adds the Reichskommissariate Ostland and Ukraine; Leningrad was cut off on 8 September and the mass shooting at Babi Yar followed on 29-30 September.',
       university:
-        'This state is the closest the dataset gets to the German high-water mark in the east, and its arrival in September is itself a warning: the source layer has the two Reichskommissariate labels on each other’s polygons, which the build script corrects by geography. The events carry the killings that no border map can show.',
+        'This state is as close as the dataset comes to the German high-water mark in the east, and its date is itself a warning: the source layer has the two Reichskommissariat labels on each other’s polygons, which the build script corrects by geography.',
     },
     unsettled: {
-      primary: 'Moscow had not fallen, and the Soviet army was still fighting.',
+      primary: 'Leningrad was surrounded, and Moscow had not fallen.',
       secondary:
-        'The Soviet counter-offensive before Moscow began on 5 December 1941, and the United States did not enter the European war until 11 December.',
+        'The counter-offensive before Moscow began on 5 December 1941.',
       university:
-        'A border map cannot show a siege or a killing site; the September state shows who held land, which is a different question from what was happening to the people in it.',
+        'A border map shows who held land, a different question from what was happening to the people in it.',
     },
     mapNote:
-      'September 1941 is the last border state before October; it is drawn with the Reichskommissariate labels corrected by geography, a data fix disclosed in the Sources panel.',
+      'September 1941 is the border state the map shows from September 1941 to March 1942; it is drawn with the Reichskommissariate labels corrected by geography, a data fix disclosed in the Sources panel.',
     eventIds: ['siege_leningrad', 'babi_yar', 'barbarossa'],
     sources: ['Glantz and House, When Titans Clashed', 'USHMM Holocaust Encyclopedia'],
   },
@@ -433,21 +433,21 @@ export const TURNING_POINTS: TurningPoint[] = [
     title: 'The state before the summer offensive',
     matters: {
       primary:
-        'This is the border state before the German summer attack in the east. The Reichskommissariate and the Romanian administration of Transnistria are on the map; the great German advance of the summer is not.',
+        'This is the state before the German summer attack in the east: the Reichskommissariate and Transnistria are on the map.',
       secondary:
-        'The April 1942 state shows the German-occupied east after the winter fighting, before Case Blue opened on 28 June. Romania administered Transnistria east of the Dniester, and the Baltic states had been absorbed into the Soviet Union in 1940 and have no separate polygons here.',
+        'The April 1942 state shows the German-occupied east after the winter fighting, before Case Blue opened on 28 June. Romania administered Transnistria east of the Dniester, and the Baltic states, absorbed by the Soviet Union in 1940, have no polygons of their own.',
       university:
-        'The map’s high-water mark in the east actually came in November 1942, seven months after this state, and is not drawn anywhere in the dataset. The state is useful precisely because it shows how little the source layer changed between 1941 and 1943, even while the war moved hundreds of kilometres.',
+        'The map’s real high-water mark in the east came in November 1942, seven months later, and is not drawn anywhere in the dataset.',
     },
     unsettled: {
-      primary: 'The German army had not yet reached Stalingrad or the Caucasus in this state.',
+      primary: 'The advance to Stalingrad and the Caucasus had not begun.',
       secondary:
-        'Operation Blue, the advance to the Volga and the Caucasus, the landings in North Africa and the encirclement at Stalingrad were all still ahead.',
+        'Operation Blue, North Africa and Stalingrad were still ahead.',
       university:
-        'The campaign lines on the map move by month even when the border fills do not: the ring on the Blue line for May or June 1942 is an interpolation along an axis, not a surveyed front, as every line tooltip says.',
+        'Little changed in the source layer between 1941 and 1943 while the war moved hundreds of kilometres, and the ring on the Blue line for May 1942 is an interpolation along an axis, as every tooltip says.',
     },
     mapNote:
-      'April 1942 is the nearest border state for February to August 1942; the summer offensive and the November high-water mark are carried by campaign lines and event cards, not by a new border polygon.',
+      'April 1942 is the nearest border state for April 1942 to March 1943 — February and March 1942 are still drawn with the September 1941 state; the summer offensive and the November high-water mark are carried by campaign lines and event cards, not by a new border polygon.',
     eventIds: ['malta_siege', 'operation_blue'],
     sources: ['Glantz and House, When Titans Clashed', 'Playfair, The Mediterranean and Middle East IV'],
   },
@@ -457,21 +457,21 @@ export const TURNING_POINTS: TurningPoint[] = [
     title: 'The state after Stalingrad, before Kursk',
     matters: {
       primary:
-        'Stalingrad is over, but the map still shows the German-Soviet frontier almost where it was in 1941. The next great battle, at Kursk, has not yet begun.',
+        'Stalingrad is over, but the map still shows the German-Soviet frontier almost where it was in 1941.',
       secondary:
-        'The April 1943 state follows the surrender at Stalingrad and Manstein’s counterstroke before Kharkov, yet the source layer gives up almost no German-held territory. The Warsaw Ghetto Uprising began on 19 April, while both sides were preparing for the Kursk battle of July.',
+        'The April 1943 state follows the surrender at Stalingrad and Manstein’s counterstroke before Kharkov, yet the source layer gives up almost no German-held territory. The Warsaw Ghetto Uprising began on 19 April.',
       university:
-        'This snapshot is a good test of the map’s honesty: it retains the 1941 frontier in places where the real front had moved, and the source material never followed the 1942 German advance into the Caucasus and the Volga. The events and campaign lines must carry the changes the border layer cannot.',
+        'This snapshot tests the map’s honesty: it keeps the 1941 frontier where the real front had moved, and the source material never followed the 1942 German advance into the Caucasus and the Volga.',
     },
     unsettled: {
-      primary: 'The war in the east was not over; Germany attacked again at Kursk in July.',
+      primary: 'The east was not settled; Germany attacked again at Kursk in July.',
       secondary:
-        'The German recovery at Kharkov in March and the long preparation for Citadel show that Stalingrad shifted the initiative without deciding the campaign.',
+        'Kharkov and the preparation for Citadel show that Stalingrad shifted the initiative without deciding the campaign.',
       university:
-        'Whether Stalingrad was the decisive turning point or one of several — alongside El Alamein, Torch and the Battle of the Atlantic — is a genuine argument, which is why the November 1942 and February 1943 panels treat those months as a cluster.',
+        'The border layer cannot carry that: whether Stalingrad was decisive or one of several turning points, alongside El Alamein, Torch and the Atlantic, is a genuine argument.',
     },
     mapNote:
-      'April 1943 is the nearest border state for March to May 1943; the map still draws the 1941 frontier in places, and the Stalingrad pocket and the Kharkov counterstroke are not drawn.',
+      'April 1943 is the nearest border state for April and May 1943 — March 1943 is still drawn with the April 1942 state, and the next one is June 1943; the map still draws the 1941 frontier in places, and the Stalingrad pocket and the Kharkov counterstroke are not drawn.',
     eventIds: ['warsaw_ghetto_uprising', 'stalingrad_surrender', 'kursk'],
     sources: ['USHMM Holocaust Encyclopedia', 'Glantz and House, When Titans Clashed'],
   },
@@ -481,18 +481,18 @@ export const TURNING_POINTS: TurningPoint[] = [
     title: 'The state after Italy changed sides',
     matters: {
       primary:
-        'Italy is now shown as two states: a royal government in the south fighting with the Allies, and Mussolini’s republic in the north supported by Germany. German forces have taken over the Italian occupation zones in the Balkans.',
+        'Italy is now two states: a royal government in the south with the Allies, and Mussolini’s republic in the north.',
       secondary:
-        'The armistice was announced on 8 September 1943 and Italy declared war on Germany on 13 October. The border state dated 31 October shows the royal government as co-belligerent and the Italian Social Republic in the centre and north; Germany also took over Albania and Montenegro from Italian occupation.',
+        'The armistice was announced on 8 September 1943 and Italy declared war on Germany on 13 October. The 31 October map shows the royal government as co-belligerent and the Italian Social Republic in the north.',
       university:
-        'The Italian division is the clearest territorial result of a political event on this map, and also a reminder of the data’s coarseness: the southern polygon excludes Naples and Foggia, which were already in Allied hands, so the shape understates the area the royal government held.',
+        'The division of Italy is the clearest territorial result of a political event on this map, and a reminder of the data’s coarseness: the southern polygon excludes Naples and Foggia, already in Allied hands.',
     },
     unsettled: {
-      primary: 'Germany still held most of Italy, and the fighting there went on until 1945.',
+      primary: 'Germany still held most of Italy; fighting lasted into 1945.',
       secondary:
-        'Rome was not taken until June 1944, and the German defensive lines in the north prolonged the campaign for another twenty months.',
+        'Rome fell only in June 1944, and the German lines in the north prolonged the campaign.',
       university:
-        'The map shows a state, not a front: the German, Italian and partisan struggles inside the same polygon cannot be drawn, so the armed resistance and the German reprisals are left to the event cards.',
+        'The map shows a state, not a front: the German, Italian and partisan struggles cannot be drawn, so the event cards carry the resistance and the reprisals.',
     },
     mapNote:
       'The October 1943 border state is the first to show the Italian armistice; its southern polygon is drawn smaller than the territory the Allies actually held, a coarseness of the source geometry rather than a fact about the armistice.',
@@ -505,21 +505,21 @@ export const TURNING_POINTS: TurningPoint[] = [
     title: 'The state before Overlord and Bagration',
     matters: {
       primary:
-        'This is the border state the map shows for D-Day: the Reichskommissariat Ukraine has disappeared from the outline, but Romania, Hungary and Bulgaria are still in the Axis camp.',
+        'The map shows these borders for D-Day: Romania, Hungary and Bulgaria are still in the Axis camp.',
       secondary:
-        'The April 1944 state follows the disappearance of the Reichskommissariat Ukraine and the Soviet advance into the Balkans and Poland. The Crimea was cleared by early May and the Crimean Tatars were deported that month; Germany had occupied Hungary in March, but its allies had not yet changed sides.',
+        'The April 1944 state follows the disappearance of the Reichskommissariat Ukraine and the Soviet advance into Poland and the Balkans; the offensive of 8 April cleared the Crimea by 9 May, and the Tatars were deported in May.',
       university:
-        'The snapshot is two months before Overlord and Bagration and a few months before Romania and Bulgaria switched sides. It is the last state before the rapid collapse of 1944, which is why the June panel has to tell readers that the map still shows these April borders.',
+        'The snapshot is two months before Overlord and Bagration and a few months before Romania and Bulgaria switched sides: the last state before the collapse of 1944.',
     },
     unsettled: {
-      primary: 'The Allies had not yet landed in Normandy, and the Red Army had not destroyed Army Group Centre.',
+      primary: 'The Allies had not landed in Normandy, and Bagration had not begun.',
       secondary:
-        'D-Day and Bagration both fell in June 1944; the Warsaw Uprising and the Bulgarian and Romanian changes of side came later in the summer and autumn.',
+        'D-Day and Bagration came in June; Romania and Bulgaria changed sides later in 1944.',
       university:
-        'The border layer cannot show the German occupation zones or the timing of the Allied and Soviet advances inside a single monthly state; campaign lines and event cards supply what the polygons omit.',
+        'The border layer cannot show the German occupation zones or the timing of the Allied and Soviet advances inside one monthly state; campaign lines and event cards supply what the polygons omit.',
     },
     mapNote:
-      'April 1944 is the closest border state for May to August 1944, including D-Day and Bagration; the June panel says so explicitly, and no June 1944 polygon is invented.',
+      'April 1944 is the closest border state from April 1944 to March 1945, so it carries May to August 1944, including D-Day and Bagration; the June panel says so explicitly, and no June 1944 polygon is invented.',
     eventIds: ['crimea_1944', 'hungary_occupied', 'd_day'],
     sources: ['Glantz and House, When Titans Clashed', 'The Oxford Companion to World War II'],
   },
@@ -529,18 +529,18 @@ export const TURNING_POINTS: TurningPoint[] = [
     title: 'The last border state, and what it cannot show',
     matters: {
       primary:
-        'This is the final map in the dataset. Germany’s shape is copied from April 1944, so cities that had already fallen still appear inside it, and the war in Europe is nearly over.',
+        'This is the dataset’s final map: Germany’s shape is copied from April 1944, so cities already fallen still appear inside it.',
       secondary:
-        'The 30 April 1945 state repeats the German, Hungarian and Bulgarian polygons of April 1944. Soviet forces had taken Königsberg, Poznań and Vienna, but the source layer never redrew those frontiers. The month’s real events were the battle for the Seelow Heights, the liberation of Bergen-Belsen and Hitler’s death on 30 April.',
+        'The 30 April 1945 state repeats the German, Hungarian and Bulgarian polygons of April 1944, although Soviet forces had taken Königsberg, Poznań and Vienna. The month’s events were the Seelow Heights, Bergen-Belsen and Hitler’s death.',
       university:
-        'The last snapshot is the least reliable in the dataset and says as much about how the source was compiled as about April 1945: it keeps the 1944 outline under attack and colours the surviving General Government and Ostland shapes for the Soviet occupation. The Potsdam frontier agreed later in 1945 is not on this map at all.',
+        'The last snapshot is the least reliable in the dataset: it keeps the 1944 outline under attack, and colours the surviving General Government and Ostland shapes for Soviet occupation.',
     },
     unsettled: {
-      primary: 'Germany had not officially surrendered yet; the fighting ended in May.',
+      primary: 'Germany had not surrendered; the fighting ended in May.',
       secondary:
-        'The Reims and Karlshorst surrenders, the Prague rising and the final local capitulations all lie in May 1945, after the timeline’s last border state.',
+        'The Reims and Karlshorst surrenders and the Prague rising lie in May 1945, after the last state.',
       university:
-        'The map cannot show the flight of refugees, the camps being liberated or the occupation zones agreed at Yalta; the reader should not mistake the final shape for a picture of postwar Europe.',
+        'The Potsdam frontier agreed later in 1945 is not on this map, nor is the flight of refugees or the camps being liberated: the final shape is not a picture of postwar Europe.',
     },
     mapNote:
       'This is the last of the twelve border states; May to August 1945 are all drawn with these frozen end-of-April borders, and the May panel explains the surrender on the ground.',
