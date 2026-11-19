@@ -321,7 +321,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     ],
     summary:
       'Rokossovsky’s Don Front, some 212,000 men, attacked a pocket whose 250,000 survivors were starving and short of everything, methodically cutting it in two from west to east. Paulus surrendered in a department store in the central trading floors on 31 January; the last organised resistance ended on 2 February. Of some 91,000 taken, only about 5,000-6,000 ever went home. Stalingrad is remembered for the fighting in the city; the killing of its garrison came afterwards.',
-    strength: 'Don Front 467,000 men, 1,500 tanks, 14,000 guns; Sixth Army ~250,000, no fuel, resupply by air averaging under 100 tons a day against a need of 700',
+    strength: 'Don Front 212,000 men (Glantz puts it at 281,158), 6,860 guns and mortars, 257 tanks; Sixth Army ~250,000, no fuel, resupply by air averaging under 100 tons a day against a need of 700',
   },
   {
     id: 'el_alamein_1942',
