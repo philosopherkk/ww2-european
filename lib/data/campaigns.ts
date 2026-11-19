@@ -73,7 +73,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [49.84, 24.03], // Lwów, the southern front's objective
     ],
     summary:
-      'The Red Army crossed on 17 September to the line agreed in the German-Soviet Frontier Treaty of 28 September. Some 12-13 million people, of whom barely half were ethnic Poles, passed under Soviet rule; some 320,000 Polish soldiers were taken prisoner, and in March-April 1940 about 22,000 Polish officers and prisoners were shot in the Katyn forest and elsewhere.',
+      'The Red Army crossed on 17 September to the line agreed in the German-Soviet Frontier Treaty of 28 September. Some 12-13 million people, of whom barely half were ethnic Poles, passed under Soviet rule; some 320,000 Polish soldiers were taken prisoner, and in April and May 1940 about 22,000 Polish officers and prisoners were shot in the Katyn forest and elsewhere.',
     strength: 'Seven Soviet field armies: 600,000-800,000 men, 4,736 tanks and 3,300 aircraft, against far weaker Polish border and reserve units',
   },
   {
@@ -88,7 +88,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [60.7, 28.73], // Vyborg, taken 13 March, days before the peace
     ],
     summary:
-      'The 7th Army attacked across the 70 km-wide Karelian isthmus into a forest and lake landscape with one road per division. The Mannerheim Line held until a huge artillery preparation let a new Soviet commander concentrate a breakthrough at Summa on 1 February. In the far north the Red Army took Salla but was stopped at Kemijärvi; Finland kept its independence but lost 11% of its population\'s land, and 400,000 Karelians were evacuated rather than live under Soviet rule.',
+      'The 7th Army attacked across the 70 km-wide Karelian isthmus into a forest and lake landscape with one road per division. The Mannerheim Line held until a huge artillery preparation let a new Soviet commander concentrate a breakthrough at Summa on 1 February. In the far north the Red Army took Salla but was stopped at Kemijärvi; Finland kept its independence but lost 11% of its population’s land, and 400,000 Karelians were evacuated rather than live under Soviet rule.',
     strength: '~450,000 Soviet men and ~2,500 tanks against ~280,000 Finns with almost no tanks; Soviet dead 123,000-167,000, Finnish about 25,000',
   },
   {
@@ -126,7 +126,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [50.11, 1.83], // Abbeville on the Channel, reached the same day
     ],
     summary:
-      'The best-known operational gamble of the war: Kleist\'s panzer group crossed the Meuse at Sedan against a French army of reservists, then turned west across open country instead of helping to crush the Allied armies in Belgium. Reaching the Channel at Abbeville on 20 May cut those armies off from France. The armoured crews had been running on bread and jam for four days when the halt order of 23-27 May stopped them within sight of Dunkirk.',
+      'The best-known operational gamble of the war: Kleist’s panzer group crossed the Meuse at Sedan against a French army of reservists, then turned west across open country instead of helping to crush the Allied armies in Belgium. Reaching the Channel at Abbeville on 20 May cut those armies off from France. The armoured crews had been running on bread and jam for four days when the halt order of 23-27 May stopped them within sight of Dunkirk.',
     strength: '10 panzer and 4 motorised divisions in the corridor; ~136 German divisions against ~135 Allied, of which France fielded about 100',
   },
   {
@@ -141,7 +141,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [51.12, 1.31], // Dover, the crossing took under two hours in daylight
     ],
     summary:
-      '338,226 men were taken off in nine days, about a third of them French, mostly by naval vessels and the 700 small ships whose owners answered the Admiralty\'s call. The army escaped but left 2,400 guns, 64,000 vehicles and its reserves of ammunition behind; the RAF flew over 3,500 sorties in the nine days and lost 145 aircraft; the Luftwaffe lost 156.',
+      '338,226 men were taken off in nine days, about a third of them French, mostly by naval vessels and the 700 small ships whose owners answered the Admiralty’s call. The army escaped but left 2,400 guns, 64,000 vehicles and its reserves of ammunition behind; the RAF flew over 3,500 sorties in the nine days and lost 145 aircraft; the Luftwaffe lost 156.',
   },
   {
     id: 'fall_rot',
@@ -193,8 +193,8 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [59.93, 30.34], // Leningrad: the ring closed on 8 September
     ],
     summary:
-      'Army Group North drove 700 km through the Baltic states in three weeks, meeting less resistance than expected because the Red Army\'s formations there were green and its best units had been sent to the west. It took Luga and Novgorod and reached the Gulf of Finland; when Hitler pulled its panzers away to help encircle Kiev, the city was invested rather than stormed — the beginning of an 872-day siege in which about a million people died, most of them of hunger.',
-    strength: '~460,000 men and ~500 tanks; Leningrad\'s civilian population had been close to 3 million',
+      'Army Group North drove 700 km through the Baltic states in three weeks, meeting less resistance than expected because the Red Army’s formations there were green and its best units had been sent to the west. It took Luga and Novgorod and reached the Gulf of Finland; when Hitler pulled its panzers away to help encircle Kiev, the city was invested rather than stormed — the beginning of an 872-day siege in which about a million people died, most of them of hunger.',
+    strength: '~460,000 men and ~500 tanks; Leningrad’s civilian population had been close to 3 million',
   },
   {
     id: 'barbarossa_centre',
@@ -219,7 +219,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     from: '1941-06-22',
     to: '1941-09-26',
     path: [
-      [50.75, 25.32], // Lutsk, where the first day\'s tank battle was fought
+      [50.75, 25.32], // Lutsk, where the first day’s tank battle was fought
       [49.84, 24.03], // Lwów, taken 30 June
       [48.75, 30.22], // Uman, 20 August: ~100,000 Soviet prisoners
       [50.45, 30.52], // Kiev, encircled 16 September
@@ -275,7 +275,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [40.41, 49.87], // Baku, the ultimate objective, 480 km beyond the supply limit
     ],
     summary:
-      'Seventeenth Army advanced over the Caucasus range — the German mountain troops raised the flag on Mount Elbrus — and reached the oil fields of Maikop, which the Soviets had demolished on withdrawal. The advance ran out of fuel and road space before Grozny. Germany\'s fundamental problem was that it needed the oil and the only fields it could reach intact were already destroyed or too far away; synthetic fuel and Hungarian and Romanian deliveries had to carry the war.',
+      'Seventeenth Army advanced over the Caucasus range — the German mountain troops raised the flag on Mount Elbrus — and reached the oil fields of Maikop, which the Soviets had demolished on withdrawal. The advance ran out of fuel and road space before Grozny. Germany’s fundamental problem was that it needed the oil and the only fields it could reach intact were already destroyed or too far away; synthetic fuel and Hungarian and Romanian deliveries had to carry the war.',
     strength: 'Army Group A ~700,000 men at the start; mountain troops of the 1st Mountain Division to the high passes',
   },
   {
@@ -305,7 +305,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [47.75, 43.68], // Verkhne-Kumskiy on the Myshkova, the high point of the advance
     ],
     summary:
-      'Hoth\'s Fourth Panzer Army attacked with one corps and opened a corridor to within reach of the pocket, advancing some 48 km in three days. It was stopped on the Myshkova on 23 December, partly because Manstein refused to order the Sixth Army to break out towards it, and because the Soviet Operation Little Saturn of 16 December, aimed at the same flank armies, smashed the Italian Eighth Army and put a second relief attempt out of the question.',
+      'Hoth’s Fourth Panzer Army attacked with one corps, the LVII Panzer Corps, and by 19 December had crossed the Aksay and reached the Myshkova within 48 km of the pocket’s southern edge - close, but never close enough to open a corridor. The attack was stopped on 23 December, partly because the Sixth Army’s breakout towards it was never ordered and the garrison had fuel for only about 30 km of movement, and because the Soviet Operation Little Saturn of 16 December, aimed at the same flank armies, smashed the Italian Eighth Army and put a second relief attempt out of the question.',
     strength: 'LVII Panzer Corps ~47,000 men and under 200 serviceable tanks',
   },
   {
@@ -320,7 +320,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [48.71, 44.51], // central Stalingrad, split in two on 26 January
     ],
     summary:
-      'Rokossovsky\'s Don Front attacked 250,000 starving men with 467,000, methodically cutting the pocket in two from west to east. Paulus surrendered in a department store in the central trading floors on 31 January; the last organised resistance ended on 2 February. Of some 91,000 taken, only about 5,000-6,000 ever went home. Stalingrad is remembered for the fighting in the city; the killing of its garrison came afterwards.',
+      'Rokossovsky’s Don Front, some 212,000 men, attacked a pocket whose 250,000 survivors were starving and short of everything, methodically cutting it in two from west to east. Paulus surrendered in a department store in the central trading floors on 31 January; the last organised resistance ended on 2 February. Of some 91,000 taken, only about 5,000-6,000 ever went home. Stalingrad is remembered for the fighting in the city; the killing of its garrison came afterwards.',
     strength: 'Don Front 467,000 men, 1,500 tanks, 14,000 guns; Sixth Army ~250,000, no fuel, resupply by air averaging under 100 tons a day against a need of 700',
   },
   {
@@ -351,12 +351,12 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     path: [
       [33.57, -7.59], // Casablanca, the Western Task Force under Patton
       [35.7, -0.63], // Oran, the Centre Task Force under Ryder
-      [36.75, 3.06], // Algiers, the Eastern Task Force under Eisenhower\'s deputy
+      [36.75, 3.06], // Algiers, the Eastern Task Force under Eisenhower’s deputy
       [36.37, 6.61], // Constantine, on the axis of the race for Tunis
       [36.81, 10.18], // Tunis, which the Germans reached first
     ],
     summary:
-      'The first American ground operation of the war, chosen partly because a cross-Channel attack in 1942 was impossible and partly because Stalin was promised a second front. Vichy French forces defended for three days (about 1,350 Frenchmen killed) before Darlan\'s ceasefire on 10 November, an arrangement that brought the French fleet and army round but that made de Gaulle furious and cost Roosevelt political capital. The race for Tunis failed in December for lack of ports and airfields; the bridgehead was not cleared until 13 May, and the fighting there taught the US Army more than it had wanted to learn.',
+      'The first American ground operation of the war, chosen partly because a cross-Channel attack in 1942 was impossible and partly because Stalin was promised a second front. Vichy French forces defended for three days (about 1,350 Frenchmen killed) before Darlan’s ceasefire on 10 November, an arrangement that brought the French fleet and army round but that made de Gaulle furious and cost Roosevelt political capital. The race for Tunis failed in December for lack of ports and airfields; the bridgehead was not cleared until 13 May, and the fighting there taught the US Army more than it had wanted to learn.',
     strength: '~107,000 assault troops on 8 November; 250,000 Axis prisoners at the end',
   },
   {
@@ -367,13 +367,13 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     from: '1943-07-10',
     to: '1943-08-17',
     path: [
-      [36.69, 15.07], // Pachino, the Eighth Army\'s landing beaches in the south-east
+      [36.69, 15.07], // Pachino, the Eighth Army’s landing beaches in the south-east
       [37.24, 15.22], // Augusta, its port taken intact on the first day
       [37.5, 15.09], // Catania, which held the Germans up for eight days
       [38.19, 15.55], // Messina, reached on 17 August, a day too late
     ],
     summary:
-      'The largest amphibious assault of the war up to that date. Landings were made in the south-east, opposite the least-defended coast and the shortest crossing from North Africa, after a successful deception (Operation Mincemeat, which put a dead man with false papers off the Spanish coast) that persuaded the Germans the blow would fall on Greece and Sardinia. Patton\'s Seventh Army swept west to Palermo and then north. The campaign\'s real lesson was a defeat: some 100,000 Axis troops, most of them German, were evacuated across the Strait of Messina under air attack and fought again.',
+      'The largest amphibious assault of the war up to that date. Landings were made in the south-east, opposite the least-defended coast and the shortest crossing from North Africa, after a successful deception (Operation Mincemeat, which put a dead man with false papers off the Spanish coast) that persuaded the Germans the blow would fall on Greece and Sardinia. Patton’s Seventh Army swept west to Palermo and then north. The campaign’s real lesson was a defeat: some 100,000 Axis troops, most of them German, were evacuated across the Strait of Messina under air attack and fought again.',
     strength: '~180,000 assault troops and some 2,600 ships; ~220,000 Axis defenders, ~70,000 German',
   },
   {
@@ -416,7 +416,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     to: '1944-08-29',
     path: [
       [55.19, 30.2], // Vitebsk, reduced 24 June, the northern shoulder
-      [53.15, 29.22], // Bobruisk, the southern pincer\'s first encirclement
+      [53.15, 29.22], // Bobruisk, the southern pincer’s first encirclement
       [53.9, 27.57], // Minsk, taken 3 July; prisoners taken here were marched through Moscow on 17 July
       [52.1, 23.7], // Brest-Litovsk, reached on 28 July — the old 1939 frontier line
       [51.93, 22.38], // Luków, on the Warsaw railway, reached on 30 July by the 4th Tank Corps
@@ -424,7 +424,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [52.26, 21.05], // Praga, the Warsaw suburb on the east bank, where the front stood until January 1945
     ],
     summary:
-      'The largest German defeat of the war, and almost the largest battle: four successive encirclements destroyed Army Group Centre in ten days, at the same moment as the Normandy break-out and on the anniversary of Barbarossa. The Red Army used deception and a combined-arms "deep battle" method it had taken two years to learn, and advanced 600 km. Partisans cut the railways behind the front on the night of 19 June. Its end is where the postwar map of Europe was decided: the 4th Tank Corps was counterattacked at Luków and Radzymin in the first days of August, the spearhead was spent, and the front stood on the Vistula until January 1945, with Praga taken only on 14 September. Whether Stalin halted because he could not advance or because he chose not to is still argued; the fact both sides accept is that the Red Army stood 30 km from the Warsaw Uprising, which began on 1 August, and did not reach it. The Germans crushed the Uprising street by street, which destroyed Poland\'s non-communist resistance before the communist government took power in 1944-45.',
+      'The largest German defeat of the war, and almost the largest battle: four successive encirclements destroyed Army Group Centre in ten days, at the same moment as the Normandy break-out and on the anniversary of Barbarossa. The Red Army used deception and a combined-arms "deep battle" method it had taken two years to learn, and advanced 600 km. Partisans cut the railways behind the front on the night of 19 June. Its end is where the postwar map of Europe was decided: the 4th Tank Corps was counterattacked at Luków and Radzymin in the first days of August, the spearhead was spent, and the front stood on the Vistula until January 1945, with Praga taken only on 14 September. Whether Stalin halted because he could not advance or because he chose not to is still argued; the fact both sides accept is that the Red Army stood 30 km from the Warsaw Uprising, which began on 1 August, and did not reach it. The Germans crushed the Uprising street by street, which destroyed Poland’s non-communist resistance before the communist government took power in 1944-45.',
     strength:
       'Soviet: 1,670,300 men, 3,841 tanks and 1,977 assault guns at the start. Army Group Centre: 486,493 combat troops, about 849,000 in all, with 118 tanks; it lost 25-28 divisions and was destroyed as a fighting force',
   },
@@ -435,13 +435,13 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     from: '1944-07-13',
     to: '1944-08-02',
     path: [
-      [51.21, 24.71], // Kovel, the start line in the Pripet marshes\' edge
+      [51.21, 24.71], // Kovel, the start line in the Pripet marshes’ edge
       [49.84, 24.03], // Lviv, taken 27 July
       [50.05, 21.41], // Dębica, and the oil refineries there
       [50.68, 21.75], // Sandomierz, a bridgehead over the Vistula won on 1 August
     ],
     summary:
-      'Konev\'s 1st Ukrainian Front swept west across Galicia in the southern half of the Bagration strategic offensive, taking Lviv and pushing out bridgeheads over the Vistula. It then halted, and the tank corps sent north-west towards Warsaw\'s Praga suburb were fought to a standstill at Radzymin. Whether that halt was forced by logistics or chosen to let the Germans destroy the Home Army is the single most argued question about 1944, and the Soviet archives have not settled it.',
+      'Konev’s 1st Ukrainian Front swept west across Galicia in the southern half of the Bagration strategic offensive, taking Lviv and pushing out bridgeheads over the Vistula. It then halted, and the tank corps sent north-west towards Warsaw’s Praga suburb were fought to a standstill at Radzymin. Whether that halt was forced by logistics or chosen to let the Germans destroy the Home Army is the single most argued question about 1944, and the Soviet archives have not settled it.',
     strength: '1st Ukrainian Front ~880,000 men, ~1,900 tanks',
   },
   {
@@ -456,7 +456,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [45.7, 27.18], // Focșani, the Carpathian gateway reached by the 29th
     ],
     summary:
-      'A double encirclement trapped and destroyed most of German Sixth Army — for the second time in two years — and carried the Red Army into Romania in nine days. On 23 August King Michael\'s coup arrested Antonescu and Romania switched sides, which took away the Ploiești oil fields that supplied roughly a third of Germany\'s prewar crude and its remaining Romanian troops, and opened the road to Bulgaria and Hungary. Bulgaria asked for an armistice on 2 September without firing on the Soviets; Finland followed into armistice on 4 September.',
+      'A double encirclement trapped and destroyed most of German Sixth Army — for the second time in two years — and carried the Red Army into Romania in nine days. On 23 August King Michael’s coup arrested Antonescu and Romania switched sides, which took away the Ploiești oil fields that supplied roughly a third of Germany’s prewar crude and its remaining Romanian troops, and opened the road to Bulgaria and Hungary. Bulgaria asked for an armistice on 2 September without firing on the Soviets; Finland followed into armistice on 4 September.',
     strength: '3rd and 2nd Ukrainian Fronts ~1.3 million men; 16 German divisions lost, ~200,000 prisoners claimed',
   },
   {
@@ -492,7 +492,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [47.56, 6.86], // the Belfort gap, where 1st French Army turned east towards the Rhine
     ],
     summary:
-      'The landings in Provence — "Anvil" cut down and delayed by Churchill, who wanted the effort in the Balkans instead — put 94,000 men ashore on the first day and 500,000 by mid-September, with the port of Marseille working from October, which is why the Allied advance across France could be supplied at all. The Germans withdrew from western France in orderly fashion rather than fight, so the campaign\'s real prize was logistical. Much of the infantry was French — many of them North African and West African troops of the French First Army — and their contribution to the liberation of France was played down in French memory for decades.',
+      'The landings in Provence — "Anvil" cut down and delayed by Churchill, who wanted the effort in the Balkans instead — put 94,000 men ashore on the first day and 500,000 by mid-September, with the port of Marseille working from October, which is why the Allied advance across France could be supplied at all. The Germans withdrew from western France in orderly fashion rather than fight, so the campaign’s real prize was logistical. Much of the infantry was French — many of them North African and West African troops of the French First Army — and their contribution to the liberation of France was played down in French memory for decades.',
     strength: '~94,000 assault troops and ~1,800 aircraft; ~90,000 German defenders in the south of France',
   },
   {
@@ -507,7 +507,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [51.98, 5.91], // Arnhem, where the British 1st Airborne was destroyed
     ],
     summary:
-      'A single-road corridor 100 km deep, seized by parachute and glider troops and raced up by XXX Corps, to outflank the Siegfried Line and end the war in 1944. The plan\'s failure is a case study in optimistic intelligence: the divisions opposite Arnhem were SS panzer units sent there to refit, the weather grounded most of the resupply, the one bridge at Arnhem was at the far end of a 12 km walk, and the intelligence that said the Germans were finished came from aerial photographs of the wrong columns. Some 35,000 airborne troops were dropped, including the Polish 1st Independent Parachute Brigade; of the 10,000 British 1st Airborne, about 2,200 were taken off across the lower Rhine on the night of 25-26 September.',
+      'A single-road corridor 100 km deep, seized by parachute and glider troops and raced up by XXX Corps, to outflank the Siegfried Line and end the war in 1944. The plan’s failure is a case study in optimistic intelligence: the divisions opposite Arnhem were SS panzer units sent there to refit, the weather grounded most of the resupply, the one bridge at Arnhem was at the far end of a 12 km walk, and the intelligence that said the Germans were finished came from aerial photographs of the wrong columns. Some 35,000 airborne troops were dropped, including the Polish 1st Independent Parachute Brigade; of the 10,000 British 1st Airborne, about 2,200 were taken off across the lower Rhine on the night of 25-26 September.',
     strength: '~35,000 airborne troops, 15,000 in the first lift; ~17,000 Allied casualties, most of them at Arnhem',
   },
   {
@@ -523,7 +523,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [50.16, 5.12], // Foy-Notre-Dame, the western high point; the Meuse was never reached
     ],
     summary:
-      'The last German strategic offensive in the west, launched with the army\'s last operational reserves against the weakest sector of the Allied front, in weather that grounded aircraft. It achieved complete surprise and opened a salient 80 km deep in eleven days, and failed for the reasons all its predecessors had: no fuel for the armoured spearheads, no air cover once the cloud lifted on 23 December, and American units in the hedgehog defence of Bastogne and St Vith that held long enough to wreck the timetable. The bulge was restored by 25 January, at a cost of some 19,000 American dead; the Wehrmacht\'s western armour was spent, four months before the Rhine.',
+      'The last German strategic offensive in the west, launched with the army’s last operational reserves against the weakest sector of the Allied front, in weather that grounded aircraft. It achieved complete surprise and opened a salient 80 km deep in eleven days, and failed for the reasons all its predecessors had: no fuel for the armoured spearheads, no air cover once the cloud lifted on 23 December, and American units in the hedgehog defence of Bastogne and St Vith that held long enough to wreck the timetable. The bulge was restored by 25 January, at a cost of some 19,000 American dead; the Wehrmacht’s western armour was spent, four months before the Rhine.',
     strength: '~410,000 men, ~1,500 tanks and assault guns; US losses ~81,000 casualties, German 60,000-85,000',
   },
   {
@@ -539,7 +539,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [52.55, 14.63], // Küstrin, where the lead corps reached the Oder on 31 January
     ],
     summary:
-      'The offensive was launched some days earlier than planned, after Churchill\'s personal appeal of 6 January that a Soviet blow might relieve pressure in the Ardennes — and in a way that meant the Red Army, not the Western Allies, took Warsaw, Kraków and Berlin. 1st Belorussian Front advanced 500 km in twenty-two days, losing the initiative in February when it halted on the Oder and had to be pushed off the bridgeheads again by a German counter-attack at Stargard. Konev\'s 1st Ukrainian Front took Kraków on 25 January and reached the upper Oder, so Silesia\'s industry and Upper Silesia\'s coal fell into Soviet hands rather than American. On 17 January, the day Warsaw fell, the Soviets handed the city over to Polish communist units.',
+      'The offensive was launched some days earlier than planned, after Churchill’s personal appeal of 6 January that a Soviet blow might relieve pressure in the Ardennes — and in a way that meant the Red Army, not the Western Allies, took Warsaw, Kraków and Berlin. 1st Belorussian Front advanced 500 km in twenty-two days, losing the initiative in February when it halted on the Oder and had to be pushed off the bridgeheads again by a German counter-attack at Stargard. Konev’s 1st Ukrainian Front took Kraków on 25 January and reached the upper Oder, so Silesia’s industry and Upper Silesia’s coal fell into Soviet hands rather than American. On 17 January, the day Warsaw fell, the Soviets handed the city over to Polish communist units.',
     strength: '1st Belorussian and 1st Ukrainian Fronts ~2.2 million men and over 4,000 tanks and guns',
   },
   {
@@ -554,7 +554,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [54.71, 20.51], // Königsberg, invested on 27 January, taken by assault on 9 April
     ],
     summary:
-      'The operation cut Army Group North off by land in East Prussia and Pomerania. Königsberg, a fortress city and the old capital of Prussia, was reduced by four days of assault with the heaviest artillery of the war and Stalin\'s own air armadas; General Lasch surrendered the city on 9 April, against Schörner\'s standing order that no fortress be given up. Over the same weeks a million German civilians fled west across the frozen Vistula lagoon under Soviet air attack, and the evacuating transport Wilhelm Gustloff was torpedoed with a loss of some 9,400 people — the largest loss of life in a single shipwreck in history. East Prussia was divided between the Soviet Union and Poland after the war and its German population expelled; the region is Russian Kaliningrad today.',
+      'The operation cut Army Group North off by land in East Prussia and Pomerania. Königsberg, a fortress city and the old capital of Prussia, was reduced by four days of assault with the heaviest artillery of the war and Stalin’s own air armadas; General Lasch surrendered the city on 9 April, against Schörner’s standing order that no fortress be given up. Over the same weeks a million German civilians fled west across the frozen Vistula lagoon under Soviet air attack, and the evacuating transport Wilhelm Gustloff was torpedoed with a loss of some 9,400 people — the largest loss of life in a single shipwreck in history. East Prussia was divided between the Soviet Union and Poland after the war and its German population expelled; the region is Russian Kaliningrad today.',
     strength: '3rd and 2nd Belorussian Fronts ~1.3 million men; ~500,000 German troops in the pocket',
   },
   {
@@ -586,7 +586,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [52.52, 13.4], // Berlin centre: the Reichstag fell on 2 May after street fighting
     ],
     summary:
-      'Two Soviet fronts crushed the Seelow Heights position north and south of the Warthe bend and met west of the city on 25 April, the same day American and Soviet soldiers met on the Elbe at Torgau. Zhukov took the centre while Konev thrust from the south-west; the fighting in the city was fought unit by unit, house by house, with sappers and flamethrowers in the tube railway tunnels. Hitler married Eva Braun on 29 April and both were dead by 30 April; the garrison surrendered on 2 May. Soviet losses in the battle were some 80,000 dead, and between 100,000 and 125,000 Berlin civilians were killed, most of them in the last two weeks — followed by weeks of mass rape of the city\'s surviving women.',
+      'Two Soviet fronts crushed the Seelow Heights position north and south of the Warthe bend and met west of the city on 25 April, the same day American and Soviet soldiers met on the Elbe at Torgau. Zhukov took the centre while Konev thrust from the south-west; the fighting in the city was fought unit by unit, house by house, with sappers and flamethrowers in the tube railway tunnels. Hitler married Eva Braun on 29 April and both were dead by 30 April; the garrison surrendered on 2 May. Soviet losses in the battle were some 80,000 dead, and between 100,000 and 125,000 Berlin civilians were killed, most of them in the last two weeks — followed by weeks of mass rape of the city’s surviving women.',
     strength: '~2.5 million Soviet men and ~6,250 tanks; ~760,000 German troops, many of them Volkssturm and Hitler Youth',
   },
   {
@@ -602,7 +602,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [48.21, 16.37], // Vienna, declared an open city and taken on 13 April
     ],
     summary:
-      'The 3rd Ukrainian Front, with Bulgarian armies on its left, broke the German counter-offensive south of Lake Balaton — the last German strategic attack of the war — and ran into Austria in fourteen days. Vienna fell on 13 April, and Tito\'s partisans arrived before most of the German army had left, which is why Styria and Carinthia were briefly in Yugoslav hands and why the postwar Soviet-zone/Austrian settlement had to be negotiated. Austria was treated as a liberated country rather than a defeated one at Moscow in 1943, a decision that shaped its postwar neutrality.',
+      'The 3rd Ukrainian Front, with Bulgarian armies on its left, broke the German counter-offensive south of Lake Balaton — the last German strategic attack of the war — and ran into Austria in fourteen days. Vienna fell on 13 April, and Tito’s partisans arrived before most of the German army had left, which is why Styria and Carinthia were briefly in Yugoslav hands and why the postwar Soviet-zone/Austrian settlement had to be negotiated. Austria was treated as a liberated country rather than a defeated one at Moscow in 1943, a decision that shaped its postwar neutrality.',
     strength: '3rd Ukrainian Front ~370,000 men plus Bulgarian armies; German defenders of the 6th SS Panzer Army, out of fuel',
   },
   {
@@ -634,12 +634,12 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [59.95, 31.04], // Shlisselburg-Petrokrepost, on the only railway into the city
     ],
     summary:
-      'The first successful relief attempt of the siege: Leningrad\'s and Volkhov\'s fronts attacked 12 km towards each other across the Neva and met west of Siniavino on 23 January, opening a corridor 8-11 km wide. A railway was laid across it in seventeen days and the first train reached the city on 7 February, though people were still dying of hunger at 300 a day and the city was not free until January 1944. Iskra shows what the Red Army had learned: an artillery preparation, a limited objective, and no attempt at the grand encirclement that had failed in 1942.',
+      'The first successful relief attempt of the siege: Leningrad’s and Volkhov’s fronts attacked 12 km towards each other across the Neva and met west of Siniavino on 23 January, opening a corridor 8-11 km wide. A railway was laid across it in seventeen days and the first train reached the city on 7 February, though people were still dying of hunger at 300 a day and the city was not free until January 1944. Iskra shows what the Red Army had learned: an artillery preparation, a limited objective, and no attempt at the grand encirclement that had failed in 1942.',
     strength: 'The two Soviet fronts committed 26 divisions with about 700 guns and 50 tanks; the German 18th Army held the corridor and its sector with 20 divisions and 15 brigades',
   },
   {
     id: 'third_kharkov_1943',
-    name: 'Manstein\'s counter-stroke: the third battle of Kharkov',
+    name: 'Manstein’s counter-stroke: the third battle of Kharkov',
     side: 'german',
     from: '1943-02-20',
     to: '1943-03-15',
@@ -649,7 +649,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [49.99, 36.23], // Kharkov, taken after four days of street fighting
     ],
     summary:
-      'The operational masterpiece of the German war, and the reason the front in the east was restored after Stalingrad. Manstein refused Hitler\'s order to stand fast, gave ground deliberately to stretch the Soviet advance — whose tank corps had run out of fuel and infantry — and then struck the exposed flank of the Soviet South-Western Front with two panzer corps. Kharkov was retaken on 15 March and Belgorod recovered in the days that followed, leaving the Kursk salient that would be fought over in July. The human cost of the same months went the other way: some 500,000 Soviet casualties in the winter battles, and a German retreat punctuated by the demolition of everything left behind.',
+      'The operational masterpiece of the German war, and the reason the front in the east was restored after Stalingrad. Manstein refused Hitler’s order to stand fast, gave ground deliberately to stretch the Soviet advance — whose tank corps had run out of fuel and infantry — and then struck the exposed flank of the Soviet South-Western Front with two panzer corps. Kharkov was retaken on 15 March and Belgorod recovered in the days that followed, leaving the Kursk salient that would be fought over in July. The human cost of the same months went the other way: some 500,000 Soviet casualties in the winter battles, and a German retreat punctuated by the demolition of everything left behind.',
     strength:
       'Manstein’s ~125,000 men with about 350 serviceable tanks, including the II SS Panzer Corps, whose Totenkopf division came from the Leningrad sector while Das Reich refitted in the west; the Voronezh and Southwestern Fronts had ~210,000 men in the engaged armies, low on fuel. Losses: 86,469 Soviet, about 11,500 German',
   },
@@ -666,7 +666,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [52.26, 36.13], // Olkhovatka, where 9 July's attack on the second defensive belt was broken
     ],
     summary:
-      'The Germans attacked to cut the Kursk salient off, on ground they had chosen, weeks later than planned because they waited for new tanks. The Soviets knew the plan — from intelligence and from German radio traffic — and had built eight defensive belts 300 km deep, laid some 400,000 mines and massed 20,000 guns. Model\'s Ninth Army advanced 10 km and was stopped at Olkhovatka and Ponyri by anti-tank fronts and mines, not by air power, which never gained the superiority the plan assumed. Citadel had failed in the north before Prokhorovka was fought.',
+      'The Germans attacked to cut the Kursk salient off, on ground they had chosen, weeks later than planned because they waited for new tanks. The Soviets knew the plan — from intelligence and from German radio traffic — and had built six defensive belts 130-150 km deep, with the Steppe Front’s reserve belts behind them bringing the total depth to nearly 300 km; they laid 503,993 anti-tank and 439,348 anti-personnel mines, and the two fronts holding the salient had nearly 10,000 guns and mortars. Model’s Ninth Army advanced 10 km and was stopped at Olkhovatka and Ponyri by anti-tank fronts and mines, not by air power, which never gained the superiority the plan assumed. Citadel had failed in the north before Prokhorovka was fought.',
     strength: '9th Army ~335,000 men and ~600 tanks, against ~1.9 million Soviet men in the salient and its reserves',
   },
   {
@@ -682,7 +682,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [51.02, 36.74], // Prokhorovka, reached on 12 July and no further
     ],
     summary:
-      'Manstein\'s blow on the southern face went further than the north — 35 km in six days — and on 12 July the II SS Panzer Corps met Fifth Guards Tank Army near Prokhorovka in the largest tank engagement of the battle. Soviet losses were far heavier, several hundred tanks to some 80 German, and the SS corps was stopped not by being beaten but by mines, anti-tank guns, air attack and exhaustion. Citadel was called off on 13 July, partly because the Allies had landed in Sicily two days earlier. The strategic initiative in the east never passed back to Germany.',
+      'Manstein’s blow on the southern face went further than the north — 35 km in six days — and on 12 July the II SS Panzer Corps met Fifth Guards Tank Army near Prokhorovka in the largest tank engagement of the battle. Soviet losses were far heavier, several hundred tanks to some 80 German, and the SS corps was stopped not by being beaten but by mines, anti-tank guns, air attack and exhaustion. Citadel was called off on 13 July, partly because the Allies had landed in Sicily two days earlier. The strategic initiative in the east never passed back to Germany.',
     strength: '4th Panzer Army and Kempf ~220,000 men and ~1,100 tanks; Voronezh and Steppe Fronts ~880,000 men',
   },
   {
@@ -714,7 +714,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [47.83, 35.14], // Zaporizhzhia, the last German bridgehead on the river, cleared on 29 October
     ],
     summary:
-      'The largest river-crossing operation of the war, on a front 750 km wide, against a river 1-2 km broad with the Germans holding the far bank. Troops crossed at night in boats, barrels and anything that floated, and held bridgeheads of a few hundred metres under counter-attack until the heavy equipment could be ferried over; casualty rates in the crossing companies often ran above fifty per cent. Germany\'s "Eastern Wall" on the west bank was turned at Kremenchug and broken at Zaporizhzhia, and Kiev fell on 6 December. The Ukrainian grain, coal and manganese came back into Soviet hands, which is the economic reason 1943 matters as much as Stalingrad.',
+      'The largest river-crossing operation of the war, on a front 750 km wide, against a river 1-2 km broad with the Germans holding the far bank. Troops crossed at night in boats, barrels and anything that floated, and held bridgeheads of a few hundred metres under counter-attack until the heavy equipment could be ferried over; casualty rates in the crossing companies often ran above fifty per cent. Germany’s "Eastern Wall" on the west bank was turned at Kremenchug and broken at Zaporizhzhia, and Kiev fell on 6 December. The Ukrainian grain, coal and manganese came back into Soviet hands, which is the economic reason 1943 matters as much as Stalingrad.',
     strength: 'Four Soviet fronts ~2.65 million men; ~1.25 million German troops on a front they could not hold everywhere',
   },
   {
@@ -762,7 +762,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [44.06, 12.57], // Rimini, entered on 21 September
     ],
     summary:
-      'Germany\'s last strong defensive line in Italy, across the Apennine ridges north of Florence. The Eighth Army attacked on the Adriatic flank because the flat river valleys there suited armour, took the coastal plain and Rimini, and was then stopped on the Marecchia; the US Fifth Army\'s push through the mountains gained 20 km and lost its strength. Kesselring held with fewer divisions than Alexander had, many of them depleted, and the front then sat through the autumn and the winter. This is where the ordinary account of the Italian campaign most needs correcting: the line was not broken in 1944, and the war in Italy lasted eight months longer.',
+      'Germany’s last strong defensive line in Italy, across the Apennine ridges north of Florence. The Eighth Army attacked on the Adriatic flank because the flat river valleys there suited armour, took the coastal plain and Rimini, and was then stopped on the Marecchia; the US Fifth Army’s push through the mountains gained 20 km and lost its strength. Kesselring held with fewer divisions than Alexander had, many of them depleted, and the front then sat through the autumn and the winter. This is where the ordinary account of the Italian campaign most needs correcting: the line was not broken in 1944, and the war in Italy lasted eight months longer.',
     strength: 'Eighth and Fifth Armies ~22 divisions; Fourteenth and Tenth Armies ~16 divisions',
   },
   {
@@ -777,7 +777,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [48.1, 20.78], // Miskolc, and the gateway to Slovakia
     ],
     summary:
-      'The 2nd Ukrainian Front drove out of Transylvania through the Carpathian passes onto the Great Hungarian Plain, taking Debrecen in fourteen days. The armoured corps sent racing ahead for the Theiss bridges at Szolnok were fought to a halt, and the German defence then held on the Theiss through October and November — which is why Budapest was not encircled until 26 December. Regent Horthy tried to make a separate armistice on 11 October; the Germans deposed him and installed the Arrow Cross, and the killing of Budapest\'s Jews accelerated in the weeks that followed.',
+      'The 2nd Ukrainian Front drove out of Transylvania through the Carpathian passes onto the Great Hungarian Plain, taking Debrecen in fourteen days. The armoured corps sent racing ahead for the Theiss bridges at Szolnok were fought to a halt, and the German defence then held on the Theiss through October and November — which is why Budapest was not encircled until 26 December. Regent Horthy tried to make a separate armistice on 11 October; the Germans deposed him and installed the Arrow Cross, and the killing of Budapest’s Jews accelerated in the weeks that followed.',
     strength: '2nd Ukrainian Front and Romanian armies ~370,000 men; 8th Army and III Panzer Corps, short of armour',
   },
   {
@@ -792,7 +792,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [44.82, 20.46], // Belgrade, entered on 20 October
     ],
     summary:
-      'The 3rd Ukrainian Front, with four Bulgarian armies after Bulgaria changed sides in September, drove through Serbia to meet Tito\'s partisans, who had already taken most of the country\'s towns. Belgrade fell on 20 October after four days of street fighting, fought largely by Soviet tanks and Serbian infantry — one of the few Axis capitals taken with the help of a local army that then refused to leave. Army Group E retreated 400 km from Greece through Serbia under air attack and lost its heavy equipment. Tito\'s control of Belgrade, rather than the elections of November 1945, is what decided postwar Yugoslavia.',
+      'The 3rd Ukrainian Front, with four Bulgarian armies after Bulgaria changed sides in September, drove through Serbia to meet Tito’s partisans, who had already taken most of the country’s towns. Belgrade fell on 20 October after four days of street fighting, fought largely by Soviet tanks and Serbian infantry — one of the few Axis capitals taken with the help of a local army that then refused to leave. Army Group E retreated 400 km from Greece through Serbia under air attack and lost its heavy equipment. Tito’s control of Belgrade, rather than the elections of November 1945, is what decided postwar Yugoslavia.',
     strength: '3rd Ukrainian Front and Bulgarian armies ~500,000 men; partisans ~350,000; Army Groups F and E, retreating',
   },
   {
@@ -807,7 +807,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [55.69, 21.15], // Memel-Klaipėda, cut off from the Reich by the 20th
     ],
     summary:
-      'Stavka\'s aim in the Baltic was not Berlin but the isolation of Army Group North, and on 10 October its spearheads reached the Baltic Sea north of Memel, cutting the land link to East Prussia. Three Soviet fronts and two Baltic armies drove 220 km in ten days; a German counter-attack at Memel reopened a corridor only some 50 km wide. Some 200,000 German troops were sealed in the Courland pocket, where they surrendered in May 1945 still holding the Lithuanian coast, and the sea evacuation of around half a million soldiers and civilians from the Baltics became the largest maritime rescue of the war and one of its bloodiest. Estonia, Latvia and Lithuania were occupied a second time, and their prewar governments did not return until 1991.',
+      'Stavka’s aim in the Baltic was not Berlin but the isolation of Army Group North, and on 10 October its spearheads reached the Baltic Sea north of Memel, cutting the land link to East Prussia. Three Soviet fronts and two Baltic armies drove 220 km in ten days; a German counter-attack at Memel reopened a corridor only some 50 km wide. Some 200,000 German troops were sealed in the Courland pocket, where they surrendered in May 1945 still holding the Lithuanian coast, and the sea evacuation of around half a million soldiers and civilians from the Baltics became the largest maritime rescue of the war and one of its bloodiest. Estonia, Latvia and Lithuania were occupied a second time, and their prewar governments did not return until 1991.',
     strength: '1st and 2nd Baltic and Leningrad Fronts ~900,000 men; ~450,000 German troops in the pocket and the corridor',
   },
   {
@@ -838,7 +838,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [50.08, 14.44], // Prague, entered on 9 May
     ],
     summary:
-      'An uprising began in Prague on 5 May, and the Czech National Council asked the Western Allies for help; Patton\'s Third Army was 40 km away and Eisenhower refused to go on, having agreed the line of contact with the Soviets. Three Soviet fronts then cleared Bohemia in five days. Army Group Centre, which had refused to surrender in the west and continued to attack the uprising, was broken up and its remnants captured trying to get to the American lines. Units of the Russian Liberation Army — Vlasov\'s Russians, who had switched sides and helped the Prague insurgents — did reach American lines and were handed back, which meant almost certain death.',
+      'An uprising began in Prague on 5 May, and the Czech National Council asked the Western Allies for help; Patton’s Third Army was 40 km away and Eisenhower refused to go on, having agreed the line of contact with the Soviets. Three Soviet fronts then cleared Bohemia in five days. Army Group Centre, which had refused to surrender in the west and continued to attack the uprising, was broken up and its remnants captured trying to get to the American lines. Units of the Russian Liberation Army — Vlasov’s Russians, who had switched sides and helped the Prague insurgents — did reach American lines and were handed back, which meant almost certain death.',
     strength: '1st, 2nd and 4th Ukrainian Fronts ~1.6 million men; Army Group Centre ~900,000, largely demoralised',
   },
 
@@ -1067,7 +1067,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     summary:
       'Narvik was the objective that mattered: the ice-free port through which Swedish iron ore reached the German navy all year. Ten German destroyers were sunk in the Ofotfjord on 10 and 13 April, and the 2,600 mountain troops and sailors who survived were cut off inland. In May the Allies — the 24th (Guards) Brigade, Polish and French units and Norwegian battalions — attacked from Harstad, landed at Bjerkvik on 13 May and took the town on 28 May, the first time in the war that a German-held town had been cleared by a set assault. It made no difference to the campaign: France was falling, the Allies decided to leave, and the last troops were evacuated on 4-8 June, while the King and government went to Britain on 7 June.',
     strength:
-      'Aubracforce ~18,000 British, French, Polish and Norwegian troops; ~4,800 German mountain troops and shipwrecked sailors, who destroyed their own positions and blew up the ore jetty as they withdrew',
+      'Allied force ~18,000 British, French, Polish and Norwegian troops; ~4,800 German mountain troops and shipwrecked sailors, who destroyed their own positions and blew up the ore jetty as they withdrew',
   },
   {
     id: 'norway_juniper_1940',
@@ -1488,7 +1488,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [51.49, 3.42], // Vlissingen and Middelburg, on Walcheren, taken 6-8 November after the bombers breached the dikes
     ],
     summary:
-      'Antwerp was captured intact on 4 September with its port facilities undamaged, but it was useless while German guns controlled the Scheldt estuary and the South Beveland and Walcheren islands. The clearing was delayed for five critical weeks while Market Garden was mounted, and it then had to be done the hard way: flooded country, causeways, minefields, and the Royal Air Force and RAF Bomber Command breaching the Walcheren dikes to flood the German positions. The 2nd and 3rd Canadian Divisions, with Polish, Belgian and British support and the Royal Navy’s landing craft, took the estuary in five weeks at about 10,000 Canadian casualties; the first convoy reached Antwerp on 28 November. The consequence was strategic: Antwerp’s port handled more tonnage than any other Allied port in 1945, and the delay in opening it is the strongest single explanation for why the advance of 1944 stopped short of the Rhine and why the Battle of the Bulge was possible.',
+      'Antwerp was captured intact on 4 September with its port facilities undamaged, but it was useless while German guns controlled the Scheldt estuary and the South Beveland and Walcheren islands. The clearing was delayed for five critical weeks while Market Garden was mounted, and it then had to be done the hard way: flooded country, causeways, minefields, and the Royal Air Force and RAF Bomber Command breaching the Walcheren dikes to flood the German positions. The 2nd and 3rd Canadian Divisions, with Polish, Belgian and British support and the Royal Navy’s landing craft, took the estuary in five weeks at about 6,400 Canadian casualties of some 21,000 Allied; the first convoy reached Antwerp on 28 November. The consequence was strategic: Antwerp’s port handled more tonnage than any other Allied port in 1945, and the delay in opening it is the strongest single explanation for why the advance of 1944 stopped short of the Rhine and why the Battle of the Bulge was possible.',
     strength:
       'First Canadian Army, the 4th Canadian (Armoured) and 2nd and 3rd Canadian Divisions, with the Royal Navy and RAF Bomber Command; the German Fifteenth Army’s fortress garrisons, ~60,000 men, of whom 40,000 were captured',
   },
@@ -1505,7 +1505,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [51.03, 2.38], // Dunkirk, besieged and left to surrender only on 9 May 1945
     ],
     summary:
-      'The Channel ports had been fortified as U-boat bases, and Hitler ordered them held to the last man because their loss would shorten the U-boat war and delay the Allied supply system. The Canadians reduced Boulogne and Calais in set-piece sieges with heavy artillery and aerial bombing, at a cost of about 4,000 casualties, and Le Havre fell on 12 September after Bomber Command fired 600 tons of bombs into the town — which killed some 2,000 French civilians and left the city in ruins. The fortresses delayed the opening of the ports by five to seven weeks, and the harbour facilities had been so thoroughly demolished that they were not working at full rate for months. That is why the Allied armies were supplied across the Channel beaches and over the Seine and Scheldt, and why the front in the west stalled on the German frontier until November 1944. Dunkirk, garrisoned by 12,000 Germans, was simply ignored, and its surrender on 9 May 1945 was the last German capitulation of the war in the west.',
+      'The Channel ports had been fortified as U-boat bases, and Hitler ordered them held to the last man because their loss would shorten the U-boat war and delay the Allied supply system. The Canadians reduced Boulogne and Calais in set-piece sieges with heavy artillery and aerial bombing, at a cost of under 900 Canadian casualties, and Le Havre fell on 12 September after Bomber Command fired 600 tons of bombs into the town — which killed some 2,000 French civilians and left the city in ruins. The fortresses delayed the opening of the ports by five to seven weeks, and the harbour facilities had been so thoroughly demolished that they were not working at full rate for months. That is why the Allied armies were supplied across the Channel beaches and over the Seine and Scheldt, and why the front in the west stalled on the German frontier until November 1944. Dunkirk, garrisoned by 12,000 Germans, was simply ignored, and its surrender on 9 May 1945 was the last German capitulation of the war in the west.',
     strength:
       'First Canadian Army with Polish and Czech brigades and the RAF Heavy Bomber offensive; garrisons of 10,000-20,000 men in concrete fortresses built to U-boat standards',
   },
