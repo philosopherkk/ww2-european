@@ -426,8 +426,8 @@ export const EVENTS_1914: WW1Event[] = [
     fronts: ['western'],
     countries: ['France', 'Germany', 'United Kingdom'],
     figures: ['joffre', 'gallieni', 'french_john'],
-    note: 'Fought 5–12 September. French and British strength is given as 1,080,000 by Herwig and as ' +
-      '750,000–900,000 elsewhere, so this card says about a million. Casualties: 250,000 French, 12,733 ' +
+    note: 'Fought 5–12 September. Allied strength is given as 1,080,000 — 980,000 French and 100,000 British — while the German strength is given as ' +
+      '750,000 to 900,000, so this card says about a million Allied troops. Casualties: 250,000 French, 12,733 ' +
       'British and 298,000 German, of whom 38,000 were captured. Gallieni, as military governor of Paris, ' +
       'reported the exposed German flank on 3 September and Joffre ordered the counter-offensive on 4 ' +
       'September.',
@@ -436,7 +436,7 @@ export const EVENTS_1914: WW1Event[] = [
         cause: 'The German armies had marched hundreds of kilometres through Belgium and northern France and ' +
           'were close to Paris. They were exhausted, and two of them had left a gap between them.',
         what: 'The French army and the small British army stopped retreating and turned to fight between 5 ' +
-          'and 12 September, along the river Marne and its canal. The French commander Joffre gave the order ' +
+          'and 12 September, along the river Marne. The French commander Joffre gave the order ' +
           'to attack on 4 September, after the governor of Paris noticed the gap between the German ' +
           'armies.',
         consequence: 'The German armies fell back to the river Aisne and dug in on the high ground. Any hope ' +
@@ -464,8 +464,8 @@ export const EVENTS_1914: WW1Event[] = [
           'that it was the most important land battle of the twentieth century has been answered by ' +
           'historians of logistics who point out that the German armies were already spent before the ' +
           'fighting began: Kluck’s men were described in the sources as living scarecrows.',
-        what: 'Strength figures vary by a third — 1,080,000 French and British in Herwig against 750,000 to ' +
-          '900,000 in other accounts — and the casualty totals of 250,000 French, 12,733 British and 298,000 ' +
+        what: 'Strength figures vary by a third — 1,080,000 French and British in Herwig against German returns of 750,000 to ' +
+          '900,000 Germans — and the casualty totals of 250,000 French, 12,733 British and 298,000 ' +
           'German are estimates compiled from divisional returns kept during a retreat, so no two accounts ' +
           'agree. Bülow’s 260,000 falling to 154,000 is the firmest figure in the battle, because it comes ' +
           'from army returns rather than from the battlefield.',
@@ -671,7 +671,7 @@ export const EVENTS_1914: WW1Event[] = [
     figures: ['putnik', 'potiorek'],
     note: 'The battle ran from 16 November to 15 December 1914. Each side lost more than 20,000 dead; the ' +
       'infobox totals for the battle are 132,000 Serbian and 273,000 Austro-Hungarian casualties, which are ' +
-      'not broken down and cannot be checked against the dead figures. Potiorek and von Frank were relieved ' +
+      'broken down as 22,000 Serbian killed, 91,000 wounded and 19,000 missing or captured, and 30,000 Austro-Hungarian killed, 173,000 wounded and 70,000 captured. Potiorek and von Frank were relieved ' +
       'on 22 December, and the Austro-Hungarian 5th and 6th Armies were merged into a 5th Army of about ' +
       '95,000 men.',
     levels: {
@@ -745,10 +745,10 @@ export const EVENTS_1914: WW1Event[] = [
           'there to fight a force of about a thousand men.',
       },
       secondary: {
-        cause: 'Tanga was part of a plan to knock out German East Africa early by landing at the port, and ' +
-          'the force sent was the Indian Expeditionary Force B, about 9,000 men under Aitken. Its ' +
-          'opponent, Lettow-Vorbeck, had only about 1,000 men, of whom a quarter were European, and he had ' +
-          'moved them into position as soon as the ships were sighted.',
+        cause: 'Tanga was part of a plan to knock out German East Africa early by landing at the port, and the ' +
+          'force sent was the Indian Expeditionary Force B, about 9,000 men under Aitken. Its opponent, ' +
+          'Lettow-Vorbeck, had only about 1,000 men, mostly Askari soldiers under German officers and ' +
+          'senior NCOs, and he had moved them into position as soon as the ships were sighted.',
         what: 'The attack began on 3 November 1914 and went on to the fifth. The Germans had machine-guns ' +
           'covering the coconut palms in front of the beach, the landing was made in the open without ' +
           'enough artillery support, and the force lost 360 killed, 487 wounded and 148 missing. German ' +
@@ -766,11 +766,11 @@ export const EVENTS_1914: WW1Event[] = [
           'the newly raised units. The Askari troops on both sides have only recently become subjects of the ' +
           'history rather than of the anecdote.',
         what: 'The strength figures — about 9,000 against about 1,000 — are rounded in the sources and ' +
-          'include men ashore and afloat, and the German total is given as 250 Europeans and 750 Askaris, ' +
-          'which is the least stable number in the campaign because the Schutztruppe was recruiting ' +
-          'constantly. Casualty figures are given as 360 killed, 487 wounded and 148 missing British and ' +
-          'Indian, against 71 killed and 76 wounded German; the missing are mostly men who were captured in ' +
-          'the disorder on the beach.',
+          'include men ashore and afloat, and the 250/750 pair sometimes quoted for the garrison is its ' +
+          'initial-and-reinforcement breakdown in the source, not a split between Europeans and Askaris. ' +
+          'Casualty figures are given as 360 killed, 487 wounded and 148 missing British and Indian, ' +
+          'against 71 killed and 76 wounded German; the missing are mostly men who were captured in the ' +
+          'disorder on the beach.',
         consequence: 'The campaign in East Africa is written two ways: as a brilliant distraction by a small ' +
           'German force, which is how it was described in interwar German accounts, and as a failure of ' +
           'British planning that consumed resources the western front needed. Both readings lean on ' +
@@ -790,7 +790,7 @@ export const EVENTS_1914: WW1Event[] = [
     countries: ['United Kingdom', 'Germany'],
     note: 'The battle was fought on 8 December 1914, not 10 December. British losses were 10 killed and 19 ' +
       'wounded; German losses were 1,871 killed and 215 captured, with Scharnhorst, Gneisenau and two light ' +
-      'cruisers sunk and only the light cruiser Dresden escaping. Folded into this card rather than given ' +
+      'cruisers sunk; only the light cruiser Dresden and the collier Seydlitz escaped. Folded into this card rather than given ' +
       'their own: Heligoland Bight, 28 August (British 35 killed and 55 wounded; German 712 killed, 149 ' +
       'wounded and 336 captured, three light cruisers and a torpedo boat sunk); Coronel, 1 November (British ' +
       '1,660 killed, German 3 wounded); the wrecking of the Emden at Cocos on 9 November, after 25 ' +
@@ -802,17 +802,15 @@ export const EVENTS_1914: WW1Event[] = [
       'Chinese civilians were killed.',
     levels: {
       primary: {
-        cause: 'A squadron of German warships had crossed the Pacific Ocean and, in November, beaten a ' +
-          'British squadron off the coast of Chile with very heavy British loss. The German ships sailed home ' +
-          'round the bottom of South America and stopped at the Falkland Islands to destroy the British coal ' +
-          'depot and radio station there.',
+        cause: 'German warships had crossed the Pacific and, in November, beaten a British squadron off Chile ' +
+          'with heavy loss. They sailed home round the south tip of South America, stopping at the ' +
+          'Falkland Islands to destroy the British coal depot and radio station there.',
         what: 'The British had sent two big modern battlecruisers south to hunt the Germans down. On 8 ' +
           'December the German ships were too slow to get away and were sunk one by one. Very few of the ' +
           'German sailors were rescued.',
-        consequence: 'Germany had no more large warships loose on the seas, so its trade could not come home ' +
-          'and Britain’s ships from across the world could go on sailing. A British public that had been ' +
-          'frightened by the German raider Emden took heart. The battle is still a public holiday in the ' +
-          'Falkland Islands on 8 December.',
+        consequence: 'Germany had no more large warships at sea, so its trade could not come home, while British ' +
+          'ships kept sailing the world. The British public, frightened by the raider Emden, took heart. ' +
+          '8 December is still a public holiday in the Falkland Islands.',
       },
       secondary: {
         cause: 'A German cruiser squadron under Spee, based in the Pacific, had beaten a British squadron at ' +

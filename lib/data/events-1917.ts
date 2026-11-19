@@ -22,7 +22,9 @@ export const EVENTS_1917: WW1Event[] = [
       primary:
         {
           cause: 'Germany had been sinking merchant ships without warning in 1915, but stopped after the United States complained that American citizens had been drowned. Its generals and admirals wanted to start again.',
-          what: 'On 9 January 1917 the German Kaiser met his chancellor and his army and navy chiefs at the castle of Pless in Silesia. The admirals said their submarines could sink about 600,000 tons of Allied shipping every month. The generals said that would starve Britain into peace in four to six months. The chancellor, Theobald von Bethmann Hollweg, warned that it would bring the United States into the war. The Kaiser agreed with the soldiers.',
+          what: 'At Pless on 9 January 1917 the army and navy chiefs promised the Kaiser about 600,000 tons ' +
+            'of Allied shipping sunk a month, and peace for Britain in four to six months. Bethmann ' +
+            'Hollweg warned it would bring America in; the Kaiser agreed.',
           consequence: 'Germany told the United States on 31 January that its submarines would sink ships without warning from 1 February. America declared war four months later.',
         },
       secondary:
@@ -84,7 +86,9 @@ export const EVENTS_1917: WW1Event[] = [
       primary:
         {
           cause: 'There was too little food in Petrograd, and the war had taken the best soldiers away from the city to the front.',
-          what: 'Women in the bread queues began striking on 8 March, and the workers of the city joined them. Soldiers sent to stop them fired, then shot their own officers and joined the crowd. The Tsar, stranded on his train at Pskov, was persuaded by his generals to give up his throne on 15 March.',
+          what: 'On 8 March the women in the bread queues struck, and the city workers followed. Soldiers ' +
+            'sent to stop them fired, then shot their officers and joined the crowd. His generals urged ' +
+            'the Tsar to give up his throne; on 15 March he agreed.',
           consequence: 'The empire of the Romanovs ended. Two governments now shared power in Petrograd: the ministers from the parliament, and the council of workers and soldiers called the Soviet.',
         },
       secondary:
@@ -120,7 +124,12 @@ export const EVENTS_1917: WW1Event[] = [
       secondary:
         {
           cause: 'After the surrender of the Kut garrison on 29 April 1916, Maude was sent to rebuild the force in Basra: fresh divisions recruited in India, a field railway built up from the coast, armed river boats, and a slow supply line that would not be cut again.',
-          what: 'The campaign opened on 13 December 1916. Maude, nicknamed Systematic Joe, advanced on both banks of the Tigris, reducing the Khadairi Bend (6–19 January), the Hai River line (25 January – 4 February), the Dahra Bend (16 February) and Kut itself on 24 February, this time allowing the Ottoman garrison to withdraw. On 9 March Khalil Pasha defended the line of the Diyala river where it meets the Tigris; Maude shifted his army north to outflank it, and a British assault on 10 March destroyed the single regiment left behind. Khalil Pasha retreated to Baghdad, ordered its evacuation the same evening, and the British entered on 11 March.',
+          what: 'The campaign opened on 13 December 1916. Maude advanced on both banks of the Tigris, ' +
+            'reducing the Khadairi Bend (6–19 January), the Hai River line (25 January – 4 February) and ' +
+            'the Dahra Bend on 16 February, taking Kut on 24 February, this time letting the Ottoman ' +
+            'garrison withdraw. On 9 March Khalil Pasha defended the Diyala river; Maude shifted north to ' +
+            'outflank him and on 10 March destroyed the single regiment left behind. Khalil Pasha fell ' +
+            'back on Baghdad and ordered it evacuated that evening; the British entered on 11 March.',
           consequence: 'Kut and Baghdad together wiped out the humiliation of 1916 and gave Britain the two great cities of Mesopotamia. The Ottoman government gave up its operations in Persia and had to rebuild an army to guard Mosul, while in London and India officials began arguing over the administration of what had been taken.',
         },
       university:
@@ -144,7 +153,9 @@ export const EVENTS_1917: WW1Event[] = [
       primary:
         {
           cause: 'A British army marching across the Sinai from Egypt wanted to take the Turkish-held town of Gaza, which guarded the road into Palestine.',
-          what: 'On 26 March British and Indian soldiers, with mounted troops riding round the town, attacked Gaza from the landward side. They got into the town and were close to taking it, but it was getting dark, more Turkish soldiers were arriving, and there was no water for the horses. The attackers pulled back during the evening.',
+          what: 'On 26 March British and Indian troops attacked Gaza from the land, with horsemen riding ' +
+            'round it. They got in and nearly took it, but it was getting dark, more Turks were arriving, ' +
+            'and the horses had no water. They withdrew that evening.',
           consequence: 'Nearly 4,000 British and Indian soldiers were killed or wounded, most of them in the withdrawal. Gaza stayed in Turkish hands for another seven months, and the next attack was worse.',
         },
       secondary:
@@ -175,13 +186,20 @@ export const EVENTS_1917: WW1Event[] = [
       primary:
         {
           cause: 'Germany had begun sinking merchant ships without warning again on 1 February, and American ships were among those lost.',
-          what: 'In January a German minister sent a secret message to Mexico asking it to join the war against the United States, promising help to win back Texas, Arizona and New Mexico. British intelligence read it and the American public saw it on 1 March. On 2 April President Wilson asked Congress for war, saying the world had to be made safe for democracy. Congress agreed, and war was declared on 6 April.',
+          what: 'In January a German minister asked Mexico to join the war against the United States, ' +
+            'promising it Texas, Arizona and New Mexico. British intelligence read it; Americans saw it ' +
+            'on 1 March. Congress declared war on 6 April, after Wilson asked on 2 April.',
           consequence: 'The United States was at war with Germany, though not yet with its allies. It had almost no army in France, so at first it sent money, food and ships rather than soldiers.',
         },
       secondary:
         {
           cause: 'American opinion had moved against Germany since the reports from Belgium in 1914 and the sinking of the Lusitania in 1915, and American banks and exporters had lent and sold heavily to Britain and France. Wilson had been re-elected in 1916 on keeping the country out of the war, but German submarine warfare on 1 February, which Berlin knew was likely to bring America in, closed off that position.',
-          what: 'The Zimmermann telegram of 17 January, intercepted and decoded by the British cryptography room known as Room 40, proposed a German–Mexican alliance with Mexico to recover Texas, Arizona and New Mexico; its text appeared in the American press on 1 March and Zimmermann admitted on 3 March that it was genuine. Wilson laid the German submarine announcement before Congress on 3 February and asked for a declaration of war on 2 April, which the Senate passed that day by 82 to 6; the House followed on 6 April by 373 to 50 and Wilson signed at once. The declaration was against Germany only, not its allies.',
+          what: 'The Zimmermann telegram of 17 January, intercepted and decoded by British Room 40, proposed ' +
+            'an alliance with Mexico to recover Texas, Arizona and New Mexico; its text appeared in the ' +
+            'American press on 1 March, and on 3 March Zimmermann admitted it was genuine. Wilson asked ' +
+            'Congress for a declaration of war on 2 April, which the Senate passed that day by 82 to 6; ' +
+            'the House followed on 6 April by 373 to 50, and Wilson signed at once. The declaration was ' +
+            'against Germany only, not its allies.',
           consequence: 'America joined as a power at war rather than as an allied partner, with its own commander and its own flag on the Western Front. A mass army had to be raised, trained and shipped across an ocean patrolled by submarines, which meant that the decisive American effect in 1917 was economic and moral, and in 1918 military.',
         },
       university:
@@ -206,7 +224,9 @@ export const EVENTS_1917: WW1Event[] = [
       primary:
         {
           cause: 'The French commander, Robert Nivelle, believed the Germans had been badly worn down at Verdun and could be pushed off a long ridge north of the Aisne called the Chemin des Dames.',
-          what: 'On 16 April the French army attacked along the ridge after a huge artillery bombardment. The ground was steep, the German positions were deep and dug into the chalk, the weather was against them, and the tanks sent forward were few. Thousands of French soldiers were killed or wounded on the first day, and the ridge was not taken.',
+          what: 'On 16 April the French attacked along the ridge after a huge bombardment. The ground was ' +
+            'steep, the Germans were dug deep into the chalk and the weather was bad. Thousands were ' +
+            'killed or wounded on day one, and the ridge was not taken.',
           consequence: 'The attack was called off at the end of April. French soldiers had lost heart, and within weeks whole divisions were refusing to attack.',
         },
       secondary:
@@ -237,7 +257,9 @@ export const EVENTS_1917: WW1Event[] = [
       primary:
         {
           cause: 'Lenin was the leader of the Bolshevik party and was far away in Switzerland, where he had been living while the war went on. Getting home meant crossing a war zone.',
-          what: 'Germany, which was fighting Russia, let Lenin and his group travel across Germany by train, then by ferry and train through Sweden and Finland, hoping his coming would make Russia give up the war. Lenin reached Petrograd on 16 April to a big welcome at the railway station, and at once told his own party to take no part in the new government and to hand all power to the soviets, the councils of workers and soldiers.',
+          what: 'Germany, at war with Russia, let Lenin through, hoping his return would make Russia quit the ' +
+            'war. He reached Petrograd on 16 April, and told his party to reject the new government and ' +
+            'to give all power to the soviets, the workers’ councils.',
           consequence: 'His demands gave the Bolsheviks a clear policy against the war, and helped bring on the crises of July and the Bolshevik seizure of power in November.',
         },
       secondary:
@@ -268,13 +290,20 @@ export const EVENTS_1917: WW1Event[] = [
       primary:
         {
           cause: 'After the failure of the Chemin des Dames attack in April, French soldiers felt they had been sacrificed for nothing.',
-          what: 'In the spring of 1917 whole units of the French army began to refuse orders to attack. They sang, they shouted back at their officers, in a few cases they arrested them, but they stayed in the trenches and kept their guns ready for a German attack. General Philippe Pétain took command on 15 May, promised no more hopeless attacks, and gave tired divisions rest and leave.',
+          what: 'In spring 1917 whole French units refused to attack. They shouted back, sometimes arresting ' +
+            'officers, but stayed in the trenches, ready for a German attack. General Pétain took command ' +
+            'on 15 May, promised no more hopeless attacks and gave tired units rest.',
           consequence: 'The French army stopped attacking for the rest of the year. Hundreds of soldiers were sentenced to death and a small number were shot, and the French army waited until it was strong enough to attack again.',
         },
       secondary:
         {
           cause: 'The Nivelle offensive had been sold to the army as the decisive blow that would end the war in days; it failed on the Chemin des Dames at a cost of about 187,000 French casualties. More than a million French soldiers had already been killed since 1914, out of a male population of some twenty million, and the American troops whose arrival had been promised had not come. The February Revolution in Russia encouraged talk of refusing a war nobody wanted.',
-          what: 'Collective indiscipline spread from the units of the Aisne battle in late April through May and June. Soldiers elected committees, demanded leave and food, and refused to move up to the line for an attack; nearly half the infantry divisions on the western front were touched to some degree, and in a few places officers were seized. Pétain, who replaced Nivelle on 15 May, combined justice with reform: about 3,400 courts-martial, some 554 death sentences and 26 executions, alongside better food, regular rest, and a promise that attacks would be limited to what was achievable — the army would hold and recuperate rather than bleed itself again.',
+          what: 'Collective indiscipline spread from the units of the Aisne battle in late April through May ' +
+            'and June. Soldiers elected committees, demanded leave and food, and refused to move up for ' +
+            'an attack; nearly half the infantry divisions on the western front were touched, and in a ' +
+            'few places officers were seized. Pétain, who replaced Nivelle on 15 May, combined justice ' +
+            'with reform: about 3,400 courts-martial, some 554 death sentences and 26 executions, ' +
+            'alongside better food, regular rest, and attacks limited to what was achievable.',
           consequence: 'The French army recovered without a purge that would have destroyed it, and France fought the rest of 1917 on the defensive, which placed the weight of the year’s fighting on the British and, after June, on the expectation of American manpower. The mutinies also set the terms of French strategy until 1918: attack only with overwhelming means and with the tank and the aeroplane to spare infantry.',
         },
       university:
@@ -305,7 +334,13 @@ export const EVENTS_1917: WW1Event[] = [
       secondary:
         {
           cause: 'Alexander Kerensky, minister of war and then head of the government, believed that a successful attack would give the regime authority, strengthen its standing with the Allies, and prove to the soldiers’ committees that the war could still be won. The army had voted for the right to elect committees and send delegates, so orders now had to be negotiated with them, and only units that volunteered were used.',
-          what: 'The offensive opened on 1 July in eastern Galicia and broke in over parts of the Austro-Hungarian front, taking tens of thousands of prisoners; at Zborów the Czechoslovak brigade of about 3,500 men, low on equipment, made the first significant attack by the Czechoslovak formations and cleared the trench before its reinforcements came up. But the Russian reserves refused to move, the German reinforcements sent to Galicia counter-attacked, and by 19 July the fighting was over. On the Romanian front the same general plan produced the attack at Mărăști from 22 July, where the Romanian Second Army under Alexandru Averescu broke the Austro-Hungarian positions in the Focșani Gate — the last joint Romanian-Russian operation — and then, from 6 August to 3 September, the German Tenth and Fourth armies’ counter-offensive at Mărășești, which the Romanians and what remained of the Russian Fourth Army held off along the Siret.',
+          what: 'The offensive opened on 1 July in eastern Galicia and broke in over parts of the ' +
+            'Austro-Hungarian front, taking tens of thousands of prisoners. At Zborów the Czechoslovak ' +
+            'brigade, about 3,500 men, made the first significant Czechoslovak attack, clearing the ' +
+            'trench before reinforcements came up. But the Russian reserves refused to move, German ' +
+            'reinforcements counter-attacked, and by 19 July the fighting was over. On the Romanian front ' +
+            'the same plan produced Mărăști from 22 July, the last joint Romanian-Russian operation, and ' +
+            'the counter-offensive at Mărășești.',
           consequence: 'The offensive was the last Russia made in the war. Its failure discredited the government, brought the officer corps into the open against the committees, and made possible both the Kornilov affair and the German capture of Riga. In Romania the two battles gave the army a national myth of victory in a year when the country was otherwise overrun.',
         },
       university:
@@ -330,7 +365,9 @@ export const EVENTS_1917: WW1Event[] = [
       primary:
         {
           cause: 'The British army wanted to push the Germans out of the high ground around the Belgian city of Ypres, and to reach the Belgian coast where the German submarines had their bases.',
-          what: 'On 31 July the British army attacked above Ypres, after a bombardment that destroyed the drainage of the fields. The first day went well, but then it rained. The shells had turned the clay into a brown sea of mud in which men and horses drowned, and attacks had to be made over it for months for a few hundred yards at a time.',
+          what: 'On 31 July the British attacked above Ypres after a bombardment that wrecked the drainage. ' +
+            'The first day went well, then it rained. The ground became a sea of mud where men and horses ' +
+            'drowned, and months of attacks won a few hundred yards.',
           consequence: 'The ridge village of Passchendaele was taken in November and the offensive then stopped. Both sides lost hundreds of thousands of men and the coast was never reached.',
         },
       secondary:
@@ -361,7 +398,9 @@ export const EVENTS_1917: WW1Event[] = [
       primary:
         {
           cause: 'Greece had stayed out of the war, but its prime minister Eleftherios Venizelos wanted in on the Entente side, and the King, Constantine, who was married to the German Kaiser’s sister, refused.',
-          what: 'The country split in two, with a rival Entente-backed Greek government in the north. In June 1917 French and British ships blockaded Athens and force was used, and on 11 June King Constantine gave up the throne and went into exile with his eldest son; his second son Alexander became king. Venizelos took over the whole country, and Greece declared war on the Central Powers at the end of June.',
+          what: 'Greece split, with a rival government in the north. In June 1917 French and British ships ' +
+            'blockaded Athens, and on 11 June Constantine went into exile. Venizelos took over, and ' +
+            'Greece declared war on the Central Powers at the end of June.',
           consequence: 'Greek soldiers, instead of fighting each other, went to the Macedonian front against Bulgaria. Greece came out of the war on the winning side, which changed the map of the Balkans.',
         },
       secondary:
@@ -387,18 +426,26 @@ export const EVENTS_1917: WW1Event[] = [
     fronts: ['eastern', 'balkans'],
     countries: ['Romania', 'Russia', 'Germany', 'Austria-Hungary'],
     figures: ['averescu'],
-    note: 'The battle is dated 6 August to 3 September 1917; shorter accounts stop in mid-August, when the fighting around Mărășești itself was decided, and treat the rest as mopping-up. The casualties quoted here — 27,410 Romanian (5,125 killed) and 25,650 Russian (7,083 killed), against 60,000 to 65,000 German and Austro-Hungarian — come from one Romanian popular-history account, which is also where the unit strengths are taken from; the enemy total is the weakest number in the set and no German divisional record is normally cited alongside it. The Romanian 1st Army was commanded by Constantin Cristescu until 11 August and by Eremia Grigorescu from 12 August; the Russian 4th Army by Alexander Ragoza; the attacking German 9th Army by Johannes von Eben. This card also covers the Battle of Mărăști of 22 July to 1 August, which preceded it and is described in the July card.',
+    note: 'The battle is dated 6 August to 3 September 1917 new style, 24 July to 21 August in the Julian calendar used in Russian and Romanian documents; shorter accounts stop in mid-August, when the fighting around Mărășești itself was decided, and treat the rest as mopping-up. The casualties quoted here — 27,410 Romanian (5,125 killed) and 25,650 Russian (7,083 killed), against 60,000 to 65,000 German and Austro-Hungarian — come from one Romanian popular-history account, which is also where the unit strengths are taken from; the enemy total is the weakest number in the set and no German divisional record is normally cited alongside it. The Romanian 1st Army was commanded by Constantin Cristescu until 11 August and by Eremia Grigorescu from 12 August; the Russian 4th Army by Alexander Ragoza; the attacking German 9th Army by Johannes von Eben. This card also covers the Battle of Mărăști of 22 July to 1 August, which preceded it and is described in the July card.',
     levels: {
       primary:
         {
           cause: 'Romania joined the war in 1916 and was overrun in four months. Only the north-east, Moldavia, was left, held by a thin front along the Siret river with the last ports and railways behind it.',
-          what: 'On the night of 5 August the Germans shelled for eight hours and used poison gas, and broke in where the Russian trenches were shallow and unfinished. The Russians fell back over the river and blew the bridges up behind them, and Romanian divisions marched straight into the gap. All month the two sides attacked and counter-attacked over the same villages, and the front moved by a kilometre or two at a time.',
+          what: 'On 5 August the Germans shelled for eight hours and used poison gas, breaking in where the ' +
+            'Russian trenches were shallow. The Russians fell back, and Romanian divisions marched ' +
+            'straight into the gap. All month the front moved by a kilometre or two.',
           consequence: 'The Germans never broke through, and the battle died out on 3 September with Moldavia still in Allied hands. The German and Austro-Hungarian army lost more men than the Romanians and Russians together.',
         },
       secondary:
         {
           cause: 'After the fall of Bucharest in December 1916, Romania survived only because a Russian army stood in Moldavia beside it, and because the Focșani Gate — the low gap between the Carpathians and the Danube delta, along the Siret — was narrow enough to hold. On 22 July the Romanian Second Army under Averescu had attacked successfully at Mărăști, further south, and the German high command answered not by meeting that attack but by striking the weaker Russian 4th Army in the centre.',
-          what: 'The blow fell on 6 August on Russian positions that were still being handed over to the Romanian 1st Army, with no depth and gaps between the units. The Germans took the village of Doaga, a Romanian counterattack took ground back, and a German wedge drove between the Romanian 9th Division and a Russian division whose units were leaving their positions. Command of the Romanian army changed on 12 August, from Cristescu to Grigorescu, the attacks were renewed on 14 August behind gas and heavy guns, and from then until 3 September the German 9th Army threw in division after division without taking Mărășești.',
+          what: 'The blow fell on 6 August on Russian positions still being handed over to the Romanian 1st ' +
+            'Army, thin and full of gaps. The Germans took the village of Doaga, a Romanian ' +
+            'counter-attack took ground back, and a German wedge drove between the Romanian 9th Division ' +
+            'and a Russian division already leaving its positions. Command passed on 12 August from ' +
+            'Cristescu to Grigorescu, attacks were renewed on 14 August behind gas and heavy guns, and ' +
+            'until 3 September the German 9th Army threw in division after division without taking ' +
+            'Mărășești.',
           consequence: 'It was the last major Central Powers attack against Romania in the war, and it failed: a third of the country, its ports and its links to the sea stayed Allied. The Russian 4th Army paid for the defence with units that deserted in the fighting, which was one more sign that Petrograd’s hold on the front was gone by the time the Bolsheviks took power in November.',
         },
       university:
@@ -423,7 +470,10 @@ export const EVENTS_1917: WW1Event[] = [
       primary:
         {
           cause: 'After the failure of the summer offensive the Russian army needed discipline, and its new commander-in-chief, General Lavr Kornilov, wanted harsh rules back, including the death penalty at the front. Prime Minister Alexander Kerensky wanted the same thing but could not say so in public, and the two men misread each other.',
-          what: 'Kerensky heard that Kornilov was coming to take over the government, and declared him a traitor. Kornilov, who thought the Bolsheviks had already seized Petrograd, sent corps towards the capital to “save” the government. Kerensky asked the Petrograd Soviet for help, and the Soviet’s workers and soldiers stopped the troops on the railway, talking to them and pulling up the lines. The corps turned round without a battle; Kornilov was arrested at the front and one of his commanders, Aleksandr Krymov, shot himself.',
+          what: 'When Kornilov marched on the government, Kerensky declared him a traitor. Kornilov thought ' +
+            'the Bolsheviks had taken Petrograd and sent his corps there. Workers of the Petrograd Soviet ' +
+            'stopped them on the railway, and the corps turned back without a fight. Kornilov was ' +
+            'arrested.',
           consequence: 'Nobody fought, and the government still fell apart. Kerensky had armed the workers to save himself, and the Bolsheviks, who had been beaten down in July, were given weapons and lost their prisoners. Russia became a republic by decree a day later.',
         },
       secondary:
@@ -452,13 +502,24 @@ export const EVENTS_1917: WW1Event[] = [
     levels: {
       primary:
         {
-          cause: 'The Russian navy still held the islands of Estonia, and from there its guns covered the Gulf of Finland, the sea road to Petrograd. After the revolution in February, the German high command thought the islands could be taken, and that with them the Russian capital would lie open to attack by sea and by land.',
-          what: 'On 12 October 1917 German minesweepers cut channels through the minefields while battleships fought the Russian coastal guns and ships. German soldiers landed on the beach at Tagalaht on the island of Saaremaa and pushed inland, and another landing took the next island, Hiiumaa. The garrisons, about 24,000 Russians against 24,500 Germans with ten battleships behind them, were overrun one island at a time. The Russian fleet lost an old battleship and a destroyer and withdrew out of the strait, and by 20 October the last island was in German hands.',
+          cause: 'The Russian navy held the Estonian islands, whose guns covered the Gulf of Finland, the sea ' +
+            'road to Petrograd. After the February revolution the German high command judged that taking ' +
+            'them would leave the Russian capital open to attack by sea and land.',
+          what: 'On 12 October 1917 German minesweepers cut channels through the minefields while battleships ' +
+            'fought the Russian guns. Troops landed at Tagalaht on Saaremaa; a second landing took ' +
+            'Hiiumaa. The Russian fleet lost a battleship and withdrew. By 20 October the islands were ' +
+            'German.',
           consequence: 'Germany took about 20,000 prisoners and the Baltic islands, and lost a little over 200 men killed. The Russian government, which had promised its soldiers peace, now had the enemy on the coast within reach of Petrograd, and a month later it asked for an armistice.',
         },
       secondary:
         {
-          cause: 'The islands had been of little importance to either side in 1914, but revolutionary turmoil in Russia changed the calculation: the German high command judged that taking them would outflank the Russian army’s whole Baltic front and make Petrograd vulnerable, which was a way of ending the Eastern Front on German terms. The navy also wanted the Gulf of Finland cleared. The force was modern and joint: about 24,500 soldiers under General Oskar von Hutier, whose army carried out the attack, with the 42nd Division in the first wave, against some 24,000 Russian troops, backed by ten dreadnoughts, a battlecruiser, fifty torpedo boats, six submarines, airships and 102 aircraft.',
+          cause: 'The islands had mattered little to either side in 1914, but turmoil in revolutionary Russia ' +
+            'changed the calculation: the German high command judged that taking them would outflank the ' +
+            'whole Baltic front and make Petrograd vulnerable, ending the Eastern Front on German terms. ' +
+            'The navy also wanted the Gulf of Finland cleared. The force was modern and joint: about ' +
+            '24,500 soldiers under General Oskar von Hutier, with the 42nd Division in the first wave, ' +
+            'against some 24,000 Russians, backed by ten dreadnoughts, a battlecruiser, fifty torpedo ' +
+            'boats, six submarines and 102 aircraft.',
           what: 'Mine-clearing and fire against the coastal batteries came first, and on 12 October the battleships engaged Russian ships in the gulf while the 42nd Division came ashore at Tagalaht bay. Saaremaa was cleared by 16 October; Hiiumaa, attempted twice before, was taken on 13 October; and the fighting in the Suur Strait, the Battle of Moon Sound, cost the Russians the pre-dreadnought Slava and the destroyer Grom and forced the fleet to withdraw. Russian units surrendered in thousands and Muhu was evacuated on 20 October.',
           consequence: 'Albion cost Germany about 210 dead and gave it 20,000 prisoners, 141 guns and the Baltic islands, with the road to Petrograd open by sea and land. It fixed the terms of the Eastern Front before the talks started: the Bolshevik government negotiated from October and signed an armistice on 15 December, and in March 1918 gave up the Baltic provinces, Poland and Ukraine at Brest-Litovsk. Later naval writers took the operation as the first modern joint amphibious assault.',
         },
@@ -479,12 +540,14 @@ export const EVENTS_1917: WW1Event[] = [
     fronts: ['italian'],
     countries: ['Italy', 'Austria-Hungary', 'Germany', 'United Kingdom', 'France', 'United States'],
     figures: ['cadorna', 'diaz', 'loyd_george'],
-    note: 'The battle is dated 24 October to 19 November 1917. The Italian retreat covers about 150 km to the Piave; Italian effective strength is given as falling from about 1,800,000 to about 1,000,000 men, and the government of Paolo Boselli fell as a direct result. Luigi Cadorna was replaced as chief of staff by Armando Diaz on 8 November 1917. Italian losses are deliberately not stated on this card: the article’s casualty box carries two irreconcilable sets of figures — 70,000 casualties, credited to David Stevenson’s 2017 study, and 13,000 dead, 30,000 wounded and 265,000 to 275,000 captured — and the rows are not labelled clearly enough to say which army and which definition each belongs to, so the card uses only the reduction in effective strength, which is the least contested measure. The United States declared war on Austria-Hungary on 7 December 1917, three weeks after Caporetto, partly because American planners expected to have to send troops to Italy; that declaration has its own card.',
+    note: 'The battle is dated 24 October to 19 November 1917. The Italian retreat covers about 150 km to the Piave; Italian effective strength is given as falling from about 1,800,000 to about 1,000,000 men, and the government of Paolo Boselli fell as a direct result. Luigi Cadorna was replaced as chief of staff by Armando Diaz on 8 November 1917. Italian losses are deliberately not stated on this card: the article’s casualty box carries two irreconcilable sets of figures — 70,000 casualties, credited to David Stevenson’s 2017 study, and 13,000 dead, 30,000 wounded and 265,000 to 275,000 captured — and the rows are not labelled clearly enough to say which army and which definition each belongs to, so the card uses only the reduction in effective strength, which is the least contested measure. The United States declared war on Austria-Hungary on 7 December 1917, about six weeks after the Caporetto offensive opened, partly because American planners expected to have to send troops to Italy; that declaration has its own card.',
     levels: {
       primary:
         {
           cause: 'Italy and Austria-Hungary had been fighting along the river Isonzo for two and a half years, in the mountains east of the town of Caporetto. The Italian commander, General Luigi Cadorna, had attacked many times at heavy cost, and his soldiers were tired and badly treated, with harsh punishments for offences.',
-          what: 'On 24 October 1917 German troops, sent by the German army to help Austria, came over the mountains in the fog with mortars and gas. Instead of attacking in lines they moved in small parties around the strong points and straight into the Italian rear. The Italian lines broke, the army ran back over the river Tagliamento, and whole divisions surrendered or simply went home. The retreat went on for nearly four weeks, about 150 kilometres, until the river Piave.',
+          what: 'On 24 October 1917 German troops came over the mountains in fog with gas. In small parties ' +
+            'they went round the strong points into the Italian rear. The lines broke; divisions ' +
+            'surrendered or went home. The retreat lasted nearly four weeks, about 150 kilometres.',
           consequence: 'Italy lost a third of its effective army and the government fell. British and French divisions were sent from the west, though they arrived too late for the fighting. A new general, Armando Diaz, replaced Cadorna, and the army that held the Piave was fed better, given leave and treated better than the army that broke.',
         },
       secondary:
@@ -546,7 +609,9 @@ export const EVENTS_1917: WW1Event[] = [
       primary:
         {
           cause: 'Eight months after the tsar fell, Russia had a weak provisional government, a war nobody wanted to fight, and landless peasants taking landlords’ fields by themselves. In September the Bolsheviks won majorities in the soviets, the elected councils of workers and soldiers, and their leader Lenin urged them to seize power at once.',
-          what: 'In Petrograd on 6 and 7 November — 24 and 25 October by the calendar then used in Russia — the Bolsheviks and their allies occupied the bridges, telephones, banks and railways, meeting almost no resistance, and the provisional government was left alone in the Winter Palace. A congress of soviets met that night, and after the moderate parties walked out it approved a takeover and announced an offer of peace to all the armies and the transfer of the landlords’ land to the peasants. An attempt by General Krasnov to reach the capital with a few hundred Cossacks was stopped in the fighting at Pulkovo, just outside the city, and Kerensky’s government was gone.',
+          what: 'In Petrograd on 6 and 7 November the Bolsheviks took the bridges, telephones, banks and ' +
+            'railways with almost no fighting. The provisional government, alone in the Winter Palace, ' +
+            'fell. A congress of soviets approved the takeover and promised peace and land.',
           consequence: 'Russia was now ruled by a government that claimed to answer to the soviets and promised to end the war. It agreed to a truce with Germany in December, gave up vast territory in March 1918, and set about building a state that rested on one party. The other socialist parties, and many workers and peasants, at first accepted it; a long civil war followed.',
         },
       secondary:
@@ -577,7 +642,9 @@ export const EVENTS_1917: WW1Event[] = [
       primary:
         {
           cause: 'The tanks first used on the Somme in September 1916 had been slow and few, and had broken down often. By late 1917 the British had hundreds of them, and the ground at Cambrai in northern France was flat, dry and unbroken by shell holes, so the tanks could cross it.',
-          what: 'On the morning of 20 November 1917 the British attacked at Cambrai with about 476 tanks, supported by infantry, after an artillery bombardment that was short and did not give warning of a big attack. The tanks crossed the German trenches, crushed the barbed wire and carried guns forward with them, and in six hours the British advanced further than anywhere in three years of fighting. The advance then stopped because the reserves could not come up fast enough and the Germans held strong points on the flanks. On 30 November the Germans counter-attacked and took back much of the ground.',
+          what: 'On 20 November 1917 about 476 British tanks attacked at Cambrai. They crossed German ' +
+            'trenches and crushed the wire. In six hours the British gained more ground than in three ' +
+            'years. On 30 November the Germans counter-attacked and won much of it back.',
           consequence: 'Cambrai showed that a surprise attack supported by many tanks could break a fortified trench system without a months-long bombardment, and it also showed that the breakthrough could not be exploited without mobile cavalry. Tanks had to wait for the next step: the combined attack of tanks, aircraft, artillery and infantry that the Allies made in 1918.',
         },
       secondary:
@@ -607,7 +674,9 @@ export const EVENTS_1917: WW1Event[] = [
       primary:
         {
           cause: 'Finland had been a grand duchy of the Russian empire since 1809, with its own parliament, laws and language, and many Finns had accepted Russian rule because it protected those things. When the tsar fell in March 1917 the question opened up: how much power would Finland take for itself, and would Russia allow it at all?',
-          what: 'In 1917 the Finnish parliament passed a law giving it full control of Finland’s internal affairs, and the provisional government in Petrograd refused to accept it and dissolved the parliament. New elections brought a right-wing government to power, which feared the socialist majority of 1917 and the armed workers’ and soldiers’ councils that had formed in the towns. The senate’s chairman P. E. Svinhufvud read a declaration of independence to parliament on 4 December, and parliament adopted it on 6 December 1917. At the end of December Soviet Russia became the first foreign government to recognise Finland.',
+          what: 'The Finnish parliament passed a law to control its own affairs. Petrograd refused it and ' +
+            'dissolved the parliament. New elections returned a right-wing government. On 4 December P. ' +
+            'E. Svinhufvud read a declaration of independence; parliament adopted it on 6 December 1917.',
           consequence: 'Recognition came first from Soviet Russia and then from the other powers, but independence had to be fought for: in January 1918 a civil war broke out between the white government’s troops and the red guards, and German troops landed to help the whites. The war left Finland independent but deeply divided, and tied to Germany until Germany itself collapsed in November 1918.',
         },
       secondary:
@@ -669,7 +738,9 @@ export const EVENTS_1917: WW1Event[] = [
       primary:
         {
           cause: 'The British army had been attacking above the Belgian city of Ypres since July, to take the high ground east of it and reach the Belgian coast. By October the divisions in the line were worn out, the rain had flooded the fields again, and the commander in Flanders asked for the Canadian Corps, which was rested, to finish the job.',
-          what: 'Canadian troops attacked on 26 October, on 30 October and again on 6 November 1917, and on that last day took the village of Passchendaele, which stands on the ridge above the marshland round Ypres. The guns fired a short, heavy bombardment, including gas shells, on ground that had been mapped and photographed from the air, and infantry went forward in small parties over ground where the shell holes filled with water. The last fighting, on 10 November, cleared the ground east of the village and stopped just short of the next German line.',
+          what: 'Canadian troops attacked on 26 and 30 October, and again on 6 November 1917. That day they ' +
+            'took Passchendaele, on the ridge above the marshes around Ypres. After a short, heavy ' +
+            'bombardment, infantry went forward in small groups through water-filled shell craters.',
           consequence: 'The ridge had been taken, and the offensive was then called off. The Italian army had broken at Caporetto two weeks earlier, and divisions were needed in Italy and for a new attack at Cambrai, so there were no troops left to attack with. All of this ground was lost again when the Germans attacked in April 1918.',
         },
       secondary:
@@ -865,7 +936,7 @@ export const EVENTS_1917: WW1Event[] = [
     kind: 'diplomacy',
     fronts: ['politics', 'balkans'],
     countries: ['Romania', 'Germany', 'Austria-Hungary', 'Bulgaria', 'Ottoman Empire'],
-    note: 'Romania signed a separate peace with the Central Powers at Bucharest on 7 May 1918, after its army had been driven into Moldavia in 1916 and Russia had collapsed. The terms gave Germany control of Romanian oil and granted Austria-Hungary rights in the Carpathians; Transylvania remained with Austria-Hungary. Romania’s government returned to war in November 1918, days before the armistice, and the union of Transylvania with Romania followed at the end of the month.',
+    note: 'Romania signed a separate peace with the Central Powers at Bucharest on 7 May 1918 new style (24 April 1918 by the Julian calendar then used in Romania and Russia), after its army had been driven into Moldavia in 1916 and Russia had collapsed. The terms gave Germany control of Romanian oil and granted Austria-Hungary rights in the Carpathians; Transylvania remained with Austria-Hungary. Romania’s government returned to war in November 1918, days before the armistice, and the union of Transylvania with Romania followed at the end of the month.',
     levels: {
       primary: {
         cause: 'Romania had been defeated and its ally Russia had collapsed, so its government could not go on fighting.',

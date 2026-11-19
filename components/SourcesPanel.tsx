@@ -145,6 +145,13 @@ export default function SourcesPanel() {
             and consequence is always visible. Where historians still differ over a figure, the card
             gives a range and says who disagrees.
           </li>
+          <li>
+            Every date is <strong>New Style</strong> (Gregorian). Some belligerents still used the{' '}
+            <strong>Julian calendar</strong> for part of the war — Russia until 14 February 1918,
+            Romania until 1919, Greece until 1923 and Montenegro throughout — so events in the east
+            read up to thirteen days later here than in the documents written at the time. Where the
+            calendar matters to the story, the card says which style it is using.
+          </li>
         </ol>
       </section>
 

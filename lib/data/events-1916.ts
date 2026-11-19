@@ -15,11 +15,15 @@ export const EVENTS_1916: WW1Event[] = [
     kind: 'battle',
     fronts: ['balkans'],
     countries: ['Montenegro', 'Austria-Hungary', 'Serbia'],
-    note: 'Fought on 6 and 7 January, Orthodox Christmas, which is why it is also called the Battle of Bloody Christmas. The order to cover the retreat of the Royal Serbian Army to Corfu via Albania was given on 5 January, but the sources state that most Serbian troops had already crossed the Albanian mountains and were fighting their way south between Scutari and Durazzo, so the battle bought time that was largely no longer needed. More than 2,000 Austro-Hungarian dead were left on the field. The sources disagree about the politics: some historians hold that King Nikola was already in surrender negotiations during the fighting, others that he refused to negotiate before 12 January. Berane fell on 10 January, Mount Lovćen on 11 January and the capital Cetinje on 13 January; the whole Montenegrin army had laid down its weapons by 25 January.',
+    note: 'Fought on 6 and 7 January new style, which was 24 and 25 December in the Julian calendar Montenegro still used — Orthodox Christmas, and the reason it is also called the Battle of Bloody Christmas. The order to cover the retreat of the Royal Serbian Army to Corfu via Albania was given on 5 January, but the sources state that most Serbian troops had already crossed the Albanian mountains and were fighting their way south between Scutari and Durazzo, so the battle bought time that was largely no longer needed. More than 2,000 Austro-Hungarian dead were left on the field. The sources disagree about the politics: some historians hold that King Nikola was already in surrender negotiations during the fighting, others that he refused to negotiate before 12 January. Berane fell on 10 January, Mount Lovćen on 11 January and the capital Cetinje on 13 January; the whole Montenegrin army had laid down its weapons by 25 January.',
     levels: {
       primary: {
-        cause: 'Austro-Hungarian soldiers had pushed the Serbian army out of Serbia and were now marching into Montenegro, which had already been fighting for three months. Cold weather and short supplies had worn the Montenegrin army down. On 5 January its soldiers were told to hold the line so that Serbian troops could get away to the sea.',
-        what: 'The fighting came to a head on 6 and 7 January 1916 around the village of Mojkovac, in snow up to the knee. Austro-Hungarian troops attacked with heavy guns, and the Montenegrins held their trenches and charged back with bayonets. Both attacks failed, and on the second day the Austro-Hungarians left the field and fell back.',
+        cause: 'Austro-Hungarian troops had driven the Serbian army from Serbia and now marched into ' +
+          'Montenegro, worn down by three months of war, cold and short supplies. On 5 January the ' +
+          'Montenegrins were told to hold the line so the Serbs could reach the sea.',
+        what: 'The fighting came to a head on 6 and 7 January 1916 at Mojkovac, in knee-deep snow. ' +
+          'Austro-Hungarian troops attacked with heavy guns; the Montenegrins held their trenches and ' +
+          'charged back with bayonets. Both attacks failed; the next day the Austro-Hungarians fell back.',
         consequence: 'A small Montenegrin army stopped a much larger and better armed one for two days. The Serbian soldiers reached the coast and were rescued, but Montenegro itself was overrun within three weeks and its army surrendered.',
       },
       secondary: {
@@ -43,7 +47,7 @@ export const EVENTS_1916: WW1Event[] = [
     fronts: ['caucasus'],
     countries: ['Russia', 'Ottoman Empire'],
     figures: ['enver_pasha'],
-    note: 'The operation ran from 10 January to 16 February 1916. The Russian Caucasus Army under Nikolai Yudenich fielded about 120,000 men against an Ottoman Third Army of 80,000 or more with 150 field guns and a fortress line armed with some 265 guns; the figure for the fortress guns varies between accounts. The engagement at Hasankale on 18–19 January cost the Ottomans about 1,000 killed and 1,500 captured. Reported losses are 17,135 Russian (2,339 killed, 14,796 wounded) and 66,000 Ottoman killed, wounded and captured, figures drawn from Russian and Soviet sources of different dates; by the end of 1916 the Third Army had been reduced to about 36,000 men. The article on the operation deliberately declines to call the victory decisive.',
+    note: 'The operation ran from 10 January to 16 February 1916 new style, 28 December 1915 to 3 February 1916 in the Julian calendar Russian documents used. The Russian Caucasus Army under Nikolai Yudenich fielded about 120,000 men against an Ottoman Third Army of 80,000 or more with 150 field guns and a fortress line armed with some 265 guns; the figure for the fortress guns varies between accounts. The engagement at Hasankale on 18–19 January cost the Ottomans about 1,000 killed and 1,500 captured. Reported losses are 17,135 Russian (2,339 killed, 14,796 wounded) and 66,000 Ottoman killed, wounded and captured, figures drawn from Russian and Soviet sources of different dates; by the end of 1916 the Third Army had been reduced to about 36,000 men. The article on the operation deliberately declines to call the victory decisive.',
     levels: {
       primary: {
         cause: 'Russia and the Ottoman Empire were fighting each other in the mountains of eastern Anatolia. The Ottomans had lost a big winter attack the year before, and Russia hoped to strike before Ottoman soldiers could be moved back from other fronts.',
@@ -75,7 +79,9 @@ export const EVENTS_1916: WW1Event[] = [
     levels: {
       primary: {
         cause: 'The German commander wanted to attack a place that France could not afford to lose. Verdun was a fortified town on the river Meuse, and its guns had been taken away to use elsewhere, so it looked weak.',
-        what: 'Just before dawn on 21 February 1916, more than a thousand German guns opened fire on the French positions, and infantry moved in behind. A big fort called Douaumont was captured on 25 February by a handful of men who found it almost undefended. That night the French General Philippe Pétain took charge and ordered that there was to be no retreat.',
+        what: 'Before dawn on 21 February 1916, over a thousand German guns opened fire and infantry moved in ' +
+          'behind. On 25 February a handful of men captured Douaumont, a great fort found almost ' +
+          'undefended. That night the French General Philippe Pétain ordered no retreat.',
         consequence: 'The battle went on for ten months, and both sides lost huge numbers of men. By December the French had taken back most of the ground they had lost, and the German attack had failed.',
       },
       secondary: {
@@ -241,7 +247,9 @@ export const EVENTS_1916: WW1Event[] = [
     levels: {
       primary: {
         cause: 'The German navy was smaller than the British fleet, so it tried to catch part of it alone and destroy that. The British wanted to trap the whole German fleet and finish the blockade of Germany once and for all.',
-        what: 'On 31 May 1916 the two fleets met in the North Sea off the coast of Denmark. Battlecruisers fought first, and three British ones blew up after being hit. In the afternoon the whole British fleet came into sight of the German one, and the German commander turned away and fought his way home in the dark.',
+        what: 'On 31 May 1916 the two fleets met in the North Sea off Denmark. Battlecruisers fought first, ' +
+          'and three British ones blew up. The whole British fleet then came in sight of the Germans, who ' +
+          'turned away and fought home in the dark.',
         consequence: 'Fourteen British ships and eleven German ones went down, and about 9,800 men were killed or wounded, more of them British. But the German fleet stayed in harbour for the rest of the war, and Britain kept control of the sea.',
       },
       secondary: {
@@ -265,11 +273,13 @@ export const EVENTS_1916: WW1Event[] = [
     fronts: ['eastern'],
     countries: ['Russia', 'Austria-Hungary', 'Germany'],
     figures: ['brusilov', 'alekseev_mikhail', 'nicholas_ii'],
-    note: 'The offensive ran from 4 June into September 1916. It was ordered by Tsar Nicholas II on 26 May, in response to Italian appeals for help after the Austro-Hungarian attack on the Asiago plateau, and the instruction was that Brusilov would attack on 4 June and the rest of the Russian army ten days later; General Alexei Evert, commanding the Western Front at Smolensk, refused supporting attacks, and Alexeyev told Brusilov that Evert’s front could not attack before 18 June. By mid-June Austro-Hungarian losses amounted to 205,000, of which 150,000 were prisoners, and Czernowitz fell on 17 June. Losses are given as 500,000 to 1,000,000 Russian, about 616,000 Austro-Hungarian and 148,000 to 350,000 German, and the article warns that the 500,000 figure covers only 28 May to 13 July, the first stage, for which the archives give 497,967 men of the Southwestern Front: 62,155 killed, 376,910 wounded and 59,802 missing. Graydon Tunstall called the offensive the worst crisis of the war for Austria-Hungary and the greatest victory of the Triple Entente.',
+    note: 'The offensive ran from 4 June 1916 — 22 May by the Julian calendar Russia then used — into September 1916. It was ordered by Tsar Nicholas II on 26 May, in response to Italian appeals for help after the Austro-Hungarian attack on the Asiago plateau, and the instruction was that Brusilov would attack on 4 June and the rest of the Russian army ten days later; General Alexei Evert, commanding the Western Front at Smolensk, refused supporting attacks, and Alexeyev told Brusilov that Evert’s front could not attack before 18 June. By mid-June Austro-Hungarian losses amounted to 205,000, of which 150,000 were prisoners, and Czernowitz fell on 17 June. Losses are given as 500,000 to 1,000,000 Russian, about 616,000 Austro-Hungarian and 148,000 to 350,000 German, and the article warns that the 500,000 figure covers only 28 May to 13 July, the first stage, for which the archives give 497,967 men of the Southwestern Front: 62,155 killed, 376,910 wounded and 59,802 missing. Graydon Tunstall called the offensive the worst crisis of the war for Austria-Hungary and the greatest victory of the Triple Entente.',
     levels: {
       primary: {
         cause: 'Russia’s allies were in trouble. Austria-Hungary had just attacked Italy, and the French and British were being bled at Verdun, so the Russian army was asked to attack early to make its enemies move troops elsewhere.',
-        what: 'The attack began on 4 June 1916 in Galicia, in what is now western Ukraine. Russian soldiers worked their way close to the enemy defences before attacking, and dug tunnels under their own wire so that the attack was not given away. A short, precise bombardment and a creeping barrage went with them, and the assault went in in scattered parties instead of long lines.',
+        what: 'The attack began on 4 June 1916 in Galicia, now western Ukraine. Russian soldiers crept close ' +
+          'to the enemy lines and dug tunnels under the wire, so nothing was given away. A short, precise ' +
+          'bombardment covered small attacking groups, not long lines.',
         consequence: 'Austria-Hungary lost more men than it could replace, many of them prisoners, and had to be rescued by German divisions. The Russian army won its greatest victory of the war, but lost enormous numbers of men doing it.',
       },
       secondary: {
@@ -298,7 +308,9 @@ export const EVENTS_1916: WW1Event[] = [
       primary: {
         cause: 'The Arabs of the Hejaz, ruled by the Ottoman Empire, had been punished for wanting to govern themselves, and their leader Hussein bin Ali feared he would be next. Britain promised to recognise Arab independence if the Arabs rose against the Ottomans.',
         what: 'On 10 June 1916 Hussein’s supporters attacked the Ottoman garrison in the holy city of Mecca. The fighting in the streets went on for more than a month. Only a few thousand of Hussein’s men had rifles, so most fought with what they had, and the Ottomans had machine-guns and artillery.',
-        consequence: 'The Ottomans had to keep tens of thousands of soldiers in Arabia to guard the railway and the garrisons, men that could otherwise have been sent to attack the Suez Canal. The Arabs took Damascus at the end of the war, but Britain and France had already agreed between themselves how to divide the land.',
+        consequence: 'The Ottomans kept tens of thousands of soldiers in Arabia, guarding the railway and their ' +
+          'garrisons instead of attacking the Suez Canal. The Arabs took Damascus at the end of the war, ' +
+          'but Britain and France had already agreed how to divide the land.',
       },
       secondary: {
         cause: 'The executions of Arab nationalist leaders in Damascus after arrests and torture in Damascus and Beirut convinced Hussein that the Ottoman government meant to remove him, and rumours that he was to be replaced by Sharif Ali Haidar of the rival Zaʻid family made him decide to join the Allied side at once. He had asked McMahon in February 1916 for £50,000 in gold, weapons, ammunition and food, and McMahon’s reply of 10 March confirmed the British agreement.',
@@ -325,12 +337,19 @@ export const EVENTS_1916: WW1Event[] = [
     levels: {
       primary: {
         cause: 'Britain and France had agreed to attack together on the river Somme, where the line was easiest for them to hold jointly. The French had planned to do most of the fighting, but the German attack at Verdun took their soldiers away, so the British army had to lead the attack instead.',
-        what: 'From 24 June British guns shelled the German trenches for a week, and then on 1 July 1916 the infantry walked forward across open fields towards the German lines. In the north the German machine-gunners were still safe in their deep dugouts and shot the attackers down; in the south, and with the French on the right, the line went forward.',
+        what: 'British guns shelled the German trenches from 24 June. On 1 July 1916 the infantry walked ' +
+          'forward across open ground. In the north, machine-gunners safe in deep dugouts shot the ' +
+          'attackers down; in the south, beside the French, the line went forward.',
         consequence: 'It was the bloodiest day the British army has ever had. The battle dragged on into November, and the idea of a great breakthrough was given up in favour of taking village after village.',
       },
       secondary: {
         cause: 'Allied strategy for 1916 had been settled at the Chantilly Conference of 6 to 8 December 1915, which assigned a joint Anglo-French offensive on the Somme to make a breach in the German front in France. The German attack on Verdun in February forced the French to divert divisions, so their contribution shrank to 13 divisions of the Sixth Army against 20 British divisions of Rawlinson’s Fourth Army, and the weight of the attack fell on a British army still learning its trade.',
-        what: 'The preparatory bombardment began on 24 June, and rain in the following days spoiled observation and left wire uncut in places, while the Germans sheltered from it in deep dugouts on the reverse slopes, where their machine-guns survived. The infantry went in on the morning of 1 July across open, ploughed ground and were met by rifle and machine-gun fire; a mine blown early beneath Hawthorn Ridge Redoubt had warned part of the German front, and intercepted orders and prisoner reports had warned the rest. The Fourth Army suffered 57,470 casualties, 19,240 of them killed, while the French Sixth Army lost 1,590 men and the German Second Army 10,000 to 12,000.',
+        what: 'The bombardment began on 24 June, but rain spoiled observation and left wire uncut in places, ' +
+          'while German machine-guns survived in deep dugouts on the reverse slopes. On the morning of 1 ' +
+          'July the infantry went in over open, ploughed ground into machine-gun fire: a mine blown early ' +
+          'beneath Hawthorn Ridge Redoubt had warned part of the German front, and intercepted orders and ' +
+          'prisoner reports the rest. The Fourth Army lost 57,470 men, 19,240 killed, the French Sixth ' +
+          'Army 1,590 and the German Second Army 10,000 to 12,000.',
         consequence: 'Haig drew the lesson that the attack must be made in stages, and from July to mid-November the offensive became a series of methodical battles for fortified villages and woods, at Albert, Bazentin Ridge, Guillemont and Morval. The Ancre of 13 to 18 November, fought by Gough’s Fifth Army against Below’s First Army, closed the battle; the army had taken its new name on 30 October.',
       },
       university: {
@@ -349,7 +368,7 @@ export const EVENTS_1916: WW1Event[] = [
     fronts: ['balkans'],
     countries: ['Romania', 'Austria-Hungary', 'Germany', 'Bulgaria', 'Ottoman Empire', 'Russia'],
     figures: ['bratianu_ion', 'averescu'],
-    note: 'The Romanian government signed a treaty with France, Britain, Italy and Russia on 17 August 1916 pledging to declare war on Austria-Hungary by 28 August, having concluded a military convention with General John Thomson on 13 August; three Romanian armies crossed the Carpathians on the night of 27 August. The dates of the Bulgarian and Ottoman declarations of war are disputed: Ian Beckett holds that Bulgaria declared war only after attacking on 31 August, other sources put the declaration on 30 August or 1 September, and the Ottoman declaration is placed on 29 August, 30 August or 1 September. Romania had to fight on two fronts of some 1,600 kilometres each, the longest in Europe. On 15 September the Romanian War Council suspended the Transylvania offensive to deal with Mackensen’s army group in the south, and Russian reinforcements under General Andrei Zaionchkovsky halted it before it cut the railway from Constanța to Bucharest; overall command on the German side passed to Erich von Falkenhayn, who began his own counterattack on 18 September. In the Balkans the Allied promise to attack Bulgaria was partly kept by the Monastir offensive: after the German Eleventh Army under Winckler was withdrawn, the town of Monastir (Bitola) was abandoned on 18 November and French and Russian troops entered it on 19 November, opening a route to Sofia that never exploited.',
+    note: 'The Romanian government signed a treaty with France, Britain, Italy and Russia on 17 August 1916 pledging to declare war on Austria-Hungary by 28 August, having concluded a military convention with General John Thomson on 13 August; three Romanian armies crossed the Carpathians on the night of 27 August new style, 14 August by the Julian calendar Romania still used. The dates of the Bulgarian and Ottoman declarations of war are disputed: Ian Beckett holds that Bulgaria declared war only after attacking on 31 August, other sources put the declaration on 30 August or 1 September, and the Ottoman declaration is placed on 29 August, 30 August or 1 September. Romania had to fight on two fronts of some 1,600 kilometres each, the longest in Europe. On 15 September the Romanian War Council suspended the Transylvania offensive to deal with Mackensen’s army group in the south, and Russian reinforcements under General Andrei Zaionchkovsky halted it before it cut the railway from Constanța to Bucharest; overall command on the German side passed to Erich von Falkenhayn, who began his own counterattack on 18 September. In the Balkans the Allied promise to attack Bulgaria was partly kept by the Monastir offensive: after the German Eleventh Army under Winckler was withdrawn, the town of Monastir (Bitola) was abandoned on 18 November and French and Russian troops entered it on 19 November, opening a route to Sofia that never exploited.',
     levels: {
       primary: {
         cause: 'Romania was neutral at first, but many Romanians wanted Transylvania, where over half the people were Romanian speakers, to be part of their own country. The Allies promised it to them, and told Romania that Bulgaria and the Ottoman Empire would be attacked so that it would not have to fight them alone.',
@@ -386,7 +405,12 @@ export const EVENTS_1916: WW1Event[] = [
       },
       secondary: {
         cause: 'Haig had learned of the tracked-vehicle experiments in 1915, sent observers to the trials in England in 1916 and ordered forty tanks, later a hundred; the machines were late, the crews had almost no training and the first great battle was already under way, so the tanks were committed to hold what had been gained rather than to win a decision.',
-        what: 'The attack on 15 September was made by the Fourth Army and the Reserve Army, with the French Sixth Army on the right, against the German First Army. Of the fifty tanks in France, 49 were assembled, 36 reached the British front line and 27 crossed no man’s land, but only six reached the third objective; GHQ recorded that only 49 were ready and only 18 contributed at all. Tanks broke down, bogged, got lost or were knocked out, and in places the infantry had been trained to follow a machine that never arrived and were shot down in the lanes left uncut by the guns.',
+        what: 'The attack on 15 September was made by the Fourth and Reserve Armies, with the French Sixth ' +
+          'Army on the right, against the German First Army. Of the fifty tanks in France, 49 were ' +
+          'assembled and 36 reached the British front line, but GHQ counted only 18 that took part at all ' +
+          'and only six reached the third objective. Tanks broke down, bogged, got lost or were knocked ' +
+          'out, and infantry trained to follow a machine that never arrived were shot down in lanes the ' +
+          'guns left uncut.',
         consequence: 'Flers, Courcelette and Martinpuich were captured, a considerable tactical success, and the German defence was stretched; but the offensive moved on to methodical fighting for ridge and village through October. The battle is remembered because it proved that the armoured vehicle could cross a battlefield, not because tanks won the battle of the Somme.',
       },
       university: {
@@ -461,7 +485,7 @@ export const EVENTS_1916: WW1Event[] = [
     fronts: ['balkans'],
     countries: ['Romania', 'Germany', 'Austria-Hungary', 'Bulgaria', 'Ottoman Empire', 'Russia'],
     figures: ['falkenhayn'],
-    note: 'The battle of Bucharest, also called the Argeș–Neajlov Defensive Operation, was the last battle of the Romanian campaign of 1916. Romanian and Russian forces of roughly 150,000 men were commanded by General Constantin Prezan, who had been appointed to lead First Army with the task of organising the defence of the capital, and worked with General Henri Berthelot of the new French military mission; the Central Powers’ forces were led by August von Mackensen and Erich von Falkenhayn. Prezan attacked on 1 December into the 20-kilometre gap between the two enemy groups, and only the arrival of the Turkish 26th Infantry Division on 2 December saved Mackensen’s group from encirclement; on 4 December Mackensen’s Danube Army, containing German, Bulgarian, Ottoman and Austro-Hungarian troops, won the battle of the Argeș. Bucharest and the oil town of Ploiești were occupied on 6 December, the government and the remnants of the army retreated into Moldavia and re-established the capital at Iași, and on 11 December German and Austro-Hungarian troops crossed the Ialomița. A Romanian holding action at Prunaru on 28 November had cost the attackers 700 prisoners and 20 guns.',
+    note: 'The battle of Bucharest, also called the Argeș–Neajlov Defensive Operation, was the last battle of the Romanian campaign of 1916. Romanian and Russian forces of roughly 150,000 men were commanded by General Constantin Prezan, who had been appointed to lead First Army with the task of organising the defence of the capital, and worked with General Henri Berthelot of the new French military mission; the Central Powers’ forces were led by August von Mackensen and Erich von Falkenhayn. Prezan attacked on 1 December into the 20-kilometre gap between the two enemy groups, and only the arrival of the Turkish 26th Infantry Division on 2 December saved Mackensen’s group from encirclement; on 4 December Mackensen’s Danube Army, containing German, Bulgarian, Ottoman and Austro-Hungarian troops, won the battle of the Argeș. Bucharest and the oil town of Ploiești were occupied on 6 December (21 November by the Julian calendar used in Romanian and Russian documents at the time), the government and the remnants of the army retreated into Moldavia and re-established the capital at Iași, and on 11 December German and Austro-Hungarian troops crossed the Ialomița. A Romanian holding action at Prunaru on 28 November had cost the attackers 700 prisoners and 20 guns.',
     levels: {
       primary: {
         cause: 'German, Austrian, Bulgarian and Ottoman armies had pushed into Romania from the north and the south-east since the summer. The Romanian army tried one last attack to keep them out of its capital.',
@@ -492,7 +516,9 @@ export const EVENTS_1916: WW1Event[] = [
     note: 'The murder took place in the early morning of 30 December 1916, which was 17 December in the calendar then used in Russia, in the courtyard of the Moika Palace in Petrograd. The conspirators were a group of nobles led by Vladimir Purishkevich, Grand Duke Dmitri Pavlovich and Prince Felix Yusupov, who believed Rasputin’s influence over Empress Alexandra threatened the empire. He died of three gunshot wounds, one of them a close-range shot to the forehead; the official autopsy report was lost, but the examining doctor later stated that the body showed severe trauma, including the three gunshot wounds, a slice wound on the left side and other injuries many of which he thought had been inflicted after death. The familiar story of poison, shootings that failed to kill and a body that revived comes from Yusupov’s memoir, and the sources stress that little about the killing is certain.',
     levels: {
       primary: {
-        cause: 'A wandering holy man called Rasputin had gained the trust of the empress, because he seemed to be the only person who could ease the pain of the sick heir to the throne. Many people in Russia thought he was ruling the government through her, and rich nobles decided he had to be stopped.',
+        cause: 'A wandering holy man, Rasputin, had won the empress’s trust, because he seemed the only one ' +
+          'who could ease the pain of the sick heir. Many in Russia thought he ruled the government ' +
+          'through her, and nobles decided he must be stopped.',
         what: 'On the night of 29 and 30 December 1916, Prince Felix Yusupov and his friends, among them a grand duke, lured Rasputin into their palace in Petrograd and shot him. He was killed by three gunshots, one of them fired at him from close range in the forehead.',
         consequence: 'The murder did not save the monarchy. People went on talking about the emperor’s weakness and about corruption at the top, and within two months of the killing the emperor lost his throne.',
       },

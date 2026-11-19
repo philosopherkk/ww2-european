@@ -137,7 +137,9 @@ export const EVENTS_1915: WW1Event[] = [
     levels: {
       primary: {
         cause: 'The German army wanted to break the deadlock of the trenches near Ypres and reach the ports on the Channel coast.',
-        what: 'On 22 April the Germans let a cloud of green chlorine gas drift over a stretch of the line held by French troops. It killed and choked the soldiers in its path and opened a wide gap in the defences. The Germans were not ready to pour through, and Canadian and British soldiers closed up as best they could.',
+        what: 'On 22 April the Germans sent a cloud of green chlorine gas over French-held trenches. It ' +
+          'killed and choked the men in its path, and opened a wide gap. The Germans were not ready to ' +
+          'pour through; Canadian and British troops filled it.',
         consequence: 'Both sides dug in again, with Germany holding slightly better ground. Gas became a normal weapon from then on, and every army started making masks and gas shells.',
       },
       secondary: {
@@ -165,7 +167,9 @@ export const EVENTS_1915: WW1Event[] = [
     levels: {
       primary: {
         cause: 'The Ottoman government accused Armenians of helping Russia, the enemy fighting in the east, and decided to remove them.',
-        what: 'On the night of 24 April 1915 the police in Constantinople arrested hundreds of Armenian priests, teachers, writers and elected members and sent them inland; most were later killed. Through the following summer Armenians were driven from their towns in columns and marched towards the desert, beaten and killed by their guards on the road, dying of hunger and thirst.',
+        what: 'On 24 April 1915 police in Constantinople arrested hundreds of Armenian priests, teachers and ' +
+          'elected members and sent them inland; most were killed. That summer Armenians were marched out ' +
+          'of their towns towards the desert. Their guards beat and killed them; many starved.',
         consequence: 'Within a year the Armenian communities of eastern Anatolia were destroyed, their leaders killed first so that nobody could organise resistance. Armenians outside Turkey remember these deaths as their genocide.',
       },
       secondary: {
