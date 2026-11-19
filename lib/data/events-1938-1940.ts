@@ -1031,7 +1031,7 @@ export const EVENTS: WW2Event[] = [
     id: 'rearmament_finance_crisis',
     date: '1938-01-21',
     precision: 'day',
-    title: "Germany's rearmament bill comes due: Schacht loses the Economics Ministry",
+    title: "Germany’s rearmament bill comes due: Schacht loses the Economics Ministry",
     kind: 'home_front',
     fronts: ['politics', 'home'],
     countries: ['Germany'],

@@ -144,7 +144,7 @@ export const SOURCES: Source[] = [
     publisher: 'Indiana University Press',
     url: 'https://search.worldcat.org/search?q=Surplus+of+Memory+Zuckerman',
     usedFor:
-      "The 1943 Warsaw Ghetto Uprising: the January action, the ZOB's arms and numbers, and the sewers route out of the ghetto.",
+      "The 1943 Warsaw Ghetto Uprising: the January action, the ZOB’s arms and numbers, and the sewers route out of the ghetto.",
   },
   {
     citation: 'Kassow, Samuel D., Who Will Write Our History?: Emanuel Ringelblum, the Warsaw Ghetto, and the Oyneg Shabes Archive',
@@ -196,7 +196,7 @@ export const UNCERTAINTIES = [
   {
     topic: 'Deportees from the Warsaw Ghetto, 1942',
     range:
-      'Between 254,000 and 265,000, depending on whether the people shot in the ghetto during the action are counted with the deported, and on which Umschlagplatz register is used; the German transport figures and the Jewish Council\'s own counts differ.',
+      'Between 254,000 and 265,000, depending on whether the people shot in the ghetto during the action are counted with the deported, and on which Umschlagplatz register is used; the German transport figures and the Jewish Council’s own counts differ.',
   },
   {
     topic: 'Division strengths and tank numbers',
