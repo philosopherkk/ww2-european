@@ -192,8 +192,8 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
     bloc: 'allies',
     bio: {
       primary: 'Patton was an American general who led fast tank attacks in Sicily, France and Germany. He was very aggressive and very blunt.',
-      secondary: 'He commanded the landings in Sicily, then Third Army, whose rapid advance from Normandy to the Falaise pocket and across France in 1944 was the fastest exploitation of the war in the west. He was removed from battlefield command after the slapping incidents, was given the phantom Fifteenth Army for the Fortitude deception, and died after a car crash.',
-      university: 'Patton is a case of the "exploitation commander": superb at mobile offensive once logistics permitted, and repeatedly frustrated by the supply system that prioritised Montgomery’s thrust. Postwar hagiography also obscured the two soldiers he assaulted in August 1944 — the contemporary press inflated the count to twenty — his advocacy of using the German army against the Soviet Union, and his contempt for denazification.',
+      secondary: 'He commanded the landings in Sicily, then Third Army, whose rapid advance from Normandy to the Falaise pocket and across France in 1944 was the fastest exploitation of the war in the west. He was removed from battlefield command after the slapping incidents, was given the Fifteenth Army in SHAEF reserve, which he commanded until his death, and died in December 1945, weeks after a car crash.',
+      university: 'Patton is a case of the "exploitation commander": superb at mobile offensive once logistics permitted, and repeatedly frustrated by the supply system that prioritised Montgomery’s thrust. Postwar hagiography also obscured the two soldiers he assaulted in August 1944 — the contemporary press inflated the count to twenty — his advocacy of using the German army against the Soviet Union, and his contempt for denazification. The Fifteenth Army he commanded was a real field army in SHAEF reserve; the phantom army group of the Fortitude deception, which he is often said to have been picked to command, was a separate invention.',
     },
   },
   {

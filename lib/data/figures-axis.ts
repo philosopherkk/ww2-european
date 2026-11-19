@@ -150,7 +150,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bloc: 'axis',
     bio: {
       primary: 'Model was known as Hitler’s "fireman" because he was always sent to places where the German line was about to break.',
-      secondary: 'Model stopped the Soviet offensive at Orel in 1943, took command after the failure of Bagration, and then commanded Army Group B in the Ardennes Offensive. He killed himself in the Ruhr pocket in April 1945.',
+      secondary: 'Model helped contain the Soviet offensive at Orel in 1943, took command of Army Group Centre during the collapse of Bagration in June 1944, and then commanded Army Group B in the Ardennes Offensive. He killed himself in the Ruhr pocket in April 1945.',
       university: 'Model is the strongest example of the regime’s "militant-loyal" general: an efficient operational commander who fully accepted National Socialist aims, and who enforced the scorched-earth and evacuation policies in the occupied east with unusual rigour.',
     },
   },
@@ -189,7 +189,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bloc: 'axis',
     bio: {
       primary: 'Kesselring was the German commander in Italy. He was very good at defensive fighting and held the Allies there for almost two years.',
-      secondary: 'Kesselring organised the defence of Italy from the Winter Line onwards, and after the Anzio landings contained the bridgehead. His forces carried out reprisal massacres of Italian civilians, most notoriously at the Ardeantine Caves in March 1944.',
+      secondary: 'Kesselring organised the defence of Italy from the Winter Line onwards, and after the Anzio landings contained the bridgehead. His forces carried out reprisal massacres of Italian civilians, most notoriously at the Ardeatine Caves in March 1944.',
       university: 'Kesselring is central to the debate on the Wehrmacht’s involvement in anti-partisan warfare and reprisal killings in Italy: he issued broad reprisal authority and, as South-West Commander, had jurisdiction over police operations. Tried and condemned to death in 1947, he was commuted on health grounds, and his memoir made him the best-known apologist for the Italian campaign’s conduct.',
     },
   },
@@ -268,7 +268,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bio: {
       primary: 'Leeb commanded the German army group that advanced on Leningrad and took part in the blockade of the city.',
       secondary: 'Army Group North reached the approaches to Leningrad in September 1941; in January 1942 he was replaced and at the High Command Trial in 1948 he was sentenced to three years’ imprisonment, time served, and was released at the end of the trial.',
-      university: 'Leeb’s case turns on the "Severity Order" of his army group of May 1941, which granted immunity for acts against "enemy civilians": he contested knowledge of its criminal effect, while the tribunal held that command responsibility and the order itself established guilt.',
+      university: 'Leeb’s case turns on the Barbarossa decree — the military justice decree Keitel issued on 13 May 1941, which exempted offences against "enemy civilians" from military justice. He transmitted it to Army Group North while objecting that it breached international law, and was convicted for transmitting it and for its criminal application by subordinate units. The "Severity Order" usually attached to his name is Reichenau’s order of October 1941, issued in Army Group South.',
     },
   },
   {
@@ -307,7 +307,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bio: {
       primary: 'List commanded the German armies that invaded Yugoslavia and Greece, and later the drive towards the oilfields of the Caucasus.',
       secondary: 'He commanded Army Group A during Operation Blue in 1942 and was dismissed by Hitler over the Caucasus advance. At the Hostages’ Trial he was sentenced to life imprisonment for reprisal killings in Serbia and Greece; released on health grounds in 1952.',
-      university: 'The Hostages’ Trial (United States v. Wilhelm List, 1947-48) produced the leading judicial treatment of the reprisal doctrine, rejecting unlimited hostage-killing ratios while introducing the "command responsibility" limits later echoed in international criminal law.',
+      university: 'The Hostages’ Trial (United States v. Wilhelm List, 1947-48) produced the leading judicial treatment of the reprisal doctrine, rejecting unlimited hostage-killing ratios and formulating the "reason to know" test of a commander’s duty to prevent atrocities, a limit later echoed in international criminal law.',
     },
   },
   {
@@ -357,7 +357,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     country: 'Germany',
     bloc: 'axis',
     bio: {
-      primary: 'Von dem Bach-Zelewski led the German units that crushed the Warsaw Uprising in 1944 and killed tens of thousands of civilians.',
+      primary: 'Von dem Bach-Zelewski led the German units that crushed the Warsaw Uprising in 1944 and killed some 150,000 to 200,000 civilians.',
       secondary: 'He commanded the forces of the Warsaw suppression, including the notorious Dirlewanger and Kaminski brigades, and later testified at Nuremberg about the scale of the killings he had organised.',
       university: 'His career links anti-partisan warfare, the mass shooting programme and the deliberate terror of 1944: he openly described "the extermination of a whole people" as a military operation, and the postwar German courts’ failure to punish him exposed the continuity of judicial personnel after 1945.',
     },
