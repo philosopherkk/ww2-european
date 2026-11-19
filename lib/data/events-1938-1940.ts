@@ -670,7 +670,7 @@ export const EVENTS: WW2Event[] = [
     fronts: ['politics'],
     countries: ['Czechoslovakia', 'Germany'],
     figures: ['hitler'],
-    note: 'Konrad Henlein\'s Sudetendeutsche Partei took 88 per cent of the ethnic-German vote in the communal elections of 22 and 29 May 1938 and counted some 1.35 million members, and was funded and directed from Berlin. The Karlsbad Programme of 24 April demanded autonomy, the right to use German in public life, and compensation for years of alleged discrimination - demands Prague could not accept without ending the state as a nation-state. Hitler told Henlein on 28 May - as Henlein testified after the war - to demand so much that Prague could never agree.',
+    note: 'Konrad Henlein’s Sudetendeutsche Partei took 88 per cent of the ethnic-German vote in the communal elections of 22 and 29 May 1938 and counted some 1.35 million members, and was funded and directed from Berlin. The Karlsbad Programme of 24 April demanded autonomy, the right to use German in public life, and compensation for years of alleged discrimination - demands Prague could not accept without ending the state as a nation-state. Hitler told Henlein on 28 May - as Henlein testified after the war - to demand so much that Prague could never agree.',
     levels: {
       primary: {
         cause: 'Germany wanted an excuse to take parts of Czechoslovakia, so it encouraged the Germans who lived there to complain and ask for self-government.',
@@ -683,8 +683,8 @@ export const EVENTS: WW2Event[] = [
         consequence: 'The crisis set the timetable for Munich. It also shows how a minority question can be used as a lever: the grievances were real, and the direction came from outside.',
       },
       university: {
-        cause: 'The historiographical argument is whether Henlein was an instrument of Berlin or an opportunist who used Berlin for his own aims - Isabel Heinrich\'s biography of him leans to the second, and the Sudeten German Party\'s own finances, printed from Berlin through the German Office for Foreign Policy, make the dependence concrete.',
-        what: 'What matters structurally is the timing: the programme was published two weeks after Prague had begun discussing a minority statute, and Henlein\'s instruction to make demands "sufficient to swallow" comes from Hitler\'s conversation with him on 28 May, of which the German record was lost; the claim rests on Henlein’s own postwar testimony, though the party’s dependence on Berlin is documented independently.',
+        cause: 'The historiographical argument is whether Henlein was an instrument of Berlin or an opportunist who used Berlin for his own aims - Isabel Heinrich’s biography of him leans to the second, and the Sudeten German Party’s own finances, printed from Berlin through the German Office for Foreign Policy, make the dependence concrete.',
+        what: 'What matters structurally is the timing: the programme was published two weeks after Prague had begun discussing a minority statute, and Henlein’s instruction to make demands "sufficient to swallow" comes from Hitler’s conversation with him on 28 May, of which the German record was lost; the claim rests on Henlein’s own postwar testimony, though the party’s dependence on Berlin is documented independently.',
         consequence: 'May 1938 also exposed the assumption that did most of the real damage: no one in London or Paris believed Czechoslovakia could be defended, so the debate was about how to press Prague to concede, not whether German demands were lawful.',
       },
     },
@@ -708,11 +708,11 @@ export const EVENTS: WW2Event[] = [
       secondary: {
         cause: 'Sudeten German separatism had made the Czech border districts unworkable, and a false rumour of German troop movements on 20 May exposed how little time the democracy had left.',
         what: 'Czechoslovakia mobilised the frontier fortifications on 21 May, and Britain and France - unexpectedly - made clear they would back Prague. Henlein escaped into Germany and British mediation under Lord Runciman began in August.',
-        consequence: 'The crisis did not produce a settlement. It produced Hitler\'s Directive Case Green of 30 May, ordering the army to be ready to crush Czechoslovakia by 1 October, and it discouraged the German officers who were then considering a coup.',
+        consequence: 'The crisis did not produce a settlement. It produced Hitler’s Directive Case Green of 30 May, ordering the army to be ready to crush Czechoslovakia by 1 October, and it discouraged the German officers who were then considering a coup.',
       },
       university: {
         cause: 'The May Crisis is the strongest evidence against the simple Munich story of inevitable concession: for a few days in May 1938 the British and French governments backed Prague, the Czech army was intact and partially mobilised behind concrete fortifications, and German preparations were nowhere near complete.',
-        what: 'It is also the moment when the German opposition\'s calculations became visible - the conspirators around Oster and Gisevius needed proof of Allied resolve to move against Hitler, and Runciman\'s mission from August served partly to prevent a settlement while the German timetable was completed.',
+        what: 'It is also the moment when the German opposition’s calculations became visible - the conspirators around Oster and Gisevius needed proof of Allied resolve to move against Hitler, and Runciman’s mission from August served partly to prevent a settlement while the German timetable was completed.',
         consequence: 'The lesson drawn in Berlin was not that pressure had failed but that the Western democracies needed to be given a settlement they could not refuse, which is the function Munich performed in September.',
       },
     },
@@ -726,7 +726,7 @@ export const EVENTS: WW2Event[] = [
     fronts: ['politics'],
     countries: ['Czechoslovakia', 'Germany', 'Hungary', 'Poland'],
     figures: [],
-    note: 'Beneš handed over to General Jan Syrovy on 5 October and left for the United States on 22 October; he was never formally deposed and remained the recognised president of the government-in-exile after 1941. Slovakia received autonomy on 7 October under Jozef Tiso\'s Hlinka Party; Carpatho-Ukraine was proclaimed autonomous in October and was occupied by Hungary only on 15 March 1939; the First Vienna Award of 2 November had given Hungary southern Slovakia and the southern strip of Carpathian Ruthenia. Poland had taken Teschen Silesia on 2 October 1938.',
+    note: 'Beneš handed over to General Jan Syrovy on 5 October and left for the United States on 22 October; he was never formally deposed and remained the recognised president of the government-in-exile after 1941. Slovakia received autonomy on 7 October under Jozef Tiso’s Hlinka Party; Carpatho-Ukraine was proclaimed autonomous in October and was occupied by Hungary only on 15 March 1939; the First Vienna Award of 2 November had given Hungary southern Slovakia and the southern strip of Carpathian Ruthenia. Poland had taken Teschen Silesia on 2 October 1938.',
     levels: {
       primary: {
         cause: 'A few days after Munich, the Czech president went away, and the parts of the country that Germany, Poland and Hungary had been promised were taken.',
@@ -754,20 +754,20 @@ export const EVENTS: WW2Event[] = [
     fronts: ['balkans', 'mediterranean'],
     countries: ['Italy', 'Albania', 'United Kingdom', 'Greece'],
     figures: ['mussolini'],
-    note: 'Some 22,000 Italians landed with 500 tanks against a country with no regular army worth the name; King Zog went into exile with about 200 followers and 200 trucks of gold and treasure, and resistance collapsed in five days, though it took a month to pacify the north. Albania provided 20,000 soldiers and eight divisions for Italy\'s war in Greece in October 1940 - and a front which Italy could not manage on its own.',
+    note: 'Some 22,000 Italians landed with 500 tanks against a country with no regular army worth the name; King Zog went into exile with about 200 followers and 200 trucks of gold and treasure, and resistance collapsed in five days, though it took a month to pacify the north. Albania provided 20,000 soldiers and eight divisions for Italy’s war in Greece in October 1940 - and a front which Italy could not manage on its own.',
     levels: {
       primary: {
-        cause: 'Italy wanted to control the narrow sea route between Italy and Greece, and its leader Mussolini wanted a conquest to match Germany\'s.',
+        cause: 'Italy wanted to control the narrow sea route between Italy and Greece, and its leader Mussolini wanted a conquest to match Germany’s.',
         what: 'In April 1939 Italian troops landed all along the Albanian coast and took the country in five days.',
-        consequence: 'Albania became part of Mussolini\'s empire, and Italy gained the ground from which it attacked Greece - and failed - in 1940.',
+        consequence: 'Albania became part of Mussolini’s empire, and Italy gained the ground from which it attacked Greece - and failed - in 1940.',
       },
       secondary: {
-        cause: 'Italy had been Germany\'s junior partner since Munich and had taken nothing; Albania had been drifting into Italian economic control since 1934, and after Germany took Bohemia on 15 March 1939 Mussolini did not want to be left out of the partition of a neighbour.',
+        cause: 'Italy had been Germany’s junior partner since Munich and had taken nothing; Albania had been drifting into Italian economic control since 1934, and after Germany took Bohemia on 15 March 1939 Mussolini did not want to be left out of the partition of a neighbour.',
         what: 'Italian forces landed on 7 April 1939 and King Zog fled to Yugoslavia. Victor Emmanuel III was offered the Albanian crown on 16 April, and Italian settlers, gendarmes and a puppet government took over.',
         consequence: 'Albania supplied a starting line for the attack on Greece in October 1940, and it created the pattern that repeated in the Balkans: a weak state destroyed, then a guerrilla war in the mountains, then a postwar communist movement that took power on its own.',
       },
       university: {
-        cause: 'Albania is the clearest test of Mussolini\'s claim that Italian expansion had economic logic rather than prestige: the 1939 invasion cost more than Italian interests in Albania were worth, and Italy never got oil, chrome or grain out of the country at a useful rate.',
+        cause: 'Albania is the clearest test of Mussolini’s claim that Italian expansion had economic logic rather than prestige: the 1939 invasion cost more than Italian interests in Albania were worth, and Italy never got oil, chrome or grain out of the country at a useful rate.',
         what: 'Italian policy also shows the internal weakness of the regime, since the king and the Foreign Ministry objected and Ciano pushed the operation through - a pattern of personal diplomacy that recurs over Greece in 1940.',
         consequence: 'The British guarantee to Greece and Romania of 13 April 1939 was a direct response to Albania, which is a good illustration of the wider point: Italian adventurism, not German strength, widened the war in the Balkans.',
       },
@@ -782,7 +782,7 @@ export const EVENTS: WW2Event[] = [
     fronts: ['politics', 'eastern'],
     countries: ['Germany', 'Poland', 'United Kingdom'],
     figures: ['hitler'],
-    note: 'Hitler had told the Polish foreign minister Jozef Beck on 19 October 1938 that Poland must accept the return of Danzig and an extraterritorial road - and, in private, that Poland would be dealt with "at the first suitable opportunity". On 28 April 1939 Germany denounced the 1934 non-aggression declaration; on 23 May Hitler told his commanders that Danzig was not the object but the free hand for the east. Beck\'s reply came on 26 March, five days before - not after - the British guarantee of 31 March, and was that Poland would fight.',
+    note: 'Hitler had told the Polish foreign minister Jozef Beck on 19 October 1938 that Poland must accept the return of Danzig and an extraterritorial road - and, in private, that Poland would be dealt with "at the first suitable opportunity". On 28 April 1939 Germany denounced the 1934 non-aggression declaration; on 23 May Hitler told his commanders that Danzig was not the object but the free hand for the east. Beck’s reply came on 26 March, five days before - not after - the British guarantee of 31 March, and was that Poland would fight.',
     levels: {
       primary: {
         cause: 'Germany wanted the port of Danzig back, and a road and railway across the strip of land that gave Poland its sea coast.',
@@ -790,13 +790,13 @@ export const EVENTS: WW2Event[] = [
         consequence: 'Hitler decided to invade, and told his generals to be ready - which is why the war began in September 1939.',
       },
       secondary: {
-        cause: 'Germany wanted Danzig and the Polish Corridor back, and more importantly wanted Poland neutral or destroyed before it attacked the west. Poland\'s leaders had seen Czechoslovakia destroyed after accepting pressure, so they refused, calculating that being attacked in alliance with Britain and France was better than being partitioned quietly.',
+        cause: 'Germany wanted Danzig and the Polish Corridor back, and more importantly wanted Poland neutral or destroyed before it attacked the west. Poland’s leaders had seen Czechoslovakia destroyed after accepting pressure, so they refused, calculating that being attacked in alliance with Britain and France was better than being partitioned quietly.',
         what: 'Germany denounced the German-Polish declaration of 1934 on 28 April. Britain guaranteed Polish independence on 31 March, extended to Greece and Romania on 13 April, and France confirmed its alliance obligations.',
-        consequence: 'The guarantee made the Polish question a European one. It also removed the option Poland had kept between 1934 and 1939 of balancing Germany and the Soviet Union, which is the central criticism of Beck\'s policy.',
+        consequence: 'The guarantee made the Polish question a European one. It also removed the option Poland had kept between 1934 and 1939 of balancing Germany and the Soviet Union, which is the central criticism of Beck’s policy.',
       },
       university: {
         cause: 'The Polish refusal has been re-argued since 1990: the case that Beck chose a militarily hopeless war in 1939 for reasons of honour has been replaced by work showing that a Polish-German condominium was never on offer, and that the German demands of October 1938 and 1939 were a first stage, not a final one.',
-        what: 'German records make the sequence explicit, from the Danzig conversation of 1938 through the directive of 31 August, and Poland\'s calculation rested on the known fact that Germany could not fight on two fronts - a calculation the Soviet Union then cancelled.',
+        what: 'German records make the sequence explicit, from the Danzig conversation of 1938 through the directive of 31 August, and Poland’s calculation rested on the known fact that Germany could not fight on two fronts - a calculation the Soviet Union then cancelled.',
         consequence: 'The failure of the 1939 guarantee is the empirical base for every later argument about deterrence and appeasement, and for the specifically East European distrust of Western security promises that survived 1945.',
       },
     },
@@ -810,7 +810,7 @@ export const EVENTS: WW2Event[] = [
     fronts: ['politics'],
     countries: ['Germany', 'Italy'],
     figures: ['hitler', 'mussolini'],
-    note: 'Ciano and Ribbentrop negotiated the ten-year alliance; Article II required each partner to come to the other\'s aid "without hesitation" if war broke out even if the other was the aggressor. Italy added a secret protocol assuming no war before 1942 - which is why, in August 1939, Mussolini declared Italy not ready and stayed out, an outcome the Germans had not planned for and which the Italian press presented as a victory for prudence.',
+    note: 'Ciano and Ribbentrop negotiated the ten-year alliance; Article II required each partner to come to the other’s aid "without hesitation" if war broke out even if the other was the aggressor. Italy added a secret protocol assuming no war before 1942 - which is why, in August 1939, Mussolini declared Italy not ready and stayed out, an outcome the Germans had not planned for and which the Italian press presented as a victory for prudence.',
     levels: {
       primary: {
         cause: 'Germany and Italy had become close, so their leaders signed a promise to help each other if there was a war.',
@@ -820,12 +820,12 @@ export const EVENTS: WW2Event[] = [
       secondary: {
         cause: 'After the Spanish Civil War, Munich and the anti-Comintern pact of November 1937, the two dictatorships formalised their partnership. Italy wanted the alliance as security for its own war in Albania; Germany wanted to keep Italy out of any settlement with the West.',
         what: 'The treaty of 22 May 1939 obliged both states to fight with all military and economic resources. A secret annex assumed war would not come before 1942, when Italian rearmament was supposed to be finished.',
-        consequence: 'Italy\'s non belligerence in September 1939 was a breach of the spirit if not the letter, and it forced Germany to fight the war in the west alone - which is why Hitler waited until 1940 to attack, and why Mussolini entered the war in June 1940 when he thought it was already over.',
+        consequence: 'Italy’s non belligerence in September 1939 was a breach of the spirit if not the letter, and it forced Germany to fight the war in the west alone - which is why Hitler waited until 1940 to attack, and why Mussolini entered the war in June 1940 when he thought it was already over.',
       },
       university: {
         cause: 'The Pact of Steel is the standard case study in the difference between an alliance and a security community: the two states made a binding commitment without any joint planning, and neither informed the other of the operation it was about to launch - Germany of Poland, Italy of Albania.',
         what: 'The Italian excuse of August 1939 was factually accurate; Italian industry could not supply a modern war, and the 1939 mobilisation exposed it.',
-        consequence: 'The result was a decade of asymmetric alliance politics in which Germany repeatedly rescued Italy - Greece, North Africa, Sicily - while Italy\'s contributions to German strategy were negative in the Balkans and positive only in holding down southern France.',
+        consequence: 'The result was a decade of asymmetric alliance politics in which Germany repeatedly rescued Italy - Greece, North Africa, Sicily - while Italy’s contributions to German strategy were negative in the Balkans and positive only in holding down southern France.',
       },
     },
   },
@@ -852,7 +852,7 @@ export const EVENTS: WW2Event[] = [
       },
       university: {
         cause: 'The administrative history matters for the intentionalism-functionalist debate: the General Government was deliberately kept outside the Reich and outside the jurisdiction of the Reich ministries, which is why Himmler and Heydrich could build an apparatus there that German law never formally permitted.',
-        what: 'The tension between Frank\'s attempt to run a functioning administration and the SS\'s claim to unlimited authority is documented in Frank\'s own diaries, published and used at Nuremberg, and the same conflict recurs in every German-occupied territory with a civilian administration.',
+        what: 'The tension between Frank’s attempt to run a functioning administration and the SS’s claim to unlimited authority is documented in Frank’s own diaries, published and used at Nuremberg, and the same conflict recurs in every German-occupied territory with a civilian administration.',
         consequence: 'The postwar argument about "colonial" methods in the east - whether Polish policy was continuity with German colonial practice in the west or a distinct racial project - turns on how this administration and the annexation programme are read together.',
       },
     },
@@ -866,7 +866,7 @@ export const EVENTS: WW2Event[] = [
     fronts: ['atlantic'],
     countries: ['United Kingdom', 'Germany'],
     figures: ['raeder'],
-    note: 'The pocket battleship Admiral Graf Spee had sunk nine merchantmen totalling 50,000 tons in the South Atlantic. Commodore Harwood\'s division of three cruisers - Exeter, Ajax and Achilles - fought her at close range off Montevideo; Exeter was crippled with 61 killed and the Germans lost 36. Limited by the 24-hour rule of neutral ports, Langsdorff scuttled the ship on 17 December after believing a large force was waiting, and shot himself in Buenos Aires on 20 December.',
+    note: 'The pocket battleship Admiral Graf Spee had sunk nine merchantmen totalling 50,000 tons in the South Atlantic. Commodore Harwood’s division of three cruisers - Exeter, Ajax and Achilles - fought her at close range off Montevideo; Exeter was crippled with 61 killed and the Germans lost 36. Limited by the 24-hour rule of neutral ports, Langsdorff scuttled the ship on 17 December after believing a large force was waiting, and shot himself in Buenos Aires on 20 December.',
     levels: {
       primary: {
         cause: 'A German warship was sinking merchant ships in the South Atlantic, so three smaller British warships hunted for it.',
@@ -874,9 +874,9 @@ export const EVENTS: WW2Event[] = [
         consequence: 'It was the first British naval victory of the war and a great morale boost, but it also showed how few ships Germany had to risk and how many places they could strike.',
       },
       secondary: {
-        cause: 'Germany\'s surface fleet was far too weak to fight the Royal Navy, so its plan was to use fast warships as commerce raiders on the trade routes. The Graf Spee was one of three "pocket battleships" built to exploit the League\'s limits on German tonnage.',
-        what: 'Harwood forced the engagement at close range on 13 December 1939, which cancelled the Graf Spee\'s advantage in heavy guns and damaged her fuel system. Uruguay was obliged by neutrality law to let her leave within 72 hours, and British agents spread rumours that heavy units were waiting offshore.',
-        consequence: 'Langsdorff scuttled his ship. The loss removed one of Germany\'s strongest surface raiders before the trade war had really begun, and the remaining raiders of 1940 - Admiral Scheer, Kormoran, Pinguin - did more damage with less risk.',
+        cause: 'Germany’s surface fleet was far too weak to fight the Royal Navy, so its plan was to use fast warships as commerce raiders on the trade routes. The Graf Spee was one of three "pocket battleships" built to exploit the League’s limits on German tonnage.',
+        what: 'Harwood forced the engagement at close range on 13 December 1939, which cancelled the Graf Spee’s advantage in heavy guns and damaged her fuel system. Uruguay was obliged by neutrality law to let her leave within 72 hours, and British agents spread rumours that heavy units were waiting offshore.',
+        consequence: 'Langsdorff scuttled his ship. The loss removed one of Germany’s strongest surface raiders before the trade war had really begun, and the remaining raiders of 1940 - Admiral Scheer, Kormoran, Pinguin - did more damage with less risk.',
       },
       university: {
         cause: 'River Plate is often read as a morale event, but its strategic significance was in the decision it confirmed: after the surface raiders were driven home in December 1939 and June 1940, Raeder conceded the initiative in the Atlantic to the U-boats, which is the single most consequential naval decision of the war.',
@@ -894,12 +894,12 @@ export const EVENTS: WW2Event[] = [
     fronts: ['western', 'politics'],
     countries: ['Germany', 'Belgium', 'Netherlands', 'France'],
     figures: [],
-    note: 'A Luftwaffe officer carrying the Fall Gelb situation map crashed at Maasmechelen and was captured with part of the document before he could burn it. Belgian intelligence passed it to Paris and London, where it was read as confirming the old assumption of an attack through central Belgium towards Paris; the German change of plan towards the Ardennes and Sedan, adopted on 17 February 1940 after Manstein\'s arguments and Hitler\'s insistence, was never detected.',
+    note: 'A Luftwaffe officer carrying the Fall Gelb situation map crashed at Maasmechelen and was captured with part of the document before he could burn it. Belgian intelligence passed it to Paris and London, where it was read as confirming the old assumption of an attack through central Belgium towards Paris; the German change of plan towards the Ardennes and Sedan, adopted on 17 February 1940 after Manstein’s arguments and Hitler’s insistence, was never detected.',
     levels: {
       primary: {
         cause: 'A German aircraft got lost in bad weather and had to land in Belgium, and the officer on board was carrying secret papers.',
-        what: 'In January 1940 the Allies therefore got hold of Germany\'s outline plan for attacking western Europe - a plan that said the main blow would come through the middle of Belgium.',
-        consequence: 'The Allies prepared for exactly that. By the time Germany actually attacked in May it had changed the plan to come through the Ardennes instead, and the papers misled the Allies in the new plan\'s favour.',
+        what: 'In January 1940 the Allies therefore got hold of Germany’s outline plan for attacking western Europe - a plan that said the main blow would come through the middle of Belgium.',
+        consequence: 'The Allies prepared for exactly that. By the time Germany actually attacked in May it had changed the plan to come through the Ardennes instead, and the papers misled the Allies in the new plan’s favour.',
       },
       secondary: {
         cause: 'The original Fall Gelb plan of October 1939 was essentially a repeat of 1914: a strong right wing through Belgium to the Channel coast. Manstein thought it would merely push the British back into the sea, and argued for a decisive blow through the Ardennes at Sedan, which the French considered impassable for armour.',
@@ -922,7 +922,7 @@ export const EVENTS: WW2Event[] = [
     fronts: ['atlantic', 'arctic', 'politics'],
     countries: ['United Kingdom', 'Germany', 'Norway'],
     figures: ['raeder', 'haakon'],
-    note: 'The destroyer HMS Cossack entered the Jossingfjord, boarded the German tanker Altmark over the protest of two Norwegian torpedo boats, and freed 299 prisoners from the commerce raider Admiral Spee. Norway\'s government was humiliated and divided; in Berlin the incident was used as proof that Norwegian neutrality was worthless and that Allied mining of the Leads was imminent - which the Allies, after the Cadogan meeting of 28 March, had in fact decided to do.',
+    note: 'The destroyer HMS Cossack entered the Jossingfjord, boarded the German tanker Altmark over the protest of two Norwegian torpedo boats, and freed 299 prisoners from the commerce raider Admiral Spee. Norway’s government was humiliated and divided; in Berlin the incident was used as proof that Norwegian neutrality was worthless and that Allied mining of the Leads was imminent - which the Allies, after the Cadogan meeting of 28 March, had in fact decided to do.',
     levels: {
       primary: {
         cause: 'A German supply ship was holding captured British sailors inside neutral Norwegian waters, and Britain decided to take them out.',
@@ -935,7 +935,7 @@ export const EVENTS: WW2Event[] = [
         consequence: 'Hitler invaded on 9 April, pre-empting an Allied operation that was not ready. Norway was occupied, and the ore route stayed open until the U-boat campaign and air attacks on shipping closed it in 1944.',
       },
       university: {
-        cause: 'The incident is a textbook case in the law of neutrality and in the politics of small-state appeasement: Norway\'s government refused to intern the Altmark in January because it feared provoking Germany, which is precisely the calculation the British boarding exposed as untenable.',
+        cause: 'The incident is a textbook case in the law of neutrality and in the politics of small-state appeasement: Norway’s government refused to intern the Altmark in January because it feared provoking Germany, which is precisely the calculation the British boarding exposed as untenable.',
         what: 'German and British decision-making in March 1940 has been worked over repeatedly, with the key finding that British mining - Wilfred, 8 April - was a response to a German move already in progress rather than its cause.',
         consequence: 'The Norwegian episode is the empirical basis for the small-state lesson that still shapes Norwegian and Nordic security policy: neutrality that depends on the forbearance of a neighbour is not neutrality.',
       },
@@ -950,7 +950,7 @@ export const EVENTS: WW2Event[] = [
     fronts: ['air_war', 'home'],
     countries: ['United Kingdom', 'Germany'],
     figures: ['goering', 'churchill', 'dowding', 'park'],
-    note: 'Some bombs fell on the City and on Cripplegate on the night of 24-25 August, killing about 60 people; Churchill retaliated with 81 bombers on Berlin on the night of 25-26 August, which did little damage and decisive strategic effects. Goering\'s directive of 31 August switched the main effort to bombing London by day and night, and from 7 September the Blitz ran for 57 consecutive nights. British civilian deaths in the Blitz came to about 40,000.',
+    note: 'Some bombs fell on the City and on Cripplegate on the night of 24-25 August, killing about 60 people; Churchill retaliated with 81 bombers on Berlin on the night of 25-26 August, which did little damage and decisive strategic effects. Goering’s directive of 31 August switched the main effort to bombing London by day and night, and from 7 September the Blitz ran for 57 consecutive nights. British civilian deaths in the Blitz came to about 40,000.',
     levels: {
       primary: {
         cause: 'German planes had been attacking airfields, and by mistake some of them dropped bombs on London. Britain then bombed Berlin, and Germany decided to attack British cities instead.',
@@ -958,7 +958,7 @@ export const EVENTS: WW2Event[] = [
         consequence: 'Tens of thousands of civilians were killed and much of London was damaged - but the plan did not break British morale or destroy the Royal Air Force.',
       },
       secondary: {
-        cause: 'The Luftwaffe had spent August attacking radar stations, airfields and fighter factories, and was beginning to starve No. 11 Group of pilots. The accidental bombing of London on 24 August, and Churchill\'s raid on Berlin two nights later, gave Goering a target that suited his propaganda and rested his crews.',
+        cause: 'The Luftwaffe had spent August attacking radar stations, airfields and fighter factories, and was beginning to starve No. 11 Group of pilots. The accidental bombing of London on 24 August, and Churchill’s raid on Berlin two nights later, gave Goering a target that suited his propaganda and rested his crews.',
         what: 'From 7 September 1940 London was attacked in force by day and then nightly. The British fighters had time to rebuild, the airfields were largely left alone, and the Germans never found a way to destroy the radar early-warning system or control the night sky.',
         consequence: 'The Blitz killed about 14,000 Londoners and destroyed or damaged a million homes, but it did not stop aircraft production, which rose year on year until it peaked in 1944. Britain gained time, and Germany lost the only air campaign of the war in which it chose its target for political rather than military reasons.',
       },
@@ -992,7 +992,7 @@ export const EVENTS: WW2Event[] = [
       },
       university: {
         cause: 'Taranto is the standard example of asymmetric innovation under material constraint: the aircraft were obsolete in every other role, and the operation depended on reconnaissance photographs, night navigation practice and a torpedo modified to run in 25 metres of water.',
-        what: 'Its place in operational history also depends on what did not happen: Italy\'s failure to fight a decisive action in the Mediterranean in 1940-41, and Italian fuel shortages from 1942, meant the battle was never followed up by a real fleet engagement - the war at sea in these waters was decided by air power, submarines and supply, not by gunnery duels.',
+        what: 'Its place in operational history also depends on what did not happen: Italy’s failure to fight a decisive action in the Mediterranean in 1940-41, and Italian fuel shortages from 1942, meant the battle was never followed up by a real fleet engagement - the war at sea in these waters was decided by air power, submarines and supply, not by gunnery duels.',
         consequence: 'The Japanese study of Taranto is documented and matters for Pearl Harbor, which makes this one of the few battles in the European theatre with a direct causal line into the Pacific war - noted here only because the Japanese copied the technique; no Pacific material is treated on this site.',
       },
     },
@@ -1006,7 +1006,7 @@ export const EVENTS: WW2Event[] = [
     fronts: ['eastern', 'politics'],
     countries: ['Germany', 'Soviet Union'],
     figures: ['hitler', 'stalin', 'brauchitsch', 'zhukov'],
-    note: 'Barbarossa Directive No. 21, issued 18 December 1940, told the army to be ready "in a rapid campaign" before Britain was defeated - the assumption being that Britain\'s last hope lay in Soviet reserves and that crushing the USSR would end British resistance. The Wehrmacht moved 3.3 million men east between February and June 1941. At the Berghof conference of 31 July 1940 with his service chiefs, Hitler said the sooner Russia was crushed the better, and the decision dates from the summer of 1940, not from the failure of the air war.',
+    note: 'Barbarossa Directive No. 21, issued 18 December 1940, told the army to be ready "in a rapid campaign" before Britain was defeated - the assumption being that Britain’s last hope lay in Soviet reserves and that crushing the USSR would end British resistance. The Wehrmacht moved 3.3 million men east between February and June 1941. At the Berghof conference of 31 July 1940 with his service chiefs, Hitler said the sooner Russia was crushed the better, and the decision dates from the summer of 1940, not from the failure of the air war.',
     levels: {
       primary: {
         cause: 'Britain had not surrendered, and Hitler thought that if he destroyed the Soviet Union, Britain would lose its last hope and give up.',
@@ -1014,12 +1014,12 @@ export const EVENTS: WW2Event[] = [
         consequence: 'Germany opened the biggest land war in history in June 1941 while it was still fighting Britain, and in the end had to fight on two fronts.',
       },
       secondary: {
-        cause: 'Hitler had always wanted territory in the east and saw the Nazi-Soviet pact as temporary. Britain\'s survival, the Royal Navy\'s strength and the failure to invade in 1940 pushed him towards a decision he was already inclined to take: knock out the Soviet Union and hope Japan would finish Britain in the east.',
+        cause: 'Hitler had always wanted territory in the east and saw the Nazi-Soviet pact as temporary. Britain’s survival, the Royal Navy’s strength and the failure to invade in 1940 pushed him towards a decision he was already inclined to take: knock out the Soviet Union and hope Japan would finish Britain in the east.',
         what: 'The directive of 18 December assumed three army groups advancing to the Archangel-Astrakhan line in one short campaign, before Britain was defeated. It was issued to a general staff that was already working on the problem since July, and to an army that had not finished fighting in the west.',
         consequence: 'The decision committed Germany to a war of the kind it had lost before, over distances it could not supply, while the Luftwaffe was still engaged over Britain and the U-boat war was at its height - a choice the German naval command formally objected to.',
       },
       university: {
-        cause: 'The chronology of the decision is the central question of the field. The orthodox account, built from the Halder diaries and Directive 21, makes the decision of July 1940 the pivot; the "continuity" school of Hillgruber sees Barbarossa as the real war, while Wehler and others place the initiative in the logic of the German economy\'s need for imported food and oil.',
+        cause: 'The chronology of the decision is the central question of the field. The orthodox account, built from the Halder diaries and Directive 21, makes the decision of July 1940 the pivot; the "continuity" school of Hillgruber sees Barbarossa as the real war, while Wehler and others place the initiative in the logic of the German economy’s need for imported food and oil.',
         what: 'What is not in dispute is that the decision preceded any Soviet threat and that the German leadership concealed its aims even from allies: Romania, Finland and Hungary were told they were fighting a preventive war, which is why the postwar history of each of them is so different.',
         consequence: 'The failure of Barbarossa, not the entry of America, is what decided the war in Europe in military terms, and the debate about whether it was ever winnable - the "lost because of the weather" versus "never had the logistics" arguments - is still the most argued question of the entire war.',
       },
@@ -1036,21 +1036,21 @@ export const EVENTS: WW2Event[] = [
     fronts: ['politics', 'home'],
     countries: ['Germany'],
     figures: ['goering', 'hitler'],
-    note: 'Rearmament had been financed by deferred-payment credit - the Mefo bills of 1934-38 - which matured just as the Reich ran out of foreign currency to buy the oil, iron ore and food it could not produce. Hjalmar Schacht was pushed out of the Economics Ministry in January 1938 and out of the Reichsbank presidency in January 1939, with Walther Funk taking the two posts in turn, while Goering\'s Four-Year Plan authority, created in 1936, took charge of raw materials, prices and foreign exchange. The regime could import less, cut civilian consumption further, or take what it needed from other countries. In March 1938 Austria\'s gold, foreign exchange and industrial assets were the first large prize, and the same method was applied to Bohemia in 1939 and to every occupied country after 1940.',
+    note: 'Rearmament had been financed by deferred-payment credit - the Mefo bills of 1934-38 - which matured just as the Reich ran out of foreign currency to buy the oil, iron ore and food it could not produce. Hjalmar Schacht was pushed out of the Economics Ministry in January 1938 and out of the Reichsbank presidency in January 1939, with Walther Funk taking the two posts in turn, while Goering’s Four-Year Plan authority, created in 1936, took charge of raw materials, prices and foreign exchange. The regime could import less, cut civilian consumption further, or take what it needed from other countries. In March 1938 Austria’s gold, foreign exchange and industrial assets were the first large prize, and the same method was applied to Bohemia in 1939 and to every occupied country after 1940.',
     levels: {
       primary: {
         cause: 'Germany was building weapons very fast, and building weapons costs money and raw materials that Germany did not have enough of.',
         what: 'In January 1938 the man in charge of German money, Schacht, was pushed out of his job, and the regime put a harder-line official in charge of economic affairs.',
-        consequence: 'Germany kept arming by taking other countries\' money, gold and factories - which is one reason it went on attacking neighbours.',
+        consequence: 'Germany kept arming by taking other countries’ money, gold and factories - which is one reason it went on attacking neighbours.',
       },
       secondary: {
         cause: 'Hitler had told his government in 1936 that Germany must be ready to fight within four years, but rearmament was outrunning the economy: the state could not pay for imported oil and ore without exporting, and armaments had crowded out the goods Germany sold abroad.',
         what: 'The dispute inside the government in 1937-38 was between those who wanted to slow rearmament and restore normal trade - Schacht - and those who wanted autarky and, if necessary, seizure of foreign assets - Goering. The second group won.',
-        consequence: 'Germany\'s economy was organised for plunder as well as production, which made further aggression more attractive, not less. The Anschluss of March 1938 paid for rearmament immediately, and the occupation of Czechoslovakia in March 1939 added the Skoda arms complex.',
+        consequence: 'Germany’s economy was organised for plunder as well as production, which made further aggression more attractive, not less. The Anschluss of March 1938 paid for rearmament immediately, and the occupation of Czechoslovakia in March 1939 added the Skoda arms complex.',
       },
       university: {
-        cause: 'The "rearmament crisis" of 1938 is a live historiographical question: Martin Broszat and Avraham Barkai documented the foreign-exchange shortage and the disputes inside the economic leadership, while Adam Tooze\'s "The Wages of Destruction" (2006) made the chronic shortage of hard currency central to the whole Nazi war economy and to its willingness to loot.',
-        what: 'What can be shown is that the deferral mechanism came under strain in 1937-38, that Schacht\'s memoranda of January 1939 were an admission of it, and that the Four-Year Plan bodies acquired coercive powers over investment, prices and labour.',
+        cause: 'The "rearmament crisis" of 1938 is a live historiographical question: Martin Broszat and Avraham Barkai documented the foreign-exchange shortage and the disputes inside the economic leadership, while Adam Tooze’s "The Wages of Destruction" (2006) made the chronic shortage of hard currency central to the whole Nazi war economy and to its willingness to loot.',
+        what: 'What can be shown is that the deferral mechanism came under strain in 1937-38, that Schacht’s memoranda of January 1939 were an admission of it, and that the Four-Year Plan bodies acquired coercive powers over investment, prices and labour.',
         consequence: 'The argument matters for the biggest question in the field. If the German economy could not pay for rearmament, then 1938-39 was not only a series of diplomatic triumphs but a flight forward into a war economy - which is how Tooze reads the timing of 1939, against the older view that Germany was economically unprepared and therefore deterred.',
       },
     },
@@ -1068,18 +1068,18 @@ export const EVENTS: WW2Event[] = [
     levels: {
       primary: {
         cause: 'Two of the most senior German soldiers were pushed out of their jobs on false or embarrassing charges, and Hitler used the moment to seize direct control of the armed forces.',
-        what: 'In February 1938 Hitler made himself the commander of Germany\'s army, navy and air force, and created a new headquarters staff loyal to him.',
+        what: 'In February 1938 Hitler made himself the commander of Germany’s army, navy and air force, and created a new headquarters staff loyal to him.',
         consequence: 'After this no general could give Hitler orders, only advice - which mattered greatly in the wars that followed.',
       },
       secondary: {
         cause: 'The regular German officer corps had regarded Hitler as vulgar and dangerous, and had kept their distance from the Nazi Party. Blomberg had been the link between the party and the army, and Fritsch the senior officer most willing to resist him.',
         what: 'The police file on Fritsch was old, had been shelved by Hitler himself in 1937, and was produced again by Himmler and Heydrich at exactly the right moment. The subsequent trial in September 1938 humiliated the accusers but did not restore Fritsch, and Hitler had already taken the command posts.',
-        consequence: 'Command of the Wehrmacht passed to a head of government with no operational experience and no colleague he could not dismiss. The rivalry between Keitel\'s OKW and Brauchitsch\'s OKH, and Hitler\'s habit of interfering in operational detail from 1941, have their origin here.',
+        consequence: 'Command of the Wehrmacht passed to a head of government with no operational experience and no colleague he could not dismiss. The rivalry between Keitel’s OKW and Brauchitsch’s OKH, and Hitler’s habit of interfering in operational detail from 1941, have their origin here.',
       },
       university: {
         cause: 'The affair is central to the debate about whether a conservative coup against Hitler was ever realistic. The conspirators around Oster and Gisevius needed the army leadership intact and needed to know that Britain would fight; the "Oster papers" describe planning in August-September 1938, and historians have argued for decades about how far those papers can be trusted.',
-        what: 'Two points are secure: removing Fritsch decapitated the conspiracy\'s military wing, and the British and French failure to warn Berlin in September 1938 that a war of aggression would be resisted removed its political case.',
-        consequence: 'The episode also set the pattern for the regime\'s relations with the elite - compromise on the surface, control underneath - and it is the empirical basis for the argument that the regime consolidated its power in 1938, not in 1933.',
+        what: 'Two points are secure: removing Fritsch decapitated the conspiracy’s military wing, and the British and French failure to warn Berlin in September 1938 that a war of aggression would be resisted removed its political case.',
+        consequence: 'The episode also set the pattern for the regime’s relations with the elite - compromise on the surface, control underneath - and it is the empirical basis for the argument that the regime consolidated its power in 1938, not in 1933.',
       },
     },
   },
@@ -1102,10 +1102,10 @@ export const EVENTS: WW2Event[] = [
       secondary: {
         cause: 'Austrian Nazis had been terrorising the country with German money since 1933-34, and Mussolini, who had guaranteed Austrian independence in 1934, had moved closer to Germany after the conquest of Ethiopia and the intervention in Spain. A rump Austria could not be defended.',
         what: 'The Berchtesgaden agreement of 12 February, implemented on 16 February, turned Austria into a German client state from the inside. Seyss-Inquart, inside the cabinet, then invited German troops in on 12 March.',
-        consequence: 'The absorption of Austria brought the Reich a new frontier with Czechoslovakia, 7 million more people, Austria\'s gold reserves and its foreign exchange, and it showed every neighbouring state that the Western democracies would not act.',
+        consequence: 'The absorption of Austria brought the Reich a new frontier with Czechoslovakia, 7 million more people, Austria’s gold reserves and its foreign exchange, and it showed every neighbouring state that the Western democracies would not act.',
       },
       university: {
-        cause: 'The February ultimatum sits inside the argument about how far Vienna\'s destruction was improvised or scheduled: German documents from autumn 1937 instruct the Berlin embassy to treat Austria as a matter to be "settled", and Papen\'s reports from Vienna show a deliberate strategy of infiltration rather than a spontaneous outburst.',
+        cause: 'The February ultimatum sits inside the argument about how far Vienna’s destruction was improvised or scheduled: German documents from autumn 1937 instruct the Berlin embassy to treat Austria as a matter to be "settled", and Papen’s reports from Vienna show a deliberate strategy of infiltration rather than a spontaneous outburst.',
         what: 'The "February pacts" also illustrate a pattern repeated in Czechoslovakia and Poland - the use of an ethnic or political minority as a lever, with the demand for minority rights as the wedge and annexation as the result.',
         consequence: 'For Austria the interpretative problem has lasted decades: whether Austrians were perpetrators or the first victim. The postwar "victim theory" made amends only slowly, and the 1988-89 Waldheim affair and the 2000 debate over restitution forced a public reckoning with the extent of Austrian participation.',
       },
@@ -1157,7 +1157,7 @@ export const EVENTS: WW2Event[] = [
       },
       secondary: {
         cause: 'The Nuremberg Laws of 1935 had made Jews subjects rather than citizens, and their First Regulation of 14 November 1935 had settled who counted as a Jew - three or four Jewish grandparents, whatever the person believed or had done in the war. The regulations of 1938 applied that definition to the whole economy.',
-        what: 'In a single summer the last openings closed: property was registered in April, businesses put on a closure list in June, doctors\' licences were cancelled on 25 July, and from 1 January 1939 Jews had to carry the additional names Israel and Sara. The regime called its theft by another name - "Arisation" - and kept the proceeds.',
+        what: 'In a single summer the last openings closed: property was registered in April, businesses put on a closure list in June, doctors’ licences were cancelled on 25 July, and from 1 January 1939 Jews had to carry the additional names Israel and Sara. The regime called its theft by another name - "Arisation" - and kept the proceeds.',
         consequence: 'Poverty made flight harder, so the decrees both expelled Jews and trapped them; and the grey categories they created - the "Mischling", the mixed marriage, the "privileged" Jew - were still being argued over in German offices in 1945.',
       },
       university: {
@@ -1176,20 +1176,20 @@ export const EVENTS: WW2Event[] = [
     fronts: ['politics'],
     countries: ['Czechoslovakia', 'Germany', 'United Kingdom'],
     figures: ['hitler'],
-    note: 'Lord Runciman, a Liberal peer with no diplomatic experience, arrived in Prague on 8 August 1938 on an "informal" mission with a small staff that included Sir Joseph Ball of the Conservative Research Department. Its practical effect was to urge Prague to concede autonomy to the Sudeten Germans while German rearmament continued unchecked and while Berlin\'s intentions were passed over in silence. Henlein\'s speech at Maffersdorf on 24 August hardened the Sudeten German terms. Prague\'s "Fourth Plan" of 5 September - the most generous minority statute offered by any East European state between the wars - came too late, and Czech-German relations reached the edge of war on 21 and 23 September.',
+    note: 'Lord Runciman, a Liberal peer with no diplomatic experience, arrived in Prague on 8 August 1938 on an "informal" mission with a small staff that included Sir Joseph Ball of the Conservative Research Department. Its practical effect was to urge Prague to concede autonomy to the Sudeten Germans while German rearmament continued unchecked and while Berlin’s intentions were passed over in silence. Henlein’s speech at Maffersdorf on 24 August hardened the Sudeten German terms. Prague’s "Fourth Plan" of 5 September - the most generous minority statute offered by any East European state between the wars - came too late, and Czech-German relations reached the edge of war on 21 and 23 September.',
     levels: {
       primary: {
         cause: 'Britain wanted the crisis in Czechoslovakia settled without a war, and sent a nobleman to persuade the Czechs to give the German minority what Germany demanded.',
         what: 'In August 1938 Lord Runciman spent a month in Prague telling the Czech government to give way, while Germany armed and threatened.',
-        consequence: 'The Czechs made generous concessions too late, and Britain\'s policy taught Hitler that threats worked.',
+        consequence: 'The Czechs made generous concessions too late, and Britain’s policy taught Hitler that threats worked.',
       },
       secondary: {
         cause: 'The British government did not believe Czechoslovakia could be defended and did not want a war in 1938 over what many ministers thought was a legitimate minority grievance. Pressure was therefore applied to Prague, which had no British guarantee, rather than to Berlin, which did.',
-        what: 'Runciman\'s mission was not a negotiation but a lever: he reported to London rather than mediating, and his team argued that the frontier was indefensible without the Sudeten fortifications - which was true, and which was Berlin\'s own argument.',
-        consequence: 'The mission bought time for Germany\'s timetable, and it left the Czechs with a settled conviction that Western security promises were unreliable - a belief that shaped Czech policy after 1945 as much as Soviet occupation did.',
+        what: 'Runciman’s mission was not a negotiation but a lever: he reported to London rather than mediating, and his team argued that the frontier was indefensible without the Sudeten fortifications - which was true, and which was Berlin’s own argument.',
+        consequence: 'The mission bought time for Germany’s timetable, and it left the Czechs with a settled conviction that Western security promises were unreliable - a belief that shaped Czech policy after 1945 as much as Soviet occupation did.',
       },
       university: {
-        cause: 'The episode is a case study in the appeasement debate: the "guilt of Munich" school sees Runciman as an instrument of a government determined to dismember Czechoslovakia, while the "moral equivalence" and "misperception" schools point to British military weakness, the dominions\' refusal to fight, and the genuine difficulty of the minority question.',
+        cause: 'The episode is a case study in the appeasement debate: the "guilt of Munich" school sees Runciman as an instrument of a government determined to dismember Czechoslovakia, while the "moral equivalence" and "misperception" schools point to British military weakness, the dominions’ refusal to fight, and the genuine difficulty of the minority question.',
         what: 'What the records show clearly is the asymmetry of pressure - concessions demanded of a state that had done nothing, no sanction contemplated against a state that was arming - and the indifference of the British negotiators to the argument that autonomy for the Sudetenland ended Czechoslovakia as a functioning state.',
         consequence: 'Its longest consequence is not diplomatic but historiographical: Munich became the standard reference for every later crisis in which appeasement was alleged, which is why the episode is still argued about in the language of 1938.',
       },
@@ -1213,13 +1213,13 @@ export const EVENTS: WW2Event[] = [
       },
       secondary: {
         cause: 'Munich had taken the border fortifications, most of the heavy industry and three million people. The remaining parties, fearing internal division as the cause of the defeat, joined a single national list and banned the left.',
-        what: 'Hácha, a non-political judge, was chosen president to stand above the quarrel. Slovak autonomy under Jozef Tiso\'s Hlinka Party was a fact of German power rather than a settlement, and Prague spent the winter of 1938-39 unable to pay for the refugees and the army it still had to maintain.',
+        what: 'Hácha, a non-political judge, was chosen president to stand above the quarrel. Slovak autonomy under Jozef Tiso’s Hlinka Party was a fact of German power rather than a settlement, and Prague spent the winter of 1938-39 unable to pay for the refugees and the army it still had to maintain.',
         consequence: 'The experiment in authoritarian national unity bought nothing. In March 1939 Slovakia became a German state and the Czech lands became a Protectorate, and the interwar republic was treated after 1945 as legally continuous - which is why Beneš returned rather than a new state being founded.',
       },
       university: {
         cause: 'The Second Republic is under-studied in English and important for two arguments: the collapse of Czechoslovak democracy, which cannot be dated only to Munich, and the question of legal continuity, on which the postwar constitution and the Beneš decrees rest.',
-        what: 'The Beran regime\'s anti-Jewish measures in late 1938 and 1939, and its participation in the exclusion of Jews from universities and professions before the occupation, are documented and complicate the national narrative of unblemished victimhood - a subject reopened in Czech historiography after 1989.',
-        consequence: 'Hácha\'s signature in March 1939 is the central case in the ethics of collaboration under duress: the postwar National Court rejected the duress defence in October 1945 and sentenced him to life imprisonment, leaving an unresolved argument about the limits of coerced consent.',
+        what: 'The Beran regime’s anti-Jewish measures in late 1938 and 1939, and its participation in the exclusion of Jews from universities and professions before the occupation, are documented and complicate the national narrative of unblemished victimhood - a subject reopened in Czech historiography after 1989.',
+        consequence: 'Hácha’s signature in March 1939 is the central case in the ethics of collaboration under duress: the postwar National Court rejected the duress defence in October 1945 and sentenced him to life imprisonment, leaving an unresolved argument about the limits of coerced consent.',
       },
     },
   },
@@ -1227,7 +1227,7 @@ export const EVENTS: WW2Event[] = [
     id: 'prophecy_speech',
     date: '1939-01-30',
     precision: 'day',
-    title: 'Hitler\'s "prophecy" to the Reichstag, 30 January 1939',
+    title: 'Hitler’s "prophecy" to the Reichstag, 30 January 1939',
     kind: 'politics',
     fronts: ['politics', 'home'],
     countries: ['Germany'],
@@ -1235,7 +1235,7 @@ export const EVENTS: WW2Event[] = [
     note: 'In the Reichstag on the sixth anniversary of the seizure of power, Hitler declared that if "international finance Judaism" succeeded in plunging the nations into a world war, the consequence would be "the annihilation of the Jewish race in Europe". On 28 April 1939 he renounced the Anglo-German naval agreement of 1935. The sentence appears in slightly different wording in the version published in the Völkischer Beobachter and in the parliamentary record, a discrepancy seized on by postwar apologists; that Hitler delivered something of the kind, to the Reichstag, in public, is not in doubt. He repeated the formula on 30 January 1941, on 30 January 1942 and on 30 January 1943, by which time the mass deportations to the extermination camps had begun and had been under way for months.',
     levels: {
       primary: {
-        cause: 'As Europe moved closer to war, Germany\'s dictator spoke in public about what he said would happen to Jewish people if there was a war.',
+        cause: 'As Europe moved closer to war, Germany’s dictator spoke in public about what he said would happen to Jewish people if there was a war.',
         what: 'In January 1939 Hitler told the German parliament that a world war would end with the destruction of the Jews of Europe.',
         consequence: 'It was said openly, in a broadcast speech, years before the killing began - so people who later said they had not known had at least been told.',
       },
@@ -1245,9 +1245,9 @@ export const EVENTS: WW2Event[] = [
         consequence: 'The speech is a central piece of evidence in the argument that the Holocaust was planned rather than improvised, and it was cited as such at Nuremberg and in every serious history since.',
       },
       university: {
-        cause: 'The "prophecy" formula is the strongest single text in the intentionalist case, and functionalists answer that public threats do not establish an administrative decision; the recent treatment of the question by Saul Friedländer and Peter Longerich, and the documentary work of the German historians\' institute, has shifted weight towards the view that Hitler drove the policy personally.',
+        cause: 'The "prophecy" formula is the strongest single text in the intentionalist case, and functionalists answer that public threats do not establish an administrative decision; the recent treatment of the question by Saul Friedländer and Peter Longerich, and the documentary work of the German historians’ institute, has shifted weight towards the view that Hitler drove the policy personally.',
         what: 'The philological detail matters: the different published texts, the date of the speech, and the three wartime repetitions are documented, and the repetitions are made at moments of decision and near-decision - December 1941, January 1942, and in the middle of the deportations.',
-        consequence: 'It is also a methodological warning: the regime\'s language was not mere propaganda but a programme with a public audit trail, which is why the "they did not know" defence fails in so many postwar trials, and why historians read the speeches alongside the Reichsbahn transport timetables rather than instead of them.',
+        consequence: 'It is also a methodological warning: the regime’s language was not mere propaganda but a programme with a public audit trail, which is why the "they did not know" defence fails in so many postwar trials, and why historians read the speeches alongside the Reichsbahn transport timetables rather than instead of them.',
       },
     },
   },
@@ -1255,17 +1255,17 @@ export const EVENTS: WW2Event[] = [
     id: 'second_republic_economy',
     date: '1939-02-15',
     precision: 'month',
-    title: 'Winter 1938-39: Bohemia\'s industry is taken over, 200,000 Czechs are made refugees',
+    title: 'Winter 1938-39: Bohemia’s industry is taken over, 200,000 Czechs are made refugees',
     kind: 'home_front',
     fronts: ['politics', 'home'],
     countries: ['Czechoslovakia', 'Germany'],
     figures: ['hacha'],
-    note: 'By the spring of 1939 something like 200,000 Czechs had left or been driven out of the annexed borderlands and were crowded into the rump state, which had lost its fortifications, its heavy industry and its exports. The customs and currency arrangements fixed the Reichsmark at ten koruna, which made Czech assets cheap for German buyers and Czech exports dear; the Skoda works, the largest arms complex in Europe outside the Reich, had its orders from Romania, Yugoslavia and Poland diverted into German hands, and a supervisory apparatus in Berlin controlled credit. What was left of the National Bank\'s gold was already largely abroad when the occupation came: the roughly 23 tonnes held in London were handed to the Reichsbank in 1939 after Germany forced the order through the Bank for International Settlements, and the remainder in the Prague vaults followed to Berlin only in June 1940.',
+    note: 'By the spring of 1939 something like 200,000 Czechs had left or been driven out of the annexed borderlands and were crowded into the rump state, which had lost its fortifications, its heavy industry and its exports. The customs and currency arrangements fixed the Reichsmark at ten koruna, which made Czech assets cheap for German buyers and Czech exports dear; the Skoda works, the largest arms complex in Europe outside the Reich, had its orders from Romania, Yugoslavia and Poland diverted into German hands, and a supervisory apparatus in Berlin controlled credit. What was left of the National Bank’s gold was already largely abroad when the occupation came: the roughly 23 tonnes held in London were handed to the Reichsbank in 1939 after Germany forced the order through the Bank for International Settlements, and the remainder in the Prague vaults followed to Berlin only in June 1940.',
     levels: {
       primary: {
         cause: 'Germany had taken the border districts of Czechoslovakia, so hundreds of thousands of Czech people left their homes and moved into what was left of the country.',
         what: 'In the winter of 1938-39 the rump state had to feed and house refugees, while German buyers, on very favourable terms, took over Czech factories.',
-        consequence: 'When Germany occupied the rest in March 1939 it gained one of Europe\'s greatest arms industries, ready to work for the German war effort.',
+        consequence: 'When Germany occupied the rest in March 1939 it gained one of Europe’s greatest arms industries, ready to work for the German war effort.',
       },
       secondary: {
         cause: 'Munich made the rump economy dependent on Germany by geography and by exchange rate: with the frontier moved and the currency tied at ten koruna to the Reichsmark, German industry could buy Czech plants for a fraction of their worth.',
@@ -1274,7 +1274,7 @@ export const EVENTS: WW2Event[] = [
       },
       university: {
         cause: 'The Czech case is the strongest evidence for the "plunder" reading of Nazi economic practice - that conquest was used to solve the currency and capital problems described in the January 1938 crisis - and it has been worked over in Czech and German economic history since the 1990s.',
-        what: 'The mechanics are worth knowing: the ten-to-one rate, the "Treuhander" system of trustees who took over Jewish-owned and "economically useless" enterprises, and the transfer of the Nationalbank\'s gold, all set the template for the occupied countries after 1940.',
+        what: 'The mechanics are worth knowing: the ten-to-one rate, the "Treuhander" system of trustees who took over Jewish-owned and "economically useless" enterprises, and the transfer of the Nationalbank’s gold, all set the template for the occupied countries after 1940.',
         consequence: 'The postwar settlement had to unwind all of it - the Beneš decrees on German and Hungarian property, the nationalisation of the Czech industrial banks in 1945, and the refusal to treat the wartime transfers as valid sales - which is one root of the postwar communist economy in Czechoslovakia.',
       },
     },
@@ -1302,8 +1302,8 @@ export const EVENTS: WW2Event[] = [
       },
       university: {
         cause: 'The interpretation is sharply contested: the orthodox Soviet-postwar reading of "peaceful coexistence sought in vain", the Western reading of cynical opportunism, and the argument associated with A.J.P. Taylor that the pact was the ordinary diplomacy of a balance-of-power state, against work since 1989 showing how much Stalin gained territorially and how far his calculations assumed a long war between the West.',
-        what: 'The opening of Soviet archives after 1989, and the public acknowledgement in 1989 by the Congress of People\'s Deputies that the secret protocols existed and had been implemented, changed the evidence base decisively; the German records had been available since the Nuremberg documents were published.',
-        consequence: 'The summer of 1939 is also the empirical starting point for the postwar history of the Baltic states, western Ukraine and Bessarabia, whose annexation under the protocols is the core grievance of those societies to this day, and for the Soviet Union\'s own post-1991 argument about the pact.',
+        what: 'The opening of Soviet archives after 1989, and the public acknowledgement in 1989 by the Congress of People’s Deputies that the secret protocols existed and had been implemented, changed the evidence base decisively; the German records had been available since the Nuremberg documents were published.',
+        consequence: 'The summer of 1939 is also the empirical starting point for the postwar history of the Baltic states, western Ukraine and Bessarabia, whose annexation under the protocols is the core grievance of those societies to this day, and for the Soviet Union’s own post-1991 argument about the pact.',
       },
     },
   },
@@ -1316,7 +1316,7 @@ export const EVENTS: WW2Event[] = [
     fronts: ['home', 'politics'],
     countries: ['Germany', 'Austria', 'Czechoslovakia'],
     figures: ['heydrich'],
-    note: 'Hermann Göring\'s decree of 24 January 1939 created a Reich Central Office for Jewish Emigration under Reinhard Heydrich, modelled on the Central Office Adolf Eichmann had set up in Vienna in 1938; the Berlin office took over buildings on Kurfürstenstraße in February, began work in March 1939, and a Prague branch followed in July 1939. Its method was terror plus paperwork: emigration was possible only for Jews who surrendered their property, paid the Reich flight tax, and cleared a queue of competing agencies, and the newly created Reich Association of the Jews in Germany, formed on 4 July 1939, was forced to act as the office\'s implementing arm. When the war closed the frontiers and the British blocked emigration from 1940, the same offices, the same files and the same officials were turned to deportation; Eichmann\'s section became RSHA Referent IV B 4.',
+    note: 'Hermann Göring’s decree of 24 January 1939 created a Reich Central Office for Jewish Emigration under Reinhard Heydrich, modelled on the Central Office Adolf Eichmann had set up in Vienna in 1938; the Berlin office took over buildings on Kurfürstenstraße in February, began work in March 1939, and a Prague branch followed in July 1939. Its method was terror plus paperwork: emigration was possible only for Jews who surrendered their property, paid the Reich flight tax, and cleared a queue of competing agencies, and the newly created Reich Association of the Jews in Germany, formed on 4 July 1939, was forced to act as the office’s implementing arm. When the war closed the frontiers and the British blocked emigration from 1940, the same offices, the same files and the same officials were turned to deportation; Eichmann’s section became RSHA Referent IV B 4.',
     levels: {
       primary: {
         cause: 'For years the Nazi government tried to force Jewish people to leave Germany. In 1939 it set up one big office to organise it.',
@@ -1329,7 +1329,7 @@ export const EVENTS: WW2Event[] = [
         consequence: 'The bureaucratic continuity is the point: deportation was not improvised by different men in 1941. It was run out of the same registry offices, with the same transport contacts in the Reichsbahn, by officials who had spent three years learning exactly where the Jews were.',
       },
       university: {
-        cause: 'The office is a cornerstone of the bureaucracy-and-murder literature: Christopher R. Browning\'s work on the German administration of the Jewish question, and the studies of the Eichmann Referat and of the Reich Association as a coerced instrument, rest on these files.',
+        cause: 'The office is a cornerstone of the bureaucracy-and-murder literature: Christopher R. Browning’s work on the German administration of the Jewish question, and the studies of the Eichmann Referat and of the Reich Association as a coerced instrument, rest on these files.',
         what: 'The Emigration Office also forces the question of alternatives. The Madagascar plan and the Nisko reservation of 1939-40 were not fantasies of the radical fringe but proposals worked up by the same desks; they failed for logistical and inter-agency reasons, and the failure narrowed the options to murder.',
         consequence: 'The institutional history also has a postwar afterlife: several of these officials resumed senior careers in the Federal administration, which is one reason West German trials over deportations took so long and produced such light sentences.',
       },
@@ -1357,9 +1357,9 @@ export const EVENTS: WW2Event[] = [
         consequence: 'When the talks were recalled in late August, the Western democracies had spent three months proving to Stalin that they were weak, slow and unreliable; the pact with Ribbentrop was the answer, and Poland paid the price of the transit question first.',
       },
       university: {
-        cause: 'The staff talks are central to the historiography of collective security\'s failure: A. J. P. Taylor located responsibility in Western hesitancy, the transit question was argued into the 1980s on Polish and Romanian documents, and the Soviet archives opened after 1991 show Stalin negotiating on two tracks simultaneously and taking the offer that paid sooner and more.',
+        cause: 'The staff talks are central to the historiography of collective security’s failure: A. J. P. Taylor located responsibility in Western hesitancy, the transit question was argued into the 1980s on Polish and Romanian documents, and the Soviet archives opened after 1991 show Stalin negotiating on two tracks simultaneously and taking the offer that paid sooner and more.',
         what: 'The records also show that the failure was structural rather than personal: Soviet strategy against Germany ran through Poland and Romania, states whose governments judged - and the next two years proved them half-right - that Soviet occupation could outlast the Wehrmacht. British and French planners knew the transit demand was unanswerable and preferred to keep negotiating rather than settle it.',
-        consequence: 'The episode underwrites the central counterfactual of 1939: an August 1939 Western-Soviet military convention would not have cancelled Hitler\'s decision for war, but it would have raised its risks and changed its date - and after 1941 it fed the Soviet charge, repeated from wartime propaganda into Cold War historiography, that the West had meant the Wehrmacht and the Red Army to bleed each other white.',
+        consequence: 'The episode underwrites the central counterfactual of 1939: an August 1939 Western-Soviet military convention would not have cancelled Hitler’s decision for war, but it would have raised its risks and changed its date - and after 1941 it fed the Soviet charge, repeated from wartime propaganda into Cold War historiography, that the West had meant the Wehrmacht and the Red Army to bleed each other white.',
       },
     },
   },

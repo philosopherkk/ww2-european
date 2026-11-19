@@ -344,7 +344,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['eastern'],
     countries: ['Germany', 'Poland'],
     figures: ['himmler'],
-    note: 'The deportations ran from 22 July to 21 September 1942. Between 254,000 and 265,000 people were deported from the Warsaw Ghetto to Treblinka, which began killing on 23 July, and some 11,000-20,000 were shot in the ghetto itself. Adam Czerniaków, chairman of the Jewish Council, shot himself on 23 July when he was told that the "resettlement to the east" included the hospital and the children. The ghetto\'s population fell from some 400,000 to roughly 50,000-60,000 workers housed in the smaller "residual ghetto".',
+    note: 'The deportations ran from 22 July to 21 September 1942. Between 254,000 and 265,000 people were deported from the Warsaw Ghetto to Treblinka, which began killing on 23 July, and some 11,000-20,000 were shot in the ghetto itself. Adam Czerniaków, chairman of the Jewish Council, shot himself on 23 July when he was told that the "resettlement to the east" included the hospital and the children. The ghetto’s population fell from some 400,000 to roughly 50,000-60,000 workers housed in the smaller "residual ghetto".',
     levels: {
       primary: {
         cause: 'Germany had shut the Jews of Warsaw into a crowded district of the city, and in the summer of 1942 decided to send them all away.',
@@ -354,12 +354,12 @@ export const EVENTS_1941_1942: WW2Event[] = [
       secondary: {
         cause: 'By mid-1942 the SS had finished building extermination camps in the Lublin district and wanted them used. The Warsaw Ghetto, the largest in occupied Europe with some 400,000 Jews crammed into 3.4 square kilometres, was chosen first, on an order Himmler gave on 19 July.',
         what: 'The Jewish Council was told to supply 6,000 names a day for "resettlement in the east". Its chairman Adam Czerniaków shot himself the next day when he understood what that meant and was refused any guarantee for the children in his orphanage. For nine weeks trains left the Umschlagplatz loading yard; Jewish police were forced to help round people up, and gangs of children smugglers risked death to bring food back in.',
-        consequence: 'Between 254,000 and 265,000 people were murdered, most of them in the first weeks of Treblinka\'s operation. The surviving workers founded the Jewish Combat Organisation (ZOB) on 28 July, while the trains were still running, and began storing the pistols and homemade bombs they used in the uprising of April 1943. A hidden archive, Oneg Shabbat, buried its records in milk cans during the action; part of it was dug up in 1946 and again in 1950.',
+        consequence: 'Between 254,000 and 265,000 people were murdered, most of them in the first weeks of Treblinka’s operation. The surviving workers founded the Jewish Combat Organisation (ZOB) on 28 July, while the trains were still running, and began storing the pistols and homemade bombs they used in the uprising of April 1943. A hidden archive, Oneg Shabbat, buried its records in milk cans during the action; part of it was dug up in 1946 and again in 1950.',
       },
       university: {
-        cause: 'The Grossaktion was the largest single operation of Operation Reinhard, the murder of the Jews of the General Government, whose camps had been running since December 1941. Its timing in Warsaw is tied to Himmler\'s visit to the Führer headquarters on 16 July and his order of the 19th, and to the SS\'s wish to demonstrate that the biggest ghetto in Europe could be cleared; the release of housing and of registered labour for the German administration was a secondary argument used by the participants.',
+        cause: 'The Grossaktion was the largest single operation of Operation Reinhard, the murder of the Jews of the General Government, whose camps had been running since December 1941. Its timing in Warsaw is tied to Himmler’s visit to the Führer headquarters on 16 July and his order of the 19th, and to the SS’s wish to demonstrate that the biggest ghetto in Europe could be cleared; the release of housing and of registered labour for the German administration was a secondary argument used by the participants.',
         what: 'The mechanics depended on German direction and Jewish compulsion rather than on large German manpower: a few hundred German and Latvian police, Order Police battalions and Trawniki-trained guards, with the Jewish Order Service doing the street-level roundups under the threat that the Council itself would be deported. This is the empirical core of the postwar debate about the Jewish Councils, and it cannot be read as "collaboration" without attending to the fact that the process was deliberately described to its victims as resettlement.',
-        consequence: 'Warsaw became both the model and the argument. Armed resistance became possible only after the majority of the ghetto\'s population had already been murdered, which is the chronogram of the Holocaust in Poland; the debates between Hilberg and Rubenstein over the Councils, and Samuel Kassow\'s later edition of the Ringelblum archive, are still the terms in which the question is discussed. The Polish government-in-exile and the Polish Socialist Party issued a documented protest note in September 1942, one of the earliest public denunciations of the extermination by any belligerent government.',
+        consequence: 'Warsaw became both the model and the argument. Armed resistance became possible only after the majority of the ghetto’s population had already been murdered, which is the chronogram of the Holocaust in Poland; the debates between Hilberg and Rubenstein over the Councils, and Samuel Kassow’s later edition of the Ringelblum archive, are still the terms in which the question is discussed. The Polish government-in-exile and the Polish Socialist Party issued a documented protest note in September 1942, one of the earliest public denunciations of the extermination by any belligerent government.',
       },
     },
   },
@@ -408,14 +408,14 @@ export const EVENTS_1941_1942: WW2Event[] = [
         consequence: 'The Axis armies were pushed into Tunisia and surrendered there in May 1943. For people in Britain it was the first clear victory they had heard about in a long time.',
       },
       secondary: {
-        cause: 'Rommel\'s advance had been halted at the First Battle of El Alamein in July 1942, and the front settled on a 60 km neck of desert between the Qattara Depression and the sea, which could not be turned. Eighth Army was rebuilt under Alexander and Montgomery from British and American shipments stockpiled in Egypt, while Axis convoys across the Mediterranean were being sunk — in October the Axis lost about a third of the tonnage that sailed.',
+        cause: 'Rommel’s advance had been halted at the First Battle of El Alamein in July 1942, and the front settled on a 60 km neck of desert between the Qattara Depression and the sea, which could not be turned. Eighth Army was rebuilt under Alexander and Montgomery from British and American shipments stockpiled in Egypt, while Axis convoys across the Mediterranean were being sunk — in October the Axis lost about a third of the tonnage that sailed.',
         what: 'Operation Lightfoot began on 23 October: engineers under fire cleared lanes through the minefields so that armour could pass at night. Ten days of "crumbling" attacks followed, and the break came on 2 November, when Operation Supercharge on the coastal strip broke through the Italian divisions of Trento, Trieste, Brescia and Pistoia. Rommel began a withdrawal west that he had to justify to Hitler afterwards.',
         consequence: 'Tobruk fell on 11 November, Benghazi on the 20th, Tripoli on 23 January, and Operation Torch landed behind the Axis on 8 November, so the enemy was squeezed between two armies and defeated in Tunisia in May 1943. El Alamein was presented in Britain as the turning point of the war; the tide had in fact already turned at Midway and at Stalingrad, but this was the victory in an open field that the British public and the armed forces had waited two years for.',
       },
       university: {
-        cause: 'Alamein is the classic material battle, and the statistics make the point better than the legend: roughly 2:1 in men, better than 3:1 in serviceable armour, and complete air superiority with Coningham\'s Desert Air Force flying some 1,500 sorties in the opening days. Planning rested on deception (Operation Bertram, with dummies photographed from the air), on flail tanks and mine rollers, and on Montgomery\'s insistence on a set-piece "break-in" battle fought in a fixed order — deliberately not the mobile raiding the desert war had been.',
-        what: 'The operational truth is that the northern breakthrough came when the Italian infantry divisions were destroyed in three days, not when the armour was engaged, and that the corps exploitation of 5-7 November was defeated by rain, mines and the absence of ports rather than by German resistance. Rommel\'s armour survived because the pursuit was slow, which is the standard criticism of Montgomery and remains contested in the British staff-college literature.',
-        consequence: 'Alamein opened North Africa, and with it the Mediterranean, which is why the Italian campaign followed in 1943; the campaign\'s end in May also freed some 300,000 tons of Allied shipping for Overlord. Its memory needs two correctives. British propaganda smoothed over the arithmetic of material — Montgomery himself was unpopular with his corps commanders for that reason — and the battle was fought on a colonised coast, by an army containing Indian, South African, New Zealand, Polish, Free French, Greek and Moroccan formations, for an imperial line of communication, while Egyptian civilians were requisitioned and confined.',
+        cause: 'Alamein is the classic material battle, and the statistics make the point better than the legend: roughly 2:1 in men, better than 3:1 in serviceable armour, and complete air superiority with Coningham’s Desert Air Force flying some 1,500 sorties in the opening days. Planning rested on deception (Operation Bertram, with dummies photographed from the air), on flail tanks and mine rollers, and on Montgomery’s insistence on a set-piece "break-in" battle fought in a fixed order — deliberately not the mobile raiding the desert war had been.',
+        what: 'The operational truth is that the northern breakthrough came when the Italian infantry divisions were destroyed in three days, not when the armour was engaged, and that the corps exploitation of 5-7 November was defeated by rain, mines and the absence of ports rather than by German resistance. Rommel’s armour survived because the pursuit was slow, which is the standard criticism of Montgomery and remains contested in the British staff-college literature.',
+        consequence: 'Alamein opened North Africa, and with it the Mediterranean, which is why the Italian campaign followed in 1943; the campaign’s end in May also freed some 300,000 tons of Allied shipping for Overlord. Its memory needs two correctives. British propaganda smoothed over the arithmetic of material — Montgomery himself was unpopular with his corps commanders for that reason — and the battle was fought on a colonised coast, by an army containing Indian, South African, New Zealand, Polish, Free French, Greek and Moroccan formations, for an imperial line of communication, while Egyptian civilians were requisitioned and confined.',
       },
     },
   },
@@ -514,7 +514,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['mediterranean'],
     countries: ['United Kingdom', 'Italy', 'Egypt', 'Australia', 'Germany'],
     figures: [],
-    note: 'Operation Compass, planned as a five-day raid by 36,000 men under O\'Connor, took Bardia on 5 January with 38,000 prisoners and Tobruk on 22 January with 25,000 more; by 7 February, when Benghazi fell, some 130,000 Italian prisoners had been taken for 2,000 British casualties. The advance was stopped in February because Greece had priority, and Rommel\'s first counter-attack in March took most of the ground back.',
+    note: 'Operation Compass, planned as a five-day raid by 36,000 men under O’Connor, took Bardia on 5 January with 38,000 prisoners and Tobruk on 22 January with 25,000 more; by 7 February, when Benghazi fell, some 130,000 Italian prisoners had been taken for 2,000 British casualties. The advance was stopped in February because Greece had priority, and Rommel’s first counter-attack in March took most of the ground back.',
     levels: {
       primary: {
         cause: 'Italy had attacked Egypt from Libya, and the much smaller British army in Egypt decided to attack back rather than wait.',
@@ -523,13 +523,13 @@ export const EVENTS_1941_1942: WW2Event[] = [
       },
       secondary: {
         cause: 'The Italian Tenth Army had advanced into Egypt in September 1940 and then dug in around Sollum and Tobruk, holding a fortified camp rather than a defensive line, with poor transport and obsolete tanks.',
-        what: 'Wavell and O\'Connor attacked at night with the 7th Armoured Division and Indian infantry, by-passing strong points and fighting them from the rear; the Italian command lost control within two days.',
+        what: 'Wavell and O’Connor attacked at night with the 7th Armoured Division and Indian infantry, by-passing strong points and fighting them from the rear; the Italian command lost control within two days.',
         consequence: 'Compass is the most complete victory Britain achieved in the war, and the reason it led nowhere is the reason the war went badly elsewhere: Churchill diverted the troops to Greece, and Hitler decided he had to bail Italy out in the Balkans and in Africa.',
       },
       university: {
-        cause: 'The campaign is the standard case for quality over quantity in inter-arm combined-arms practice, and also for the limits of pursuit: O\'Connor had no organic transport, so the Italian retreat was not cut off, and 25,000 prisoners at Tobruk could not be exploited into strategic decision.',
-        what: 'The strategic consequence is the real subject. Compass produced the German decision to intervene - Hitler\'s remarks of 11 January show he had already decided before the scale of the victory was known - and with it the Balkans campaign that delayed Barbarossa.',
-        consequence: 'There is a serious historiographical argument, associated with Victorian writers on the "Mediterranean strategy" and revived after 1945, that the North African front was the war\'s cheap victory; against it stands the fact that the desert absorbed German armour and air strength that could not be replaced and that it never threatened the Reich.',
+        cause: 'The campaign is the standard case for quality over quantity in inter-arm combined-arms practice, and also for the limits of pursuit: O’Connor had no organic transport, so the Italian retreat was not cut off, and 25,000 prisoners at Tobruk could not be exploited into strategic decision.',
+        what: 'The strategic consequence is the real subject. Compass produced the German decision to intervene - Hitler’s remarks of 11 January show he had already decided before the scale of the victory was known - and with it the Balkans campaign that delayed Barbarossa.',
+        consequence: 'There is a serious historiographical argument, associated with Victorian writers on the "Mediterranean strategy" and revived after 1945, that the North African front was the war’s cheap victory; against it stands the fact that the desert absorbed German armour and air strength that could not be replaced and that it never threatened the Reich.',
       },
     },
   },
@@ -542,7 +542,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['atlantic', 'air_war'],
     countries: ['Germany', 'United Kingdom'],
     figures: ['raeder'],
-    note: 'Scharnhorst, Gneisenau and Prinz Eugen ran up Channel at 27 knots in daylight under an air umbrella, the Germans chose the best route to avoid British minefields; minesweepers cleared channels through British mines, in a degree of inter-service co-operation the German armed forces rarely managed. Fighter Command failed to intercept the capital ships in time - Bomber Command\'s raids on the harbour had been planned as cover for a departure expected on 11 February. Scharnhorst and Gneisenau struck mines on 12 February, off the Dutch and Frisian coast — Scharnhorst twice and Gneisenau once. Churchill criticised the service chiefs in the Commons on 13 February.',
+    note: 'Scharnhorst, Gneisenau and Prinz Eugen ran up Channel at 27 knots in daylight under an air umbrella, the Germans chose the best route to avoid British minefields; minesweepers cleared channels through British mines, in a degree of inter-service co-operation the German armed forces rarely managed. Fighter Command failed to intercept the capital ships in time - Bomber Command’s raids on the harbour had been planned as cover for a departure expected on 11 February. Scharnhorst and Gneisenau struck mines on 12 February, off the Dutch and Frisian coast — Scharnhorst twice and Gneisenau once. Churchill criticised the service chiefs in the Commons on 13 February.',
     levels: {
       primary: {
         cause: 'Three large German warships had been lying in the French port of Brest, where the Royal Navy could not easily reach them, and Germany wanted them home.',
@@ -550,13 +550,13 @@ export const EVENTS_1941_1942: WW2Event[] = [
         consequence: 'The British public was shocked, because the Royal Navy had seemed to control these waters; the German ships were then damaged by mines and air attack and became much less useful.',
       },
       secondary: {
-        cause: 'Based in Brest since March 1941, the battlecruisers and the heavy cruiser were a threat to Atlantic convoys and to the Home Fleet\'s anchorage, but they were also within reach of Bomber Command and of mines.',
+        cause: 'Based in Brest since March 1941, the battlecruisers and the heavy cruiser were a threat to Atlantic convoys and to the Home Fleet’s anchorage, but they were also within reach of Bomber Command and of mines.',
         what: 'The German operation combined air, naval and mine warfare planning, with a dense fighter umbrella flown the length of the route and destroyers meeting the ships off the Netherlands. British warning was late and the interception was uncoordinated.',
         consequence: 'The propaganda effect was real and short-lived: both battleships were damaged by mines during the dash, the three ships spent the rest of 1942 in repair yards or in Norwegian fjords, Gneisenau was crippled by a bomb in Brest harbour before she could sail again, and Scharnhorst was sunk off North Cape in December 1943.',
       },
       university: {
         cause: 'The action is usually treated as an embarrassment, but its significance for the air-land-sea argument is larger: it demonstrated that a determined air umbrella could neutralise surface superiority in coastal waters, which is the argument that made the Royal Navy so anxious about air power in 1942 when it was sent to the Far East.',
-        what: 'British counter-measures - bombing the harbour, minelaying, and Coastal Command\'s attack on the shipping channel - are the beginning of the long air campaign against the U-boat bases on the French coast.',
+        what: 'British counter-measures - bombing the harbour, minelaying, and Coastal Command’s attack on the shipping channel - are the beginning of the long air campaign against the U-boat bases on the French coast.',
         consequence: 'The episode also matters for civil-military relations: the Commons debate of 13 February 1942, in which Churchill criticised the service chiefs in front of the House, is a documented case of a prime minister publicly disciplining his service chiefs, which is a useful counterweight to the image of wartime unanimity.',
       },
     },
@@ -606,9 +606,9 @@ export const EVENTS_1941_1942: WW2Event[] = [
         consequence: 'Germany lost so many paratroopers that Hitler never attempted a big airborne landing again. The British navy lost eleven warships to bombing in these waters.',
       },
       secondary: {
-        cause: 'Crete shortened the range of British bombers attacking the Ploiesti oil fields and lay across the sea route to Libya. German air transport had to be used because the Royal Navy controlled the sea approach, and the island\'s small number of airfields meant the attack had to be vertical.',
+        cause: 'Crete shortened the range of British bombers attacking the Ploiesti oil fields and lay across the sea route to Libya. German air transport had to be used because the Royal Navy controlled the sea approach, and the island’s small number of airfields meant the attack had to be vertical.',
         what: 'The assault went in on 20 May without a single airfield captured; the Maleme sector held only because a New Zealand counter-attack was recalled. Cruising warships within range of dive-bombers, and without fighter cover from Egypt, were sunk in daylight.',
-        consequence: 'Crete is the reason the Allies built airfields rather than trusted navies in the Mediterranean, and the reason Germany\'s airborne force became a ground formation. Churchill called it "a black day for the British navy"; the reality was the navy\'s evacuation of 16,500 men under air attack.',
+        consequence: 'Crete is the reason the Allies built airfields rather than trusted navies in the Mediterranean, and the reason Germany’s airborne force became a ground formation. Churchill called it "a black day for the British navy"; the reality was the navy’s evacuation of 16,500 men under air attack.',
       },
       university: {
         cause: 'The battle is the central case for signals intelligence in the campaign: Ultra decrypts gave Wavell and Freyberg the German order of battle and dates, and the failure was in force mix and communications rather than in warning - which makes Crete the companion case to Mechelen in January.',
@@ -626,22 +626,22 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['atlantic'],
     countries: ['Germany', 'United Kingdom'],
     figures: ['raeder'],
-    note: 'After sinking Hood with 1,415 of her crew lost on 24 May, Bismarck was shadowed, torpedoed in the stern by a Swordfish from Ark Royal on 26 May, and brought to action by Rodney and King George V on the morning of 27 May; of her complement of about 2,200 only some 110 men were rescued. The loss of Hood produced the order to "sink the Bismarck", and the operation involved some 42 warships. After this the German surface fleet\'s capital ships were used for commerce raiding in the Arctic or stayed in home water.',
+    note: 'After sinking Hood with 1,415 of her crew lost on 24 May, Bismarck was shadowed, torpedoed in the stern by a Swordfish from Ark Royal on 26 May, and brought to action by Rodney and King George V on the morning of 27 May; of her complement of about 2,200 only some 110 men were rescued. The loss of Hood produced the order to "sink the Bismarck", and the operation involved some 42 warships. After this the German surface fleet’s capital ships were used for commerce raiding in the Arctic or stayed in home water.',
     levels: {
       primary: {
-        cause: 'Germany\'s biggest new battleship had just sunk a famous British battlecruiser, so the Royal Navy was determined to find and destroy her.',
+        cause: 'Germany’s biggest new battleship had just sunk a famous British battlecruiser, so the Royal Navy was determined to find and destroy her.',
         what: 'In May 1941 British ships and aircraft tracked the Bismarck into the Atlantic, torpedoed her rudder so she could not escape, and sank her next morning.',
-        consequence: 'Almost all of her crew drowned. Germany\'s big warships never again tried to break out into the Atlantic in force, and the U-boats became the real naval threat.',
+        consequence: 'Almost all of her crew drowned. Germany’s big warships never again tried to break out into the Atlantic in force, and the U-boats became the real naval threat.',
       },
       secondary: {
         cause: 'The Bismarck and Prinz Eugen left Bergen at 19:30 on 21 May, entered the Denmark Strait on 23 May and fought the Hood action on 24 May to attack the North Atlantic convoys, the route on which Britain depended for food, oil and munitions.',
         what: 'The sinking of Hood on 24 May made pursuit a matter of prestige; a Catalina found her, and a torpedo from Ark Royal jammed her steering on the evening of 26 May, so that she had to be fought going in circles at 10 knots.',
-        consequence: 'The Battle of the Atlantic was decided by the U-boat and the air, not by capital ships, and after 27 May 1941 Raeder\'s surface strategy was effectively dead - which is the context for the Channel Dash of February and the Norwegian fjords of 1942-44.',
+        consequence: 'The Battle of the Atlantic was decided by the U-boat and the air, not by capital ships, and after 27 May 1941 Raeder’s surface strategy was effectively dead - which is the context for the Channel Dash of February and the Norwegian fjords of 1942-44.',
       },
       university: {
-        cause: 'The engagement is a clean test of the role of reconnaissance and communications in naval war: the Royal Navy won because it had the air, the decrypts - Bismarck\'s own radio traffic and the Enigma keys used by the supply network - and the interior lines.',
+        cause: 'The engagement is a clean test of the role of reconnaissance and communications in naval war: the Royal Navy won because it had the air, the decrypts - Bismarck’s own radio traffic and the Enigma keys used by the supply network - and the interior lines.',
         what: 'It also has a contested historiography, since the 2001 James Cameron documentary and subsequent expeditions revived the argument about what actually sank her, torpedo or gunnery; the oceanographic evidence supports the shell-damage reading.',
-        consequence: 'For the wider war the significance is strategic: the loss confirmed Hitler\'s contempt for surface tonnage, which he is said to have repeated to Dönitz in 1943 when he tried to cancel the surface fleet - one of the few arguments in which the German navy lost internally on a technical point.',
+        consequence: 'For the wider war the significance is strategic: the loss confirmed Hitler’s contempt for surface tonnage, which he is said to have repeated to Dönitz in 1943 when he tried to cancel the surface fleet - one of the few arguments in which the German navy lost internally on a technical point.',
       },
     },
   },
@@ -668,7 +668,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
       },
       university: {
         cause: 'The October 1941 transports sit at the centre of the debate about the date and structure of the decision: the lack of a single written order has produced two decades of argument between those who date the decision to the summer and those who read the autumn deportations as the step that radicalised the policy into systematic gassing.',
-        what: 'The evidence is cumulative rather than documentary - Himmler\'s notes of 18 December 1941 ("Jewish question - to be solved in Europe"), the gas-van trials, the Chełmno opening on 8 December, and Goebbels\' diary entries of December 1941 which state the Führer\'s decision to make a clean sweep.',
+        what: 'The evidence is cumulative rather than documentary - Himmler’s notes of 18 December 1941 ("Jewish question - to be solved in Europe"), the gas-van trials, the Chełmno opening on 8 December, and Goebbels’ diary entries of December 1941 which state the Führer’s decision to make a clean sweep.',
         consequence: 'It is also the strongest case against the "ordinary Germans did not know" position: the deportations were public, organised through the Reichsbahn, announced in the newspapers, and the property of the deported was auctioned locally.',
       },
     },
@@ -687,15 +687,15 @@ export const EVENTS_1941_1942: WW2Event[] = [
       primary: {
         cause: 'Germany had occupied Latvia, and its leaders decided to kill the Jewish people of Riga, telling them they were being moved to another camp.',
         what: 'On two days at the end of 1941, columns of Jewish men, women and children from the Riga ghetto were marched to a forest at Rumbula and shot into pits dug beforehand.',
-        consequence: 'About 25,000 people were killed in two days. Latvia\'s Jewish community, 70,000 strong before the war, was almost entirely destroyed.',
+        consequence: 'About 25,000 people were killed in two days. Latvia’s Jewish community, 70,000 strong before the war, was almost entirely destroyed.',
       },
       secondary: {
-        cause: 'Hitler had decided in October 1941 to deport Reich Jews into the Riga ghetto, which meant the Latvian Jews already there had to be removed first. Himmler and Jeckeln therefore cleared Riga to make room for Berlin\'s deportees.',
-        what: 'The massacre was botched: the first day\'s shooting was chaotic and hundreds were killed in the ghetto itself, so Jeckeln came to supervise the second. Latvian auxiliary police did much of the shooting, and the ghetto had been sealed and its inhabitants registered with Lithuanian and Latvian help.',
+        cause: 'Hitler had decided in October 1941 to deport Reich Jews into the Riga ghetto, which meant the Latvian Jews already there had to be removed first. Himmler and Jeckeln therefore cleared Riga to make room for Berlin’s deportees.',
+        what: 'The massacre was botched: the first day’s shooting was chaotic and hundreds were killed in the ghetto itself, so Jeckeln came to supervise the second. Latvian auxiliary police did much of the shooting, and the ghetto had been sealed and its inhabitants registered with Lithuanian and Latvian help.',
         consequence: 'The connection between the Reich deportations and the clearing of the eastern ghettos is one of the strongest arguments that the murder of European Jewry was a single programme rather than a series of local actions.',
       },
       university: {
-        cause: 'Rumbula is the empirical hinge of Christopher Browning\'s argument about the extermination camps: the shooting of 25,000 people over two weekends was judged inefficient and psychologically damaging to the shooters by Himmler and Jeckeln themselves, and the camp system was in part a technical answer to that complaint.',
+        cause: 'Rumbula is the empirical hinge of Christopher Browning’s argument about the extermination camps: the shooting of 25,000 people over two weekends was judged inefficient and psychologically damaging to the shooters by Himmler and Jeckeln themselves, and the camp system was in part a technical answer to that complaint.',
         what: 'The site also sits inside the historiography of Baltic collaboration - the Arajs Kommando, the question of how far local participation was spontaneous or German-organised, and the Latvian and Estonian units that later served in the Waffen-SS.',
         consequence: 'Rumbula has become a contested memory site in Latvia since 1991, and one of the very few photographs that shows the shooting itself, taken at the Dünamünde Action on 15 and 26 March 1942, in Biķernieki forest (3,740 victims), is held in the archives at Yad Vashem.',
       },
@@ -751,9 +751,9 @@ export const EVENTS_1941_1942: WW2Event[] = [
         consequence: 'Chełmno established the method - deception, a fixed killing site, killing by gas, and the use of Jewish prisoners to sort property and burn bodies - that was then applied on an industrial scale at Belzec, Sobibor and Treblinka in 1942.',
       },
       university: {
-        cause: 'Chełmno\'s place in the chronology is a key argument in the debate about the origins of the "Final Solution": its opening in December 1941 preceded the construction of Reinhard, and its technology came from T4, which links the murder of disabled people to the extermination of the Jews institutionally rather than only ideologically.',
+        cause: 'Chełmno’s place in the chronology is a key argument in the debate about the origins of the "Final Solution": its opening in December 1941 preceded the construction of Reinhard, and its technology came from T4, which links the murder of disabled people to the extermination of the Jews institutionally rather than only ideologically.',
         what: 'The camp also produced the earliest survivor testimony and the earliest documentation - the Chełmno Chronicle, and the 1942 report by the Polish courier Jan Karski, which is the moment when the Western Allies first learned of the extermination.',
-        consequence: 'The postwar trials in Germany produced small sentences and no recognition of the camp\'s significance until the 1980s, which makes Chełmno a useful case study in the failure of West German justice as well as in the killing itself.',
+        consequence: 'The postwar trials in Germany produced small sentences and no recognition of the camp’s significance until the 1980s, which makes Chełmno a useful case study in the failure of West German justice as well as in the killing itself.',
       },
     },
   },
@@ -766,22 +766,22 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['eastern', 'politics'],
     countries: ['Poland', 'Germany', 'Soviet Union'],
     figures: ['bor_komorowski'],
-    note: 'The ZWZ was renamed Armia Krajowa on 14 February 1942 under General Stefan "Grot" Rowecki, who was arrested by the Gestapo in June 1943 and died in Sachsenhausen in August 1944. By mid-1944 the AK had some 380,000 sworn members and was the largest resistance army in occupied Europe; its underground state ran courts, schools, universities, theatres, printing presses and a weapons industry, and Jan Karski met Roosevelt on 28 July 1943; in December 1942 the report reached the Allies via Raczyński\'s Note (10 Dec 1942).',
+    note: 'The ZWZ was renamed Armia Krajowa on 14 February 1942 under General Stefan "Grot" Rowecki, who was arrested by the Gestapo in June 1943 and died in Sachsenhausen in August 1944. By mid-1944 the AK had some 380,000 sworn members and was the largest resistance army in occupied Europe; its underground state ran courts, schools, universities, theatres, printing presses and a weapons industry, and Jan Karski met Roosevelt on 28 July 1943; in December 1942 the report reached the Allies via Raczyński’s Note (10 Dec 1942).',
     levels: {
       primary: {
-        cause: 'Poland had been conquered and was being ruled very brutally, and Poles organised secretly to fight back and to keep their country\'s government alive.',
+        cause: 'Poland had been conquered and was being ruled very brutally, and Poles organised secretly to fight back and to keep their country’s government alive.',
         what: 'In February 1942 the different Polish fighting groups in occupied Poland were joined into one army, called the Home Army, loyal to the Polish government that had escaped to London.',
         consequence: 'It became the largest resistance army in Europe, with its own courts, schools and secret factories - and it paid an enormous price in 1944.',
       },
       secondary: {
-        cause: 'Two rival organisations existed in 1940-41: the conservative, pro-government ZWZ and the left-wing, Soviet-aligned People\'s Army. Unification under the government-in-exile gave the AK its size, but the conflict between London and Moscow was already inside the Polish movement.',
+        cause: 'Two rival organisations existed in 1940-41: the conservative, pro-government ZWZ and the left-wing, Soviet-aligned People’s Army. Unification under the government-in-exile gave the AK its size, but the conflict between London and Moscow was already inside the Polish movement.',
         what: 'The AK fought sabotage actions against German transport, blew up trains, executed the most feared occupation officials, gathered intelligence - including the information that allowed Peenemunde to be bombed - and prepared a rising to seize Warsaw before the Soviets arrived.',
-        consequence: 'The AK\'s loyalty to London rather than Moscow is the reason it was destroyed twice, first by the Germans in the Warsaw Uprising of August 1944 and then by the Soviets, who arrested its leaders in 1945 and denied its role in the official history of the People\'s Republic until 1989.',
+        consequence: 'The AK’s loyalty to London rather than Moscow is the reason it was destroyed twice, first by the Germans in the Warsaw Uprising of August 1944 and then by the Soviets, who arrested its leaders in 1945 and denied its role in the official history of the People’s Republic until 1989.',
       },
       university: {
         cause: 'The AK is the central case in the debate about the political rationality of resistance risings: the decision to rise in Warsaw in 1944 has been defended as the only way to establish Polish sovereignty before a Soviet occupation and attacked as the sacrifice of a city for a symbolic end.',
-        what: 'The movement\'s social composition, and the relationship between the AK and the far-right National Forces (NSZ), which refused to merge and carried out its own attacks on Jews and left-wing partisans, are documented in Polish scholarship from the 1990s onward and complicate the national story.',
-        consequence: 'The AK also raises the hardest question of the occupation: the Polish underground\'s own records show both rescue work for Jews and a failure, in much of the officer corps, to see the Holocaust as a Polish problem - a judgement now accepted by the Polish Academy of Sciences study of the "Zegota" case and still politically contested.',
+        what: 'The movement’s social composition, and the relationship between the AK and the far-right National Forces (NSZ), which refused to merge and carried out its own attacks on Jews and left-wing partisans, are documented in Polish scholarship from the 1990s onward and complicate the national story.',
+        consequence: 'The AK also raises the hardest question of the occupation: the Polish underground’s own records show both rescue work for Jews and a failure, in much of the officer corps, to see the Holocaust as a Polish problem - a judgement now accepted by the Polish Academy of Sciences study of the "Zegota" case and still politically contested.',
       },
     },
   },
@@ -797,18 +797,18 @@ export const EVENTS_1941_1942: WW2Event[] = [
     note: 'Fritz Sauckel was appointed General Plenipotentiary for the Deployment of Labour on 21 March 1942 and by September 1944 had delivered about 7.7 million foreign civilians and prisoners of war to work inside the Reich and its occupied territories - something like a quarter of the German labour force. In 1946 he was sentenced to death at Nuremberg and hanged, and his case at the trial turned almost entirely on the deportation of civilians for forced labour.',
     levels: {
       primary: {
-        cause: 'German men had been taken into the army, so German factories, farms and railways needed workers - and Germany\'s leaders took them from the countries they had conquered.',
+        cause: 'German men had been taken into the army, so German factories, farms and railways needed workers - and Germany’s leaders took them from the countries they had conquered.',
         what: 'From 1942 a Nazi official named Sauckel organised the roundup of millions of people in Poland, the Ukraine, France and elsewhere and sent them to work in Germany, many of them by force.',
         consequence: 'By 1944 about one worker in three in Germany was from another country. Most of the people from the east were treated terribly, and hundreds of thousands died.',
       },
       secondary: {
-        cause: 'After the failure of the 1941 campaign, Speer\'s armaments effort needed labour more than anything else. The alternatives were conscripting German women, which the regime resisted for ideological reasons, or importing foreigners, which required a Europe-wide system of coercion.',
-        what: 'Sauckel\'s "Action" of spring 1942 imposed quotas on each occupied region; in the east the recruiting was mostly raid and fraud, in France the Service du Travail Obligatoire of February 1943 was legal conscription, and both produced evasion, flight to the partisans and enormous friction.',
+        cause: 'After the failure of the 1941 campaign, Speer’s armaments effort needed labour more than anything else. The alternatives were conscripting German women, which the regime resisted for ideological reasons, or importing foreigners, which required a Europe-wide system of coercion.',
+        what: 'Sauckel’s "Action" of spring 1942 imposed quotas on each occupied region; in the east the recruiting was mostly raid and fraud, in France the Service du Travail Obligatoire of February 1943 was legal conscription, and both produced evasion, flight to the partisans and enormous friction.',
         consequence: 'The system kept German output rising until late 1944 while creating the slave-based economy that the Allies then had to feed and repatriate in 1945 - some seven million displaced persons in the Western zones, which was a larger crisis than the German refugees in the east.',
       },
       university: {
         cause: 'Forced labour is the strongest evidence for reading the German war economy as a colonial slave economy rather than a modern industrial one; the scholarship of Herbert, Spoerer and Plamper on the "Ostarbeiter" and the 2000 compensation fund made it possible to argue about the numbers publicly in Germany.',
-        what: 'It also changes the bombing argument: dispersal and the use of foreign workers, not Speer\'s genius, are what kept output climbing through 1943-44, and the labour draft is the mechanism by which the war came into the villages of Ukraine and France.',
+        what: 'It also changes the bombing argument: dispersal and the use of foreign workers, not Speer’s genius, are what kept output climbing through 1943-44, and the labour draft is the mechanism by which the war came into the villages of Ukraine and France.',
         consequence: 'The Nuremberg judgement on the count of deportation for slave labour established something the Allies had not wanted to accept about their own conduct - the Soviet POWs were starved deliberately - and the 1946 verdict has been re-examined by both sides since.',
       },
     },
@@ -822,7 +822,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['mediterranean'],
     countries: ['United Kingdom', 'Germany', 'Italy'],
     figures: ['kesselring'],
-    note: 'Some 6,000 tons of bombs fell on Malta in April 1942, more than in the whole of the previous year, and the island\'s fighter strength fell to a couple of dozen serviceable Hurricanes by mid-April against several hundred Axis aircraft based in Sicily. By 21 April only 27 Spitfires were airworthy (Operation Calendar delivered 47 on 20 April); Spitfires had to be flown off carriers to replenish them, some of them lost on the way, and Operation Harpoon: 6 merchants (4 sunk, 2 reached); Operation Vigorous: 11, turned back — 17 total, 2 got through. The George Cross was awarded to the island in April 1942.',
+    note: 'Some 6,000 tons of bombs fell on Malta in April 1942, more than in the whole of the previous year, and the island’s fighter strength fell to a couple of dozen serviceable Hurricanes by mid-April against several hundred Axis aircraft based in Sicily. By 21 April only 27 Spitfires were airworthy (Operation Calendar delivered 47 on 20 April); Spitfires had to be flown off carriers to replenish them, some of them lost on the way, and Operation Harpoon: 6 merchants (4 sunk, 2 reached); Operation Vigorous: 11, turned back — 17 total, 2 got through. The George Cross was awarded to the island in April 1942.',
     levels: {
       primary: {
         cause: 'Malta is a small island in the middle of the Mediterranean, and from it British planes and ships could attack the supply boats taking German and Italian supplies to the desert war.',
@@ -837,7 +837,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
       university: {
         cause: 'The Maltese case is the best-documented test of whether air power alone can reduce a defended position, and the answer is a careful no: the garrison could be neutralised tactically, but the Axis lacked the amphibial lift for the coup de main and the strategic will to prioritise it.',
         what: 'The island also exposes the imperial politics of the Mediterranean: the Admiralty and the Air Ministry disagreed over whether to supply it by convoy or by air, and the "Malta first" argument against the North African landings in 1942 was rejected by the Americans as irrelevant to the main object.',
-        consequence: 'Postwar German-Italian argument about who lost North Africa generally ends on the Mediterranean, and in the Italian case it is bound up with the Regio Marina\'s refusal to risk a fleet action - a subject reopened by Italian naval historiography in the 1970s.',
+        consequence: 'Postwar German-Italian argument about who lost North Africa generally ends on the Mediterranean, and in the Italian case it is bound up with the Regio Marina’s refusal to risk a fleet action - a subject reopened by Italian naval historiography in the 1970s.',
       },
     },
   },
@@ -850,7 +850,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['eastern', 'politics'],
     countries: ['Germany', 'Czechoslovakia', 'United Kingdom'],
     figures: ['heydrich', 'hitler'],
-    note: 'Two paratroopers of the Czechoslovak government-in-exile: Jozef Gabčík (Slovak) and Jan Kubiš (Czech), ambushed Reinhard Heydrich\'s open car in the Prague suburbs on 27 May 1942; he died of septicaemia on 4 June. The murderers and their helpers were surrounded in the Orthodox cathedral of Saints Cyril and Methodius and died fighting on 18 June. Reprisals included the destruction of the villages of Lidice on 10 June - the men shot, the women sent to Ravensbrück, the children either killed or sent for Germanisation - and Ležáky, and an estimated 5,000 executed and 13,000 arrested and interrogated.',
+    note: 'Two paratroopers of the Czechoslovak government-in-exile: Jozef Gabčík (Slovak) and Jan Kubiš (Czech), ambushed Reinhard Heydrich’s open car in the Prague suburbs on 27 May 1942; he died of septicaemia on 4 June. The murderers and their helpers were surrounded in the Orthodox cathedral of Saints Cyril and Methodius and died fighting on 18 June. Reprisals included the destruction of the villages of Lidice on 10 June - the men shot, the women sent to Ravensbrück, the children either killed or sent for Germanisation - and Ležáky, and an estimated 5,000 executed and 13,000 arrested and interrogated.',
     levels: {
       primary: {
         cause: 'Heydrich was one of the most powerful and cruel men in the Nazi regime, and he had been sent to rule the Czech lands. Two Czechoslovak soldiers, trained in Britain, were parachuted in to stop him.',
@@ -863,8 +863,8 @@ export const EVENTS_1941_1942: WW2Event[] = [
         consequence: 'In 1942 the Allies formally repudiated Munich. But the price was severe: the Czech resistance inside the Protectorate was effectively finished for the war, and Lidice became one of the defining images of occupation policy.',
       },
       university: {
-        cause: 'Anthropoid is the sharpest case in the argument about the cost of spectacular resistance: the operation succeeded tactically and destroyed the indigenous network in the process, and Beneš\'s willingness to spend lives on a diplomatic result has been re-assessed by Czech historians since 1989.',
-        what: 'It also has an important place in the history of the Protectorate\'s economy: Heydrich\'s "carrot and stick" line was a deliberate attempt to make Czech heavy industry, which was a fifth of German output, work willingly, and his successors continued it without him.',
+        cause: 'Anthropoid is the sharpest case in the argument about the cost of spectacular resistance: the operation succeeded tactically and destroyed the indigenous network in the process, and Beneš’s willingness to spend lives on a diplomatic result has been re-assessed by Czech historians since 1989.',
+        what: 'It also has an important place in the history of the Protectorate’s economy: Heydrich’s "carrot and stick" line was a deliberate attempt to make Czech heavy industry, which was a fifth of German output, work willingly, and his successors continued it without him.',
         consequence: 'The postwar politics of the paratroopers is its own story - the communist regime used them and then suppressed the accounts of the SOE connection, and the British SOE records on the operation were closed until 2007.',
       },
     },
@@ -886,12 +886,12 @@ export const EVENTS_1941_1942: WW2Event[] = [
         consequence: 'Nearly 3,400 men were killed, wounded or captured. What was learned helped the Allies plan the much bigger landing in Normandy in 1944, where they built their own harbours instead of trying to take one.',
       },
       secondary: {
-        cause: 'Three pressures produced the raid: Stalin\'s demand for a second front in 1942, Combined Operations\' need to test a method for seizing a port, and Churchill\'s wish to keep the army busy while North Africa was prepared.',
+        cause: 'Three pressures produced the raid: Stalin’s demand for a second front in 1942, Combined Operations’ need to test a method for seizing a port, and Churchill’s wish to keep the army busy while North Africa was prepared.',
         what: 'The plan depended on surprise and on taking the cliffs and battery positions before the assault on the town; the elements of the plan failed almost simultaneously - the naval bombardment was cancelled, the German convoy sighted the fleet, and the tanks were too late.',
         consequence: 'The "lessons of Dieppe" were real and are visible in Overlord: no frontal assault on a port, the Mulberry artificial harbours, overwhelming fire support, and a landing at dawn on open beaches rather than at a town.',
       },
       university: {
-        cause: 'The raid\'s justification has been argued for eighty years. The orthodox case is that Dieppe bought information that could not be obtained on paper; the critical case, advanced in the Canadian official history and after, is that the intelligence it produced was negligible and that its real function was political - to show Stalin an effort.',
+        cause: 'The raid’s justification has been argued for eighty years. The orthodox case is that Dieppe bought information that could not be obtained on paper; the critical case, advanced in the Canadian official history and after, is that the intelligence it produced was negligible and that its real function was political - to show Stalin an effort.',
         what: 'What is documented is the operational failure of joint planning: no rehearsal, three services with incompatible timetables, an intelligence estimate about German strength that was wrong by a factor of four, and a decision by the naval commander to cancel the bombardment without consulting the army.',
         consequence: 'Dieppe is the standard teaching case in British and Canadian staff colleges on coalition command, and a reason why the 1944 planning staffs refused to accept any plan that depended on taking a port intact.',
       },
@@ -906,22 +906,22 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['eastern'],
     countries: ['Germany', 'Soviet Union', 'Romania', 'Hungary', 'Italy'],
     figures: ['chuykov', 'zhukov', 'paulus', 'hitler'],
-    note: 'German aircraft bombed the city on 23 August 1942, Soviet reports give 955 killed and 1,181 wounded between 23 and 26 August (Luftflotte 4 dropped ~1,000 tons on 23 August) and destroying most of the centre; by mid-September Sixth Army held 90 per cent of the built-up area and reached the Volga north and south of the city. Chuikov\'s 62nd Army fought for the Barrikady ordnance works, the Tractor Factory and the Red October steelworks, where the life expectancy of a newly-arrived man was popularly quoted as a day. On 28 July Stalin had issued Order No. 227, "Not one step back", and penal companies and blocking measures were used against troops who withdrew without orders.',
+    note: 'German aircraft bombed the city on 23 August 1942, Soviet reports give 955 killed and 1,181 wounded between 23 and 26 August (Luftflotte 4 dropped ~1,000 tons on 23 August) and destroying most of the centre; by mid-September Sixth Army held 90 per cent of the built-up area and reached the Volga north and south of the city. Chuikov’s 62nd Army fought for the Barrikady ordnance works, the Tractor Factory and the Red October steelworks, where the life expectancy of a newly-arrived man was popularly quoted as a day. On 28 July Stalin had issued Order No. 227, "Not one step back", and penal companies and blocking measures were used against troops who withdrew without orders.',
     levels: {
       primary: {
-        cause: 'Hitler wanted the city on the Volga that carried oil and grain from the south, and it also had his rival\'s name, so he would not give up trying to take it.',
+        cause: 'Hitler wanted the city on the Volga that carried oil and grain from the south, and it also had his rival’s name, so he would not give up trying to take it.',
         what: 'In the autumn of 1942 German and Soviet soldiers fought for single floors, staircases and machine-shop halls in the ruins of Stalingrad, with snipers and hand grenades instead of manoeuvre.',
         consequence: 'The German army was stuck in the city, and its flanks were held by Romanian, Italian and Hungarian troops with worse weapons - which is exactly where the Soviet attack came in November.',
       },
       secondary: {
         cause: 'The German drive to the Volga in July-August 1942 was the second half of the summer offensive; Hitler split Army Group South between the Caucasus oil fields and Stalingrad, and then threw Sixth Army into the city to break Soviet resistance on the river.',
-        what: 'Chuikov fought "hugging" tactics, keeping the front lines so close that German air and artillery support risked hitting their own men. Pavlov\'s House and the three factories were fought over for weeks; the Soviets held a strip of the west bank 200 metres deep in places.',
+        what: 'Chuikov fought "hugging" tactics, keeping the front lines so close that German air and artillery support risked hitting their own men. Pavlov’s House and the three factories were fought over for weeks; the Soviets held a strip of the west bank 200 metres deep in places.',
         consequence: 'German losses in the city, and the exposure of the flanks to Axis satellite armies, made Operation Uranus on 19 November possible. Stalingrad cost Germany the strategic initiative it never recovered.',
       },
       university: {
-        cause: 'The city is the pivot of the argument about whether the German defeat in 1942 was strategic or operational: Anthony Beevor and the German official history both stress that Sixth Army was already immovable before Uranus, while the "lost because of Hitler" reading of Paulus\'s conduct rests on the 24 July and later directives.',
-        what: 'The social history of the battle - Soviet soldiers\' letters, the Order 227 blocking detachments, the German letters home about the cold and the corpses - has largely displaced the older purely operational account.',
-        consequence: 'Stalingrad\'s memorial politics is another matter: Soviet and Russian commemoration systematically suppressed the extent of the 1942 catastrophe in the city and the penal battalions\' share, and the Mamayev Kurgan complex of 1967 is a monument to a version of the battle that Khrushchev had to write.',
+        cause: 'The city is the pivot of the argument about whether the German defeat in 1942 was strategic or operational: Anthony Beevor and the German official history both stress that Sixth Army was already immovable before Uranus, while the "lost because of Hitler" reading of Paulus’s conduct rests on the 24 July and later directives.',
+        what: 'The social history of the battle - Soviet soldiers’ letters, the Order 227 blocking detachments, the German letters home about the cold and the corpses - has largely displaced the older purely operational account.',
+        consequence: 'Stalingrad’s memorial politics is another matter: Soviet and Russian commemoration systematically suppressed the extent of the 1942 catastrophe in the city and the penal battalions’ share, and the Mamayev Kurgan complex of 1967 is a monument to a version of the battle that Khrushchev had to write.',
       },
     },
   },

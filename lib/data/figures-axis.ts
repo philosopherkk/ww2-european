@@ -125,7 +125,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bio: {
       primary: 'Manstein was the German general who planned the 1940 attack through the Ardennes, and later the general who stabilised the German front in the east after Stalingrad.',
       secondary: 'Manstein’s plan for the 1940 campaign — attack through the Ardennes and cut the Allied armies off in the north — became the basis of the French defeat. He took Sevastopol, then the attack on Leningrad, and in early 1943 recovered the eastern front at Kharkov.',
-      university: 'Manstein is the most studied case of the tension between operational brilliance and strategic criminality: he issued and enforced the Reichenau Order, and his commands were sites of mass murder. His memoir, Lost Victories, shaped Western Cold War narratives of an apoliticalWehrmacht and a "clean" eastern campaign, and has been substantially criticised by later archival research.',
+      university: 'Manstein is the most studied case of the tension between operational brilliance and strategic criminality: he issued and enforced the Reichenau Order, and his commands were sites of mass murder. His memoir, Lost Victories, shaped Western Cold War narratives of an apolitical Wehrmacht and a "clean" eastern campaign, and has been substantially criticised by later archival research.',
     },
   },
   {
@@ -320,7 +320,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bio: {
       primary: 'Jodl was Hitler’s chief operations officer and signed the German surrender documents. He was tried and executed after the war.',
       secondary: 'As head of the Wehrmacht operations staff he was present at almost every strategic conference and signed the criminal directives of the eastern campaign, including the Barbarossa Jurisdiction Order and the Commando Order.',
-      university: 'Jodl’s Nuremberg defence — that a soldier’s duty limited him to advice and execution — was rejected by the tribunal; the 1953 posthumous exoneration by a German denazification court was revoked on 3 September 1953 by the Bavarian Minister of Political Liberation, after objections from the United States.',
+      university: 'Jodl’s Nuremberg defence — that a soldier’s duty limited him to advice and execution — was rejected by the tribunal; the 1953 posthumous exoneration by a German denazification court was revoked later in 1953 by the Bavarian Minister of Political Liberation, after objections from the United States.',
     },
   },
   {
@@ -567,7 +567,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bio: {
       primary: 'Darlan was the French admiral who commanded the French navy after France surrendered in 1940, and who in North Africa in 1942 ordered French troops to stop fighting the Allies and to join them instead.',
       secondary: 'Darlan ran the Vichy government from February 1941 to April 1942 and kept the French fleet out of the war, which is why the British attacked it at Mers-el-Kébir in July 1940. In November 1942, with Allied landings in North Africa and German troops marching into unoccupied France, he ordered a ceasefire and co-operated with the Allies, bringing tens of thousands of French troops over to their side at a stroke. He was shot dead in Algiers on 24 December 1942 by a young royalist.',
-      university: 'The "Darlan deal" of November 1942 - Eisenhower\'s arrangement with the most senior French authority on the spot, negotiated through Robert Murphy and the American consulate in Algiers - is the founding case in the argument about the moral cost of Realpolitik in coalition warfare: the acceptance of a collaborationist administrator to save Allied lives, at the price of the political credibility of the war aims, with consequences at the Casablanca conference in January 1943, where the insistence on unconditional surrender was in part an answer to the criticism. What is disputed is how far Darlan\'s authority was real, since Vichy disavowed him and his orders carried weight only through his personal prestige and the shock of the German occupation of the free zone.',
+      university: 'The "Darlan deal" of November 1942 - Eisenhower’s arrangement with the most senior French authority on the spot, negotiated through Robert Murphy and the American consulate in Algiers - is the founding case in the argument about the moral cost of Realpolitik in coalition warfare: the acceptance of a collaborationist administrator to save Allied lives, at the price of the political credibility of the war aims, with consequences at the Casablanca conference in January 1943, where the insistence on unconditional surrender was in part an answer to the criticism. What is disputed is how far Darlan’s authority was real, since Vichy disavowed him and his orders carried weight only through his personal prestige and the shock of the German occupation of the free zone.',
     },
   },
 ];

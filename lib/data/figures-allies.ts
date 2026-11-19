@@ -101,7 +101,7 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
     bloc: 'soviet',
     bio: {
       primary: 'Vasilevsky was the chief planner of the Soviet army. He planned the great counter-attacks at Stalingrad and in Belarus.',
-      secondary: 'As chief of the General Staff from July 1942 he was the principal author of Uranus and ran the General Staff work behind the later offensives, coordinating fronts in Ukraine and East Prussia. He became minister of defence after the war.',
+      secondary: 'As chief of the General Staff from June 1942 he was the principal author of Uranus and ran the General Staff work behind the later offensives, coordinating fronts in Ukraine and East Prussia. He became minister of defence after the war.',
       university: 'Vasilevsky is the key figure in the recovery of Soviet operational art after the purges: his staff work institutionalised the planning process — wargaming, maskirovka, timed artillery preparation — that made the 1944 campaigns possible.',
     },
   },
@@ -205,7 +205,7 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
     bloc: 'allies',
     bio: {
       primary: 'Alexander commanded all the Allied armies in the Mediterranean, including at Monte Cassino and the march on Rome.',
-      secondary: 'He commanded the British forces in the retreat from Burma in 1942, then First Army in Tunisia and the 15th Army Group in North Africa and Italy, and accepted the German surrender in Italy in April 1945\. Afterwards he was the last British Viceroy and first Governor-General of India, and from 1952 Minister of Defence and Supreme Allied Commander Europe.',
+      secondary: 'He commanded the British forces in the retreat from Burma in 1942, then First Army in Tunisia and the 15th Army Group in North Africa and Italy, and accepted the German surrender in Italy in April 1945\. Afterwards he was Governor General of Canada from 1946, and British Minister of Defence from 1952.',
       university: 'Alexander’s command is a study in managing a coalition army of fifteen national contingents under a strategically subordinate role; the decisions at Anzio and on Route 6 in June 1944 remain the contested elements of the Italian campaign’s historiography.',
     },
   },
@@ -218,7 +218,7 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
     bloc: 'allies',
     bio: {
       primary: 'Auchinleck was the British commander who stopped Rommel’s advance at the first battle of El Alamein in 1942.',
-      secondary: 'As commander-in-chief Middle East he took personal command of Eighth Army and fought the First Battle of El Alamein in July 1942, then a second battle in August. He was replaced by Alexander and Montgomery in August 1942 and sent to India.',
+      secondary: 'As commander-in-chief Middle East he took personal command of Eighth Army and fought the First Battle of El Alamein in July 1942, and held the line until he was replaced by Alexander and Montgomery in August 1942 and sent to India.',
       university: 'Recent scholarship has rehabilitated Auchinleck, arguing that his removal was politically driven — by Churchill’s need for a commander after Tobruk — and that his defensive battles broke Panzerarmee Afrika’s offensive capacity. His Indian Army reforms are also a major part of his record.',
     },
   },
