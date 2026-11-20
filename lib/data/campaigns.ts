@@ -964,7 +964,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     id: 'dodecanese_1943',
     name: 'The Dodecanese: the last campaign in the Aegean',
     side: 'german',
-    from: '1943-10-06',
+    from: '1943-09-08',
     to: '1943-11-22',
     path: [
       [36.79, 27.08], // Kos, garrisoned by 1,800 British troops, stormed on 6-8 October
@@ -972,9 +972,9 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [37.72, 26.82], // Samos and the other islands, evacuated on 17 November
     ],
     summary:
-      'When Italy surrendered, 30,000 Italian soldiers in the Aegean changed sides, and the British rushed small garrisons to Samos, Kos and Leros to keep the Dodecanese and their ports. The Germans moved faster, with air superiority from the Balkans and the Greek mainland: Kos was taken in three days, and Leros — an Italian fortress holding 2,600 British and Dominion troops — after a week of fighting that included the largest German airborne operation since Crete. Churchill wanted the Aegean as a route towards the Balkans and the Greek port that would pre-empt the Red Army; its loss settled that the Red Army would get there first. The garrisons were destroyed or evacuated: some 4,800 British and Dominion troops became casualties or prisoners, and the Germans took about 44,000 Italian soldiers. It is one of the few Allied operations of 1943 that failed outright.',
+      'When Italy surrendered, 30,000 Italian soldiers in the Aegean changed sides, and the British rushed small garrisons to Samos, Kos and Leros to keep the Dodecanese and their ports. The Germans moved faster, with air superiority from the Balkans and the Greek mainland: Kos was taken in two days, and Leros — an Italian fortress holding about 3,000 British and Dominion troops — after fighting from 12 to 16 November that included the largest German airborne operation since Crete. Churchill wanted the Aegean as a route towards the Balkans and the Greek port that would pre-empt the Red Army; its loss settled that the Red Army would get there first. The garrisons were destroyed or evacuated: some 4,800 British and Dominion troops became casualties or prisoners, and the Germans took about 44,000 Italian soldiers. It is one of the few Allied operations of 1943 that failed outright.',
     strength:
-      'About 5,300 British and Dominion troops, with the Italian garrisons nominally on the Allied side; the German XLIV Panzer Corps and the Luftwaffe, with command of the air throughout',
+      'About 5,300 British and Dominion troops, with the Italian garrisons nominally on the Allied side; the German 22nd Infantry Division and the Luftwaffe, with command of the air throughout',
   },
   {
     id: 'iraq_1941',
@@ -1022,7 +1022,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
   // ---------------------------------------------------------------------
   {
     id: 'norway_central_1940',
-    name: 'Central Norway: the two German columns meet at Dombås',
+    name: 'Central Norway: the two German columns link up',
     side: 'german',
     from: '1940-04-09',
     to: '1940-05-05',
@@ -1034,7 +1034,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [64.47, 11.33], // Namsos, landed at on 14-19 April and evacuated on 2-3 May; the burnt town fell to the Germans days later
     ],
     summary:
-      'The invasion of Norway was decided on the roads, not at the ports. Trondheim was taken on 9 April, and a column from Oslo began coming up the Gudbrandsdal on 14 April and met the men from Trondheim on 30 April, cutting the country in two and making the Norwegian armies in the south impossible to supply. The British answered by landing the 146th Brigade and French mountain troops at Namsos on 14-15 April and advancing south to Steinkjer to link with the Norwegian 5th Division; they halted, were pushed back under heavy bombing, and were evacuated. The same happened at Åndalsnes, where the 148th Brigade’s advance on Dombås ended in evacuation on 1-2 May. Central Norway was therefore cleared before the final assault on Narvik in late May, and the Luftwaffe’s freedom to operate there is what made the Nordland and Narvik evacuations necessary.',
+      'The invasion of Norway was decided on the roads, not at the ports. Trondheim was taken on 9 April, and a column from Oslo began coming up the Gudbrandsdal on 14 April and met the men from Trondheim on 30 April, cutting the country in two and making the Norwegian armies in the south impossible to supply. The British answered by landing the 146th Brigade and French mountain troops at Namsos from 14 to 19 April and advancing south to Steinkjer to link with the Norwegian 5th Division; they halted, were pushed back under heavy bombing, and were evacuated. The same happened at Åndalsnes, where the 148th Brigade’s advance on Dombås ended in evacuation on 1-2 May. Central Norway was therefore cleared before the final assault on Narvik in late May, and the Luftwaffe’s freedom to operate there is what made the Nordland and Narvik evacuations necessary.',
     strength:
       '~6,000 German troops advancing from Trondheim and Oslo against 3,500 British, 2,500 French and 500 Norwegian troops at Namsos, with no air defence and little artillery',
   },
@@ -1184,7 +1184,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [47.22, 38.93], // Taganrog, cleared in early December, and the front then settled on the Mius
     ],
     summary:
-      'Rostov was the gate to the Caucasus oil and grain, and the farthest point reached by the 1st Panzer Army in 1941. Kleist’s troops took it on 21 November, exhausted and short of fuel, and on 17 November the Southern Front attacked from bridgeheads north of the city; Rostov changed hands again on 29 November and the Germans were pushed back over the Mius. It was the first time in the war that a German army had been forced out of a place it had captured, and it happened five days before the counter-offensive before Moscow, so the two together ended any hope of a decision in 1941. Hitler drew the conclusion that his generals were obstructing him: he dismissed the commander-in-chief von Brauchitsch on 19 December and took direct command of the army, which from then on meant that operational decisions in the east were political as well as military.',
+      'Rostov was the gate to the Caucasus oil and grain, and the farthest point reached by the 1st Panzer Army in 1941. Kleist’s troops took it on 21 November, exhausted and short of fuel, although the Southern Front had attacked north of the city on 17 November; its main blow on 27 November, from the north and south, made Rostov change hands again on 29 November and the Germans were pushed back over the Mius. It was the first time in the war that a German army had been forced out of a place it had captured, and it happened about a week before the counter-offensive before Moscow, so the two together ended any hope of a decision in 1941. Hitler drew the conclusion that his generals were obstructing him: he dismissed the commander-in-chief von Brauchitsch on 19 December and took direct command of the army, which from then on meant that operational decisions in the east were political as well as military.',
     strength:
       'Southern Front’s armies, thrown in piecemeal; the 1st Panzer Army and Seventeenth Army, at the end of a 1,200 km advance with no winter clothing and no fuel reserve',
   },
@@ -1335,9 +1335,9 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
   },
   {
     id: 'morava_ostrava_1945',
-    name: 'Moravian-Ostrava: the last battle for the Czech lands',
+    name: 'Moravian-Ostrava: the battle for the Czech lands',
     side: 'soviet',
-    from: '1945-04-10',
+    from: '1945-03-10',
     to: '1945-05-06',
     path: [
       [49.94, 17.9], // Opava-Troppau, taken 22 April, on the edge of the Ostrava basin
@@ -1345,9 +1345,9 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [49.59, 17.25], // Olomouc-Olmutz, reached in the first days of May, on the road to Prague
     ],
     summary:
-      'The 4th Ukrainian Front’s attack on the Ostrava industrial basin, on 10 April, was the least-known of the 1945 offensives and the one that decided who took the Czech lands. The Germans hoped to hold Moravia to keep the oil of the Vienna basin and the factories of the protectorate working; the Soviets needed the Ostrava coal and a direct route to Prague and Dresden. Ostrava fell on 30 April as the Red Army reached the Elbe, and the front then wheeled north for the Prague offensive of 6 May, the last operation of the war. The political consequence was decisive: Czechoslovakia’s postwar government was installed on Soviet arms rather than in a western liberation, which is one reason the country fell into the Soviet bloc within four years — the same fact that made the Prague Uprising of May 1945, and its Soviet relief, a contested memory.',
+      'The 4th Ukrainian Front’s attack on the Ostrava industrial basin, from 10 March, was the least-known of the 1945 offensives and the one that decided who took the Czech lands. The Germans hoped to hold Moravia to keep the oil of the Vienna basin and the factories of the protectorate working; the Soviets needed the Ostrava coal and a direct route to Prague and Dresden. Ostrava fell on 30 April as the Red Army reached the Elbe, and the front then drove west on Olomouc in the Prague offensive of 6 May, the last operation of the war. The political consequence was decisive: Czechoslovakia’s postwar government was installed on Soviet arms rather than in a western liberation, which is one reason the country fell into the Soviet bloc within four years — the same fact that made the Prague Uprising of May 1945, and its Soviet relief, a contested memory.',
     strength:
-      '4th Ukrainian Front with the 1st Ukrainian Front’s 4th Tank Army, ~370,000 men; Army Group Centre, ~600,000, trying to hold the oilfields and keep a road open to the west',
+      '4th Ukrainian Front with the 1st Ukrainian Front’s 60th Army, over 250,000 men; the German 1st Panzer Army, ~150,000, trying to hold the oilfields and keep a road open to the west',
   },
   {
     id: 'balaton_1945',
