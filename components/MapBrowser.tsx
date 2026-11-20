@@ -202,6 +202,11 @@ export default function MapBrowser({
     if (leaveTimer.current) clearTimeout(leaveTimer.current);
   }, []);
 
+  /* A line popup is longer than the pinned phone map is tall, which pushed its
+   * close button off the top of the screen; capped, it scrolls instead. The top
+   * padding keeps the close button clear of the map-size button. */
+  const popupMaxHeight = typeof window !== 'undefined' && window.innerWidth < 1024 ? 170 : 340;
+
   const focusedId = hoverId ?? openId;
   useEffect(() => {
     onLineHover?.(focusedId);
@@ -405,8 +410,11 @@ export default function MapBrowser({
                       Schematic axis through named places; the ring is an interpolated position by date.
                     </span>
                   </Tooltip>
-                  <Popup>
-                    <div className="space-y-1 text-sm">
+                  <Popup autoPanPaddingTopLeft={[10, 52]} autoPanPaddingBottomRight={[10, 10]}>
+                    <div
+                      className="space-y-1 overflow-y-auto pb-1 pr-1 pt-1 text-sm [&_p]:!my-0"
+                      style={{ maxHeight: popupMaxHeight }}
+                    >
                       <p className="text-base font-semibold">{line.name}</p>
                       <p
                         className="text-xs font-medium uppercase tracking-wide"
@@ -418,13 +426,6 @@ export default function MapBrowser({
                       <p className="text-xs text-stone-600">
                         {line.from} to {line.to}
                       </p>
-                      <p className="pt-1">{line.summary}</p>
-                      {line.strength && (
-                        <p className="pt-1 text-xs">
-                          <span className="font-medium">Committed: </span>
-                          {line.strength}
-                        </p>
-                      )}
                       {links.length > 0 && (
                         <div className="pt-1">
                           <p className="text-xs font-semibold">Events on this line</p>
@@ -446,6 +447,13 @@ export default function MapBrowser({
                             ))}
                           </ul>
                         </div>
+                      )}
+                      <p className="pt-1">{line.summary}</p>
+                      {line.strength && (
+                        <p className="pt-1 text-xs">
+                          <span className="font-medium">Committed: </span>
+                          {line.strength}
+                        </p>
                       )}
                       <p className="pt-1 text-xs text-stone-600">
                         This is a schematic axis of advance through named places, not a surveyed daily
