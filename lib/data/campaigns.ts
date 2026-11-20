@@ -268,8 +268,8 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     id: 'serbian_front_1914',
     name: 'The Serbian frontier on the Sava and the Drina',
     side: 'entente',
-    from: '1914-08-15',
-    to: '1915-10-13',
+    from: '1914-08-12',
+    to: '1915-10-06',
     kind: 'front',
     path: [
       [44.97, 19.61], // Sremska Mitrovica, on the Sava frontier in Syrmia
@@ -280,7 +280,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     strength:
       'The fighting on the Cer, 15-24 August 1914, cost Austria-Hungary 6,000-10,000 killed, 30,000 wounded and 4,500 prisoners; Serbian losses were much smaller',
     summary:
-      'Serbias frontier with Austria-Hungary ran along the Sava and the Drina, and the war in the Balkans was fought on that water line. The first Austro-Hungarian invasion began on the night of 15 August on the Cer ridge above the Drina and was thrown back with heavy loss; the third invasion of 1914 took Valjevo, and the Serbian counterattack recaptured Valjevo and Užice on 8 December, clearing the invaders out in the second half of that month. The frontier stayed where it is drawn until the three-way invasion of October 1915, when a Bulgarian army came in from the east and the Serbian army began its retreat across Albania to the sea; that retreat is not drawn here, only the frontier it gave up.',
+      'Serbia’s frontier with Austria-Hungary ran along the Sava and the Drina, and the war in the Balkans was fought on that water line. The first Austro-Hungarian invasion began on 12 August, and the fighting on the Cer ridge above the Drina, which opened on the night of 15 August, threw it back with heavy loss; the third invasion of 1914 took Valjevo, and the Serbian counterattack recaptured Valjevo and Užice on 8 December, clearing the invaders out in the second half of that month. The frontier stayed where it is drawn until the three-way invasion of October 1915, when a Bulgarian army came in from the east and the Serbian army began its retreat across Albania to the sea; that retreat is not drawn here, only the frontier it gave up.',
   },
   {
     id: 'caucasus_1916',
@@ -407,7 +407,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     id: 'serbia_1914',
     name: 'The Austro-Hungarian invasions of Serbia',
     side: 'central',
-    from: '1914-08-15',
+    from: '1914-08-12',
     to: '1914-12-15',
     kind: 'advance',
     path: [
@@ -418,7 +418,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [43.86, 19.84], // Užice, the furthest ground reached, retaken by the Serbs on 8 December
     ],
     summary:
-      'Serbia was invaded three times in 1914 across the Sava and the Drina, the first attack beginning on the night of 15 August on the Cer ridge above the Drina and being thrown back inside a week with heavy loss. The third invasion came over the Danube and the Sava onto Belgrade and then south-west along the Kolubara into the Jadar valley as far as Valjevo and Užice; the Serbian army, retreating in front of it short of ammunition and worn out, counterattacked all along the front early in December and retook Valjevo and Užice on 8 December. The invaders were out of Serbia again by the middle of that month, which is why the advance drawn here stops on the ground it had reached and not on the frontier it had to give back.',
+      'Serbia was invaded three times in 1914 across the Sava and the Drina, the first attack crossing the Drina on 12 August and being thrown back from the Cer ridge, where the fighting opened on the night of 15 August, with heavy loss. The third invasion came over the Danube and the Sava onto Belgrade and then south-west along the Kolubara into the Jadar valley as far as Valjevo and Užice; the Serbian army, retreating in front of it short of ammunition and worn out, counterattacked all along the front early in December and retook Valjevo and Užice on 8 December. The invaders were out of Serbia again by the middle of that month, which is why the advance drawn here stops on the ground it had reached and not on the frontier it had to give back.',
   },
 
   /* ------------------------------------------------------------------ *
@@ -601,7 +601,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     strength:
       'The first relief expedition was about 19,000 men; all the attempts failed at a cost of around 30,000 Allied casualties',
     summary:
-      'This campaign was fought up a river, because the Tigris was the road, the supply line and the hospital ward at once, and the place names on the map matter more than the battles. The advance went north from Basra through Qurna and Amarah to Kut and fought at Ctesiphon in November 1915; the attack there failed, the army fell back on Kut, and the garrison surrendered on 29 April 1916 after a siege. Every attempt to relieve Kut failed, the last of them at the Dujaila redoubt on 8 March 1916. The whole of this campaign lies south of the 34th parallel, and all of it except Ctesiphon lies east of the 45th meridian, and this map has no border data on either count, so the line is drawn against the coastline and the rivers only.',
+      'This campaign was fought up a river, because the Tigris was the road, the supply line and the hospital ward at once, and the place names on the map matter more than the battles. The advance went north from Basra through Qurna and Amarah to Kut and fought at Ctesiphon in November 1915; the attack there failed, the army fell back on Kut, and the garrison surrendered on 29 April 1916 after a siege. Every attempt to relieve Kut failed, the last of them at Sannaiyat on 22 April 1916, a week before the surrender. The whole of this campaign lies south of the 34th parallel, and all of it except Ctesiphon lies east of the 45th meridian, and this map has no border data on either count, so the line is drawn against the coastline and the rivers only.',
   },
   {
     id: 'arab_revolt_1916_18',
@@ -627,7 +627,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
   {
     id: 'caporetto_1917',
     name: 'Caporetto and the retreat to the Piave',
-    operation: 'Wolsdorf / Twelfth Battle of the Isonzo',
+    operation: 'Karfreit / Twelfth Battle of the Isonzo',
     side: 'central',
     from: '1917-10-24',
     to: '1917-11-10',
@@ -716,7 +716,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     strength:
       'The German army had 192 divisions and three brigades on the Western Front by 21 March 1918, out of 241 divisions in the whole army',
     summary:
-      'Operation Michael began on 21 March 1918, launched from the Hindenburg Line in the neighbourhood of Saint-Quentin against the boundary where the British line had been extended and was held thin. Its object was to break the Allied front and sweep north-west to the Channel ports and drive the British army into the sea; two days later Ludendorff changed the plan to an advance due west along the whole front towards Amiens instead. The advance took Ham, Nesle and Roye, and the last eight days of it were fought about Villers-Bretonneux on the road into Amiens, where the First Battle of Villers-Bretonneux, 30 March to 5 April, stopped it and the fighting on the Ancre on 5 April ended the offensive. The Allied railhead at Amiens was never reached, so the line stops on ground the German army actually held; the Hindenburg Line line above is the front it was launched from.',
+      'Operation Michael began on 21 March 1918, launched from the Hindenburg Line in the neighbourhood of Saint-Quentin against the boundary where the British line had been extended and was held thin. Its object was to break the Allied front and sweep north-west to the Channel ports and drive the British army into the sea; two days later Ludendorff changed the plan to an advance due west along the whole front towards Amiens instead. The advance took Ham, Nesle and Roye, and the last eight days of it were fought about Villers-Bretonneux on the road into Amiens, where the First Battle of Villers-Bretonneux, 30 March to 5 April, stopped it and the fighting on the Ancre on 5 April ended the offensive. The Allied railhead at Amiens was never reached, so the line stops on ground the German army actually held; the Hindenburg Line drawn above is the front it was launched from.',
   },
   {
     id: 'georgette_1918',
