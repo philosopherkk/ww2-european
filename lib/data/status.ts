@@ -142,7 +142,7 @@ export const GEOMETRY_NOTE =
  */
 const TIMELINES: Record<string, [string, TerritoryStatus][]> = {
   'Austria-Hungary': [
-    ['1914-07', 'central'], // war on Serbia 28 July 1914, so a belligerent in the first snapshot too; on Russia 5 August, on France 12 August
+    ['1914-07', 'central'], // war on Serbia 28 July 1914, so a belligerent in the first snapshot too; on Russia 5 or 6 August (chronologies split), on France 12 August
     ['1918-11', 'dissolved'], // republics proclaimed 12 and 16 November 1918
   ],
   Serbia: [
