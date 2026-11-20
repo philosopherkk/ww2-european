@@ -1,9 +1,11 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { Fragment, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   CircleMarker,
   MapContainer,
+  Marker,
+  Pane,
   Polygon,
   Polyline,
   Popup,
@@ -12,11 +14,13 @@ import {
   useMap,
   useMapEvents,
 } from 'react-leaflet';
+import L from 'leaflet';
 import { ChevronDown, Info, ListTree, Maximize2, Minimize2 } from 'lucide-react';
 import type { CampaignLine, Side } from '@/lib/data';
-import { CAMPAIGN_LINES, STATUS_META, STATUS_ORDER, SNAPSHOT_NOTES, statusFor } from '@/lib/data';
+import { CAMPAIGN_LINES, EVENT_BY_ID, STATUS_META, STATUS_ORDER, SNAPSHOT_NOTES, statusFor } from '@/lib/data';
+import { LINKS_BY_LINE } from '@/lib/data/campaign-events';
 import { PLACES } from '@/lib/data/places';
-import { campaignVisible, nearestSnapshot, SIDE_META, SNAPSHOTS } from '@/lib/site';
+import { campaignVisible, longDate, nearestSnapshot, SIDE_META, SNAPSHOTS } from '@/lib/site';
 
 /* The border files are GeoJSON: coordinates are [lng, lat], Leaflet wants [lat, lng]. */
 type Ring = number[][];
@@ -106,6 +110,13 @@ interface Props {
   /** Phones: the pinned map is taller when true. */
   tall?: boolean;
   onToggleTall?: () => void;
+  /** Lines to emphasise because the reader is pointing at one of their events. */
+  highlightLineIds?: string[];
+  /** The line under the cursor (or opened by a tap), or null; the page lights up its events. */
+  onLineHover?: (id: string | null) => void;
+  /** Event pinned on a line, hovered in the list, so its own pin can be stressed. */
+  hoverEventId?: string | null;
+  onOpenEvent?: (id: string) => void;
 }
 
 export default function MapBrowser({
@@ -116,6 +127,10 @@ export default function MapBrowser({
   showPlaces,
   tall = false,
   onToggleTall,
+  highlightLineIds,
+  onLineHover,
+  hoverEventId = null,
+  onOpenEvent,
 }: Props) {
   const { snapshot, gapMonths, isEarlier } = useMemo(
     () => nearestSnapshot(monthKey),
@@ -167,6 +182,36 @@ export default function MapBrowser({
     () => (showCampaigns ? CAMPAIGN_LINES.filter((l) => campaignVisible(l, monthKey)) : []),
     [showCampaigns, monthKey]
   );
+
+  /* A line is "active" while the cursor is on it or its popup is open, and also
+   * while the reader points at one of its events in the list. The short delay
+   * on leaving lets the cursor travel from the line to an event pin without
+   * the pin vanishing under it. */
+  const [hoverId, setHoverId] = useState<string | null>(null);
+  const [openId, setOpenId] = useState<string | null>(null);
+  const leaveTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const enterLine = useCallback((id: string) => {
+    if (leaveTimer.current) clearTimeout(leaveTimer.current);
+    setHoverId(id);
+  }, []);
+  const leaveLine = useCallback(() => {
+    if (leaveTimer.current) clearTimeout(leaveTimer.current);
+    leaveTimer.current = setTimeout(() => setHoverId(null), 220);
+  }, []);
+  useEffect(() => () => {
+    if (leaveTimer.current) clearTimeout(leaveTimer.current);
+  }, []);
+
+  const focusedId = hoverId ?? openId;
+  useEffect(() => {
+    onLineHover?.(focusedId);
+  }, [focusedId, onLineHover]);
+
+  const activeIds = useMemo(() => {
+    const ids = new Set<string>(highlightLineIds ?? []);
+    if (focusedId) ids.add(focusedId);
+    return ids;
+  }, [highlightLineIds, focusedId]);
 
   const presentStatuses = useMemo(
     () => STATUS_ORDER.filter((s) => territories.some((t) => t.status === s)),
@@ -298,23 +343,64 @@ export default function MapBrowser({
               ));
             })}
 
+          {/* Army lines live in their own pane above the territories. The border
+              polygons are added after their file loads, so in the shared overlay
+              pane they landed on top of the lines and swallowed every hover. */}
+          <Pane name="campaigns" style={{ zIndex: 450 }}>
           {lines.map((line) => {
             const side = SIDE_META[line.side];
             const progress = progressThrough(line, monthKey);
             const tip = pointAlong(line.path, progress);
+            const active = activeIds.has(line.id);
+            const dimmed = activeIds.size > 0 && !active;
+            const links = LINKS_BY_LINE[line.id] ?? [];
+            const numbered = links
+              .filter((l) => EVENT_BY_ID[l.event])
+              .sort((a, b) => EVENT_BY_ID[a.event].date.localeCompare(EVENT_BY_ID[b.event].date));
+            const numberOf = new Map(numbered.map((l, i) => [l.event, i + 1]));
+            const pins = new Map<number, string[]>();
+            for (const l of numbered) pins.set(l.at, [...(pins.get(l.at) ?? []), l.event]);
+            const lineHandlers = {
+              mouseover: () => enterLine(line.id),
+              mouseout: leaveLine,
+              popupopen: () => setOpenId(line.id),
+              popupclose: () => setOpenId((cur) => (cur === line.id ? null : cur)),
+            };
             return (
-              <div key={line.id}>
+              <Fragment key={line.id}>
                 <Polyline
                   positions={line.path}
+                  interactive={false}
                   pathOptions={{
                     color: side.color,
-                    weight: 3.5,
-                    opacity: 0.9,
-                    dashArray: '8 6',
+                    weight: active ? 6 : 3.5,
+                    opacity: dimmed ? 0.3 : 1,
+                    dashArray: active ? undefined : '8 6',
                   }}
+                />
+                {/* A wide, invisible copy of the line carries the hover and the
+                    popup, so a 3.5 px stroke is not a 3.5 px target. */}
+                <Polyline
+                  positions={line.path}
+                  eventHandlers={lineHandlers}
+                  pathOptions={{ color: side.color, weight: 18, opacity: 0 }}
                 >
                   <Tooltip sticky>
                     <span className="text-xs font-semibold">{line.name}</span>
+                    {numbered.length > 0 && (
+                      <span className="mt-1 block w-60 whitespace-normal text-[11px] font-normal leading-snug">
+                        {numbered.map((l) => (
+                          <span key={l.event} className="block">
+                            <span className="font-semibold">{numberOf.get(l.event)}.</span>{' '}
+                            {EVENT_BY_ID[l.event].title}
+                            <span className="text-stone-600">
+                              {' '}
+                              · {longDate(EVENT_BY_ID[l.event].date, EVENT_BY_ID[l.event].precision)}
+                            </span>
+                          </span>
+                        ))}
+                      </span>
+                    )}
                     <span className="mt-0.5 block text-[10px] font-normal text-stone-700">
                       Schematic axis through named places; the ring is an interpolated position by date.
                     </span>
@@ -339,10 +425,33 @@ export default function MapBrowser({
                           {line.strength}
                         </p>
                       )}
+                      {links.length > 0 && (
+                        <div className="pt-1">
+                          <p className="text-xs font-semibold">Events on this line</p>
+                          <ul className="mt-0.5 space-y-0.5">
+                            {links.map((l) => (
+                              <li key={l.event}>
+                                <button
+                                  type="button"
+                                  onClick={() => onOpenEvent?.(l.event)}
+                                  className="text-left text-xs text-sky-800 underline decoration-sky-800/40 underline-offset-2 hover:decoration-sky-800"
+                                >
+                                  {EVENT_BY_ID[l.event].title}
+                                  <span className="text-stone-600">
+                                    {' '}
+                                    · {longDate(EVENT_BY_ID[l.event].date, EVENT_BY_ID[l.event].precision)}
+                                  </span>
+                                </button>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
                       <p className="pt-1 text-xs text-stone-600">
                         This is a schematic axis of advance through named places, not a surveyed daily
                         front line. The ring marks an interpolated position along that axis by date,
-                        not a documented map reference for that morning.
+                        not a documented map reference for that morning. Event pins sit on the named
+                        place nearest the event, not on a surveyed grid reference.
                       </p>
                     </div>
                   </Popup>
@@ -350,17 +459,74 @@ export default function MapBrowser({
                 <CircleMarker
                   center={tip}
                   radius={5}
-                  pathOptions={{ color: side.color, fillColor: '#fff', fillOpacity: 1, weight: 2.5 }}
-                >
-                  <Tooltip direction="top" opacity={1}>
-                    <span className="text-[11px]">
-                      {line.name}: approximate position by the end of this month
-                    </span>
-                  </Tooltip>
-                </CircleMarker>
-              </div>
+                  interactive={false}
+                  pathOptions={{
+                    color: side.color,
+                    fillColor: '#fff',
+                    fillOpacity: dimmed ? 0.4 : 1,
+                    opacity: dimmed ? 0.4 : 1,
+                    weight: 2.5,
+                  }}
+                />
+                {active &&
+                  [...pins.entries()].map(([at, ids]) => {
+                    const stressed = ids.includes(hoverEventId ?? '');
+                    const label = ids.map((id) => numberOf.get(id)).join('·');
+                    return (
+                      <Marker
+                        key={`${line.id}-pin-${at}`}
+                        position={line.path[at]}
+                        zIndexOffset={1000}
+                        icon={L.divIcon({
+                          className: '',
+                          html: `<span style="position:absolute;transform:translate(-50%,-50%);display:grid;place-items:center;min-width:22px;height:22px;padding:0 5px;box-sizing:border-box;border:2.5px solid #1c1917;border-radius:999px;background:${side.color};color:#fff;font:700 11px/1 system-ui,sans-serif;white-space:nowrap;box-shadow:${stressed ? '0 0 0 4px #fbbf24,' : ''}0 1px 4px rgba(0,0,0,.45)">${label}</span>`,
+                          iconSize: [0, 0],
+                        })}
+                        eventHandlers={{
+                          mouseover: () => enterLine(line.id),
+                          mouseout: leaveLine,
+                          popupopen: () => setOpenId(line.id),
+                          popupclose: () => setOpenId((cur) => (cur === line.id ? null : cur)),
+                        }}
+                      >
+                        <Tooltip direction="top" offset={[0, -12]} opacity={1}>
+                          {ids.map((id) => (
+                            <span key={id} className="block w-48 whitespace-normal text-[11px] leading-snug">
+                              <span className="font-semibold">{EVENT_BY_ID[id].title}</span>
+                              <span className="text-stone-600">
+                                {' '}
+                                · {longDate(EVENT_BY_ID[id].date, EVENT_BY_ID[id].precision)}
+                              </span>
+                            </span>
+                          ))}
+                        </Tooltip>
+                        <Popup>
+                          <div className="space-y-1 text-sm">
+                            <p className="text-xs font-semibold uppercase tracking-wide text-stone-600">
+                              {line.name}
+                            </p>
+                            {ids.map((id) => (
+                              <button
+                                key={id}
+                                type="button"
+                                onClick={() => onOpenEvent?.(id)}
+                                className="block text-left text-sm font-medium text-sky-800 underline decoration-sky-800/40 underline-offset-2 hover:decoration-sky-800"
+                              >
+                                {EVENT_BY_ID[id].title}
+                              </button>
+                            ))}
+                            <p className="pt-1 text-xs text-stone-600">
+                              Open the event card for the full account.
+                            </p>
+                          </div>
+                        </Popup>
+                      </Marker>
+                    );
+                  })}
+              </Fragment>
             );
           })}
+          </Pane>
 
           {showMarkers &&
             PLACES.map((place) => (
