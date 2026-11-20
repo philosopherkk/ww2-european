@@ -252,7 +252,7 @@ export const TURNING_POINTS: TurningPoint[] = [
         'January settled the Polish question de facto, with the Lublin government installed as the offensive advanced; nothing else, not even why it began on 12 January.',
     },
     mapNote:
-      'The dataset has no winter 1944-45 border state: this month is drawn with the October 1943 borders — fifteen months earlier — so the map still looks like 1943 while the Red Army stands on the Oder. The campaign line, not the border fills, is what shows the offensive.',
+      'The dataset has no winter 1944-45 border state: this month is drawn with the April 1944 borders — nine months earlier — so the map still looks like the spring of 1944 while the Red Army stands on the Oder. The campaign line, not the border fills, is what shows the offensive.',
     eventIds: ['vistula_oder_opens', 'auschwitz'],
     sources: ['Glantz and House, When Titans Clashed', 'Holocaust Encyclopedia'],
   },

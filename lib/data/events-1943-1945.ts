@@ -597,7 +597,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['eastern'],
     countries: ['Soviet Union', 'Poland', 'Germany'],
     figures: ['zhukov', 'rokossovsky'],
-    note: 'The campaign line “Vistula-Oder: twenty-two days to the gates of Berlin” on this map shows the axis of the advance; its strength figures are order-of-battle approximations, as all figures here are. Warsaw fell on 17 January, Krakow on 18 January, and the leading corps of the 1st Belorussian Front reached the Oder at Küstrin on 1 February, less than 100 km from Berlin. No map in this dataset can show the advance from day to day: the nearest border state is drawn fifteen months earlier.',
+    note: 'The campaign line “Vistula-Oder: twenty-two days to the gates of Berlin” on this map shows the axis of the advance; its strength figures are order-of-battle approximations, as all figures here are. Warsaw fell on 17 January, Krakow on 18 January, and the leading corps of the 1st Belorussian Front reached the Oder at Küstrin on 1 February, less than 100 km from Berlin. No map in this dataset can show the advance from day to day: the nearest border state is drawn nine months earlier.',
     levels: {
       primary: {
         cause: 'In the winter of 1945 the Soviet Union was ready to attack from the Vistula river in Poland straight towards Germany, and there were few German soldiers opposite.',
