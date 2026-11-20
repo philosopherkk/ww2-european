@@ -25,6 +25,7 @@ import SourcesPanel from '@/components/SourcesPanel';
 import TurningPointPanel from '@/components/TurningPointPanel';
 import type { Level } from '@/lib/data';
 import { EVENT_BY_ID, EVENTS } from '@/lib/data';
+import { LINKS_BY_EVENT, LINKS_BY_LINE } from '@/lib/data/campaign-events';
 import { turningPointFor } from '@/lib/data/turning-points';
 import { LEVELS, MONTH_INDEX, MONTHS, monthKeyOf } from '@/lib/site';
 
@@ -86,6 +87,10 @@ export default function Home() {
   const [playing, setPlaying] = useState(false);
   const [focusFigure, setFocusFigure] = useState<string | null>(null);
   const [openEvent, setOpenEvent] = useState<string | null>(null);
+  // Army-movement line under the cursor on the map, and the event card under
+  // the cursor in the list: each lights up what the other is linked to.
+  const [hoverLine, setHoverLine] = useState<string | null>(null);
+  const [hoverEvent, setHoverEvent] = useState<string | null>(null);
   // The address bar is the shareable copy of this view; it is read once after
   // mount (window is not available during the static prerender) and then
   // maintained with replaceState, never pushState — autoplay must not fill the
@@ -208,6 +213,15 @@ export default function Home() {
       document.getElementById(`event-${id}`)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
     });
   }, []);
+
+  const linkedEventIds = useMemo(
+    () => new Set((hoverLine ? LINKS_BY_LINE[hoverLine] ?? [] : []).map((l) => l.event)),
+    [hoverLine]
+  );
+  const highlightLineIds = useMemo(
+    () => (hoverEvent ? (LINKS_BY_EVENT[hoverEvent] ?? []).map((l) => l.line) : []),
+    [hoverEvent]
+  );
 
   const visibleEvents = useMemo(() => {
     if (scope === 'war') return EVENTS;
@@ -435,6 +449,10 @@ export default function Home() {
                   showPlaces={showPlaces}
                   tall={mapTall}
                   onToggleTall={() => setMapTall((v) => !v)}
+                  highlightLineIds={highlightLineIds}
+                  onLineHover={setHoverLine}
+                  hoverEventId={hoverEvent}
+                  onOpenEvent={openEventFrom}
                 />
               </div>
             </section>
@@ -504,10 +522,15 @@ export default function Home() {
                         key={e.id}
                         id={`event-${e.id}`}
                         className="scroll-mt-[calc(var(--bar-h)+var(--map-h)+0.5rem)] lg:scroll-mt-28"
+                        onMouseEnter={() => setHoverEvent(e.id)}
+                        onMouseLeave={() => setHoverEvent(null)}
+                        onFocus={() => setHoverEvent(e.id)}
+                        onBlur={() => setHoverEvent(null)}
                       >
                         <EventCard
                           event={e}
                           level={level}
+                          linked={linkedEventIds.has(e.id)}
                           defaultOpen={openEvent === e.id}
                           onOpenFigure={(id) => {
                             setFocusFigure(id);

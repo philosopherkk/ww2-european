@@ -31,6 +31,8 @@ interface Props {
   level: Level;
   onOpenFigure?: (id: string) => void;
   defaultOpen?: boolean;
+  /** The army-movement line this event belongs to is under the cursor on the map. */
+  linked?: boolean;
 }
 
 function Section({ label, text }: { label: string; text: string }) {
@@ -42,7 +44,13 @@ function Section({ label, text }: { label: string; text: string }) {
   );
 }
 
-export default function EventCard({ event, level, onOpenFigure, defaultOpen = false }: Props) {
+export default function EventCard({
+  event,
+  level,
+  onOpenFigure,
+  defaultOpen = false,
+  linked = false,
+}: Props) {
   const [open, setOpen] = useState(defaultOpen);
   const [showAllLevels, setShowAllLevels] = useState(false);
   const headings = HEADINGS[level];
@@ -51,7 +59,10 @@ export default function EventCard({ event, level, onOpenFigure, defaultOpen = fa
 
   return (
     <article
-      className="overflow-hidden rounded-xl border border-stone-300 border-l-4 bg-white shadow-sm"
+      data-linked={linked || undefined}
+      className={`overflow-hidden rounded-xl border border-l-4 bg-white shadow-sm transition-shadow ${
+        linked ? 'border-stone-700 ring-2 ring-amber-400 shadow-md' : 'border-stone-300'
+      }`}
       style={{ borderLeftColor: FRONT_META[event.fronts[0]]?.color ?? '#a8a29e' }}
     >
       <button
@@ -66,6 +77,11 @@ export default function EventCard({ event, level, onOpenFigure, defaultOpen = fa
               {kind.emoji}
             </span>
             {longDate(event.date, event.precision)} · {kind.label}
+            {linked && (
+              <span className="rounded-full bg-amber-100 px-1.5 py-0.5 text-[11px] font-semibold text-amber-900">
+                On the line you are pointing at
+              </span>
+            )}
           </span>
           <span className="mt-0.5 block font-serif text-lg font-semibold leading-snug text-stone-900 sm:text-xl">
             {event.title}
