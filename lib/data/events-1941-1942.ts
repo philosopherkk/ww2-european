@@ -870,6 +870,34 @@ export const EVENTS_1941_1942: WW2Event[] = [
     },
   },
   {
+    id: 'kharkov_second_1942',
+    date: '1942-05-12',
+    precision: 'day',
+    title: 'Second Kharkov: a Red Army offensive ends with 250,000 men in a pocket',
+    kind: 'battle',
+    fronts: ['eastern'],
+    countries: ['Soviet Union', 'Germany', 'Hungary', 'Italy'],
+    figures: [],
+    note: 'The offensive came out of the Barvenkovo salient and the Izium bridgehead over the Donets, won in the winter counter-offensive, and was meant to take Kharkov and hold the initiative into the summer. Friedrich Paulus, commanding the Sixth Army, submitted the final draft of his own attack, Operation Fredericus, on 10 May and expected a Soviet blow; the ground offensive began at 07.30 on 12 May with a double pincer from the Volchansk and Barvenkovo salients. Timoshenko attacked on a broad front without choosing a point of main effort, and the 150th Rifle Division’s mistakes spoiled the one success of the southern shock group. On 17 May Kleist’s 3rd Panzer Corps counterattacked the Barvenkovo bridgehead from the south at Aleksandrovka, supported by Fliegerkorps IV, which claimed 130 tanks and 500 vehicles destroyed on 18 May. When the German force at Kramatorsk threatened the Soviet rear, Timoshenko and Khrushchev reported the danger as exaggerated, and Stalin refused withdrawal until the ring was closing; the pocket then held about 250,000 men under armour, artillery and some 7,700 tonnes of air-dropped bombs. Soviet casualties were about 280,000 against roughly 20,000 German and allied. Army Group South exploited at leisure: Operation Wilhelm encircled the 28th Army on 13 June, Fredericus II pushed the 38th and 9th Armies back on 22 June, and Case Blue began on 28 June.',
+    levels: {
+      primary: {
+        cause: 'After winning in winter, the Red Army attacked again near Kharkov in May 1942 instead of waiting.',
+        what: 'The German army counter-attacked into the side of the Soviet advance and shut about 250,000 soldiers inside a ring of enclosed ground, then destroyed it with tanks, guns and bombers.',
+        consequence: 'The loss was enormous, and the German army began its big summer drive towards the Don and the Volga three weeks later.',
+      },
+      secondary: {
+        cause: 'The winter campaign of 1941-42 had saved Moscow but used up the reserves Stalin needed for a defensive year, and in the spring the Stavka authorised local offensives at Kharkov, Smolensk, Lyanovo and the Crimea. The Kharkov attack, planned by Marshal Timoshenko from the Barvenkovo salient, was to be a limited encirclement; the Germans had already decided to remove the salient themselves, so both sides attacked at nearly the same moment, and German signals intelligence had warned Sixth Army of the build-up.',
+        what: 'The Soviet offensive began on 12 May and made progress for four days, so Stalin kept the troops moving forward instead of consolidating. On 17 May General Kleist’s panzer corps attacked northwards against the southern flank of the salient, and the Luftwaffe dominated the battlefield, destroying armour and transport in the open. The Soviet command underplayed the German threat in its rear and was refused permission to withdraw; the ring closed around some 250,000 men, broken up by air and artillery attack. About 280,000 Soviet casualties were suffered against about 20,000 German.',
+        consequence: 'The defeat removed the Red Army’s best shock troops and its tanks a month before the main German summer offensive, so Case Blue met weaker opposition in the south than the Germans had expected. It also made the Stavka far more careful: it kept a large reserve of its own, withheld approval for local offensives, and in the summer of 1942 was willing to trade space rather than spend divisions it could not replace. Soviet generals later blamed Stalin for not believing that the German army had recovered in the spring.',
+      },
+      university: {
+        cause: 'Kharkov is the standard case for the argument that the Red Army of 1942 was still tactically incompetent rather than merely outnumbered. The Stavka and the General Staff had read the German disposition as a general retreat, and German deception, including the deliberate concealment of Kleist’s panzer corps, confirmed it. Timoshenko’s broad-front method, the failure of the 150th Rifle Division to exploit, and the absence of a mobile exploitation group are all in the Soviet sources; Bagramyan’s staff report of the Kupiansk conference in March already left out intelligence that pointed the other way.',
+        what: 'The battle is also a study in command relations. Timoshenko and Khrushchev, the member of the Military Council, reported the German force at Kramatorsk as an exaggerated danger; Timoshenko asked for reinforcements and for permission to withdraw, and was refused, and the evacuation came only while the ring was closing. The German account is not more dispassionate: Paulus and Bock refused to attack without air support, and Hitler had to order Kleist to take the initiative on 14 May before the counterattack began.',
+        consequence: 'The result is usually measured in two ways, and they pull in different directions. Operationally, 280,000 casualties left the Southwestern Direction weak enough that Case Blue reached the Volga in four months. Politically, the disaster changed how the Stavka fought: offensives were centralised, the tank corps were rebuilt as smaller and more usable formations, and the lesson that a salient is an invitation was applied at Kursk in 1943, where the same ground was deliberately traded for time.',
+      },
+    },
+  },
+  {
     id: 'anthropoid',
     date: '1942-05-27',
     precision: 'day',
