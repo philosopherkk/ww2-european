@@ -42,6 +42,9 @@ const MapBrowser = dynamic(() => import('@/components/MapBrowser'), {
 
 const START = MONTHS.findIndex((m) => m.key === '1939-09');
 
+const WW1_BASE = process.env.NEXT_PUBLIC_WW1_URL ?? 'https://ww1-european.vercel.app';
+const WW2_BASE = process.env.NEXT_PUBLIC_WW2_URL ?? 'https://ww2-european.vercel.app';
+
 type Tab = 'map' | 'people' | 'numbers' | 'sources';
 
 const TABS: { id: Tab; label: string; short: string; icon: LucideIcon }[] = [
@@ -100,7 +103,7 @@ export default function Home() {
   const turningPoint = turningPointFor(monthKey);
   const monthYear = Number(monthKey.slice(0, 4));
   const ww1Idx = Math.round((monthIdx / Math.max(1, MONTHS.length - 1)) * (WW1_MONTH_KEYS.length - 1));
-  const ww1Href = `https://ww1-european.vercel.app/?m=${WW1_MONTH_KEYS[ww1Idx]}`;
+  const ww1Href = `${WW1_BASE}/?m=${WW1_MONTH_KEYS[ww1Idx]}`;
 
   const go = useCallback(
     (delta: number) => {
