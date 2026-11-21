@@ -173,7 +173,106 @@ export const SOURCES: Source[] = [
     publisher: 'Wikimedia Foundation — tertiary source, cited by article',
     url: 'https://en.wikipedia.org/wiki/Surrender_of_Japan',
     usedFor:
-      'The five end-of-war cards, the September 1945 turning point, and every colour change on the world layer from 20 August to 8 September 1945. Each date is quoted from the article named in the card’s own note. These cards rest on one source family, which the notes say: a second, independent publisher for each date is still being checked.',
+      'The five end-of-war cards, the September 1945 turning point, and every colour change on the world layer from 20 August to 8 September 1945. Each date is quoted from the article named in the card’s own note. The entries below are the publishers outside Wikipedia that have been checked against these cards; each note names which of its dates one of them carries and which still rest on this article alone.',
+  },
+  {
+    citation:
+      'Radiation Effects Research Foundation, “Frequently asked questions about the atomic bombings”',
+    publisher:
+      'RERF — a joint Japan–United States research foundation in Hiroshima, funded by both governments',
+    url: 'https://www.rerf.or.jp/en/faq/',
+    usedFor:
+      'The two casualty ranges on the 6 August card, 90,000-166,000 deaths at Hiroshima and 60,000-80,000 at Nagasaki within two to four months of the bombings, and the foundation’s own caution that the total is not known precisely.',
+  },
+  {
+    citation:
+      'Atomic Heritage Foundation, “The 509th Composite Group”',
+    publisher:
+      'Atomic Heritage Foundation, the education arm of the National Museum of Nuclear Science & History',
+    url: 'https://www.atomicheritage.org/history/509th-composite-group',
+    usedFor:
+      'The 509th Composite Group as “the weapon delivery arm of the Manhattan Project”.',
+  },
+  {
+    citation:
+      'Atomic Heritage Foundation, “Hiroshima and Nagasaki Bombing Timeline”',
+    publisher:
+      'Atomic Heritage Foundation, the education arm of the National Museum of Nuclear Science & History',
+    url: 'https://www.atomicheritage.org/history/hiroshima-and-nagasaki-bombing-timeline',
+    usedFor:
+      'The dates of the two raids, 6 and 9 August 1945.',
+  },
+  {
+    citation:
+      'Atomic Bomb: Decision, introduction',
+    publisher:
+      'Documentary source archive assembled by Gene Dannen',
+    url: 'http://www.dannen.com/decision/index.html',
+    usedFor:
+      'A third publisher for the dates 6 and 9 August 1945.',
+  },
+  {
+    citation:
+      'Foreign Relations of the United States: Diplomatic Papers, The Conferences at Malta, 1945, document 503, Agreement Regarding Entry of the Soviet Union Into the War Against Japan',
+    publisher:
+      'Office of the Historian, Department of State — US Government Printing Office, 1955',
+    url: 'https://history.state.gov/historicaldocuments/frus1945Malta/d503',
+    usedFor:
+      'The Yalta pledge, which this document prints as entry into the war against Japan “in two or three months after Germany has surrendered”, a wider range than the “three months” on the 9 August card.',
+  },
+  {
+    citation:
+      'Foreign Relations of the United States: Diplomatic Papers, The Conference of Berlin (The Potsdam Conference), 1945, volume I, document 594, United States Delegation Working Paper',
+    publisher:
+      'Office of the Historian, Department of State — US Government Printing Office, 1960',
+    url: 'https://history.state.gov/historicaldocuments/frus1945Berlinv01/d594',
+    usedFor:
+      'The Potsdam terms of 26 July 1945 and the phrase “prompt and utter destruction” quoted on the 15 August card.',
+  },
+  {
+    citation:
+      'Foreign Relations of the United States: Diplomatic Papers, The British Commonwealth, The Far East, volume VI, document 440',
+    publisher:
+      'Office of the Historian, Department of State',
+    url: 'https://history.state.gov/historicaldocuments/frus1945v06/d440',
+    usedFor:
+      'The Japanese message of 14 August 1945 announcing the Imperial rescript, whose editors’ footnote dates the broadcast itself to “noon, August 15 (Japan time)”.',
+  },
+  {
+    citation:
+      'Foreign Relations of the United States: Diplomatic Papers, The British Commonwealth, The Far East, volume VI, document 487',
+    publisher:
+      'Office of the Historian, Department of State',
+    url: 'https://history.state.gov/historicaldocuments/frus1945v06/d487',
+    usedFor:
+      'That “the instrument of surrender was signed aboard the U.S.S. Missouri, Tokyo Bay, September 2, 1945”.',
+  },
+  {
+    citation:
+      'Milestones: 1945-1952, “The Korean War at Outset” (archived 2009)',
+    publisher:
+      'Office of the Historian, Department of State, read through the Internet Archive because the live site no longer carries this page',
+    url: 'https://web.archive.org/web/20090212045647/http://history.state.gov/milestones/1945-1952/KoreanWar',
+    usedFor:
+      'The “two U.S. army colonels (one of whom, Dean Rusk, would later become Secretary of State)” who proposed the 38th parallel as the line where the Soviet and American acceptance of Japanese surrender should meet.',
+  },
+  {
+    citation:
+      'Milestones: 1945-1952, “Korea, 1945-1950” (archived 2009)',
+    publisher:
+      'Office of the Historian, Department of State, read through the Internet Archive because the live site no longer carries this page',
+    url: 'https://web.archive.org/web/20090212045647/http://history.state.gov/milestones/1945-1952/KoreanWar2',
+    usedFor:
+      'That the Treaty of San Francisco “ended the state of war between Japan and 47 of the Allies”. It gives no effective date, so the 28 April 1952 on the 2 September card still rests on Wikipedia alone.',
+  },
+  {
+    citation:
+      'The Canadian Encyclopedia, “Korean War”',
+    publisher:
+      'Historica Canada',
+    url: 'https://www.thecanadianencyclopedia.ca/en/article/korean-war',
+    usedFor:
+      'Soviet troops occupying “the country north of the 38th parallel, with the Americans to the south”.',
   },
 ];
 

@@ -144,6 +144,11 @@ TIMELINES.SOM = tl(['1938-01-01', ITAL], ['1941-02-25', A]);
 TIMELINES.SOL = tl([WAR, A], ['1940-08-19', ITAL], ['1941-03-16', A]);
 
 /* ---- Middle East and Africa, neutral until they joined */
+// The compilations of 1945 declarations that this list follows give 26 February; the
+// English Wikipedia article on Egypt in the war prints 24 February, the day Ahmed Maher
+// was assassinated after the vote. No second publisher for either day has been found
+// (audit/handoff-japanese-lines-22nov.md), and the map cannot tell them apart: the world
+// layer colours by month, so Egypt is Allied from February 1945 on either date.
 TIMELINES.EGY = joinsAllies('1945-02-26');
 TIMELINES.IRQ = joinsAllies('1941-06-01');
 TIMELINES.IRN = joinsAllies('1941-08-25');
