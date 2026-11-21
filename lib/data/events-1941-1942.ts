@@ -1349,4 +1349,80 @@ export const EVENTS_1941_1942: WW2Event[] = [
     },
   },
 
+  {
+    "id": "pearl_harbor_1941",
+    "date": "1941-12-07",
+    "precision": "day",
+    "title": "Attack on Pearl Harbor",
+    "kind": "battle",
+    "fronts": [
+      "pacific"
+    ],
+    "countries": [
+      "United States",
+      "Japan"
+    ],
+    "figures": [
+      "roosevelt"
+    ],
+    "mapNote": "Pin on Ford Island in the roadstead at Pearl Harbor, where the battleships lay. On the Pacific layer, dashed arrows run west from the Japanese carriers to Oahu, and red arrows fan south from Palau toward Malaya, the Philippines and Wake Island.",
+    "note": "Two debates run through the literature. The first is whether the blow was a strategic success: junior officers urged a third wave against the dockyards, maintenance shops and oil tank farm, Yamamoto later called the withdrawal ‘a great mistake’, and in retrospect the survival of those facilities let the United States keep operating in the Pacific — while the battleships raised in the shallow roadstead went back into service too. The second debate is about warning, and how much the Hawaiian commanders were told or could have read of the Japanese intentions; official inquiries and the later literature still differ. Dates also shift with longitude: the strike on Oahu fell on 7 December, while the landings in Malaya and the attacks in the Philippines belong to 8 December local time. The ‘third wave’ discussion itself rests on Fuchida’s postwar accounts, which some historians question.",
+    "levels": {
+      "primary": {
+        "cause": "Japan had fought in China since 1937. When the United States and its allies froze Japanese assets and stopped selling Japan oil in 1941, its leaders chose to seize the raw materials of Southeast Asia. Only the American fleet at Hawaii stood in the way.",
+        "what": "On the morning of 7 December 1941 carrier aircraft hit Pearl Harbor in two waves. Battleships were sunk or grounded, over 180 aircraft were destroyed, and 2,403 Americans died. The three carriers were away, and the oil tanks and repair yards kept working.",
+        "consequence": "The next day the US and Britain declared war on Japan; Germany and Italy declared war on the US on 11 December. Japan also hit the Philippines, Malaya, Guam and Wake Island, and within six months held an empire from Burma to the Pacific."
+      },
+      "secondary": {
+        "cause": "Japan had been fighting in China since 1937, and in July 1941 its move into southern French Indochina led the United States, Britain and the Netherlands to freeze Japanese assets and stop selling Japan oil. Japanese leaders would not give up what they had taken, so they planned to seize the oil, rubber and tin of Malaya and the Netherlands East Indies in one rapid blow. The American Pacific Fleet at Hawaii was the only force that could interrupt that plan, so the Navy proposed a carrier strike to destroy or neutralise it before the troopships sailed.",
+        "what": "At 7:48 a.m. Hawaiian time on 7 December 1941, 353 Japanese carrier aircraft struck Oahu in two waves. Torpedo and level bombers hit the battleships moored in the roadstead and the airfields beside them, while midget submarines tried to enter the harbour. Of eight battleships present all were damaged and four were sunk; over 180 US aircraft were destroyed; 2,403 Americans were killed and 1,178 wounded. Japan lost 29 aircraft, five midget submarines and 130 men. Japanese strokes also hit the Philippines, Guam and Wake Island, while forces landed in Malaya.",
+        "consequence": "Roosevelt asked Congress for a declaration of war the next day in his ‘day of infamy’ message, and Britain, Canada and Australia followed; on 11 December Germany and Italy declared war on the United States, though the Tripartite Pact did not require them to. Japan took the Philippines, Malaya, Singapore and the Netherlands East Indies within four months. The battleships grounded in the shallow harbour were raised, six returned to service, and the survival of the carriers and the shore facilities meant the base kept operating as a fleet depot."
+      },
+      "university": {
+        "cause": "The attack grew from a strategic dilemma, not a single decision. Japan had been fighting in China since 1937, and its occupation of southern Indochina in July 1941 brought an American asset freeze, followed by the British and Dutch measures, that cut most of Japan’s imported petroleum. Japanese leaders would not surrender the positions they had won, and the requirement they set was plain: American striking power, the Pacific Fleet at Pearl Harbor and the Far East Air Force in the Philippines, had to be destroyed or neutralised before the move south and east against Malaya, the Netherlands Indies, the Philippines, Wake, Guam, the Gilberts, Thailand and Burma. The carrier strike was the naval means to that end, and it also answered the army’s demand that the southern landings be covered at their start.",
+        "what": "The strike force of six fleet carriers under Chuichi Nagumo crossed the North Pacific and opened the attack at 7:48 a.m. Hawaiian time with a torpedo-bomber and level-bomber wave against the battleships and the airfields; a second wave followed. Eight battleships were damaged and four sunk, and over 180 US aircraft were destroyed; 2,403 Americans were killed. Some junior officers urged a third strike against the maintenance shops, the dry docks and the oil tanks, but Nagumo, unsure whether enough American aircraft survived on Oahu to be launched against his carriers, withdrew — a decision later judged more consequential than anything sunk, since the yard, the fuel and the three absent carriers kept the base working as a fleet depot. Strokes the same day also hit the US-held Philippines, Guam and Wake Island, and British Malaya, Singapore and Hong Kong.",
+        "consequence": "Militarily the blow failed on its own terms: it did not find the carriers, and it left the oil storage and repair facilities untouched, so five battleships and two cruisers were patched or refloated within six months and the base stayed open. Politically it succeeded far beyond planning, uniting American opinion for war and bringing the United States in as a full belligerent alongside Britain. Japan’s rapid conquest then stretched a perimeter from the Aleutians to Burma that the same scarce merchant shipping had to supply. Japan’s decisive defeat at Midway in June 1942 scuttled the plan for a follow-up stroke, and the salvaged battleships survived only to fight their single fleet action at Surigao Strait in October 1944."
+      }
+    }
+  },
+  {
+    "id": "singapore_falls_1942",
+    "date": "1942-02-15",
+    "precision": "day",
+    "title": "The fall of Singapore",
+    "kind": "battle",
+    "fronts": [
+      "pacific"
+    ],
+    "countries": [
+      "United Kingdom",
+      "Australia",
+      "India",
+      "Japan",
+      "Malaya",
+      "Singapore"
+    ],
+    "figures": [
+      "churchill"
+    ],
+    "mapNote": "Singapore lies at the foot of the Malay peninsula, far outside the Europe-centred frame the border layers fill. A pin for the island, and for the Malayan crossings the campaign before it moved through, would be needed.",
+    "note": "The prisoner total is reported two ways: Wikipedia gives about 80,000 captured on Singapore itself plus 50,000 taken in Malaya, while the Australian War Memorial essay counts 130,000 prisoners of the Japanese, 15,000 Australian. The Indian National Army numbers also differ inside Wikipedia — the lead says about 40,000 Indian soldiers joined the INA, the text that of roughly 40,000 Indian personnel about 30,000 enlisted and only about 7,000 fought Commonwealth forces. Civilian deaths are given as a range, 31,000 to 57,000, explicitly excluding people killed by Japanese bombing and the 20,000 killed in Malaya. The AWM essay calls Singapore ‘a focus of major historical contention’: the debate concerns Percival’s conduct, the seaward-facing fortress doctrine, and whether the garrison could have held out.",
+    "levels": {
+      "primary": {
+        "cause": "Britain had built its great naval base and trading port at Singapore, the key to defending its empire in South-East Asia. Japanese armies came down the Malay peninsula, country the British had believed no army could cross.",
+        "what": "The Japanese attacked the weakest part of the island defences and landed on 8 February 1942. By 15 February supplies were nearly empty and parts of the city were in chaos; that afternoon the British commander surrendered, and about 80,000 troops became prisoners.",
+        "consequence": "Churchill called it the worst disaster in British military history. British prestige in Asia never recovered, and Singapore stayed in Japanese hands until the end of the war, while many prisoners died of neglect, abuse or forced labour."
+      },
+      "secondary": {
+        "cause": "Singapore was the foremost British military base and commercial port in South-East Asia and central to interwar defence planning, but its heavy guns faced seaward and the Malay jungle was wrongly thought impassable. Yamashita brought just over 30,000 men of three divisions down the peninsula, and their outflanking marches swept Percival’s larger but partly untrained force back onto the island.",
+        "what": "The defenders, about 85,000 men of whom 15,000 were administrative and many newly arrived or half-trained, were spread in a thin perimeter along the whole coastline with no proper reserve. The Japanese struck the weakest sector and established a beachhead on 8 February; Percival had expected the main crossing in the north and could not reinforce in time. By 15 February supplies were nearly empty and sections of the city were in chaos. Yamashita, short of supplies and eager to avoid costly house-to-house fighting, demanded unconditional surrender, and Percival capitulated that afternoon.",
+        "consequence": "About 80,000 prisoners were taken on the island, joining 50,000 captured in Malaya; the Australian War Memorial counts 130,000 prisoners of the Japanese in all, 15,000 of them Australians. Civilian deaths during the battle and the Sook Ching killings that followed are given as 31,000 to 57,000. Most of the Indian prisoners were later recruited into the Indian National Army, which fought for Japan in Burma. The surrender, alongside the fall of Hong Kong and the sinking of Prince of Wales and Repulse, severely undermined British prestige in Asia."
+      },
+      "university": {
+        "cause": "Britain built the naval base at Singapore after the Anglo-Japanese alliance lapsed in 1923, and the Singapore strategy rested on a fleet able to defend it. The demands of the European war left Malaya with a small garrison, and after the loss of Prince of Wales and Repulse in December 1941 there were no capital ships to intervene. Assumptions did the rest: the fortress was designed for defence against seaborne attack, the Malay jungle was treated as an obstacle, and the Johore Strait was thought a secondary sector. Yamashita’s Imperial Guards, 5th and 18th Divisions — just over 30,000 men with light tanks, bicycle mobility and air superiority — exploited each of these errors during the Malayan campaign.",
+        "what": "Two Australian brigades held an 11-mile frontage separated by the Kranji River, and Percival’s 85,000 men, 15,000 of them administrative, were distributed along the entire coastline without an adequate reserve. Churchill ordered Percival to fight to the last man. The main assault on 8 February fell on the weakest sector and established a beachhead before the defenders could be reinforced; communication and leadership failures compounded the breach, and the perimeter shrank to the city. Yamashita, whose own divisions were exhausted and short of ammunition, also wished to avoid street fighting; he summoned Percival to the Ford Motor Factory, and the capitulation was signed on the afternoon of 15 February.",
+        "consequence": "The largest surrender in British history cost the empire its symbolic fortress and, with Hong Kong and the loss of Prince of Wales and Repulse, destroyed the credibility of British protection in Asia and pushed the region towards the end of colonial rule after the war. Sook Ching murdered thousands of Chinese residents; other communities suffered too, and hardship under Japanese occupation lasted three and a half years. Prisoner policy radicalised the garrison: most of the roughly 40,000 Indian prisoners were recruited into the Indian National Army that the Japanese raised from the captured Indian ranks, while Australian and British prisoners went to the Siam–Burma railway and to Sandakan. The fall therefore shaped both the military history of the war and the decolonisation of South-East Asia."
+      }
+    }
+  },
 ];

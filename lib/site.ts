@@ -209,6 +209,9 @@ export const FRONT_META: Record<Front, { label: string; color: string }> = {
   politics: { label: 'Diplomacy & politics', color: '#475569' },
   atlantic: { label: 'Atlantic', color: '#0C4A6E' },
   air_war: { label: 'Air war', color: '#6D28D9' },
+  pacific: { label: 'Pacific & Asia', color: '#0F766E' },
+  china_burma_india: { label: 'China, Burma & India', color: '#A16207' },
+  americas: { label: 'The Americas', color: '#0369A1' },
 };
 
 export const KIND_META: Record<Kind, { label: string; emoji: string }> = {

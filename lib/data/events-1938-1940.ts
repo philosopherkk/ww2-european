@@ -13,7 +13,10 @@ export type Front =
   | 'arctic'
   | 'politics'
   | 'atlantic'
-  | 'air_war';
+  | 'air_war'
+  | 'pacific'
+  | 'china_burma_india'
+  | 'americas';
 
 export type Kind =
   | 'battle'
@@ -1902,4 +1905,41 @@ export const EVENTS: WW2Event[] = [
     },
   },
 
+  {
+    "id": "khalkhin_gol_1939",
+    "date": "1939-05-11",
+    "precision": "day",
+    "title": "Khalkhin Gol: Japan and the USSR fight an undeclared border war",
+    "kind": "battle",
+    "fronts": [
+      "china_burma_india"
+    ],
+    "countries": [
+      "Japan",
+      "Soviet Union",
+      "Mongolia"
+    ],
+    "figures": [
+      "zhukov"
+    ],
+    "mapNote": "Pin on the Khalkhin Gol (Halha) river on the Mongolia–Manchukuo frontier. Red arrows show the Japanese crossings and 6th Army assaults from the east bank in June and July; blue arrows show Zhukov’s 20 August thrusts, which ringed the 23rd Division west of the river.",
+    "note": "The two names record two claims: the Japanese “Nomonhan” after the village on the east bank, the Soviet and Mongolian “Khalkhin Gol” after the river. Casualty figures remain contested — Soviet official histories moved from 29,085 Japanese casualties to 61,000, while the range usually given for Japanese losses is 26,211–28,169, of whom 9,703 were dead or missing — and each side exaggerated the losses it inflicted and minimised its own. Japanese doctrine forbade first aid without an officer’s order, so a large share of the dead died of untreated wounds, and up to 30 per cent of Japanese casualties were from dysentery.",
+    "levels": {
+      "primary": {
+        "cause": "In Mongolia the border between Japanese-occupied Manchuria and the Mongolian People’s Republic had never been fixed. Mongolian herdsmen crossed the Khalkhin Gol river to graze their horses, as they always had, and Japanese and Mongolian troops clashed over the ground.",
+        "what": "Fighting ran from 11 May to 16 September 1939. Japanese and Mongolian, then Soviet and Japanese, forces attacked and counterattacked around the river. On 20 August Zhukov sent tanks, aircraft and infantry in a three-pronged attack that encircled and destroyed a Japanese division.",
+        "consequence": "Japan made no further border attacks. The border stood as the Soviets and Mongolians claimed it, a neutrality pact followed in April 1941, and Japan turned south towards Southeast Asia and the American fleet instead of north into Siberia."
+      },
+      "secondary": {
+        "cause": "Japan had occupied Manchuria in 1931 and built up the puppet state Manchukuo, whose western border with Mongolia was disputed. The Kwantung Army tested the frontier at Lake Khasan in 1938 and again in 1939, when Mongolian cavalry and Soviet units faced each other over grazing land by the Khalkhin Gol. For Tokyo the incident was local; for Manchukuo’s army it was a chance to push the frontier east. The Soviets could not ignore it: Mongolia was their buffer, and an attack on it risked a war on two fronts while Germany threatened Europe.",
+        "what": "May and June 1939 saw small engagements escalate: Japanese and Manchurian forces crossed the river, a Soviet counterattack in July nearly encircled them, and a full Japanese assault in late July was thrown back with heavy losses. Both sides built up by rail, the Soviets over 600 kilometres from their nearest base. On 20 August 1939, five days after the Nazi-Soviet pact, Zhukov opened a major offensive with artillery and air preparation and armoured thrusts on three axes. By 31 August the encircled Japanese 23rd Division was destroyed, and Japan asked for a stop to the fighting.",
+        "consequence": "The fighting ended on 16 September 1939 with the border enforced as the Soviets and Mongolians claimed it. The 23rd Division was destroyed and Japanese losses were heavy; the episode discredited the Kwantung Army and the “strike north” idea of attacking Siberia. Zhukov’s tactics were used again at Stalingrad, and in April 1941 the two countries signed a neutrality pact."
+      },
+      "university": {
+        "cause": "Nomonhan — the Japanese name, from the village of Nomonhan on the crossing — grew out of the unresolved frontier between Mongolia and Manchukuo and from the Kwantung Army’s practice of forcing facts on the ground after 1931. Tokyo had adopted Hokushin-ron, the “strike north” doctrine that treated the Soviet Union as the likely enemy, while the Kwantung Army had already tested Soviet resolve at Lake Khasan in 1938. Mongolia mattered to Moscow as a buffer: the 57th Special Corps had been based there since 1937, and in June 1939 a Soviet commander defected to Japan with documents on the far-eastern army. The result was a border war fought at escalating scale, because neither staff could accept defeat.",
+        "what": "The campaign had four phases. Manchu and Mongolian cavalry skirmished in May; a Japanese and Manchurian crossing in late June was thrown back; the Japanese 6th Army, with the 23rd Division and Yasuoka’s tank brigade, attacked in July and lost heavily on the west bank at Baintsagan Hill; and on 20 August 1939 the 57th Special Corps under Zhukov attacked with about 50,000 men and 557 aircraft. Artillery and fighter-bombers prepared the assault, the tank brigades struck on the flanks and closed behind the Japanese at the Holsten river, and by 27 August the 23rd Division’s attempts to break out failed. Japanese air losses were severe, and ground units suffered from dysentery and untreated wounds; Soviet motor transport — 4,000 trucks working from Chita — carried the offensive 600 kilometres from its base.",
+        "consequence": "Nomonhan settled the border, produced a Soviet-Japanese neutrality pact in April 1941, and pushed Japanese strategic thinking away from Hokushin-ron towards the southward Nanshin-ron, which pointed at Southeast Asia and therefore at the American fleet at Pearl Harbor. For the Red Army it was a proving ground: Zhukov’s combined-arms envelopment anticipated Operation Uranus, and its air and artillery preparation was written into regulations. The figures are contested — the Japanese dead and missing are put at 9,703 out of 26,211 to 28,169 casualties, Soviet official histories rose from 29,085 Japanese casualties to 61,000, and Japanese doctrine forbade first aid, so many died of untreated wounds or dysentery."
+      }
+    }
+  },
 ];

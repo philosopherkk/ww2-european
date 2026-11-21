@@ -2096,4 +2096,40 @@ export const EVENTS_1943_1945: WW2Event[] = [
       },
     },
   },
+
+  {
+    "id": "leyte_gulf_1944",
+    "date": "1944-10-23",
+    "precision": "day",
+    "title": "The Battle of Leyte Gulf",
+    "kind": "battle",
+    "fronts": [
+      "pacific"
+    ],
+    "countries": [
+      "United States",
+      "Japan",
+      "Australia"
+    ],
+    "figures": [],
+    "mapNote": "Pin on Leyte Gulf, east of Leyte. On the Pacific layer, dashed arrows trace Kurita’s centre force from the South China Sea through the Palawan Passage and the Sibuyan Sea to San Bernardino Strait, Nishimura’s force up Surigao Strait, and Ozawa’s decoy carriers north-east of Samar; red arrows mark the Leyte landings.",
+    "note": "The superlative is hedged: the battle is called the largest naval engagement of the war and, ‘by some criteria’ in history, because it was four separate day and night actions with over 200,000 naval personnel. The real argument concerns Halsey, who took the fast carriers north after Ozawa’s decoy was sighted on 24 October; the navy slang ‘Bull’s Run’ preserves the criticism, and Halsey’s own dispatch — that air search ‘completed the picture of all enemy naval forces’ — states the defence. Kurita, for his part, was never told the deception had worked and believed he had fought Third Fleet. Whether Shō-Gō 1 was a co-ordinated gamble or four commands improvising once contact was lost remains a matter of interpretation.",
+    "levels": {
+      "primary": {
+        "cause": "MacArthur and Nimitz wanted the Philippines, and in October 1944 the invasion of Leyte was moved forward by two months. Japan had to fight for the islands: losing them would cut off the oil and rubber of the East Indies from the home islands.",
+        "what": "From 23 to 26 October 1944 four Japanese forces attacked the invasion fleet. American aircraft sank the battleship Musashi; a decoy lured the carriers away, and Japanese battleships overran small escort carriers off Samar before withdrawing. Surigao Strait saw the last battleship duel.",
+        "consequence": "The Japanese navy lost twenty-six warships and never sailed in force again, its survivors rotting in port for lack of fuel. Leyte was cleared by December; kamikaze attacks began in this battle; and the road to Luzon was open."
+      },
+      "secondary": {
+        "cause": "By late 1944 the American advance had isolated Japan’s southern perimeter, and air attacks on the Marianas had gutted Japanese carrier air power. When Halsey’s carriers struck the Visayas and met little opposition, MacArthur and Nimitz persuaded the Joint Chiefs to skip the Mindanao preliminary and land on Leyte two months early. Japan’s stake was absolute: once the islands were gone the fleet in home waters could not reach the oil of Borneo and the East Indies. Admiral Soemu Toyoda therefore accepted a plan that risked the fleet to save the Philippines.",
+        "what": "Shō-Gō 1 sent four forces at once. Kurita’s centre force, with Yamato and Musashi, came from Brunei through the Palawan Passage, where submarines sank two cruisers, and was attacked in the Sibuyan Sea, where Musashi sank. Off Samar, Kurita met only escort carriers and destroyers of Taffy 3; their torpedo attacks and the first organised kamikaze strikes persuaded him to withdraw. Nishimura’s southern force was destroyed in Surigao Strait on 25 October by Oldendorf’s battleships, in the last gun duel between battleships. Ozawa’s near-empty carriers, steaming north, drew Halsey’s Third Fleet away.",
+        "consequence": "Japan lost twenty-six warships, including the fleet carrier Zuikaku, the last afloat of the ships that had attacked Pearl Harbor, and its navy ceased to exist as a striking force, its surviving ships immobilised in home ports for lack of fuel. The United States lost eleven warships, among them the light carrier Princeton and the escort carriers Gambier Bay and St. Lo. Landings on Leyte went on, the island was cleared in December, and the Lingayen Gulf landings followed in February 1945. The battle also exposed the risks of separate naval commands under one army commander."
+      },
+      "university": {
+        "cause": "The Joint Chiefs had given MacArthur a New Guinea–Mindanao axis and Nimitz a central-Pacific axis toward Formosa; Halsey’s September carrier raids on the Visayas met weak opposition, so both commanders proposed leapfrogging Mindanao for Leyte, and the Joint Chiefs approved in October, two months early. Shō-Gō 1 assumed the next American blow would fall on the Philippines, and paired land-based air attacks on the invasion fleet with three surface forces — Kurita through Palawan and Sibuyan, Nishimura through Surigao Strait, Ozawa’s depleted carriers as a decoy — converging on the beachhead. Toyoda’s logic was explicit: with the shipping lanes cut, East Indies fuel could not reach the fleet at home, nor ammunition and arms reach the south, so there was no sense in saving the fleet at the expense of the Philippines.",
+        "what": "Submarines Darter and Dace sank cruisers in the Palawan Passage on 23 October; air attacks in the Sibuyan Sea next day sank Musashi and damaged Yamato, and Kurita withdrew, then turned back. Halsey, told Ozawa’s carriers were the threat, took Task Force 38 north on the evening of 24 October, leaving San Bernardino Strait unwatched; Kinkaid’s Seventh Fleet had no communication link with Third Fleet. Nishimura’s force was sunk passing Surigao Strait in a radar-directed night action, and on 25 October kamikazes from Luzon struck Taffy 1 and sank the escort carrier St. Lo, the first organised suicide attacks of the Pacific war. Off Samar Kurita’s battleships chased Sprague’s escort carriers, sank Gambier Bay, Hoel, Johnston and Roberts, and then turned away, deceived about the forces facing him.",
+        "consequence": "Japan lost twenty-six warships — a fleet carrier, three light carriers, three battleships, six heavy cruisers and more — and the Combined Fleet retreated to Japanese waters, where lack of fuel left it a coast-defence force whose remaining air strength was spent in the kamikaze campaigns of 1944–45. The Allies lost eleven warships and faced a new tactical problem, suicide air attack, which shaped the planning for Okinawa and the projected landings on the home islands. Strategically the Philippines severed Japan’s sea lines to Borneo and Sumatra, making the resource perimeter of 1942 useless. The battle also produced a durable controversy over Halsey’s northward turn: the official American account faults him for acting without consulting MacArthur or Kinkaid, while later writers stress the missing liaison with Seventh Fleet, the ambiguous radio traffic, and the dangers of two fleets serving one army commander."
+      }
+    }
+  },
 ];
