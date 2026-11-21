@@ -562,6 +562,34 @@ export const EVENTS_1941_1942: WW2Event[] = [
     },
   },
   {
+    id: 'uboat_aces_1941',
+    date: '1941-03-07',
+    precision: 'day',
+    title: 'March 1941: the escorts sink the U-boat aces, and Dönitz moves west',
+    kind: 'battle',
+    fronts: ['atlantic'],
+    countries: ['United Kingdom', 'Germany'],
+    figures: ['donitz'],
+    note: 'The winter of 1940-41 was the high point of the U-boat campaign in the western approaches, and March 1941 was the month the Royal Navy began to take the battle back. The escort system had been rebuilt: permanent escort groups of destroyers and corvettes trained as formations at Tobermory in the Hebrides under Vice-Admiral Gilbert Stephenson; Western Approaches Command moved from Plymouth to Liverpool in February 1941 so that convoy control sat closer to the sea; work with Coastal Command aircraft improved, and in April the Admiralty took over operational control of them; and new short-wave radar, small enough for corvettes and aircraft and able to see a surfaced submarine in the dark, began to arrive. In early March, Günther Prien’s U-47 - the boat that had forced Scapa Flow in October 1940, credited with 31 ships sunk - failed to return from patrol; she was assessed as lost with all 45 crew to HMS Wolverine and Verity west of Ireland. In the battle of Convoy HX 112 the newly formed 3rd Escort Group, four destroyers and two corvettes, held off the U-boat pack. U-100 was detected by the primitive radar fitted to the destroyer HMS Vanoc, rammed and sunk; U-99 was caught shortly afterwards and her crew taken prisoner. Dönitz had lost his three leading aces - Prien, Schepke and Kretschmer - in a fortnight, and moved his wolf packs further west to catch convoys before their anti-submarine escort joined. The new strategy paid at first: in early April the pack found Convoy SC 26 before its escort arrived and sank ten ships, although another U-boat was lost.',
+    levels: {
+      primary: {
+        cause: 'German submarines were sinking more merchant ships than Britain could build, so the navy trained ships to guard the convoys.',
+        what: 'In March 1941 the new escort groups sank the boats of Germany’s three most famous submarine commanders, and the U-boat leader moved his attacks further out to sea.',
+        consequence: 'For a while the submarines found convoys before their guards arrived and sank many ships. Radar, more escorts and covering aircraft later turned the fight the other way.',
+      },
+      secondary: {
+        cause: 'In 1940-41 the U-boats concentrated in packs against single convoys and sank shipping faster than Britain could replace it, while the escort force was still improvised. The answer was to form permanent escort groups of destroyers and the new corvettes, trained together at Tobermory; to move Western Approaches Command from Plymouth to Liverpool in February 1941, so that the officers who ran the convoys sat next to the convoy room; to work far more closely with the aircraft that covered them; and to fit short-wave radar that could detect a surfaced submarine in darkness.',
+        what: 'In early March 1941 U-47, the Scapa Flow boat, did not return from patrol and all 45 of her crew were lost. Two weeks later, in the battle of Convoy HX 112, the new 3rd Escort Group of four destroyers and two corvettes held off a U-boat pack. The destroyer Vanoc detected U-100 by radar in the dark and rammed her, and U-99 was caught soon afterwards with her crew captured. Dönitz lost his three leading aces - Prien, Schepke and Kretschmer - and shifted the packs west to find convoys before their escorts joined.',
+        consequence: 'The U-boat war did not end in March 1941, because Dönitz’s move west brought immediate success: Convoy SC 26 was found in early April before its escort arrived and ten ships went down. What had changed was the basis of the contest. Radar that could see a submarine on the surface, escorts that fought as trained units and air cover extending westward turned the Atlantic into an industrial and technical struggle over tonnage, range, sonar and codes, in which the celebrated individual commanders were replaceable and expendable.',
+      },
+      university: {
+        cause: 'March 1941 is the hinge in the technological argument about the Battle of the Atlantic. The popular account credits Ultra intelligence, but in this period the decisive changes were tactical and sensor-based: centimetric radar small enough for corvettes and aircraft, escort groups trained as units rather than assembled ad hoc, and a single command headquarters for the Western Approaches. Dönitz’s own problem was the reverse - he had no sensor that could find a convoy and hold contact in poor weather, so he depended on air reconnaissance and on the weakness of the escorts’ range.',
+        what: 'The loss of the three aces is also a biographical fallacy that the sources invite. Their boats were typical Type VIIs of the 7th Flotilla, and their deaths reflected the arrival of radar contact at night, when a U-boat on the surface - the only posture in which an attack could be made - could be seen and closed at speed. Escort losses and the arrival of new short-wave sets in 1941 mattered more to the campaign than the personalities, and the replacement crews had far fewer hours at sea than the men they succeeded.',
+        consequence: 'The strategic consequence is contested. Dönitz moved the packs west to attack in the air and escort gap, and tonnage rose again in the spring, which shows that a tactical defeat in one month did not alter the arithmetic of the Atlantic; the gap, not the aces, was the exploitable weakness. The British response - extending escort to the full crossing in June 1941 and basing aircraft in Iceland - was a slow answer to a fast problem, and the campaign’s decision came only in 1943, after the sensors, support groups, very-long-range aircraft and codebreaking had all accumulated.',
+      },
+    },
+  },
+  {
     id: 'lend_lease',
     date: '1941-03-11',
     precision: 'day',
