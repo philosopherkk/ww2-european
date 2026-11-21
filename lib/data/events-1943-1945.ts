@@ -930,6 +930,35 @@ export const EVENTS_1943_1945: WW2Event[] = [
     },
   },
   {
+    id: 'zone_line_1945',
+    date: '1945-07-01',
+    precision: 'month',
+    title: 'July 1945: the armies fall back to the agreed line, and a frontier appears',
+    kind: 'politics',
+    fronts: ['politics'],
+    countries: ['Germany', 'United States', 'United Kingdom', 'Soviet Union'],
+    figures: ['eisenhower'],
+    note: 'The line of contact reached at the end of hostilities lay mostly east of the zonal boundary established in July 1945, and the inner German border of the Cold War followed the zone line rather than the line of contact. The British also handed over Schwerin, the capital of Mecklenburg, which they had taken over from the Americans a few weeks earlier, to the Soviet Army in July.',
+    mapNote: 'This card is about the map itself. The last frontier this site draws for Germany is April 1945, with the front still far to the east; by the end of July the American and British armies had fallen back to the zone line, and that line became the frontier of two German states.',
+    levels: {
+      primary: {
+        cause: 'In May the armies had stopped wherever they happened to arrive. Germany had already been divided into occupation zones before the fighting ended, and the commanders now had to move their men back to the lines agreed on paper.',
+        what: 'In the first days of July 1945 American and British troops gave up ground they had taken in Thuringia, Saxony and Mecklenburg, and Soviet troops moved in behind them. The line between the occupations became a line with posts on it.',
+        consequence: 'The line the armies agreed on became the border between two German states. Families were left on opposite sides of it, and the four powers kept meeting in a city on the wrong side of it.',
+      },
+      secondary: {
+        cause: 'The occupation zones had been settled in the London Protocol of 1944 and confirmed at Yalta, and their boundaries had been worked out in detail beforehand; the fronts of May 1945, by contrast, were the accident of which army got there first. Soviet forces had advanced well past the agreed zonal line in Thuringia and Saxony, while the Western powers had reached Mecklenburg, which the Soviet army was to occupy.',
+        what: 'In the first days of July 1945 the American armies fell back from Thuringia and Saxony and the British from Mecklenburg, whose capital Schwerin was handed over to the Soviet army; Soviet forces, which had withdrawn from parts of western Saxony, moved into the country vacated. In the same weeks the French occupation zone and the French sector of Berlin were organised, and the four powers took up the sectors of the capital allotted to them.',
+        consequence: 'The withdrawal turned a military line of contact into a political frontier: the inner German border of the Cold War ran along the zone boundaries fixed by July 1945, and the crossings later built on it were placed on lines drawn in this paperwork. The Western armies gave up, without a shot fired, the ground from which they might have contested the Soviet position inside Germany.',
+      },
+      university: {
+        cause: 'The withdrawal is usually told as a quarrel among commanders: Eisenhower, whose armies had pushed to the Elbe and to Prague against Zhukov’s fronts, insisted on honouring the zonal boundaries and ordered his men back, while political and military figures wanted the contact line kept as leverage. What the papers show is a decision about legality rather than advantage, because the zones were a four-power instrument, and holding territory outside one’s own zone admitted that the occupation rested on conquest rather than on agreement.',
+        what: 'The handover was arranged through the machinery of the European Advisory Commission and executed by local commanders, and its mechanics matter: columns moved to demarcation lines, towns changed garrison with no consultation of the people living in them, and the Soviet redeployment - into Thuringia and Saxony, back from parts of western Saxony - shows both sides adjusting to a map drawn in 1944. The sector boundaries inside Berlin came from the same agreements, so that a Soviet sector lay inside a city more than a hundred kilometres inside the Western zones.',
+        consequence: 'Two consequences are usually kept apart and should not be. The first is the settlement of the occupation map, which survived as the boundary of the Federal Republic and the German Democratic Republic until 1990. The second is the human one: the withdrawal itself moved Germans westward, and the much larger movement of Germans across the new Polish frontier of Germany was already under way in the same months, outside the four-power machinery altogether.',
+      },
+    },
+  },
+  {
     id: 'potsdam',
     date: '1945-07-17',
     precision: 'day',
@@ -1274,6 +1303,35 @@ export const EVENTS_1943_1945: WW2Event[] = [
     },
   },
   {
+    id: 'fosse_ardeatine_1944',
+    date: '1944-03-24',
+    precision: 'day',
+    title: 'The Fosse Ardeatine: 335 Italians shot for 33 Germans',
+    kind: 'war_crime',
+    fronts: ['mediterranean'],
+    countries: ['Germany', 'Italy'],
+    figures: ['kesselring'],
+    note: 'The caves were declared a Memorial Cemetery and National Monument after the war, and are open daily; the bodies had been left in them for more than a year. The German defence was always that the reprisal was lawful and that the Via Rasella attack was not a legitimate act of war. The Italian Supreme Court held the opposite in 1952, on an appeal brought by Kappler’s own lawyers, and the rulings of the 1990s that followed it made the killing a war crime rather than a contested act of war. Priebke escaped from a British prison camp in 1946 and lived in Argentina for decades before he was handed over to Italy in the 1990s.',
+    mapNote: 'On the map, Rome sits inside the German-occupied part of Italy: the frontier drawn for April 1944 puts the Allied front far to the south of the city. The quarries where the killing was done are on the southern edge of Rome, inside the occupied zone and nowhere near the fighting.',
+    levels: {
+      primary: {
+        cause: 'Italian fighters blew up a column of German police in a street of Rome on 23 March 1944. The German command in the city decided the attack had to be answered at once, and that hostages would pay for it.',
+        what: 'On 24 March German police and SS units shot 335 prisoners in caves beside the old road out of Rome. They were brought in groups of five, with their hands tied behind them, and each was killed with one shot.',
+        consequence: 'This massacre, rather than the occupation in general, is what Rome remembers. The caves are a national memorial, and the men who carried it out were still being argued about in court fifty years later.',
+      },
+      secondary: {
+        cause: 'On 23 March 1944 a GAP partisan band attacked a company of the SS Police Regiment “Bozen”, men from South Tyrol, as it marched through Via Rasella - the largest single partisan action against the Germans in Rome. Thirty-three of the column were killed that day. The German command in Rome settled on ten Italians shot for every German killed, and Hitler authorised the reprisal that night, on condition that it be carried out within twenty-four hours.',
+        what: 'The list was filled from people held for resistance activity, from the fifty-seven Jews in German custody, and from men rounded up in the streets or denounced by informers; residents of Via Rasella were among them. By a mistake 335 prisoners were taken to the Ardeatine quarries, five more than the 330 called for, and all of them were shot on 24 March in groups of five. The bodies were sealed in the caves and left where they lay.',
+        consequence: 'The massacre became the founding crime of postwar Rome, and it brought the occupation back into Italian politics long after the men responsible were old. Their defence was that the reprisal was lawful; in 1952 the Italian Supreme Court held that the Via Rasella attack had been a legitimate act of war, which made the men shot in the caves murdered rather than executed.',
+      },
+      university: {
+        cause: 'The reprisal sits at the centre of the debate about the German occupation of Italy, because Kesselring’s command read Hitler’s authorisation as a warrant to execute men already under sentence of death, while Kappler’s security apparatus filled the numbers from police custody and the streets. The GAP attack had been staged deliberately on a route the German column was obliged to march, which made it a military action; the German reply made no distinction between partisans, Jews and civilians arrested on tips, which is what the Italian courts later seized on.',
+        what: 'The sequence is recorded in Kappler’s own paperwork: the ratio agreed, the list compiled by noon on 24 March, transport by lorry to the quarries, killing in fives with cognac issued to officers who had never shot anyone, and the caves sealed afterwards. That the list ran to 335 while the ratio required 330 shows that the arithmetic of the ratio, and not any selection of individuals, governed the killing. Harster’s suggestion that the Jews in custody be used to make up the numbers is the point at which anti-Jewish persecution and reprisal policy meet in a single document.',
+        consequence: 'The legal history is longer than the event. Kappler was convicted after the war and died before he could be imprisoned; Priebke escaped a British camp in 1946, lived for decades in Argentina, and was handed over to Italy only in the 1990s. The 1952 ruling that Via Rasella was an act of war, and the judgments that followed it, reframed the killing as a war crime rather than a reprisal, and it is that argument, more than the killing, that Italian politics still conducts each 24 March.',
+      },
+    },
+  },
+  {
     id: 'crimea_1944',
     date: '1944-04-08',
     precision: 'day',
@@ -1442,6 +1500,35 @@ export const EVENTS_1943_1945: WW2Event[] = [
     },
   },
   {
+    id: 'tirpitz_1944',
+    date: '1944-11-12',
+    precision: 'day',
+    title: 'Tirpitz capsized: twenty-nine bombers end the battleship threat',
+    kind: 'battle',
+    fronts: ['atlantic', 'air_war'],
+    countries: ['United Kingdom', 'Germany'],
+    figures: ['harris'],
+    note: 'The number of German dead is given as between 940 and 1,204 because the ship’s company had been reduced and dispersed since 1942, and German records and postwar estimates differ. Bomber Command lost no aircraft. The attack closed a three-year series of operations against the ship: carrier raids, the midget-submarine attack of 15 September 1944 that crippled her, and the heavy-bomber attack of 29 October that failed because cloud hid the anchorage.',
+    mapNote: 'On the map, look at the top of Norway, above the Arctic convoy routes, near Tromsø - the frontier of occupied Norway does not move in this month, and nothing about it needed to. What changed was the sea, and the German naval threat that rested in it.',
+    levels: {
+      primary: {
+        cause: 'Germany’s biggest battleship, Tirpitz, had hidden in Norwegian fjords since 1942 and threatened the convoys carrying supplies to the Soviet Union. The Allies had tried submarines and carrier planes to sink her.',
+        what: 'On 12 November 1944 twenty-nine British heavy bombers flew to the anchorage near Tromsø, in the far north of Norway, and hit the ship with very large bombs. She turned over in the shallow water, and about a thousand of her crew died.',
+        consequence: 'The battleship could no longer attack the Arctic convoys or a naval base. The raid also showed that the heavy bombers, built to destroy cities, could hit the hardest target in Europe.',
+      },
+      secondary: {
+        cause: 'Tirpitz had been based at Kaafjord, above the Arctic convoy route, from March 1943, and was moved to the Tromsø area in October 1944 after a submarine-laid bomb crippled her on 15 September. Moored there as a floating gun battery, she could no longer sail. Carrier raids and two heavy-bomber attacks had failed, the last on 29 October, when cloud hid the anchorage.',
+        what: 'On 12 November 1944 the same two squadrons, Nos 9 and 617, flew twenty-nine heavy bombers from bases in northern Scotland against the anchorage, carrying the Tallboy bomb of 5,400 kilograms, built to punch through armour and concrete. The weather was clear, and at least two bombs hit. Tirpitz rolled over at her moorings and sank where she lay, with between 940 and 1,204 of her crew killed; the British lost no aircraft.',
+        consequence: 'The threat to the Arctic convoy route, which had drawn German capital ships into Norwegian waters from 1942 and shaped Allied naval planning ever since, ended without a sea battle, and what was left of the German surface fleet stayed in home waters. Bomber Command had proved that heavy bombs could be put precisely on a single ship, which closed the long argument about whether the battleship still mattered in an air war.',
+      },
+      university: {
+        cause: 'The operations against Tirpitz are usually read as a strategic dead end: a capital ship that never left fjord or anchorage absorbed Allied air, submarine and surface effort for three years without sinking a convoy. That reading rests on German operational records and on the fear recorded in Admiralty papers, and the counter-argument - that the threat had been largely imaginary after 1942 - became available only once those records could be read against the intelligence history of the fjords.',
+        what: 'Catechism re-used the plans and the squadrons of the failed attack of 29 October, and depended on the Lancaster and Tallboy combination: a bomb whose weight and terminal velocity made it the only weapon able to defeat deck armour or a blast wall, and a force able to mark an anchorage in far northern light. The clear weather on 12 November is the whole difference from 29 October, and the bombing was run at low level to keep the error inside a ship’s beam.',
+        consequence: 'The sinking is taken as the end of capital-ship diplomacy in European waters, and the casualty figures matter to that reading: with between 940 and 1,204 dead it was one of the largest single losses of life suffered by the German Navy in the whole war, greater in one day than most of its surface engagements, and it fell on ratings and cadets rather than on the prewar ship’s company.',
+      },
+    },
+  },
+  {
     id: 'hongerwinter',
     date: '1944-11-15',
     precision: 'month',
@@ -1466,6 +1553,35 @@ export const EVENTS_1943_1945: WW2Event[] = [
         cause: 'The famine is a case study in the ethics of resistance and reprisal - the same argument raised in Czechoslovakia after Heydrich’s assassination and in Italy after 8 September 1943 - and in the history of occupation economics, since the Dutch case shows the requisition system collapsing into starvation with almost no military purpose.',
         what: 'The evidence base is unusually strong, because the Dutch population was already well-recorded and the postwar government commissioned a formal enquiry. The Dutch Famine Birth Cohort study, following people conceived or born during the winter of 1944-45 into adulthood, is one of the foundations of the "developmental origins of health and disease" literature.',
         consequence: 'The long-run findings - higher rates of heart disease, diabetes and obesity among people who were in the womb during the famine - have made the Hongerwinter scientifically important far outside the history of the war, and ethically uncomfortable, since the cohort’s existence depends on a punishment that killed some 20,000 people.',
+      },
+    },
+  },
+  {
+    id: 'tirana_1944',
+    date: '1944-11-17',
+    precision: 'day',
+    title: 'Tirana is taken: the Albanian communists enter their capital',
+    kind: 'liberation',
+    fronts: ['balkans'],
+    countries: ['Albania', 'Germany'],
+    figures: [],
+    note: 'Albania marks 29 November as its liberation day, when the last German troops left the country; Tirana itself fell on 17 November. The government that took power had been proclaimed at Berat on 22 October 1944, before the main towns were taken, and was recognised by no other state. On 4 February 1944 the Gestapo, with local collaborators, had shot 86 anti-fascists in the capital.',
+    mapNote: 'On the map, Albania is on the Adriatic coast, opposite the heel of Italy, and the frontier drawn for April 1944 shows it wholly occupied with no line inside it. In this autumn the country changed hands from within; the border drawn for it did not move.',
+    levels: {
+      primary: {
+        cause: 'Germany had occupied Albania since Italy gave up in 1943, and by the autumn of 1944 its armies were pulling back out of the Balkans. Albanian fighters, led by communists, attacked as the Germans left.',
+        what: 'On 17 November 1944 the partisan army took Tirana after hard fighting with the German forces still in the city. The communists had already formed their own government that autumn, at Berat, with Enver Hoxha as prime minister.',
+        consequence: 'Albania became a communist state under Hoxha without a Soviet army entering it, and it stayed poorer and more cut off from everyone else than any other country in Europe.',
+      },
+      secondary: {
+        cause: 'Albania had been under Italian occupation from 1939 and German occupation since September 1943, and the communist-led National Liberation Movement fought the occupiers and its Albanian rivals at the same time. As German forces withdrew from Greece and the Balkans in October 1944, the movement filled the vacuum: on 22 October its organisation became the Democratic Government of Albania at Berat, with Enver Hoxha as interim prime minister.',
+        what: 'Tirana was taken on 17 November 1944 after a fierce battle between the communist partisans and the German forces withdrawing north. Because the rival nationalist formations had already been broken in the civil fighting of 1943 and 1944, the men who entered the capital were not a coalition but the movement that had proclaimed a government at Berat weeks earlier.',
+        consequence: 'Albania is the exception in the postwar settlement: communism came to it through an internal partisan war, and the Soviet role in its liberation was negligible. The regime used that origin to claim independence from Moscow and from Belgrade later, and its frontier was among the most closed in Europe until 1990.',
+      },
+      university: {
+        cause: 'Albania’s transition in 1944 is normally treated as a revolution from inside rather than a settlement imposed from outside, and the argument rests on the sequence of institutions: the National Liberation Council, the congress at Berat on 22 October 1944 and the government proclaimed there were all created before the towns were taken. The German priority in October 1944 was the withdrawal of forces out of Greece, and their fighting with the partisans was cover for that march rather than the defence of Albania.',
+        what: 'The battle for the capital on 17 November settled, at the same moment as the German withdrawal, a contest that had been running since 1943 between the communists and Balli Kombëtar. That civil war, and not the strength of the German garrison, decided who took Tirana; the nationalist formations had been broken in fighting in which the lines between occupier, nationalist and communist shifted more than once, and the Berat government had already begun replacing local committees before the city fell.',
+        consequence: 'The regime’s legitimacy rested on the claim that it had liberated itself, which explains the break with Yugoslavia in 1948 and with the Soviet Union in 1961, and the cost of the self-isolation that followed. Albania was the only state in the region with neither a Soviet occupation nor a Soviet-drawn frontier, and that distinction is the reason its version of communism outlived everyone else’s. The qualification - a movement whose leadership was communist from the start, and a victory made possible by a German retreat - is what the historiography argues over.',
       },
     },
   },
@@ -1922,4 +2038,33 @@ export const EVENTS_1943_1945: WW2Event[] = [
     },
   },
 
+  {
+    id: 'imt_charter_1945',
+    date: '1945-08-08',
+    precision: 'day',
+    title: 'The Nuremberg Charter: a court for the German leadership, not a shooting',
+    kind: 'conference',
+    fronts: ['politics'],
+    countries: ['United States', 'United Kingdom', 'France', 'Soviet Union', 'Germany'],
+    figures: ['goering', 'jodl'],
+    note: 'The trial the charter created opened on 20 November 1945 and ran to 1 October 1946: the International Military Tribunal tried 22 of the most important surviving leaders of Nazi Germany, in politics, the military and the economy, and six German organisations. Because crimes against humanity had to be tied to aggressive war or war crimes, much of the persecution of Germany’s own citizens before 1939 falls outside the charges - a limit of the document that its own historians have argued about ever since.',
+    mapNote: 'On the map, Nuremberg lies in the American occupation zone in the south, while the four powers sat in Berlin, more than a hundred kilometres inside the Soviet zone. Both places sat inside the zone lines that the armies had fallen back to in July 1945.',
+    levels: {
+      primary: {
+        cause: 'The Allied leaders had promised in 1943 to punish the German leaders who had made the war and the atrocities, and some of them wanted those men shot without any trial. The four powers agreed instead to hold a court.',
+        what: 'On 8 August 1945 France, the Soviet Union, Britain and the United States signed a charter in London setting up a court at Nuremberg, and wrote down three kinds of crime: waging a war of aggression, breaking the laws of war, and atrocities against civilians.',
+        consequence: 'The court tried the surviving German leaders in public from November 1945. It fixed the rule that a man can be judged for what his own state ordered him to do, and it is where the international courts of today begin.',
+      },
+      secondary: {
+        cause: 'The Moscow Declaration of October 1943 had warned that German leaders would be sent back to the countries they had invaded to be judged there, while the major criminals, whose crimes had no single geography, would be punished by joint decision of the Allies; the Allied leaders had twice discussed naming the leading Germans and shooting them. The legal advisers, the war crimes commission set up in 1943 and the Soviet desire for a public indictment of the criminality of the German state pushed instead towards a tribunal with a charter.',
+        what: 'The London Conference sat from 26 June to 2 August 1945, and until the last days it was not clear that any trial would be held at all. On 8 August 1945 the four powers signed the Nuremberg Charter: it created the International Military Tribunal, put the seat at Nuremberg because that was where the Nazi rallies had been held, gave each power a judge and a prosecution, and defined three charges - crimes against peace, war crimes and crimes against humanity. Official rank and superior orders were not to be a defence.',
+        consequence: 'The charter made the trial of 20 November 1945 possible, and its categories outlived the case: the United Nations confirmed them in 1946, the International Law Commission set them out as principles in 1950, and the definitions used by the courts built later are descended from this text. The trial also created a record - the German leaders’ own paperwork, put in evidence and read aloud - on which much of the history of the atrocities has since been built.',
+      },
+      university: {
+        cause: 'The charter is where incompatible projects met. The British worked on the concept of aggressive war as a charge; the French and Soviet delegations were assigned crimes against humanity and war crimes on the western and eastern fronts respectively; and the Americans, who took up the trial idea late, wanted the organisations of the regime indicted as such. The definition of crimes against humanity was narrowed by being tied to aggressive war or war crimes, precisely so that Germany’s treatment of its own citizens before 1939 could not be put in issue at all.',
+        what: 'The architecture of the charter is what the trial then turned on. Conspiracy, which the charter never defined, was the charge that held together a wide set of defendants and reached bureaucrats who had never killed anyone. Article 8 refused superior orders as a defence while allowing them in mitigation, which is the sentence most quoted from the document. The counts against organisations produced declarations that some of them were criminal - the leadership corps and the Gestapo were, the High Command was not - while their members were tried afterwards in proceedings conducted by the United States alone.',
+        consequence: 'Whether the charter was victors’ justice or the beginning of something universal is the argument that has never closed. The trial is praised for the discipline of its evidence and criticised for the Soviet judge sitting on a state that had itself invaded Poland and for the absence of Allied conduct from the record. What is not in dispute is that the categories held: the control council’s law of December 1945 used the same definitions for the later trials, and the genocide convention of 1948 and the Rome Statute of 1998 were drafted by people working from this text.',
+      },
+    },
+  },
 ];
