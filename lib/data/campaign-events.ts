@@ -66,6 +66,11 @@ export const CAMPAIGN_EVENT_LINKS: CampaignEventLink[] = [
   { line: 'meuse_argonne_1918', event: 'meuse_argonne_offensive', at: 0 },
   { line: 'vittorio_veneto_1918', event: 'battle_of_vittorio_veneto', at: 0 },
   { line: 'megiddo_damascus_1918', event: 'battle_of_megiddo', at: 0 },
+  { line: 'march_caucasus_erzurum', event: 'erzurum_falls', at: 1 },
+  { line: 'march_allenby_jerusalem', event: 'beersheba_jerusalem', at: 0 },
+  { line: 'march_falkenhayn_bucharest', event: 'bucharest_falls', at: 1 },
+  { line: 'march_mackensen_bucharest', event: 'bucharest_falls', at: 1 },
+  { line: 'march_faustschlag_kiev', event: 'operation_faustschlag', at: 0 },
 ];
 
 export const LINKS_BY_LINE: Record<string, CampaignEventLink[]> = {};

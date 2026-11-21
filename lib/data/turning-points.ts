@@ -362,7 +362,7 @@ export const TURNING_POINTS: TurningPoint[] = [
         'Romanian historiography still divides over whether signing saved the state or betrayed it; the economic clauses were never fully implemented and lapsed with Germany’s defeat.',
     },
     mapNote:
-      'Romania changes to the separate-peace colour in May 1918 and back to the entente in November. The land it gave up is not drawn: the polygons are fixed at July 1914, so Dobruja, the Carpathian frontier and the occupied part of Wallachia, where the government held out at Iași, are described here rather than shown.',
+      'Romania changes to the separate-peace colour in May 1918 and back to the entente in November. The land it gave up is not drawn: the polygons are fixed at July 1914, so Dobruja, the Carpathian frontier and the occupied part of Wallachia, are described here rather than shown.',
     eventIds: ['treaty_of_bucharest_1918', 'third_battle_of_the_aisne'],
     sources: [
       'Holger H. Herwig, The First World War: Germany and Austria-Hungary, 1914–1918',

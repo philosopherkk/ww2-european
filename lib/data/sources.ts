@@ -76,7 +76,7 @@ export const SOURCES: Source[] = [  {
     citation:
       'Heeres-Sanitätsinspektion des Reichswehrministeriums (ed.), _Sanitätsbericht über das deutsche Heer (Deutsches Feld- und Besatzungsheer) im Weltkriege 1914/18_, 3 volumes (Berlin: Reichswehrministerium, 1934–1938)',
     publisher: 'Heeres-Sanitätsinspektion des Reichswehrministeriums, Berlin',
-    url: 'https://portal.dnb.de/opac/simpleSearch?query=Sanit%C3%A4tsbericht%20%C3%BCber%20das%20deutsche%20Heer',
+    url: 'https://www.awm.gov.au/collection/LIB8823',
     usedFor:
       'The German medical department’s accounting for the war, printed 1934–38, which is the origin of the German military total of 2,037,000 as Urlanis reads it, of whom about 1,796,000 were killed or died of wounds and gas. It also gives the German wounded by cause and the prisoners who died in captivity. Rüdiger Overmans, James McRandle, James Quirk and Antoine Prost revised these registers upwards to the 2,037,000 this site prints; the volumes do not print that total themselves, so the series is quoted here through Urlanis and through the German war-losses survey named below. A set is held in the library of the Australian War Memorial at https://www.awm.gov.au/collection/LIB8823',
   },

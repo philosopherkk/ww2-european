@@ -58,7 +58,7 @@ export const MARCH_LINES: CampaignLine[] = [
     kind: 'advance',
     path: [place('Pskov'), place('Narva')],
     summary:
-      'Operation Faustschlag, in the event dated 18 February to 3 March 1918, records one German force moving from Pskov towards Narva. Both towns are already marked. The same account says the advance came within 160 kilometres of Petrograd; Petrograd has no coordinate in this worktree, so the line stops at Narva.',
+      'Operation Faustschlag, in the event dated 18 February to 3 March 1918, records one German force moving from Pskov towards Narva. Both towns are already marked. The same account says the advance came within 160 kilometres of Petrograd; Petrograd has no coordinate in this atlas, so the line stops at Narva.',
   },
   {
     id: 'march_faustschlag_kiev',
@@ -102,7 +102,7 @@ export const MARCH_LINES: CampaignLine[] = [
     name: 'Mangin’s Tenth Army from Villers-Cotterêts to Soissons',
     side: 'entente',
     from: '1918-07-18',
-    to: '1918-07-18',
+    to: '1918-08-06',
     kind: 'advance',
     path: [
       copied('blucher_1918', 49.26, 3.09), // Villers-Cotterêts, on the Blücher path
@@ -148,7 +148,7 @@ export const MARCH_LINES: CampaignLine[] = [
     to: '1915-10-09',
     kind: 'advance',
     path: [
-      copied('serbia_1914', 44.84, 20.41), // Zemun, opposite Belgrade
+      place('Šabac'), // on the Sava, the 6-9 October crossing axis towards Belgrade
       place('Belgrade'),
     ],
     summary:

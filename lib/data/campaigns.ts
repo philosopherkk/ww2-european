@@ -298,7 +298,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [38.5, 42.17], // Bitlis, the southern end of the ground the Russians reached
     ],
     summary:
-      'The Russian offensive was launched in the dead of winter over ground where moving artillery was the whole difficulty: Hasan Kale fell on 18-19 January 1916, Hınıs on 7 February, and Erzurum, the fortress that covered the road into eastern Anatolia, fell in March. The campaign then reached as far as Trebizond on the coast and Mush, Bitlis and Van to the south, and for the rest of the year the front lay on the western approaches to Erzurum while the Ottoman army held the line running south through Mush and Bitlis. On this map the July 1914 frontier runs far to the west of every one of these places, so the line has to carry all of the movement itself.',
+      'The Russian offensive was launched in the dead of winter over ground where moving artillery was the whole difficulty: Hasan Kale fell on 18-19 January 1916, Hınıs on 7 February, and Erzurum, the fortress that covered the road into eastern Anatolia, fell on 16 February. The campaign then reached as far as Trebizond on the coast and Mush, Bitlis and Van to the south, and for the rest of the year the front lay on the western approaches to Erzurum while the Ottoman army held the line running south through Mush and Bitlis. On this map the July 1914 frontier runs far to the west of every one of these places, so the line has to carry all of the movement itself.',
   },
   {
     id: 'caucasus_1918',
@@ -800,7 +800,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     id: 'ypres_lys_1918',
     name: 'The Allied offensive in Flanders, Fifth Ypres',
     operation: 'Fifth Ypres / Lausnitz',
-    side: 'central',
+    side: 'entente',
     from: '1918-09-28',
     to: '1918-10-19',
     kind: 'advance',
