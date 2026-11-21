@@ -25,10 +25,12 @@ export type TerritoryStatus =
   | 'german_administered'
   | 'german_occupied'
   | 'italian_occupied'
+  | 'japanese_occupied'
   | 'soviet'
   | 'ally'
   | 'co_belligerent'
   | 'neutral'
+  | 'contested'
   | 'unknown';
 
 export interface StatusMeta {
@@ -46,10 +48,12 @@ export const STATUS_ORDER: TerritoryStatus[] = [
   'german_administered',
   'german_occupied',
   'italian_occupied',
+  'japanese_occupied',
   'soviet',
   'ally',
   'co_belligerent',
   'neutral',
+  'contested',
   'unknown',
 ];
 
@@ -59,14 +63,14 @@ export const STATUS_META: Record<TerritoryStatus, StatusMeta> = {
     color: '#CAC4B8',
     stroke: '#81796D',
     legend:
-      'States that were not at war in April 1938 or April 1939. Nothing was fighting in Europe yet on either date, but Germany had already annexed Austria in March 1938, taken the Sudetenland in September 1938 and occupied Prague on 15 March 1939, so the German Reich and its client states are shown in red from the outset.',
+      'States that were not at war before 3 September 1939 (the April 1938 and April 1939 snapshots). Nothing was fighting in Europe yet, but Germany had already annexed Austria in March 1938, taken the Sudetenland in September 1938 and occupied Prague on 15 March 1939, so the German Reich and its client states are shown in red from the outset. Outside Europe, Japan had been at war with China since July 1937, and China is shown as Allied from 1938.',
   },
   axis: {
     label: 'Axis powers and German allies',
     color: '#9B5B50',
     stroke: '#6E3A32',
     legend:
-      'Germany, Italy and the states bound to them, whether as allies, client states or collaborationist regimes. The Tripartite Pact of 27 September 1940 joined Germany, Italy and Japan; Hungary and Romania joined in November 1940, Slovakia and Bulgaria in November and March 1941. Finland fought the Soviet Union alongside Germany without ever joining the Pact, and is shown separately.',
+      'Germany, Italy, Japan and the states bound to them, whether as allies, client states or collaborationist regimes: in Asia, Manchukuo, Thailand from December 1941 and the Japanese-sponsored governments of Burma and the Philippines. The Tripartite Pact of 27 September 1940 joined Germany, Italy and Japan; Hungary and Romania joined in November 1940, Slovakia and Bulgaria in November and March 1941. Finland fought the Soviet Union alongside Germany without ever joining the Pact, and is shown separately.',
   },
   german_administered: {
     label: 'Under direct German administration',
@@ -87,7 +91,14 @@ export const STATUS_META: Record<TerritoryStatus, StatusMeta> = {
     color: '#8A754F',
     stroke: '#5B4B33',
     legend:
-      'Territory held by Italy rather than Germany: Albania from April 1939, and the parts of Yugoslavia occupied in April 1941, including Montenegro and most of Dalmatia. This distinction disappears after the Italian armistice of 8 September 1943, when Germany took over the Italian occupation zones.',
+      'Territory held by Italy rather than Germany: Albania from April 1939, the parts of Yugoslavia occupied in April 1941, including Montenegro and most of Dalmatia, and in Africa Libya and Ethiopia. In Europe this distinction disappears after the Italian armistice of 8 September 1943, when Germany took over the Italian occupation zones.',
+  },
+  japanese_occupied: {
+    label: 'Japanese-occupied or annexed',
+    color: '#8E6A8F',
+    stroke: '#5F4260',
+    legend:
+      'Territory held by Japan, whether annexed long before the war (Korea, Taiwan) or conquered from December 1941: Hong Kong, Malaya, Singapore, the Dutch East Indies, most of the Philippines and Burma, and the Pacific islands. Governments set up under Japanese sponsorship, such as Manchukuo, are shown in the Axis colour, as Croatia and Slovakia are.',
   },
   soviet: {
     label: 'Soviet Union',
@@ -101,7 +112,7 @@ export const STATUS_META: Record<TerritoryStatus, StatusMeta> = {
     color: '#61849F',
     stroke: '#405D72',
     legend:
-      'States at war with Germany, including the United Kingdom and its empire, the Soviet Union from June 1941 and the United States from December 1941, and after 1944 the liberated states of western Europe. From October 1943 the royal government of southern Italy counts here as a co-belligerent.',
+      'States at war with Germany, Italy or Japan, including the United Kingdom and its empire, China, the Soviet Union from June 1941, the United States from December 1941, the Latin American states that declared war between 1941 and 1945, and after 1944 the liberated states of western Europe. From October 1943 the royal government of southern Italy counts here as a co-belligerent.',
   },
   co_belligerent: {
     label: 'Finland, co-belligerent with Germany',
@@ -115,7 +126,14 @@ export const STATUS_META: Record<TerritoryStatus, StatusMeta> = {
     color: '#949A9A',
     stroke: '#646A6B',
     legend:
-      'Ireland, Portugal, Spain, Sweden, Switzerland, Andorra and Iceland until 1940 stayed out of the war. Neutrality did not keep them untouched: Sweden supplied Germany by rail, Turkey moved to the Allies in February 1945, and Portugal hosted intelligence services from both sides.',
+      'States outside the fighting on the date shown: in Europe Ireland, Portugal, Spain, Sweden, Switzerland and Andorra, and in 1939-40 the states that were later invaded; elsewhere Latin America before its declarations of war, Saudi Arabia, Afghanistan, Egypt until 1945 and others. Neutrality did not keep them untouched: Sweden supplied Germany by rail, Turkey moved to the Allies in February 1945, and Portugal hosted intelligence services from both sides.',
+  },
+  contested: {
+    label: 'Held by both sides or divided',
+    color: '#C97B4A',
+    stroke: '#8F4F29',
+    legend:
+      'Territory where no one power held most of the land on the date shown, usually because an invasion or a reconquest was under way: Malaya in December 1941, New Guinea and the Solomons, Burma in 1942 and 1945, the Philippines in 1942 and 1944-45, Tunisia in November 1942 and the Pacific islands during their reconquest. Each is one call on a single date and can be argued either way.',
   },
   unknown: {
     label: 'Status not recorded here',
@@ -269,38 +287,38 @@ const BY_SNAPSHOT: Record<string, Partial<Record<string, TerritoryStatus>>> = {
   // Italy is still not at war. Spelled out in full so nothing inherits a 1942 colour.
   '1939-10-31': {
     Albania: ITAL, // Italian protectorate since 7 April 1939
-    Andorra: PEACE,
-    Belgium: PEACE,
-    Bulgaria: PEACE,
-    Cyprus: PEACE,
-    Denmark: PEACE,
-    Estonia: PEACE, // Soviet bases conceded in the mutual assistance pacts of Sept-Oct 1939
-    Finland: PEACE, // the Winter War began on 30 November 1939
+    Andorra: NEU,
+    Belgium: NEU,
+    Bulgaria: NEU,
+    Cyprus: ALLY, // British colony: at war with Germany since 3 September 1939
+    Denmark: NEU,
+    Estonia: NEU, // Soviet bases conceded in the mutual assistance pacts of Sept-Oct 1939
+    Finland: NEU, // the Winter War began on 30 November 1939
     France: ALLY, // at war with Germany since 3 September 1939
     'General Government': ADMIN, // German-occupied central Poland from 26 October 1939
     Germany: AXIS,
-    Greece: PEACE,
-    Hungary: PEACE,
-    Iceland: PEACE, // neutral until British forces landed on 5 May 1940
-    Ireland: PEACE,
-    Italy: PEACE, // declared itself a non-belligerent on 3 September 1939
-    Latvia: PEACE,
-    Lithuania: PEACE, // the German minority was moved out in Oct-Dec 1939 under the Soviet-German agreement
-    Luxembourg: PEACE,
-    Malta: PEACE,
-    Netherlands: PEACE,
-    Norway: PEACE,
-    Portugal: PEACE,
+    Greece: NEU,
+    Hungary: NEU,
+    Iceland: NEU, // neutral until British forces landed on 5 May 1940
+    Ireland: NEU,
+    Italy: NEU, // declared itself a non-belligerent on 3 September 1939
+    Latvia: NEU,
+    Lithuania: NEU, // the German minority was moved out in Oct-Dec 1939 under the Soviet-German agreement
+    Luxembourg: NEU,
+    Malta: ALLY, // British colony: at war with Germany since 3 September 1939
+    Netherlands: NEU,
+    Norway: NEU,
+    Portugal: NEU,
     'Protectorate of Bohemia and Moravia': ADMIN,
-    Romania: PEACE,
+    Romania: NEU,
     Slovakia: AXIS, // took part in the invasion of Poland from 1 September 1939
     'Soviet Union': SOV, // invaded eastern Poland on 17 September under the secret protocol
-    Spain: PEACE,
-    Sweden: PEACE,
-    Switzerland: PEACE,
-    Turkey: PEACE,
+    Spain: NEU,
+    Sweden: NEU,
+    Switzerland: NEU,
+    Turkey: NEU,
     'United Kingdom': ALLY,
-    Yugoslavia: PEACE,
+    Yugoslavia: NEU,
   },
   '1940-04-30': {
     // Winter War ended 12 March 1940; Denmark and Norway invaded 9 April 1940.
@@ -310,9 +328,14 @@ const BY_SNAPSHOT: Record<string, Partial<Record<string, TerritoryStatus>>> = {
     Romania: NEU, // Tripartite Pact 23 November 1940
     Bulgaria: NEU, // Tripartite Pact 1 March 1941
     Italy: NEU, // declared war only on 10 June 1940
-    Malta: PEACE, // a British colony, but Italy was not yet at war
+    Malta: ALLY, // a British colony, at war with Germany since 3 September 1939
     Albania: ITAL, // Italian protectorate from April 1939
     Iceland: NEU,
+    Belgium: NEU, // invaded 10 May 1940
+    Netherlands: NEU, // invaded 10 May 1940
+    Luxembourg: NEU, // invaded 10 May 1940
+    Greece: NEU, // attacked by Italy on 28 October 1940
+    France: ALLY, // at war with Germany since 3 September 1939
   },
   '1941-04-30': {
     // Yugoslavia and Greece overrun in April 1941; the USSR was still a
@@ -419,13 +442,19 @@ export const SNAPSHOT_NOTES: Record<string, string> = {
   '1939-04-30':
     'After Munich and the German occupation of Prague on 15 March 1939: Slovakia exists as a German client state, and Bohemia and Moravia as a Reich Protectorate. Memel returned to Germany on 23 March and Albania was occupied on 7 April 1939. Nothing was yet fighting.',
   '1940-04-30':
-    'Twenty-one days after the invasions of Denmark and Norway, and ten days before the attack in the west, so Belgium, the Netherlands, Luxembourg and Iceland still show as neutral. Poland has been partitioned between Germany and the USSR and no longer appears as a state. Hungary, Romania and Italy had not yet joined the Axis war effort — Italy declared war only on 10 June — and Albania was under Italy, not Germany.',
+    'Twenty-one days after the invasions of Denmark and Norway, and ten days before the attack in the west, so Belgium, the Netherlands, Luxembourg, Greece and Iceland still show as neutral, while France, the United Kingdom, Malta and Cyprus have been at war with Germany since 3 September 1939. Poland has been partitioned between Germany and the USSR and no longer appears as a state. Hungary, Romania and Italy had not yet joined the Axis war effort — Italy declared war only on 10 June — and Albania was under Italy, not Germany.',
+  '1939-10-31':
+    'Eight weeks into the war. Poland has been defeated and partitioned between Germany and the USSR (the Red Army crossed the eastern frontier on 17 September), so it no longer appears as a state; the General Government in central Poland was set up on 26 October. France and the United Kingdom, with their colonies Malta and Cyprus, have been at war with Germany since 3 September, but the Western Front is quiet. Italy has declared itself a non-belligerent, and every other state in Europe is neutral.',
   '1941-04-30':
     'After the Balkans campaign: Yugoslavia has been carved up into the Independent State of Croatia, an Italian-occupied Montenegro and a German-occupied Serbia, with Bačka to Hungary, Bulgarian Thrace and Kosovo to Albania. Greece is shown undivided, which understates the German, Italian and Bulgarian zones. The Soviet Union is still formally at peace — it will be attacked on 22 June.',
+  '1941-09-30':
+    'Three months into Operation Barbarossa, which began on 22 June 1941. The Reichskommissariate Ostland and Ukraine have been created behind the advancing German armies, and Finland is fighting beside Germany as a co-belligerent. Bulgaria is a Pact member but has not declared war on the USSR. Yugoslavia is divided, and Greece is shown undivided although German, Italian and Bulgarian zones had been set up.',
   '1942-04-30':
     'The Reichskommissariate Ostland and Ukraine exist — in this state the source layer has their two names on each other’s polygons, which has been corrected here — and Romania administers Transnistria east of the Dniester. The Baltic states have been absorbed into the USSR and no longer appear separately. This is April 1942, before the summer offensive: the high-water mark of German expansion in the east came five months later, in November 1942, and this map does not show it.',
   '1943-04-30':
     'After Stalingrad, but almost no territory has been given up in the east. Note that the dataset still draws the German-Soviet frontier of 1941 in places: Kharkiv, Voronezh and Crimea are shown as Soviet here because the source layer never followed the 1942 advance.',
+  '1943-06-30':
+    'Five days before the German offensive at Kursk (Operation Citadel, 5 July 1943), and seven weeks after the Axis surrender in Tunisia on 13 May. Vichy France has gone: Germany and Italy occupied the whole of France in November 1942. Italy is still an Axis power; the Allied invasion of Sicily comes on 10 July.',
   '1943-10-31':
     'After the Italian armistice of 8 September 1943: the royal government in the south, sitting at Salerno, is a co-belligerent, while the Italian Social Republic under Mussolini holds the centre and north with German support. Germany has also taken over the Italian occupation zones in Albania and Montenegro. The southern Italian polygon is small because the dataset leaves Naples and Foggia outside it, though they were in Allied hands by then.',
   '1944-04-30':

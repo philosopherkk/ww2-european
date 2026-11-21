@@ -14,6 +14,7 @@ export type { TerritoryStatus, StatusMeta } from './status';
 export { BLOCS, COUNTRY_STATS } from './stats';
 export { CAMPAIGN_LINES } from './campaigns';
 export { STATUS_META, STATUS_ORDER, statusFor, SNAPSHOT_NOTES } from './status';
+export { WORLD_KEY_NOTES, WORLD_NOTES, worldNameFor, worldStatusFor } from './world-status';
 export { SOURCES, UNCERTAINTIES } from './sources';
 
 export const EVENTS: WW2Event[] = [

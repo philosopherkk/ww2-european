@@ -17,8 +17,21 @@ import {
 import L from 'leaflet';
 import { ChevronDown, Info, ListTree, Maximize2, Minimize2 } from 'lucide-react';
 import type { CampaignLine, Side } from '@/lib/data';
-import { CAMPAIGN_LINES, EVENT_BY_ID, STATUS_META, STATUS_ORDER, SNAPSHOT_NOTES, statusFor } from '@/lib/data';
+import {
+  CAMPAIGN_LINES,
+  EVENT_BY_ID,
+  STATUS_META,
+  STATUS_ORDER,
+  SNAPSHOT_NOTES,
+  WORLD_KEY_NOTES,
+  WORLD_NOTES,
+  statusFor,
+  worldNameFor,
+  worldStatusFor,
+} from '@/lib/data';
 import { LINKS_BY_LINE } from '@/lib/data/campaign-events';
+import RegionToggle from '@/components/RegionToggle';
+import { REGION_BY_ID, type Region } from '@/lib/regions';
 import { PLACES } from '@/lib/data/places';
 import { campaignVisible, longDate, nearestSnapshot, SIDE_META, SNAPSHOTS } from '@/lib/site';
 
@@ -41,6 +54,16 @@ interface FeatureCollection {
   snapshot: string;
   source?: string;
   features: Feature[];
+}
+
+interface WorldFeature {
+  type: 'Feature';
+  properties: { key: string; name: string };
+  geometry: { type: 'MultiPolygon'; coordinates: Ring[][] };
+}
+interface WorldCollection {
+  type: 'FeatureCollection';
+  features: WorldFeature[];
 }
 
 const toLatLngRings = (rings: Ring[]) =>
@@ -140,6 +163,8 @@ export default function MapBrowser({
   const [errorInfo, setErrorInfo] = useState<{ file: string; message: string } | null>(null);
   const [showNote, setShowNote] = useState(false);
   const [zoom, setZoom] = useState(4);
+  const [region, setRegion] = useState<Region>('europe');
+  const [world, setWorld] = useState<WorldCollection | null>(null);
   // The key is open on wide screens and tucked behind a button on phones and tablets,
   // where an open key would cover a third of the map.
   const [keyOpen, setKeyOpen] = useState(
@@ -164,6 +189,40 @@ export default function MapBrowser({
       cancelled = true;
     };
   }, [snapshot.file]);
+
+  /* The world layer is one static file of modern outlines, fetched once; the colours
+   * are computed per snapshot below, so switching months only restyles it. */
+  useEffect(() => {
+    let cancelled = false;
+    fetch('/data/world/world.json')
+      .then((r) => {
+        if (!r.ok) throw new Error(`${r.status} ${r.statusText}`);
+        return r.json();
+      })
+      .then((json: WorldCollection) => {
+        if (!cancelled) setWorld(json);
+      })
+      .catch((e: unknown) => {
+        console.warn('world layer failed to load', e);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  const worldTerritories = useMemo(() => {
+    if (!world) return [];
+    return world.features.map((f) => ({
+      key: f.properties.key,
+      name: worldNameFor(f.properties.key, f.properties.name),
+      positions: f.geometry.coordinates.map(toLatLngRings),
+    }));
+  }, [world]);
+
+  const worldStatuses = useMemo(
+    () => new Map(worldTerritories.map((t) => [t.key, worldStatusFor(snapshot.date, t.key)])),
+    [worldTerritories, snapshot.date]
+  );
 
   /* Converting ~19,000 vertices is the expensive part of a render, so it is
    * done once per snapshot and reused while the reader toggles layers. */
@@ -218,10 +277,10 @@ export default function MapBrowser({
     return ids;
   }, [highlightLineIds, focusedId]);
 
-  const presentStatuses = useMemo(
-    () => STATUS_ORDER.filter((s) => territories.some((t) => t.status === s)),
-    [territories]
-  );
+  const presentStatuses = useMemo(() => {
+    const worldSet = region === 'europe' ? new Set() : new Set(worldStatuses.values());
+    return STATUS_ORDER.filter((s) => worldSet.has(s) || territories.some((t) => t.status === s));
+  }, [territories, worldStatuses, region]);
 
   const presentSides = useMemo(
     () => SIDE_ORDER.filter((s) => lines.some((l) => l.side === s)),
@@ -229,6 +288,7 @@ export default function MapBrowser({
   );
 
   const note = SNAPSHOT_NOTES[snapshot.date];
+  const worldNote = WORLD_NOTES[snapshot.date];
   const error = errorInfo?.file === snapshot.file ? errorInfo.message : null;
   const showMarkers = showPlaces && zoom >= 7;
 
@@ -263,9 +323,15 @@ export default function MapBrowser({
           )}
         </div>
         {showNote && note && (
-          <p className="mt-2 rounded-lg border border-stone-200 bg-white p-2.5 text-xs leading-relaxed text-stone-700">
-            {note}
-          </p>
+          <div className="mt-2 space-y-2 rounded-lg border border-stone-200 bg-white p-2.5 text-xs leading-relaxed text-stone-700">
+            <p>{note}</p>
+            {worldNote && (
+              <p>
+                <span className="font-semibold">Outside Europe. </span>
+                {worldNote}
+              </p>
+            )}
+          </div>
         )}
       </div>
 
@@ -286,6 +352,7 @@ export default function MapBrowser({
         >
           <ZoomReporter onZoom={setZoom} />
           <MapResizer />
+          <ViewController region={region} />
           {/* CARTO's basemaps began demanding an API key and now serve a watermarked
               "API KEY REQUIRED" tile, and Wikimedia's tileserver answers a public
               deployment's referrer with a 403 HTML page that Chrome then blocks as an
@@ -296,9 +363,56 @@ export default function MapBrowser({
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             subdomains="abc"
+            noWrap
+            bounds={[
+              [-85.0511, -180],
+              [85.0511, 180],
+            ]}
             key={detailed ? 'detailed-basemap' : 'faded-basemap'}
             className={detailed ? 'basemap-tiles basemap-detailed' : 'basemap-tiles'}
           />
+
+          {/* Modern outlines for the rest of the world, under the Stanford layer: its
+              polygons sit in the default overlay pane above this one. */}
+          {showBorders && region !== 'europe' && (
+            <Pane name="world" style={{ zIndex: 395 }}>
+              {worldTerritories.map((t) => {
+                const status = worldStatuses.get(t.key) ?? 'unknown';
+                const meta = STATUS_META[status];
+                const keyNote = WORLD_KEY_NOTES[t.key];
+                return (
+                  <Polygon
+                    key={t.key}
+                    positions={t.positions}
+                    pathOptions={{
+                      color: meta.stroke,
+                      weight: 0.8,
+                      fillColor: meta.color,
+                      fillOpacity: detailed ? 0.2 : 0.52,
+                    }}
+                  >
+                    <Tooltip sticky direction="center" opacity={1}>
+                      <span className="text-xs font-semibold">{t.name}</span>
+                      <span className="block text-[11px] font-normal">{meta.label}</span>
+                    </Tooltip>
+                    <Popup>
+                      <div className="space-y-1 text-sm">
+                        <p className="text-base font-semibold">{t.name}</p>
+                        <p className="font-medium" style={{ color: meta.stroke }}>
+                          {meta.label}
+                        </p>
+                        {keyNote && <p>{keyNote}</p>}
+                        <p className="pt-1 text-xs text-stone-600">
+                          Status as recorded for {snapshot.label}, for the territory as a whole.
+                          The outline is today&rsquo;s, not the frontier of the time.
+                        </p>
+                      </div>
+                    </Popup>
+                  </Polygon>
+                );
+              })}
+            </Pane>
+          )}
 
           {showBorders &&
             territories.map((t) => {
@@ -577,6 +691,8 @@ export default function MapBrowser({
           )}
         </div>
 
+        <RegionToggle region={region} onChange={setRegion} />
+
         {!data && !error && (
           <div className="absolute inset-0 z-[500] flex items-center justify-center bg-stone-100/80 text-sm text-stone-700">
             Loading {snapshot.label} borders…
@@ -655,7 +771,9 @@ export default function MapBrowser({
       <p className="text-xs leading-relaxed text-stone-600">
         The colours are one dated state ({snapshot.label}), not the month&rsquo;s daily front.
         Frontiers changed on particular days, sometimes several times in a month; the event cards
-        name the changes in between. Select a country or a line for details.
+        name the changes in between. Outside Europe the outlines are today&rsquo;s, coloured for the
+        date, so a whole country takes the colour of the power that held most of it. Select a
+        country or a line for details.
       </p>
     </div>
   );
@@ -670,6 +788,24 @@ function MapResizer() {
     ro.observe(el);
     return () => ro.disconnect();
   }, [map]);
+  return null;
+}
+
+/** Re-frames the map when the reader switches extent. */
+function ViewController({ region }: { region: Region }) {
+  const map = useMap();
+  const first = useRef(true);
+  useEffect(() => {
+    const v = REGION_BY_ID[region];
+    map.setMinZoom(v.minZoom);
+    map.setMaxBounds(v.bounds);
+    if (first.current) {
+      first.current = false;
+      return;
+    }
+    if (v.fit) map.fitBounds(v.bounds, { animate: true, duration: 0.8, padding: [8, 8] });
+    else map.flyTo(v.center, v.zoom, { duration: 0.8 });
+  }, [region, map]);
   return null;
 }
 
