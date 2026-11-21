@@ -46,6 +46,9 @@ export interface WW2Event {
   figures?: string[];
   /** Figures/scholarly note, most useful at university level. */
   note?: string;
+  /** Explains what the marker sits on, for cards fought at sea, in the air or
+   *  behind the front, where the map has nothing drawn under the pin. */
+  mapNote?: string;
 }
 
 export const EVENTS: WW2Event[] = [

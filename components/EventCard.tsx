@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { ChevronDown, Layers, Users } from 'lucide-react';
+import { ChevronDown, Layers, MapPin, Users } from 'lucide-react';
 import type { Level, LevelText, WW2Event } from '@/lib/data';
 import { FIGURE_BY_ID } from '@/lib/data';
 import { PORTRAITS } from '@/lib/data/portraits';
@@ -140,6 +140,16 @@ export default function EventCard({
                 </p>
               )}
             </>
+          )}
+
+          {event.mapNote && (
+            <p className="flex gap-1.5 border-t border-stone-100 pt-3 text-sm leading-relaxed text-stone-700">
+              <MapPin size={15} className="mt-1 shrink-0" aria-hidden />
+              <span>
+                <span className="font-semibold text-stone-700">On the map: </span>
+                {event.mapNote}
+              </span>
+            </p>
           )}
 
           {(event.figures?.length ?? 0) > 0 && (
