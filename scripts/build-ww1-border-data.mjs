@@ -27,15 +27,15 @@
  * file — see scripts/check-border-places.mjs, which runs the list and fails on
  * a regression (towns whose 1914 sovereign is documented, for example Galway,
  * Wexford, Corfu, Lewis, Man and Sylt):
- *  - MIN_ISLAND_KM2 was 900, which dropped Lewis, Man, Wight, Anglesey, Arran,
- *    Islay, Corfu, Sylt, Usedom, Bornholm, Samos, Lemnos and the Frisian isles,
- *    so Greek Corfu and German Sylt sat uncoloured on a map of 1914. At 25 km²
- *    they are drawn and the file is still one fetch (0.6 MB, 211 KB gzipped);
- *    at 5 km² the Venetian lagoon sandbars come back too, but the polygon count
- *    more than doubles for two pixels of land, so the cut-off stays at 25.
- *  - SIMPLIFY_TOLERANCE was 0.03 degrees, about 3 km, which ate Galway Bay and
- *    Wexford: both fell outside the British polygons. At 0.01 degrees they are
- *    inside; 0.015 does not recover Galway.
+ *  - MIN_ISLAND_KM2 was 900, which dropped Anglesey, Arran, Islay, Man, Wight,
+ *    Corfu, Samos, Samothrace and Bornholm, so Greek Corfu and Danish Bornholm sat
+ *    uncoloured on a map of 1914 (Lewis, Sylt and Usedom were already big enough to
+ *    survive). At 25 km² they are drawn and the file is still one fetch (0.6 MB,
+ *    211 KB gzipped); at 5 km² the Venetian lagoon sandbars come back too, but the
+ *    polygon count more than doubles for two pixels of land, so it stays at 25.
+ *  - SIMPLIFY_TOLERANCE was 0.03 degrees, about 3 km, which ate Galway Bay,
+ *    Wexford and the roadstead of Brest: all three fell outside the polygons. At
+ *    0.01 degrees they are inside; 0.015 does not recover Galway.
  *
  * Defects in the source that this script does NOT and cannot fix, measured the
  * same way — they need better geometry, not new words in the site's prose:
