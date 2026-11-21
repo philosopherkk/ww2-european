@@ -18,7 +18,9 @@ import L from 'leaflet';
 import { ChevronDown, Info, ListTree, Maximize2, Minimize2 } from 'lucide-react';
 import type { CampaignLine, Side } from '@/lib/data';
 import { CAMPAIGN_LINES, EVENT_BY_ID, GEOMETRY_NOTE, MARCH_LINES, STATUS_META, STATUS_ORDER, SNAPSHOT_NOTES, statusFor } from '@/lib/data';
+import RegionToggle from '@/components/RegionToggle';
 import { LINKS_BY_LINE } from '@/lib/data/campaign-events';
+import { REGION_BY_ID, type Region } from '@/lib/regions';
 import { PLACES } from '@/lib/data/places';
 import {
   campaignVisible,
@@ -146,6 +148,7 @@ export default function MapBrowser({
   const [errorInfo, setErrorInfo] = useState<{ file: string; message: string } | null>(null);
   const [showNote, setShowNote] = useState(false);
   const [zoom, setZoom] = useState(4);
+  const [region, setRegion] = useState<Region>('europe');
   // The key is open on wide screens and tucked behind a button on phones and tablets,
   // where an open key would cover a third of the map.
   const [keyOpen, setKeyOpen] = useState(
@@ -248,7 +251,7 @@ export default function MapBrowser({
   // The shapes never move in this dataset, so the geometry caveat is stated for
   // every month; the month's own note is appended when there is one.
   const monthNote = SNAPSHOT_NOTES[snapshot.date];
-  const note = monthNote ? `${GEOMETRY_NOTE} ${monthNote}` : GEOMETRY_NOTE;
+  const note = `${monthNote ? `${GEOMETRY_NOTE} ${monthNote}` : GEOMETRY_NOTE} The region buttons change the view; only Europe has border and allegiance data for this war, so the other extents show the basemap and any campaign lines.`;
   const showMarkers = showPlaces && zoom >= 7;
 
   return (
@@ -299,6 +302,7 @@ export default function MapBrowser({
         >
           <ZoomReporter onZoom={setZoom} />
           <MapResizer />
+          <ViewController region={region} />
           {/* CARTO's basemaps began demanding an API key and now serve a watermarked
               "API KEY REQUIRED" tile, and Wikimedia's tileserver answers a public
               deployment's referrer with a 403 HTML page that Chrome then blocks as an
@@ -593,6 +597,8 @@ export default function MapBrowser({
           </div>
         )}
 
+        <RegionToggle region={region} onChange={setRegion} />
+
         <div className="absolute bottom-6 left-2 z-[450] max-w-[min(86%,20rem)] sm:bottom-7">
           {keyOpen && (
             <div className="mb-1.5 max-h-[calc(var(--map-h,60vh)-4.5rem)] overflow-y-auto lg:max-h-[60vh] rounded-lg border border-stone-300 bg-white/95 p-2.5 text-xs shadow-md backdrop-blur">
@@ -685,5 +691,23 @@ function ZoomReporter({ onZoom }: { onZoom: (zoom: number) => void }) {
   useMapEvents({
     zoomend: () => onZoom(map.getZoom()),
   });
+  return null;
+}
+
+/** Re-frames the map when the reader switches extent. */
+function ViewController({ region }: { region: Region }) {
+  const map = useMap();
+  const first = useRef(true);
+  useEffect(() => {
+    const v = REGION_BY_ID[region];
+    map.setMinZoom(v.minZoom);
+    map.setMaxBounds(v.bounds);
+    if (first.current) {
+      first.current = false;
+      return;
+    }
+    if (v.fit) map.fitBounds(v.bounds, { animate: true, duration: 0.8, padding: [8, 8] });
+    else map.flyTo(v.center, v.zoom, { duration: 0.8 });
+  }, [region, map]);
   return null;
 }
