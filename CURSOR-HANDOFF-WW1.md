@@ -204,12 +204,23 @@ API token cannot change `productionBranch`. So a push to `main` puts the **WW2**
 the WW1 alias. Symptom: `https://ww1-european.vercel.app` returns HTML identical to the
 WW2 site and a 12-entry border manifest.
 
-Recovery:
+Recovery, verified 21 Nov — `vercel --prod` and `vercel promote` do **not** move the alias,
+and `vercel inspect`/`vercel ls` never print the branch or commit a build came from, so the
+only reliable way to tell the two apps apart is the border manifest inside the build:
 
 ```bash
-npx vercel ls ww1-european                       # deployment id from the list
-npx vercel promote https://ww1-european-<id>-basedkk.vercel.app --yes
+npx vercel ls ww1-european                       # deployment urls, newest first
+npx vercel curl https://<deployment-url>/data/borders/manifest.json
+#   “European borders during the Second World War…” = a WW2 build (wrong)
+#   “Boundaries of Europe in July 1914…”            = a WW1 build (use this one)
+npx vercel alias set https://<ww1-deployment-url> ww1-european.vercel.app
+curl -s https://ww1-european.vercel.app/ | grep -o '<title>[^<]*'
 ```
+
+The real fix is a click, not a command: dashboard → Projects → ww1-european → Settings →
+**Production Branch** → `ww1-european` (CLI 65.12 has no `project` subcommand for it and the
+REST API rejects the CLI token with `invalidToken: true`). Until someone changes it, never
+push WW1 code to `main`, and expect every WW2 push to knock the WW1 site off its alias.
 
 Only ever verify a URL a real deploy produced: `curl` the production domain, then check
 in Chrome at 1440×900 and 390×844. Preview/deployment aliases answer 302 to `curl`
