@@ -249,21 +249,12 @@ export const SOURCES: Source[] = [
   },
   {
     citation:
-      'Milestones: 1945-1952, “The Korean War at Outset” (archived 2009)',
+      'Milestones: 1945-1952, the Korean War essay, section “The 38th Parallel” (archived 2009)',
     publisher:
-      'Office of the Historian, Department of State, read through the Internet Archive because the live site no longer carries this page',
-    url: 'https://web.archive.org/web/20090212045647/http://history.state.gov/milestones/1945-1952/KoreanWar',
-    usedFor:
-      'The “two U.S. army colonels (one of whom, Dean Rusk, would later become Secretary of State)” who proposed the 38th parallel as the line where the Soviet and American acceptance of Japanese surrender should meet.',
-  },
-  {
-    citation:
-      'Milestones: 1945-1952, “Korea, 1945-1950” (archived 2009)',
-    publisher:
-      'Office of the Historian, Department of State, read through the Internet Archive because the live site no longer carries this page',
+      'Office of the Historian, Department of State, read through the Internet Archive because the live site no longer carries this passage',
     url: 'https://web.archive.org/web/20090212045647/http://history.state.gov/milestones/1945-1952/KoreanWar2',
     usedFor:
-      'That the Treaty of San Francisco “ended the state of war between Japan and 47 of the Allies”. It gives no effective date, so the 28 April 1952 on the 2 September card still rests on Wikipedia alone.',
+      'The “two U.S. army colonels (one of whom, Dean Rusk, would later become Secretary of State)” who proposed the 38th parallel as the line where the Soviet and American acceptance of Japanese surrender should meet. The passage is in the archived copy only: the rewritten live page does not carry it.',
   },
   {
     citation:
@@ -273,6 +264,24 @@ export const SOURCES: Source[] = [
     url: 'https://www.thecanadianencyclopedia.ca/en/article/korean-war',
     usedFor:
       'Soviet troops occupying “the country north of the 38th parallel, with the Americans to the south”.',
+  },
+  {
+    citation:
+      'Reports of General MacArthur, vol. I: The Approach to Ryuchiu and Japan (Centre of Military History, U.S. Army)',
+    publisher:
+      'HyperWar mirror, ibiblio',
+    url: 'https://www.ibiblio.org/hyperwar/USA/RptsMacA/I/RptsI-14.html',
+    usedFor:
+      'The surrender ceremony: “The Instrument of Surrender was completely signed within twenty minutes”, the signature times 0904, 0910 and 0920, “the decks of the Missouri that morning”, and the Soviet declaration of war on 8 August.',
+  },
+  {
+    citation:
+      'Milestones in the History of U.S. Foreign Relations, “Korean War and Japan’s Recovery”',
+    publisher:
+      'Office of the Historian, U.S. Department of State',
+    url: 'https://history.state.gov/milestones/1945-1952/korean-war',
+    usedFor:
+      'The Treaty of San Francisco “ended the state of war between Japan and 47 of the Allies (most nations allied with the Soviet Union refused to sign)”.',
   },
 ];
 

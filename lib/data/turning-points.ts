@@ -310,7 +310,11 @@ export const TURNING_POINTS: TurningPoint[] = [
       'manchuria_1945',
       'korea_divided_1945',
     ],
-    sources: ['English Wikipedia'],
+    sources: [
+      'English Wikipedia',
+      'Reports of General MacArthur, vol. I',
+      'FRUS, The Far East 1945, vol. VI',
+    ],
   },
 
   {
