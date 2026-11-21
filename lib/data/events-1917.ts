@@ -1643,4 +1643,42 @@ export const EVENTS_1917: WW1Event[] = [
     },
   },
 
+  {
+    "id": "zimmermann_telegram_1917",
+    "date": "1917-01-16",
+    "precision": "day",
+    "title": "The Zimmermann Telegram",
+    "kind": "diplomacy",
+    "fronts": [
+      "politics"
+    ],
+    "countries": [
+      "Germany",
+      "Mexico",
+      "United Kingdom",
+      "United States"
+    ],
+    "figures": [
+      "wilson_us"
+    ],
+    "mapNote": "This story moves between three capitals rather than along a front: Berlin sent the message, Mexico City was meant to receive it, and Washington is where its publication did the damage. Mexico City lies outside the current map frame and would need a pin.",
+    "note": "The date is printed two ways: the National Archives catalog gives the telegram as dated 16 January 1917, while the Wikipedia article places its issue on 17 January 1917. The addressee is also disputed — Wikipedia has the message addressed to the German minister in Mexico City, Heinrich von Eckardt, whereas the Prologue article says Room 40 concluded it was sent to the ambassador in Washington, Johann von Bernstorff. How decisive the telegram was remains argued: the Wikipedia lead says it only ‘helped to generate support’ for American intervention, while older official studies gave it the leading role, and the debate is documented in the American Intelligence Journal and in Barbara Tuchman’s 1958 book, on which the Prologue article draws. Prologue articles carry a disclaimer that they do not necessarily represent the views of the National Archives.",
+    "levels": {
+      "primary": {
+        "cause": "Germany was about to let its submarines sink ships without warning again, from 1 February 1917, and expected this might bring the United States into the war. It sent a secret coded message about Mexico.",
+        "what": "The message offered an alliance: if the United States declared war, Mexico would recover the land it had lost in Texas, New Mexico and Arizona. British code readers at the Admiralty decoded it and passed the text to the Americans.",
+        "consequence": "Germany admitted in March 1917 that the message was genuine. American opinion hardened, and the United States declared war on Germany on 6 April 1917. Mexico studied the offer and refused it."
+      },
+      "secondary": {
+        "cause": "Germany had agreed on unrestricted submarine warfare from 1 February 1917 and knew this could bring the United States in. Its foreign secretary, Arthur Zimmermann, therefore asked the German minister in Mexico City to sound out Mexico about an alliance, and to invite Japan to join, so that American strength would be tied up on the Mexican border instead of crossing to Europe.",
+        "what": "The telegram was sent in code in mid-January 1917. Because Britain had cut Germany’s Atlantic cables, the message travelled by radio and by cables belonging to neutral countries, and it was relayed through a wireless station at Sayville in New York. Room 40, the Admiralty’s code-breaking room, had already reconstructed the code and read the message, partly with the help of codebooks captured earlier in the war.",
+        "consequence": "Britain gave the text to the United States, and when Zimmermann admitted on 3 March 1917 that it was genuine, Americans who had wanted to stay neutral grew angry. President Wilson asked Congress for a declaration of war and the United States declared war on Germany on 6 April 1917. A Mexican military commission reported that a war on Germany’s side could not be won, and Mexico rejected the offer."
+      },
+      "university": {
+        "cause": "The submarine decision of 9 January 1917 made a rupture with Washington probable, and German policy tried to pin American power elsewhere. Arthur Zimmermann, foreign secretary of the German empire, instructed the German minister in Mexico City to propose a military alliance, promising Mexican funding and the recovery of Texas, New Mexico and Arizona, and asking Mexico to invite Japan and mediate with Berlin. Earlier German thinking about a Mexican alliance, President Carranza’s hostility after the Veracruz occupation of 1914, and the failure of the Punitive Expedition had made such an approach seem plausible to German planners.",
+        "what": "Direct cable transmission from Germany was impossible after Britain cut the Atlantic cables, so the text went by radio through the Telefunken station at Sayville, New York, and by telegraph inside the messages of the neutral United States and Sweden; President Wilson had allowed Germany to use American diplomatic cables for peace messages. Room 40 under Nigel de Grey had the message partly read within a day, helped by German codebooks lost during the Niedermayer–Hentig expedition to Afghanistan in 1915, and by the fact that the code had been in use long enough to be rebuilt cryptanalytically.",
+        "consequence": "British disclosure, Zimmermann’s admission of 3 March 1917 and German submarine attacks together moved American opinion; the United States declared war on Germany on 6 April 1917. President Carranza’s military commission judged the offer worthless, and Japan had no reason to accept. The episode is often called the war’s most significant British intelligence triumph and one of the first cases where signals intelligence changed world events, though scholars dispute how much weight the telegram itself carried against the U-boat campaign."
+      }
+    }
+  },
 ];

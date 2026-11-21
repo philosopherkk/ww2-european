@@ -78,6 +78,8 @@ export interface WW1Event {
   figures?: string[];
   /** Historians' note: the argument, the disputed number, the source problem. */
   note?: string;
+  /** Short note on what the map does and does not show for this event. */
+  mapNote?: string;
   levels: Record<Level, LevelText>;
 }
 

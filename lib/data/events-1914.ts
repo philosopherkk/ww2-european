@@ -1418,4 +1418,111 @@ export const EVENTS_1914: WW1Event[] = [
       },
     },
   },
+
+  {
+    "id": "rabaul_anmef_1914",
+    "date": "1914-09-11",
+    "precision": "day",
+    "title": "Australia lands at Kabakaul and takes the Bita Paka radio station",
+    "kind": "landing",
+    "fronts": [
+      "naval"
+    ],
+    "countries": [
+      "Australia",
+      "United Kingdom",
+      "Germany"
+    ],
+    "figures": [],
+    "mapNote": "The fighting is at Rabaul, on New Britain, outside the map’s current frame: it would need a pin, as would the radio station at Bita Paka seven kilometres inland. The surrender terms were signed at Herbertshöhe, and the last resistance was at Toma, further inland on the same island.",
+    "note": "The casualty figures do not agree. The Australian War Memorial gives six Australians killed or died of wounds and four wounded, one German killed and one wounded, and 41 New Guinea casualties with 30 killed; the Wikipedia article gives seven Australians killed and five wounded, and one German NCO and about 30 Melanesians killed. The heavy Melanesian loss is the disputed point: it was alleged that the Australians bayoneted the men they captured. What was taken was also not a working transmitter — the station was found abandoned, its mast dropped, its instruments and machinery intact. Nor is there one date for the capture: the landing and fight were on 11 September, the flag was raised at Rabaul on 13 September before the governor had surrendered, the terms were signed on 17 September, and the last surrender came on 21 September.",
+    "levels": {
+      "primary": {
+        "cause": "Germany had built powerful wireless stations in the south-west Pacific, and they could send messages to German ships at sea. When Britain declared war, it asked Australia to destroy the stations and take the German islands.",
+        "what": "On the morning of 11 September 1914 twenty-five Australian naval reservists landed at Kabakaul and marched inland to the radio tower at Bita Paka. German soldiers and New Guinean troops resisted them, but the station was in Australian hands by seven in the evening.",
+        "consequence": "Australian forces raised the British flag at Rabaul on 13 September and began the military occupation of German New Guinea, which lasted for the rest of the war."
+      },
+      "secondary": {
+        "cause": "Germany’s wireless and telegraph stations in the south-west Pacific let it talk quickly to Berlin and to its own ships, so Britain asked Australia to destroy them and occupy the islands. A separate special force was raised for the job, the Australian Naval and Military Expeditionary Force, recruiting from 10 August 1914. Its targets were the German stations at Yap, Nauru and Rabaul; about 2,000 volunteers sailed in transports escorted by Royal Australian Navy cruisers, and one cruiser was detached to Nauru.",
+        "what": "The convoy reached Rabaul on 11 September and found the port free of German forces. A party of 25 naval reservists landed at Kabakaul and marched seven kilometres inland to Bita Paka, where German reservists and Melanesian native police made them fight for the road. Reinforcements carried the day and the station was taken by 7 pm; Seaman Williams became the first Australian to die in the war. The rest of the battalion came ashore on 12 September and the British flag went up the next day, although the German governor had not surrendered.",
+        "consequence": "German resistance collapsed after a warship bombarded a ridge near Toma. Terms were signed on 17 September and the last garrison surrendered on 21 September, so Australia held the colony and its wireless network: German colonial rule ended and Australian military administration began."
+      },
+      "university": {
+        "cause": "The seizure of German New Guinea was an imperial operation, not a European one. Germany had built a network of powerful wireless and telegraph stations across the south-west Pacific in the late nineteenth and early twentieth centuries, and these stations enabled it to communicate quickly with Germany and with German ships in the region; the installations were ordered destroyed because they were used by the East Asia Squadron, which threatened merchant shipping. Britain’s request of 6 August 1914 produced a volunteer force of about 2,000 men, assembled separately from the Australian Imperial Force that was forming at home and commanded by Colonel William Holmes. Its objectives were the stations at Yap, Nauru and Rabaul. Australia was asked to do two things at once: silence a transmitter, and take possession of a neighbour’s colony.",
+        "what": "The transports, with Sydney, Melbourne and Warrego, rendezvoused with HMAS Australia at Rossel Island; Melbourne was detached against Nauru. Rabaul was reached on 11 September and found free of German forces, so naval reservists went ashore at Kabakaul and Herbertshöhe. The 25-man party at Kabakaul marched inland on the station at Bita Paka and was opposed by German reservists and Melanesian native police, who made them fight their way to the objective; the station was reached by nightfall to find it abandoned, its mast dropped, its instruments intact. Australian losses were heavy for so small a fight, and it was later alleged that the Melanesians captured were bayoneted. Berrima landed the infantry on 12 September, the flag went up on 13 September before the governor had surrendered, and Encounter bombarded a ridge near Toma on 14 September.",
+        "consequence": "Bombardment, not battle, produced the settlement: the show of firepower started negotiations, terms were signed on 17 September, and the remaining 40 German soldiers and 110 Melanesians surrendered on 21 September; Madang was occupied on 24 September and the auxiliary cruiser Cormoran slipped away undetected. The terms allowed Governor Haber to return to Germany and let German civilians stay if they swore an oath of neutrality, with objectors sent to Australia. Holmes became administrator until Colonel Pethebridge took over on 8 January 1915, when the tropical force relieved the ANMEF; Holmes and most of his men re-enlisted in the AIF, and he was killed in action in 1917. The occupation settled the fate of the German islands for the whole war."
+      }
+    }
+  },
+  {
+    "id": "ae1_ae2_1914",
+    "date": "1914-09-14",
+    "precision": "day",
+    "title": "Australia’s first submarines: AE2 at Rabaul, AE1 lost off New Britain",
+    "kind": "technology",
+    "fronts": [
+      "naval"
+    ],
+    "countries": [
+      "Australia",
+      "United Kingdom",
+      "Germany"
+    ],
+    "figures": [],
+    "mapNote": "AE1 went down off New Britain, far outside the map’s Europe frame: Rabaul and the Duke of York Islands would need pins. AE2’s end came in the Dardanelles, which the site already draws for 1915, so the two halves of this story sit at opposite ends of the map.",
+    "note": "Three things are disputed. When: the Australian War Memorial says AE1 sailed ‘a day after the official German surrender of the colony’, and Wikipedia dates the surrender of Rabaul to 13 September, but the capitulation instrument itself is dated 17 September, so ‘the day after the surrender’ does not fit the site’s own dating of the occupation. Why: the cause is unsettled, with a diving accident, an open ventilation valve, and implosion below crush depth all offered, and the memorial’s own article says the 2018 survey might only ‘perhaps learn what happened’. How AE2 ended: the memorial says she took irreparable damage from Ottoman troops and her commander was forced to sink her, while Wikipedia says mechanical faults forced her up, the torpedo boat Sultanhisar damaged her, and her crew scuttled her, all of them being captured.",
+    "levels": {
+      "primary": {
+        "cause": "Australia had just built its first two submarines, AE1 and AE2. They were launched in England in 1913 with crews of Australians and British together, and when the war began they were sent with the force that took the German islands in the Pacific.",
+        "what": "On 14 September 1914 AE1 left Rabaul harbour to patrol off Cape Gazelle and never came back. The first search lasted two days and found no wreckage and no oil, and everyone on board was lost.",
+        "consequence": "AE1 was Australia’s first major loss of the war, and for sixty years nobody knew where she had gone. Her wreck was found only in December 2017."
+      },
+      "secondary": {
+        "cause": "AE1 and AE2 were launched in England in 1913 and manned by crews of Australians and British together. At the outbreak of the First World War the two boats were sent from Sydney to German New Guinea with the Australian Naval and Military Expeditionary Force, to help capture the German colony.",
+        "what": "At seven in the morning on 14 September AE1 left Blanche Bay at Rabaul to patrol off Cape Gazelle with Parramatta. She was not back by eight that evening; ships were sent to look for her, nothing was found, and she was written off with all hands. The loss was Australia’s first major one of the war. AE2 stayed in the Rabaul area until early October, went on to Fiji, joined the troopship convoy that left Albany in December 1914, and was towed to the Mediterranean when the German threat in the Pacific had faded.",
+        "consequence": "Searches from 1976 found nothing until December 2017, when AE1 was located off the Duke of York Islands; cameras later made a three-dimensional model of her. AE2 got through the Dardanelles on 25 April 1915, the first submarine to reach the Sea of Marmara, and was sunk by her own crew after being damaged in the Gallipoli campaign."
+      },
+      "university": {
+        "cause": "The two E-class boats were the beginning of the Royal Australian Navy’s submarine arm: launched in England in 1913 and manned by composite Australian and British crews. AE2’s passage out to Australia was described as the longest voyage ever made by a submarine up to that time. Their first wartime service was not in European waters but in the south-west Pacific, attached to the Australian Naval and Military Expeditionary Force, because the German colony and its wireless stations were the objective. The RAN recognised that service a century late, awarding the battle honour ‘Rabaul 1914’ after its honours system was overhauled in 2010. For the Australian navy the war began as a colonial and amphibious operation, and its first loss happened in the same water.",
+        "what": "AE1, commanded by Lieutenant Commander Thomas Besant, left Blanche Bay, Rabaul, at 07:00 on 14 September 1914 to patrol off Cape Gazelle with HMAS Parramatta. She had not returned by 20:00, no trace was found, and she was listed as lost with all hands. Finding her took a century: the volcanic seabed gave a rugged and highly variable underwater topography, and searches from 1976 failed until December 2017, when she was found off the Duke of York Islands, at a depth of 300 metres and in one piece. AE2 took part in the same operations and went to the Mediterranean, where in the early hours of 25 April 1915 she became the first submarine to penetrate the Dardanelles, operated for five days in the Sea of Marmara, was damaged by the torpedo boat Sultanhisar, and was scuttled by her crew.",
+        "consequence": "The cause of the loss is still argued. A retired rear admiral suggested a diving accident; a research team concluded that a ventilation valve, probably left open to make the tropical heat bearable on the surface, was insecure when the boat dived, flooding the engine room, so that she sank below 100 metres and imploded. That reconstruction depends on surveys made after 2017, so it is recent and unproven. The wrecks also raise a different question: Australia and Turkey decided to leave AE2 in place off Kara Burnu, where she was found in 1998, and the 2010 review of RAN battle honours had to decide, nearly a century afterwards, whether a submarine patrol off Rabaul counted as a battle at all."
+      }
+    }
+  },
+  {
+    "id": "penang_emden_1914",
+    "date": "1914-10-28",
+    "precision": "day",
+    "title": "Emden sinks two warships at anchor in Penang roads",
+    "kind": "battle",
+    "fronts": [
+      "naval"
+    ],
+    "countries": [
+      "Germany",
+      "Russia",
+      "France",
+      "United Kingdom"
+    ],
+    "figures": [],
+    "mapNote": "Pin in the Penang Strait between Penang island and the mainland, at the western roads where Zhemchug lay at anchor. This map’s borders stop in Europe; the naval front carries the Emden’s raiding voyage from Tsingtao through the Indian Ocean to Penang and the Cocos Islands.",
+    "note": "The names record the claim: Russian and French accounts call it the combat of Penang, German accounts the Schlacht von Penang, and the town is written both Penang and George Town. The Wikipedia article hedges over why Zhemchug’s captain was ashore — “his wife (some accounts say his mistress)” — and 135 men were killed while only 12 Russian sailors are buried in George Town itself. The memory is still live: the monument was renovated by Soviet sailors in 1972 and 1987, and Vladimir Putin cited the battle during his 2003 visit to Malaysia.",
+    "levels": {
+      "primary": {
+        "cause": "In 1914 the German light cruiser Emden was sent off alone to raid Allied shipping in the Indian Ocean. In October she came to Penang, a British port where Allied and Russian warships anchored to coal and escort convoys.",
+        "what": "On 28 October 1914 the German cruiser Emden entered Penang harbour under British colours, with a fake funnel. Once inside she raised her own ensign and sank the Russian cruiser Zhemchug and the French destroyer Mousquet; 135 men died, and she lost none.",
+        "consequence": "The Emden left unharmed and raided on for ten more days, until the Australian cruiser Sydney forced her ashore at the Cocos Islands. The Russian dead are still buried at Penang, in the only battle of the war fought in British Malaya."
+      },
+      "secondary": {
+        "cause": "After the outbreak of war the German East Asia Squadron left its base at Tsingtao in China and headed for Germany, but one ship was detached: the light cruiser Emden, under Karl von Müller, on a solitary raiding mission. She sank merchant ships across the Indian Ocean, and the Allies hunted her. The Russian protected cruiser Zhemchug had been ordered to protect convoys and merchant shipping in the Indian Ocean, and in October she lay at Penang with a French destroyer flotilla.",
+        "what": "Zhemchug was unfit to fight: her captain was ashore, the magazine keys had gone with him, and no lookouts were posted. Von Müller flew the white ensign and rigged a false funnel to look like the British cruiser Yarmouth, closing to some 180 metres. His second torpedo hit Zhemchug’s forward magazine and she sank; 88 of her crew of 250 died. As Emden left she caught the French destroyer Mousquet returning from patrol and sunk her, killing her commander; the only French return was wild. In all 135 French and Russian sailors died and 157 were wounded.",
+        "consequence": "Cherkassov watched from the Eastern Oriental Hotel as his ship went down; he was court-martialled for negligence, as his deputy was, and Tsar Nicholas II reduced the sentences to service as ordinary seamen. Both officers were later decorated with the Cross of St George. Ten days after Penang, Emden met HMAS Sydney, whose heavier and longer-range guns forced her aground at the Cocos Islands. The battle showed that the war had reached the trade routes of the empire, and that a shipping harbour could be attacked at anchor without a shot fired in warning."
+      },
+      "university": {
+        "cause": "The battle belongs to the Asian, not the European, war. Germany’s East Asia Squadron was based at Tsingtao in China, and on the outbreak of war it left for home; one ship, Emden, was detached for commerce raiding — a form of guerre de course suited to a navy that could not meet fleets. She attacked merchant shipping, and cruisers had to hunt her. Penang was a British crown colony in the Straits Settlements and a coal and convoy stop on the Malacca Strait route, used by Allied and Russian warships alike, which made it a raider’s natural target.",
+        "what": "The attack exploited readiness, not gunnery. Zhemchug lay at anchor in a state of non-readiness, her captain ashore and the magazine keys with him, no lookouts posted; Naval History calls her “a sitting duck”. Von Müller rigged a false funnel to make Emden resemble HMS Yarmouth and flew the white ensign until he was inside the harbour, closing to 180 metres before opening fire. Two torpedoes and shell fire sank Zhemchug, the second detonating her forward magazine; Mousquet, returning from patrol, was caught by surprise and sunk with her commander. The old cruiser D’Iberville and the destroyer Fronde fired on Emden but wildly inaccurately. Allied losses were 135 dead and 157 wounded; the Germans had none.",
+        "consequence": "The strategic effect was reputational: one raider had struck inside a British harbour and sunk two warships without loss, and the Russian navy punished two senior officers rather than the system that left a cruiser unready at anchor. The dead are still in Penang — 12 Russian sailors are buried at two sites in George Town, the monument to Zhemchug’s sailors was renovated by Soviet sailors in 1972 and 1987, and Mousquet’s is at the Church of the Assumption. Vladimir Putin referred to the battle repeatedly during his 2003 visit to Malaysia. Historians of the cruiser war pair Penang with the Cocos Islands: raiding and hunting cruisers were the same problem at the ends of the empire."
+      }
+    }
+  },
 ];
