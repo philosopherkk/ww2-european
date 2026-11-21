@@ -448,6 +448,35 @@ export const EVENTS_1941_1942: WW2Event[] = [
     },
   },
   {
+    id: 'little_saturn_1942',
+    date: '1942-12-16',
+    precision: 'day',
+    title: 'Little Saturn: the Italian Eighth Army is destroyed on the Don',
+    kind: 'battle',
+    fronts: ['eastern'],
+    countries: ['Soviet Union', 'Italy', 'Germany', 'Hungary', 'Romania'],
+    figures: [],
+    note: 'Stavka had planned a much larger “Saturn” whose ultimate objective was Rostov-on-Don; Stalin cut it down to Little Saturn, still aimed at the Don and Chir line, at Millerovo as a communications centre and at the Tatsinskaya airfield from which the Luftwaffe flew the Stalingrad pocket’s supplies. The operation ran from 16 to 30 December 1942. The Italian Eighth Army under General Gariboldi had been deployed in open steppe positions without the anti-tank equipment to deal with armour, and was outnumbered nine to one in some sectors; of about 130,000 men encircled, roughly 45,000 reached the 6th Panzer Division at Chertkovo. On 24 December the 24th Tank Corps reached Tatsinskaya and destroyed transport aircraft there. The relief attempt, Winter Storm, ended on 23 December; Koltso, the destruction of the Sixth Army, began on 10 January.',
+    mapNote: 'The eastern front on this map is drawn as operation lines, not borders: every snapshot colours this ground Soviet. Find the line drawn for the Stalingrad encirclement of November 1942 and the December relief attempt; this fighting happened west of both, on the Don and the Chir, and has no line of its own.',
+    levels: {
+      primary: {
+        cause: 'In November the Red Army had surrounded the German Sixth Army at Stalingrad. Germany tried to break in from outside, and the Red Army now attacked the armies that were guarding the flanks of the pocket — Italian, Romanian and Hungarian troops in the open steppe.',
+        what: 'On 16 December 1942 Soviet guards armies attacked south from the Don and the Chir rivers. They cut through the Italian Eighth Army, surrounded about 130,000 men, took the rail centre of Millerovo and raided the airfield the Germans used to supply Stalingrad.',
+        consequence: 'The attempt to relieve Stalingrad was given up. Italy lost the army it had sent to the Don, and the other allies of Germany began to see that the war in the east could be lost — three years before their own regimes did.',
+      },
+      secondary: {
+        cause: 'After the encirclement of 23 November 1942, Stavka planned a much larger offensive called Saturn, whose prize was Rostov-on-Don; Stalin cut it to Little Saturn, keeping the Don and Chir front, the rail junction of Millerovo and the Tatsinskaya airfield as objectives. The Axis flanks were held by Italian, Romanian and Hungarian armies in steppe positions without the anti-tank weapons to fight armour, because the German effort had gone into the city.',
+        what: 'Little Saturn began on 16 December 1942. The 1st and 3rd Guards Armies attacked from the north, encircling some 130,000 troops of the Italian Eighth Army on the Don against an odds of nine to one in places, and pushing to Millerovo; to the south the 28th Army threatened to enclose the German 1st Panzer Army. Manstein sent the 6th Panzer Division to the Italians; about 45,000 of the encircled men got out at Chertkovo. On 24 December Soviet tanks raided the Tatsinskaya airfield and destroyed transport aircraft there.',
+        consequence: 'The German relief attempt ended on 23 December with the pocket’s fate settled, and Operation Koltso began on 10 January. The destruction of an entire Italian army, and damage to the Hungarian and Romanian formations beside it, made the eastern front a place where Germany’s allies now had to be defended — and where their governments began looking for a way out of the war.',
+      },
+      university: {
+        cause: 'Little Saturn is the operation that turns the Stalingrad story from a German defeat into an Axis one, and the argument is about how far Stavka could have gone. Saturn proper aimed at Rostov; Stalin reduced it because the relief attempt of 12 December still had to be answered and because the Mars offensive outside Moscow had to be supported. That choice is the standard evidence for the argument that Soviet planning in the winter of 1942-43 was cautious; the operational record on the Italian front suggests the caution was about supply, not about nerve.',
+        what: 'The campaign is worth reading for the way it was coordinated: the 1st and 3rd Guards Armies and the 5th Tank Army struck towards Morozovsk and Millerovo while the 28th and 51st Armies turned against the relief column, so that Winter Storm was met by the same offensive that broke the flank. The raid on Tatsinskaya on 24 December by the 24th Tank Corps destroyed the airlift’s infrastructure rather than the pocket’s defenders, which is what made the German decision of late December about aircraft as much as about tanks. The Italian units, outnumbered nine to one in places and short of anti-tank guns, resisted; the survivors counted 45,000 out of 130,000.',
+        consequence: 'The political consequences outrun the operational ones. Italy lost the army it had committed to the eastern front, and the Hungarian and Romanian formations alongside it were mauled; from this month the German command had to hold a front with allies whose regimes were beginning to negotiate, which is why the campaigns of 1943-44 in this site are also about Romania, Hungary and Italy leaving the war. In Soviet memory the operation established the deep-battle template of attacking the flanks rather than the centre — the same pattern as at Berlin in 1945.',
+      },
+    },
+  },
+  {
     id: 'wintergewitter',
     date: '1942-12-12',
     precision: 'day',
@@ -571,7 +600,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
     countries: ['United Kingdom', 'Germany'],
     figures: ['donitz'],
     note: 'The winter of 1940-41 was the high point of the U-boat campaign in the western approaches, and March 1941 was the month the Royal Navy began to take the battle back. The escort system had been rebuilt: permanent escort groups of destroyers and corvettes trained as formations at Tobermory in the Hebrides under Vice-Admiral Gilbert Stephenson; Western Approaches Command moved from Plymouth to Liverpool in February 1941 so that convoy control sat closer to the sea; work with Coastal Command aircraft improved, and in April the Admiralty took over operational control of them; and new short-wave radar, small enough for corvettes and aircraft and able to see a surfaced submarine in the dark, began to arrive. In early March, Günther Prien’s U-47 - the boat that had forced Scapa Flow in October 1940, credited with 31 ships sunk - failed to return from patrol; she was assessed as lost with all 45 crew to HMS Wolverine and Verity west of Ireland. In the battle of Convoy HX 112 the newly formed 3rd Escort Group, four destroyers and two corvettes, held off the U-boat pack. U-100 was detected by the primitive radar fitted to the destroyer HMS Vanoc, rammed and sunk; U-99 was caught shortly afterwards and her crew taken prisoner. Dönitz had lost his three leading aces - Prien, Schepke and Kretschmer - in a fortnight, and moved his wolf packs further west to catch convoys before their anti-submarine escort joined. The new strategy paid at first: in early April the pack found Convoy SC 26 before its escort arrived and sank ten ships, although another U-boat was lost.',
-    mapNote: 'On the map, look at the open water west of the British bases and of the aircraft that could cover a convoy. This fighting had no town or ridge in front of it; the ground was the ocean between the escorts’ fuel limits and the German Bight.',
+    mapNote: 'Look at the open water west of the British bases and of the aircraft that could cover a convoy. This fighting had no town or ridge in front of it; the ground was the ocean between the escorts’ fuel limits and the German Bight.',
     levels: {
       primary: {
         cause: 'German submarines were sinking more merchant ships than Britain could build, so the navy trained ships to guard the convoys.',
@@ -952,6 +981,35 @@ export const EVENTS_1941_1942: WW2Event[] = [
         cause: 'Anthropoid is the sharpest case in the argument about the cost of spectacular resistance: the operation succeeded tactically and destroyed the indigenous network in the process, and Beneš’s willingness to spend lives on a diplomatic result has been re-assessed by Czech historians since 1989.',
         what: 'It also has an important place in the history of the Protectorate’s economy: Heydrich’s "carrot and stick" line was a deliberate attempt to make Czech heavy industry, which was a fifth of German output, work willingly, and his successors continued it without him.',
         consequence: 'The postwar politics of the paratroopers is its own story - the communist regime used them and then suppressed the accounts of the SOE connection, and the British SOE records on the operation were closed until 2007.',
+      },
+    },
+  },
+  {
+    id: 'pedestal_1942',
+    date: '1942-08-15',
+    precision: 'day',
+    title: 'Operation Pedestal: five ships out of fourteen reach Malta, and the island stays in the war',
+    kind: 'battle',
+    fronts: ['mediterranean'],
+    countries: ['United Kingdom', 'Malta', 'Italy', 'Germany'],
+    figures: ['park'],
+    note: 'The convoy’s most valuable ship was the tanker Ohio, American-owned with a British crew, torpedoed on the last day of the running fight and towed into Grand Harbour. About 29,000 long tons of general cargo, together with petrol, oil fuel, kerosene and diesel, came ashore — enough to give the island roughly ten weeks beyond its existing stocks. The Royal Navy and the Merchant Navy had saved Malta, but the Allies would not risk such losses again: no large convoy was attempted until November 1942, and through September and October the island was revictualled by submarine “Magic Carpet” runs. The siege itself was broken on land, by the reconquest of Egypt and Libya after El Alamein and by Torch, which put land-based aircraft over the convoy route.',
+    mapNote: 'Malta is drawn as a polity in its own right, a small filled island south of Italian Sicily. The rest of the convoy’s path is water the map never colours; Pantelleria and Lampedusa are too small to appear, and the North African shore the attacks came from is never coloured at all.',
+    levels: {
+      primary: {
+        cause: 'Malta is an island in the middle of the Mediterranean, and everything sent to it had to sail past Italian ports and German air bases. In the spring of 1942 the island’s food, fuel and aircraft were running out.',
+        what: 'In August 1942 Britain sent a large convoy from Gibraltar, with aircraft carriers, battleships and cruisers. Air, submarine and motor-boat attacks went on for five days. Nine of the fourteen merchant ships were sunk, but five reached Grand Harbour, among them the tanker Ohio.',
+        consequence: 'The fuel in Ohio let Malta’s fighters and submarines work again, and Italian ships had to sail further from the island. The blockade did not finish the job: Malta stayed a base until the North African shore was taken in 1943.',
+      },
+      secondary: {
+        cause: 'Malta’s garrison had been supplied through 1941 and 1942 at heavy cost: from January 1941 to August 1942, 46 ships delivered 320,000 long tons of cargo and 25 were sunk, and 31 supply runs were made by submarine. The island had also lived under sustained bombing in the spring, which used up its fighters and its fuel. The Allies still needed it as an air and submarine base against the convoys carrying Rommel to Tripoli and Benghazi, so a serious relief attempt had to be made before the desert campaign reopened in autumn.',
+        what: 'The convoy sailed from Britain on 3 August and entered the Mediterranean in the night of 9-10 August: fourteen merchant ships, covered by three carriers and two battleships, while a separate carrier run flew Spitfires into the island. Axis air, submarine and motor-boat attacks went on from 11 to 15 August. The merchant Waimarama blew up; the carrier Eagle and two cruisers were sunk; the tanker Ohio, torpedoed, was towed into Grand Harbour on the 15th. Nine merchant ships were lost and more than 500 seamen killed, against two Axis submarines and about 50 aircraft.',
+        consequence: 'Five ships out of fourteen got through, and the arrival of Ohio’s aviation fuel is what made the losses worth taking: Malta’s air offensive against Axis shipping revived, submarines came back to the Grand Harbour, and Italian convoys had to detour further from the island. The attack on the convoy was the last sizeable Axis success in the Mediterranean. Malta was still not safe — supply runs went on until the North African ports fell in 1943 — but the island had been kept in the war.',
+      },
+      university: {
+        cause: 'The campaign sits in the argument about whether interdiction at sea can be decisive. Malta was a base, not a territory, so its defence was a question of tonnage, fuel and aircraft rather than of ground, and the British had already paid for it through 1941 and 1942 with 46 merchant ships, 31 submarine runs and 19 carrier ferry operations. The strategic case for the convoy rests on what the island was for: air and submarine attacks on the sea route to Tripoli and Benghazi, which in 1942 carried the fuel that decided whether Rommel could manoeuvre. That is why the tanker mattered more than the battleships.',
+        what: 'The battle is worth reading as an air-sea problem rather than a fleet action. The British massed three carriers, two battleships and a cruiser screen because the convoy had to cross open water under air attack from Sicily, Sardinia and Crete, and the carrier aircraft were needed twice: once to strike Axis airfields as the convoy ran, once to fly the Spitfires that replaced the island’s fighters. The Axis did not have to sink the convoy, only to make the loss rate intolerable, and it came close; its failure was coordination rather than effort, since Italian ships in different squadrons never trained together and Supermarina constantly over-ruled its subordinate commanders.',
+        consequence: 'Two conclusions follow. First, the logistics of interdiction: an island base lives on fuel, and the one tanker that got in changed the campaign more than the nine ships that went down, because the cargo landed was enough for about ten weeks. Second, the limits of a victory at sea: the Axis lost boats and aircraft it could ill afford, and yet no further large convoy could be risked until November. The siege of Malta was ended not by the fleet but by the reconquest of Egypt and Libya after El Alamein and by Torch, which put land-based aircraft over the water. Sea power kept the island alive; only the land campaign opened the route.',
       },
     },
   },

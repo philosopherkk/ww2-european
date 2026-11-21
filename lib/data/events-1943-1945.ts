@@ -452,6 +452,35 @@ export const EVENTS_1943_1945: WW2Event[] = [
     },
   },
   {
+    id: 'jassy_prut_1944',
+    date: '1944-04-08',
+    precision: 'day',
+    title: 'April 1944: the Red Army is stopped outside Jassy, and Romania stays at war',
+    kind: 'battle',
+    fronts: ['eastern', 'balkans'],
+    countries: ['Soviet Union', 'Germany', 'Romania'],
+    figures: ['konev'],
+    note: 'Glantz dates the first Jassy-Kishinev operation to 8 April - 6 June 1944, and Richard C. Hall to an offensive beginning on 5 April; the sequence of engagements is the first battle of Târgu Frumos, Podu Iloaiei and the second battle of Târgu Frumos. Stavka’s aim, in Glantz’s reading, was to break the German-Romanian defences of northern Romania, take Iaşi and Chişinău and then project forces as deep as Ploieşti and Bucharest. The offensive failed, chiefly for the poor combat performance of the Soviet troops and the effectiveness of German defensive preparations. The second operation of the same name — the line this site draws for 20-29 August 1944 — began at Jassy and destroyed the same front inside a fortnight.',
+    mapNote: 'The only line drawn for Jassy-Kishinev belongs to August 1944, and it starts at Jassy. The April fighting was already there: the borders drawn for April 1944 put Iaşi inside Romania and the Soviet frontier east of Chişinău, while the actual front ran through Moldavia, northwest of Iaşi.',
+    levels: {
+      primary: {
+        cause: 'After driving the Germans out of Ukraine in the winter, the Red Army pushed into eastern Romania in March and April 1944. Romania had been fighting on Germany’s side since 1941, and its oilfields were Germany’s last large source of fuel.',
+        what: 'In April 1944 Soviet armies crossed the rivers Dniester and Prut, took the towns of Hotin and Dorohoi and drove south towards Jassy. Around the small rail town of Târgu Frumos they were thrown back by German and Romanian units and could not break through.',
+        consequence: 'The front in Moldavia held for four more months. Romania stayed in the war until the king’s coup of 23 August 1944, and the Soviet occupation of the country came later than Stalin had expected from the spring.',
+      },
+      secondary: {
+        cause: 'The Soviet winter campaign of 1943-44 had cleared the right bank of the Dnieper and reached the old Romanian frontier. Stavka’s aim in the spring was to break the German-Romanian defences of northern Romania, take Iaşi and Chişinău, and if possible push on to Ploieşti and Bucharest — a military objective with a political one attached, since Stalin intended to project Soviet power into the Balkans by the shortest route.',
+        what: 'By 5 April the 2nd Ukrainian Front had crossed the upper Dniester and Prut, taken Hotin and Dorohoi and reached the Târgu Frumos and Botoşani region, thirty to sixty miles northwest of Iaşi, meeting only light Romanian resistance. On 8 April the 27th and 40th Armies attacked south along the Târgu Frumos axis. Mud, the difficulty of crossing the Prut and stiffening German defences stopped them; after two more battles at Târgu Frumos and one at Podu Iloaiei the offensive was spent.',
+        consequence: 'The failure gave the German-Romanian front in Moldavia four more months of life, and with them Romania’s participation in the war, its oil and its territory as a place where a postwar settlement could be negotiated. When the second Jassy-Kishinev offensive came on 20 August 1944 it broke the same ground in days, and Romania left the Axis on 23 August — four months later than the April fighting had promised it would.',
+      },
+      university: {
+        cause: 'Glantz’s account of the first Jassy-Kishinev operation is deliberately revisionist: he dates it to 8 April - 6 June 1944, treats it as a coordinated invasion by the 2nd and 3rd Ukrainian Fronts, and explains its failure by the poor performance of Soviet troops and the quality of German defensive preparation, not by distance or weather alone. That matters for Stalin’s Balkan strategy: if the April offensive was a real attempt on Ploieşti and Bucharest, the Soviet settlement of southeastern Europe was nearly made in the spring, not only the autumn.',
+        what: 'The fighting has a clear operational shape. Konev’s shock group crossed to the west bank of the Prut northwest of Iaşi, pushed the Romanian 7th and 8th Infantry Divisions back towards Târgu Frumos, and sent tank and rifle corps at the town from three directions; the German response used the armoured reserve locally and fought a defence in depth on the only good axes, which were also choked by the rasputitsa. The three battles for Târgu Frumos and the engagement at Podu Iloaiei are the same fight repeated: an attempt to take a rail junction on open ground against armour dug in, without the reconnaissance or the artillery coordination the Red Army had begun to make normal.',
+        consequence: 'Two consequences are worth separating. Militarily, the failure meant that the 1944 Soviet summer offensive in the south had to begin from a bridgehead inside Moldavia rather than from the Prut, which is why the August operation is drawn on this site as an advance from Jassy to the Bulgarian frontier. Politically, the delay gave the Romanian government and the Western allies time to look for a separate arrangement while Romanian ground was still being fought over, and left Romania’s frontier to be decided by the fighting of August, not by the 1940 line the April borders show.',
+      },
+    },
+  },
+  {
     id: 'cassino',
     date: '1944-05-12',
     precision: 'day',
@@ -1312,7 +1341,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     countries: ['Germany', 'Italy'],
     figures: ['kesselring'],
     note: 'The caves were declared a Memorial Cemetery and National Monument after the war, and are open daily; the bodies had been left in them for more than a year. The German defence was always that the reprisal was lawful and that the Via Rasella attack was not a legitimate act of war. The Italian Supreme Court held the opposite in 1952, on an appeal brought by Kappler’s own lawyers, and the rulings of the 1990s that followed it made the killing a war crime rather than a contested act of war. Priebke escaped from a British prison camp in 1946 and lived in Argentina for decades before he was handed over to Italy in the 1990s.',
-    mapNote: 'On the map, Rome sits inside the German-occupied part of Italy: the frontier drawn for April 1944 puts the Allied front far to the south of the city. The quarries where the killing was done are on the southern edge of Rome, inside the occupied zone and nowhere near the fighting.',
+    mapNote: 'Rome sits inside the German-occupied part of Italy: the frontier drawn for April 1944 puts the Allied front far to the south of the city. The quarries where the killing was done are on the southern edge of Rome, inside the occupied zone and nowhere near the fighting.',
     levels: {
       primary: {
         cause: 'Italian fighters blew up a column of German police in a street of Rome on 23 March 1944. The German command in the city decided the attack had to be answered at once, and that hostages would pay for it.',
@@ -1509,7 +1538,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     countries: ['United Kingdom', 'Germany'],
     figures: ['harris'],
     note: 'The number of German dead is given as between 940 and 1,204 because the ship’s company had been reduced and dispersed since 1942, and German records and postwar estimates differ. Bomber Command lost no aircraft. The attack closed a three-year series of operations against the ship: carrier raids, the midget-submarine attack of 15 September 1944 that crippled her, and the heavy-bomber attack of 29 October that failed because cloud hid the anchorage.',
-    mapNote: 'On the map, look at the top of Norway, above the Arctic convoy routes, near Tromsø - the frontier of occupied Norway does not move in this month, and nothing about it needed to. What changed was the sea, and the German naval threat that rested in it.',
+    mapNote: 'Look at the top of Norway, above the Arctic convoy routes, near Tromsø - the frontier of occupied Norway does not move in this month, and nothing about it needed to. What changed was the sea, and the German naval threat that rested in it.',
     levels: {
       primary: {
         cause: 'Germany’s biggest battleship, Tirpitz, had hidden in Norwegian fjords since 1942 and threatened the convoys carrying supplies to the Soviet Union. The Allies had tried submarines and carrier planes to sink her.',
@@ -1566,7 +1595,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     countries: ['Albania', 'Germany'],
     figures: [],
     note: 'Albania marks 29 November as its liberation day, when the last German troops left the country; Tirana itself fell on 17 November. The government that took power had been proclaimed at Berat on 22 October 1944, before the main towns were taken, and was recognised by no other state. On 4 February 1944 the Gestapo, with local collaborators, had shot 86 anti-fascists in the capital.',
-    mapNote: 'On the map, Albania is on the Adriatic coast, opposite the heel of Italy, and the frontier drawn for April 1944 shows it wholly occupied with no line inside it. In this autumn the country changed hands from within; the border drawn for it did not move.',
+    mapNote: 'Albania is on the Adriatic coast, opposite the heel of Italy, and the frontier drawn for April 1944 shows it wholly occupied with no line inside it. In this autumn the country changed hands from within; the border drawn for it did not move.',
     levels: {
       primary: {
         cause: 'Germany had occupied Albania since Italy gave up in 1943, and by the autumn of 1944 its armies were pulling back out of the Balkans. Albanian fighters, led by communists, attacked as the Germans left.',
@@ -1853,7 +1882,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     countries: ['Soviet Union', 'Germany'],
     figures: ['manstein'],
     note: 'The Zhitomir-Berdichev offensive was the first of the winter campaigns that made up the Dnieper-Carpathian operation, and it ran from 24 December 1943 to 14 January 1944. The Kiev bridgehead won in November overhung the German right in south-western Ukraine, and German attempts to cut it from the south of Zhitomir were the immediate occasion for the Soviet attack. General of Army Nikolai Vatutin’s 1st Ukrainian Front struck on 24 December along the Kiev-Zhitomir highway and the Fastov-Kazatin railway with the 1st Guards Army, the 18th Army and the 38th Army, on a front of about 300 kilometres, against Erhard Raus’s 4th Panzer Army; Hans-Valentin Hube’s 1st Panzer Army was on its left. The offensive opened with a breakthrough, and Soviet troops advanced 80 to 200 kilometres, taking Berdichev on 5 January and clearing the Kiev and Zhitomir regions; the push to the Upper Bug was checked and by February the line had stabilised south-west of Berdichev and Kazatin. Losses from the records of Army Group South, held at the Bundesarchiv, give the 4th Panzer Army 3,284 killed, 13,160 wounded, 4,663 missing and 1,462 frostbitten between 21 December and 31 January, with 1st Panzer Army losing 15,224 men in January alone; across the two armies about 13,500 men were killed or missing and some 40,000 in all. The 1st Ukrainian Front lost 23,163 killed or missing and 76,855 wounded, about 100,000 in total, in Glantz’s figures. The frostbite returns in the German records are a measure of the conditions in which the winter campaign was fought.',
-    mapNote: 'On the map, Zhitomir is on the Kiev road, at the line the attack started from. The advance carried the front 80 to 200 kilometres further west, to Berdichev and Kazatin; the border drawn for this month is a snapshot, not the line of 24 December.',
+    mapNote: 'Zhitomir is on the Kiev road, at the line the attack started from. The advance carried the front 80 to 200 kilometres further west, to Berdichev and Kazatin; the border drawn for this month is a snapshot, not the line of 24 December.',
     levels: {
       primary: {
         cause: 'After taking the far bank of the Dnieper near Kiev, the Soviet army attacked again in winter to push the German army out of Ukraine.',
@@ -2048,7 +2077,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     countries: ['United States', 'United Kingdom', 'France', 'Soviet Union', 'Germany'],
     figures: ['goering', 'jodl'],
     note: 'The trial the charter created opened on 20 November 1945 and ran to 1 October 1946: the International Military Tribunal tried 22 of the most important surviving leaders of Nazi Germany, in politics, the military and the economy, and six German organisations. Because crimes against humanity had to be tied to aggressive war or war crimes, much of the persecution of Germany’s own citizens before 1939 falls outside the charges - a limit of the document that its own historians have argued about ever since.',
-    mapNote: 'On the map, Nuremberg lies in the American occupation zone in the south, while the four powers sat in Berlin, more than a hundred kilometres inside the Soviet zone. Both places sat inside the zone lines that the armies had fallen back to in July 1945.',
+    mapNote: 'Nuremberg lies in the American occupation zone in the south, while the four powers sat in Berlin, more than a hundred kilometres inside the Soviet zone. Both places sat inside the zone lines that the armies had fallen back to in July 1945.',
     levels: {
       primary: {
         cause: 'The Allied leaders had promised in 1943 to punish the German leaders who had made the war and the atrocities, and some of them wanted those men shot without any trial. The four powers agreed instead to hold a court.',
