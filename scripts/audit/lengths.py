@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Fresh over-length report against the reading-level caps."""
-import json, re, sys
+import json, re, sys, os
 
 CAPS = {"primary": 45, "secondary": 97, "university": 143}
 W = re.compile(r"[A-Za-zÀ-ž0-9’'\-]+")
@@ -26,7 +26,7 @@ def walk(dump, tag):
     return rows
 
 tot = 0
-for tag in ("ww1", "ww2"):
+for tag in (t for t in ("ww1", "ww2") if os.path.exists(f"{t}.json")):
     dump = json.load(open(f"{tag}.json"))
     rows = sorted(walk(dump, tag), key=lambda r: -(r[3] - r[4]))
     print(f"\n===== {tag}: {len(rows)} fields over the cap =====")

@@ -35,9 +35,20 @@ cd scripts/audit
 npx esbuild entry-ww1.ts --bundle --platform=node --format=esm --outfile=/tmp/e1.mjs
 node /tmp/e1.mjs > ww1.json          # ~790 KB, keys EVENTS FIGURES CAMPAIGN_LINES …
 python3 linkcheck.py ww1             # expect "48 links over 32 of 42 lines, 0 problems"
-python3 lengths.py ww1               # fields over the reading-level caps
+python3 lengths.py                   # expect "total over-length fields: 176"
+                                     #   (primary 82, secondary 82, university 12)
 python3 hygiene2.py                  # duplicate/encoding/typography sweep
 ```
+
+`hygiene2.py`, `gapcheck.py` and `durchk.py` **read** both repositories. Reading WW2 is
+fine. Writing to it is not:
+
+> **`apply.py` and `apply_field.py` take a `"site"` field in their input JSON and will
+> happily patch `ww2-european`. Always use `"site": "WW1"`. A batch containing `"WW2"`
+> edits another agent's live site — do not run it.**
+
+`lengths.py` runs from `scripts/audit` and simply skips a site whose `ww2.json` /
+`ww1.json` dump is absent, so you only need the WW1 dump.
 
 Dev server: `npx next dev -p 3124` (or any free port; port 3123 is usually held by the
 other agent). Start it as a background process — `nohup … &` inside a single shell call
@@ -50,7 +61,7 @@ a public deployment with 403 HTML, which Chrome blocks. Do not "optimise" the ti
 ## 3. Editorial rules — these are hard
 
 1. **Reading-level word caps**: primary ≤ 45, secondary ≤ 97, university ≤ 143 words per
-   part. `python3 scripts/audit/lengths.py ww1` counts with
+   part. Run `python3 lengths.py` from `scripts/audit`; it counts with
    `[A-Za-zÀ-ž0-9’'\-]+`. Campaign `summary` / `strength` / `operation` must stay within
    the original length +10 %.
 2. **en-GB spelling** throughout ("judgement", "centre", "organised").
