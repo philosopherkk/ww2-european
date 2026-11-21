@@ -82,6 +82,9 @@ export const CAMPAIGN_EVENT_LINKS: CampaignEventLink[] = [
   { line: 'scheldt_1944', event: 'scheldt_campaign', at: 0 },
   { line: 'remagen_ruhr', event: 'remagen', at: 0 },
   { line: 'bulge', event: 'bulge', at: 0 },
+  { line: 'khalkhin_gol_1939_soviet', event: 'khalkhin_gol_1939', at: 3 },
+  { line: 'malaya_1941_japanese', event: 'singapore_falls_1942', at: 4 },
+  { line: 'leyte_luzon_1944_45', event: 'leyte_gulf_1944', at: 1 },
 ];
 
 export const LINKS_BY_LINE: Record<string, CampaignEventLink[]> = {};

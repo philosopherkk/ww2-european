@@ -127,7 +127,7 @@ function progressThrough(line: CampaignLine, monthKey: string) {
   return Math.min(1, Math.max(0, (monthEnd - from) / (to - from)));
 }
 
-const SIDE_ORDER: Side[] = ['german', 'soviet', 'western'];
+const SIDE_ORDER: Side[] = ['german', 'japanese', 'soviet', 'western'];
 
 interface Props {
   monthKey: string;

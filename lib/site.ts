@@ -178,9 +178,12 @@ export const SIDE_META: Record<
   CampaignLine['side'],
   { label: string; color: string }
 > = {
-  // Exactly the three sides the campaign data uses. A side with no line would
-  // render an empty filter button, so none are defined here.
+  // Exactly the four sides the campaign data uses. A side with no line would
+  // render an empty filter button, so none are defined here. The Japanese line
+  // colour is the stroke of the Japanese-occupied fill, so a line and the
+  // territory an army had taken read as one family on the map.
   german: { label: 'German advance', color: '#3F3F46' },
+  japanese: { label: 'Japanese advance', color: '#5F4260' },
   soviet: { label: 'Soviet advance', color: '#15803D' },
   western: { label: 'Western Allied advance', color: '#1D4E89' },
 };

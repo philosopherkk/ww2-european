@@ -10,7 +10,7 @@
  * cannot tell you which way an army was moving, so withdrawals (Dunkirk's
  * beaches excepted, since that was an embarkation) are left to the events.
  */
-export type Side = 'german' | 'soviet' | 'western';
+export type Side = 'german' | 'japanese' | 'soviet' | 'western';
 
 export interface CampaignLine {
   id: string;
@@ -1543,5 +1543,164 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       'After the Ruhr was encircled, Montgomery’s 21st Army Group drove north-east across the North German plain, and the campaign became a race — not to Berlin, which was assigned to the Soviets under the occupation zones agreed at Yalta and confirmed by contacts on the Elbe, but to the Baltic ports and to Denmark. A planned airborne drop in the sector was called off in favour of an armoured rush, and the 6th Airborne Division reached the Baltic at Wismar on 2 May, only hours ahead of the Red Army. That line — Schleswig-Holstein in western hands — became the frontier of the postwar West: the western zones included the whole of the North German plain and the Kiel canal, and the Red Army was stopped on the Baltic coast at Wismar. Hamburg surrendered on 3 May to avoid destruction; the largest rescue operation of the war, the evacuation of an estimated 2 million refugees and soldiers by sea from the east, which officially ended off these coasts on 8 May.',
     strength:
       'Second British Army with VIII and XII Corps and the attached XVIII (US) Airborne Corps, mobile across open country; Army Group Northwest’s remnants, withdrawing towards Denmark and the Baltic ports',
+  },
+
+  /* ---- Pacific and Asia: lines the world layer needs, and the side that
+     fought them. The same rule as everywhere else here: an axis of advance
+     through named places whose coordinates each source gives. ---- */
+  {
+    id: 'khalkhin_gol_1939_soviet',
+    name: 'Khalkhin Gol: the Soviet approach from Choibalsan',
+    side: 'soviet',
+    from: '1939-05-11',
+    to: '1939-09-16',
+    path: [
+      [48.1356, 114.6461], // Choibalsan
+      [47.8956, 117.8356], // Khalkh River
+      [47.6314, 118.6175], // Khalkhgol
+      [47.7733, 118.7567], // Nomonhan
+    ],
+    summary:
+      'Soviet-Mongolian fighting on the Khalkh Gol from 11 May 1939, and the Soviet counter-offensive in August that pushed the Japanese back to the border. The line runs from the Soviet rear base at Choibalsan out to the river line and the Nomonhan ground the fighting never left. This is a schematic axis of advance through named places, not a surveyed daily front line. The ring marks an interpolated position along that axis by date, not a documented map reference for that morning.',
+  },
+  {
+    id: 'malaya_1941_japanese',
+    name: 'Malaya 1941–42: Kota Bharu to Singapore',
+    side: 'japanese',
+    from: '1941-12-08',
+    to: '1942-02-15',
+    path: [
+      [6.133, 102.25], // Kota Bharu
+      [6.2644, 100.4202], // Jitra
+      [3.1478, 101.6953], // Kuala Lumpur
+      [1.4556, 103.7611], // Johor Bahru
+      [1.283, 103.833], // Singapore
+    ],
+    summary:
+      'The Japanese advance down the Malay peninsula from the landing at Kota Bharu on 8 December 1941 to the surrender at Singapore on 15 February 1942, through the Jitra line, Kuala Lumpur and Johor Bahru. This is a schematic axis of advance through named places, not a surveyed daily front line. The ring marks an interpolated position along that axis by date, not a documented map reference for that morning.',
+  },
+  {
+    id: 'philippines_1941_japanese',
+    name: 'Philippines 1941–42: Lingayen Gulf to Corregidor',
+    side: 'japanese',
+    from: '1941-12-08',
+    to: '1942-05-08',
+    path: [
+      [16.283, 120.2], // Lingayen Gulf
+      [16.043, 120.334], // Dagupan
+      [15.4869, 120.59], // Tarlac City
+      [14.5958, 120.9772], // Manila
+      [14.68, 120.45], // Bataan
+      [14.3856, 120.5731], // Corregidor
+    ],
+    summary:
+      'The Japanese advance through Luzon after the landings of December 1941: from Lingayen Gulf through Dagupan and Tarlac to Manila, and then across the Bataan peninsula to Corregidor, which held out until the campaign ended on 8 May 1942. This is a schematic axis of advance through named places, not a surveyed daily front line. The ring marks an interpolated position along that axis by date, not a documented map reference for that morning.',
+  },
+  {
+    id: 'burma_1942_japanese',
+    name: 'Burma 1942: Yangon to Myitkyina',
+    side: 'japanese',
+    from: '1941-12-14',
+    to: '1942-05-28',
+    path: [
+      [16.795, 96.16], // Yangon
+      [18.933, 96.433], // Taungoo
+      [21.9831, 96.0844], // Mandalay
+      [25.383, 97.4], // Myitkyina
+    ],
+    summary:
+      'The Japanese invasion of Burma from 14 December 1941: Yangon (Rangoon) fell on 8 March 1942 and the advance continued north through Taungoo and Mandalay towards Myitkyina, the campaign ending on 28 May 1942. The line runs with the Japanese axes of advance, so it points away from the Allied retreat into India. This is a schematic axis of advance through named places, not a surveyed daily front line. The ring marks an interpolated position along that axis by date, not a documented map reference for that morning.',
+  },
+  {
+    id: 'central_pacific_1943',
+    name: 'Central Pacific 1943–44: the Gilberts to the Marshalls',
+    side: 'western',
+    from: '1943-11-20',
+    to: '1944-02-03',
+    path: [
+      [3.1678, 172.8258], // Makin (Butaritari)
+      [1.35, 172.9333], // Betio
+      [9.3961, 167.4758], // Roi-Namur
+      [11.5, 162.333], // Enewetak
+    ],
+    summary:
+      'The US advance across the central Pacific: Makin and Tarawa in the Gilberts on 20–23 November 1943, then Kwajalein from 31 January 1944, with the campaign reaching Enewetak by February 1944. The line points at the next ring of islands rather than the daily landings. This is a schematic axis of advance through named places, not a surveyed daily front line. The ring marks an interpolated position along that axis by date, not a documented map reference for that morning.',
+  },
+  {
+    id: 'imphal_1944_japanese',
+    name: 'Imphal 1944: the Chindwin to the Manipur valley',
+    side: 'japanese',
+    from: '1944-03-08',
+    to: '1944-07-03',
+    path: [
+      [24.2477, 94.3031], // Moreh
+      [24.63, 94.02], // Thoubal
+      [24.8074, 93.9384], // Imphal
+    ],
+    summary:
+      'The Japanese offensive into Manipur: troops began crossing the Chindwin on 8 March 1944 and came through Moreh and the Thoubal valley onto the Imphal plain, the offensive running to 3 July 1944. The line shows the Japanese approach; the fighting that held them short of Imphal is not drawn. This is a schematic axis of advance through named places, not a surveyed daily front line. The ring marks an interpolated position along that axis by date, not a documented map reference for that morning.',
+  },
+  {
+    id: 'ichi_go_1944',
+    name: 'Operation Ichi-Go 1944: Henan to Guangxi',
+    operation: 'Operation Ichi-Go',
+    side: 'japanese',
+    from: '1944-04-19',
+    to: '1944-12-31',
+    path: [
+      [34.764, 113.684], // Zhengzhou
+      [33.5804, 114.0166], // Luohe
+      [26.894, 112.572], // Hengyang
+      [25.275, 110.296], // Guilin
+      [24.3278, 109.4278], // Liuzhou
+    ],
+    summary:
+      'Operation Ichi-Go, the Japanese offensive of 19 April to 31 December 1944 through the provinces of Henan, Hunan and Guangxi: from Zhengzhou and Luohe south to Hengyang, and then Guilin and Liuzhou. The line shows the axis of the offensive; the days on which the individual cities fell are not marked. This is a schematic axis of advance through named places, not a surveyed daily front line. The ring marks an interpolated position along that axis by date, not a documented map reference for that morning.',
+  },
+  {
+    id: 'leyte_luzon_1944_45',
+    name: 'Leyte and Luzon 1944–45: Dulag to Manila',
+    side: 'western',
+    from: '1944-10-17',
+    to: '1945-08-15',
+    path: [
+      [10.953, 125.033], // Dulag
+      [11.24, 125], // Tacloban
+      [16.283, 120.2], // Lingayen Gulf
+      [14.5958, 120.9772], // Manila
+    ],
+    summary:
+      'The US landings off Dulag and Tacloban on Leyte from 17 October 1944, and then the Luzon campaign, launched on 9 January 1945 from Lingayen Gulf and running to 15 August 1945. The single hop from Leyte to Lingayen is the sea transit between the two campaigns, not an advance. This is a schematic axis of advance through named places, not a surveyed daily front line. The ring marks an interpolated position along that axis by date, not a documented map reference for that morning.',
+  },
+  {
+    id: 'iwo_jima_okinawa_1945',
+    name: 'Iwo Jima and Okinawa 1945: the last steps north',
+    side: 'western',
+    from: '1945-02-19',
+    to: '1945-06-22',
+    path: [
+      [15.183, 145.75], // Saipan
+      [24.7803, 141.3244], // Iwo Jima
+      [26.4794, 127.9278], // Okinawa Island
+      [26.217, 127.7195], // Shuri
+    ],
+    summary:
+      'The US advance north of the Marianas towards the Japanese home islands: Iwo Jima was invaded on 19 February 1945 and Okinawa on 1 April 1945, the fighting there ending on 22 June 1945. Saipan is shown as the base the advance jumped from, not as a battle on this line. This is a schematic axis of advance through named places, not a surveyed daily front line. The ring marks an interpolated position along that axis by date, not a documented map reference for that morning.',
+  },
+  {
+    id: 'manchuria_1945_soviet',
+    name: 'Manchuria 1945: the Soviet advance to the Liaodong peninsula',
+    side: 'soviet',
+    from: '1945-08-08',
+    to: '1945-09-02',
+    path: [
+      [49.598, 117.379], // Manzhouli
+      [49.2347, 119.8245], // Hailar
+      [43.654, 122.243], // Tongliao
+      [41.8025, 123.4281], // Shenyang
+      [38.8508, 121.2569], // Lüshunkou
+    ],
+    summary:
+      'The Soviet invasion of Manchuria, which began on 8 August 1945 and ran to 2 September 1945. The line follows the west-to-east axis of advance: over the Manchukuo border at Manzhouli and Hailar, through Tongliao and Shenyang to the port of Lüshunkou. This is a schematic axis of advance through named places, not a surveyed daily front line. The ring marks an interpolated position along that axis by date, not a documented map reference for that morning.',
   },
 ];
