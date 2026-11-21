@@ -590,6 +590,34 @@ export const EVENTS_1941_1942: WW2Event[] = [
     },
   },
   {
+    id: 'matapan_1941',
+    date: '1941-03-28',
+    precision: 'day',
+    title: 'Cape Matapan: radar in a night action sinks three Italian cruisers',
+    kind: 'battle',
+    fronts: ['mediterranean'],
+    countries: ['United Kingdom', 'Australia', 'Italy'],
+    figures: [],
+    note: 'Admiral Iachino took Vittorio Veneto and most of the Italian heavy cruiser force to sea believing German intelligence that the Mediterranean Fleet had one operational battleship and no aircraft carrier; in fact Formidable and the three Queen Elizabeths were at sea. Albacores from Formidable torpedoed Vittorio Veneto on the morning of 28 March, and a second attack that evening crippled the cruiser Pola. Shortly after 22.00 the battleships and the 10th and 14th Destroyer Flotillas found the Italian squadron by radar and closed undetected; Fiume sank at 23.30, Zara was finished off by a torpedo from Jervis at 02.40 on 29 March, and the destroyers Vittorio Alfieri and Giosuè Carducci went down in the first five minutes. Italian ships had no radar, had not envisaged a night action, and their main batteries were not prepared. Up to 2,303 sailors were lost, most of them with Zara and Fiume; the sole British loss was one Albacore and its three-man crew. Cunningham had the survivors’ position broadcast on the merchant marine emergency band so that the hospital ship Gradisca could pick them up, and regretted, in his own words, that the battleship had escaped.',
+    levels: {
+      primary: {
+        cause: 'The Italian fleet went out to attack ships carrying supplies to Greece, believing the British had too few big ships to answer.',
+        what: 'British planes first hit an Italian battleship, then British ships found the Italians in the dark by radar and sank three cruisers and two destroyers in one night.',
+        consequence: 'Italy lost many sailors and its fleet stayed in harbour for months. The British were safer in the Mediterranean.',
+      },
+      secondary: {
+        cause: 'Italy wanted to cut the convoy route to Greece, where British forces were helping against the Italian invasion of October 1940. German intelligence had told the Italian naval command that the Mediterranean Fleet had only one battleship and no carrier, so Admiral Iachino believed a fleet action was safe. The British had the opposite: three battleships and the carrier Formidable, and warnings from signals intelligence that the Italian fleet was coming.',
+        what: 'Air attacks from Formidable crippled the battleship Vittorio Veneto on 28 March and then the heavy cruiser Pola. Iachino kept Pola and two sister cruisers, Zara and Fiume, with a destroyer screen waiting for a tug that never arrived. At about 22.00 the British battle line caught them by radar at short range in a night action the Italians had not prepared for. Zara, Fiume and Pola and two destroyers were sunk; up to 2,303 Italians died.',
+        consequence: 'The Italian surface fleet refused major sorties for nearly a year, which made the sea lane to Malta and Egypt easier to use. It also showed that radar and night-fighting practice could decide a fleet action before gunnery counted, and that a fleet which trains for daylight only loses when it is surprised after dark.',
+      },
+      university: {
+        cause: 'Matapan is a case study in intelligence asymmetry rather than in material inferiority. Italian naval planning depended on German assessments of British strength that were wrong, while British decryption of Italian signals gave Cunningham warning of the sortie and the Italian fleet’s own radio traffic, monitored from Vittorio Veneto, told Iachino that Formidable was at sea - information that arrived too late to change the plan. Italian fuel shortages after the Taranto raid of November 1940 had already restricted battleship training, so the service could not drill night action or fighter cooperation.',
+        what: 'The action is usually read backwards from its technology: the radar sets aboard Orion and the battleships produced an accurate picture at the critical moment, while Italian optical gunnery, however fast, could not. But the operational decision was made earlier, when Iachino detached the slow cruisers and left Zara, Fiume and Pola zig-zagging without escort to await a tug. Force B under Pridham-Wippell, with the Australian cruiser Perth and the destroyer Stuart, fixed the enemy at long range in daylight, and the carrier attacks, not the battleships, did the crippling work.',
+        consequence: 'Strategically the battle settled the balance of the Mediterranean for 1941 in Britain’s favour and encouraged the risky convoy and air policy that followed in the Greek campaign, which was lost on land anyway. Its cultural effect was larger in Italy, where the loss of the crews of Zara and Fiume, and the survival of Vittorio Veneto, became an argument about naval command and about the regime’s competence, while Cunningham’s order to broadcast the survivors’ position on an emergency band was widely reported and shaped how the war at sea was written about afterwards.',
+      },
+    },
+  },
+  {
     id: 'crete_1941',
     date: '1941-05-20',
     precision: 'day',
