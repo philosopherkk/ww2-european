@@ -224,6 +224,9 @@ const clean = (v) =>
   (v?.value ?? "")
     .replace(/<[^>]*>/g, "")
     .replace(/&(?:[a-z]+|#x?[0-9]+);/gi, (m) => ENTITIES[m] ?? ENTITIES[m.toLowerCase()] ?? m)
+    /* Commons renders the links in a credit line as "[1]" "[2]"; the text they point
+       at is on the file page, so the bare markers are dropped rather than printed. */
+    .replace(/\s*\[\d+\]\s*/g, " ")
     .replace(/\s+/g, " ")
     .trim();
 const entries = [];
@@ -253,7 +256,8 @@ for (const { id, name } of figures) {
   // clean() takes the extmetadata field object and reads its .value (it carries HTML).
   // Commons puts the credit in Artist for some files and in Credit for others, and
   // fills unused ones with "Unknown author", which is not a credit we need to repeat.
-  const rawArtist = clean(em.Artist) || clean(em.Credit) || "";
+  const rawArtist = clean(em.Artist);
+  const rawCredit = clean(em.Credit);
   /* A Commons file with no licence template hands back the template's own warning
      — "This tag does not indicate the copyright status of the attached work…" —
      and it lands in the Artist field as often as in the licence field. It is not a
@@ -265,38 +269,136 @@ for (const { id, name } of figures) {
      and when both Artist and Credit are empty it joins two of them, giving
      "AnonymousUnknown author" or "Unknown authorUnknown author". None of those is
      a credit, and printing one reads like an invented name, so strip every
-     occurrence and keep only what is left. */
-  const artist = NOTICE.test(rawArtist)
-    ? ""
-    : rawArtist
-        .replace(/[{}]/g, " ")
-        .replace(
-          /(unknown author|anonymous|unknown|inconnu|n\/a|n\.a\.|\bna\b|no author|not stated|presumably official|original photographer)/gi,
-          " "
-        )
-        .replace(/\s{2,}/g, " ")
-        .replace(/^[\s,;&/"“”()-]+|[\s,;&/"“”()-]+$/g, "")
-        /* An "&" left dangling by a placeholder goes, but an "&" inside a studio name
-           is part of the credit: Harris & Ewing, Underwood & Underwood, Elliott & Fry. */
-        .replace(/^&\s*/, "")
-        .replace(/\s*&$/, "")
-        .replace(/^[\s,;&/"“”()-]+|[\s,;&/"“”()-]+$/g, "")
-        .trim();
+     occurrence and keep only what is left. A missing copyright tag arrives the same
+     way, as the template's own warning text, and goes too. */
+  const stripPlaceholders = (s) =>
+    (NOTICE.test(s) ? "" : s)
+      .replace(/[{}]/g, " ")
+      .replace(
+        /(unknown author|unknown photographer|unknown|anonymous|not indicated|не указан|неизвестн\w*|unbekannt|inconnu|n\/a|n\.a\.|\bna\b|no author|not stated|(?:presumably|presumed) official|original photographer)/gi,
+        " "
+      )
+      /* Commons says "The original uploader was X at NN Wikipedia" when nobody knows
+         who took the photograph. That is upload history, not a credit, and it reads
+         like a made-up name, so it goes; the licence on those files is public domain,
+         so nothing is owed. */
+      .replace(/(the )?original uploader was [^,;]{1,40} at [^,;]{1,30} ?(the )?(dutch|german|french|zh|chinese|polish|ru)? ?wikipedia\.?/gi, " ")
+      .replace(/\s{2,}/g, " ")
+      /* An "&" left dangling by a placeholder goes, but an "&" inside a studio name
+         is part of the credit: Harris & Ewing, Underwood & Underwood, Elliott & Fry. */
+      .replace(/^&\s*/, "")
+      .replace(/\s*&$/, "")
+      .trim();
+  /* Trim the punctuation a placeholder leaves at either end. Parentheses are left
+     alone and rebalanced instead: one Commons credit reads "Harris & Ewing (No known
+     restrictions on publication" with its closing bracket missing, and a bracket we
+     add or eat would misstate the credit. */
+  const tidy = (s) => {
+    let out = s.replace(/\s+:/g, ":").replace(/^[\s,;&/."'“”‘’()-]+|[\s,;&/."'“”‘’()-]+$/g, "");
+    const open = (out.match(/\(/g) ?? []).length;
+    const close = (out.match(/\)/g) ?? []).length;
+    if (open > close) out += ")".repeat(open - close);
+    else if (close > open) out = out.replace(/\)+\s*$/g, "");
+    return out.trim();
+  };
   const rawLicence = clean(em.LicenseShortName) || clean(em.UsageTerms) || "";
   const licence = NOTICE.test(rawLicence) ? "" : rawLicence;
-  entries.push({
+  let artist = tidy(stripPlaceholders(rawArtist));
+  /* "photographer" on its own is a placeholder, and a credit that ends "Harris & Ewing,
+     photographer" says no more with the job title. But "British Official Photographer"
+     and "Romanov court photographer" are the credit, so the word is only removed where
+     it is the whole entry or a trailing label. */
+  if (/^photographer$/i.test(artist)) artist = "";
+  artist = artist.replace(/,\s*photographer$/i, "").trim();
+  /* Where Commons leaves the author field empty or full of placeholders, the rights-
+     holder is still named in the file title or the credit line, and an
+     Attribution-ShareAlike licence obliges us to print it. Nothing here is invented:
+     every string below is copied out of the Commons metadata for that file. The
+     Bundesarchiv's own convention ("Bundesarchiv, Bild <series-number>") can be read
+     off the file title, and a chain of file names with "derivative work:" notes is a
+     upload history, not a photographer, so the archive is named instead. */
+  const fileTitle = page.title.replace(/^File:/, "").replace(/_/g, " ");
+  const bundesarchiv = /^Bundesarchiv[ ,]+(Bild [0-9A-Za-z-]+)/.exec(fileTitle);
+  const INSTITUTION = [
+    [/encyclopedia\.mil\.ru/i, "Russian Ministry of Defence, encyclopedia.mil.ru"],
+    [/mil\.ru/i, "Russian Ministry of Defence, mil.ru"],
+    [/Deutsches Bundesarchiv/i, "German Federal Archive (Bundesarchiv)"],
+    [/National Archives and Records Administration|National Archives Catalog/i, "National Archives and Records Administration (US)"],
+    [/Library of Congress/i, "Library of Congress"],
+    [/Imperial War Museum/i, "Imperial War Museum"],
+    [/Staatsbibliothek zu Berlin[^,;]*/i, (m) => m[0]],
+  ];
+  if (/derivative work/i.test(artist) || /\.(?:jpg|jpeg|png)\b/i.test(artist)) artist = "";
+  if (!artist) {
+    if (bundesarchiv) artist = `Bundesarchiv, ${bundesarchiv[1]}`;
+    else {
+      for (const [re, name] of INSTITUTION) {
+        const m = re.exec(rawCredit);
+        if (m) {
+          artist = typeof name === "function" ? name(m) : name;
+          break;
+        }
+      }
+    }
+  }
+  /* Last resort: the credit line itself, but only where the licence actually asks
+     for attribution (a public-domain file needs none, and Commons' credit field for
+     those often holds a caption rather than a maker). It has to read as an
+     attribution, so these are rejected: a bare Commons template word, a web address
+     or image-watermark domain, a file name, the archive cooperation boilerplate, a
+     long caption, or anything not in Latin script. */
+  const NEEDS_CREDIT = /\bCC BY\b|Creative Commons Attribution|Copyrighted free use/i;
+  const LOOKS_LIKE_CREDIT =
+    /^[\p{L}][\p{L}\p{N} .,'&()/-]{3,}$/u;
+  if (!artist && NEEDS_CREDIT.test(licence)) {
+    const c = tidy(stripPlaceholders(rawCredit));
+    if (
+      c &&
+      c.length <= 70 &&
+      LOOKS_LIKE_CREDIT.test(c) &&
+      !/\b(?:link|source|own work|my own|upload)\b/i.test(c) &&
+      !/https?:|www\.|\.\.(?:com|net|org|it|nl|de|ru|uk|fr|se)\b|provided to Wikimedia Commons|was derived from|\.(?:jpg|jpeg|png)\b/i.test(c)
+    )
+      artist = c;
+  }
+  /* The date the photograph was taken, when Commons states one. Most of these are
+     war-era; a fair number are interwar sittings, and the credit says so rather than
+     letting a 1930s photograph read as a wartime one. Open-ended bounds ("before
+     1930"), upload or scan dates, and anything after 1945 (which is when the scan was
+     made, not when the photograph was) are left out, because they tell the reader
+     nothing about the sitting. */
+  const when = clean(em.DateTimeOriginal)
+    .replace(/\s*date QS:.*$/i, "")
+    .replace(/\s*\[\d+\]\s*$/, "")
+    .trim();
+  const dateNote = (s) => {
+    if (!s || /^(before|after|until|from|upload)\b/i.test(s) || /upload date/i.test(s)) return "";
+    const years = [...new Set((s.match(/\b\d{4}\b/g) ?? []).map(Number).filter((y) => y >= 1800 && y <= 1945))].sort();
+    if (!years.length || !years.every((y) => y > 1918)) return "";
+    const span = years.length > 1 ? `${years[0]}-${String(years.at(-1)).slice(2)}` : String(years[0]);
+    return `photographed ${/\b(?:circa|c\.)\b/i.test(s) ? "circa " : ""}${span}`;
+  };
+  // Commons metadata is inconsistent about which fields carry the credit, so
+  // collapse it to one true sentence: the maker or archive Wikimedia names, the
+  // licence, and the date of the photograph when it is not a war-era image.
+  // `when` is omitted when Commons states no date: the type is optional, and an
+  // empty string would read as a date that was never given.
+  const entry = {
     id,
     src: `/data/portraits/${id}.${ext}`,
     file: page.title.replace(/^File:/, ""),
     artist,
     licence,
-    // Commons metadata is inconsistent about which fields carry the credit, so
-    // collapse it to one string that is always true: either the credit Wikimedia
-    // gives us, or a pointer to the file page.
-    credit:
-      artist && licence ? `${artist}, ${licence}` : artist || licence || "see the Commons file page",
-    page: ii.descriptionurl,
-  });
+  };
+  if (when) entry.when = when;
+  entry.credit = [
+    artist && licence ? `${artist}, ${licence}` : artist || licence || "see the Commons file page",
+    dateNote(when),
+  ]
+    .filter(Boolean)
+    .join(" — ");
+  entry.page = ii.descriptionurl;
+  entries.push(entry);
 }
 
 entries.sort((a, b) => a.id.localeCompare(b.id));

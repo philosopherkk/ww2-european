@@ -16,8 +16,9 @@ export const EVENTS_1918: WW1Event[] = [
     figures: ['wilson_us', 'loyd_george'],
     levels: {
       primary: {
-        cause:
-          'The war had been going on since August 1914, and none of the governments fighting had said clearly what it was meant to end with. In late 1917 the new Bolshevik government in Russia called for a peace with no land taken and no money demanded. It also published the secret agreements the tsarist government had signed with the Allies. Those papers showed that the Allies had promised each other pieces of other people’s empires.',
+        cause: 'Since August 1914 no government had said how the war should end. In late 1917 the Bolsheviks ' +
+          'called for peace without taking land or money, and published the tsar’s secret treaties. Those ' +
+          'papers showed the Allies had promised each other pieces of other empires.',
         what: 'On 8 January 1918 President Woodrow Wilson read Congress fourteen points for peace: no secret ' +
           'treaties, free seas, colonies judged fairly, Germany to leave the land it took, ' +
           'Alsace-Lorraine back to France, Poland its own state, and all nations in one league.',
@@ -29,8 +30,13 @@ export const EVENTS_1918: WW1Event[] = [
           'Wilson had kept the United States neutral partly because a settlement with no victors seemed possible. By January 1918 the Bolsheviks had seized the argument about peace: their December decree called for self-determination without annexations, and their publication of the Sykes–Picot and other agreements discredited the old diplomacy. Wilson’s advisers, especially the research group known as the Inquiry, had been drafting a statement of war aims. British and French leaders wanted the German fleet, colonies and indemnity, and wanted to say so before Wilson said it first.',
         what:
           'Three days before Wilson, Lloyd George gave a speech at the Mansion House in London that also called for a league of nations, but demanded reparations and the German colonies. Wilson’s message to Congress on 8 January set out the Fourteen Points in order. The first five were general: open covenants, freedom of the seas, removal of economic barriers, reduction of armaments, and an adjustment of colonial claims. The rest were specific, dealing with the evacuations and frontier questions affecting Russia, Belgium, France, Italy, the peoples of Austria-Hungary, Romania, Serbia and Montenegro, the Ottoman parts, and Poland. Points thirteen and fourteen, on an independent Poland with free and secure access to the sea and a general association of nations, were the two that would outlive the rest. Wilson presented them as the terms the United States would fight for and would accept as a peace. He did not consult the French and British cabinets in detail beforehand.',
-        consequence:
-          'The points split the two camps. For the Allies they were war aims; for the Central Powers they were a possible exit. In Germany the phrase without annexations and indemnities, which the Reichstag had used in July 1917, now came back through Wilson rather than through the social democrats. In October 1918 the German government asked for an armistice on this basis, and Prince Max of Baden’s notes to Wilson were answered by three American notes which added disarmament and evacuation before any talk. Germany accepted, then complained for the rest of the century that the treaty it signed in 1919 ignored the points.',
+        consequence: 'The points split the camps. For the Allies they were war aims; for the Central Powers they ' +
+          'were a possible exit. In Germany the phrase without annexations and indemnities, which the ' +
+          'Reichstag had used in July 1917, came back through Wilson rather than the social democrats. In ' +
+          'October 1918 the German government asked for an armistice on this basis, and Prince Max of ' +
+          'Baden’s notes to Wilson were answered by three American notes which added disarmament and ' +
+          'evacuation before talks. Germany accepted, then complained for a century that the treaty it ' +
+          'signed in 1919 ignored the points.',
       },
       university: {
         cause:
@@ -54,8 +60,9 @@ export const EVENTS_1918: WW1Event[] = [
     figures: ['scheidemann', 'luxemburg_rosa'],
     levels: {
       primary: {
-        cause:
-          'Food had been short in German cities for years, and the worst winter of the war had cut the rations of bread and potatoes to the bone. Men were still being sent to the front in huge numbers while the governments talked of taking land from other countries. Workers in Austria-Hungary had already struck through January over food and peace, and the example spread north.',
+        cause: 'Food was short in German cities, and the worst winter cut bread and potato rations to the ' +
+          'bone. Men were still sent to the front in huge numbers while governments talked of ' +
+          'annexations. Austrian workers struck in January over food and peace, and spread north.',
         what: 'Strikes hit Austria-Hungary on 3 January and Berlin on 28 January. About 400,000 workers ' +
           'stopped work; half a million were out. They wanted peace, food and votes. Up to 50,000 ' +
           'strikers went to the front; the strike ended on 3 February.',
@@ -97,17 +104,24 @@ export const EVENTS_1918: WW1Event[] = [
     figures: ['kuhlmann', 'trotsky', 'lenin', 'mannerheim_carl'],
     levels: {
       primary: {
-        cause:
-          'Peace talks between the Central Powers and Soviet Russia had stopped. Leon Trotsky, leading the Soviet delegation, announced that Russia would sign no treaty but would end the war and demobilise, which Germany called unacceptable. Germany also wanted the grain of Ukraine, which the Ukrainian People’s Republic had promised in return for recognition on 9 February.',
+        cause: 'Talks between the Central Powers and Soviet Russia had stopped. Trotsky announced that Russia ' +
+          'would sign no treaty but end the war and demobilise. Germany refused. Germany wanted the grain ' +
+          'of Ukraine, which the Ukrainian People’s Republic had promised for recognition on 9 February.',
         what: 'On 18 February German armies swept the eastern front. Almost no one fought them: Russian ' +
           'soldiers had gone home. Daugavpils fell on day one, Minsk three days later, Kiev on 2 March, ' +
           'and the front came within 160 km of Petrograd.',
-        consequence:
-          'Russia surrendered what it had refused a fortnight earlier. In Finland, where the civil war had begun in late January, Germany landed troops to take the south coast and Helsinki, and its promise to do this helped make the Soviets sign the peace of Brest-Litovsk on 3 March.',
+        consequence: 'Russia surrendered what it had refused a fortnight earlier. In Finland, where the civil war ' +
+          'had begun in late January, Germany landed troops to take the south coast and Helsinki, and its ' +
+          'promise helped make the Soviets sign the peace of Brest-Litovsk on 3 March.',
       },
       secondary: {
-        cause:
-          'Germany wanted a written peace in the east before it could move divisions west, and it wanted Ukrainian grain, oil from Baku and the Baltic coast as cover for the north. The Soviet delegation under Trotsky played for time in the belief that workers in Germany would rise first. The separate treaty which Germany and the Central Powers signed with the Ukrainian People’s Republic on 9 February 1918, the so-called Bread Peace, gave Ukraine recognition and borders in exchange for food, and it infuriated the Bolsheviks, who regarded Ukraine as theirs to dispose of. Trotsky refused to recognise the Ukrainian delegation and broke off the talks on 10 February.',
+        cause: 'Germany wanted a written peace in the east before moving divisions west, and wanted Ukrainian ' +
+          'grain, oil from Baku and the Baltic coast as cover for the north. The Soviet delegation under ' +
+          'Trotsky played for time, believing German workers would rise first. The separate treaty which ' +
+          'Germany and the Central Powers signed with the Ukrainian People’s Republic on 9 February 1918, ' +
+          'the Bread Peace, gave Ukraine recognition and borders in exchange for food, and infuriated the ' +
+          'Bolsheviks, who regarded Ukraine as theirs. Trotsky refused to recognise the Ukrainian ' +
+          'delegation and broke off the talks on 10 February.',
         what: 'Operation Faustschlag, the Eleven Days’ War, opened on 18 February with 53 divisions: one ' +
           'force from Pskov towards Narva, the others towards Smolensk and Kiev. Daugavpils fell on day ' +
           'one, Minsk on 21 February, Kiev on 2 March. The armies covered over 240 kilometres in a week, ' +
@@ -130,6 +144,63 @@ export const EVENTS_1918: WW1Event[] = [
     note: 'Faustschlag 18 February – 3 March 1918, the dates in the article’s infobox; the advance went on after the treaty, with Odessa secured on 13 March and Yekaterinoslav taken on 5 April. The article gives no casualty or prisoner figures for the operation, so none is used here. Finnish Civil War 27 January – 15 May 1918: around 38,000 dead, of which roughly 12,000 in the political violence on both sides and about 12,500 Red prisoners who died of malnutrition and disease in the camps. Source checked: “Operation Faustschlag”, “Treaty of Brest-Litovsk”, “Finnish Civil War”, “Treaty of Brest-Litovsk (Ukraine–Central Powers)”.',
   },
   {
+    id: 'capture_of_jericho',
+    date: '1918-02-19',
+    precision: 'day',
+    title: 'British Empire troops capture Jericho',
+    kind: 'offensive',
+    fronts: ['middle_east'],
+    countries: ['United Kingdom', 'Australia', 'Ottoman Empire'],
+    note: 'The National Army Museum dates the capture of Jericho to 19–21 February 1918. The ' +
+      'Australian War Memorial’s list of Australian engagements in Egypt and Palestine, citing ' +
+      'the Battles Nomenclature Committee, gives the same window. Neither house isolates the hour ' +
+      'the city was entered. This card is dated 19 February and says the operation runs across 19 ' +
+      'to 21 February.',
+    levels: {
+      primary: {
+        cause: 'Jerusalem had fallen in December. The next step for the British Empire force in ' +
+          'Palestine was the Jordan valley, and Jericho stood at the way into it.',
+        what: 'The operation ran from 19 to 21 February 1918. This card is dated the 19th, the opening ' +
+          'of that window. Neither account used here says at what hour the city itself was entered.',
+        consequence: 'Jericho opened the valley to the British Empire force. Later fighting across the Jordan ' +
+          'belongs to the autumn offensive, which is a separate card, not this February operation.',
+      },
+      secondary: {
+        cause: 'The capture of Jerusalem in December 1917 did not by itself give the Egyptian ' +
+          'Expeditionary Force the Jordan valley. Jericho, below the city and at the valley’s edge, ' +
+          'was the next place. The National Army Museum dates a capture by British Empire troops to ' +
+          '19–21 February 1918. The Australian War Memorial’s list of engagements, drawn from the ' +
+          'Battles Nomenclature Committee, gives that same window.',
+        what: 'Neither house isolates the hour the city was entered, so this card will not invent one. ' +
+          'It is dated 19 February, the first day of the operation both of them print, and the ' +
+          'reading text says the operation runs across 19 to 21 February. Australian troops are on ' +
+          'the War Memorial’s list. The Museum’s phrase is the wider one, British Empire troops. No ' +
+          'strength is added to either phrase.',
+        consequence: 'Holding Jericho gave the valley as a new front after Jerusalem. It did not decide the ' +
+          'crossings of the Jordan that came later in the year. Those belong to the autumn battle, ' +
+          'already told elsewhere. February is the capture that made the valley a position, not the ' +
+          'offensive that later left it.',
+      },
+      university: {
+        cause: 'Jericho is dropped between two famous names, Jerusalem and the autumn battle in ' +
+          'Palestine. The drop hides a change of ground. After December the army was no longer only ' +
+          'on the hills west of the river. By the end of this operation it was looking into the ' +
+          'valley. The sources will date that step, and they date it as a span of three days rather ' +
+          'than as an hour.',
+        what: 'The Museum’s timeline and the Australian list agree the window, 19 to 21 February 1918, ' +
+          'and the list says it is following the Battles Nomenclature Committee. Agreement on a ' +
+          'window is not agreement on the moment of entry. Dating the card to 19 February marks the ' +
+          'opening both include. Saying the operation runs across the three days keeps the rest of ' +
+          'the window visible. A single hour would be a precision neither house has offered.',
+        consequence: 'The operational point is that Palestine after Jerusalem still had a next step, and that ' +
+          'the step was Jericho and the valley, not an immediate march on Damascus. The autumn ' +
+          'offensive is intelligible as a later decision partly because this ground had already ' +
+          'been taken. This card is that taking. It does not retell the autumn, and it does not ' +
+          'claim to know which hour the city changed hands.',
+      },
+    },
+  },
+  {
     id: 'treaty_brest_litovsk',
     date: '1918-03-03',
     precision: 'day',
@@ -143,16 +214,22 @@ export const EVENTS_1918: WW1Event[] = [
         cause:
           'The Bolshevik government had come to power by promising peace. Six months of talks at Brest-Litovsk in the German-occupied east had got nowhere, and in February Germany attacked across a front where the Russian army had already gone home.',
         what: 'On 3 March 1918 Russia signed the Brest-Litovsk treaty. It gave up Ukraine, Poland, Belarus, ' +
-          'Lithuania, Latvia and Estonia — a third of its people. It had to recognise Finland and pay six ' +
-          'billion marks. Lenin forced it through his split party.',
-        consequence:
-          'The treaty gave the Bolsheviks the breathing space they needed, and it gave their enemies a cause. The left social revolutionaries walked out of the government and rose in revolt that July. Germany kept troops in the east until the armistice of November 1918, which cancelled the treaty.',
+          'Lithuania, Latvia and Estonia — a third of its people. It had to recognise Finland. The six ' +
+          'billion marks were set in August. Lenin forced it through his split party.',
+        consequence: 'The treaty gave the Bolsheviks breathing space, and it gave their enemies a cause. The left ' +
+          'social revolutionaries walked out of the government and rose in revolt that July. Germany kept ' +
+          'troops in the east until the armistice of November 1918, which cancelled the treaty.',
       },
       secondary: {
         cause:
           'Lenin argued that the revolution could not survive another German offensive and had to have months to consolidate, whatever the cost in territory. Nikolai Bukharin and the left communists wanted a revolutionary war to set Germany alight. Trotsky’s middle course, no war and no peace, ran out when the Germans resumed the advance on 18 February and took Pskov, close to Petrograd. On the German side, the negotiator Richard von Kühlmann wanted a moderate peace that might be kept; the army leadership and the annexationists wanted as much eastern land as they could hold.',
-        what:
-          'The terms transferred Ukraine, Poland, Belarus, Lithuania, Latvia and Estonia out of Russian control, together with Kars and Batum in the Caucasus. The ceded territory held 34 per cent of the population of the former empire, 54 per cent of its industrial land, 89 per cent of its coalfields and 26 per cent of its railways. Russia pledged to end its war with the Ukrainian People’s Republic, which the Central Powers had recognised on 9 February, and confirmed the independence of Finland. A supplementary protocol of August 1918 set the indemnity at six billion marks. Germany kept troops in the occupied east for the rest of the war in order to hold what the treaty had given it.',
+        what: 'The terms took Ukraine, Poland, Belarus, Lithuania, Latvia and Estonia from Russia, with Kars ' +
+          'and Batum in the Caucasus. It held 34 per cent of the old empire’s population, 54 per cent of ' +
+          'its industrial land, 89 per cent of its coalfields and 26 per cent of its railways. Russia ' +
+          'pledged to end its war with the Ukrainian People’s Republic, recognised by the Central Powers ' +
+          'on 9 February, and confirmed Finnish independence. An August 1918 protocol set the indemnity ' +
+          'at six billion marks. Germany kept troops in the occupied east through the war to hold the ' +
+          'gain.',
         consequence:
           'The settlement was a dictatorship over the east which lasted eleven months. It gave the White movement a unifying grievance and opened the rift between the Bolsheviks and the left social revolutionaries, whose representatives left the Council of People’s Commissars and then rose in the July uprising. It also freed over a million German soldiers to be moved west in the spring, though they had to be replaced by garrisons in the occupied land. One clause of the armistice of 11 November 1918 abrogated the treaty; the Soviet legislature annulled it on 13 November.',
       },
@@ -174,7 +251,7 @@ export const EVENTS_1918: WW1Event[] = [
     kind: 'offensive',
     title: 'Operation Michael opens the German spring offensive',
     fronts: ['western'],
-    countries: ['Germany', 'United Kingdom', 'France', 'Portugal', 'United States'],
+    countries: ['Germany', 'United Kingdom', 'France', 'United States'],
     figures: ['luddendorff', 'haig', 'foch'],
     levels: {
       primary: {
@@ -183,16 +260,32 @@ export const EVENTS_1918: WW1Event[] = [
         what: 'On 21 March 1918 German guns bombarded a 60-km front. Storm troops by-passed strong points for ' +
           'the batteries. The British Fifth Army was overrun but retired in order. The Germans reached ' +
           'Montdidier, 60 km west, the deepest gain on this front since 1914.',
-        consequence:
-          'On 25 March the British and French governments met at Doullens and put Marshal Foch in charge of coordinating the defence of the line; he became generalissimo in April. The attack was called off on 5 April, and Ludendorff turned north to Flanders.',
+        consequence: 'On 26 March the British and French governments met at Doullens and put Marshal Foch in charge ' +
+          'of coordinating the defence of the line; he became generalissimo in April. The attack was ' +
+          'called off on 5 April, and Ludendorff turned north to Flanders.',
       },
       secondary: {
-        cause:
-          'By 21 March Germany had 192 divisions and 3 brigades in the west, of 241 in the whole army, with 110 in the line and about 50 facing the British. It had superiority in numbers on the western front for the first time since 1914 and would not have it again. The tactical idea had been developed after Riga in 1917: hurricane bombardment with gas and smoke, short and unexpected, then infiltration by trained assault battalions. Ludendorff chose the junction between the British and French armies, near the unimproved ground of the old Somme battlefield, and hoped to drive the British to the sea.',
-        what:
-          'The attack fell on Byng’s Third Army along a 64-kilometre front held by twelve divisions, with the Portuguese corps on the right. German assault detachments by-passed resistance, cut telephone lines and captured batteries in the rear; the British defensive system in depth was unfinished and its gun lines were turned. The town of Saint-Quentin fell on the first day, and the advance carried the Avre valley and pressed Villers-Bretonneux, where the first battle for the town ran from 30 March to 5 April. Middlebrook counts about 39,900 German and 38,500 British casualties on 21 March alone. By the end of the operation over 75,000 British soldiers had been taken prisoner, and 1,300 artillery pieces and 200 tanks had been lost.',
-        consequence:
-          'Michael took 3,100 square kilometres (1,200 square miles) of France and cost Germany some 239,000 casualties, including a large part of the trained storm troops that could not be replaced. Doullens on 25 March gave Foch authority to coordinate, and his strategy of local counter-attacks on the flanks of each German salient held. German losses were not replaced, the objective of the offensive was never reached, and the salients dug in during the summer were shorter and weaker defensive lines than the ones the Allies gave up. Michael is the model for the four offensives of the spring, known to the Germans as the Kaiser Battle.',
+        cause: 'By 21 March Germany had 192 divisions and 3 brigades in the west, of 241 in the army, with 110 ' +
+          'in the line and about 50 facing the British. It had superiority in numbers on the western ' +
+          'front for the first time since 1914 and would not have it again. The tactic was developed ' +
+          'after Riga in 1917: hurricane bombardment with gas and smoke, short, unexpected, then ' +
+          'infiltration by trained assault battalions. Ludendorff chose the junction between the British ' +
+          'and French armies, near the old unimproved Somme battlefield, and hoped to drive the British ' +
+          'to the sea.',
+        what: 'The attack hit Gough’s Fifth Army, twelve divisions on a 64-kilometre front. Byng’s Third Army ' +
+          'had fourteen divisions. Assault troops bypassed resistance, cut the telephones and took rear ' +
+          'batteries. The British defence in depth was unfinished and its guns turned. Saint-Quentin had ' +
+          'been German since 1914, and the advance reached the Avre and pressed Villers-Bretonneux, its ' +
+          'first fight running from 30 March to 5 April. Middlebrook counts about 39,900 German and ' +
+          '38,500 British casualties on 21 March. By the end, over 75,000 British were prisoners, and ' +
+          '1,300 guns and 200 tanks were lost.',
+        consequence: 'Michael took 3,100 square kilometres (1,200 square miles) of France and cost Germany some ' +
+          '239,000 casualties, including trained storm troops that could not be replaced. Doullens on 26 ' +
+          'March gave Foch authority to coordinate, and his flank counter-attacks against each German ' +
+          'salient held. German losses were not replaced, its objective was never reached, and the ' +
+          'salients dug in during the summer were shorter and weaker defensive lines than the ones the ' +
+          'Allies gave up. Michael is the model for the four offensives of the spring, known to the ' +
+          'Germans as the Kaiser Battle.',
       },
       university: {
         cause:
@@ -215,21 +308,33 @@ export const EVENTS_1918: WW1Event[] = [
     countries: ['United States', 'France', 'United Kingdom', 'Spain', 'Germany', 'Italy'],
     levels: {
       primary: {
-        cause:
-          'A new kind of flu appeared in 1918. Doctors in Haskell County, Kansas, noticed severe cases in farm country in February and March. The disease was carried to the army camp at Funston, where a cook fell ill on 4 March. From camps and ports it travelled with troops.',
+        cause: 'Doctors in Haskell County, Kansas, noticed a severe flu in February and March 1918. It reached ' +
+          'the army camp at Funston, where a cook fell ill on 4 March. From the camps and the ports it ' +
+          'travelled with troops and with Chinese and Indian labourers.',
         what: 'By April the flu was in French ports and along the Western Front. France, Germany and the ' +
           'United Kingdom reported cases that month. This first wave was mild for most. Censors hid the ' +
           'illness; neutral Spain wrote freely, hence the name Spanish flu.',
-        consequence:
-          'Armies lost fighting men to a disease that killed mostly the healthy and the young. When a second, deadlier wave came in the autumn it found the same crowded camps, ships and trains, and this time the camps of the two fronts were already half empty of the fit.',
+        consequence: 'Armies lost fighting men to a disease that killed mostly the healthy young. A deadlier autumn ' +
+          'wave found the same crowded camps, ships and trains, left the two fronts half empty of the ' +
+          'fit, and India was the worst affected part of the world.',
       },
       secondary: {
         cause:
           'Modern research places the earliest probable cases in Haskell County, Kansas, in February and March 1918, where the physician Loring Miner warned the public health service about an unusually severe influenza. Troops moving from that country to Camp Funston carried it. From American camps and from the ports where troops and Chinese and Indian labourers were landed, the virus spread to the Western Front; Paris and the British and French depots were affected by mid-April, and by May the disease had reached Breslau and Odessa.',
-        what:
-          'The first wave was comparatively mild. Madrid lost fewer than a thousand people in May and June, and the United States recorded about 75,000 influenza deaths in the first half of 1918 against about 63,000 in the same months of 1915. The disease was named after whoever was nearby and blameless: Flanders fever in Belgium, Brazilian flu in Senegal, German flu in Spain, French flu in Germany, and Naples Soldier among British troops. The Times of London noted in June that everyone was calling it Spanish influenza, which is how the name stuck, since Spain was the only major country whose press was free to report an epidemic at all.',
-        consequence:
-          'The second wave, which arrived in the ports of Europe and North America in September and October, was far deadlier, and the mortality curve of the pandemic ran oddly high among healthy young adults. The pandemic took the armies and the home fronts at once: camps and hospitals were overwhelmed, convoys of reinforcements arrived already infected, and the British and French armies were short of effectives during the autumn offensive. The world death toll has been estimated at 21.6 million in 1927, 25 to 39 million in 1991, at least 50 million in 2005, and about 17 million in a contested 2018 reassessment.',
+        what: 'The first wave was mild. Madrid lost fewer than a thousand in May and June, and the United ' +
+          'States recorded about 75,000 influenza deaths in the first half of 1918 against about 63,000 ' +
+          'in those months of 1915. The disease was named after a blameless neighbour: Flanders fever in ' +
+          'Belgium, Brazilian flu in Senegal, German flu in Spain, French flu in Germany, and Naples ' +
+          'Soldier among British troops. The Times noted in June that everyone called it Spanish ' +
+          'influenza, which is how the name stuck, since only Spain’s press was free to report the ' +
+          'epidemic.',
+        consequence: 'The second wave, which arrived in European and North American ports in September and October, ' +
+          'was far deadlier, and the mortality curve of the pandemic ran high among healthy young adults. ' +
+          'The pandemic took armies and home fronts at once: camps and hospitals were overwhelmed, ' +
+          'convoys of reinforcements arrived infected, and the British and French armies were short of ' +
+          'effectives during the autumn offensive. The world death toll was estimated at 21.6 million in ' +
+          '1927, 25 to 39 million in 1991, at least 50 million in 2005, and about 17 million in a ' +
+          'contested 2018 reassessment.',
       },
       university: {
         cause:
@@ -253,13 +358,15 @@ export const EVENTS_1918: WW1Event[] = [
     figures: ['luddendorff', 'petain', 'foch'],
     levels: {
       primary: {
-        cause:
-          'After the first offensive of the spring, Erich Ludendorff turned to the part of the French front behind the Chemin des Dames ridge. The French had taken over a long sector from the British and had thinned it, expecting the next blow to fall in Flanders.',
+        cause: 'After the first offensive of the spring, Ludendorff turned to the part of the French front ' +
+          'behind the Chemin des Dames ridge. The French had taken over a long sector from the British ' +
+          'and had thinned it, expecting the next blow to fall in Flanders.',
         what: 'On 27 May 1918 German armies attacked the Chemin des Dames ridge, after a short bombardment. ' +
           'In six hours they broke through eight tired divisions between Reims and Soissons, took the ' +
           'ridge, and pushed to the Marne at Château-Thierry.',
-        consequence:
-          'The salient pushed to the Marne was the deepest German penetration of 1918 and the closest the war came to Paris being threatened from the east. It was also the last success: the attack on the next sector was halted, and the salient became the ground of the battle in July.',
+        consequence: 'The salient pushed to the Marne was the deepest German penetration of 1918 and the closest the ' +
+          'war came to threatening Paris. It was the last success: the attack on the next sector was ' +
+          'halted, and the salient became the ground of July’s battle.',
       },
       secondary: {
         cause:
@@ -282,6 +389,77 @@ export const EVENTS_1918: WW1Event[] = [
       'Third Battle of the Aisne (Blücher–Yorck), 27 May – 6 June 1918. German first and seventh armies with over 20 divisions and about 4,000 guns; by 30 May the attackers had taken just over 50,000 prisoners and over 800 guns. Casualties: about 127,000 Allied and 130,000 German. The Aisne article puts the deepest point reached at 56 km (35 mi) from Paris on 3 June, while the Belleau Wood article gives Château-Thierry itself as 95 km (59 mi) from Paris; the two pages measure different points, so only the 3 June figure is used. Belleau Wood, 1 – 26 June, cost the American 2nd Division and Marines 9,777 casualties and the Germans over 10,000. Source checked: “Third Battle of the Aisne”, “Battle of Belleau Wood”.',
   },
   {
+    id: 'treaties_of_batum',
+    date: '1918-06-04',
+    precision: 'day',
+    title: 'The treaties of Batum',
+    kind: 'diplomacy',
+    fronts: ['caucasus', 'politics'],
+    countries: ['Ottoman Empire', 'Georgia', 'Armenia', 'Azerbaijan'],
+    note: 'The Georgian Encyclopedia dates a treaty of Batum, signed on 4 June 1918 between Georgia and ' +
+      'Turkey and also by the Armenian and Azerbaijani delegations, and names Batum, Kars, Akhalkalaki ' +
+      'and Akhaltsikhe among the districts transferred. The Presidential Library of Azerbaijan describes ' +
+      'a treaty fixing the Turkey-Azerbaijan border, Turkish military assistance, and, in the treaty with ' +
+      'Armenia, the transfer of Echmiadzin and Alexandropol. A Turkish Historical Society article dates ' +
+      'instruments to 4 and 8 June, some bilateral and some joint. No area or population figure is ' +
+      'copied. The fighting for Baku is a different card.',
+    levels: {
+      primary: {
+        cause: 'Russia had left the war and signed away Kars, Ardahan and Batum at Brest-Litovsk. In the ' +
+          'Caucasus, Georgia, Armenia and Azerbaijan had declared themselves republics. The Ottoman ' +
+          'Empire wanted more than the Brest line, and a road for its troops further east.',
+        what: 'On 4 June 1918 at Batum the Ottoman Empire signed treaties with Georgia, Armenia and ' +
+          'Azerbaijan. Further papers were signed over the following days. The treaties took territory ' +
+          'beyond Brest-Litovsk and gave the Ottomans a right to move troops across Transcaucasia.',
+        consequence: 'The new republics were recognised on Ottoman terms, and Ottoman soldiers could legally cross ' +
+          'their lands. That opened the road for a later advance towards Baku. The fight for the city is ' +
+          'not this card. These treaties lost their force after the Ottoman defeat.',
+      },
+      secondary: {
+        cause: 'Brest-Litovsk had returned Kars, Ardahan and Batum to the Ottoman Empire and had not settled ' +
+          'the lands beyond them. The Transcaucasian federation had broken up. Georgia, Armenia and ' +
+          'Azerbaijan negotiated separately, under the pressure of an Ottoman army already on the move. A ' +
+          'peace conference at Batum was the Ottoman way of turning that pressure into treaties, and of ' +
+          'gaining a right of passage further east than Brest had given.',
+        what: 'On 4 June 1918 the Ottoman Empire signed with Georgia, and the Armenian and Azerbaijani ' +
+          'delegations signed as well. The Georgian Encyclopedia gives that day and names Batum, Kars, ' +
+          'Akhalkalaki and Akhaltsikhe among the districts transferred. Azerbaijan’s presidential library ' +
+          'describes a border with Turkey, Turkish military help, and an Armenian treaty that transferred ' +
+          'Echmiadzin and Alexandropol. A Turkish Historical Society article dates further instruments to ' +
+          'the days through 8 June, some of them bilateral. This card uses 4 June and says the signing ' +
+          'continued. No area or population total is stated.',
+        consequence: 'The treaties placed Ottoman gains beyond the Brest line into written agreements with the three ' +
+          'republics, and they created a legal basis for moving troops across Transcaucasia. That is the ' +
+          'political opening, not the later battle for Baku, which has its own card and is not retold ' +
+          'here. Georgia also looked to Germany for protection, so the Caucasus in June was an argument ' +
+          'inside the Central Powers as well as a set of Ottoman treaties. After the Ottoman defeat the ' +
+          'Batum settlement was abolished.',
+      },
+      university: {
+        cause: 'Batum is what happened when a treaty with a collapsed empire met three successor states that ' +
+          'did not yet control their own frontiers. The Ottoman aim was territorial, a line past ' +
+          'Brest-Litovsk, and strategic, a corridor towards the Caspian. Armenian military successes in ' +
+          'late May had stopped one advance and had not produced a peace. Negotiating under that ' +
+          'unfinished campaign is why the treaties look both imposed and signed. Calling them either a ' +
+          'diktat or a free settlement simplifies a conference held in the presence of the army.',
+        what: 'The core date, 4 June 1918, is shared by the Georgian Encyclopedia and by the Azerbaijani ' +
+          'official library’s account of the instruments. They do not describe a single identical text. ' +
+          'Georgia’s article stresses a multilateral signing and named districts. Azerbaijan’s stresses a ' +
+          'bilateral border, military assistance, and a separate Armenian cession of Echmiadzin and ' +
+          'Alexandropol. A Turkish scholarly article spreads the papers across 4 and 8 June and ' +
+          'distinguishes joint instruments from bilateral ones. The card follows 4 June and the ' +
+          'continuation. Square-kilometre and population arithmetic from one encyclopedia is not ' +
+          'repeated.',
+        consequence: 'The treaties are the reason an Ottoman force could claim a political road across Transcaucasia ' +
+          'in the summer of 1918, which is the part the Baku narrative usually assumes and does not tell. ' +
+          'They are also a document in the independence stories of the three republics, each of which ' +
+          'later judged the terms differently. Their abolition after the Ottoman defeat shows how little ' +
+          'a June frontier was worth once the army that guaranteed it had to demobilise. This card stops ' +
+          'at the signatures. It does not fight the September battle again.',
+      },
+    },
+  },
+  {
     id: 'second_battle_of_the_piave',
     date: '1918-06-15',
     precision: 'day',
@@ -292,8 +470,9 @@ export const EVENTS_1918: WW1Event[] = [
     figures: ['boroevic', 'diaz', 'vittorio_emmanuele_iii'],
     levels: {
       primary: {
-        cause:
-          'Austria-Hungary had to knock Italy out before Germany’s reserves could be moved west and before its own armies came apart. The Italian front had been pushed back to the river Piave after the disaster of autumn 1917, and the Austro-Hungarian army attacked across the river in June.',
+        cause: 'Austria-Hungary had to knock Italy out before Germany’s reserves could be moved west and ' +
+          'before its own armies came apart. The Italian front had been pushed back to the Piave after ' +
+          'the disaster of autumn 1917, and the Austro-Hungarian army attacked across it in June.',
         what: 'On 15 June 1918 the Austro-Hungarians crossed the Piave in flood and attacked the Asiago ' +
           'plateau. They held bridgeheads until Armando Diaz counter-attacked where they were weak; by 23 ' +
           'to 24 June they were back at their start line.',
@@ -301,10 +480,19 @@ export const EVENTS_1918: WW1Event[] = [
           'The army that had nearly won in 1917 lost its last offensive power in six days. Its losses included the men taken prisoner when whole companies surrendered to the Italians, and the failure turned the argument inside the government in Vienna towards an armistice.',
       },
       secondary: {
-        cause:
-          'The Austro-Hungarian high command under Arthur Arz von Straußenburg had succeeded Conrad, and the emperor Karl I had insisted in April that his armies must win a victory before a peace could be made. The plan was a double attack: across the Piave towards Padua and Venice in the east, and onto the Asiago plateau in the west, with the two arms to meet behind the Italian lines. The army was short of food, of transport animals and of morale, and units of eleven nationalities were being led by officers of another. Italy had rebuilt after Caporetto with French and British help, a new commander in Diaz, and a defensive system that kept fresh divisions behind the river.',
-        what:
-          'Nine hundred and forty-six thousand Austro-Hungarian men and 6,833 guns went into the attack against an army dug in on the far bank of a river in flood and on the high ground behind it, which the attackers had to climb under fire from above. The western assault on the Asiago plateau took some ground and stopped; the crossings of the Piave in flood were partial and could not be linked or supplied. The Italian Tenth Army counter-attacked on 19 June, and the bridgeheads were destroyed one by one. Italian losses in the battle were 8,396 dead, 30,603 wounded and 48,182 captured, or 87,181 in all; Austro-Hungarian losses were 118,042, of which 25,547 were taken prisoner. The battle is also called the Battle of the Solstice.',
+        cause: 'Arthur Arz von Straußenburg had succeeded Conrad, and the emperor Karl I insisted in April ' +
+          'that his armies must win before peace could be made. The plan was two attacks, across the ' +
+          'Piave towards Padua and Venice, and onto the Asiago plateau, the two arms meeting behind the ' +
+          'Italian lines. The army was short of food, transport animals and morale, and units of eleven ' +
+          'nationalities were led by officers of another. Italy had rebuilt after Caporetto with French ' +
+          'and British help and Diaz in command, and fresh divisions were held behind the river.',
+        what: '946,000 Austro-Hungarians and 6,833 guns attacked an army dug in beyond a river in flood and ' +
+          'on high ground, which the attackers had to climb under fire. The western assault on the Asiago ' +
+          'plateau took some ground and stopped. The Piave crossings were partial and went unsupplied. ' +
+          'The Italian Tenth Army counter-attacked on 19 June and destroyed the bridgeheads in turn. ' +
+          'Italian losses were 8,396 dead, 30,603 wounded and 48,182 captured, 87,181 in all. ' +
+          'Austro-Hungarian losses were 118,042, of whom 25,547 were prisoners. It is also called the ' +
+          'Solstice.',
         consequence:
           'The defeat settled the question the summer had been meant to answer. The army would not attack again; the government in Vienna began to feel its way towards the Allies; and the Italian army, which had defended successfully for the first time in the war, kept its divisions intact for the offensive in October. The Empire’s allies were told that the eastern Italian front had spent its last strength.',
       },
@@ -331,19 +519,31 @@ export const EVENTS_1918: WW1Event[] = [
     figures: ['luddendorff', 'foch', 'petain', 'pershing'],
     levels: {
       primary: {
-        cause:
-          'In July the German army still held a great salient pushed to the Marne, with Paris inside its range of fire. Ludendorff attacked the salient from both sides, hoping to straighten the line and pull the Allied reserves out of the path of the next blow, which he meant to deliver in Flanders.',
+        cause: 'In July the German army still held a salient pushed to the Marne, with Paris inside its range ' +
+          'of fire. Ludendorff attacked the salient from both sides, hoping to straighten the line and ' +
+          'pull Allied reserves away from his next blow in Flanders.',
         what: 'On 15 July 1918 German armies crossed the Marne, but the Allies knew the hour, a barrage ' +
           'caught them, and Reims held. On 18 July Foch struck their flank with French and American ' +
           'divisions; by 20 July the Germans gave up their May gains.',
-        consequence:
-          'The war passed to the Allies on 18 July and did not give the initiative back. Ludendorff had lost the last chance to force a decision in the west, and the German army spent the rest of the summer on the defensive, shortening its line and losing men it could not replace.',
+        consequence: 'The war passed to the Allies on 18 July and did not give the initiative back. Ludendorff had ' +
+          'lost the last chance of a decision in the west, and the German army spent the summer on the ' +
+          'defensive, shortening its line and losing irreplaceable men.',
       },
       secondary: {
-        cause:
-          'The Marne salient had been taken in May at a cost of 130,000 German casualties and now had to be either exploited or cleared. Ludendorff chose to attack on both shoulders, Operation Hammerschlag on the west and the Reims attack on the east, in the hope that the Allied reserves would be spent defending ground. Foch, now commander-in-chief of the Allied armies with authority over reserves, refused to commit them piecemeal and kept them for his own counter-attack. Philippe Pétain, who had stopped the German attack at Reims in 1917, commanded the Army Group there and had prepared a defence in depth that let the first German wave spend itself.',
-        what:
-          'The Allies fought the battle with 58 divisions, 44 French, 8 American, 4 British and 2 Italian, and 346 tanks, against 52 German divisions. The 15 July attack east of Reims made a narrow bridgehead and was stopped by fire on the reverse slopes; the 18 July attack west of the salient, led by Mangin’s Tenth Army with French and American divisions and the first massed tank assault since Cambrai, took the Germans by surprise and advanced 20 kilometres in a few days. German losses are usually given at about 168,000, including 29,367 prisoners and 793 guns, against Allied losses of about 133,000. By early August the salient had been cleared to the Vesle and the Aisne, and the fighting had lasted into August.',
+        cause: 'The Marne salient, taken in May at a cost of 130,000 German casualties, now had to be ' +
+          'exploited or cleared. Ludendorff chose to attack on both shoulders, Operation Hammerschlag on ' +
+          'the west and the Reims attack on the east, hoping the Allied reserves would be spent defending ' +
+          'ground. Foch, Allied commander-in-chief with authority over reserves, refused to commit them ' +
+          'piecemeal and kept them for his own counter-attack. Philippe Pétain, who had stopped the ' +
+          'Germans at Reims in 1917, commanded the Army Group there and had a defence in depth that let ' +
+          'the first wave spend itself.',
+        what: 'The Allies used 58 divisions, 44 French, 8 American, 4 British and 2 Italian, and 346 tanks, ' +
+          'against 52 German divisions. The 15 July attack east of Reims made a bridgehead, and stopped ' +
+          'on the reverse slopes. On 18 July, west of the salient, Mangin’s Tenth Army, with ' +
+          'Franco-American divisions and the first massed tanks since Cambrai, surprised the Germans and ' +
+          'advanced 20 kilometres within days. German losses were usually about 168,000, including 29,367 ' +
+          'prisoners and 793 guns, against 133,000 Allied. By early August the salient was cleared to the ' +
+          'Vesle and the Aisne.',
         consequence:
           'The battle reversed the balance of the war in the west. It cost Germany divisions that had to be broken up to refill others, destroyed the assault formations in detail, and left the German army holding ground it could not defend while the Allies held reserves and tanks and increasing American numbers. On 24 July Ludendorff told the crown council that Germany must accept peace; the offensive in Flanders, the real object of the July battles, was shelved.',
       },
@@ -370,19 +570,26 @@ export const EVENTS_1918: WW1Event[] = [
     figures: ['haig', 'luddendorff', 'foch'],
     levels: {
       primary: {
-        cause:
-          'The German offensives of the spring had been stopped, and the Allied armies had recovered divisions and tanks. At Amiens the British held a front that the Germans believed was quiet, because Canadian units had been moved in secretly and the Germans were misled by false signals to Flanders.',
+        cause: 'The German offensives of the spring were stopped, and Allied armies had recovered divisions ' +
+          'and tanks. At Amiens the British held a front that the Germans thought quiet, because Canadian ' +
+          'units had been moved secretly and the Germans were misled by false signals to Flanders.',
         what: 'On 8 August 1918 the British Fourth Army attacked east of Amiens, behind a sudden bombardment ' +
           'with 1,300 guns and 500 tanks. The German front fell at once; by evening the line was about 11 ' +
           'kilometres back, with thousands of prisoners.',
-        consequence:
-          'The battle was continued to 12 August and then stopped, because the pace of the advance outran the guns and the tanks were worn out; only six were fit for battle four days later. The Allies had the initiative for the rest of the war, and the German high command knew that the army could no longer win.',
+        consequence: 'The battle ran to 12 August and then stopped, because the advance outran the guns and tanks ' +
+          'wore out; only six were fit four days later. The Allies had the initiative to the war’s end, ' +
+          'and German high command knew the army could not win.',
       },
       secondary: {
         cause:
           'After the Marne, Foch pressed for attacks to be made wherever the enemy was weak, without waiting for a great combined operation. Sir Henry Rawlinson’s Fourth Army proposed the Amiens attack to cut the railway junction that supplied the German salient. The British army in 1918 had learned to combine artillery with sound ranging and aerial photography, infantry platoons with Lewis guns and mortars, and tanks used in mass for the break-in. Secrecy was kept by moving the Canadian Corps in at night and by radio traffic suggesting an attack in Flanders.',
-        what:
-          'Nineteen divisions of the Fourth Army attacked, nine of them from Monash’s Australian Corps and Currie’s Canadian Corps, with Debeney’s French First Army on the right; the cavalry corps was to exploit. The German divisions in the sector were short of men and had only about two divisions in immediate reserve, and were driven back in confusion. The Canadians advanced 13 kilometres, the Australians 11, the French 8 and the British 3.2. Clodfelter’s counts give 45,000 German killed and wounded and 29,873 captured, against French losses of 24,232 and British losses of 22,202. Five German divisions were effectively engulfed on the first day.',
+        what: 'Nineteen divisions of the Fourth Army attacked, nine from Monash’s Australian Corps and ' +
+          'Currie’s Canadian Corps, with Debeney’s French First Army on the right; cavalry would exploit. ' +
+          'The German divisions were short of men, with only about two divisions in immediate reserve, ' +
+          'and driven back in confusion. The Canadians advanced 13 kilometres, the Australians 11, the ' +
+          'French 8 and the British 3.2. Clodfelter’s counts give 45,000 German killed and wounded and ' +
+          '29,873 captured, against French losses of 24,232 and British of 22,202. Five German divisions ' +
+          'were engulfed on the first day.',
         consequence:
           'Ludendorff described the first day of Amiens as the Schwarzer Tag des deutschen Heeres, the black day of the German army. He did not mean the ground lost: he meant that the morale of the troops had sunk to the point where large numbers capitulated, and that the army had to fight its way out of the war. The Allies continued the offensive on the Somme from 21 August, and from then until 11 November the German army retreated rather than defended a chosen line.',
       },
@@ -409,13 +616,15 @@ export const EVENTS_1918: WW1Event[] = [
     figures: ['enver_pasha'],
     levels: {
       primary: {
-        cause:
-          'Baku had the oil refineries that ran the war at sea, and it lay at the end of a railway from the Caspian. After Russia made its peace in March, the Russian army in the Caucasus went home and the city was held by Bolsheviks and Armenian revolutionaries. Britain raised a small force of officers and instructors under Lionel Dunsterville, sent from Baghdad through Persia to keep the Caucasus front intact and to stop Enver Pasha’s advance on the oil.',
+        cause: 'Baku’s oil fed the war at sea, by a Caspian railway. After the March peace the army went home, ' +
+          'and Bolsheviks and Armenians held the city. Britain sent Dunsterville from Baghdad through ' +
+          'Persia to hold the front and stop Enver’s advance on the oil.',
         what: 'On 26 August 1918 about 14,000 men under Nuri Pasha attacked Baku, held by some 20,000 ' +
           'ill-equipped troops and Dunsterville’s force. They took Binagadi and Diga, broke in on 13 ' +
           'September, and on 14 September the defenders sailed off.',
-        consequence:
-          'In the days after the city fell, Armenian civilians in Baku were killed in the massacre known as the September Days, usually put at between 10,000 and 30,000 dead. Ottoman and Azerbaijani control of Baku lasted until the armistice of October 1918 obliged the Ottoman army to leave.',
+        consequence: 'In the days after the city fell, Armenian civilians in Baku were killed in the September Days, ' +
+          'put at between 10,000 and 30,000 dead. Ottoman and Azerbaijani control of Baku lasted until ' +
+          'the armistice of October 1918 obliged the Ottoman army to leave.',
       },
       secondary: {
         cause:
@@ -426,8 +635,11 @@ export const EVENTS_1918: WW1Event[] = [
           'from 26 August to 14 September; Binagadi Hill and Diga fell by 1 September at a cost too heavy ' +
           'to press on. A deserter revealed the final assault, launched on the night of 13 September. ' +
           'Mürsel Bey admitted about 2,000 Ottoman losses; British losses about 200.',
-        consequence:
-          'The capture of Baku was the last and most remote of the Central Powers’ victories, and it came in the same fortnight in which the whole Ottoman position in Palestine collapsed. Between 10,000 and 30,000 ethnic Armenians were killed in the violence that followed the fall of the city, in what is called the September Days, out of an Armenian community of about 80,000; the killing is argued about in both directions, since the March Days earlier in 1918 had produced Muslim deaths on a large scale in the same city. By the armistice of Mudros on 30 October the Ottomans had to demobilise and the Ottoman forces left Baku.',
+        consequence: 'Baku was the Central Powers’ last and most remote victory, in the same fortnight the Ottoman ' +
+          'position in Palestine collapsed. Between 10,000 and 30,000 Armenians were killed in the ' +
+          'September Days, out of a community of about 80,000. The toll is disputed both ways: the March ' +
+          'Days of 1918 had killed many Muslims in the same city. The Mudros armistice of 30 October ' +
+          'forced the Ottomans to demobilise and leave Baku.',
       },
       university: {
         cause:
@@ -452,21 +664,38 @@ export const EVENTS_1918: WW1Event[] = [
     figures: ['sarrail', 'ferdinand_bulgaria', 'loyd_george'],
     levels: {
       primary: {
-        cause:
-          'The Salonica front had been a stalemate since 1916, with French, Serbian, Greek and British armies facing the Bulgarians in the mountains of Macedonia. By September 1918 the Allies had more troops in the Balkans than the Central Powers could match. The Bulgarian army was exhausted, short of food and losing the will to fight a war it had entered in 1915 for land.',
+        cause: 'The Salonica front was a stalemate from 1916, with French, Serbian, Greek and British armies ' +
+          'facing Bulgaria in Macedonia. By September 1918 the Allies outnumbered the Central Powers. ' +
+          'Bulgaria was exhausted, short of food, and unwilling to continue a war begun in 1915 for land.',
         what: 'On 15 September 1918 French, Serbian and Greek troops attacked the Dobro Pole ridge, the ' +
           'strongest Bulgarian position on the Vardar river. The ridge’s defenders were broken and fled, ' +
           'and whole units retreated towards Bulgaria, forming committees and refusing orders.',
-        consequence:
-          'Bulgaria asked for an armistice on 29 September and signed it on 30 September at Thessaloniki. The army had lost some 77,000 men, mostly prisoners, and 500 guns. With Bulgaria gone, the road to Vienna through Serbia and Hungary was open, and Germany lost its last reliable land ally in the south.',
+        consequence: 'Bulgaria asked for an armistice on 29 September and signed on 30 September at Thessaloniki. It ' +
+          'lost some 77,000 men, mostly prisoners, and 500 guns. Bulgaria’s exit opened the road to ' +
+          'Vienna through Serbia and Hungary, and Germany lost its last reliable southern ally.',
       },
       secondary: {
-        cause:
-          'The Allied armies in the east had been reorganised under Franchet d’Espèrey, who took command of the Allied Army of the East in July 1918 and planned a set-piece breakthrough on the Dobro Pole sector, where Serbian divisions would attack alongside French and Greek ones, with a British diversion at Lake Doiran. Bulgaria had taken a large part of its pre-war army out of the line to farm, and its troops had been fighting since 1912 in four wars; food, clothing and replacement drafts were failing, and desertion was heavy. The Bulgarian government had already approached the Allies in secret through Malinov, and the tsar Ferdinand had refused to ask for peace while Germany could still deliver a decision.',
-        what:
-          'The bombardment on the Dobro Pole sector began on 14 September and the assault on 15 September, with the peak at 1,875 metres taken on the first day; fighting on the ridge continued to 18 September. The Bulgarian second and third divisions were driven off with the loss of most of their prisoners, and the 11th French and Serbian divisions pushed through the gap. Doiran cost the British a costly repulse, but the breakthrough in the centre made it irrelevant. The Bulgarian retreat became a rout, with mutinous regiments marching on Sofia; the chief of staff Nikola Zhekov, who had asked Berlin for immediate reinforcements, was replaced by Georgi Todorov. A cavalry pursuit drove through the Vardar and Strumica valleys towards Bulgaria; the total capture of Bulgarian and German prisoners is put at 77,000 with 500 guns.',
-        consequence:
-          'The armistice of 30 September took Bulgaria out of the war and disarmed its army, leaving 10,000 German troops in the country to be interned or to fight their way out. Tsar Ferdinand abdicated in favour of his son Boris three days later. The collapse removed the shortest rail route of German supply and oil, opened the Danube, and made the Hungarian and Austrian fronts the next problem; Hindenburg had pledged on 17 August to support Bulgaria only when the situation on other fronts permitted, and his reluctance had already been read in Sofia as a refusal.',
+        cause: 'Allied armies were reorganised under Franchet d’Espèrey, who took the Allied Army of the East ' +
+          'in July 1918 and planned a set-piece attack on the Dobro Pole by Serbian divisions with French ' +
+          'and Greek ones, and a British diversion at Lake Doiran. Bulgaria had sent much of its pre-war ' +
+          'army home to farm. Its troops had fought since 1912 in four wars; food, clothing and drafts ' +
+          'were failing, and desertion was heavy. The government had secretly approached the Allies ' +
+          'through Malinov, and Tsar Ferdinand refused to ask for peace while Germany might still force a ' +
+          'decision.',
+        what: 'Dobro Pole was bombarded on 14 September and stormed on 15 September. The 1,875-metre peak ' +
+          'fell that day, and the ridge fighting lasted to 18 September. Bulgarian divisions were driven ' +
+          'off and the 11th French and Serbian divisions pushed through. Doiran was a costly British ' +
+          'repulse, made irrelevant by the break in the centre. The retreat became a rout, with mutineers ' +
+          'marching on Sofia. Nikola Zhekov, who had asked Berlin for troops at once, was replaced by ' +
+          'Georgi Todorov. Cavalry drove up the Vardar and the Strumica. About 77,000 prisoners and 500 ' +
+          'guns were taken.',
+        consequence: 'The armistice of 30 September took Bulgaria out of the war and disarmed its army, leaving ' +
+          '10,000 German troops in the country to be interned or fight their way out. Tsar Ferdinand ' +
+          'abdicated in favour of his son Boris three days later. The collapse removed the shortest rail ' +
+          'route of German supply and oil, opened the Danube, and made the Hungarian and Austrian fronts ' +
+          'the next problem; Hindenburg had pledged on 17 August to support Bulgaria only when the ' +
+          'situation on other fronts permitted, and his reluctance had already been read in Sofia as a ' +
+          'refusal.',
       },
       university: {
         cause:
@@ -491,8 +720,9 @@ export const EVENTS_1918: WW1Event[] = [
     figures: ['liman_von_sanders', 'feisal', 'lawrence'],
     levels: {
       primary: {
-        cause:
-          'The Ottoman army in Palestine had taken Jerusalem in reverse and held a line from the Mediterranean to the Jordan, with two armies in the hills and one in the Jordan valley. British Indian and Australian divisions had been rebuilt with reinforcements from India and Egypt, and the Ottoman lines were thin, short of ammunition and watched from the air.',
+        cause: 'After losing Jerusalem the Ottomans held a line from the Mediterranean to the Jordan, two ' +
+          'armies in the hills and one in the valley. Indian and Australian divisions had been rebuilt ' +
+          'from India and Egypt. Lines were thin, short of ammunition and under air watch.',
         what: 'On 19 September 1918 the British EEF attacked on the Plain of Sharon behind a smoke screen, ' +
           'and broke the Ottoman eighth army in hours. Cavalry reached the Esdraelon plain, took Afulah, ' +
           'Beisan and Jenin, and cut the railways behind the Ottoman armies.',
@@ -500,12 +730,27 @@ export const EVENTS_1918: WW1Event[] = [
           'Damascus was taken on 1 October by Arab and Australian cavalry, and Megiddo, Daraa and Damascus were all in Allied hands before the month was out. The Ottoman government asked for an armistice, which was signed at Mudros on 30 October.',
       },
       secondary: {
-        cause:
-          'Edmund Allenby had lost two divisions and 24 battalions of infantry to the western front in the spring, and had to win with cavalry, Indian infantry and air power instead. He kept his concentration a secret by leaving a frontage apparently held, rebuilding his communications, and moving divisions to the coast at night. The Ottoman Yildirim army group under Otto Liman von Sanders, which had replaced the command dismissed after Jerusalem fell in December 1917, was short of men, artillery ammunition and aircraft, with its railway head far to the north and the Hejaz railway already destroyed by the Arab revolt.',
-        what:
-          'The battle began before dawn on 19 September with a bombardment of the Turkish positions on the Sharon plain. Three corps attacked, including British and Indian divisions, and broke through the eighth army’s front by mid-morning. Chaytor’s force, with Australian light horse and Arab irregulars, attacked across the Jordan to hold the seventh army’s line, and took Es Salt and Amman. The cavalry, including the 5th Cavalry Division and the Australian Mounted Division, rode 70 kilometres into the Esdraelon plain and held the passes at Nazareth, Afulah and Beisan, where the retreating columns were caught. Liman von Sanders’s headquarters at Nazareth was overrun, and he reached Damascus and organised the defence north of the city, where fighting was still going on at Haritan when the armistice was signed.',
-        consequence:
-          'Allenby’s force destroyed the Ottoman seventh and eighth armies and advanced several hundred miles in the fortnight after the attack; about 75,000 prisoners and 360 guns were taken between 19 September and the armistice, and the campaign is generally classed as a decisive result at comparatively little cost, unlike most offensives of the war. The armistice of Mudros on 30 October ended the fighting in the theatre, with Ottoman forces still holding on at Haritan north of Aleppo. Allenby’s cavalry victory was achieved with a force whose infantry had been thinned for the west, and with air superiority, motor transport, and a feint along the Jordan that drew Ottoman attention away from the coast.',
+        cause: 'Allenby had lost two divisions and 24 infantry battalions to the western front in the spring, ' +
+          'and had to win with cavalry, Indian infantry and air power instead. He kept his concentration ' +
+          'a secret by leaving a frontage apparently held, rebuilding his communications, and moving ' +
+          'divisions to the coast at night. The Ottoman Yildirim army group under Liman von Sanders, ' +
+          'which had replaced the command dismissed after Jerusalem fell in December 1917, was short of ' +
+          'men, artillery ammunition and aircraft, with its railway head far to the north and the Hejaz ' +
+          'railway destroyed by the Arab revolt.',
+        what: 'The battle opened before dawn on 19 September on the Sharon plain. Three corps, British and ' +
+          'Indian, broke the Eighth Army’s front by mid-morning. Chaytor’s force crossed the Jordan in ' +
+          'pursuit of the Fourth Army, and Australian and New Zealand mounted troops took Es Salt and ' +
+          'Amman. The 5th Cavalry and Australian Mounted Divisions rode 70 kilometres into the Esdraelon ' +
+          'plain and held Nazareth, Afulah and Beisan, catching the retreat. Liman von Sanders’s ' +
+          'headquarters at Nazareth was overrun. He reached Damascus and defended north of it. Fighting ' +
+          'at Haritan continued up to the armistice.',
+        consequence: 'Allenby’s force destroyed the Ottoman Seventh and Eighth Armies and advanced several hundred ' +
+          'miles in a fortnight. About 75,000 prisoners and 360 guns were taken between 19 September and ' +
+          'the armistice, a decisive result at little cost, unlike most offensives of the war. The Mudros ' +
+          'armistice of 30 October ended the fighting, with Ottomans still holding at Haritan, north of ' +
+          'Aleppo. The cavalry victory came from a force whose infantry had been thinned for the west, ' +
+          'with air superiority, motor transport, and a Jordan feint that drew Ottoman attention from the ' +
+          'coast.',
       },
       university: {
         cause:
@@ -530,21 +775,33 @@ export const EVENTS_1918: WW1Event[] = [
     figures: ['pershing', 'luddendorff', 'hindenburg', 'wilhelm_ii'],
     levels: {
       primary: {
-        cause:
-          'The American armies in France had grown to over a million men, and their commander John Pershing wanted a separate American operation. The sector chosen was the Meuse river and the Argonne forest north of Verdun. The German lines there ran over the ridge between the forest and the river, and the railway at Sedan lay behind them.',
+        cause: 'The American armies had grown to over a million, and Pershing wanted a separate operation. The ' +
+          'sector was the Meuse and the Argonne forest north of Verdun. The German lines there ran over ' +
+          'the ridge between forest and river, with the Sedan railway behind them.',
         what: 'On 26 September 1918 the American First Army, with French armies, attacked the German fifth ' +
           'army’s fortified lines with 216,000 men. The forest and ravines tangled the units; Montfaucon ' +
           'held until 27 September. The Kriemhilde position fell on 14 – 17 October.',
-        consequence:
-          'By the end of the offensive the Meuse road was open and the Hindenburg line behind the Argonne had gone. On 29 September, the day the British attack on the Hindenburg line at the St Quentin Canal opened and the Americans renewed their attack in the Argonne, the German leadership decided the war could not be continued and asked the politicians to open peace negotiations.',
+        consequence: 'The Meuse road was open and the Hindenburg line behind the Argonne fell. On 29 September, the ' +
+          'British struck the St Quentin Canal and the Americans renewed the Argonne, and German leaders ' +
+          'decided the war could not continue and asked for peace talks.',
       },
       secondary: {
-        cause:
-          'Foch’s grand plan for 26 – 29 September was to attack everywhere at once, so that the German reserves could not be moved from one threatened sector to another: the Americans in the Argonne, the French in the Champagne, the British and Dominions on the Hindenburg line, and the Belgians in Flanders. Pershing’s independent American army, with French aviation, tanks and artillery support, was given the longest and least favourable sector, held by about 450,000 German troops of Army Group Gallwitz. The German soldiers in the line were underfed and many were old or young, though units newly relieved from the east fought stubbornly.',
+        cause: 'Foch’s plan for 26 – 29 September was to attack everywhere at once, so German reserves could ' +
+          'not be shifted between sectors: the Americans in the Argonne, the French in the Champagne, the ' +
+          'British and Dominions on the Hindenburg line, and the Belgians in Flanders. Pershing’s ' +
+          'independent American army, with French aviation, tanks and artillery support, was given the ' +
+          'longest and least favourable sector, held by about 450,000 German troops of Army Group ' +
+          'Gallwitz. The German soldiers in the line were underfed and many were old or young, though ' +
+          'units newly relieved from the east fought stubbornly.',
         what:
           'The offensive was the largest operation in United States military history, involving 1.2 million American soldiers, sailors and marines, 800,000 French and 850 Siamese personnel, with about 2,000,000 men in all, against 450,000 Germans. The first phase from 26 September began well on the flanks but stalled in the forest. The 79th Division failed to take Montfaucon d’Argonne on the first day and took it on 27 September, and American divisions had to be withdrawn to refit. The second phase turned on the attack on the Kriemhilde Stellung at the Côte de Châtillon, fought between 14 and 17 October, which forced the German line back to the Meuse. The third phase from 1 November drove forward along the river towards Sedan. Allied losses are usually put at about 192,000, of which 122,063 American, with German losses of about 126,000, a figure taken from a 1922 encyclopedia.',
-        consequence:
-          'On 29 September, with the Hindenburg line broken at St Quentin Canal and the Argonne attack renewed, Ludendorff told the government that the front might collapse at any moment and that an armistice request must be made at once; he also insisted that the request should come from a new government based on the parties that held the Reichstag majority, which meant parliamentarising the empire. Chancellor Hertling’s cabinet resigned on 30 September and Prince Max of Baden was appointed on 3 October, and sent to Wilson on 4 October. Ludendorff was dismissed on 26 October. On 9 November Max announced the Kaiser’s abdication without authority and handed the chancellorship to Friedrich Ebert.',
+        consequence: 'On 29 September, with the Hindenburg line broken at St Quentin Canal and the Argonne attack ' +
+          'renewed, Ludendorff told the government the front might collapse at any moment and an ' +
+          'armistice must be requested at once; he insisted it come from a government of the Reichstag ' +
+          'majority, which meant parliamentarising the empire. Hertling’s cabinet resigned on 30 ' +
+          'September and Prince Max of Baden was appointed on 3 October, and sent to Wilson on 4 October. ' +
+          'Ludendorff was dismissed on 26 October. On 9 November Max announced the Kaiser’s abdication ' +
+          'without authority and handed the chancellorship to Ebert.',
       },
       university: {
         cause:
@@ -569,21 +826,33 @@ export const EVENTS_1918: WW1Event[] = [
     figures: ['diaz', 'boroevic', 'karl_i'],
     levels: {
       primary: {
-        cause:
-          'Italy had defended the Piave since 1917 and had beaten back the last Austro-Hungarian attack in June. By October the armies of the Empire were short of food, and the national groups inside them were refusing to go on fighting for Vienna. Diaz waited until an attack was certain to succeed.',
+        cause: 'Italy had defended the Piave since 1917 and had beaten back the last Austro-Hungarian attack ' +
+          'in June. By October the Empire’s armies were short of food, and the national groups inside ' +
+          'them were refusing to fight for Vienna. Diaz waited until an attack was certain.',
         what: 'On 24 October 1918, a year after Caporetto, five Italian armies attacked along the Piave. They ' +
           'forced the river crossings at once. The Austro-Hungarian armies broke up into national columns ' +
           'marching home, and by the end of October they had simply disbanded.',
-        consequence:
-          'Austria-Hungary asked for an armistice and signed it at Villa Giusti on 3 November, with the firing to stop on 4 November. Some 448,000 soldiers and over 5,000 guns were captured in the ten days of the battle. The empire was dissolved as it ended: the Czechs, Slovaks, South Slavs and Poles formed their own states, and the emperor Karl withdrew from the conduct of government.',
+        consequence: 'Austria-Hungary signed an armistice at Villa Giusti on 3 November, firing to stop on 4 ' +
+          'November. Some 448,000 soldiers and over 5,000 guns were taken in ten days. The empire ' +
+          'dissolved, Czechs, Slovaks, South Slavs and Poles formed states, and Karl withdrew.',
       },
       secondary: {
-        cause:
-          'Diaz had rebuilt the army after Caporetto with deeper defence, mobile reserves and better leave arrangements, and he refused to attack until the odds were certain. The Austro-Hungarian army in October 1918 held a shortened front with 46 infantry and 6 cavalry divisions against 57 Allied infantry divisions, with 6,030 guns against 7,700, and both sides were being consumed by influenza and malaria. On 1 November the new Hungarian government of Count Mihály Károlyi recalled the soldiers conscripted in Hungary, which removed a large part of the army’s manpower. The Czech and South Slav regiments had already begun to refuse orders.',
+        cause: 'Diaz had rebuilt the army after Caporetto with deeper defence, mobile reserves and better ' +
+          'leave, and he refused to attack until the odds were certain. The Austro-Hungarian army in ' +
+          'October 1918 held a shortened front with 46 infantry and 6 cavalry divisions against 57 Allied ' +
+          'infantry divisions, with 6,030 guns against 7,700, and both sides were consumed by influenza ' +
+          'and malaria. On 1 November Hungary’s new government under Count Mihály Károlyi recalled the ' +
+          'soldiers conscripted in Hungary, which removed much of the army’s manpower. The Czech and ' +
+          'South Slav regiments had begun to refuse orders.',
         what:
           'The order of battle included 52 Italian divisions, three British, two French and the 332nd United States Infantry Regiment, with 600 aircraft establishing air superiority. Three armies were to cross the Piave towards Vittorio Veneto and cut the rail junction between the two Austrian armies; the mountain armies on the Grappa were to hold and then follow up. The crossing of the flooded river on 24 October succeeded on the Papadopoli island, where Italian engineers rowed British troops across in the dark, and the bridgeheads were consolidated despite a counter-attack on 26 October. The renewed attack on 27 October broke the Austrian defence, and the retreat to the Piave line turned into a general discharge of the armies. The Italians reached the Tagliamento and took Trieste by an amphibious expedition on 3 November, and Italian troops later occupied Innsbruck and all North Tyrol with 20,000 to 22,000 men.',
-        consequence:
-          'The armistice of Villa Giusti required the evacuation of all territory occupied since 1914 and of South Tirol, Tarvisio, the Isonzo valley, Gorizia, Trieste, Istria and part of Dalmatia, the internment or expulsion of German troops within fifteen days, and free use of the empire’s communications, which opened the road to Germany from the south. The Dual Monarchy ceased to exist as a fighting power and as a state: the Czechoslovak and South Slav states were proclaimed in these days, and Karl’s renunciation of participation in government on 11 November left Austria a republic. The battle ended the war on the Italian front a week before the armistice in the west.',
+        consequence: 'The armistice of Villa Giusti required evacuation of territory occupied since 1914, plus South ' +
+          'Tirol, Tarvisio, the Isonzo valley, Gorizia, Trieste, Istria and part of Dalmatia, internment ' +
+          'or expulsion of German troops within fifteen days, and free use of its communications, opening ' +
+          'the road to Germany from the south. The Dual Monarchy ceased to exist as a fighting power and ' +
+          'a state: the Czechoslovak and South Slav states were proclaimed, and Karl’s renunciation of ' +
+          'government on 11 November left Austria a republic. The battle ended the war on the Italian ' +
+          'front a week before the western armistice.',
       },
       university: {
         cause:
@@ -608,8 +877,9 @@ export const EVENTS_1918: WW1Event[] = [
     figures: ['scheer'],
     levels: {
       primary: {
-        cause:
-          'By the end of October 1918 the German government had asked the Allies for an armistice and had promised to stop the submarine war. The officers of the High Seas Fleet planned something else. They meant to take the battle fleet out into the North Sea and fight the British navy, whatever the cost, rather than let it surrender without a fight.',
+        cause: 'By late October 1918 Germany had asked the Allies for an armistice and promised to stop the ' +
+          'submarine war. The High Seas Fleet’s officers planned otherwise. They meant to sail into the ' +
+          'North Sea and fight the British, rather than surrender without a fight.',
         what: 'Sailors at Wilhelmshaven refused to sail on 29 October, and on 30 October the stokers put out ' +
           'the fires. On 3 November in Kiel, crowds of sailors and workers were joined by the troops sent ' +
           'to shoot them, and councils took over.',
@@ -617,8 +887,12 @@ export const EVENTS_1918: WW1Event[] = [
           'Within days sailors’ and soldiers’ councils had been formed in the ports and the cities of Germany, and the empire had no force to oppose them. The mutiny at Kiel was the beginning of the revolution that ended the monarchy on 9 November.',
       },
       secondary: {
-        cause:
-          'The government had made the concession Wilson required by recalling the submarines from 20 October, over the objections of Admiral Scheer, chief of the Admiralty staff. Scheer and Admiral Franz von Hipper, commander of the fleet, wanted the battle fleet to engage the Grand Fleet before any armistice. Hipper’s order for an attack was issued on 24 October and approved by Scheer on 27 October, and the fleet assembled on the Schillig Roads. It was an operation ordered by the naval command without the knowledge or approval of the German government, and its officers wrote privately that they meant to go down with the flag flying, while the naval war command expressed horror at the plan.',
+        cause: 'The government made Wilson’s required concession by recalling the submarines from 20 October, ' +
+          'over Admiral Scheer’s objections. Scheer and Hipper, the fleet commander, wanted the fleet to ' +
+          'fight the Grand Fleet before an armistice. Hipper ordered the attack on 24 October and Scheer ' +
+          'approved it on 27 October, and the fleet assembled on the Schillig Roads. The naval command ' +
+          'ordered it without the government’s knowledge or approval. Officers wrote that they meant to ' +
+          'go down with the flag flying, while the naval war command was horrified.',
         what:
           'On the night of 29 October, when the order to sail came through, the crews of the battleships Thüringen and Helgoland refused. Eleven sailors of the Prinzregent Luitpold were arrested, and the next day nearly the whole crew of six hundred walked off in support of them. The fleet’s sailing was called off on 30 October and the squadrons dispersed, the squadron carrying the arrested men going up the Kiel Canal. Sailors from it came ashore at Kiel on 3 November to demand their comrades’ release. A meeting of several thousand that afternoon was fired on by troops, killing several men, and the crowd marched on the barracks with workers’ leaders. On 4 November the soldiers sided with the demonstrators, Admiral Souchon released the imprisoned sailors, and a workers’ and soldiers’ council took control of Kiel under the slogan Frieden und Brot, peace and bread. The fourteen points the council put forward pointed towards a liberal, social and democratic order in which militarism would have no place.',
         consequence:
@@ -637,6 +911,72 @@ export const EVENTS_1918: WW1Event[] = [
       'Order to sail issued by Hipper 24 October 1918 and approved by Scheer 27 October; refusals and arrests on the night of 29 October at Wilhelmshaven, sailing cancelled 30 October, Kiel meeting and shooting 3 November, council in control 4 November. The mutiny is dated here to the first arrests of 29 October, which is why the day is given; the Kiel rising itself was 3 – 4 November. Source checked: “Kiel mutiny”.',
   },
   {
+    id: 'armistice_of_mudros',
+    date: '1918-10-30',
+    precision: 'day',
+    title: 'The Armistice of Mudros',
+    kind: 'armistice',
+    fronts: ['politics'],
+    countries: ['Ottoman Empire', 'United Kingdom'],
+    note: 'Encyclopaedia Britannica dates the Armistice of Mudros to 30 October 1918, signed at Mudros ' +
+      'between the Ottoman Empire and Great Britain representing the Allies. It records the surrender of ' +
+      'garrisons in the Hejaz, Yemen, Syria, Mesopotamia, Tripolitania and Cyrenaica, the occupation of ' +
+      'the Straits, and the demobilisation of the army. The National Army Museum dates the same signature ' +
+      'to 30 October 1918. This card is the armistice. It does not retell the Palestine campaign.',
+    levels: {
+      primary: {
+        cause: 'The Ottoman Empire had been at war since 1914, and by the end of October 1918 its government ' +
+          'was ready to stop. Britain negotiated for the Allies. The meeting was at Mudros, a harbour on ' +
+          'the island of Lemnos.',
+        what: 'On 30 October 1918 the Ottoman Empire signed the armistice. Garrisons still outside Anatolia ' +
+          'were to be given up. The Allies were to occupy the Straits. The Ottoman army was to be ' +
+          'demobilised. Those are the terms this card records.',
+        consequence: 'The Ottoman war was over. Garrisons outside Anatolia were to be given up, and the Straits were ' +
+          'to pass under Allied control. What happened to the lands afterwards was for the peace, not for ' +
+          'this armistice.',
+      },
+      secondary: {
+        cause: 'By late October the Ottoman government had asked to stop the war. Britain took the negotiation ' +
+          'in the name of the Allies, and the delegates met at Mudros on Lemnos, a harbour the Allies ' +
+          'already used. An armistice, not a peace treaty, was what was on offer: an end to fighting, the ' +
+          'handing over of garrisons, and control of the Straits. The military collapses elsewhere in the ' +
+          'autumn are other cards. This one begins at the table.',
+        what: 'The armistice was signed on 30 October 1918. Britannica and the National Army Museum both give ' +
+          'that day. The terms Britannica sets out, and which this card uses, required the remaining ' +
+          'Ottoman garrisons in the Hejaz, Yemen, Syria, Mesopotamia, Tripolitania and Cyrenaica to be ' +
+          'surrendered, the Straits to be occupied, and the army to be demobilised. No strength and no ' +
+          'casualty figure is attached. The signature is the event, and the campaigns that led the ' +
+          'government to seek it are not retold here.',
+        consequence: 'Mudros ended the Ottoman war as a legal fact. Garrisons outside Anatolia were to be given up, ' +
+          'which is why occupations far from Lemnos emptied in the following weeks. The Straits, closed ' +
+          'to the Allies since 1914, were to be opened under their control. Demobilisation limited what ' +
+          'the Ottoman army could do while the peace was argued. The argument about partition came ' +
+          'afterwards and is outside this timeline. The armistice itself is the stop.',
+      },
+      university: {
+        cause: 'Mudros is often written as a sentence at the end of a battle narrative, which makes the ' +
+          'armistice look like a mere consequence and hides it as a negotiated instrument. The government ' +
+          'in Constantinople had its own reasons to stop, including the fear of Allied landings and the ' +
+          'collapse of the other Central Powers, and the soldiers still in the field were not all in one ' +
+          'theatre. Britain’s decision to sign for the Allies, rather than wait for a general conference, ' +
+          'shaped the terms. That is a political choice and deserves its own card.',
+        what: 'The date and the signatories are not in dispute: 30 October 1918, the Ottoman Empire and Great ' +
+          'Britain representing the Allies, at Mudros. Britannica lists the territorial and military ' +
+          'clauses this card repeats, and the National Army Museum dates the signature. Nothing is added ' +
+          'about manpower or losses. Nothing is added about the course of the fighting in Palestine or in ' +
+          'the Caucasus. Those campaigns record the signing as an outcome. This card records the ' +
+          'instrument, so the outcome is not asked to stand in for the text.',
+        consequence: 'The armistice, not the peace treaty, is what actually stopped Ottoman fighting and started the ' +
+          'Allied occupation of the Straits. Later arguments about the empire’s partition, about ' +
+          'resistance in Anatolia, and about how harshly the terms were read, all use Mudros as the ' +
+          'baseline and then leave it. Histories that mention the signature only inside a victory ' +
+          'despatch tend to skip the clauses. The clauses are the event: garrisons given up, Straits ' +
+          'occupied, army demobilised, and the war with the Ottoman Empire brought to a formal end while ' +
+          'the German war was still open.',
+      },
+    },
+  },
+  {
     id: 'german_revolution_of_november_1918',
     date: '1918-11-09',
     precision: 'day',
@@ -647,20 +987,33 @@ export const EVENTS_1918: WW1Event[] = [
     figures: ['wilhelm_ii', 'scheidemann', 'liebknecht_karl', 'luxemburg_rosa'],
     levels: {
       primary: {
-        cause:
-          'The fleet had mutinied at the end of October, and councils of workers and soldiers had spread across the country within a week. The emperor and the generals could not rely on troops to put the cities back under control. The new chancellor, Prince Max of Baden, knew that an armistice could only be obtained if the government rested on the parties that commanded the Reichstag.',
+        cause: 'The fleet mutinied in late October, and workers’ and soldiers’ councils spread nationwide ' +
+          'within a week. The emperor and the generals could not trust troops to retake the cities. ' +
+          'Prince Max of Baden knew an armistice needed a government of the Reichstag parties.',
         what: 'On 9 November 1918 workers’ and soldiers’ councils seized Berlin’s public buildings. Philipp ' +
           'Scheidemann proclaimed a German republic from a Reichstag window, hours before Karl Liebknecht ' +
           'proclaimed a socialist one. Prince Max handed the chancellorship to Friedrich Ebert; Wilhelm ' +
           'II fled the next day.',
-        consequence:
-          'The empire fell in a day and almost without bloodshed. Councils held power across Germany, and Bavaria had already declared itself a people’s state on 8 November. Real authority passed to a body of six commissioners, three Majority Social Democrats and three Independents, while the old officers and officials kept their posts.',
+        consequence: 'The empire fell in a day and almost without bloodshed. Councils held power across Germany, and ' +
+          'Bavaria had declared itself a people’s state on 8 November. Authority passed to six ' +
+          'commissioners, three Majority Social Democrats and three Independents, while the old officers ' +
+          'and officials stayed.',
       },
       secondary: {
-        cause:
-          'The revolution was the consequence of the military collapse of late September, when the High Command asked for an armistice and insisted that a government of the parliamentary majority make the request, so that the army would not have to sign its own defeat. The October reforms made the government answerable to the Reichstag, released the political prisoners, and lifted the state of siege, which legalised the strike and council movement that the January strikes had begun. With the fleet lost, the army refusing to march and the monarch’s abdication demanded in Wilson’s third note, there was no institution left that could govern in the emperor’s name.',
-        what:
-          'By 8 November councils had taken power in the ports, in Munich, where Kurt Eisner proclaimed a People’s State, and in most of the larger states. On 9 November the Berlin garrison refused to fire on the crowds and the council executive took the city. Scheidemann’s proclamation from a window of the Reichstag was made to prevent a rival proclamation on the model of Moscow, and Liebknecht made his in the Lustgarten hours later. Max issued the proclamation of the Kaiser’s abdication on his own authority and transferred the office of chancellor to Ebert, leader of the Majority Social Democrats; Ebert’s government was formed the same day and claimed to govern by the mandate of the councils, while Wilhelm’s formal abdication statement was not signed until 28 November.',
+        cause: 'The revolution followed the military collapse of late September, when the High Command asked ' +
+          'for an armistice and insisted that a government of the parliamentary majority make the ' +
+          'request, so the army would not sign its own defeat. The October reforms made the government ' +
+          'answerable to the Reichstag, released political prisoners, and lifted the state of siege, ' +
+          'which legalised the strike and council movement that the January strikes had begun. With the ' +
+          'fleet lost, the army refusing to march and the monarch’s abdication demanded in Wilson’s third ' +
+          'note, no institution left could govern in the emperor’s name.',
+        what: 'By 8 November councils held the ports, Munich, where Kurt Eisner proclaimed a People’s State, ' +
+          'and most larger states. On 9 November the Berlin garrison would not fire on the crowds, and ' +
+          'the council executive took the city. Scheidemann proclaimed a republic from a Reichstag window ' +
+          'to forestall one on the Moscow model, and Liebknecht spoke in the Lustgarten hours later. Max ' +
+          'announced the Kaiser’s abdication on his own authority and made Ebert, leader of the Majority ' +
+          'Social Democrats, chancellor that day. Ebert claimed the councils’ mandate. Wilhelm’s formal ' +
+          'abdication was not signed until 28 November.',
         consequence:
           'Ebert made a pact with the army leadership through General Groener: the officer corps would support the government against the left, and the government would preserve order and the existing command structure. That bargain decided the shape of the republic. The councils were allowed to fade in favour of a national assembly elected in January 1919; the Spartacist rising in Berlin in January was suppressed by troops and volunteers, and Liebknecht and Rosa Luxemburg were murdered in Berlin on 15 January 1919.',
       },
@@ -687,19 +1040,30 @@ export const EVENTS_1918: WW1Event[] = [
     figures: ['foch', 'pilsudski_jozef'],
     levels: {
       primary: {
-        cause:
-          'The German armies in the west were still on foreign soil in October, but the High Command had told the government on 29 September that the front could not be held. After three notes from the American president and a week of revolution at home, the new government asked for an armistice, and the German delegation was told to accept the Allied terms.',
+        cause: 'German armies were still on foreign soil in October, but the High Command said on 29 September ' +
+          'that the front could not hold. After three American notes and a week’s revolution, the new ' +
+          'government asked for an armistice and told to accept the Allied terms.',
         what: 'The Germans had seventy-two hours to accept the Allied terms. The armistice was signed on 11 ' +
           'November 1918. German troops had to leave France, Belgium and Russia; the Allies were to hold ' +
           'on the Rhine, and Germany had to surrender its warships.',
-        consequence:
-          'Firing stopped on the western front at 11:00 a.m. on 11 November 1918, six hours after the signature. Matthias Erzberger of the Centre Party signed for the new government, and the armistice was extended three times while the peace treaty was negotiated. Poland recovered its independence in the same days, with Józef Piłsudski, released by the Germans from Magdeburg, taking power in Warsaw as Chief of State.',
+        consequence: 'Firing stopped in the west at 11:00 a.m. on 11 November 1918, six hours later. Erzberger ' +
+          'signed for Germany. The armistice was extended three times until the peace. Poland regained ' +
+          'independence then, and Piłsudski, freed from Magdeburg, became Chief of State in Warsaw.',
       },
       secondary: {
-        cause:
-          'The Allied terms were drafted by Foch’s staff with British and American input, and reflected the argument earlier in the year about whether the German army could be forced to a peace or only to a cessation of fighting. Foch and Haig had both doubted that the Allies could break into Germany in 1918, so the terms were designed to make renewed fighting impossible rather than to occupy Germany. The German delegation under Matthias Erzberger was able to correct some impossible demands, including the surrender of more submarines than the fleet possessed, and to extend the withdrawal timetable, and it protested the harshness of the terms before signing.',
-        what:
-          'Germany had to evacuate the invaded countries and the occupied parts of the east. It had to surrender 5,000 artillery pieces, 25,000 machine guns, 3,000 minenwerfer, 1,700 aircraft including all the night bombers, 5,000 railway locomotives, 150,000 railway carriages and 5,000 road trucks, and to hand over the warships. The fleet was interned at Scapa Flow, and was scuttled by its own crews in June 1919. The Rhineland, with the bridgeheads east of the river, was to be occupied, the railways handed over, and the infrastructure left intact. Allied prisoners were to be released at once while German prisoners were not, and the blockade of Germany was to continue. One clause abrogated the treaty of Brest-Litovsk, which the Soviet legislature annulled on 13 November.',
+        cause: 'The Allied terms were drafted by Foch’s staff with British and American input, and reflected ' +
+          'that year’s argument about whether the German army could be forced to peace or only to stop ' +
+          'fighting. Foch and Haig had both doubted that the Allies could break into Germany in 1918, so ' +
+          'the terms were designed to make renewed fighting impossible rather than to occupy Germany. The ' +
+          'German delegation under Matthias Erzberger corrected some impossible demands, including the ' +
+          'surrender of more submarines than the fleet possessed, and extended the withdrawal timetable, ' +
+          'and protested the harshness of the terms before signing.',
+        what: 'Germany had to leave the invaded countries and the occupied east, and to surrender 5,000 guns, ' +
+          '25,000 machine guns, 3,000 minenwerfer, 1,700 aircraft, 5,000 locomotives, 150,000 carriages ' +
+          'and 5,000 trucks, plus the warships. Interned at Scapa Flow, the fleet was scuttled by its ' +
+          'crews in June 1919. The Rhineland and the bridgeheads were to be occupied, the railways handed ' +
+          'over, the works left intact. Allied prisoners were freed at once; German prisoners were not. ' +
+          'The blockade continued. The Soviet legislature annulled Brest-Litovsk on 13 November.',
         consequence:
           'The armistice ended the fighting on land and sea against Germany, and it was renewed until the Treaty of Versailles was signed on 28 June 1919 and came into force in January 1920. Because the German army was still on foreign ground when the firing stopped, and because the government that signed was the new democratic one, the army leadership was able to spread the claim that the army had been undefeated and betrayed, a claim the officers had planned for by pushing the request for an armistice onto the politicians in September 1918.',
       },
@@ -715,4 +1079,77 @@ export const EVENTS_1918: WW1Event[] = [
     note:
       'Signed at 5:00 a.m. on 11 November 1918 in a railway carriage in the Compiègne Forest; in force from 11:00 a.m. Paris time (11:00 UT). Surrender of matériel, as listed in the terms: 5,000 artillery pieces, 25,000 machine guns, 3,000 minenwerfer, 1,700 aircraft including all night bombers, 5,000 railway locomotives, 150,000 railway carriages and 5,000 road trucks, plus the warships; the German delegation corrected the demand for more submarines than the fleet possessed. Matthias Erzberger signed for Germany. The blockade was not relaxed by the agreement. Piłsudski had been imprisoned at Magdeburg from 1917 and was Chief of State from November 1918. Source checked: “Armistice of 11 November 1918”, “Józef Piłsudski”.',
   },
+  {
+    id: 'lettow_vorbeck_lays_down_arms',
+    date: '1918-11-25',
+    precision: 'day',
+    title: 'Lettow-Vorbeck’s force lays down its arms at Abercorn',
+    kind: 'armistice',
+    fronts: ['africa'],
+    countries: ['Germany', 'United Kingdom'],
+    note: 'UK Foreign Office historians date a formal surrender of Lettow-Vorbeck’s troops at Abercorn to 25 ' +
+      'November 1918. The Western Front Association describes a formal parade at Abercorn that day, at ' +
+      'which the German weapons were laid down. The day he learned of the 11 November armistice is not ' +
+      'agreed: the National Army Museum dates a ceasefire to 14 November, and the Western Front ' +
+      'Association says he accepted the news on 16 November. The 25 November parade is the shared date. ' +
+      'No headcount is given. He disputed whether the armistice required surrender or only evacuation. ' +
+      'The site’s last month is November 1918, and this day falls inside it.',
+    levels: {
+      primary: {
+        cause: 'The war in Europe stopped on 11 November. In East Africa, Lettow-Vorbeck’s force was still in ' +
+          'the field. News of the armistice took days to reach him, and accounts disagree on which day he ' +
+          'accepted it.',
+        what: 'On 25 November 1918 his force laid down its arms at Abercorn in Northern Rhodesia. That day is ' +
+          'after the European armistice and still in November. One account dates a ceasefire to the 14th, ' +
+          'another his acceptance of the news to the 16th.',
+        consequence: 'The fighting in East Africa outlasted 11 November. The parade at Abercorn is the end this ' +
+          'timeline can date. Lettow-Vorbeck argued afterwards that the armistice asked him to evacuate, ' +
+          'not to surrender. No count of his men is given, because the tallies do not match.',
+      },
+      secondary: {
+        cause: 'Lettow-Vorbeck had kept a German colonial force in the field from 1914, crossing out of German ' +
+          'East Africa when he could no longer supply it there. The armistice of 11 November did not ' +
+          'reach him as an order he could obey the same morning. The National Army Museum dates the end ' +
+          'of the fighting to a ceasefire on 14 November. The Western Front Association says he accepted ' +
+          'the news on 16 November. The day he learned of the armistice is therefore not agreed, and this ' +
+          'card does not choose it.',
+        what: 'What the accounts share is 25 November 1918 at Abercorn, in Northern Rhodesia. Foreign Office ' +
+          'historians say he formally surrendered his troops there that day. The Western Front ' +
+          'Association describes a formal parade at which the German weapons were laid down. Both are the ' +
+          'same occasion. The card says the force laid down its arms, which covers the parade, and it ' +
+          'records that Lettow-Vorbeck disputed whether the armistice required a surrender or only an ' +
+          'evacuation. No headcount of Europeans, askari or porters is stated.',
+        consequence: 'East Africa is the campaign that makes 11 November an incomplete end. A German force was still ' +
+          'armed, on British colonial ground, two weeks after the Compiègne armistice, and it stopped by ' +
+          'a parade rather than by a battle that week. The dispute about surrender or evacuation matters ' +
+          'because the two words write the episode either as a defeat or as a force that was never beaten ' +
+          'and only sent home. The weapons laid down are the fact. The word for the ceremony is not ' +
+          'agreed, and the numbers claimed for the column are not usable.',
+      },
+      university: {
+        cause: 'The East African campaign has two endings in the literature, and they serve two legends. One ' +
+          'ends on 11 November with the rest of the war, which is tidy and false. The other ends with an ' +
+          'undefeated commander marching out on his own terms, which is the story Lettow-Vorbeck told and ' +
+          'which British and South African writing has sometimes adopted. The dates in between, a ' +
+          'ceasefire reported on the 14th or an acceptance of the news on the 16th, are the untidy ' +
+          'evidence. They show a column that stopped when the news arrived, not when a battle was lost ' +
+          'that week.',
+        what: 'The shared public act is the parade at Abercorn on 25 November 1918. One official historical ' +
+          'account calls it a formal surrender. A specialist association calls it a parade at which the ' +
+          'weapons were laid down. Lettow-Vorbeck’s own objection, that the armistice required evacuation ' +
+          'rather than surrender, is why this card prefers the weapons and the place to a single legal ' +
+          'verb. Headcounts are refused for the same reason they are refused elsewhere in this set: ' +
+          'British, German and South African totals of Europeans, askari and porters do not match, and ' +
+          'printing one would only pick a return.',
+        consequence: 'Placing Abercorn after the 11 November card, and still inside November, is the point of ' +
+          'including it. The site ends with that month. A surrender dated in December would fall outside ' +
+          'it. The November parade is the last dated act of this war on the timeline, and it is a ' +
+          'colonial act, not a European one. Memory of an undefeated force in East Africa, used in ' +
+          'Germany after 1918 and in colonial nostalgia since, starts from the ambiguity the card refuses ' +
+          'to close. The arms were laid down at Abercorn. Whether that was a defeat in law was argued by ' +
+          'the man who laid them down.',
+      },
+    },
+  },
+
 ];

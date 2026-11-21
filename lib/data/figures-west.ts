@@ -16,9 +16,20 @@ export const FIGURES_WEST: HistoricalFigure[] = [
     country: 'United Kingdom',
     bloc: 'entente',
     bio: {
-      primary: 'George V was king of Britain and its empire throughout the First World War. He visited the troops in France, and in 1917 he gave his family a British name, Windsor.',
-      secondary: 'A former naval officer, he reigned as constitutional monarch over an empire at war: ministers governed and the generals fought, while the king advised, opened parliament and served as the symbol of national unity. He visited general headquarters, hospitals and the fleet repeatedly, took the name Windsor in 1917 when feeling against anything German ran high, and watched the German and Russian empires of his first cousins fall while the British Empire reached its greatest extent.',
-      university: 'The war is often credited with rescuing the British monarchy’s standing, and George’s habit of appearing at headquarters, in hospitals and with the Home Fleet supplied much of that visibility; historians stress that his influence was exemplary rather than political, since he acted on his ministers’ advice, and that his diaries are evidence of court and royal opinion, not of royal power, however much popular writing has dwelt on the family letters between the king and the Kaiser.',
+      primary: 'George V was king of Britain, the dominions and India throughout the First World War. He visited ' +
+        'the troops in France, and in 1917 he gave his family a British name, Windsor.',
+      secondary: 'A former naval officer, he reigned as constitutional monarch over an empire at war, the ' +
+        'dominions and India included: ministers governed and the generals fought, while the king ' +
+        'advised, opened parliament and served as the symbol of national unity. He visited general ' +
+        'headquarters, hospitals and the fleet repeatedly, took the name Windsor in 1917 when feeling ' +
+        'against anything German ran high, and watched the German and Russian empires of his first ' +
+        'cousins fall while the British Empire reached its greatest extent.',
+      university: 'The war is often credited with rescuing the British monarchy’s standing, and George’s habit of ' +
+        'appearing at headquarters, in hospitals and with the Home Fleet supplied much of that ' +
+        'visibility; historians stress that his influence was exemplary rather than political, since he ' +
+        'acted on his ministers’ advice, and that his diaries are evidence of court and royal opinion, ' +
+        'not of royal power, however much popular writing has dwelt on the family letters between the ' +
+        'king and the Kaiser. The crown he represented was also the crown of the dominions and of India.',
     },
   },
   {
@@ -42,9 +53,17 @@ export const FIGURES_WEST: HistoricalFigure[] = [
     country: 'United Kingdom',
     bloc: 'entente',
     bio: {
-      primary: 'H. H. Asquith was prime minister when Britain entered the war in 1914, and he stayed in the job until December 1916.',
+      primary: 'H. H. Asquith was prime minister when Britain entered the war in 1914, and he stayed until ' +
+        'December 1916, when the failure at Gallipoli and the Somme had destroyed confidence in him.',
       secondary: 'He took Britain to war with a united cabinet and a united party, but the shell shortage crisis of May 1915 forced him to share power with the Conservatives and Labour in a coalition, and the failure at Gallipoli and the grinding of the Somme destroyed confidence in him. In December 1916 he was outmanoeuvred by David Lloyd George and the Conservative leader Bonar Law and resigned; he never again held office, the last Liberal prime minister to command a majority government.',
-      university: 'Historians have moved between the caricature of the indecisive “sphinx”, comfortable with muddling through, and a more sympathetic reading: he governed a party split over free trade, Ireland and suffrage, in which the alternative to coalition looked like a rupture of the Liberal party itself. On that reading the crisis of December 1916 ends the Liberal ascendancy in British politics as much as it ends a premiership — a point of view reinforced by the revival of Asquith’s reputation among First World War historians who liked his cabinet system better than Lloyd George’s interventions.',
+      university: 'Historians have moved between the caricature of the indecisive “sphinx”, comfortable with ' +
+        'muddling through, and a more sympathetic reading: he governed a party split over free trade, ' +
+        'Ireland and suffrage, in which the alternative to coalition looked like a rupture of the Liberal ' +
+        'party itself. The failure at Gallipoli, far from France, sat with the Somme among the blows that ' +
+        'finished him. On that reading the crisis of December 1916 ends the Liberal ascendancy in British ' +
+        'politics as much as it ends a premiership — a point of view reinforced by the revival of ' +
+        'Asquith’s reputation among First World War historians who liked his cabinet system better than ' +
+        'Lloyd George’s interventions.',
     },
   },
   {
@@ -55,9 +74,23 @@ export const FIGURES_WEST: HistoricalFigure[] = [
     country: 'United Kingdom',
     bloc: 'entente',
     bio: {
-      primary: 'David Lloyd George organised the guns and shells as Minister of Munitions in 1915, became prime minister in December 1916, and led Britain to the end of the war.',
-      secondary: 'He ran the war from a small war cabinet rather than the full cabinet, tightened control of industry, copied the French in rationing food, and imposed the convoy system that beat back the U-boat campaign in 1917. He also quarrelled constantly with his soldiers about where to fight: in 1915 he argued for a grand Balkan offensive to help Serbia, larger than the Salonika expedition actually sent, and from 1917 he wanted blows struck away from the Western Front — in Italy, the Balkans or the Middle East — until the American armies were strong enough for the decision in France.',
-      university: 'Lloyd George is the great case of the politician as strategist: the Supreme War Council he created in late 1917 and the attempt to take direct command of Haig’s army at Doullens and the Sydney House conference in April 1918 show how far he would push political direction of operations, while his campaigns on the periphery were repeatedly undone by the shipping, geography and allied governments he had not reckoned with. His own War Memoirs set the terms of the argument for a generation, and a great deal of the later literature exists to agree or disagree with a self-defence written by the man himself.',
+      primary: 'David Lloyd George organised the guns and shells as Minister of Munitions in 1915 and became ' +
+        'prime minister in December 1916. He pushed convoys against the U-boats and wanted campaigns in ' +
+        'the Balkans and the Middle East as well as in France.',
+      secondary: 'He ran the war from a small war cabinet rather than the full cabinet, tightened control of ' +
+        'industry, copied the French in rationing food, and imposed the convoy system that beat back the ' +
+        'U-boat campaign in 1917. He also quarrelled constantly with his soldiers about where to fight: ' +
+        'in 1915 he argued for a grand Balkan offensive to help Serbia, larger than the Salonika ' +
+        'expedition sent, and from 1917 he wanted blows struck away from the Western Front — in Italy, ' +
+        'the Balkans or the Middle East — until American armies were strong enough for the decision in ' +
+        'France.',
+      university: 'Lloyd George is the great case of the politician as strategist: the Supreme War Council he ' +
+        'created in late 1917 and the attempt to take direct command of Haig’s army at Doullens and the ' +
+        'Sydney House conference in April 1918 show how far he would push political direction of ' +
+        'operations, while his campaigns in Italy, the Balkans and the Middle East were repeatedly undone ' +
+        'by the shipping, geography and allied governments he had not reckoned with. His own War Memoirs ' +
+        'set the terms of the argument for a generation, and a great deal of the later literature exists ' +
+        'to agree or disagree with a self-defence written by the man himself.',
     },
   },
   {
@@ -82,7 +115,12 @@ export const FIGURES_WEST: HistoricalFigure[] = [
     bloc: 'entente',
     bio: {
       primary: 'Sir John French commanded the British army in France for the first fifteen months of the war. He was replaced by Haig at the end of 1915.',
-      secondary: 'He led the little professional BEF through Mons, the retreat, the Marne and Ypres in 1914, but he wanted to pull the army out of the line to refit after Mons and Le Cateau, and only agreed to stand at the Marne after a private interview with Lord Kitchener, a grudge he never forgot. In May 1915 he leaked the shell shortage to the press to damage Kitchener, and when the attack at Loos failed that September the government removed him; he commanded the home army through 1916-18 and then served as the last lord lieutenant of Ireland through much of its war of independence.',
+      secondary: 'He led the little professional BEF through Mons, the retreat, the Marne and Ypres in 1914, but ' +
+        'he wanted to pull the army out to refit after Mons and Le Cateau, and only agreed to stand at ' +
+        'the Marne after a private interview with Lord Kitchener, a grudge he kept. In May 1915 he leaked ' +
+        'the shell shortage to the press to damage Kitchener, and when Loos failed that September the ' +
+        'government removed him; he commanded the home army through 1916-18 then served as the last lord ' +
+        'lieutenant of Ireland through much of its war of independence.',
       university: 'French’s defenders and attackers split on a single question: was his caution sound generalship with a tiny professional army that could not be replaced, or the temper of a man who could not manage politicians or French allies? The modern literature on 1914 tends to treat his decision to keep the BEF in the line at the Marne as pivotal and his subsequent feud with the War Office as the opening act of the shell scandal; his own memoirs, and Kitchener’s, are the contending sources, and neither is disinterested.',
     },
   },
@@ -95,7 +133,12 @@ export const FIGURES_WEST: HistoricalFigure[] = [
     bloc: 'entente',
     bio: {
       primary: 'Douglas Haig commanded the British army on the Western Front from late 1915 until the Armistice. His great battles were the Somme in 1916 and Passchendaele in 1917.',
-      secondary: 'He took over the BEF after the old professional army had been largely destroyed in 1914, and spent most of the war commanding a mass conscript army he had to train while using it. The Somme was fought partly to relieve the pressure on the French at Verdun; Passchendaele, in mud, took ground at appalling cost. In 1918 his armies absorbed the blow of the German spring offensive, held while the American forces arrived, and drove the enemy back in the “Hundred Days” campaign that ended the war — a defeat of the German army some historians rank among the greatest victories of a British-led army.',
+      secondary: 'He took over the BEF after the professional army had been destroyed in 1914, and spent most of ' +
+        'the war commanding a mass conscript army he had to train while using it. The Somme was fought ' +
+        'partly to relieve the pressure on the French at Verdun; Passchendaele, in mud, took ground at ' +
+        'appalling cost. In 1918 his armies absorbed the German spring offensive, held while the American ' +
+        'forces arrived, and drove the enemy back in the “Hundred Days” campaign that ended the war — a ' +
+        'defeat of the German army some historians rank among the greatest British victories.',
       university: 'Haig is the most attacked British commander of the war — “Butcher Haig”, for the roughly two ' +
         'million British and Imperial casualties under his command across the war, about 420,000 of them ' +
         'at the Somme and some 245,000 at Third Ypres — and also one of the most defended: from John ' +
@@ -115,9 +158,23 @@ export const FIGURES_WEST: HistoricalFigure[] = [
     country: 'United Kingdom',
     bloc: 'entente',
     bio: {
-      primary: 'William Robertson rose from being a private soldier to be the professional head of the British army, and insisted on beating Germany first in France and Flanders.',
-      secondary: 'As Chief of the Imperial General Staff — the Calais Conference of December 1915 arranged that all British armies should receive the government’s instructions through him — he backed Haig and resisted every scheme of David Lloyd George’s for campaigns in Italy, the Balkans and elsewhere until enough American troops arrived in France. He supported Haig at Passchendaele against his prime minister’s wishes, and in February 1918 Lloyd George forced him out by trying to take the British representatives on the Supreme War Council out of his control.',
-      university: 'Robertson is the professional’s answer to the political direction of strategy, and in the sense that his priority — concentrate against the German army on the Western Front — eventually became the Allies’ policy, his verdict has largely won the historical argument. What historians quarrel over is whether he got there by merit or by managing the machinery: he was accused of burying alternatives he disliked, his exit produced the “Maurice” affair of March 1918, in which a member of his staff publicly misrepresented Haig’s reserves, and the whole quarrel exposed that the real question in London was not which strategy but who decided it.',
+      primary: 'William Robertson rose from being a private soldier to be the professional head of the British ' +
+        'army, and insisted on beating Germany in France and Flanders rather than in the Balkans or the ' +
+        'Middle East.',
+      secondary: 'As Chief of the Imperial General Staff — the Calais Conference of December 1915 arranged that ' +
+        'all British armies should receive the government’s instructions through him — he backed Haig and ' +
+        'resisted every scheme of David Lloyd George’s for campaigns in Italy, the Balkans and the Middle ' +
+        'East until enough American troops arrived in France. He supported Haig at Passchendaele against ' +
+        'his prime minister’s wishes, and in February 1918 Lloyd George forced him out by trying to take ' +
+        'the British representatives on the Supreme War Council out of his control.',
+      university: 'Robertson is the professional’s answer to the political direction of strategy, and in the sense ' +
+        'that his priority — concentrate against the German army on the Western Front, not in Italy, the ' +
+        'Balkans or the Middle East — eventually became the Allies’ policy, his verdict has largely won ' +
+        'the historical argument. What historians quarrel over is whether he got there by merit or by ' +
+        'managing the machinery: he was accused of burying alternatives he disliked, his exit produced ' +
+        'the “Maurice” affair of March 1918, in which a member of his staff publicly misrepresented ' +
+        'Haig’s reserves, and the whole quarrel exposed that the real question in London was not which ' +
+        'strategy but who decided it.',
     },
   },
   {
@@ -168,7 +225,13 @@ export const FIGURES_WEST: HistoricalFigure[] = [
     bloc: 'entente',
     bio: {
       primary: 'Joseph Joffre was the French commander-in-chief who attacked back on the Marne in September 1914 and stopped the German march on Paris.',
-      secondary: 'The Battle of the Frontiers had gone badly and parts of the army were retreating when Joffre ordered the about-face on the Marne that saved Paris and ended Germany’s chance of a quick victory; he was revered as “the victor of the Marne”. But the offensives of 1915 failed at heavy cost, he had underrated Verdun — the forts had been partially disarmed — and Fort Douaumont fell early in 1916, and the joint Somme offensive disappointed. In December 1916 the government removed him from the command, “promoted” him to the first marshal of the Republic’s era and gave him an advisory post he soon resigned.',
+      secondary: 'The Battle of the Frontiers had gone badly and parts of the army retreated when Joffre ordered ' +
+        'the Marne about-face that saved Paris and ended Germany’s chance of quick victory; he was ' +
+        'revered as “the victor of the Marne”. But the offensives of 1915 failed at heavy cost, he had ' +
+        'underrated Verdun — the forts were partially disarmed — and Fort Douaumont fell early in 1916, ' +
+        'and the joint Somme offensive disappointed. In December 1916 the government removed him from ' +
+        'command, “promoted” him to the first marshal of the Republic’s era and gave him an advisory post ' +
+        'he resigned.',
       university: 'Joffre’s legend was made by the Marne, and research has complicated it: the German collapse in 1914 owed as much to the failure of the Schlieffen-Moltke plan’s logistics as to French generalship, and Joffre himself owed part of the battle’s conception to Gallieni and Maunoury. The other argument is his fall: was he the obstinate practitioner of the offensive doctrine that bled France in 1915, or the most methodical commander of 1914, whose strategy of attrition was borne out at the Somme? The sources bear out the quarrels — Gallieni’s letters of December 1915 over the Verdun fortifications, the closed parliamentary session that produced Nivelle’s appointment over his head — and historians largely agree only that by late 1916 the man of 1914 could not survive the army’s political democracy.',
     },
   },
@@ -181,7 +244,12 @@ export const FIGURES_WEST: HistoricalFigure[] = [
     bloc: 'entente',
     bio: {
       primary: 'Ferdinand Foch was made supreme commander of the Allied armies in the spring of 1918, when the German offensive threatened to separate the British and French armies. He held the line and launched the counter-offensive that won the war.',
-      secondary: 'A corps commander at the Marne in 1914 and the most aggressive of the French generals in the race to the sea, Foch had fallen from influence by the end of 1916. In March 1918, with the British driven back on Amiens, the Allied governments gave him authority — the conferences of Doullens on 26 March and Beauvais on 3 April made him coordinator of the Allied armies, with the title of généralissime — and he flung the mixed Allied reserve into the gaps, stopped the drives on Paris and Hazebrouck, and from July coordinated the counter-strokes that broke the German army’s will by November.',
+      secondary: 'A corps commander at the Marne in 1914 and the most aggressive French general in the race to the ' +
+        'sea, Foch had fallen from influence by late 1916. In March 1918, with the British driven back on ' +
+        'Amiens, the Allied governments gave him authority — the conferences of Doullens on 26 March and ' +
+        'Beauvais on 3 April made him coordinator of the Allied armies, with the title of généralissime — ' +
+        'and he flung the Allied reserve into the gaps, stopped the drives on Paris and Hazebrouck, and ' +
+        'from July coordinated counter-strokes that broke the German army’s will by November.',
       university: 'The question the recent literature, led by Elizabeth Greenhalgh’s work, presses is how real Foch’s “supreme command” ever was: at Doullens he received “coordination”, the national commanders reserved their rights for months, and his leverage came from control of the French strategic reserve, the flow of information, and personal force rather than legal authority over British and American troops. He accepted the German armistice on 11 November and dictated its terms; the famous prediction that the 1919 settlement was “not peace but an armistice for twenty years” is universally attributed to him and rests on testimony historians have never been able to document securely.',
     },
   },
@@ -194,7 +262,12 @@ export const FIGURES_WEST: HistoricalFigure[] = [
     bloc: 'entente',
     bio: {
       primary: 'Joseph Gallieni defended Paris in 1914 and pushed the Sixth Army into the German flank at the Battle of the Marne, using commandeered Paris taxis among other transport.',
-      secondary: 'Recalled from retirement as military governor of Paris, he refused to treat the capital as an open city, armed its defences and kept the Sixth Army in his hand; when the German right wing swung east of Paris and opened a gap between their armies, he sent Maunoury’s Sixth Army into that gap on 5 September 1914, a day before Joffre’s general counter-offensive, pressing his case against the reluctance of Joffre’s headquarters — one of the decisions that turned the battle. As minister of war from October 1915 he clashed with Joffre over the neglected fortifications of Verdun, and he resigned in March 1916 after criticising Joffre’s handling of the German attack there; he died in May 1916 and was made a marshal posthumously in 1921.',
+      secondary: 'Recalled as military governor of Paris, he refused to treat the capital as an open city and kept ' +
+        'the Sixth Army in hand. When the German right swung east of Paris and opened a gap, he sent ' +
+        'Maunoury’s Sixth Army into it on 5 September 1914, a day before Joffre’s counter-offensive, ' +
+        'against the reluctance of Joffre’s headquarters. As war minister from October 1915 he clashed ' +
+        'with Joffre over Verdun’s neglected forts, and resigned in March 1916 after criticising Joffre’s ' +
+        'handling of the German attack. He died in May 1916 and was made a marshal posthumously in 1921.',
       university: 'Gallieni stands at the centre of the fight over the credit for the Marne. The taxi story — about 600 requisitioned cabs — is the most inflated episode of the war in France: the cabs and the rail and truck shuttles together moved some 6,000 men of the Sixth Army to the front near Nanteuil-le-Haudouin, a reinforcement far smaller than the legend, and French historians have long argued whether Gallieni conceived the decisive blow or merely shouted loudest. What the records do support is his judgment that the German right was turning away from Paris, his impatience with a headquarters that could not see it, and the authority he claimed to order the attack in the name of the capital’s defence.',
     },
   },
@@ -207,7 +280,13 @@ export const FIGURES_WEST: HistoricalFigure[] = [
     bloc: 'entente',
     bio: {
       primary: 'Robert Nivelle promised the French government a breakthrough against the Germans within days in April 1917. When the attack on the Chemin des Dames ridge failed, the French army mutinied and he was dismissed.',
-      secondary: 'An artilleryman, he took command of the Verdun counter-offensives in May 1916 and recaptured Fort Douaumont in October, achievements that carried him over Joffre’s head to the supreme command in December 1916 — he owed much of that rise to his fluency in English and to the certainty he telegraphed from the battlefield, which dazzled Briand and the British at the Rome conference in January 1917. “L’heure venue! Confiance!” he promised before the attack of 16 April; partial success gave way to slaughter on the ridge, the offensive was abandoned on 9 May, revolt spread through 21 divisions that month, and on 15 May he was replaced by Pétain and sent to command in North Africa.',
+      secondary: 'An artilleryman, he took the Verdun counter-offensives in May 1916 and recaptured Fort Douaumont ' +
+        'in October, which carried him over Joffre to supreme command in December 1916. He owed the rise ' +
+        'to his English and the certainty he sent from the battlefield, which dazzled Briand and the ' +
+        'British at Rome in January 1917. “L’heure venue! Confiance!” he promised before the attack of 16 ' +
+        'April. Partial success became slaughter on the ridge, the offensive ended on 9 May, revolt ' +
+        'spread through 21 divisions that month, and on 15 May Pétain replaced him and sent him to North ' +
+        'Africa.',
       university: 'Nivelle’s case is the gap between promise and performance: the “manoeuvre by fire”, the rapid methodical attack and his own telegram certainty had worked at Verdun against a pinned enemy, and he promised to repeat it against the deepest field defences on the Western Front, with the surprise lost to delay and weather. Recent historians treat the mutinies that followed not as a collapse of the French army but as its refusal of Nivelle’s doctrine — the soldiers went back to the trenches to defend but would no longer attack — so that his removal on 15 May marks the end of the cult of the decisive breakthrough as French strategy, and the beginning of waiting for steel and America.',
     },
   },
@@ -220,7 +299,13 @@ export const FIGURES_WEST: HistoricalFigure[] = [
     bloc: 'entente',
     bio: {
       primary: 'Aristide Briand was prime minister of France through the hardest years of total war, from October 1915 to March 1917.',
-      secondary: 'An ex-socialist who had been expelled from his party for serving a bourgeois government, he built and held together the wartime concentration of parties, mobilised the economy and manpower of France, and managed — as far as any politician could — the generals. He personally persuaded the socialist-sympathising General Sarrail to take the Salonika command in August 1915, put Gallieni in the War Office to watch Joffre, and in December 1916 finally removed Joffre from the supreme command, replacing him with the persuasive Nivelle. He fell in March 1917 as the Nivelle offensive he had staked his government on began to fail.',
+      secondary: 'An ex-socialist who had been expelled from his party for serving a bourgeois government, he ' +
+        'built and held together the wartime concentration of parties, mobilised the economy and manpower ' +
+        'of France, and managed — as far as any politician could — the generals. He persuaded the ' +
+        'socialist-sympathising General Sarrail to take the Salonika command in August 1915, put Gallieni ' +
+        'in the War Office to watch Joffre, and in December 1916 finally removed Joffre from the supreme ' +
+        'command, replacing him with Nivelle. He fell in March 1917 as the Nivelle offensive he had ' +
+        'staked his government on began to fail.',
       university: 'Briand is the French civilian strategist in the sources, and the argument is whether he controlled the generals or was seduced by them: his settlement of December 1916, which clipped Joffre’s powers and elevated Nivelle on the strength of a promise read like a sales pitch, is judged either as the high-water mark of political direction of the war or as the act that produced the Aisne disaster and the mutinies. His postwar return as prime minister in 1921-22, and then Locarno and the Kellogg-Briand Pact, read one way as the reconciliation policy foreshadowed by his wartime aims and another as the policy of a man who had misjudged every general he trusted.',
     },
   },
@@ -246,7 +331,13 @@ export const FIGURES_WEST: HistoricalFigure[] = [
     bloc: 'entente',
     bio: {
       primary: 'Georges Clemenceau became prime minister in November 1917 and led France through the last year of the war with the will to fight on to the end.',
-      secondary: 'An old radical republican nicknamed “the Tiger”, he came back to power at 76 at the worst moment: Russia was collapsing out of the war, the French army had just mutinied, and the Americans were only just arriving. His policy was neither revolution nor negotiated peace but total victory, enforced by a government that would not flinch; he worked daily with Pétain and Foch, went to the front when the German spring offensive broke over the road to Paris, and in 1919 took Alsace-Lorraine back and pressed for guarantees against a Germany that would, he said, attack again.',
+      secondary: 'An old radical republican nicknamed “the Tiger”, he came back to power at 76 at the worst ' +
+        'moment: Russia was collapsing out of the war, the French army had just mutinied, and the ' +
+        'Americans were just arriving. His policy was neither revolution nor negotiated peace but total ' +
+        'victory, enforced by a government that would not flinch; he worked daily with Pétain and Foch, ' +
+        'went to the front when the German spring offensive broke over the road to Paris, and in 1919 ' +
+        'took Alsace-Lorraine back and pressed for guarantees against a Germany that would, he said, ' +
+        'attack again.',
       university: 'Clemenceau’s power was political and rhetorical rather than institutional — he governed without a party, on the fear of what would replace him — and the historiography has spent a century peeling “Père la Victoire” apart: the military strategy of 1917-18 was mostly the generals’, the crisis of 1918 was nearer defeat than the legend admits, and the settlement he won at Paris rested on British and American guarantees that the American senate then refused to ratify, leaving France exactly as exposed as he had predicted. Not elected president in January 1920, he died nine years later having watched his guarantees fail.',
     },
   },
@@ -259,7 +350,12 @@ export const FIGURES_WEST: HistoricalFigure[] = [
     bloc: 'entente',
     bio: {
       primary: 'Maurice Sarrail commanded the Allied army at Salonika, the stubborn front on the Aegean where the allies spent years quarrelling with the Greeks.',
-      secondary: 'He had commanded the Third Army in the Ardennes and at the Marne and Verdun, and been dismissed in July 1915 amid political uproar over failures in Champagne. A professing socialist in an officer corps of conservatives, he was chosen for the East partly because the politicians could trust him: the expedition was meant to help Serbia, which was conquered anyway, and Sarrail spent two years commanding a multinational force against the Bulgarians and Greeks, quarrelling with King Constantine’s government in Athens, until his own dismissal in December 1917. His armies never conquered Bulgaria during his command, and he is remembered also for the French suppression of the Syrian revolt in the 1920s.',
+      secondary: 'He commanded the Third Army in the Ardennes, at the Marne and at Verdun, and was dismissed in ' +
+        'July 1915 amid uproar over Champagne. A socialist among conservative officers, he was sent east ' +
+        'because politicians trusted him. The expedition was meant to help Serbia, which fell anyway. He ' +
+        'spent two years leading a multinational force against Bulgaria and Greece, quarrelling with King ' +
+        'Constantine in Athens, until his own dismissal in December 1917. His armies never took Bulgaria, ' +
+        'and he is also remembered for suppressing the Syrian revolt in the 1920s.',
       university: 'Salonika was the front the strategists fought over — Lloyd George’s “Easterners” against Robertson’s Westerners — and Sarrail’s army has been judged ever since by that argument: a sink for men and matériel that the Western Front needed, or the bridgehead that brought Greece in and knocked Bulgaria out in 1918. The archives show that his real trade was diplomacy at the point of a bayonet — controlling a multi-national army inside a country in effect divided against itself — and historians tend now to read his two dismissals, in 1915 and 1917, as much as evidence of the politics around him as of the general himself, though his record in battle is thin.',
     },
   },
@@ -272,7 +368,12 @@ export const FIGURES_WEST: HistoricalFigure[] = [
     bloc: 'opposition',
     bio: {
       primary: 'Jean Jaurès was the best-known socialist in Europe and the loudest voice against the coming war of 1914. He was shot dead in a Paris café on the evening of 31 July 1914.',
-      secondary: 'A deputy for the Tarn and founder of the newspaper L’Humanité, Jaurès led the French Socialists into the unified SFIO of 1905 and argued that workers had nothing to gain from a war between the great powers; he pressed the Socialist International towards joint action, even a general strike, against mobilisation, and worked frantically through the July Crisis for mediation. A nationalist named Raoul Villain shot him at the Café du Croissant, where he was dining with his editorial staff over the peace plans of the morning’s paper, on the evening of 31 July 1914, the day before Germany declared war on Russia and three days before it declared war on France; the socialists voted for war credits within days.',
+      secondary: 'A deputy for the Tarn and founder of L’Humanité, Jaurès led the French Socialists into the SFIO ' +
+        'of 1905 and argued that workers gained nothing from a war of the great powers. He pressed the ' +
+        'Socialist International towards a general strike against mobilisation, and worked through the ' +
+        'July Crisis for mediation. Raoul Villain shot him at the Café du Croissant on the evening of 31 ' +
+        'July 1914, the day before Germany declared war on Russia. The socialists voted war credits ' +
+        'within days.',
       university: 'The assassination is usually presented as the hinge of the French left’s conversion, but the chronology argues with the legend: by the last week of July the SFIO and the unions had already accepted the defence of the country against aggression, so historians ask whether Jaurès’s death caused the union sacrée of August 1914 or merely sanctified a conversion already under way — and what a leader of his stature might have made of the war had he lived to conduct the opposition inside it. Villain’s acquittal in 1919, to nationalist cheering, and Jaurès’s translation to the Panthéon, fixed him as the French left’s great martyr of the war it never wanted.',
     },
   },

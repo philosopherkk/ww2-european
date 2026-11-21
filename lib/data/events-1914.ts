@@ -3,22 +3,21 @@ import type { WW1Event } from './types';
 /**
  * July to December 1914.
  *
- * Every date, strength and casualty figure comes from the English Wikipedia
- * article named in `note`, or from its infobox. Where the sources disagree the card
- * gives a range and the note says who argues what. Fifteen cards, at least two in
- * each of the six months. The assassination of Jean Jaurès is here rather than in a
+ * Where an older card names a Wikipedia article, its dates and figures come from that
+ * article or its infobox. Where the sources disagree the card gives a range and the
+ * note says who argues what. The assassination of Jean Jaurès is here rather than in a
  * July card of its own because the card’s subject is what happened to French politics
  * in the last week of peace.
  *
- * Folded into other cards rather than given their own, because the set is capped at
- * fifteen: the Battle of Cer (in the note on the declaration of war on Serbia), the
- * First Battle of the Masurian Lakes (Tannenberg), the siege of Przemyśl (Galicia),
- * Liège and Dinant (Belgium), Heligoland Bight, Coronel, Cocos, the Emden, Cuxhaven,
- * Tsingtao and the blockade Orders in Council (the Falklands), the Bergmann Offensive
- * (Sarikamish), German South West Africa and Sandfontein (Tanga), and the Christmas
- * truce of 24–25 December, which is recorded in the note on the Yser and First Ypres
- * card. Japan’s entry and the siege of Tsingtao have no theatre of their own in the
- * `Front` list, so Tsingtao sits in the Falklands note.
+ * Still folded into other cards: the Battle of Cer (the declaration of war on Serbia),
+ * the First Battle of the Masurian Lakes (Tannenberg), the siege of Przemyśl (Galicia),
+ * Liège and Dinant (Belgium), Heligoland Bight, Coronel, Cocos, the Emden, Cuxhaven
+ * and the 1914 contraband orders (the Falklands), the Bergmann Offensive (Sarikamish),
+ * Sandfontein (Tanga), and the Christmas truce of 24–25 December (Yser and First Ypres).
+ * Japan’s declaration, Togoland, Samoa, German New Guinea, the islands north of the
+ * equator, Duala, the landing at Fao and the capitulation of Qingdao have their own
+ * cards. There is no Pacific front in
+ * the `Front` list, so those cards use `naval` or `politics`.
  */
 export const EVENTS_1914: WW1Event[] = [
   {
@@ -38,9 +37,9 @@ export const EVENTS_1914: WW1Event[] = [
       'documents published after 1918.',
     levels: {
       primary: {
-        cause: 'In June 1914 the heir to the throne of Austria-Hungary and his wife were shot dead in the ' +
-          'town of Sarajevo. Austria-Hungary blamed Serbia, a smaller country next door, and wanted to ' +
-          'punish it. First it asked the German Empire to promise to stand by it.',
+        cause: 'In June 1914 the heir to the throne of Austria-Hungary and his wife were shot dead in ' +
+          'Sarajevo. Austria-Hungary blamed Serbia, a smaller country next door, and wanted to punish it. ' +
+          'First it asked the German Empire to promise to stand by it.',
         what: 'On 23 July Austria-Hungary sent Serbia a list of harsh demands. Serbia had to answer by six ' +
           'o’clock that Saturday evening, or Austria-Hungary would fight.',
         consequence: 'Serbia agreed to most of the demands but not all of them. Austria-Hungary said that was ' +
@@ -100,9 +99,9 @@ export const EVENTS_1914: WW1Event[] = [
       primary: {
         cause: 'Austria-Hungary had sent Serbia a list of demands and said the answer was not enough. ' +
           'Serbia had already called up its army to get ready.',
-        what: 'Austria-Hungary declared war on Serbia on the morning of 28 July. Serbian soldiers blew up the ' +
-          'bridges over the rivers Sava and Danube that same day to keep the Austrians out. The first shells ' +
-          'fell on the capital, Belgrade, on 29 July, fired from an Austro-Hungarian warship on the river.',
+        what: 'Austria-Hungary declared war on Serbia on 28 July. Serbian soldiers blew up the bridges over ' +
+          'the Sava and Danube that day to keep the Austrians out. The first shells fell on the capital, ' +
+          'Belgrade, on 29 July, fired from an Austro-Hungarian warship on the river.',
         consequence: 'Russia, which had promised to back Serbia, called up more soldiers, and within a week ' +
           'Germany and France were at war too. The first Austrian attack on Serbia was beaten back in the ' +
           'hills around Cer Mountain in mid-August.',
@@ -202,11 +201,11 @@ export const EVENTS_1914: WW1Event[] = [
           'country that the great powers had all agreed in 1839 would stay neutral. Belgium was asked to let ' +
           'German troops pass and said no.',
         what: 'German troops crossed into Belgium on 4 August. The fortified town of Liège, ringed by forts, ' +
-          'held out from 5 to 16 August, and the last fort was not taken until the sixteenth. Britain ' +
-          'promised to protect Belgian neutrality and sent Germany an ultimatum the same evening.',
-        consequence: 'Britain declared war on Germany on 4 August. Most of Belgium was overrun within weeks, ' +
-          'but a Belgian army and government held on in a strip of land behind the Yser river for the whole ' +
-          'war. Germany came to hold about 95 per cent of Belgian territory.',
+          'held out from 5 to 16 August, and the last fort fell on the sixteenth. Britain promised to ' +
+          'protect Belgian neutrality and sent Germany an ultimatum the same evening.',
+        consequence: 'Britain declared war on Germany on 4 August. Most of Belgium was overrun within weeks, but a ' +
+          'Belgian army and government held on in a strip of land behind the Yser river for the whole ' +
+          'war. Germany held about 95 per cent of Belgian territory.',
       },
       secondary: {
         cause: 'Germany needed the flat roads of Belgian Flanders to turn the French frontier fortifications ' +
@@ -357,6 +356,70 @@ export const EVENTS_1914: WW1Event[] = [
     },
   },
   {
+    id: 'japan_declares_war_on_germany',
+    date: '1914-08-23',
+    precision: 'day',
+    title: 'Japan declares war on Germany',
+    kind: 'diplomacy',
+    fronts: ['politics'],
+    countries: ['Japan', 'Germany'],
+    note: 'Declared on 23 August 1914, the day given by Encyclopaedia Britannica’s war chronology and by the ' +
+      'National Army Museum. The Museum’s siege article adds that the ultimatum was issued on 15 August ' +
+      'and was refused. There is no Pacific front in the Front list, so the card is filed under politics. ' +
+      'The capitulation of Qingdao is a separate card and is not given a day here.',
+    levels: {
+      primary: {
+        cause: 'Japan was Britain’s ally, and Germany still held the port of Qingdao and warships in East ' +
+          'Asian waters. On 15 August Tokyo demanded that the ships leave and the port be given up. ' +
+          'Germany refused. A European war had reached the China coast.',
+        what: 'On 23 August 1914 Japan declared war on Germany. The decision followed the unanswered demand ' +
+          'about the ships and about Qingdao. Britain now had an ally at war in East Asia, not only in ' +
+          'Europe. Japan chose the moment to come in.',
+        consequence: 'Japanese soldiers and ships could attack Qingdao, the German port on the Chinese coast. German ' +
+          'warships in the Pacific had a new enemy that knew those seas. China was still neutral, with ' +
+          'fighting on its shoreline. The war was no longer only European.',
+      },
+      secondary: {
+        cause: 'Japan and Britain had been allies since 1902, and once Britain was at war with Germany the ' +
+          'alliance gave Tokyo a reason to move. Germany’s squadron and the leased port of Qingdao lay on ' +
+          'the sea routes Japan treated as its own. On 15 August Japan demanded that the ships withdraw ' +
+          'from East Asian waters and that Qingdao be handed over. Germany refused, and the demand’s time ' +
+          'ran out. The National Army Museum records both the demand and the refusal.',
+        what: 'On 23 August 1914 Japan declared war on Germany, the day given by Encyclopaedia Britannica’s ' +
+          'war chronology and by the National Army Museum. The declaration turned a paper alliance into a ' +
+          'war in East Asia. Japanese forces were free to move against Qingdao, and German ships based in ' +
+          'the Pacific were no longer facing Britain alone. This card is that declaration, not the siege ' +
+          'that followed. China’s neutrality did not keep the fighting off the Shandong coast, where the ' +
+          'German leasehold stood.',
+        consequence: 'Germany had a second enemy on the far side of the world, and the cruiser war in the Pacific ' +
+          'could no longer be planned as a hunt by the Royal Navy alone. Japan’s belligerency also opened ' +
+          'a political claim: German rights in China were now something Tokyo could take by arms and then ' +
+          'try to keep. That claim runs from this declaration to the treaties China signed in May 1915. ' +
+          'East Asian politics were not a footnote to the Western Front.',
+      },
+      university: {
+        cause: 'The Anglo-Japanese alliance is the usual explanation, and it is not a sufficient one. The ' +
+          'treaty did not order Japan to seize Qingdao. Ministers in Tokyo used Britain’s war to remove a ' +
+          'European squadron from seas they meant to control, and to put a German leasehold into Japanese ' +
+          'hands. The ultimatum of 15 August, recorded by the National Army Museum, gave the choice a ' +
+          'formal shape. How far London wanted the port taken, and how far it only wanted the ships gone, ' +
+          'is still argued. A reading that treats Japan as a loyal second misses the aim.',
+        what: 'Britannica’s chronology and the National Army Museum agree on 23 August 1914, and the Museum ' +
+          'dates the ultimatum to 15 August. That is the fact this card uses. The declaration should not ' +
+          'be collapsed into the siege of Qingdao. The port’s capitulation is a later event, and its day ' +
+          'is not shared by a second publisher outside Wikipedia, so it is not stated here. Both accounts ' +
+          'are institutional summaries, not the text of the ultimatum, so the wording of the demand is ' +
+          'reported rather than quoted from the original note.',
+        consequence: 'Japan’s entry changed the balance in East Asia more than it changed the European fronts. ' +
+          'Britain gained a naval partner and lost a free hand over Japanese aims in China. Chinese ' +
+          'neutrality survived 1914 and still left Shandong as a prize to be argued over in 1915. ' +
+          'Histories that file the declaration as a minor extra to the cruiser war miss that sequence. ' +
+          'Arguments about a short opportunistic war, or about an alliance fulfilled, both start from ' +
+          'this week, and neither is settled by the date alone.',
+      },
+    },
+  },
+  {
     id: 'tannenberg',
     date: '1914-08-26',
     precision: 'day',
@@ -418,6 +481,127 @@ export const EVENTS_1914: WW1Event[] = [
     },
   },
   {
+    id: 'togoland_surrenders',
+    date: '1914-08-26',
+    precision: 'day',
+    title: 'Togoland surrenders',
+    kind: 'invasion',
+    fronts: ['africa'],
+    countries: ['United Kingdom', 'France', 'Germany'],
+    note: 'Encyclopaedia Britannica’s history of Togo dates the invasion to 7 August and the surrender to 26 ' +
+      'August. F. J. Moberly’s official history records that a letter of surrender was received on the ' +
+      'morning of 26 August and that the ceremony was arranged for the following day. Britannica’s own ' +
+      'war chronology dates the Allied capture to 27 August. This card uses 26 August for the surrender ' +
+      'and states that the entry into Kamina is also dated the 27th.',
+    levels: {
+      primary: {
+        cause: 'Germany had a colony called Togoland, between British and French land in West Africa, with a ' +
+          'powerful wireless station at Kamina. Britain and France wanted that station silenced so it ' +
+          'could not talk to German ships.',
+        what: 'British and French colonial troops invaded on 7 August. The Germans destroyed the wireless ' +
+          'station, and on 26 August their surrender was accepted. The entry into Kamina is also dated ' +
+          'the next day, 27 August.',
+        consequence: 'Togoland was the first German colony to fall. Its wireless link to the ocean was gone. The ' +
+          'fighting in Africa had started, and it would go on in other German colonies for much longer.',
+      },
+      secondary: {
+        cause: 'Kamina was the wireless station that let German Togoland speak to ships far out in the ' +
+          'Atlantic. British and French colonial troops crossed the border on 7 August 1914 to take it ' +
+          'before that link could be used. The Germans chose to wreck the station rather than hand it ' +
+          'over working. The campaign was short because the colony had little to fight with once the ' +
+          'masts were down.',
+        what: 'On 26 August the German surrender was accepted. Moberly’s official history says a letter of ' +
+          'surrender was received that morning and that the ceremony was arranged for the next day. ' +
+          'Britannica’s history of Togo gives 26 August for the surrender, while its war chronology dates ' +
+          'the Allied capture to 27 August. This card keeps both: the surrender on the 26th, and the ' +
+          'entry into Kamina also dated the 27th.',
+        consequence: 'Togoland was the first German colony of the war to pass out of German hands. The loss of ' +
+          'Kamina mattered to the cruiser war as well as to the map of West Africa, because a shore ' +
+          'station that could reach German ships was gone. The other German colonies were still in the ' +
+          'field. Togoland’s fall did not decide Kamerun, South-West Africa or East Africa.',
+      },
+      university: {
+        cause: 'The Togoland campaign is easy to file as a colonial sideshow, and that reading misses why it ' +
+          'was fought first. Kamina was a node in the German wireless net, not a prize of farmland. ' +
+          'London and Paris could agree a joint invasion here more easily than on a frontier either of ' +
+          'them hoped to keep. The decision to destroy the station, rather than defend it, shows what the ' +
+          'garrison thought it was protecting.',
+        what: 'The date is the problem the sources actually have, and it is small but real. A letter of ' +
+          'surrender was received on the morning of 26 August, which is Moberly’s account and the day ' +
+          'Britannica’s history of Togo uses. The ceremony, and Britannica’s war chronology, put the ' +
+          'Allied entry into Kamina on 27 August. Treating either day as the whole event hides the other. ' +
+          'This card dates the surrender to the 26th and says the entry is also dated the 27th.',
+        consequence: 'As the first German colony to fall, Togoland set a pattern that later African campaigns did ' +
+          'not follow: a short invasion, a wrecked wireless station, and a surrender within three weeks. ' +
+          'Histories of the colonial war sometimes start the story at Tanga in November, which makes the ' +
+          'African fighting look like a British failure from the outset. The August surrender shows the ' +
+          'opposite result in a smaller colony, and it shows that the two Allies could act together ' +
+          'outside Europe before the western front had settled.',
+      },
+    },
+  },
+  {
+    id: 'occupation_of_german_samoa',
+    date: '1914-08-29',
+    precision: 'day',
+    title: 'New Zealand occupies German Samoa',
+    kind: 'landing',
+    fronts: ['naval'],
+    countries: ['New Zealand', 'United Kingdom', 'Germany'],
+    note: 'NZ History (Manatū Taonga) dates the unopposed landing of the Samoa Advance Party at Apia to 29 ' +
+      'August 1914, and Colonel Logan’s proclamation to the next day. Te Ara records the same unopposed ' +
+      'landing on 29 August. The courthouse proclamation is also dated 30 August by the National Museum ' +
+      'of the Royal New Zealand Navy. There is no Pacific front, so the card uses naval.',
+    levels: {
+      primary: {
+        cause: 'German Samoa had a wireless station that could reach German warships in the Pacific. New ' +
+          'Zealand, fighting as part of the British Empire, sent soldiers across the ocean to take the ' +
+          'islands and that station.',
+        what: 'On 29 August 1914 the New Zealand force landed at Apia and nobody fought them. The occupation ' +
+          'was proclaimed the next day, 30 August, over the courthouse. The landing and the proclamation ' +
+          'are two different days.',
+        consequence: 'Germany lost Samoa, and its wireless link in that part of the Pacific, without a battle. New ' +
+          'Zealand had occupied a German colony in the first month of the war. The German ships still at ' +
+          'sea had one less friendly harbour.',
+      },
+      secondary: {
+        cause: 'Apia’s wireless station could speak to the German squadron in the Pacific, so Samoa was a ' +
+          'target as soon as war was declared. New Zealand raised an expedition, the Samoa Advance Party, ' +
+          'and sent it because the islands were the nearest German colony it could reach. The aim was the ' +
+          'station and the harbour, not a long campaign. Britain’s war had given a dominion its first ' +
+          'operation overseas.',
+        what: 'The force landed unopposed at Apia on 29 August 1914. NZ History and Te Ara both give that day ' +
+          'and both say there was no resistance. Colonel Logan proclaimed the occupation the next day. ' +
+          'The National Museum of the Royal New Zealand Navy also dates the proclamation read over the ' +
+          'courthouse to 30 August. This card dates the landing to the 29th and the proclamation to the ' +
+          '30th.',
+        consequence: 'German Samoa passed under New Zealand occupation while the German cruiser squadron was still ' +
+          'at large. The wireless station could no longer serve that squadron from Apia. The occupation ' +
+          'was also a political fact: a dominion had taken a German colony in the Empire’s name, and the ' +
+          'administration that followed was New Zealand’s. The landing did not catch the German ships. It ' +
+          'only took their shore station.',
+      },
+      university: {
+        cause: 'Samoa sits in two histories that do not always speak to each other. In the naval history it is ' +
+          'a wireless station on the flank of the German squadron. In New Zealand’s history it is the ' +
+          'dominion’s first expeditionary operation, decided in Wellington as much as in London. The ' +
+          'unopposed landing makes it look trivial beside later battles, which underrates why a station ' +
+          'that could reach the squadron was worth a force of its own in August.',
+        what: 'The sources agree on the landing and split the ceremony from it by a day. NZ History and Te ' +
+          'Ara both put an unopposed landing at Apia on 29 August 1914. The proclamation, which NZ ' +
+          'History and the National Museum of the Royal New Zealand Navy place on 30 August, is the act ' +
+          'that announced occupation to the population. Dating the whole event to either day alone blurs ' +
+          'that sequence. No battle report exists, because no battle was fought.',
+        consequence: 'The occupation removed a German shore station and began a New Zealand administration that ' +
+          'outlasted the war. It did not decide the cruiser war: Spee’s squadron was still free, and ' +
+          'Apia’s fall did not tell him where to go. Histories of Pacific annexation sometimes treat ' +
+          'August 1914 as the moment the German islands were simply shared out. Samoa shows a narrower ' +
+          'fact. One dominion occupied one colony, by landing, without a fight, and said so the next ' +
+          'morning.',
+      },
+    },
+  },
+  {
     id: 'first_battle_of_the_marne',
     date: '1914-09-05',
     precision: 'day',
@@ -436,9 +620,8 @@ export const EVENTS_1914: WW1Event[] = [
         cause: 'The German armies had marched hundreds of kilometres through Belgium and northern France and ' +
           'were close to Paris. They were exhausted, and two of them had left a gap between them.',
         what: 'The French army and the small British army stopped retreating and turned to fight between 5 ' +
-          'and 12 September, along the river Marne. The French commander Joffre gave the order ' +
-          'to attack on 4 September, after the governor of Paris noticed the gap between the German ' +
-          'armies.',
+          'and 12 September, along the river Marne. The French commander Joffre ordered the attack on 4 ' +
+          'September, after the governor of Paris noticed the gap between the German armies.',
         consequence: 'The German armies fell back to the river Aisne and dug in on the high ground. Any hope ' +
           'of a quick end to the war was gone, and for the next four years the soldiers on this front ' +
           'largely lived in trenches.',
@@ -535,6 +718,198 @@ export const EVENTS_1914: WW1Event[] = [
     },
   },
   {
+    id: 'german_new_guinea_capitulates',
+    date: '1914-09-17',
+    precision: 'day',
+    title: 'German New Guinea: resistance is to cease',
+    kind: 'invasion',
+    fronts: ['naval'],
+    countries: ['Australia', 'United Kingdom', 'Germany'],
+    note: 'The instrument dated 17 September 1914, transcribed in the Australian War Memorial’s Bean papers ' +
+      'and summarised in its Capture of German New Guinea pages, says resistance shall cease at once and ' +
+      'that the armed forces are to be given up at Herbertshöhe on 21 September. The Naval Historical ' +
+      'Society of Australia dates Haber’s acceptance to 17 September and the ceremony to 21 September. ' +
+      'Haber had no authority to surrender the possession. This card does not call the instrument an ' +
+      'unconditional surrender.',
+    levels: {
+      primary: {
+        cause: 'Australia sent a force to German New Guinea, where Germany had a wireless station and a small ' +
+          'armed police. The acting governor, Eduard Haber, did not have the power to hand the colony ' +
+          'over as if he owned it.',
+        what: 'On 17 September 1914 at Herbertshöhe, Haber assured Colonel William Holmes that military ' +
+          'resistance would cease. The armed forces were to be given up on 21 September. That is an ' +
+          'assurance and a handover of soldiers, not a surrender of the colony written as unconditional.',
+        consequence: 'Fighting in German New Guinea stopped on those terms. Australia occupied the colony. The ' +
+          'distinction mattered later, because Haber had said he could not surrender the possession ' +
+          'itself, only that resistance would end.',
+      },
+      secondary: {
+        cause: 'The Australian Naval and Military Expeditionary Force landed to take Germany’s colony in New ' +
+          'Guinea and the wireless station that served it. There was brief resistance on the way ashore. ' +
+          'Acting Governor Eduard Haber then had to decide what he could sign. He did not claim a power ' +
+          'to cede the colony. He could speak for the men still under arms.',
+        what: 'At Herbertshöhe on 17 September 1914 Haber gave Colonel William Holmes a written assurance ' +
+          'that military resistance would cease at once. The armed forces were to be given up at ' +
+          'Herbertshöhe on 21 September. The Australian War Memorial’s text of the instrument, and the ' +
+          'Naval Historical Society of Australia, both give those two days. The ceremony of giving up the ' +
+          'armed forces belongs to the 21st. This card does not call any of that an unconditional ' +
+          'surrender.',
+        consequence: 'Organised resistance in German New Guinea ended, and an Australian administration took over ' +
+          'the colony. The legal point Haber insisted on, that he had no authority to surrender the ' +
+          'possession, did not stop the occupation. It does mean the event should be described as an ' +
+          'assurance that fighting would stop, and a handover of the armed forces, rather than as a grant ' +
+          'of the colony in a single clause. The islands north of the equator were a different operation ' +
+          'and are not part of this card.',
+      },
+      university: {
+        cause: 'New Guinea is often told as Australia’s counterpart to New Zealand’s landing in Samoa, and the ' +
+          'comparison hides the instrument. Samoa was occupied without a fight and proclaimed the next ' +
+          'day. In New Guinea there was resistance, and the man who then treated with Holmes was an ' +
+          'acting governor who wrote that he could not surrender the possession. The Australian force ' +
+          'wanted the fighting stopped and the armed men given up. Those are the terms the paper actually ' +
+          'carries.',
+        what: 'The instrument is dated 17 September 1914. The Australian War Memorial’s transcription says ' +
+          'resistance shall cease at once and that the armed forces are to surrender at Herbertshöhe on ' +
+          '21 September. The Naval Historical Society dates Haber’s acceptance to the 17th and the ' +
+          'ceremony to the 21st. Calling this an unconditional surrender uses a word the instrument does ' +
+          'not support. Haber’s lack of authority to cede the colony is the clause that decides the ' +
+          'label. The card follows that clause.',
+        consequence: 'The occupation stood, whatever the formula. Australian rule in the former German colony began ' +
+          'from this assurance, and it became part of the case for a post-war mandate. The careful ' +
+          'wording still matters for how the war is narrated. A surrender of armed forces on a stated day ' +
+          'is not the same act as a governor ceding sovereignty, and later arguments about who had title ' +
+          'to these islands have sometimes blurred the two. This card keeps them apart, and it leaves the ' +
+          'Japanese occupation of the islands north of the equator out. That occupation is its own card, ' +
+          'dated only to October 1914.',
+      },
+    },
+  },
+  {
+    id: 'duala_surrenders',
+    date: '1914-09-27',
+    precision: 'day',
+    title: 'Duala and Bonaberi are surrendered',
+    kind: 'invasion',
+    fronts: ['africa'],
+    countries: ['United Kingdom', 'France', 'Germany'],
+    note: 'Brigadier-General C. M. Dobell’s despatch, printed in the London Gazette of 31 May 1916 and ' +
+      'reproduced by The Long, Long Trail, records the capitulation of Duala on 27 September 1914 after a ' +
+      'bombardment on the 26th, and states that Duala and Bonaberi were surrendered. The Spectator of 31 ' +
+      'October 1914, reporting a Press Bureau review, says Duala surrendered unconditionally to Dobell’s ' +
+      'Anglo-French force. This card follows the despatch on what was surrendered and does not rest that ' +
+      'adverb on the Press Bureau wording. No prisoner count is given.',
+    levels: {
+      primary: {
+        cause: 'Duala was the main port of German Kamerun, and an Anglo-French force under Charles Dobell had ' +
+          'come by sea to take it. The Germans still held the town and the neighbouring town of Bonaberi.',
+        what: 'Warships bombarded the port on 26 September. On 27 September Duala and Bonaberi were ' +
+          'surrendered. Dobell’s own despatch says that. A press notice called the surrender ' +
+          'unconditional, and this card does not treat that word as settled.',
+        consequence: 'The Allies had the colony’s port. The German field force fell back inland and the campaign did ' +
+          'not end. Kamerun was still being fought over in the forests, long after the harbour towns had ' +
+          'changed hands.',
+      },
+      secondary: {
+        cause: 'Kamerun’s trade and its administration met the sea at Duala. An Anglo-French expedition under ' +
+          'Brigadier-General Charles Dobell was sent to take the port and split the colony from its ' +
+          'harbour. A naval bombardment on 26 September prepared the landing. The German field force ' +
+          'could not hold a port once the ships were offshore, and its line of retreat ran inland.',
+        what: 'Dobell’s despatch, printed in the London Gazette and followed here, says Duala and Bonaberi ' +
+          'were surrendered on 27 September 1914. The Spectator, reporting a Press Bureau review, said ' +
+          'Duala had surrendered unconditionally to the same force on that day. The adverb is the Press ' +
+          'Bureau’s wording, not a second description from Dobell. This card uses the despatch: the two ' +
+          'towns were surrendered. It gives no prisoner count, because the despatch’s figure was not ' +
+          'confirmed by a second tally.',
+        consequence: 'Losing Duala cost Germany the colony’s port and pushed the field force inland, where the ' +
+          'campaign became a long chase rather than a battle for the harbour. Allied control of the coast ' +
+          'did not finish the conquest. The last German garrison in Kamerun was still holding out more ' +
+          'than a year later. Duala is the start of that inland war, not its end.',
+      },
+      university: {
+        cause: 'The Kamerun campaign is thinly told in general histories of the war, which move from Togo in ' +
+          'August to East Africa and leave the large colony in between unnamed. Duala mattered because it ' +
+          'was the hinge between a naval bombardment and a land campaign. Dobell’s expedition was ' +
+          'Anglo-French by design, one of the few African operations the two Allies ran as a single ' +
+          'force. The port’s fall decided the coast and deliberately did not decide the interior.',
+        what: 'Two published wordings sit side by side and they are not equal. Dobell’s despatch says the ' +
+          'towns of Duala and Bonaberi were surrendered on 27 September after the bombardment of the ' +
+          '26th. The Press Bureau review, as The Spectator printed it, says Duala surrendered ' +
+          'unconditionally. This card follows the despatch on the place and the day, and it does not let ' +
+          'the Bureau’s adverb stand as the legal character of the capitulation. A prisoner figure ' +
+          'appears in the despatch alone and is left out.',
+        consequence: 'The inland retreat after Duala is why Kamerun lasted into 1916, when the mountain garrison at ' +
+          'Mora capitulated and the Colonial Office treated the conquest as complete. Reading Duala as ' +
+          'the conquest itself is the mistake the press wording encourages. The despatch is a claim of ' +
+          'towns surrendered, written by the commander, and it is better evidence for the day than a ' +
+          'Bureau summary. It is still one commander’s report, which is why this card stays inside what a ' +
+          'second publication, The Spectator’s reprint of the Bureau, also supports: the port was given ' +
+          'up on 27 September.',
+      },
+    },
+  },
+  {
+    id: 'japan_occupies_north_pacific_islands',
+    date: '1914-10-01',
+    precision: 'month',
+    title: 'Japan occupies the German islands north of the equator',
+    kind: 'invasion',
+    fronts: ['naval'],
+    countries: ['Japan', 'Germany'],
+    note: 'The Naval Historical Society of Australia says these islands were occupied in October 1914 ' +
+      'by Japan, not by Australia. United States Naval Institute Proceedings records that in ' +
+      'October 1914 a Japanese naval squadron took possession of the Caroline, Mariana and ' +
+      'Marshall groups. A telegram from the Tokyo embassy, printed in Foreign Relations of the ' +
+      'United States for 1914, forwards a Japanese Navy statement that the fleet had taken ' +
+      'possession of strategically important islands among the Marianas, the Marshalls and the ' +
+      'Carolines. The Australian Army Journal dates the seizures to October 1914. A later United ' +
+      'States Navy handbook lists landings across the month. That list is one house, and this ' +
+      'card does not use it. No day is given. No strength is given.',
+    levels: {
+      primary: {
+        cause: 'Germany held the Carolines, the Marianas and the Marshalls, north of the equator, and ' +
+          'ran them from New Guinea. Japan was at war with Germany. Australia’s capitulation in ' +
+          'September did not cover these islands.',
+        what: 'In October 1914 a Japanese squadron occupied them. The accounts used here agree the ' +
+          'month. They do not share a day, so this card does not name one.',
+        consequence: 'Japan, not Australia, held the German islands north of the equator. The occupation is ' +
+          'separate from the Australian assurance in New Guinea and from the siege of Qingdao.',
+      },
+      secondary: {
+        cause: 'The islands had been administered from Rabaul, but they were outside the assurance ' +
+          'Acting Governor Haber gave in September. He had no authority to surrender the German ' +
+          'possession. Japan, already at war, sent a naval squadron of its own. The Naval ' +
+          'Historical Society states that Japan, not Australia, occupied the islands in October ' +
+          '1914.',
+        what: 'The shared claim is the month. A United States naval journal describes the squadron ' +
+          'taking the Carolines, Marianas and Marshalls in October 1914. A Japanese Navy statement, ' +
+          'forwarded from Tokyo, said the fleet had taken strategically important islands in those ' +
+          'groups. An Australian army journal gives the same month. A handbook that divides the ' +
+          'month into separate landing days is one house, and its days are not used.',
+        consequence: 'The groups stayed a Japanese occupation, distinct from Australia’s hold on German New ' +
+          'Guinea and from Qingdao. Treating Haber’s paper as a transfer of these islands would ' +
+          'give it a reach he said he did not have. October 1914 is as fine a date as the agreeing ' +
+          'houses will support.',
+      },
+      university: {
+        cause: 'Japan’s Pacific war is usually told as the siege of Qingdao. The islands north of the ' +
+          'equator are then either lost, or folded into the Australian landing at Rabaul. They were ' +
+          'a separate naval occupation in the same season. Haber’s instrument did not cede them. ' +
+          'Several houses will date the occupation, and they date it only to the month.',
+        what: 'Month precision is the evidence, not a convenience. Proceedings, the Tokyo Navy ' +
+          'statement and Australian accounts from the Naval Historical Society and the Army Journal ' +
+          'converge on October 1914. A later handbook’s sequence of landings is a single house and ' +
+          'is left unused. A report from Tokyo says possession had already been taken, and it does ' +
+          'not list the days. This card says October, and it does not turn any morning inside that ' +
+          'month into the event.',
+        consequence: 'The seizure is why a post-war mandate for these islands was a Japanese question rather ' +
+          'than an Australian one. It is also the limit of the New Guinea capitulation: resistance ' +
+          'ending at Herbertshöhe did not move the Carolines, Marianas or Marshalls. Those groups ' +
+          'changed hands by a naval occupation the sources will date only to the month. This card ' +
+          'stops at that occupation.',
+      },
+    },
+  },
+  {
     id: 'yser_and_first_ypres',
     date: '1914-10-19',
     precision: 'day',
@@ -555,12 +930,11 @@ export const EVENTS_1914: WW1Event[] = [
           'Flanders, where there are ditches and canals instead of hills. The Belgians were holding the last ' +
           'bit of their own land, along the river Yser.',
         what: 'From 16 October the Germans attacked the Belgian line on the Yser. The Belgians opened the ' +
-          'sluices and let the sea flood the land in front of them, which stopped the Germans crossing. ' +
-          'Further south, round the town of Ypres, the fighting began on 19 October and went on until 22 ' +
-          'November.',
-        consequence: 'The Germans took almost all of Belgium but did not reach the ports on the Channel. Both ' +
-          'sides were so short of men that they threw in reserves and lost them heavily. After this the ' +
-          'western frontier was one line of trenches from the sea to Switzerland.',
+          'sluices and let the sea flood the land before them, which stopped the Germans crossing. ' +
+          'Further south, round Ypres, the fighting began on 19 October and until 22 November.',
+        consequence: 'The Germans took almost all of Belgium but did not reach the ports on the Channel. Both sides ' +
+          'were so short of men that they threw in reserves and lost them heavily. The western frontier ' +
+          'was one line of trenches from the sea to Switzerland.',
       },
       secondary: {
         cause: 'The Yser line was held by about 52,000 Belgians, 6,600 French troops and three British ' +
@@ -729,9 +1103,9 @@ export const EVENTS_1914: WW1Event[] = [
     note: 'Fought 3–5 November 1914. The Indian Expeditionary Force B numbered about 9,000 men against ' +
       'Lettow-Vorbeck’s roughly 1,000, and lost 360 killed, 487 wounded and 148 missing; the Germans had 16 ' +
       'Europeans and 55 Askaris killed and 76 wounded. The other campaign of 1914 in Africa, in German South ' +
-      'West Africa, is not given its own card; the battle of Sandfontein there, 26 September 1914, left 237 ' +
-      'Germans with two guns holding off 1,700 men, with German losses of 16 killed, 51 wounded and 205 ' +
-      'captured.',
+      'West Africa, is not given its own card; the battle of Sandfontein there, 26 September 1914, left ' +
+      '1,700 Germans against 237 South Africans with two guns; of the South Africans, 16 were killed and ' +
+      '205 captured.',
     levels: {
       primary: {
         cause: 'Britain and France had colonies in Africa next to Germany’s colony of German East Africa. ' +
@@ -777,6 +1151,132 @@ export const EVENTS_1914: WW1Event[] = [
           'Lettow-Vorbeck’s own memoirs, which is a difficulty, and German South West Africa, conquered by ' +
           'February 1915 after fighting such as Sandfontein on 26 September 1914, is treated as a side ' +
           'matter in both.',
+      },
+    },
+  },
+  {
+    id: 'fao_landing_mesopotamia',
+    date: '1914-11-06',
+    precision: 'day',
+    title: 'British and Indian troops land at Fao',
+    kind: 'landing',
+    fronts: ['middle_east'],
+    countries: ['United Kingdom', 'India', 'Ottoman Empire'],
+    note: 'The National Army Museum dates the landing of British and Indian troops at Fao to 6 November 1914. ' +
+      'The Long, Long Trail, drawing on the British official history, agrees the landing and the capture ' +
+      'of the fort were on 6 November. Accounts then diverge: that history gives the evening of 21 ' +
+      'November for the entry into Basra and 23 November for taking the town into possession, while other ' +
+      'accounts put the entry on 22 November. This card does not pin Basra’s entry to one day.',
+    levels: {
+      primary: {
+        cause: 'The Ottoman Empire had just entered the war. Britain and India sent a force to the top of the ' +
+          'Persian Gulf, where the Shatt al-Arab meets the sea, to protect the oil and to open a way up ' +
+          'the rivers.',
+        what: 'On 6 November 1914 British and Indian troops landed at Fao and took the fort. Both accounts ' +
+          'share that day. Basra was occupied before the end of November, and the accounts do not agree ' +
+          'the day of the entry.',
+        consequence: 'The Mesopotamian campaign had begun. A small landing at the mouth of the river became an ' +
+          'advance towards Baghdad. The army that started at Fao would later be cut off far up the ' +
+          'Tigris.',
+      },
+      secondary: {
+        cause: 'Indian Expeditionary Force D was sent from India once the Ottoman Empire joined the Central ' +
+          'Powers. The oil at Abadan and the gulf route were the immediate stakes, and a landing at the ' +
+          'fort of Fao, at the mouth of the Shatt al-Arab, was the way in. The National Army Museum and ' +
+          'the official history used by The Long, Long Trail both start the campaign on that beach. Basra ' +
+          'was the next town, not the first landing.',
+        what: 'On 6 November 1914 the troops landed near the fort at Fao and captured it. That is the shared ' +
+          'date. Basra was occupied before November ended, but the day of the entry is not shared. The ' +
+          'Long, Long Trail gives the evening of 21 November for the entry and 23 November for the formal ' +
+          'taking into possession. Other accounts put the entry on 22 November. This card states the ' +
+          'disagreement and does not choose a day for Basra.',
+        consequence: 'Fao opened a campaign that Britain and India had not planned as a march on Baghdad, and that ' +
+          'grew with each success. The landing force became an army moving up the Tigris, supplied from ' +
+          'the gulf, until the advance was checked in 1915 and a division was besieged. The occupation of ' +
+          'Basra mattered because it gave that army a port. Which November day the port was entered does ' +
+          'not change the fact that the campaign now had a base.',
+      },
+      university: {
+        cause: 'Mesopotamia began as an Indian operation for oil and prestige, and the landing at Fao is where ' +
+          'that limited aim met an open river. Histories written after Kut read the campaign backwards, ' +
+          'as if Baghdad had been the point from the first week. The November landing was a fort at a ' +
+          'river mouth, taken by troops whose line of supply was the sea they had just left. The decision ' +
+          'to go on was a later decision.',
+        what: 'The day that two houses share is 6 November 1914, for the landing and the fort. The National ' +
+          'Army Museum dates the fighting that followed towards Basra as 11 to 21 November and calls the ' +
+          'result a British-Indian victory, without using that span as a single entry date. The ' +
+          'official-history account gives an evening entry on 21 November and formal possession on 23 ' +
+          'November. A third tradition puts the entry on 22 November. Pinning Basra to one of those days ' +
+          'would pretend the sources agree. They agree about Fao.',
+        consequence: 'The historiographical point is how a gulf landing became a river war. Once Basra was in ' +
+          'British-Indian hands the advance had a logistics base and a political audience in India and ' +
+          'London, and each further town looked like the obvious next step. Kut and Baghdad are ' +
+          'unintelligible without that November base, and they are not the same event as the landing. ' +
+          'This card stops at the opening: a shared day at Fao, an occupied Basra before the month ended, ' +
+          'and no false precision about the day the town was entered.',
+      },
+    },
+  },
+  {
+    id: 'tsingtao_surrenders',
+    date: '1914-11-30',
+    precision: 'month',
+    title: 'Qingdao capitulates',
+    kind: 'siege',
+    fronts: ['naval', 'politics'],
+    countries: ['Japan', 'Germany', 'Austria-Hungary', 'United Kingdom'],
+    note: 'Encyclopaedia Britannica’s article on Qingdao says the port capitulated after a blockade in ' +
+      'November, and does not give the day. The National Army Museum gives a day, and so does English ' +
+      'Wikipedia, which is one family and does not count as the second house. This card keeps month ' +
+      'precision and does not state that day. The stored date is the last day of November so the card ' +
+      'sorts inside the month. It is not a day of capitulation. No casualty figure is given. There is no ' +
+      'East Asian front, so the card uses naval and politics.',
+    levels: {
+      primary: {
+        cause: 'Japan had declared war on Germany in August and sent an army to the German port of Qingdao, ' +
+          'which Europeans called Tsingtao, on the Chinese coast. A small British force came too. Germany ' +
+          'and Austria-Hungary had soldiers in the port.',
+        what: 'In November 1914 the garrison surrendered to the Japanese army and its British contingent. The ' +
+          'month is what the accounts used here share. A day is printed by one museum and by Wikipedia, ' +
+          'and this card does not state it.',
+        consequence: 'The only major land campaign of the war in East Asia was over. Japan held the German port. ' +
+          'China, still neutral, had watched a foreign leasehold on its coast change hands by a siege.',
+      },
+      secondary: {
+        cause: 'After Japan’s declaration of war, a Japanese army with a small British contingent besieged ' +
+          'Qingdao, the German leasehold on the Shandong coast. The garrison was German and ' +
+          'Austro-Hungarian. The port was the one large land objective of the East Asian war, and it ' +
+          'mattered because of the harbour and the claim to German rights, not only because of the ' +
+          'fortifications. Britain’s part was real and small beside Japan’s.',
+        what: 'The garrison capitulated in November 1914. Encyclopaedia Britannica says the port capitulated ' +
+          'after a blockade in November and does not give a day. A day appears in the National Army ' +
+          'Museum and in English Wikipedia. Wikipedia is not a second house beside the Museum. This card ' +
+          'therefore keeps month precision and does not write the day into the reading text. The date ' +
+          'stored for sorting is not a claim that the day is settled.',
+        consequence: 'Qingdao’s fall ended the only major land campaign of the war in East Asia and left Japan in ' +
+          'possession of the German leasehold. That possession became a claim China would be pressed to ' +
+          'accept in 1915. The siege also closed the naval question in the Yellow Sea: there was no ' +
+          'longer a German port of refuge on that coast. The campaign’s losses are left out, because the ' +
+          'figures in one museum article are not a tally for the whole siege.',
+      },
+      university: {
+        cause: 'Qingdao is the land half of Japan’s entry into the war, and it is easy to mis-date because one ' +
+          'familiar day has been copied from reference to reference. The siege itself is not in doubt: a ' +
+          'Japanese army, with a British contingent, took the only German fortress in East Asia. What the ' +
+          'second house will not support is the day. Britannica’s account of the port is content with ' +
+          'November. A card that prints a day would be leaning on one museum plus Wikipedia.',
+        what: 'Month precision is the honest grain. The capitulation is confirmed for November 1914 by ' +
+          'Britannica and by the existence of the siege in the Museum’s account. The day the Museum gives ' +
+          'is not repeated here, in the title or in the reading text, because it lacks a publisher ' +
+          'outside the Wikipedia family. The stored day is only the last day of the month, so the card ' +
+          'sorts inside November. It is not a day of capitulation. Readers should take the label November ' +
+          '1914, which is what the site shows for month precision, as the claim.',
+        consequence: 'The fall of the port transferred a German leasehold to Japan and ended East Asia’s one major ' +
+          'land campaign. It did not settle what Japan would do with the prize. That argument moved into ' +
+          'diplomacy in 1915, when China was asked to sign away objections to the new facts on the ' +
+          'Shandong coast. Military histories that stop at the siege, and diplomatic histories that start ' +
+          'at the Twenty-One Demands, are telling two halves of one transfer. This card is only the ' +
+          'military half, and only at the precision the two houses share.',
       },
     },
   },

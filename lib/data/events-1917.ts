@@ -1,7 +1,7 @@
 import type { WW1Event } from './types';
 
 /**
- * 1917. Eighteen cards, every month covered, dates and figures checked against
+ * 1917. Every month covered, dates and figures checked against
  * the English Wikipedia articles for each event in November 2026. Russian dates
  * are given new style, and the cards say so where the old-style name of an
  * event (February Revolution, 7 November) would otherwise mislead. Where
@@ -42,6 +42,62 @@ export const EVENTS_1917: WW1Event[] = [
     },
   },
   {
+    id: 'battle_of_rafa',
+    date: '1917-01-09',
+    precision: 'day',
+    title: 'Mounted troops clear the last Sinai post at Rafa',
+    kind: 'battle',
+    fronts: ['middle_east'],
+    countries: ['United Kingdom', 'Australia', 'New Zealand', 'Ottoman Empire'],
+    note: 'The National Army Museum dates the Battle of Rafa to 9 January 1917 and says the British ' +
+      'drove the Ottomans out of Sinai. A principal-events chronology enters the action of Rafah ' +
+      'under that day and calls it the last Turkish troops in Sinai recrossing the frontier. The ' +
+      'Australian War Memorial’s list of engagements gives Rafa as 9 January 1917. No prisoner ' +
+      'count is taken from a photograph caption. The clause in the Gaza card is not this action.',
+    levels: {
+      primary: {
+        cause: 'Magdhaba had fallen in December. Rafa, on the edge of Sinai, was the last Ottoman post ' +
+          'still on that side of the frontier. Mounted troops were sent against it.',
+        what: 'On 9 January 1917 they drove the garrison off the post. A London museum, a war ' +
+          'chronology and an Australian list of engagements all give that day. This card does not ' +
+          'give a prisoner count.',
+        consequence: 'Rafa was the last Ottoman position in Sinai. The next town was Gaza, in Palestine, and ' +
+          'taking it was a later battle. Clearing the frontier post did not take Gaza.',
+      },
+      secondary: {
+        cause: 'After Romani and Magdhaba, one Ottoman post remained at Rafa, on the Sinai frontier. ' +
+          'Mounted troops attacked it on 9 January 1917. The National Army Museum says the British ' +
+          'drove the Ottomans out of Sinai. A principal-events chronology calls the day the action ' +
+          'of Rafah and says the last Turkish troops in Sinai recrossed the frontier.',
+        what: 'The Australian War Memorial’s list of engagements gives Rafa as the same day. That ' +
+          'agreement is the date of the card. A prisoner figure printed on a War Memorial ' +
+          'photograph is not copied. A caption is not a second tally, and this card will not ' +
+          'introduce a number the Museum’s battle entry is not confirming. The Gaza card names Rafa ' +
+          'beside Magdhaba. The name is not the action.',
+        consequence: 'With Rafa taken, Sinai no longer held an Ottoman garrison, and the army in Egypt was ' +
+          'looking at Palestine. That is a change of front, not yet a victory at Gaza. The attacks ' +
+          'on Gaza later in the spring failed. Rafa explains how the army reached that town. It ' +
+          'does not explain why the town held.',
+      },
+      university: {
+        cause: 'Rafa is the third Sinai action to be reduced to a word in the story of Gaza, after ' +
+          'Romani and Magdhaba. The word is doing the work of a battle. The sources for a separate ' +
+          'card are ordinary, and they agree: a museum timeline, a principal-events chronology and ' +
+          'an Australian list of engagements, all on 9 January 1917. They are not being used to ' +
+          'supply a headcount.',
+        what: 'The chronology’s phrase, that the last Turkish troops in Sinai recrossed the frontier, ' +
+          'is the operational claim. The Museum’s phrase is that the British drove the Ottomans out ' +
+          'of Sinai. Both are larger than a village post, and both are tied to this day. A ' +
+          'photograph caption’s prisoner figure is a label on an image, not a confirmed return, and ' +
+          'it is omitted. So is any strength. The action can be told without them.',
+        consequence: 'January 1917 on this front is easy to narrate as a pause before Gaza. It was the month ' +
+          'the desert campaign finished and Palestine became the problem. That is why Rafa is not ' +
+          'left as an extra sentence on the Gaza card. The failure at Gaza in the spring belongs to ' +
+          'a different fight. This card stops at the frontier.',
+      },
+    },
+  },
+  {
     id: 'unrestricted_u_boat_war_resumes',
     date: '1917-02-01',
     precision: 'day',
@@ -54,21 +110,38 @@ export const EVENTS_1917: WW1Event[] = [
     levels: {
       primary:
         {
-          cause: 'Germany hoped to starve Britain into giving up before American help could arrive.',
-          what: 'From 1 February German submarines sank merchant ships without warning. Ships stopped carrying passengers and mail in safety, and crews were often given no chance to get away.',
-          consequence: 'Many sailors were drowned and a great deal of food and munitions was lost. Britain answered by sailing its ships together in convoys, guarded by warships.',
+          cause: 'Germany hoped to starve Britain into giving up before American help could arrive, and it ' +
+            'took the submarine war around Britain and into the Mediterranean.',
+          what: 'From 1 February German submarines sank merchant ships without warning, Allied and neutral. ' +
+            'Crews were often given no chance to get away, and passengers and mail no longer travelled in ' +
+            'safety.',
+          consequence: 'Many sailors were drowned and food and munitions were lost. The quarrel reached Norway, ' +
+            'Denmark, the Netherlands and the United States. Britain then sailed its ships in convoys, ' +
+            'guarded by warships.',
         },
       secondary:
         {
-          cause: 'The council of Pless had decided that a submarine war would decide the campaign in the west, and the navy was given a free hand in a war zone around Britain and in the Mediterranean.',
-          what: 'Sinkings rose at once and reached their highest level of the war in the spring of 1917. Neutral ships were hit too, which widened the quarrel with Norway, Denmark and the Netherlands as well as with the United States.',
-          consequence: 'Britain, reluctant for months, adopted convoys in May 1917. Losses fell and the U-boat campaign of 1917 became the test of whether submarines could win a war by themselves.',
+          cause: 'The council of Pless had decided that a submarine war would decide the campaign in the west ' +
+            'before American help arrived, and the navy was given a free hand in a war zone around ' +
+            'Britain and in the Mediterranean.',
+          what: 'Sinkings rose at once and reached their highest level of the war in the spring of 1917, ' +
+            'around Britain and in the Mediterranean. Neutral ships were hit too, which widened the ' +
+            'quarrel with Norway, Denmark and the Netherlands as well as with the United States.',
+          consequence: 'Britain, reluctant for months, adopted convoys in May 1917. Losses fell, and the U-boat ' +
+            'campaign of 1917, fought around Britain and in the Mediterranean, became the test of whether ' +
+            'submarines could win a war by themselves.',
         },
       university:
         {
-          cause: 'The campaign is the central case in the argument about economic strangulation as strategy: Germany had neither the boats nor the technique the arithmetic of December 1916 assumed.',
-          what: 'The statistical problem is what counted. German records are kept by U-boat command and report claimed tonnage; British records count ships lost to torpedoes, shells and mines in several theatres, and historians disagree on which to add together.',
-          consequence: 'The dispute over the 1917 figures feeds a larger one about whether the submarine war failed because of convoys, because of American destroyers, or because Germany’s boat-building never matched the plan.',
+          cause: 'The campaign is the central case in the argument about economic strangulation as a strategy ' +
+            'of sea trade: Germany had neither the boats nor the technique the arithmetic of December ' +
+            '1916 assumed.',
+          what: 'The statistical problem is what counted across the seas in the war. German records are kept ' +
+            'by U-boat command and report claimed tonnage; British records count ships lost to torpedoes, ' +
+            'shells and mines in several theatres, and historians disagree on which to add together.',
+          consequence: 'The dispute over the 1917 figures feeds a larger one about whether the submarine war, around ' +
+            'Britain and in the Mediterranean, failed because of convoys, because of American destroyers, ' +
+            'or because Germany’s boat-building never matched the plan.',
         },
     },
   },
@@ -118,7 +191,9 @@ export const EVENTS_1917: WW1Event[] = [
       primary:
         {
           cause: 'A British army had surrendered at Kut in 1916, and Britain wanted the war in Iraq restarted properly.',
-          what: 'General Maude spent a year rebuilding his army, then moved slowly up the river from Basra with British and Indian soldiers, breaking one Ottoman defensive line after another. The Ottoman army left Baghdad during the night, and on 11 March 1917 the British walked into the city.',
+          what: 'General Maude spent a year rebuilding his army, then moved slowly up the river from Basra ' +
+            'with British and Indian soldiers, breaking one Ottoman line after another. The Ottoman army ' +
+            'left Baghdad at night, and on 11 March 1917 the British walked into the city.',
           consequence: 'The city that had humiliated Britain was taken, and about 9,000 Ottoman soldiers were captured. Britain now held the wealthiest Ottoman province east of Syria, and had to work out what to do with it.',
         },
       secondary:
@@ -161,7 +236,13 @@ export const EVENTS_1917: WW1Event[] = [
       secondary:
         {
           cause: 'After the victories at Romani, Magdhaba and Rafa had cleared the Sinai and taken the Turkish frontier post at Rafa, the Egyptian Expeditionary Force under General Archibald Murray pushed on into southern Palestine, where the Turkish garrison of Gaza blocked the coastal route to Jerusalem.',
-          what: 'About 31,000 British Empire troops, infantry and the Desert Column’s mounted infantry, attacked a garrison of roughly 19,000 served by German and Austro-Hungarian guns and machine-gun crews. The assault began before dawn on 26 March and the mounted troops closed the road to the north; the town was nearly taken in the afternoon, but darkness, the approach of Turkish reinforcements and the shortage of water for the animals led the commander to withdraw, and the Turkish artillery shot at the retiring columns until nightfall. British losses were 3,967, of whom 1,035 were killed or missing; the defenders lost about 1,700.',
+          what: 'About 31,000 British Empire troops, infantry and the Desert Column’s mounted infantry, ' +
+            'attacked a garrison of roughly 19,000 with German and Austro-Hungarian guns and machine-gun ' +
+            'crews. The assault began before dawn on 26 March and mounted troops closed the road to the ' +
+            'north; the town was nearly taken in the afternoon, but darkness, approaching Turkish ' +
+            'reinforcements and a shortage of water led the commander to withdraw, and the Turkish ' +
+            'artillery shot at the retiring columns until nightfall. British losses were 3,967, 1,035 of ' +
+            'them killed or missing; the defenders lost about 1,700.',
           consequence: 'The defeat cost Murray his credibility and was followed weeks later by a heavier defeat at the second battle of Gaza. The front in Palestine then stood still until a new commander, General Edmund Allenby, brought up more men, water pipes and a railway, and broke the town’s defence in the autumn.',
         },
       university:
@@ -315,6 +396,63 @@ export const EVENTS_1917: WW1Event[] = [
     },
   },
   {
+    id: 'allenby_assumes_command',
+    date: '1917-06-28',
+    precision: 'day',
+    title: 'Allenby assumes command in Egypt',
+    kind: 'politics',
+    fronts: ['middle_east', 'politics'],
+    countries: ['United Kingdom'],
+    note: 'Allenby’s despatch of 16 December 1917, printed in the London Gazette of 25 January 1918, ' +
+      'covers operations since 28 June 1917, the date on which he says he assumed command. The ' +
+      'Oxford Dictionary of National Biography records that he arrived in Egypt on 27 June 1917 ' +
+      'and assumed command the following day. The National Army Museum dates the appointment to ' +
+      'June 1917 and does not give the day. A principal-events chronology enters it under 28 ' +
+      'June. This card dates the assumption of command to 28 June and the arrival to 27 June.',
+    levels: {
+      primary: {
+        cause: 'The army in Egypt had failed twice in attacks on Gaza. London replaced its commander, ' +
+          'General Archibald Murray, with General Edmund Allenby.',
+        what: 'Allenby arrived in Egypt on 27 June 1917 and assumed command the next day. His own ' +
+          'despatch and a dictionary life of him both give 28 June for the command. The National ' +
+          'Army Museum says only that it was in June.',
+        consequence: 'The force that had stalled at Gaza had a new commander. The autumn battles were fought ' +
+          'under him, and they are later cards. This one is only the day he took command.',
+      },
+      secondary: {
+        cause: 'Murray’s attacks on Gaza in the spring of 1917 had failed, and the Egyptian ' +
+          'Expeditionary Force needed another commander before it tried Palestine again. Edmund ' +
+          'Allenby was sent out from France. The Oxford Dictionary of National Biography dates his ' +
+          'arrival in Egypt to 27 June 1917 and his assumption of command to the following day.',
+        what: 'His despatch, printed in the London Gazette, starts the operations he is reporting on 28 ' +
+          'June 1917, which he calls the date he assumed command. A principal-events chronology ' +
+          'enters that day. The National Army Museum’s essay dates the appointment to June and ' +
+          'leaves the day out. This card uses 28 June for the command and keeps 27 June as the ' +
+          'arrival. Arrival and command are not the same event.',
+        consequence: 'A change of commander did not move the front. It is the administrative start of the ' +
+          'campaign that later took Beersheba and Jerusalem, and, in 1918, went on to Damascus. ' +
+          'Those actions have their own cards. Dating the assumption of command keeps Murray’s Gaza ' +
+          'and Allenby’s autumn from reading as one continuous generalship.',
+      },
+      university: {
+        cause: 'Allenby’s reputation is built on the later battles, which makes the day he took command ' +
+          'look like a preface. The preface has a better date than many battle openings. The ' +
+          'general’s own despatch and a dictionary life agree, and a chronology files the same day. ' +
+          'The Museum’s silence on the day is a gap, not a rival date to set against them.',
+        what: 'Arrival and command have to be kept apart. He reached Egypt on 27 June. He assumed ' +
+          'command on 28 June. Dating the card to the arrival would contradict the despatch, which ' +
+          'starts his operations on the 28th. Dating it only to the month, as the Museum does, ' +
+          'would throw away a day the despatch and the dictionary share. No order of battle is ' +
+          'attached. A change of command does not need a strength, and none is given.',
+        consequence: 'The appointment is the hinge between a force that had failed at Gaza and a force that ' +
+          'rebuilt its railway, its water and its plan before attacking again. Operational ' +
+          'histories that open in the autumn are right about the battle and silent about when ' +
+          'responsibility changed. This card is that change, on the day the despatch and the ' +
+          'dictionary share, with the arrival kept as the day before.',
+      },
+    },
+  },
+  {
     id: 'kerensky_offensive',
     date: '1917-07-01',
     precision: 'day',
@@ -328,7 +466,9 @@ export const EVENTS_1917: WW1Event[] = [
       primary:
         {
           cause: 'The new Russian government wanted to show it was still winning the war, and its army was ordered to attack.',
-          what: 'The attack began on 1 July in Galicia. Some units attacked bravely, and one, a brigade of Czech and Slovak volunteers, took its objectives at Zborów; but many soldiers would not attack at all, and walked away from their positions when ordered to. The offensive was over in less than three weeks.',
+          what: 'The attack began on 1 July in Galicia. Some units attacked, and one, a brigade of Czech and ' +
+            'Slovak volunteers, took its objectives at Zborów; but many soldiers would not attack, and ' +
+            'walked away when ordered. The offensive was over in less than three weeks.',
           consequence: 'Hundreds of thousands of Russian soldiers were killed, wounded or taken prisoner, and the army stopped obeying orders. Romania was left to fight on alone for a time, and Russia was now ready to give up the war.',
         },
       secondary:
@@ -349,6 +489,71 @@ export const EVENTS_1917: WW1Event[] = [
           what: 'The evidence is orders, committee resolutions and postwar testimony, and the numbers are unusable as a single series: strength figures of 900,000 against 260,000 count volunteers against a whole front, and casualty totals run from under 60,000 to 200,000 depending on whether the collapse into mass desertion is folded in. Romanian and Russian accounts also date Mărășești differently, from a week to a month.',
           consequence: 'Historians therefore use the offensive less as a battle than as evidence in the argument about the Russian army’s consent to fight: whether discipline broke because of propaganda from the rear, because of the officers’ loss of authority after Order No. 1, or because the peasantry in the ranks had simply decided the war was someone else’s.',
         },
+    },
+  },
+  {
+    id: 'aqaba_taken',
+    date: '1917-07-06',
+    precision: 'day',
+    title: 'Arab forces take Aqaba',
+    kind: 'battle',
+    fronts: ['middle_east'],
+    countries: ['Ottoman Empire', 'United Kingdom'],
+    figures: ['lawrence'],
+    note: 'The National Army Museum dates the seizure of Aqaba by Arab rebels led by T. E. Lawrence to 6 July ' +
+      '1917. Encyclopaedia Britannica records a fortified Ottoman post captured by Arab irregulars led by ' +
+      'Lawrence in July 1917. The day is the Museum’s, and a note at the Shapell Manuscript Foundation on ' +
+      'a Lawrence letter also dates the capture to 6 July. This card does not call the port heavily ' +
+      'fortified. That stronger phrase is not an order of battle.',
+    levels: {
+      primary: {
+        cause: 'The Arab Revolt, begun at Mecca in 1916, needed a port. Aqaba, on the Red Sea, was held by the ' +
+          'Ottomans and faced the sea. The attackers came from inland instead.',
+        what: 'On 6 July 1917 Arab forces, with T. E. Lawrence, took Aqaba from the landward side. The ' +
+          'National Army Museum gives that day. A reference work agrees the capture was in July and does ' +
+          'not, by itself, fix the day.',
+        consequence: 'The revolt had a Red Sea port close to the Palestine front. Supplies could come in by ship, ' +
+          'and the Arab force sat on the flank of the Ottoman army in Palestine. Mecca had been the ' +
+          'start. Aqaba made the revolt a front.',
+      },
+      secondary: {
+        cause: 'From Mecca the revolt could embarrass the Ottomans in the Hejaz and still not touch the war in ' +
+          'Palestine. Aqaba was the port that closed that gap: a Red Sea harbour within reach of the ' +
+          'flank of the Ottoman armies facing the British in Sinai. The garrison expected any serious ' +
+          'attack to come from the sea. Lawrence and the Arab forces with him crossed the desert and came ' +
+          'down to the town from inland.',
+        what: 'They took the port on 6 July 1917. The National Army Museum states that day and names ' +
+          'Lawrence. Britannica records the capture of a fortified Ottoman post by Arab irregulars led by ' +
+          'him in July 1917, without a day of its own. A foundation note on one of his letters also dates ' +
+          'the capture to 6 July. This card uses the day the Museum and that letter-note share. It does ' +
+          'not call the port heavily fortified. Fortified is the word Britannica uses, and it is not a ' +
+          'count of guns.',
+        consequence: 'Aqaba gave the revolt a harbour the Royal Navy could supply, close to the coming British ' +
+          'offensive into Palestine. It also gave the Arab forces a base that was not Medina and not ' +
+          'Mecca. The political weight was as large as the military one: a port in Arab hands supported ' +
+          'the claim that the revolt was a campaign, not a rising in one holy city. The promises Britain ' +
+          'had already made about the region were not settled by taking the town.',
+      },
+      university: {
+        cause: 'Aqaba is the point where the Arab Revolt stops being only a Hejaz story and becomes part of ' +
+          'the Palestine campaign’s geography. Lawrence’s account has dominated the telling, which is a ' +
+          'problem of evidence: the best-known witness was also the man most interested in a particular ' +
+          'version. Arab participants, and the Ottoman garrison, are thinner in the English-language ' +
+          'record. The operational idea, an inland approach to a port that looked seaward, does not ' +
+          'depend on his legend to be true.',
+        what: 'The day rests on the National Army Museum and on a dated letter-note, with Britannica ' +
+          'supporting July and the fact of a capture by Arab irregulars under Lawrence. That is enough ' +
+          'for 6 July and not enough for a description of the defences. Britannica says fortified. ' +
+          'Another note says heavily fortified. Neither is an order of battle, so this card does not use ' +
+          'the stronger phrase and does not treat fortified as a measured claim about works and guns. No ' +
+          'strength is stated for either side.',
+        consequence: 'The port changed the supply of the revolt and the flank of the Ottoman line in southern ' +
+          'Palestine. It did not decide who would rule the region. Sykes-Picot, the Hussein-McMahon ' +
+          'letters and, later in this same year, the Balfour Declaration were already, or were about to ' +
+          'be, in existence. Aqaba is sometimes written as if the capture created the Arab claim. The ' +
+          'claim was political and earlier. The capture gave it a harbour, which is a smaller and firmer ' +
+          'statement.',
+      },
     },
   },
   {
@@ -406,7 +611,13 @@ export const EVENTS_1917: WW1Event[] = [
       secondary:
         {
           cause: 'The “National Schism” divided royalist Old Greece from Venizelist New Greece, the lands won in the Balkan Wars. Constantine’s neutrality was defended on military grounds and distrusted as pro-German; the surrender of Fort Roupel and eastern Macedonia to Bulgaria in 1916, the armed clash between royalist troops and Entente sailors in Athens in December 1916, and a five-month naval blockade that brought hunger to Athens, made the King the obstacle to the Entente’s Macedonian front.',
-          what: 'The Entente could not move against Constantine while the Russian Tsar, his kinsman, protected him; the February Revolution removed that. In June 1917 Entente pressure and armed demonstration forced the abdication, the King and Crown Prince George left the country, and Alexander, thought manageable, was placed on the throne. Venizelos reunited the governments, took control of the army, and royalist officers and politicians were exiled or imprisoned; Greece declared war on the Central Powers at the end of June and put nine divisions into the Macedonian front, with losses of about 5,000 dead and more than 24,000 casualties in all.',
+          what: 'The Entente could not move against Constantine while the Russian Tsar, his kinsman, ' +
+            'protected him; the February Revolution removed that. In June 1917 Entente pressure and armed ' +
+            'demonstration forced the abdication, the King and Crown Prince George left the country, and ' +
+            'Alexander was placed on the throne. Venizelos reunited the governments, took control of the ' +
+            'army, and royalist officers and politicians were exiled or imprisoned; Greece declared war ' +
+            'on the Central Powers at the end of June and put nine divisions into the Macedonian front, ' +
+            'with about 5,000 dead and more than 24,000 casualties.',
           consequence: 'The Entente’s Salonika front got the manpower it had wanted since 1915, and Bulgaria faced a larger enemy. Greece entered the peace conference as a belligerent rather than a neutral, which is why the settlement of 1918–1920 gave it Thrace and Smyrna — and why the quarrel between Venizelists and royalists, never settled in 1917, poisoned Greek politics for a generation.',
         },
       university:
@@ -457,6 +668,134 @@ export const EVENTS_1917: WW1Event[] = [
     },
   },
   {
+    id: 'china_declares_war',
+    date: '1917-08-14',
+    precision: 'day',
+    title: 'China declares war on Germany and Austria-Hungary',
+    kind: 'diplomacy',
+    fronts: ['politics'],
+    countries: ['China', 'Germany', 'Austria-Hungary'],
+    note: 'Foreign Relations of the United States, 1917, Supplement 1, prints the Chinese Foreign Office ' +
+      'note, forwarded by the United States minister in Peking, declaring a state of war with Germany and ' +
+      'Austria-Hungary from 10 a.m. on 14 August 1917. The Library of Congress dates the declaration to ' +
+      '14 August 1917 and cites the Beiyang government gazette of that day. Britannica’s war chronology ' +
+      'has the same date. An earlier break in relations is not given a card here.',
+    levels: {
+      primary: {
+        cause: 'China had stayed neutral while Japan, then the Allies, pressed it over Shandong and over the ' +
+          'German ships and concessions in Chinese ports. By 1917 the government in Peking decided that ' +
+          'joining the war was the way to be heard when peace was made.',
+        what: 'On 14 August 1917 China declared that a state of war existed with Germany and with ' +
+          'Austria-Hungary, from ten that morning. The treaties with both empires were cancelled. The ' +
+          'note was sent to the foreign governments and printed in China’s own gazette.',
+        consequence: 'China was now a belligerent, not only a neutral place where other empires fought. It could ' +
+          'claim a seat when the peace was negotiated. Chinese workers had already been going to France. ' +
+          'The declaration gave that effort the name of a national war.',
+      },
+      secondary: {
+        cause: 'German concessions, German ships interned in Chinese ports, and the Shandong question left by ' +
+          'the Twenty-One Demands gave Peking reasons to move long before August 1917. The Allied ' +
+          'governments wanted China in, partly to seize those ships and concessions and partly to add a ' +
+          'belligerent in East Asia. The Beiyang government calculated that a declaration was the price ' +
+          'of being present at the settlement, where the 1915 treaties might be reopened.',
+        what: 'On 14 August 1917 the Chinese Foreign Office declared a state of war with Germany and ' +
+          'Austria-Hungary from 10 a.m. that day, and said the treaties with both were abrogated. The ' +
+          'United States minister forwarded the note. The Library of Congress dates the declaration to ' +
+          'the same day and points to the government gazette. Britannica’s chronology agrees. This card ' +
+          'is that declaration. It does not add a separate story about an earlier break in relations.',
+        consequence: 'China’s entry did not send a Chinese army to Europe. It legalised the internment of enemy ' +
+          'nationals and the taking of German and Austro-Hungarian property, and it made the Chinese ' +
+          'Labour Corps, already recruiting, the effort of a belligerent. At the peace, China expected ' +
+          'the Shandong concessions to be treated as rights recovered from an enemy, not as Japan’s ' +
+          'permanent gain. That expectation was disappointed, and the disappointment belongs to the ' +
+          'peace, which is outside this timeline.',
+      },
+      university: {
+        cause: 'Chinese entry is often told as a gesture with no army behind it, which underrates why a weak ' +
+          'government declares war. The Beiyang ministries wanted a legal status at the peace, leverage ' +
+          'against the 1915 treaties, and Allied money and recognition in a period of internal rivalry. ' +
+          'Japan, already a belligerent, did not want a Chinese colleague who could challenge the ' +
+          'Shandong settlement. The declaration is an argument with Tokyo as much as with Berlin.',
+        what: 'The documentary core is the Foreign Office note, as Washington’s minister sent it on, ' +
+          'declaring war from 10 a.m. on 14 August 1917 and abrogating the treaties. The Library of ' +
+          'Congress, citing the day’s gazette, and Britannica’s chronology, give the same date. That is a ' +
+          'stronger pair than most entries in this theatre. A break with Germany earlier in 1917 is ' +
+          'mentioned in the American printing of the note and was not confirmed here from a second house, ' +
+          'so it is not narrated as its own event. The card stays on 14 August.',
+        consequence: 'Belligerency without a field army still changed the legal map of the China coast and the ' +
+          'labour recruitment for France. It also created the claim China brought to the peace conference ' +
+          'and did not win. Histories of the May Fourth movement start from that disappointment, which ' +
+          'means August 1917 is part of their cause and not a footnote to the Western Front. The card ' +
+          'stops at the declaration. It does not tell the peace, and it does not invent a Chinese ' +
+          'expeditionary force that was not sent.',
+      },
+    },
+  },
+  {
+    id: 'montagu_declaration',
+    date: '1917-08-20',
+    precision: 'day',
+    title: 'Montagu states the aim for India',
+    kind: 'politics',
+    fronts: ['politics'],
+    countries: ['United Kingdom', 'India'],
+    note: 'The Spectator of 25 August 1917 reports Edwin Montagu’s statement of the previous Monday, ' +
+      'including the responsible-government formula, and that substantial steps would be taken as soon as ' +
+      'possible. Hansard for 6 August 1918 records Montagu reading back the announcement he made for the ' +
+      'government on 20 August 1917, with the same formula.',
+    levels: {
+      primary: {
+        cause: 'India had sent a great many soldiers to the war, and Indian politicians were asking what ' +
+          'Britain meant to do about governing India afterwards. The question could not be left as a ' +
+          'vague promise while the fighting went on.',
+        what: 'On 20 August 1917 Edwin Montagu told the Commons that British policy was a growing Indian ' +
+          'share in government, and the progressive realisation of responsible government in India as ' +
+          'part of the British Empire. Substantial steps should come as soon as possible.',
+        consequence: 'Britain had named a goal in public: responsible government inside the Empire, not independence ' +
+          'outside it, and not rule unchanged. Indian leaders could quote the sentence. What it would ' +
+          'mean in practice was still to be argued.',
+      },
+      secondary: {
+        cause: 'By 1917 the Indian Army was carrying a large part of the war in Africa and the Middle East, ' +
+          'and political India was no longer willing to treat constitutional change as something for ' +
+          'after an unnamed victory. Edwin Montagu, the secretary of state for India, had to say in the ' +
+          'Commons what the government’s aim was. The formula had to offer Indians a real share of ' +
+          'government without promising a break with the Empire. That balance is the whole announcement.',
+        what: 'On 20 August 1917 Montagu said British policy was the increasing association of Indians in ' +
+          'every branch of the administration, and the progressive realisation of responsible government ' +
+          'in India as an integral part of the British Empire. He added that substantial steps should be ' +
+          'taken as soon as possible. The Spectator reported the statement the following week. A year ' +
+          'later Montagu read the same words back from the Hansard record of 20 August. The date and the ' +
+          'formula are the event.',
+        consequence: 'The sentence became the text Indian politicians quoted and British officials hedged. It ' +
+          'pointed towards dyarchy and the later reforms, and it ruled out, in the government’s own ' +
+          'words, both a frozen autocracy and a separation from the Empire. Soldiers from India appear on ' +
+          'the military cards of this timeline. This card is the political place those soldiers’ country ' +
+          'was given in the war, which the battle narratives do not state.',
+      },
+      university: {
+        cause: 'The announcement is a wartime concession and a limit set in the same breath. India was ' +
+          'indispensable to the imperial war effort, recruitment was politically sensitive after the ' +
+          'Mesopotamian failures, and the Home Rule leagues were asking the question in public. London ' +
+          'needed a sentence that nationalists could be offered and that diehard imperialists could be ' +
+          'told was not independence. Responsible government as an integral part of the Empire is that ' +
+          'sentence. The ambiguity is the policy.',
+        what: 'The words are not in doubt. The Spectator of 25 August 1917 reported the Monday statement, and ' +
+          'on 6 August 1918 Montagu himself cited the announcement of 20 August with the formula intact. ' +
+          'Increasing association in the administration, progressive realisation of responsible ' +
+          'government, substantial steps as soon as possible: the three clauses do different work, and ' +
+          'later argument turned on which clause governed. This card does not treat the statement as a ' +
+          'statute. It was a Commons announcement of policy.',
+        consequence: 'Everything argued about Indian reform from 1918 to the Government of India Act quotes this ' +
+          'August. Historians who stress continuity with pre-war Liberal promises, and historians who ' +
+          'stress a wartime bargain with Indian political society, are disagreeing about the cause and ' +
+          'not about the text. The military history of Indian divisions in France, Mesopotamia and ' +
+          'Palestine almost never includes the sentence. Keeping it on its own card is the point. The war ' +
+          'was also a constitutional event in India, and this is the day the government said so.',
+      },
+    },
+  },
+  {
     id: 'kornilov_affair',
     date: '1917-09-01',
     precision: 'month',
@@ -469,7 +808,10 @@ export const EVENTS_1917: WW1Event[] = [
     levels: {
       primary:
         {
-          cause: 'After the failure of the summer offensive the Russian army needed discipline, and its new commander-in-chief, General Lavr Kornilov, wanted harsh rules back, including the death penalty at the front. Prime Minister Alexander Kerensky wanted the same thing but could not say so in public, and the two men misread each other.',
+          cause: 'After the summer offensive failed the Russian army needed discipline, and its new ' +
+            'commander-in-chief, General Kornilov, wanted harsh rules back, including the death penalty ' +
+            'at the front. Prime Minister Alexander Kerensky wanted the same but could not say it ' +
+            'publicly, and they misread each other.',
           what: 'When Kornilov marched on the government, Kerensky declared him a traitor. Kornilov thought ' +
             'the Bolsheviks had taken Petrograd and sent his corps there. Workers of the Petrograd Soviet ' +
             'stopped them on the railway, and the corps turned back without a fight. Kornilov was ' +
@@ -479,7 +821,13 @@ export const EVENTS_1917: WW1Event[] = [
       secondary:
         {
           cause: 'The June offensive collapsed in July, the Petrograd garrison had shot at each other in the July Days, and Kerensky needed an army that obeyed and a capital that was quiet. Kornilov, appointed commander-in-chief after Brusilov, offered both: courts-martial and a march of loyal troops into Petrograd. What exactly was agreed between them, through the intermediary Vladimir Lvov, was never settled; Kornilov was convinced Kerensky had been overpowered by the Soviet, Kerensky was convinced Kornilov was his enemy, and on learning he was accused of treason, Kornilov went ahead with the march he had already ordered.',
-          what: 'The Provisional Government declared martial law in Petrograd and asked the Soviet for the organised workers and garrison troops of the city. The Bolsheviks, who had just been outlawed, came out of prison and worked with railwaymen and agitators to persuade the advancing soldiers to halt and disperse; the corps’ staffs would not force the issue, and by 13 September the march had ended in a stand-down with no fighting. Kornilov was dismissed and imprisoned, Krymov killed himself, and Kerensky, having destroyed the officer corps he had counted on, restructured his government into a Directorate and proclaimed Russia a republic on 14 September new style.',
+          what: 'The Provisional Government declared martial law in Petrograd and asked the Soviet for the ' +
+            'city’s organised workers and garrison. The Bolsheviks, just outlawed, left prison and worked ' +
+            'with railwaymen and agitators to persuade the advancing soldiers to halt and disperse; the ' +
+            'corps’ staffs would not force the issue, and by 13 September the march had ended in a ' +
+            'stand-down with no fighting. Kornilov was dismissed and imprisoned, Krymov killed himself, ' +
+            'and Kerensky, having destroyed the officer corps he had counted on, restructured his ' +
+            'government into a Directorate and proclaimed Russia a republic on 14 September new style.',
           consequence: 'September 1917 is the pivot of the whole Russian war. The moderate socialists who defended the government were discredited with it, the officer corps was purged a second time, the army’s political leadership was emptied out, and the Bolsheviks obtained legal existence, armed Red Guards and the credit of having stopped a coup. Six weeks later they took power almost without opposition.',
         },
       university:
@@ -488,6 +836,68 @@ export const EVENTS_1917: WW1Event[] = [
           what: 'The documentary record is thin and hostile to itself. Kerensky and Kornilov gave contradictory accounts of what was agreed and when, both written in emigration; the telegram that supposedly ordered the march is disputed; there was no battle, so there is no battlefield record, no reliable casualty list and no unit history to appeal to. The dates are themselves a problem, since the same four days are “the end of August” in Russian old style and 10–13 September in the calendar used by every Western narrative.',
           consequence: 'What scholarship has settled on is the effect rather than the intention: whatever Kornilov meant, the collapse of the march handed the Bolsheviks the argument that counter-revolution was coming and that only soviets and armed workers could stop it, and it discredited the officers as a class in the eyes of the soldier-councillors. Readings of October 1917 as a coup or as a mass movement both rest on what happened in these five weeks.',
         },
+    },
+  },
+  {
+    id: 'battle_of_ramadi',
+    date: '1917-09-28',
+    precision: 'day',
+    title: 'British and Indian troops take Ramadi',
+    kind: 'battle',
+    fronts: ['middle_east'],
+    countries: ['United Kingdom', 'India', 'Ottoman Empire'],
+    note: 'The National Army Museum dates the Battle of Ramadi to 27–28 September 1917, a ' +
+      'British-Indian victory. A principal-events chronology enters the action under 28 September ' +
+      'and marks the window as the 28th and 29th. Moberly’s official history has a chapter on the ' +
+      'capture of Ramadi in August and September 1917. The same chronology lists a British attack ' +
+      'on Ramadi in July, which was an earlier failure and is not this action. This card is dated ' +
+      '28 September, the day both September windows include, and it names the disagreement. No ' +
+      'strengths are given.',
+    levels: {
+      primary: {
+        cause: 'After Baghdad fell, British and Indian troops were still fighting Ottoman forces along ' +
+          'the rivers. At Ramadi, on the Euphrates, an Ottoman force held the town.',
+        what: 'They defeated that force and took Ramadi at the end of September 1917. One account gives ' +
+          '27 to 28 September. Another gives 28 to 29 September. This card uses the 28th, the day ' +
+          'both include, and says the window is not agreed.',
+        consequence: 'Ramadi passed into British and Indian hands. The action is not an earlier attack on the ' +
+          'same town in July, which had failed, and it is not the March entry into Baghdad.',
+      },
+      secondary: {
+        cause: 'Baghdad was entered in March 1917, and the war on the rivers did not stop on that day. ' +
+          'On the Euphrates an Ottoman force remained at Ramadi. British and Indian troops fought ' +
+          'it in late September. A July attack on the same place had already failed. This card does ' +
+          'not fold that failure into the September action.',
+        what: 'The National Army Museum’s window is 27 to 28 September, and it calls the result a ' +
+          'British-Indian victory. A principal-events chronology places the action on 28 and 29 ' +
+          'September. The official history treats the capture as a chapter of August and September, ' +
+          'which is the span of the operations, not a third pair of battle days. This card is dated ' +
+          'the 28th because the Museum and the chronology both include it. The days they do not ' +
+          'share are named. No strength is given.',
+        consequence: 'Taking Ramadi extended control along the Euphrates after the Tigris had already produced ' +
+          'Baghdad. It is a late-1917 river battle, easy to omit once Baghdad looks like the end of ' +
+          'the campaign. The town’s capture is the result the accounts share. Which night the ' +
+          'fighting began, and which morning it ended, is the part they still split.',
+      },
+      university: {
+        cause: 'Ramadi stands downstream of a famous victory, so an Euphrates town in September looks ' +
+          'like clearing up, and a failed July attack at the same place is easily merged with the ' +
+          'successful one. The chronology keeps the July repulse and the September action apart. ' +
+          'The card should do the same. September is a battle with a disputed window, not a ' +
+          'footnote to the fall of Baghdad.',
+        what: 'The honest stored day is a day inside an argument, and the reading text says so. The ' +
+          'Museum gives 27 to 28 September. The chronology gives 28 to 29 September. The official ' +
+          'history’s chapter runs across August and September, with operations near the town in ' +
+          'July as well as in September, which is a warning not to collapse the months. Dating the ' +
+          'card to 28 September marks the overlap. It does not pretend the opening morning is ' +
+          'settled. Strengths are omitted, because the agreement between these houses is not a ' +
+          'headcount.',
+        consequence: 'What they do share is that the town was taken, and that the September action was a ' +
+          'British-Indian victory distinct from the July repulse. Mesopotamia after Baghdad was ' +
+          'still a war of river towns. Writing the campaign as a single entry in March is tidy, and ' +
+          'it is false to the autumn. Ramadi is one of the later decisions, and its date is no ' +
+          'finer than the two-day windows the publishers actually print.',
+      },
     },
   },
   {
@@ -509,7 +919,9 @@ export const EVENTS_1917: WW1Event[] = [
             'fought the Russian guns. Troops landed at Tagalaht on Saaremaa; a second landing took ' +
             'Hiiumaa. The Russian fleet lost a battleship and withdrew. By 20 October the islands were ' +
             'German.',
-          consequence: 'Germany took about 20,000 prisoners and the Baltic islands, and lost a little over 200 men killed. The Russian government, which had promised its soldiers peace, now had the enemy on the coast within reach of Petrograd, and a month later it asked for an armistice.',
+          consequence: 'Germany took about 20,000 prisoners and the Baltic islands, and lost a little over 200 men ' +
+            'killed. The Russian government, which had promised its soldiers peace, now had the enemy ' +
+            'within reach of Petrograd, and a month later it asked for an armistice.',
         },
       secondary:
         {
@@ -532,6 +944,71 @@ export const EVENTS_1917: WW1Event[] = [
     },
   },
   {
+    id: 'battle_of_mahiwa',
+    date: '1917-10-15',
+    precision: 'day',
+    title: 'Lettow-Vorbeck’s force holds at Mahiwa',
+    kind: 'battle',
+    fronts: ['africa'],
+    countries: ['United Kingdom', 'India', 'Germany'],
+    note: 'The National Army Museum dates the Battle of Mahiwa to 15–18 October 1917, a German ' +
+      'victory in German East Africa. The 12th edition of Encyclopaedia Britannica says Nigerians ' +
+      'were in action early on 15 October, the beginning of a four days’ battle; the Germans ' +
+      'counter-attacked on the 17th and the 18th; an attack ordered for the 19th was cancelled, ' +
+      'and that day the Germans retired to positions they had taken on the 16th. The 1926 ' +
+      'supplement is the same house. Some British accounts call the fighting the action of ' +
+      'Nyangao. The Museum’s own East Africa video dates a battle at Mahiwa to July 1917, which ' +
+      'contradicts its timeline. This card is dated 15 October, the opening the houses share. ' +
+      'Britannica’s casualty figures are not copied.',
+    levels: {
+      primary: {
+        cause: 'In the south of German East Africa, British, Nigerian and Indian troops attacked ' +
+          'Lettow-Vorbeck’s force at Mahiwa. He had been campaigning in the colony since 1914.',
+        what: 'The fighting opened on 15 October 1917. One account closes it on the 18th. Another keeps ' +
+          'the 19th as the day a further attack was called off. Some British writers call the ' +
+          'action Nyangao. This card uses the 15th, and it gives no losses.',
+        consequence: 'Lettow-Vorbeck beat the attack, and used men and ammunition he could not replace. The ' +
+          'victory did not let him stay. Shortage, not a defeat on this field, pushed his force on ' +
+          'out of the colony.',
+      },
+      secondary: {
+        cause: 'By October 1917 the East African campaign had moved to the south of the colony. A column ' +
+          'of British, Nigerian and Indian troops attacked Lettow-Vorbeck at Mahiwa. The National ' +
+          'Army Museum calls the result a German victory and dates the battle from 15 to 18 ' +
+          'October. Britannica’s account of 1922, and a 1926 supplement from the same house, open ' +
+          'the battle early on 15 October with the Nigerians in action.',
+        what: 'The opening day is what the two houses share, and the card is dated 15 October. They do ' +
+          'not share the close. The Museum ends on the 18th. Britannica describes counter-attacks ' +
+          'on the 17th and the 18th, then a cancelled attack on the 19th, and says the battle was ' +
+          'over when the Germans fell back that day. Some British accounts name the fighting ' +
+          'Nyangao. A Museum video that places Mahiwa in July contradicts the Museum’s timeline. No ' +
+          'casualty figure is taken from Britannica.',
+        consequence: 'The success left Lettow-Vorbeck unable to replace the men and the ammunition the battle ' +
+          'had consumed. A victory of that kind can still force a commander to leave. Mahiwa is why ' +
+          'his force was still dangerous in late 1917, and why it could not simply stay and fight ' +
+          'another action of the same size inside the colony.',
+      },
+      university: {
+        cause: 'Mahiwa is the East African battle that falls between Tanga and the surrender of 1918, ' +
+          'and the tellings do not match. A museum timeline, a museum video, an encyclopaedia and ' +
+          'British accounts that prefer the name Nyangao are not one story. A card can still be ' +
+          'written. Two houses agree there was a battle, and they agree the day it opened.',
+        what: 'That day is 15 October 1917. Britannica calls it the start of a four days’ battle and ' +
+          'then keeps the 19th as the morning a renewal was cancelled. The Museum’s timeline stops ' +
+          'on the 18th. Its video, which dates Mahiwa to July, cannot be squared with the timeline ' +
+          'and is recorded as a contradiction, not as a date to adopt. The encyclopaedia’s losses ' +
+          'are one house’s figures and are left out. The attack was British, Nigerian and Indian. ' +
+          'This card does not invent a strength for it.',
+        consequence: 'The useful conclusion is narrower than a celebration of the victory. Lettow-Vorbeck held ' +
+          'the field and spent men and ammunition he could not make good, so a German success in ' +
+          'October sits on the road out of the colony. Calling the battle Mahiwa or Nyangao, and ' +
+          'closing it on the 18th or the 19th, changes the label and the last day. It does not ' +
+          'change the opening, or the fact that the force which won could not replace what the ' +
+          'winning had cost.',
+      },
+    },
+  },
+  {
     id: 'caporetto',
     date: '1917-10-24',
     precision: 'day',
@@ -544,17 +1021,38 @@ export const EVENTS_1917: WW1Event[] = [
     levels: {
       primary:
         {
-          cause: 'Italy and Austria-Hungary had been fighting along the river Isonzo for two and a half years, in the mountains east of the town of Caporetto. The Italian commander, General Luigi Cadorna, had attacked many times at heavy cost, and his soldiers were tired and badly treated, with harsh punishments for offences.',
+          cause: 'Italy and Austria-Hungary had been fighting along the river Isonzo for two and a half years, ' +
+            'in the mountains east of Caporetto. The Italian commander, General Cadorna, had attacked ' +
+            'many times at heavy cost, and his soldiers were tired and badly treated, with harsh ' +
+            'punishments.',
           what: 'On 24 October 1917 German troops came over the mountains in fog with gas. In small parties ' +
             'they went round the strong points into the Italian rear. The lines broke; divisions ' +
             'surrendered or went home. The retreat lasted nearly four weeks, about 150 kilometres.',
-          consequence: 'Italy lost a third of its effective army and the government fell. British and French divisions were sent from the west, though they arrived too late for the fighting. A new general, Armando Diaz, replaced Cadorna, and the army that held the Piave was fed better, given leave and treated better than the army that broke.',
+          consequence: 'Italy lost a third of its army and the government fell. British and French divisions arrived ' +
+            'from the west too late to fight. Armando Diaz replaced Cadorna, and the Piave army was ' +
+            'better fed and given leave, and better treated than the one that broke.',
         },
       secondary:
         {
-          cause: 'Cadorna had built an army of offence on coercion: decimation, battalions reduced for cowardice, and a belief that Italian soldiers needed pressure from behind. The Twelfth Army, holding the Isonzo valley at Caporetto, was under-strength, its trenches were unfinished, and its forward units were spread thin. Six German divisions and Austro-Hungarian mountain and storm troops were concentrated against a fifteen-kilometre front, with the artillery firing gas and a short, precise bombardment instead of a days-long one.',
-          what: 'The attack opened at 02:00 on 24 October after a gas and high-explosive bombardment, and German assault battalions used infiltration tactics — bypass resistance, telephone the positions back to the artillery, keep moving — so that the Italian defensive system, which assumed a frontal attack to be stopped in the front line, was simply walked through. The Italian Second Army dissolved; the retreat across the Tagliamento in disorder, with bridging trains cut and hospitals abandoned, turned into panic. The army was finally held on the Grappa and the Piave in November with British and French help, and Cadorna was replaced by Diaz on 8 November.',
-          consequence: 'The defeat changed how the war was fought on both sides. In Italy it produced a political and military settlement: British, French and Italian leaders met at Rapallo on 5–7 November, Lloyd George used the meeting to get approval for a Supreme War Council to run Allied strategy, six French and five British infantry divisions were sent to Italy, and Cadorna’s successor Diaz rebuilt the army with leave, better food, propaganda offices promising land and social justice, and a deliberately cautious strategy. In Germany the battle seemed to prove that infiltration and surprise could end trench war, which was the basis of the offensives of 1918 in the west. Austria-Hungary, which had won the battle, was left more dependent on Germany than ever.',
+          cause: 'Cadorna had built an army of offence on coercion: decimation, battalions reduced for ' +
+            'cowardice, and a belief that Italian soldiers needed pressure from behind. The Second Army, ' +
+            'holding the Isonzo valley at Caporetto, was under-strength, its trenches were unfinished, ' +
+            'and its forward units were spread thin. Six German divisions and Austro-Hungarian mountain ' +
+            'and storm troops were concentrated against a fifteen-kilometre front, with the artillery ' +
+            'firing gas and a short, precise bombardment instead of a days-long one.',
+          what: 'The attack opened at 02:00 on 24 October after a gas and high-explosive bombardment, and ' +
+            'German assault battalions used infiltration tactics — bypass resistance, telephone the ' +
+            'positions back to the artillery, keep moving — so the Italian defensive system, which ' +
+            'assumed a frontal attack stopped in the front line, was walked through. The Italian Second ' +
+            'Army dissolved; the retreat across the Tagliamento in disorder, with bridging trains cut and ' +
+            'hospitals abandoned, turned into panic. The army was held on the Grappa and the Piave in ' +
+            'November with Allied help, and Cadorna was replaced by Diaz on 8 November.',
+          consequence: 'The defeat changed the war on both sides. At Rapallo on 5–7 November, British, French and ' +
+            'Italian leaders approved a Supreme War Council, and six French and five British divisions ' +
+            'went to Italy. Diaz rebuilt the army with leave, better food, propaganda promising land and ' +
+            'justice, and a cautious strategy. In Germany the battle seemed to prove that infiltration ' +
+            'and surprise could end trench war, the basis of the 1918 offensives in the west. ' +
+            'Austria-Hungary, which had won, was left more dependent on Germany than ever.',
         },
       university:
         {
@@ -577,15 +1075,32 @@ export const EVENTS_1917: WW1Event[] = [
     levels: {
       primary:
         {
-          cause: 'For seven months the British army in Egypt had tried to push across the open ground between Gaza and the sea and had been stopped twice. Beersheba, some fifty miles to the east, was the water supply that made the Turkish position possible, and it was lightly held.',
-          what: 'On 31 October 1917 Australian light horsemen rode across open country to the Turkish trenches east of Beersheba and took the town and its wells in a day. Two Turkish divisions were forced back to Gaza, and in early November the British broke through and took Gaza itself. Jerusalem, far to the north, fell a few weeks later, and General Allenby walked into the city on 11 December.',
-          consequence: 'The Turks lost Palestine in six weeks, and the campaign cost them far more men in prisoners than in battle. British and French promises about what would be done with the land had already been made, and the war had brought Britain to Jerusalem as well as to Baghdad.',
+          cause: 'For seven months the British army in Egypt had tried to push across the open ground between ' +
+            'Gaza and the sea and had been stopped twice. Beersheba, some fifty miles east, was the water ' +
+            'supply that made the Turkish position possible, and was lightly held.',
+          what: 'On 31 October 1917 Australian light horse rode to the Turkish trenches at Beersheba and took ' +
+            'the town and its wells. Two divisions fell back on Gaza, which the British took in early ' +
+            'November. Jerusalem fell weeks later, and Allenby walked in on 11 December.',
+          consequence: 'The Turks lost Palestine in six weeks, and the campaign cost them far more men in prisoners ' +
+            'than in battle. British and French promises about what would be done with the land had been ' +
+            'made, and the war had brought Britain to Jerusalem and Baghdad.',
         },
       secondary:
         {
           cause: 'Gaza, on the coast, had been fortified from the south as well as the west, so an attack from the seaward side hit prepared trenches over open waterless ground. Beersheba, inland, was the junction of the roads and the only reliable water for the Turkish garrison of Gaza, but it was held by about 4,400 rifles with a small garrison of artillery, because the Turks did not expect an attack across the seventy miles of desert from the Qattara area.',
-          what: 'Allenby concentrated five infantry and four mounted divisions, about 47,500 riflemen and 15,000 troopers, and marched them north in secret in October, using the railway and a pipeline built across the desert. On 31 October infantry took the outer defences at sunset and the Australian 4th Light Horse Brigade then rode the remaining three miles, in one case with the bayonet used as a lance, and carried the redoubts and the town. The Turkish defence of Gaza lost its water and its line of retreat, and Gaza itself was found evacuated on the morning of 7 November, after the attacks on Hareira and Sheria the night before. Jerusalem fell on 9 December.',
-          consequence: 'By the end of the fighting in December the British had lost about 18,000 men and the Ottomans about 25,000, and the Turks had lost most of their field strength in Palestine. The fall of the holy city gave the British government a much-needed success after Passchendaele and Caporetto; the political cost was that Britain, France and Russia had already promised each other a partition of the Ottoman lands in the Sykes-Picot agreement of 1916, while promising Sharif Husayn an independent Arab state and the Zionists a national home in Palestine through the Balfour Declaration of 2 November.',
+          what: 'Allenby massed five infantry and four mounted divisions, about 47,500 riflemen and 15,000 ' +
+            'troopers, and marched them north in secret by railway and a desert pipeline. On 31 October ' +
+            'infantry took the outer defences at sunset, and the Australian 4th Light Horse rode the last ' +
+            'three miles, in one case with the bayonet as a lance, and took the redoubts and the town. ' +
+            'Gaza’s defence lost its water and its line of retreat, and Gaza was found empty on 7 ' +
+            'November, after the night attacks on Hareira and Sheria. Jerusalem fell on 9 December.',
+          consequence: 'By the end of the fighting in December the British had lost about 18,000 men and the ' +
+            'Ottomans about 25,000, and the Turks had lost most of their field strength in Palestine. The ' +
+            'fall of the holy city gave Britain a much-needed success after Passchendaele and Caporetto; ' +
+            'the political cost was that Britain, France and Russia had promised each other a partition ' +
+            'of the Ottoman lands in the Sykes-Picot agreement of 1916, while promising Sharif Husayn an ' +
+            'independent Arab state and the Zionists a national home in Palestine through the Balfour ' +
+            'Declaration of 2 November.',
         },
       university:
         {
@@ -593,6 +1108,74 @@ export const EVENTS_1917: WW1Event[] = [
           what: 'Casualty figures vary widely because Ottoman unit records for Palestine are largely lost, so British accounts estimate from prisoners taken, and Turkish and German accounts report their own losses and give lower figures for the garrison and higher ones for British casualties. The naming of the battles is itself contested: the same operation is numbered as the third, fourth or fifth battle of Gaza depending on whether Beersheba is treated as a separate battle or as the opening of a siege, and the capture of Jerusalem is variously dated 9 December, when the Turkish garrison withdrew, or 11 December, when Allenby entered the city.',
           consequence: 'The campaign sits at the centre of two historiographies. For Australia and New Zealand it is the founding moment of national military memory outside Europe, and the subject of a large popular literature that relies almost entirely on British and Australian sources. For historians of the Middle East the central question is political rather than military: how the capture of a city promised in three inconsistent wartime commitments — to an Arab sharif, to Zionism and to France — shaped the mandate that Britain received in 1920.',
         },
+    },
+  },
+  {
+    id: 'balfour_declaration',
+    date: '1917-11-02',
+    precision: 'day',
+    title: 'The Balfour Declaration',
+    kind: 'diplomacy',
+    fronts: ['politics', 'middle_east'],
+    countries: ['United Kingdom', 'Ottoman Empire'],
+    note: 'Encyclopaedia Britannica describes a letter of 2 November 1917 from Arthur Balfour to Lionel ' +
+      'Walter Rothschild, states the national-home sentence, and notes that its meaning is disputed and ' +
+      'that it sat in contradiction with Sykes-Picot and the Hussein-McMahon correspondence. The Avalon ' +
+      'Project at Yale Law School prints the letter of that date, including the national-home sentence ' +
+      'and the reservation. The Imperial War Museum dates the declaration to 1917.',
+    levels: {
+      primary: {
+        cause: 'Britain was about to conquer Palestine from the Ottomans, and several promises about that land ' +
+          'were already in the air. The Cabinet decided to say, in a letter, what it would support for ' +
+          'the Jewish people there.',
+        what: 'On 2 November 1917 Arthur Balfour wrote to Lord Rothschild that Britain favoured a national ' +
+          'home in Palestine for the Jewish people. The letter said this must not harm other communities ' +
+          'in Palestine, or Jews in any other country.',
+        consequence: 'One short letter became a promise people quoted for the rest of the century. It did not say ' +
+          'what a national home was, and it sat beside other British promises that did not match it. The ' +
+          'meaning was argued at once.',
+      },
+      secondary: {
+        cause: 'By November 1917 Britain was committed, in different words, to an Arab sharif, to France, and ' +
+          'to a Jewish national home that influential supporters in Britain and among Jewish communities ' +
+          'wanted stated. The War Cabinet chose a letter rather than a treaty. Arthur Balfour, the ' +
+          'foreign secretary, wrote it to Lord Rothschild so that it could be made public as the view of ' +
+          'the government. Palestine was still, on that day, an Ottoman province the army had not ' +
+          'finished conquering.',
+        what: 'The letter is dated 2 November 1917. It says the Cabinet views with favour the establishment ' +
+          'in Palestine of a national home for the Jewish people. It adds that nothing shall prejudice ' +
+          'the civil and religious rights of existing non-Jewish communities in Palestine, or the rights ' +
+          'and political status enjoyed by Jews in any other country. Yale’s Avalon Project prints that ' +
+          'text. Britannica summarises the same sentences and says the meaning is disputed. This card is ' +
+          'the letter, not the later mandate.',
+        consequence: 'The declaration became the third public commitment about Ottoman Arab land, beside the ' +
+          'Hussein-McMahon letters and the Sykes-Picot agreement, which other cards name. It did not ' +
+          'repeal them, and it did not define a state, a border or a timetable. Supporters read a promise ' +
+          'of a Jewish commonwealth. Critics read a clause that could be narrowed to a cultural home ' +
+          'under British rule. Both readings use the same two sentences.',
+      },
+      university: {
+        cause: 'The letter is a Cabinet compromise written to be shown to more than one audience: Zionist ' +
+          'leaders who wanted a public commitment, British ministers who would not promise a Jewish state ' +
+          'in so many words, and allies who already had paper claims on the same province. Wartime ' +
+          'calculation, including the hope of support from Jewish opinion in Russia and the United ' +
+          'States, is part of the cause and not the whole of it. Longer currents of Christian ' +
+          'restorationism and of Jewish political organisation sit underneath the week of the decision.',
+        what: 'The text is stable, which is rare on this timeline, because Yale prints the letter and ' +
+          'Britannica and the Imperial War Museum describe the same document of 2 November 1917. The ' +
+          'unstable part is the noun phrase national home, which the letter does not define, and the ' +
+          'reservation, which names non-Jewish communities in Palestine and Jews outside it without ' +
+          'saying how a conflict of rights would be judged. Britannica’s own warning, that the meaning is ' +
+          'disputed and that the letter contradicts Sykes-Picot and Hussein-McMahon, is the scholarly ' +
+          'position this card follows. It does not resolve the contradiction.',
+        consequence: 'From the day it was published the declaration was both a diplomatic instrument and a document ' +
+          'people organised around. Histories that treat it as the origin of the mandate, and histories ' +
+          'that treat it as one wartime promise among three inconsistent ones, are arguing about weight, ' +
+          'not about authenticity. This timeline already records Sykes-Picot and names the ' +
+          'Hussein-McMahon letters. The letter of 2 November is recorded here as itself, so that those ' +
+          'cards no longer have to carry it in a clause. The conquest of Jerusalem later in the year is a ' +
+          'military event and is not retold.',
+      },
     },
   },
   {
@@ -608,17 +1191,34 @@ export const EVENTS_1917: WW1Event[] = [
     levels: {
       primary:
         {
-          cause: 'Eight months after the tsar fell, Russia had a weak provisional government, a war nobody wanted to fight, and landless peasants taking landlords’ fields by themselves. In September the Bolsheviks won majorities in the soviets, the elected councils of workers and soldiers, and their leader Lenin urged them to seize power at once.',
+          cause: 'Eight months after the tsar fell, Russia had a weak provisional government, a war nobody ' +
+            'wanted, and landless peasants taking landlords’ fields. In September the Bolsheviks won ' +
+            'majorities in the soviets, councils of workers and soldiers, and their leader Lenin urged ' +
+            'them to seize power.',
           what: 'In Petrograd on 6 and 7 November the Bolsheviks took the bridges, telephones, banks and ' +
             'railways with almost no fighting. The provisional government, alone in the Winter Palace, ' +
             'fell. A congress of soviets approved the takeover and promised peace and land.',
-          consequence: 'Russia was now ruled by a government that claimed to answer to the soviets and promised to end the war. It agreed to a truce with Germany in December, gave up vast territory in March 1918, and set about building a state that rested on one party. The other socialist parties, and many workers and peasants, at first accepted it; a long civil war followed.',
+          consequence: 'A government promising the soviets peace ruled Russia. It agreed a truce with Germany in ' +
+            'December, gave up vast territory in March 1918, and built a one-party state. Other ' +
+            'socialists, with many workers and peasants, accepted it at first. A long civil war followed.',
         },
       secondary:
         {
-          cause: 'The provisional government had kept Russia in the war, had postponed elections for a constituent assembly, and had postponed land reform, while the economy and the army broke down. The Bolsheviks had been small and driven underground in July, but by September they had majorities in the Petrograd and Moscow soviets because they were the only party openly against the war, and their message — peace, land, and “all power to the soviets” — now fitted what soldiers and workers wanted. Kerensky’s attempt to secure the capital by sending troops and closing Bolshevik newspapers on 6 November gave the party the alarm it needed to act.',
+          cause: 'The provisional government had kept Russia in the war, had postponed a constituent assembly ' +
+            'and land reform, while the economy and the army broke down. The Bolsheviks had been small ' +
+            'and driven underground in July, but by September they had majorities in the Petrograd and ' +
+            'Moscow soviets because they were the only party against the war, and their message — peace, ' +
+            'land, and “all power to the soviets” — now fitted what soldiers and workers wanted. ' +
+            'Kerensky’s attempt to secure the capital by sending troops and closing Bolshevik newspapers ' +
+            'on 6 November gave the party the alarm to act.',
           what: 'The actual takeover was carried out in two days by the Military Revolutionary Committee of the Petrograd soviet, chaired by Trotsky, using garrison units, sailors of the Kronstadt fleet and Red Guards, and it was almost bloodless: the streets were held by night and at 9:45 p.m. on 7 November the cruiser Aurora fired a blank shot from the harbour, the palace was entered after 10 p.m., and it was in Bolshevik hands by the early hours of 8 November. The Second Congress of Soviets, meeting in the Smolny institute, elected a Council of People’s Commissars with Lenin as chairman, and its first two decrees offered a democratic peace without annexations to all the belligerents and confiscated the estates of the landowners and the crown. Kerensky’s attempt to retake the city with Cossacks under General Krasnov failed at Pulkovo heights on 8 November.',
-          consequence: 'The Bolsheviks held power in the capital but were a minority in the country: in the elections for the constituent assembly held on 25 November the Bolsheviks won only 175 of 715 seats, and they dissolved the assembly by force after a single meeting in January 1918. Peace talks with Germany opened at Brest-Litovsk in December and the Bolsheviks were able to trade space for time; in Britain and France the seizure, together with the publication of the secret treaties, made revolution a central fear of Allied politics for the rest of the war, and the fear of a separate Russian peace was one reason the western allies pressed harder on their own armies in 1918.',
+          consequence: 'The Bolsheviks held the capital but were a minority in the country. In the ' +
+            'constituent-assembly elections of 25 November they won only 175 of 715 seats, and they ' +
+            'dissolved the assembly by force after one meeting in January 1918. Peace talks with Germany ' +
+            'opened at Brest-Litovsk in December, and they could trade space for time. In Britain and ' +
+            'France the seizure, and the publication of the secret treaties, made revolution a central ' +
+            'Allied fear for the rest of the war, and fear of a separate Russian peace pushed the western ' +
+            'allies harder in 1918.',
         },
       university:
         {
@@ -641,15 +1241,24 @@ export const EVENTS_1917: WW1Event[] = [
     levels: {
       primary:
         {
-          cause: 'The tanks first used on the Somme in September 1916 had been slow and few, and had broken down often. By late 1917 the British had hundreds of them, and the ground at Cambrai in northern France was flat, dry and unbroken by shell holes, so the tanks could cross it.',
+          cause: 'The tanks first used on the Somme in September 1916 were slow, few and unreliable. By late ' +
+            '1917 the British had hundreds of them, and the ground at Cambrai was flat, dry and unbroken ' +
+            'by shell holes, so the tanks could cross it.',
           what: 'On 20 November 1917 about 476 British tanks attacked at Cambrai. They crossed German ' +
             'trenches and crushed the wire. In six hours the British gained more ground than in three ' +
             'years. On 30 November the Germans counter-attacked and won much of it back.',
-          consequence: 'Cambrai showed that a surprise attack supported by many tanks could break a fortified trench system without a months-long bombardment, and it also showed that the breakthrough could not be exploited without mobile cavalry. Tanks had to wait for the next step: the combined attack of tanks, aircraft, artillery and infantry that the Allies made in 1918.',
+          consequence: 'Cambrai showed a surprise tank attack could break a trench system without a months-long ' +
+            'bombardment, and that the breakthrough could not be exploited without mobile cavalry. Tanks ' +
+            'had to wait for the next step: the 1918 attack by tanks, aircraft, artillery and infantry.',
         },
       secondary:
         {
-          cause: 'Field Marshal Haig wanted an attack at Cambrai to help the negotiations over a unified Allied command and to test a method that could be repeated cheaply in 1918; the plan was the work of the Tank Corps, especially its chief of staff, and was originally meant as a limited demonstration. The British massed about 378 tanks fit for action out of 476 engaged, over 1,000 guns and a large quantity of howitzers for a counter-battery shoot against German guns, and kept it secret by training crews at night and moving the tanks up the few miles from the assembly area under cover of dark. The German Sixth Army held the front with about 20 divisions, some of them worn, and its forward positions were thin, which the German defence doctrine of the time did not regard as dangerous.',
+          cause: 'Haig wanted an attack at Cambrai to help the talks on a unified Allied command and to test a ' +
+            'method for 1918. The Tank Corps, staff drew a plan first meant as a limited demonstration. ' +
+            'The British massed about 378 tanks fit to fight, of 476 engaged, over 1,000 guns for a ' +
+            'counter-battery shoot, and kept the secret by training at night and moving the tanks up in ' +
+            'the dark. The German Sixth Army held the front with about 20 divisions, some worn, on a thin ' +
+            'line its doctrine thought safe.',
           what: 'At 6:20 a.m. on 20 November, after a predicted-fire bombardment and a smoke screen, the tanks crossed no-man’s-land in lines, straddling trenches so that infantry could drop in behind them; the advance of five and a half miles on a front of six miles was the greatest gain of ground anywhere on the western front to that date. The plan failed at Bourlon wood on the northern flank, where no fresh troops were available, and the cavalry that poured through the gap arrived too late, while the Germans rushed in reserves from elsewhere on the front. On 30 November the Germans counter-attacked with storm troops and a short, intensive bombardment — the same methods as at Caporetto — and by 3 December had recovered most of the ground. British losses in the battle were about 44,000 men, of whom some 6,000 were captured; German losses were about 55,000.',
           consequence: 'Cambrai, together with Caporetto a month earlier, is usually taken as the end of the trench deadlock and the beginning of a mobile war. Both sides drew the same conclusion, that surprise, short bombardments, infiltration and combined arms worked, and both planned offensives for 1918 on that basis, with the Germans betting on breaking the western front before American manpower arrived, and the French and British with a much larger tank programme. The German success in retaking the ground also fed the belief in the German army that the British army was nearly beaten.',
         },
@@ -673,15 +1282,26 @@ export const EVENTS_1917: WW1Event[] = [
     levels: {
       primary:
         {
-          cause: 'Finland had been a grand duchy of the Russian empire since 1809, with its own parliament, laws and language, and many Finns had accepted Russian rule because it protected those things. When the tsar fell in March 1917 the question opened up: how much power would Finland take for itself, and would Russia allow it at all?',
+          cause: 'Finland had been Russia’s grand duchy since 1809, with its parliament, laws and language, ' +
+            'and Finns accepted Russian rule because it protected them. When the tsar fell in March 1917 ' +
+            'the question was how much power Finland would take, and whether Russia would allow it.',
           what: 'The Finnish parliament passed a law to control its own affairs. Petrograd refused it and ' +
             'dissolved the parliament. New elections returned a right-wing government. On 4 December P. ' +
             'E. Svinhufvud read a declaration of independence; parliament adopted it on 6 December 1917.',
-          consequence: 'Recognition came first from Soviet Russia and then from the other powers, but independence had to be fought for: in January 1918 a civil war broke out between the white government’s troops and the red guards, and German troops landed to help the whites. The war left Finland independent but deeply divided, and tied to Germany until Germany itself collapsed in November 1918.',
+          consequence: 'Soviet Russia recognised it first, then others, but independence had to be fought for. In ' +
+            'January 1918 war began between Whites and Reds, and Germans landed to help the Whites. ' +
+            'Finland was left independent but divided, tied to Germany until Germany fell in November ' +
+            '1918.',
         },
       secondary:
         {
-          cause: 'The February revolution removed the tsar and with him the legal basis on which Finland’s autonomy rested, and Petrograd’s response was to try to limit Finnish self-rule, which pushed the Finnish right towards independence. Finland’s politics in 1917 were polarised between a right that feared both Russian Bolshevism and the local red guards, and a left that wanted social reform and had taken to the streets and the soviets; the right won the October elections. The October revolution changed everything again: Petrograd was no longer a government that Finns of either camp wanted to obey, and the Finnish senate sought recognition abroad, receiving it from Soviet Russia on 31 December.',
+          cause: 'The February revolution removed the tsar and the legal basis of Finland’s autonomy, and ' +
+            'Petrograd tried to limit Finnish self-rule, pushing the Finnish right towards independence. ' +
+            'Finland’s politics in 1917 were polarised between a right that feared both Russian ' +
+            'Bolshevism and the local red guards, and a left that wanted social reform and had taken to ' +
+            'the streets and the soviets; the right won the October elections. The October revolution ' +
+            'changed everything: Petrograd was no longer a government either camp would obey, and the ' +
+            'Finnish senate sought recognition abroad, receiving it from Soviet Russia on 31 December.',
           what: 'Parliament had declared Finland sovereign in July 1917 with the Power Act, which the provisional government refused to confirm, and in August dissolved itself and called new elections. The parliament had tried to create a three-man regency, which the socialists blocked, and on 15 November it took to itself the sovereign powers that had belonged to the tsar. Svinhufvud’s senate drafted the declaration, read it to parliament on 4 December and had it adopted on 6 December; Soviet Russia issued a decree recognising Finnish independence on 31 December. German influence was decisive in the months that followed: a German Baltic Sea Division, 10,000 strong, landed in early April 1918 and took Helsinki and Lahti, and the whites had won the civil war by early May. There was even a plan to make Finland a monarchy under a German prince, which collapsed with Germany’s own defeat in November 1918.',
           consequence: 'Finland’s independence settled the Baltic side of the front in the north. The Finnish example was one more sign that the Russian empire was dissolving into separate states, and the civil war left a division between reds and whites that shaped Finnish politics for twenty years: about 38,000 people died in it, and some 12,500 red prisoners died of hunger and disease in the camps. The Finno-Russian Treaty of Tartu, signed on 14 October 1920, was meant to settle the frontier that the Soviet Union tried to reopen in 1939.',
         },
@@ -707,14 +1327,29 @@ export const EVENTS_1917: WW1Event[] = [
       primary:
         {
           cause: 'The new Bolshevik government in Petrograd had come to power promising to end the war, and in early December it asked all the armies fighting on the eastern front to stop. The western allies refused to join the talks; Germany and its partners accepted.',
-          what: 'A thirty-day truce on the eastern front was signed at the fortress of Brest-Litovsk on 15 December 1917 and came into force two days later along the whole front from the Baltic to the Black Sea. Soldiers on both sides, who had been dying in trenches for three and a half years, met each other, exchanged cigarettes and food, and in many places simply stopped firing. Peace talks began there a week later, with delegations from the four empires on one side and Soviet Russia on the other.',
-          consequence: 'The fighting in the east ended, and Germany was able to move dozens of divisions to the west for the spring of 1918. The peace that Russia was forced to sign in March 1918 took away Poland, the Baltic lands, Ukraine, Finland and the Caucasus frontier, and Russia withdrew from the war as a defeated power.',
+          what: 'A thirty-day truce, signed at Brest-Litovsk on 15 December 1917, began two days later from ' +
+            'the Baltic to the Black Sea. After three and a half years, soldiers met and often stopped ' +
+            'firing. Talks opened a week later between the four empires and Soviet Russia.',
+          consequence: 'Fighting in the east ended, and Germany moved dozens of divisions to the west for spring ' +
+            '1918. The peace that Russia was forced to sign in March 1918 took away Poland, the Baltic, ' +
+            'Ukraine, Finland and the Caucasus frontier, and Russia left the war defeated.',
         },
       secondary:
         {
           cause: 'The Bolsheviks needed peace to survive: the army was disintegrating, hundreds of thousands of soldiers were deserting, the front was held only by units that no longer obeyed their officers, and the government’s authority rested on the promise of peace and land. Germany accepted a truce because it wanted grain, food and raw materials from Ukraine and Russia and needed the eastern front quiet before the Americans arrived in France, and because the German high command hoped a Russian collapse could be turned into a peace of annexation.',
-          what: 'The armistice convention, signed at Brest-Litovsk on 15 December, ran for thirty days, renewable, and gave each side the right to move troops in its own rear areas — a clause the Germans used at once to bring divisions west. Talks opened there on 22 December, with the Soviet delegation initially led by Adolf Joffe and, from late December, by Trotsky; the Central Powers’ side was organised by General Max Hoffmann, chief of staff of their forces on the eastern front, with the German politician Richard von Kühlmann among its leading figures. The Russian offer of a peace without annexations or indemnities, made to the whole world, was rejected by Berlin, and in February the delegation walked out, hoping to delay until a revolution broke out in Germany; on 18 February the German offensive resumed.',
-          consequence: 'The truce bought the Bolsheviks the breathing space they had asked for, at the cost of a German-dominated peace. The treaty signed on 3 March 1918 took from Russia 34 per cent of its population, 54 per cent of its industrial land, 89 per cent of its coalfields and 26 per cent of its railways; more than a million German soldiers then lay idle from Poland almost to the Caspian Sea, and the grain and coal that Germany had counted on from Ukraine did not arrive. For the western allies the armistice was a shock and a grievance, and a reason to distrust Moscow for the rest of the war and beyond; for the soldiers on the eastern front it was the end of the war, three and a half years before the rest of Europe.',
+          what: 'The armistice, signed at Brest-Litovsk on 15 December, ran for thirty days and let each side ' +
+            'move troops behind the line, a clause the Germans used at once to send divisions west. Talks ' +
+            'opened on 22 December. The Soviet delegation was led first by Adolf Joffe and, from late ' +
+            'December, by Trotsky. The Central Powers’ side was run by General Max Hoffmann, its ' +
+            'eastern-front chief of staff, with Richard von Kühlmann. Berlin rejected a peace without ' +
+            'annexations or indemnities. In February the delegation walked out, hoping Germany would ' +
+            'revolt, and on 18 February the German offensive resumed.',
+          consequence: 'The truce gave the Bolsheviks their pause, at the cost of a German-dominated peace. The ' +
+            'treaty of 3 March 1918 took from Russia 34 per cent of its population, 54 of its industrial ' +
+            'land, 89 of its coalfields and 26 of its railways. Over a million German soldiers lay from ' +
+            'Poland to the Caspian, and the expected Ukrainian grain and coal did not arrive. For the ' +
+            'western allies the armistice was a shock and a reason to distrust Moscow for the rest of the ' +
+            'war. In the east, the fighting ended.',
         },
       university:
         {
@@ -737,17 +1372,32 @@ export const EVENTS_1917: WW1Event[] = [
     levels: {
       primary:
         {
-          cause: 'The British army had been attacking above the Belgian city of Ypres since July, to take the high ground east of it and reach the Belgian coast. By October the divisions in the line were worn out, the rain had flooded the fields again, and the commander in Flanders asked for the Canadian Corps, which was rested, to finish the job.',
+          cause: 'The British had attacked above Ypres since July, to take the ridge east of the city and ' +
+            'reach the coast. By October the divisions were worn out, rain had flooded the fields again, ' +
+            'and Flanders asked the rested Canadian Corps to finish the job.',
           what: 'Canadian troops attacked on 26 and 30 October, and again on 6 November 1917. That day they ' +
             'took Passchendaele, on the ridge above the marshes around Ypres. After a short, heavy ' +
             'bombardment, infantry went forward in small groups through water-filled shell craters.',
-          consequence: 'The ridge had been taken, and the offensive was then called off. The Italian army had broken at Caporetto two weeks earlier, and divisions were needed in Italy and for a new attack at Cambrai, so there were no troops left to attack with. All of this ground was lost again when the Germans attacked in April 1918.',
+          consequence: 'The ridge was taken, and the offensive was called off. The Italians had broken at Caporetto ' +
+            'two weeks earlier, and divisions were needed in Italy and at Cambrai, so no troops were ' +
+            'left. The ground was lost again when the Germans attacked in April 1918.',
         },
       secondary:
         {
           cause: 'The Passchendaele ridge commanded the flooded ground of Flanders and threatened the railway junction at Roulers, five miles to the east, which supplied the German Fourth Army. By late October the Anzac and British corps in the line had spent themselves in the fighting of September and early October, so General Currie’s Canadian Corps was brought back from the Arras front: it was the only formation in Flanders with rested, trained infantry and communications that still worked in mud.',
-          what: 'The Canadians attacked on a narrow front on 26 and 30 October, taking the spurs south of the summit, and on 6 November took the village and the ridge itself, with the final objectives cleared on 10 November. The attack was carefully prepared: guns were registered by sound ranging and aerial photography rather than by trying them out in front of the enemy, infantry practised crossing the ground they would have to cross, and the bombardment was heavy but short, so that the element of surprise was partly kept. The Canadian Corps lost 15,654 men in the fortnight of the fighting, and the British formations engaged alongside it lost a good deal more. The advance stopped just short of the Westrozebeke position, the next German line to the east.',
-          consequence: 'Third Ypres was over, and the reason was manpower rather than weather. Five British divisions were sent to Italy after Caporetto and four were held back for Byng’s attack at Cambrai on 20 November, which left nothing for a continuation. Wynne, writing in 1948 in the British official history of the campaign, judged that the first German defensive zone had been taken, that the second and third had not, that the coast had never been seriously threatened, and that the campaign had nevertheless forced the German army to fight and be worn down in Flanders where the attacker chose the ground. The ground won at such cost was overrun by the Germans on 10 April 1918.',
+          what: 'The Canadians attacked on 26 and 30 October, taking the southern spurs, and on 6 November ' +
+            'took the village and the ridge, the last objectives cleared on 10 November. Guns were ' +
+            'registered by sound ranging and aerial photographs, not by shots in the enemy’s view. ' +
+            'Infantry practised the ground they would cross, and the bombardment was heavy but short, so ' +
+            'some surprise remained. The Canadian Corps lost 15,654 men in the fortnight, and the British ' +
+            'formations beside it lost more. The advance stopped just short of the Westrozebeke position, ' +
+            'the next German line to the east.',
+          consequence: 'Third Ypres ended for lack of men, not weather. Five British divisions went to Italy after ' +
+            'Caporetto and four were held for Byng’s attack at Cambrai on 20 November, leaving nothing to ' +
+            'continue with. Wynne’s 1948 British official history judged the first German zone taken, the ' +
+            'second and third not, the coast never seriously threatened, and the campaign still forcing ' +
+            'the German army to be worn down in Flanders on ground the attacker chose. The ground won at ' +
+            'such cost was overrun on 10 April 1918.',
         },
       university:
         {
@@ -770,15 +1420,39 @@ export const EVENTS_1917: WW1Event[] = [
     levels: {
       primary:
         {
-          cause: 'The United States had been at war with Germany since April 1917, but not with Germany’s allies. Austria-Hungary was Germany’s partner, had broken off relations with the American government, and had let its submarines attack merchant ships, which America had said was a reason to fight.',
-          what: 'On 7 December 1917 Congress declared that a state of war existed between the United States and Austria-Hungary. The Senate voted 74 to 0 and the House 365 to 1. The one member of the House who voted against was Meyer London, a Socialist elected in New York.',
-          consequence: 'America was now at war with two of the four central powers, but only in name. It raised no army to fight Austria-Hungary, and it never declared war on Bulgaria or the Ottoman Empire, though Wilson had drafted a message covering them as well. The declaration gave the United States a claim to a place at the peace conference.',
+          cause: 'The United States had been at war with Germany since April 1917, but not with Germany’s ' +
+            'allies. Austria-Hungary was Germany’s partner, had broken off relations with the American ' +
+            'government, and had let its submarines attack merchant ships, which America had called a ' +
+            'reason to fight.',
+          what: 'On 7 December 1917 Congress declared a state of war between the United States and ' +
+            'Austria-Hungary. The Senate voted 74 to 0 and the House 365 to 1. The one member of the ' +
+            'House who voted against was Meyer London, a Socialist from New York.',
+          consequence: 'America was at war with two central powers, but only in name. It sent no army against ' +
+            'Austria-Hungary, and never declared war on Bulgaria or the Ottoman Empire, though Wilson had ' +
+            'drafted a message covering them. This gave America a place at the peace conference.',
         },
       secondary:
         {
-          cause: 'Washington had gone to war against Germany in April 1917 after Germany resumed unrestricted submarine warfare, and had deliberately left Germany’s partners alone, on the argument that the quarrel was with a German policy and not with the German people. By December that position was hard to hold: Austria-Hungary had severed diplomatic relations with the United States, its submarines had been at work in the Mediterranean, it had answered no American attempt to discover its war aims, and it had bound itself still closer to Berlin. Henry Cabot Lodge and Theodore Roosevelt had argued all year for war on every one of Germany’s allies, so that none of them could be negotiated out of the war separately.',
-          what: 'Wilson asked Congress for the declaration in a message sent in the first days of December 1917, and the joint resolution was passed on 7 December, declaring that a state of war existed between the government and people of the United States and the government and people of Austria-Hungary from the date of the resolution. The grounds were the severing of relations, submarine warfare against merchant shipping, and the alliance with Germany. The votes were 74 to 0 and 365 to 1, with Meyer London, a Socialist from New York, the single dissentient; Wilson’s stated object was a settlement in which no people would be left subject to a government they had not chosen.',
-          consequence: 'The declaration mattered more for the peace than for the fighting. No American army was raised against Austria-Hungary, and American troops reached the Italian front only in small numbers and late, though American planners expected after Caporetto that they might have to send a force to Italy, and that expectation is one reason the message came when it did. Because the United States never declared war on Bulgaria or the Ottoman Empire, its government entered 1918 at war with two of the four enemy powers and at peace with the other two, which left its diplomats freer to act in south-eastern Europe than is often assumed, and left the postwar settlement there uneven as a result.',
+          cause: 'Washington went to war with Germany in April 1917 after it resumed unrestricted submarine ' +
+            'warfare, and deliberately left Germany’s partners alone, arguing the quarrel was with German ' +
+            'policy, not the German people. By December that line was hard to hold. Austria-Hungary had ' +
+            'broken relations with the United States, its submarines had worked in the Mediterranean, it ' +
+            'had not stated its war aims, and it had bound itself closer to Berlin. Henry Cabot Lodge and ' +
+            'Theodore Roosevelt had argued all year for war on all of Germany’s allies, so none could be ' +
+            'negotiated out separately.',
+          what: 'Wilson asked Congress for the declaration in a message of early December 1917, and the joint ' +
+            'resolution passed on 7 December, declaring a state of war between the United States and ' +
+            'Austria-Hungary from that date. The grounds were broken relations, submarine warfare against ' +
+            'merchant shipping, and the German alliance. The votes were 74 to 0 and 365 to 1; Meyer ' +
+            'London, a New York Socialist, was the only dissentient. Wilson’s object was a settlement in ' +
+            'which no people were left under a government they had not chosen.',
+          consequence: 'The declaration mattered more for the peace than the fighting. No American army was raised ' +
+            'against Austria-Hungary, and few American troops reached the Italian front, and late. After ' +
+            'Caporetto, planners expected they might have to send a force to Italy, which is one reason ' +
+            'the message came then. Because America never declared war on Bulgaria or the Ottoman Empire, ' +
+            'it entered 1918 at war with two of the four enemy powers and at peace with the other two, ' +
+            'which left its diplomats freer in south-eastern Europe than often assumed, and left the ' +
+            'postwar settlement there uneven.',
         },
       university:
         {
@@ -855,19 +1529,32 @@ export const EVENTS_1917: WW1Event[] = [
     note: 'The Selective Service Act of 18 May 1917 authorised the president to draft men into the army after the United States entered the war in April; local boards registered and exempted men under a system that was controversial but produced the force deployed in France in 1918. Conscription also became a rallying point for opponents of the war, who argued that a republic should not force citizens to fight overseas.',
     levels: {
       primary: {
-        cause: 'The United States had entered the war but had only a small standing army.',
-        what: 'In May 1917 Congress passed a law allowing the government to call up men for military service.',
-        consequence: 'Millions of men were registered and hundreds of thousands were sent to France in 1918.',
+        cause: 'The United States had entered the war but had only a small standing army to send across the ' +
+          'sea to France.',
+        what: 'In May 1917 Congress passed a law allowing the government to call up men and ship them from ' +
+          'the United States to France.',
+        consequence: 'Millions of men were registered and hundreds of thousands were sent across the sea to France ' +
+          'in 1918.',
       },
       secondary: {
-        cause: 'Volunteering alone could not raise the army needed to send a substantial force to Europe quickly.',
-        what: 'The act required male citizens to register, and local boards decided who would serve and who would be exempted on grounds such as occupation, health or conscience.',
-        consequence: 'The draft produced the army that fought at Cantigny, the Marne and the Meuse-Argonne, and it gave the American expeditionary force a weight Germany could not ignore.',
+        cause: 'Volunteering alone could not raise the army needed to send a substantial force from the United ' +
+          'States to Europe quickly.',
+        what: 'The act required male citizens to register, and local boards decided who would serve and who ' +
+          'would be exempted on grounds such as occupation, health or conscience. Those called up were ' +
+          'the men shipped overseas.',
+        consequence: 'The draft produced the army that fought at Cantigny, the Marne and the Meuse-Argonne after the ' +
+          'crossing from the United States, and it gave the American expeditionary force a weight Germany ' +
+          'could not ignore.',
       },
       university: {
-        cause: 'The act settled a long American argument about whether a citizen army could be raised by compulsion in a war declared to defend liberty.',
-        what: 'Local administration made the system acceptable to many communities but also produced unequal treatment, particularly of Black Americans and of men with fewer resources to claim exemptions.',
-        consequence: 'The speed of American mobilisation changed the strategic balance in 1918; the political argument it created did not end with the war, and conscription returned only with the draft of 1940.',
+        cause: 'The act settled a long American argument about whether a citizen army could be raised by ' +
+          'compulsion in a war declared to defend liberty, and then sent across the sea.',
+        what: 'Local administration made the system acceptable to many communities but also produced unequal ' +
+          'treatment, particularly of Black Americans and of men with fewer resources to claim ' +
+          'exemptions, inside the army raised for service overseas.',
+        consequence: 'The speed of American mobilisation changed the strategic balance in 1918, once an army raised ' +
+          'in the United States could reach France. The political argument it created did not end with ' +
+          'the war, and conscription returned only with the draft of 1940.',
       },
     },
   },

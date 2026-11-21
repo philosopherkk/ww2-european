@@ -149,7 +149,15 @@ export const FIGURES_SOUTH: HistoricalFigure[] = [
     bio: {
       primary: 'Averescu was the Romanian general most famous from the war. Peasants remembered him as the soldier who gave them land.',
       secondary: 'He had crushed the peasant rising of 1907 and had been war minister and chief of the general staff, making him the senior soldier available in August 1916. He commanded the Second Army at the start, was moved to the Third after its defeat at Turtucaia, and returned to the Second for the attack at Mărăști in August 1917, part of the resistance that kept Moldavia in Romanian hands. In 1918 the king made him prime minister; he refused Mackensen’s terms and left office when the Marghiloman cabinet signed the Treaty of Bucharest in May 1918.',
-      university: 'His military reputation is contested in a way his political one is not: his own officers rated the Mărăști breakthrough highly and credited him with the defence of Moldavia, while military historians point out that Romanian armies of some 500,000 men, with perhaps 100,000 Russian reinforcements, were beaten by a Central Powers army of 910,000. The political reading is better documented, since most of the army were peasants who had been promised land and attached that promise to his name, and contemporaries describe a popularity close to the mystical, with officers plotting in 1919 to make him dictator in a coup he is said to have refused out of loyalty to the crown. He is therefore useful to both arguments, over whether the entry of 1916 was worth its price and over how land reform and the soldiers’ vote created mass politics.',
+      university: 'His military reputation is contested in a way his political one is not: his own officers rated ' +
+        'the Mărăști breakthrough highly and credited him with the defence of Moldavia, while military ' +
+        'historians point out that Romanian armies of some 500,000 men, with perhaps 100,000 Russian ' +
+        'reinforcements, were beaten by a Central Powers army of 910,000. The political reading is better ' +
+        'documented, since most of the army were peasants who had been promised land and attached that ' +
+        'promise to his name, and contemporaries describe a popularity near the mystical, with officers ' +
+        'plotting in 1919 to make him dictator in a coup he is said to have refused from loyalty to the ' +
+        'crown. He is useful to both arguments, over whether the entry of 1916 was worth its price and ' +
+        'over how land reform and the soldiers’ vote created mass politics.',
     },
   },
   {
@@ -200,7 +208,13 @@ export const FIGURES_SOUTH: HistoricalFigure[] = [
     bloc: 'co_belligerent',
     bio: {
       primary: 'Wilson was the American president during the war. The United States stayed out until April 1917, then fought with the Allies, and his own senators rejected the league of nations he proposed.',
-      secondary: 'He was re-elected in 1916, defeating Charles Evans Hughes. German submarine warfare ended his neutrality: the Lusitania went down in May 1915 with 1,198 dead, including 128 Americans, unrestricted sinking resumed in January 1917, and the Zimmermann Telegram proposed a Mexican war against the United States. Congress declared war on 6 April 1917; his aims were the Fourteen Points of 8 January 1918, on which Prince Max of Baden asked for an armistice, and he took the League of Nations into the Treaty of Versailles, but ratification needed two-thirds of the Senate, where Lodge led the opposition.',
+      secondary: 'He was re-elected in 1916, defeating Charles Evans Hughes. German submarine warfare ended his ' +
+        'neutrality: the Lusitania went down in May 1915 with 1,198 dead, including 128 Americans, ' +
+        'unrestricted sinking resumed in January 1917, and the Zimmermann Telegram proposed a Mexican war ' +
+        'against the United States. Congress declared war on 6 April 1917; his aims were the Fourteen ' +
+        'Points of 8 January 1918, on which Prince Max of Baden asked for an armistice, and he took the ' +
+        'League of Nations into the Treaty of Versailles, but ratification needed two-thirds of the ' +
+        'Senate, where Lodge opposed it.',
       university: 'His war aims are the most contested part of his record: his Allied colleagues, Clemenceau, Lloyd George and Orlando, were sceptical of the applicability of the Fourteen Points, each having commitments of his own, while the German request for an armistice on that basis and the French and Italian acceptance of 1 November are the strongest evidence for the case that the peace was built on a promise Paris then broke. Against that, the Points were a statement of aims rather than a negotiated programme, clauses were bargained away at Paris, and the secret treaties of 1915 and 1916 promised territory Wilson had no power to annul. The domestic argument is harsher: Lodge was close to carrying the treaty with ten reservations, and Wilson forced a negative vote on 19 March 1920, so the usual verdict is that he destroyed the settlement himself.',
     },
   },
@@ -212,8 +226,16 @@ export const FIGURES_SOUTH: HistoricalFigure[] = [
     country: 'United States',
     bloc: 'co_belligerent',
     bio: {
-      primary: 'Pershing commanded the American army in France. He insisted that American soldiers should fight in an army of their own rather than as replacements inside British and French units.',
-      secondary: 'He was appointed to command the American Expeditionary Forces in May 1917, after the sudden death of Frederick Funston, and the first troops landed in June 1917. When the German Spring Offensive began he offered Pétain and then Foch every available American division, though he kept the AEF a separate army. He took Saint-Mihiel in September 1918 and fought the Meuse–Argonne offensive from 26 September to 11 November, 47 days in which 1.2 million American and 800,000 French troops attacked prepared positions at a cost of more than 300,000 casualties, including 26,277 American deaths.',
+      primary: 'Pershing commanded the American army brought from the United States to France. He insisted that ' +
+        'American soldiers should fight in an army of their own rather than as replacements inside ' +
+        'British and French units.',
+      secondary: 'He was appointed to command the American Expeditionary Forces in May 1917, after the sudden ' +
+        'death of Frederick Funston, and the first troops landed in June 1917. When the German Spring ' +
+        'Offensive began he offered Pétain and then Foch every available American division, though he ' +
+        'kept the AEF a separate army. He took Saint-Mihiel in September 1918 and fought the ' +
+        'Meuse–Argonne offensive from 26 September to 11 November, 47 days. 1.2 million American and ' +
+        '800,000 French troops attacked prepared positions at a cost of more than 300,000 casualties, ' +
+        'including 26,277 American deaths.',
       university: 'The case against him is about casualties and tactics: his own words admit that by late September 1918 the Americans were committed “to a direct frontal attack against strong, hostile positions fully manned by a determined enemy”, and the standard criticism is that he clung to costly frontal assault long after the British and French armies had learned to combine artillery, aircraft and infantry. His defenders answer that the Meuse–Argonne was chosen to relieve the railway line to Metz, that the ground was forest and ridges held by a determined enemy, and that a green army of 1.2 million men had to learn its trade in the only way open to it. His insistence on a separate American army preserved Wilson’s independent position at the peace conference, which many historians judge worth more than the divisions saved by amalgamation.',
     },
   },

@@ -11,6 +11,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Начальник штаба Верховного главнокомандующего генерал Алексеев.jpg",
     "artist": "",
     "licence": "Public domain",
+    "when": "1915-10-02",
     "credit": "Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA_%D1%88%D1%82%D0%B0%D0%B1%D0%B0_%D0%92%D0%B5%D1%80%D1%85%D0%BE%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE_%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%83%D1%8E%D1%89%D0%B5%D0%B3%D0%BE_%D0%B3%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D0%BB_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B5%D0%B2.jpg"
   },
@@ -20,6 +21,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "AlejandroIDeSerbiaEn1900.jpg",
     "artist": "Mijatovic, Cedomilj, 1842-1932",
     "licence": "Public domain",
+    "when": "1900",
     "credit": "Mijatovic, Cedomilj, 1842-1932, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:AlejandroIDeSerbiaEn1900.jpg"
   },
@@ -29,6 +31,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Herbert Henry Asquith.jpg",
     "artist": "Bain News Service",
     "licence": "Public domain",
+    "when": "Unknown date",
     "credit": "Bain News Service, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Herbert_Henry_Asquith.jpg"
   },
@@ -38,6 +41,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Le général Averescu, commandant du 1er corps d'armée roumain (cleanup).jpg",
     "artist": "Agence Rol",
     "licence": "Public domain",
+    "when": "2022-06-21 22:35",
     "credit": "Agence Rol, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Le_g%C3%A9n%C3%A9ral_Averescu,_commandant_du_1er_corps_d%27arm%C3%A9e_roumain_(cleanup).jpg"
   },
@@ -47,6 +51,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Theobald von Bethmann Hollweg(cropped).jpg",
     "artist": "Image originally uploaded to Wikimedia commons by Lucius Castus; cropped and reuploaded by Emiya1980",
     "licence": "CC BY-SA 3.0",
+    "when": "1914",
     "credit": "Image originally uploaded to Wikimedia commons by Lucius Castus; cropped and reuploaded by Emiya1980, CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Theobald_von_Bethmann_Hollweg(cropped).jpg"
   },
@@ -54,9 +59,10 @@ export const PORTRAITS: Record<string, Portrait> = {
     "id": "boroevic",
     "src": "/data/portraits/boroevic.jpg",
     "file": "Svetozar Boroëvić von Bojna 1914.jpg",
-    "artist": "George Grantham Bain Collection (Library of Congress",
+    "artist": "George Grantham Bain Collection (Library of Congress)",
     "licence": "Public domain",
-    "credit": "George Grantham Bain Collection (Library of Congress, Public domain",
+    "when": "before 1913",
+    "credit": "George Grantham Bain Collection (Library of Congress), Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Svetozar_Boro%C3%ABvi%C4%87_von_Bojna_1914.jpg"
   },
   "bratianu_ion": {
@@ -65,7 +71,8 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "IonelBratianu3b40761r.jpg",
     "artist": "Harris & Ewing Collection",
     "licence": "Public domain",
-    "credit": "Harris & Ewing Collection, Public domain",
+    "when": "circa 1919",
+    "credit": "Harris & Ewing Collection, Public domain — photographed circa 1919",
     "page": "https://commons.wikimedia.org/wiki/File:IonelBratianu3b40761r.jpg"
   },
   "briand": {
@@ -74,6 +81,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Aristide Briand.png",
     "artist": "",
     "licence": "Public domain",
+    "when": "1920s",
     "credit": "Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Aristide_Briand.png"
   },
@@ -83,6 +91,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Aleksei Brusilov at Rivne Railway Station (October 1915).jpg",
     "artist": "",
     "licence": "Public domain",
+    "when": "1915-10",
     "credit": "Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Aleksei_Brusilov_at_Rivne_Railway_Station_(October_1915).jpg"
   },
@@ -92,6 +101,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Luigi Cadorna 02.jpg",
     "artist": "",
     "licence": "Public domain",
+    "when": "1917",
     "credit": "Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Luigi_Cadorna_02.jpg"
   },
@@ -99,9 +109,10 @@ export const PORTRAITS: Record<string, Portrait> = {
     "id": "cavell",
     "src": "/data/portraits/cavell.jpg",
     "file": "Edith Cavell.jpg",
-    "artist": "The original uploader was Vivedatica at Dutch Wikipedia.",
+    "artist": "",
     "licence": "Public domain",
-    "credit": "The original uploader was Vivedatica at Dutch Wikipedia., Public domain",
+    "when": "5 January 2006 (original upload date)",
+    "credit": "Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Edith_Cavell.jpg"
   },
   "clemenceau": {
@@ -110,6 +121,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Georges Clemenceau par Nadar.jpg",
     "artist": "Paul Nadar",
     "licence": "Public domain",
+    "when": "1904",
     "credit": "Paul Nadar, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Georges_Clemenceau_par_Nadar.jpg"
   },
@@ -119,6 +131,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "HOTZENDORF, GEN. CONRAD VON. GENERAL STAFF, GERMANY (cropped).jpg",
     "artist": "Harris & Ewing Collection",
     "licence": "Public domain",
+    "when": "1914",
     "credit": "Harris & Ewing Collection, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:HOTZENDORF,_GEN._CONRAD_VON._GENERAL_STAFF,_GERMANY_(cropped).jpg"
   },
@@ -128,6 +141,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Constantine I of Greece in 1914.jpg",
     "artist": "Harris & Ewing Collection",
     "licence": "Public domain",
+    "when": "1914",
     "credit": "Harris & Ewing Collection, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Constantine_I_of_Greece_in_1914.jpg"
   },
@@ -137,6 +151,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Armando Diaz 01.jpg",
     "artist": "Mario Nunes Vais",
     "licence": "Public domain",
+    "when": "before 1929",
     "credit": "Mario Nunes Vais, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Armando_Diaz_01.jpg"
   },
@@ -144,9 +159,10 @@ export const PORTRAITS: Record<string, Portrait> = {
     "id": "djemal_pasha",
     "src": "/data/portraits/djemal_pasha.jpg",
     "file": "Ahmet Cemal Paşa on the shore of the Dead Sea2.jpg",
-    "artist": "American Colony (Jerusalem). Photo Department, photographer",
+    "artist": "American Colony (Jerusalem). Photo Department",
     "licence": "Public domain",
-    "credit": "American Colony (Jerusalem). Photo Department, photographer, Public domain",
+    "when": "1915-05-03",
+    "credit": "American Colony (Jerusalem). Photo Department, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Ahmet_Cemal_Pa%C5%9Fa_on_the_shore_of_the_Dead_Sea2.jpg"
   },
   "enver_pasha": {
@@ -155,6 +171,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Enver Pasha 1911 (cropped).jpg",
     "artist": "Nicola Perscheid",
     "licence": "Public domain",
+    "when": "1911",
     "credit": "Nicola Perscheid, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Enver_Pasha_1911_(cropped).jpg"
   },
@@ -164,6 +181,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Erich von Falkenhayn-retouched (cropped)(2).jpg",
     "artist": "Albert Meyer",
     "licence": "Public domain",
+    "when": "1913",
     "credit": "Albert Meyer, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Erich_von_Falkenhayn-retouched_(cropped)(2).jpg"
   },
@@ -171,9 +189,10 @@ export const PORTRAITS: Record<string, Portrait> = {
     "id": "feisal",
     "src": "/data/portraits/feisal.jpg",
     "file": "Bundesarchiv Bild 102-14113, Faisal I. König des Irak.jpg",
-    "artist": "",
+    "artist": "Bundesarchiv, Bild 102-14113",
     "licence": "CC BY-SA 3.0 de",
-    "credit": "CC BY-SA 3.0 de",
+    "when": "1932",
+    "credit": "Bundesarchiv, Bild 102-14113, CC BY-SA 3.0 de — photographed 1932",
     "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_102-14113,_Faisal_I._K%C3%B6nig_des_Irak.jpg"
   },
   "ferdinand_bulgaria": {
@@ -182,6 +201,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Zar Ferdinand Bulgarien.jpg",
     "artist": "",
     "licence": "Public domain",
+    "when": "1912",
     "credit": "Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Zar_Ferdinand_Bulgarien.jpg"
   },
@@ -191,6 +211,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Maarschalk Ferdinand Foch (1851-1929), Bestanddeelnr 158-1095 (cropped).jpg",
     "artist": "Nationaal Archief",
     "licence": "CC0",
+    "when": "between 1914 and 1918",
     "credit": "Nationaal Archief, CC0",
     "page": "https://commons.wikimedia.org/wiki/File:Maarschalk_Ferdinand_Foch_(1851-1929),_Bestanddeelnr_158-1095_(cropped).jpg"
   },
@@ -200,6 +221,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Emperor Francis Joseph.jpg",
     "artist": "Bain News Service, publisher",
     "licence": "Public domain",
+    "when": "probably circa 1892",
     "credit": "Bain News Service, publisher, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Emperor_Francis_Joseph.jpg"
   },
@@ -209,6 +231,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Field Marshal Sir John French 2.jpg",
     "artist": "Hainer, Paris",
     "licence": "Public domain",
+    "when": "2013-02-08 14:19:53",
     "credit": "Hainer, Paris, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Field_Marshal_Sir_John_French_2.jpg"
   },
@@ -218,6 +241,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Gen. Gallieni LCCN2014697689 (cropped).jpg",
     "artist": "Bain News Service, publisher",
     "licence": "Public domain",
+    "when": "1910",
     "credit": "Bain News Service, publisher, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Gen._Gallieni_LCCN2014697689_(cropped).jpg"
   },
@@ -227,7 +251,8 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "King George 1923 LCCN2014715558 (cropped).jpg",
     "artist": "Bassano Ltd",
     "licence": "Public domain",
-    "credit": "Bassano Ltd, Public domain",
+    "when": "between 1922 and 1923",
+    "credit": "Bassano Ltd, Public domain — photographed 1922-23",
     "page": "https://commons.wikimedia.org/wiki/File:King_George_1923_LCCN2014715558_(cropped).jpg"
   },
   "gough": {
@@ -236,6 +261,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "The Battle of the Somme, July-November 1916 (IWM Q 35825D) (cropped).jpg",
     "artist": "British Official Photographer",
     "licence": "Public domain",
+    "when": "1916",
     "credit": "British Official Photographer, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:The_Battle_of_the_Somme,_July-November_1916_(IWM_Q_35825D)_(cropped).jpg"
   },
@@ -245,6 +271,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Portrait of Edward Grey, 1st Viscount Grey of Fallodon.jpg",
     "artist": "",
     "licence": "Public domain",
+    "when": "2013-10-14 23:56:13",
     "credit": "Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Portrait_of_Edward_Grey,_1st_Viscount_Grey_of_Fallodon.jpg"
   },
@@ -254,6 +281,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Sir Douglas Haig.jpg",
     "artist": "Elliott & Fry",
     "licence": "Public domain",
+    "when": "published 1917",
     "credit": "Elliott & Fry, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Sir_Douglas_Haig.jpg"
   },
@@ -261,9 +289,10 @@ export const PORTRAITS: Record<string, Portrait> = {
     "id": "hindenburg",
     "src": "/data/portraits/hindenburg.jpg",
     "file": "Bundesarchiv Bild 183-C06886, Paul v. Hindenburg (cropped)(2).jpg",
-    "artist": ".",
+    "artist": "Bundesarchiv, Bild 183-C06886",
     "licence": "CC BY-SA 3.0 de",
-    "credit": "., CC BY-SA 3.0 de",
+    "when": "between 1919 and 1928",
+    "credit": "Bundesarchiv, Bild 183-C06886, CC BY-SA 3.0 de — photographed 1919-28",
     "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-C06886,_Paul_v._Hindenburg_(cropped)(2).jpg"
   },
   "husayn_mecca": {
@@ -272,6 +301,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Hussein bin Ali, Sharif of Mecca.jpg",
     "artist": "",
     "licence": "Public domain",
+    "when": "early 20th century",
     "credit": "Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Hussein_bin_Ali,_Sharif_of_Mecca.jpg"
   },
@@ -281,6 +311,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Jean Jaurès, 1904, by Nadar.jpg",
     "artist": "Nadar",
     "licence": "Public domain",
+    "when": "circa 1904",
     "credit": "Nadar, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Jean_Jaur%C3%A8s,_1904,_by_Nadar.jpg"
   },
@@ -290,6 +321,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Portrait de Joseph Joffre (cropped)(b).jpg",
     "artist": "",
     "licence": "Public domain",
+    "when": "Before 1931",
     "credit": "Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Portrait_de_Joseph_Joffre_(cropped)(b).jpg"
   },
@@ -299,6 +331,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Karl I., Kaiser von Österreich (1887-1922).jpg",
     "artist": "Hermann Clemens Kosel",
     "licence": "Public domain",
+    "when": "1917",
     "credit": "Hermann Clemens Kosel, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Karl_I.,_Kaiser_von_%C3%96sterreich_(1887-1922).jpg"
   },
@@ -308,6 +341,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Alexander Kerensky 1917 Crop.jpg",
     "artist": "Karl Bulla",
     "licence": "Public domain",
+    "when": "1917",
     "credit": "Karl Bulla, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Alexander_Kerensky_1917_Crop.jpg"
   },
@@ -317,6 +351,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Horatio Herbert Kitchener, 1st Earl Kitchener of Khartoum, 1901.jpg",
     "artist": "Duffus Bros",
     "licence": "Public domain",
+    "when": "1901",
     "credit": "Duffus Bros, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Horatio_Herbert_Kitchener,_1st_Earl_Kitchener_of_Khartoum,_1901.jpg"
   },
@@ -326,6 +361,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Kornilov1916.jpeg",
     "artist": "",
     "licence": "Public domain",
+    "when": "1916",
     "credit": "Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Kornilov1916.jpeg"
   },
@@ -335,7 +371,8 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Richard von Kühlmann cph,3b32192.jpg",
     "artist": "Underwood & Underwood",
     "licence": "Public domain",
-    "credit": "Underwood & Underwood, Public domain",
+    "when": "1932-02-27",
+    "credit": "Underwood & Underwood, Public domain — photographed 1932",
     "page": "https://commons.wikimedia.org/wiki/File:Richard_von_K%C3%BChlmann_cph,3b32192.jpg"
   },
   "lawrence": {
@@ -344,7 +381,8 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Te lawrence.jpg",
     "artist": "Harris & Ewing",
     "licence": "Public domain",
-    "credit": "Harris & Ewing, Public domain",
+    "when": "1919 (Interwar)",
+    "credit": "Harris & Ewing, Public domain — photographed 1919",
     "page": "https://commons.wikimedia.org/wiki/File:Te_lawrence.jpg"
   },
   "lenin": {
@@ -353,7 +391,8 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Lenin in 1920 (cropped).jpg",
     "artist": "",
     "licence": "Public domain",
-    "credit": "Public domain",
+    "when": "1920-04",
+    "credit": "Public domain — photographed 1920",
     "page": "https://commons.wikimedia.org/wiki/File:Lenin_in_1920_(cropped).jpg"
   },
   "liebknecht_karl": {
@@ -362,6 +401,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Karl Liebknecht portrait (cropped).jpg",
     "artist": "",
     "licence": "Public domain",
+    "when": "before 1919",
     "credit": "Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Karl_Liebknecht_portrait_(cropped).jpg"
   },
@@ -369,9 +409,10 @@ export const PORTRAITS: Record<string, Portrait> = {
     "id": "liman_von_sanders",
     "src": "/data/portraits/liman_von_sanders.jpg",
     "file": "Otto Liman Von Sanders.jpg",
-    "artist": "Photo © by American Press Assn.",
+    "artist": "Photo © by American Press Assn",
     "licence": "Public domain",
-    "credit": "Photo © by American Press Assn., Public domain",
+    "when": "circa 1914",
+    "credit": "Photo © by American Press Assn, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Otto_Liman_Von_Sanders.jpg"
   },
   "loyd_george": {
@@ -380,16 +421,18 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "David Lloyd George.jpg",
     "artist": "Harris & Ewing",
     "licence": "Public domain",
-    "credit": "Harris & Ewing, Public domain",
+    "when": "Copyright 1919",
+    "credit": "Harris & Ewing, Public domain — photographed 1919",
     "page": "https://commons.wikimedia.org/wiki/File:David_Lloyd_George.jpg"
   },
   "luddendorff": {
     "id": "luddendorff",
     "src": "/data/portraits/luddendorff.jpg",
     "file": "Erich Ludendorff 1924 Portrait (3x4 cropped)(2)(b).jpg",
-    "artist": "",
+    "artist": "National Archives and Records Administration (US)",
     "licence": "CC BY-SA 4.0",
-    "credit": "CC BY-SA 4.0",
+    "when": "1924",
+    "credit": "National Archives and Records Administration (US), CC BY-SA 4.0 — photographed 1924",
     "page": "https://commons.wikimedia.org/wiki/File:Erich_Ludendorff_1924_Portrait_(3x4_cropped)(2)(b).jpg"
   },
   "luxemburg_rosa": {
@@ -398,6 +441,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Rosa Luxemburg (cropped).jpg",
     "artist": "",
     "licence": "Public domain",
+    "when": "Appears to be circa 1911 based on other photos and",
     "credit": "Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Rosa_Luxemburg_(cropped).jpg"
   },
@@ -407,7 +451,8 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Mannerheim1940.jpg",
     "artist": "sa-kuva",
     "licence": "Public domain",
-    "credit": "sa-kuva, Public domain",
+    "when": "1940",
+    "credit": "sa-kuva, Public domain — photographed 1940",
     "page": "https://commons.wikimedia.org/wiki/File:Mannerheim1940.jpg"
   },
   "mehmed_v": {
@@ -416,6 +461,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Sultan Muhammed Chan V., Kaiser der Osmanen 1915 C. Pietzner.jpg",
     "artist": "Carl Pietzner",
     "licence": "Public domain",
+    "when": "by June 1915",
     "credit": "Carl Pietzner, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Sultan_Muhammed_Chan_V.,_Kaiser_der_Osmanen_1915_C._Pietzner.jpg"
   },
@@ -425,6 +471,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Generalleutnant von Moltke, der neue Chef des Generalstabs, 1906 (cropped).jpg",
     "artist": "E. Bieber",
     "licence": "Public domain",
+    "when": "1906",
     "credit": "E. Bieber, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Generalleutnant_von_Moltke,_der_neue_Chef_des_Generalstabs,_1906_(cropped).jpg"
   },
@@ -432,9 +479,10 @@ export const PORTRAITS: Record<string, Portrait> = {
     "id": "mustafa_kemal",
     "src": "/data/portraits/mustafa_kemal.jpg",
     "file": "Alexander I of Yugoslavia and Mustafa Kemal in 1933.jpg",
-    "artist": ".",
+    "artist": "",
     "licence": "Public domain",
-    "credit": "., Public domain",
+    "when": "Photograph dates from early 1937.",
+    "credit": "Public domain — photographed 1937",
     "page": "https://commons.wikimedia.org/wiki/File:Alexander_I_of_Yugoslavia_and_Mustafa_Kemal_in_1933.jpg"
   },
   "nicholas_ii": {
@@ -443,6 +491,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Nicholas II, 1914.jpg",
     "artist": "Romanov court photographer",
     "licence": "Public domain",
+    "when": "2005-02-17 11:07:35",
     "credit": "Romanov court photographer, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Nicholas_II,_1914.jpg"
   },
@@ -452,6 +501,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Robert Georges Nivelle.jpg",
     "artist": "",
     "licence": "Public domain",
+    "when": "circa 1917",
     "credit": "Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Robert_Georges_Nivelle.jpg"
   },
@@ -461,6 +511,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "General John Joseph Pershing head on shoulders.jpg",
     "artist": "Bain News Service, publisher",
     "licence": "Public domain",
+    "when": "between 1907 and 1916",
     "credit": "Bain News Service, publisher, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:General_John_Joseph_Pershing_head_on_shoulders.jpg"
   },
@@ -470,7 +521,8 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Pétain - portrait photographique.jpg",
     "artist": "Imprimerie Draeger à Montrouge en région parisienne",
     "licence": "Public domain",
-    "credit": "Imprimerie Draeger à Montrouge en région parisienne, Public domain",
+    "when": "between circa 1941 and circa 1942",
+    "credit": "Imprimerie Draeger à Montrouge en région parisienne, Public domain — photographed circa 1941-42",
     "page": "https://commons.wikimedia.org/wiki/File:P%C3%A9tain_-_portrait_photographique.jpg"
   },
   "pilsudski_jozef": {
@@ -479,6 +531,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Józef Piłsudski (-1930).jpg",
     "artist": "",
     "licence": "Public domain",
+    "when": "before 1930",
     "credit": "Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:J%C3%B3zef_Pi%C5%82sudski_(-1930).jpg"
   },
@@ -488,6 +541,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Raymond Poincaré officiel (cropped).jpg",
     "artist": "Braun",
     "licence": "Public domain",
+    "when": "1913",
     "credit": "Braun, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Raymond_Poincar%C3%A9_officiel_(cropped).jpg"
   },
@@ -497,6 +551,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Potiorek oskar fzm 1853 1933 photo2.jpg",
     "artist": "Carl Pietzner",
     "licence": "Public domain",
+    "when": "Photo made in 1914.",
     "credit": "Carl Pietzner, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Potiorek_oskar_fzm_1853_1933_photo2.jpg"
   },
@@ -506,6 +561,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Radomir Putnik3.jpg",
     "artist": "Brock1990",
     "licence": "CC BY-SA 4.0",
+    "when": "2022-06-30",
     "credit": "Brock1990, CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Radomir_Putnik3.jpg"
   },
@@ -515,6 +571,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Rasputin PA.jpg",
     "artist": "",
     "licence": "Public domain",
+    "when": "Unknown date",
     "credit": "Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Rasputin_PA.jpg"
   },
@@ -522,9 +579,10 @@ export const PORTRAITS: Record<string, Portrait> = {
     "id": "robertson",
     "src": "/data/portraits/robertson.jpg",
     "file": "Sir William Robertson negative (cropped).jpg",
-    "artist": "",
+    "artist": "Library of Congress",
     "licence": "Public domain",
-    "credit": "Public domain",
+    "when": "between 1910 and 1915",
+    "credit": "Library of Congress, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Sir_William_Robertson_negative_(cropped).jpg"
   },
   "ruzsky": {
@@ -533,6 +591,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Рузский Николай Владимирович (cropped).jpg",
     "artist": "",
     "licence": "Public domain",
+    "when": "Unknown date",
     "credit": "Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:%D0%A0%D1%83%D0%B7%D1%81%D0%BA%D0%B8%D0%B9_%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9_%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B8%D1%87_(cropped).jpg"
   },
@@ -542,6 +601,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Antonio Salandra.jpg",
     "artist": "Camera dei Deputati",
     "licence": "Public domain",
+    "when": "2016-10-05",
     "credit": "Camera dei Deputati, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Antonio_Salandra.jpg"
   },
@@ -551,6 +611,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Maurice Sarrail.jpg",
     "artist": "Bain News Service, publisher",
     "licence": "Public domain",
+    "when": "Unknown date",
     "credit": "Bain News Service, publisher, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Maurice_Sarrail.jpg"
   },
@@ -560,6 +621,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Sergei Dmitrievich Sazonov (cropped).jpg",
     "artist": "",
     "licence": "Public domain",
+    "when": "Unknown date, before 1914 / Inconnu, avant 1914",
     "credit": "Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Sergei_Dmitrievich_Sazonov_(cropped).jpg"
   },
@@ -569,6 +631,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Almirante Reinhard Scheer.jpg",
     "artist": "The European Library",
     "licence": "CC0",
+    "when": "1916",
     "credit": "The European Library, CC0",
     "page": "https://commons.wikimedia.org/wiki/File:Almirante_Reinhard_Scheer.jpg"
   },
@@ -576,9 +639,10 @@ export const PORTRAITS: Record<string, Portrait> = {
     "id": "scheidemann",
     "src": "/data/portraits/scheidemann.jpg",
     "file": "Bundesarchiv Bild 146-1979-122-29A, Philipp Scheidemann (cropped).jpg",
-    "artist": "",
+    "artist": "Bundesarchiv, Bild 146-1979-122-29A",
     "licence": "Public domain",
-    "credit": "Public domain",
+    "when": "circa 1918",
+    "credit": "Bundesarchiv, Bild 146-1979-122-29A, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1979-122-29A,_Philipp_Scheidemann_(cropped).jpg"
   },
   "sonino": {
@@ -596,6 +660,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Mehmed talat.jpg",
     "artist": "",
     "licence": "Public domain",
+    "when": "before 1920",
     "credit": "Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Mehmed_talat.jpg"
   },
@@ -603,9 +668,10 @@ export const PORTRAITS: Record<string, Portrait> = {
     "id": "tirpitz",
     "src": "/data/portraits/tirpitz.jpg",
     "file": "Bundesarchiv Bild 134-C1743, Alfred von Tirpitz (cropped).jpg",
-    "artist": "",
+    "artist": "Bundesarchiv, Bild 134-C1743",
     "licence": "CC BY-SA 3.0 de",
-    "credit": "CC BY-SA 3.0 de",
+    "when": "1903",
+    "credit": "Bundesarchiv, Bild 134-C1743, CC BY-SA 3.0 de",
     "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_134-C1743,_Alfred_von_Tirpitz_(cropped).jpg"
   },
   "trotsky": {
@@ -614,6 +680,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Leon Trotsky 1918 (3x4 rotated cropped b).jpg",
     "artist": "Rijksmuseum",
     "licence": "CC0",
+    "when": "1918",
     "credit": "Rijksmuseum, CC0",
     "page": "https://commons.wikimedia.org/wiki/File:Leon_Trotsky_1918_(3x4_rotated_cropped_b).jpg"
   },
@@ -621,9 +688,10 @@ export const PORTRAITS: Record<string, Portrait> = {
     "id": "venizelos",
     "src": "/data/portraits/venizelos.jpg",
     "file": "Eleftherios Venizelos 1919 (3x4 cropped).jpg",
-    "artist": "Photoprint copyrighted by Harris & Ewing (No known restrictions on publication",
+    "artist": "Photoprint copyrighted by Harris & Ewing (No known restrictions on publication)",
     "licence": "Public domain",
-    "credit": "Photoprint copyrighted by Harris & Ewing (No known restrictions on publication, Public domain",
+    "when": "1919-09-05",
+    "credit": "Photoprint copyrighted by Harris & Ewing (No known restrictions on publication), Public domain — photographed 1919",
     "page": "https://commons.wikimedia.org/wiki/File:Eleftherios_Venizelos_1919_(3x4_cropped).jpg"
   },
   "vittorio_emmanuele_iii": {
@@ -632,6 +700,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Albert I and Victor Emmanuel III.jpg",
     "artist": "Enrico D'Albertis",
     "licence": "Public domain",
+    "when": "before 1930",
     "credit": "Enrico D'Albertis, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Albert_I_and_Victor_Emmanuel_III.jpg"
   },
@@ -641,6 +710,7 @@ export const PORTRAITS: Record<string, Portrait> = {
     "file": "Kaiser Wilhelm II of Germany - 1902 (3x4 cropped).jpg",
     "artist": "Studio of Thomas Heinrich Voigt",
     "licence": "Public domain",
+    "when": "1902",
     "credit": "Studio of Thomas Heinrich Voigt, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Kaiser_Wilhelm_II_of_Germany_-_1902_(3x4_cropped).jpg"
   },
@@ -648,9 +718,10 @@ export const PORTRAITS: Record<string, Portrait> = {
     "id": "wilson_us",
     "src": "/data/portraits/wilson_us.jpg",
     "file": "President Woodrow Wilson Harris & Ewing (3x4 cropped b).jpg",
-    "artist": "Harris & Ewing, photographer",
+    "artist": "Harris & Ewing",
     "licence": "Public domain",
-    "credit": "Harris & Ewing, photographer, Public domain",
+    "when": "1914",
+    "credit": "Harris & Ewing, Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:President_Woodrow_Wilson_Harris_%26_Ewing_(3x4_cropped_b).jpg"
   }
 };

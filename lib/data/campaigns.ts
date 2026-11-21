@@ -618,7 +618,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [33.51, 36.31], // Damascus, reached in the pursuit which ended the campaign
     ],
     summary:
-      'The Revolt was declared at Mecca on 10 June 1916 and its fighting strength came from tribes of the Hejaz and Transjordan, working along the Hejaz Railway which ran from Damascus through Amman and Ma’an to Medina. This line begins at Aqaba, taken in July 1917, because Mecca, Jeddah, Medina, Yanbu and Al Wajh all lie below the southern edge of this map: the country south of the 34th parallel has no border data here, so the campaign is drawn against the coast and the desert only. The Ottomans held Ma’an and Medina throughout; Amman was carried on 25 September 1918 by a force including the Arab troops of Feisal, and Damascus was taken in the pursuit which followed the battle of Megiddo, before the Armistice of Mudros on 30 October 1918.',
+      'The Revolt was declared at Mecca on 10 June 1916 and its fighting strength came from tribes of the Hejaz and Transjordan, working along the Hejaz Railway which ran from Damascus through Amman and Ma’an to Medina. This line begins at Aqaba, taken in July 1917, because Mecca, Jeddah, Medina, Yanbu and Al Wajh all lie below the southern edge of this map: the country south of the 34th parallel has no border data here, so the campaign is drawn against the coast and the desert only. The Ottomans held Ma’an and Medina throughout; Amman was carried on 25 September 1918 by Australian and New Zealand mounted troops, and Damascus was taken in the pursuit which followed the battle of Megiddo, before the Armistice of Mudros on 30 October 1918.',
   },
 
   /* ------------------------------------------------------------------ *
@@ -798,7 +798,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
   },
   {
     id: 'ypres_lys_1918',
-    name: 'The last German offensive in Flanders, Fifth Ypres',
+    name: 'The Allied offensive in Flanders, Fifth Ypres',
     operation: 'Fifth Ypres / Lausnitz',
     side: 'central',
     from: '1918-09-28',
@@ -810,7 +810,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [50.77, 3.01], // Comines, on the left bank of the Lys, the furthest ground reached
     ],
     summary:
-      'Fifth Ypres, also called Lausnitz, was attacked at 05:30 on 28 September 1918 against the ground east of Ypres which the German army had retaken from the British in the spring, and by 1 October the defenders had been cleared off the left bank of the Lys as far as Comines. That was the whole of the success: Ypres itself held, and the offensive was the last the German army made in Flanders. Five weeks later the Battle of Courtrai, 14 to 19 October, drove the German army back across the Lys and lost Kortrijk, and British and Belgian divisions then pushed towards Ghent, so the ground drawn here was given up inside three weeks of being taken.',
+      'Fifth Ypres, also called Lausnitz, was the Allied Army Group of Flanders’ attack at 05:30 on 28 September 1918, on ground east of Ypres which the German army had retaken from the British in the spring. By 1 October the German line had been pushed off the left bank of the Lys as far as Comines. The Battle of Courtrai, 14 to 19 October, drove the German army back across the Lys and lost Kortrijk, and British and Belgian divisions then pushed towards Ghent, so the ground drawn here was given up inside three weeks of being taken.',
   },
   {
     id: 'vittorio_veneto_1918',

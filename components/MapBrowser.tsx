@@ -17,7 +17,7 @@ import {
 import L from 'leaflet';
 import { ChevronDown, Info, ListTree, Maximize2, Minimize2 } from 'lucide-react';
 import type { CampaignLine, Side } from '@/lib/data';
-import { CAMPAIGN_LINES, EVENT_BY_ID, GEOMETRY_NOTE, STATUS_META, STATUS_ORDER, SNAPSHOT_NOTES, statusFor } from '@/lib/data';
+import { CAMPAIGN_LINES, EVENT_BY_ID, GEOMETRY_NOTE, MARCH_LINES, STATUS_META, STATUS_ORDER, SNAPSHOT_NOTES, statusFor } from '@/lib/data';
 import { LINKS_BY_LINE } from '@/lib/data/campaign-events';
 import { PLACES } from '@/lib/data/places';
 import {
@@ -186,7 +186,10 @@ export default function MapBrowser({
   }, [data, snapshot.date]);
 
   const lines: CampaignLine[] = useMemo(
-    () => (showCampaigns ? CAMPAIGN_LINES.filter((l) => campaignVisible(l, monthKey)) : []),
+    () =>
+      showCampaigns
+        ? [...CAMPAIGN_LINES, ...MARCH_LINES].filter((l) => campaignVisible(l, monthKey))
+        : [],
     [showCampaigns, monthKey]
   );
 

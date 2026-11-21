@@ -34,6 +34,7 @@ export type { TerritoryStatus, StatusMeta } from './status';
 
 export { BLOCS, COUNTRY_STATS } from './stats';
 export { CAMPAIGN_LINES } from './campaigns';
+export { MARCH_LINES } from './marches';
 export {
   GEOMETRY_NOTE,
   SNAPSHOT_NOTES,

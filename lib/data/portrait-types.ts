@@ -7,6 +7,8 @@ export interface Portrait {
   file: string;
   artist: string;
   licence: string;
+  /** Date of the photograph as Commons states it, when it states one */
+  when?: string;
   /** One true sentence for the credit line */
   credit: string;
   /** URL of the Commons file page, for attribution */
