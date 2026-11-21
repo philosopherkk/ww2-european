@@ -50,6 +50,9 @@ const WW2_MONTH_KEYS: string[] = Array.from({ length: 92 }, (_, i) => {
   return `${Math.floor(n / 12)}-${String((n % 12) + 1).padStart(2, '0')}`;
 });
 
+const WW1_BASE = process.env.NEXT_PUBLIC_WW1_URL ?? 'https://ww1-european.vercel.app';
+const WW2_BASE = process.env.NEXT_PUBLIC_WW2_URL ?? 'https://ww2-european.vercel.app';
+
 type Tab = 'map' | 'people' | 'numbers' | 'sources';
 
 const TABS: { id: Tab; label: string; short: string; icon: LucideIcon }[] = [
@@ -108,7 +111,7 @@ export default function Home() {
   const turningPoint = turningPointFor(monthKey);
   const monthYear = Number(monthKey.slice(0, 4));
   const ww2Idx = Math.round((monthIdx / Math.max(1, MONTHS.length - 1)) * (WW2_MONTH_KEYS.length - 1));
-  const ww2Href = `https://ww2-european.vercel.app/?month=${WW2_MONTH_KEYS[ww2Idx]}`;
+  const ww2Href = `${WW2_BASE}/?month=${WW2_MONTH_KEYS[ww2Idx]}`;
 
   const go = useCallback(
     (delta: number) => {
