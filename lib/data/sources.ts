@@ -167,6 +167,14 @@ export const SOURCES: Source[] = [
     usedFor:
       'Warsaw Ghetto population and deportation figures, and the difference between the ghetto rising of 1943 and the city rising of 1944.',
   },
+  {
+    citation:
+      'English Wikipedia: Surrender of Japan · Japanese Instrument of Surrender · Atomic bombings of Hiroshima and Nagasaki · Soviet invasion of Manchuria · Manchukuo · Puyi · Division of Korea · United States Army Military Government in Korea · Soviet invasion of South Sakhalin · Invasion of the Kuril Islands',
+    publisher: 'Wikimedia Foundation — tertiary source, cited by article',
+    url: 'https://en.wikipedia.org/wiki/Surrender_of_Japan',
+    usedFor:
+      'The five end-of-war cards, the September 1945 turning point, and every colour change on the world layer from 20 August to 8 September 1945. Each date is quoted from the article named in the card’s own note. These cards rest on one source family, which the notes say: a second, independent publisher for each date is still being checked.',
+  },
 ];
 
 /** Figures that are genuinely disputed, shown so readers know the range. */
@@ -202,6 +210,16 @@ export const UNCERTAINTIES = [
     topic: 'Division strengths and tank numbers',
     range:
       'Every strength figure on this site is an order-of-battle estimate. "Paper" and "serviceable" are different numbers, and the difference for armour on a single morning can be a third; where a line gives ~, that is what it means.',
+  },
+  {
+    topic: 'Deaths at Hiroshima and Nagasaki',
+    range:
+      'About 90,000-166,000 at Hiroshima and 60,000-80,000 at Nagasaki, so roughly 150,000-246,000 in the two cities by the end of 1945. The width of the range is the source’s own rather than this atlas’s: the two cities are given separately, civilian and military dead are counted in both, and deaths from radiation injuries in the months after the bombings fall inside or outside a figure depending on where the count stops.',
+  },
+  {
+    topic: 'The date the war ended',
+    range:
+      'This atlas ends on 2 September 1945, the day the instrument of surrender against Japan was signed and took effect. Other dates are defensible: 8 May 1945 for Europe, 15 August 1945 for the broadcast Japan’s listeners actually heard, 11 November 1918 for the First World War, and 15 September 1947, 28 April 1952, 1956 or 15 March 1991 for the settlements that ended the legal states of war.',
   },
   {
     topic: 'Soviet planning in June 1941',

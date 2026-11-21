@@ -283,6 +283,37 @@ export const TURNING_POINTS: TurningPoint[] = [
   },
 
   {
+    id: 'surrender_japan_1945',
+    month: '1945-09',
+    title: 'The war ends twice: 15 August and 2 September',
+    matters: {
+      primary:
+        'Japan accepted the terms on 15 August, and signed the instrument of surrender on 2 September 1945. The fighting of the Second World War was over.',
+      secondary:
+        'Hirohito’s recorded broadcast was heard at noon on 15 August; the instrument was signed aboard USS Missouri just after 09:00 Japan time on 2 September and took effect at 09:25. Between those dates the Soviet Union took Manchuria, northern Korea, southern Sakhalin and the Kuril Islands, and American troops landed south of the 38th parallel.',
+      university:
+        'September 1945 is the end of the war as a document rather than a cease-fire: acceptance communicated through neutral channels, the broadcast of 15 August, a failed coup by officers who refused it, occupation from 28 August, and the instrument effective at 09:25 Japan time on 2 September. Two anniversaries carry the date because the two events differ — one stopped the killing, the other is the paper. The same fortnight settled the frontiers of north-east Asia, and the line drawn through Korea in August 1945 is still the border today. This map shows the fronts of that fortnight rather than the settlement, because the settlement came later.',
+    },
+    unsettled: {
+      primary: 'The peace treaty did not come until 1952, and Korea was already dividing into two halves.',
+      secondary:
+        'The peace with Japan came only with the Treaty of San Francisco, in force 28 April 1952, and the state of war with the Soviet Union only with the declaration of 1956. Korea had been divided by a surrender instruction, not a treaty.',
+      university:
+        'The legal end of the war is a different date from its military end, and both are defensible: San Francisco entered into force on 28 April 1952, the Soviet–Japanese declaration ended the state of war between the two countries in 1956, and Germany’s final settlement was signed only on 12 September 1990. All three lie outside the range of these maps.',
+    },
+    mapNote:
+      'Europe keeps the borders of 30 April 1945 from May onwards. The world layer is coloured by month, so September differs from August: Japan and southern Korea are under Allied occupation, Manchukuo is gone, the north is Soviet. Southern Sakhalin and the Kurils, taken in the same fortnight, have no outline in this layer.',
+    eventIds: [
+      'japan_accepts_1945',
+      'surrender_2_september_1945',
+      'atomic_bombs_1945',
+      'manchuria_1945',
+      'korea_divided_1945',
+    ],
+    sources: ['English Wikipedia'],
+  },
+
+  {
     id: 'april_1938_state',
     month: '1938-04',
     title: 'The first border state: after Anschluss, before Munich',
@@ -543,7 +574,7 @@ export const TURNING_POINTS: TurningPoint[] = [
         'The Potsdam frontier agreed later in 1945 is not on this map, nor is the flight of refugees or the camps being liberated: the final shape is not a picture of postwar Europe.',
     },
     mapNote:
-      'This is the last of the twelve border states; May to August 1945 are all drawn with these frozen end-of-April borders, and the May panel explains the surrender on the ground.',
+      'This is the last of the twelve border states; May to September 1945 are all drawn with these frozen end-of-April borders. The May panel explains the surrender on the ground in Europe, and the September panel the end of the war against Japan, which is where the colours do move.',
     eventIds: ['seelow_berlin', 'belsen_1945', 'hitler_death'],
     sources: ['The Oxford Companion to World War II', 'USHMM Holocaust Encyclopedia'],
   },

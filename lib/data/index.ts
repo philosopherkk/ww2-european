@@ -2,6 +2,7 @@ import type { WW2Event } from './events-1938-1940';
 import { EVENTS as EVENTS_1938_1940 } from './events-1938-1940';
 import { EVENTS_1941_1942 } from './events-1941-1942';
 import { EVENTS_1943_1945 } from './events-1943-1945';
+import { EVENTS_END_OF_WAR } from './events-end-of-war';
 import { FIGURES_AXIS } from './figures-axis';
 import { FIGURES_ALLIES } from './figures-allies';
 
@@ -14,13 +15,20 @@ export type { TerritoryStatus, StatusMeta } from './status';
 export { BLOCS, COUNTRY_STATS } from './stats';
 export { CAMPAIGN_LINES } from './campaigns';
 export { STATUS_META, STATUS_ORDER, statusFor, SNAPSHOT_NOTES } from './status';
-export { WORLD_KEY_NOTES, WORLD_NOTES, worldNameFor, worldStatusFor } from './world-status';
+export {
+  WORLD_KEY_NOTES,
+  WORLD_NOTES,
+  worldNameFor,
+  worldNoteFor,
+  worldStatusFor,
+} from './world-status';
 export { SOURCES, UNCERTAINTIES } from './sources';
 
 export const EVENTS: WW2Event[] = [
   ...EVENTS_1938_1940,
   ...EVENTS_1941_1942,
   ...EVENTS_1943_1945,
+  ...EVENTS_END_OF_WAR,
 ].sort((a, b) => a.date.localeCompare(b.date));
 
 export const FIGURES = [...FIGURES_AXIS, ...FIGURES_ALLIES].sort((a, b) =>

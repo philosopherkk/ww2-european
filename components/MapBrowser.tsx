@@ -24,16 +24,23 @@ import {
   STATUS_ORDER,
   SNAPSHOT_NOTES,
   WORLD_KEY_NOTES,
-  WORLD_NOTES,
   statusFor,
   worldNameFor,
+  worldNoteFor,
   worldStatusFor,
 } from '@/lib/data';
 import { LINKS_BY_LINE } from '@/lib/data/campaign-events';
 import RegionToggle from '@/components/RegionToggle';
 import { REGION_BY_ID, type Region } from '@/lib/regions';
 import { PLACES } from '@/lib/data/places';
-import { campaignVisible, longDate, nearestSnapshot, SIDE_META, SNAPSHOTS } from '@/lib/site';
+import {
+  campaignVisible,
+  longDate,
+  monthEndDate,
+  nearestSnapshot,
+  SIDE_META,
+  SNAPSHOTS,
+} from '@/lib/site';
 
 /* The border files are GeoJSON: coordinates are [lng, lat], Leaflet wants [lat, lng]. */
 type Ring = number[][];
@@ -219,9 +226,13 @@ export default function MapBrowser({
     }));
   }, [world]);
 
+  /**
+   * The world layer has modern outlines and a dated status table of its own, so
+   * unlike the border layers it is coloured on the selected month, not the snapshot date.
+   */
   const worldStatuses = useMemo(
-    () => new Map(worldTerritories.map((t) => [t.key, worldStatusFor(snapshot.date, t.key)])),
-    [worldTerritories, snapshot.date]
+    () => new Map(worldTerritories.map((t) => [t.key, worldStatusFor(monthEndDate(monthKey), t.key)])),
+    [worldTerritories, monthKey]
   );
 
   /* Converting ~19,000 vertices is the expensive part of a render, so it is
@@ -288,7 +299,7 @@ export default function MapBrowser({
   );
 
   const note = SNAPSHOT_NOTES[snapshot.date];
-  const worldNote = WORLD_NOTES[snapshot.date];
+  const worldNote = worldNoteFor(monthKey, snapshot.date);
   const error = errorInfo?.file === snapshot.file ? errorInfo.message : null;
   const showMarkers = showPlaces && zoom >= 7;
 
@@ -772,8 +783,8 @@ export default function MapBrowser({
         The colours are one dated state ({snapshot.label}), not the month&rsquo;s daily front.
         Frontiers changed on particular days, sometimes several times in a month; the event cards
         name the changes in between. Outside Europe the outlines are today&rsquo;s, coloured for the
-        date, so a whole country takes the colour of the power that held most of it. Select a
-        country or a line for details.
+        month you select, so a whole country takes the colour of the power that held most of it.
+        Select a country or a line for details.
       </p>
     </div>
   );

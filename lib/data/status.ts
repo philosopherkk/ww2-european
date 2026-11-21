@@ -27,6 +27,7 @@ export type TerritoryStatus =
   | 'italian_occupied'
   | 'japanese_occupied'
   | 'soviet'
+  | 'allied_occupied'
   | 'ally'
   | 'co_belligerent'
   | 'neutral'
@@ -50,6 +51,7 @@ export const STATUS_ORDER: TerritoryStatus[] = [
   'italian_occupied',
   'japanese_occupied',
   'soviet',
+  'allied_occupied',
   'ally',
   'co_belligerent',
   'neutral',
@@ -106,6 +108,13 @@ export const STATUS_META: Record<TerritoryStatus, StatusMeta> = {
     stroke: '#775A30',
     legend:
       'The USSR. Between August 1939 and June 1941 it was not at war, but it had occupied eastern Poland, the Baltic states, Bessarabia and northern Bukovina under the secret protocol to the German-Soviet pact. From 22 June 1941 it was an Allied power, and it bore about three quarters of all German military losses in the war.',
+  },
+  allied_occupied: {
+    label: 'Under Allied occupation',
+    color: '#9FB6C6',
+    stroke: '#61849F',
+    legend:
+      'Territory held by Allied forces after a surrender, with no sovereign government of its own yet: Japan from the instrument of surrender signed on 2 September 1945, and Korea south of the 38th parallel from 8 September 1945, when the first American troops came ashore. The occupation of Japan lasted until the Treaty of San Francisco came into force on 28 April 1952, which is also when the state of war with Japan legally ended.',
   },
   ally: {
     label: 'Allied',

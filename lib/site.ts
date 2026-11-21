@@ -1,9 +1,14 @@
 import manifest from '@/public/data/borders/manifest.json';
 import type { CampaignLine, Front, Kind, Level } from '@/lib/data';
 
-/** The whole timeline runs from January 1938 to August 1945, month by month. */
+/**
+ * The whole timeline runs from January 1938 to September 1945, month by month.
+ * The last month is September because the instrument of surrender against Japan
+ * was signed on 2 September 1945 and southern Korea was occupied on 8 September:
+ * both change a colour on the world layer, so both have to be inside the range.
+ */
 export const TIMELINE_START = { year: 1938, month: 1 };
-export const TIMELINE_END = { year: 1945, month: 8 };
+export const TIMELINE_END = { year: 1945, month: 9 };
 
 export interface MonthCell {
   /** e.g. "1939-09" */
@@ -91,6 +96,19 @@ export interface Snapshot {
 }
 
 export const SNAPSHOTS = manifest.snapshots as Snapshot[];
+
+/**
+ * The last day of a timeline month, as YYYY-MM-DD. The border layers can only be
+ * coloured on their own snapshot dates, but the world layer outside Europe is
+ * modern outlines with a dated timeline of its own, so it is coloured on the
+ * exact month end: 31 August 1945 and 30 September 1945 are not the same map.
+ */
+export function monthEndDate(monthKey: string): string {
+  const [year, month] = monthKey.split('-').map(Number);
+  const leap = year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0);
+  const days = [31, leap ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31][month - 1];
+  return `${monthKey}-${String(days).padStart(2, '0')}`;
+}
 
 export interface SnapshotChoice {
   snapshot: Snapshot;

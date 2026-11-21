@@ -30,6 +30,8 @@ const JAP: TerritoryStatus = 'japanese_occupied';
 const A: TerritoryStatus = 'ally';
 const N: TerritoryStatus = 'neutral';
 const C: TerritoryStatus = 'contested';
+const SOV: TerritoryStatus = 'soviet';
+const OCC: TerritoryStatus = 'allied_occupied';
 
 /** Before the first step a territory is at peace. */
 const tl =
@@ -45,7 +47,6 @@ const WAR = '1939-09-03'; // Britain and France declare war on Germany
 const ALLIED_AT_WAR = tl([WAR, A]);
 const NEUTRAL = tl([WAR, N]);
 const JAPANESE_SINCE_BEFORE = tl(['1938-01-01', JAP]);
-const AXIS_FROM_1938 = tl(['1938-01-01', X]);
 const ALLY_FROM_1938 = tl(['1938-01-01', A]);
 const joinsAllies = (date: string): Timeline => tl([WAR, N], [date, A]);
 const vichy = (back: string): Timeline => tl([WAR, A], ['1940-07-10', X], [back, A]);
@@ -65,9 +66,25 @@ assign(
 TIMELINES.CAN = tl(['1939-09-10', A]);
 TIMELINES.ZAF = tl(['1939-09-06', A]);
 
-/* ---- Japanese Asia and the Pacific */
-assign('JPN MCK', AXIS_FROM_1938);
-assign('KOR PRK TWN', JAPANESE_SINCE_BEFORE);
+/* ---- Japanese Asia and the Pacific
+ * The four timelines that end in 1945 use the dates their sources print:
+ * Manchukuo  "Soviet invasion 9 August 1945 · Dissolution 20 August 1945", succeeded by the
+ *            "Soviet occupation of Manchuria" (Manchukuo article infobox)
+ * northern Korea  Soviet troops entered Pyongyang on 24 August 1945 and "secured most major
+ *            cities in the north by 24 August" (Division of Korea)
+ * Japan      the instrument of surrender was signed aboard USS Missouri and "took effect at
+ *            09:25 JST on 2 September 1945" (Japanese Instrument of Surrender)
+ * southern Korea  "United States troops stationed 8 September 1945"; USAMGIK governed the
+ *            south "from 9 September 1945" (USAMGIK)
+ * Southern Sakhalin (Karafuto, 11-25 August 1945) and the Kuril Islands (18 August -
+ * 2 September 1945) fell to the USSR in the same fortnight but cannot be drawn: world.json
+ * is built from modern outlines, so both sit inside Russia, which this layer does not draw.
+ */
+TIMELINES.JPN = tl(['1938-01-01', X], ['1945-09-02', OCC]);
+TIMELINES.MCK = tl(['1938-01-01', X], ['1945-08-20', SOV]);
+TIMELINES.PRK = tl(['1938-01-01', JAP], ['1945-08-24', SOV]);
+TIMELINES.KOR = tl(['1938-01-01', JAP], ['1945-09-08', OCC]);
+TIMELINES.TWN = JAPANESE_SINCE_BEFORE;
 TIMELINES.CHN = ALLY_FROM_1938;
 TIMELINES.HKG = tl([WAR, A], ['1941-12-25', JAP]);
 assign('MYS BRN', tl([WAR, A], ['1941-12-08', C], ['1942-02-15', JAP]));
@@ -228,7 +245,10 @@ const ERA_NAMES: Record<string, string> = {
 /** One-line caveats shown in the popup for territories where the modern outline misleads. */
 export const WORLD_KEY_NOTES: Record<string, string> = {
   CHN: 'Coloured whole as Allied. Japan held Manchuria, the north-east and the coast, and China had a rival Japanese-sponsored government at Nanjing from March 1940.',
-  MCK: 'Drawn as the modern provinces of Liaoning, Jilin and Heilongjiang, an approximation: Manchukuo also took in Jehol and part of Inner Mongolia.',
+  MCK: 'Drawn as the modern provinces of Liaoning, Jilin and Heilongjiang, an approximation: Manchukuo also took in Jehol and part of Inner Mongolia. Coloured Soviet from 20 August 1945, the date its dissolution is given: Soviet troops had held the cities since the invasion of 9 August, and the territory passed to Chinese administration in 1946.',
+  PRK: 'The northern half of the modern outline. Japanese-occupied until Soviet troops entered Pyongyang on 24 August 1945; the 38th parallel dividing line was proposed by American officers on 10 August and written into General Order No. 1, approved on 17 August 1945. No Korean state existed yet in 1945.',
+  KOR: 'The southern half of the modern outline. Japanese-occupied until American troops landed on 8 September 1945, so for the fortnight after the broadcast of 15 August nobody occupied it on this map; it is shown as under Allied occupation from the landing.',
+  JPN: 'The modern outline, which excludes southern Sakhalin and the Kuril Islands: the USSR took those in the same fortnight (11-25 August and 18 August to 2 September 1945), and here they fall inside Russia, which this layer does not draw. Under Allied occupation from 2 September 1945, the day the instrument of surrender took effect; the state of war lasted until 28 April 1952.',
   IND: 'The whole of British India is shown. The Japanese reached the frontier at Imphal and Kohima in 1944 but held almost none of it.',
   IDN: 'The whole archipelago is one colour. In western New Guinea Allied forces held Merauke throughout, and some islands were reoccupied only in 1945.',
   PNG: 'New Guinea is shown as contested for the whole campaign: the Japanese held the north coast and the Australians the south-east, and neither held most of the interior.',
@@ -295,3 +315,23 @@ export const WORLD_NOTES: Record<string, string> = {
   '1945-04-30':
     'Nearly all of Latin America has declared war in the last three months, and Saudi Arabia and Egypt have too. Burma and the Philippines are shown as contested while their reconquest is under way, and the Marianas and Guam are Allied. In Indochina the Japanese overthrew the French administration on 9 March and set up client kingdoms, shown as Axis. Japan, Korea, Taiwan, Malaya, Singapore, the Dutch East Indies and most of Indonesia are Japanese-held; China is drawn Allied and whole.',
 };
+
+/**
+ * Notes for months that have no border snapshot of their own. Without these, May to
+ * September 1945 would all read the April note above even though the world layer is
+ * coloured by month and its colours do move in July, August and September 1945.
+ * Preferred over WORLD_NOTES by worldNoteFor when a month has an entry.
+ */
+export const WORLD_MONTH_NOTES: Record<string, string> = {
+  '1945-07':
+    'The only colour to move is the Philippines, shown Allied once the campaign there ended in July 1945. Everything else outside Europe is as in April: Japan, Korea, Taiwan, Malaya, Singapore and the Dutch East Indies Japanese-held, Manchukuo Axis, and China drawn Allied and whole.',
+  '1945-08':
+    'Two colours change in north-east Asia in the last month of fighting. Manchukuo, Axis here since 1932, is shown Soviet from 20 August 1945, the date of its dissolution, and northern Korea is Soviet from 24 August, the day Soviet troops entered Pyongyang. Japan and the south of Korea are still drawn Japanese-held: the surrender was announced on 15 August, but the instrument was not yet signed. Southern Sakhalin (11-25 August) and the Kuril Islands (18 August to 2 September) were taken in the same fortnight and cannot be drawn here — they fall inside Russia, which has no outline in this layer.',
+  '1945-09':
+    'Japan is shown under Allied occupation from 2 September 1945, the day the instrument of surrender was signed aboard USS Missouri and took effect at 09:25 Japan time, and Korea south of the 38th parallel from 8 September, when the first American troops came ashore. Manchukuo is gone, and the north of Korea is Soviet. Nothing in Europe changes: these are the outlines of 30 April 1945, coloured for September. The state of war had not ended either — with Japan it lasted until 28 April 1952, and Germany’s final settlement was signed only in 1990.',
+};
+
+/** The note to show for a selected month: the month’s own if it has one, else the snapshot’s. */
+export function worldNoteFor(monthKey: string, snapshotDate: string): string | undefined {
+  return WORLD_MONTH_NOTES[monthKey] ?? WORLD_NOTES[snapshotDate];
+}
