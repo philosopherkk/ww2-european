@@ -67,7 +67,7 @@ export const STATUS_META: Record<TerritoryStatus, StatusMeta> = {
     color: '#CAC4B8',
     stroke: '#81796D',
     legend:
-      'Only the July 1914 map uses this colour: on 31 July 1914 Austria-Hungary was at war with Serbia and Russia was mobilising, but Germany, France and Britain had not yet declared war. From August 1914 onwards every state in Europe is either at war, occupied or neutral.',
+      'Only the July 1914 map uses this colour at the start: on 31 July 1914 Austria-Hungary was at war with Serbia and Russia was mobilising, but Germany, France and Britain had not yet declared war. From August 1914 every state in Europe is at war, occupied or neutral — with one exception at the very end, Albania, which comes back to this colour in September 1918 because no Albanian government had been at war with anyone, whoever held the ground.',
   },
   entente: {
     label: 'At war with the Central Powers',
@@ -88,7 +88,7 @@ export const STATUS_META: Record<TerritoryStatus, StatusMeta> = {
     color: '#C9A093',
     stroke: '#9B6A59',
     legend:
-      'Ground held by an army that is not the government of that state: Belgium and Luxembourg from August 1914, Serbia from November 1915 and Montenegro from January 1916, and the occupied part of Romania from December 1916, where the government survived in Iași under Russian protection. Occupied here means occupied by the Central Powers except where the note says otherwise.',
+      'Ground held by an army that is not the government of that state: Belgium and Luxembourg from August 1914, Serbia from November 1915 and Montenegro from January 1916, and the occupied part of Romania from December 1916, where the government survived in Iași under Russian protection. Occupied here means occupied by the Central Powers, with one exception: Albania, which is in this colour from August 1914 because no Albanian government held the ground at all — Serbian, Montenegrin, Greek and Italian troops were all in the country during 1914, and Austria-Hungary took Durrës in December 1915.',
   },
   separate_peace: {
     label: 'Out of the war by separate peace',
@@ -116,7 +116,7 @@ export const STATUS_META: Record<TerritoryStatus, StatusMeta> = {
     color: '#949A9A',
     stroke: '#646A6B',
     legend:
-      'The Netherlands, Denmark, Norway, Sweden, Spain and Switzerland stayed out of the war throughout. Neutrality was not the same as inactivity: Swedish volunteers went to Finland, Danish and Norwegian merchants carried goods under British contract, and the Netherlands became the escape route for airdropped Allied airmen.',
+      'The Netherlands, Denmark, Norway, Sweden, Spain and Switzerland stayed out of the war throughout; Luxembourg is shown in this colour only in the last month, the German garrison having withdrawn under the armistice terms. Neutrality was not the same as inactivity: Swedish volunteers went to Finland, and Danish and Norwegian merchants carried goods under British contract.',
   },
   unknown: {
     label: 'Status not recorded here',
@@ -292,7 +292,7 @@ export const SNAPSHOT_NOTES: Record<string, string> = {
   '1914-07-31':
     'The war has just begun: Austria-Hungary declared war on Serbia on 28 July after the ultimatum of 23 July, and Russia ordered general mobilisation on 31 July. Germany, France and Britain are still at peace as the month ends. The assassination of Archduke Franz Ferdinand on 28 June and the July Crisis are the events of this month.',
   '1914-08-31':
-    'Five powers at war. Germany has occupied Luxembourg (2 August) and most of Belgium (from 4 August) on the way to Paris; the advance was stopped on the Marne on 5-12 September. Serbia has beaten off two Austro-Hungarian invasions. This map cannot show the most important changes of the month, both of which fall inside the two giant polygons: the division of the Polish lands between the empires after the Russian retreat, and the Russian Second Army destroyed at Tannenberg on 26-30 August.',
+    'Five powers at war. Germany has occupied Luxembourg (2 August) and most of Belgium (from 4 August) on the way to Paris; the advance was stopped on the Marne on 5-12 September. Serbia has beaten off two Austro-Hungarian invasions, and Montenegro, its neighbour to the west, is at war with Austria-Hungary from this month and is shown here in the entente colour. This map cannot show the most important changes of the month, both of which fall inside the two giant polygons: the division of the Polish lands between the empires after the Russian retreat, and the Russian Second Army destroyed at Tannenberg on 26-30 August.',
   '1914-11-30':
     'The Ottoman Empire has joined the Central Powers (2-5 November), closing the Dardanelles to Russian grain and opening fronts in the Caucasus and at the Suez Canal, which is outside this map. Turkey’s entry turns the Black Sea into a lake of the Central Powers and brings the Straits question into the war. The Dodecanese and the Aegean are outside this map too.',
   '1915-05-31':
@@ -306,5 +306,5 @@ export const SNAPSHOT_NOTES: Record<string, string> = {
   '1918-03-31':
     'The Treaty of Brest-Litovsk (3 March) has taken Russia out of the war and handed Germany the Baltic coast, Ukraine’s grain and the Polish countryside, with 1 million men free for the west. The map still draws one unbroken Russian shape: what Brest-Litovsk gave up is not drawn here, only described in the events of the month.',
   '1918-11-30':
-    'The last month of this map. Bulgaria made an armistice on 29 September, the Ottoman Empire on 30 October, and Germany on 11 November; Austria-Hungary has signed at Villa Giusti (3 November) and its German and Hungarian halves have proclaimed republics, so the old shape is shown as dissolved. What this map does NOT show is the peace settlement: Poland, Czechoslovakia, the South Slav state, Finland and the Baltic states were created in these months and have no polygons here, and frontiers of 1919-20 (Saint-Germain, Trianon, Neuilly, Sèvres) lie beyond the timeline.',
+    'The last month of this map. Bulgaria made an armistice on 29 September, the Ottoman Empire on 30 October, and Germany on 11 November; Austria-Hungary has signed at Villa Giusti (3 November) and its German and Hungarian halves have proclaimed republics, so the old shape is shown as dissolved. Luxembourg, occupied since August 1914, is shown in the neutral colour again: the armistice terms required the German troops to leave the invaded countries, with fifteen days allowed for the work. What this map does NOT show is the peace settlement: Poland, Czechoslovakia, the South Slav state, Finland and the Baltic states were created in these months and have no polygons here, and frontiers of 1919-20 (Saint-Germain, Trianon, Neuilly, Sèvres) lie beyond the timeline.',
 };
