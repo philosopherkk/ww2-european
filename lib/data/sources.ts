@@ -430,6 +430,82 @@ export const SOURCES: Source[] = [  {
     usedFor:
       'Captivity as part of the loss tables: the numbers held by each side, the death rates in the camps, the labour battalions, and the repatriations that ran on into 1920 and 1921. Jones is the reason the site counts prisoners who died after the armistice inside the war rather than after it, and says so.',
   },
+  {
+    citation:
+      '“Austria-Hungary declared war against Montenegro 9th instant”, The Ambassador in ' +
+      'Austria-Hungary (Penfield) to the Secretary of State, Vienna, 10 August 1914, _Foreign ' +
+      'Relations of the United States, 1914, Supplement_, document 120',
+    publisher:
+      'US Government, Office of the Historian',
+    url: 'https://history.state.gov/historicaldocuments/frus1914Supp/d120',
+    usedFor:
+      'The Habsburg side of Montenegro’s entry into the war, and the reason this site dates ' +
+      'Austria-Hungary’s declaration to 9 August while dating Montenegro’s proclamation to the ' +
+      '6th.',
+  },
+  {
+    citation:
+      'Austro-Hungarian Red Book, No. 32, Count Berchtold to von Mérey, Vienna, 4 August 1914, ' +
+      'in James Brown Scott (ed.), _Diplomatic Documents Relating to the Outbreak of the ' +
+      'European War_, Carnegie Endowment for International Peace, 1916',
+    publisher:
+      'Oxford University Press (American Branch) for the Carnegie Endowment for International ' +
+      'Peace, scanned at the Internet Archive',
+    url: 'https://archive.org/details/diplomaticdocume00scotuoft',
+    usedFor:
+      'Vienna’s attempt to keep Montenegro out of the war, quoted on the card for 6 August ' +
+      '1914: the telegram promising that Austria-Hungary had no intention of waging war against ' +
+      'Montenegro so long as it refrained from hostile acts.',
+  },
+  {
+    citation:
+      'Slavko Burzanović, “The Issue of Mt. Lovćen” in World War I and Italy, in _Discourses on ' +
+      'Mountains of Montenegro and Slovenia_, Springer, 2026',
+    publisher:
+      'Springer Nature, open access',
+    url: 'https://link.springer.com/chapter/10.1007/978-3-031-99017-5_20',
+    usedFor:
+      'The Lovćen stakes behind the Austro-Hungarian diplomacy, Montenegro’s declaration of war ' +
+      'on 6 August 1914, and the dated end of the Montenegrin war: the offensive of 5 January ' +
+      '1916, Mojkovac, Lovćen, Cetinje on 13 January, and the Order of Surrender of 25 January.',
+  },
+  {
+    citation:
+      'Filip Kuzman, “Montenegro and the First World War”, _The World Remembers_',
+    publisher:
+      'The World Remembers (theworldremembers.org), written by the director of the National ' +
+      'Museum of Montenegro',
+    url: 'https://theworldremembers.org/montenegro/',
+    usedFor:
+      'The 6 August 1914 date for Montenegro’s entry and King Nikola’s proclamation in English, ' +
+      'and the state of the Montenegrin army in August 1914.',
+  },
+  {
+    citation:
+      '“Conditions of the Armistice”, 11 November 1918, and the Luxembourg telegrams of 11 and ' +
+      '15 November 1918, _Foreign Relations of the United States: The Paris Peace Conference, ' +
+      '1919_, vol. II, documents 1, 378 and 380',
+    publisher:
+      'US Government, Office of the Historian',
+    url: 'https://history.state.gov/historicaldocuments/frus1919Parisv02/d1',
+    usedFor:
+      'Clause II, which required the evacuation of Belgium, France and Luxemburg within fifteen ' +
+      'days, and the two Washington telegrams in which Luxembourg asked the Allies to speed the ' +
+      'German departure. Documents 378 and 380 sit at the same URL with the number changed.',
+  },
+  {
+    citation:
+      '“How the Grand Duchy survived the end of World War I intact”, _RTL Luxembourg_, ' +
+      'Luxembourg Insider',
+    publisher:
+      'RTL Luxembourg (today.rtl.lu)',
+    url: 'https://today.rtl.lu/luxembourg-insider/history/how-the-grand-duchy-survived-the-end-of-world-war-i-intact-1596196',
+    usedFor:
+      'The days of the German evacuation and the Allied arrival in November 1918: German troops ' +
+      'until the 19th, American troops of the Third Army on the 21st, French troops from the ' +
+      '22nd. It is the only source here that gives days rather than terms, so the card that ' +
+      'uses it says so.',
+  },
 ];
 
 export interface Uncertainty {
@@ -529,5 +605,40 @@ export const UNCERTAINTIES: Uncertainty[] = [
     topic: 'The 1918 influenza: the name and the toll',
     range:
       'It was never Spanish. Neutral Spain reported the disease openly in May 1918 because its press was uncensored, and the belligerents, who suppressed the news, gave it the name of the one country that printed it, which is a fact about censorship rather than about origin. Estimates for the world run from 20 million to 50 to 100 million deaths; 8.7 per cent of the United States Army fell ill and 43,000 Navy men died in September and October 1918; the deaths in India in 1917 to 1921 are put between 12.9 and 21.3 million, several times the subcontinent’s war dead. Whether the movement of troops made the pandemic or the war merely recorded it is unsettled, and European excess mortality for 1918 and 1919 is inferred from civil registers rather than diagnosed.',
+  },
+  {
+    topic:
+      'When Montenegro entered the war, August 1914',
+    range:
+      'The month is not argued; the day is, and so is who declared it. King Nikola’s ' +
+      'proclamation is dated at Cetinje 25 July old style and 6 August new style, and the ' +
+      'accounts of the Montenegrin campaign — the 2026 Springer chapter on Lovćen, the essay ' +
+      'for The World Remembers by the director of the National Museum of Montenegro, and the ' +
+      'Montenegrin press — all date Montenegro’s declaration of war on Austria-Hungary to 6 ' +
+      'August. The American embassy in Vienna cabled on 10 August that Austria-Hungary had ' +
+      'declared war against Montenegro “9th instant”, so the Habsburg declaration belongs to 9 ' +
+      'August, and the usual lists of declarations give 5 or 8 August for a Montenegrin note, ' +
+      'which is a different act from the proclamation. This site dates the card to 6 August, ' +
+      'because the colour on the map records Montenegro being at war rather than Vienna’s ' +
+      'reply, and it prints the 9 August declaration in the note. The map changes by month, so ' +
+      'none of these days moves a polygon.',
+  },
+  {
+    topic:
+      'Albania’s colour in the last months of 1918',
+    range:
+      'The map shows Albania in the at-peace colour from September 1918, on the ground that ' +
+      'whoever held the ground, Albania had no government at war with anyone. Whether the last ' +
+      'Central Powers troops were gone by late September is not settled. The US Library of ' +
+      'Congress study has the Austro-Hungarian withdrawal beginning within days of the Entente ' +
+      'breakthrough north of Thessaloniki in September 1918, and says Italy’s army had occupied ' +
+      'most of the country when the war ended on 11 November; Raymond J. Sontag’s political ' +
+      'history of Albania puts practically all of the country in Italian hands by the middle of ' +
+      'October. So the withdrawal certainly began in September and was not necessarily finished ' +
+      'in it, and the colour is a statement about sovereignty rather than a report of who was ' +
+      'standing where. The Foreign Relations documents for November and December 1918, which ' +
+      'find Albanian notables meeting at Durrës and voting a provisional government, are why ' +
+      'the site keeps a colour of its own for Albania instead of treating it as territory of ' +
+      'one of the armies in it.',
   },
 ];

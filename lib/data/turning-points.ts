@@ -71,6 +71,7 @@ export const TURNING_POINTS: TurningPoint[] = [
       'The shapes are frozen at July 1914, so the German advance through Belgium cannot appear as a moving front: Belgian and Luxembourgish territory simply changes to the occupation colour from August.',
     eventIds: [
       'invasion_of_belgium_britain_enters',
+      'montenegro_enters_war_1914_08',
       'battle_of_the_frontiers_mons',
       'galicia_lemberg_przemysl',
       'tannenberg',
@@ -418,6 +419,7 @@ export const TURNING_POINTS: TurningPoint[] = [
       'armistice_of_11_november_1918',
       'battle_of_vittorio_veneto',
       'german_revolution_of_november_1918',
+      'luxembourg_evacuated_1918_11',
     ],
     sources: ['Hew Strachan, To Arms', 'The official history of the Great War'],
   },

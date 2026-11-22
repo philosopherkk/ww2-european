@@ -1080,6 +1080,94 @@ export const EVENTS_1918: WW1Event[] = [
       'Signed at 5:00 a.m. on 11 November 1918 in a railway carriage in the Compiègne Forest; in force from 11:00 a.m. Paris time (11:00 UT). Surrender of matériel, as listed in the terms: 5,000 artillery pieces, 25,000 machine guns, 3,000 minenwerfer, 1,700 aircraft including all night bombers, 5,000 railway locomotives, 150,000 railway carriages and 5,000 road trucks, plus the warships; the German delegation corrected the demand for more submarines than the fleet possessed. Matthias Erzberger signed for Germany. The blockade was not relaxed by the agreement. Piłsudski had been imprisoned at Magdeburg from 1917 and was Chief of State from November 1918. Source checked: “Armistice of 11 November 1918”, “Józef Piłsudski”.',
   },
   {
+    id: 'luxembourg_evacuated_1918_11',
+    date: '1918-11-19',
+    precision: 'day',
+    title: 'The German garrison leaves Luxembourg',
+    kind: 'armistice',
+    fronts: ['western', 'politics'],
+    countries: ['Luxembourg', 'Germany', 'France', 'United States'],
+    note:
+      'The status table dates the evacuation to 18–25 November 1918, a range. Clause II of the ' +
+      'armistice conditions of 11 November required the evacuation of Belgium, France and Luxemburg ' +
+      'to be completed within fifteen days of signature, which puts the outer limit at 26 November. ' +
+      'The day used on this card is the one printed by RTL Luxembourg’s account of the retreat: ' +
+      'German troops were in the country until the 19th, American troops of the Third Army were ' +
+      'received on the 21st and French troops came in from the 22nd. That account is the only ' +
+      'source here which gives days; the documentary series gives the terms, and the terms are what ' +
+      'the map is drawing.',
+    levels: {
+      primary: {
+        cause:
+          'Germany had occupied Luxembourg since 2 August 1914, and the country had no army of its own. ' +
+          'The armistice signed on 11 November 1918 required German troops to leave the countries they ' +
+          'had invaded.',
+        what:
+          'Clause II named Belgium, France and Luxemburg as countries to be evacuated, and set ' +
+          'fifteen days for the work. German troops were still there on the 11th; the last went on ' +
+          '19 November, and American soldiers came in on the 21st.',
+        consequence:
+          'Luxembourg changes from the occupation colour it has held since August 1914 to the neutral ' +
+          'colour for the last month. It had been under German occupation throughout the war, and its ' +
+          'government had spent the last weeks asking the Allies to speed the evacuation.',
+      },
+      secondary: {
+        cause:
+          'The smallest of the western states was also the least visible on this map: occupied from the ' +
+          'second day of the war, protested against by a Grand Duchess with no army, and so with no ' +
+          'colour of its own to change. In November 1918 two questions were open: when the German ' +
+          'troops would leave, and whether the Grand Duchy would come out of the war in the shape it ' +
+          'went into it. A third belongs to this map, because the colour Luxembourg takes at the end is ' +
+          'the one the key defines by states that never fought.',
+        what:
+          'Clause II of the armistice conditions signed on 11 November required the evacuation of ' +
+          'Belgium, France and Luxemburg within fifteen days, and made German troops that stayed ' +
+          'prisoners of war. Two Washington telegrams show the Grand Duchy asking for help: the ' +
+          'Grand Duchess’s message of the 11th, asking President Wilson to save it from the passage ' +
+          'of German troops, and a Belgian note of 15 November reporting that Luxembourg had asked ' +
+          'Brussels to intervene. RTL Luxembourg gives German armies until the 19th, American ' +
+          'troops of the Third Army on the 21st, and French troops from the 22nd.',
+        consequence:
+          'The recolouring is right for the month and the day is not settled. The status table says ' +
+          '18–25 November, which brackets the days the sources print, and the fifteen-day term puts the ' +
+          'outer limit at 26 November. The key’s line for the neutral colour names the Netherlands, ' +
+          'Denmark, Norway, Sweden, Spain and Switzerland as the states that stayed out of the war ' +
+          'throughout, and adds that Luxembourg takes this colour in the last month, when the garrison ' +
+          'went.',
+      },
+      university: {
+        cause:
+          'Luxembourg is the hardest case on this map for the last month, because the colour it takes ' +
+          'is defined in the key by states that were neutral throughout, while at peace — the colour ' +
+          'Albania returns to in September 1918 — is the other candidate for a country that was ' +
+          'occupied but never at war. This site uses the neutral colour, which records a restored Grand ' +
+          'Duchy rather than making a claim about who fought. The card fills a promised gap: the map ' +
+          'header says the panel above the cards names the real event behind each colour change, and ' +
+          'before it neither the November turning point nor any other card named the evacuation.',
+        what:
+          'The documentary spine is the armistice itself. Clause II of the conditions signed on ' +
+          '11 November required the immediate evacuation of Belgium, France and Luxemburg, with ' +
+          'completion inside fifteen days, and made German troops who stayed prisoners of war. ' +
+          'Beside it are two Washington telegrams of the same fortnight: the Grand Duchess’s message ' +
+          'of 11 November, sent from The Hague, protesting against foreign occupation and asking ' +
+          'Wilson to protect the rights and interests of the Luxemburg free and independent small ' +
+          'people, and the Belgian minister’s note of 15 November reporting Luxembourg’s request for ' +
+          'help in obtaining the evacuation. A Luxembourg account supplies the ground: German armies ' +
+          'until the 19th, American troops of the Third Army on the 21st, French troops from the ' +
+          '22nd. No source used here prints the 18–25 November range the table carries.',
+        consequence:
+          'What is documented twice over is the obligation, not the last departure: the American ' +
+          'documentary series prints the clause and the requests, and one national broadcaster ' +
+          'supplies the days, so this card is dated to the ground and hedged in its note. For the ' +
+          'map the effect is that the last month has an occupation ending rather than a silent ' +
+          'recolouring, and the neutral colour is no longer only the colour of the six states that ' +
+          'never fought. Whether the Grand Duchy survived in the same shape is a question the map ' +
+          'stops short of, and the referendum that settled it falls in the months after this site’s ' +
+          'last snapshot.',
+      },
+    },
+  },
+  {
     id: 'lettow_vorbeck_lays_down_arms',
     date: '1918-11-25',
     precision: 'day',

@@ -180,7 +180,14 @@ const TIMELINES: Record<string, [string, TerritoryStatus][]> = {
   ],
   Montenegro: [
     ['1914-07', 'at_peace'],
-    ['1914-08', 'entente'], // war on Austria-Hungary 6 August 1914
+    ['1914-08', 'entente'], // Montenegro's proclamation of war on Austria-Hungary,
+    // 6 August 1914 new style (the proclamation is dated Cetinje 25 July old style /
+    // 6 August new style; the 2026 Springer chapter on Lovćen, The World Remembers'
+    // essay by the director of the National Museum of Montenegro, and the Montenegrin
+    // press all give 6 August). Austria-Hungary's own declaration against Montenegro is
+    // reported from Vienna on 10 August as issued “9th instant” (FRUS 1914 Supp. d120),
+    // and the usual lists of declarations give 5 or 8 August for the Montenegrin note.
+    // Only the month moves the map. See card montenegro_enters_war_1914_08.
     ['1916-01', 'occupied'], // the country overrun January 1916; the government goes into exile in Italy
     ['1918-11', 'entente'], // Podgorica reached 26 November 1918
   ],

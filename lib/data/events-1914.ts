@@ -242,6 +242,99 @@ export const EVENTS_1914: WW1Event[] = [
     },
   },
   {
+    id: 'montenegro_enters_war_1914_08',
+    date: '1914-08-06',
+    precision: 'day',
+    title: 'Montenegro declares war on Austria-Hungary',
+    kind: 'diplomacy',
+    fronts: ['balkans', 'politics'],
+    countries: ['Montenegro', 'Austria-Hungary'],
+    note:
+      'The day used here is the new-style date of King Nikola’s proclamation, which is dated ' +
+      'Cetinje 25 July / 6 August 1914, and the accounts of the Montenegrin campaign give ' +
+      '6 August for Montenegro’s declaration of war on Austria-Hungary. The declaration on the ' +
+      'other side is later and thinner: the American embassy in Vienna cabled on 10 August that ' +
+      'Austria-Hungary had declared war against Montenegro “9th instant”. Vienna was still ' +
+      'disclaiming any intention of war with Montenegro on 4 August, in Count Berchtold’s ' +
+      'telegram to Rome (Austro-Hungarian Red Book, No. 32). This map changes by month, so the ' +
+      'argument about the day does not move a polygon.',
+    levels: {
+      primary: {
+        cause:
+          'Austria-Hungary invaded Serbia on 28 July 1914. Montenegro, the small kingdom to its ' +
+          'west, had ordered mobilisation the same day and stood with Serbia. Vienna wanted ' +
+          'Montenegro out of the war and asked Italy to urge neutrality at Cetinje.',
+        what:
+          'On 6 August 1914 King Nikola proclaimed Montenegro at war with Austria-Hungary. Its ' +
+          'dating line carries both calendars, old style and new. Three days later the American ' +
+          'embassy in Vienna reported that Austria-Hungary had declared war on Montenegro the ' +
+          'previous day.',
+        consequence:
+          'Montenegro takes the entente colour from August 1914 and holds it until January 1916, ' +
+          'when the country is overrun and the government goes into exile in Italy. Montenegrin ' +
+          'troops spent the intervening year fighting along the frontier from the Sandžak to ' +
+          'Lovćen.',
+      },
+      secondary: {
+        cause:
+          'Montenegro and Austria-Hungary shared a long, contested frontier, and Lovćen, the mountain ' +
+          'above the Bay of Kotor, was the stake Vienna kept trying to take by diplomacy. Its telegrams ' +
+          'from early August show a government still working to keep Montenegro out: Count Berchtold ' +
+          'assured Rome on 4 August that Vienna had no intention of waging war against Montenegro and ' +
+          'asked for Italian counsel of neutrality to be repeated at Cetinje. Italy insisted on ' +
+          'neutrality too, and in vain: Montenegro came into the war exhausted by the two Balkan ' +
+          'conflicts, short of weapons and with its coffers empty.',
+        what:
+          'King Nikola’s proclamation was published at Cetinje on 6 August 1914 and dated 25 July by ' +
+          'the old calendar. It was addressed to the people and the army, and its opening line, in one ' +
+          'English rendering, says they had not yet had time to wash the blood from their brave arms ' +
+          'before being called out for the third time in less than two years. The record of the other ' +
+          'side’s declaration is later: the American embassy in Vienna cabled on 10 August that ' +
+          'Austria-Hungary had declared war against Montenegro the 9th instant.',
+        consequence:
+          'The war the proclamation began lasts, on this map, until January 1916. The offensive came on ' +
+          '5 January; the Montenegrin and Sandžak detachment stopped the Austro-Hungarian advance at ' +
+          'Mojkovac on 6 and 7 January and held its ground until the 18th; the heights of Lovćen were ' +
+          'lost between the 8th and the 12th and Cetinje, undefended, on the 13th. The king left by ' +
+          'ship for Brindisi, and the Order of Surrender was signed on the 25th. Montenegro is in the ' +
+          'occupation colour from January 1916 until the last month of the war, when Podgorica is ' +
+          'reached.',
+      },
+      university: {
+        cause:
+          'The Habsburg calculation in the first week of August 1914 was to isolate the quarrel with ' +
+          'Serbia, and Montenegro is the part of it that failed. Count Berchtold’s telegram of 4 August ' +
+          'to the ambassador in Rome — No. 32 of the Austro-Hungarian Red Book, edited by James Brown ' +
+          'Scott for the Carnegie Endowment and published by Oxford University Press in 1916 — states ' +
+          'that Vienna had absolutely no intention to wage war against Montenegro, undertakes not to ' +
+          'invade while the kingdom refrained from hostile acts, and asks that Italian counsel of ' +
+          'neutrality be repeated at Cetinje. The same archive shows what Vienna cared about: Lovćen, ' +
+          'above the Habsburg naval base in the Bay of Kotor. Within three days of the proclamation at ' +
+          'Cetinje, the same government was at war with Montenegro.',
+        what:
+          'Three documentary layers of different lineage carry this entry. The first is ' +
+          'Austro-Hungarian: Red Book No. 32, dated Vienna, 4 August 1914, quoted from the Carnegie ' +
+          'Endowment’s 1916 edition. The second is American: Foreign Relations of the United ' +
+          'States, 1914 Supplement, document 120, a telegram sent from the Embassy in Vienna on the ' +
+          'morning of 10 August, reading that Austria-Hungary declared war against Montenegro 9th ' +
+          'instant. The third is Montenegrin: the king’s proclamation, dated at Cetinje 25 July old ' +
+          'style and 6 August new style, which is the act the campaign accounts date — the 2026 ' +
+          'Springer chapter on Lovćen says so, as does the essay for The World Remembers by the ' +
+          'director of the National Museum of Montenegro. A proclamation read out at Cetinje and a ' +
+          'note delivered in Vienna are not the same act.',
+        consequence:
+          'The month is not in dispute and the map only needs the month: Montenegro is drawn in the ' +
+          'entente colour from August 1914, and the entente legend has named it there all along. What ' +
+          'was missing was prose, and the day is where the sources genuinely differ, so this card takes ' +
+          'the Montenegrin act rather than the Habsburg reply and records the rest in the uncertainties ' +
+          'list. The end of the war Montenegro began in August is dated without argument: the offensive ' +
+          'of 5 January 1916, Mojkovac on the 6th and 7th, the Lovćen heights gone by the 12th, Cetinje ' +
+          'on the 13th, the order to disband the army on the 21st, the surrender signed on the 25th, ' +
+          'the king in Brindisi, and the country occupied until November 1918.',
+      },
+    },
+  },
+  {
     id: 'battle_of_the_frontiers_mons',
     date: '1914-08-23',
     precision: 'day',
