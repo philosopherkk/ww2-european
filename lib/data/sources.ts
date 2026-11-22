@@ -506,6 +506,48 @@ export const SOURCES: Source[] = [  {
       '22nd. It is the only source here that gives days rather than terms, so the card that ' +
       'uses it says so.',
   },
+  {
+    citation: '“The Bulgarian Armistice Convention, Signed September 29, 1918”, _Foreign Relations of the United States: The Paris Peace Conference, 1919_, vol. II, document 162',
+    publisher: 'US Government, Office of the Historian',
+    url: 'https://history.state.gov/historicaldocuments/frus1919Parisv02/d162',
+    usedFor: 'The printed text of the convention with Bulgaria: seven numbered clauses and four secret articles — evacuation of the territory still held in Greece and Serbia, demobilisation to a fighting force of three divisions of sixteen battalions and four cavalry regiments, surrender of the arms, munitions and military vehicles of the demobilised units to be stored by the Bulgarian authorities under Allied control, restitution of the matériel of the Fourth Greek Army Corps, the troops west of the meridian of Uskub to be held as prisoners of war, four weeks for German and Austrian troops and nationals to withdraw, and orders to cease firing at the time of signature — with the passage rights, the provisional occupation of strategical points and the assurance about Sofia carried in the secret articles. The clause covering the troops west of Uskub prints no number, which is why the figure of 150,000 hostages is not printed on the card.',
+  },
+  {
+    citation: '“American Naval Participation in the Great War (With Special Reference to the European Theater of Operations)”',
+    publisher: 'Naval History and Heritage Command, US Department of the Navy',
+    url: 'http://web.archive.org/web/20251208161226id_/https://www.history.navy.mil/research/library/online-reading-room/title-list-alphabetically/a/american-naval-participation-in-the-great-war-with-special-reference-to-the-european-theater-of-operations.html',
+    usedFor: 'The American official record of Durazzo on 2 October 1918: that Germany and Austria used the port to send supplies to Bulgaria, that the port, the merchant shipping and the men-of-war at anchor were bombarded by Italian and British cruisers screened against submarine attack by destroyers and American submarine chasers, that two hostile submarines were either badly damaged or destroyed, and the depth-charge attacks by submarine chasers No. 129 and No. 215. The navy’s host does not serve this page any more, so the link is to its Internet Archive capture of 8 December 2025 of the address history.navy.mil/research/library/online-reading-room/title-list-alphabetically/a/american-naval-participation-in-the-great-war-with-special-reference-to-the-european-theater-of-operations.html.',
+  },
+  {
+    citation: '“WWI: Submarine Chasers”, National Museum of the United States Navy',
+    publisher: 'Naval History and Heritage Command, US Department of the Navy',
+    url: 'http://web.archive.org/web/20251210090721id_/https://www.history.navy.mil/content/history/museums/nmusn/explore/photography/wwi/wwi-submarine-chasers.html',
+    usedFor: 'The companion museum account of the same action, which disagrees with the official history of the same institution: it gives the force at Durazzo on 2 October 1918 as a squadron of 11 submarine chasers screening British, French and Italian naval forces, and says that the chasers destroyed the mines which threatened the bombarding ships. Cited together with the official history because the two cannot both be right about the size of the American force or the fate of the submarines. Linked through the Internet Archive capture of 10 December 2025 of the address history.navy.mil/content/history/museums/nmusn/explore/photography/wwi/wwi-submarine-chasers.html.',
+  },
+  {
+    citation: 'Giorgio Anastasiadou, “Albania”, _1914-1918-online: International Encyclopedia of the First World War_',
+    publisher: 'Freie Universität Berlin',
+    url: 'http://web.archive.org/web/20260905215701id_/https://encyclopedia.1914-1918-online.net/article/albania/',
+    usedFor: 'The political history of Albania in 1918 and the second family for the bombardment of the port on 2 October 1918: General Louis Franchet d’Espèrey led troops to Durrës and bombarded it to thwart the evacuation of the Bulgarian and German armies and, presumably, to keep the Serbs and the Italians separated. The same article is the only source for the agreement reached at Paris on 7 October 1918, led by Georges Clemenceau, allowing Italian troops to replace the French at Korçë, and so that agreement is recorded on the card rather than printed in its prose. Linked through the Internet Archive capture of 5 September 2026, because the encyclopedia’s own host returns a page with no article text on it.',
+  },
+  {
+    citation: 'Raymond J. Sontag, “Bulgaria”, _1914-1918-online: International Encyclopedia of the First World War_',
+    publisher: 'Freie Universität Berlin',
+    url: 'http://web.archive.org/web/20260629080631id_/https://encyclopedia.1914-1918-online.net/article/bulgaria/',
+    usedFor: 'The Bulgarian side of the armistice: the government’s decision on 25 September to seek an accommodation with the Entente, the delegation that went to Salonika with the American consul general in Sofia, the signing on 29 September and Bulgaria being the first of the Central Powers to leave the war, the judgement that the terms were not terribly onerous and that most of the country avoided foreign occupation, and Ferdinand’s abdication on 3 October 1918 in favour of his son Boris. Linked through the Internet Archive capture of 29 June 2026, for the same reason as the article on Albania.',
+  },
+  {
+    citation: '“World War I and Its Effects on Albania”, _Albania: A Country Study_, edited by Raymond Zickel and Walter R. Iwaskiw, Government Printing Office for the Library of Congress',
+    publisher: 'US Library of Congress, Federal Research Division',
+    url: 'http://countrystudies.us/albania/23.htm',
+    usedFor: 'Who held Albania when the war ended: the Austro-Hungarian withdrawal beginning within days of the Entente breakthrough north of Thessaloniki in September 1918, and Italy’s army holding most of the country, Serbia much of the northern mountains, Greece a sliver inside the 1913 borders and French forces Korçë and Shkodër, when the armistice took effect on 11 November. This is the basis for drawing Albania at peace rather than occupied, and for the uncertainty entry about its colour in the last months of 1918.',
+  },
+  {
+    citation: '“World War I”, _Bulgaria: A Country Study_, edited by Glenn E. Curtis, Government Printing Office for the Library of Congress',
+    publisher: 'US Library of Congress, Federal Research Division',
+    url: 'http://countrystudies.us/bulgaria/13.htm',
+    usedFor: 'The Bulgarian domestic situation behind the armistice, and a second family for the end of Ferdinand: the parties in power forced him to abdicate at the end of September because they feared full-scale revolution. It gives no day, which is why the card prints no interval between the armistice and the abdication.',
+  },
 ];
 
 export interface Uncertainty {
@@ -640,5 +682,9 @@ export const UNCERTAINTIES: Uncertainty[] = [
       'find Albanian notables meeting at Durrës and voting a provisional government, are why ' +
       'the site keeps a colour of its own for Albania instead of treating it as territory of ' +
       'one of the armies in it.',
+  },
+  {
+    topic: 'The armistice with Bulgaria and the bombardment of Durazzo: the cease-fire hour, the men surrendered, the day of the request, and the size of the raid',
+    range: 'Both of these events rest on better documents than most of the autumn of 1918, and both have details those documents do not carry. The convention with Bulgaria is printed in Foreign Relations of the United States, and the signature at Thessaloniki on 29 September 1918 appears in the printed text, in the encyclopedia account and in Wikipedia; that date is not in dispute. The hours are: Wikipedia puts the signature at 10:50 p.m. and the cease-fire in force at noon on 30 September, while the printed clause says only that the orders for the cessation of hostilities are to be given at the time of signature, so no hour is printed on the card. The about 150,000 soldiers west of the Skopje meridian to be delivered as hostages are likewise from Wikipedia alone — the printed clause covering those troops prints no number — and the tally of some 77,000 men and 500 guns belongs to the battle rather than to the convention. The day the Bulgarian government decided to ask is 24 September in Wikipedia and 25 September in the encyclopedia article, and the encyclopedia dates Ferdinand’s abdication to 3 October where the Library of Congress study says only that he was forced out at the end of September, so no interval between the two is printed. At Durazzo the same navy’s records disagree about its own operation: eleven submarine chasers against twelve, the force screened British, French and Italian against Italian and British bombarding cruisers, and the two attacking submarines destroyed or badly damaged on the one hand and damaged and safely away on the other, with the American force’s claim to have sunk them recorded as an error in the battle article’s own account. The damage to the town and its civilians, including the destruction of most of the Old City and of the royal palace, rests on a single account, and no account gives the Albanian dead.',
   },
 ];
