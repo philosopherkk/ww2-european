@@ -193,7 +193,7 @@ export const TURNING_POINTS: TurningPoint[] = [
         'The map’s frozen 1914 geometry cannot show the shifting front inside the country, and one colour for the whole polity conceals areas never fully controlled.',
     },
     mapNote:
-      'Montenegro changes from entente to occupation in January 1916, one month after Serbia. Its small polygon keeps the July 1914 shape throughout.',
+      'Montenegro changes from entente to occupation in January 1916, two months after Serbia. Its small polygon keeps the July 1914 shape throughout.',
     eventIds: ['mojkovac'],
     sources: ['Lawrence Sondhaus, World War I: The Global Revolution'],
   },
@@ -349,7 +349,7 @@ export const TURNING_POINTS: TurningPoint[] = [
       primary:
         'In May 1918 defeated Romania made peace with Germany; abandoned by Russia, it could not go on fighting.',
       secondary:
-        'The treaty of 7 May was signed under occupation: Dobruja passed to Bulgaria, Austria-Hungary took Carpathian frontier rights, and Romanian oil came under German control.',
+        'The treaty of 7 May was signed under occupation: Southern Dobruja passed to Bulgaria, Austria-Hungary took Carpathian frontier rights, and Romanian oil came under German control.',
       university:
         'Bucharest belongs with Brest-Litovsk among the separate peaces of 1918: with Russia gone, the occupation of Wallachia was converted into a treaty, and its grain and oil were to carry the German offensive in the west.',
     },
