@@ -71,6 +71,13 @@ export const CAMPAIGN_EVENT_LINKS: CampaignEventLink[] = [
   { line: 'march_falkenhayn_bucharest', event: 'bucharest_falls', at: 1 },
   { line: 'march_mackensen_bucharest', event: 'bucharest_falls', at: 1 },
   { line: 'march_faustschlag_kiev', event: 'operation_faustschlag', at: 0 },
+  { line: 'caucasus_1916', event: 'trabzon_occupied', at: 1 },
+  { line: 'caucasus_1918', event: 'treaties_of_batum', at: 0 },
+  { line: 'arab_revolt_1916_18', event: 'aqaba_taken', at: 0 },
+  { line: 'march_tenth_army_soissons', event: 'second_battle_of_the_marne', at: 1 },
+  { line: 'march_eleventh_army_belgrade', event: 'fall_of_belgrade_1915', at: 1 },
+  { line: 'georgette_1918', event: 'third_battle_of_messines', at: 2 },
+  { line: 'march_faustschlag_narva', event: 'operation_faustschlag', at: 0 },
 ];
 
 export const LINKS_BY_LINE: Record<string, CampaignEventLink[]> = {};

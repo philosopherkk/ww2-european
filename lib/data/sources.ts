@@ -548,6 +548,58 @@ export const SOURCES: Source[] = [  {
     url: 'http://countrystudies.us/bulgaria/13.htm',
     usedFor: 'The Bulgarian domestic situation behind the armistice, and a second family for the end of Ferdinand: the parties in power forced him to abdicate at the end of September because they feared full-scale revolution. It gives no day, which is why the card prints no interval between the armistice and the abdication.',
   },
+  {
+    citation: '“Belgrade”, _Wikipedia_',
+    publisher: 'Wikimedia Foundation',
+    url: 'https://en.wikipedia.org/wiki/Belgrade',
+    usedFor: 'The second family for the day the capital of Serbia fell: the article dates the bombardment as starting on 6 October 1915 and the fall to German and Austro-Hungarian troops under Field Marshal August von Mackensen on 9 October of the same year, and gives the liberation by Serbian and French troops on 1 November 1918 under Marshal Louis Franchet d’Espèrey and Crown Prince Alexander, which is the date the site’s last months of 1918 turn on. The article carries no strength figures that match the armies named in its own text, so no figures are taken from it.',
+  },
+  {
+    citation: '“Serbian campaign”, _Wikipedia_',
+    publisher: 'Wikimedia Foundation',
+    url: 'https://en.wikipedia.org/wiki/Serbian_campaign',
+    usedFor: 'The frame of the two invasions: that Austria-Hungary declared war on 28 July 1914 and was repelled three times, that the Central Powers launched a successful invasion in 1915 and occupied Serbia, and that Serbia and its allies liberated the country in 1918 after the breakthrough in Macedonia. It is the second family for the campaign opening on 6 October 1915, and it is where the site takes the wording that Serbia was occupied and divided between the Austro-Hungarian Empire and Bulgaria.',
+  },
+  {
+    citation: '“Battle of the Lys (1918)”, _Wikipedia_',
+    publisher: 'Wikimedia Foundation',
+    url: 'https://en.wikipedia.org/wiki/Battle_of_the_Lys_(1918)',
+    usedFor: 'Operation Georgette on the Lys in April 1918: the objective of Ypres and the Channel ports of Calais, Dunkirk and Boulogne; the bombardment opening on the evening of 7 April and the Sixth Army attacking at dawn on the 9th with eight divisions; the Portuguese 2nd Division overrun on a front of about eleven kilometres and withdrawing towards Estaires, the British 40th Division to its north collapsing and falling back to the north, and the British 55th (West Lancashire) Division pulling back its northern brigade and holding the rest of its ground; the Fourth Army’s attack north of Armentières on 10 April against the British 19th Division and the taking of Messines; and the list of engagements with their dates, from Estaires on 9–11 April to the Scherpenberg on 29 April. It also prints the judgement that the offensive failed in its main objective to capture Hazebrouck. Its dates are the article’s own and are set against the Australian War Memorial table in the uncertainty entry for these battles.',
+  },
+  {
+    citation: '“Armistice of 11 November 1918”, _Wikipedia_',
+    publisher: 'Wikimedia Foundation',
+    url: 'https://en.wikipedia.org/wiki/Armistice_of_11_November_1918',
+    usedFor: 'The last deaths of the war and the way the day is remembered: George Edwin Ellison of the 5th Royal Irish Lancers killed scouting on the outskirts of Mons at around 9:30 a.m., and Private George Lawrence Price, the final Canadian and Commonwealth soldier to die, shot by a sniper at Ville-sur-Haine two minutes before the armistice went into effect. Ellison’s sentence carries a citation-needed flag in the article and Price’s is footnoted to a source this site has not followed, so both are recorded on the card as what the article reports. It is also the only family reached for the place of the signature, the railway carriage in the Forest of Compiègne, and for the description of the occasion as the eleventh hour of the eleventh day of the eleventh month.',
+  },
+  {
+    citation: '“Hundred Days Offensive”, _Wikipedia_',
+    publisher: 'Wikimedia Foundation',
+    url: 'https://en.wikipedia.org/wiki/Hundred_Days_Offensive',
+    usedFor: 'A second family for the town but not for the hour: the infobox gives the campaign as running from 8 August to 11 November 1918 and its location as from Amiens, France to Mons, Belgium, which is the only non-official-history statement this site reached that the offensive ended at Mons, and it prints no day on which the town was taken. Every hour on the card for the last morning at Mons therefore rests on Edmonds and Maxwell-Hyslop alone.',
+  },
+  {
+    citation: 'Cyril Falls, _Military Operations Macedonia_, volume I (London: HMSO, 1933)',
+    publisher: 'Imperial War Museums collection, scan deposited at archive.org',
+    url: 'https://archive.org/details/military-operations-macedonia-vol-1',
+    usedFor:
+      'The second family for the fall of Belgrade in October 1915, and the source of the crossing: the British official history of the Macedonian campaign prints “The bombardment began on the 6th October and the passage of the rivers next day” and the capture “Austrians on the 9th”. It also corrects two points an earlier draft had wrong — that the German Eleventh Army was to cross the Danube between Smederevo and Ram, not at Zemun, and that the passage opened the day after the bombardment. The scan’s page furniture intrudes on the sentence about 9 October, so the quotation is given in two runs.',
+  },
+  {
+    citation:
+      'J. E. Edmonds and R. Maxwell-Hyslop, _Military Operations France and Belgium 1918_, volume V (London: HMSO, 1947)',
+    publisher: 'Imperial War Museums collection, scan deposited at archive.org',
+    url: 'https://archive.org/details/mil-op-fb-1918-v5',
+    usedFor:
+      'The hours of the last morning at Mons and the retaking of Messines village: the patrols across the canal at about 2.30 a.m., two companies in the outskirts at 4.30 a.m., “By dawn Mons was clear of the enemy”, the Advanced G.H.Q. message of 6.50 a.m., and the ridge “regained at the end of April 1918, when it was lost again by the Second Army”. This is the only source reached for those hours, so they are single-family and recorded as such; the scan is OCR, and the heading “Tue 11TH NoveMBER, 1918” and the signature sentence “The Armistice was signed at 5.5 a.m.’on the 11th Novem- ber” are quoted as printed, with page furniture inside the ridge sentence.',
+  },
+  {
+    citation: '“First World War battles”, _Australian War Memorial encyclopedia_',
+    publisher: 'Australian War Memorial',
+    url: 'https://www.awm.gov.au/articles/encyclopedia/battles_first_world_war',
+    usedFor:
+      'The second family for the dates of the Flanders fighting of April 1918, and the reason this site discloses the numbering rather than printing it: the table gives the Lys as 9 April and Hazebrouck as 13–17 April where the battle article gives 7 April and 12–15 April, and it has no row at all for Messines in 1918. Its stated source is the Battles Nomenclature Committee’s official list of the names of battles and other engagements, which is also why the last week of the war has no official name here: the table ends at Landrecies on 4 November, with no entry for the Sambre and none for Mons. It also prints Damascus on 1 October 1918.',
+  },
 ];
 
 export interface Uncertainty {
@@ -686,5 +738,17 @@ export const UNCERTAINTIES: Uncertainty[] = [
   {
     topic: 'The armistice with Bulgaria and the bombardment of Durazzo: the cease-fire hour, the men surrendered, the day of the request, and the size of the raid',
     range: 'Both of these events rest on better documents than most of the autumn of 1918, and both have details those documents do not carry. The convention with Bulgaria is printed in Foreign Relations of the United States, and the signature at Thessaloniki on 29 September 1918 appears in the printed text, in the encyclopedia account and in Wikipedia; that date is not in dispute. The hours are: Wikipedia puts the signature at 10:50 p.m. and the cease-fire in force at noon on 30 September, while the printed clause says only that the orders for the cessation of hostilities are to be given at the time of signature, so no hour is printed on the card. The about 150,000 soldiers west of the Skopje meridian to be delivered as hostages are likewise from Wikipedia alone — the printed clause covering those troops prints no number — and the tally of some 77,000 men and 500 guns belongs to the battle rather than to the convention. The day the Bulgarian government decided to ask is 24 September in Wikipedia and 25 September in the encyclopedia article, and the encyclopedia dates Ferdinand’s abdication to 3 October where the Library of Congress study says only that he was forced out at the end of September, so no interval between the two is printed. At Durazzo the same navy’s records disagree about its own operation: eleven submarine chasers against twelve, the force screened British, French and Italian against Italian and British bombarding cruisers, and the two attacking submarines destroyed or badly damaged on the one hand and damaged and safely away on the other, with the American force’s claim to have sunk them recorded as an error in the battle article’s own account. The damage to the town and its civilians, including the destruction of most of the Old City and of the royal palace, rests on a single account, and no account gives the Albanian dead.',
+  },
+  {
+    topic: 'The day Belgrade fell in 1915, the day the rivers were crossed, and the day Bulgaria entered the war',
+    range: 'The fall of the city on 9 October 1915 is carried by two families: the article on Belgrade prints the bombardment starting on 6 October and the city falling on 9 October of the same year, and Cyril Falls, the British official history of the Macedonian campaign, prints the bombardment beginning on the 6th October and the passage of the rivers next day, with the city taken by the Austrians on the 9th. The crossing is the only point on which they differ, and the card follows the official history in putting it on the 7th. The Bulgarian declaration of war is single-family: the official history prints 13 October with the army marching the next day, and no second family was reached for that day, so it appears in the card’s note rather than in its prose. Three claims this site might have printed are not printed at all, because neither family carries them: that the crossings of the Danube and Sava were the largest amphibious operation of the war, that Belgrade had been declared an open city, and that motor gunboats supported the banks.',
+  },
+  {
+    topic: 'The Flanders battles of April 1918: which day the offensive opened, what its battles were numbered, and which of them have a second family',
+    range: 'The article on the Battle of the Lys dates the battle as fought from 7 to 29 April 1918 and puts the bombardment on the evening of 7 April, while the Australian War Memorial’s table of engagements, whose stated source is the Battles Nomenclature Committee’s official list of 1922, gives the Lys as 9 April. The two therefore disagree by two days about the opening, and the card prints the bombardment and the assault as separate events so that neither date has to be chosen. Hazebrouck is 12–15 April in the article and 13–17 April in the table. The table has no row for Messines in 1918 at all, so the village fighting of 10–11 April, and with it the taking of Messines and of Bailleul and the Kemmelberg, is single-family. The numbering is disputed in a way this site does not settle: accounts that treat the whole of the April fighting as the Fourth Battle of Ypres number its battles differently, which is why the card’s title avoids the number while its identifier keeps the conventional one. The retaking of the village on 29 September 1918, a patrol of the 30th Division entering it on the evening of the 28th and the 90th Brigade in it by the morning, rests on Edmonds and Maxwell-Hyslop alone.',
+  },
+  {
+    topic: 'The last morning at Mons: the hours, the signature, and the last two soldiers',
+    range: 'The hours of the last attack on Mons are all from one volume of the British official history, which prints parties of machine-gunners firing on all attempts to cross the canal through the early part of the night, patrols crossing at about 2.30 a.m., two companies in the outskirts at 4.30 a.m., the town clear of the enemy by dawn and the advanced guard of the 3rd Canadian Division marching through. The Australian War Memorial table, which is the official nomenclature, has no row for the Sambre and none for Mons, so the fighting of the last week has no official name and no second account of its hours. The same volume prints the signature at 5.5 a.m. and the message to Armies at 6.50 a.m., while Wikipedia says the signatures were made, depending on the source, between 5:00 a.m. and 5:45 a.m. Paris time, and that no reachable source outside Wikipedia prints the place of the signing at all. The two soldiers the card names as the last deaths are from Wikipedia: Ellison’s sentence carries a citation-needed flag in the article, Price’s is footnoted but the note was not followed to a second family, and no source reached gives any figure for the German rearguard on the canal.',
   },
 ];

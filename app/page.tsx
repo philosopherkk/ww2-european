@@ -266,6 +266,9 @@ export default function Home() {
       <header className="bg-stone-900 text-stone-50">
         <div className="mx-auto flex max-w-[1400px] flex-wrap items-center gap-x-5 gap-y-2 px-3 py-2.5 sm:px-4 xl:flex-nowrap xl:py-3">
           <div className="w-full min-w-0 xl:w-auto">
+            <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-stone-500">
+              Worldwarpedia
+            </div>
             <h1 className="font-serif text-xl font-semibold leading-tight tracking-tight sm:text-2xl">
               The First World War in Europe
             </h1>

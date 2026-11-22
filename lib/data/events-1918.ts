@@ -299,6 +299,118 @@ export const EVENTS_1918: WW1Event[] = [
     note: 'Began 21 March 1918, called off 5 April. German strength in the west on 21 March: 192 divisions and 3 brigades of 241, 110 in the line. German losses about 239,000; Allied French 92,004 and British 236,300 (about 328,000). Middlebrook: some 39,929 German and 38,512 British casualties on 21 March. Sources checked: “Operation Michael”, “Hundred Days Offensive”.',
   },
   {
+    /* The line georgette_1918 has wp2 at Messines and no card, so KK asked for one.
+       The Lys article's own list of engagements gives "Battle of Messines (10–11 April)".
+       Three things in the first draft came from mis-reading the sources and are fixed
+       here. The Hazebrouck dates 13–17 April are the Australian War Memorial table's, not
+       the article's, which prints "Battle of Hazebrouck (12–15 April)". The two families
+       do not agree on the opening day at all: the article's lead says the battle was
+       "fought from 7 to 29 April 1918" and puts the bombardment on the evening of the
+       7th, while the AWM table gives the Lys as 9 April. And the draft implied Georgette
+       followed Amiens and the Hindenburg Line, which is eight months out of order. The
+       words cadre, held thin and Geel are in neither source and were dropped. Edmonds
+       volume V supplies the other end of the story, which the article does not print: the
+       village was retaken on 29 September 1918. */
+    id: 'third_battle_of_messines',
+    date: '1918-04-10',
+    precision: 'day',
+    kind: 'battle',
+    title: 'Messines taken again, in Operation Georgette',
+    fronts: ['western'],
+    countries: ['Germany', 'United Kingdom', 'Portugal'],
+    levels: {
+      primary: {
+        cause: 'The German aim in Flanders in April 1918 was to take Ypres and push the ' +
+          'British army back to the Channel ports. The attack came first against the ' +
+          'Portuguese divisions on the Lys, and then at the village of Messines.',
+        what: 'On 10 April the German Fourth Army attacked north of Armentières with four ' +
+          'divisions against the British 19th Division, broke through on a six-kilometre ' +
+          'front and took Messines — the same village the British had taken at such cost ' +
+          'the year before.',
+        consequence: 'The village stayed in German hands until the autumn, when the Second ' +
+          'Army’s advance took Messines ridge again, on 29 September 1918.',
+      },
+      secondary: {
+        cause: 'Ludendorff cut his planned Operation George down to Georgette: break the ' +
+          'British First Army, push the Second Army aside, and drive west to Calais, ' +
+          'Dunkirk and Boulogne. The First Army opposite held a quiet sector with worn-out ' +
+          'formations, including two divisions of the Portuguese Expeditionary Corps which ' +
+          'were undermanned, lacked almost half their officers and were due to be relieved ' +
+          'the day of the attack. The bombardment opened on the evening of 7 April and the ' +
+          'Sixth Army attacked with eight divisions at dawn on the 9th.',
+        what: 'The assault struck the Portuguese 2nd Division, holding a front of about ' +
+          'eleven kilometres; it was overrun and withdrew towards Estaires, and the ' +
+          'British 40th Division on its northern flank collapsed and fell back to the ' +
+          'north. Also on 10 April the Fourth Army attacked north of Armentières with four ' +
+          'divisions against the British 19th Division, whose army had already sent its ' +
+          'reserves south to the First Army; the Germans broke through on a six-kilometre ' +
+          'front and took Messines, and the 25th Division on the flank gave way four ' +
+          'kilometres.',
+        consequence: 'The Fourth Army took the ground the Second Army had lost, and ' +
+          'Messines, the objective of the mined battle of June 1917, was German again; ' +
+          'fighting for the village went on into the 11th, and that day Haig issued his ' +
+          '“backs to the wall” order. The Germans “failed in their main objective to ' +
+          'capture Hazebrouck and force a British withdrawal from the Ypres salient”, and ' +
+          'by 29 April the offensive was called off. The Germans took Bailleul between 13 ' +
+          'and 15 April, and on 25–26 April the Fourth Army took the Kemmelberg with three ' +
+          'divisions.',
+      },
+      university: {
+        cause: 'Georgette is customarily read as the offensive that won every battle and ' +
+          'lost nothing: the Sixth Army broke two Portuguese divisions and the Fourth Army ' +
+          'took the ground south of Ypres, and yet the map of Flanders looked almost the ' +
+          'same in May. The Portuguese collapse is the hinge of the account, and it is a ' +
+          'question of the state of the defence rather than of the assault — the corps was ' +
+          'undermanned, short of nearly half its officers, and its 2nd Division counted ' +
+          'about 21,000 men against an establishment it fell short of by more than six ' +
+          'thousand. What the German official accounts stress in turn is the exhaustion of ' +
+          'the stormtroop divisions, which is why a penetration of fifteen kilometres ' +
+          'produced no port and no decision.',
+        what: 'The dates on this card are printed dates, and the families do not agree. ' +
+          'The Lys article’s own list of engagements gives “Battle of Messines (10–11 ' +
+          'April)”, “Battle of Hazebrouck (12–15 April)”, “Battle of Bailleul (13–15 ' +
+          'April)”, “First Battle of Kemmel (17–19 April)” and “Second Battle of Kemmel ' +
+          '(25–26 April)”, and its lead dates the whole battle “from 7 to 29 April 1918”. ' +
+          'The Australian War Memorial table of AIF engagements, whose stated source is ' +
+          'the Battles Nomenclature Committee’s official list, gives the Lys as 9 April ' +
+          'and Hazebrouck as 13–17 April, and has no row for Messines in 1918. So the ' +
+          'opening day is 7 or 9 April depending on the family, Hazebrouck is 12–15 or ' +
+          '13–17 April, and the village itself is single-family.',
+        consequence: 'The other end of the village’s story is printed by the British ' +
+          'official history rather than by the battle article, and it is the reason this ' +
+          'map can carry the same place twice. Edmonds and Maxwell-Hyslop record that the ' +
+          'Germans held “the ridge down to and including Wytschaete-Messines which they ' +
+          'had lost in the Flanders … fighting in 1917 and regained at the end of April ' +
+          '1918, when it was lost again by the Second Army as a consequence of” the ' +
+          'success to the south in the Lys offensive. On 28 September 1918 a patrol of the ' +
+          '30th Division entered the village in the evening, and next morning “soon after ' +
+          '7 a.m. it was certain that men of the 90th Brigade were in Messines, ' +
+          'confirmation being provided by the Germans who began soon to shell the ' +
+          'village”.',
+      },
+    },
+    note: 'Numbering and dating notes, because the house rule is not to print a disputed ' +
+      'label or figure in the prose. The Lys article’s own list prints “Battle of Messines ' +
+      '(10–11 April)” and “First Battle of Kemmel (17–19 April)”, while accounts that ' +
+      'treat the whole April fighting as the Fourth Battle of Ypres number its battles ' +
+      'differently — the article itself gives the Lys that alternative name — so this ' +
+      'card’s title avoids the numbering while its id keeps the conventional form. The two ' +
+      'families disagree on the opening: the article’s lead says the battle was fought ' +
+      '“from 7 to 29 April 1918” and puts the bombardment on the evening of 7 April, while ' +
+      'the Australian War Memorial table gives the Lys as 9 April; Hazebrouck is 12–15 ' +
+      'April in the article and 13–17 April in that table, which has no 1918 row for ' +
+      'Messines at all. The villages of this battle are therefore single-family, and so is ' +
+      'the retaking of the village on 29 September 1918, which rests on Edmonds and ' +
+      'Maxwell-Hyslop, _Military Operations France and Belgium 1918_, volume V, pages 79 ' +
+      'to 81; that volume’s scan carries page furniture inside the sentence quoted about ' +
+      'the ridge, so the quotation is given in runs. Sources checked: Wikipedia “Battle of ' +
+      'the Lys (1918)”; Australian War Memorial encyclopedia table of First World War ' +
+      'battles; Edmonds and Maxwell-Hyslop, _Military Operations France and Belgium 1918_ ' +
+      'volume V.',
+    mapNote: 'Messines fell again on 10 April 1918, two days after the bombardment opened ' +
+      'on the Lys, and was retaken on 29 September 1918.',
+  },
+  {
     id: 'influenza_reaches_the_armies',
     date: '1918-04-15',
     precision: 'month',
@@ -1134,6 +1246,104 @@ export const EVENTS_1918: WW1Event[] = [
     },
     note:
       'Signed at 5:00 a.m. on 11 November 1918 in a railway carriage in the Compiègne Forest; in force from 11:00 a.m. Paris time (11:00 UT). Surrender of matériel, as listed in the terms: 5,000 artillery pieces, 25,000 machine guns, 3,000 minenwerfer, 1,700 aircraft including all night bombers, 5,000 railway locomotives, 150,000 railway carriages and 5,000 road trucks, plus the warships; the German delegation corrected the demand for more submarines than the fleet possessed. Matthias Erzberger signed for Germany. The blockade was not relaxed by the agreement. Piłsudski had been imprisoned at Magdeburg from 1917 and was Chief of State from November 1918. Source checked: “Armistice of 11 November 1918”, “Józef Piłsudski”.',
+  },
+  {
+    /* Replaces the 4 November card drafted earlier in this session. That card quoted a
+       sentence about reaching the Meuse and the Sambre-Oise Canal which does not appear
+       anywhere in the archive.org scan of the volume, so it was withdrawn rather than
+       published. What the scan does print, at length, is the last night at Mons, and it
+       is quoted below as printed. The existing armistice_of_11_november_1918 card never
+       mentions Mons, so this is not a duplicate of it. */
+    id: 'mons_last_morning_1918',
+    date: '1918-11-11',
+    precision: 'day',
+    kind: 'battle',
+    title: 'Mons cleared on the last morning of the war',
+    fronts: ['western'],
+    countries: ['United Kingdom', 'Germany', 'Belgium'],
+    levels: {
+      primary: {
+        cause: 'The fire was to stop at 11 a.m. on 11 November, and the Canadian Corps was ' +
+          'still fighting its way into Mons, over the canal whose crossings a German ' +
+          'rearguard still held.',
+        what: 'Patrols crossed the canal about 2.30 a.m., two companies entered the outskirts ' +
+          'at 4.30 a.m., and the British official history records that by dawn ' +
+          '“Mons was clear of the enemy”, and the advanced guard of the 3rd Canadian ' +
+          'Division marched through.',
+        consequence: 'Men died after the town was taken: one scouting outside it at about ' +
+          '9.30 a.m., and one shot by a sniper at Ville-sur-Haine two minutes before the ' +
+          'hour the fire was to stop.',
+      },
+      secondary: {
+        cause: 'The last week was pursuit rather than assault, and the British official ' +
+          'history which covers it names its chapters by the fighting: the Battle of ' +
+          'Valenciennes, 1–3 November, the Battle of the Sambre on the 4th, the pursuit ' +
+          'after the Sambre to the 7th, and the advance to the armistice line from the 8th ' +
+          'to the 10th — the last three the Fourth, Third and First Armies, Valenciennes ' +
+          'the Third and First. Mons lay on the canal line the retreating German divisions ' +
+          'were still holding on the night of 10 November.',
+        what: 'Parties of machine-gunners had been left behind, and “throughout the early ' +
+          'part of the night fired heavily on all attempts to cross the canal”, until “It was ' +
+          'decided by Lieut.-General Currie to clear the town”, and the 42nd Battalion was ' +
+          'brought up with trench mortars. “About 2.30 a.m. (11th) patrols succeeded in ' +
+          'crossing the canal at various points, and at 4.30 a.m. two companies… entered the ' +
+          'outskirts of the town and quickly disposed of the machine-gun posts”.',
+        consequence: 'The same chapter prints the hour the armistice was signed and the ' +
+          'message sent to Armies from Advanced G.H.Q. at 6.50 a.m., that hostilities would ' +
+          'cease at 11.00 hours that day and troops would stand fast on the line reached at ' +
+          'that hour. The battalions that took Mons were inside that last night, and held the ' +
+          'crossings they had forced until the fire stopped.',
+      },
+      university: {
+        cause: 'The hours are precise because a staff history is written from unit records, ' +
+          'and they are worth having because the day is remembered by the hour the fire ' +
+          'stopped: the armistice article calls it “the eleventh ' +
+          'hour of the eleventh day of the eleventh month”. ' +
+          'The volume’s own structure is the other half of the evidence: the last week is ' +
+          'organised as dates and armies rather than as one named battle, and the ' +
+          'Australian War Memorial’s table of the engagements its forces took part in on the ' +
+          'Western Front in 1918, whose stated source is the Battles Nomenclature Committee’s ' +
+          'official list, ends at Landrecies on 4 November and has no entry for the Sambre and ' +
+          'none for Mons. The fighting of the last week has no official name to carry it, so ' +
+          'the hours have to.',
+        what: 'The scan is OCR and is quoted as printed rather than tidied: the armistice ' +
+          'chapter is headed “Tue 11TH NoveMBER, 1918”, and the sentence about the signature ' +
+          'reads “The Armistice was signed at 5.5 a.m.’on the 11th Novem- ber”. Neither the ' +
+          'minute of that hour nor the place of the signing can be taken from it, and the ' +
+          'volume prints no place at all: the railway car in the Compiègne forest is what ' +
+          'Wikipedia prints, recorded on this site as a single-family detail. What the scan ' +
+          'does give, in narrative rather than tables, is Mons and its hours.',
+        consequence: 'The last morning is also what a map of months cannot show. The line ' +
+          'drawn for November 1918 is where the fire stopped, and it was still moving while ' +
+          'men were being killed, so the card exists to keep the fighting of 11 November ' +
+          'separate from the signature which ended it. It is a reminder that the last day of ' +
+          'the war is a phrase with hours in it, and that the hours differ between the town, ' +
+          'the canal and the forest where the document was signed.',
+      },
+    },
+    note: 'One family for the hours, one for the men. The Mons narrative and the hours are ' +
+      'from J. E. Edmonds, “Military Operations France and Belgium 1918” Vol V (HMSO 1947), ' +
+      'read from the archive.org scan; the chapter titles for the last week are transcribed ' +
+      'from that volume’s contents page, where the OCR prints “Battle of Valenciennes, ' +
+      'Ist-3rd November” and “Battle of the Sambre, 4th November”, the numeral read as a ' +
+      'letter. The town appears in a second family only as the end of the campaign: ' +
+      'Wikipedia’s Hundred Days Offensive infobox gives the location as Amiens, France to ' +
+      'Mons, Belgium and the date as 8 August – 11 November 1918, which prints no day for ' +
+      'the town being taken, so every hour on this card rests on the official history ' +
+      'alone. The two soldiers are from Wikipedia’s “Armistice of 11 November 1918”, which ' +
+      'gives George Edwin Ellison of the 5th Royal Irish Lancers, killed scouting on the ' +
+      'outskirts of Mons at around 9:30 a.m. — that sentence carries a citation-needed flag ' +
+      'in the article — and Private George Lawrence Price, the final Canadian and ' +
+      'Commonwealth soldier to die, shot by a sniper at Ville-sur-Haine two minutes before ' +
+      'the armistice went into effect; Price’s sentence is footnoted there, but the note was ' +
+      'not followed up to a second family, so both men are recorded as what that article ' +
+      'reports rather than as proven. No figure is given for the German rearguard, because no reachable source ' +
+      'prints one. This card replaces one drafted earlier in the same session and withdrawn ' +
+      'before publication: it carried a sentence about the advance reaching the Meuse and ' +
+      'the Sambre-Oise Canal on 4 November which cannot be found anywhere in this scan, and ' +
+      'a quotation that will not reproduce from the source is not published here.',
+    mapNote: 'Mons was clear of the enemy by the dawn of 11 November 1918, the last day of ' +
+      'the fighting on this front.',
   },
   {
     id: 'luxembourg_evacuated_1918_11',

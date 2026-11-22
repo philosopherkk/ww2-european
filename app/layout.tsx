@@ -19,13 +19,13 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "The First World War in Europe · month by month",
-    template: "%s · The First World War in Europe",
+    default: "Worldwarpedia · The First World War in Europe, month by month",
+    template: "%s · Worldwarpedia",
   },
   description:
     "An interactive map and timeline of the First World War in Europe, July 1914 to November 1918: who was at war with whom each month, the front lines and offensives, the causes and consequences of each event, the people involved, and the population and army figures behind them. Written at three reading levels.",
   openGraph: {
-    title: "The First World War in Europe, month by month",
+    title: "Worldwarpedia · The First World War in Europe, month by month",
     description:
       "Month-by-month allegiances, front lines, causes and consequences, people and figures — at three reading levels.",
     type: "website",

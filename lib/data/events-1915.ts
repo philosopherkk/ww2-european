@@ -985,6 +985,118 @@ export const EVENTS_1915: WW1Event[] = [
     },
   },
   {
+    /* KK asked for a card that carries the Eleventh Army's stroke to Belgrade.
+       Two publisher families now print the day of the fall: the Belgrade article
+       ("9 October of the same year") and Cyril Falls, _Military Operations Macedonia_
+       volume I (HMSO 1933, already in the site's bibliography), which prints "The
+       bombardment began on the 6th October and the passage of the rivers next day"
+       and the capture "Austrians on the 9th". Falls also refuted the first draft of
+       this card on two points, and both are corrected here: the Eleventh Army was to
+       cross the Danube between Smederevo and Ram, not at Zemun, and the passage of the
+       rivers began the day after the bombardment, not on 6 October. The draft's claims
+       that this was the largest amphibious operation of the war, that the city was
+       declared an open city, and that motor gunboats covered the banks are printed in
+       neither family and were removed. */
+    id: 'fall_of_belgrade_1915',
+    date: '1915-10-09',
+    precision: 'day',
+    kind: 'invasion',
+    title: 'Belgrade falls to Mackensen’s three armies',
+    fronts: ['balkans'],
+    countries: ['Serbia', 'Austria-Hungary', 'Germany', 'Bulgaria'],
+    levels: {
+      primary: {
+        cause: 'Serbia beat back two Austro-Hungarian invasions in 1914. In October 1915 ' +
+          'Bulgaria joined the Central Powers, and a combined German and ' +
+          'Austro-Hungarian force under Field Marshal von Mackensen moved south to ' +
+          'finish Serbia off.',
+        what: 'The bombardment of Belgrade began on 6 October 1915 and the Danube and ' +
+          'Sava were crossed the next day. Austrian troops took the city on 9 October, ' +
+          'and the Serbian army gave way rather than be trapped.',
+        consequence: 'The Serbian army retreated through Montenegro and Albania and was ' +
+          'evacuated to Greece. Belgrade remained under occupation until Serbian and ' +
+          'French troops liberated it on 1 November 1918.',
+      },
+      secondary: {
+        cause: 'The invasions of Serbia in 1914 had failed, and the Austro-Hungarian ' +
+          'command could not find all the troops for a third, so Falkenhayn drew on his ' +
+          'scanty reserves. Mackensen’s headquarters was at Temisoara from 20 September. ' +
+          'The Austrian Third Army was to cross the Sava and Danube between Kupinova and ' +
+          'Belgrade and advance on Kragujevac, the Serbian headquarters and arsenal; the ' +
+          'German Eleventh Army was to cross the Danube between Smederevo and Ram and up ' +
+          'the Morava valley; the Bulgarian First Army, under Mackensen’s orders, was to ' +
+          'cross the frontier five days later and march on Niš.',
+        what: 'Three small Serbian forces — the Third Army, the Belgrade Detachment and ' +
+          'the First Army — held the Danube and Sava front. The bombardment began on the ' +
+          '6th October and the passage of the rivers next day. The Danube is over a ' +
+          'thousand yards across there, and the big islands helped the crossing. Some ' +
+          'crossings failed, but small detachments got over, and on the 8th more troops ' +
+          'were pushed across while the Serbian counter-attacks were broken up by the ' +
+          'land artillery and the Austrian monitors. Belgrade was captured by the ' +
+          'Austrians on the 9th.',
+        consequence: 'Bulgaria declared war on 13 October and marched the next day, and ' +
+          'its Second Army took Kumanovo by the 19th, cutting the Salonika–Niš railway ' +
+          'behind the retreating Serbians. The Allied troops landed at Salonika in the ' +
+          'first days of October and up the Vardar to Krivolak were too far off to help. ' +
+          'Mackensen declared the campaign at an end on 24 November, and Serbia was ' +
+          'occupied and divided between Austria-Hungary and Bulgaria. The Serbian army ' +
+          'was re-formed on Corfu and returned to the war on the Salonika front.',
+      },
+      university: {
+        cause: 'The 1915 campaign is the one clean strategic result the Central Powers ' +
+          'achieved in the Balkans, and it was built on the thing Potiorek had lacked in ' +
+          '1914: mass. Falkenhayn calculated the odds at “330,000 to 190,000 rifles”, and ' +
+          'the official history says the superiority in artillery was far greater still, ' +
+          'since “it was confidently expected that the Serbians would not be able to ' +
+          'withstand the fire of massed heavy batteries and trench mortars”. The result ' +
+          'turns on what the Serbian command declined to do: Mackensen hoped “to fight ' +
+          'the decisive battle and destroy his opponent in front of Kragujevac”, and ' +
+          'records that “The Serbians broke off the fight and blew up their arsenal ' +
+          'before retiring”. The army survived the loss of the capital.',
+        what: 'The day printed for the fall of Belgrade is carried by two families. The ' +
+          'city’s own article dates the battle “starting on 6 October 1915” and says it ' +
+          '“fell to German and Austro-Hungarian troops commanded by Field Marshal August ' +
+          'von Mackensen on 9 October of the same year”; the Serbian campaign article ' +
+          'gives the same 6 October for the opening of the second campaign. The British ' +
+          'official history for the Allied side of the same operation prints “The ' +
+          'bombardment began on the 6th October and the passage of the rivers next day” ' +
+          'and the capture “Austrians on the 9th”. The two agree on the 9th, and differ ' +
+          'only about the crossing, which the official history puts the day after the ' +
+          'bombardment. The Bulgarian declaration is single-family here: the official ' +
+          'history prints 13 October, and no second family was reached for that day.',
+        consequence: 'For this map the campaign has two ends. The first is the colour of ' +
+          'Belgrade, held by the Central Powers from 9 October 1915 until the city was ' +
+          '“liberated by Serbian and French troops on 1 November 1918”, which is why the ' +
+          'frontier line on this site runs through Belgrade again in the last months of ' +
+          'the war. The second is that the occupation was administered as well as ' +
+          'garrisoned — Serbia was “occupied and divided between the Austro-Hungarian ' +
+          'Empire and Bulgaria”, and the Toplica Uprising of 1917 is the name under which ' +
+          'that government is remembered. The Eleventh Army’s own stroke on this map ' +
+          'therefore begins on the Danube above the Serbian frontier and ends at the city ' +
+          'whose occupation the same volume dates.',
+      },
+    },
+    note: 'Two families, which the first draft of this card did not have: the Belgrade ' +
+      'article prints the bombardment “starting on 6 October 1915” and the fall on ' +
+      '“9 October of the same year”, and Cyril Falls, _Military Operations Macedonia_, ' +
+      'volume I (HMSO, 1933), prints “The bombardment began on the 6th October and the ' +
+      'passage of the rivers next day” with the capture “Austrians on the 9th” — the scan ' +
+      'of the volume carries the page furniture “1916. Oct.” inside that sentence, so the ' +
+      'quotation is given in two runs. Falls also corrects two points this card first had ' +
+      'wrong: the Eleventh Army was to cross the Danube between Smederevo and Ram, not at ' +
+      'Zemun, and the crossing opened the day after the bombardment. Claims that were ' +
+      'printed by neither family have been dropped rather than hedged: that the crossings ' +
+      'were the largest amphibious operation of the war, that Belgrade was declared an ' +
+      'open city, and that motor gunboats supported the banks. The Bulgarian declaration ' +
+      'of war is given as 13 October on the official history alone, and is in the ' +
+      'uncertainty list. No strength figures are printed on the card: Falls’s rifle ' +
+      'calculation is a footnote total and the article’s infobox totals do not match the ' +
+      'armies named in its own text. Sources checked: Wikipedia “Belgrade” and “Serbian ' +
+      'campaign”; Cyril Falls, _Military Operations Macedonia_ volume I.',
+    mapNote: 'Belgrade fell on 9 October 1915, two days after the crossing of the Danube ' +
+      'and Sava opened.',
+  },
+  {
     /* Two days before Bulgaria’s entry, and here because the card is about what the
        occupation of Belgium did to the people living under it, and because the
        execution became the most effective single piece of propaganda of the year. */
