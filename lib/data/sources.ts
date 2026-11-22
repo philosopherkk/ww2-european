@@ -600,6 +600,66 @@ export const SOURCES: Source[] = [  {
     usedFor:
       'The second family for the dates of the Flanders fighting of April 1918, and the reason this site discloses the numbering rather than printing it: the table gives the Lys as 9 April and Hazebrouck as 13–17 April where the battle article gives 7 April and 12–15 April, and it has no row at all for Messines in 1918. Its stated source is the Battles Nomenclature Committee’s official list of the names of battles and other engagements, which is also why the last week of the war has no official name here: the table ends at Landrecies on 4 November, with no entry for the Sambre and none for Mons. It also prints Damascus on 1 October 1918.',
   },
+  {
+    citation: '“Battle of the Kolubara”, _Wikipedia_',
+    publisher: 'Wikimedia Foundation',
+    url: 'https://en.wikipedia.org/wiki/Battle_of_Kolubara',
+    usedFor: 'The December 1914 Serbian counter-offensive in detail: the counter-attack of 2 December, the recovery of Valjevo and Užice on 8 December, the Austro-Hungarian departure from Belgrade on 14 and 15 December covered by the river monitors on the Sava and the Danube, the Serbian re-entry on 15 December, and the aftermath of 22 December. The article cites Živko Pavlović’s interwar Belgrade monograph. Its day-level chronology is single-family and is recorded in the uncertainties list.',
+  },
+  {
+    citation: 'Richard C. Hall, “War in the Balkans”, _1914-1918-online: International Encyclopedia of the First World War_',
+    publisher: 'Freie Universität Berlin',
+    url: 'https://web.archive.org/web/20170127204107/http://encyclopedia.1914-1918-online.net/article/war_in_the_balkans',
+    usedFor: 'The second family for Serbia in 1914: the three invasions, the Austro-Hungarian occupation of Belgrade on 2 December 1914, and the Serbian counter-attack which ejected the invader from Serbian territory by 15 December. The live article is served to scripts as a JavaScript shell with no text to match, so the Internet Archive capture of the server-rendered page is the copy read and cited, and it is refetchable at that address.',
+  },
+  {
+    citation: '“Capture of Damascus (1918)”, _Wikipedia_',
+    publisher: 'Wikimedia Foundation',
+    url: 'https://en.wikipedia.org/wiki/Capture_of_Damascus_(1918)',
+    usedFor: 'The pursuit to Damascus: the capture of the city on 1 October 1918, the 3rd Light Horse Brigade entering at 05:00 that morning with orders to cut the Homs road, the rearguard fighting at Kaukab and Kiswe on 30 September, and the order from general headquarters to let Prince Faisal’s force into the city first although the Egyptian Expeditionary Force had won the battle and reached Damascus before the Arabs. The order of entry is on this site only in a note, because a second account differs by a day.',
+  },
+  {
+    citation: '“Battle of Megiddo (1918)”, _Wikipedia_',
+    publisher: 'Wikimedia Foundation',
+    url: 'https://en.wikipedia.org/wiki/Battle_of_Megiddo_(1918)',
+    usedFor: 'The battle that made the pursuit possible, and the pairing of Daraa on 27 September with Damascus on 1 October. The site’s Megiddo card carries the fighting of 19 to 21 September; this row is reached for the two towns at the end of the pursuit, and its day for Daraa is the one the Tigris-to-Damascus march line uses.',
+  },
+  {
+    citation: '“The Battle of Megiddo, 19–21 September 1918”, _History of War_',
+    publisher: 'History of War (Richard W. Brown)',
+    url: 'https://www.historyofwar.org/articles/battles_megiddo1918.html',
+    usedFor: 'An account of the Palestine pursuit independent of Wikipedia: the Turks losing control of Damascus on 30 September, the first troops of the Arab Revolt entering on 1 October and the first of Allenby’s men on the following day, and the fall of Beirut, Tripoli and Aleppo before the Ottoman request for an armistice. Its order of entry into Damascus differs from the capture article’s by a day, which is why no ranking of the troops is printed.',
+  },
+  {
+    citation: '_The Times History of the War in Africa, Europe and Asia_, volume XVIII (London: The Times Office)',
+    publisher: 'The Times Office, London',
+    url: 'https://archive.org/details/timeshistoryofwa18londuoft',
+    usedFor: 'A third family for the day Damascus fell, giving the entry of British and Arab troops as 30 September to 1 October, and for the fall of the rest of Syria. The scan is optical character recognition and is quoted as printed. The earlier volumes were searched for the Serbian counter-offensive of December 1914: the volume carrying 1915 prints no fighting on the Kolubara and no December 1914 date in its Serbian text, and that negative is recorded in the uncertainties list.',
+  },
+  {
+    citation: 'Brigadier-General F. J. Moberly, _History of the Great War based on Official Documents: The Campaign in Mesopotamia 1914–1918, volume III_ (London: His Majesty’s Stationery Office, 1925)',
+    publisher: 'His Majesty’s Stationery Office, London',
+    url: 'https://archive.org/details/in.ernet.dli.2015.210668',
+    usedFor: 'The last days of the recapture of Kut al-Amara from the British official history and from General Maude’s own progress telegraph: the chapter head dating the opening of the offensive to 14 December 1916, the passage of the Tigris on 23 February 1917, the report telegraphed on the evening of the 24th that the whole of the enemy’s positions from Sannaiyat to Kut were in British hands and that Kut itself passed automatically into them, the Turkish rear guard withdrawn during the night of the 24th and 25th, and the town found deserted and in ruins the next morning with the Union Jack hoisted by a party from the gunboat Mantis. The title page of the digitised copy names Moberly and HMSO and the year 1925; the scan is optical character recognition and is quoted as printed.',
+  },
+  {
+    citation: 'Brigadier-General F. J. Moberly, _History of the Great War based on Official Documents: The Campaign in Mesopotamia 1914–1918, volume II_ (London: His Majesty’s Stationery Office, 1924)',
+    publisher: 'His Majesty’s Stationery Office, London',
+    url: 'https://archive.org/details/in.ernet.dli.2015.210667',
+    usedFor: 'The fall of the Kut garrison from the same official history: the surrender on 29 April 1916, and the strength of the garrison on that day as 13,309, of whom 3,248 were Indian non-combatant followers. That is a return rather than an estimate, and it is the only Mesopotamian figure quoted on this site from these volumes; no comparable return is printed for the Ottoman losses of February 1917. The front matter of this digitised copy is not in the text read, so the year is the one the archive record gives for it.',
+  },
+  {
+    citation: '“Battle of Baghdad (1917)”, _Wikipedia_',
+    publisher: 'Wikimedia Foundation',
+    url: 'https://en.wikipedia.org/wiki/Battle_of_Baghdad_(1917)',
+    usedFor: 'The second family for the Mesopotamian year: the launch of the new campaign on 13 December 1916, the fighting on the Hai line from 25 January to 4 February 1917, the position called the Dahra Bend on 16 February, the re-capture of Kut on 24 February 1917, and the local Ottoman commander Karabekir Bey withdrawing his army rather than letting it be trapped in Kut as Townshend’s had been. The 13 December date is the one this site’s march line uses and it differs by a day from the official history’s chapter head, which is recorded in the uncertainties list.',
+  },
+  {
+    citation: '“Siege of Kut”, _Wikipedia_',
+    publisher: 'Wikimedia Foundation',
+    url: 'https://en.wikipedia.org/wiki/Siege_of_Kut',
+    usedFor: 'The ten months between the surrender and the recapture, which is the reason the recovery of the same town is a separate event rather than a repeat of one. Its own see-also dates the Second Battle of Kut to 23 February 1917, a day before the date this site prints for the recovery, and that difference is recorded in the uncertainties list.',
+  },
 ];
 
 export interface Uncertainty {
@@ -750,5 +810,21 @@ export const UNCERTAINTIES: Uncertainty[] = [
   {
     topic: 'The last morning at Mons: the hours, the signature, and the last two soldiers',
     range: 'The hours of the last attack on Mons are all from one volume of the British official history, which prints parties of machine-gunners firing on all attempts to cross the canal through the early part of the night, patrols crossing at about 2.30 a.m., two companies in the outskirts at 4.30 a.m., the town clear of the enemy by dawn and the advanced guard of the 3rd Canadian Division marching through. The Australian War Memorial table, which is the official nomenclature, has no row for the Sambre and none for Mons, so the fighting of the last week has no official name and no second account of its hours. The same volume prints the signature at 5.5 a.m. and the message to Armies at 6.50 a.m., while Wikipedia says the signatures were made, depending on the source, between 5:00 a.m. and 5:45 a.m. Paris time, and that no reachable source outside Wikipedia prints the place of the signing at all. The two soldiers the card names as the last deaths are from Wikipedia: Ellison’s sentence carries a citation-needed flag in the article, Price’s is footnoted but the note was not followed to a second family, and no source reached gives any figure for the German rearguard on the canal.',
+  },
+  {
+    topic: 'The Serbian winter of 1914: the days Belgrade, Valjevo and Užice changed hands',
+    range: 'Two families back the shape of the month and neither settles the days inside it. Richard C. Hall in the encyclopedia of the war has the Austro-Hungarians occupying Belgrade on 2 December 1914 and a determined Serbian counter-attack ejecting them from Serbian territory by 15 December. The campaign account in the encyclopedia of the battle has the Serbs withdrawing from Belgrade on 29 and 30 November, the counter-attack opening on 2 December, Valjevo and Užice retaken on 8 December, the Austro-Hungarians leaving Belgrade on 14 and 15 December under cover of the river monitors, and the Serbian army re-entering on 15 December with full control only by the end of the following day; the same article elsewhere gives the Austro-Hungarian entry into the city as 1 December. So an occupation dated 2 December and a withdrawal completed on 30 November describe the opening of the month differently, and the recapture is either the 15th or the 16th. Everything at day level therefore rests on one account, which cites Živko Pavlović’s Belgrade monograph of 1928 and 1930, and the attempt to find a second family is recorded because it failed: _The Times History of the War_, whose 1915 volume carries the Serbian campaign, prints no fighting on the Kolubara and no December 1914 date anywhere in its Serbian text; the war-history site reached has no Serbian page; the British official histories of Macedonia carry no 1914 Serbian narrative; and full-text search of two printed accounts by men with the Serbian army returned nothing for any term, which is an absent index rather than an absent fact. What this site prints in prose is limited to what two families support — the counter-attack and the expulsion of the invader by 15 December — and the days of the 2nd, the 8th and the 14th to 15th are carried in card notes, including the 8 December date the Kolubara card had already been printing. The relief of Potiorek and von Frank on 22 December and the merging of the two invading armies into one of 95,000 men are printed only by that one account, so they are in a note and not in the prose. No figure of any kind is given for the fighting at Valjevo or Užice, because no account reached gives one.',
+  },
+  {
+    topic: 'Maude’s offensive in Mesopotamia: when it opened, and when Kut was taken',
+    range: 'The recapture of Kut al-Amara is dated 24 February 1917 on two families and the site prints that day, but the two accounts of the day do not describe the same act. The British official history prints General Maude’s progress report telegraphed on the evening of the 24th, that the whole of the enemy’s positions from Sannaiyat to Kut were in British hands and that Kut itself, to which no interest but a sentimental one attached, passed automatically into them; the same volume reports the Turkish rear guard withdrawn during the night of the 24th and 25th, the gunboats anchored off the town that evening, and the town found deserted and in ruins the next morning, with a party from the gunboat Mantis hoisting the Union Jack. So the position was won and claimed on the 24th and entered on the 25th, and the encyclopedia article on the siege dates the second battle of Kut to 23 February. This site keeps 24 February, the day the line of positions fell and the day its march line ends. The opening of the advance is a separate one-day problem: the campaign account prints 13 December 1916, which is the date the march line and the Baghdad card use, while the chapter head of the official history dates the commencement of the offensive to 14 December 1916 and its text puts the advance to the Hai on the 14th. Both are printed sources of standing, neither is a modern argument, and a map that resolves by month cannot show the difference, so the line stays where it is and the difference is recorded here.',
+  },
+  {
+    topic: 'Damascus in October 1918: which day, and who was there first',
+    range: 'The city’s fall on 1 October 1918 has three families: the capture article, the campaign account which pairs Daraa on 27 September with Damascus on 1 October, and _The Times History of the War_, which writes of troops entering on 30 September to 1 October; the Australian War Memorial’s table of battles, whose stated source is the official committee’s list of engagements, prints Damascus on 1 October 1918. What is disputed is the order of entry. The capture article puts the 3rd Light Horse Brigade in the city at 05:00 on 1 October and quotes Hew Strachan’s and Hewick Hughes’s editing of Allenby’s papers for an instruction from general headquarters to let Prince Faisal’s force in first, even though the Egyptian Expeditionary Force had won the battle and reached Damascus before the Arabs; the independent war-history account has the Turks losing control on 30 September, the first troops of the Arab Revolt entering on 1 October and the first of Allenby’s men on 2 October. This site dates the event and does not rank the troops, because the dispute is about orders and hours rather than about the capture.',
+  },
+  {
+    topic: 'Daraa: 27 or 28 September 1918',
+    range: 'The march line this site draws from Daraa to Damascus starts on 27 September, following the campaign account which pairs the capture of Daraa on 27 September with Damascus on 1 October. The article on the capture of the city itself heads its section on the place 28 September, and its text puts the Arab Northern Army and the 4th Cavalry Division at Daraa on 27 September with fighting in the town running into the night. The difference is a day at the start of a pursuit, the two statements are not contradictory about the fighting, and the map resolves by month, so the line is not moved and the alternative day is recorded here.',
   },
 ];

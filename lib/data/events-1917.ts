@@ -146,6 +146,35 @@ export const EVENTS_1917: WW1Event[] = [
     },
   },
   {
+    id: 'kut_el_amara_taken_1917',
+    date: '1917-02-24',
+    precision: 'day',
+    kind: 'battle',
+    title: 'Kut taken back: Maude reaches the town surrendered in 1916',
+    fronts: ['middle_east'],
+    countries: ['United Kingdom', 'India', 'Ottoman Empire'],
+    figures: [],
+    note: 'Two families, and they disagree on two days. Wikipedia’s Battle of Baghdad dates the opening of the campaign to 13 December 1916, which is the date the march line starts from; the British official history of the campaign heads its chapter on the offensive 14 December 1916, with dispositions at midnight 13th-14th December and the advance to the Hai on the 14th. On the 24th, Maude’s own progress telegraph of that evening says Kut “passes automatically into our hands, though we have not yet actually occupied it”, and the narrative has the Turkish rear guard withdrawn during the night of the 24th-25th and the town found deserted next morning, so the physical entry was on the 25th. The card is dated 24 February, the day the position was won and the line ends.',
+    mapNote: 'Kut is the far end of the Tigris march line, which starts at Basra and runs the length of the offensive of December 1916 to February 1917. The Ottoman Empire is a single polygon on this map, so the advance up the river is a line and a pin and no change of colour.',
+    levels: {
+      primary: {
+        cause: 'Maude spent the second half of 1916 rebuilding the army that had surrendered at Kut, with a new base line, a railway up from the coast and trained divisions. His offensive began in December 1916 and moved up the Tigris deliberately.',
+        what: 'One Ottoman position after another was forced during January and February: the Hai line, the bend above it, and then the works above Kut itself. Kut was taken on 24 February 1917, the town that had surrendered on 29 April 1916.',
+        consequence: 'The Ottoman field force got clear instead of being trapped, so the day recovered a town rather than destroying an army. The road to Baghdad lay open and Maude went on at once.',
+      },
+      secondary: {
+        cause: 'The lesson of 1916 was that the river had to be secured and the army fed before it advanced, and Maude did that first, at the cost of a year’s delay and endless argument with Delhi and London. When he moved, he moved with the river and the gunboats on his flank and with enough artillery to break entrenchments, which the relief attempts had lacked.',
+        what: 'The Ottoman defence was a sequence of positions above Kut, and Maude preferred turning them to storming them; the last of the line was broken by a river crossing made above the positions. The Ottoman commander kept his field force out of the town instead of letting it be trapped, as Townshend’s had been, and its rear guard slipped away during the night. Kut was in British hands on 24 February 1917.',
+        consequence: 'The humiliation of April 1916 was paid back in a day, and the way was open to Baghdad, which fell on 11 March, ten months after the siege. The pursuit that followed was checked only by supply and by rain, not by the Ottomans, and Mesopotamia’s two great cities were both in British hands within the month.',
+      },
+      university: {
+        cause: 'Two families back the offensive and the day. Wikipedia’s Battle of Baghdad prints the campaign opening on 13 December 1916, the Hai line forced from 25 January, the Dahra Bend on 16 February and the re-capture of Kut on 24 February 1917. The British official history heads its chapter on this phase 14 December 1916, which is a day later than the date this site’s march line uses, and dates the fall of the garrison to 29 April 1916, when its strength was 13,309 including Indian non-combatant followers.',
+        what: 'The official volume heads this part of its account with the passage of the Tigris, the capture of Sannaiyat and the evacuation of Kut, and dates the passage to 23 February 1917. The campaign account gives the Hai line from 25 January to 4 February and the Dahra Bend on 16 February, naming neither Sannaiyat nor the crossing. Maude’s progress telegraph of the evening of the 24th says the enemy’s positions were his and that Kut “passes automatically into our hands, though we have not yet actually occupied it”; the gunboats anchored off the town that night, and the official narrative finds it deserted next morning, in ruins, with a party from the Mantis hoisting the Union Jack. Hence 24 February for the recovery and the entry on the 25th.',
+        consequence: 'Taking Kut intact enough to use as a base was the precondition for the march on Baghdad, which was taken on 11 March 1917 without a fight; this site keeps those as separate events, along with the occupation of September 1915 and the siege, so four cards now share the same point on the Tigris. The escape of the Ottoman field force meant no repetition of Townshend’s fate for the Ottoman commander, whose name the account of the day records.',
+      },
+    },
+  },
+  {
     id: 'february_revolution',
     date: '1917-03-08',
     precision: 'day',

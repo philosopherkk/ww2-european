@@ -1618,4 +1618,62 @@ export const EVENTS_1914: WW1Event[] = [
       }
     }
   },
+  {
+    id: 'belgrade_retaken_1914',
+    date: '1914-12-15',
+    precision: 'day',
+    kind: 'offensive',
+    title: 'Belgrade taken back: the third invasion of Serbia ends',
+    fronts: ['balkans'],
+    countries: ['Serbia', 'Austria-Hungary'],
+    figures: ['putnik', 'potiorek'],
+    note: 'Two families for the shape of the month, neither dating the re-entry the same way. 1914-1918-online’s Balkans article (Richard C. Hall) has the Austro-Hungarians occupying Belgrade on 2 December 1914 and a Serbian counterattack ejecting them from Serbian territory by 15 December. Wikipedia’s Battle of the Kolubara, citing Pavlović, puts the Serbian withdrawal from Belgrade at 29-30 November, the counterattack on 2 December, the abandonment between 14 and 15 December, and the re-entry on 15 December, with full control only by the end of the following day. So the 2 December occupation and the 2 December counterattack are each single-family, the 15 December re-entry is explicit in one account only, and that day carries a day of slack — hence early December and by 15 December in the prose. Valjevo and Užice on 8 December are likewise single-family; see the companion card and UNCERTAINTIES. The same article puts the Austro-Hungarian entry into Belgrade on 1 December, where 1914-1918-online gives 2 December, and its aftermath gives Potiorek and von Frank relieved on 22 December with the 5th and 6th Armies merged into a single 5th Army of 95,000 men; both of those are printed by that one family only, so neither is in the prose.',
+    mapNote: 'Belgrade is the northern end of the march line drawn back from the Kolubara, and the pin sits on the old city. Serbia is in the Entente colour all through 1914 on this map, so the Austro-Hungarian occupation of the capital and its reversal are not drawn as a change of ground.',
+    levels: {
+      primary: {
+        cause: 'Austria-Hungary had already tried twice to take Serbia in 1914 and failed both times. Its third invasion drove the Serbian army back and brought Austro-Hungarian troops into Belgrade in early December.',
+        what: 'The Serbian counter-attack went in against the armies that had invaded, and the invader gave ground. By 15 December 1914 the Austro-Hungarian army had been pushed out of Serbia, and the Serbian army was back in its capital.',
+        consequence: 'Austria-Hungary had meant to be done with Serbia while it fought elsewhere, and had instead been beaten back for the third time. Serbia’s recovery was one of the very few successes the Entente had in 1914.',
+      },
+      secondary: {
+        cause: 'The third invasion of 1914 had gone further than the first two: the Austro-Hungarians had taken the strategic town of Valjevo, forced the Kolubara line and marched into Belgrade itself. But the invasion had spent itself: the armies were exhausted, spread over mountain country, and their communications ran back over the rivers they had crossed.',
+        what: 'The counter-attack was launched against the expectation of a winter pause, and it went in on both wings at once: one towards the Danube and the Sava and Belgrade, the other south-west towards Valjevo and Užice. The Austro-Hungarian commander judged the capital untenable and withdrew his army across the rivers, covered by the river monitors, and the Serbian army walked back in.',
+        consequence: 'Serbia was clear of the invader before the end of 1914, which no other Entente front managed that year. The next round, in October 1915, was fought with German and Bulgarian help, and this time Serbia was conquered.',
+      },
+      university: {
+        cause: 'Two families and one print, and they do not overlap exactly. 1914-1918-online’s article on the Balkans has Putnik turning back the first invasion at Cer Mountain, a second failing that autumn, and the third succeeding in occupying Belgrade on 2 December 1914 before a Serbian counterattack ejected the invader from Serbian territory by 15 December. Wikipedia’s Battle of the Kolubara gives a Serbian withdrawal from Belgrade on 29-30 November, a counterattack on 2 December, Valjevo and Užice retaken on 8 December, an Austro-Hungarian evacuation on 14-15 December and a Serbian re-entry on 15 December. The card’s date is the re-entry day, which the line’s window allows.',
+        what: 'What is corroborated is the shape of the month: an Austro-Hungarian army that took the capital in early December and was out of the country within a fortnight, defeated by a counter-attack delivered in winter over ground the invasion had already exhausted. What rests on a single account is the detail of the days, the counter-attack’s opening on 2 December, the fall of Valjevo and Užice on the 8th, and the re-entry on the 15th, all from Wikipedia’s article on the battle, which cites Pavlović’s interwar Serbian monograph. No second family could be reached for those days from this machine, so they sit in the note and in UNCERTAINTIES rather than in the prose.',
+        consequence: 'The campaign settled a pattern that had held since August. Wikipedia’s aftermath records a change of command and the merging of the two invading armies on 22 December; the day and the figures are in this card’s note, because that account is the only one reached for them. It also fixed the map this site draws for the Balkans in 1914: the frontier is back where it was, and the next change is the conquest of October 1915.',
+      },
+    },
+  },
+  {
+    id: 'uzice_valjevo_retaken_1914',
+    date: '1914-12-08',
+    precision: 'day',
+    kind: 'offensive',
+    title: 'Valjevo and Užice retaken in the Serbian counter-attack',
+    fronts: ['balkans'],
+    countries: ['Serbia', 'Austria-Hungary'],
+    figures: ['putnik', 'potiorek'],
+    note: 'The single-family facts are the whole point of this card, and they stay in the note. Wikipedia’s Battle of the Kolubara prints Valjevo and Užice as retaken by the Serbs on 8 December 1914, and the counterattack as opening on 2 December, citing Pavlović’s interwar Belgrade monograph. The one independent family reached, 1914-1918-online, gives the counterattack no start day and the expulsion no town, only that Austria-Hungary was out of Serbian territory by 15 December. So the card’s date, 8 December, rests on one account and needs an UNCERTAINTIES row; the prose carries no day for these two towns. Several likely second families were tried and could not be reached: see notes.md.',
+    mapNote: 'The pin is on Užice at the end of the march line that runs south from the Kolubara through Valjevo, reversing waypoints already drawn on the 1914 invasion line. Serbia is in the Entente colour all through 1914 here, so neither the invasion nor its reversal is a change of ground on the map.',
+    levels: {
+      primary: {
+        cause: 'The third Austro-Hungarian invasion of 1914 had taken the strategic town of Valjevo, pushed the Serbian army back over the Kolubara and occupied Belgrade. Exhausted and spread over the hills, the invaders were still in place when the Serbs turned and attacked.',
+        what: 'The counter-attack came in on the southern wing as well as at the Danube, took Valjevo and Užice back from the Austro-Hungarians, and drove them west and north towards the Drina and the Sava.',
+        consequence: 'With its left wing turned in, the invasion collapsed, and the Austro-Hungarian army was out of Serbia before the end of 1914. Serbia had beaten a third invasion, and its own capital came back with it.',
+      },
+      secondary: {
+        cause: 'Valjevo was the strategic hinge of the campaign: it had fallen to the invaders on the way to the Kolubara, and the roads through it led both to the Sava and Danube crossings and south to Užice, on the Serbian army’s own line of retreat. Recovering it meant the difference between a local success and clearing the country.',
+        what: 'The Serbian attack fell on the invading armies along the Kolubara in the first days of December and the Austro-Hungarians were forced back to their start lines. Valjevo and Užice were both recovered in that first phase, on the same day on the account that records it, while the parallel advance towards Belgrade went in on the northern wing.',
+        consequence: 'The two wings together made the position on the Kolubara indefensible, and the invading army retired out of Serbia in the same winter weather in which it had attacked. Putnik’s campaign was over for that year, and the front did not move again until the combined attack of October 1915.',
+      },
+      university: {
+        cause: 'The campaign narrative here comes from two families that agree on the outline and diverge on the detail. Wikipedia’s Battle of the Kolubara, citing Pavlović, prints the counterattack opening on 2 December and Valjevo and Užice retaken on 8 December. 1914-1918-online’s article on the Balkans counts the invasions, dates the enemy out of Serbian territory by 15 December, and gives no day for the counterattack or for these two towns. Neither the Serbian nor the Austro-Hungarian official history of the campaign could be reached from this machine, so the day-level chronology remains single-source.',
+        what: 'The southern wing of the counter-attack recovered Valjevo, the hinge of the invasion’s road network, and then Užice further south-west, both of them places the Serbian army had used in its own retreats through November and both already waypoints on this site’s invasion line. The prose therefore names the towns and the counter-attack but no day, because 8 December is printed by one account only, and the map’s 8 December line end is the claim rather than a corroborated fact.',
+        consequence: 'The loss of the Kolubara position ended the third invasion in the same way the first two had ended. For Serbia the winter of 1914-15 was the only period of the war in which its prewar frontiers were held intact, and this stroke is the southern end of the two that restored them; the changes in the Austro-Hungarian command that followed are on the Belgrade card, from the same single account.',
+      },
+    },
+  },
 ];
