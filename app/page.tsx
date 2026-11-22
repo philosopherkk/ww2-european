@@ -258,8 +258,11 @@ export default function Home() {
       <header className="bg-stone-900 text-stone-50">
         <div className="mx-auto flex max-w-[1400px] flex-wrap items-center gap-x-5 gap-y-2 px-3 py-2.5 sm:px-4 xl:flex-nowrap xl:py-3">
           <div className="w-full min-w-0 xl:w-auto">
+            <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-stone-500">
+              Worldwarpedia
+            </div>
             <h1 className="font-serif text-xl font-semibold leading-tight tracking-tight sm:text-2xl">
-              The Second World War in Europe
+              The Second World War
             </h1>
             <div className="mt-0.5 flex items-center justify-between gap-3">
               <p className="text-xs text-stone-400">
@@ -560,7 +563,8 @@ export default function Home() {
       <footer className="border-t border-stone-300 bg-white">
         <div className="mx-auto max-w-[1400px] px-4 py-5 text-xs leading-relaxed text-stone-600">
           <p>
-            An educational resource on the Second World War in Europe. Text written for three
+            An educational resource on the Second World War: the European theatre, and the wider
+            war from China and Burma to the Pacific. Text written for three
             reading levels; dates, strengths and casualty figures checked against the published
             sources listed under &ldquo;Sources &amp; how to read&rdquo;, where the figures still
             argued over by historians are set out as ranges.

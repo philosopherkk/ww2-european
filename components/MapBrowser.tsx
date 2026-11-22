@@ -285,6 +285,15 @@ export default function MapBrowser({
    * padding keeps the close button clear of the map-size button. */
   const popupMaxHeight = typeof window !== 'undefined' && window.innerWidth < 1024 ? 170 : 340;
 
+  /* An invisible stroke wider than the drawn line, carrying the line's tooltip and popup so a
+   * corridor a few pixels long still has a target. Measured 22 Nov: widening it further on phones
+   * (30 px with round caps) did NOT make the World extent usable - at 390 px that view draws the
+   * Earth 512 px wide, the island corridors are 1-6 px long and no hover produced a tooltip at any
+   * weight - while fat strokes two pixels apart start stealing each other's hovers. So the weight
+   * stays; `line-hover` is a fixed class so probes and styles can find these paths without matching
+   * on stroke-width. */
+  const hoverWeight = 18;
+
   const focusedId = hoverId ?? openId;
   useEffect(() => {
     onLineHover?.(focusedId);
@@ -521,7 +530,8 @@ export default function MapBrowser({
                 <Polyline
                   positions={line.path}
                   eventHandlers={lineHandlers}
-                  pathOptions={{ color: side.color, weight: 18, opacity: 0 }}
+                  pathOptions={{ color: side.color, weight: hoverWeight, opacity: 0,
+                    className: 'line-hover', lineCap: 'round' }}
                 >
                   <Tooltip sticky>
                     <span className="text-xs font-semibold">{line.name}</span>

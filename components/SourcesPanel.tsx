@@ -316,9 +316,15 @@ export default function SourcesPanel() {
         </p>
         <p className="mt-2 text-[15px] leading-relaxed text-stone-700">
           Period terms are quoted rather than used as our own voice, and numbers of victims are
-          given as ranges where the evidence is contested. The site covers the European theatre. It
-          does not cover the Pacific war, China, or the colonial campaigns beyond Europe except
-          where they bear on the fighting here.
+          given as ranges where the evidence is contested. The atlas runs the whole war: it opens
+          in China in July 1937 and follows the fighting through Europe, the Mediterranean, North
+          Africa, Burma and China to the Pacific islands and the end of the war in Manchuria and
+          Korea. How finely the map can show that varies with the sources: the month-by-month borders
+          of the states of Europe come from a published GIS dataset, and outside Europe the world
+          layer is drawn from national archives at the coarse resolution described above, so a month
+          is shown by colour where the data supports a border and by a dated note where it does not.
+          Campaigns beyond those theatres appear where the atlas has a dated event for them, not as a
+          general survey.
         </p>
       </section>
       </div>

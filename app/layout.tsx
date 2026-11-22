@@ -19,13 +19,13 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "The Second World War in Europe · month by month",
-    template: "%s · The Second World War in Europe",
+    default: "Worldwarpedia · The Second World War, month by month",
+    template: "%s · Worldwarpedia",
   },
   description:
-    "An interactive map and timeline of the Second World War, 1937 to 1945: month-by-month borders, army movements, causes and consequences of each event, the people involved, and the population and army figures behind them. Written at three reading levels.",
+    "An interactive map and timeline of the Second World War, 1937 to 1945: month-by-month borders, army movements, causes and consequences of each event, the people involved, and the population and army figures behind them. From China and Burma to the Mediterranean and the North Sea. Written at three reading levels.",
   openGraph: {
-    title: "The Second World War in Europe, month by month",
+    title: "Worldwarpedia · The Second World War, month by month",
     description:
       "Month-by-month borders, army movements, causes and consequences, people and figures — at three reading levels.",
     type: "website",
