@@ -184,7 +184,7 @@ export const EVENTS: WW2Event[] = [
       secondary: {
         cause: 'Hitler exploited Slovak separatism and a Hungarian ultimatum to finish off the rump state, summoning President Hacha to Berlin and threatening to bomb Prague.',
         what: 'On 15 March German troops occupied Prague, and on the 16th Hitler proclaimed the "Protectorate of Bohemia and Moravia" from Prague Castle, while Tiso’s Slovak state became a German client and Hungary took Carpathian Ruthenia.',
-        consequence: 'The breach of Munich ended appeasement. Britain guaranteed Poland on 30 March and France followed on 19 May, beginning the alliance system of 1939; France’s earlier treaty with Prague had been voided at Munich and was not honoured.',
+        consequence: 'The breach of Munich ended appeasement. Britain announced its guarantee of Poland on 31 March and France followed on 19 May, beginning the alliance system of 1939; France’s earlier treaty with Prague had been voided at Munich and was not honoured.',
       },
       university: {
         cause: 'Economic pressure was a central motive: Hermann Goering’s Four Year Plan needed Skoda and the Czech industrial base, which was placed under direct Reich control.',

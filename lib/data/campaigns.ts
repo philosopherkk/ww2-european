@@ -1473,7 +1473,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     summary:
       'The German counterattack at Mortain on 7 August, meant to cut the American peninsula, instead put German armour in a pocket: Bradley had already switched forces east, and Montgomery’s plan was to pin the Germans in front of Caen while the Americans and Poles closed the gap behind them. Falaise, Trun and Chambois were taken by 20 August, and though about 20,000-40,000 Germans escaped through a gap a few kilometres wide under heavy fire, the German Seventh Army lost the whole of its heavy equipment and most of its divisions. The fighting at Chambois by the Polish 1st Armoured Division, holding the southern lip against four SS divisions trying to cut their way out, was the most costly Polish action of the war outside their own country. The consequence: Normandy was decided not by the landing beaches but by this encirclement, and from 21 August the retreat to the Seine became a rout — and the race for Antwerp began.',
     strength:
-      'First Canadian and First Polish Armoured, and the US XV Corps; the German Seventh and Fifth Panzer Armies, ~100,000 men in the pocket, with 60,000 captured and almost all armour lost',
+      'First Canadian and First Polish Armoured, and the US XV Corps; the German Seventh and Fifth Panzer Armies, ~100,000 men in the pocket, with 50,000 captured and almost all armour lost',
   },
   {
     id: 'scheldt_1944',
