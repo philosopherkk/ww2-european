@@ -90,7 +90,12 @@ export const CAMPAIGN_EVENT_LINKS: CampaignEventLink[] = [
   { line: 'khalkhin_gol_1939_soviet', event: 'khalkhin_gol_1939', at: 3 },
   { line: 'malaya_1941_japanese', event: 'singapore_falls_1942', at: 4 },
   { line: 'leyte_luzon_1944_45', event: 'leyte_gulf_1944', at: 1 },
-  { line: 'manchuria_1945_soviet', event: 'manchuria_1945', at: 0 },
+  { line: 'manchuria_1945_soviet', event: 'manchuria_1945', at: 0 },  { line: 'burma_1942_japanese', event: 'yangon_falls_1942', at: 0 },
+  { line: 'philippines_1941_japanese', event: 'corregidor_falls_1942', at: 5 },
+  { line: 'central_pacific_1943', event: 'gilberts_invaded_1943', at: 0 },
+  { line: 'ichi_go_1944', event: 'guangxi_airfields_fall_1944', at: 3 },
+  { line: 'iwo_jima_okinawa_1945', event: 'iwo_jima_landed_1945', at: 1 },
+  { line: 'iwo_jima_okinawa_1945', event: 'okinawa_invaded_1945', at: 2 },
 ];
 
 export const LINKS_BY_LINE: Record<string, CampaignEventLink[]> = {};

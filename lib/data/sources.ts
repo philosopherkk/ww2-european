@@ -307,10 +307,89 @@ export const SOURCES: Source[] = [
     usedFor:
       'The Treaty of San Francisco “ended the state of war between Japan and 47 of the Allies (most nations allied with the Soviet Union refused to sign)”.',
   },
+  {
+    citation:
+      'Burma 1942, US Army campaign pamphlet (Steven J. Bellavia)',
+    publisher: 'US Army Center of Military History, Campaigns of World War II, via the HyperWar archive',
+    url: 'https://www.ibiblio.org/hyperwar/USA/USA-C-Burma/index.html',
+    usedFor:
+      'Rangoon on 8 March 1942 with over 19,000 tons of lend-lease in it, the Tavoy airdrome opening the invasion, the twelve-day Chinese hold at Toungoo, the Japanese plan to encircle the Allied armies near Mandalay on three axes, and the 712-mile Burma Road to Kunming.',
+  },
+  {
+    citation:
+      'Philippine Islands, US Army campaign pamphlet',
+    publisher: 'US Army Center of Military History, Campaigns of World War II, via the HyperWar archive',
+    url: 'https://www.ibiblio.org/hyperwar/USA/USA-C-Philippines/index.html',
+    usedFor:
+      'The end of organised resistance on 8 May 1942, the Plan Orange assumption of six months’ resistance by 80,000 troops and 26,000 civilians on Bataan, Roosevelt’s order that MacArthur move to Australia, and Wainwright’s instruction to fight as long as any possibility of resistance remained.',
+  },
+  {
+    citation:
+      'Louis Morton, The Fall of the Philippines (1953), ch. XXVI and ch. XXXI',
+    publisher: 'US Army in World War II, Office of the Chief of Military History, via the HyperWar archive',
+    url: 'https://www.ibiblio.org/hyperwar/USA/USA-P-PI/USA-P-PI-31.html',
+    usedFor:
+      'Wainwright’s decision at 1000 on 6 May 1942 to surrender, his comparison with King on Bataan four weeks earlier, the landing of the reinforced Japanese 61st Infantry on the night of 5 May, and the 78,000 men on Bataan.',
+  },
+  {
+    citation:
+      'Rolace N. Bradbury, Seizure of the Gilberts and Marshalls (1953), ch. II, V and XIII',
+    publisher: 'US Army in World War II, Office of the Chief of Military History, via the HyperWar archive',
+    url: 'https://www.ibiblio.org/hyperwar/USA/USA-P-Gilberts/USA-P-Gilberts-2.html',
+    usedFor:
+      'Spruance’s task to seize Makin, Tarawa and Apamama, the 27th Division at Makin and the 2d Marine Division at Tarawa on 20 November 1943, Admiral Turner’s finding on the preliminary bombardment, and the garrisoning of the Gilberts by the 6th Base Force after Carlson’s raid.',
+  },
+  {
+    citation:
+      'China Defensive, US Army campaign pamphlet',
+    publisher: 'US Army Center of Military History, Campaigns of World War II, via the HyperWar archive',
+    url: 'https://www.ibiblio.org/hyperwar/USA/USA-C-ChinaD/index.html',
+    usedFor:
+      'Operation Ichi-Go launched 19 April 1944 with fifteen divisions, its railway objectives, the capture of Kweilin and Liuchow on 10 November 1944 and Nan-ning two weeks later, the Fourteenth Air Force tonnage, and the loss of the one remaining overland route to China.',
+  },
+  {
+    citation:
+      'Lt. Col. Whitman S. Bartley, Iwo Jima: Amphibious Epic (1954), ch. II–IV and the recapitulation',
+    publisher: 'History and Museums Division, Headquarters US Marine Corps, via the HyperWar archive',
+    url: 'https://www.ibiblio.org/hyperwar/USMC/USMC-M-IwoJima/USMC-M-IwoJima-3.html',
+    usedFor:
+      'The 4th and 5th Marine Divisions arriving off the island in the early hours of 19 February 1945, the fighter-escort purpose of the operation, Kuribayashi’s design to let the landing force split the island, the expectation of high casualties in under eight square miles, and the volume’s own casualty recapitulation.',
+  },
+  {
+    citation:
+      'Appleman, Burns, Gugeler and Stevens, Okinawa: The Last Battle (1948), ch. III',
+    publisher: 'US Army in World War II, Office of the Chief of Military History, via the HyperWar archive',
+    url: 'https://www.ibiblio.org/hyperwar/USA/USA-P-Okinawa/USA-P-Okinawa-3.html',
+    usedFor:
+      'The fleet of 1,300 ships off Okinawa on 1 April 1945, the seizure of the Kerama Islands and the bombardment before the landing, the reconnaissance of the Hagushi and Minatoga beaches, and the first suicide crash on the shipping on 2 April.',
+  },
+  {
+    citation:
+      'BBC History, “Burma Campaign” (Bruce Robinson)',
+    publisher: 'BBC',
+    url: 'https://www.bbc.co.uk/history/worldwars/wwtwo/ff4_burmacampaign.shtml',
+    usedFor:
+      'Rangoon “fell on 8 March 1942” — the one date on the six Asia-Pacific cards confirmed by a publisher outside the American official-history family — and that “the Burma Road was almost the only route for supplies to Chiang Kai-Shek’s Nationalist Chinese Army” after Japan took the Chinese coast.',
+  },
 ];
 
 /** Figures that are genuinely disputed, shown so readers know the range. */
 export const UNCERTAINTIES = [
+  {
+    topic: 'End of the Burma campaign, 1942',
+    range:
+      'The US Army’s own campaign pamphlet gives its period as 7 December 1941 to 26 May 1942, while this atlas’s marching line runs to 28 May 1942, the date usually printed for the end of organised resistance. Both appear on the site, in the card note and on the line.',
+  },
+  {
+    topic: 'Liuzhou, 9 or 10 November 1944',
+    range:
+      'The US Army’s China Defensive pamphlet gives the same day, 10 November 1944, for the capture of both Kweilin and Liuchow; accounts that separate the two put Liuzhou on the 9th or the 11th. This atlas follows the pamphlet and dates the card 10 November.',
+  },
+  {
+    topic: 'Casualty totals for the Asia-Pacific operations added in 2026-11',
+    range:
+      'No figure of this kind is printed on the cards for Rangoon, Corregidor, Makin and Tarawa, Iwo Jima or Okinawa. The official histories print totals that differ from the figures in general circulation and do not define them the same way — the Marine Corps history of Iwo Jima, for example, prints 13,737 casualties there “either by death or by medical evacuation”, which is not the same quantity as the killed-and-wounded totals usually quoted — and no second publisher family was reachable here to adjudicate between them.',
+  },
   {
     topic: 'Total Soviet deaths',
     range: '26-27 million is the usual estimate; military irrecoverable losses 8.7 million (Krivosheev) with a long-standing dispute over how many prisoners of war died.',
