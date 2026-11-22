@@ -410,9 +410,9 @@ export const SOURCES: Source[] = [  {
       '«Население России к концу войны — 110 млн вместо 195 ожидаемых» [The population of Russia at the end of the war: 110 million instead of the 195 million expected], in the theme «Потери населения России в Первой мировой войне» [Russia’s population losses in the First World War]',
     publisher:
       'Демоскоп Weekly [Demoscope Weekly] 623–624, 15–31 December 2014; Institute of Demography, National Research University Higher School of Economics, Moscow',
-    url: 'https://www.demoscope.ru/weekly/2014/0623/tema03.php',
+    url: 'https://web.archive.org/web/20260308084710/https://www.demoscope.ru/weekly/2014/0623/tema03.php',
     usedFor:
-      'A Russian-language accounting of the demographic cost of the war to Russia, with a table of total population losses 1914 to 1918 by category, and an argument that the population of the unoccupied part of Russia was about 110 million at the end of 1918 against the 195 million the pre-war projection expected. It is the nearest thing to a published reconciliation of the eastern figures, and one reason the eastern numbers on this site are stated as a spread rather than as a single figure.',
+      'A Russian-language accounting of the demographic cost of the war to Russia, with a table of total population losses 1914 to 1918 by category, and an argument that the population of the unoccupied part of Russia was about 110 million at the end of 1918 against the 195 million the pre-war projection expected. It is the nearest thing to a published reconciliation of the eastern figures, and one reason the eastern numbers on this site are stated as a spread rather than as a single figure. The link is the Internet Archive’s copy of 8 March 2026, because the publisher’s own host at www.demoscope.ru/weekly/2014/0623/tema03.php has been returning errors; the archived page carries the same title, the same figures and the same tables.',
   },
   {
     citation:
