@@ -43,10 +43,10 @@ const MapBrowser = dynamic(() => import('@/components/MapBrowser'), {
 /* July 1914, so the first thing a reader sees is the month the war began. */
 const START = MONTHS.findIndex((m) => m.key === '1914-07');
 
-/* The WW2 sister site's timeline (1938-01 to 1945-09), used only to carry the
+/* The WW2 sister site's timeline (1937-07 to 1945-09), used only to carry the
  * reader's approximate place in the war across the cross-site switch. */
-const WW2_MONTH_KEYS: string[] = Array.from({ length: 93 }, (_, i) => {
-  const n = 1938 * 12 + i;
+const WW2_MONTH_KEYS: string[] = Array.from({ length: 99 }, (_, i) => {
+  const n = 1937 * 12 + 6 + i;
   return `${Math.floor(n / 12)}-${String((n % 12) + 1).padStart(2, '0')}`;
 });
 
