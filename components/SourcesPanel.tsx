@@ -43,7 +43,7 @@ const MAP_LIMITS: { head: string; body: string }[] = [
   {
     head: 'Small places were dropped',
     body:
-      'Island rings under about 900 km² were removed to keep the file small enough to serve, and Malta, the Dodecanese and most of the smaller Aegean islands are not in the source at all. So Lemnos is not drawn — which is awkward, since the armistice that ended the war with the Ottoman Empire was signed in Mudros Bay on that island on 30 October 1918 — and Liechtenstein, although present in the source, falls under the cut-off. Monaco, San Marino, Andorra, Vatican City and Iceland are simply not in the source.',
+      'Island rings under 25 km² were removed to keep the file small enough to serve, which is why the Venetian lagoon’s sandbars are not drawn as land, and Malta, Kos and most of the Dodecanese are not in the source at all. Lemnos is drawn, as Greek, and so is Mudros Bay, where the armistice that ended the war with the Ottoman Empire was signed on 30 October 1918. Liechtenstein is in the source but left out here. Monaco, San Marino, Andorra, Vatican City and Iceland are simply not in the source.',
   },
   {
     head: 'One island in the source is labelled wrongly',
@@ -53,7 +53,7 @@ const MAP_LIMITS: { head: string; body: string }[] = [
   {
     head: 'The outlines are smoothed',
     body:
-      'Curves were simplified to about 2 to 3 km. That is what makes 53 months servable from a static file, and it is why you should not measure anything with this map or use it to settle where a frontier ran in detail. The frontier lines are also one cartographer’s reading of the July 1914 administrative state, published in 2026, not an official boundary commission product.',
+      'Curves were simplified to about 1 km. That is what makes 53 months servable from a static file, and it is why you should not measure anything with this map or use it to settle where a frontier ran in detail. The frontier lines are also one cartographer’s reading of the July 1914 administrative state, published in 2026, not an official boundary commission product.',
   },
   {
     head: 'The colour is ours, not the source’s',
@@ -162,7 +162,10 @@ export default function SourcesPanel() {
           <em>Map of Europe, c. 1914</em> (University College Dublin, Zenodo, DOI 10.5281/
           zenodo.20119653, CC BY 4.0), a purpose-made boundary map of the July 1914 states of Europe
           at high resolution. It is fetched once, clipped to the European theatre, simplified and
-          served as a static GeoJSON file from this site; the pipeline is in{' '}
+          served as a static GeoJSON file from this site. One correction is made to it: the source
+          draws the east coast of Ireland as straight chords across the bays, which left Dublin
+          outside the United Kingdom, so the island’s coastline is completed from Natural Earth
+          (1:50m, public domain) and nothing else in the file is touched; the pipeline is in{' '}
           <code className="rounded bg-stone-100 px-1 py-px text-[13px]">
             scripts/build-ww1-border-data.mjs
           </code>{' '}

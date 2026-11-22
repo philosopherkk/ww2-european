@@ -31,6 +31,12 @@ const EXPECTED = [
   ['Galway', -9.05, 53.27, 'United Kingdom'],
   ['Wexford', -6.46, 52.335, 'United Kingdom'],
   ['Belfast', -5.93, 54.6, 'United Kingdom'],
+  ['Dublin', -6.26, 53.345, 'United Kingdom'],
+  ['Howth', -6.07, 53.39, 'United Kingdom'],
+  ['Dun Laoghaire', -6.13, 53.29, 'United Kingdom'],
+  ['Belmullet', -9.99, 54.23, 'United Kingdom'],
+  ['Tralee', -9.7, 52.27, 'United Kingdom'],
+  ['Buncrana, Inishowen', -7.45, 55.13, 'United Kingdom'],
   ['Berlin', 13.4, 52.52, 'Germany'],
   ['Westerland, Sylt', 8.33, 54.9, 'Germany'],
   ['Usedom', 14.05, 53.98, 'Germany'],
@@ -38,6 +44,7 @@ const EXPECTED = [
   ['Königsberg', 20.5, 54.7, 'Germany'],
   ['Copenhagen', 12.57, 55.68, 'Denmark'],
   ['Bornholm', 14.9, 55.08, 'Denmark'],
+  ['Rønne, Bornholm', 14.71, 55.1, 'Denmark'],
   ['Paris', 2.35, 48.86, 'France'],
   ['Brest', -4.49, 48.39, 'France'],
   ['Cherbourg', -1.62, 49.64, 'France'],
@@ -65,6 +72,8 @@ const EXPECTED = [
   ['Samos', 26.97, 37.75, 'Greece'],
   ['Mytilini, Lesbos', 26.55, 39.1, 'Greece'],
   ['Chios', 26.13, 38.37, 'Greece'],
+  ['Myrina, Lemnos', 25.07, 39.87, 'Greece'],
+  ['Rhodes', 28.0, 36.2, 'Greece'],
   ['Samothrace', 25.5, 40.45, 'Greece'],
   ['Athens', 23.72, 37.98, 'Greece'],
   ['Constantinople', 28.97, 41.01, 'Ottoman Empire'],
@@ -87,10 +96,7 @@ const KNOWN_SOURCE_DEFECTS = [
   ['Monfalcone', 13.534, 45.802, 'Austria-Hungary'],
   ['Grado', 13.395, 45.674, 'Austria-Hungary'],
   ['Trieste', 13.77, 45.65, 'Austria-Hungary'],
-  ['Dublin', -6.26, 53.345, 'United Kingdom'],
   ['Venice', 12.335, 45.438, 'Italy'], // the city islands fall under the 25 km² cut-off
-  ['Lemnos', 26.06, 39.9, 'Greece'], // Ottoman in the source; after 1913 only Imbros and Tenedos were
-  ['Rønne, Bornholm', 14.71, 55.05, 'Denmark'], // the island is drawn a few km off centre
 ];
 
 const gj = JSON.parse(fs.readFileSync(FILE, 'utf8'));

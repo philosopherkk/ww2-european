@@ -47,11 +47,12 @@
  *    (Görz itself, Pula, Rijeka and Ljubljana are correctly Austrian). Zenodo
  *    21341486 and the aourednik world_1914 set have the same line, so changing
  *    source does not help; it needs digitising from a period map.
- *  - the Irish coastline in the source cuts across the bays, so Dublin,
- *    Belmullet, Tralee, Valentia and Malin Head fall outside the British ring in
- *    the source file itself (the ring also crosses itself 12 times; repairing it
- *    with jsts changes none of those). The UK coastline would have to come from
- *    OpenStreetMap or Natural Earth, which is a licensing decision.
+ *  - the Irish coastline in the source cuts across the bays, so Dublin, Howth and
+ *    Dun Laoghaire fell outside the British ring in the source file itself (the ring
+ *    also crosses itself 12 times). FIXED here, see addIrishCoast(): the island's
+ *    outline from Natural Earth 1:50m (public domain) is unioned with the source
+ *    ring, so the ring only gains the land its chords had cut off. Nothing else
+ *    in the United Kingdom feature is touched.
  *  - the Venetian lagoon is a hole in the mainland ring and its sandbars are not
  *    drawn as land, so the Lido and Chioggia are uncoloured at any threshold
  *    that keeps the file small.
@@ -80,10 +81,14 @@ fs.mkdirSync(OUT, { recursive: true });
 fs.mkdirSync(CACHE, { recursive: true });
 
 const SOURCE_URL = 'https://zenodo.org/records/20119653/files/first_world_war.json?download=1';
+const NE_URL =
+  'https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson';
 const SOURCE =
   'Boundaries of Europe in July 1914: Jack Kavanagh, "Map of Europe, c. 1914", ' +
   'University College Dublin, Zenodo, DOI 10.5281/zenodo.20119653 (CC BY 4.0). ' +
-  'Clipped to the European theatre and simplified.';
+  'Clipped to the European theatre and simplified. The coast of the island of Ireland is ' +
+  'completed from Natural Earth 1:50m (public domain), because the source draws chords ' +
+  'across its eastern bays.';
 
 /** Name in the source file -> name shown on the map. Dropped if absent. */
 const KEEP = {
@@ -168,11 +173,56 @@ function dropSmallRings(poly) {
   return turf.multiPolygon(kept);
 }
 
+let naturalEarth = null;
+
+async function loadNaturalEarth() {
+  const cached = path.join(CACHE, 'ne_50m_admin_0_countries.geojson');
+  if (!REFRESH && fs.existsSync(cached)) return JSON.parse(fs.readFileSync(cached, 'utf8'));
+  console.log('downloading', NE_URL);
+  const res = await fetch(NE_URL);
+  if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+  const text = await res.text();
+  fs.writeFileSync(cached, text);
+  return JSON.parse(text);
+}
+
+const ringsOf = (f) => (f.geometry.type === 'MultiPolygon' ? f.geometry.coordinates : [f.geometry.coordinates]);
+
+/**
+ * The island of Ireland was wholly in the United Kingdom in July 1914. The source
+ * ring for it (the one polygon wholly west of 5.3 W and larger than 50,000 km2)
+ * is replaced by its union with Natural Earth's outline of the island, which is
+ * the Republic's two polygons plus the one Northern Ireland polygon of the UK feature.
+ */
+function addIrishCoast(poly) {
+  const rings = ringsOf(poly);
+  const isIreland = (r) => {
+    const p = turf.polygon(r);
+    const b = turf.bbox(p);
+    return b[2] < -5.3 && b[1] > 51 && b[3] < 55.5 && turf.area(p) / 1e6 > 50000;
+  };
+  const idx = rings.findIndex(isIreland);
+  if (idx === -1) throw new Error('the source has no Irish ring any more; check addIrishCoast');
+  const ire = naturalEarth.features.find((f) => f.properties.ADMIN === 'Ireland');
+  const uk = naturalEarth.features.find((f) => f.properties.ADMIN === 'United Kingdom');
+  const ni = ringsOf(uk).filter((r) => {
+    const p = turf.polygon(r);
+    const b = turf.bbox(p);
+    return b[0] > -8.3 && b[2] < -5.3 && b[1] > 54 && b[3] < 55.4 && turf.area(p) / 1e6 > 5000;
+  });
+  if (!ire || ni.length !== 1) throw new Error('Natural Earth Ireland/Northern Ireland not found');
+  let island = turf.union(turf.featureCollection([...ringsOf(ire), ...ni].map((r) => turf.polygon(r))));
+  island = turf.union(turf.featureCollection([turf.polygon(rings[idx]), island]));
+  const rest = rings.filter((_, i) => i !== idx);
+  return turf.multiPolygon([...rest, ...ringsOf(island)]);
+}
+
 function prepare(feature) {
   const name = KEEP[feature.properties.name];
   if (!name) return null;
   let poly = turf.combine({ type: 'FeatureCollection', features: [feature] }).features[0];
   if (!poly) return null;
+  if (name === 'United Kingdom') poly = addIrishCoast(poly);
   poly = turf.bboxClip(poly, [-25, 34, 45, 71.5]);
   poly = dropSmallRings(poly);
   if (!poly) return null;
@@ -225,6 +275,7 @@ function months() {
 }
 
 const src = await loadSource();
+naturalEarth = await loadNaturalEarth();
 const features = src.features.map(prepare).filter(Boolean);
 
 // Anything the source calls a European polity but KEEP does not know is a bug.

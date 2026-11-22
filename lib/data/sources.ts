@@ -39,6 +39,13 @@ export const SOURCES: Source[] = [  {
       'The base map. One boundary state for July 1914, published as CC BY 4.0; every month on the map is drawn from it, clipped and simplified by scripts/build-ww1-border-data.mjs.',
   },
   {
+    citation: 'Natural Earth, 1:50m Admin 0 – Countries',
+    publisher: 'Natural Earth, public domain',
+    url: 'https://www.naturalearthdata.com/',
+    usedFor:
+      'The coast of the island of Ireland only: the base map draws it with straight chords across the eastern bays, so its outline is unioned with this one by scripts/build-ww1-border-data.mjs.',
+  },
+  {
     citation:
       'Great Britain, War Office, _Statistics of the Military Effort of the British Empire during the Great War, 1914–1920_ (London: His Majesty’s Stationery Office, 1922)',
     publisher: 'His Majesty’s Stationery Office, London',

@@ -1,5 +1,5 @@
 {
- "source": "Boundaries of Europe in July 1914: Jack Kavanagh, \"Map of Europe, c. 1914\", University College Dublin, Zenodo, DOI 10.5281/zenodo.20119653 (CC BY 4.0). Clipped to the European theatre and simplified.",
+ "source": "Boundaries of Europe in July 1914: Jack Kavanagh, \"Map of Europe, c. 1914\", University College Dublin, Zenodo, DOI 10.5281/zenodo.20119653 (CC BY 4.0). Clipped to the European theatre and simplified. The coast of the island of Ireland is completed from Natural Earth 1:50m (public domain), because the source draws chords across its eastern bays.",
  "note": "One boundary state — Europe as it stood on 1 July 1914 — drawn for every month of the war. What changes month by month is who is at war with whom and whose army holds the ground, which is carried by the colours in lib/data/status.ts. The front line and its movement are drawn as campaign lines.",
  "snapshots": [
   {
