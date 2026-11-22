@@ -359,7 +359,6 @@ const BY_SNAPSHOT: Record<string, Partial<Record<string, TerritoryStatus>>> = {
   // whatever the source layer's controller field says.
   '1941-09-30': {
     Albania: ITAL,
-    Bulgaria: NEU, // a Pact member since 1 March 1941, but at war with nobody: no Soviet or Allied declarations
     Finland: COB,
   },
   '1942-04-30': {
