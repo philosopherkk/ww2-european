@@ -1627,7 +1627,22 @@ export const EVENTS_1914: WW1Event[] = [
     fronts: ['balkans'],
     countries: ['Serbia', 'Austria-Hungary'],
     figures: ['putnik', 'potiorek'],
-    note: 'Two families for the shape of the month, neither dating the re-entry the same way. 1914-1918-online’s Balkans article (Richard C. Hall) has the Austro-Hungarians occupying Belgrade on 2 December 1914 and a Serbian counterattack ejecting them from Serbian territory by 15 December. Wikipedia’s Battle of the Kolubara, citing Pavlović, puts the Serbian withdrawal from Belgrade at 29-30 November, the counterattack on 2 December, the abandonment between 14 and 15 December, and the re-entry on 15 December, with full control only by the end of the following day. So the 2 December occupation and the 2 December counterattack are each single-family, the 15 December re-entry is explicit in one account only, and that day carries a day of slack — hence early December and by 15 December in the prose. Valjevo and Užice on 8 December are likewise single-family; see the companion card and UNCERTAINTIES. The same article puts the Austro-Hungarian entry into Belgrade on 1 December, where 1914-1918-online gives 2 December, and its aftermath gives Potiorek and von Frank relieved on 22 December with the 5th and 6th Armies merged into a single 5th Army of 95,000 men; both of those are printed by that one family only, so neither is in the prose.',
+    note: 'Two families for the shape of the month, neither dating the re-entry the same way. 1914-1918-online’s ' +
+      'Balkans article (Richard C. Hall) has the Austro-Hungarians occupying Belgrade on 2 December 1914 and a ' +
+      'Serbian counterattack ejecting them from Serbian territory by 15 December. Wikipedia’s Battle of the ' +
+      'Kolubara, citing Pavlović, puts the Serbian withdrawal from Belgrade at 29-30 November, the counterattack on ' +
+      '2 December, the abandonment between 14 and 15 December, and the re-entry on 15 December, with full control ' +
+      'only by the end of the following day. So the 2 December occupation and the 2 December counterattack are each ' +
+      'single-family, the 15 December re-entry is explicit in one account only, and that day carries a day of slack ' +
+      '— hence early December and by 15 December in the prose. Valjevo and Užice on 8 December are likewise ' +
+      'single-family; see the companion card and UNCERTAINTIES. The same article puts the Austro-Hungarian entry ' +
+      'into Belgrade on 1 December, where 1914-1918-online gives 2 December, and its aftermath gives Potiorek and ' +
+      'von Frank relieved on 22 December with the 5th and 6th Armies merged into a single 5th Army of 95,000 men; ' +
+      'both of those are printed by that one family only, so neither is in the prose. The same account has the ' +
+      'counterattack delivered as a surprise all along the front, with a military parade going on in Belgrade when ' +
+      'it came; it has 5th Army’s commander von Frank judging the capital untenable, and the retreat covered by the ' +
+      'river monitors on the Sava and the Danube. All four are printed by Wikipedia’s article on the battle and by ' +
+      'nothing else reached here.',
     mapNote: 'Belgrade is the northern end of the march line drawn back from the Kolubara, and the pin sits on the old city. Serbia is in the Entente colour all through 1914 on this map, so the Austro-Hungarian occupation of the capital and its reversal are not drawn as a change of ground.',
     levels: {
       primary: {
@@ -1637,7 +1652,7 @@ export const EVENTS_1914: WW1Event[] = [
       },
       secondary: {
         cause: 'The third invasion of 1914 had gone further than the first two: the Austro-Hungarians had taken the strategic town of Valjevo, forced the Kolubara line and marched into Belgrade itself. But the invasion had spent itself: the armies were exhausted, spread over mountain country, and their communications ran back over the rivers they had crossed.',
-        what: 'The counter-attack was launched against the expectation of a winter pause, and it went in on both wings at once: one towards the Danube and the Sava and Belgrade, the other south-west towards Valjevo and Užice. The Austro-Hungarian commander judged the capital untenable and withdrew his army across the rivers, covered by the river monitors, and the Serbian army walked back in.',
+        what: 'The counter-attack came as a surprise, and it went in on both wings at once: one towards the Danube and the Sava and Belgrade, the other south-west towards Valjevo and Užice. The Austro-Hungarian commander judged the capital untenable and withdrew his army across the rivers, covered by the river monitors, and the Serbian army walked back in.',
         consequence: 'Serbia was clear of the invader before the end of 1914, which no other Entente front managed that year. The next round, in October 1915, was fought with German and Bulgarian help, and this time Serbia was conquered.',
       },
       university: {
