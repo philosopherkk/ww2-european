@@ -133,7 +133,11 @@ TIMELINES.FRA_GUF = vichy('1943-03-16');
 assign('FRA_ANT BLM MAF', vichy('1943-07-14'));
 TIMELINES.SPM = vichy('1941-12-24');
 TIMELINES.WLF = vichy('1942-05-27');
-assign('VNM LAO KHM', tl([WAR, A], ['1940-07-10', X]));
+// Indochina was Vichy-administered until the Japanese coup of 9 March 1945 removed the
+// French administration outright. From 15 August 1945 the Japanese garrison obeyed a
+// government that had surrendered and no Allied force had yet landed, so all three
+// states are `contested` for the last weeks the map draws.
+assign('VNM LAO KHM', tl([WAR, A], ['1940-07-10', X], ['1945-03-09', JAP], ['1945-08-15', C]));
 assign('TCD CAF COG GAB CMR NCL PYF', ALLIED_AT_WAR); // Free French from August-September 1940
 
 /* ---- Italian empire */
@@ -151,7 +155,13 @@ TIMELINES.SOL = tl([WAR, A], ['1940-08-19', ITAL], ['1941-03-16', A]);
 // layer colours by month, so Egypt is Allied from February 1945 on either date.
 TIMELINES.EGY = joinsAllies('1945-02-26');
 TIMELINES.IRQ = joinsAllies('1941-06-01');
-TIMELINES.IRN = joinsAllies('1941-08-25');
+// `ally` on this layer means a belligerent ally, so Iran joins with its declaration of
+// war on Germany (9 September 1943) rather than with the Anglo-Soviet invasion of
+// 25 August 1941; the occupation is said in its key note instead. The day rests on
+// English Wikipedia’s table of declarations and no page outside Wikipedia was found for
+// it, but nothing on screen prints a day and this layer colours by month, so only a date
+// later than 31 October 1943 would change a drawn snapshot.
+TIMELINES.IRN = joinsAllies('1943-09-09');
 TIMELINES.SAU = joinsAllies('1945-03-01');
 TIMELINES.LBR = joinsAllies('1944-01-27');
 assign('COD RWA BDI', joinsAllies('1940-05-10')); // Belgian Congo and mandates
@@ -263,7 +273,10 @@ export const WORLD_KEY_NOTES: Record<string, string> = {
   LBY: 'Libya was an Italian colony; the front crossed it several times between 1940 and January 1943.',
   ETH: 'Ethiopia was annexed by Italy in 1936 and liberated in April-May 1941; the last Italian garrison held out at Gondar until November 1941.',
   MNG: 'Neutral in the Second World War until it declared war on Japan on 10 August 1945, though Soviet and Mongolian troops fought the Japanese at Khalkhin Gol in 1939.',
-  IRN: 'Occupied by Britain and the USSR from 25 August 1941, which this map shows as Allied; Iran declared war on Germany only in September 1943.',
+  IRN: 'Occupied by Britain and the USSR from 25 August 1941, but neutral until it declared war on Germany on 9 September 1943, which is where this map makes it Allied.',
+  VNM: 'Vichy’s administration lasted until the Japanese coup of 9 March 1945; from 15 August 1945 neither Japan nor any Allied power held it, so it is shown as contested.',
+  LAO: 'Follows Vietnam: Vichy until the coup of 9 March 1945, Japanese after it, contested from mid-August 1945.',
+  KHM: 'Follows Vietnam: Vichy until the coup of 9 March 1945, Japanese after it, contested from mid-August 1945.',
   IRQ: 'Neutral until the British reoccupation of May-June 1941; Iraq declared war on the Axis in January 1943.',
   THA: 'A neutral kingdom until Japan invaded on 8 December 1941; it signed an alliance with Japan on 21 December and declared war on Britain and the United States in January 1942.',
   SUN: 'Soviet territory outside the area covered by the Stanford border layers, coloured from the same table.',
@@ -306,7 +319,7 @@ export const WORLD_NOTES: Record<string, string> = {
   '1941-04-30':
     'France’s overseas empire has split. Territories that stayed under Vichy (North Africa, West Africa, Madagascar, Syria, Lebanon and Indochina, where Japanese troops had been stationed since 1940) are coloured Axis; French Equatorial Africa, Cameroon and the Pacific colonies, held by the Free French, are Allied. Italian East Africa has fallen: Eritrea, Somalia and Ethiopia are Allied, though the last Italian garrison held out at Gondar until November. The Dutch and Belgian colonies are Allied; Iraq is shown neutral after the pro-Axis coup of April; the British fought the Iraqi army in May.',
   '1941-09-30':
-    'Syria and Lebanon were taken from Vichy in June-July 1941 and are Allied; Iran has been occupied by Britain and the Soviet Union since 25 August and is shown as Allied, as Iraq is after the British reoccupation. Greenland is Allied under US protection. The United States, Latin America and Thailand are still outside the war: Pearl Harbor is more than two months away.',
+    'Syria and Lebanon were taken from Vichy in June-July 1941 and are Allied; Iran has been occupied by Britain and the Soviet Union since 25 August but is still drawn neutral, because it did not declare war on Germany until September 1943. Iraq is shown as Allied after the British reoccupation. Greenland is Allied under US protection. The United States, Latin America and Thailand are still outside the war: Pearl Harbor is more than two months away.',
   '1942-04-30':
     'Japan has overrun south-east Asia in less than five months: Hong Kong, Malaya, Singapore, the Dutch East Indies and, by May, the Philippines (shown as contested because Corregidor held out until 6 May). Burma is contested and Thailand is an Axis ally. Papua New Guinea is contested after the capture of Rabaul. The United States and most of Central America are Allied; Vichy still holds Madagascar and North Africa. Several calls here are single dates: Burma and the Philippines could be coloured either way.',
   '1943-04-30':
@@ -318,7 +331,7 @@ export const WORLD_NOTES: Record<string, string> = {
   '1944-04-30':
     'The Allies are now reconquering the Pacific: the Gilbert Islands are Allied again, the Marshall Islands are shown as contested after the landings of 31 January, and New Guinea is still contested. Burma is Axis on paper and Japanese in fact; the Philippines, Malaya and the Dutch East Indies are Japanese-held. Colombia is now Allied.',
   '1945-04-30':
-    'Nearly all of Latin America has declared war in the last three months, and Saudi Arabia and Egypt have too. Burma and the Philippines are shown as contested while their reconquest is under way, and the Marianas and Guam are Allied. In Indochina the Japanese overthrew the French administration on 9 March and set up client kingdoms, shown as Axis. Japan, Korea, Taiwan, Malaya, Singapore, the Dutch East Indies and most of Indonesia are Japanese-held; China is drawn Allied and whole.',
+    'Nearly all of Latin America has declared war in the last three months, and Saudi Arabia and Egypt have too. Burma and the Philippines are shown as contested while their reconquest is under way, and the Marianas and Guam are Allied. In Indochina the Japanese overthrew the French administration on 9 March and set up client kingdoms, shown as Japanese-occupied. Japan, Korea, Taiwan, Malaya, Singapore, the Dutch East Indies and most of Indonesia are Japanese-held; China is drawn Allied and whole.',
 };
 
 /**
@@ -331,9 +344,9 @@ export const WORLD_MONTH_NOTES: Record<string, string> = {
   '1945-07':
     'The only colour to move is the Philippines, shown Allied once the campaign there ended in July 1945. Everything else outside Europe is as in April: Japan, Korea, Taiwan, Malaya, Singapore and the Dutch East Indies Japanese-held, Manchukuo Axis, and China drawn Allied and whole.',
   '1945-08':
-    'Two colours change in north-east Asia in the last month of fighting. Manchukuo, Axis here since 1932, is shown Soviet from 20 August 1945, the date of its dissolution, and northern Korea is Soviet from 24 August, the day Soviet troops entered Pyongyang. Japan and the south of Korea are still drawn Japanese-held: the surrender was announced on 15 August, but the instrument was not yet signed. Southern Sakhalin (11-25 August) and the Kuril Islands (18 August to 2 September) were taken in the same fortnight and cannot be drawn here — they fall inside Russia, which has no outline in this layer.',
+    'Two colours change in north-east Asia in the last month of fighting. Manchukuo, Axis here since 1932, is shown Soviet from 20 August 1945, the date of its dissolution, and northern Korea is Soviet from 24 August, the day Soviet troops entered Pyongyang. Japan and the south of Korea are still drawn Japanese-held: the surrender was announced on 15 August, but the instrument was not yet signed. Southern Sakhalin (11-25 August) and the Kuril Islands (18 August to 2 September) were taken in the same fortnight and cannot be drawn here — they fall inside Russia, which has no outline in this layer. In Indochina the Japanese garrison obeyed a government that had surrendered from 15 August, so the three states are shown as contested.',
   '1945-09':
-    'Japan is shown under Allied occupation from 2 September 1945, the day the instrument of surrender was signed aboard USS Missouri and took effect at 09:25 Japan time, and Korea south of the 38th parallel from 8 September, when the first American troops came ashore. Manchukuo is gone, and the north of Korea is Soviet. Nothing in Europe changes: these are the outlines of 30 April 1945, coloured for September. The state of war had not ended either — with Japan it lasted until 28 April 1952, and Germany’s final settlement was signed only in 1990.',
+    'Japan is shown under Allied occupation from 2 September 1945, the day the instrument of surrender was signed aboard USS Missouri and took effect at 09:25 Japan time, and Korea south of the 38th parallel from 8 September, when the first American troops came ashore. Manchukuo is gone, and the north of Korea is Soviet. Indochina is still contested: the layer colours a territory by the power that held most of its land and its capital, and after 15 August neither Japan nor any returning administration did. Nothing in Europe changes: these are the outlines of 30 April 1945, coloured for September. The state of war had not ended either — with Japan it lasted until 28 April 1952, and Germany’s final settlement was signed only in 1990.',
 };
 
 /** The note to show for a selected month: the month’s own if it has one, else the snapshot’s. */

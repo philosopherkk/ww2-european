@@ -292,7 +292,7 @@ export const TURNING_POINTS: TurningPoint[] = [
       secondary:
         'Hirohito’s recorded broadcast was heard at noon on 15 August; the instrument was signed aboard USS Missouri just after 09:00 Japan time on 2 September and took effect at 09:25. Between those dates the Soviet Union took Manchuria, northern Korea, southern Sakhalin and the Kuril Islands, and American troops landed south of the 38th parallel.',
       university:
-        'September 1945 is the end of the war as a document rather than a cease-fire: acceptance communicated through neutral channels, the broadcast of 15 August, a failed coup by officers who refused it, occupation from 28 August, and the instrument effective at 09:25 Japan time on 2 September. Two anniversaries carry the date because the two events differ — one stopped the killing, the other is the paper. The same fortnight settled the frontiers of north-east Asia, and the line drawn through Korea in August 1945 is still the border today. This map shows the fronts of that fortnight rather than the settlement, because the settlement came later.',
+        'September 1945 is the end of the war as a document rather than a cease-fire: acceptance communicated through neutral channels, the broadcast of 15 August, a failed coup by officers who refused it, occupation from 28 August, and the instrument effective at 09:25 Japan time on 2 September. Two anniversaries carry the date because the two events differ — one stopped the killing, the other is the paper. The same fortnight settled the frontiers of north-east Asia, and the line drawn through Korea in August 1945 became the border that has lasted: after the movement of the Korean War, the front settled near the 38th parallel in mid-1951. This map shows the fronts of that fortnight rather than the settlement, because the settlement came later.',
     },
     unsettled: {
       primary: 'The peace treaty did not come until 1952, and Korea was already dividing into two halves.',
@@ -314,6 +314,7 @@ export const TURNING_POINTS: TurningPoint[] = [
       'English Wikipedia',
       'Reports of General MacArthur, vol. I',
       'FRUS, The Far East 1945, vol. VI',
+      'The Canadian Encyclopedia',
     ],
   },
 
