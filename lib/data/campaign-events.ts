@@ -52,6 +52,7 @@ export const CAMPAIGN_EVENT_LINKS: CampaignEventLink[] = [
   { line: 'kursk_south_1943', event: 'kursk', at: 0 },
   { line: 'belgorod_kharkov_1943', event: 'orbel_salute', at: 0 },
   { line: 'orel_1943', event: 'orbel_salute', at: 1 },
+  { line: 'dnieper_1943', event: 'dniper_1943', at: 2 },
   { line: 'korsun_1944', event: 'korsun_pocket', at: 2 },
   { line: 'leningrad_novgorod_1944', event: 'siege_leningrad_lifted', at: 2 },
   { line: 'crimea_1944', event: 'crimea_1944', at: 0 },
@@ -72,6 +73,7 @@ export const CAMPAIGN_EVENT_LINKS: CampaignEventLink[] = [
   { line: 'kasserine_1943', event: 'kasserine_pass', at: 2 },
   { line: 'husky', event: 'husky', at: 0 },
   { line: 'husky', event: 'sicily_campaign_ends', at: 3 },
+  { line: 'italy_1943', event: 'italy_armistice', at: 1 },
   { line: 'cassino_1944', event: 'first_monte_cassino', at: 0 },
   { line: 'cassino_1944', event: 'monte_cassino_abbey', at: 0 },
   { line: 'cassino_1944', event: 'cassino', at: 0 },
@@ -88,6 +90,7 @@ export const CAMPAIGN_EVENT_LINKS: CampaignEventLink[] = [
   { line: 'khalkhin_gol_1939_soviet', event: 'khalkhin_gol_1939', at: 3 },
   { line: 'malaya_1941_japanese', event: 'singapore_falls_1942', at: 4 },
   { line: 'leyte_luzon_1944_45', event: 'leyte_gulf_1944', at: 1 },
+  { line: 'manchuria_1945_soviet', event: 'manchuria_1945', at: 0 },
 ];
 
 export const LINKS_BY_LINE: Record<string, CampaignEventLink[]> = {};
