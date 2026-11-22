@@ -2,12 +2,23 @@ import manifest from '@/public/data/borders/manifest.json';
 import type { CampaignLine, Front, Kind, Level } from '@/lib/data';
 
 /**
- * The whole timeline runs from January 1938 to September 1945, month by month.
- * The last month is September because the instrument of surrender against Japan
- * was signed on 2 September 1945 and southern Korea was occupied on 8 September:
- * both change a colour on the world layer, so both have to be inside the range.
+ * The whole timeline runs from July 1937 to September 1945, month by month.
+ * The first month is July 1937 because the war this atlas maps began there: the
+ * Marco Polo Bridge incident of 7 July 1937 is the point from which Japan's war
+ * in China was a national war rather than a frontier incident, and the atlas says
+ * so in three places, so the range has to show it. The last month is September
+ * because the instrument of surrender against Japan was signed on 2 September 1945
+ * and southern Korea was occupied on 8 September: both change a colour on the
+ * world layer, so both have to be inside the range.
+ *
+ * The cost of the earlier start is on the European border layer, whose earliest
+ * published state is 30 April 1938: the map draws the state nearest the month, so
+ * that one state carries July 1937 to March 1939 — up to nine months before any
+ * published map exists, and up to eleven months after it was drawn — and it already
+ * includes Austria. nearestSnapshot names the state and the gap, and WORLD_MONTH_NOTES
+ * for the opening months says what that means.
  */
-export const TIMELINE_START = { year: 1938, month: 1 };
+export const TIMELINE_START = { year: 1937, month: 7 };
 export const TIMELINE_END = { year: 1945, month: 9 };
 
 export interface MonthCell {
@@ -131,10 +142,10 @@ const monthsBetween = (a: string, b: string) => {
  *
  * Among snapshots dated on or before the selected month the nearest one wins,
  * and a snapshot dated *after* it is only ever used when there is no earlier
- * one to show — that is, for January to March 1938, which precede the earliest
- * state in the dataset (30 April 1938). Reading the slider at January 1938
- * must never present the reader with the borders of a later month as though
- * they predated it; when the fallback does apply, the UI still names the
+ * one to show — that is, for July 1937 to March 1938, which precede the earliest
+ * state in the dataset (30 April 1938). Reading the slider at July 1937 must
+ * never present the reader with the borders of a later month as though they
+ * predated it; when the fallback does apply, the UI still names the
  * snapshot and says how many months after the chosen month it falls.
  */
 export function nearestSnapshot(monthKey: string): SnapshotChoice {

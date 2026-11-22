@@ -15,8 +15,12 @@
  * `axis` from 10 July 1940 until it changed sides. Before 3 September 1939 nothing is at
  * war except China and Japan, so everything else is `at_peace`.
  *
- * Territories that belong to a country Stanford also draws (Soviet Union, Norway,
- * Portugal, Spain) delegate to statusFor so that the two layers cannot disagree.
+ * Territories that belong to a country Stanford also draws (Norway, Portugal, Spain)
+ * delegate to statusFor so that the two layers cannot disagree. The delegation reads a
+ * table dated by snapshot, while this layer is coloured by month, so a delegated key is
+ * resolved on the snapshot the month falls back to. Tannu Tuva (SUN) is not delegated for
+ * that reason: it has a timeline here, so its colour does not depend on which month the
+ * reader is on.
  */
 import { statusFor, type TerritoryStatus } from './status';
 
@@ -33,7 +37,14 @@ const C: TerritoryStatus = 'contested';
 const SOV: TerritoryStatus = 'soviet';
 const OCC: TerritoryStatus = 'allied_occupied';
 
-/** Before the first step a territory is at peace. */
+/** Before the first step a territory is at peace.
+ *
+ * Two kinds of first date appear below. A war date (7 July 1937) is a claim about
+ * when something happened. A range-start date (1 July 1937) is not a claim at all:
+ * it is the first month the atlas covers, used where the holding power already held
+ * the land before the range opens — the mandated Pacific islands, Italian Libya and
+ * Italian East Africa. Nothing changes colour in that first month for those keys,
+ * and the notes say so rather than implying a 1937 conquest. */
 const tl =
   (...steps: Step[]): Timeline =>
   (date) => {
@@ -46,8 +57,11 @@ const WAR = '1939-09-03'; // Britain and France declare war on Germany
 
 const ALLIED_AT_WAR = tl([WAR, A]);
 const NEUTRAL = tl([WAR, N]);
-const JAPANESE_SINCE_BEFORE = tl(['1938-01-01', JAP]);
-const ALLY_FROM_1938 = tl(['1938-01-01', A]);
+const JAPANESE_SINCE_BEFORE = tl(['1937-07-07', JAP]);
+/* China is coloured Allied from the day the war of 1937 began. It had no ally in
+ * Europe then and was not at war with Germany or Italy; the colour means "fighting
+ * Japan", which is what the legend says the Allied colour means outside Europe. */
+const ALLY_FROM_WAR_WITH_CHINA = tl(['1937-07-07', A]);
 const joinsAllies = (date: string): Timeline => tl([WAR, N], [date, A]);
 const vichy = (back: string): Timeline => tl([WAR, A], ['1940-07-10', X], [back, A]);
 
@@ -80,12 +94,12 @@ TIMELINES.ZAF = tl(['1939-09-06', A]);
  * 2 September 1945) fell to the USSR in the same fortnight but cannot be drawn: world.json
  * is built from modern outlines, so both sit inside Russia, which this layer does not draw.
  */
-TIMELINES.JPN = tl(['1938-01-01', X], ['1945-09-02', OCC]);
-TIMELINES.MCK = tl(['1938-01-01', X], ['1945-08-20', SOV]);
-TIMELINES.PRK = tl(['1938-01-01', JAP], ['1945-08-24', SOV]);
-TIMELINES.KOR = tl(['1938-01-01', JAP], ['1945-09-08', OCC]);
+TIMELINES.JPN = tl(['1937-07-07', X], ['1945-09-02', OCC]);
+TIMELINES.MCK = tl(['1937-07-07', X], ['1945-08-20', SOV]);
+TIMELINES.PRK = tl(['1937-07-07', JAP], ['1945-08-24', SOV]);
+TIMELINES.KOR = tl(['1937-07-07', JAP], ['1945-09-08', OCC]);
 TIMELINES.TWN = JAPANESE_SINCE_BEFORE;
-TIMELINES.CHN = ALLY_FROM_1938;
+TIMELINES.CHN = ALLY_FROM_WAR_WITH_CHINA;
 TIMELINES.HKG = tl([WAR, A], ['1941-12-25', JAP]);
 assign('MYS BRN', tl([WAR, A], ['1941-12-08', C], ['1942-02-15', JAP]));
 TIMELINES.SGP = tl([WAR, A], ['1942-02-15', JAP]);
@@ -101,10 +115,10 @@ TIMELINES.PNG = tl([WAR, A], ['1942-01-23', C]);
 TIMELINES.SLB = tl([WAR, A], ['1942-05-03', C]);
 TIMELINES.KIR = tl([WAR, A], ['1941-12-10', JAP], ['1943-11-23', A]);
 TIMELINES.NRU = tl([WAR, A], ['1942-08-26', JAP]);
-TIMELINES.MHL = tl(['1938-01-01', JAP], ['1944-01-31', C]);
-TIMELINES.PLW = tl(['1938-01-01', JAP], ['1944-09-15', C]);
+TIMELINES.MHL = tl(['1937-07-01', JAP], ['1944-01-31', C]);
+TIMELINES.PLW = tl(['1937-07-01', JAP], ['1944-09-15', C]);
 TIMELINES.FSM = JAPANESE_SINCE_BEFORE;
-TIMELINES.MNP = tl(['1938-01-01', JAP], ['1944-08-01', A]);
+TIMELINES.MNP = tl(['1937-07-01', JAP], ['1944-08-01', A]);
 TIMELINES.GUM = tl([WAR, N], ['1941-12-08', A], ['1941-12-10', JAP], ['1944-08-10', A]);
 TIMELINES.PHL = tl(
   [WAR, N],
@@ -119,6 +133,12 @@ TIMELINES.IDN = tl([WAR, N], ['1940-05-10', A], ['1942-01-11', C], ['1942-03-09'
 TIMELINES.TLS = tl([WAR, N], ['1942-02-20', JAP]);
 TIMELINES.THA = tl([WAR, N], ['1941-12-21', X]);
 TIMELINES.MNG = NEUTRAL;
+/* Tannu Tuva, the one piece of Soviet territory this layer draws. Soviet for the whole
+ * range: 1 July 1937 is the first month the atlas covers, not a date being claimed. It is
+ * not delegated to the Stanford row for the Soviet Union, because that row is dated by
+ * snapshot and says only whether the USSR was at war in Europe on it, which would make a
+ * territory in Asia change colour with the snapshot the month falls back to. */
+TIMELINES.SUN = tl(['1937-07-01', SOV]);
 assign('AFG BTN YEM OMN', NEUTRAL);
 
 /* ---- French empire */
@@ -141,10 +161,10 @@ assign('VNM LAO KHM', tl([WAR, A], ['1940-07-10', X], ['1945-03-09', JAP], ['194
 assign('TCD CAF COG GAB CMR NCL PYF', ALLIED_AT_WAR); // Free French from August-September 1940
 
 /* ---- Italian empire */
-TIMELINES.LBY = tl(['1938-01-01', ITAL], ['1943-01-23', A]);
-TIMELINES.ETH = tl(['1938-01-01', ITAL], ['1941-04-06', A]);
-TIMELINES.ERI = tl(['1938-01-01', ITAL], ['1941-04-01', A]);
-TIMELINES.SOM = tl(['1938-01-01', ITAL], ['1941-02-25', A]);
+TIMELINES.LBY = tl(['1937-07-01', ITAL], ['1943-01-23', A]);
+TIMELINES.ETH = tl(['1937-07-01', ITAL], ['1941-04-06', A]);
+TIMELINES.ERI = tl(['1937-07-01', ITAL], ['1941-04-01', A]);
+TIMELINES.SOM = tl(['1937-07-01', ITAL], ['1941-02-25', A]);
 TIMELINES.SOL = tl([WAR, A], ['1940-08-19', ITAL], ['1941-03-16', A]);
 
 /* ---- Middle East and Africa, neutral until they joined */
@@ -185,7 +205,6 @@ TIMELINES.GRL = joinsAllies('1941-04-09'); // US-Danish agreement of 9 April 194
 
 /** Keys that follow the Stanford table for the country they belong to. */
 const DELEGATES: Record<string, string> = {
-  SUN: 'Soviet Union',
   NOR: 'Norway',
   PRT: 'Portugal',
   ESP: 'Spain',
@@ -279,15 +298,26 @@ export const WORLD_KEY_NOTES: Record<string, string> = {
   KHM: 'Follows Vietnam: Vichy until the coup of 9 March 1945, Japanese after it, contested from mid-August 1945.',
   IRQ: 'Neutral until the British reoccupation of May-June 1941; Iraq declared war on the Axis in January 1943.',
   THA: 'A neutral kingdom until Japan invaded on 8 December 1941; it signed an alliance with Japan on 21 December and declared war on Britain and the United States in January 1942.',
-  SUN: 'Soviet territory outside the area covered by the Stanford border layers, coloured from the same table.',
+  SUN: 'Tannu Tuva, Soviet territory outside the area the Stanford border layers draw. Shown as Soviet in every month this atlas covers, rather than following the dated row for the Soviet Union in Europe, which records only whether Moscow was at war.',
   GRL: 'A Danish colony, occupied by US forces under the agreement of 9 April 1941.',
   USA: 'The Aleutian islands of Attu and Kiska were held by Japan from June 1942 until 1943, which this map does not show.',
   CAN: 'Canada declared war on 10 September 1939. Newfoundland, a separate British dominion in 1939, is drawn with Canada.',
 };
 
-export function worldStatusFor(date: string, key: string): TerritoryStatus {
+/**
+ * @param date the last day of the selected month, used for the keys with a timeline here
+ * @param snapshotDate the snapshot that month falls back to, used for the delegated keys,
+ *   because the table they read is dated by snapshot: a month-end date like 1938-05-31 is
+ *   not one of its rows, so without this the override never applies and a delegated country
+ *   is painted with its single all-war colour from the first month of the atlas.
+ */
+export function worldStatusFor(
+  date: string,
+  key: string,
+  snapshotDate?: string
+): TerritoryStatus {
   const delegate = DELEGATES[key];
-  if (delegate) return statusFor(date, delegate);
+  if (delegate) return statusFor(snapshotDate ?? date, delegate);
   const t = TIMELINES[key];
   if (t) return t(date);
   if (process.env.NODE_ENV !== 'production') {
@@ -341,6 +371,12 @@ export const WORLD_NOTES: Record<string, string> = {
  * Preferred over WORLD_NOTES by worldNoteFor when a month has an entry.
  */
 export const WORLD_MONTH_NOTES: Record<string, string> = {
+  '1937-07':
+    'The range opens with the only two colours that move in this month, both in east Asia: China is shown Allied and Japan, Korea and Manchukuo Axis from 7 July 1937, the day of the Marco Polo Bridge incident. China is drawn whole and Allied although Japan held Manchuria, the north China garrison towns and the coast — the layer colours a country by the power that held most of its land and its capital, and Japan did not hold either. Outside east Asia nothing moves, and the European outlines behind these months are a problem: the border dataset’s earliest state is 30 April 1938, and the map draws the published state nearest the month, so this one is shown for every month from July 1937 to March 1939 — between nine months before any published map exists and eleven months after it was drawn. It postdates the Anschluss, so the map shows Austria inside the German Reich in 1937, when Austria was an independent state. The month readout names the state and the size of the gap in every month where there is one, and the Sources panel says what else they miss.',
+  '1937-08':
+    'Nothing changes colour outside east Asia in this month, which is itself the point: the war in China in 1937 and 1938 was fought inside one country that this layer draws as a single polygon, so the fall of Shanghai, the retreat on Nanjing and the floods on the Yellow River move no border. The three marching lines added for 1937 and 1938 carry that fighting instead, and the cards carry the dates. The European outlines shown are the state of 30 April 1938, drawn about eight months after this month, and it includes Austria.',
+  '1937-12':
+    'No colour moves in this month either. Nanjing, the capital of China, fell to Japan on 13 December 1937 and the city’s garrison and civilians were killed in the weeks after, and the layer still paints all of China Allied: a whole-country polygon cannot show a lost capital, and the card and the marching line carry it. Manchukuo is still Axis and Japan still Axis, and the outlines behind the map are those of 30 April 1938, four months after this month.',
   '1945-07':
     'The only colour to move is the Philippines, shown Allied once the campaign there ended in July 1945. Everything else outside Europe is as in April: Japan, Korea, Taiwan, Malaya, Singapore and the Dutch East Indies Japanese-held, Manchukuo Axis, and China drawn Allied and whole.',
   '1945-08':

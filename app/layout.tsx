@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: "%s · The Second World War in Europe",
   },
   description:
-    "An interactive map and timeline of the Second World War in Europe, 1938 to 1945: month-by-month borders, army movements, causes and consequences of each event, the people involved, and the population and army figures behind them. Written at three reading levels.",
+    "An interactive map and timeline of the Second World War, 1937 to 1945: month-by-month borders, army movements, causes and consequences of each event, the people involved, and the population and army figures behind them. Written at three reading levels.",
   openGraph: {
     title: "The Second World War in Europe, month by month",
     description:

@@ -3,6 +3,7 @@ import { EVENTS as EVENTS_1938_1940 } from './events-1938-1940';
 import { EVENTS_1941_1942 } from './events-1941-1942';
 import { EVENTS_1943_1945 } from './events-1943-1945';
 import { EVENTS_END_OF_WAR } from './events-end-of-war';
+import { EVENTS_1937 } from './events-1937';
 import { FIGURES_AXIS } from './figures-axis';
 import { FIGURES_ALLIES } from './figures-allies';
 
@@ -25,6 +26,7 @@ export {
 export { SOURCES, UNCERTAINTIES } from './sources';
 
 export const EVENTS: WW2Event[] = [
+  ...EVENTS_1937,
   ...EVENTS_1938_1940,
   ...EVENTS_1941_1942,
   ...EVENTS_1943_1945,

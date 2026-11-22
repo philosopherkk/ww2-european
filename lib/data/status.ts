@@ -65,7 +65,7 @@ export const STATUS_META: Record<TerritoryStatus, StatusMeta> = {
     color: '#CAC4B8',
     stroke: '#81796D',
     legend:
-      'States that were not at war before 3 September 1939 (the April 1938 and April 1939 snapshots). Nothing was fighting in Europe yet, but Germany had already annexed Austria in March 1938, taken the Sudetenland in September 1938 and occupied Prague on 15 March 1939, so the German Reich and its client states are shown in red from the outset. Outside Europe, Japan had been at war with China since July 1937, and China is shown as Allied from 1938.',
+      'States that were not at war before 3 September 1939 (the April 1938 and April 1939 snapshots). Nothing was fighting in Europe yet, but Germany had already annexed Austria in March 1938, taken the Sudetenland in September 1938 and occupied Prague on 15 March 1939, so the German Reich and its client states are shown in red from the outset. Outside Europe, Japan has been at war with China since 7 July 1937, and China is shown as Allied from that month: the colour outside Europe means fighting Japan.',
   },
   axis: {
     label: 'Axis powers and German allies',

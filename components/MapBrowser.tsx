@@ -227,12 +227,20 @@ export default function MapBrowser({
   }, [world]);
 
   /**
-   * The world layer has modern outlines and a dated status table of its own, so
-   * unlike the border layers it is coloured on the selected month, not the snapshot date.
+   * The world layer has modern outlines and a dated status table of its own, so unlike the
+   * border layers it is coloured on the selected month — except for the keys that delegate to
+   * the Stanford table, which is dated by snapshot, so those are resolved on the snapshot the
+   * month falls back to. Otherwise Norway would be drawn in the occupied colour in July 1937.
    */
   const worldStatuses = useMemo(
-    () => new Map(worldTerritories.map((t) => [t.key, worldStatusFor(monthEndDate(monthKey), t.key)])),
-    [worldTerritories, monthKey]
+    () =>
+      new Map(
+        worldTerritories.map((t) => [
+          t.key,
+          worldStatusFor(monthEndDate(monthKey), t.key, snapshot.date),
+        ])
+      ),
+    [worldTerritories, monthKey, snapshot.date]
   );
 
   /* Converting ~19,000 vertices is the expensive part of a render, so it is

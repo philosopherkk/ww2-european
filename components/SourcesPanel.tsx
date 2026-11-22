@@ -27,6 +27,11 @@ const MAP_LIMITS: { head: string; body: string }[] = [
       'There is no Austria feature in any snapshot, because the layer treats 1938-1945 annexed territory as part of the Reich. Poland appears in April 1939 and then disappears: in 1940-1945 the map can show only the General Government and the Protectorate of Bohemia and Moravia, with the annexed provinces counted as Germany. That absence is the historical fact, but it is also a data gap, and the events carry what the map cannot show.',
   },
   {
+    head: 'The first twenty-one months show the borders of April 1938',
+    body:
+      'The timeline opens in July 1937, because that is when the war being mapped began, but the earliest border state in the dataset is dated 30 April 1938. The map draws the published state nearest the month you choose, so the twenty-one months from July 1937 to March 1939 all draw that one map. From July 1937 to March 1938 it is a map of up to nine months in the future, and since it postdates the Anschluss it shows Austria inside the German Reich when Austria was an independent state. From September 1938 it is a map of up to eleven months in the past, so the Sudetenland annexed in October 1938 and Prague occupied on 15 March 1939 appear only when the April 1939 state takes over. The month readout names the snapshot and the size of the gap in every month where there is one; nothing in the dataset shows the frontiers of 1937, and the coloured states in east Asia in those months come from the world layer, not from this one.',
+  },
+  {
     head: 'Small enclaves were dropped',
     body:
       'Ring holes and tiny enclaves were not preserved, which loses a few kilometres of coastline at Vyborg, Sevastopol and Reggio Calabria; those places can read as the wrong colour.',
@@ -79,7 +84,7 @@ const MAP_LIMITS: { head: string; body: string }[] = [
   {
     head: 'A month with no lines is a month with no ground offensive',
     body:
-      'Lines exist only where an army moved on prepared ground in an operation with a name. That leaves the eight peace months of 1939, the five months after the fall of France when nothing moved on land in western Europe, the pause before Kursk in June 1943, and the months after 8 May 1945 empty. Those blanks are a claim about the war, not a gap in the data: the fighting in those months was at sea, in the air, behind the lines, or in the occupied countries, and it is carried by the timeline instead.',
+      'Lines exist only where an army moved on prepared ground in an operation with a name. Run the slider across the whole range and four stretches show no line at all: January to May 1938, when the war in China was in the pause between the fall of Nanjing and the campaign for Wuhan; November 1938 to April 1939, the last peace months in Europe and the same Chinese pause; July to November 1940, after the fall of France and before the Balkans; and June 1943, the deliberate pause before Kursk. Those blanks are a claim about the war, not a gap in the data: the fighting in those months was at sea, in the air, behind the lines, or in the occupied countries, and it is carried by the timeline instead. The China war also fills less of this map than it did in fact — three lines for 1937 and 1938 against a war of garrisons, river gunboats and railhead raids, because a named operation is what a marching line can honestly draw.',
   },
 ];
 
@@ -150,7 +155,7 @@ export default function SourcesPanel() {
           Spatial History Project. Twelve of those states were downloaded as GeoJSON, clipped to the
           European extent, simplified and served as static files from this site; the pipeline is in{' '}
           <code className="rounded bg-stone-100 px-1 py-px text-[13px]">scripts/build-border-data.mjs</code>{' '}
-          and can be re-run. Only a minority of the ninety-six months in 1938-1945 are published
+          and can be re-run. Only a minority of the ninety-nine months in 1937-1945 are published
           without a licence, and one of those we deliberately left out: the September 1939 state
           draws Poland as a single undivided polygon, with no line between the German and Soviet
           occupations that began on 28 and 17 September. October 1939 shows the partition properly

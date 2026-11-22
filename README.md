@@ -1,7 +1,7 @@
 # The Second World War in Europe — month by month
 
 An interactive teaching site about the European theatre of the Second World War: a monthly
-timeline from January 1938 to August 1945, period border states on a real map, army movement
+timeline from July 1937 to September 1945, period border states on a real map, army movement
 lines, the people involved, and every event written three times over for three reading levels.
 
 **Live site:** <https://ww2-european.vercel.app>

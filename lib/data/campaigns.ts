@@ -1703,4 +1703,49 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     summary:
       'The Soviet invasion of Manchuria, which began on 8 August 1945 and ran to 2 September 1945. The line follows the west-to-east axis of advance: over the Manchukuo border at Manzhouli and Hailar, through Tongliao and Shenyang to the port of Lüshunkou. This is a schematic axis of advance through named places, not a surveyed daily front line. The ring marks an interpolated position along that axis by date, not a documented map reference for that morning.',
   },
+  {
+    id: 'beiping_jinan_1937',
+    name: 'North China 1937: the railway from Beiping to Jinan',
+    side: 'japanese',
+    from: '1937-07-07',
+    to: '1937-12-24',
+    path: [
+      [39.84917, 116.21306], // Marco Polo Bridge, Fengtai district of Beiping
+      [39.1336, 117.2054], // Tianjin
+      [38.3047, 116.8387], // Cangzhou
+      [36.6702, 117.0207], // Jinan
+    ],
+    summary:
+      'The advance down the railway south of Beiping after the fighting at the Marco Polo Bridge began on 7 July 1937. Japan took Tianjin at the end of that month, and its invasion force crossed the Yellow River 60 kilometres north-east of Jinan on 23 December 1937; the garrison abandoned the city the next day, against orders to hold it to the death. This is a schematic axis of advance through named places, not a surveyed daily front line. The ring marks an interpolated position along that axis by date, not a documented map reference for that morning.',
+  },
+  {
+    id: 'shanghai_nanjing_1937',
+    name: 'Shanghai to Nanjing 1937: the pursuit that lost the capital',
+    side: 'japanese',
+    from: '1937-11-12',
+    to: '1937-12-13',
+    path: [
+      [31.2323, 121.469], // Shanghai
+      [31.3, 120.61944], // Suzhou
+      [31.54917, 120.05722], // Wuxi
+      [32.188, 119.424], // Zhenjiang
+      [32.0139, 118.7764], // Nanjing
+    ],
+    summary:
+      'The pursuit that followed the fall of Shanghai. On 12 November 1937 the Japanese forces deployed in Shanghai were ordered to pursue the retreating Chinese armies, and the withdrawal ran west through Suzhou, Wuxi and Zhenjiang to Nanjing, which fell on 13 December 1937. This is a schematic axis of advance through named places, not a surveyed daily front line. The ring marks an interpolated position along that axis by date, not a documented map reference for that morning.',
+  },
+  {
+    id: 'yangtze_wuhan_1938',
+    name: 'The Yangtze 1938: Jiujiang to Wuhan',
+    side: 'japanese',
+    from: '1938-06-11',
+    to: '1938-10-27',
+    path: [
+      [30.5318, 117.1153], // Anqing
+      [29.661, 115.954], // Jiujiang
+      [30.5667, 114.267], // Wuhan
+    ],
+    summary:
+      'The river arm of the campaign for Wuhan, which the sources date 11 June to 27 October 1938: Japanese naval landing forces came up the Yangtze past Anqing and fought for Jiujiang before moving on the three cities of Wuhan, taking Wuchang and Hankou on 26 October and Hanyang on the 27th. This is a schematic axis of advance through named places, not a surveyed daily front line. The ring marks an interpolated position along that axis by date, not a documented map reference for that morning.',
+  },
 ];

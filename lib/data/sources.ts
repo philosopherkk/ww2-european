@@ -29,6 +29,30 @@ export const SOURCES: Source[] = [
       'Cross-checking the April 1938 and April 1945 outlines only. Where the two datasets disagree, this site draws the Stanford layer, because that is the one dated by month.',
   },
   {
+    citation:
+      'Foreign Relations of the United States, 1937, vol. IV: The Far East (US Government Printing Office, 1954)',
+    publisher: 'US Department of State, Office of the Historian — official documentary series',
+    url: 'https://history.state.gov/historicaldocuments/frus1937v04',
+    usedFor:
+      'The 7 July 1937 date for the outbreak of the war in China, from the ambassador in Japan’s report of 28 July 1937; and the American consular and naval reports from Shanghai and from Nanking in August and December 1937, which carry the bombing of the delta and the attacks on the USS Panay.',
+  },
+  {
+    citation:
+      'Louis Morton, Stilwell’s Mission to China (United States Army in World War II: China-Burma-India Theater, 1972)',
+    publisher: 'US Army Center of Military History — official history',
+    url: 'https://www.ibiblio.org/hyperwar/USA/USA-CBI-Mission/index.html',
+    usedFor:
+      'The 8 July 1937 variant date for the outbreak of the war in China, and the halt of Japanese offensive operations after the capture of Canton and Hankow in October 1938.',
+  },
+  {
+    citation:
+      'International Military Tribunal for the Far East, Judgment, Part B Chapter VIII: Conventional War Crimes (Atrocities), November 1948',
+    publisher: 'Transcription at the HyperWar archive, ibiblio.org',
+    url: 'http://ibiblio.org/hyperwar/PTO/IMTFE/IMTFE-8.html',
+    usedFor:
+      'The 13 December 1937 entry into Nanjing and the assault on the South Gate the previous night; and the tribunal’s own findings on the scale of the killings there, in the card’s note and in the uncertainties list.',
+  },
+  {
     citation: 'Holocaust Encyclopedia',
     publisher: 'United States Holocaust Memorial Museum',
     url: 'https://www.ushmm.org/',
@@ -333,5 +357,30 @@ export const UNCERTAINTIES = [
     topic: 'Soviet planning in June 1941',
     range:
       'Whether Stavka intended a preventive strike in July 1941 remains unresolved; the argument rests largely on the Surkov letter controversy — the letter of 24 June 1941 from the Soviet ambassador in London, Alexander Surkov, which Viktor Suvorov made the centrepiece of his "Icebreaker" thesis — on the "Considerations" document of 15 May 1941, whose very existence and status as an approved plan are themselves disputed, and on the "Reiter memorandum" of questionable authenticity. Glantz and House, When Titans Clashed, give the standard operational counter-reading: the forward deployments the thesis points to were a massing for an unready counter-stroke, not an attack posture in June 1941.',
+  },
+  {
+    topic: 'The day the war in China began',
+    range:
+      'The American diplomatic record and the usual naming give 7 July 1937; the US Army’s official history of the China-Burma-India theater gives 8 July. The card is dated 7 July and its note prints both.',
+  },
+  {
+    topic: 'The days the Battle of Shanghai began and ended',
+    range:
+      '13 August to 8 November 1937 is what the English Wikipedia article gives, and no publisher this atlas can reach prints those days; the card is dated to the month for that reason. The strengths it gives — about 700,000 Chinese against 300,000 Japanese, rising — and its casualty totals are the article’s own and are not printed on the site.',
+  },
+  {
+    topic: 'How many were killed at Nanjing',
+    range:
+      'The judgment of the International Military Tribunal for the Far East found “over 200,000” civilians and prisoners of war murdered in Nanjing and its vicinity in the first six weeks, and grounded that on the “more than 155,000 bodies” counted and buried by Chinese societies there; the English Wikipedia article’s infobox range is “100,000–300,000”; and estimates of the prisoners executed run from the tribunal’s 30,000, through Sun Zhaiwei’s 36,500-40,000, to a Japanese colonel’s diary at 40,000-50,000. A court’s finding on summary proceedings is not an independent count, and the burial total covers only what the societies buried; denial that the killings happened at all is a political position, not a finding. This atlas prints the fact of the killings and the mechanism, and no total.',
+  },
+  {
+    topic: 'The Yellow River breach of June 1938',
+    range:
+      'The date of the dike breach, the extent of the flood and the death toll — put anywhere from tens of thousands to most of a million — rest in this atlas on the English Wikipedia article alone. The event has no card, the flood is drawn nowhere, and the US Army history’s account of the 1938 halt does not mention it.',
+  },
+  {
+    topic: 'The first nine months of this atlas show the borders of 30 April 1938',
+    range:
+      'The range opens in July 1937; the earliest state in the border dataset is dated 30 April 1938. For July 1937 to March 1938 the map therefore draws those outlines between one and nine months early, and because that state postdates the Anschluss, it shows Austria inside the German Reich while Austria was still an independent state. The month readout names the snapshot and the gap for every one of those months.',
   },
 ];
