@@ -146,6 +146,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [57.82, 28.33], // Pskov, taken in the same advance
       [55.88, 26.54], // Daugavpils, captured on the first day of the advance
       [53.13, 26.02], // Baranovichi, the taken Stavka
+      [52.0979, 23.7341], // Brest-Litovsk: the signing place, 160 km west of the nearest waypoint
       [52.11, 26.1], // Pinsk
       [50.45, 30.52], // Kyiv, taken within a fortnight of 18 February
     ],
@@ -230,6 +231,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [50.63, 3.06], // Lille, recovered in October
       [50.13, 3.69], // Landrecies, on the Sambre
       [50.11, 3.54], // Le Cateau-Cambrésis, on the ground cleared in November
+      [50.45, 3.95], // Mons, clear of the enemy before dawn on 11 November
       [50.27, 4.92], // Dinant, on the Meuse
       [49.77, 4.72], // Charleville-Mézières, on the Meuse below the Ardenne
       [49.7, 4.94], // Sedan, the Meuse crossing

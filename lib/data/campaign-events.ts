@@ -6,10 +6,15 @@
  * the index into it), so the pin always sits on a real place the line runs
  * through. Only incidents of that line are linked; conferences, treaties signed
  * elsewhere and fighting on other fronts that happen to share the dates are not.
- * Lines whose obvious event has no place on the path (the Armistice at Compiègne,
- * Brest-Litovsk) are left without that pin rather than given a wrong one. The
- * data check in the audit folder confirms every id, every waypoint index and
- * that each event falls within a few days of the line's window.
+ * Lines whose obvious event has no place on the path (the Armistice at Compiègne)
+ * are left without that pin rather than given a wrong one. The exception is a town
+ * the line is entitled to pass and did not: on 23 Nov two waypoints were added to
+ * `campaigns.ts` for that reason — Mons, which the pursuing armies reached on 11
+ * November (a 20 km deviation on a 100 km leg), and Brest-Litovsk, which the line
+ * is named for and which lies 160 km west of the nearest waypoint on this line, the town
+ * being in German hands while the talks were held there. Both are disclosed in the
+ * path comments. The data check in the audit folder confirms every id, every
+ * waypoint index and that each event falls within a few days of the line's window.
  */
 export interface CampaignEventLink {
   line: string;
@@ -86,6 +91,8 @@ export const CAMPAIGN_EVENT_LINKS: CampaignEventLink[] = [
   { line: 'ypres_lys_1918', event: 'ypres_opening_1918', at: 0 },
   { line: 'serbian_front_1914', event: 'serbia_drina_crossing_1914', at: 2 },
   { line: 'czech_legion_1918', event: 'kazan_taken_1918', at: 3 },
+  { line: 'western_front_1918', event: 'mons_last_morning_1918', at: 6 },
+  { line: 'brest_litovsk_1918', event: 'treaty_brest_litovsk', at: 4 },
 ];
 
 export const LINKS_BY_LINE: Record<string, CampaignEventLink[]> = {};
