@@ -416,11 +416,11 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [44.84, 20.41], // Zemun, on the right bank of the Danube opposite Belgrade
       [44.82, 20.46], // Belgrade, taken at the cost of shelling the town from the river
       [44.36, 20.14], // Kolubara, the river line the third invasion reached
-      [44.27, 19.89], // Valjevo, in the Jadar valley, taken in November and lost on 8 December
-      [43.86, 19.84], // Užice, the furthest ground reached, retaken by the Serbs on 8 December
+      [44.27, 19.89], // Valjevo, in the Jadar valley, taken in November and lost within the week
+      [43.86, 19.84], // Užice, the furthest ground reached, retaken by the Serbs within the week
     ],
     summary:
-      'Serbia was invaded three times in 1914 across the Sava and the Drina, the first attack crossing the Drina on 12 August and being thrown back from the Cer ridge, where the fighting opened on the night of 15 August, with heavy loss. The third invasion came over the Danube and the Sava onto Belgrade and then south-west along the Kolubara into the Jadar valley as far as Valjevo and Užice; the Serbian army, retreating in front of it short of ammunition and worn out, counterattacked all along the front early in December and retook Valjevo and Užice on 8 December. The invaders were out of Serbia again by the middle of that month, which is why the advance drawn here stops on the ground it had reached and not on the frontier it had to give back.',
+      'Serbia was invaded three times in 1914 across the Sava and the Drina, the first attack crossing the Drina on 12 August and being thrown back from the Cer ridge, where the fighting opened on the night of 15 August, with heavy loss. The third invasion came over the Danube and the Sava onto Belgrade and then south-west along the Kolubara into the Jadar valley as far as Valjevo and Užice; the Serbian army, retreating in front of it short of ammunition and worn out, counterattacked in the first days of December and retook Valjevo and Užice within the week. The invaders were out of Serbia again by the middle of that month, which is why the advance drawn here stops on the ground it had reached and not on the frontier it had to give back.',
   },
 
   /* ------------------------------------------------------------------ *

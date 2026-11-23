@@ -1136,35 +1136,72 @@ export const EVENTS_1914: WW1Event[] = [
     fronts: ['balkans'],
     countries: ['Serbia', 'Austria-Hungary'],
     figures: ['putnik', 'potiorek'],
-    note: 'The battle ran from 16 November to 15 December 1914. Each side lost more than 20,000 dead; the ' +
-      'infobox totals for the battle are 132,000 Serbian and 273,000 Austro-Hungarian casualties, which are ' +
-      'broken down as 22,000 Serbian killed, 91,000 wounded and 19,000 missing or captured, and 30,000 Austro-Hungarian killed, 173,000 wounded and 70,000 captured. Potiorek and von Frank were relieved ' +
-      'on 22 December, and the Austro-Hungarian 5th and 6th Armies were merged into a 5th Army of about ' +
-      '95,000 men.',
+    note: 'Four accounts stand behind this battle and they do not agree on the days inside it, so each day is ' +
+      'given with the account that prints it. The Great War, the Serbian Ministry of Defence and ' +
+      'Wikipedia all date the fighting from 16 November to 15 December 1914. The Austro-Hungarian entry ' +
+      'into Belgrade on 2 December rests on The Great War, which twice gives that day and has Potiorek ' +
+      'telegraph the city captured to the Emperor on the 66th anniversary of his accession, and on the ' +
+      '1914-1918-online encyclopedia, which has them occupy Belgrade on that day and be out of Serbian ' +
+      'territory by the 15th. The Serbian evacuation is 29 and 30 November in Wikipedia, and in The Great ' +
+      'War a withdrawal beginning on 29 November in thick fog, the last units away during the night of ' +
+      'the 30th. Wikipedia then says in one place that the Austro-Hungarians entered the next day, the ' +
+      '1st, and elsewhere has Potiorek dedicating town and fortress to Franz Joseph on the 2nd, so this ' +
+      'site prints the 2nd and records the 1st. Two days cannot be settled: Wikipedia has the Serbian ' +
+      'counter-attack launched on 2 December, while The Great War dates it to 3 December at 7 a.m. and ' +
+      'prints the disagreement by name, that some studies including the English Wikipedia date the start ' +
+      'to the 2nd when on that day the orders were issued and the attack began the following morning, ' +
+      'while the Serbian Ministry of Defence gives no opening day at all beyond that resistance on the ' +
+      'Suvobor was broken by 5 December. Valjevo and Užice are both 8 December in Wikipedia and 7 to 8 ' +
+      'December in The Great War. The departure is the best-supported part of the month: Wikipedia has ' +
+      'von Frank judge Belgrade untenable and tell Potiorek on 13 December that the troops could not stay ' +
+      'in it much longer, the army leave on 14 and 15 December under cover of the river monitors, and the ' +
+      'Serbs re-enter on the 15th; The Great War has Frank report on the 13th that he could guarantee ' +
+      'neither the city nor a safe retreat, the last units cross the Sava during the night of the 14th ' +
+      'and 15th, and Serbian cavalry ride in on the 15th. Potiorek and von Frank lost their commands on ' +
+      '22 December in Wikipedia and in The Great War, on 17 December in Wikipedia’s article on the Balkan ' +
+      'command, at the end of December on The Great War’s battle page, and on 23 December according to ' +
+      'the Austrian Biographical Lexicon, which is recorded rather than cited here because the only copy ' +
+      'of that entry reachable from this machine is a scan with no text layer. What rests on Wikipedia ' +
+      'alone stays out of the prose: that the Austro-Hungarians were holding a large military parade ' +
+      'through the streets of Belgrade when the Serbian attack was launched; the 95,000 men of the merged ' +
+      'Fifth Army; and the strengths of 400,000 Serbs and 450,000 Austro-Hungarians, which that article ' +
+      'gives without agreeing with itself, its infobox pitting 400,000 against 450,000 while its text ' +
+      'says the Austro-Hungarians had 450,000 at their disposal and the Serbs could muster some 450,000. ' +
+      'The casualty figures are printed as what the sources give rather than as a settled total, and the ' +
+      'disagreement over them, including three different Austro-Hungarian totals and the question of ' +
+      'which front each covers, is set out in the list of uncertainties. Source checked: The Great War ' +
+      '(thegreatwar.pl), battle of Kolubara, Serbian campaign of 1914, Serbian counter-offensive on the ' +
+      'Kolubara and The Serbs retake Belgrade; Ministry of Defence of the Republic of Serbia, Bitka na ' +
+      'Kolubari; Wikipedia, Battle of the Kolubara and Balkanstreitkräfte; Richard C. Hall in the ' +
+      '1914-1918-online encyclopedia.',
     levels: {
       primary: {
         cause: 'Austria-Hungary had tried twice to take Serbia in 1914 and had been pushed back both times. ' +
           'In November it attacked again, and the Serbian army fell back across the river Kolubara to rest.',
-        what: 'The Austro-Hungarians reached the Kolubara on 16 November and took the capital, Belgrade, at ' +
-          'the end of the month. On 2 December the Serbs attacked by surprise along the whole front, in mud ' +
-          'and rain, and the Austro-Hungarian armies came apart and withdrew.',
-        consequence: 'The Serbs took back the towns of Valjevo and Užice on 8 December and their capital on ' +
-          '15 December. Austria-Hungary had hoped to be finished with Serbia by the end of 1914 and had to ' +
-          'try again in 1915.',
+        what: 'A war-weary Serbian army, low on ammunition, let the Austro-Hungarians march into an empty ' +
+          'Belgrade on 2 December, counter-attacked almost at once, and by 15 December had driven them ' +
+          'out of Serbia.',
+        consequence: 'The occupation of Belgrade lasted from 2 to 15 December, and Serbia was clear of invading ' +
+          'troops until October 1915. Austria-Hungary lost both its Balkan commanders in the days after ' +
+          'the retreat.',
       },
       secondary: {
         cause: 'The third Austro-Hungarian invasion of 1914 had taken Valjevo and forced a string of Serbian ' +
           'retreats, and on 16 November the 5th and 6th Armies reached the Kolubara. The Serbian army was ' +
           'exhausted and short of ammunition, and its commander Putnik allowed a long withdrawal so that his ' +
           'men could rest and prepare a counterattack, a decision his own government found hard to accept.',
-        what: 'Serbia withdrew from Belgrade on 29–30 November and the city was occupied. The counterattack ' +
-          'of 2 December was launched on a narrow front, which let the Serbs beat the two Austro-Hungarian ' +
-          'armies separately; Valjevo and Užice were retaken on 8 December, and the Austro-Hungarians ' +
-          'abandoned Belgrade on 14–15 December as their commander von Frank judged it untenable.',
-        consequence: 'More than 20,000 men were killed on each side, and the infobox gives 132,000 Serbian ' +
-          'and 273,000 Austro-Hungarian casualties for the campaign as a whole. The defeat humiliated ' +
-          'Austria-Hungary, which had expected Serbia to be occupied before the winter was out; Potiorek and ' +
-          'von Frank were dismissed on 22 December and their two armies merged.',
+        what: 'Serbia withdrew from Belgrade on 29 and 30 November, and the Austro-Hungarians occupied it on ' +
+          '2 December. The counter-offensive opened on 2 or 3 December, the accounts being split on ' +
+          'which, and was launched on a narrow front, which let the Serbs beat the two Austro-Hungarian ' +
+          'armies separately. Valjevo and Užice were recovered within the week; the last Austro-Hungarian ' +
+          'units crossed the Sava on the night of 14 and 15 December, and Serbian cavalry entered ' +
+          'Belgrade the next day.',
+        consequence: 'More than 20,000 men were killed on each side, and the totals usually printed for the battle ' +
+          'are 132,000 Serbian and 273,000 Austro-Hungarian casualties, broken down as 22,000 Serbian ' +
+          'dead, 91,000 wounded and 19,000 missing or captured. The Austro-Hungarian total is 273,000 in ' +
+          'one place and about 225,000 in another, so no breakdown is printed for that side. The defeat ' +
+          'humiliated Austria-Hungary, which had expected Serbia to be occupied before the winter was ' +
+          'out; its two Balkan commanders lost their commands in the second half of December.',
       },
       university: {
         cause: 'Kolubara is the strongest case for arguing that the Serbian army of 1914 was a competent ' +
@@ -1172,11 +1209,15 @@ export const EVENTS_1914: WW1Event[] = [
           'spontaneous. That reading goes against the older Serbian account, in which the fighting is told ' +
           'as a popular rising, and against the Austro-Hungarian explanation that defeat came from the ' +
           'condition of the roads and the weather.',
-        what: 'The totals are irreconcilable in the ordinary sources: more than 20,000 dead on each side, ' +
-          'against infobox figures of 132,000 and 273,000 casualties, with no breakdown of wounded, ' +
-          'prisoners and missing, and no way to separate the three invasions. Serbian records were largely ' +
-          'destroyed in the retreat of 1915, so the Serbian side of the account is partly reconstructed from ' +
-          'Austro-Hungarian returns and from pre-war mobilisation figures.',
+        what: 'The totals split by source rather than by scale. The account the usual figures come from dates ' +
+          'the battle from 16 November to 15 December and gives 132,000 Serbs, of whom 22,000 were ' +
+          'killed, 91,000 wounded and 19,000 missing or captured, against 273,000 Austro-Hungarians; its ' +
+          'own text gives about 225,000 for that side, and its companion article on the Balkan commands ' +
+          'gives 274,000 for the whole front to the end of December. A second family prints the same ' +
+          '274,000 as the Austrian official accounting for all three invasions of 1914, with 47,000 of it ' +
+          'sick, and Serbian-based tables at 163,000 for the year. Both warn that these totals cannot be ' +
+          'confined to the Kolubara, which is why the site prints the disagreement rather than a total of ' +
+          'its own.',
         consequence: 'Serbian losses for the whole war are quoted either from the 1924 Yugoslav estimate of ' +
           '265,164 soldiers, or from Serbian accounts of more than 1,200,000 dead including civilians, or ' +
           'from modern work that puts military deaths nearer 177,000; a Serbian army of 420,000 men at its ' +
@@ -1627,22 +1668,26 @@ export const EVENTS_1914: WW1Event[] = [
     fronts: ['balkans'],
     countries: ['Serbia', 'Austria-Hungary'],
     figures: ['putnik', 'potiorek'],
-    note: 'Two families for the shape of the month, neither dating the re-entry the same way. 1914-1918-online’s ' +
-      'Balkans article (Richard C. Hall) has the Austro-Hungarians occupying Belgrade on 2 December 1914 and a ' +
-      'Serbian counterattack ejecting them from Serbian territory by 15 December. Wikipedia’s Battle of the ' +
-      'Kolubara, citing Pavlović, puts the Serbian withdrawal from Belgrade at 29-30 November, the counterattack on ' +
-      '2 December, the abandonment between 14 and 15 December, and the re-entry on 15 December, with full control ' +
-      'only by the end of the following day. So the 2 December occupation and the 2 December counterattack are each ' +
-      'single-family, the 15 December re-entry is explicit in one account only, and that day carries a day of slack ' +
-      '— hence early December and by 15 December in the prose. Valjevo and Užice on 8 December are likewise ' +
-      'single-family; see the companion card and UNCERTAINTIES. The same article puts the Austro-Hungarian entry ' +
-      'into Belgrade on 1 December, where 1914-1918-online gives 2 December, and its aftermath gives Potiorek and ' +
-      'von Frank relieved on 22 December with the 5th and 6th Armies merged into a single 5th Army of 95,000 men; ' +
-      'both of those are printed by that one family only, so neither is in the prose. The same account has the ' +
-      'counterattack delivered as a surprise all along the front, with a military parade going on in Belgrade when ' +
-      'it came; it has 5th Army’s commander von Frank judging the capital untenable, and the retreat covered by the ' +
-      'river monitors on the Sava and the Danube. All four are printed by Wikipedia’s article on the battle and by ' +
-      'nothing else reached here.',
+    note: 'Four accounts stand behind this month, and the note records where they differ. The Great War, the ' +
+      'Serbian Ministry of Defence and Wikipedia all date the fighting from 16 November to 15 December ' +
+      '1914, and all four have the last Austro-Hungarian troops out of Serbia by 15 December, so the ' +
+      'card’s date is the best-supported day of the battle. The Austro-Hungarian occupation on 2 December ' +
+      'is printed by The Great War, which twice gives that day and has Potiorek telegraph the capture to ' +
+      'the Emperor on the 66th anniversary of his accession, and by 1914-1918-online; Wikipedia has the ' +
+      'entry on 1 December in one sentence and Potiorek dedicating town and fortress to Franz Joseph on ' +
+      'the 2nd in another, which is why this card’s prose says only early December. The Serbian return is ' +
+      'explicit in Wikipedia, and The Great War has cavalry ride in on the 15th after the last units ' +
+      'crossed the Sava during the night of the 14th and 15th. General von Frank judging the capital ' +
+      'untenable, and the retreat covered by the river monitors on the Sava and the Danube, are printed ' +
+      'by both of those families. Two things stay here because Wikipedia prints them alone: the ' +
+      'counterattack as a surprise delivered all along the front, where another family dates it to 3 ' +
+      'December and puts the blow in on the Suvobor ridge, and the military parade going on in Belgrade ' +
+      'when it came. The relief of Potiorek and von Frank and the merging of the two armies are in a note ' +
+      'rather than the prose because four different days are printed for them, and the figure of 95,000 ' +
+      'men for the merged army is Wikipedia’s alone. Valjevo and Užice are on the companion card. Source ' +
+      'checked: The Great War (thegreatwar.pl), battle of Kolubara, Serbian campaign of 1914 and The ' +
+      'Serbs retake Belgrade; Ministry of Defence of the Republic of Serbia, Bitka na Kolubari; ' +
+      'Wikipedia, Battle of the Kolubara; Richard C. Hall in the 1914-1918-online encyclopedia.',
     mapNote: 'Belgrade is the northern end of the march line drawn back from the Kolubara, and the pin sits on the old city. Serbia is in the Entente colour all through 1914 on this map, so the Austro-Hungarian occupation of the capital and its reversal are not drawn as a change of ground.',
     levels: {
       primary: {
@@ -1657,8 +1702,19 @@ export const EVENTS_1914: WW1Event[] = [
       },
       university: {
         cause: 'Two families and one print, and they do not overlap exactly. 1914-1918-online’s article on the Balkans has Putnik turning back the first invasion at Cer Mountain, a second failing that autumn, and the third succeeding in occupying Belgrade on 2 December 1914 before a Serbian counterattack ejected the invader from Serbian territory by 15 December. Wikipedia’s Battle of the Kolubara gives a Serbian withdrawal from Belgrade on 29-30 November, a counterattack on 2 December, Valjevo and Užice retaken on 8 December, an Austro-Hungarian evacuation on 14-15 December and a Serbian re-entry on 15 December. The card’s date is the re-entry day, which the line’s window allows.',
-        what: 'What is corroborated is the shape of the month: an Austro-Hungarian army that took the capital in early December and was out of the country within a fortnight, defeated by a counter-attack delivered in winter over ground the invasion had already exhausted. What rests on a single account is the detail of the days, the counter-attack’s opening on 2 December, the fall of Valjevo and Užice on the 8th, and the re-entry on the 15th, all from Wikipedia’s article on the battle, which cites Pavlović’s interwar Serbian monograph. No second family could be reached for those days from this machine, so they sit in the note and in UNCERTAINTIES rather than in the prose.',
-        consequence: 'The campaign settled a pattern that had held since August. Wikipedia’s aftermath records a change of command and the merging of the two invading armies on 22 December; the day and the figures are in this card’s note, because that account is the only one reached for them. It also fixed the map this site draws for the Balkans in 1914: the frontier is back where it was, and the next change is the conquest of October 1915.',
+        what: 'What four families support is where this month ends: the last Austro-Hungarian troops out of ' +
+          'Serbia by 15 December, which makes the departure the best-documented day of the whole affair. ' +
+          'Two families date the Austro-Hungarian entry into Belgrade to 2 December and a third prints ' +
+          'both the 1st and the 2nd, which is why the prose of this card says only early December. What ' +
+          'rests on one account is the counter-attack’s opening, 2 December in Wikipedia against 3 ' +
+          'December in The Great War, and the day Valjevo and Užice fell, 8 December against 7 to 8 ' +
+          'December; both splits are stated rather than settled here.',
+        consequence: 'The campaign settled a pattern that had held since August. Wikipedia’s aftermath records a ' +
+          'change of command and the merging of the two invading armies on 22 December, a day a second ' +
+          'family prints, though two other dates are in print for the same dismissal and a third is ' +
+          'reported from a source that cannot be quoted; so the day is in this card’s note and not in its ' +
+          'prose. It also fixed the map this site draws for the Balkans in 1914: the frontier is back ' +
+          'where it was, and the next change is the conquest of October 1915.',
       },
     },
   },
@@ -1671,7 +1727,21 @@ export const EVENTS_1914: WW1Event[] = [
     fronts: ['balkans'],
     countries: ['Serbia', 'Austria-Hungary'],
     figures: ['putnik', 'potiorek'],
-    note: 'The single-family facts are the whole point of this card, and they stay in the note. Wikipedia’s Battle of the Kolubara prints Valjevo and Užice as retaken by the Serbs on 8 December 1914, and the counterattack as opening on 2 December, citing Pavlović’s interwar Belgrade monograph. The one independent family reached, 1914-1918-online, gives the counterattack no start day and the expulsion no town, only that Austria-Hungary was out of Serbian territory by 15 December. So the card’s date, 8 December, rests on one account and needs an UNCERTAINTIES row; the prose carries no day for these two towns. Several likely second families were tried and could not be reached: see notes.md.',
+    note: 'Two families date these two towns and they are a day apart, which is why the day is in the card’s ' +
+      'date field and the split is in its prose. Wikipedia’s Battle of the Kolubara prints Valjevo and ' +
+      'Užice as retaken by the Serbs on 8 December 1914, and the counterattack as opening on 2 December, ' +
+      'citing Pavlović’s interwar Belgrade monograph. The Great War recovers Valjevo on 7 to 8 December ' +
+      'and Užice soon afterwards, and dates the counterattack to 3 December at 7 a.m., printing the ' +
+      'criticism of the 2 December date by name. The Serbian Ministry of Defence gives the same frame ' +
+      'from 16 November to 15 December and no day for either town, and 1914-1918-online likewise none. ' +
+      'The Serbian official history of the campaign, as distinct from that ministry’s account of the ' +
+      'battle, could not be reached from this machine, nor the Austrian official history; the attempt is ' +
+      'recorded because it failed, and notes.md lists the dead ends. So this card’s 8 December is the ' +
+      'later date in print for Valjevo and the only date in print for Užice, and the disagreement is ' +
+      'carried in the uncertainties list. Source checked: Wikipedia, Battle of the Kolubara; The Great ' +
+      'War (thegreatwar.pl), Serbian counter-offensive on the Kolubara and battle of Kolubara; Ministry ' +
+      'of Defence of the Republic of Serbia, Bitka na Kolubari; Richard C. Hall in the 1914-1918-online ' +
+      'encyclopedia.',
     mapNote: 'The pin is on Užice at the end of the march line that runs south from the Kolubara through Valjevo, reversing waypoints already drawn on the 1914 invasion line. Serbia is in the Entente colour all through 1914 here, so neither the invasion nor its reversal is a change of ground on the map.',
     levels: {
       primary: {
@@ -1681,12 +1751,27 @@ export const EVENTS_1914: WW1Event[] = [
       },
       secondary: {
         cause: 'Valjevo was the strategic hinge of the campaign: it had fallen to the invaders on the way to the Kolubara, and the roads through it led both to the Sava and Danube crossings and south to Užice, on the Serbian army’s own line of retreat. Recovering it meant the difference between a local success and clearing the country.',
-        what: 'The Serbian attack fell on the invading armies along the Kolubara in the first days of December and the Austro-Hungarians were forced back to their start lines. Valjevo and Užice were both recovered in that first phase, on the same day on the account that records it, while the parallel advance towards Belgrade went in on the northern wing.',
+        what: 'The Serbian attack fell on the invading armies along the Kolubara in the first days of ' +
+          'December and the Austro-Hungarians were forced back to their start lines. Valjevo and Užice ' +
+          'were recovered in that first phase, 8 December in one account and 7 to 8 December in another, ' +
+          'while the parallel advance towards Belgrade went in on the northern wing.',
         consequence: 'The two wings together made the position on the Kolubara indefensible, and the invading army retired out of Serbia in the same winter weather in which it had attacked. Putnik’s campaign was over for that year, and the front did not move again until the combined attack of October 1915.',
       },
       university: {
-        cause: 'The campaign narrative here comes from two families that agree on the outline and diverge on the detail. Wikipedia’s Battle of the Kolubara, citing Pavlović, prints the counterattack opening on 2 December and Valjevo and Užice retaken on 8 December. 1914-1918-online’s article on the Balkans counts the invasions, dates the enemy out of Serbian territory by 15 December, and gives no day for the counterattack or for these two towns. Neither the Serbian nor the Austro-Hungarian official history of the campaign could be reached from this machine, so the day-level chronology remains single-source.',
-        what: 'The southern wing of the counter-attack recovered Valjevo, the hinge of the invasion’s road network, and then Užice further south-west, both of them places the Serbian army had used in its own retreats through November and both already waypoints on this site’s invasion line. The prose therefore names the towns and the counter-attack but no day, because 8 December is printed by one account only, and the map’s 8 December line end is the claim rather than a corroborated fact.',
+        cause: 'Four families stand behind this campaign, two of them date these two towns, and the two do not ' +
+          'agree. Wikipedia’s Battle of the Kolubara, citing Pavlović, prints the counterattack opening ' +
+          'on 2 December and Valjevo and Užice retaken on 8 December. The Great War dates the ' +
+          'counterattack to 3 December at 7 a.m. and recovers Valjevo on 7 to 8 December, with Užice soon ' +
+          'afterwards. 1914-1918-online counts the invasions and dates the enemy out of Serbian territory ' +
+          'by 15 December, giving no day for the counterattack or for these two towns, and the Serbian ' +
+          'Ministry of Defence gives the same span and no day either.',
+        what: 'The southern wing of the counter-attack recovered Valjevo, the hinge of the invasion’s road ' +
+          'network, and then Užice further south-west, both of them places the Serbian army had used in ' +
+          'its own retreats through November and both already waypoints on this site’s invasion line. The ' +
+          'prose names the towns and the counter-attack but dates them only within the week, because the ' +
+          'two accounts that give a day give 8 December and 7 to 8 December; the card’s own 8 December is ' +
+          'therefore the later date in print for one town and the only date in print for the other, not a ' +
+          'settled day.',
         consequence: 'The loss of the Kolubara position ended the third invasion in the same way the first two had ended. For Serbia the winter of 1914-15 was the only period of the war in which its prewar frontiers were held intact, and this stroke is the southern end of the two that restored them; the changes in the Austro-Hungarian command that followed are on the Belgrade card, from the same single account.',
       },
     },
