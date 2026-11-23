@@ -60,11 +60,16 @@ export const SOURCES: Source[] = [
       'Babi Yar, Wannsee, Auschwitz, the deportations from the Warsaw Ghetto, and the two Warsaw uprisings of 1943 and 1944.',
   },
   {
-    citation: 'GREAT BRITAIN: The Second World War; and the History section',
-    publisher: 'Imperial War Museums',
-    url: 'https://www.iwm.org.uk/',
-    usedFor:
-      'Dunkirk, the Battle of Britain, the Blitz, El Alamein, D-Day and home-front material.',
+    citation: 'Imperial War Museums, Second World War stories in the History section',
+    publisher: 'Imperial War Museums; the address is an Internet Archive copy of the section’s Second World War ' +
+      'page, kept because iwm.org.uk answers every request this machine makes with a bot check, in a ' +
+      'browser included, so the live page could not be read here at all; the copy carries the D-Day, ' +
+      'Dambusters and rationing articles',
+    url: 'https://web.archive.org/web/20241217201023/https://www.iwm.org.uk/history/second-world-war',
+    usedFor: 'General reading on the British side of the war, on the accounts the address carries: D-Day, the ' +
+      'Dambusters raid and rationing. The use in Dunkirk, Battle of Britain, Blitz and El Alamein ' +
+      'material that this row recorded when it was written could not be re-verified at any address, so it ' +
+      'is no longer claimed here',
   },
   {
     citation: 'World War Two history resources for schools',
