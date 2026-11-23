@@ -190,11 +190,16 @@ export const SOURCES: Source[] = [
       'The October 1943 evacuation to Sweden, the leak of the deportation date, and how many were saved and how many were caught.',
   },
   {
-    citation: 'POLIN Museum of the History of Polish Jews, Warsaw — exhibition catalogues and virtual shtetl',
-    publisher: 'POLIN',
-    url: 'https://www.polin.pl/en',
-    usedFor:
-      'Warsaw Ghetto population and deportation figures, and the difference between the ghetto rising of 1943 and the city rising of 1944.',
+    citation: 'POLIN Museum of the History of Polish Jews, Warsaw, “The Warsaw Ghetto Uprising. Historical ' +
+      'Information”',
+    publisher: 'POLIN Museum of the History of Polish Jews; the address is an Internet Archive copy of the ' +
+      'museum’s page, kept because polin.pl answers this machine with a bot check, in a browser included',
+    url: 'https://web.archive.org/web/20210415000219/https://polin.pl/en/warsaw-ghetto-uprising-historical-information',
+    usedFor: 'Warsaw Ghetto figures as the museum gives them: over 400,000 Jews walled in, nearly 300,000 ' +
+      'deported to Treblinka in the two months from 22 July 1942, and some 60,000 left by that autumn; ' +
+      'the rising of 19 April to 16 May 1943, Stroop’s count of over 56,000 captured or killed, which the ' +
+      'museum calls most likely exaggerated; and that some survivors later fought in the city’s Warsaw ' +
+      'Uprising.',
   },
   {
     citation:
