@@ -826,7 +826,17 @@ function ViewController({ region }: { region: Region }) {
   const first = useRef(true);
   useEffect(() => {
     const v = REGION_BY_ID[region];
-    map.setMinZoom(v.minZoom);
+    /* Measured 23 Nov on the deployed site: at 390 px the World fit wants zoom 0.5 (Earth about 362
+     * px wide in a 364 px box), but the region floor of 1 clamped it to zoom 1, which draws the
+     * Earth 512 px wide — so the Pacific half of the world sat off-frame and the central-Pacific
+     * line projected outside the renderer&rsquo;s bounds, coming back as an empty path (`M0 0`) that no
+     * tap or hover can reach at any stroke weight. Zooming in does not help either: the corridors
+     * are 1-6 px long only because the whole ocean is in frame. So on a narrow screen let the world
+     * extent fit itself down to 0 and put the whole Earth in the box; wide screens keep 1, where the
+     * fit already lands at 1.83 with the world inside the frame. */
+    const narrowScreen = typeof window !== 'undefined' && window.innerWidth < 640;
+    const floor = region === 'world' && narrowScreen ? 0.5 : v.minZoom;
+    map.setMinZoom(floor);
     map.setMaxBounds(v.bounds);
     if (first.current) {
       first.current = false;
