@@ -847,7 +847,15 @@ export const EVENTS_1917: WW1Event[] = [
     fronts: ['eastern', 'politics'],
     countries: ['Russia'],
     figures: ['kerensky', 'kornilov', 'trotsky'],
-    note: 'Month precision because the affair is dated two ways: the march and its collapse fall on 10–13 September 1917 new style, which is Old Style 28–31 August, and English accounts write both, while the article’s own narrative says “by the end of August”. The card dates the event to September, new style, and states the old-style dates here. The character of the affair is disputed in the sources: the article calls it a misunderstanding caused by the agent Vladimir Lvov, who reported to Kerensky that Kornilov meant to overthrow him, and Kornilov believed Kerensky had been overpowered by the Bolsheviks; older accounts call it an attempted military coup. Kerensky abolished the monarchy and proclaimed the Russian Republic immediately afterwards, on 14 September new style (1 September old style).',
+    note: 'Month precision because the affair is dated two ways: the march and its collapse fall on 10–13 ' +
+      'September 1917 new style, which is Old Style 28–31 August, and English accounts write both, while ' +
+      'Wikipedia’s own narrative says “by the end of August”. The card dates the event to September, new ' +
+      'style, and states the old-style dates here. The character of the affair is disputed in the ' +
+      'sources: Wikipedia’s article on the affair calls it a misunderstanding caused by the agent ' +
+      'Vladimir Lvov, who reported to Kerensky that Kornilov meant to overthrow him, and Kornilov ' +
+      'believed Kerensky had been overpowered by the Bolsheviks; older accounts call it an attempted ' +
+      'military coup. Kerensky abolished the monarchy and proclaimed the Russian Republic immediately ' +
+      'afterwards, on 14 September new style (1 September old style).',
     levels: {
       primary:
         {
