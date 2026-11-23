@@ -456,10 +456,10 @@ export const EVENTS_1914: WW1Event[] = [
     kind: 'diplomacy',
     fronts: ['politics'],
     countries: ['Japan', 'Germany'],
-    note: 'Declared on 23 August 1914, the day given by Encyclopaedia Britannica’s war chronology and by the ' +
-      'National Army Museum. The Museum’s siege article adds that the ultimatum was issued on 15 August ' +
-      'and was refused. There is no Pacific front in the Front list, so the card is filed under politics. ' +
-      'The capitulation of Qingdao is a separate card and is not given a day here.',
+    note: 'Declared on 23 August 1914, the day given by Encyclopaedia Britannica’s World War I article and by ' +
+      'the National Army Museum. The Museum’s siege article adds that the ultimatum was issued on 15 ' +
+      'August and was refused. There is no Pacific front in the Front list, so the card is filed under ' +
+      'politics. The capitulation of Qingdao is a separate card and is not given a day here.',
     levels: {
       primary: {
         cause: 'Japan was Britain’s ally, and Germany still held the port of Qingdao and warships in East ' +
@@ -581,11 +581,13 @@ export const EVENTS_1914: WW1Event[] = [
     kind: 'invasion',
     fronts: ['africa'],
     countries: ['United Kingdom', 'France', 'Germany'],
-    note: 'Encyclopaedia Britannica’s history of Togo dates the invasion to 7 August and the surrender to 26 ' +
-      'August. F. J. Moberly’s official history records that a letter of surrender was received on the ' +
-      'morning of 26 August and that the ceremony was arranged for the following day. Britannica’s own ' +
-      'war chronology dates the Allied capture to 27 August. This card uses 26 August for the surrender ' +
-      'and states that the entry into Kamina is also dated the 27th.',
+    note: 'F. J. Moberly’s official history records that a letter of surrender was received on the morning of ' +
+      '26 August and that the ceremony was arranged for the following day, which is why this card is ' +
+      'dated 26 August and states that the entry into Kamina is also dated the 27th. Encyclopaedia ' +
+      'Britannica’s article on Togo was read again for this note and gives none of these days: it says ' +
+      'only that the country was “occupied by British and French forces in 1914”, and no chronology page ' +
+      'of that encyclopedia could be found. The invasion on 7 August and the capture on 27 August are ' +
+      'therefore carried from the account first used for this card and are listed in the uncertainties.',
     levels: {
       primary: {
         cause: 'Germany had a colony called Togoland, between British and French land in West Africa, with a ' +

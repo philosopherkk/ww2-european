@@ -647,7 +647,22 @@ export const EVENTS_1916: WW1Event[] = [
     fronts: ['balkans'],
     countries: ['Romania', 'Austria-Hungary', 'Germany', 'Bulgaria', 'Ottoman Empire', 'Russia'],
     figures: ['bratianu_ion', 'averescu'],
-    note: 'The Romanian government signed a treaty with France, Britain, Italy and Russia on 17 August 1916 pledging to declare war on Austria-Hungary by 28 August, having concluded a military convention with General John Thomson on 13 August; three Romanian armies crossed the Carpathians on the night of 27 August new style, 14 August by the Julian calendar Romania still used. The dates of the Bulgarian and Ottoman declarations of war are disputed: Ian Beckett holds that Bulgaria declared war only after attacking on 31 August, other sources put the declaration on 30 August or 1 September, and the Ottoman declaration is placed on 29 August, 30 August or 1 September. Romania had to fight on two fronts of some 1,600 kilometres each, the longest in Europe. On 15 September the Romanian War Council suspended the Transylvania offensive to deal with Mackensen’s army group in the south, and Russian reinforcements under General Andrei Zaionchkovsky halted it before it cut the railway from Constanța to Bucharest; overall command on the German side passed to Erich von Falkenhayn, who began his own counterattack on 18 September. In the Balkans the Allied promise to attack Bulgaria was partly kept by the Monastir offensive: after the German Eleventh Army under Winckler was withdrawn, the town of Monastir (Bitola) was abandoned on 18 November and French and Russian troops entered it on 19 November, opening a route to Sofia that never exploited.',
+    note: 'The Romanian government signed a treaty with France, Britain, Italy and Russia on 17 August 1916 ' +
+      'pledging to declare war on Austria-Hungary by 28 August, having concluded a military convention ' +
+      'with General John Thomson on 13 August; three Romanian armies crossed the Carpathians on the night ' +
+      'of 27 August new style, 14 August by the Julian calendar Romania still used. The dates of the ' +
+      'Bulgarian and Ottoman declarations of war are disputed: Ian Beckett’s The Great War, 1914–1918, ' +
+      'second edition of 2007, holds that Bulgaria declared war only after attacking on 31 August, other ' +
+      'sources put the declaration on 30 August or 1 September, and the Ottoman declaration is placed on ' +
+      '29 August, 30 August or 1 September. Romania had to fight on two fronts of some 1,600 kilometres ' +
+      'each, the longest in Europe. On 15 September the Romanian War Council suspended the Transylvania ' +
+      'offensive to deal with Mackensen’s army group in the south, and Russian reinforcements under ' +
+      'General Andrei Zaionchkovsky halted it before it cut the railway from Constanța to Bucharest; ' +
+      'overall command on the German side passed to Erich von Falkenhayn, who began his own counterattack ' +
+      'on 18 September. In the Balkans the Allied promise to attack Bulgaria was partly kept by the ' +
+      'Monastir offensive: after the German Eleventh Army under Winckler was withdrawn, the town of ' +
+      'Monastir (Bitola) was abandoned on 18 November and French and Russian troops entered it on 19 ' +
+      'November, opening a route to Sofia that never exploited.',
     levels: {
       primary: {
         cause: 'Romania was neutral, but many Romanians wanted Transylvania, where over half the people spoke ' +

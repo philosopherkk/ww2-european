@@ -544,10 +544,12 @@ export const EVENTS_1917: WW1Event[] = [
     countries: ['Ottoman Empire', 'United Kingdom'],
     figures: ['lawrence'],
     note: 'The National Army Museum dates the seizure of Aqaba by Arab rebels led by T. E. Lawrence to 6 July ' +
-      '1917. Encyclopaedia Britannica records a fortified Ottoman post captured by Arab irregulars led by ' +
-      'Lawrence in July 1917. The day is the Museum’s, and a note at the Shapell Manuscript Foundation on ' +
-      'a Lawrence letter also dates the capture to 6 July. This card does not call the port heavily ' +
-      'fortified. That stronger phrase is not an order of battle.',
+      '1917. A note at the Shapell Manuscript Foundation on a Lawrence letter also dates the capture to 6 ' +
+      'July. Earlier work on this card credited Encyclopaedia Britannica with a fortified post taken by ' +
+      'Arab irregulars in July 1917 and took the day from that encyclopedia; the passage is no longer on ' +
+      'the page, and the treatment of the affair that remains there neither gives the day nor calls the ' +
+      'place fortified, so the credit has been struck out and the point put in the uncertainties. This ' +
+      'card does not call the port heavily fortified: that stronger phrase is not an order of battle.',
     levels: {
       primary: {
         cause: 'The Arab Revolt, begun at Mecca in 1916, needed a port. Aqaba, on the Red Sea, was held by the ' +
@@ -721,8 +723,10 @@ export const EVENTS_1917: WW1Event[] = [
     note: 'Foreign Relations of the United States, 1917, Supplement 1, prints the Chinese Foreign Office ' +
       'note, forwarded by the United States minister in Peking, declaring a state of war with Germany and ' +
       'Austria-Hungary from 10 a.m. on 14 August 1917. The Library of Congress dates the declaration to ' +
-      '14 August 1917 and cites the Beiyang government gazette of that day. Britannica’s war chronology ' +
-      'has the same date. An earlier break in relations is not given a card here.',
+      '14 August 1917 and cites the Beiyang government gazette of that day. Britannica’s article on China ' +
+      'in the war gives the same date for the declaration on Germany; it says nothing about ' +
+      'Austria-Hungary, so the second half of this card rests on the Foreign Relations note and the ' +
+      'Library of Congress alone. An earlier break in relations is not given a card here.',
     levels: {
       primary: {
         cause: 'China had stayed neutral while Japan, then the Allies, pressed it over Shandong and over the ' +
@@ -1002,15 +1006,22 @@ export const EVENTS_1917: WW1Event[] = [
     kind: 'battle',
     fronts: ['africa'],
     countries: ['United Kingdom', 'India', 'Germany'],
-    note: 'The National Army Museum dates the Battle of Mahiwa to 15–18 October 1917, a German ' +
-      'victory in German East Africa. The 12th edition of Encyclopaedia Britannica says Nigerians ' +
-      'were in action early on 15 October, the beginning of a four days’ battle; the Germans ' +
-      'counter-attacked on the 17th and the 18th; an attack ordered for the 19th was cancelled, ' +
-      'and that day the Germans retired to positions they had taken on the 16th. The 1926 ' +
-      'supplement is the same house. Some British accounts call the fighting the action of ' +
-      'Nyangao. The Museum’s own East Africa video dates a battle at Mahiwa to July 1917, which ' +
-      'contradicts its timeline. This card is dated 15 October, the opening the houses share. ' +
-      'Britannica’s casualty figures are not copied.',
+    note: 'The National Army Museum dates the Battle of Mahiwa to 15–18 October 1917, a German victory in ' +
+      'German East Africa. The twelfth edition of Encyclopaedia Britannica (1922, volume 30, page 884) ' +
+      'says the Nigerians “were in action early on the 15th”, and of that day: “This was the beginning of ' +
+      'a four days’ battle, the most stubborn and most costly of the whole campaign.” The British were ' +
+      'counter-attacked “on the 17th and again on the 18th”, and “Gen. Beves gave orders that the attack ' +
+      'was to be resumed on the 19th. This order was cancelled by Gen. Van Deventer”, whereupon “On that ' +
+      'day the Germans retired to the positions they had taken up on the 16th. The battle was over.” The ' +
+      'same page gives British losses as 2,700 out of 4,900 infantry engaged, 528 of them in the Nigerian ' +
+      'Brigade, and prints von Lettow’s own figure of “some 1,500 men” with 519 losses for his side, ' +
+      'while holding the German force engaged to “not fewer than 2,800”. No other publisher in this ' +
+      'atlas’s reach gives that day-by-day sequence or any of those figures, so they are kept in this ' +
+      'note and in the uncertainties rather than in the card’s text. The 1926 supplement is the same ' +
+      'house. That edition calls the fighting the Mahiwa–Nyango battle and puts Mahiwa about two miles ' +
+      'from Nyango; some British accounts call it the action of Nyangao. The Museum’s own East Africa ' +
+      'video dates a battle at Mahiwa to July 1917, which contradicts its timeline. This card is dated 15 ' +
+      'October, the opening the houses share.',
     levels: {
       primary: {
         cause: 'In the south of German East Africa, British, Nigerian and Indian troops attacked ' +

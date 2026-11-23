@@ -792,7 +792,139 @@ export const SOURCES: Source[] = [  {
       'wounded and 75,000 missing or captured, a total for the whole front rather than for the Kolubara ' +
       'and one whose components do not add up to it.',
   },
-];
+  {
+    citation:
+      'Encyclopaedia Britannica, “World War I”',
+    publisher:
+      'Chicago: Encyclopaedia Britannica, Inc., online edition',
+    url:
+      'https://www.britannica.com/event/World-War-I',
+    usedFor:
+      'The date Japan declared war on Germany, 23 August 1914, which the article lists among the ' +
+      'declarations of war of that August. The other Britannica entries this site uses are in the rows ' +
+      'below, each at its own address.',
+  },
+  {
+    citation:
+      'Encyclopaedia Britannica, “Qingdao”',
+    publisher:
+      'Chicago: Encyclopaedia Britannica, Inc., online edition',
+    url:
+      'https://www.britannica.com/place/Qingdao',
+    usedFor:
+      'That Japan’s prime purpose in declaring war on Germany was the capture of Qingdao, and that the ' +
+      'port capitulated after a blockade in November 1914.',
+  },
+  {
+    citation:
+      'Encyclopaedia Britannica, “Blockade”',
+    publisher:
+      'Chicago: Encyclopaedia Britannica, Inc., online edition',
+    url:
+      'https://www.britannica.com/topic/blockade-warfare',
+    usedFor:
+      'The Allied announcement of 1 March 1915 in answer to the German submarine blockade, and the ' +
+      'encyclopedia’s own judgement that neither the announcement nor the retaliation was legally a ' +
+      'blockade.',
+  },
+  {
+    citation:
+      'Encyclopaedia Britannica, “Twenty-One Demands”',
+    publisher:
+      'Chicago: Encyclopaedia Britannica, Inc., online edition',
+    url:
+      'https://www.britannica.com/event/Twenty-one-Demands',
+    usedFor:
+      'The memorandum of 18 January 1915, the ultimatum of 7 May, Yuan Shikai’s forced acceptance of all ' +
+      'but the final group, and the Sino-Japanese agreements signed on 25 May 1915.',
+  },
+  {
+    citation:
+      'Encyclopaedia Britannica, “Balfour Declaration”',
+    publisher:
+      'Chicago: Encyclopaedia Britannica, Inc., online edition',
+    url:
+      'https://www.britannica.com/event/Balfour-Declaration',
+    usedFor:
+      'That the declaration was made in a letter of 2 November 1917, that the meaning of the phrase about ' +
+      'a national home has been disputed, and that the undertaking contradicted both the Sykes-Picot ' +
+      'Agreement and the Hussein-McMahon correspondence.',
+  },
+  {
+    citation:
+      'Encyclopaedia Britannica, “Armistice of Mudros”',
+    publisher:
+      'Chicago: Encyclopaedia Britannica, Inc., online edition',
+    url:
+      'https://www.britannica.com/event/Armistice-of-Mudros',
+    usedFor:
+      'The terms of 30 October 1918: the surrender of the remaining Ottoman garrisons in the Hejaz, Allied ' +
+      'occupation of the Straits, and the demobilization of the Ottoman army.',
+  },
+  {
+    citation:
+      'Encyclopaedia Britannica, “China in World War I”',
+    publisher:
+      'Chicago: Encyclopaedia Britannica, Inc., online edition',
+    url:
+      'https://www.britannica.com/place/China/China-in-World-War-I',
+    usedFor:
+      'The Chinese declaration of war on Germany, announced on 14 August 1917. The article is about the ' +
+      'declaration on Germany and says nothing about Austria-Hungary, so it is not offered as evidence for ' +
+      'the other half of that card’s title.',
+  },
+  {
+    citation:
+      'Encyclopaedia Britannica, “Togo”',
+    publisher:
+      'Chicago: Encyclopaedia Britannica, Inc., online edition',
+    url:
+      'https://www.britannica.com/place/Togo',
+    usedFor:
+      'Read for the Togoland card and recorded here because of what it does not say: the article dates ' +
+      'nothing in August 1914, giving only that the country was occupied by British and French forces in ' +
+      '1914. The days the card prints come from Moberly and from the account first used for the card, as ' +
+      'its note says.',
+  },
+  {
+    citation:
+      'Encyclopaedia Britannica, twelfth edition (1922)',
+    publisher: 'London: The Encyclopaedia Britannica Company, 1922; the account of Mahiwa quoted in this card’s ' +
+      'note is the article East Africa, Military Operations in volume 30, page 884, of the digitised copy ' +
+      'at the address, and the edition’s index volume points Mahiwa-Nyango, battle of (1917) to that page',
+    url: 'https://archive.org/details/in.ernet.dli.2015.83471',
+    usedFor: 'The course of the Battle of Mahiwa in the card’s note, quoted from the volume: the Nigerians in ' +
+      'action early on 15 October 1917, the beginning of a four days’ battle, counter-attacks on the 17th ' +
+      'and 18th, an attack ordered for the 19th and cancelled by Van Deventer, the Germans retiring that ' +
+      'day to the positions of the 16th. Its figures — 2,700 British casualties of 4,900 infantry ' +
+      'engaged, 528 in the Nigerian Brigade, some 1,500 Germans with 519 losses — are this house’s alone ' +
+      'in this atlas’s reach, so they are in the note and in the uncertainties and not on the card.',
+  },
+  {
+    citation:
+      'Avalon Project, “Balfour Declaration”, 2 November 1917',
+    publisher:
+      'New Haven: Lillian Goldman Law Library, Yale Law School',
+    url:
+      'https://avalon.law.yale.edu/20th_century/balfour.asp',
+    usedFor:
+      'The text of the letter to Lord Rothschild: the national-home sentence and the reservation that ' +
+      'nothing shall be done which may prejudice the civil and religious rights of the existing non-Jewish ' +
+      'communities in Palestine.',
+  },
+  {
+    citation:
+      'Beckett, Ian F. W., The Great War, 1914–1918, second edition (Modern Wars in Perspective)',
+    publisher: 'Harlow and New York: Pearson/Longman, 2007, xxix + 813 pages (ISBN 9781405812528); the address is ' +
+      'the Google Books record for the volume, which prints title, author, publisher, year and extent; no ' +
+      'free copy of the text was readable, so this row says which book the card’s note means, not what ' +
+      'was read in it',
+    url: 'https://books.google.com/books?vid=ISBN9781405812528',
+    usedFor:
+      'The Romania enters the war card credits this book with the view that Bulgaria declared war only ' +
+      'after attacking on 31 August 1916. UNVERIFIED: the volume’s text was not read, so the row records ' +
+      'which book the note means, not the passage. The rival days are in the note and in the uncertainties.',
+  },];
 
 export interface Uncertainty {
   /** Topic of the disputed figure */
@@ -1045,4 +1177,51 @@ export const UNCERTAINTIES: Uncertainty[] = [
       'site prints; on the Austro-Hungarian side it prints 273,000 in one place and about 225,000 in ' +
       'another, states the disagreement, and prints no breakdown and no settled total.',
   },
-];
+  {
+    topic:
+      'Togoland, 1914: the day of the invasion, the day of the surrender, and the day of Kamina',
+    range:
+      'The card is dated 26 August 1914 and says the entry into Kamina is also dated the 27th. F. J. ' +
+      'Moberly’s official history, which this site has in the series row, prints a letter of surrender ' +
+      'received on the morning of 26 August and a ceremony arranged for the following day, so 26 August is ' +
+      'documented. The invasion on 7 August, and the 27 August given for the Allied capture in the account ' +
+      'first used for the card, could not be checked against any page reached: Encyclopaedia Britannica’s ' +
+      'article on Togo dates nothing in August 1914, and there is no chronology page of that encyclopedia. ' +
+      'Both days are therefore printed on the strength of a single, unverifiable account.',
+  },
+  {
+    topic:
+      'Mahiwa: the day-by-day account taken from the twelfth edition of Encyclopaedia Britannica',
+    range: 'The card’s note gives a four days’ battle beginning early on 15 October 1917, counter-attacks on ' +
+      'the 17th and 18th, an attack ordered for the 19th and cancelled, and losses of 2,700 British ' +
+      'casualties of 4,900 infantry engaged, 528 of them in the Nigerian Brigade, against von Lettow’s ' +
+      'own figure of some 1,500 men with 519 losses. All of it is from one house: the twelfth edition of ' +
+      '1922, volume 30, page 884, read in a digitised copy, with the 1926 supplement cited beside it from ' +
+      'the same publisher. No other publisher in this atlas’s reach gives the day-by-day sequence or any ' +
+      'of those figures, so the account is single-source and stays out of the card’s text. The opening ' +
+      'day, 15 October, is what the houses share and is the date the card prints.',
+  },
+  {
+    topic:
+      'Aqaba: the sources for 6 July 1917, and for the description of the place',
+    range:
+      'The day rests on the National Army Museum and on a note at the Shapell Manuscript Foundation on a ' +
+      'Lawrence letter, both of which give 6 July 1917. Earlier work on this card also credited ' +
+      'Encyclopaedia Britannica with the day and with the phrase of a fortified post; re-reading the ' +
+      'encyclopedia for this batch, the passage in its World War I material was not on the page, and the ' +
+      'treatment that remains gives no day and no fortification. The credit has been removed from the ' +
+      'note. Whether Aqaba was a fortified post at all is a separate question the card declines to answer.',
+  },
+  {
+    topic:
+      'The Bulgarian and Ottoman declarations of war on Romania, 1916: 29 August, 30 August, 31 August or ' +
+      '1 September',
+    range:
+      'The card’s note lists the rival days rather than choosing. Ian Beckett’s The Great War, 1914–1918 ' +
+      'holds that Bulgaria declared war only after attacking on 31 August 1916; other published ' +
+      'chronologies put the Bulgarian declaration on 30 August or 1 September, and one printed chronology ' +
+      'seen in a catalogue extract puts the Bulgarian attack itself on 1 September, which is not the day ' +
+      'the note gives. The Ottoman declaration is placed on 29 August, 30 August or 1 September. Beckett’s ' +
+      'text could not be read (see the bibliography row), so no day is preferred here, and the attack of 1 ' +
+      'September in the second family is recorded so that the disagreement is visible.',
+  },];
