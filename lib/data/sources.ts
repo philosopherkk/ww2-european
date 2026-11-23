@@ -435,6 +435,70 @@ export const SOURCES: Source[] = [
       'The April 1944 card dates a first Jassy–Kishinev offensive to 5 April on this book’s account. ' +
       'UNVERIFIED: the page was not read; the account that weighs Hall’s dating against Glantz’s cites ' +
       'Hall at p. 239 and records that he gives no end date, and that sentence is in the uncertainties.',
+  },  {
+    citation:
+      'Rickard, J. L., “Liberation of the Channel Ports — Le Havre, Boulogne, Calais, 5–30 September 1944”',
+    publisher:
+      'History of War — battlefield article',
+    url:
+      'https://www.historyofwar.org/articles/battles_channel_ports.html',
+    usedFor:
+      'What the Le Havre card owes to this account: Bomber Command’s 4,000 tons on the port, the ' +
+      'commandant’s surrender at 11.45 on 12 September, some 12,000 prisoners including non-combatants, an ' +
+      'Allied cost of 634, Dieppe taken unopposed on 1 September, and Boulogne opened on 12 October.',
+  },
+  {
+    citation:
+      'Rickard, J. L., “Siege of Tobruk, April–December 1941”',
+    publisher:
+      'History of War — battlefield article',
+    url:
+      'https://www.historyofwar.org/articles/siege_tobruk_1941.html',
+    usedFor:
+      'The Tobruk card’s dating of the end of the siege: the investment renewed on 1 December 1941 after ' +
+      'the German attack which drove the New Zealanders back from Sidi Rezegh, and the siege finally ' +
+      'lifted after 242 days on 7 December; and the Polish Carpathian Brigade which came in to replace the ' +
+      'Australian divisions.',
+  },
+  {
+    citation:
+      '“The fall of Vienna (13 April 1945)”',
+    publisher:
+      'TheSecondWar.pl — article',
+    url:
+      'https://thesecondwar.pl/en/fall-of-vienna',
+    usedFor:
+      'The Vienna card’s last days of the city: the decision on 11 April to take the Reichsbrücke from the ' +
+      'water, fifteen armoured boats of the Danube Flotilla forcing the crossing, and the wires to the ' +
+      'demolition charges cut before the bridge could be blown; the gallows at the Floridsdorfer Spitz; ' +
+      'and the nine Jews shot by SS men in a Förstergasse tenement on 12 April.',
+  },
+  {
+    citation:
+      '“The end of the siege of Budapest (13 February 1945)”',
+    publisher:
+      'TheSecondWar.pl — article',
+    url:
+      'https://thesecondwar.pl/en/end-of-the-siege-of-budapest',
+    usedFor:
+      'What the Budapest card owes to this account: the Hungarian historian Krisztián Ungváry’s name on ' +
+      'the 600 to 700 men who reached the German lines, and his view that the Soviet prisoner figure was ' +
+      'inflated with detained civilians; the city encircled seven weeks before it fell; the artillery ' +
+      'salute and communiqué in Moscow; and the road to Vienna lying open.',
+  },
+  {
+    citation:
+      '“Belgrade operation”',
+    publisher:
+      'Balkan War History — article',
+    url:
+      'https://www.balkanwarhistory.com/2017/10/belgrade-operation.html',
+    usedFor:
+      'What the Belgrade card owes to this account: the operation dated 21 September to 22 October 1944; a ' +
+      'German battle group of over 20,000 men, 35 tanks and about 150 guns and mortars; the Serbian ' +
+      'government dissolved and its men moved to Kraljevo to form the Serbian Strike Corps under ' +
+      'Mihailović; the Sava bridge saved by a retired teacher with mining experience; and 2,953 Partisans ' +
+      'buried in the Liberation Cemetery.',
   },];
 
 /** Figures that are genuinely disputed, shown so readers know the range. */
@@ -526,4 +590,62 @@ export const UNCERTAINTIES = [
     range:
       'The range opens in July 1937; the earliest state in the border dataset is dated 30 April 1938. For July 1937 to March 1938 the map therefore draws those outlines between one and nine months early, and because that state postdates the Anschluss, it shows Austria inside the German Reich while Austria was still an independent state. The month readout names the snapshot and the gap for every one of those months.',
   },
-];
+  {
+    topic:
+      'Le Havre, prisoners, tonnage and the opening of the harbour, 1944',
+    range:
+      'Prisoners are 11,300 in the British official history and 11,302 in the Canadian, both quoted by ' +
+      'Wikipedia, and some 12,000 including non-combatants in History of War; the Allied cost is 388 to ' +
+      '500 killed in one account and 634 in the other. Civilian dead are over 2,000 from the preparatory ' +
+      'bombardment in one account, the municipality’s count of February 1945 being 1,536 dead and 517 ' +
+      'missing. History of War gives Bomber Command 4,000 tons on the port, Wikipedia more than 4,000 long ' +
+      'tons as the fire of Warspite and Erebus — the same size of bomb, a different arm. Wikipedia reopens ' +
+      'the harbour on 9 October, History of War has Boulogne opened on 12 October. No figure is printed on ' +
+      'the card.',
+  },
+  {
+    topic:
+      'Belgrade, the span of the operation and its totals, 1944',
+    range:
+      'Balkan War History dates the Belgrade operation to 21 September to 22 October 1944 in one paragraph ' +
+      'and the fighting to 14 to 20 October in another; Wikipedia gives 14 to 20 October only. Strength is ' +
+      '150,000 German troops, mostly second-line and non-German, against 580,000 in the Wikipedia infobox, ' +
+      'while Balkan War History counts one battle group at over 20,000 men, 35 tanks and about 150 guns ' +
+      'and mortars, and the Partisan force before the city at 32,000 on 5 October rising to about 40,000 ' +
+      'by the 14th. German losses are about 15,000 dead with 9,000 prisoners there; the Wikipedia article ' +
+      'gives 4,350 Soviet killed and missing. The card is dated 20 October, the day both pages give for ' +
+      'the fall of the city.',
+  },
+  {
+    topic:
+      'Vienna, the loss figures, 1945',
+    range:
+      'No loss figure is printed on the card, because no two accounts on file agree on any of them: some ' +
+      '20,000 killed in the city and 5,000 in the Vienna Woods, about a fifth of them civilians; some ' +
+      '37,000 German dead; about 5,000 soldiers’ graves counted by the city council in August 1945; some ' +
+      '18,000 Soviet dead; and the 139,815 casualties of the 3rd Ukrainian Front between 16 March and 15 ' +
+      'April 1945. All are in the note, each named to the account which prints it, as is the estimate of ' +
+      '70,000 to 100,000 women raped, which its own source calls highly uncertain.',
+  },
+  {
+    topic:
+      'Budapest, the breakout and the prisoner total, 1945',
+    range:
+      'The Soviet announcement of 110,000 prisoners and the 600 to 700 men who reached the German lines ' +
+      'are both printed by the two accounts on file. What TheSecondWar.pl has alone is the Hungarian ' +
+      'historian Krisztián Ungváry’s name on the 600 to 700, and his name on the view that the prisoner ' +
+      'figure was inflated; Wikipedia says in its own words that thousands of Hungarians were rounded up ' +
+      'and added to the count. The card prints the announced figure with the words that it was announced, ' +
+      'and the note gives Ungváry’s count and his name.',
+  },
+  {
+    topic:
+      'Tobruk, the day the siege ended, 1941',
+    range:
+      'The sequence is agreed; its end is not. Wikipedia dates the siege 10 April to 27 November 1941 and ' +
+      'relieves the garrison after 231 days; History of War re-establishes the investment on 1 December ' +
+      'and lifts the siege after 242 days on 7 December; the Australian War Memorial has 2/13 Battalion ' +
+      'still in the port when the siege was lifted on 10 December, the only unit to see the entire siege. ' +
+      'This atlas dates the card 26 November, the day of contact in the account which gives it first, and ' +
+      'prints neither day count; the note gives the three dates and both counts.',
+  },];

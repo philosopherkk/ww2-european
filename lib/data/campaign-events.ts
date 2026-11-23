@@ -96,6 +96,11 @@ export const CAMPAIGN_EVENT_LINKS: CampaignEventLink[] = [
   { line: 'ichi_go_1944', event: 'guangxi_airfields_fall_1944', at: 3 },
   { line: 'iwo_jima_okinawa_1945', event: 'iwo_jima_landed_1945', at: 1 },
   { line: 'iwo_jima_okinawa_1945', event: 'okinawa_invaded_1945', at: 2 },
+  { line: 'budapest_1944', event: 'budapest_falls', at: 2 },
+  { line: 'vienna_1945', event: 'vienna_falls', at: 3 },
+  { line: 'belgrade_1944', event: 'belgrade_falls', at: 2 },
+  { line: 'channel_ports_1944', event: 'le_havre_captured', at: 0 },
+  { line: 'crusader_1941', event: 'tobruk_breakout', at: 2 },
 ];
 
 export const LINKS_BY_LINE: Record<string, CampaignEventLink[]> = {};
