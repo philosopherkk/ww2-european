@@ -82,6 +82,10 @@ export const CAMPAIGN_EVENT_LINKS: CampaignEventLink[] = [
   { line: 'march_serbian_uzice', event: 'uzice_valjevo_retaken_1914', at: 2 },
   { line: 'march_maude_tigris', event: 'kut_el_amara_taken_1917', at: 1 },
   { line: 'march_feisal_damascus', event: 'damascus_taken_1918', at: 1 },
+  { line: 'salonika_lodgement_1915', event: 'salonika_landing_1915', at: 0 },
+  { line: 'ypres_lys_1918', event: 'ypres_opening_1918', at: 0 },
+  { line: 'serbian_front_1914', event: 'serbia_drina_crossing_1914', at: 2 },
+  { line: 'czech_legion_1918', event: 'kazan_taken_1918', at: 3 },
 ];
 
 export const LINKS_BY_LINE: Record<string, CampaignEventLink[]> = {};
