@@ -371,7 +371,61 @@ export const SOURCES: Source[] = [
     usedFor:
       'Rangoon “fell on 8 March 1942” — the one date on the six Asia-Pacific cards confirmed by a publisher outside the American official-history family — and that “the Burma Road was almost the only route for supplies to Chiang Kai-Shek’s Nationalist Chinese Army” after Japan took the Chinese coast.',
   },
-];
+  {
+    citation:
+      'Coulthard-Clark, Chris, “Remembering 1942: The Fall of Singapore”',
+    publisher:
+      'Canberra: Australian War Memorial, Military History Section; a lecture of 15 February 2002, ' +
+      'published on the Memorial’s site',
+    url:
+      'https://www.awm.gov.au/articles/blog/1942-fall-of-singapore',
+    usedFor:
+      'The fall of Singapore card’s prisoner total: 130,000 personnel becoming prisoners of the Japanese, ' +
+      'of whom 15,000 were Australians, and the Memorial’s own words that Singapore is a focus of major ' +
+      'historical contention.',
+  },
+  {
+    citation:
+      'Frieser, Karl-Heinz (editor), Germany and the Second World War, Volume VIII: The Eastern Front ' +
+      '1943–1944 — The War in the East and on the Neighbouring Fronts',
+    publisher:
+      'Oxford: Clarendon Press, Oxford University Press, 2017, for the Militärgeschichtliches ' +
+      'Forschungsamt, Potsdam (ISBN 978-0-19-872346-2); read in the full-text copy of the volume held by ' +
+      'the Internet Archive, where the sentence quoted below is in the section opening the ' +
+      'Dnieper–Carpathian offensive',
+    url:
+      'https://archive.org/details/germany-and-the-second-world-war.-vol.-1-9-1990-2017',
+    usedFor:
+      'The second of the three sets of Soviet losses on the Dnieper card, the one the card attributes to ' +
+      'the German official history: by 23 December the Red Army had lost 1,687,164 men in the Battle of ' +
+      'the Dnieper, of whom 417,323 dead or missing. The card used to say “the German volumes edited by ' +
+      'Frieser”; the figures are in this volume, not in the English Volume IX, and the note now names it.',
+  },
+  {
+    citation:
+      'Forczyk, Robert, Dnepr 1943: Hitler’s Eastern Rampart Crumbles (Osprey Campaign Series)',
+    publisher: 'Osprey Publishing (Bloomsbury), 2016, 96 pages (ISBN 9781472812391); the address is the Google ' +
+      'Books record for the volume, which gives the author, the year and 96 pages and names the publisher ' +
+      'as Bloomsbury Publishing; the losses are not on that page and no free copy of the text is online',
+    url: 'https://books.google.com/books?vid=ISBN9781472812391',
+    usedFor:
+      'The third set of Soviet losses on the Dnieper card, about 290,000 killed and over a million in all, ' +
+      'is given to this book. UNVERIFIED: no page of the volume could be read. The card presents all three ' +
+      'sets as disputed rather than choosing between them.',
+  },
+  {
+    citation:
+      'Hall, Richard C. (editor), War in the Balkans: An Encyclopedic History from the Fall of the Ottoman ' +
+      'Empire to the Breakup of Yugoslavia',
+    publisher: 'Bloomsbury Academic, 2014, 411 pages (ISBN 9781610690300, given at the address as 1610690303 and ' +
+      '9781610690300); the address is the Google Books record for the volume, which gives author, ' +
+      'imprint, year and 411 pages; the volume is not freely readable',
+    url: 'https://books.google.com/books?vid=ISBN9781610690300',
+    usedFor:
+      'The April 1944 card dates a first Jassy–Kishinev offensive to 5 April on this book’s account. ' +
+      'UNVERIFIED: the page was not read; the account that weighs Hall’s dating against Glantz’s cites ' +
+      'Hall at p. 239 and records that he gives no end date, and that sentence is in the uncertainties.',
+  },];
 
 /** Figures that are genuinely disputed, shown so readers know the range. */
 export const UNCERTAINTIES = [

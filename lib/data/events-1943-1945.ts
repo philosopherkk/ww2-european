@@ -318,7 +318,24 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['eastern'],
     countries: ['Soviet Union', 'Germany'],
     figures: ['zhukov', 'vasilevsky'],
-    note: 'The battle followed the pursuit after Belgorod and Kharkov in August 1943. On 15 September Hitler ordered Army Group South to fall back behind the Dnieper; the Germans called the position the Eastern Wall, and its fortification was uneven and hurried, while Manstein asked for twelve new divisions he was not given. The front ran about 1,400 kilometres from Smolensk to the Sea of Azov and involved almost four million soldiers at its height. The crossings were simultaneous rather than concentrated: the first bridgehead was taken on 22 September where the Pripyat joins the Dnieper, troops crossed in found boats, rafts and by swimming, and assault-engineer parks followed them over. Five Soviet fronts attacked. At Kiev the main blow was prepared behind the Bukrin bend south of the city: the 27th and 40th Armies attacked there on 1 November, two days early, gained 1.5 kilometres and were stopped, and the Germans correctly identified the sector of the real assault. That came on 3 November from the Lyutezh bridgehead north of the city; on 4 November Rybalko’s 3rd Guards Tank Army and the I Guard Cavalry Corps were thrown in, and Kiev fell on 6 November, the third largest city in the Soviet Union. In the south the Germans were cleared from the Lower Dnieper and the Crimea was cut off by land. Soviet losses are disputed: Krivosheev’s staff counts give 1,285,977 casualties of whom 348,815 were killed or missing, the German volumes edited by Frieser give 1,687,164 and 417,323, and Forczyk about 290,000 killed and over a million in total. 2,438 soldiers were made Heroes of the Soviet Union.',
+    note: 'The battle followed the pursuit after Belgorod and Kharkov in August 1943. On 15 September Hitler ' +
+      'ordered Army Group South to fall back behind the Dnieper; the Germans called the position the ' +
+      'Eastern Wall, and its fortification was uneven and hurried, while Manstein asked for twelve new ' +
+      'divisions he was not given. The front ran about 1,400 kilometres from Smolensk to the Sea of Azov ' +
+      'and involved almost four million soldiers at its height. The crossings were simultaneous rather ' +
+      'than concentrated: the first bridgehead was taken on 22 September where the Pripyat joins the ' +
+      'Dnieper, troops crossed in found boats, rafts and by swimming, and assault-engineer parks followed ' +
+      'them over. Five Soviet fronts attacked. At Kiev the main blow was prepared behind the Bukrin bend ' +
+      'south of the city: the 27th and 40th Armies attacked there on 1 November, two days early, gained ' +
+      '1.5 kilometres and were stopped, and the Germans correctly identified the sector of the real ' +
+      'assault. That came on 3 November from the Lyutezh bridgehead north of the city; on 4 November ' +
+      'Rybalko’s 3rd Guards Tank Army and the I Guard Cavalry Corps were thrown in, and Kiev fell on 6 ' +
+      'November, the third largest city in the Soviet Union. In the south the Germans were cleared from ' +
+      'the Lower Dnieper and the Crimea was cut off by land. Soviet losses are disputed: Krivosheev’s ' +
+      'staff counts give 1,285,977 casualties of whom 348,815 were killed or missing, the German official ' +
+      'history volume edited by Frieser, Volume VIII of Germany and the Second World War, gives 1,687,164 ' +
+      'and 417,323, and Forczyk about 290,000 killed and over a million in total. 2,438 soldiers were ' +
+      'made Heroes of the Soviet Union.',
     mapNote: 'The Dnieper line shown here is one week’s position in a battle that ran across the whole month. Bridgeheads were won and lost, so the frontier drawn for November is a snapshot of a moving front, not a settled border.',
     levels: {
       primary: {

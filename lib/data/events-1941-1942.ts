@@ -1216,7 +1216,7 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['eastern'],
     countries: ['Germany', 'Soviet Union'],
     figures: ['hitler', 'zhukov'],
-    note: 'The offensive opened on 2 October 1941, promising a final push before winter. It bogged down in the autumn mud, then met the Soviet counter-offensive of 5 December; the event moscow_counteroffensive carries that outcome. German strength estimates for Typhoon are order-of-battle approximations, not exact counts.',
+    note: 'The offensive opened on 2 October 1941, promising a final push before winter. It bogged down in the autumn mud, then met the Soviet counter-offensive of 5 December, the outcome carried by the card “Soviet counter-offensive before Moscow”. German strength estimates for Typhoon are order-of-battle approximations, not exact counts.',
     levels: {
       primary: {
         cause: 'Germany believed the Soviet army was nearly beaten and wanted to take Moscow before winter.',

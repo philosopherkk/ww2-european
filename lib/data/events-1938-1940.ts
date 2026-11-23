@@ -1545,7 +1545,7 @@ export const EVENTS: WW2Event[] = [
     kind: 'battle',
     fronts: ['air_war'],
     countries: ['United Kingdom', 'Germany'],
-    note: '15 September is commemorated in Britain as Battle of Britain Day: large German raids were met by concentrated fighter interception, and the Luftwaffe withdrew from the daylight offensive. The RAF’s official commemoration uses 10 July 1940 as the campaign’s start, the date already carried by the battle_of_britain card; German chronologies divide the campaign differently. Fighter Command’s claims of enemy aircraft destroyed that day were higher than German losses recorded after the war, so no exact loss figure is given here.',
+    note: '15 September is commemorated in Britain as Battle of Britain Day: large German raids were met by concentrated fighter interception, and the Luftwaffe withdrew from the daylight offensive. The RAF’s official commemoration uses 10 July 1940 as the campaign’s start, the date already carried by the card “The Battle of Britain begins”; German chronologies divide the campaign differently. Fighter Command’s claims of enemy aircraft destroyed that day were higher than German losses recorded after the war, so no exact loss figure is given here.',
     levels: {
       primary: {
         cause: 'Germany was trying to defeat British aircraft so it could invade Britain.',
