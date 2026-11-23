@@ -24,10 +24,20 @@ import PeoplePanel from '@/components/PeoplePanel';
 import SourcesPanel from '@/components/SourcesPanel';
 import TurningPointPanel from '@/components/TurningPointPanel';
 import type { Level } from '@/lib/data';
-import { EVENT_BY_ID, EVENTS } from '@/lib/data';
+import { CAMPAIGN_LINES, EVENT_BY_ID, EVENTS, MARCH_LINES } from '@/lib/data';
 import { LINKS_BY_EVENT, LINKS_BY_LINE } from '@/lib/data/campaign-events';
 import { turningPointFor } from '@/lib/data/turning-points';
-import { LEVELS, MONTH_INDEX, MONTHS, monthKeyOf } from '@/lib/site';
+import {
+  campaignVisible,
+  LEVELS,
+  LINE_KIND_META,
+  lineKindOf,
+  longDate,
+  MONTH_INDEX,
+  MONTHS,
+  monthKeyOf,
+  SIDE_META,
+} from '@/lib/site';
 
 /* Leaflet touches `window` as soon as it loads, so the map is only ever
  * mounted in the browser. */
@@ -225,6 +235,23 @@ export default function Home() {
     () => (hoverEvent ? (LINKS_BY_EVENT[hoverEvent] ?? []).map((l) => l.line) : []),
     [hoverEvent]
   );
+
+  /* The month's own lines, in the order the map draws them. The panel lists them because a line is
+   * a 1-6 pixel corridor at world scale and the Balkan lines sit two pixels apart, so a tap meant
+   * for one opens a neighbour's popup: measured on production 23 Nov, 7 of 32 line taps returned
+   * the wrong line's popup. The list carries the same text as the popup without hitting the stroke. */
+  const linesForMonth = useMemo(() => {
+    const present = [...CAMPAIGN_LINES, ...MARCH_LINES].filter((l) => campaignVisible(l, monthKey));
+    // Lines with dated events on them lead the list: those are the ones a reader is chasing when
+    // a tap on the arrow gives them a neighbour's popup. The sort is stable, so the map's own
+    // order is kept within each group.
+    return [
+      ...present.filter((l) => (LINKS_BY_LINE[l.id] ?? []).length > 0),
+      ...present.filter((l) => (LINKS_BY_LINE[l.id] ?? []).length === 0),
+    ];
+  }, [monthKey]);
+  const [allLinesOpen, setAllLinesOpen] = useState(false);
+  useEffect(() => setAllLinesOpen(false), [monthKey]);
 
   const visibleEvents = useMemo(() => {
     if (scope === 'war') return EVENTS;
@@ -506,6 +533,85 @@ export default function Home() {
 
               {scope === 'month' && turningPoint && (
                 <TurningPointPanel tp={turningPoint} level={level} onOpenEvent={openEventFrom} />
+              )}
+
+              {scope === 'month' && linesForMonth.length > 0 && (
+                <section className="rounded-xl border border-stone-300 bg-white p-3">
+                  <button
+                    type="button"
+                    onClick={() => setAllLinesOpen((v) => !v)}
+                    aria-expanded={allLinesOpen}
+                    className="flex w-full items-center justify-between gap-2 text-left"
+                  >
+                    <span className="text-xs font-bold uppercase tracking-wider text-stone-600">
+                      Lines in {month.label} ({linesForMonth.length})
+                    </span>
+                    <ChevronDown
+                      size={14}
+                      aria-hidden
+                      className={`shrink-0 text-stone-500 transition-transform ${allLinesOpen ? 'rotate-180' : ''}`}
+                    />
+                  </button>
+                  <p className="text-xs leading-relaxed text-stone-600">
+                    A line is an arrow only a few pixels wide at world scale, and the arrows crowd
+                    together in the Balkans, so tapping one often opens a neighbour’s popup. These
+                    are the lines the map draws this month with their side, kind and dates; open one
+                    on the map for its full account, or use the links below each to its events.
+                  </p>
+                  <ul className="space-y-2 pt-2">
+                    {(allLinesOpen ? linesForMonth : linesForMonth.slice(0, 6)).map((l) => {
+                      const side = SIDE_META[l.side];
+                      const kind = LINE_KIND_META[lineKindOf(l)];
+                      const evs = LINKS_BY_LINE[l.id] ?? [];
+                      return (
+                        <li
+                          key={l.id}
+                          className="border-l-2 pl-2 text-sm leading-snug"
+                          style={{ borderColor: side.color }}
+                        >
+                          <p className="font-semibold">{l.name}</p>
+                          <p className="text-xs text-stone-600">
+                            {side.label} · {kind.label}
+                            {l.operation ? ` · ${l.operation}` : ''} · {longDate(l.from, 'day')} to{' '}
+                            {longDate(l.to, 'day')}
+                          </p>
+                          {evs.length > 0 && (
+                            <ul className="space-y-0.5 pt-1">
+                              {evs.map((link) => {
+                                const ev = EVENT_BY_ID[link.event];
+                                if (!ev) return null;
+                                return (
+                                  <li key={link.event}>
+                                    <button
+                                      type="button"
+                                      onClick={() => openEventFrom(ev.id)}
+                                      className="text-left text-xs text-sky-800 underline decoration-sky-800/40 underline-offset-2 hover:decoration-sky-800"
+                                    >
+                                      {ev.title}
+                                      <span className="text-stone-600">
+                                        {' '}
+                                        · {longDate(ev.date, ev.precision)}
+                                      </span>
+                                    </button>
+                                  </li>
+                                );
+                              })}
+                            </ul>
+                          )}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                  {!allLinesOpen && linesForMonth.length > 6 && (
+                    <button
+                      type="button"
+                      onClick={() => setAllLinesOpen(true)}
+                      className="pt-2 text-xs font-semibold text-sky-800 underline decoration-sky-800/40 underline-offset-2"
+                    >
+                      Show all {linesForMonth.length} lines
+                    </button>
+                  )}
+                </section>
               )}
 
               <div className="space-y-2.5 pb-2">
