@@ -28,8 +28,13 @@ export const EVENTS_1918: WW1Event[] = [
       secondary: {
         cause:
           'Wilson had kept the United States neutral partly because a settlement with no victors seemed possible. By January 1918 the Bolsheviks had seized the argument about peace: their December decree called for self-determination without annexations, and their publication of the Sykes–Picot and other agreements discredited the old diplomacy. Wilson’s advisers, especially the research group known as the Inquiry, had been drafting a statement of war aims. British and French leaders wanted the German fleet, colonies and indemnity, and wanted to say so before Wilson said it first.',
-        what:
-          'Three days before Wilson, Lloyd George gave a speech at the Mansion House in London that also called for a league of nations, but demanded reparations and the German colonies. Wilson’s message to Congress on 8 January set out the Fourteen Points in order. The first five were general: open covenants, freedom of the seas, removal of economic barriers, reduction of armaments, and an adjustment of colonial claims. The rest were specific, dealing with the evacuations and frontier questions affecting Russia, Belgium, France, Italy, the peoples of Austria-Hungary, Romania, Serbia and Montenegro, the Ottoman parts, and Poland. Points thirteen and fourteen, on an independent Poland with free and secure access to the sea and a general association of nations, were the two that would outlive the rest. Wilson presented them as the terms the United States would fight for and would accept as a peace. He did not consult the French and British cabinets in detail beforehand.',
+        what: 'Three days before Wilson, Lloyd George gave a speech at the Mansion House in London that also ' +
+          'called for a league of nations, but demanded reparations and the German colonies. Wilson’s ' +
+          'message to Congress on 8 January set out the Fourteen Points in order. The first five were ' +
+          'general: open covenants, freedom of the seas, removal of economic barriers, reduction of ' +
+          'armaments, and an adjustment of colonial claims. The rest were specific, dealing with ' +
+          'evacuations and frontiers affecting Russia, Belgium, France, Italy, the peoples of ' +
+          'Austria-Hungary, Romania, Serbia and Montenegro, the Ottoman parts, and Poland.',
         consequence: 'The points split the camps. For the Allies they were war aims; for the Central Powers they ' +
           'were a possible exit. In Germany the phrase without annexations and indemnities, which the ' +
           'Reichstag had used in July 1917, came back through Wilson rather than the social democrats. In ' +
@@ -47,7 +52,12 @@ export const EVENTS_1918: WW1Event[] = [
           'The durable effects were self-determination applied selectively, since the points promised Poland a seaport while letting Italy have Trentino and leaving the rump states of Austria-Hungary to be argued out later; and the League of Nations without the United States in it. Historians still dispute whether the German grievance of 1919 — that an armistice had been granted on the Fourteen Points and then discarded — had any basis in the documents, or was a political myth built after the fact.',
       },
     },
-    note: 'Speech to a joint session of Congress, 8 January 1918. Lloyd George’s similar Mansion House speech, which demanded reparations, was 5 January 1918. Source checked: English Wikipedia, “Fourteen Points”.',
+    note: 'Wilson presented them as the terms the United States would fight for and would accept as a peace, ' +
+      'and he did not consult the French and British cabinets in detail beforehand. Points thirteen and ' +
+      'fourteen, on an independent Poland with free and secure access to the sea and a general ' +
+      'association of nations, were the two that would outlive the rest. Speech to a joint session of ' +
+      'Congress, 8 January 1918. Lloyd George’s similar Mansion House speech, which demanded reparations, ' +
+      'was 5 January 1918. Source checked: English Wikipedia, “Fourteen Points”.',
   },
   {
     id: 'german_january_strikes_1918',
@@ -70,8 +80,11 @@ export const EVENTS_1918: WW1Event[] = [
           'The strike did not stop the war, and its leaders were arrested. It did force the governments to look again at their war aims, and it showed the army and the politicians that the home front could no longer be held by rationing and police.',
       },
       secondary: {
-        cause:
-          'German workers had been promised a peace without annexations by the Reichstag majority in July 1917, and nothing had come of it. The blockade had cut imports of food and fertiliser since 1914, the bad harvest of 1916–1917 had produced the Turnip Winter, and by 1918 the civilian diet was short of fat and protein. The October Revolution raised the expectations of the socialist left, and the talks at Brest-Litovsk made peace feel near. Strikes had been rising since 1916: 50,000 out in Berlin in June 1916 over the jailing of Karl Liebknecht, and bread riots in Berlin and Leipzig in April 1917 that the government answered with military force. The workers’ councils that the 1916 Auxiliary National Services Law had allowed in the larger factories became the machinery of the strike. The Spartacus group, whose best-known leaders Liebknecht and Rosa Luxemburg were in prison and whose Berlin organisation was run by Leo Jogiches, wanted a global revolution; the majority social democrats wanted pressure on the government instead of a rising.',
+        cause: 'German workers had been promised a peace without annexations by the Reichstag majority in July ' +
+          '1917, and nothing had come of it. The blockade had cut imports of food and fertiliser since ' +
+          '1914, the bad harvest of 1916–1917 had produced the Turnip Winter, and by 1918 the civilian ' +
+          'diet was short of fat and protein. The October Revolution raised the expectations of the ' +
+          'socialist left, and the talks at Brest-Litovsk made peace feel near.',
         what: 'The Austrian Jännerstreik spread across Austria-Hungary between 3 and 25 January, and ' +
           'triggered the Januarstreik, running from 25 January to 1 February. The Independent Social ' +
           'Democrats (USPD) called it, and the Revolutionary Stewards under Richard Müller delivered it ' +
@@ -91,7 +104,20 @@ export const EVENTS_1918: WW1Event[] = [
           'The careful conclusion is that blockade malnutrition weakened Germany and shaped its politics without producing famine death on the Belgian or Chinese scale, and that the worst of the food crisis lay in the Turnip Winter of 1916–1917 rather than 1918. The same caution applies to the claim that German civilians were deliberately starved: the blockade was legal and indiscriminate, and its continuation after 11 November 1918 is the part of the case that has real force.',
       },
     },
-    note: 'The Austrian Jännerstreik ran 3 – 25 January 1918 and preceded the German strike, which lasted 25 January – 1 February, began in Berlin on 28 January and was called off on 3 February. 400,000 out in Berlin on the first day and half a million by that night; over a million at the height across the industrial regions; up to 50,000 strikers conscripted to the front. Blockade death toll estimates range from about 300,000 (Winter, influenza subtracted) and 424,000 (Carnegie 1928) to 474,085 (Howard, influenza included) and 762,796 (German Board of Public Health, 1918). Source checked: “German strike of January 1918”, “Blockade of Germany (1914–1919)”.',
+    note: 'Strikes had been rising since 1916: 50,000 out in Berlin in June 1916 over the jailing of Karl ' +
+      'Liebknecht, and bread riots in Berlin and Leipzig in April 1917 that the government answered with ' +
+      'military force. The workers’ councils that the 1916 Auxiliary National Services Law had allowed in ' +
+      'the larger factories became the machinery of the strike. The Spartacus group, whose best-known ' +
+      'leaders Liebknecht and Rosa Luxemburg were in prison and whose Berlin organisation was run by Leo ' +
+      'Jogiches, wanted a global revolution; the majority social democrats wanted pressure on the ' +
+      'government instead of a rising. The Austrian Jännerstreik ran 3 – 25 January 1918 and preceded the ' +
+      'German strike, which lasted 25 January – 1 February, began in Berlin on 28 January and was called ' +
+      'off on 3 February. 400,000 out in Berlin on the first day and half a million by that night; over a ' +
+      'million at the height across the industrial regions; up to 50,000 strikers conscripted to the ' +
+      'front. Blockade death toll estimates range from about 300,000 (Winter, influenza subtracted) and ' +
+      '424,000 (Carnegie 1928) to 474,085 (Howard, influenza included) and 762,796 (German Board of ' +
+      'Public Health, 1918). Source checked: “German strike of January 1918”, “Blockade of Germany ' +
+      '(1914–1919)”.',
   },
   {
     id: 'operation_faustschlag',
@@ -483,8 +509,12 @@ export const EVENTS_1918: WW1Event[] = [
       secondary: {
         cause:
           'Ludendorff’s plan for the spring had been to destroy the British army, and after Michael was called off on 5 April and the Flanders attacks took little ground, he turned to the French to draw Allied reserves away from the north. Operation Blücher–Yorck was aimed at the Aisne–Marne corridor, a sector where the French held a long front with divisions worn by 1917 and where the ground, ridge above river, favoured attack. Foch had asked for the sector to be reinforced; French calculations expected the main blow in Flanders, where the ports were.',
-        what:
-          'The German first and seventh armies attacked on 27 May with over 20 divisions and about 4,000 guns against a French front held by understrength divisions, and four divisions of the British IX Corps under Alexander Hamilton-Gordon held part of the Chemin des Dames ridge in the sector. Eight Allied divisions were broken in six hours along the line between Reims and Soissons, and a further 15 kilometres was gained by nightfall. By 30 May the attackers had taken just over 50,000 prisoners and over 800 guns, and Ludendorff changed the object of the operation from the set-piece attack to the pursuit towards the Marne, which had never been its intention. On 3 June the spearheads came within 56 kilometres (35 miles) of Paris. The American 2nd Division, with its marine brigade, fought at the river crossings and in Belleau Wood from 1 to 26 June at heavy cost to both sides, the first large American action of the war.',
+        what: 'The German first and seventh armies attacked on 27 May with over 20 divisions and about 4,000 ' +
+          'guns against a French front held by understrength divisions, and four divisions of the British ' +
+          'IX Corps held part of the Chemin des Dames ridge. Eight Allied divisions were broken in six ' +
+          'hours between Reims and Soissons, and a further 15 kilometres was gained by nightfall. By 30 ' +
+          'May the attackers had taken just over 50,000 prisoners and over 800 guns, and Ludendorff ' +
+          'changed the object from the set-piece attack to pursuit towards the Marne.',
         consequence:
           'German casualties in the battle are usually put near 130,000 and Allied at about 127,000, of which the French bore most. The salient driven to the Marne gave the German army no defensible line of communication and no railway terminus worth the divisions spent, and its flanks were exposed to the counter-attacks Foch was preparing. Blücher confirmed the pattern: victory in the first two days, exhaustion in the fourth week, and a salient which the Allies cut off in July.',
       },
@@ -497,8 +527,18 @@ export const EVENTS_1918: WW1Event[] = [
           'American memory of the battle runs through Château-Thierry and Belleau Wood, which are treated as the founding battles of the American Expeditionary Force; the British contribution of IX Corps and of the shattered divisions in the sector has been recovered more slowly. Foch’s handling of the crisis, keeping reserves in hand for counter-attacks rather than feeding them into the defence of ground, is generally judged the decisive Allied response.',
       },
     },
-    note:
-      'Third Battle of the Aisne (Blücher–Yorck), 27 May – 6 June 1918. German first and seventh armies with over 20 divisions and about 4,000 guns; by 30 May the attackers had taken just over 50,000 prisoners and over 800 guns. Casualties: about 127,000 Allied and 130,000 German. The Aisne article puts the deepest point reached at 56 km (35 mi) from Paris on 3 June, while the Belleau Wood article gives Château-Thierry itself as 95 km (59 mi) from Paris; the two pages measure different points, so only the 3 June figure is used. Belleau Wood, 1 – 26 June, cost the American 2nd Division and Marines 9,777 casualties and the Germans over 10,000. Source checked: “Third Battle of the Aisne”, “Battle of Belleau Wood”.',
+    note: 'The four British divisions of the IX Corps were under Alexander Hamilton-Gordon. The change of ' +
+      'object to the pursuit had never been the intention of the operation. On 3 June the spearheads came ' +
+      'within 56 kilometres (35 miles) of Paris. The American 2nd Division, with its marine brigade, ' +
+      'fought at the river crossings and in Belleau Wood from 1 to 26 June at heavy cost to both sides, ' +
+      'the first large American action of the war. Third Battle of the Aisne (Blücher–Yorck), 27 May – 6 ' +
+      'June 1918. German first and seventh armies with over 20 divisions and about 4,000 guns; by 30 May ' +
+      'the attackers had taken just over 50,000 prisoners and over 800 guns. Casualties: about 127,000 ' +
+      'Allied and 130,000 German. The Aisne article puts the deepest point reached at 56 km (35 mi) from ' +
+      'Paris on 3 June, while the Belleau Wood article gives Château-Thierry itself as 95 km (59 mi) from ' +
+      'Paris; the two pages measure different points, so only the 3 June figure is used. Belleau Wood, 1 ' +
+      '– 26 June, cost the American 2nd Division and Marines 9,777 casualties and the Germans over ' +
+      '10,000. Source checked: “Third Battle of the Aisne”, “Battle of Belleau Wood”.',
   },
   {
     id: 'treaties_of_batum',
@@ -739,8 +779,11 @@ export const EVENTS_1918: WW1Event[] = [
           'the armistice of October 1918 obliged the Ottoman army to leave.',
       },
       secondary: {
-        cause:
-          'Enver Pasha, the Ottoman minister of war, had wanted Transcaucasia placed under Ottoman suzerainty as part of a pan-Turanian plan, which would hand the Central Powers the oilfields of Baku and open the Caspian road to Central Asia. The Ottoman advance of spring 1918 took Erzurum, Kars and Van from the retreating Russian army, and at the Batum conference in May the Ottomans demanded Tiflis, Alexandropol and Echmiadzin as well, with a railway to connect Kars and Julfa with Baku. Armenian forces halted the advance at Sardarapat, Kara Killisse and Bash Abaran in late May, the Transcaucasian federation dissolved, Georgia called in a German expeditionary force, and the government of Azerbaijan moved from Tiflis to Ganja. Baku, held by the Baku Commune under Stepán Shahumyan, was the last prize. Germany, which wanted the oil rather than the conquest, offered Soviet Russia the benefit of its pressure on the Ottomans in return for access to the fields, and the two governments agreed on 27 August that Germany should take a quarter of Baku’s oil.',
+        cause: 'Enver Pasha, the Ottoman minister of war, had wanted Transcaucasia placed under Ottoman ' +
+          'suzerainty as part of a pan-Turanian plan, which would hand the Central Powers the oilfields ' +
+          'of Baku and open the Caspian road to Central Asia. The Ottoman advance of spring 1918 took ' +
+          'Erzurum, Kars and Van from the retreating Russian army. Baku, held by the Baku Commune under ' +
+          'Stepán Shahumyan, was the last prize.',
         what: 'Nuri Pasha’s Islamic Army of the Caucasus had about 14,000 men, only 30 per cent Ottomans. ' +
           'Against it were about 6,000 Centrocaspian troops, mostly Armenians, with some 40 guns and ' +
           'Dunsterville’s detachment. A coup on 26 July overthrew the Bolshevik Commune. Fighting ran ' +
@@ -762,8 +805,21 @@ export const EVENTS_1918: WW1Event[] = [
           'In Turkish and Azerbaijani nationalist writing Baku belongs to the story of Azerbaijan’s 1918 independence, and to the later claim that the Ottoman collapse came from the armistice rather than from the fighting. In the military history of 1918 it is a case study in strategic overreach: a victory in mid-September that had to be given up within six weeks because the war was being lost elsewhere.',
       },
     },
-    note:
-      'The article’s infobox dates the operations at 26 August – 14 September 1918, and Dunsterforce “abandoned the city on the night of 14/15 September”; no source checked gives an entry date for the Islamic Army, so none is used. Strengths from the infobox: Islamic Army 14,000 infantry, 500 cavalry, 40 guns; Baku Commune/Baku Army 20,000, described as ill-equipped. Mürsel Bey’s own figure of about 2,000 Ottoman killed and wounded, and about 200 British casualties in the whole operation. The September Days death toll is given as 10,000 to 30,000 ethnic Armenians out of a community of about 80,000; the infobox of the battle article says 30,000, so the range is used here. Sources checked: “Battle of Baku”, “September Days”, “Dunsterforce”.',
+    note: 'At the Batum conference in May the Ottomans added demands for Tiflis, Alexandropol and Echmiadzin, ' +
+      'and for a railway to connect Kars and Julfa with Baku. Armenian forces halted the advance at ' +
+      'Sardarapat, Kara Killisse and Bash Abaran in late May, the Transcaucasian federation dissolved, ' +
+      'Georgia called in a German expeditionary force, and the government of Azerbaijan moved from Tiflis ' +
+      'to Ganja. Germany, which wanted the oil rather than the conquest, offered Soviet Russia the ' +
+      'benefit of its pressure on the Ottomans in return for access to the fields, and the two ' +
+      'governments agreed on 27 August that Germany should take a quarter of Baku’s oil. The article’s ' +
+      'infobox dates the operations at 26 August – 14 September 1918, and Dunsterforce “abandoned the ' +
+      'city on the night of 14/15 September”; no source checked gives an entry date for the Islamic Army, ' +
+      'so none is used. Strengths from the infobox: Islamic Army 14,000 infantry, 500 cavalry, 40 guns; ' +
+      'Baku Commune/Baku Army 20,000, described as ill-equipped. Mürsel Bey’s own figure of about 2,000 ' +
+      'Ottoman killed and wounded, and about 200 British casualties in the whole operation. The September ' +
+      'Days death toll is given as 10,000 to 30,000 ethnic Armenians out of a community of about 80,000; ' +
+      'the infobox of the battle article says 30,000, so the range is used here. Sources checked: “Battle ' +
+      'of Baku”, “September Days”, “Dunsterforce”.',
   },
   {
     id: 'vardar_offensive_bulgaria_collapse',
@@ -904,8 +960,12 @@ export const EVENTS_1918: WW1Event[] = [
           'longest and least favourable sector, held by about 450,000 German troops of Army Group ' +
           'Gallwitz. The German soldiers in the line were underfed and many were old or young, though ' +
           'units newly relieved from the east fought stubbornly.',
-        what:
-          'The offensive was the largest operation in United States military history, involving 1.2 million American soldiers, sailors and marines, 800,000 French and 850 Siamese personnel, with about 2,000,000 men in all, against 450,000 Germans. The first phase from 26 September began well on the flanks but stalled in the forest. The 79th Division failed to take Montfaucon d’Argonne on the first day and took it on 27 September, and American divisions had to be withdrawn to refit. The second phase turned on the attack on the Kriemhilde Stellung at the Côte de Châtillon, fought between 14 and 17 October, which forced the German line back to the Meuse. The third phase from 1 November drove forward along the river towards Sedan. Allied losses are usually put at about 192,000, of which 122,063 American, with German losses of about 126,000, a figure taken from a 1922 encyclopedia.',
+        what: 'The offensive was the largest operation in United States military history, involving about ' +
+          '2,000,000 men against 450,000 Germans. The first phase from 26 September began well on the ' +
+          'flanks but stalled in the forest, and the 79th Division failed to take Montfaucon d’Argonne on ' +
+          'the first day; American divisions had to be withdrawn to refit. The second phase turned on the ' +
+          'attack on the Kriemhilde Stellung at the Côte de Châtillon, which forced the German line back ' +
+          'to the Meuse. The third phase from 1 November drove forward along the river towards Sedan.',
         consequence: 'On 29 September, with the Hindenburg line broken at St Quentin Canal and the Argonne attack ' +
           'renewed, Ludendorff told the government the front might collapse at any moment and an ' +
           'armistice must be requested at once; he insisted it come from a government of the Reichstag ' +
@@ -1041,8 +1101,13 @@ export const EVENTS_1918: WW1Event[] = [
           'and malaria. On 1 November Hungary’s new government under Count Mihály Károlyi recalled the ' +
           'soldiers conscripted in Hungary, which removed much of the army’s manpower. The Czech and ' +
           'South Slav regiments had begun to refuse orders.',
-        what:
-          'The order of battle included 52 Italian divisions, three British, two French and the 332nd United States Infantry Regiment, with 600 aircraft establishing air superiority. Three armies were to cross the Piave towards Vittorio Veneto and cut the rail junction between the two Austrian armies; the mountain armies on the Grappa were to hold and then follow up. The crossing of the flooded river on 24 October succeeded on the Papadopoli island, where Italian engineers rowed British troops across in the dark, and the bridgeheads were consolidated despite a counter-attack on 26 October. The renewed attack on 27 October broke the Austrian defence, and the retreat to the Piave line turned into a general discharge of the armies. The Italians reached the Tagliamento and took Trieste by an amphibious expedition on 3 November, and Italian troops later occupied Innsbruck and all North Tyrol with 20,000 to 22,000 men.',
+        what: 'Three armies were to cross the Piave towards Vittorio Veneto and cut the rail junction between ' +
+          'the two Austrian armies. The crossing of the flooded river on 24 October succeeded on the ' +
+          'Papadopoli island, where Italian engineers rowed British troops across in the dark, and the ' +
+          'bridgeheads were consolidated despite a counter-attack on 26 October. The renewed attack on 27 ' +
+          'October broke the Austrian defence, and the retreat to the Piave line turned into a general ' +
+          'discharge of the armies. The Italians reached the Tagliamento and took Trieste by an ' +
+          'amphibious expedition on 3 November.',
         consequence: 'The armistice of Villa Giusti required evacuation of territory occupied since 1914, plus South ' +
           'Tirol, Tarvisio, the Isonzo valley, Gorizia, Trieste, Istria and part of Dalmatia, internment ' +
           'or expulsion of German troops within fifteen days, and free use of its communications, opening ' +
@@ -1060,8 +1125,20 @@ export const EVENTS_1918: WW1Event[] = [
           'The battle also matters for the postwar settlement and for Italian memory: the borders of 1919 gave Italy Trentino, South Tyrol, Trieste and Istria but not Fiume or Dalmatia, and the grievance over the unfinished victory fed the politics of the following years. In the historiography of the Habsburg lands the same ten days are the revolution of 1918, not a defeat, and the national councils date their states from these October days.',
       },
     },
-    note:
-      'Battle of Vittorio Veneto, 24 October – 4 November 1918. Allies 57 infantry divisions (52 Italian, 3 British, 2 French, plus the 332nd US Infantry Regiment) and 7,700 guns; Austria-Hungary 46 infantry and 6 cavalry divisions and 6,030 guns; over 5,000 guns and 448,000 men captured, about one third of the imperial and royal army. The same article elsewhere gives prisoners as 50,000 by 31 October, 100,000 by 1 November and 300,000 by 4 November, which conflicts with the 448,000 in its own lead; the larger figure is used in the text and the smaller is recorded here. Armistice of Villa Giusti signed 3 November 1918; the article gives the ceasefire as beginning at 15:00 on 4 November, twenty-four hours after signature, while many accounts put it in force on 3 November, so both dates are shown. Károlyi’s government recalled the Hungarian conscripts on 1 November. Sources checked: “Battle of Vittorio Veneto”, “Armistice of Villa Giusti”.',
+    note: 'The mountain armies on the Grappa were to hold and then follow up. The order of battle included 52 ' +
+      'Italian divisions, three British, two French and the 332nd United States Infantry Regiment, with ' +
+      '600 aircraft establishing air superiority. Italian troops later occupied Innsbruck and all North ' +
+      'Tyrol with 20,000 to 22,000 men. Battle of Vittorio Veneto, 24 October – 4 November 1918. Allies ' +
+      '57 infantry divisions (52 Italian, 3 British, 2 French, plus the 332nd US Infantry Regiment) and ' +
+      '7,700 guns; Austria-Hungary 46 infantry and 6 cavalry divisions and 6,030 guns; over 5,000 guns ' +
+      'and 448,000 men captured, about one third of the imperial and royal army. The same article ' +
+      'elsewhere gives prisoners as 50,000 by 31 October, 100,000 by 1 November and 300,000 by 4 ' +
+      'November, which conflicts with the 448,000 in its own lead; the larger figure is used in the text ' +
+      'and the smaller is recorded here. Armistice of Villa Giusti signed 3 November 1918; the article ' +
+      'gives the ceasefire as beginning at 15:00 on 4 November, twenty-four hours after signature, while ' +
+      'many accounts put it in force on 3 November, so both dates are shown. Károlyi’s government ' +
+      'recalled the Hungarian conscripts on 1 November. Sources checked: “Battle of Vittorio Veneto”, ' +
+      '“Armistice of Villa Giusti”.',
   },
   {
     id: 'kiel_mutiny',
@@ -1090,8 +1167,13 @@ export const EVENTS_1918: WW1Event[] = [
           'approved it on 27 October, and the fleet assembled on the Schillig Roads. The naval command ' +
           'ordered it without the government’s knowledge or approval. Officers wrote that they meant to ' +
           'go down with the flag flying, while the naval war command was horrified.',
-        what:
-          'On the night of 29 October, when the order to sail came through, the crews of the battleships Thüringen and Helgoland refused. Eleven sailors of the Prinzregent Luitpold were arrested, and the next day nearly the whole crew of six hundred walked off in support of them. The fleet’s sailing was called off on 30 October and the squadrons dispersed, the squadron carrying the arrested men going up the Kiel Canal. Sailors from it came ashore at Kiel on 3 November to demand their comrades’ release. A meeting of several thousand that afternoon was fired on by troops, killing several men, and the crowd marched on the barracks with workers’ leaders. On 4 November the soldiers sided with the demonstrators, Admiral Souchon released the imprisoned sailors, and a workers’ and soldiers’ council took control of Kiel under the slogan Frieden und Brot, peace and bread. The fourteen points the council put forward pointed towards a liberal, social and democratic order in which militarism would have no place.',
+        what: 'On the night of 29 October, when the order to sail came through, the crews of the battleships ' +
+          'Thüringen and Helgoland refused. Sailors came ashore at Kiel on 3 November to demand the ' +
+          'release of their comrades, the eleven of the Prinzregent Luitpold arrested for that refusal. A ' +
+          'meeting of several thousand that afternoon was fired on by troops, killing several men, and ' +
+          'the crowd marched on the barracks with workers’ leaders. On 4 November the soldiers sided with ' +
+          'the demonstrators, Admiral Souchon released the sailors, and a workers’ and soldiers’ council ' +
+          'took control of Kiel.',
         consequence:
           'Delegates carried the councils to Hamburg, Bremen, Hanover, Cologne and Munich within a week, and the movement spread without a party directing it. The fleet was saved from the sortie, and its ships were later interned at Scapa Flow. The mutiny made the position of the Kaiser untenable: officers no longer counted on the fleet, and the army would not march. The revolution that began at Kiel forced the abdication on 9 November and produced the armistice two days later.',
       },
@@ -1104,8 +1186,16 @@ export const EVENTS_1918: WW1Event[] = [
           'The Kiel events are therefore read as the moment when the German war state lost its monopoly on force, and as the origin of the council movement whose demands for democratisation, released prisoners and an end to the state of siege were more social-democratic than Bolshevik. The later East German historiography made 3 November the start of a revolution of the working class; since reunification the emphasis has fallen on the councils’ support for parliamentary government, and on the failure of the left that followed in 1919.',
       },
     },
-    note:
-      'Order to sail issued by Hipper 24 October 1918 and approved by Scheer 27 October; refusals and arrests on the night of 29 October at Wilhelmshaven, sailing cancelled 30 October, Kiel meeting and shooting 3 November, council in control 4 November. The mutiny is dated here to the first arrests of 29 October, which is why the day is given; the Kiel rising itself was 3 – 4 November. Source checked: “Kiel mutiny”.',
+    note: 'The next day nearly the whole crew of six hundred of the Prinzregent Luitpold walked off in ' +
+      'support of the eleven arrested. The fleet’s sailing was called off on 30 October and the squadrons ' +
+      'dispersed, the squadron carrying the arrested men going up the Kiel Canal. The council took ' +
+      'control under the slogan Frieden und Brot, peace and bread, and the fourteen points it put forward ' +
+      'pointed towards a liberal, social and democratic order in which militarism would have no place. ' +
+      'Order to sail issued by Hipper 24 October 1918 and approved by Scheer 27 October; refusals and ' +
+      'arrests on the night of 29 October at Wilhelmshaven, sailing cancelled 30 October, Kiel meeting ' +
+      'and shooting 3 November, council in control 4 November. The mutiny is dated here to the first ' +
+      'arrests of 29 October, which is why the day is given; the Kiel rising itself was 3 – 4 November. ' +
+      'Source checked: “Kiel mutiny”.',
   },
   {
     id: 'armistice_of_mudros',

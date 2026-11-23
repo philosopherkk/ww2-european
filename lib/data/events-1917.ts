@@ -1238,7 +1238,13 @@ export const EVENTS_1917: WW1Event[] = [
     fronts: ['eastern', 'politics'],
     countries: ['Russia'],
     figures: ['lenin', 'trotsky', 'kerensky'],
-    note: 'The seizure happened on 25–26 October by the Russian calendar then in use, and 7–8 November by ours. Russian sources before 1918, and most Soviet writing after it, give the October dates. Soviet accounts later exaggerated how much fighting there was and how organised the rising was.',
+    note: 'The Military Revolutionary Committee was chaired by Trotsky, and the congress met in the Smolny ' +
+      'institute. Its first two decrees offered a democratic peace without annexations to all the ' +
+      'belligerents and confiscated the estates of the landowners and the crown. Kerensky’s attempt to ' +
+      'retake the city with Cossacks under General Krasnov failed at Pulkovo heights on 8 November. The ' +
+      'seizure happened on 25–26 October by the Russian calendar then in use, and 7–8 November by ours. ' +
+      'Russian sources before 1918, and most Soviet writing after it, give the October dates. Soviet ' +
+      'accounts later exaggerated how much fighting there was and how organised the rising was.',
     levels: {
       primary:
         {
@@ -1262,7 +1268,12 @@ export const EVENTS_1917: WW1Event[] = [
             'land, and “all power to the soviets” — now fitted what soldiers and workers wanted. ' +
             'Kerensky’s attempt to secure the capital by sending troops and closing Bolshevik newspapers ' +
             'on 6 November gave the party the alarm to act.',
-          what: 'The actual takeover was carried out in two days by the Military Revolutionary Committee of the Petrograd soviet, chaired by Trotsky, using garrison units, sailors of the Kronstadt fleet and Red Guards, and it was almost bloodless: the streets were held by night and at 9:45 p.m. on 7 November the cruiser Aurora fired a blank shot from the harbour, the palace was entered after 10 p.m., and it was in Bolshevik hands by the early hours of 8 November. The Second Congress of Soviets, meeting in the Smolny institute, elected a Council of People’s Commissars with Lenin as chairman, and its first two decrees offered a democratic peace without annexations to all the belligerents and confiscated the estates of the landowners and the crown. Kerensky’s attempt to retake the city with Cossacks under General Krasnov failed at Pulkovo heights on 8 November.',
+          what: 'The actual takeover was carried out in two days by the Military Revolutionary Committee of ' +
+            'the Petrograd soviet, using garrison units, sailors of the Kronstadt fleet and Red Guards, ' +
+            'and it was almost bloodless: the streets were held by night and at 9:45 p.m. on 7 November ' +
+            'the cruiser Aurora fired a blank shot from the harbour, the palace was entered after 10 ' +
+            'p.m., and it was in Bolshevik hands by the early hours of 8 November. The Second Congress of ' +
+            'Soviets elected a Council of People’s Commissars with Lenin as chairman.',
           consequence: 'The Bolsheviks held the capital but were a minority in the country. In the ' +
             'constituent-assembly elections of 25 November they won only 175 of 715 seats, and they ' +
             'dissolved the assembly by force after one meeting in January 1918. Peace talks with Germany ' +
@@ -1288,7 +1299,13 @@ export const EVENTS_1917: WW1Event[] = [
     fronts: ['western'],
     countries: ['United Kingdom', 'Germany'],
     figures: ['haig', 'luddendorff'],
-    note: 'British losses are given as 44,207 or 47,596 according to whether men who were missing and later returned are counted. The number of tanks engaged is usually given as 476, of which about 378 were fit for battle.',
+    note: 'The cavalry that poured through the gap arrived too late, and the Germans rushed in reserves from ' +
+      'elsewhere on the front. On 30 November the Germans counter-attacked with storm troops and a short, ' +
+      'intensive bombardment — the same methods as at Caporetto — and by 3 December had recovered most of ' +
+      'the ground. German losses were about 55,000, against British losses of about 44,000 men, of whom ' +
+      'some 6,000 were captured. British losses are given as 44,207 or 47,596 according to whether men ' +
+      'who were missing and later returned are counted. The number of tanks engaged is usually given as ' +
+      '476, of which about 378 were fit for battle.',
     levels: {
       primary:
         {
@@ -1310,7 +1327,11 @@ export const EVENTS_1917: WW1Event[] = [
             'counter-battery shoot, and kept the secret by training at night and moving the tanks up in ' +
             'the dark. The German Sixth Army held the front with about 20 divisions, some worn, on a thin ' +
             'line its doctrine thought safe.',
-          what: 'At 6:20 a.m. on 20 November, after a predicted-fire bombardment and a smoke screen, the tanks crossed no-man’s-land in lines, straddling trenches so that infantry could drop in behind them; the advance of five and a half miles on a front of six miles was the greatest gain of ground anywhere on the western front to that date. The plan failed at Bourlon wood on the northern flank, where no fresh troops were available, and the cavalry that poured through the gap arrived too late, while the Germans rushed in reserves from elsewhere on the front. On 30 November the Germans counter-attacked with storm troops and a short, intensive bombardment — the same methods as at Caporetto — and by 3 December had recovered most of the ground. British losses in the battle were about 44,000 men, of whom some 6,000 were captured; German losses were about 55,000.',
+          what: 'At 6:20 a.m. on 20 November, after a predicted-fire bombardment and a smoke screen, the ' +
+            'tanks crossed no-man’s-land in lines, straddling trenches so that infantry could drop in ' +
+            'behind them; the advance of five and a half miles on a front of six miles was the greatest ' +
+            'gain of ground anywhere on the western front to that date. The plan failed at Bourlon wood ' +
+            'on the northern flank, where no fresh troops were available.',
           consequence: 'Cambrai, together with Caporetto a month earlier, is usually taken as the end of the trench deadlock and the beginning of a mobile war. Both sides drew the same conclusion, that surprise, short bombardments, infiltration and combined arms worked, and both planned offensives for 1918 on that basis, with the Germans betting on breaking the western front before American manpower arrived, and the French and British with a much larger tank programme. The German success in retaking the ground also fed the belief in the German army that the British army was nearly beaten.',
         },
       university:
@@ -1329,7 +1350,14 @@ export const EVENTS_1917: WW1Event[] = [
     kind: 'politics',
     fronts: ['eastern', 'politics'],
     countries: ['Finland', 'Russia', 'Germany'],
-    note: 'Finnish and Russian sources of 1917 use different calendars, and sovereignty was proclaimed more than once — the Power Act of July 1917, the assumption of the tsar’s powers on 15 November, the declaration of independence of 6 December — so Finnish, Russian and western histories date the same weeks differently. Dates here are new style.',
+    note: 'The parliament had first tried to create a three-man regency, which the socialists blocked. German ' +
+      'influence was decisive in the months that followed: a German Baltic Sea Division, 10,000 strong, ' +
+      'landed in early April 1918 and took Helsinki and Lahti, and the whites had won the civil war by ' +
+      'early May. There was even a plan to make Finland a monarchy under a German prince, which collapsed ' +
+      'with Germany’s own defeat in November 1918. Finnish and Russian sources of 1917 use different ' +
+      'calendars, and sovereignty was proclaimed more than once — the Power Act of July 1917, the ' +
+      'assumption of the tsar’s powers on 15 November, the declaration of independence of 6 December — so ' +
+      'Finnish, Russian and western histories date the same weeks differently. Dates here are new style.',
     levels: {
       primary:
         {
@@ -1353,7 +1381,12 @@ export const EVENTS_1917: WW1Event[] = [
             'the streets and the soviets; the right won the October elections. The October revolution ' +
             'changed everything: Petrograd was no longer a government either camp would obey, and the ' +
             'Finnish senate sought recognition abroad, receiving it from Soviet Russia on 31 December.',
-          what: 'Parliament had declared Finland sovereign in July 1917 with the Power Act, which the provisional government refused to confirm, and in August dissolved itself and called new elections. The parliament had tried to create a three-man regency, which the socialists blocked, and on 15 November it took to itself the sovereign powers that had belonged to the tsar. Svinhufvud’s senate drafted the declaration, read it to parliament on 4 December and had it adopted on 6 December; Soviet Russia issued a decree recognising Finnish independence on 31 December. German influence was decisive in the months that followed: a German Baltic Sea Division, 10,000 strong, landed in early April 1918 and took Helsinki and Lahti, and the whites had won the civil war by early May. There was even a plan to make Finland a monarchy under a German prince, which collapsed with Germany’s own defeat in November 1918.',
+          what: 'Parliament had declared Finland sovereign in July 1917 with the Power Act, which the ' +
+            'provisional government refused to confirm, and in August dissolved itself and called new ' +
+            'elections. On 15 November parliament took to itself the sovereign powers that had belonged ' +
+            'to the tsar. Svinhufvud’s senate drafted the declaration, read it to parliament on 4 ' +
+            'December and had it adopted on 6 December; Soviet Russia issued a decree recognising Finnish ' +
+            'independence on 31 December.',
           consequence: 'Finland’s independence settled the Baltic side of the front in the north. The Finnish example was one more sign that the Russian empire was dissolving into separate states, and the civil war left a division between reds and whites that shaped Finnish politics for twenty years: about 38,000 people died in it, and some 12,500 red prisoners died of hunger and disease in the camps. The Finno-Russian Treaty of Tartu, signed on 14 October 1920, was meant to settle the frontier that the Soviet Union tried to reopen in 1939.',
         },
       university:

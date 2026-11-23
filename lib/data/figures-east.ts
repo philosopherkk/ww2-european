@@ -133,8 +133,24 @@ export const FIGURES_EAST: HistoricalFigure[] = [
         'failed and Brusilov replaced him. Back that summer as Kerensky’s chief of staff, he arrested ' +
         'Kornilov. After the Bolsheviks took power he raised the Volunteer Army on the Don, and died of ' +
         'heart failure at Yekaterinodar on 8 October 1918.',
-      university: 'The identity of this entry has to be stated first, because the roster calls him Nikolai Vasilievich Alekseev (1856-1918) and no such Imperial general held these posts: the chief of staff at the Stavka under Grand Duke Nicholas from August 1914 to September 1915 was Nikolai Yanushkevich, and the man who succeeded him, who became commander-in-chief in 1917 and who also founded the Volunteer Army, is one person, Mikhail Vasilyevich Alekseev (1857-1918), who died at Yekaterinodar and not in Moscow. The argument that concerns him is the scale and meaning of the army’s disintegration in 1917. The officers’ memoir literature laid it on Petrograd Soviet Order No. 1 of March 1917 and on the soldiers’ committees that gutted their authority; work that reads soldiers’ resolutions and letters instead treats the disintegration as a strike by men who had already decided the war was not theirs, in which case no commander could have prevented it, whatever orders the Stavka issued. Order No. 1 repays the close reading this dispute requires: it put weapons at the disposal of unit committees and made obedience to the officers conditional on the Soviet’s countersign, while, as N. John Boyd showed, it did not in fact provide for the election of officers, a charge that later histories repeated for decades. What the records of his own office establish most securely is Alekseev’s purpose: he meant to keep the army at war for the Entente, which is why the Stavka undertook the offensive of 1916 and why he could not make terms with the committees in 1917.',
+      university: 'The identity of this entry has to be stated first, because the roster calls him Nikolai ' +
+        'Vasilievich Alekseev (1856-1918) and no such Imperial general held these posts: the chief of ' +
+        'staff at the Stavka under Grand Duke Nicholas from August 1914 to September 1915 was Nikolai ' +
+        'Yanushkevich, and the man who succeeded him, who became commander-in-chief in 1917 and who also ' +
+        'founded the Volunteer Army, is one person, Mikhail Vasilyevich Alekseev (1857-1918), who died at ' +
+        'Yekaterinodar and not in Moscow. The argument that concerns him is the scale and meaning of the ' +
+        'army’s disintegration in 1917. What the records of his own office establish most securely is ' +
+        'Alekseev’s purpose: he meant to keep the army at war for the Entente.',
     },
+    note: 'The officers’ memoir literature laid the disintegration on Petrograd Soviet Order No. 1 of March ' +
+      '1917 and on the soldiers’ committees that gutted their authority; work that reads soldiers’ ' +
+      'resolutions and letters instead treats it as a strike by men who had already decided the war was ' +
+      'not theirs, in which case no commander could have prevented it, whatever orders the Stavka issued. ' +
+      'Order No. 1 repays the close reading this dispute requires: it put weapons at the disposal of unit ' +
+      'committees and made obedience to the officers conditional on the Soviet’s countersign, while, as ' +
+      'N. John Boyd showed, it did not in fact provide for the election of officers, a charge that later ' +
+      'histories repeated for decades. It is why the Stavka undertook the offensive of 1916 and why he ' +
+      'could not make terms with the committees in 1917.',
   },
   {
     id: 'kerensky',
@@ -179,8 +195,20 @@ export const FIGURES_EAST: HistoricalFigure[] = [
         'taking this as a march on the government, dismissed him. Railwaymen, soldiers’ committees and ' +
         'the newly armed Bolsheviks stopped the column without fighting. Kerensky had no army behind him ' +
         'in November, and the Bolsheviks kept those weapons.',
-      university: 'Whether there was a Kornilov plot is the question the affair is used to test. The version Kerensky and liberal witnesses left made him a would-be dictator moving on the capital; Richard Pipes argued the opposite, that the affair was largely Kerensky’s own invention, a move to destroy a general whom everyone expected to lead a counter-revolution, and A. J. P. Taylor that the prime minister encouraged the move until he saw that it would swallow him. The documents support neither case: both men claimed the other had authorised the plan, messages were carried personally by a minister who mistrusted both, and Kornilov advanced because he had come to believe that the Bolsheviks already held the government, which is how the most careful studies now describe it. Two things are not in dispute: the affair made the Bolsheviks the acknowledged defenders of Petrograd and put arms in their hands before October, and it convinced most officers that no government would defend military authority, a conclusion that shaped the civil war. His own account of events is a prisoner’s defence and has to be read as one; he was killed by a shell at Yekaterinodar on 13 April 1918.',
+      university: 'Whether there was a Kornilov plot is the question the affair is used to test. The version ' +
+        'Kerensky and liberal witnesses left made him a would-be dictator moving on the capital; Richard ' +
+        'Pipes argued the opposite, that the affair was largely Kerensky’s own invention, a move to ' +
+        'destroy a general whom everyone expected to lead a counter-revolution, and A. J. P. Taylor that ' +
+        'the prime minister encouraged the move until he saw that it would swallow him. The documents ' +
+        'support neither case: both men claimed the other had authorised the plan, and messages were ' +
+        'carried personally by a minister who mistrusted both.',
     },
+    note: 'Kornilov advanced because he had come to believe that the Bolsheviks already held the government, ' +
+      'which is how the most careful studies now describe it. Two things are not in dispute: the affair ' +
+      'made the Bolsheviks the acknowledged defenders of Petrograd and put arms in their hands before ' +
+      'October, and it convinced most officers that no government would defend military authority, a ' +
+      'conclusion that shaped the civil war. His own account of events is a prisoner’s defence and has to ' +
+      'be read as one; he was killed by a shell at Yekaterinodar on 13 April 1918.',
   },
   {
     id: 'lenin',
@@ -198,8 +226,23 @@ export const FIGURES_EAST: HistoricalFigure[] = [
         'The first decrees offered peace and land. When the constituent assembly elected in November ' +
         'would not yield, he dissolved it in January 1918, and in March he accepted Germany’s terms at ' +
         'Brest-Litovsk to buy time.',
-      university: 'The argument over October is the argument about Lenin. One school, with Richard Pipes its most uncompromising version, sees a disciplined minority capturing state power at a moment when the majority wanted something different, and rests the case on the constituent assembly election, in which the Socialist-Revolutionaries took the peasant majority and the Bolsheviks were strong mainly in the cities and among the soldiers of the Western Front. The other, in different ways in Orlando Figes’s social history and in Alexander Rabinowitch’s studies of Petrograd, sees a revolution from below whose institutions — soviets, factory committees, soldiers’ delegations — the Bolsheviks led because they were the only party promising peace, land and workers’ control. The evidence supports neither case as neatly as either claims: some 47 million people voted in that election, yet the turnout is given as about 55 per cent by Radkey and about 64 per cent by Protasov, many distant districts voted late or not at all, and the party’s strength in the soviets and garrisons was concentrated exactly where power was decided. What the records do settle is the decision rather than the support: the Central Committee’s vote for an armed rising on 10 October 1917, carried against Zinoviev and Kamenev, and the near-bloodless seizure of the capital’s hubs by the soviet’s own Military Revolutionary Committee.',
+      university: 'The argument over October is the argument about Lenin. One school, with Richard Pipes its most ' +
+        'uncompromising version, sees a disciplined minority capturing state power at a moment when the ' +
+        'majority wanted something different, and rests the case on the constituent assembly election, in ' +
+        'which the Socialist-Revolutionaries took the peasant majority and the Bolsheviks were strong ' +
+        'mainly in the cities and among the soldiers of the Western Front. The other, in different ways ' +
+        'in Orlando Figes’s social history and in Alexander Rabinowitch’s studies of Petrograd, sees a ' +
+        'revolution from below whose institutions — soviets, factory committees, soldiers’ delegations — ' +
+        'the Bolsheviks led because they were the only party promising peace, land and workers’ control. ' +
+        'What the records do settle is the decision rather than the support: the Central Committee’s vote ' +
+        'for an armed rising on 10 October 1917, carried against Zinoviev and Kamenev.',
     },
+    note: 'The evidence supports neither case as neatly as either claims. Some 47 million people voted in ' +
+      'that election, yet the turnout is given as about 55 per cent by Radkey and about 64 per cent by ' +
+      'Protasov, and many distant districts voted late or not at all; the party’s strength in the soviets ' +
+      'and garrisons was concentrated exactly where power was decided. What the records do settle ' +
+      'includes the near-bloodless seizure of the capital’s hubs by the soviet’s own Military ' +
+      'Revolutionary Committee.',
   },
   {
     id: 'trotsky',
@@ -210,9 +253,33 @@ export const FIGURES_EAST: HistoricalFigure[] = [
     bloc: 'opposition',
     bio: {
       primary: 'Trotsky was a revolutionary who helped Lenin’s party take power in Russia in 1917 and then negotiated the peace that took Russia out of the war. He also built the Red Army, the army of the new government.',
-      secondary: 'As foreign commissar he replaced Joffe as head of the delegation at Brest-Litovsk on 22 December 1917, and when the Germans insisted on keeping Polish, Lithuanian and Courland territory he withdrew on 10 February 1918 with an announcement that the war was over for Russia without signing anything, betting that German workers would stop their own government. Germany answered by advancing for three days without a reply to the Soviet radiogram, and the government then accepted terms far worse than those it had refused, signed on 3 March 1918, after which Trotsky left the foreign ministry. He took charge of the army instead, and after the Czechoslovak Legions’ revolt in May–June 1918 he answered the loss of most of Russia’s territory with a full mobilisation which raised the Red Army from under 300,000 men to a million by October, using conscription, political commissars to countersign orders, and former imperial officers supervised as “military specialists”.',
-      university: 'Whether October 1917 was a coup or a mass movement is argued through Trotsky twice over, because he is both a subject of the debate and one of its principal sources. He himself presented the rising as a precise technical act carried out by the Petrograd Soviet’s Military Revolutionary Committee under his chairmanship, and Stalin’s summary of Trotsky’s part, published in Pravda on 6 November 1918, credited him with winning the garrison before the party’s coup; Richard Pipes and other revisionists invert this into the case that a disciplined minority captured a state whose electorate had chosen somebody else, pointing to the constituent assembly returns in which the Bolsheviks were a minority nationally, while Alexander Rabinowitch’s studies of Petrograd show a party leading institutions — soviet, garrison, factory committees — in which a majority had already organised itself, so the coup and mass-movement readings are both flatter than the evidence. Source criticism decides much of the argument: his History of the Russian Revolution was written in exile as an argument with Stalin, and his 1918 practice of conscription, coerced specialists and party control shows a regime resting on claimed soviet majorities rather than on a vote. He kept the war commissariat until 1925.',
+      secondary: 'As foreign commissar he replaced Joffe as head of the delegation at Brest-Litovsk on 22 December ' +
+        '1917, and when the Germans insisted on keeping Polish, Lithuanian and Courland territory he ' +
+        'withdrew on 10 February 1918. Germany answered by advancing, and the government then accepted ' +
+        'terms far worse than those it had refused, signed on 3 March 1918. He took charge of the army ' +
+        'instead, and after the Czechoslovak Legions’ revolt in May–June 1918 he raised the Red Army from ' +
+        'under 300,000 men to a million by October.',
+      university: 'Whether October 1917 was a coup or a mass movement is argued through Trotsky twice over, because ' +
+        'he is both a subject of the debate and one of its principal sources. He himself presented the ' +
+        'rising as a precise technical act carried out by the Petrograd Soviet’s Military Revolutionary ' +
+        'Committee under his chairmanship, and Stalin’s summary of Trotsky’s part, published in Pravda on ' +
+        '6 November 1918, credited him with winning the garrison before the party’s coup. Source ' +
+        'criticism decides much of the argument: his History of the Russian Revolution was written in ' +
+        'exile as an argument with Stalin.',
     },
+    note: 'Richard Pipes and other revisionists invert his account into the case that a disciplined minority ' +
+      'captured a state whose electorate had chosen somebody else, pointing to the constituent assembly ' +
+      'returns in which the Bolsheviks were a minority nationally, while Alexander Rabinowitch’s studies ' +
+      'of Petrograd show a party leading institutions — soviet, garrison, factory committees — in which a ' +
+      'majority had already organised itself, so the coup and mass-movement readings are both flatter ' +
+      'than the evidence. His 1918 practice of conscription, coerced specialists and party control shows ' +
+      'a regime resting on claimed soviet majorities rather than on a vote, and he kept the war ' +
+      'commissariat until 1925. His announcement on withdrawing from Brest-Litovsk was that the war was ' +
+      'over for Russia without signing anything, a bet that German workers would stop their own ' +
+      'government; Germany answered by advancing for three days without a reply to the Soviet radiogram, ' +
+      'and Trotsky left the foreign ministry after the terms were signed. He raised the army with ' +
+      'conscription, political commissars to countersign orders, and former imperial officers supervised ' +
+      'as “military specialists”.',
   },
   {
     id: 'rasputin',
@@ -225,9 +292,35 @@ export const FIGURES_EAST: HistoricalFigure[] = [
       primary: 'Rasputin was a Siberian peasant who became a holy man and won over the tsar’s family, because ' +
         'they believed he could ease their son Alexei’s illness. He stayed close to the empress and made ' +
         'many enemies, and nobles killed him in Petrograd in December 1916.',
-      secondary: 'He reached Saint Petersburg with a reputation as a starets and gained the family’s favour after 1905 on the strength of occasions when he appeared to stop the tsarevich’s bleeding. That hold over Alexandra protected him through police investigations, the hostility of ministers such as Stolypin, and a stabbing in 1914, and while the tsar was away at the front from 1915 it was widely said that he and the empress between them were deciding who got government posts. Prince Felix Yusupov, Vladimir Purishkevich and Grand Duke Dmitri Pavlovich, who believed that Rasputin’s influence over Alexandra endangered the monarchy, murdered him in the Yusupov palace on 17 December 1916 by the Russian calendar, 30 December by ours; his body was found under the ice of the Neva on 1 January, and after the tsar abdicated the Provisional Government had the body dug up and burned so that the grave could not become a rallying point.',
-      university: 'The story that a mad monk and a German empress were running the Russian state rests on hostile testimony rather than on documents: its most forceful form is Purishkevich’s speech to the Duma in November 1916 that the tsar’s ministers had become marionettes whose strings Rasputin and Alexandra held, and Purishkevich was by then plotting to kill him. The recent biographical work treats the record with far more care — Douglas Smith calls Rasputin’s youth “a black hole about which we know almost nothing” while showing how many stories about it were invented after his rise, Joseph T. Fuhrmann finds the accusations of membership of the Khlyst sect unproven and dates the first request to pray for Alexei to October 1906 where Orlando Figes keeps the traditional November 1905 — and what can be established is influence over petitions, patronage and the empress’s feelings, not a traceable hand in policy; the one intervention of his own on the record is a telegram urging the tsar to stay out of war, sent in 1914. The same scepticism applies to the murder, which is known largely from Yusupov’s own account: the city autopsy surgeon Kosorotov found a single bullet, no trace of poison and no water in the lungs, so the man was already dead when he went into the river. Historians are on firmer ground on the effect than on the cause, since the consensus is that the scandal of Rasputin, whatever he actually did, discredited the dynasty in the eyes of the educated public, which was one reason so few stood up for it in February 1917.',
+      secondary: 'He reached Saint Petersburg with a reputation as a starets and gained the family’s favour after ' +
+        '1905 on the strength of occasions when he appeared to stop the tsarevich’s bleeding. That hold ' +
+        'over Alexandra protected him through police investigations, the hostility of ministers such as ' +
+        'Stolypin, and a stabbing in 1914. Prince Felix Yusupov, Vladimir Purishkevich and Grand Duke ' +
+        'Dmitri Pavlovich murdered him in the Yusupov palace on 17 December 1916 by the Russian calendar, ' +
+        '30 December by ours.',
+      university: 'The story that a mad monk and a German empress were running the Russian state rests on hostile ' +
+        'testimony rather than on documents. What can be established is influence over petitions, ' +
+        'patronage and the empress’s feelings, not a traceable hand in policy; the one intervention of ' +
+        'his own on the record is a telegram urging the tsar to stay out of war, sent in 1914. Historians ' +
+        'are on firmer ground on the effect than on the cause, since the consensus is that the scandal of ' +
+        'Rasputin, whatever he actually did, discredited the dynasty in the eyes of the educated public, ' +
+        'which was one reason so few stood up for it in February 1917.',
     },
+    note: 'The most forceful form of that story is Purishkevich’s speech to the Duma in November 1916 that ' +
+      'the tsar’s ministers had become marionettes whose strings Rasputin and Alexandra held, and ' +
+      'Purishkevich was by then plotting to kill him. The recent biographical work treats the record with ' +
+      'far more care: Douglas Smith calls Rasputin’s youth “a black hole about which we know almost ' +
+      'nothing” while showing how many stories about it were invented after his rise; Joseph T. Fuhrmann ' +
+      'finds the accusations of membership of the Khlyst sect unproven and dates the first request to ' +
+      'pray for Alexei to October 1906, where Orlando Figes keeps the traditional November 1905. The same ' +
+      'scepticism applies to the murder, which is known largely from Yusupov’s own account: the city ' +
+      'autopsy surgeon Kosorotov found a single bullet, no trace of poison and no water in the lungs, so ' +
+      'the man was already dead when he went into the river. While the tsar was away at the front from ' +
+      '1915 it was widely said that Rasputin and the empress between them were deciding who got ' +
+      'government posts, and the killers believed that his influence over Alexandra endangered the ' +
+      'monarchy. His body was found under the ice of the Neva on 1 January, and after the tsar abdicated ' +
+      'the Provisional Government had it dug up and burned so that the grave could not become a rallying ' +
+      'point.',
   },
   {
     id: 'pilsudski_jozef',
@@ -269,7 +362,12 @@ export const FIGURES_EAST: HistoricalFigure[] = [
       primary: 'Mannerheim was a Finnish general who had spent his career in the Russian army, and early in 1918 ' +
         'he went home to lead the Whites in Finland’s civil war against the Reds. With German help he ' +
         'won, and his troops marched through Helsinki in May.',
-      secondary: 'He was appointed commander of the White forces on 15 January 1918, when the Whites had little more than locally organised guards and the Reds held Helsinki, Tampere and most of southern Finland. He built a regular army out of the 1,450 battle-hardened Jägers who had been trained by Germany and the 84 Swedish volunteer officers on his staff, using their discipline to make ordinary White troops fight, and he chose to strike first at Tampere although it held nearly 15,000 armed Red Guards; the town fell after bitter fighting, German troops landed and took Helsinki in April, and the war ended on 15 May with his victory parade in Helsinki the next day. He resigned on 25 May 1918, having quarrelled with the Senate over German dominance in Finland and over his plan to march on Petrograd, though he later returned as the country’s regent and then as its field marshal and president.',
+      secondary: 'He was appointed commander of the White forces on 15 January 1918, when the Whites had little ' +
+        'more than locally organised guards and the Reds held Helsinki, Tampere and most of southern ' +
+        'Finland. He built a regular army out of the 1,450 Jägers trained by Germany and the 84 Swedish ' +
+        'volunteer officers on his staff, and chose to strike first at Tampere. The war ended on 15 May, ' +
+        'and he resigned on 25 May 1918 after quarrelling with the Senate over German dominance in ' +
+        'Finland and over his plan to march on Petrograd.',
       university: 'Mannerheim’s credit for giving the Whites a regular army, not a vengeful militia, sits uneasily ' +
         'with his own staff’s orders. In February 1918 the White senior staff issued the Shoot on the ' +
         'Spot Declaration, licensing field commanders to execute anyone they judged dangerous; most White ' +
@@ -280,5 +378,8 @@ export const FIGURES_EAST: HistoricalFigure[] = [
         'displaced the White story of liberation; the argument since is whether the terror was policy or ' +
         'the habit of unequipped troops.',
     },
+    note: 'Tampere held nearly 15,000 armed Red Guards and fell after bitter fighting; German troops landed ' +
+      'and took Helsinki in April, and his victory parade through Helsinki came the day after the war ' +
+      'ended. He later returned as the country’s regent and then as its field marshal and president.',
   },
 ];

@@ -94,6 +94,15 @@ export default function PeoplePanel({ level, focusId, onFocus, onOpenEvent }: Pr
 
           <p className="mt-4 text-base leading-relaxed text-stone-800">{figure.bio[level]}</p>
 
+          {/* The level texts are capped, so the evidence behind a claim — the disputed figure, the
+              source problem, who argues what — lives here. Same wording and style as an event card. */}
+          {figure.note && (
+            <p className="mt-3 rounded-lg border border-stone-200 bg-stone-50 px-3 py-2.5 text-sm leading-relaxed text-stone-700">
+              <span className="font-semibold text-stone-700">For the record: </span>
+              {figure.note}
+            </p>
+          )}
+
           {level !== 'university' && (
             <details className="mt-3 rounded-md border border-stone-200 bg-stone-50 p-2.5">
               <summary className="cursor-pointer text-xs font-semibold text-stone-700">

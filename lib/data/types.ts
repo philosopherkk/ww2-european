@@ -117,6 +117,12 @@ export interface HistoricalFigure {
   country: string;
   bloc: Bloc;
   bio: FigureBio;
+  /**
+   * Historians’ note: the disputed number, the source problem, who argues what. The level texts
+   * are capped, so the evidence behind a claim lives here rather than being cut. Same convention
+   * as an event card’s note, and rendered the same way.
+   */
+  note?: string;
 }
 
 /* ------------------------------------------------------------------ *
