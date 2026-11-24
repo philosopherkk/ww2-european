@@ -71,6 +71,11 @@ const MAP_LIMITS: { head: string; body: string }[] = [
       'Each line joins five to eight real places along an axis, every one geocoded and written into the data file as a comment. Armies did not walk straight lines: they moved on roads, converged, split again and were counterattacked sideways. So a line answers “which way was this offensive going and how far did it get”, and does not answer “which villages were occupied on 14 March”. Withdrawals are not drawn in reverse: an army that retreated is shown by the front line it fell back to, and the retreat itself is in the events. A line is shown for its official operational dates, so one can still appear in a month when the offensive had already been called off.',
   },
   {
+    head: 'The shortest lines are a few pixels long',
+    body:
+      'A line is opened by hovering or tapping it, and no zoom this site offers makes every line long enough to aim at. In September 1918, on the two screen sizes this site is tested at, the Fifth Ypres line measures 2 by 2 px on a phone looking at Europe and is down to a pixel or less once the whole world is in frame, and the Amiens line is 4 by 2 px on a phone. The pursuit towards Damascus, which is 15 by 16 px on a desktop looking at Europe, is 2 by 2 px on a phone at the world extent. At that zoom the renderer also drops the intermediate points, so a line built from four or five named places is drawn as its two endpoints. Nothing is hidden: the pins on those lines open their entries as usual, every line is named in the month list, and the events carry what a two-pixel line cannot.',
+  },
+  {
     head: 'Sea and air war has no lines',
     body:
       'Lines are ground axes. Jutland, the U-boat campaigns, the Zeppelin and Gotha raids on England, the minefields and the blockade are carried by the events, because a fleet has no axis of advance and a ship’s wake is not a front. The Dardanelles in 1915 is the one partial exception: the strait and the beachheads are places, so they can be joined, but the fleet’s sweeps up the strait on 18 March are not drawn.',
