@@ -261,6 +261,8 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['atlantic', 'home'],
     countries: ['Germany', 'United Kingdom', 'United States'],
     figures: ['donitz', 'churchill'],
+    note:
+      'The date of this entry, 13 January 1942, is the first night of Operation Paukenschlag: the Wikipedia article on the battle says the first U-boats reached United States waters on 13 January 1942, and Codenames.info gives the same day for the arrival off the American coast, though that page’s own summary table dates the operation from 11 January 1942. The 609 ships of 3.1 million tons for the loss of 22 U-boats is the Axis submarine total for the Second Happy Time of January to August 1942, printed both by the Wikipedia article on that period and by Codenames.info; it is not the figure for the whole Battle of the Atlantic. Total U-boat losses for May 1943 are disputed: 43 boats, said to be 25 per cent of the operational force, appear in the Wikipedia article on the battle and again in Wikipedia’s Black May article, which is one encyclopedia speaking twice; 40 boats, also given as 25 per cent, on uboat.net; and 42 on the same uboat.net page’s own roll of losses for the month, with 1,832 men killed. The lifting of the wolfpacks is dated 24 May 1943 by Wikipedia’s Black May article, and no second account has been found for that day. An earlier version of this entry gave 41 U-boats lost in May 1943 and about 640,000 tons a month for the sinkings of July to September 1942; no source found prints either figure.',
     levels: {
       primary: {
         cause: 'German submarines tried to starve Britain by sinking the ships that brought it food and weapons.',
@@ -268,13 +270,16 @@ export const EVENTS_1941_1942: WW2Event[] = [
         consequence: 'Britain nearly ran out of supplies, but escort convoys, radar and code-breaking eventually beat the U-boats.',
       },
       secondary: {
-        cause: 'Dönitz sent wolfpacks to the thinly protected Atlantic and Caribbean after the United States entered the war without coastal blackout or convoys.',
-        what: 'In the Second Happy Time of January-August 1942 the U-boats off the American coast sank 609 ships of 3.1 million tons for the loss of 22 U-boats; sinkings fell to about 640,000 tons a month from July to September as convoys and coastal blackout took effect.',
+        cause:
+          'Dönitz sent wolfpacks to the thinly protected American coast after the United States entered the war without a blackout or coastal convoys.',
+        what:
+          'In the Second Happy Time of January to August 1942 the U-boats off the American coast sank 609 ships of 3.1 million tons for the loss of 22 U-boats, until convoys, a blackout and air patrols cut the toll.',
         consequence: 'Allied shipbuilding, escort carriers, hedgehog mortars, centimetric radar and the capture of Enigma materials reversed the balance by mid-1943, allowing the invasion build-up in Britain.',
       },
       university: {
         cause: 'The campaign is the central case study in industrial attrition and signals intelligence: B-DIU traffic analysis and Ultra intercepts shaped routing, while German U-boat strength was diverted by the Mediterranean and the Russian campaign.',
-        what: 'The crisis of March 1943 and the defeat of the North Atlantic wolfpacks in May 1943 (41 U-boats lost) forced tactical dispersal.',
+        what:
+          'The crisis of March 1943 and the defeat of the North Atlantic wolfpacks in May 1943 forced tactical dispersal and the withdrawal of the wolves from the main routes.',
         consequence: 'The outcome of the battle decided whether Britain could be used as a base at all; it also established the convoy system and mass-produced escort vessels as the model of later maritime air-subsurface warfare.',
       },
     },
@@ -339,27 +344,36 @@ export const EVENTS_1941_1942: WW2Event[] = [
     id: 'grossaktion_warschau',
     date: '1942-07-22',
     precision: 'day',
-    title: 'The "Great Action": 254,000 Jews deported from the Warsaw Ghetto',
+    title: 'The “Great Action”: the Warsaw Ghetto deported to Treblinka',
     kind: 'war_crime',
     fronts: ['eastern'],
     countries: ['Germany', 'Poland'],
     figures: ['himmler'],
-    note: 'The deportations ran from 22 July to 21 September 1942. Between 254,000 and 265,000 people were deported from the Warsaw Ghetto to Treblinka, which began killing on 23 July, and some 11,000-20,000 were shot in the ghetto itself. Adam Czerniaków, chairman of the Jewish Council, took a cyanide pill on 23 July when he was told that the "resettlement to the east" included the hospital and the children. The ghetto’s population fell from some 400,000 to roughly 50,000-60,000 workers housed in the smaller "residual ghetto".',
+    note:
+      'How many people were taken is the disputed figure: the United States Holocaust Memorial Museum’s chronology of Treblinka says around 265,000 Jews were deported from the Warsaw ghetto to Treblinka II from July until 5 September 1942; Encyclopædia Britannica says about 265,000 between July and September; POLIN says nearly 300,000 within two months of 22 July; and the Wikipedia article on the action gives 254,000 to 265,000 sent to Treblinka, or at least 300,000 by different accounts. This entry prints about 265,000, the figure three publishers give. On the dates: POLIN and Encyclopædia Britannica give 22 July 1942 as the day the deportations began; the Wikipedia article on the action says the camp received most of its victims between 23 July and 21 September 1942; and the museum’s chronology runs the deportations from July until 5 September 1942, so this entry gives the beginning as 22 July and prints no end date. The museum’s chronology dates the killings at Treblinka from 23 July 1942. On how many were in the ghetto first, Wikipedia gives an initial 450,000 confined to 307 hectares (760 acres) and between 375,000 and 400,000 before the mass killings began, POLIN says the Germans squeezed over 400,000 Jews into the walled area, and Britannica says nearly 500,000 were living within its 840 acres (340 hectares) by the summer of 1942; this entry prints none of these. The daily quota is 5,000 to 6,000 in the Wikipedia article, which says the shipments went on for eight weeks at 100 people to a cattle truck, while Britannica gives more than 5,000 Jews per day, so this entry says only thousands. For those left behind, Britannica has only some 55,000 remaining in the ghetto and POLIN a mere 60,000 in the so-called residual ghetto in the autumn of 1942. Treblinka is put 80 km (50 mi) north-east of Warsaw by the Wikipedia article on the camp; the museum’s chronology gives about 50 miles from Warsaw for the rail junction of Malkinia rather than for Treblinka itself, and the two are not the same place. Himmler’s order to the Higher SS and Police Leader is dated 19 July 1942 by Wikipedia and by the museum’s chronology. Adam Czerniaków, chairman of the Jewish Council, took his own life on 23 July, the day after he was told to prepare a transport of 6,000 people a day, on Wikipedia’s timeline of the action. The figures 11,000 and 20,000 that appear in the Treblinka accounts are foreign Jews and Jews from Thrace and Macedonia deported to Treblinka, not people shot in Warsaw. An earlier version of this entry gave 254,000 deported, a distance of 100 km, an order dated 16 July, and 11,000 to 20,000 people shot in the ghetto; no source found prints any of those.',
     levels: {
       primary: {
         cause: 'Germany had shut the Jews of Warsaw into a crowded district of the city, and in the summer of 1942 decided to send them all away.',
-        what: 'From 22 July, German police and their helpers forced several thousand Jewish men, women and children each day to march to a railway loading yard, and put them in goods wagons bound for Treblinka, a killing site 100 km away.',
-        consequence: 'Almost nobody came back. The ghetto was five-sixths empty afterwards, and the people kept alive there were the ones used for work.',
+        what:
+          'From 22 July, German police and their helpers forced thousands of Jewish men, women and children each day to march to a railway loading yard and put them in goods wagons bound for Treblinka, a killing site north-east of Warsaw.',
+        consequence:
+          'Almost nobody came back. The ghetto was emptied, and the people kept alive in what was left of it were the ones used for work.',
       },
       secondary: {
-        cause: 'By mid-1942 the SS had finished building extermination camps in the Lublin district and wanted them used. The Warsaw Ghetto, the largest in occupied Europe with some 400,000 Jews crammed into 3.4 square kilometres, was chosen first, on an order Himmler gave on 19 July.',
-        what: 'The Jewish Council was told to supply 6,000 names a day for "resettlement in the east". Its chairman Adam Czerniaków took a cyanide pill the next day when he understood what that meant and was refused any guarantee for the children in his orphanage. For nine weeks trains left the Umschlagplatz loading yard; Jewish police were forced to help round people up, and gangs of children smugglers risked death to bring food back in.',
-        consequence: 'Between 254,000 and 265,000 people were murdered, most of them in the first weeks of Treblinka’s operation. The surviving workers founded the Jewish Combat Organisation (ZOB) on 28 July, while the trains were still running, and began storing the pistols and homemade bombs they used in the uprising of April 1943. A hidden archive, Oneg Shabbat, buried its records in milk cans during the action; part of it was dug up in 1946 and again in 1950.',
+        cause:
+          'By mid-1942 the SS had built extermination camps in the Lublin district and wanted them used. The Warsaw Ghetto, the largest of the Nazi ghettos, was chosen first, on an order Himmler gave on 19 July.',
+        what:
+          'The Jewish Council was told to supply a daily quota of names for “resettlement in the east”. Its chairman Adam Czerniaków took his own life the next day. For weeks trains left the Umschlagplatz loading yard; Jewish police were forced to help round people up, and smugglers risked death to bring food back in.',
+        consequence:
+          'About 265,000 people were deported, most of them in the first weeks of Treblinka’s operation. The workers kept alive founded the Jewish Combat Organisation on 28 July, while the trains were still running, and began storing the pistols and homemade bombs they used in the uprising of April 1943.',
       },
       university: {
-        cause: 'The Grossaktion was the largest single operation of Operation Reinhard, the murder of the Jews of the General Government, whose camps had been gassing since March 1942. Its timing in Warsaw is tied to Himmler’s visit to the Führer headquarters on 16 July and his order of the 19th, and to the SS’s wish to demonstrate that the biggest ghetto in Europe could be cleared; the release of housing and of registered labour for the German administration was a secondary argument used by the participants.',
-        what: 'The mechanics depended on German direction and Jewish compulsion rather than on large German manpower: a few hundred German and Latvian police, Order Police battalions and Trawniki-trained guards, with the Jewish Order Service doing the street-level roundups under the threat that the Council itself would be deported. This is the empirical core of the postwar debate about the Jewish Councils, and it cannot be read as "collaboration" without attending to the fact that the process was deliberately described to its victims as resettlement.',
-        consequence: 'Warsaw became both the model and the argument. Armed resistance became possible only after the majority of the ghetto’s population had already been murdered, which is the chronogram of the Holocaust in Poland; the debates between Hilberg and Rubenstein over the Councils, and Samuel Kassow’s later edition of the Ringelblum archive, are still the terms in which the question is discussed. The Polish government-in-exile and the Polish Socialist Party issued a documented protest note in September 1942, one of the earliest public denunciations of the extermination by any belligerent government.',
+        cause:
+          'The Grossaktion was the largest single operation of Operation Reinhard, whose killing centres had been built for that purpose alone. Its timing in Warsaw is tied to Himmler’s order of 19 July to the SS and police leader of the General Government; the release of housing and of registered labour for the German administration was an argument used by the participants themselves.',
+        what:
+          'The mechanics depended on German direction and on Jewish compulsion: the Jewish Order Service did the street-level roundups under the threat that the Council itself would be deported, and the process was described to its victims as resettlement. That deception is the empirical core of the postwar debate about the Jewish Councils, which cannot be reduced to “collaboration” without attending to it.',
+        consequence:
+          'Warsaw became both the model and the argument. Armed resistance became possible only after the majority of the ghetto’s population had already been murdered, which is the chronology of the Holocaust in Poland, and the postwar debates over the Councils are still conducted in those terms.',
       },
     },
   },

@@ -120,21 +120,28 @@ export const EVENTS: WW2Event[] = [
     fronts: ['politics'],
     countries: ['Hungary', 'Czechoslovakia'],
     figures: ['horthy'],
+    note:
+      'The area transferred is given as 11,927 km² by Rubicon History and by the World War II Database, which also give its population, at 896 thousand and about 1,060,000 respectively. The Wikipedia article on the award puts the territory at 14,106 km², of which 12,124 km² in Slovakia and 1,982 km² in Carpathian Ruthenia, with 1,346,000 citizens, and puts Slovakia’s share of the loss at 10,390 km² with 854,277 inhabitants; the same article estimates the population at the time of the arbitration at 935,000, of whom 300,000 were Slovaks or Czechs. The publishers do not agree on either the area or the people, so this entry gives the area as Rubicon History and the World War II Database give it and prints no population figure. On the human cost of the Treaty of Trianon, the Wikipedia article on that treaty puts the Hungarians who became minorities in the successor states at 3.3 million, and no second account has been found for the figure, so this entry says only “millions”. Hungary’s gains were revised again by the Second Vienna Award of 30 August 1940.',
     levels: {
       primary: {
-        cause: 'Hungary had lost two-thirds of its land in 1920 and wanted Hungarian-speaking areas back.',
-        what: 'Germany and Italy told Czechoslovakia to give southern Slovakia to Hungary.',
+        cause:
+          'Hungary had lost most of its land in 1920 and wanted Hungarian-speaking areas back.',
+        what:
+          'Germany and Italy told Czechoslovakia to give southern Slovakia to Hungary, and Czechoslovakia gave in.',
         consequence: 'Hungary got back land and people, and became more dependent on Germany.',
       },
       secondary: {
-        cause: 'The Treaty of Trianon (1920) left over 3 million Hungarians outside Hungary, making revision a central aim of the Horthy regime.',
-        what: 'Germany and Italy imposed an arbitration in Vienna that transferred southern Slovakia and southern Carpathian Ruthenia, about 11,900 km2 and roughly 1 million people, to Hungary.',
+        cause:
+          'The Treaty of Trianon (1920) left millions of ethnic Hungarians outside the new frontiers, making revision a central aim of the Horthy regime.',
+        what:
+          'Germany and Italy imposed an arbitration in Vienna on 2 November that transferred southern Slovakia and southern Carpathian Ruthenia, an area given as 11,927 km², to Hungary.',
         consequence: 'Czechoslovakia lost further territory and its rail links to Romania and Yugoslavia. Hungary’s reward pushed it into the German orbit without a formal alliance.',
       },
       university: {
         cause: 'German and Italian mediation served to dismantle Czechoslovakia from within while rewarding the revisionist states, splitting the Little Entente.',
         what: 'The award was imposed after failed Italo-German negotiations in Venice, exploiting Prague’s isolation after Munich.',
-        consequence: 'It established arbitration as the mechanism for the destruction of the successor states and set the precedent for the Second Vienna Award (August 1940), while making Hungary’s post-1945 borders a permanent grievance.',
+        consequence:
+          'It established arbitration as the mechanism for the destruction of the successor states and set the precedent for the Second Vienna Award of 1940, while making Hungary’s post-1945 frontiers a permanent grievance.',
       },
     },
   },
@@ -676,20 +683,27 @@ export const EVENTS: WW2Event[] = [
     fronts: ['eastern'],
     countries: ['Soviet Union', 'Finland'],
     figures: ['stalin', 'mannerheim'],
+    note:
+      'The treaty was signed on 12 March 1940. The land ceded is put at approximately 9 per cent of Finland’s territory by the Wikipedia article on the treaty and by The Guardian, and Foreign Affairs in 1951 says the Soviet Union took about a tenth of Finnish territory. On the people: the Library of Congress Country Studies says the ceded territories held about one-eighth of Finland’s population, the Wikipedia article on the treaty puts the evacuation at 422,000 Finns, or 12 per cent of the population, and Foreign Affairs puts it at 400,000 Finns who migrated from the ceded areas. Those three accounts do not agree with each other, so this entry prints no evacuation figure. On distance: the Wikipedia article on the war puts the pre-war Finnish frontier 32 km (20 mi) from Leningrad, and the Communist League pamphlet of 1990 digitised on the Alliance ML Review site gives the same 32 km in the Soviet demand it quotes, though that pamphlet’s own narrative says the frontier was 40 kilometres from Leningrad, which is why it is used here for the distance and nothing else. In the negotiations that began when the Soviet Union invited a Finnish delegation to Moscow on 5 October 1939 it asked for that frontier to be moved to a point 30 km (19 mi) east of Viipuri and for the fortifications there to be destroyed, on the same article; the post-war distance is given as 150 km by Spartacus Educational and as 120 km by Russia Beyond, and no second account has been found for either, so this entry prints only the 32 km of the old frontier. The Hanko Peninsula was leased to the Soviet Union as a naval base for 30 years at an annual rent of 8 million marks, on the Wikipedia article on the treaty. The Guardian page used for the 9 per cent gives the wrong date for the treaty, 12 November 1940, in a page otherwise given to 12 March; only its figure for the land ceded is used here. An earlier version of this entry gave 11 per cent of the territory, 450,000 inhabitants of the ceded areas, and a new frontier 120 to 150 km from Leningrad; no source found prints those figures.',
     levels: {
       primary: {
         cause: 'Finland could not keep fighting the huge Soviet army for ever, and help from Sweden and the West never came.',
         what: 'Finland signed a peace treaty, giving up the Karelian isthmus, including the city of Vyborg.',
-        consequence: 'Finland lost 11% of its land and many industries but stayed independent.',
+        consequence:
+          'Finland gave up about 9 per cent of its land, and many of its people with it, but stayed independent.',
       },
       secondary: {
-        cause: 'Soviet forces finally broke the Mannerheim Line in February 1940 after a massive artillery preparation, and the Finnish isthmus defence was exhausted.',
+        cause:
+          'Soviet forces broke through the Finnish defences on the Isthmus in February 1940 after a long artillery preparation, and the Finnish army was exhausted.',
         what: 'Finland ceded Karelia, the islands in the Gulf of Finland, the Hanko peninsula and the Salla and Rybachy areas.',
-        consequence: 'About 420,000 of the ceded area’s 450,000 inhabitants were evacuated to Finnish territory. Finland’s search for a great-power backer led it into co-belligerency with Germany in June 1941.',
+        consequence:
+          'Almost the whole population of the ceded areas was evacuated into the rest of Finland, losing homes and livelihoods. Finland’s search for a great-power backer led it into co-belligerency with Germany in June 1941.',
       },
       university: {
-        cause: 'For the USSR the war delivered the strategic buffer sought in April 1939 but at enormous reputational cost, while exposing the operational confusion of the post-purge officer corps.',
-        what: 'The pre-war frontier had stood 32 km from Leningrad’s suburbs; the new one ran some 120-150 km north-west of it, and set the line from which the Finnish siege axis advanced in 1941.',
+        cause:
+          'For the USSR the war delivered the strategic buffer it had demanded at the Moscow talks of the autumn of 1939, but at enormous reputational cost, and it exposed the operational confusion of the post-purge officer corps.',
+        what:
+          'The pre-war frontier on the Karelian Isthmus stood 32 km from Leningrad; the treaty pushed it well back on the Isthmus, towards Vyborg.',
         consequence: 'Finland’s survival as a non-communist state adjacent to the USSR became a permanent anomaly in Stalin’s postwar security system, and Finnish rearmament in 1940-41 was financed largely by foreign purchases.',
       },
     },

@@ -499,6 +499,167 @@ export const SOURCES: Source[] = [
       'government dissolved and its men moved to Kraljevo to form the Serbian Strike Corps under ' +
       'Mihailović; the Sava bridge saved by a retired teacher with mining experience; and 2,953 Partisans ' +
       'buried in the Liberation Cemetery.',
+  },  {
+    citation:
+      'Rubicon, The Review of Hungarian History, “Ethnic Revision, Great Power Games, and National ' +
+      'Expansion: The First Vienna Award and the Return of Upper Hungary”',
+    publisher:
+      'Rubicon History (rubicon.hu), the journal of the Veritas Institute',
+    url:
+      'https://rubicon.hu/en/cikkek/ethnic-revision-great-power-games-and-national-expansion-the-first-vienna-award-and-the-return-of-upper-hungary',
+    usedFor:
+      'What the First Vienna Award card takes from this account: the territory returned to Hungary as ' +
+      '11,927 km² with 896 thousand inhabitants, of whom roughly 750 thousand were Hungarians. The World ' +
+      'War II Database gives the same area, and it is the figure this atlas prints; the population is set ' +
+      'out among the site’s uncertainties.',
+  },
+  {
+    citation:
+      'World War II Database, “The First Vienna Arbitration, 1938”',
+    publisher:
+      'World War II Database; the address is a copy of the page of 28 October 2012 held by the Internet ' +
+      'Archive, used because ww2db.com could not be reached from the machine that assembled this ' +
+      'bibliography',
+    url:
+      'https://web.archive.org/web/20121028214852/http://ww2db.com/battle_spec.php?battle_id=255',
+    usedFor:
+      'The World War II Database account of the arbitration of 2 November 1938, used for the area ceded to ' +
+      'Hungary, 11,927 square kilometres, which is the figure the First Vienna Award card prints, and for ' +
+      'its own population of the territory, about 1,060,000 people.',
+  },
+  {
+    citation:
+      'W. Gordon East, “The New Frontiers of the Soviet Union”, Foreign Affairs, July 1951',
+    publisher:
+      'Council on Foreign Relations',
+    url:
+      'https://www.foreignaffairs.com/articles/russian-federation/1951-07-01/new-frontiers-soviet-union',
+    usedFor:
+      'The Soviet frontiers as they stood after the Moscow Peace Treaty, and the article’s statement that ' +
+      'about 400,000 Finns migrated from the ceded areas to resettle in Finland, which is one of the three ' +
+      'accounts of the evacuation that this atlas sets out for the treaty of March 1940. A survey of 1951, ' +
+      'so a contemporary account of the new frontier as well as a secondary one.',
+  },
+  {
+    citation:
+      'Library of Congress Federal Research Division, “Finland: The Winter War”, Country Studies',
+    publisher:
+      'Library of Congress Country Studies (the United States Army Area Handbook for Finland)',
+    url:
+      'https://countrystudies.us/finland/19.htm',
+    usedFor:
+      'That the territories Finland ceded at Moscow held about one-eighth of its population, and that ' +
+      'virtually all of the inhabitants moved over to Finnish territory, which is why the Moscow Peace ' +
+      'Treaty card speaks of the evacuation without giving a number. Also the reasons the Finnish ' +
+      'government gave for accepting the terms.',
+  },
+  {
+    citation:
+      '“This Day in History: Fighting Ends in the Russo-Finnish War, 1940”, The Guardian',
+    publisher:
+      'The Guardian and The Observer',
+    url:
+      'https://www.theguardian.com/world/2025/mar/12/fighting-ends-in-the-russo-finnish-war-1940',
+    usedFor:
+      'The figure this atlas prints for the land Finland ceded at Moscow, 9% of its territory. The page ' +
+      'dates the treaty to 12 November 1940, which is wrong: the treaty was signed on 12 March 1940. So ' +
+      'this atlas takes from it only the figure for the land ceded, and the wrong date is recorded among ' +
+      'the site’s uncertainties.',
+  },
+  {
+    citation:
+      '“The Soviet-Finnish War (1939-40)”, a pamphlet of the Communist League, 1990',
+    publisher:
+      'the Alliance ML Review site (ml-review.ca), which holds the text of the Communist League’s 1990 ' +
+      'pamphlet on the war',
+    url:
+      'https://ml-review.ca/aml/CommunistLeague/CL-FINLANDWAR90.html',
+    usedFor:
+      'A party pamphlet, not a scholarly account: it argues the Soviet case against Finland and cites ' +
+      'Soviet commanders, and it contradicts itself on the distance, giving the Finnish frontier as 32 km ' +
+      'from Leningrad in the Soviet demand it quotes and as 40 kilometres in its own narrative. This atlas ' +
+      'uses it only for that 32 km.',
+  },
+  {
+    citation:
+      'John Simkin, “Finland and the Second World War”, Spartacus Educational',
+    publisher:
+      'Spartacus Educational',
+    url:
+      'https://spartacus-educational.com/2WWfinland.htm',
+    usedFor:
+      'The account of the frontier after the Moscow Peace Treaty that the Soviet border was moved 150 km ' +
+      'from Leningrad to Vyborg. This atlas does not print that distance as fact; it is one account, set ' +
+      'against the 120 km of Russia Beyond, and both are given among the site’s uncertainties.',
+  },
+  {
+    citation:
+      '“78 Years Ago: Soviet-Finnish War Began”, Russia Beyond',
+    publisher:
+      'Russia Beyond (Rossiya Segodnya)',
+    url:
+      'https://www.rbth.com/history/326856-soviet-finnish-war',
+    usedFor:
+      'The other account of the same frontier: that after the Moscow Peace Treaty the border was moved ' +
+      'from Leningrad, 120 km into the territory of the Karelian Isthmus. Russia Beyond is backed by the ' +
+      'Russian state, which is worth knowing while its figure stands against the 150 km of Spartacus ' +
+      'Educational.',
+  },
+  {
+    citation:
+      'Ubootwaffe, “U-boat Losses in May 1943: Fates of the U-boats”, German U-boats of WWII',
+    publisher:
+      'uboat.net',
+    url:
+      'https://www.uboat.net/fates/may43.htm',
+    usedFor:
+      'The losses of the U-boat arm in May 1943, given twice on the same page and differently: 40 U-boats ' +
+      'lost in the month, 25% of the operational strength, at the head of the page, and 42 U-boats with ' +
+      '1,832 men dead in its own list of losses at the foot. Both are quoted; this atlas prints no single ' +
+      'figure for May 1943.',
+  },
+  {
+    citation:
+      '“Operation Paukenschlag (Drumbeat)”, Codenames: Operations and Codenames of WWII',
+    publisher:
+      'Codenames.info; the address is the Internet Archive copy of 9 October 2024, used because ' +
+      'codenames.info refused the machine that assembled this bibliography',
+    url:
+      'https://web.archive.org/web/20241009044852/https://codenames.info/operation/paukenschlag/',
+    usedFor:
+      'The first U-boat to reach the east coast of the USA on 13 January, and the toll of the Second Happy ' +
+      'Time: 609 ships of 3.1 million tons for the loss of only 22 U-boats, which is the sentence the ' +
+      'Battle of the Atlantic card prints. The page’s own table dates the operation from 11 January 1942.',
+  },
+  {
+    citation:
+      'United States Holocaust Memorial Museum, “Treblinka: Chronology”',
+    publisher:
+      'United States Holocaust Memorial Museum; the address is a copy of the museum’s chronology of 5 June ' +
+      '2011 held by the Internet Archive, used because encyclopedia.ushmm.org could not be reached from ' +
+      'the machine that assembled this bibliography',
+    url:
+      'https://web.archive.org/web/20110605134236/http://www.ushmm.org/wlc/en/article.php?ModuleId=10007257',
+    usedFor:
+      'The chronology this atlas follows for the deportations from the Warsaw ghetto: about 265,000 Jews ' +
+      'sent to Treblinka II from July until 5 September 1942, the killing centres built at Belzec, Sobibor ' +
+      'and Treblinka II, Treblinka II beginning work on 23 July 1942, and the labour camp near Malkinia, ' +
+      'about 50 miles from Warsaw — a village, not the camp, so it is not used as the distance to ' +
+      'Treblinka.',
+  },
+  {
+    citation:
+      'Encyclopædia Britannica, “Warsaw Ghetto Uprising”',
+    publisher:
+      'Encyclopædia Britannica; the address is a copy of 1 February 2016 held by the Internet Archive, ' +
+      'used because britannica.com answers this machine with a bot check, a browser included',
+    url:
+      'https://web.archive.org/web/20160201140933/http://www.britannica.com/event/Warsaw-Ghetto-Uprising',
+    usedFor:
+      'The deportations from the Warsaw ghetto from 22 July 1942 at more than 5,000 Jews a day, the ' +
+      '265,000 shipped to Treblinka between July and September, the some 55,000 who remained, and the ' +
+      'nearly 500,000 people living within its 840 acres (340 hectares) by the summer of 1942. The 265,000 ' +
+      'is the figure this atlas prints.',
   },];
 
 /** Figures that are genuinely disputed, shown so readers know the range. */
@@ -539,11 +700,6 @@ export const UNCERTAINTIES = [
   {
     topic: 'Greek losses',
     range: '300,000-800,000; the size of the 1941-42 famine death toll is the largest single source of disagreement.',
-  },
-  {
-    topic: 'Deportees from the Warsaw Ghetto, 1942',
-    range:
-      'Between 254,000 and 265,000, depending on whether the people shot in the ghetto during the action are counted with the deported, and on which Umschlagplatz register is used; the German transport figures and the Jewish Council’s own counts differ.',
   },
   {
     topic: 'Division strengths and tank numbers',
@@ -648,4 +804,190 @@ export const UNCERTAINTIES = [
       'still in the port when the siege was lifted on 10 December, the only unit to see the entire siege. ' +
       'This atlas dates the card 26 November, the day of contact in the account which gives it first, and ' +
       'prints neither day count; the note gives the three dates and both counts.',
+  },  {
+    topic:
+      'The area handed to Hungary by the First Vienna Award, 1938',
+    range:
+      'Rubicon History and the World War II Database both give 11,927 km², which is what this atlas ' +
+      'prints. The Wikipedia article on the award puts the territory at 14,106 km², of which 12,124 km² in ' +
+      'Slovakia and 1,982 km² in Carpathian Ruthenia, and puts Slovakia’s share of the loss at 10,390 km². ' +
+      'The published accounts cannot be reconciled with one another, so this atlas gives one of the two ' +
+      'figures and records the others here.',
+  },
+  {
+    topic:
+      'The people in the territory awarded to Hungary in November 1938',
+    range:
+      'Five figures are in print for the people in the territory awarded to Hungary: 896 thousand from ' +
+      'Rubicon History, about 1,060,000 from the World War II Database, 1,346,000 citizens from the ' +
+      'Wikipedia article on the award, 935,000 in that article’s own estimate grown from the 1930 census, ' +
+      'and 854,277 for the Slovak part of the loss in the same article. No two publishers agree, so this ' +
+      'atlas prints no population figure for the award.',
+  },
+  {
+    topic:
+      'The Hungarian minorities left by the Treaty of Trianon',
+    range:
+      'The Wikipedia article on the Treaty of Trianon puts the Hungarians who became minorities in the ' +
+      'successor states at 3.3 million, and marks that sentence as needing a citation. No other publisher ' +
+      'consulted here gives the figure, so the First Vienna Award card says only millions.',
+  },
+  {
+    topic:
+      'The land Finland ceded at the Moscow Peace Treaty',
+    range:
+      'The Wikipedia article on the treaty and The Guardian both put the land ceded at about 9% of Finnish ' +
+      'territory, which is what this atlas prints, while Foreign Affairs in 1951 says the Soviet Union ' +
+      'took about a tenth. An earlier version of the Moscow Peace Treaty card said 11%, a figure none of ' +
+      'the sources consulted supports.',
+  },
+  {
+    topic:
+      'The people who left the ceded Finnish areas in 1940',
+    range:
+      'The Wikipedia article on the Moscow Peace Treaty puts the evacuation at 422,000 Finns, 12% of ' +
+      'Finland’s population; Foreign Affairs in 1951 puts it at 400,000 who migrated from the ceded areas; ' +
+      'the Library of Congress Country Studies says those territories held about one-eighth of Finland’s ' +
+      'population and that virtually all of them moved to Finnish territory. An earlier version of the ' +
+      'card said 420,000 people leaving 450,000 inhabitants; no source consulted gives either figure, so ' +
+      'this atlas prints none.',
+  },
+  {
+    topic:
+      'The distance from Leningrad to the Finnish frontier',
+    range:
+      'The pre-war Finnish frontier stood 32 km (20 mi) from Leningrad: the Wikipedia article on the ' +
+      'winter war gives that distance, and the Communist League pamphlet of 1990 gives it in the Soviet ' +
+      'demand it quotes, though that pamphlet’s own narrative says 40 kilometres. That is the only ' +
+      'distance this atlas prints. For the new frontier, Spartacus Educational says the border moved 150 ' +
+      'km from Leningrad to Vyborg and Russia Beyond says 120 km into the Karelian Isthmus; no source ' +
+      'consulted gives both, and an earlier version of the card printed a range no single source gives.',
+  },
+  {
+    topic:
+      'U-boat losses in May 1943',
+    range:
+      'Wikipedia gives 43 U-boats destroyed in May 1943, 34 of them in the Atlantic, and says that was 25% ' +
+      'of the U-boat arm’s operational strength; the same number appears in its Black May article, so ' +
+      'those two are one encyclopedia speaking twice. uboat.net gives 40 U-boats in the twenty-one days ' +
+      'from 1 May, also 25% of the operational strength, and its own list of losses records 42 U-boats ' +
+      'with 1,832 men dead. The scholarly account that gives forty-one could not be reached, so this atlas ' +
+      'prints no figure for May 1943 and states the disagreement.',
+  },
+  {
+    topic:
+      'The day the North Atlantic wolfpacks were lifted',
+    range:
+      'Wikipedia’s Black May article has Admiral Dönitz order a temporary halt on 24 May 1943, which is ' +
+      'the date usually given, and it is the only account of that day consulted here; no other publisher ' +
+      'was reached for it, so this atlas treats 24 May 1943 as an attributed date rather than a settled ' +
+      'one.',
+  },
+  {
+    topic:
+      'The opening night of Operation Paukenschlag',
+    range:
+      'The Wikipedia article on the Battle of the Atlantic puts the first U-boats in United States waters ' +
+      'on 13 January 1942, and the Codenames.info page on Operation Paukenschlag says in its text that the ' +
+      'first boat reached the east coast of the USA on 13 January; the table of that same operation gives ' +
+      'its start date as 11 January 1942. This atlas dates the card to 13 January, the first of the ' +
+      'arrivals, and records the other date here.',
+  },
+  {
+    topic:
+      'The tonnage sunk off the American coast in the summer of 1942',
+    range:
+      'An earlier version of the Battle of the Atlantic card gave about 640,000 tons a month for July to ' +
+      'September 1942. None of the sources consulted gives a monthly tonnage for those months, so the ' +
+      'figure has been removed rather than corrected. The 609 ships of 3.1 million tons for the loss of 22 ' +
+      'U-boats that this atlas prints is the toll of the Second Happy Time of January to August 1942, ' +
+      'given by the Wikipedia article on that period and by Codenames.info; it is not a figure for the ' +
+      'whole battle.',
+  },
+  {
+    topic:
+      'How many Jews were deported from the Warsaw Ghetto in the summer of 1942',
+    range:
+      'The chronology of the United States Holocaust Memorial Museum gives around 265,000 Jews deported ' +
+      'from the Warsaw ghetto to Treblinka II from July until 5 September 1942; Encyclopædia Britannica ' +
+      'about 265,000 between July and September; POLIN nearly 300,000 within two months of 22 July; and ' +
+      'the Wikipedia article on the Grossaktion 254,000 to 265,000, or at least 300,000 by different ' +
+      'accounts. This atlas prints about 265,000, the figure three publishers give, and puts no number in ' +
+      'the title of the card.',
+  },
+  {
+    topic:
+      'When the deportations from the Warsaw Ghetto ended',
+    range:
+      'The Wikipedia article on the Grossaktion dates the action 23 July to 21 September 1942, and says ' +
+      'the extermination camp received most of the victims between 23 July and 21 September; the ' +
+      'chronology of the United States Holocaust Memorial Museum has the deportations running from July ' +
+      'until 5 September 1942; POLIN speaks of nearly 300,000 people within two months of 22 July. The ' +
+      'accounts do not agree on an ending, so this atlas gives a beginning and no end date.',
+  },
+  {
+    topic:
+      'The population of the Warsaw Ghetto before the deportations',
+    range:
+      'The Wikipedia article on the ghetto gives an initial 450,000 people confined to 307 hectares (760 ' +
+      'acres), and between 375,000 and 400,000 before the mass killings began; POLIN says the Germans ' +
+      'squeezed over 400,000 Jews into the walled area; Encyclopædia Britannica says nearly 500,000 were ' +
+      'living within its 840 acres (340 hectares) by the summer of 1942. This atlas prints none of these ' +
+      'figures.',
+  },
+  {
+    topic:
+      'How many people were left in the Warsaw Ghetto in the autumn of 1942',
+    range:
+      'Encyclopædia Britannica has only some 55,000 people remaining in the ghetto; POLIN a mere 60,000 in ' +
+      'the so-called Restgetto in the autumn of 1942. An earlier version of the Warsaw ghetto card said ' +
+      'roughly 50,000 to 60,000 workers. This atlas now describes those kept alive for work without a ' +
+      'figure.',
+  },
+  {
+    topic:
+      'The daily quota of the Warsaw deportations',
+    range:
+      'The Wikipedia article on the Grossaktion gives 5,000 to 6,000 people a day, with the shipments ' +
+      'going on without stopping for eight weeks at 100 people to a cattle truck; Encyclopædia Britannica ' +
+      'gives more than 5,000 Jews a day. An earlier version of the Warsaw ghetto card said 6,000 a day for ' +
+      'nine weeks. This atlas now says thousands each day, for weeks.',
+  },
+  {
+    topic:
+      'The distance of Treblinka from Warsaw',
+    range:
+      'The Wikipedia article on the camp puts the two camps of Treblinka 80 km (50 mi) north-east of ' +
+      'Warsaw. The United States Holocaust Memorial Museum gives about 50 miles for Malkinia, the village ' +
+      'near the labour camp, which is not the camp itself. An earlier version of the Warsaw ghetto card ' +
+      'said 100 km, a figure none of the sources consulted gives; this atlas says only that Treblinka lies ' +
+      'north-east of Warsaw.',
+  },
+  {
+    topic:
+      'The date of Himmler’s order for the resettlement of the Warsaw Jews',
+    range:
+      'The Wikipedia article on the Grossaktion and the chronology of the United States Holocaust Memorial ' +
+      'Museum both date Himmler’s order to the SS and police leader of the General Government to resettle ' +
+      'the Jews of the district to 19 July 1942. An earlier version of the Warsaw ghetto card said 16 ' +
+      'July, a date none of the sources consulted gives.',
+  },
+  {
+    topic:
+      'The death of Adam Czerniaków',
+    range:
+      'The timeline in the Wikipedia article on the Grossaktion has Adam Czerniaków, chairman of the ' +
+      'Jewish Council, taking his own life on 23 July 1942, the day after he was told to prepare a ' +
+      'transport of 6,000 people a day, and that timeline is itself marked as needing sources. The further ' +
+      'claim that he did so because the resettlement would take the hospital and the children is not ' +
+      'corroborated in the sources consulted, and this atlas does not repeat it.',
+  },
+  {
+    topic:
+      'How many people were shot in the Warsaw Ghetto during the deportations',
+    range:
+      'An earlier version of the Warsaw ghetto card said some 11,000 to 20,000 people were shot in the ' +
+      'ghetto itself. None of the sources consulted prints that. The figures of 11,000 and 20,000 that a ' +
+      'keyword search finds in the material gathered here count Jews from other countries, and from Thrace ' +
+      'and Macedonia, deported to Treblinka, not shootings in Warsaw. The claim has been removed.',
   },];
