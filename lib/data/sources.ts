@@ -660,6 +660,433 @@ export const SOURCES: Source[] = [
       '265,000 shipped to Treblinka between July and September, the some 55,000 who remained, and the ' +
       'nearly 500,000 people living within its 840 acres (340 hectares) by the summer of 1942. The 265,000 ' +
       'is the figure this atlas prints.',
+  },  {
+    citation:
+      '“Marco Polo Bridge incident”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Marco_Polo_Bridge_incident',
+    usedFor:
+      'The article behind this atlas’s opening day: Japanese troops exercising at Fengtai on the night of ' +
+      '7 July 1937, the demand to enter Wanping to search for a missing soldier, the 219th Regiment, 37th ' +
+      'Division, 29th Army refusing it — a sentence the page marks as needing a reference — reinforcements ' +
+      'on both sides, and the three-point agreement and ceasefire the article says failed to de-escalate. ' +
+      'Its infobox dates the fighting 7–9 July 1937.',
+  },
+  {
+    citation:
+      '“Second Sino-Japanese War”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Second_Sino-Japanese_War',
+    usedFor:
+      'The article that frames the war this atlas opens on: its own dates run from the Marco Polo Bridge ' +
+      'incident on 7 July 1937 to the surrender on 2 September 1945, the span this atlas covers in China, ' +
+      'and it carries the wider course of the war — the Nationalist government’s retreat to Chongqing and ' +
+      'the Soviet declaration of war in August 1945 — around the entries dated to single months.',
+  },
+  {
+    citation:
+      '“Battle of Shanghai”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Battle_of_Shanghai',
+    usedFor:
+      'The days and the scale of the fighting for Shanghai, which no other publisher in this atlas’s reach ' +
+      'gives: the article’s infobox runs the battle from 13 August to 26 November 1937, its first phase ' +
+      'heading reads “First phase (August 13–22)”, and its text puts over 700,000 Chinese against nearly ' +
+      '200,000 Japanese troops in early October. Its own strength and casualty figures stand in the ' +
+      'uncertainties list.',
+  },
+  {
+    citation:
+      '“Battle of Nanking”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Battle_of_Nanking',
+    usedFor:
+      'Dates the article carries alone: the order of 12 November 1937 that the Japanese forces at Shanghai ' +
+      'pursue the retreating Chinese, the fighting for the outer line of defence headed 5–9 December, and ' +
+      'the city fallen by 13 December. Its infobox range of 100,000–300,000 killed and Askew’s study of ' +
+      'the burial-society records are entered in the uncertainties list; the court’s figure is from ' +
+      'another publisher.',
+  },
+  {
+    citation:
+      '“Battle of Wuhan”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Battle_of_Wuhan',
+    usedFor:
+      'The article this atlas follows for the campaign’s span, 11 June to 27 October 1938, and for its ' +
+      'end: the town fell on 26 October and Hanyang the next day, which concluded the campaign. It also ' +
+      'treats the fighting in Guangzhou within the same campaign, and puts the opening of the Yellow River ' +
+      'dikes at Huayuankou on 9 June, with civilian deaths of 500,000 to 900,000 — figures held in the ' +
+      'uncertainties list.',
+  },
+  {
+    citation:
+      '“1938 Yellow River flood”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/1938_Yellow_River_flood',
+    usedFor:
+      'The flood the map draws nowhere, because a breached dike is not a border. The article dates the ' +
+      'breach of the levees at Huayuankou, Zhongmu County, to 13 June 1938 and attributes it to the ' +
+      'National Revolutionary Army, and gives tolls from 30,000 to 89,000, from 400,000 to 500,000, and a ' +
+      'discredited 893,303; those widths are why the flood stands in the uncertainties list.',
+  },
+  {
+    citation:
+      '“Canton Operation”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Canton_Operation',
+    usedFor:
+      'The landing at Guangzhou whose companion halt the atlas prints, and the article the atlas’s date ' +
+      'for the city rests on: its infobox dates the operation from 12 October to 29 October 1938 and its ' +
+      'purpose was to close the Canton–Hankow railway and blockade the city. The article carries a banner ' +
+      'asking for more references, which is why no day from it is printed on the map.',
+  },
+  {
+    citation:
+      '“First Vienna Award”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/First_Vienna_Award',
+    usedFor:
+      'Figures kept off the map because the publishers do not agree: the article puts the territory at ' +
+      '14,106 km², of which 12,124 km² in Slovakia and 1,982 km² in Carpathian Ruthenia, Slovakia’s loss ' +
+      'alone at 10,390 km² with 854,277 inhabitants, and the people in the territory at 1,346,000, with ' +
+      '935,000 as its own estimate grown from the 1930 census.',
+  },
+  {
+    citation:
+      '“Treaty of Trianon”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Treaty_of_Trianon',
+    usedFor:
+      'The human cost behind the frontier this atlas draws in 1938: the article puts the Hungarians who ' +
+      'became minorities in the successor states at 3.3 million. No second publisher consulted here prints ' +
+      'the figure, so the atlas says only millions where it has to refer to the people the treaty divided.',
+  },
+  {
+    citation:
+      '“Moscow Peace Treaty”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Moscow_Peace_Treaty',
+    usedFor:
+      'The terms of the peace signed on 12 March 1940: the article puts the land ceded at 9% of Finnish ' +
+      'territory, the evacuation at 422,000 Finns, and the lease of the Hanko Peninsula as a naval base at ' +
+      'an annual rent of 8 million marks. Neither the evacuation figure nor the rent is printed on the ' +
+      'map; the first is disputed between three publishers and entered in the uncertainties list.',
+  },
+  {
+    citation:
+      '“Winter War”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Winter_War',
+    usedFor:
+      'The distance this atlas prints, and the Soviet demands behind the frontier it draws: the article ' +
+      'puts the pre-war Finnish frontier 32 km (20 mi) from Leningrad, dates the invitation to a Finnish ' +
+      'delegation to Moscow to 5 October 1939, and records the demand that the border on the Karelian ' +
+      'Isthmus move to a point 30 km (19 mi) east of Viipuri with its fortifications destroyed.',
+  },
+  {
+    citation:
+      '“Siege of Tobruk”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Siege_of_Tobruk',
+    usedFor:
+      'The relief this atlas dates to late November 1941: the breakout on 21 November, the attack on the ' +
+      'Ed Duda ridge ordered by Major General Ronald Scobie on 26 November, and the lead’s 231 days, the ' +
+      'infobox running 10 April to 27 November 1941. Two other publishers give other ends, so the day ' +
+      'stays out of the map; the shipping totals are entered in the uncertainties list.',
+  },
+  {
+    citation:
+      '“Battle of the Atlantic”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Battle_of_the_Atlantic',
+    usedFor:
+      'The day this entry is dated to: the article puts the first U-boats in United States waters on 13 ' +
+      'January 1942. It also gives the May 1943 loss as 43 U-boats, 34 in the Atlantic, and 25% of the ' +
+      'U-boat arm’s operational strength — a number its own Black May article repeats, so it is one ' +
+      'encyclopedia speaking twice, and it stands in the uncertainties list against the other counts.',
+  },
+  {
+    citation:
+      '“Second Happy Time”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Second_Happy_Time',
+    usedFor:
+      'The tonnage figure on this entry and what it covers: 609 ships of 3.1 million tons for the loss of ' +
+      '22 U-boats is the article’s total for the Second Happy Time on the American coast, which it brings ' +
+      'to an end about August of that year, and not a figure for the whole battle. An earlier version of ' +
+      'this atlas gave a monthly tonnage no publisher prints; that figure has been removed.',
+  },
+  {
+    citation:
+      '“Black May (World War II)”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Black_May_(World_War_II)',
+    usedFor:
+      'The end of the North Atlantic wolfpacks. The article dates the fighting to 29 April – 24 May 1943 ' +
+      'and has Admiral Dönitz order a temporary halt of U-boat operations in the North Atlantic on 24 May ' +
+      '1943; it also gives the May losses as 43 U-boats and 25 per cent of the operational force. No other ' +
+      'account of that day was reached, so 24 May is printed as an attributed date.',
+  },
+  {
+    citation:
+      '“Fall of Singapore”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Fall_of_Singapore',
+    usedFor:
+      'The prisoner totals the atlas reports alongside another publisher’s: about 80,000 captured on the ' +
+      'island and 50,000 in Malaya. The infobox gives 31,000 to 57,000 civilians killed in the battle and ' +
+      'the Sook Ching massacre, while the text puts about 7,000 civilians dead in the fighting, not ' +
+      'counting earlier bombing. Of roughly 40,000 Indian personnel it makes about 30,000 Indian National ' +
+      'Army recruits.',
+  },
+  {
+    citation:
+      '“Grossaktion Warsaw”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Grossaktion_Warsaw',
+    usedFor:
+      'The deportations from the Warsaw ghetto: the article gives 254,000 to 265,000 sent to Treblinka, ' +
+      'dates the action 23 July to 21 September 1942 and Himmler’s order to 19 July 1942, gives the daily ' +
+      'quota as 5,000 to 6,000 for eight weeks at 100 people to a cattle truck, and has Adam Czerniaków ' +
+      'take his life on 23 July. These figures are measured against other publishers in the uncertainties ' +
+      'list.',
+  },
+  {
+    citation:
+      '“Warsaw Ghetto”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Warsaw_Ghetto',
+    usedFor:
+      'The population of the ghetto before the deportations, printed in none of the entries: the article ' +
+      'gives an initial 450,000 people confined to 307 hectares (760 acres) and between 375,000 and ' +
+      '400,000 before the mass killings began, figures the uncertainties list sets against POLIN and ' +
+      'Encyclopædia Britannica. It also carries the Jewish Council, the Judenrat, through which the German ' +
+      'orders were passed on.',
+  },
+  {
+    citation:
+      '“Treblinka extermination camp”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Treblinka_extermination_camp',
+    usedFor:
+      'The place the transports from the Warsaw ghetto went to. The article puts the two camps of ' +
+      'Treblinka 80 km (50 mi) north-east of Warsaw, the distance this atlas prints; the 50 miles in the ' +
+      'museum’s chronology is for the rail junction of Malkinia, not the camp. The article’s 11,000 is ' +
+      'Jews deported from Thrace and Macedonia, and its 20,000 is the labour camp’s inmate total — neither ' +
+      'is people shot in Warsaw.',
+  },
+  {
+    citation:
+      '“Operation Astonia”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Operation_Astonia',
+    usedFor:
+      'The taking of Le Havre, printed in none of the entries: the preparatory bombardment killing over ' +
+      '2,000 civilians and 19 German troops, the municipality’s February 1945 assessment of 1,536 dead and ' +
+      '517 missing, a second bombing wave of 1,880 long tons, HMS Warspite and Erebus firing more than ' +
+      '4,000 long tons, 50,000 civilians left of about 160,000, 11,300 prisoners, the harbour reopened on ' +
+      '9 October.',
+  },
+  {
+    citation:
+      '“Belgrade offensive”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Belgrade_offensive',
+    usedFor:
+      'Figures this atlas does not print for this entry: German strength of 150,000 against 580,000 in the ' +
+      'article’s infobox, Soviet losses of 4,350 killed and missing, the Bulgarian 1st, 2nd and 4th ' +
+      'Armies, and a Soviet brigade reaching the Great Morava valley on 8 October. The article’s infobox ' +
+      'dates the fighting 15 September to 24 November 1944; its text puts the breakthrough south of the ' +
+      'city on 14 October.',
+  },
+  {
+    citation:
+      '“Siege of Budapest”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Siege_of_Budapest',
+    usedFor:
+      'Details this atlas does not print: the fortress was to be defended to the last man; the Soviet ' +
+      'claim to have trapped 180,000 and captured 110,000, followed by thousands of Hungarian civilians ' +
+      'rounded up and added to the prisoner-of-war count; the garrison’s Hungarian half as General Iván ' +
+      'Hindy’s I Corps, gendarmerie and police and Arrow Cross volunteers; and the ultimatum of 29 ' +
+      'December 1944.',
+  },
+  {
+    citation:
+      '“Vienna offensive”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Vienna_offensive',
+    usedFor:
+      'Two things the atlas takes from this article alone: the 139,815 casualties of the 3rd Ukrainian ' +
+      'Front from 16 March to 15 April 1945, every other loss figure for the fighting being another ' +
+      'publisher’s; and the capture of the Reichsbrücke from the water by the Danube Flotilla with two ' +
+      'Guards divisions, the demolition charges the article calls cables cut before the bridge could be ' +
+      'blown.',
+  },
+  {
+    citation:
+      '“Atomic bombings of Hiroshima and Nagasaki”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Atomic_bombings_of_Hiroshima_and_Nagasaki',
+    usedFor:
+      'The two raids, the unit that flew them and the width of the toll: the article’s casualty table ' +
+      'gives Hiroshima 90,000-166,000 killed and Nagasaki 60,000-80,000 and totals them as 150,000-246,000 ' +
+      'killed by the end of 1945, and names the 509th Composite Group as the delivery unit. The ' +
+      'Japanese–American Radiation Effects Research Foundation carries the same two city ranges, so the ' +
+      'widths printed are not Wikipedia’s alone.',
+  },
+  {
+    citation:
+      '“Soviet invasion of Manchuria”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Soviet_invasion_of_Manchuria',
+    usedFor:
+      'The opening of the campaign in Manchuria, which the article puts just after midnight on 9 August ' +
+      '1945, delivered simultaneously on three fronts, and connects to the Yalta promise by saying the ' +
+      'Union entered the war in the Pacific within three months of the end in Europe. The declaration of ' +
+      'war was made on 8 August, an hour before midnight, which three other publishers print.',
+  },
+  {
+    citation:
+      '“Manchukuo”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Manchukuo',
+    usedFor:
+      'The state whose colour changes in August 1945: the article’s infobox runs from its establishment on ' +
+      '1 March 1932, with Puyi as its head, through the Soviet invasion of 9 August 1945 to its ' +
+      'dissolution on 20 August 1945, succeeded by the Soviet occupation of Manchuria. No page outside ' +
+      'this atlas’s reach has been found for the 20 August date, so the dissolution stays one source.',
+  },
+  {
+    citation:
+      '“Surrender of Japan”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Surrender_of_Japan',
+    usedFor:
+      'The days around the broadcast of 15 August, for which no second publisher was reached: the Allied ' +
+      'reply of 12 August, the Imperial conference of the night of 9–10 August, the recording smuggled out ' +
+      'of the palace when the coup was foiled on 15 August, and the occupation beginning on 28 August. It ' +
+      'also dates the end of the state of war to 28 April 1952; no other account here gives that day.',
+  },
+  {
+    citation:
+      '“Japanese Instrument of Surrender”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Japanese_Instrument_of_Surrender',
+    usedFor:
+      'The signing on 2 September 1945 and the states that signed it. The article puts the effect of the ' +
+      'instrument at 09:25 Japan standard time that day, a moment no other account in this atlas’s reach ' +
+      'gives, and lists the signatory states; the ceremony itself, aboard the Missouri with Wainwright and ' +
+      'Percival among the signatories, is published by the State Department.',
+  },
+  {
+    citation:
+      '“Division of Korea”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Division_of_Korea',
+    usedFor:
+      'The line this atlas draws in Korea and the days it was drawn: the article dates the proposal to ' +
+      'divide the peninsula to 10 August 1945, General Order No. 1 to 17 August, the Soviet landing at ' +
+      'Wonsan to 16 August, Soviet troops occupying the north by 24 August and taking Pyongyang that day. ' +
+      'The line itself is published outside this article by the State Department.',
+  },
+  {
+    citation:
+      '“United States Army Military Government in Korea”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/United_States_Army_Military_Government_in_Korea',
+    usedFor:
+      'The south of the peninsula on this atlas’s map: the article runs the military government from 9 ' +
+      'September 1945, the day after the landings of 8 September on which the entry is dated, under ' +
+      'Lieutenant General John R. Hodge. Those two days come from this one article; the division behind ' +
+      'them is published by the State Department and The Canadian Encyclopedia.',
+  },
+  {
+    citation:
+      '“Soviet invasion of South Sakhalin”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Soviet_invasion_of_South_Sakhalin',
+    usedFor:
+      'The date Karafuto changes colour in the world layer: the article’s infobox runs the offensive from ' +
+      '11 to 25 August 1945 in Karafuto Prefecture, which is the span this atlas uses for the island. It ' +
+      'has no outline in the European layer and is drawn outside Europe only; the article is the only ' +
+      'account in this atlas’s reach for those days.',
+  },
+  {
+    citation:
+      '“Soviet invasion of the Kuril Islands”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Soviet_invasion_of_the_Kuril_Islands',
+    usedFor:
+      'The date the Kuril Islands change colour in the world layer: the article’s infobox runs the ' +
+      'invasion from 18 August to 2 September 1945, beginning at Shumshu, and this atlas uses that span ' +
+      'for the chain. Like Sakhalin it is drawn outside Europe only; the article is the only account in ' +
+      'this atlas’s reach for those days.',
   },];
 
 /** Figures that are genuinely disputed, shown so readers know the range. */
