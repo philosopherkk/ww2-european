@@ -798,7 +798,7 @@ export const SOURCES: Source[] = [  {
     publisher:
       'Chicago: Encyclopaedia Britannica, Inc., online edition',
     url:
-      'https://www.britannica.com/event/World-War-I',
+      'https://web.archive.org/web/20261101221347/https://www.britannica.com/event/World-War-I',
     usedFor:
       'The date Japan declared war on Germany, 23 August 1914, which the article lists among the ' +
       'declarations of war of that August. The other Britannica entries this site uses are in the rows ' +
@@ -810,7 +810,7 @@ export const SOURCES: Source[] = [  {
     publisher:
       'Chicago: Encyclopaedia Britannica, Inc., online edition',
     url:
-      'https://www.britannica.com/place/Qingdao',
+      'https://web.archive.org/web/20261106103534/https://www.britannica.com/place/Qingdao',
     usedFor:
       'That Japan’s prime purpose in declaring war on Germany was the capture of Qingdao, and that the ' +
       'port capitulated after a blockade in November 1914.',
@@ -821,7 +821,7 @@ export const SOURCES: Source[] = [  {
     publisher:
       'Chicago: Encyclopaedia Britannica, Inc., online edition',
     url:
-      'https://www.britannica.com/topic/blockade-warfare',
+      'https://web.archive.org/web/20250115221630/https://www.britannica.com/topic/blockade-warfare',
     usedFor:
       'The Allied announcement of 1 March 1915 in answer to the German submarine blockade, and the ' +
       'encyclopedia’s own judgement that neither the announcement nor the retaliation was legally a ' +
@@ -833,7 +833,7 @@ export const SOURCES: Source[] = [  {
     publisher:
       'Chicago: Encyclopaedia Britannica, Inc., online edition',
     url:
-      'https://www.britannica.com/event/Twenty-one-Demands',
+      'https://web.archive.org/web/20260130081742/https://www.britannica.com/event/Twenty-one-Demands',
     usedFor:
       'The memorandum of 18 January 1915, the ultimatum of 7 May, Yuan Shikai’s forced acceptance of all ' +
       'but the final group, and the Sino-Japanese agreements signed on 25 May 1915.',
@@ -844,7 +844,7 @@ export const SOURCES: Source[] = [  {
     publisher:
       'Chicago: Encyclopaedia Britannica, Inc., online edition',
     url:
-      'https://www.britannica.com/event/Balfour-Declaration',
+      'https://web.archive.org/web/20261112185802/https://www.britannica.com/event/Balfour-Declaration',
     usedFor:
       'That the declaration was made in a letter of 2 November 1917, that the meaning of the phrase about ' +
       'a national home has been disputed, and that the undertaking contradicted both the Sykes-Picot ' +
@@ -856,7 +856,7 @@ export const SOURCES: Source[] = [  {
     publisher:
       'Chicago: Encyclopaedia Britannica, Inc., online edition',
     url:
-      'https://www.britannica.com/event/Armistice-of-Mudros',
+      'https://web.archive.org/web/20260525192034/https://www.britannica.com/event/Armistice-of-Mudros',
     usedFor:
       'The terms of 30 October 1918: the surrender of the remaining Ottoman garrisons in the Hejaz, Allied ' +
       'occupation of the Straits, and the demobilization of the Ottoman army.',
@@ -867,7 +867,7 @@ export const SOURCES: Source[] = [  {
     publisher:
       'Chicago: Encyclopaedia Britannica, Inc., online edition',
     url:
-      'https://www.britannica.com/place/China/China-in-World-War-I',
+      'https://web.archive.org/web/20241212100346/https://www.britannica.com/place/China/China-in-World-War-I',
     usedFor:
       'The Chinese declaration of war on Germany, announced on 14 August 1917. The article is about the ' +
       'declaration on Germany and says nothing about Austria-Hungary, so it is not offered as evidence for ' +
@@ -879,7 +879,7 @@ export const SOURCES: Source[] = [  {
     publisher:
       'Chicago: Encyclopaedia Britannica, Inc., online edition',
     url:
-      'https://www.britannica.com/place/Togo',
+      'https://web.archive.org/web/20261107180921/https://www.britannica.com/place/Togo',
     usedFor:
       'Read for the Togoland card and recorded here because of what it does not say: the article dates ' +
       'nothing in August 1914, giving only that the country was occupied by British and French forces in ' +
