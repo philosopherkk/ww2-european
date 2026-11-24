@@ -77,6 +77,11 @@ const MAP_LIMITS: { head: string; body: string }[] = [
       'The legend has three colours — German, Soviet, Western Allied — because those are the three things a reader can use to read the map. Romania attacked Odessa, Hungary fought on the Danube and in the Balaton fighting, Finland defended Karelia, and the 17th Army that was destroyed in the Crimea in 1944 contained German and Romanian units alike. Those operations are drawn in the German colour and the text says who was actually fighting.',
   },
   {
+    head: 'The shortest axes are a few pixels long',
+    body:
+      'A line is opened by hovering or tapping it, and no zoom this site offers makes every axis long enough to aim at. In May 1942, on the two screen sizes this site is tested at, the Luzon axis of the Philippines campaign measures 3 by 8 px on a desktop looking at Asia and 2 by 6 px on a phone, and 1 by 4 px or less once the whole world is in frame; the Sevastopol axis is a single pixel across at the world extent, and the Rangoon axis is 1 by 9 px on a phone. At that zoom the renderer also drops the intermediate points, so an axis built from six named places is drawn as two or three. The data is not missing anything: the pins on those axes open their entries as usual, every campaign is named in the month list, and the events carry what a two-pixel line cannot.',
+  },
+  {
     head: 'Air and sea battles have no lines',
     body:
       'Lines are ground axes of advance, so the battles at sea and in the air are carried by the events instead. That means no track for the Bismarck’s last voyage, whose Denmark Strait position at 63.3° N, 31.8° W sits at the rim of the area this map frames, and a ship’s wake is not an axis of advance anyway; no patrol lines for the U-boat war in the Atlantic; no arcs for the Battle of Britain or the bombing offensive; and no ring round the Courland pocket, where a blockade by sea and air — not an advance — is what kept Army Group Centre trapped there from October 1944 to May 1945. The one exception is the Channel Dash of 11-13 February 1942, which was a movement of ships through a strait that any army map can place, so it is drawn.',

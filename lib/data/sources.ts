@@ -48,7 +48,7 @@ export const SOURCES: Source[] = [
     citation:
       'International Military Tribunal for the Far East, Judgment, Part B Chapter VIII: Conventional War Crimes (Atrocities), November 1948',
     publisher: 'Transcription at the HyperWar archive, ibiblio.org',
-    url: 'http://ibiblio.org/hyperwar/PTO/IMTFE/IMTFE-8.html',
+    url: 'https://www.ibiblio.org/hyperwar/PTO/IMTFE/IMTFE-8.html',
     usedFor:
       'The 13 December 1937 entry into Nanjing and the assault on the South Gate the previous night; and the tribunal’s own findings on the scale of the killings there, in the card’s note and in the uncertainties list.',
   },
@@ -241,7 +241,7 @@ export const SOURCES: Source[] = [
       'Atomic Bomb: Decision, introduction',
     publisher:
       'Documentary source archive assembled by Gene Dannen',
-    url: 'http://www.dannen.com/decision/index.html',
+    url: 'https://www.dannen.com/decision/index.html',
     usedFor:
       'A third publisher for the dates 6 and 9 August 1945.',
   },
