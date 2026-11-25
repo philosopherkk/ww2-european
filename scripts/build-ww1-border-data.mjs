@@ -168,11 +168,15 @@ const SIMPLIFY_TOLERANCE = 0.01;
 // polygons to 490) for land no line or card of this site reaches, so it stops there.
 //
 // Measured cost of the wider box, counted on the two published files: 330 parts and
-// 35,268 ring vertices become 418 and 41,956, and 640 KB and 215 KB gzipped become 761
-// KB and 257 KB gzipped. Hashing each polity's rings, old against new, eighteen of the
-// twenty-two come out byte-identical; four change, Russia 33 parts and 5,434 vertices to
-// 102 and 10,855, the Ottoman Empire 6 and 1,327 to 15 and 2,410, Spain 6 and 1,428 to 14
-// and 1,586 (the Canary Islands) and Portugal 1 and 392 to 3 and 418 (Madeira). Norway's
+// 35,633 vertices become 418 and 42,409, and 640 KB and 215 KB gzipped become 761 KB and
+// 257 KB gzipped. The rule is the sum of the ring lengths and it is printed with the
+// number, because every ring in these files is closed and a recount that used
+// length - 1 came out twenty-four low on both files at once - the same figure the sources
+// list quotes, so a stray off-by-one in a one-off count would otherwise have moved the
+// published claim. Counting parts and vertices per polity, and hashing each polity's rings,
+// eighteen of the twenty-two are unchanged; four move: Russia 33 parts and 5,471 vertices
+// to 102 and 10,961, the Ottoman Empire 6 and 1,333 to 15 and 2,425, Spain 6 and 1,434 to
+// 14 and 1,600 (the Canary Islands) and Portugal 1 and 393 to 3 and 421 (Madeira). Norway's
 // 90 parts are identical too, and that is worth saying because the old north edge was
 // 71.5 N: the source's own Norwegian coast tops out at 71.181 N, so it never reached the
 // edge it is now cut further from, and the taller edge changes nothing on that coast. What
