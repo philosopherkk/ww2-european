@@ -10,12 +10,16 @@
  *   North African coast, WGS 84, high resolution (150k points for Russia alone).
  *
  * What this script does to it:
- *  - keeps only the polities inside the European theatre. The source has 29
- *    features: Europe plus Algeria, Tunisia, Libya, Morocco, Egypt and Iran, and
- *    those six are dropped, which is why Sinai, Palestine, Mesopotamia and Persia
- *    have no coloured land under them; Liechtenstein is in the source but not in
- *    KEEP, so it is dropped, and Monaco, San Marino, Andorra, Vatican City,
+ *  - keeps only the polities the site colours. The source has 29 features: Europe
+ *    plus Algeria, Tunisia, Libya, Morocco, Egypt and Iran, and those six are
+ *    dropped, which is why the Sinai, Persia and the North African coast have no
+ *    coloured land under them; Palestine, Arabia and Mesopotamia do, because the
+ *    source draws them as the Ottoman Empire; Liechtenstein is in the source but
+ *    not in KEEP, so it is dropped, and Monaco, San Marino, Andorra, Vatican City,
  *    Iceland and Malta are not in the source at all;
+ *  - drops the one colonial ring that is welded to a metropolitan polygon, Spain's
+ *    in the Western Sahara (see DROP_SPAIN_SOUTH_OF), so the map does not claim one
+ *    empire's Sahara while leaving another's Algeria unpainted;
  *  - clips everything to the theatre box and throws away islands under 25 km²,
  *    which is what makes the file small enough for a browser;
  *  - simplifies with turf, so the outlines are for reading, not surveying;
@@ -30,8 +34,8 @@
  *  - MIN_ISLAND_KM2 was 900, which dropped Anglesey, Arran, Islay, Man, Wight,
  *    Corfu, Samos, Samothrace and Bornholm, so Greek Corfu and Danish Bornholm sat
  *    uncoloured on a map of 1914 (Lewis, Sylt and Usedom were already big enough to
- *    survive). At 25 km² they are drawn and the file is still one fetch (0.6 MB,
- *    211 KB gzipped); at 5 km² the Venetian lagoon sandbars come back too, but the
+ *    survive). At 25 km² they are drawn and the file is still one fetch (0.76 MB,
+ *    257 KB gzipped); at 5 km² the Venetian lagoon sandbars come back too, but the
  *    polygon count more than doubles for two pixels of land, so it stays at 25.
  *  - SIMPLIFY_TOLERANCE was 0.03 degrees, about 3 km, which ate Galway Bay,
  *    Wexford and the roadstead of Brest: all three fell outside the polygons. At
@@ -147,11 +151,60 @@ const ISO3 = {
 const MIN_ISLAND_KM2 = 25;
 const SIMPLIFY_TOLERANCE = 0.01;
 
+// Theatre extent (lng/lat): west, south, east, north.
+//
+// This was [-25, 34, 45, 71.5] until 25 Nov 2026, and 45 E and 34 N are the edges
+// of nothing: they cut through states the source draws whole. The source's Russia
+// reaches 113.9 E, so Ekaterinburg, Baku and Tashkent sat off the map; its Ottoman
+// Empire reaches 48.6 E and 12.7 N, so Palestine, Arabia and Ottoman Mesopotamia
+// sat off it too — Jerusalem, Gaza, Kut and Basra are places this site tells
+// stories about, and they had no border under them at all. The box now runs to
+// 70 E and down to 12.5 N: the furthest east any line waypoint of this site goes is
+// 49.11 E, on the Czech Legion's line at Samara, and the furthest south is Aqaba at
+// 29.53 N, so the map now reaches well past everything it narrates and the Levant
+// and Mesopotamia sit whole inside it. What is left is one straight edge, at 70 E
+// in the Kazakh steppe, 21 degrees east of the furthest line. Going on to the
+// source's own 113.9 E costs another 16% of the file (257 KB to 298 KB gzipped, 418
+// polygons to 490) for land no line or card of this site reaches, so it stops there.
+//
+// Measured cost of the wider box: 0.640 MB and 215 KB gzipped becomes 0.761 MB and
+// 257 KB gzipped, 330 polygons and 35,633 vertices become 418 and 42,409. Four of
+// the twenty-two polities change: Russia, the Ottoman Empire, Spain and Portugal
+// (the last two gain only the Canary Islands and Madeira); the other eighteen are
+// byte-for-byte the same rings.
+//
+// What is still outside, and deliberately so, is in SourcesPanel: the source's
+// Egypt, Iran, Libya, Algeria, Tunisia and Morocco are not painted here at all.
+const CLIP = [-25, 12.5, 70, 82];
+
 // The source stores every vertex with about fifteen significant digits. Four
 // decimals is five metres, far inside the simplify tolerance above, and it takes
-// the file from 1.4 MB to 0.6 MB (431 KB to 211 KB gzipped), which matters because
+// the file from 1.6 MB to 0.76 MB (511 KB to 257 KB gzipped), which matters because
 // this one file is fetched for all 53 monthly snapshots.
 const COORD_DECIMALS = 4;
+
+/**
+ * The source attaches one colonial possession to a metropolitan polygon: a single
+ * ring of Spain runs down to 20.8 N across the Western Sahara and Ifni. Every
+ * other empire in this file is drawn as its European metropole alone — the source
+ * keeps Algeria, Tunisia, Morocco, Egypt and Libya as separate features, and this
+ * map does not paint any of them — so leaving that ring in would give a reader a
+ * map where the Sahara belongs to Spain and Algeria belongs to nobody. It is
+ * dropped. The Canary Islands are their own rings and reach no further south than
+ * 27.64 N, so they are untouched; the cut is at 27.5 N, between the two.
+ */
+const DROP_SPAIN_SOUTH_OF = 27.5;
+
+/** Drops rings of a polygon that reach south of a latitude. */
+function dropRingsSouthOf(poly, south) {
+  const polys = poly.geometry.type === 'MultiPolygon' ? poly.geometry.coordinates : [poly.geometry.coordinates];
+  const kept = polys.filter((rings) => {
+    const [, minLat] = turf.bbox(turf.polygon(rings));
+    return minLat >= south;
+  });
+  if (!kept.length) return null;
+  return turf.multiPolygon(kept);
+}
 
 /** Trims the precision of a coordinate array. */
 function roundCoords(coords) {
@@ -223,7 +276,9 @@ function prepare(feature) {
   let poly = turf.combine({ type: 'FeatureCollection', features: [feature] }).features[0];
   if (!poly) return null;
   if (name === 'United Kingdom') poly = addIrishCoast(poly);
-  poly = turf.bboxClip(poly, [-25, 34, 45, 71.5]);
+  poly = turf.bboxClip(poly, CLIP);
+  if (name === 'Spain') poly = dropRingsSouthOf(poly, DROP_SPAIN_SOUTH_OF);
+  if (!poly) return null;
   poly = dropSmallRings(poly);
   if (!poly) return null;
   poly = turf.simplify(poly, { tolerance: SIMPLIFY_TOLERANCE, highQuality: true });

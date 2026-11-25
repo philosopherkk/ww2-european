@@ -260,7 +260,7 @@ export default function MapBrowser({
   // The shapes never move in this dataset, so the geometry caveat is stated for
   // every month; the month's own note is appended when there is one.
   const monthNote = SNAPSHOT_NOTES[snapshot.date];
-  const note = `${monthNote ? `${GEOMETRY_NOTE} ${monthNote}` : GEOMETRY_NOTE} The region buttons change the view; only Europe has border and allegiance data for this war, so the other extents show the basemap and any campaign lines.`;
+  const note = `${monthNote ? `${GEOMETRY_NOTE} ${monthNote}` : GEOMETRY_NOTE} The coloured ground runs from the Atlantic to the 70th meridian and from 12.5° N in the Gulf of Aden to 82° N, which is more than Europe, so the region buttons change the view; where the source has no shape at all, an extent shows the basemap and any campaign lines only.`;
   const showMarkers = showPlaces && zoom >= 7;
 
   return (
@@ -268,7 +268,7 @@ export default function MapBrowser({
       <div className="text-[13px]">
         <div className="flex items-center justify-between gap-2">
           <p className="min-w-0 font-semibold leading-snug text-stone-800">
-            Europe at the end of {snapshot.label}
+            Europe and its edges at the end of {snapshot.label}
             <span className="sr-only">
               (as at the last day of the month, so the colours and the events for
               {` ${snapshot.label}`} describe the same moment)
