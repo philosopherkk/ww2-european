@@ -14,7 +14,7 @@ const MAP_LIMITS: { head: string; body: string }[] = [
   {
     head: 'Land with no colour is outside this dataset',
     body:
-      'The source layer has no polygons for North Africa, the Levant, Iraq or Iran, so roughly a quarter of the framed area — everything south of the Mediterranean and east of the Baltic states below the Soviet Union — carries no political colour at all. The Tunisian, Egyptian and Syrian campaign lines therefore run across land this map cannot classify.',
+      'Measured on a quarter-degree grid over the box the Europe view frames, 13,975 of 37,502 land points get no political colour in the April 1942 map — 37% of the land inside that box — and 13,977 and 13,973 in the April 1938 and April 1945 maps. The ground is everything south of the Mediterranean and east of the Baltic states below the Soviet Union: North Africa to Egypt, the Levant, Iraq, Iran, Central Asia as far as the 68th meridian, and that part of Greenland’s west coast the box reaches. The atlas has outlines for all of it, but only in the modern-outlines layer, which is switched off in the Europe view; move to Africa or Asia and the same ground appears there in that layer’s own colours. The Tunisian, Egyptian and Syrian campaign lines therefore run across land this map cannot classify.',
   },
   {
     head: 'Where the coloured area stops, and why it stops there',
