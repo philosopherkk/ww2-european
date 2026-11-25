@@ -167,11 +167,16 @@ const SIMPLIFY_TOLERANCE = 0.01;
 // source's own 113.9 E costs another 16% of the file (257 KB to 298 KB gzipped, 418
 // polygons to 490) for land no line or card of this site reaches, so it stops there.
 //
-// Measured cost of the wider box: 0.640 MB and 215 KB gzipped becomes 0.761 MB and
-// 257 KB gzipped, 330 polygons and 35,633 vertices become 418 and 42,409. Four of
-// the twenty-two polities change: Russia, the Ottoman Empire, Spain and Portugal
-// (the last two gain only the Canary Islands and Madeira); the other eighteen are
-// byte-for-byte the same rings.
+// Measured cost of the wider box, counted on the two published files: 330 parts and
+// 35,268 ring vertices become 418 and 41,956, and 640 KB and 215 KB gzipped become 761
+// KB and 257 KB gzipped. Hashing each polity's rings, old against new, eighteen of the
+// twenty-two come out byte-identical; four change, Russia 33 parts and 5,434 vertices to
+// 102 and 10,855, the Ottoman Empire 6 and 1,327 to 15 and 2,410, Spain 6 and 1,428 to 14
+// and 1,586 (the Canary Islands) and Portugal 1 and 392 to 3 and 418 (Madeira). Norway's
+// 90 parts are identical too, and that is worth saying because the old north edge was
+// 71.5 N: the source's own Norwegian coast tops out at 71.181 N, so it never reached the
+// edge it is now cut further from, and the taller edge changes nothing on that coast. What
+// the taller edge does buy is Russian land to 81.854 N, which is Franz Josef Land.
 //
 // What is still outside, and deliberately so, is in SourcesPanel: the source's
 // Egypt, Iran, Libya, Algeria, Tunisia and Morocco are not painted here at all.
