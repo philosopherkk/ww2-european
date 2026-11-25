@@ -1087,6 +1087,659 @@ export const SOURCES: Source[] = [
       'invasion from 18 August to 2 September 1945, beginning at Shumshu, and this atlas uses that span ' +
       'for the chain. Like Sakhalin it is drawn outside Europe only; the article is the only account in ' +
       'this atlas’s reach for those days.',
+  },  {
+    citation:
+      'The French Yellow Book, No. 69: Count von Welczeck, German Ambassador in Paris, to M. Georges ' +
+      'Bonnet, French Minister for Foreign Affairs, Paris, 15 March 1939 — published in the Avalon Project ' +
+      'at the Yale Law School.',
+    publisher:
+      'Avalon Project, Lillian Goldman Law Library, Yale Law School',
+    url:
+      'https://avalon.law.yale.edu/wwii/ylbk069.asp',
+    usedFor:
+      'The French documentary record of the meeting in Berlin, sent on by the ambassador in Paris the same ' +
+      'day it was signed, and the only source read here that gives an hour for the entry into Bohemia and ' +
+      'Moravia — the frontier crossed at six o’clock in the morning of 15 March. A diplomatic document ' +
+      'written while the events were happening, not a later history.',
+  },
+  {
+    citation:
+      'Decree of the Fuehrer and Reich Chancellor concerning the Protectorate of Bohemia and Moravia, 16 ' +
+      'March 1939 — Document 2119-PS in Nazi Conspiracy and Aggression, Volume IV, published by the Avalon ' +
+      'Project at the Yale Law School.',
+    publisher:
+      'The Avalon Project, Lillian Goldman Law Library, Yale Law School',
+    url:
+      'https://avalon.law.yale.edu/imt/2119-ps.asp',
+    usedFor:
+      'The decree itself, in the English translation prepared for the postwar judgement: the text behind ' +
+      'the proclamation of the Protectorate of Bohemia and Moravia on 16 March 1939, incorporating the ' +
+      'occupied territories into the Greater German Reich, making residents of German origin German ' +
+      'nationals, and declaring the country autonomous while the Reich kept its defence.',
+  },
+  {
+    citation:
+      'Speech by the Secretary of State for Foreign Affairs in the House of Lords on 20 March 1939, No. 10 ' +
+      'of the British War Blue Book (Cmd 6106, HMSO 1939), published by the Avalon Project at the Yale Law ' +
+      'School.',
+    publisher:
+      'British War Blue Book (Cmd 6106, HMSO 1939) via The Avalon Project, Yale Law School',
+    url:
+      'https://avalon.law.yale.edu/wwii/blbk10.asp',
+    usedFor:
+      'The British government’s own account of that week, stated to the Lords five days afterwards, and ' +
+      'the page where the two days for Prague meet each other on the record: the military occupation of ' +
+      'Bohemia and Moravia began on the morning of 15 March, while Mährisch-Ostrau and Vitkovice were ' +
+      'occupied by SS detachments on the evening of the 14th, with the Czech president still on his way to ' +
+      'Berlin.',
+  },
+  {
+    citation:
+      'Nazi Conspiracy and Aggression, Volume I, Chapter IX, The Plotting of Aggressive War — the American ' +
+      'edition of the postwar judgement, published in the Avalon Project at the Yale Law School.',
+    publisher:
+      'Office of the United States Chief of Counsel for the Prosecution of Axis Criminality, Nazi ' +
+      'Conspiracy and Aggression vol. I (US Government Printing Office, 1946), hosted by the Avalon ' +
+      'Project, Yale Law School',
+    url:
+      'https://avalon.law.yale.edu/imt/chap_09.asp',
+    usedFor:
+      'The postwar judgement on these two days, which states that the agreement of Munich was violated and ' +
+      'that Czechoslovakia was invaded on 15 March 1939, and prints the proclamation of the protectorate ' +
+      'as a decree signed in Prague on 16 March 1939. A document of the trial rather than a website, and ' +
+      'the second publisher for both days.',
+  },
+  {
+    citation:
+      '“Occupation of Czechoslovakia (1938–1945)”, _Wikipedia_.',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/German_occupation_of_Czechoslovakia',
+    usedFor:
+      'The occupation as an encyclopaedia gives it, and the source of the industrial claims this atlas ' +
+      'therefore does not print: the Škoda works at Plzeň, and the inventory a Reichstag speech attributed ' +
+      'to the occupation — 2,175 field cannons, 469 tanks and 43,000 machine guns, enough to arm about ' +
+      'half the Wehrmacht. No second publisher reached here prints those figures.',
+  },
+  {
+    citation:
+      'Second World War timeline, NZ History, the New Zealand government’s war record — archived capture ' +
+      'of 25 April 2026.',
+    publisher:
+      'NZ History, Manatū Taonga — Ministry for Culture and Heritage, Internet Archive copy of 25 April ' +
+      '2026',
+    url:
+      'https://web.archive.org/web/20260425155416/https://nzhistory.govt.nz/war/second-world-war/timeline',
+    usedFor:
+      'New Zealand’s own timeline, read through the Internet Archive because the live site refuses this ' +
+      'machine. The only source found that puts the German entry into Prague a day earlier, printing 14 ' +
+      'March for the occupation of Prague; it also dates the Anglo-French guarantee to Poland to 31 March ' +
+      'and Canada’s entry to 10 September.',
+  },
+  {
+    citation:
+      'Nazi-Soviet Relations 1939-1941: the Secret Additional Protocol to the German-Soviet Non-Aggression ' +
+      'Pact, 23 August 1939 — published in the Avalon Project at the Yale Law School.',
+    publisher:
+      'The Avalon Project, Yale Law School (Nazi-Soviet Relations 1939-1941)',
+    url:
+      'https://avalon.law.yale.edu/20th_century/addsepro.asp',
+    usedFor:
+      'The secret protocol of 23 August 1939 in its own words: the two governments discussed the boundary ' +
+      'of their respective spheres of influence in eastern Europe in strictly confidential conversations, ' +
+      'and the document is dated Moscow, August 23, 1939. Read because the frontier settlements of 1939 ' +
+      'and 1941 rest on it, and because its existence was denied for two years after it was signed.',
+  },
+  {
+    citation:
+      'What’s the context? 31 March 1939: the British guarantee to Poland, History of government — the ' +
+      'blog of The National Archives and the Prime Minister’s Office, 10 Downing Street.',
+    publisher:
+      'History of government blog, The National Archives and 10 Downing Street',
+    url:
+      'https://history.blog.gov.uk/2019-03-28/whats-the-context-31-march-1939-the-british-guarantee-to-poland/',
+    usedFor:
+      'The British government’s own historians on the guarantee that followed the Prague entry, dating it ' +
+      'to 31 March 1939 with the words Chamberlain told the House of Commons that day, and setting it in ' +
+      'the parliamentary and intelligence background, including the Foreign Office record of the French ' +
+      'reaction. One of the three publishers that print the same day for the guarantee.',
+  },
+  {
+    citation:
+      'The British guarantee to Poland (31 March 1939), TheSecondWar.pl.',
+    publisher:
+      'TheSecondWar.pl',
+    url:
+      'https://thesecondwar.pl/en/british-guarantee-to-poland',
+    usedFor:
+      'The guarantee as a second publisher dates it, 31 March 1939. The same page puts the German entry ' +
+      'into Bohemia and Moravia on 15 March, records that Hitler slept that night at Prague Castle, and ' +
+      'treats the breaking of the Munich agreement as the end of appeasement — the end this atlas adopts ' +
+      'in its own words.',
+  },
+  {
+    citation:
+      '“1939 German ultimatum to Lithuania”, _Wikipedia_.',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/1939_German_ultimatum_to_Lithuania',
+    usedFor:
+      'The ultimatum of 20 March 1939 and what followed: oral, never set down in writing, and with no ' +
+      'formal deadline; the treaty signed at one in the morning on 23 March and dated the 22nd; the ' +
+      'convention of 1924; the port’s share of Lithuanian trade; and the judgement that this was Germany’s ' +
+      'last territorial acquisition before the war, which the atlas does not make because Danzig was still ' +
+      'a Free City.',
+  },
+  {
+    citation:
+      '“Klaipėda Region”, _Wikipedia_.',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Klaip%C4%97da_Region',
+    usedFor:
+      'The territory’s administrative history on both sides of the seizure: the convention of May 1924, ' +
+      'which gave the region its own parliament and official languages under Lithuanian sovereignty; the ' +
+      'diet election of 1938, whose table gives the unified German list 87.2 per cent and 25 of the 29 ' +
+      'seats; and the cession treaty of 1939 with the Lithuanian free zone in the port for ninety-nine ' +
+      'years.',
+  },
+  {
+    citation:
+      'Germany takes Klaipėda (23 March 1939), TheSecondWar.pl.',
+    publisher:
+      'TheSecondWar.pl',
+    url:
+      'https://thesecondwar.pl/en/germany-takes-klaipeda',
+    usedFor:
+      'The settlement from the German and the Lithuanian side: Wehrmacht units and the fleet entering the ' +
+      'port, Hitler arriving aboard the pocket battleship Deutschland and speaking from the municipal ' +
+      'theatre’s balcony; the people who fled and those who had to leave; the port as Lithuania’s only ' +
+      'large port and a third of its industry; the free zone promised in return; and the four guarantors ' +
+      'of the 1924 convention, none of which protested.',
+  },
+  {
+    citation:
+      'The German ultimatum to Lithuania (20 March 1939), TheSecondWar.pl.',
+    publisher:
+      'TheSecondWar.pl',
+    url:
+      'https://thesecondwar.pl/en/german-ultimatum-to-lithuania',
+    usedFor:
+      'A second account from the same publisher: the demand of 20 March put orally, with no deadline and ' +
+      'the warning that the army would have its say if German blood were shed; the diet election of 11 ' +
+      'December 1938 that made the region’s resentment legislative; and Poland’s reading of the seizure, ' +
+      'with the question of whether Danzig would be next asked in Warsaw, London and Paris.',
+  },
+  {
+    citation:
+      'Address by Neville Chamberlain to the House of Commons on the German reply to the British ' +
+      'ultimatum, 3 September 1939 — published in the Avalon Project at the Yale Law School.',
+    publisher:
+      'Avalon Project, Lillian Goldman Law Library, Yale Law School',
+    url:
+      'https://avalon.law.yale.edu/wwii/gb2.asp',
+    usedFor:
+      'The Prime Minister’s own statement to the Commons, which prints the ultimatum sent that morning and ' +
+      'the limit it set — eleven in the morning, British Summer Time, on 3 September — and records that no ' +
+      'such undertaking was received. The hour Britain set is therefore the expiry of the ultimatum, not ' +
+      'the hour of the broadcast. The French ambassador’s similar démarche with a time limit of his own is ' +
+      'here, without an hour.',
+  },
+  {
+    citation:
+      'Radio address by Neville Chamberlain, Prime Minister, to the nation, 3 September 1939 — published ' +
+      'in the Avalon Project at the Yale Law School.',
+    publisher:
+      'Avalon Project, Lillian Goldman Law Library, Yale Law School',
+    url:
+      'https://avalon.law.yale.edu/wwii/gb3.asp',
+    usedFor:
+      'The broadcast itself, made from the Cabinet Room at 10 Downing Street, in which the Prime Minister ' +
+      'reads back the ultimatum’s eleven o’clock limit and tells the nation that consequently this country ' +
+      'is at war with Germany. Read to keep the two hours apart: the hour named in the broadcast is the ' +
+      'expiry of the ultimatum, not the time the speech began.',
+  },
+  {
+    citation:
+      'Diplomatic countdown to war, Historians of the Cabinet Office, History of government — the blog of ' +
+      'The National Archives and the Prime Minister’s Office, 3 September 2019.',
+    publisher:
+      'History of government blog, The National Archives and 10 Downing Street',
+    url:
+      'https://history.blog.gov.uk/2019-09-03/diplomatic-countdown-to-war',
+    usedFor:
+      'The British government’s own historians on the weekend of 1 to 3 September 1939, and the second ' +
+      'publisher for a quarter past eleven as the hour of the broadcast; the French ambassador calling at ' +
+      'midday to hand over his government’s text and being kept waiting while the new Soviet ambassador ' +
+      'was presented; and the Polish appeals for air support, which Britain refused for fear of German ' +
+      'reprisals against London.',
+  },
+  {
+    citation:
+      'Britain and France declare war on Germany (3 September 1939), TheSecondWar.pl.',
+    publisher:
+      'TheSecondWar.pl',
+    url:
+      'https://thesecondwar.pl/en/britain-and-france-declare-war-on-germany',
+    usedFor:
+      'The day on both western sides: the German answer rejected by telephone, the broadcast at a quarter ' +
+      'past eleven after the ultimatum expired at eleven, the French note with its own deadline, and the ' +
+      'dominions — India, Australia and New Zealand the same day, South Africa and Canada in the following ' +
+      'days. This is the only publisher read here that gives the French deadline as five in the afternoon.',
+  },
+  {
+    citation:
+      'New Zealand declares war on Germany, NZ History, Manatū Taonga — Ministry for Culture and Heritage ' +
+      '— archived capture of 22 November 2025.',
+    publisher:
+      'NZ History, Manatū Taonga — Ministry for Culture and Heritage, Internet Archive copy of 22 November ' +
+      '2025',
+    url:
+      'https://web.archive.org/web/20251122191412/https://nzhistory.govt.nz/new-zealand-declares-war-on-germany',
+    usedFor:
+      'New Zealand’s declaration read in New Zealand, from the government’s own archive capture: ' +
+      'simultaneous with Britain’s at the expiry of the ultimatum, which this record prints as eleven in ' +
+      'the morning British Summer Time; the Wellington broadcast that evening; and the offer of an ' +
+      'expeditionary force made before Britain had made one. Read for the dominions’ days, and for the ' +
+      'fact that New Zealand’s own record prints only the British hour.',
+  },
+  {
+    citation:
+      'Canada and the War, Democracy at War: Canadian Newspapers and the Second World War, The Canadian ' +
+      'War Museum.',
+    publisher:
+      'The Canadian War Museum',
+    url:
+      'https://www.warmuseum.ca/cwm/exhibitions/newspapers/canadawar/parliament_e.html',
+    usedFor:
+      'The Canadian War Museum’s account of the week: Parliament called into special session on September ' +
+      '7, and after the debate the King declared war in the name of Canada on September 10, exactly a week ' +
+      'after Britain — the week this atlas gives for the dominions whose days it does not name one by one.',
+  },
+  {
+    citation:
+      'Government of Canada Commemorates the 75th Anniversary of Canada’s Engagement in the Second World ' +
+      'War, backgrounder, Government of Canada.',
+    publisher:
+      'Government of Canada',
+    url:
+      'https://www.canada.ca/en/news/archive/2014/10/government-canada-commemorates-75th-anniversary-canada-engagement-second-world-war.html',
+    usedFor:
+      'The Canadian day from the government’s own commemorative record, to stand beside the War Museum’s: ' +
+      '3 September for Britain and France, and Canada’s own declaration when the King made the ' +
+      'announcement on 10 September, which that record calls the first time Canada declared war of its own ' +
+      'accord. Both Canadian publishers used here are official ones, and neither prints a day for South ' +
+      'Africa.',
+  },
+  {
+    citation:
+      'Saar Offensive (Sep. 7–16, 1939) Summary & Facts, Totally History.',
+    publisher:
+      'Totally History',
+    url:
+      'https://totallyhistory.com/saar-offensive/',
+    usedFor:
+      'A second publisher for the dates of the French advance into Germany’s borderland: the fighting ' +
+      'given as 7 to 16 September 1939, the front line about five miles inside German territory by 12 ' +
+      'September, and the withdrawal reaching 17 October on this page while the same site’s own summary ' +
+      'puts the end of the fighting in mid-September.',
+  },
+  {
+    citation:
+      'The Saar Offensive begins (7 September 1939), TheSecondWar.pl.',
+    publisher:
+      'TheSecondWar.pl',
+    url:
+      'https://thesecondwar.pl/en/saar-offensive-begins',
+    usedFor:
+      'The French offensive in detail: the advance of some eight kilometres to the outposts of the ' +
+      'Siegfried Line against an enemy ordered to evacuate, and the return behind the Maginot Line in ' +
+      'early October. This is also the only source read here for the Franco-Polish military protocol of 19 ' +
+      'May 1939, signed by Gamelin and the Polish minister of military affairs.',
+  },
+  {
+    citation:
+      'The German Declaration of War with the United States, 11 December 1941 — published in the Avalon ' +
+      'Project at the Yale Law School.',
+    publisher:
+      'Avalon Project, Lillian Goldman Law Library, Yale Law School',
+    url:
+      'https://avalon.law.yale.edu/wwii/gerdec41.asp',
+    usedFor:
+      'The proclamation of 11 December 1941 by which the German government declared that it too considered ' +
+      'itself in a state of war with the United States, two years and three months after the day recorded ' +
+      'here, and its stated reason, that the American government had abandoned the rules of neutrality. ' +
+      'Read for the bearing of 1939 on the wider war.',
+  },
+  {
+    citation:
+      '“British declaration of war on Germany (1939)”, _Wikipedia_.',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/British_declaration_of_war_on_Germany_(1939)',
+    usedFor:
+      'The declaration’s own history, and the source of the guarantee’s dates: the assurance presented to ' +
+      'the Commons on 31 March 1939, formalised by the British on 6 April, and not ratified by the French ' +
+      'until 4 September, the day after the war began. A second publisher for 31 March, and the reason no ' +
+      'French ratification date is given.',
+  },
+  {
+    citation:
+      'Churchill and the Norway Debate: two days in the Commons Chamber in May 1940, The Hansard Society, ' +
+      '7 May 2020.',
+    publisher:
+      'The Hansard Society',
+    url:
+      'https://www.hansardsociety.org.uk/blog/two-days-in-the-commons-chamber-that-took-churchill-to-no-10-the-norway',
+    usedFor:
+      'The society that exists to study parliamentary record and procedure, on the debate that ended ' +
+      'Chamberlain’s government: two days in the Commons Chamber, 7 and 8 May 1940; Labour’s decision on ' +
+      'the morning of Wednesday 8 May to call a division, making it a vote of confidence; the division at ' +
+      'eleven at night; and the judgement that 281 to 200 was a clear political defeat.',
+  },
+  {
+    citation:
+      '“Norway Debate”, _Wikipedia_.',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Norway_Debate',
+    usedFor:
+      'The debate as an encyclopaedia gives it, from 7 to 9 May 1940, with its own section headings ' +
+      'putting the division on 8 May and the conclusion on 9 May. It prints 281 to 200 and a majority ' +
+      'reduced to 81, and counts 41 government members voting with the Opposition with an estimated 60 ' +
+      'abstaining, a different count from the other publisher’s thirty-nine.',
+  },
+  {
+    citation:
+      'The Cabinet Crisis, May 1940, Museum of the Prime Minister.',
+    publisher:
+      'Museum of the Prime Minister',
+    url:
+      'https://www.museumofpm.org/articles/the-cabinet-crisis-may-1940',
+    usedFor:
+      'The museum of the Prime Minister on the fortnight: two days from 7 to 9 May, a government that won ' +
+      'by 81 votes after a vote on 8 May, the choice between Halifax and Churchill, and the change on 10 ' +
+      'May 1940. It is the only page here that states Halifax’s reason, and it dates the guarantee to ' +
+      'Poland 30 March, a day before every other publisher that gives the guarantee at all.',
+  },
+  {
+    citation:
+      'Blood, toil, tears and sweat (13 May 1940), TheSecondWar.pl.',
+    publisher:
+      'TheSecondWar.pl',
+    url:
+      'https://thesecondwar.pl/en/blood-toil-tears-and-sweat',
+    usedFor:
+      'The first sitting of the new government’s Commons, which dates the old one: members had last sat on ' +
+      '8 May, when the division that closed the Norway Debate left Chamberlain’s majority at 81. It gives ' +
+      'the debate as 7 and 8 May, the result as 281 to 200, and the division on the new government’s ' +
+      'address on 13 May, carried by 381 votes — a different division from the one that fell Chamberlain.',
+  },
+  {
+    citation:
+      '“1940 British war cabinet crisis”, _Wikipedia_.',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/War_cabinet_crisis,_May_1940',
+    usedFor:
+      'The succession in detail, and the hours in it: Labour agreed to serve only under Churchill after ' +
+      'talks at 10 Downing Street on the evening of 9 May, and the war cabinet that followed was ' +
+      'restricted to five members at the outset, with Attlee as Lord Privy Seal until February 1942. It ' +
+      'gives the debate as 7 and 8 May; read for the make-up of the new government rather than its days.',
+  },
+  {
+    citation:
+      'War Situation, House of Commons Debates, 4 June 1940: HC Deb 04 June 1940 vol 361 cc787-98, UK ' +
+      'Parliament.',
+    publisher:
+      'House of Commons Debates (Hansard), UK Parliament',
+    url:
+      'https://api.parliament.uk/historic-hansard/commons/1940/jun/04/war-situation',
+    usedFor:
+      'The official report of the day named for the speech about the beaches, entered under WAR SITUATION ' +
+      'with the reference HC Deb 04 June 1940 vol 361 cc787-98. Read to fix the day of the speech and the ' +
+      'parliamentary reference behind it, and for nothing else.',
+  },
+  {
+    citation:
+      'Three-Power Pact between Germany, Italy and Japan, signed at Berlin, 27 September 1940 — published ' +
+      'in the Avalon Project at the Yale Law School.',
+    publisher:
+      'Avalon Project, Lillian Goldman Law Library, Yale Law School',
+    url:
+      'https://avalon.law.yale.edu/wwii/triparti.asp',
+    usedFor:
+      'The pact in its own six articles: the three governments agreeing to co-operate in establishing a ' +
+      'new order of things, the third article undertaking mutual political, economic and military ' +
+      'assistance if one of them were attacked by a power not then involved in the European or the ' +
+      'Chinese-Japanese war, the article preserving each party’s relations with Soviet Russia, the ' +
+      'ten-year term, and the signature at Berlin on 27 September 1940.',
+  },
+  {
+    citation:
+      'Announcement and text of the German-Italian-Japanese Three Power Pact, IMT document PS-2643, page ' +
+      '1219 of the trial — in the Nuremberg Trials Document Viewer of the Harvard Law School Library.',
+    publisher:
+      'Harvard Law School Library, Nuremberg Trials Project',
+    url:
+      'https://nuremberg.law.harvard.edu/documents/1159-announcement-and-text-of-the-german-italian-japanese?mode=text',
+    usedFor:
+      'The same pact as an exhibit of the postwar trial, in a second translation and from a second ' +
+      'archive, so neither the day nor the articles rest on a single reprint. The archive’s own note ' +
+      'supplies three dates where one is printed here — signed 27 September, announced by Ribbentrop 25 ' +
+      'November, published 28 November 1940 — and records that the Japanese representative who signed it ' +
+      'is not named on the document.',
+  },
+  {
+    citation:
+      '“Tripartite Pact”, _Wikipedia_.',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Tripartite_Pact',
+    usedFor:
+      'The pact as an encyclopaedia reads it, and the page that carries the accessions with their days: ' +
+      'Hungary on 20 November 1940, Romania on the 23rd, Slovakia on the 24th, Bulgaria on 1 March 1941 ' +
+      'and Yugoslavia on 25 March, with the coup in Belgrade two days after the Yugoslav signing, the ' +
+      'Croatian accession in June 1941, the protocol of 11 December 1941, and the Sofia ratification by ' +
+      '140 votes to 20.',
+  },
+  {
+    citation:
+      'Hungary, Romania and Slovakia join the Tripartite Pact (20 November 1940), TheSecondWar.pl.',
+    publisher:
+      'TheSecondWar.pl',
+    url:
+      'https://thesecondwar.pl/en/hungary-romania-and-slovakia-join-the-tripartite-pact',
+    usedFor:
+      'The three accessions of November 1940: Hungary signed in the Belvedere in Vienna on 20 November, ' +
+      'Romania in Berlin on the 23rd and Slovakia on the 24th, dates the site says are confirmed by the ' +
+      'protocols and by German diplomatic documents. It lists what Hungary regained, southern Slovakia ' +
+      'from the First Vienna Award of November 1938 among it, which is where this atlas takes that award’s ' +
+      'month.',
+  },
+  {
+    citation:
+      'Bulgaria joins the Tripartite Pact (1 March 1941), TheSecondWar.pl.',
+    publisher:
+      'TheSecondWar.pl',
+    url:
+      'https://thesecondwar.pl/en/bulgaria-joins-the-tripartite-pact',
+    usedFor:
+      'The Bulgarian accession: 1 March 1941 in the Belvedere in Vienna, where the Prime Minister signed ' +
+      'the protocol with Ribbentrop, Ciano and the Japanese ambassador, making Bulgaria the seventh ' +
+      'member; the hour of a quarter past one, given on the authority of the Regional History Museum in ' +
+      'Sofia, the only such authority reached here; and the ratification on 2 March by 140 votes to 20, ' +
+      'after the government prevented a debate.',
+  },
+  {
+    citation:
+      'Pact between the Axis powers barring a separate peace with the United States or Great Britain, 11 ' +
+      'December 1941, with the protocol to the Tripartite Pact — published in the Avalon Project at the ' +
+      'Yale Law School.',
+    publisher:
+      'Avalon Project, Lillian Goldman Law Library, Yale Law School',
+    url:
+      'https://avalon.law.yale.edu/wwii/tripart.asp',
+    usedFor:
+      'The protocol of 11 December 1941 which turned the defensive alliance of 1940 into a joint war ' +
+      'against America: the three powers agreed to conduct jointly a war imposed on them by the United ' +
+      'States and England until the end of hostilities, and forbade either to conclude an armistice or ' +
+      'peace without complete and reciprocal agreement. The fourth article keeps it in force for the ' +
+      'duration of the pact of 27 September 1940.',
+  },
+  {
+    citation:
+      'Agreement between the United Kingdom and the Union of Soviet Socialist Republics, 12 July 1941 — ' +
+      'published in the Avalon Project at the Yale Law School.',
+    publisher:
+      'Avalon Project, Lillian Goldman Law Library, Yale Law School',
+    url:
+      'https://avalon.law.yale.edu/wwii/brsov41.asp',
+    usedFor:
+      'The agreement of 12 July 1941 itself, two clauses and no more: mutual assistance and support of all ' +
+      'kinds in the present war against Hitlerite Germany, and no armistice or peace except by mutual ' +
+      'agreement. Signed by Cripps for Britain and Molotov for the Soviet Union, and dated on its face ' +
+      'Moscow, the twelfth of July 1941. There is no secret protocol in this copy.',
+  },
+  {
+    citation:
+      '“Anglo-Soviet Agreement”, _Wikipedia_.',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Anglo-Soviet_Agreement',
+    usedFor:
+      'The agreement’s shape and one consequence: signed on 12 July 1941 by Cripps and Molotov, it did not ' +
+      'require ratification and was to be valid until the end of the war against Nazi Germany; three weeks ' +
+      'of difficult negotiations preceded it. The two clauses appear here in the same words as in the ' +
+      'document itself. It records the Arctic convoys beginning the following month, and the invasion of ' +
+      'Iran in the same month.',
+  },
+  {
+    citation:
+      'Lend-Lease for the USSR (30 October 1941), TheSecondWar.pl.',
+    publisher:
+      'TheSecondWar.pl',
+    url:
+      'https://thesecondwar.pl/en/lend-lease-for-the-ussr',
+    usedFor:
+      'The supply story on the other side of the alliance, and a second publisher for the day of the ' +
+      'agreement: Cripps and Molotov signing in the Kremlin on 12 July 1941, mutual help, no separate ' +
+      'peace. It has the Moscow conference, the delegations arriving on 28 September 1941, and the ' +
+      'protocol signed on 1 October by Beaverbrook, Harriman and Molotov — the first Moscow protocol, ' +
+      'covering October 1941 to June 1942.',
+  },
+  {
+    citation:
+      '“Moscow Conference (1941)”, _Wikipedia_.',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Moscow_Conference_(1941)',
+    usedFor:
+      'The conference that turned the July agreement into a supply programme: the delegates flew in on 28 ' +
+      'September 1941 and the first protocol was signed on 1 October, running to June 1942 and promising ' +
+      '400 aircraft, 500 tanks and 10,000 trucks a month. It dates the conference 29 September to 1 ' +
+      'October, a day later at the start than the publishers of the delegations’ arrival give.',
+  },
+  {
+    citation:
+      'Foreign Relations of the United States, 1941, Volume I, Document 798: the President’s Special ' +
+      'Representative (Harriman) to President Roosevelt, London, 29 October 1941 — Office of the ' +
+      'Historian, US Department of State.',
+    publisher:
+      'Office of the Historian, US Department of State',
+    url:
+      'https://history.state.gov/historicaldocuments/frus1941v01/d798',
+    usedFor:
+      'The American official record, from the man who signed for the United States: the American and ' +
+      'British missions arrived in Moscow on September 28th, and the attached protocol was signed as of ' +
+      'October 1, 1941. The protocol’s own text, the page notes, is printed in the State Department’s ' +
+      'volume Soviet Supply Protocols. A despatch rather than a history, and a second publisher for both ' +
+      'the arrival and the signature.',
+  },
+  {
+    citation:
+      'Strategic Planning for Coalition Warfare, 1941-1942, chapter 3, by Louis A. Morton, United States ' +
+      'Army in World War II — published by the HyperWar Foundation.',
+    publisher:
+      'Louis Morton, Strategic Planning for Coalition Warfare 1941–1942, US Army in World War II (HyperWar)',
+    url:
+      'https://www.ibiblio.org/hyperwar/USA/USA-WD-Strategic1/USA-WD-Strategic1-3.html',
+    usedFor:
+      'The US Army’s official history of the same conference, and a third publisher for the day of the ' +
+      'protocol: the munitions agreement reached at Moscow was incorporated in the first Moscow protocol, ' +
+      'signed by Harriman, Beaverbrook and Molotov on 1 October 1941, and endorsed by Roosevelt and Stalin ' +
+      'a month later. It carries the American planning judgment of summer 1941 on how long the Soviet ' +
+      'Union would last.',
+  },
+  {
+    citation:
+      'Twenty-Year Mutual Assistance Agreement between the United Kingdom and the Union of Soviet ' +
+      'Socialist Republics, 26 May 1942 — published in the Avalon Project at the Yale Law School.',
+    publisher:
+      'Avalon Project, Lillian Goldman Law Library, Yale Law School',
+    url:
+      'https://avalon.law.yale.edu/wwii/brsov42.asp',
+    usedFor:
+      'The treaty that replaced the July agreement, signed at London and printed with its full powers — ' +
+      'Eden for Britain, Molotov for the Soviet Union. It binds the two governments to military and other ' +
+      'aid in the common war, forbids a separate peace, and provides that if no postwar settlement is ' +
+      'adopted the treaty shall remain in force for twenty years. The day of signature, 26 May 1942, is ' +
+      'printed on the document twice over.',
+  },
+  {
+    citation:
+      'Agreement of Mutual Assistance between the United Kingdom and Poland, London, 25 August 1939, No. ' +
+      '19 of the British War Blue Book (Cmd 6106, HMSO 1939), published by the Avalon Project at the Yale ' +
+      'Law School.',
+    publisher:
+      'British War Blue Book (Cmd 6106, HMSO 1939) via The Avalon Project, Yale Law School',
+    url:
+      'https://avalon.law.yale.edu/wwii/blbk19.asp',
+    usedFor:
+      'The British-Polish treaty of mutual assistance of 25 August 1939, printed in full with its exchange ' +
+      'of notes under its own heading, signed for Britain by Halifax and for Poland by Count Edward ' +
+      'Raczynski. A second publisher for that day, written in American order, August 25, where other ' +
+      'publishers write 25 August: the same day, differently ordered.',
+  },
+  {
+    citation:
+      '“La drôle de guerre 39-40”, Chemins de memoire, the site of the Ministry of the Armed Forces and of ' +
+      'the National Memory Secretary of State (Government of France), read at its Internet Archive capture ' +
+      'of 12 August 2026.',
+    publisher:
+      'Chemins de memoire, Ministere des Armees (Government of France), via the Internet Archive Wayback ' +
+      'Machine',
+    url:
+      'https://web.archive.org/web/20260812081113/https://www.cheminsdememoire.gouv.fr/fr/la-drole-de-guerre-39-40',
+    usedFor:
+      'The French ministry’s own account of the campaign its troops had just fought, in French, and a ' +
+      'second publisher for the day the withdrawal was ordered: the units brought back behind the Maginot ' +
+      'Line on 4 October. The same page puts the cost of the Sarre operation at about 2,000 French ' +
+      'soldiers killed, wounded or sick, a figure this atlas does not print because no other publisher ' +
+      'reached here gives it.',
+  },
+  {
+    citation:
+      '“Twenty-Year Mutual Assistance Agreement (May 26, 1942)”, Seventeen Moments in Soviet History, ' +
+      'Michigan State University.',
+    publisher:
+      'Seventeen Moments in Soviet History, Michigan State University',
+    url:
+      'https://soviethistory.msu.edu/1943/strange-alliance/strange-alliance-texts/twenty-year-mutual-assistance-agreement',
+    usedFor:
+      'A university collection of the period’s documents which heads the treaty of 26 May 1942 with its ' +
+      'day and carries the clause it is quoted for: the agreement shall remain in force for twenty years ' +
+      'and thereafter until terminated as provided in article VIII. A second publisher for that day and ' +
+      'that clause, written in American order, May 26, where this atlas writes 26 May.',
   },];
 
 /** Figures that are genuinely disputed, shown so readers know the range. */
@@ -1417,4 +2070,184 @@ export const UNCERTAINTIES = [
       'ghetto itself. None of the sources consulted prints that. The figures of 11,000 and 20,000 that a ' +
       'keyword search finds in the material gathered here count Jews from other countries, and from Thrace ' +
       'and Macedonia, deported to Treblinka, not shootings in Warsaw. The claim has been removed.',
+  },  {
+    topic:
+      'The day Prague fell',
+    range:
+      'The German ambassador’s despatch of 15 March 1939 has the troops crossing the Czech frontier at six ' +
+      'o’clock that morning, the postwar judgement gives 15 March for the invasion and 16 March for the ' +
+      'proclamation of the protectorate, and the encyclopaedia has the occupation of the rest of the ' +
+      'country on 15 March. The New Zealand government’s second World War timeline prints “14 March: ' +
+      'German troops occupy Prague and the rest of Czechoslovakia”, and the meeting in Berlin at which ' +
+      'President Hacha was pressed began on the evening of 14 March. One publisher gives 14 March, so the ' +
+      'atlas says 15 March and records the other day here.',
+  },
+  {
+    topic:
+      'What the occupation gave the Wehrmacht',
+    range:
+      'One publisher describes inter-war Czechoslovakia as “a major manufacturer of machine guns, tanks, ' +
+      'and artillery, most of them assembled in the Škoda factory in Plzeň”, and prints the inventory a ' +
+      'Reichstag speech attributed to the occupation — 2,175 field cannons, 469 tanks, 500 anti-aircraft ' +
+      'artillery pieces and 43,000 machine guns among them — which that publisher says “would be ' +
+      'sufficient to arm about half of the then Wehrmacht”. No second publisher reached here prints any of ' +
+      'those figures, so none is given. No publisher says the works supplied a third of German ' +
+      'machine-tool capacity either, which is why that claim is not printed.',
+  },
+  {
+    topic:
+      'The day of the guarantee to Poland',
+    range:
+      'The guarantee is dated 31 March 1939 by the National Archives and the Prime Minister’s Office ' +
+      'together, by TheSecondWar.pl, and by the encyclopaedia, which adds that it was “formalized by the ' +
+      'British on 6 April 1939” and “not ratified until 4 September 1939 by the French”; the New Zealand ' +
+      'timeline has “31 March: United Kingdom and France guarantee Polish independence”, and the list of ' +
+      'documents in the postwar judgement entries the Prime Minister’s statement of that same day. One ' +
+      'museum page dates the guarantee 30 March 1939 and extends it to Greece and Romania. The atlas names ' +
+      '31 March and records here that one publisher has it a day earlier.',
+  },
+  {
+    topic:
+      'Which date the Memel treaty carries',
+    range:
+      'The German ultimatum bears the date 20 March 1939; Lithuania “accepted the ultimatum on 23 March ' +
+      '1939”, and “At 1:00 a.m. on 23 March 1939” the foreign ministers signed, another record having it ' +
+      '“around 1 a.m. on 23 March, although it was dated 22 March”; the document is signed “Berlin, March ' +
+      '22, 1939” and recorded as “effective 22 March 1939”. The same settlement is dated 20, 22 or 23 ' +
+      'March according to which act is counted. Two publishers print the hour of the signing; none prints ' +
+      'the hour the ultimatum itself was presented, and both say it was oral and carried no written ' +
+      'deadline, so no deadline is given. This atlas keeps 23 March, the day of signing.',
+  },
+  {
+    topic:
+      'Whether the seizure was Germany’s last acquisition before the war',
+    range:
+      'Two publishers print that the Klaipėda region was Germany’s last territorial acquisition before the ' +
+      'war, one of them adding that it was “the last to be gained without a single shot”. The atlas does ' +
+      'not make that claim. Danzig was still a Free City in March 1939 and was annexed when the war began, ' +
+      'and no source read here settles whether it counts, so the word last is left out.',
+  },
+  {
+    topic:
+      'The French deadline of 3 September 1939',
+    range:
+      'The Prime Minister’s statement to the Commons on 3 September 1939 says the French ambassador in ' +
+      'Berlin was making a similar démarche “accompanied also by a definite time limit” but gives no hour, ' +
+      'and the Cabinet Office historians have the French ambassador calling at midday and being kept ' +
+      'waiting while the new Soviet ambassador was presented. One publisher gives the French note a ' +
+      'deadline of 5 p.m., and no other source read here prints that hour, so the atlas keeps the French ' +
+      'démarche and drops the hour.',
+  },
+  {
+    topic:
+      'The hour of the British broadcast',
+    range:
+      'The ultimatum as read to the Commons required assurances “not later than 11 A.M., British Summer ' +
+      'Time” on 3 September 1939, and the broadcast that morning speaks of the undertaking expected “by 11 ' +
+      '0’clock”, so the hour named in the broadcast is the expiry of the ultimatum, not the time the ' +
+      'speech began. The Cabinet Office historians write that Chamberlain addressed the nation at 11.15 ' +
+      'a.m. UK time, a second publisher gives 11.15 a.m. as well, and the New Zealand government’s page ' +
+      'prints “11 a.m. British Summer Time” for the news itself. The atlas gives a quarter past eleven for ' +
+      'the broadcast and explains here why that is not the same hour as the one in the document.',
+  },
+  {
+    topic:
+      'The days the dominions declared war',
+    range:
+      'Australia, New Zealand and British India declared war on 3 September 1939, which two publishers ' +
+      'print, and Canada did so seven days later, which a Canadian and a New Zealand account both print. ' +
+      'South Africa is listed by one timeline under a heading with no day, and the publisher that gives ' +
+      'the dominions as a group says only that South Africa and Canada followed “in the next few days”. No ' +
+      'source read here gives a day for every dominion, so the atlas names the days it can corroborate and ' +
+      'says within the following week for the rest.',
+  },
+  {
+    topic:
+      'The dates of the Saar offensive',
+    range:
+      'One publisher gives the offensive in the Saar as “Sept. 7-16, 1939”, with the advance stopping ' +
+      'after some five miles and the forces taken back over the Rhine. A second gives 7 September as the ' +
+      'start, an advance of some eight kilometres to the outposts of the Siegfried Line, a retreat “behind ' +
+      'the Maginot Line” in October, and French troops in German territory again later that month. The ' +
+      'atlas keeps 7 September, which both print, and says the French withdrew in October, which only one ' +
+      'of them dates.',
+  },
+  {
+    topic:
+      'France’s share in the guarantees of 1939',
+    range:
+      'One account dates the Franco-Polish military protocol “On 19 May 1939 in Paris”, when Gamelin and ' +
+      'the Polish minister of military affairs signed the protocol that promised a French offensive, and ' +
+      'that is where the claim that France followed the British guarantee of Poland on 19 May comes from, ' +
+      'in one publisher’s words alone. The encyclopaedia account of the British declaration gives the ' +
+      'French ratification of the guarantee as 4 September 1939, the day after the war had begun. The two ' +
+      'accounts describe different documents, so the atlas names no French date for 1939.',
+  },
+  {
+    topic:
+      'The day of the division that ended Chamberlain’s government',
+    range:
+      'The debate is given as running “from 7 to 9 May 1940”, and as “For two days, from 7-9 May”, while ' +
+      'three accounts put it on 7 and 8 May — one printing that “The division took place at 11.00pm” on ' +
+      'the second of them, one carrying its own heading “8 May: second day, and division” with a third day ' +
+      'on 9 May, and one saying the Commons debated the Norwegian campaign “On 7–8 May”. Four publishers ' +
+      'put the division or the last sitting of the debate on 8 May. The result, 281 to 200, is printed by ' +
+      'three publishers, so the atlas gives the result and neither the day of the division nor the hour of ' +
+      'eleven at night.',
+  },
+  {
+    topic:
+      'How many of the government’s own members voted against it',
+    range:
+      'One account counts “Thirty-nine government MPs” who voted against the government and “between 30 ' +
+      'and 40 more” who attended the debate but abstained. Another counts “41 members who normally ' +
+      'supported the government” voting with the Opposition, with “an estimated 60 other Conservatives” ' +
+      'abstaining deliberately. The two are counting different things, so the atlas gives no number for ' +
+      'either and keeps only the majority of 81, which three publishers print.',
+  },
+  {
+    topic:
+      'Why Halifax declined the premiership',
+    range:
+      'The reason usually given — that “it was not possible to lead a government from the House of Lords, ' +
+      'instead of the Commons” — is printed by one publisher only, and no page reached here states the ' +
+      'rival explanation that Halifax withdrew because Chamberlain would not accept a war cabinet ' +
+      'excluding Lloyd George. What is corroborated is that the choice lay between Halifax and Churchill, ' +
+      'that Halifax ruled himself out, and that Chamberlain resigned on 10 May 1940 with Churchill ' +
+      'appointed in his place.',
+  },
+  {
+    topic:
+      'The Bulgarian days, and Yugoslavia’s',
+    range:
+      'Bulgaria’s accession is dated 1 March 1941 by two accounts, and one of them gives the hour of ' +
+      'signing as 1.35 in the afternoon, and the ratification by the National Assembly on 2 March as “140 ' +
+      'votes to 20” in one account and “by a vote of 140 to 20” in the other; the hour is printed by one ' +
+      'only. Yugoslavia’s signing on 25 March 1941 and the coup in Belgrade on 27 March are printed by one ' +
+      'account only. The atlas gives 1 March for Bulgaria, where two publishers agree, and no day at all ' +
+      'for Yugoslavia, and carries the single-sourced hour and the Yugoslav days here instead.',
+  },
+  {
+    topic:
+      'What the agreement of July 1941 said about frontiers',
+    range:
+      'The agreement of 12 July 1941 is two clauses on mutual assistance and no separate peace, and the ' +
+      'copy published by the Avalon Project carries no protocol of any kind. The recognition of the Soviet ' +
+      'frontiers of 1939-40 that is usually attached to this agreement is in a secret protocol, and no ' +
+      'copy of that protocol was reached here, so the atlas says nothing about the Baltic frontier beyond ' +
+      'that the question was left unresolved. What the frontier argument was about is visible in the other ' +
+      'direction in the treaty of 26 May 1942, which was signed instead.',
+  },
+  {
+    topic:
+      'The dates given in the account',
+    range:
+      'The First Protocol was signed on 1 October 1941, and four publishers print that day; the conference ' +
+      'opened with the delegations’ arrival on 28 September 1941, which three of them print, while the ' +
+      'encyclopaedia dates the conference 29 September to 1 October. The figures the protocol promised — ' +
+      '400 aircraft and 500 tanks a month — are printed by two publishers, 10,000 trucks by one, so the ' +
+      'atlas gives no figures. The treaty that replaced the agreement is dated 26 May 1942 on the document ' +
+      'itself and by a university collection, both writing the day in the American order. The later ' +
+      'conferences and the postwar frontier of Poland are the atlas’s own summary, and no source read here ' +
+      'gives their dates.',
   },];

@@ -182,6 +182,8 @@ export const EVENTS: WW2Event[] = [
     fronts: ['politics', 'eastern'],
     countries: ['Germany', 'Czechoslovakia', 'Slovakia', 'Hungary'],
     figures: ['hitler', 'hacha', 'tiso'],
+    note:
+      'The Prague entry is contested. Berlin, Prague and the postwar judgement all give 15 March 1939, and the German text of the 1939 Yellow Book has the frontier crossed “at six o’clock this morning” on 15 March, but the New Zealand government’s own second World War timeline prints “14 March: German troops occupy Prague”, and the Berlin meeting with President Hacha did begin in the evening of 14 March. The British foreign secretary told the House of Lords that “The German military occupation of Bohemia and Moravia began on the morning of the 15th March”, and that Mährisch-Ostrau and Vitkovice were “occupied by German S.S. detachments on the evening of the 14th March” while the Czech president was still on his way to Berlin: the earlier day belongs to the industrial borderland, and 15 March is kept for Prague. The hour of six o’clock is printed by that one German communiqué, and the day of the coerced signature is reported two ways — the encyclopaedia has the agreement made “the following day”, the 15th, after a meeting that began on the evening of the 14th — so no hour is given, and the meeting’s day is left here. The arms inheritance is named but not counted: one publisher calls Czechoslovakia the only large-scale arms maker in eastern Europe apart from the Soviet Union, names the Škoda works, and says the arsenal left there was enough to arm about half of the Wehrmacht; no second source reached here prints a figure for that haul, and none prints the share of German machine-tool capacity often quoted for it, so no figure appears in this atlas.',
     levels: {
       primary: {
         cause: 'Six months after Munich, Hitler broke his promise and took the rest of Czechoslovakia.',
@@ -189,14 +191,19 @@ export const EVENTS: WW2Event[] = [
         consequence: 'People in Britain and France realised that Hitler could not be trusted and began preparing seriously for war.',
       },
       secondary: {
-        cause: 'Hitler exploited Slovak separatism and a Hungarian ultimatum to finish off the rump state, summoning President Hacha to Berlin and threatening to bomb Prague.',
-        what: 'On 15 March German troops occupied Prague, and on the 16th Hitler proclaimed the "Protectorate of Bohemia and Moravia" from Prague Castle, while Tiso’s Slovak state became a German client and Hungary took Carpathian Ruthenia.',
-        consequence: 'The breach of Munich ended appeasement. Britain announced its guarantee of Poland on 31 March and France followed on 19 May, beginning the alliance system of 1939; France’s earlier treaty with Prague had been voided at Munich and was not honoured.',
+        cause:
+          'Hitler exploited Slovak separatism to finish off the rump state, and summoned President Hacha to Berlin to extract his agreement.',
+        what:
+          'On 15 March German troops occupied the rest of the country, and on the 16th the “Protectorate of Bohemia and Moravia” was proclaimed. Tiso’s Slovak state survived as a German client.',
+        consequence:
+          'The breach of Munich ended appeasement. Britain guaranteed Poland on 31 March 1939, beginning the alliance system of 1939.',
       },
       university: {
         cause: 'Economic pressure was a central motive: Hermann Goering’s Four Year Plan needed Skoda and the Czech industrial base, which was placed under direct Reich control.',
-        what: 'The Protectorate was administered by Reichsprotektor von Neurath under a nominal Czech government; Slovak independence was formalised on 14 March under German "protection".',
-        consequence: 'Germany gained roughly a third of its pre-war machine-tool capacity and a large arms stockpile, which fed the 1939-40 campaigns. The event is usually taken as the point at which appeasement collapsed into containment.',
+        what:
+          'The Protectorate was administered by Reichsprotektor von Neurath under a nominal Czech government; Slovak independence was formalised on 14 March under German “protection”.',
+        consequence:
+          'Germany gained the arms works and the arsenal of one of Europe’s great munition makers, though the figures some accounts give for that inheritance are printed by one publisher only, and none of them is stated here. The event is usually taken as the point at which appeasement collapsed into containment.',
       },
     },
   },
@@ -208,6 +215,8 @@ export const EVENTS: WW2Event[] = [
     kind: 'politics',
     fronts: ['politics'],
     countries: ['Germany', 'Lithuania'],
+    note:
+      'Two dates for one treaty, and a deadline that does not exist. Both publishers reached here say the demand of 20 March was oral: the encyclopaedia of the ultimatum has it “never set down in writing and did not include a formal deadline”, and “While a clear deadline was not given, Lithuania was told to make a speedy decision”; the other account has it “not put in writing and no deadline was set”. An hour for the presenting of the ultimatum, and a deadline of noon on 21 March, are printed by no source read here, and are inconsistent with both accounts, which place the meeting in Berlin rather than in Kaunas. What is printed is the hour of the signing: “At 1:00 a.m. on 23 March 1939”, the treaty being “effective 22 March 1939” and signed “Berlin, March 22, 1939”, where the other account gives “around 1 a.m. on 23 March, although it was dated 22 March”. so 20, 22 and 23 March all attach to one settlement, according to which act is counted, and this atlas keeps the day of signing, which both print. Two publishers call this the last territorial acquisition Germany made before the war, one adding that it was “the last to be gained without a single shot”; the claim is not made in this atlas, because Danzig was still a Free City in March 1939 and no source read here settles whether it counts. The diet election that gave the unified German list 25 of the 29 seats is printed by two accounts and its day, 11 December 1938, by one, so no day is given for it. The free zone in the port is printed by two accounts and its term of ninety-nine years by one. The convention of 1924 required the consent of Britain, France, Italy and Japan and none of them protested, on the one account that names them.',
     levels: {
       primary: {
         cause: 'The port of Memel had a mostly German-speaking population and Germany wanted it back.',
@@ -216,13 +225,17 @@ export const EVENTS: WW2Event[] = [
       },
       secondary: {
         cause: 'Since 1923 Lithuania had controlled the territory, which Germany had lost in 1919; after Prague fell, Lithuania could expect no help.',
-        what: 'A German ultimatum on 22 March forced cession; Hitler sailed into the port the next day.',
+        what:
+          'On 20 March 1939 Ribbentrop gave Lithuania’s foreign minister an oral ultimatum in Berlin demanding the return of the port, and Lithuania gave way; the treaty surrendering the region was signed in the early hours of 23 March, and German troops marched in.',
         consequence: 'Germany now threatened Poland from the north-west and could base warships and aircraft directly opposite the Polish coast.',
       },
       university: {
-        cause: 'Seizure of the Klaipeda region completed the revision of the eastern frontier set by the Treaty of Versailles and gave the Kriegsmarine ice-free Baltic ports that mattered to the planning of Operation Weserübung.',
-        what: 'The annexation followed the establishment of the Protectorate by eight days, demonstrating the accelerating tempo of German expansion.',
-        consequence: 'It sharpened Polish refusal to concede extraterritorial transit or return of the territory, and it became part of the German forward line for the 1941 campaign against the USSR.',
+        cause:
+          'Under the 1924 Klaipėda Convention the region was autonomous under Lithuanian sovereignty, and its diet election of 1938 returned the unified German list with 87 per cent of the vote and 25 of the 29 seats. On 20 March Ribbentrop received the Lithuanian foreign minister in Berlin, demanded the region’s return, and made plain that the army would have its say if Lithuania resisted; the demand was never put in writing and no deadline was set.',
+        what:
+          'Foreign Minister Urbšys was told in Berlin that the region had to come back at once and that force would follow if Lithuania resisted or German blood were shed; he signed the treaty of cession in the early hours of 23 March 1939, though the document is dated 22 March. Germany took the port that handled between 70 and 80 per cent of Lithuanian foreign trade, and Lithuania received a free zone in the port in return.',
+        consequence:
+          'The region lay to the north of East Prussia, and it was, in one account’s words, “the most menacing signal of all” for Poland: the question of whether Danzig would be next was being asked in Warsaw, London and Paris at the same time.',
       },
     },
   },
@@ -320,21 +333,28 @@ export const EVENTS: WW2Event[] = [
     fronts: ['politics', 'home'],
     countries: ['United Kingdom', 'France', 'Germany', 'Poland'],
     figures: ['chamberlain', 'daladier'],
+    note:
+      'The British broadcast is given as 11 a.m. by some accounts, but the Prime Minister’s own statement to the House of Commons that day sets the deadline at “11 A.M., British Summer Time, to-day 3rd September”, and the Cabinet historian’s account has Chamberlain addressing the nation “At Berlin time (11:15am UK time)”, while Chamberlain’s own broadcast that evening refers to the undertaking he had waited for “by 11 0’clock” — the hour is the expiry of the ultimatum, not the hour of the speech. France’s timed démarche is in the Commons statement, which gives it no hour; the figure of 5 p.m. for it is printed by a single publisher and by no other, and that publisher also dates the Saar offensive 7 September while another gives 7 to 16 September. The day the French came out of the Saar is in the French ministry’s own account as well as in TheSecondWar.pl’s, and the Anglo-Polish treaty of 25 August 1939 is printed in full in the British Blue Book, which dates it in its own way, August 25. For the dominions, no one source gives days for every one: India, Australia and New Zealand are printed on 3 September; Canada’s day is given twice over by two Canadian publishers, both of them official — the Canadian War Museum, for which “Canada had made its own separate declaration of war, exactly a week after Britain went to war”, and the Government of Canada’s own backgrounder, for which “Canada officially declared war when King George VI made the announcement on September 10” — while South Africa is listed by one timeline with a heading and no day, and another publisher says only that South Africa and Canada followed in the next few days. So no day is named beyond those two, and this atlas says within the following week instead. The guarantee to Poland is dated 31 March 1939 in the encyclopaedia’s account of the declaration, and 30 March in the Museum of the Prime Minister’s account of the May 1940 crisis, which has it covering Greece and Romania as well, so no date is named for it here. The British declaration’s bearing on the United States, and the neutrality of Italy and Japan, are not printed by any publisher reached here.',
     levels: {
       primary: {
-        cause: 'Britain and France had promised to protect Poland.',
+        cause:
+          'Britain and France had promised to protect Poland, and Germany invaded Poland on 1 September 1939.',
         what: 'When Germany did not withdraw its armies, Britain and France declared war on 3 September 1939.',
         consequence: 'The war that millions wanted to avoid had begun, but for months almost nothing happened on the Western Front.',
       },
       secondary: {
         cause: 'The Anglo-Polish treaty of 25 August 1939 obliged Britain to assist Poland if it were attacked; Hitler gambled that the Western powers would not fight.',
-        what: 'Neville Chamberlain broadcast the news of the British declaration at 11 a.m.; France followed later the same day after its own ultimatum expired.',
-        consequence: 'The French did launch a short probe into the Saar on 7 September but withdrew behind the Maginot Line on 4 October, beginning the "Phoney War" during which Germany finished off Poland.',
+        what:
+          'Chamberlain announced at 11.15 a.m. that Britain was at war. France’s ambassador in Berlin made a similar démarche, also with a deadline. Australia, New Zealand and British India the same day; South Africa and Canada within the following week.',
+        consequence:
+          'The French did launch a short probe into the Saar on 7 September but withdrew behind the Maginot Line on 4 October, beginning the “Phoney War” during which Germany finished off Poland.',
       },
       university: {
         cause: 'The declaration rested on a strategic calculation that a long war of economic strangling — naval blockade plus aerial bombing of German industry — would force collapse, an assumption that shaped French and British planning to 1940.',
-        what: 'Britain and France declared war on 3 September, Australia and New Zealand the same day, South Africa on 4 September and Canada on 10 September, each dominion exercising the treaty power it had gained under the Statute of Westminster (1931); the United States, Italy and Japan remained neutral.',
-        consequence: 'The failure to act in the west in September 1939, while the Luftwaffe and the bulk of the German field army were committed in Poland, is the most contested strategic "missed opportunity" of the war.',
+        what:
+          'The ultimatum expired at eleven o’clock British Summer Time with no German reply, and Chamberlain’s broadcast a quarter of an hour later told the nation that a state of war existed. France’s ambassador presented a démarche with a deadline of his own, and France’s own declaration is variously reported as taking effect in the afternoon of 3 September. Britain and France honoured their guarantee to Poland, which stipulated support if any European power attacked it; the dominions followed separately.',
+        consequence:
+          'The failure to act in the west in September 1939, while the Luftwaffe and the bulk of the German field army were committed in Poland, is the most contested strategic “missed opportunity” of the war.',
       },
     },
   },
@@ -489,21 +509,29 @@ export const EVENTS: WW2Event[] = [
     fronts: ['home', 'politics'],
     countries: ['United Kingdom'],
     figures: ['churchill', 'chamberlain', 'attlee'],
+    note:
+      'The span of the debate is contested, the result is not. The Hansard Society, which exists to study parliamentary procedure, gives it as “two days in the Commons Chamber” on “7 and 8 May 1940”, with Labour deciding “on the morning of Wednesday 8 May” to call a division, and “The division took place at 11.00pm”. The encyclopaedia has the debate “from 7 to 9 May 1940”, while its own section headings are “8 May: second day, and division” and “9 May: third day, and conclusion”, and under its heading for the division it prints “At 23:00, the Speaker rose to put the question”, which is the same hour the other publisher gives as 11.00pm. Its own article on the crisis of that spring says the Commons debated the Norwegian campaign “On 7–8 May”; TheSecondWar.pl likewise has the Commons calling the government to account “On 7–8 May 1940”, and the museum of the Prime Minister writes “For two days, from 7-9 May”. So two publishers put the division on the evening of 8 May, at eleven at night; this atlas gives neither, because what it records is the debate and its issue, and the map resolves by month. The result, 281 to 200, is printed by three publishers. The reduction of the majority to 81 is given by the encyclopaedia “its majority was reduced to 81”, by the same history site as “the Chamberlain government’s majority had fallen to 81”, and by the Prime Minister’s museum as “The government won by 81 votes”. The number of the government’s own members who voted against it is “Thirty-nine government MPs had voted against it, and between 30 and 40 more had attended the debate but abstained” in one account, and “41 members who normally supported the government” in another, with “an estimated 60 other Conservatives” abstaining; the two count different things, so no number is given for them. Halifax’s reason for declining the premiership — that “it was not possible to lead a government from the House of Lords, instead of the Commons” — is printed by one publisher only, and no page reached here states the rival view, that Halifax declined because Chamberlain would not accept a war cabinet that excluded Lloyd George.',
     levels: {
       primary: {
         cause: 'Many people in Britain were angry that the war had gone badly, especially the loss in Norway.',
-        what: 'Neville Chamberlain resigned and Winston Churchill became Prime Minister.',
+        what:
+          'Neville Chamberlain resigned, and Winston Churchill became Prime Minister on 10 May 1940.',
         consequence: 'Churchill promised to fight on and never give in, which cheered people up.',
       },
       secondary: {
-        cause: 'The Norway Debate of 7-9 May 1940 turned into a vote of no confidence in Chamberlain’s government, and it became impossible to govern with the Labour Party outside it.',
-        what: 'Chamberlain recommended Churchill over Lord Halifax as his successor because a peer could not lead the Commons effectively. Churchill formed a coalition with Labour and the Liberals.',
+        cause:
+          'The Norway Debate of 7 and 8 May 1940 turned into a vote of no confidence in Chamberlain’s government, and it became impossible to govern with the Labour Party outside it.',
+        what:
+          'Chamberlain recommended Churchill over Lord Halifax as his successor. Churchill formed a coalition with Labour and the Liberals.',
         consequence: 'Halifax became foreign secretary and Attlee entered the war cabinet as Lord Privy Seal; he became deputy prime minister only in February 1942. The war cabinet split over Italian mediation in late May, and Churchill’s refusal to open talks settled the issue of fighting on.',
       },
       university: {
-        cause: 'The ministry change is best read as a political realignment forced by the failure of the "Phoney War" strategy, not simply as the arrival of a hero.',
-        what: 'The crisis of 26-28 May, in which Halifax pressed for exploratory peace terms through Mussolini, produced the war-cabinet minutes of 27-28 May, in which Halifax’s proposal to explore terms through Mussolini was set aside.',
-        consequence: 'Churchill’s control of the language of the war — the "We shall fight on the beaches" speech of 4 June — turned the evacuation of Dunkirk into a political asset and established the rhetorical framework of Allied legitimacy.',
+        cause:
+          'The ministry change is best read as a political realignment forced by the failure of the “Phoney War” strategy, not simply as the arrival of a hero.',
+        what:
+          'The division at the end of the debate was not a defeat — the government won it 281 to 200 — but a majority of 81 in a take-down that should have been an acclamation was decisive, and so many of the government’s own members voted against it that its majority fell far below normal. Halifax withdrew from the succession; Chamberlain recommended Churchill, resigned on 10 May 1940, and Churchill was appointed in his place.',
+        consequence:
+          'Churchill’s control of the language of the war — the “We shall fight on the beaches” speech of 4 June — turned the evacuation of Dunkirk into a political asset and established the rhetorical framework of Allied legitimacy.',
       },
     },
   },
@@ -628,6 +656,8 @@ export const EVENTS: WW2Event[] = [
     fronts: ['politics'],
     countries: ['Germany', 'Italy', 'Japan'],
     figures: ['hitler', 'mussolini'],
+    note:
+      'The accessions are dated here rather than in the atlas text, which gives no days for them. Hungary on 20 November 1940, Romania on 23 November and Slovakia on 24 November are printed by two publishers, and one of them adds that “these dates are confirmed by the texts of the protocols and by German diplomatic documents”. Bulgaria on 1 March 1941 is printed by two publishers also, one of which gives the hour of the signing as 1.35 in the afternoon and the ratification in Sofia on 2 March as 140 votes to 20, a figure two accounts print. Yugoslavia signed on 25 March 1941 and was overthrown two days later in one account only, so no day is given for it. The copy of the text held at the Harvard Law School dates the three stages of publication: the pact was “signed on 27 September, announced by Ribbentrop on 25 November, and published on 28 November 1940”, and the day this atlas gives is the day of signature. No publisher reached here dates the exchange of ratifications, which is why none is given.',
     levels: {
       primary: {
         cause: 'Germany, Italy and Japan each had enemies and wanted to discourage other countries from joining in.',

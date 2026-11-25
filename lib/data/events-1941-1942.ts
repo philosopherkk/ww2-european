@@ -178,20 +178,25 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['politics'],
     countries: ['United Kingdom', 'Soviet Union'],
     figures: ['churchill', 'stalin', 'cripps'],
+    note:
+      'Two dates and no interval. The German invasion began on 22 June 1941 and the agreement was signed on 12 July, days several publishers print; any interval between them is arithmetic, so none is given here; two weeks is the arithmetic for neither count of the days between them. The agreement’s two clauses are printed alike by the document published by the Avalon Project and by the encyclopaedia, and the Avalon copy is signed “Moscow, the twelfth of July. nineteen hundred and forty-one”, while TheSecondWar.pl has Cripps and Molotov signing in the Kremlin. The encyclopaedia has the agreement valid until the end of the war against Nazi Germany; the document itself states no term, and the twenty years belong to the treaty that replaced it. The recognition of the Soviet frontiers so often attached to this agreement belongs to a secret protocol, and no copy of that protocol was reached here, so nothing is said about the Baltic frontier beyond that it was left unresolved. The supply protocol that followed came out of the conference which met in Moscow from 28 September to 1 October 1941 and was signed on 1 October by Beaverbrook, Harriman and Molotov, a day four publishers print; the monthly figures it promised are printed by two of them. The treaty that replaced the agreement, and the twenty-year clause in it, are dated 26 May 1942 on the document itself and by a university collection of the period’s documents, both writing it in the American order. The later conferences named above, and the postwar frontier settlement, are the atlas’s own summary, and no source read here gives their dates.',
     levels: {
       primary: {
         cause: 'Britain and the Soviet Union had distrusted each other, but both were now fighting Germany.',
-        what: 'Two weeks after the invasion, Britain promised the USSR all possible help.',
+        what:
+          'Britain and the Soviet Union agreed to give each other aid of every kind and to make no separate peace; the agreement was signed at Moscow on 12 July 1941, after the German invasion of the Soviet Union.',
         consequence: 'The two very different countries became allies for the rest of the war.',
       },
       secondary: {
-        cause: 'Churchill had said in 1939 that he would "never meet an Hitler to discuss anything"; when Germany attacked the USSR he said that “the danger with which we are confronted is not seriously increased” by Russia’s need to fight, and promised the USSR “whatever aid we can”.',
+        cause:
+          'Germany invaded the Soviet Union on 22 June 1941, and Britain had been at war with Germany since 3 September 1939. Each wanted what the other had: for Britain a partner that held the German army down in the east, for the Soviet Union a partner that would make no separate peace and could send supplies.',
         what: 'The Anglo-Soviet agreement of 12 July 1941, signed after Sir Stafford Cripps had arrived in Moscow as ambassador, bound neither side to make a separate peace.',
         consequence: 'It opened the way for Arctic convoys and, on 1 October 1941, for the First Protocol under Lend-Lease, the first agreed schedule of aid to the USSR, though the division of Poland and the Baltic frontiers remained unresolved.',
       },
       university: {
         cause: 'The alliance rested on a calculated asymmetry: Britain needed a continental ally to relieve pressure in 1941-42 and Stalin needed industrial supplies, while both sides deferred every political question.',
-        what: 'The borders question was deliberately left vague — Eden’s statement of December 1941 and the later British-French position that the 1939 Germano-Soviet frontier should be the basis of discussion.',
+        what:
+          'The agreement of 12 July 1941 is two clauses long: the two governments undertake to render each other “assistance and support of all kinds in the present war against Hitlerite Germany”, and to negotiate no armistice or peace “except by mutual agreement”. It was signed at Moscow by Cripps and Molotov. A treaty signed in London on 26 May 1942 replaced it and provides that, failing a postwar agreement, it “shall remain in force for a period of twenty years”.',
         consequence: 'The deferral set the agenda for Moscow (1942), Tehran (1943), Yalta (February 1945) and Potsdam, and it explains why the postwar frontier of Poland was settled by population transfer rather than negotiation.',
       },
     },
