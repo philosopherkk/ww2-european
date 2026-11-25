@@ -305,7 +305,15 @@ export const EVENTS_1917: WW1Event[] = [
     fronts: ['politics', 'naval'],
     countries: ['United States', 'Germany', 'United Kingdom', 'France', 'Mexico'],
     figures: ['wilson_us'],
-    note: 'The votes were 82 to 6 in the Senate on 2 April and 373 to 50 in the House on 6 April, with 6 and 8 members respectively not voting — a far larger majority than the anti-war movement of 1916 suggested. Germany’s offer to Mexico was examined by a Mexican military commission, which found the war unwinnable for Mexico on ordinary military grounds, so the telegram’s military content was worthless and its political content was everything. Zimmermann’s own public admission on 3 March that the text was genuine destroyed the forgery story that many Americans had hoped to believe. Historians still weigh two causes against each other, the resumption of submarine warfare and the telegram, and the 3 February date when Wilson laid the German submarine announcement before Congress makes it hard to argue that the text alone turned him.',
+    note: 'The votes were 82 to 6 in the Senate on 4 April and 373 to 50 in the House at about 3:12 a.m. on ' +
+      '6 April, with Wilson signing that same day — a far larger majority than the anti-war movement of 1916 ' +
+      'suggested. Germany’s offer to Mexico was examined by a Mexican military commission, which found the war ' +
+      'unwinnable for Mexico on ordinary military grounds, so the telegram’s military content was worthless ' +
+      'and its political content was everything. Zimmermann’s own public admission on 3 March that the text ' +
+      'was genuine destroyed the forgery story that many Americans had hoped to believe. Historians still ' +
+      'weigh two causes against each other, the resumption of submarine warfare and the telegram, and the ' +
+      '3 February date when Wilson laid the German submarine announcement before Congress makes it hard to ' +
+      'argue that the text alone turned him.',
     levels: {
       primary:
         {
@@ -321,9 +329,9 @@ export const EVENTS_1917: WW1Event[] = [
           what: 'The Zimmermann telegram of 17 January, intercepted and decoded by British Room 40, proposed ' +
             'an alliance with Mexico to recover Texas, Arizona and New Mexico; its text appeared in the ' +
             'American press on 1 March, and on 3 March Zimmermann admitted it was genuine. Wilson asked ' +
-            'Congress for a declaration of war on 2 April, which the Senate passed that day by 82 to 6; ' +
-            'the House followed on 6 April by 373 to 50, and Wilson signed at once. The declaration was ' +
-            'against Germany only, not its allies.',
+            'Congress for a declaration of war on 2 April; the Senate passed it on 4 April by 82 to 6; the ' +
+            'House followed at about 3:12 a.m. on 6 April by 373 to 50, and Wilson signed that day. The ' +
+            'declaration was against Germany only, not its allies.',
           consequence: 'America joined as a power at war rather than as an allied partner, with its own commander and its own flag on the Western Front. A mass army had to be raised, trained and shipped across an ocean patrolled by submarines, which meant that the decisive American effect in 1917 was economic and moral, and in 1918 military.',
         },
       university:
@@ -649,8 +657,8 @@ export const EVENTS_1917: WW1Event[] = [
         {
           cause: 'Greece had stayed out of the war, but its prime minister Eleftherios Venizelos wanted in on the Entente side, and the King, Constantine, who was married to the German Kaiser’s sister, refused.',
           what: 'Greece split, with a rival government in the north. In June 1917 French and British ships ' +
-            'blockaded Athens, and on 11 June Constantine went into exile. Venizelos took over, and ' +
-            'Greece declared war on the Central Powers at the end of June.',
+            'blockaded Athens, and on 11 June Constantine went into exile. Venizelos took over, and Greece declared war on the Central Powers soon after.' +
+            '',
           consequence: 'Greek soldiers, instead of fighting each other, went to the Macedonian front against Bulgaria. Greece came out of the war on the winning side, which changed the map of the Balkans.',
         },
       secondary:
@@ -1016,8 +1024,8 @@ export const EVENTS_1917: WW1Event[] = [
       'same page gives British losses as 2,700 out of 4,900 infantry engaged, 528 of them in the Nigerian ' +
       'Brigade, and prints von Lettow’s own figure of “some 1,500 men” with 519 losses for his side, ' +
       'while holding the German force engaged to “not fewer than 2,800”. No other publisher in this ' +
-      'atlas’s reach gives that day-by-day sequence or any of those figures, so they are kept in this ' +
-      'note and in the uncertainties rather than in the card’s text. The 1926 supplement is the same ' +
+      'atlas’s reach gives that day-by-day sequence or any of those figures, so they are recorded here and not in the prose above.' +
+      ' The 1926 supplement is the same ' +
       'house. That edition calls the fighting the Mahiwa–Nyango battle and puts Mahiwa about two miles ' +
       'from Nyango; some British accounts call it the action of Nyangao. The Museum’s own East Africa ' +
       'video dates a battle at Mahiwa to July 1917, which contradicts its timeline. This card is dated 15 ' +
@@ -1582,7 +1590,7 @@ export const EVENTS_1917: WW1Event[] = [
       university: {
         cause: 'The resolution is the best single measure of the collapse of the Bundestag majority’s wartime consensus: the parties that had voted war credits in 1914 now set conditions for continuing.',
         what: 'Its wording was deliberately vague about borders, and different parties read different things into it; the army treated the vote as evidence that civilians could not be trusted with strategy.',
-        consequence: 'The episode is central to the argument about Germany’s "silent dictatorship": the vote showed that parliament existed, and the dismissal of the chancellor showed where power lay.',
+        consequence: 'The episode is central to the argument about Germany’s “silent dictatorship”: the vote showed that parliament existed, and the dismissal of the chancellor showed where power lay.',
       },
     },
   },
@@ -1704,7 +1712,7 @@ export const EVENTS_1917: WW1Event[] = [
         consequence: 'The offer failed because it could not bridge the difference between a return to 1914 frontiers and the war aims each side now claimed; it nevertheless prepared the language of postwar internationalism.',
       },
       university: {
-        cause: 'The note matters less as a diplomatic event than as evidence of how early a "league of nations" solution was on the table, before either the Fourteen Points or the League Covenant.',
+        cause: 'The note matters less as a diplomatic event than as evidence of how early a “league of nations” solution was on the table, before either the Fourteen Points or the League Covenant.',
         what: 'The Central Powers welcomed it as a way to keep occupied territory as a bargaining counter, while Britain and France regarded that as rewarding aggression — a disagreement no formula could resolve in 1917.',
         consequence: 'Historians of the peace movement treat the failed note as one of the missed opportunities of 1917; it is a useful corrective to accounts that begin the history of the League only with Wilson.',
       },

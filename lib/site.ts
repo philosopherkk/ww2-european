@@ -151,7 +151,11 @@ export function campaignVisible(line: CampaignLine, monthKey: string): boolean {
  * would be a lie about a place where almost nobody advanced.
  */
 export function lineShowsProgress(line: CampaignLine): boolean {
-  return line.kind !== 'front';
+  /* A ring puts the line at a place on a date. That is a claim the sources print
+   * for an army advancing on ground; for a route at sea or a track in the air the
+   * sources print the day of the action, not a position half-way between ports, so
+   * those domains get no ring. */
+  return line.kind !== 'front' && lineDomainOf(line) === 'land';
 }
 
 export type LineKind = NonNullable<CampaignLine['kind']>;
@@ -183,6 +187,95 @@ export const LINE_KIND_META: Record<
 /** The kind a line is drawn as, with 'advance' as the default for older entries. */
 export const lineKindOf = (line: CampaignLine): LineKind =>
   line.kind === 'front' ? 'front' : 'advance';
+
+export type LineDomain = NonNullable<CampaignLine['domain']>;
+
+/**
+ * How each element is drawn. A line's colour still comes from `side` and its
+ * meaning still comes from `kind`; the domain changes only the dash and the row
+ * the Key prints, so a route at sea is still an advance or a held line in every
+ * other respect.
+ *
+ * The dashes were chosen by measuring them on screen, not by eye. At the World
+ * extent a whole line is a handful of pixels: Albion’s four points are 27 px in
+ * the Europe view at 1440x900 and 4 px at the World extent there, and 27 px and
+ * 2 px on a 390x844 phone. So the pattern has to start with a mark that lands
+ * inside the first few pixels — a 1 px dash followed by an 11 px gap paints
+ * nothing at all on a short line — and every gap has to stay wider than its dash,
+ * or a route at sea reads as one continuous line under the coast. The measured
+ * figures are in audit/lines-domain/DONE.md; the sea and air dashes are the same
+ * strings on the sister site so a reader who follows the month link from one war
+ * to the other sees the same marks.
+ */
+export const LINE_DOMAIN_META: Record<
+  LineDomain,
+  { label: string; dash?: string; tooltip: string; caveat: string }
+> = {
+  land: {
+    label: 'on land',
+    // No dash of its own: a land line keeps the dash of its kind, so the
+    // advance/front distinction carries on working.
+    tooltip: 'Schematic axis through named places; the ring is an interpolated position by date.',
+    caveat:
+      'This is a schematic axis of advance through named places, not a surveyed daily front ' +
+      'line. The ring marks an interpolated position along that axis by date, not a documented ' +
+      'map reference for that morning. Event pins sit on the named place nearest the event, not ' +
+      'on a surveyed grid reference.',
+  },
+  sea: {
+    // Used as the noun in two places: the popup header
+    // ("Central Powers · route at sea") and the Key row.
+    label: 'route at sea',
+    dash: '2 7',
+    tooltip: 'Schematic route at sea through named ports; no ring is drawn on a ship’s route.',
+    caveat:
+      'This is a ship’s or convoy’s route between the named ports it used, not a surveyed track, a ' +
+      'patrol area or a swept lane. No ring is drawn along it: a ship was either at its port or on ' +
+      'its way, and no source gives its position for a given morning. Event pins sit on the named ' +
+      'place nearest the event, not on a surveyed grid reference.',
+  },
+  air: {
+    label: 'track in the air',
+    dash: '2 4 8 4',
+    tooltip: 'Schematic track in the air through named places; no ring is drawn on a route flown.',
+    caveat:
+      'This is the route flown, through the places the aircraft crossed — not an area it bombed and not ' +
+      'a surveyed track. No ring is drawn along it: this marks ground a raid crossed or ' +
+      'paratroopers were dropped on, not ground anybody held on that morning. Event pins sit on ' +
+      'the named place nearest the event, not on a surveyed grid reference.',
+  },
+};
+
+/** The element a line crosses, with 'land' as the default for older entries. */
+export const lineDomainOf = (line: CampaignLine): LineDomain => line.domain ?? 'land';
+
+/**
+ * The dash a line is drawn with: a sea or air line takes the domain dash, and a
+ * land line keeps the dash of its kind.
+ */
+export function lineDashOf(line: CampaignLine): string | undefined {
+  const domain = LINE_DOMAIN_META[lineDomainOf(line)];
+  return domain.dash ?? LINE_KIND_META[lineKindOf(line)].dash;
+}
+
+/**
+ * The class a line belongs to in the Key. A land line is classed by its kind, so
+ * the advance/front rows are unchanged; sea and air are classes of their own,
+ * because a route to sea is neither an axis of advance nor a line held.
+ */
+export type LineClass = LineKind | LineDomain;
+
+export const LINE_CLASS_ORDER: LineClass[] = ['advance', 'front', 'sea', 'air'];
+
+export function lineClassOf(line: CampaignLine): LineClass {
+  const domain = lineDomainOf(line);
+  return domain === 'land' ? lineKindOf(line) : domain;
+}
+
+/** Label and dash for a Key row, whichever way the class was decided. */
+export function lineClassMeta(cls: LineClass): { label: string; dash?: string } {
+  return cls === 'sea' || cls === 'air' ? LINE_DOMAIN_META[cls] : LINE_KIND_META[cls as LineKind];
+}
 
 /* ------------------------------------------------------------------ *
  * Reading levels, fronts and event kinds
@@ -228,7 +321,10 @@ export const BLOC_META: Record<
     label: 'Entente and associated powers',
     color: '#1D4E89',
     blurb:
-      'Britain, France and Russia first, then Serbia, Belgium, Montenegro and Italy. Russia left the war after the revolution of 1917; the United States joined in April 1918 and brought the money and the manpower.',
+      'Britain, France and Russia first, with Serbia, Belgium and Montenegro at war in 1914 and Italy from ' +
+      '1915. Russia left the war after the revolution of 1917. The United States declared war on Germany on ' +
+      '6 April 1917, as an associated power rather than an ally; the mass army and much of the material ' +
+      'weight arrived in 1918.',
   },
   co_belligerent: {
     label: 'Joined later',

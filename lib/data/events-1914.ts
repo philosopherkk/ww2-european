@@ -30,8 +30,13 @@ export const EVENTS_1914: WW1Event[] = [
     countries: ['Austria-Hungary', 'Serbia', 'Germany', 'Russia', 'France', 'United Kingdom'],
     figures: ['franz_joseph', 'conrad_hoetzendorf', 'grey', 'bethmann_hollweg'],
     note: 'Austria-Hungary debated its course on 7 July and delivered the ultimatum on 23 July, some three ' +
-      'weeks after the assassinations of 28 June; the deadline was 6 p.m. on 25 July and the Austrian ' +
-      'minister Giesl left Belgrade that day. Berlin called the Serbian reply a suitable basis for ' +
+      'weeks after the assassinations of 28 June; the deadline was 6 p.m. on Saturday 25 July, and the ' +
+      'Austrian minister Giesl broke off diplomatic relations and left Belgrade that evening. The day of the ' +
+      'break is taken from the Austro-Hungarian telegrams of 25 July: Giesl’s own message from Semlin says the ' +
+      'reply was handed in two minutes before six and that he broke off and departed, and Vienna’s circular ' +
+      'telegram of the same day records the same sequence. One published chronology dates the notification of ' +
+      'the break to 24 July, and that day is kept in the uncertainty list rather than dropped. Berlin called ' +
+      'the Serbian reply a suitable basis for ' +
       'negotiation, while Vienna said it was not enough. How far Germany pushed Austria-Hungary towards war ' +
       'is the central argument about the July Crisis, and much of the older literature rests on German ' +
       'documents published after 1918.',
@@ -41,10 +46,10 @@ export const EVENTS_1914: WW1Event[] = [
           'Sarajevo. Austria-Hungary blamed Serbia, a smaller country next door, and wanted to punish it. ' +
           'First it asked the German Empire to promise to stand by it.',
         what: 'On 23 July Austria-Hungary sent Serbia a list of harsh demands. Serbia had to answer by six ' +
-          'o’clock that Saturday evening, or Austria-Hungary would fight.',
+          'o’clock on Saturday 25 July, or Austria-Hungary would fight.',
         consequence: 'Serbia agreed to most of the demands but not all of them. Austria-Hungary said that was ' +
-          'not enough and broke off relations the next day. Serbia called up its army, and Russia began to ' +
-          'get ready to help Serbia.',
+          'not enough and broke off relations on the evening of 25 July. Serbia called up its army, and Russia ' +
+          'began to get ready to help Serbia.',
       },
       secondary: {
         cause: 'Archduke Franz Ferdinand, heir to the Austro-Hungarian throne, was assassinated in Sarajevo ' +
@@ -57,7 +62,8 @@ export const EVENTS_1914: WW1Event[] = [
           'Austrian officials be allowed to take part in the investigation inside Serbia, which would have ' +
           'cut across Serbian sovereignty. Serbia accepted nearly everything and offered arbitration on the ' +
           'rest.',
-        consequence: 'Austria-Hungary broke off diplomatic relations on 24 July and Serbia mobilised. Russia ' +
+        consequence: 'Austria-Hungary broke off diplomatic relations on the evening of 25 July, after the ' +
+          'Serbian reply and as Giesl left Belgrade, and Serbia mobilised. Russia ' +
           'put its army in a state of preparation on 25 July, which turned a quarrel between two Balkan ' +
           'states into a question for every great power. The British foreign secretary, Edward Grey, ' +
           'proposed mediation on the very day the ultimatum was delivered and was not taken up.',
@@ -65,7 +71,7 @@ export const EVENTS_1914: WW1Event[] = [
       university: {
         cause: 'The German backing for Vienna is usually called a blank cheque, but that reading rests on ' +
           'documents published in Germany after 1918, and the extent to which Berlin directed Austrian ' +
-          'policy is still argued. The sixteen-day delay between the assassination and the ultimatum is ' +
+          'policy is still argued. The twenty-five days between the assassination and the ultimatum are ' +
           'evidence used both ways: as proof of a deliberate plan for war, and as proof that Vienna was ' +
           'hesitant and was talked into it.',
         what: 'Whether the ultimatum was drafted to be rejected is unresolved. The assurance of 14 July that ' +
@@ -312,7 +318,7 @@ export const EVENTS_1914: WW1Event[] = [
           'above the Habsburg naval base in the Bay of Kotor. Within three days of the proclamation at ' +
           'Cetinje, the same government was at war with Montenegro.',
         what:
-          'Three documentary layers of different lineage carry this entry. The first is ' +
+          'Three documentary layers of different lineage stand behind this month. The first is ' +
           'Austro-Hungarian: Red Book No. 32, dated Vienna, 4 August 1914, quoted from the Carnegie ' +
           'Endowment’s 1916 edition. The second is American: Foreign Relations of the United ' +
           'States, 1914 Supplement, document 120, a telegram sent from the Embassy in Vienna on the ' +
@@ -583,8 +589,8 @@ export const EVENTS_1914: WW1Event[] = [
     countries: ['United Kingdom', 'France', 'Germany'],
     note: 'F. J. Moberly’s official history records that a letter of surrender was received on the morning of ' +
       '26 August and that the ceremony was arranged for the following day, which is why this card is ' +
-      'dated 26 August and states that the entry into Kamina is also dated the 27th. Encyclopaedia ' +
-      'Britannica’s article on Togo was read again for this note and gives none of these days: it says ' +
+      'dated 26 August and states that the entry into Kamina is also dated the 27th. Encyclopaedia Britannica’s article on Togo was read again here and gives none of these days:' +
+      ' it says ' +
       'only that the country was “occupied by British and French forces in 1914”, and no chronology page ' +
       'of that encyclopedia could be found. The invasion on 7 August and the capture on 27 August are ' +
       'therefore carried from the account first used for this card and are listed in the uncertainties.',
@@ -1670,7 +1676,7 @@ export const EVENTS_1914: WW1Event[] = [
     fronts: ['balkans'],
     countries: ['Serbia', 'Austria-Hungary'],
     figures: ['putnik', 'potiorek'],
-    note: 'Four accounts stand behind this month, and the note records where they differ. The Great War, the ' +
+    note: 'Four accounts stand behind this month, and they differ in the ways set out here. The Great War, the ' +
       'Serbian Ministry of Defence and Wikipedia all date the fighting from 16 November to 15 December ' +
       '1914, and all four have the last Austro-Hungarian troops out of Serbia by 15 December, so the ' +
       'card’s date is the best-supported day of the battle. The Austro-Hungarian occupation on 2 December ' +
@@ -1783,27 +1789,27 @@ export const EVENTS_1914: WW1Event[] = [
     date: '1914-08-12',
     precision: 'day',
     kind: 'invasion',
-    title: 'Austria-Hungary crosses the Drina and the Save',
+    title: 'Austria-Hungary crosses the Drina and the Sava',
     fronts: ['balkans'],
     countries: ['Serbia', 'Austria-Hungary'],
     figures: ['putnik', 'potiorek'],
     note: 'The crossings are agreed; almost everything inside the fortnight that followed is not, so the prose keeps to what both families print. Wikipedia has “On 12 August, Austro-Hungarian troops entered Serbia through the town of Loznica , crossing the Drina. There, and in the village of Lešnica”; the Times history has “The first ponetration of Austrian troops into Serbia was signalled from Loznitza on the morning of August 12”, the town taken by “This feeble defending force retired to the hillslying to the south-east of Shabatz, and the advance guard of the Austrian 4th Army occupied the town”. The two differ on the day the ridge fighting opened: Wikipedia has Putnik ordering the counterattack “On 15 August, Putnik ordered his forces to counterattack”, while the Times history puts the first real shock of the battle on the morning of 16 August, in its account of the 4th Army Corps’ descent. This site’s own line summary and strength row for the Serbian frontier print the Wikipedia version — the Cer fighting opening on the night of 15 August, the battle lasting 15–24 August, and Austro-Hungarian losses of 6,000–10,000 killed, 30,000 wounded and 4,500 prisoners — and those figures are single-family: “Serbian casualties after nearly ten days of fighting were 3,000–5,000 killed and 15,000 wounded. Those of the Austro-Hungarians were significantly higher” is Wikipedia alone, and no figure of either side is in this card’s prose. The same article is the only source here for the invading commander’s name, “The Austro-Hungarian invasion of Serbia was commanded by General Oskar Potiorek , the Austro-Hungarian Governor of Bosnia and Herzegovina”; the Times history indexes him but calls him in text the Austrian commander. The state of the regiments on the ridge is that history alone — “During the battle on the Tzer mountains many of the regiments, at an effective strength of over 4,000 men, possessed but 2,600 rifles” — and is not in the prose at all, which keeps to the shortage as both families print it. Two further specifics are in the Times history alone and are therefore attributed to it by name in the university level: the count of attempts to cross before the invasion, and its phrase calling this the first great victory registered by the Allies, which Wikipedia records independently. Wikipedia alone dates Šabac’s recovery, “On 24 August the Serbs re-entered Šabac, marking the end of the battle”, so the prose says the end of August.',
-    mapNote: 'The pin is at Loznica on the Drina, from which the first crossing was reported on 12 August 1914. The line traces that water frontier past Šabac, where the Save was crossed the same day, to Užice in the Serbian interior.',
+    mapNote: 'The pin is at Loznica on the Drina, from which the first crossing was reported on 12 August 1914. The line traces that water frontier past Šabac, where the Sava was crossed the same day, to Užice in the Serbian interior.',
     levels: {
       primary: {
-        cause: 'Austria-Hungary’s frontier with Serbia was a river frontier — the Save and the Danube on the north, the Drina on the west, some 340 miles of it — and the two armies stood facing each other across the water.',
-        what: 'Austro-Hungarian troops crossed the Drina and entered Serbia through Loznica on 12 August 1914. The same day another force crossed the Save north of Šabac, and the town was quickly taken.',
+        cause: 'Austria-Hungary’s frontier with Serbia was a river frontier — the Sava and the Danube on the north, the Drina on the west, some 340 miles of it — and the two armies stood facing each other across the water.',
+        what: 'Austro-Hungarian troops crossed the Drina and entered Serbia through Loznica on 12 August 1914. The same day another force crossed the Sava north of Šabac, and the town was quickly taken.',
         consequence: 'The invasion was thrown back over the rivers, and the frontier went back to the water line the atlas shows. Serbia had survived the first invasion, by an army that had only just fought out two Balkan Wars.',
       },
       secondary: {
         cause: 'Austria-Hungary’s quarrel with Serbia became war in July 1914, and from 29 July to 11 August its army bombarded the frontier and made repeated attempts to cross it. The Serbian General Staff knew that some 340 miles of river frontier could not be lined, so Putnik fell back on a traditional line of defence: the bulk of the army was grouped in the central uplands, where it could move quickly north or west, with strong detachments at Valjevo and Užice and outposts at the important points on the water.',
-        what: 'On 12 August 1914 Austro-Hungarian troops crossed the Drina and entered Serbia through Loznica. The same day another force crossed the Save north of Šabac and took the town, and within days the invaders had crossed over a wide front and were converging on Valjevo. Putnik had grouped the bulk of his army in the central uplands, ready to move north or west, and it now turned to meet them.',
+        what: 'On 12 August 1914 Austro-Hungarian troops crossed the Drina and entered Serbia through Loznica. The same day another force crossed the Sava north of Šabac and took the town, and within days the invaders had crossed over a wide front and were converging on Valjevo. Putnik had grouped the bulk of his army in the central uplands, ready to move north or west, and it now turned to meet them.',
         consequence: 'The invader had misjudged how quickly the Serbian armies could arrive. They came up in time and fought on the ridges above the Drina; the fighting ran on through the second half of August. Serbia had won what the war’s historian called the first great victory registered by the Allies, with an army that had only just fought out two Balkan Wars and was still short of rifles, and the frontier returned to the water line.',
       },
       university: {
         cause: 'The war in the Balkans opened on a water frontier of some 340 miles — the Danube and Save on the north, the Drina on the west — and the Times History records that it was an easily surmounted obstacle, both rivers running shallow and abounding in convenient places for a passage. The Serbian Staff knew the frontier could not be lined and grouped its armies centrally on a traditional line of defence, with strong detachments at Valjevo and Užice. The Times History further records that from 29 July to 11 August the invaders made eighteen attempts to cross, as feints to divert Serbian attention, and that the Austrian Staff centred its design on the Drina, hoping to end in the capture of Valjevo and Kragujevac and the dispersion of the Serbian army.',
-        what: 'The Times History signals the first penetration of Austrian troops into Serbia from Loznica on the morning of 12 August, where the Drina was crossed and the passers fortified a bridge-head, threw a pontoon bridge over the river, and put across the entire 13th Army Corps and two divisions of the 8th. On the same day the 4th Army Corps crossed the Save north of Šabac, where other troops crossed the Drina; the town was quickly taken, the defending force retiring to the hills south-east of it. Wikipedia’s account of the campaign gives the shortage that the Serbian army fought on: rifles were critically short, and full mobilisation was expected to leave some 50,000 men without equipment at all.',
-        consequence: 'The plan to disperse the Serbian army on its own frontier failed. The Times History records that the Austrian Staff counted on a Serbian army thinned and worn by two previous wars and materially unfit to fight, and misjudged the speed with which its armies reached the firing line; the fighting ran through the second half of August, and Serbia won what that history calls the first great victory registered by the Allies. Wikipedia, alone among the sources here, dates the recovery of Šabac to 24 August. The frontier went back to the Save and the Drina, and stayed there until the three-way invasion of October 1915.',
+        what: 'The Times History signals the first penetration of Austrian troops into Serbia from Loznica on the morning of 12 August, where the Drina was crossed and the passers fortified a bridge-head, threw a pontoon bridge over the river, and put across the entire 13th Army Corps and two divisions of the 8th. On the same day the 4th Army Corps crossed the Sava north of Šabac, where other troops crossed the Drina; the town was quickly taken, the defending force retiring to the hills south-east of it. Wikipedia’s account of the campaign gives the shortage that the Serbian army fought on: rifles were critically short, and full mobilisation was expected to leave some 50,000 men without equipment at all.',
+        consequence: 'The plan to disperse the Serbian army on its own frontier failed. The Times History records that the Austrian Staff counted on a Serbian army thinned and worn by two previous wars and materially unfit to fight, and misjudged the speed with which its armies reached the firing line; the fighting ran through the second half of August, and Serbia won what that history calls the first great victory registered by the Allies. Wikipedia, alone among the sources here, dates the recovery of Šabac to 24 August. The frontier went back to the Sava and the Drina, and stayed there until the three-way invasion of October 1915.',
       },
     },
   },

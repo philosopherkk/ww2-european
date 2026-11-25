@@ -1038,7 +1038,7 @@ export const EVENTS_1916: WW1Event[] = [
     fronts: ['politics', 'western'],
     countries: ['Germany'],
     figures: ['hindenburg', 'luddendorff'],
-    note: 'On 29 August 1916 Paul von Hindenburg became Chief of the General Staff and Erich Ludendorff First Quartermaster General, after Falkenhayn was removed following the failure at Verdun and the Romanian entry. The two men ran the army and much of the civilian war effort until 1918; historians call the arrangement a "silent dictatorship" because it was military power exercised through civilian institutions rather than a formal coup.',
+    note: 'On 29 August 1916 Paul von Hindenburg became Chief of the General Staff and Erich Ludendorff First Quartermaster General, after Falkenhayn was removed following the failure at Verdun and the Romanian entry. The two men ran the army and much of the civilian war effort until 1918; historians call the arrangement a “silent dictatorship” because it was military power exercised through civilian institutions rather than a formal coup.',
     levels: {
       primary: {
         cause: 'Germany’s commander had failed to win the war, and the generals wanted more control over how it was fought.',

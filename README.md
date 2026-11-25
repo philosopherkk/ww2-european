@@ -9,9 +9,9 @@ three times over for three reading levels.
 
 | Part | Contents |
 | --- | --- |
-| Map & timeline | turning-point panels explain every month in which the map colours change; 53 months on a slider, one boundary state coloured by who is at war with whom, solid lines for held fronts and dashed ones for offensives underway that month, click any country or line for detail |
-| Events | 102 events, each split into **why it happened**, **what happened** and **what followed** |
-| People | 72 biographies with 71 period photographs, from emperors and field marshals to pashas, prime ministers, a nurse and two revolutionaries |
+| Map & timeline | 53 months on a slider, one July 1914 geometry coloured by who is at war with whom, 42 campaign lines and 12 march lines (solid for held fronts, dashed for offensives underway that month), 16 turning-point panels for the months in which the colours change, click any country or line for detail |
+| Events | 158 events, each split into **why it happened**, **what happened** and **what followed** |
+| People | 72 biographies, each with a period photograph, from emperors and field marshals to pashas, prime ministers, a nurse and two revolutionaries |
 | Numbers | Population, mobilisation and casualty tables for 16 states, with ranges wherever historians disagree and a note on each figure saying whether influenza deaths are inside it or outside |
 | Sources & how to read | What the map data is, what it cannot show, and every source used |
 
@@ -27,9 +27,11 @@ the ones where the fighting genuinely was quiet.
 
 The theatre is Europe, plus the Ottoman, Caucasus, Persian and Mesopotamian campaigns, the Arab
 Revolt, the African campaigns and the naval war, because all of them were decided by European
-decisions and all of them changed the map this site draws. The Pacific, China and the Western
-Front's colonial recruiting outside those campaigns are out of scope; the boundary is stated in
-the Sources panel rather than left to the reader to infer.
+decisions and all of them changed the map this site draws. The 1914 Pacific and East Asian
+campaigns are inside that scope, because they were the German colonies taken by Japan and the
+Dominions in the first months of the war; the later China and Pacific war, the Western Front's
+colonial recruiting outside those campaigns, and the settlements of 1919-20 are out of scope. The
+boundary is stated in the Sources panel rather than left to the reader to infer.
 
 ## Running it
 
@@ -71,13 +73,18 @@ carry, Rhodes drawn inside the wrong polygon, and the smoothing tolerance.
 
 ## Deploy
 
-Live at **https://ww1-european.vercel.app** — production deployment
-`ww1-european-71mewde6v-basedkk`, built from commit `3e3e5cb` on the `ww1-european` branch.
+Live at **https://ww1-european.vercel.app** — production as of 25 November 2026 is commit
+`829c72c` on the `ww1-european` branch, in the Vercel project `ww1-european` (team `basedkk`).
 
-It is a separate Vercel project from the Second World War site and is not Git-connected, so
-updates go out with `npx vercel --prod --yes --name ww1-european` from a checkout of this
-branch. A month can be linked directly with `?m=YYYY-MM`, for example
-`https://ww1-european.vercel.app/?m=1916-07`.
+The project **is** Git-connected: a push to `ww1-european` builds and promotes production by
+itself, and the branch's own deployments are the ones that carry this domain. Do not promote a
+preview built from `main` to this domain — commits on `main` belong to the Second World War site,
+which is a different Vercel project, and aliasing one of its previews here would serve the wrong
+atlas. Two projects cannot share the alias either way.
+
+A month can be linked directly with `?m=YYYY-MM`, for example
+`https://ww1-european.vercel.app/?m=1916-07`; the app also writes the reading level and the open
+tab into the query string (`?m=1914-07&level=secondary&tab=map`).
 
 ## Sources
 

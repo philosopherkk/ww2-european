@@ -23,12 +23,17 @@ const MAP_LIMITS: { head: string; body: string }[] = [
   {
     head: 'One frontier state, drawn for every month',
     body:
-      'The outlines are those of July 1914 and they never move, in any of the 53 months. That is the single biggest thing wrong with this map, and it is deliberate: no freely licensed dataset redraws the Romanov, Habsburg, Hohenzollern and Ottoman empires month by month, and a invented frontier is worse than an absent one. So the map answers “who was at war with whom in this month, and where were the armies”, which is what the colours and the lines can honestly carry, and it leaves “what new state was proclaimed here in October 1918” to the events. Germany’s gains at Brest-Litovsk, the successor states of 1918 and the Allied advance into the Rhineland are all described there and not drawn here.',
+      'The outlines are those of July 1914 and they never move, in any of the 53 months. That is the single biggest thing wrong with this map, and it is deliberate: no freely licensed dataset redraws the Romanov, Habsburg, Hohenzollern and Ottoman empires month by month, and an invented frontier is worse than an absent one. So the map answers “who was at war with whom in this month, and where were the armies”, which is what the colours and the lines can honestly carry, and it leaves “what new state was proclaimed here in October 1918” to the events. Germany’s gains at Brest-Litovsk, the successor states of 1918 and the Allied advance into the Rhineland are all described there and not drawn here.',
   },
   {
     head: 'Two giant polygons swallow half the war’s politics',
     body:
-      'Russia is one shape running east to the 70th meridian and Austria-Hungary is one shape, so everything inside them is one colour. Poland, Finland, Ukraine, the Baltic states, Czechoslovakia and the South Slav state have no outline of their own in 1914 and get none when they appear in 1918. Ireland sits inside the United Kingdom; Trentino, Trieste and Dalmatia sit inside Austria-Hungary, and those three are precisely what the Treaty of London promised Italy in April 1915; Alsace-Lorraine sits inside Germany, as it had since 1871.',
+      'Russia is one shape running east to the 70th meridian and Austria-Hungary is one shape, so everything inside them is one colour. Poland, Finland, Ukraine, the Baltic states, Czechoslovakia and the South Slav state have no outline of their own in 1914 and get none when they appear in 1918. Ireland sits inside the United Kingdom; Trentino and Dalmatia sit inside Austria-Hungary, which is what the Treaty of London promised Italy in April 1915. Trieste does not: this map’s source draws the 1915–17 Isonzo front as the 1914 border, so Trieste and the towns beside it are painted Italian in every month, including July 1914, and that defect is stated below rather than smoothed over. Alsace-Lorraine sits inside Germany, as it had since 1871.',
+  },
+  {
+    head: 'The Italy–Austria-Hungary frontier is drawn on the Isonzo front',
+    body:
+      'In July 1914 the border ran east of Trieste: Trieste, Duino, Monfalcone, Cormons and Gradisca d’Isonzo were in Austria-Hungary. The source used for this map draws the fighting line of 1915–17 instead, which runs east of the 1914 frontier in that sector, so those places are painted Italian in every month, including the first, and the test point for Grado falls in the same source gap that swallows Venice. The line does not carry the same error everywhere: further up the Isonzo, Kobarid stays inside Austria-Hungary, and Görz does too at the point our test uses. So it is not one uniform shift that a nudge could repair, and this site will not invent a replacement frontier. Trento, Bolzano, Pula, Rijeka and Ljubljana are on the Habsburg side, as they should be.',
   },
   {
     head: 'A whole country is one colour, so occupation is invisible',
@@ -337,9 +342,12 @@ export default function SourcesPanel() {
           Period terms are quoted rather than used as our own voice, and numbers of victims are given
           as ranges where the evidence is contested — which in this war is very often. The site covers
           Europe and the empires drawn in from Europe: the Ottoman, Caucasus, Mesopotamian, Palestinian
-          and African campaigns are included. It does not cover the Pacific and East Asian war, the
-          postwar settlements of 1919-20, or the civil wars that followed, except where they bear on
-          the fighting here.
+          and African campaigns are included. So are the 1914 campaigns in the Pacific and East Asia
+          that followed Japanese and Dominion attacks on the German colonies — Qingdao, German Samoa,
+          New Guinea, the islands north of the equator and the cruiser warfare off Penang — because
+          they were decided by the same European alliances and ended inside the first five months.
+          What is not covered is the later China and Pacific war, the postwar settlements of 1919-20,
+          and the civil wars that followed, except where they bear on the fighting here.
         </p>
       </section>
       </div>

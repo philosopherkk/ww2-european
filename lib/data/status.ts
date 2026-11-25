@@ -109,7 +109,7 @@ export const STATUS_META: Record<TerritoryStatus, StatusMeta> = {
     color: '#948C9B',
     stroke: '#6C6472',
     legend:
-      'Austria-Hungary in November 1918. The Habsburg state had ceased to function: German-Austria and Hungary proclaimed republics on 12 and 16 November, and the Czechs, Slovanes, Croats and Poles had already proclaimed their own states in October. This map has no polygons for those successor states, so the old shape is shown in a colour that says plainly that the thing it names no longer exists.',
+      'Austria-Hungary in November 1918. The Habsburg state had ceased to function: German-Austria and Hungary proclaimed republics on 12 and 16 November, and the Czechs, Slovenes, Croats and Poles had already proclaimed their own states in October. This map has no polygons for those successor states, so the old shape is shown in a colour that says plainly that the thing it names no longer exists.',
   },
   neutral: {
     label: 'Neutral',
@@ -210,7 +210,9 @@ const TIMELINES: Record<string, [string, TerritoryStatus][]> = {
     // reader who wants the declarations rather than the first shots will find
     // the change one month later, and the October card says so.
     ['1914-10', 'central'],
-    ['1918-11', 'armistice'], // Mudros 30 October 1918; the Straits garrisoned from 1918-12
+    ['1918-10', 'armistice'], // Mudros signed 30 October 1918: October is the month the fighting
+    // stopped, so the colour changes there and not in November. The Straits were garrisoned from
+    // December, and the November snapshot note carries the rest of the armistices.
   ],
   Italy: [
     ['1914-07', 'at_peace'],
@@ -297,13 +299,13 @@ export function statusFor(snapshotDate: string, name: string): TerritoryStatus {
  */
 export const SNAPSHOT_NOTES: Record<string, string> = {
   '1914-07-31':
-    'The war has just begun: Austria-Hungary declared war on Serbia on 28 July after the ultimatum of 23 July, and Russia ordered general mobilisation on 31 July. Germany, France and Britain are still at peace as the month ends. The assassination of Archduke Franz Ferdinand on 28 June and the July Crisis are the events of this month.',
+    'The war has just begun: Austria-Hungary declared war on Serbia on 28 July after the ultimatum of 23 July, and Russia ordered general mobilisation on 31 July. Germany, France and Britain are still at peace as the month ends. The crisis follows the assassinations of Archduke Franz Ferdinand and Sophie in Sarajevo on 28 June, which fall before this timeline and are told on the July cards as the cause, not as a July event.',
   '1914-08-31':
-    'Five powers at war. Germany has occupied Luxembourg (2 August) and most of Belgium (from 4 August) on the way to Paris; the advance was stopped on the Marne on 5-12 September. Serbia has beaten off two Austro-Hungarian invasions, and Montenegro, its neighbour to the west, is at war with Austria-Hungary from this month and is shown here in the entente colour. This map cannot show the most important changes of the month, both of which fall inside the two giant polygons: the division of the Polish lands between the empires after the Russian retreat, and the Russian Second Army destroyed at Tannenberg on 26-30 August.',
+    'Five great powers at war. Germany has occupied Luxembourg (2 August) and most of Belgium (from 4 August) on the way to Paris; the advance is still under way as this month ends, and is stopped on the Marne in early September. Serbia has beaten off the Austro-Hungarian invasion of August at the Cer and pushed the invader back over the Drina, and Montenegro, its neighbour to the west, is at war with Austria-Hungary from this month and is shown here in the entente colour. This map cannot show the most important changes of the month, both of which fall inside the two giant polygons: the division of the Polish lands between the empires after the Russian retreat, and the Russian Second Army destroyed at Tannenberg on 26-30 August.',
   '1914-11-30':
     'The Ottoman Empire has joined the Central Powers (2-5 November), closing the Dardanelles to Russian grain and opening fronts in the Caucasus and at the Suez Canal, which is outside this map. Turkey’s entry turns the Black Sea into a lake of the Central Powers and brings the Straits question into the war. The Dodecanese and the Aegean are outside this map too.',
   '1915-05-31':
-    'Italy has declared war on Austria-Hungary (23 May, after the Treaty of London of 26 April) and on Germany a year later, in August 1916. The Italian frontier runs along the Isonzo, which is where twelve battles will be fought; the shapes of Trentino and Trieste inside the Habsburg polygon are what Italy was promised.',
+    'Italy has declared war on Austria-Hungary (23 May, after the Treaty of London of 26 April) and on Germany a year later, in August 1916. The fighting ran along the Isonzo. Trentino is inside the Habsburg polygon, as it was in 1914; Trieste is not, because this map’s source draws the later Isonzo front of 1915-17 as the 1914 border. That defect is stated in the Sources panel, and it is not a claim about what the Treaty of London promised.',
   '1915-11-30':
     'Serbia has been conquered: a Bulgarian army advancing west meets the Austro-Hungarians in the Morava valley, and the Serbian army retreats south-west into Albania through the winter snow. Montenegro takes the weight of the pursuit. At the same time a first Allied force has landed at Salonika, whose hinterland Serbia had ceded to Greece in 1913; the map cannot show that base.',
   '1916-08-31':
@@ -312,6 +314,8 @@ export const SNAPSHOT_NOTES: Record<string, string> = {
     'Russia is out of the war by armistice (15 December) and talks begin at Brest-Litovsk on 3 December; it is shown here in the separate-peace colour. Two facts the frozen geometry hides: Finland declared independence on 6 December and was recognised by Soviet Russia on 31 December, and the Poles, Ukrainians and South Slavs are all in the process of declaring states inside the Russian and Habsburg shapes.',
   '1918-03-31':
     'The Treaty of Brest-Litovsk (3 March) has taken Russia out of the war and handed Germany the Baltic coast, Ukraine’s grain and the Polish countryside, with 1 million men free for the west. The map still draws one unbroken Russian shape: what Brest-Litovsk gave up is not drawn here, only described in the events of the month.',
+  '1918-10-31':
+    'The Ottoman Empire leaves the Central Powers colour this month and takes the armistice colour: the Armistice of Mudros was signed on 30 October 1918, and the map changes in the month the fighting stopped, not in the month the next armistice was signed. Bulgaria has been in the same colour since 29 September. The Straits were to be occupied under the terms and were garrisoned from December, which is outside this timeline. Austria-Hungary is still at war this month; it signs at Villa Giusti on 3 November.',
   '1918-11-30':
     'The last month of this map. Bulgaria made an armistice on 29 September, the Ottoman Empire on 30 October, and Germany on 11 November; Austria-Hungary has signed at Villa Giusti (3 November) and its German and Hungarian halves have proclaimed republics, so the old shape is shown as dissolved. Luxembourg, occupied since August 1914, is shown in the neutral colour again: the armistice terms required the German troops to leave the invaded countries, with fifteen days allowed for the work. What this map does NOT show is the peace settlement: Poland, Czechoslovakia, the South Slav state, Finland and the Baltic states were created in these months and have no polygons here, and frontiers of 1919-20 (Saint-Germain, Trianon, Neuilly, Sèvres) lie beyond the timeline.',
 };

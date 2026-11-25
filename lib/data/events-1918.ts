@@ -1024,7 +1024,7 @@ export const EVENTS_1918: WW1Event[] = [
     fronts: ['middle_east'],
     countries: ['United Kingdom', 'Australia', 'India', 'Ottoman Empire'],
     figures: ['feisal'],
-    note: 'Three families for the day, and they disagree about the order of entry. Wikipedia’s Capture of Damascus prints the capture as 1 October 1918 and the 3rd Light Horse Brigade in the city at 05:00 that morning; History of War has the Turks losing control on 30 September, the first Arab Revolt troops entering on 1 October and the first of Allenby’s men on 2 October; The Times History of the War writes of 30 September to 1 October. Wikipedia also quotes Hughes that GHQ wanted Feisal’s force in first “even though the EEF had won the battle and reached Damascus before the Arabs”, so which troop was first is in this note and not in the prose. So is Daraa: the Megiddo account prints 27 September, the Damascus account heads the action 28 September, and this site’s line starts on the 27th. The rearguards at Kaukab and Kiswe on 30 September, which this card’s prose repeats, are on the Wikipedia account of the pursuit only.',
+    note: 'Three families for the day, and they disagree about the order of entry. Wikipedia’s Capture of Damascus prints the capture as 1 October 1918 and the 3rd Light Horse Brigade in the city at 05:00 that morning; History of War has the Turks losing control on 30 September, the first Arab Revolt troops entering on 1 October and the first of Allenby’s men on 2 October; The Times History of the War writes of 30 September to 1 October. Wikipedia also quotes Hughes that GHQ wanted Feisal’s force in first “even though the EEF had won the battle and reached Damascus before the Arabs”, so which troop was first is recorded here and not in the prose. So is Daraa: the Megiddo account prints 27 September, the Damascus account heads the action 28 September, and this site’s line starts on the 27th. The rearguards at Kaukab and Kiswe on 30 September, which this card’s prose repeats, are on the Wikipedia account of the pursuit only.',
     mapNote: 'The pin sits on Damascus at the northern end of Feisal’s march line, which starts at Daraa. This map has no Syria polygon: the whole Ottoman Empire is one block, still in the Central Powers colour in this month, so the fall of the city is a pin and a line and nothing else.',
     levels: {
       primary: {
@@ -1210,6 +1210,10 @@ export const EVENTS_1918: WW1Event[] = [
       'garrisons in the Hejaz, Yemen, Syria, Mesopotamia, Tripolitania and Cyrenaica, the occupation of ' +
       'the Straits, and the demobilisation of the army. The National Army Museum dates the same signature ' +
       'to 30 October 1918. This card is the armistice. It does not retell the Palestine campaign.',
+    mapNote:
+      'The Ottoman Empire takes the armistice colour in this month, the month of the signature on 30 ' +
+      'October, and not in November. The frontier shapes do not move, and the Straits named in the ' +
+      'terms are off the eastern edge of this map.',
     levels: {
       primary: {
         cause: 'The Ottoman Empire had been at war since 1914, and by the end of October 1918 its government ' +
@@ -1333,9 +1337,9 @@ export const EVENTS_1918: WW1Event[] = [
         what: 'The Germans had seventy-two hours to accept the Allied terms. The armistice was signed on 11 ' +
           'November 1918. German troops had to leave France, Belgium and Russia; the Allies were to hold ' +
           'on the Rhine, and Germany had to surrender its warships.',
-        consequence: 'Firing stopped in the west at 11:00 a.m. on 11 November 1918, six hours later. Erzberger ' +
-          'signed for Germany. The armistice was extended three times until the peace. Poland regained ' +
-          'independence then, and Piłsudski, freed from Magdeburg, became Chief of State in Warsaw.',
+        consequence: 'Firing stopped in the west at 11:00 a.m. on 11 November 1918, some hours after the signing. Erzberger ' +
+          'signed for Germany. It was extended three times until the peace. Poland regained ' +
+          'independence, and Piłsudski, freed from Magdeburg, became Chief of State in Warsaw.',
       },
       secondary: {
         cause: 'The Allied terms were drafted by Foch’s staff with British and American input, and reflected ' +
@@ -1364,7 +1368,9 @@ export const EVENTS_1918: WW1Event[] = [
       },
     },
     note:
-      'Signed at 5:00 a.m. on 11 November 1918 in a railway carriage in the Compiègne Forest; in force from 11:00 a.m. Paris time (11:00 UT). Surrender of matériel, as listed in the terms: 5,000 artillery pieces, 25,000 machine guns, 3,000 minenwerfer, 1,700 aircraft including all night bombers, 5,000 railway locomotives, 150,000 railway carriages and 5,000 road trucks, plus the warships; the German delegation corrected the demand for more submarines than the fleet possessed. Matthias Erzberger signed for Germany. The blockade was not relaxed by the agreement. Piłsudski had been imprisoned at Magdeburg from 1917 and was Chief of State from November 1918. Source checked: “Armistice of 11 November 1918”, “Józef Piłsudski”.',
+      'Signed in the early morning of 11 November 1918 in a railway carriage in the Compiègne Forest; the accounts ' +
+      'put the signatures anywhere between 5:00 and 5:45 a.m., and no minute is claimed here. In force ' +
+      'from 11:00 a.m. Paris time, with no conversion to Greenwich claimed here. Surrender of matériel, as listed in the terms: 5,000 artillery pieces, 25,000 machine guns, 3,000 minenwerfer, 1,700 aircraft including all night bombers, 5,000 railway locomotives, 150,000 railway carriages and 5,000 road trucks, plus the warships; the German delegation corrected the demand for more submarines than the fleet possessed. Matthias Erzberger signed for Germany. The blockade was not relaxed by the agreement. Piłsudski had been imprisoned at Magdeburg from 1917 and was Chief of State from November 1918. Source checked: “Armistice of 11 November 1918”, “Józef Piłsudski”.',
   },
   {
     /* Replaces the 4 November card drafted earlier in this session. That card quoted a
@@ -1454,8 +1460,8 @@ export const EVENTS_1918: WW1Event[] = [
       'outskirts of Mons at around 9:30 a.m. — that sentence carries a citation-needed flag ' +
       'in the article — and Private George Lawrence Price, the final Canadian and ' +
       'Commonwealth soldier to die, shot by a sniper at Ville-sur-Haine two minutes before ' +
-      'the armistice went into effect; Price’s sentence is footnoted there, but the note was ' +
-      'not followed up to a second family, so both men are recorded as what that article ' +
+      'the armistice went into effect; Price’s sentence is footnoted there, but it was not followed up to a second family' +
+      ', so both men are recorded as what that article ' +
       'reports rather than as proven. No figure is given for the German rearguard, because no reachable source ' +
       'prints one. This card replaces one drafted earlier in the same session and withdrawn ' +
       'before publication: it carried a sentence about the advance reaching the Meuse and ' +

@@ -152,6 +152,13 @@ export interface CampaignLine {
    * order and no progress marker is drawn.
    */
   kind?: 'advance' | 'front';
+  /**
+   * What moved. 'land' is the default and is the only value every line here
+   * has had so far, so leaving it out means land and changes nothing. 'sea' is
+   * a ship's or convoy's route; 'air' is a raid, bombing run or airborne drop.
+   * The dash changes with it, and so does the row the Key shows.
+   */
+  domain?: 'land' | 'sea' | 'air';
   /** Ordered waypoints as [lat, lng] of real places, each one geocoded. */
   path: [number, number][];
   summary: string;

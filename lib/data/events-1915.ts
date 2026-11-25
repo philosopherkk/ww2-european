@@ -484,12 +484,12 @@ export const EVENTS_1915: WW1Event[] = [
     levels: {
       primary: {
         cause: 'Italy had kept out of the war when it began, although it had allies in Germany and Austria-Hungary. Both sides then offered it land to join them.',
-        what: 'On 23 May Italy declared war on Austria-Hungary. Its army attacked across the river Isonzo into hills the Austrians held from above. The attacks did not break through.',
+        what: 'On 23 May Italy declared war on Austria-Hungary. In June its army attacked across the river Isonzo into hills the Austrians held from above, and the attacks did not break through.',
         consequence: 'A new front opened along mountains and river, and it became one of the bloodiest and least decisive places in the whole war.',
       },
       secondary: {
         cause: 'The secret Treaty of London on 26 April bought Italian neutrality’s end with promises of Trentino, the Julian March and Dalmatian concessions; the government of Salandra accepted it despite misgivings in parliament and the crown.',
-        what: 'War was declared on Austria-Hungary on 23 May. The commander Cadorna, with roughly two-to-one odds on the Isonzo, launched repeated frontal attacks across the river in June and July; the Austrian defences held, even when they had to use gas.',
+        what: 'War was declared on Austria-Hungary on 23 May. The commander Cadorna, with roughly two-to-one odds on the Isonzo, launched repeated frontal attacks across the river in June and July, and the Austrian defences held the high ground above the river.',
         consequence: 'Italy forced Austria-Hungary to fight a second long front at its weakest moment — but began an attrition over the Isonzo that cost both armies hundreds of thousands of men for miles of rock.',
       },
       university: {
@@ -1346,7 +1346,7 @@ export const EVENTS_1915: WW1Event[] = [
     mapNote: 'The pin is on the Salonika waterfront, where the first troops came ashore on 5 October 1915. The line runs north up the Vardar valley; its farthest vertex is at Negotino, while the line’s own summary names Krivolak for the crossing, some 30 kilometres away.',
     levels: {
       primary: {
-        cause: 'In October 1915 Austro-Hungarian and German armies attacked Serbia from the north, across the Danube and the Save, and the Bulgarian army attacked from the east and south. The help the Allies sent was two divisions taken from Gallipoli, and they went to Salonika.',
+        cause: 'In October 1915 Austro-Hungarian and German armies attacked Serbia from the north, across the Danube and the Sava, and the Bulgarian army attacked from the east and south. The help the Allies sent was two divisions taken from Gallipoli, and they went to Salonika.',
         what: 'French and British troops landed at Salonika on 5 October 1915, in a country whose prime minister and King stood on opposite sides over the war. The French and British force combined as the Army of the Orient, under the French general Sarrail.',
         consequence: 'The landing came too late to save Serbia. The Bulgarian army closed the road by which the Serbian army hoped to reach the Greek border and the port, and the expedition hardened into the front that took its name from the city.',
       },

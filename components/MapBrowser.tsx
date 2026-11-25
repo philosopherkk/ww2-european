@@ -24,12 +24,17 @@ import { REGION_BY_ID, type Region } from '@/lib/regions';
 import { PLACES } from '@/lib/data/places';
 import {
   campaignVisible,
+  LINE_CLASS_ORDER,
+  LINE_DOMAIN_META,
   LINE_KIND_META,
+  lineClassMeta,
+  lineClassOf,
+  lineDashOf,
+  lineDomainOf,
   lineKindOf,
   lineShowsProgress,
   longDate,
   nearestSnapshot,
-  type LineKind,
   SIDE_META,
 } from '@/lib/site';
 
@@ -202,18 +207,22 @@ export default function MapBrowser({
    * the pin vanishing under it. */
   const [hoverId, setHoverId] = useState<string | null>(null);
   const [openId, setOpenId] = useState<string | null>(null);
-  const leaveTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const [leaving, setLeaving] = useState(false);
   const enterLine = useCallback((id: string) => {
-    if (leaveTimer.current) clearTimeout(leaveTimer.current);
+    setLeaving(false);
     setHoverId(id);
   }, []);
   const leaveLine = useCallback(() => {
-    if (leaveTimer.current) clearTimeout(leaveTimer.current);
-    leaveTimer.current = setTimeout(() => setHoverId(null), 220);
+    setLeaving(true);
   }, []);
-  useEffect(() => () => {
-    if (leaveTimer.current) clearTimeout(leaveTimer.current);
-  }, []);
+  useEffect(() => {
+    if (!leaving) return;
+    const t = setTimeout(() => {
+      setHoverId(null);
+      setLeaving(false);
+    }, 220);
+    return () => clearTimeout(t);
+  }, [leaving]);
 
   /* A line popup is longer than the pinned phone map is tall, which pushed its
    * close button off the top of the screen; capped, it scrolls instead. The top
@@ -245,15 +254,16 @@ export default function MapBrowser({
     [territories]
   );
 
-  /* One legend entry per side and per kind of line actually on the map this
+  /* One legend entry per side and per class of line actually on the map this
      * month: a side that both holds a front and attacks somewhere needs both
-     * keys, or the reader cannot tell the solid line from the dashed one. */
+     * keys, or the reader cannot tell the solid line from the dashed one. A
+     * route at sea or a track in the air is a class of its own, and its row is
+     * the only thing telling the reader the dash they can see is not an army. */
   const legendLines = useMemo(() => {
     const present = new Set<string>();
-    for (const l of lines) present.add(`${l.side}|${lineKindOf(l)}`);
-    const kinds: LineKind[] = ['front', 'advance'];
+    for (const l of lines) present.add(`${l.side}|${lineClassOf(l)}`);
     return SIDE_ORDER.flatMap((side) =>
-      kinds.filter((kind) => present.has(`${side}|${kind}`)).map((kind) => ({ side, kind }))
+      LINE_CLASS_ORDER.filter((cls) => present.has(`${side}|${cls}`)).map((cls) => ({ side, cls }))
     );
   }, [lines]);
 
@@ -369,6 +379,7 @@ export default function MapBrowser({
           {lines.map((line) => {
             const side = SIDE_META[line.side];
             const kind = LINE_KIND_META[lineKindOf(line)];
+            const domain = LINE_DOMAIN_META[lineDomainOf(line)];
             const showsProgress = lineShowsProgress(line);
             const tip = pointAlong(line.path, progressThrough(line, monthKey));
             const active = activeIds.has(line.id);
@@ -395,7 +406,7 @@ export default function MapBrowser({
                     color: side.color,
                     weight: active ? kind.weight + 2.5 : kind.weight,
                     opacity: dimmed ? 0.3 : 0.9,
-                    dashArray: active ? undefined : kind.dash,
+                    dashArray: active ? undefined : lineDashOf(line),
                   }}
                 />
                 {/* A wide, invisible copy of the line carries the hover and the
@@ -423,7 +434,7 @@ export default function MapBrowser({
                       </span>
                     )}
                     <span className="mt-0.5 block text-[10px] font-normal text-stone-700">
-                      Schematic axis through named places; the ring is an interpolated position by date.
+                      {domain.tooltip}
                     </span>
                   </Tooltip>
                   <Popup autoPanPaddingTopLeft={[10, 52]} autoPanPaddingBottomRight={[10, 10]}>
@@ -436,7 +447,8 @@ export default function MapBrowser({
                         className="text-xs font-medium uppercase tracking-wide"
                         style={{ color: side.color }}
                       >
-                        {side.label} · {kind.label}
+                        {side.label} ·{' '}
+                        {lineDomainOf(line) === 'land' ? kind.label : domain.label}
                         {line.operation ? ` · ${line.operation}` : ''}
                       </p>
                       <p className="text-xs text-stone-600">
@@ -471,13 +483,13 @@ export default function MapBrowser({
                           {line.strength}
                         </p>
                       )}
-                      <p className="pt-1 text-xs text-stone-600">
-                        This is a schematic axis of advance through named places, not a surveyed daily
-                        front line. The ring marks an interpolated position along that axis by date,
-                        not a documented map reference for that morning. Event pins sit on the named
-                        place nearest the event, not on a surveyed grid reference.
-                      </p>
-                      <p className="text-xs text-stone-600">{kind.explanation}</p>
+                      <p className="pt-1 text-xs text-stone-600">{domain.caveat}</p>
+                      {/* The kind sentence explains the dash and the ring, so it only goes
+                          with a line that has one. A route at sea or a track in the air draws
+                          no ring, and its own caveat above already says so. */}
+                      {lineDomainOf(line) === 'land' && (
+                        <p className="text-xs text-stone-600">{kind.explanation}</p>
+                      )}
                     </div>
                   </Popup>
                 </Polyline>
@@ -580,8 +592,8 @@ export default function MapBrowser({
         </MapContainer>
 
         <div className="absolute right-2 top-2 z-[450] flex items-start gap-1.5 lg:hidden">
-          <span className="rounded-md border border-stone-300 bg-white/90 px-2 py-1 text-[11px] font-semibold leading-none text-stone-800 shadow-sm backdrop-blur">
-            Borders as of {snapshot.label}
+          <span className="max-w-[62%] rounded-md border border-stone-300 bg-white/90 px-2 py-1 text-right text-[11px] font-semibold leading-snug text-stone-800 shadow-sm backdrop-blur">
+            July 1914 borders · colours as of {snapshot.label}
           </span>
           {onToggleTall && (
             <button
@@ -626,8 +638,8 @@ export default function MapBrowser({
                       {STATUS_META[s].label}
                     </li>
                   ))}
-                {legendLines.map(({ side, kind }) => (
-                  <li key={`${side}-${kind}`} className="flex items-center gap-2 leading-tight">
+                {legendLines.map(({ side, cls }) => (
+                  <li key={`${side}-${cls}`} className="flex items-center gap-2 leading-tight">
                     <svg width="22" height="6" aria-hidden className="shrink-0">
                       <line
                         x1="0"
@@ -636,10 +648,10 @@ export default function MapBrowser({
                         y2="3"
                         stroke={SIDE_META[side].color}
                         strokeWidth="3"
-                        strokeDasharray={LINE_KIND_META[kind].dash}
+                        strokeDasharray={lineClassMeta(cls).dash}
                       />
                     </svg>
-                    {SIDE_META[side].label} · {LINE_KIND_META[kind].label}
+                    {SIDE_META[side].label} · {lineClassMeta(cls).label}
                   </li>
                 ))}
                 {showCampaigns && lines.length === 0 && (
@@ -676,8 +688,9 @@ export default function MapBrowser({
       <p className="text-xs leading-relaxed text-stone-600">
         The frontiers are those of July 1914 in every month and do not move; only each
         state&rsquo;s colour changes, recording who is at war and whose army holds the ground.
-        Fronts and arrows are schematic lines through named places. Select a country or a line
-        for details.
+        Fronts and arrows are schematic lines through named places. Grey place names come from
+        today&rsquo;s map and include countries that did not exist in 1914. Select a country or a
+        line for details.
       </p>
     </div>
   );

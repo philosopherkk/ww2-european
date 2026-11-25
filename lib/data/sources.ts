@@ -57,7 +57,7 @@ export const SOURCES: Source[] = [  {
     citation:
       'Statistics Branch, General Staff, United States War Department, “Military Casualties — World War — Estimated”, 25 February 1924',
     publisher:
-      'Statistics Branch, General Staff, War Department, Washington, 1924; the return is a printed table of two pages and no digital copy of it is online, so the address is the Library of Congress catalogue search that holds the record',
+      'Statistics Branch, General Staff, War Department, Washington, 1924. The return is a printed table of two pages; no digital copy of it could be reached here, so the address is the USMA Library’s own page at West Point, which does not itself print the table',
     url: 'https://www.usma.edu/library/',
     usedFor:
       'The comparative table of deaths by country behind most of the military columns: Germany 1,773,700, France 1,357,000, Italy 650,000, Russia 1,700,000, the United States 126,000, Japan 300. It counts battle deaths and deaths in captivity on the frontiers of 1914, which is where its German total falls short.',
@@ -567,10 +567,17 @@ export const SOURCES: Source[] = [  {
     usedFor: 'Operation Georgette on the Lys in April 1918: the objective of Ypres and the Channel ports of Calais, Dunkirk and Boulogne; the bombardment opening on the evening of 7 April and the Sixth Army attacking at dawn on the 9th with eight divisions; the Portuguese 2nd Division overrun on a front of about eleven kilometres and withdrawing towards Estaires, the British 40th Division to its north collapsing and falling back to the north, and the British 55th (West Lancashire) Division pulling back its northern brigade and holding the rest of its ground; the Fourth Army’s attack north of Armentières on 10 April against the British 19th Division and the taking of Messines; and the list of engagements with their dates, from Estaires on 9–11 April to the Scherpenberg on 29 April. It also prints the judgement that the offensive failed in its main objective to capture Hazebrouck. Its dates are the article’s own and are set against the Australian War Memorial table in the uncertainty entry for these battles.',
   },
   {
+    citation: '“Clock Changes in Paris, Paris, France 1918”, _Time and Date_',
+    publisher: 'Time and Date AS, Stavanger',
+    url: 'https://www.timeanddate.com/time/change/france/paris?year=1918',
+    usedFor:
+      'The clock behind the eleventh hour: this record of clock changes in the city of Paris in 1918 shows the clock moved forward one hour at 23:00 on Saturday, 9 March, 1918 and back again at 00:00 on Monday, 7 October, 1918. It is a time-zone record and not a history of the armistice, and it is used here for the clock changes it prints, nothing more.',
+  },
+  {
     citation: '“Armistice of 11 November 1918”, _Wikipedia_',
     publisher: 'Wikimedia Foundation',
     url: 'https://en.wikipedia.org/wiki/Armistice_of_11_November_1918',
-    usedFor: 'The last deaths of the war and the way the day is remembered: George Edwin Ellison of the 5th Royal Irish Lancers killed scouting on the outskirts of Mons at around 9:30 a.m., and Private George Lawrence Price, the final Canadian and Commonwealth soldier to die, shot by a sniper at Ville-sur-Haine two minutes before the armistice went into effect. Ellison’s sentence carries a citation-needed flag in the article and Price’s is footnoted to a source this site has not followed, so both are recorded on the card as what the article reports. It is also the only family reached for the place of the signature, the railway carriage in the Forest of Compiègne, and for the description of the occasion as the eleventh hour of the eleventh day of the eleventh month.',
+    usedFor: 'The last deaths of the war and the way the day is remembered: George Edwin Ellison of the 5th Royal Irish Lancers killed scouting on the outskirts of Mons at around 9:30 a.m., and Private George Lawrence Price, the final Canadian and Commonwealth soldier to die, shot by a sniper at Ville-sur-Haine two minutes before the armistice went into effect. Ellison’s sentence carries a citation-needed flag in the article and Price’s is footnoted to a source this site has not followed, so both are recorded on the card as what the article reports. It is also the only family reached for the place of the signature, the railway carriage in the Forest of Compiègne, for the description of the occasion as the eleventh hour of the eleventh day of the eleventh month, and for the spread of the hour of signature — that the signatures were made, depending on the source of information, between 5:00 a.m. and 5:45 a.m. — which is why the card gives no minute.',
   },
   {
     citation: '“Hundred Days Offensive”, _Wikipedia_',
@@ -935,6 +942,11 @@ export interface Uncertainty {
 
 export const UNCERTAINTIES: Uncertainty[] = [
   {
+    topic: 'The hour the armistice was signed',
+    range:
+      'The card prints no minute. The only account reached here that addresses the question says the signatures were made, depending on the source of information, between 5:00 a.m. and 5:45 a.m., and no second family was reached that narrows it. What is not in doubt is when it took effect: firing stopped in the west at 11:00 a.m. on 11 November, and that hour is given in Paris time alone. Time and Date, a time-zone record, shows the clock in Paris moved forward an hour at 23:00 on 9 March 1918 and back at 00:00 on 7 October, and no history reached here prints the standard offset that would convert the Paris hour to Greenwich, so the card makes no such conversion',
+  },
+  {
     topic: 'Armenian deaths, 1915–16',
     range:
       'The range is 800,000 to 1.5 million. The higher figure is the one carried by most genocide references; the lower is what the Armenian Patriarchate’s own inquiry of 1919 could document, and what the archive-based reconstruction of Edward Erickson comes closest to. Ronald Grigor Suny’s history of the genocide puts the toll near one million and treats the discrepancy between the estimates as a question of what the Ottoman records can bear rather than of good faith. The position of the Turkish state, that far fewer died and that the dead of both sides were lost to war, famine and disease, is set out on the card for 1915, and it is not the same claim as the denial that the deportations were ordered.',
@@ -1224,4 +1236,15 @@ export const UNCERTAINTIES: Uncertainty[] = [
       'the note gives. The Ottoman declaration is placed on 29 August, 30 August or 1 September. Beckett’s ' +
       'text could not be read (see the bibliography row), so no day is preferred here, and the attack of 1 ' +
       'September in the second family is recorded so that the disagreement is visible.',
-  },];
+  },
+  {
+    topic:
+      'The day Greece declared war on the Central Powers, 1917',
+    range:
+      'English Wikipedia puts the declaration at 30 June and Constantine’s abdication at 11 June; the ' +
+      'July panel on this site, whose listed source is Sondhaus’s World War I, prints 2 July; other ' +
+      'accounts give 27 June and 12 June. Greek official documents of 1917 used the Julian calendar, ' +
+      'thirteen days behind the calendar used here. The card is dated 11 June at month precision, and ' +
+      'the map fills Greece as Entente from July 1917.',
+  },
+];

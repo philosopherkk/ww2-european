@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# A teaching site on the First World War in Europe, month by month.
+# Months are linked as /?m=YYYY-MM, for example /?m=1916-07.
+# There is deliberately no Sitemap line: the site is one page and a query
+# string, and there are no other paths to list.

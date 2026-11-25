@@ -14,7 +14,7 @@ import { EVENTS, FIGURES, CAMPAIGN_LINES, SOURCES, UNCERTAINTIES, COUNTRY_STATS,
 import { TURNING_POINTS } from '../../lib/data/turning-points';
 import { PLACES } from '../../lib/data/places';
 import { statusFor } from '../../lib/data/status';
-import { MONTHS, nearestSnapshot } from '../../lib/site';
+import { MONTHS } from '../../lib/site';
 
 const dir = resolve('public/data/borders');
 const names = new Set<string>();
@@ -24,7 +24,6 @@ for (const f of readdirSync(dir).filter((f) => f.endsWith('.json') && f !== 'man
 }
 const timeline: Record<string, Record<string, string>> = {};
 for (const m of MONTHS) {
-  const snap = nearestSnapshot(m.key).snapshot;
   const row: Record<string, string> = {};
   for (const n of names) row[n] = statusFor(m.key, n);
   timeline[m.key] = row;

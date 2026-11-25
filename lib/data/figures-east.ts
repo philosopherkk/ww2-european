@@ -133,7 +133,7 @@ export const FIGURES_EAST: HistoricalFigure[] = [
         'failed and Brusilov replaced him. Back that summer as Kerensky’s chief of staff, he arrested ' +
         'Kornilov. After the Bolsheviks took power he raised the Volunteer Army on the Don, and died of ' +
         'heart failure at Yekaterinodar on 8 October 1918.',
-      university: 'The identity of this entry has to be stated first, because the roster calls him Nikolai ' +
+      university: 'The identity behind these posts has to be stated first, because the roster calls him Nikolai ' +
         'Vasilievich Alekseev (1856-1918) and no such Imperial general held these posts: the chief of ' +
         'staff at the Stavka under Grand Duke Nicholas from August 1914 to September 1915 was Nikolai ' +
         'Yanushkevich, and the man who succeeded him, who became commander-in-chief in 1917 and who also ' +
