@@ -90,8 +90,10 @@ const label = (iso) => `${MONTH_NAMES[Number(iso.slice(5, 7)) - 1]} ${iso.slice(
 // does lose its colour, always the same one at 59.50 E 64.50 N. At 0.01 degrees over
 // 64.35-64.55 N 59.40-59.65 E (log/my-pechora-bend.txt) the old file paints 91 of the 169
 // samples and the new one 82, with 11 gained and 20 lost: the wider clip lets the
-// simplifier take a shortcut across a bend of the Pechora. The cost is 3,561 KB of border
-// files becoming 3,578 KB.
+// simplifier take a shortcut across a bend of the Pechora. The cost, summed over the
+// twelve published files and divided by 1024, is 3,558 KiB becoming 3,575 KiB, half a per
+// cent. The per-file figures this build prints are each rounded to a whole kilobyte, so
+// adding them gives 3,561 and 3,578; the total is the sum of the bytes.
 //
 // The north edge stays at 71 N. A build at 71.5 N was measured the same way
 // (log/my-water-check-n715.txt): 405 more coloured samples across the twelve months, 360
