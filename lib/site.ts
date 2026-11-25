@@ -12,10 +12,10 @@ import type { CampaignLine, Front, Kind, Level } from '@/lib/data';
  * world layer, so both have to be inside the range.
  *
  * The cost of the earlier start is on the European border layer, whose earliest
- * published state is 30 April 1938: the map draws the state nearest the month, so
- * that one state carries July 1937 to March 1939 — up to nine months before any
- * published map exists, and up to eleven months after it was drawn — and it already
- * includes Austria. nearestSnapshot names the state and the gap, and WORLD_MONTH_NOTES
+ * published state is 30 April 1938: July 1937 to March 1938 leave the European
+ * border fills off rather than painting post-Anschluss borders onto 1937, while
+ * April 1938 carries May 1938 to March 1939 (up to eleven months after it was
+ * drawn). nearestSnapshot names the state and the gap, and WORLD_MONTH_NOTES
  * for the opening months says what that means.
  */
 export const TIMELINE_START = { year: 1937, month: 7 };
@@ -200,6 +200,72 @@ export const SIDE_META: Record<
 };
 
 /** Visible when the campaign window touches the selected month at all. */
+export type LineDomain = NonNullable<CampaignLine['domain']>;
+
+/**
+ * How a line drawn for each element looks and is described. The colour keeps
+ * coming from `side`, so a route at sea is still in the colour of the navy that
+ * sailed it; the domain changes the dash, the row the Key prints and the
+ * sentence the popup uses.
+ *
+ * The dashes were chosen by measuring them on screen, not by eye. At the World
+ * extent a whole line is a handful of pixels: a line of the Channel Dash’s
+ * geometry is 184 px in Europe at 1440x900 and 16 px at the World extent on a
+ * 390x844 phone, and Crete is 15 px even in Europe. So the pattern has to start
+ * with a mark that lands inside the first few pixels — a 1 px dash followed by a
+ * 11 px gap paints nothing at all on a 15 px line — and every gap has to stay
+ * wider than its dash, or a route at sea reads as one unbroken line under the
+ * coast. The measured figures are in audit/lines-domain/DONE.md.
+ */
+export const LINE_DOMAIN_META: Record<
+  LineDomain,
+  { label: string; keyLabel: string; dash: string; tooltip: string; caveat: string }
+> = {
+  land: {
+    label: 'line',
+    keyLabel: 'Axis of advance or movement',
+    dash: '8 6',
+    tooltip: 'Schematic axis through named places; the ring is an interpolated position by date.',
+    caveat:
+      'This is a schematic axis of advance through named places, not a surveyed daily front ' +
+      'line. The ring marks an interpolated position along that axis by date, not a documented ' +
+      'map reference for that morning. Event pins sit on the named place nearest the event, not ' +
+      'on a surveyed grid reference.',
+  },
+  sea: {
+    label: 'route at sea',
+    keyLabel: 'Route at sea',
+    dash: '2 7',
+    tooltip: 'Schematic route at sea through named ports; no ring is drawn on a ship’s route.',
+    caveat:
+      'This is a ship’s or convoy’s route between the named ports it used, not a surveyed track, a ' +
+      'patrol area or a swept lane. No ring is drawn along it: a ship was either at its port or on ' +
+      'its way, and no source gives its position for a given morning. Event pins sit on the named ' +
+      'place nearest the event, not on a surveyed grid reference.',
+  },
+  air: {
+    label: 'track in the air',
+    keyLabel: 'Air operation',
+    dash: '2 4 8 4',
+    tooltip: 'Schematic track in the air through named places; no ring is drawn on a route flown.',
+    caveat:
+      'This is the route flown, through the places the aircraft crossed — not an area it bombed and not ' +
+      'a surveyed track. No ring is drawn along it: this marks ground a raid crossed or ' +
+      'paratroopers were dropped on, not ground anybody held on that morning. Event pins sit on ' +
+      'the named place nearest the event, not on a surveyed grid reference.',
+  },
+};
+
+/** The element a line crosses, with 'land' as the default for every older entry. */
+export const lineDomainOf = (line: CampaignLine): LineDomain => line.domain ?? 'land';
+
+/** The dash a line is drawn with, from its domain. */
+export const lineDashOf = (line: CampaignLine): string =>
+  LINE_DOMAIN_META[lineDomainOf(line)].dash;
+
+/** The domains actually on screen, in the order the Key prints them. */
+export const DOMAIN_ORDER: LineDomain[] = ['land', 'sea', 'air'];
+
 export function campaignVisible(line: CampaignLine, monthKey: string): boolean {
   const monthStart = `${monthKey}-01`;
   const monthEnd = endOfMonth(monthKey);
@@ -242,6 +308,7 @@ export const FRONT_META: Record<Front, { label: string; color: string }> = {
   atlantic: { label: 'Atlantic', color: '#0C4A6E' },
   air_war: { label: 'Air war', color: '#6D28D9' },
   pacific: { label: 'Pacific & Asia', color: '#0F766E' },
+  china: { label: 'China', color: '#A16207' },
   china_burma_india: { label: 'China, Burma & India', color: '#A16207' },
   americas: { label: 'The Americas', color: '#0369A1' },
 };

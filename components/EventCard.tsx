@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { ChevronDown, Layers, MapPin, Users } from 'lucide-react';
 import type { Level, LevelText, WW2Event } from '@/lib/data';
 import { FIGURE_BY_ID } from '@/lib/data';
@@ -52,13 +52,15 @@ export default function EventCard({
   linked = false,
 }: Props) {
   const [open, setOpen] = useState(defaultOpen);
+  const [prevDefaultOpen, setPrevDefaultOpen] = useState(defaultOpen);
   const [showAllLevels, setShowAllLevels] = useState(false);
   // A card that is already mounted keeps its own open state, so a turning point opening one
   // of its linked events in the same month would scroll without opening it. defaultOpen only
   // arrives as a change, so the card has to follow it.
-  useEffect(() => {
+  if (defaultOpen !== prevDefaultOpen) {
+    setPrevDefaultOpen(defaultOpen);
     if (defaultOpen) setOpen(true);
-  }, [defaultOpen]);
+  }
   const headings = HEADINGS[level];
   const text: LevelText = event.levels[level];
   const kind = KIND_META[event.kind];

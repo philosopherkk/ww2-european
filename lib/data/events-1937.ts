@@ -14,7 +14,7 @@ export const EVENTS_1937: WW2Event[] = [
     precision: 'day',
     title: 'The Marco Polo Bridge incident becomes a war',
     kind: 'battle',
-    fronts: ['china_burma_india'],
+    fronts: ['china'],
     countries: ['China', 'Japan'],
     figures: [],
     mapNote:
@@ -50,7 +50,7 @@ export const EVENTS_1937: WW2Event[] = [
     precision: 'month',
     title: 'Three months of industrial fighting at Shanghai',
     kind: 'battle',
-    fronts: ['china_burma_india'],
+    fronts: ['china'],
     countries: ['China', 'Japan'],
     figures: [],
     mapNote:
@@ -86,7 +86,7 @@ export const EVENTS_1937: WW2Event[] = [
     precision: 'day',
     title: 'Nanjing falls, and its soldiers and civilians are killed',
     kind: 'war_crime',
-    fronts: ['china_burma_india'],
+    fronts: ['china'],
     countries: ['China', 'Japan'],
     figures: [],
     mapNote:
@@ -122,7 +122,7 @@ export const EVENTS_1937: WW2Event[] = [
     precision: 'month',
     title: 'Wuhan and Canton fall, and the front stalls',
     kind: 'battle',
-    fronts: ['china_burma_india'],
+    fronts: ['china'],
     countries: ['China', 'Japan'],
     figures: [],
     mapNote:

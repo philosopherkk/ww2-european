@@ -22,7 +22,7 @@ export const PLACES: Place[] = [
   { name: 'Brest-Litovsk', lat: 52.10, lng: 23.70 },
   { name: 'Leningrad', lat: 59.93, lng: 30.34 },
   { name: 'Vyborg', lat: 60.70, lng: 28.73 },
-  { name: 'Gdynia', lat: 54.35, lng: 18.65 },
+  { name: 'Gdynia', lat: 54.52, lng: 18.54 },
   { name: 'Copenhagen', lat: 55.68, lng: 12.57 },
   { name: 'Oslo', lat: 59.91, lng: 10.75 },
   { name: 'Trondheim', lat: 63.43, lng: 10.39 },

@@ -42,7 +42,7 @@ export const TURNING_POINTS: TurningPoint[] = [
       primary:
         'The Soviet Union attacked from the east on 17 September; little fighting reached the west.',
       secondary:
-        'The Soviet stroke came under the pact’s secret protocol; the two regimes traded until 1941, and the west sat through a phony war.',
+        'The Soviet stroke came under the pact’s secret protocol; the two regimes traded until 1941, and the west sat through a Phoney War.',
       university:
         'Contemporaries did not feel the month as decisive, and it settled none of the questions that later decided the war: the German-Soviet relationship, American intervention, and when Britain and France would fight on land.',
     },
@@ -116,7 +116,7 @@ export const TURNING_POINTS: TurningPoint[] = [
       secondary:
         'Hitler declared war on the United States on 11 December 1941, four days after Pearl Harbor; Italy followed, and Congress answered at once. The Tripartite Pact did not require Germany to act.',
       university:
-        'The decision was Hitler’s own, forced neither by the pact nor by Japanese requests, and it followed from his reading that war with America was coming anyway.',
+        'The decision was Hitler’s own. The Tripartite Pact did not oblige Germany to act, because Japan had struck first, and he declared war from his reading that war with America was coming anyway, not because the pact or any Japanese request left him no choice.',
     },
     unsettled: {
       primary:
@@ -141,7 +141,7 @@ export const TURNING_POINTS: TurningPoint[] = [
       secondary:
         'Second El Alamein from 23 October broke the Axis in Egypt; Torch landed in North Africa on 8 November; Uranus encircled Sixth Army at Stalingrad on 19 November.',
       university:
-        'The month matters for simultaneity, not for any one battle: after Uranus the German army in the east could not replace its losses, and Torch committed the Western Allies to a continental land war in 1943. Tobruk fell on 13 November, inside that overlap.',
+        'The month matters for simultaneity, not for any one battle: after Uranus the German army in the east could not replace its losses, and Torch committed the Western Allies to a continental land war in 1943. Tobruk was retaken on 13 November, inside that overlap.',
     },
     unsettled: {
       primary:
@@ -152,7 +152,7 @@ export const TURNING_POINTS: TurningPoint[] = [
         'November 1942 changed the distribution of the initiative, not the material odds, which still favoured Germany through 1943.',
     },
     mapNote:
-      'This month is drawn with the April 1942 border state — seven months earlier, close to the Axis high-water mark — and the map cannot show the encirclement at Stalingrad or the landings in North Africa.',
+      'This month is drawn with the April 1942 border state — seven months earlier, after the winter retreat from Moscow and before the summer advance — and the map cannot show the encirclement at Stalingrad, the November high-water mark in the east, or the landings in North Africa.',
     eventIds: ['operation_torch', 'operation_uranus', 'second_el_alamein'],
     sources: ['The Oxford Companion to World War II', 'Playfair, The Mediterranean and Middle East IV'],
   },
@@ -290,7 +290,7 @@ export const TURNING_POINTS: TurningPoint[] = [
       primary:
         'Japan accepted the terms on 15 August, and signed the instrument of surrender on 2 September 1945. The fighting of the Second World War was over.',
       secondary:
-        'Hirohito’s recorded broadcast was heard at noon on 15 August; the instrument was signed aboard USS Missouri just after 09:00 Japan time on 2 September and took effect at 09:25. Between those dates the Soviet Union took Manchuria, northern Korea, southern Sakhalin and the Kuril Islands, and American troops landed south of the 38th parallel.',
+        'Hirohito’s recorded broadcast was heard at noon on 15 August; the instrument was signed aboard USS Missouri just after 09:00 Japan time on 2 September. Between those dates the Soviet Union took Manchuria, northern Korea, southern Sakhalin and the Kuril Islands, and American troops landed south of the 38th parallel.',
       university:
         'September 1945 is the end of the war as a document rather than a cease-fire: acceptance communicated through neutral channels, the broadcast of 15 August, a failed coup by officers who refused it, occupation from 28 August, and the instrument effective at 09:25 Japan time on 2 September. Two anniversaries carry the date because the two events differ — one stopped the killing, the other is the paper. The same fortnight settled the frontiers of north-east Asia, and the line drawn through Korea in August 1945 became the border that has lasted: after the movement of the Korean War, the front settled near the 38th parallel in mid-1951. This map shows the fronts of that fortnight rather than the settlement, because the settlement came later.',
     },
@@ -338,7 +338,7 @@ export const TURNING_POINTS: TurningPoint[] = [
         'A border state cannot show what the Anschluss did to Czechoslovak strategy — encirclement, the loss of Austrian reserves and oil — so the event cards carry it.',
     },
     mapNote:
-      'This is the first of the twelve dated states; January to March 1938 are drawn with these April borders, which is disclosed in the map banner as a state after the month selected.',
+      'This is the first of the twelve dated states; months before April 1938 leave the European border fills off rather than drawing post-Anschluss borders onto 1937 or early 1938.',
     eventIds: ['karlsbad_programme', 'anschluss'],
     sources: ['Overy, The Dictators', 'The Oxford Companion to World War II'],
   },
@@ -441,14 +441,14 @@ export const TURNING_POINTS: TurningPoint[] = [
   {
     id: 'september_1941_state',
     month: '1941-09',
-    title: 'The state at the high-water mark in the east',
+    title: 'The September 1941 border state in the east',
     matters: {
       primary:
         'The Baltic states, taken into the Soviet Union in 1940, have been under German occupation since June, and German occupation administrations now cover the occupied east.',
       secondary:
         'The September 1941 state follows the Baltic campaigns and the first months of Barbarossa. It adds the Reichskommissariate Ostland and Ukraine; Leningrad was cut off on 8 September and the mass shooting at Babi Yar followed on 29-30 September.',
       university:
-        'This state is as close as the dataset comes to the German high-water mark in the east, and its date is itself a warning: the source layer has the two Reichskommissariat labels on each other’s polygons, which the build script corrects by geography.',
+        'This is the first published snapshot after Barbarossa opened, not the German high-water mark in the east, and its date is itself a warning: the source layer has the two Reichskommissariat labels on each other’s polygons, which the build script corrects by geography.',
     },
     unsettled: {
       primary: 'Leningrad was surrounded, and Moscow had not fallen.',

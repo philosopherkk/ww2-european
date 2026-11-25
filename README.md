@@ -1,8 +1,9 @@
-# The Second World War in Europe — month by month
+# The Second World War — month by month, July 1937 to September 1945
 
-An interactive teaching site about the European theatre of the Second World War: a monthly
-timeline from July 1937 to September 1945, period border states on a real map, army movement
-lines, the people involved, and every event written three times over for three reading levels.
+An interactive teaching site about the Second World War: a monthly timeline from July 1937 to
+September 1945, period border states on a real map, army movement lines, the people involved,
+and every event written three times over for three reading levels. It opens with Japan’s invasion
+of China in July 1937 and runs through Burma, the Mediterranean and the Pacific as well as Europe.
 
 **Live site:** <https://ww2-european.vercel.app>
 
@@ -10,8 +11,8 @@ lines, the people involved, and every event written three times over for three r
 
 | Part | Contents |
 | --- | --- |
-| Map & timeline | 92 months on a slider, borders coloured by who held the territory, dashed lines for offensives underway that month, turning-point panels on the twenty-one months when the war or the map changed, click any country or line for detail |
-| Events | 167 events, each split into **why it happened**, **what happened** and **what followed** |
+| Map & timeline | 99 months on a slider (July 1937 to September 1945), borders coloured by who held the territory, 103 campaign and movement lines, turning-point panels on the twenty-two months when the war or the map changed, click any country or line for detail |
+| Events | 212 events, each split into **why it happened**, **what happened** and **what followed** |
 | People | 76 biographies, from heads of state to partisans, economists and camp survivors |
 | Numbers | Population, armed-forces and casualty tables, with ranges where historians disagree |
 | Sources & how to read | What the map data is, what it cannot show, and every source used |
@@ -19,9 +20,9 @@ lines, the people involved, and every event written three times over for three r
 Reading levels are genuine rewrites, not tooltips: **primary school** (ages 7-11), **secondary
 school** (ages 12-16) and **university**. An event card can show all three side by side.
 
-The site covers the European theatre. The Pacific war, China and the colonial campaigns beyond
-Europe are out of scope except where they bear on the fighting here; that boundary is stated in
-the Sources panel rather than left to the reader to infer.
+The atlas reaches from China in July 1937 through Burma and the Pacific as well as Europe. The
+European border data are finer than the world layer drawn outside Europe, and everything the map
+cannot carry is stated in the Sources panel rather than left to the reader to infer.
 
 ## Running it
 

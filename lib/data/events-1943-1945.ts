@@ -107,9 +107,9 @@ export const EVENTS_1943_1945: WW2Event[] = [
         consequence: 'About 56,000 survivors were rounded up and sent to Treblinka and Majdanek. The uprising saved nobody, and the ghetto was destroyed; what it produced was a record that Jews had fought, which mattered to the survivors, to the Jewish survivors who took part in the Warsaw Uprising of August 1944, and to the memory of the Holocaust afterwards.',
       },
       university: {
-        cause: 'The military logic of the uprising was suicide, and its leaders knew it: the ZOB had no chance against a German police operation and did not intend to win ground, but to choose the manner of dying and to prove that the deportations of 1942 had not been passively accepted. The decision was shaped by the spread of reliable knowledge of what "resettlement" meant by 1943, by the prestige of the January action, and by competition between the ZOB (Bund, socialist and Zionist groups) and the Revisionist ZZW, as well as by the Home Army’s limited and still-argued attacks on the ghetto walls.',
+        cause: 'The military logic of the uprising was suicide, and its leaders knew it: the ZOB had no chance against a German police operation and did not intend to win ground, but to choose the manner of dying and to prove that the deportations of 1942 had not been passively accepted. The decision was shaped by the spread of reliable knowledge of what “resettlement” meant by 1943, by the prestige of the January action, and by competition between the ZOB (Bund, socialist and Zionist groups) and the Revisionist ZZW, as well as by the Home Army’s limited and still-argued attacks on the ghetto walls.',
         what: 'The German method — cordon, comb, burn, blow the bunkers — was the same one used against partisans and would be used against the Home Army in 1944, which is a strong argument for reading the two risings as parts of one history of German urban counter-insurgency in Warsaw. Stroop’s report is the main source and is perpetrator propaganda, including in its photographs; the Jewish accounts, written in hiding and after the war by a handful of survivors, are the counter-source.',
-        consequence: 'The uprising is one of the most contested memory sites of the twentieth century: in the Polish People’s Republic it was monumentalised as evidence of communist heroism, in Israel as proof that Jews needed their own army, and in West Germany almost not at all until the 1979 television serial. Historiographically it also corrects the category of "resistance" itself: the overwhelming majority of Jewish resistance to the Holocaust consisted of hiding, forged papers, smuggling and partisan service, and only very rarely of armed insurrection.',
+        consequence: 'The uprising is one of the most contested memory sites of the twentieth century: in the Polish People’s Republic it was monumentalised as evidence of communist heroism, in Israel as proof that Jews needed their own army, and in West Germany almost not at all until the 1979 television serial. Historiographically it also corrects the category of “resistance” itself: the overwhelming majority of Jewish resistance to the Holocaust consisted of hiding, forged papers, smuggling and partisan service, and only very rarely of armed insurrection.',
       },
     },
   },
@@ -220,7 +220,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
       },
       university: {
         cause: 'The twenty-month delay between the armistice and final victory in April 1945 reflected the Allied decision to treat Italy as a secondary theatre and Kesselring’s skilful use of interior lines and terrain.',
-        what: 'The "badoglio" settlement preserved the monarchy and much of the Fascist administrative and police apparatus, which was then used against the partisans.',
+        what: 'The “badoglio” settlement preserved the monarchy and much of the Fascist administrative and police apparatus, which was then used against the partisans.',
         consequence: 'The Togliatti amnesty of June 1946 and the continuity of the state explain why Italy never underwent a thorough reckoning with Fascism, unlike Germany.',
       },
     },
@@ -269,14 +269,14 @@ export const EVENTS_1943_1945: WW2Event[] = [
         consequence: 'Almost the whole Jewish community of Denmark survived the war in Sweden — the only country in occupied Europe where that happened.',
       },
       secondary: {
-        cause: 'Denmark had been occupied since April 1940 while its own government stayed in office and the country was called the "model protectorate". By the summer of 1943 sabotage and strikes had spread, the government resigned in August and Berlin took direct control; the Foreign Office in Berlin then pushed for the deportation of the Danish Jews.',
+        cause: 'Denmark had been occupied since April 1940 while its own government stayed in office and the country was called the “model protectorate”. By the summer of 1943 sabotage and strikes had spread, the government resigned in August and Berlin took direct control; the Foreign Office in Berlin then pushed for the deportation of the Danish Jews.',
         what: 'Werner Best fixed the roundup for the night of 1-2 October, but the date was leaked to Danish politicians, who passed it to the public within hours. Almost every Jewish family was already hidden by neighbours, colleagues or the churches when the police came; the sick and elderly were taken in by hospital staff. Boats ran from Gilleleje, Hundested and dozens of small harbours to Sweden, paid for by Danish industrialists and organised by the resistance councils.',
-        consequence: 'About 7,200 people were saved, and Denmark’s Jews returned after liberation in May 1945 to find their homes largely as they had left them. The "policy of collaboration" had already collapsed before October, and after it German reprisals, strikes and executions of Danes escalated into the near-civil-war winter of 1944-45.',
+        consequence: 'About 7,200 people were saved, and Denmark’s Jews returned after liberation in May 1945 to find their homes largely as they had left them. The “policy of collaboration” had already collapsed before October, and after it German reprisals, strikes and executions of Danes escalated into the near-civil-war winter of 1944-45.',
       },
       university: {
         cause: 'The Danish case is the limit case for two arguments about occupation. First, that an intact and non-collaborating administration could obstruct a deportation order: Danish ministers, judges, police and civil servants refused to co-operate, and Best’s own staff recommended delay because Danish agricultural and industrial output and political quiet mattered more than 8,000 victims. Second, that Danish Jewry was unusually small, urban, integrated and citizenry-heavy — about two-thirds held Danish citizenship — so that rescue was logistically possible in a way it was not in Poland or the Baltic states.',
         what: 'The evacuation was organised in days by a spontaneous network rather than by one committee: the municipal authorities, the Danish resistance councils, the fishing fleets of Zealand, Swedish volunteers and the Swedish government’s broadcast offer of asylum on 2 October. German manpower was deliberately thin — Best sent a few hundred men, and the Kriegsmarine and some Party officials objected to the operation from the start.',
-        consequence: 'The "Danish exception" is real but narrow, and it required a leaked timetable, a narrow sea crossing to a neutral neighbour, and an occupier that valued Danish food. Since the 1990s Danish scholarship has qualified the founding national story with the other side of the record: the anti-sabotage law of August 1943 and the handing over of Danish communists to the Gestapo in 1941. Rescue and collaboration existed in the same small society at the same time.',
+        consequence: 'The “Danish exception” is real but narrow, and it required a leaked timetable, a narrow sea crossing to a neutral neighbour, and an occupier that valued Danish food. Since the 1990s Danish scholarship has qualified the founding national story with the other side of the record: the anti-sabotage law of August 1943 and the handing over of Danish communists to the Gestapo in 1941. Rescue and collaboration existed in the same small society at the same time.',
       },
     },
   },
@@ -393,7 +393,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['politics'],
     countries: ['United Kingdom', 'United States', 'Soviet Union', 'Iran'],
     figures: ['stalin', 'roosevelt', 'churchill'],
-    note: 'The conference fixed 1 May 1944 for Overlord (later 6 June) and agreed that the USSR would declare war on Japan. On the Polish frontier, Roosevelt and Churchill conceded the Curzon Line in practice, with unspecified "compensations in the north and west".',
+    note: 'The conference fixed 1 May 1944 for Overlord (later 6 June) and agreed that the USSR would declare war on Japan. On the Polish frontier, Roosevelt and Churchill conceded the Curzon Line in practice, with unspecified “compensations in the north and west”.',
     levels: {
       primary: {
         cause: 'The three main Allied leaders met for the first time to plan how to win the war and what would happen afterwards.',
@@ -403,7 +403,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
       secondary: {
         cause: 'Stalin had demanded a second front since 1941 and distrusted Allied intentions after the North African and Italian campaigns.',
         what: 'The conference agreed Operation Overlord, agreed on the general shape of postwar Germany, and quietly accepted the Soviet western frontier.',
-        consequence: 'Poland, Yugoslavia and the Baltic states were effectively conceded to Soviet influence, which made the later arguments at Yalta and Potsdam about "free elections" largely unenforceable.',
+        consequence: 'Poland, Yugoslavia and the Baltic states were effectively conceded to Soviet influence, which made the later arguments at Yalta and Potsdam about “free elections” largely unenforceable.',
       },
       university: {
         cause: 'The diplomacy rested on military facts: by late 1943 the Red Army held the initiative, so Stalin had leverage. Roosevelt believed he could manage Stalin personally, an assumption later used to explain the outcome.',
@@ -632,7 +632,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
         consequence: 'Paris rose against the occupiers and was liberated on 25 August. The race to the Rhine followed, and with it the supply crisis that stopped the Allies in September.',
       },
       university: {
-        cause: 'The "gap at Argentan" remains a live historiographical quarrel, entangled with postwar rivalry between Montgomery’s and Patton’s advocates and with the broader question of who won the battle of Normandy.',
+        cause: 'The “gap at Argentan” remains a live historiographical quarrel, entangled with postwar rivalry between Montgomery’s and Patton’s advocates and with the broader question of who won the battle of Normandy.',
         what: 'Allied air power made movement in daylight impossible, and the Luftwaffe in the west had effectively ceased to exist as a force by July 1944.',
         consequence: 'The collapse in France produced the short, intense logistics war of late 1944, the failure of Market Garden, and the reconstitution of German resistance at the Westwall and in the Ardennes.',
       },
@@ -647,7 +647,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['western'],
     countries: ['France', 'United States', 'United Kingdom', 'Germany'],
     figures: ['de_gaulle', 'leclerc', 'von_choltitz', 'hitler'],
-    note: 'The uprising of 19-25 August cost about 1,500 FFI dead. Hitler asked "Is Paris burning?" and ordered demolition; von Choltitz surrendered on 25 August without destroying the bridges or the city’s infrastructure.',
+    note: 'The uprising of 19-25 August cost about 1,500 FFI dead. Hitler asked “Is Paris burning?” and ordered demolition; von Choltitz surrendered on 25 August without destroying the bridges or the city’s infrastructure.',
     levels: {
       primary: {
         cause: 'Parisians rose up against the German garrison as the Allied armies came close to the city.',
@@ -660,7 +660,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
         consequence: 'De Gaulle’s authority, reinforced by the symbolism of the liberation, marginalised the Communist-led provisional bodies and established the Fourth Republic’s political direction.',
       },
       university: {
-        cause: 'The "heroic" narrative of a universally resistant France was politically necessary in 1944-45 and is now challenged by the historiography of collaboration and the Vichy state, which was more widely accepted than the myth allowed.',
+        cause: 'The “heroic” narrative of a universally resistant France was politically necessary in 1944-45 and is now challenged by the historiography of collaboration and the Vichy state, which was more widely accepted than the myth allowed.',
         what: 'The issue of von Choltitz’s motives, and the role of the Swedish consul Raoul Nordling in the unofficial ceasefire of 23 August, have been much reinterpreted since Nordling’s own account was published in 1964.',
         consequence: 'Purges of collaborators (the épuration) killed some 9,000 people through legal sentences and extrajudicial violence, including the shaving of women accused of horizontal collaboration.',
       },
@@ -685,7 +685,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
       secondary: {
         cause: 'Montgomery argued that a single thrust into the Ruhr could end the war in 1944, over the objections of Eisenhower and Bradley, who wanted a broad front.',
         what: 'A single road made the ground corridor impassable for armour; intelligence missed the panzer divisions refitting near Arnhem, and the airborne landed too dispersed.',
-        consequence: 'The failure cost the Allies their last realistic chance of a 1944 end to the war, and the Dutch population in the occupied west endured the "hunger winter" of 1944-45.',
+        consequence: 'The failure cost the Allies their last realistic chance of a 1944 end to the war, and the Dutch population in the occupied west endured the “hunger winter” of 1944-45.',
       },
       university: {
         cause: 'Market Garden has been read as the decisive strategic choice of the western campaign: a narrow-thrust gamble versus the broad-front approach, and the argument turns on whether German cohesion in September 1944 was genuinely brittle.',
@@ -716,7 +716,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
         consequence: 'Poland lost its capital, its archives and much of its cultural heritage, and the prewar elite that had led the underground was destroyed or exiled.',
       },
       university: {
-        cause: 'The destruction was carried out under Hitler’s October 1944 order that Warsaw be "levelled to the ground", part of a wider programme of cultural annihilation in the east.',
+        cause: 'The destruction was carried out under Hitler’s October 1944 order that Warsaw be “levelled to the ground”, part of a wider programme of cultural annihilation in the east.',
         what: 'The deliberate demolition of museums, libraries and archives was ordered by Hitler and Himmler and carried out by von dem Bach’s command, following detailed demolition plans drawn up within weeks of the uprising.',
         consequence: 'The postwar reconstruction of the old town, using Canaletto’s paintings, became a UNESCO-listed symbol of national recovery and of the political will to restore what had been deliberately erased.',
       },
@@ -735,7 +735,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     levels: {
       primary: {
         cause: 'Hitler wanted one last big surprise attack in the west to split the British and Americans and force them to negotiate.',
-        what: 'In fog and snow the Germans attacked through the Ardennes forest and made a big dent — a "bulge" — in the Allied line. The Americans held on at Bastogne.',
+        what: 'In fog and snow the Germans attacked through the Ardennes forest and made a big dent — a “bulge” — in the Allied line. The Americans held on at Bastogne.',
         consequence: 'The attack ran out of fuel and was pushed back, using up the last of Germany’s reserves.',
       },
       secondary: {
@@ -815,7 +815,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['politics'],
     countries: ['United Kingdom', 'United States', 'Soviet Union'],
     figures: ['stalin', 'roosevelt', 'churchill'],
-    note: 'Agreements included German disarmament and denazification, a Soviet proposal for $20 billion in reparations, half of it to the USSR, accepted only as a basis for discussion and never agreed as a sum, Soviet entry into the war against Japan two to three months after Germany’s defeat, and the "Declaration on Liberated Europe".',
+    note: 'Agreements included German disarmament and denazification, a Soviet proposal for $20 billion in reparations, half of it to the USSR, accepted only as a basis for discussion and never agreed as a sum, Soviet entry into the war against Japan two to three months after Germany’s defeat, and the “Declaration on Liberated Europe”.',
     levels: {
       primary: {
         cause: 'The three Allied leaders met again while the war in Europe was nearly over, to decide what would happen next.',
@@ -830,7 +830,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
       university: {
         cause: 'Revisionist scholarship stresses that the Soviet occupation of eastern Europe was already a military fact in February 1945, so the real question was not whether Stalin would dominate the region but what he could be made to concede.',
         what: 'The Polish question, above all the composition of the Lublin government and the western frontier on the Oder-Neisse, was postponed in a way that made later conflict certain.',
-        consequence: 'Yalta became an organising symbol in Cold War politics: in American electoral debate about "who lost Poland", and in the post-1989 settlement, when German reunification required the formal confirmation of the Oder-Neisse line in 1990.',
+        consequence: 'Yalta became an organising symbol in Cold War politics: in American electoral debate about “who lost Poland”, and in the post-1989 settlement, when German reunification required the formal confirmation of the Oder-Neisse line in 1990.',
       },
     },
   },
@@ -885,7 +885,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
       },
       university: {
         cause: 'Remagen’s strategic significance is debated: some historians argue the bridgehead had little effect because Allied planning already contemplated a broad advance, while others see it as an operational accident that materially accelerated the campaign.',
-        what: 'Hitler’s reaction — dismissing von Rundstedt and establishing a "flying court martial" that executed five officers — shows the disintegration of command relations in the final phase.',
+        what: 'Hitler’s reaction — dismissing von Rundstedt and establishing a “flying court martial” that executed five officers — shows the disintegration of command relations in the final phase.',
         consequence: 'The Ruhr encirclement took 325,000 prisoners, and the rapid advance to the Elbe produced the contact between US and Soviet troops at Torgau on 25 April.',
       },
     },
@@ -912,7 +912,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
         consequence: 'Germany was occupied in four zones. The displacement of millions of people, the camps, and the coming division of Germany defined the postwar order.',
       },
       university: {
-        cause: 'The question of a "partial surrender in the west" is a serious topic of research: the records of the Dönitz government’s negotiations show genuine attempts to play the West against the East, exploiting Allied anxiety about Soviet intentions.',
+        cause: 'The question of a “partial surrender in the west” is a serious topic of research: the records of the Dönitz government’s negotiations show genuine attempts to play the West against the East, exploiting Allied anxiety about Soviet intentions.',
         what: 'The double signing reflects the alliance’s political fragility; Stalin objected to Reims because the Soviet representative was treated as a witness and because the Wehrmacht had already been making local surrenders in the west.',
         consequence: 'May 1945 is remembered very differently across Europe — liberation in the west, continued repression in the east — and this divergence structures the memory politics of the continent to the present.',
       },
@@ -942,7 +942,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
       university: {
         cause: 'The episode is a key case in the counterfactual debate about whether a Western advance on Prague would have changed postwar Czechoslovakia. Eisenhower’s decision rested on military economy and on the existing agreement about occupation zones.',
         what: 'Some 2.9 million German-speaking civilians fled or were expelled from Czechoslovakia in 1945-46, one of the largest forced migrations of the war’s aftermath.',
-        consequence: 'The "liberation" of Prague became the founding myth of the Communist regime and the object of a fiercely contested counter-memory after 1968 and 1989.',
+        consequence: 'The “liberation” of Prague became the founding myth of the Communist regime and the object of a fiercely contested counter-memory after 1968 and 1989.',
       },
     },
   },
@@ -1013,7 +1013,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['politics'],
     countries: ['United Kingdom', 'United States', 'Soviet Union', 'Germany'],
     figures: ['stalin', 'truman', 'attlee', 'molotov'],
-    note: 'The "Big Three" met in the ruins of Berlin with new leaders: Truman and Attlee. The agreement set Poland’s western frontier on the Oder-Neisse "pending the final settlement", and sanctioned the "orderly and humane" transfer of German populations.',
+    note: 'The “Big Three” met in the ruins of Berlin with new leaders: Truman and Attlee. The agreement set Poland’s western frontier on the Oder-Neisse “pending the final settlement”, and sanctioned the “orderly and humane” transfer of German populations.',
     levels: {
       primary: {
         cause: 'After Germany gave up, the winners met to decide how Germany would be governed and what its borders would be.',
@@ -1027,7 +1027,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
       },
       university: {
         cause: 'Potsdam is usually read as the end of the wartime alliance: Truman’s assumption that atomic monopoly would discipline Stalin, and the Soviet drive for reparations from its own zone, were incompatible from the start.',
-        what: 'The language of Article XIII on transfers, "orderly and humane", was in practice a belated recognition of expulsions already carried out with great violence.',
+        what: 'The language of Article XIII on transfers, “orderly and humane”, was in practice a belated recognition of expulsions already carried out with great violence.',
         consequence: 'The conference settlement, and the expulsions it recognised, created ethnically homogeneous states in Poland, Czechoslovakia and Hungary — a structural change in central Europe whose memory remains politically active.',
       },
     },
@@ -1109,7 +1109,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
       secondary: {
         cause: 'The Axis lost the campaign because it was supplied across a short but contested sea passage while Malta stayed in Allied hands, and because Hitler would not evacuate an army he considered a diversion. Rommel had been flown out in March 1943; the troops left had no transport fuel and no air cover.',
         what: 'Alexander’s 15th Army Group closed on the Tunis port area from the west and north-west, where Anderson’s First Army carried the main weight, and from the south-east, where Montgomery’s Eighth Army pushed up from the Gabes line; the final blow in early May was preceded by a bombing and naval blockade which sank the last of the Axis transports in April, the evacuation of Tunis being carried out only at the cost of abandoning equipment.',
-        consequence: 'The prisoners included trained pilots and ground crews the Luftwaffe could not replace, and the campaign destroyed the Axis’ Mediterranean air bases and shipping. The cost to the Allies was a long delay: a Mediterranean invasion in 1943 rather than a cross-Channel one, which is the heart of the "second front" argument.',
+        consequence: 'The prisoners included trained pilots and ground crews the Luftwaffe could not replace, and the campaign destroyed the Axis’ Mediterranean air bases and shipping. The cost to the Allies was a long delay: a Mediterranean invasion in 1943 rather than a cross-Channel one, which is the heart of the “second front” argument.',
       },
       university: {
         cause: 'The campaign is central to the argument about the Mediterranean strategy: the case that North Africa and Italy were the cheap way to fight, associated with the British Chiefs of Staff, against the American view that every operation outside Overlord was a distraction - an argument complicated by the fact that Tunisia did remove air and submarine strength from the Atlantic approaches.',
@@ -1198,9 +1198,9 @@ export const EVENTS_1943_1945: WW2Event[] = [
         consequence: 'Citadel failed, and the Soviet counter-offensives at Orel and Belgorod in August took the initiative permanently. The Germans fought no more strategic offensives in the east after July 1943.',
       },
       university: {
-        cause: 'The historiography has swung from the "Prokhorovka tank clash" as a decisive engagement - a battle whose scale was inflated by Soviet accounts and then repeated in Western ones - to the German archival reconstruction, which shows the real fighting was a slow demolition of defence in depth and that the great tank duel was smaller and less decisive than the myth.',
-        what: 'The debate about Soviet intelligence is also live: the claim that the date came from British decryption of German signals, passed to Moscow through the "Lucy" ring in Switzerland and from Richard Sorge, versus the argument that Soviet air reconnaissance and prisoner evidence were enough.',
-        consequence: 'Kursk matters least for its tactics and most for the fact that by 1943 the Red Army could plan a set-piece defensive operation, hold it, and follow it with a deliberate offensive - which is the operational answer to why Germany lost, ahead of "General Winter" and the entry of America.',
+        cause: 'The historiography has swung from the “Prokhorovka tank clash” as a decisive engagement - a battle whose scale was inflated by Soviet accounts and then repeated in Western ones - to the German archival reconstruction, which shows the real fighting was a slow demolition of defence in depth and that the great tank duel was smaller and less decisive than the myth.',
+        what: 'The debate about Soviet intelligence is also live: the claim that the date came from British decryption of German signals, passed to Moscow through the “Lucy” ring in Switzerland and from Richard Sorge, versus the argument that Soviet air reconnaissance and prisoner evidence were enough.',
+        consequence: 'Kursk matters least for its tactics and most for the fact that by 1943 the Red Army could plan a set-piece defensive operation, hold it, and follow it with a deliberate offensive - which is the operational answer to why Germany lost, ahead of “General Winter” and the entry of America.',
       },
     },
   },
@@ -1228,7 +1228,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
       university: {
         cause: 'The salutes are a good entry point to the politics of Soviet victory: the gun-salute order created a public calendar of liberation that fixed, in advance of any history, which cities mattered - and the omission of some, and the inclusion of others, follows the line the regime needed.',
         what: 'The military substance has been re-argued in the German official history series, which stresses that the loss of the Orel and Belgorod salients in August 1943 cost the Ostheer more men than Citadel itself and destroyed the operational reserve that Manstein needed for his counter-strokes in the autumn.',
-        consequence: 'August 1943 also produced the Dnieper and the "general advance to the river" of the following months, with the enormous friction of a front 1,000 kilometres wide. The Soviet version of the period - the "battle for the Dnieper" as a single operation - is a category the German records do not support.',
+        consequence: 'August 1943 also produced the Dnieper and the “general advance to the river” of the following months, with the enormous friction of a front 1,000 kilometres wide. The Soviet version of the period - the “battle for the Dnieper” as a single operation - is a category the German records do not support.',
       },
     },
   },
@@ -1301,7 +1301,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['eastern'],
     countries: ['Soviet Union', 'Germany'],
     figures: ['konev', 'zhukov', 'hitler'],
-    note: 'The 1st and 2nd Ukrainian Fronts closed the ring round Group Stemmermann near Zvenigorodka on 24 January 1944 and completed the encirclement on the 28th - some 60,000 German troops in six divisions in a pocket roughly 35 to 40 kilometres across. Hitler at first forbade any breakout, then authorised one only after Manstein persuaded him; the relief attack by III Panzer Corps got to within a few kilometres of the pocket before being stopped on 17 February. The breakout began on the night of 16-17 February, in deep mud and snow, across the frozen Ros and the Gniloy Tikich and through a forest where the Soviets had guns waiting: something like 27,000 to 40,000 men got out, with most of their weapons abandoned; the rest were killed or captured, and Soviet claims of 55,000 dead and 18,000 prisoners in the pocket are higher than German records support. Contemporaries called it a "little Stalingrad", and the comparison is the point: this time part of the encircled force was allowed to fight its way out, which is what Manstein argued for at Stalingrad and was refused.',
+    note: 'The 1st and 2nd Ukrainian Fronts closed the ring round Group Stemmermann near Zvenigorodka on 24 January 1944 and completed the encirclement on the 28th - some 60,000 German troops in six divisions in a pocket roughly 35 to 40 kilometres across. Hitler at first forbade any breakout, then authorised one only after Manstein persuaded him; the relief attack by III Panzer Corps got to within a few kilometres of the pocket before being stopped on 17 February. The breakout began on the night of 16-17 February, in deep mud and snow, across the frozen Ros and the Gniloy Tikich and through a forest where the Soviets had guns waiting: something like 27,000 to 40,000 men got out, with most of their weapons abandoned; the rest were killed or captured, and Soviet claims of 55,000 dead and 18,000 prisoners in the pocket are higher than German records support. Contemporaries called it a “little Stalingrad”, and the comparison is the point: this time part of the encircled force was allowed to fight its way out, which is what Manstein argued for at Stalingrad and was refused.',
     levels: {
       primary: {
         cause: 'Two big Soviet attacks met behind the German lines and shut a whole force inside a ring of steel, as had happened at Stalingrad.',
@@ -1309,14 +1309,14 @@ export const EVENTS_1943_1945: WW2Event[] = [
         consequence: 'It showed that the Red Army could now encircle large forces anywhere it chose. It also showed that Hitler had learned a little from Stalingrad - he let them try to escape.',
       },
       secondary: {
-        cause: 'Manstein’s "backhand blow" at Kharkov in March 1943 had left a Soviet salient pointing west at Korsun; the Soviets cut it off from both sides, and Hitler would not release the troops early enough to avoid the trap.',
+        cause: 'Manstein’s “backhand blow” at Kharkov in March 1943 had left a Soviet salient pointing west at Korsun; the Soviets cut it off from both sides, and Hitler would not release the troops early enough to avoid the trap.',
         what: 'The fighting was made hideous by the rasputitsa - thaw turned the ground into deep mud, so nothing with wheels could move and the pocket had to be supplied by air, which it could not be. The breakout columns were machine-gunned in the open at the river crossings.',
         consequence: 'The loss of these divisions cost the German army trained officers and NCOs it could not replace, and it opened the way to the Soviet advance into Romania and to the Jassy-Kishinev encirclement of August 1944, which is visible on this map as a change of colour.',
       },
       university: {
         cause: 'The pocket matters in the argument about Hitler as commander. His image as an inflexible forbidding-of-withdrawal is too simple: he permitted the breakout at Korsun, and German historians of the official history series use it to argue that the catastrophe at Stalingrad was a decision of 1942, not a permanent policy.',
         what: 'The casualty figures are contested in the usual way - Soviet claims of prisoners were inflated for propaganda and for the accounting of captivity, and West German postwar studies of unit records produce lower totals.',
-        consequence: 'Korsun is also a case study in what the term "Fester Platz" cost: the German practice of declaring towns fortresses, which saved ground and destroyed armies, is one of the most criticised features of Hitler’s command after 1943.',
+        consequence: 'Korsun is also a case study in what the term “Fester Platz” cost: the German practice of declaring towns fortresses, which saved ground and destroyed armies, is one of the most criticised features of Hitler’s command after 1943.',
       },
     },
   },
@@ -1339,12 +1339,12 @@ export const EVENTS_1943_1945: WW2Event[] = [
       secondary: {
         cause: 'Hungary’s Jewish community had survived the war so far mainly because Horthy and the Hungarian elite refused German demands, partly from antisemitism of a different kind - they wanted to keep Jewish property for Hungarians - and partly because the army needed the labour.',
         what: 'Occupation removed that protection in days. The Hungarian gendarmerie carried out the ghettoisation and the round-ups in the countryside, and the Reichsbahn organised the trains; the Jewish Councils in Budapest were asked to compile the registration lists, which is the most painful chapter of the whole story.',
-        consequence: 'about 560,000 Hungarian Jews were killed, close to one in every ten Jews murdered in the Holocaust. The case also produced the most famous "help" story of the war, Raoul Wallenberg in Budapest, and the postwar argument over how much the Western allies could have done - including the refusal to bomb the railway lines.',
+        consequence: 'about 560,000 Hungarian Jews were killed, close to one in every ten Jews murdered in the Holocaust. The case also produced the most famous “help” story of the war, Raoul Wallenberg in Budapest, and the postwar argument over how much the Western allies could have done - including the refusal to bomb the railway lines.',
       },
       university: {
         cause: 'The Hungarian case is the strongest evidence in the functionalist-intentionalist debate for how much difference local administration makes: the same German apparatus that had taken years in France and the Netherlands completed the destruction of Hungarian Jewry in weeks because a functioning Hungarian state did the work voluntarily.',
-        what: 'It is also central to Hungarian memory politics. The 1948-89 account blamed "Horthy and the fascist officers" and ignored popular participation; since 1990 the debate has been reopened fiercely, and the current government’s treatment of Horthy as a national figure keeps it open.',
-        consequence: 'Legal consequences run to today: Hungary’s reparations and restitution claims, the status of property "aryanised" in 1944, the survival of a large Hungarian Jewish community which is the biggest in east-central Europe, and the question of whether a coerced state is a victim state, which Hungarian governments have pressed about 1944-45 in general.',
+        what: 'It is also central to Hungarian memory politics. The 1948-89 account blamed “Horthy and the fascist officers” and ignored popular participation; since 1990 the debate has been reopened fiercely, and the current government’s treatment of Horthy as a national figure keeps it open.',
+        consequence: 'Legal consequences run to today: Hungary’s reparations and restitution claims, the status of property “aryanised” in 1944, the survival of a large Hungarian Jewish community which is the biggest in east-central Europe, and the question of whether a coerced state is a victim state, which Hungarian governments have pressed about 1944-45 in general.',
       },
     },
   },
@@ -1427,9 +1427,9 @@ export const EVENTS_1943_1945: WW2Event[] = [
         consequence: 'The Gestapo hunt produced some 200 executions and thousands of arrests, and the regime made the families of the plotters prisoners. In the Federal Republic of Germany, the 20 July plotters became the respectable ancestors the country felt it needed - a choice that has itself been argued over.',
       },
       university: {
-        cause: 'The plots matter for two large questions. First, whether the German resistance was real: the evidence, especially from the "Sippenhaft" files and from the Freisler court records, is extensive and was documented late because so few survived. Second, whether the conspirators could ever have succeeded, since their condition was an understanding with the West and the Allies had agreed at Casablanca in January 1943 to demand unconditional surrender.',
+        cause: 'The plots matter for two large questions. First, whether the German resistance was real: the evidence, especially from the “Sippenhaft” files and from the Freisler court records, is extensive and was documented late because so few survived. Second, whether the conspirators could ever have succeeded, since their condition was an understanding with the West and the Allies had agreed at Casablanca in January 1943 to demand unconditional surrender.',
         what: 'The Allied refusal to treat the plotters as partners - and the Soviet suspicion that the plot was an SS provocation, which Stalin openly voiced at Tehran - left the conspirators with no foreign support at all.',
-        consequence: 'The postwar memory history is unusually rich: in East Germany the plotters were dismissed as reactionaries, in West Germany they were honoured as the moral witness of the nation, and the Berlin memorial on the Bendlerstrasse and the "Stauffenberg street" disputes in the 1950s show how contested that inheritance was. The 2008 film and the 2013 controversy over renaming a Bundeswehr barracks after him show that it is not settled.',
+        consequence: 'The postwar memory history is unusually rich: in East Germany the plotters were dismissed as reactionaries, in West Germany they were honoured as the moral witness of the nation, and the Berlin memorial on the Bendlerstrasse and the “Stauffenberg street” disputes in the 1950s show how contested that inheritance was. The 2008 film and the 2013 controversy over renaming a Bundeswehr barracks after him show that it is not settled.',
       },
     },
   },
@@ -1456,7 +1456,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
       },
       university: {
         cause: 'Historians have re-read Cobra as the moment the Wehrmacht in the west ceased to be a fighting force, since the loss of the front-line infantry battalions of Seventh Army, whose cadres had been training since 1940, could not be repaired in France under air attack.',
-        what: 'The bombing figures also carry a moral argument: the casualties from bombs falling short, and the 1,500 sorties that produced a corridor of lunar craters which slowed rather than helped the tanks, are the empirical content of the argument about whether air power really "opened" the way or whether it was the infantry and the artillery that did.',
+        what: 'The bombing figures also carry a moral argument: the casualties from bombs falling short, and the 1,500 sorties that produced a corridor of lunar craters which slowed rather than helped the tanks, are the empirical content of the argument about whether air power really “opened” the way or whether it was the infantry and the artillery that did.',
         consequence: 'The pursuit of August 1944, the largest mobile operation the American army has ever conducted, is the origin of the US army’s postwar doctrine of exploitation and of the argument that logistics, not firepower, decides campaigns.',
       },
     },
@@ -1483,7 +1483,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
         consequence: 'The shortening of the war is real: Germany lost the Ploiesti oil and the use of the Romanian army within days, and the Balkans front collapsed. The political cost was also real: by the percentages agreement of October 1944 Britain and the United States had already conceded Stalin a 90 percent say in Romania, so the coup bought liberation from Germany and occupation by the Soviet Union.',
       },
       university: {
-        cause: 'The historiography has moved a long way since the cold-war version of "a coup engineered by the Communists" and the communist version of "an antifascist uprising": the archival work of the 1990s, and the Romanian presidential commission of 2004 on the Holocaust, established both how limited the Communist role was in August 1944 and how extensive Romanian responsibility for the destruction of Romanian and Bessarabian Jewry had been.',
+        cause: 'The historiography has moved a long way since the cold-war version of “a coup engineered by the Communists” and the communist version of “an antifascist uprising”: the archival work of the 1990s, and the Romanian presidential commission of 2004 on the Holocaust, established both how limited the Communist role was in August 1944 and how extensive Romanian responsibility for the destruction of Romanian and Bessarabian Jewry had been.',
         what: 'Romania’s case is unusual in the postwar settlement: it is one of the few countries which fought on both sides, which was occupied by the Soviet Union and yet kept the king until 1947, and whose wartime frontiers - Bessarabia and northern Bukovina to the USSR, Northern Transylvania back from Hungary - were fixed by the 1947 Paris treaties in a form that survives today.',
         consequence: '23 August was the national day of communist Romania and was replaced in 2015 by 10 December; the argument about which date to mark is a live argument about whether 1944 meant liberation or occupation, which Romanians still do not agree about.',
       },
@@ -1498,7 +1498,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['balkans', 'politics'],
     countries: ['Bulgaria', 'Soviet Union', 'Germany'],
     figures: ['stalin'],
-    note: 'Bulgaria had joined the Tripartite Pact in March 1941 and let German troops cross its soil to attack Yugoslavia and Greece, but declared war on Britain and the United States only in December 1941 and never on the Soviet Union - there were no Bulgarian troops on the eastern front, and there was no Bulgarian army to surrender. On 5 September 1944 the USSR declared war anyway, and on 8 September the Red Army crossed the frontier unopposed; on 9 September the Fatherland Front, with the Communists in command, took power in Sofia, the regency was arrested and, in the "People’s Court" trials of 1944-45, between 1,000 and 2,000 people were executed. Bulgaria then fielded some 450,000 troops against Germany until May 1945. The 1947 treaty confirmed the pre-1941 frontier - Bulgaria kept Southern Dobruja, gained from Romania in 1940, and lost nothing - which is why the map’s Bulgarian colour changes but its shape does not. On the Jewish question, Bulgaria’s story is the one that does not fit the pattern: the government of Bogdan Filov deported 11,343 Jews from Bulgarian-occupied Thrace and Macedonia to Treblinka in March 1943 and collaborated in their murder, and yet the Jews of Bulgaria proper - some 48,000 people - were not handed over, after protests from the church, the parliamentary opposition and the landowners whose property plans made the deportations politically dangerous.',
+    note: 'Bulgaria had joined the Tripartite Pact in March 1941 and let German troops cross its soil to attack Yugoslavia and Greece, but declared war on Britain and the United States only in December 1941 and never on the Soviet Union - there were no Bulgarian troops on the eastern front, and there was no Bulgarian army to surrender. On 5 September 1944 the USSR declared war anyway, and on 8 September the Red Army crossed the frontier unopposed; on 9 September the Fatherland Front, with the Communists in command, took power in Sofia, the regency was arrested and, in the “People’s Court” trials of 1944-45, between 1,000 and 2,000 people were executed. Bulgaria then fielded some 450,000 troops against Germany until May 1945. The 1947 treaty confirmed the pre-1941 frontier - Bulgaria kept Southern Dobruja, gained from Romania in 1940, and lost nothing - which is why the map’s Bulgarian colour changes but its shape does not. On the Jewish question, Bulgaria’s story is the one that does not fit the pattern: the government of Bogdan Filov deported 11,343 Jews from Bulgarian-occupied Thrace and Macedonia to Treblinka in March 1943 and collaborated in their murder, and yet the Jews of Bulgaria proper - some 48,000 people - were not handed over, after protests from the church, the parliamentary opposition and the landowners whose property plans made the deportations politically dangerous.',
     levels: {
       primary: {
         cause: 'By the autumn of 1944 Bulgaria could see that Germany had lost, and the Soviet army was at its border.',
@@ -1508,12 +1508,12 @@ export const EVENTS_1943_1945: WW2Event[] = [
       secondary: {
         cause: 'Bulgaria had gained territory in 1940-41 with German help and had fought no war of its own in 1939-41. Its government then tried to have it both ways, staying in the Axis while refusing to send troops against the Soviet Union, which was popular with a peasantry that remembered 1915-18.',
         what: 'The Soviet declaration of war and the coup made the switch instant and cost almost nothing in lives. The communists used the two years that followed to take control of the police, the army and the courts.',
-        consequence: 'The survival of Bulgaria’s pre-1941 borders and the absence of occupation damage made its postwar communism unusually durable and unusually quiet. It is also the reason the "saving of Bulgarian Jewry" is one of the most carefully examined episodes of Holocaust history, because it shows what a government that refused to co-operate could achieve - and where the limits of that claim lie.',
+        consequence: 'The survival of Bulgaria’s pre-1941 borders and the absence of occupation damage made its postwar communism unusually durable and unusually quiet. It is also the reason the “saving of Bulgarian Jewry” is one of the most carefully examined episodes of Holocaust history, because it shows what a government that refused to co-operate could achieve - and where the limits of that claim lie.',
       },
       university: {
         cause: 'The Bulgarian case is a test of the argument that economic and political integration, not ideology, determined the fate of Jewish communities: Bulgaria’s officials argued in cabinet that Bulgarian Jews were useful taxpayers and that the real problem was the foreign Jews of the occupied territories, and Bulgarian property interests in Thrace and Macedonia made the deportations of 1943 a land grab as well as a murder.',
-        what: 'The Bulgarian claim to have "saved" its Jews has been qualified in detail by Bulgarian historians since 1990 - the government had planned deportation in 1943 and abandoned it after the political cost became clear - which is a useful general lesson: survival can be the product of bureaucratic obstruction and self-interest rather than of moral courage.',
-        consequence: 'The 1944-47 settlement also produced the longest-standing "who was the aggressor" question in the Balkans: Bulgaria’s 1941 occupation of Greek Thrace and Yugoslav Macedonia is only remembered in those countries, and the 1947 treaty’s confirmation of the frontier is the reason the dispute never became a border conflict.',
+        what: 'The Bulgarian claim to have “saved” its Jews has been qualified in detail by Bulgarian historians since 1990 - the government had planned deportation in 1943 and abandoned it after the political cost became clear - which is a useful general lesson: survival can be the product of bureaucratic obstruction and self-interest rather than of moral courage.',
+        consequence: 'The 1944-47 settlement also produced the longest-standing “who was the aggressor” question in the Balkans: Bulgaria’s 1941 occupation of Greek Thrace and Yugoslav Macedonia is only remembered in those countries, and the 1947 treaty’s confirmation of the frontier is the reason the dispute never became a border conflict.',
       },
     },
   },
@@ -1536,7 +1536,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
       secondary: {
         cause: 'Mannerheim and the leadership had calculated that Germany would lose but that Finland could not make peace alone while the German army in Norway was still intact and able to seize Finnish ports and railways. When the Red Army took the Karelian Isthmus in June 1944, peace became unavoidable.',
         what: 'The handover was managed with real skill: the Lapland War was fought half-heartedly by both sides, the German evacuation through Norway was left largely unmolested, and the Finnish army withdrew from the 1944 front on the day the armistice took effect.',
-        consequence: 'Finland’s survival as a democracy inside a hostile system produced the postwar foreign policy of "Finlandisation" - full independence in exchange for never offending Moscow - which the smaller states of Eastern Europe had reason to study in 1956, 1968 and 1980.',
+        consequence: 'Finland’s survival as a democracy inside a hostile system produced the postwar foreign policy of “Finlandisation” - full independence in exchange for never offending Moscow - which the smaller states of Eastern Europe had reason to study in 1956, 1968 and 1980.',
       },
       university: {
         cause: 'Finland is the hard case in the question of what collaboration meant. Its war aims were limited, its government stayed parliamentary, there was no Finnish Nazi party, and there was no Finnish equivalent of the Vichy statute.',
@@ -1597,7 +1597,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
       },
       university: {
         cause: 'The famine is a case study in the ethics of resistance and reprisal - the same argument raised in Czechoslovakia after Heydrich’s assassination and in Italy after 8 September 1943 - and in the history of occupation economics, since the Dutch case shows the requisition system collapsing into starvation with almost no military purpose.',
-        what: 'The evidence base is unusually strong, because the Dutch population was already well-recorded and the postwar government commissioned a formal enquiry. The Dutch Famine Birth Cohort study, following people conceived or born during the winter of 1944-45 into adulthood, is one of the foundations of the "developmental origins of health and disease" literature.',
+        what: 'The evidence base is unusually strong, because the Dutch population was already well-recorded and the postwar government commissioned a formal enquiry. The Dutch Famine Birth Cohort study, following people conceived or born during the winter of 1944-45 into adulthood, is one of the foundations of the “developmental origins of health and disease” literature.',
         consequence: 'The long-run findings - higher rates of heart disease, diabetes and obesity among people who were in the womb during the famine - have made the Hongerwinter scientifically important far outside the history of the war, and ethically uncomfortable, since the cohort’s existence depends on a punishment that killed some 20,000 people.',
       },
     },
@@ -1640,7 +1640,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['balkans', 'politics'],
     countries: ['Greece', 'United Kingdom'],
     figures: ['churchill'],
-    note: 'Thirty-three days of fighting in Athens and Piraeus - the Dekemvriana - began on 3 December 1944, when police fired on a mass demonstration against the demand that the left-wing resistance army ELAS surrender its weapons, and British troops, some 40,000 of them just arrived and ill-equipped for street fighting, were committed against the men who had fought the Germans in the Greek mountains. Churchill had flown to Moscow in October 1944 and agreed with Stalin the "percentages" spheres of influence that gave Britain a dominant say in Greece; he flew to Athens on 25 December. By the time a truce came in mid-January 1945, some 1,400 people had been killed in Athens on the most conservative count, and several thousand probably died, and British units had used air attack and naval bombardment against a European capital in which their own army had been welcomed six weeks earlier. The Varkiza agreement of 12 February 1945 disarmed ELAS, and the "white terror" of right-wing bands and of collaborationist Security Battalions now re-armed followed, which led directly to the civil war of 1946-49 - fought with communist Yugoslavia and Bulgaria backing the Democratic Army, and with American money and arms backing the government after the Truman Doctrine of 1947. Greece got its frontiers and got a civil war instead of a settlement.',
+    note: 'Thirty-three days of fighting in Athens and Piraeus - the Dekemvriana - began on 3 December 1944, when police fired on a mass demonstration against the demand that the left-wing resistance army ELAS surrender its weapons, and British troops, some 40,000 of them just arrived and ill-equipped for street fighting, were committed against the men who had fought the Germans in the Greek mountains. Churchill had flown to Moscow in October 1944 and agreed with Stalin the “percentages” spheres of influence that gave Britain a dominant say in Greece; he flew to Athens on 25 December. By the time a truce came in mid-January 1945, some 1,400 people had been killed in Athens on the most conservative count, and several thousand probably died, and British units had used air attack and naval bombardment against a European capital in which their own army had been welcomed six weeks earlier. The Varkiza agreement of 12 February 1945 disarmed ELAS, and the “white terror” of right-wing bands and of collaborationist Security Battalions now re-armed followed, which led directly to the civil war of 1946-49 - fought with communist Yugoslavia and Bulgaria backing the Democratic Army, and with American money and arms backing the government after the Truman Doctrine of 1947. Greece got its frontiers and got a civil war instead of a settlement.',
     levels: {
       primary: {
         cause: 'Different groups in Greece had fought the Germans, and they had hated each other too. When the occupiers left, they began fighting each other.',
@@ -1653,7 +1653,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
         consequence: 'December 1944 settled Greece’s postwar alignment, ruined its economy for a second time in five years, and created the political culture of suspicion that produced the dictatorship of 1967-74. It was also, in Athens, a rehearsal of the counter-insurgency methods later armies would try in Malaya, Kenya and Aden.',
       },
       university: {
-        cause: 'The Dekemvriana are central to two arguments. One is about the "percentages agreement" - whether Churchill’s deal with Stalin was cynical realism or the abandonment of a democratic movement by a government that had made anti-fascism its war aim. The other is about whether the Greek resistance, and EAM in particular, represented a genuine revolutionary alternative that was defeated from outside.',
+        cause: 'The Dekemvriana are central to two arguments. One is about the “percentages agreement” - whether Churchill’s deal with Stalin was cynical realism or the abandonment of a democratic movement by a government that had made anti-fascism its war aim. The other is about whether the Greek resistance, and EAM in particular, represented a genuine revolutionary alternative that was defeated from outside.',
         what: 'The documentary base is strong on the British side and contested on the Greek, and the opening of the British War Cabinet records and the Greek security-service archives have produced very different accounts of the same month.',
         consequence: 'The memory politics remain live: Greece did not recognise the left-wing resistance’s role officially until 1982, and December 1944 is still the reference point in arguments about the Greek right, about the junta, and about the 2010-15 argument over who bore responsibility for the country’s economic ruin.',
       },
@@ -1668,7 +1668,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['western', 'home'],
     countries: ['Germany', 'United Kingdom'],
     figures: [],
-    note: 'British troops of the 11th Armoured Division entered Bergen-Belsen on 15 April 1945 and found about 60,000 prisoners, most of them dying, and some 10,000 to 13,000 bodies lying unburied in the camp and its satellite compounds. Bergen-Belsen had no gas chambers and had been run as a camp of exchange and of detention, which made it in 1945 a destination for prisoners marched out of camps in the east as the Red Army advanced; typhus and dysentery were everywhere among prisoners and among the SS guards, who were themselves left to starve in a fenced compound. About 13,000 to 14,000 prisoners died in the weeks after liberation despite the food, medical treatment and the burial parties, and the camp had to be burned to stop the epidemic. The SS staff, including the commandant Josef Kramer and the overseer Irma Grese, were arrested and tried at the first Belsen trial in Luneburg in 1945; eleven were hanged. The films shot by the British Army’s official cameramen and the photographs taken by them and by the troops themselves, with the explicit instruction of collecting evidence that could not later be denied, became the most widely seen images of the Holocaust, and are the reason the phrase "we have seen it" enters the memory of the war - although the troops who filmed and buried the dead were not told what the place had been, and many have described the long afterwards in the same terms.',
+    note: 'British troops of the 11th Armoured Division entered Bergen-Belsen on 15 April 1945 and found about 60,000 prisoners, most of them dying, and some 10,000 to 13,000 bodies lying unburied in the camp and its satellite compounds. Bergen-Belsen had no gas chambers and had been run as a camp of exchange and of detention, which made it in 1945 a destination for prisoners marched out of camps in the east as the Red Army advanced; typhus and dysentery were everywhere among prisoners and among the SS guards, who were themselves left to starve in a fenced compound. About 13,000 to 14,000 prisoners died in the weeks after liberation despite the food, medical treatment and the burial parties, and the camp had to be burned to stop the epidemic. The SS staff, including the commandant Josef Kramer and the overseer Irma Grese, were arrested and tried at the first Belsen trial in Luneburg in 1945; eleven were hanged. The films shot by the British Army’s official cameramen and the photographs taken by them and by the troops themselves, with the explicit instruction of collecting evidence that could not later be denied, became the most widely seen images of the Holocaust, and are the reason the phrase “we have seen it” enters the memory of the war - although the troops who filmed and buried the dead were not told what the place had been, and many have described the long afterwards in the same terms.',
     levels: {
       primary: {
         cause: 'As the Allied armies came into Germany, they reached the camps that the Nazis had emptied by marching the prisoners away. What was left was terrible.',
@@ -1680,7 +1680,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
       secondary: {
         cause: 'Belsen had become the end of the line: as the Soviet army advanced in the east, the camps there were evacuated and the prisoners marched west in winter, so tens of thousands arrived at Belsen already dying. The camp’s administration had been allowed to collapse.',
         what: 'The liberation was a medical and a military problem at once: the British army had to feed, treat and quarantine 60,000 people and bury their dead, and it used forced labour parties of German civilians and captured SS for the burials, and filmed everything.',
-        consequence: 'Belsen forced the question of what a liberating army owes the people it frees, and produced one of the first large-scale postwar public-health operations. It also created the pattern of the postwar trials at Luneburg, where the defence "I was only obeying orders" was tested against the evidence of what the camp was.',
+        consequence: 'Belsen forced the question of what a liberating army owes the people it frees, and produced one of the first large-scale postwar public-health operations. It also created the pattern of the postwar trials at Luneburg, where the defence “I was only obeying orders” was tested against the evidence of what the camp was.',
       },
       university: {
         cause: 'Historians of representation use Belsen as the founding case of Holocaust imagery: the images were made with a deliberate evidential and pedagogical purpose, ordered by SHAEF, and their circulation shaped what later generations could imagine. That is why scholars argue both about what the photographs show and about what the act of looking at them does.',
@@ -1708,7 +1708,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
       secondary: {
         cause: 'Stalin wanted the city taken quickly, for the political reason that the Red Army should be there when the war ended in Europe, and he set two fronts - Zhukov’s and Konev’s - against each other by promising the capture of Berlin to whichever got there first.',
         what: 'Zhukov attacked frontally because he had no time to manoeuvre, on ground chosen by the defenders, in flood, with his armour committed to the ridges. The searchlights were an improvised idea that backfired. He took the heights by 19 April by putting artillery guns into direct fire against the bunkers.',
-        consequence: 'The price is the real subject: Seelow is where the Red Army’s 1945 learning curve met a defended river line, and the losses were appalling. It is also where the "race for Berlin" between the two marshals, and the quarrel over who took the Reichstag, began - a quarrel that Soviet memoirs distorted for forty years.',
+        consequence: 'The price is the real subject: Seelow is where the Red Army’s 1945 learning curve met a defended river line, and the losses were appalling. It is also where the “race for Berlin” between the two marshals, and the quarrel over who took the Reichstag, began - a quarrel that Soviet memoirs distorted for forty years.',
       },
       university: {
         cause: 'The battle matters to the biggest argument about the Eastern Front in 1945: whether the Soviet army’s final campaigns represent the maturity of deep operations, as the Soviet and Russian accounts insist, or a brute-force attrition in which manpower was substituted for skill, as the older Western literature said.',
@@ -1735,13 +1735,13 @@ export const EVENTS_1943_1945: WW2Event[] = [
       },
       secondary: {
         cause: 'Hitler had refused every offer to retreat or negotiate, and had ordered scorched-earth destruction inside Germany - the Nero Decree (Nerobefehl) of 19 March 1945, which Albert Speer hid - on the theory that the German people had failed him and did not deserve to survive.',
-        what: 'His will is worth reading: it blames "the other countries" and the Jews for the war, forbids any capitulation, and appoints a government made of loyalists with no power, no army and no territory.',
+        what: 'His will is worth reading: it blames “the other countries” and the Jews for the war, forbids any capitulation, and appoints a government made of loyalists with no power, no army and no territory.',
         consequence: 'The decision to name a government rather than to surrender created a fortnight of ambiguity in which Donitz tried to get German troops into Western captivity, and it is the reason the surrender had to be signed twice - at Reims on 7 May and in Berlin on 8 May - because Stalin distrusted the first.',
       },
       university: {
-        cause: 'The death itself has a long historiography because the Soviet Union kept the truth ambiguous for political reasons: Stalin told Roosevelt at Yalta and Truman at Potsdam that he was not certain Hitler was dead, and SMERSH and later the KGB conducted investigations, staged identification tests, and ran files on the "sightings" to serve intelligence purposes.',
+        cause: 'The death itself has a long historiography because the Soviet Union kept the truth ambiguous for political reasons: Stalin told Roosevelt at Yalta and Truman at Potsdam that he was not certain Hitler was dead, and SMERSH and later the KGB conducted investigations, staged identification tests, and ran files on the “sightings” to serve intelligence purposes.',
         what: 'The Soviet records, opened in the 1990s, together with the dental evidence held in Moscow - examined by a French team using the dental records in 2018 - settle the matter in ordinary legal terms. The fragments of skull in Russian archives are Hitler’s.',
-        consequence: 'The "did he escape" question is a genuinely interesting example of how secret police create myth, and of how it survives: it is a staple of conspiracy literature, and the answer has to be argued from documents that were produced by an institution with an interest in keeping the question open.',
+        consequence: 'The “did he escape” question is a genuinely interesting example of how secret police create myth, and of how it survives: it is a staple of conspiracy literature, and the answer has to be argued from documents that were produced by an institution with an interest in keeping the question open.',
       },
     },
   },
@@ -1754,7 +1754,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['politics', 'western', 'eastern'],
     countries: ['Germany', 'United States', 'United Kingdom', 'Soviet Union', 'France'],
     figures: ['truman', 'churchill', 'stalin', 'de_gaulle'],
-    note: 'The Berlin Declaration of 5 June 1945 was the legal end of the Third Reich. Signed by the four commanders-in-chief, Eisenhower, Montgomery, Zhukov and de Lattre de Tassigny, following the plan worked out by the European Advisory Commission at the end of 1944, it recorded the abolition of the German government, the assumption of "supreme authority" by the four commanders, the boundaries of the four occupation zones and the special status of Berlin, and the terms on which the war would end without a peace treaty. The Flensburg government of Grand Admiral Donitz was arrested on 23 May and never recognised. The declaration is the founding document of postwar Germany, and its odd form - no surrender terms imposed on Germany as a state, no peace treaty, four authorities claiming to govern in the name of a Germany whose existence they denied - created a legal problem that lasted until 1990. The Basic Law of 1949 was drafted as a provisional constitution for exactly this reason, and the Two-plus-Four Treaty of 1990 had to be called a treaty "on the final settlement with respect to Germany" rather than a peace treaty for the same reason.',
+    note: 'The Berlin Declaration of 5 June 1945 was the legal end of the Third Reich. Signed by the four commanders-in-chief, Eisenhower, Montgomery, Zhukov and de Lattre de Tassigny, following the plan worked out by the European Advisory Commission at the end of 1944, it recorded the abolition of the German government, the assumption of “supreme authority” by the four commanders, the boundaries of the four occupation zones and the special status of Berlin, and the terms on which the war would end without a peace treaty. The Flensburg government of Grand Admiral Donitz was arrested on 23 May and never recognised. The declaration is the founding document of postwar Germany, and its odd form - no surrender terms imposed on Germany as a state, no peace treaty, four authorities claiming to govern in the name of a Germany whose existence they denied - created a legal problem that lasted until 1990. The Basic Law of 1949 was drafted as a provisional constitution for exactly this reason, and the Two-plus-Four Treaty of 1990 had to be called a treaty “on the final settlement with respect to Germany” rather than a peace treaty for the same reason.',
     levels: {
       primary: {
         cause: 'After Germany surrendered, somebody had to be in charge of the country, and four countries had armies there.',
@@ -1764,12 +1764,12 @@ export const EVENTS_1943_1945: WW2Event[] = [
       secondary: {
         cause: 'The three western powers and the Soviet Union had argued since 1943 about whether Germany should be dismembered, and the European Advisory Commission’s London agreements of 1944 settled on zones instead - partly because the Commission worked while the war was still going on, and nobody had to agree about Germany’s final frontiers.',
         what: 'The declaration is careful in a way that is easy to miss: it says the four powers are not annexing Germany, and not treating the Germans as enemies to be destroyed, and it states the four D’s - disarmament, denazification, democratisation, decentralisation - that would be the basis of occupation policy.',
-        consequence: 'Because the four could not agree from 1946 onwards, the declaration’s "no peace treaty" arrangement produced the two German states, the North Atlantic Treaty of 1949 and the argument that made the Cold War in Europe a European constitutional question, not merely a diplomatic one.',
+        consequence: 'Because the four could not agree from 1946 onwards, the declaration’s “no peace treaty” arrangement produced the two German states, the North Atlantic Treaty of 1949 and the argument that made the Cold War in Europe a European constitutional question, not merely a diplomatic one.',
       },
       university: {
         cause: 'The declaration is the central text in the argument about the legal character of the postwar German order - whether the Reich survived as a legal subject with suspended capacity, which is the position West German constitutional law eventually took, or whether a new state was founded in 1949.',
         what: 'The practical stakes were enormous: restitution and compensation claims, the treatment of German property abroad, the status of the German citizenship of people in the eastern territories, the jurisdiction of German courts over Nazi crimes when the German state itself was held to have no government, and the legality of the Nuremberg trial - which was held under the authority of the four powers precisely because no German court could have been trusted to try these men.',
-        consequence: 'The same ambiguity is behind the 1990 settlement’s careful wording, which is why there is still no German peace treaty and no formally concluded Second World War in Europe, and why the "Germany and the Two Plus Four" treaty is treated by German lawyers as the equivalent of one.',
+        consequence: 'The same ambiguity is behind the 1990 settlement’s careful wording, which is why there is still no German peace treaty and no formally concluded Second World War in Europe, and why the “Germany and the Two Plus Four” treaty is treated by German lawyers as the equivalent of one.',
       },
     },
   },
@@ -1782,7 +1782,7 @@ export const EVENTS_1943_1945: WW2Event[] = [
     fronts: ['politics'],
     countries: ['Germany', 'Poland', 'Soviet Union', 'United Kingdom', 'United States'],
     figures: ['truman', 'stalin', 'churchill', 'attlee'],
-    note: 'The Potsdam Conference ran from 17 July to 2 August 1945, and its most lasting decision was the one Stalin had already made on the ground. Poland’s frontier was moved west to the Oder and the Western Neisse, so that Germany lost Silesia, Pomerania, East Brandenburg, southern East Prussia and Danzig - roughly a quarter of the territory of the 1937 Reich - and the Poles who had lived east of the Curzon line, which the USSR kept, were resettled in it. The agreement used careful language: the transfer was described as "final" only pending a peace treaty, and it required that transfers be conducted "in an orderly and humane manner". Neither condition was met, and the peace treaty never came. Some 5 to 7 million people of German language and identity left or were driven out of what became Poland, and across east-central Europe, including the Sudetenland, the figure is perhaps two and a half times that; Poles moving west were between 4 and 5 million, and some 1.5 million Ukrainians were moved east inside Poland and Soviet Ukraine. The other Potsdam decisions - the four D’s, reparations to be taken from each zone with the western zones paying the Soviet share in industrial plant, the trial of major war criminals, and the rejection of any German central government - were carried out in the west and abandoned in the east within three years. Churchill was replaced on 26 July by Clement Attlee after the British election, which is why the conference’s photographs show two British prime ministers and why the Soviet negotiators found the American delegation noticeably changed.',
+    note: 'The Potsdam Conference ran from 17 July to 2 August 1945, and its most lasting decision was the one Stalin had already made on the ground. Poland’s frontier was moved west to the Oder and the Western Neisse, so that Germany lost Silesia, Pomerania, East Brandenburg, southern East Prussia and Danzig - roughly a quarter of the territory of the 1937 Reich - and the Poles who had lived east of the Curzon line, which the USSR kept, were resettled in it. The agreement used careful language: the transfer was described as “final” only pending a peace treaty, and it required that transfers be conducted “in an orderly and humane manner”. Neither condition was met, and the peace treaty never came. Some 5 to 7 million people of German language and identity left or were driven out of what became Poland, and across east-central Europe, including the Sudetenland, the figure is perhaps two and a half times that; Poles moving west were between 4 and 5 million, and some 1.5 million Ukrainians were moved east inside Poland and Soviet Ukraine. The other Potsdam decisions - the four D’s, reparations to be taken from each zone with the western zones paying the Soviet share in industrial plant, the trial of major war criminals, and the rejection of any German central government - were carried out in the west and abandoned in the east within three years. Churchill was replaced on 26 July by Clement Attlee after the British election, which is why the conference’s photographs show two British prime ministers and why the Soviet negotiators found the American delegation noticeably changed.',
     levels: {
       primary: {
         cause: 'The countries that won the war had to decide where Germany’s border would be, and the Soviet army was standing on the land in question.',
@@ -1798,8 +1798,8 @@ export const EVENTS_1943_1945: WW2Event[] = [
       },
       university: {
         cause: 'Potsdam sits inside the argument about whether the postwar order was a settlement or a division, and about who bears responsibility for the expulsions: the communists who administered them, the Western powers who conceded them, or the prewar tradition of population transfer that the interwar peace conferences themselves had endorsed - which is the point made by the work of the historians of the Minorities Treaties.',
-        what: 'The historiography has been rewritten twice: first by the West German "expellee" literature of the 1950s, then by the Polish-German joint textbook commission from 1972, and then, after 1989, by the argument that transfers, flight and violence against civilians were part of a single European civil-war sequence from 1918 to 1948.',
-        consequence: 'The memory problem is live. Expulsions were a founding grievance of West German politics and are now largely a museum subject in Germany, while in Poland the "Recovered Territories" are still presented as compensation for the losses in the east - which is why the 1945 border is one of the few questions on which Polish and German politics still have to be careful in public.',
+        what: 'The historiography has been rewritten twice: first by the West German “expellee” literature of the 1950s, then by the Polish-German joint textbook commission from 1972, and then, after 1989, by the argument that transfers, flight and violence against civilians were part of a single European civil-war sequence from 1918 to 1948.',
+        consequence: 'The memory problem is live. Expulsions were a founding grievance of West German politics and are now largely a museum subject in Germany, while in Poland the “Recovered Territories” are still presented as compensation for the losses in the east - which is why the 1945 border is one of the few questions on which Polish and German politics still have to be careful in public.',
       },
     },
   },

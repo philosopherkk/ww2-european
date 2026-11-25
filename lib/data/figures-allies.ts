@@ -23,7 +23,7 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
     bloc: 'allies',
     bio: {
       primary: 'Chamberlain was prime minister before Churchill. He tried to keep the peace by giving Hitler what he wanted at Munich, and people blamed him when war came.',
-      secondary: 'He pursued rearmament while seeking agreement with Hitler, and returned from Munich in September 1938 claiming "peace for our time". After the German occupation of Prague in March 1939 he gave the guarantee to Poland. The Norway Debate of May 1940 ended his government.',
+      secondary: 'He pursued rearmament while seeking agreement with Hitler, and returned from Munich in September 1938 claiming “peace for our time”. After the German occupation of Prague in March 1939 he gave the guarantee to Poland. The Norway Debate of May 1940 ended his government.',
       university: 'The revisionist case, associated with David Dilks and others, treats appeasement as a deliberate strategy of buying time for rearmament, given that Britain was not ready before 1939-40; the weakness was less the policy than the failure to pair it with credible deterrence and with an alliance for eastern Europe.',
     },
   },
@@ -49,8 +49,8 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
     bloc: 'allies',
     bio: {
       primary: 'Roosevelt was president of the United States. He sent supplies to Britain and the Soviet Union, and brought America into the war after December 1941.',
-      secondary: 'He moved the United States from neutrality to "Arsenal of Democracy" through Lend-Lease and an undeclared naval war in the Atlantic, and after Pearl Harbor directed a two-front war. He insisted on unconditional surrender and died on 12 April 1945, before the war in Europe ended.',
-      university: 'Roosevelt’s strategy combined a "Germany first" commitment with a persistent preference for political over military solutions, and his belief that he could manage Stalin personally — which he pursued against the advice of his own State Department — is central to the historiography of the postwar settlement.',
+      secondary: 'He moved the United States from neutrality to “Arsenal of Democracy” through Lend-Lease and an undeclared naval war in the Atlantic, and after Pearl Harbor directed a two-front war. He insisted on unconditional surrender and died on 12 April 1945, before the war in Europe ended.',
+      university: 'Roosevelt’s strategy combined a “Germany first” commitment with a persistent preference for political over military solutions, and his belief that he could manage Stalin personally — which he pursued against the advice of his own State Department — is central to the historiography of the postwar settlement.',
     },
   },
   {
@@ -63,7 +63,7 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
     bio: {
       primary: 'Truman became president when Roosevelt died. He met Stalin at Potsdam and made the decision to use the atomic bomb.',
       secondary: 'He took office on 12 April 1945, carried the United States delegation at Potsdam, where a harder line towards the Soviet Union replaced Roosevelt’s approach \(the atomic bombings he authorised fall in the Pacific war, which this site does not cover, but they framed everything he said there\), and met Stalin as the leader of a state that now had the largest economy and the smallest commitment to a European settlement.',
-      university: 'Truman’s 1945 diplomacy is studied through the "atomic diplomacy" debate: whether possession of the bomb made Soviet concessions more or less likely, and whether the Potsdam failure was structural, given Soviet security aims in eastern Europe, or contingent on personalities.',
+      university: 'Truman’s 1945 diplomacy is studied through the “atomic diplomacy” debate: whether possession of the bomb made Soviet concessions more or less likely, and whether the Potsdam failure was structural, given Soviet security aims in eastern Europe, or contingent on personalities.',
     },
   },
   {
@@ -76,7 +76,7 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
     bio: {
       primary: 'Stalin ruled the Soviet Union. He signed a pact with Hitler, was nearly destroyed when Germany attacked, and then drove the German army back to Berlin.',
       secondary: 'He signed the Nazi-Soviet pact in August 1939 and took eastern Poland and the Baltic states. He ignored warnings of the 1941 invasion and was paralysed for days; he then took direct control of strategy, presided over enormous losses, and emerged in 1945 as the dominant power in eastern Europe.',
-      university: 'The historiography has moved from the "military amateur" thesis to a more complex view: after a catastrophic 1941-42, Stalin became an effective strategic learner, delegating to the Stavka while retaining political control through the commissars until 1942. His security aims — a contiguous buffer zone, control of the Baltic and the Dardanelles, a divided Germany — explain the postwar settlement better than any single breach of promise.',
+      university: 'The historiography has moved from the “military amateur” thesis to a more complex view: after a catastrophic 1941-42, Stalin became an effective strategic learner, delegating to the Stavka while retaining political control through the commissars until 1942. His security aims — a contiguous buffer zone, control of the Baltic and the Dardanelles, a divided Germany — explain the postwar settlement better than any single breach of promise.',
     },
   },
   {
@@ -140,8 +140,8 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
     bloc: 'soviet',
     bio: {
       primary: 'Chuykov commanded the Soviet army that fought street by street inside Stalingrad and held the west bank of the Volga.',
-      secondary: 'His 62nd Army held the "Ludnikova’s grain elevator", the Mamayev Kurgan and the factory district through the autumn and winter of 1942-43, absorbing the main weight of the German attack.',
-      university: 'The 62nd Army’s tactics — "hug the enemy" so that German air and armour could not be used without risk to their own troops — are the standard case for studying the Soviet adaptation of close-combat methods in urban terrain.',
+      secondary: 'His 62nd Army held the “Ludnikova’s grain elevator”, the Mamayev Kurgan and the factory district through the autumn and winter of 1942-43, absorbing the main weight of the German attack.',
+      university: 'The 62nd Army’s tactics — “hug the enemy” so that German air and armour could not be used without risk to their own troops — are the standard case for studying the Soviet adaptation of close-combat methods in urban terrain.',
     },
   },
   {
@@ -193,7 +193,7 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
     bio: {
       primary: 'Patton was an American general who led fast tank attacks in Sicily, France and Germany. He was very aggressive and very blunt.',
       secondary: 'He commanded the landings in Sicily, then Third Army, whose rapid advance from Normandy to the Falaise pocket and across France in 1944 was the fastest exploitation of the war in the west. He was removed from battlefield command after the slapping incidents, was given the Fifteenth Army in SHAEF reserve, which he commanded until his death, and died in December 1945, weeks after a car crash.',
-      university: 'Patton is a case of the "exploitation commander": superb at mobile offensive once logistics permitted, and repeatedly frustrated by the supply system that prioritised Montgomery’s thrust. Postwar hagiography also obscured the two soldiers he assaulted in August 1944 — the contemporary press inflated the count to twenty — his advocacy of using the German army against the Soviet Union, and his contempt for denazification. The Fifteenth Army he commanded was a real field army in SHAEF reserve; the phantom army group of the Fortitude deception, which he is often said to have been picked to command, was a separate invention.',
+      university: 'Patton is a case of the “exploitation commander”: superb at mobile offensive once logistics permitted, and repeatedly frustrated by the supply system that prioritised Montgomery’s thrust. Postwar hagiography also obscured the two soldiers he assaulted in August 1944 — the contemporary press inflated the count to twenty — his advocacy of using the German army against the Soviet Union, and his contempt for denazification. The Fifteenth Army he commanded was a real field army in SHAEF reserve; the phantom army group of the Fortitude deception, which he is often said to have been picked to command, was a separate invention.',
     },
   },
   {
@@ -224,7 +224,7 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
   },
   {
     id: 'harris',
-    name: 'Arthur "Bomber" Harris',
+    name: 'Arthur “Bomber” Harris',
     birthDeath: '1892-1984',
     role: 'Air Chief Marshal; commander of RAF Bomber Command',
     country: 'United Kingdom',
@@ -245,7 +245,7 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
     bio: {
       primary: 'Dowding organised the defence of Britain in 1940, using radar, telephones and squadrons of fighters to stop the German air force.',
       secondary: 'He built the integrated air defence system — radar, the Filter Room at Bentley Priory, sector control — and refused to commit all his squadrons in July-August 1940, preserving the fighter strength that won the Battle of Britain. He was removed from Fighter Command in November 1940.',
-      university: 'Dowding’s removal in November 1940 is one of the most criticised personnel decisions of the British war, connected to the "Big Wing" controversy and to the failure of the Luftwaffe night offensive. His postwar advocacy of air-power primacy does not diminish his 1940 achievement.',
+      university: 'Dowding’s removal in November 1940 is one of the most criticised personnel decisions of the British war, connected to the “Big Wing” controversy and to the failure of the Luftwaffe night offensive. His postwar advocacy of air-power primacy does not diminish his 1940 achievement.',
     },
   },
   {
@@ -258,7 +258,7 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
     bio: {
       primary: 'Park was the New Zealander who ran the fighter squadrons that defended south-east England in 1940.',
       secondary: 'He commanded No. 11 Group, which fought the bulk of the Battle of Britain, and later defended Malta in 1942 and commanded in Southeast Asia.',
-      university: 'Park is central to the "Park versus Trafford Leigh-Mallory" quarrel over fighter tactics — the forward interception of the main German force versus the "Big Wing" theory — which shaped both the conduct of the battle and its contested historiography.',
+      university: 'Park is central to the “Park versus Trafford Leigh-Mallory” quarrel over fighter tactics — the forward interception of the main German force versus the “Big Wing” theory — which shaped both the conduct of the battle and its contested historiography.',
     },
   },
   {
@@ -296,8 +296,8 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
     bloc: 'collaboration',
     bio: {
       primary: 'Pétain was the great hero of the First World War who became the leader of France after the defeat of 1940 and co-operated with Germany.',
-      secondary: 'Asked for armistice terms in June 1940, he became head of the French State at Vichy, abolished the republic, and pursued a "National Revolution" and collaboration, including anti-Jewish statutes in October 1940 and the deportation of Jews from the unoccupied zone after November 1942.',
-      university: 'The "shield or sword" defence — that Vichy’s collaboration protected France from worse — is largely rejected by the archival record since Paxton and the 1997 Perruchon findings, which established French administrative responsibility for the roundup and deportation of 76,000 Jews.',
+      secondary: 'Asked for armistice terms in June 1940, he became head of the French State at Vichy, abolished the republic, and pursued a “National Revolution” and collaboration, including anti-Jewish statutes in October 1940 and the deportation of Jews from the unoccupied zone after November 1942.',
+      university: 'The “shield or sword” defence — that Vichy’s collaboration protected France from worse — is largely rejected by the archival record since Paxton and the 1997 Perruchon findings, which established French administrative responsibility for the roundup and deportation of 76,000 Jews.',
     },
   },
   {
@@ -309,7 +309,7 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
     bloc: 'collaboration',
     bio: {
       primary: 'Weygand was sent to command the French army in May 1940 when the battle was being lost, but he could not save France.',
-      secondary: 'He replaced Gamelin on 20 May 1940 and attempted to establish a "Weygand front" by holding the channel ports, an attempt that came too late. He later became Vichy’s minister of defence and was imprisoned by the Germans.',
+      secondary: 'He replaced Gamelin on 20 May 1940 and attempted to establish a “Weygand front” by holding the channel ports, an attempt that came too late. He later became Vichy’s minister of defence and was imprisoned by the Germans.',
       university: 'Weygand’s appointment illustrates the French command’s belief that a change of personnel could substitute for a change of doctrine; the failure of the Weygand plan is used to show that the defeat was doctrinal and not merely a matter of generalship.',
     },
   },
@@ -322,8 +322,8 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
     bloc: 'allies',
     bio: {
       primary: 'Daladier was the French prime minister who agreed with Chamberlain to give the German-speaking parts of Czechoslovakia to Hitler.',
-      secondary: 'He signed the Munich agreement in September 1938 and presided over the "Phoney War" and the French military planning that led to defeat in May-June 1940. He was arrested by Vichy and later by the Germans.',
-      university: 'Daladier’s government is the test case for the argument that French appeasement was tied to the "Ten Thousand Year Peace" doctrine of defensive war and to fiscal and demographic constraints on mobilisation, rather than simple cowardice.',
+      secondary: 'He signed the Munich agreement in September 1938 and presided over the “Phoney War” and the French military planning that led to defeat in May-June 1940. He was arrested by Vichy and later by the Germans.',
+      university: 'Daladier’s government is the test case for the argument that French appeasement was tied to the “Ten Thousand Year Peace” doctrine of defensive war and to fiscal and demographic constraints on mobilisation, rather than simple cowardice.',
     },
   },
   {
@@ -400,7 +400,7 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
     bloc: 'allies',
     bio: {
       primary: 'Metaxas ruled Greece as a dictator, but he refused to let Mussolini’s Italy occupy the country, and Greece won its first big victory of the war.',
-      secondary: 'His "No" ("Ochi") to the Italian ultimatum of 28 October 1940 led to the Italian invasion and to the Greek counter-offensive which drove the Italians back into Albania, the first Allied land victory of the war.',
+      secondary: 'His “No” (“Ochi”) to the Italian ultimatum of 28 October 1940 led to the Italian invasion and to the Greek counter-offensive which drove the Italians back into Albania, the first Allied land victory of the war.',
       university: 'The 1940-41 victory became the founding myth of Greek national memory, which obscures the occupation period’s collaboration, the violence of 1943-44 between resistance groups, and the civil war of 1946-49 as its continuation.',
     },
   },
@@ -413,8 +413,8 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
     bloc: 'allies',
     bio: {
       primary: 'The king of Norway refused to give in to Germany and would not appoint the Nazi leader Quisling, so he and his government went into exile by sea.',
-      secondary: 'He rejected the German demands of April 1940 and the "mediation" pressure of the Storting, and left for Britain with the government on 7 June 1940. He returned in 1945 as the symbol of Norwegian resistance.',
-      university: 'The king’s refusal is a case study in the constitutional politics of small neutral states: the 1940 crisis turned on whether the crown or the Storting held authority in extremis, and the postwar "Quisling trials" established the boundary of legitimate collaboration.',
+      secondary: 'He rejected the German demands of April 1940 and the “mediation” pressure of the Storting, and left for Britain with the government on 7 June 1940. He returned in 1945 as the symbol of Norwegian resistance.',
+      university: 'The king’s refusal is a case study in the constitutional politics of small neutral states: the 1940 crisis turned on whether the crown or the Storting held authority in extremis, and the postwar “Quisling trials” established the boundary of legitimate collaboration.',
     },
   },
   {
@@ -427,7 +427,7 @@ export const FIGURES_ALLIES: HistoricalFigure[] = [
     bio: {
       primary: 'Molotov signed the pact with Nazi Germany in 1939 and later became Stalin’s foreign minister at the wartime conferences.',
       secondary: 'He signed the non-aggression pact and its secret protocols in August 1939, announced the German invasion on 22 June 1941, and represented the USSR at Moscow, Tehran, San Francisco and Potsdam. He was replaced as foreign minister in 1949 and fell from power with the Anti-Party Group in 1957.',
-      university: 'Molotov is the key source and actor for the Soviet negotiating record: his 1940 interview with Schulenburg, the secret protocols, and his "spheres of influence" diplomacy are central to the historiography of Soviet aims in 1939-41.',
+      university: 'Molotov is the key source and actor for the Soviet negotiating record: his 1940 interview with Schulenburg, the secret protocols, and his “spheres of influence” diplomacy are central to the historiography of Soviet aims in 1939-41.',
     },
   },
   {

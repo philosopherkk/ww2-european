@@ -31,8 +31,8 @@ export interface CountryStat {
 /**
  * Figures are rounded estimates compiled from the sources listed in SOURCES
  * (Rümmler on German personnel, Krivosheev on Soviet strength and losses,
- * Mitchell & Rea on Axis manpower, the UK Statistical Abstract, and the US
- * Department of Defense manpower reports). Loss totals for the USSR, Poland,
+ * Dear and Foot on Axis and co-belligerent manpower, the UK Statistical
+ * Abstract, and the US Department of Defense manpower reports). Loss totals for the USSR, Poland,
  * Yugoslavia and Germany remain contested; ranges are given in `deathsNote`.
  */
 export const COUNTRY_STATS: CountryStat[] = [
@@ -43,7 +43,7 @@ export const COUNTRY_STATS: CountryStat[] = [
     capital: 'Berlin',
     belligerent: [1939, 1945],
     series: [
-      { year: 1938, population: 69.3, armedForces: 0.55, note: 'Frontier of 1937; peacetime strength after the 1935 rearmatement law' },
+      { year: 1938, population: 69.3, armedForces: 0.55, note: 'Frontier of 1937; peacetime strength after the 1935 rearmament law' },
       { year: 1939, population: 79.8, armedForces: 2.3, note: 'Includes Austria and Memel; September mobilisation' },
       { year: 1940, population: 83.0, armedForces: 3.4 },
       { year: 1941, population: 83.5, armedForces: 5.2, note: 'About 3.0 million deployed in the east on 22 June' },
@@ -320,7 +320,7 @@ export const BLOCS: Record<Bloc, { label: string; members: string[]; blurb: stri
     label: 'Axis',
     members: ['Germany', 'Italy', 'Hungary', 'Romania', 'Bulgaria', 'Slovakia'],
     blurb:
-      'The Tripartite Pact of 27 September 1940 bound Germany, Italy and Japan; Hungary, Romania, Slovakia and Bulgaria joined later. Japan fought a separate war on the other side of the world, and there was no joint planning machinery between the two — a standard explanation for Axis defeat. Japan is not tabulated here, because this site covers the European theatre only.',
+      'The Tripartite Pact of 27 September 1940 bound Germany, Italy and Japan; Hungary, Romania, Slovakia and Bulgaria joined later. Japan fought a separate war on the other side of the world, and there was no joint planning machinery between the two — a standard explanation for Axis defeat. Japan is not tabulated here, because this table covers the principal European combatants and the United States.',
   },
   allies: {
     label: 'Western Allies',

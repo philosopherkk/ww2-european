@@ -98,12 +98,6 @@ export const SOURCES: Source[] = [
       'German military deaths of about 5.3 million including prisoners who died in captivity, in place of the older Rümmler figures.',
   },
   {
-    citation: 'Mitchell, Thomas and Rea, Gerald, New Dimensions of the War: The Struggle in the Reich, 1941-1945, and Axis Satellite Manpower',
-    publisher: 'London Record Society / Boston University Press',
-    url: 'https://search.worldcat.org/search?q=New+Dimensions+of+the+War+Mitchell+Rea',
-    usedFor: 'Manpower mobilisation figures for Germany’s European allies and co-belligerents.',
-  },
-  {
     citation: 'Dear, I. C. B. and Foot, M. R. D. (eds), The Oxford Companion to World War II',
     publisher: 'Oxford University Press',
     url: 'https://search.worldcat.org/search?q=Oxford+Companion+to+World+War+II+Dear+Foot',
@@ -137,7 +131,7 @@ export const SOURCES: Source[] = [
       'The revised Dresden death toll of about 24,000-25,000, replacing the 200,000 figure propagated by Nazi propaganda.',
   },
   {
-    citation: 'Report on the Conditions of Jewish Property and the Holocaust in Romania (the "Wiener / Ioanid Report")',
+    citation: 'Report on the Conditions of Jewish Property and the Holocaust in Romania (the “Wiener / Ioanid Report”)',
     publisher: 'Commission on the Assessment of the Contribution and Activity of Romania',
     url: 'https://www.ushmm.org/',
     usedFor: 'Romanian responsibility for the killings in Bessarabia, Bukovina and Transnistria.',
@@ -156,15 +150,15 @@ export const SOURCES: Source[] = [
   },
   {
     citation: 'Playfair, I. S., The Mediterranean and Middle East, Volume IV: The Destruction of the Axis Forces in Africa (History of the Second World War, United Kingdom Military Series)',
-    publisher: 'HMSO / Battery Press',
-    url: 'https://search.worldcat.org/search?q=Playfair+Mediterranean+and+Middle+East+Volume+IV',
+    publisher: 'HMSO, London, 1966 (digitised copy via the Internet Archive)',
+    url: 'https://archive.org/details/med-middle-east-vol-4',
     usedFor:
-      'El Alamein, the Tunisia campaign and the Axis shipping sunk in the Mediterranean in October 1942; the British official history is still the reference for the North African strength figures.',
+      'El Alamein, the Tunisia campaign, Tobruk’s recapture on 13 November 1942 and the Axis shipping sunk in the Mediterranean in October 1942; the British official history is still the reference for the North African strength figures.',
   },
   {
-    citation: 'van Creveld, Martin, Supplying War: Logistics from Wallerstein to Patton',
-    publisher: 'Cambridge University Press',
-    url: 'https://search.worldcat.org/search?q=Supplying+War+van+Creveld',
+    citation: 'van Creveld, Martin, Supplying War: Logistics from Wallenstein to Patton',
+    publisher: 'Cambridge University Press, Cambridge and New York, 1977',
+    url: 'https://archive.org/details/supplyingwarlogi0000vanc',
     usedFor:
       'The pursuit-and-supply arguments in the campaign-line notes: why the desert advance stalled, why the Normandy breakout outran its ports, and why the 1944 Soviet advances halted on the Vistula.',
   },
@@ -183,9 +177,9 @@ export const SOURCES: Source[] = [
       'The 1942 deportations from the Warsaw Ghetto as they were recorded while they were happening, and the fate of the buried archive.',
   },
   {
-    citation: 'Hackett, David W. (ed.), The Rescue of the Danish Jews: Moral Courage Under Stress',
-    publisher: 'New York University Press',
-    url: 'https://search.worldcat.org/search?q=Rescue+of+the+Danish+Jews+Hackett',
+    citation: 'Goldberger, Leo (ed.), The Rescue of the Danish Jews: Moral Courage Under Stress',
+    publisher: 'New York University Press, New York, 1987',
+    url: 'https://archive.org/details/rescueofdanishje0000ugol',
     usedFor:
       'The October 1943 evacuation to Sweden, the leak of the deportation date, and how many were saved and how many were caught.',
   },
@@ -1740,6 +1734,46 @@ export const SOURCES: Source[] = [
       'day and carries the clause it is quoted for: the agreement shall remain in force for twenty years ' +
       'and thereafter until terminated as provided in article VIII. A second publisher for that day and ' +
       'that clause, written in American order, May 26, where this atlas writes 26 May.',
+  },
+  {
+    citation:
+      'International Military Tribunal, Judgement: The Defendants — Schacht, Avalon Project at Yale Law School.',
+    publisher:
+      'Avalon Project, Lillian Goldman Law Library, Yale Law School',
+    url:
+      'https://avalon.law.yale.edu/imt/judschac.asp',
+    usedFor:
+      'The Nuremberg judgement record of Hjalmar Schacht’s appointments: leave from the Ministry of Economics on 5 September 1937, resignation as Economics Minister on 16 November 1937, and dismissal as President of the Reichsbank on 20 January 1939.',
+  },
+  {
+    citation:
+      'Foreign Relations of the United States, Diplomatic Papers, 1939, General, The British Commonwealth and Europe, Volume II, Document 52.',
+    publisher:
+      'Office of the Historian, United States Department of State',
+    url:
+      'https://history.state.gov/historicaldocuments/frus1939v02/d52',
+    usedFor:
+      'Contemporary US Embassy telegram of 20–21 January 1939 from Berlin recording the message from the Reichsbank that Schacht could no longer continue the discussions.',
+  },
+  {
+    citation:
+      '“Hjalmar Schacht”, _Wikipedia_.',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Hjalmar_Schacht',
+    usedFor:
+      'Second account confirming Schacht’s dismissal from the Reichsbank presidency on 20 January 1939, and printing 26 November 1937 for his resignation from the Economics Ministry.',
+  },
+  {
+    citation:
+      'Ellis, L. F., The War in France and Flanders 1939–1940 (History of the Second World War, United Kingdom Military Series), Chapter XVI: Dunkirk, 1st June to 4th June, 1940.',
+    publisher:
+      'HMSO, London, 1953, hosted by ibiblio HyperWar',
+    url:
+      'https://www.ibiblio.org/hyperwar/UN/UK/UK-NWE-Flanders/UK-NWE-Flanders-16.html',
+    usedFor:
+      'The British official history’s record of the cross-Channel evacuation from Dunkirk to Dover and England during Operation Dynamo.',
   },];
 
 /** Figures that are genuinely disputed, shown so readers know the range. */
@@ -1784,7 +1818,7 @@ export const UNCERTAINTIES = [
   {
     topic: 'Division strengths and tank numbers',
     range:
-      'Every strength figure on this site is an order-of-battle estimate. "Paper" and "serviceable" are different numbers, and the difference for armour on a single morning can be a third; where a line gives ~, that is what it means.',
+      'Every strength figure on this site is an order-of-battle estimate. “Paper” and “serviceable” are different numbers, and the difference for armour on a single morning can be a third; where a line gives ~, that is what it means.',
   },
   {
     topic: 'Deaths at Hiroshima and Nagasaki',
@@ -1799,7 +1833,7 @@ export const UNCERTAINTIES = [
   {
     topic: 'Soviet planning in June 1941',
     range:
-      'Whether Stavka intended a preventive strike in July 1941 remains unresolved; the argument rests largely on the Surkov letter controversy — the letter of 24 June 1941 from the Soviet ambassador in London, Alexander Surkov, which Viktor Suvorov made the centrepiece of his "Icebreaker" thesis — on the "Considerations" document of 15 May 1941, whose very existence and status as an approved plan are themselves disputed, and on the "Reiter memorandum" of questionable authenticity. Glantz and House, When Titans Clashed, give the standard operational counter-reading: the forward deployments the thesis points to were a massing for an unready counter-stroke, not an attack posture in June 1941.',
+      'Whether Stavka intended a preventive strike in July 1941 remains unresolved. The argument rests on the “Considerations” document of 15 May 1941, whose very existence and status as an approved plan are themselves disputed, and on the “Reiter memorandum” of questionable authenticity. Glantz and House, When Titans Clashed, give the standard operational counter-reading: the forward deployments the thesis points to were a massing for an unready counter-stroke, not an attack posture in June 1941. Viktor Suvorov’s “Icebreaker” thesis is argued from those documents and from material this site has not been able to read in print, so it is named here as a thesis and not as evidence. The Soviet ambassador in London in 1941 was Ivan Maisky, whose diaries edited by Gabriel Gorodetsky (Yale, 2015) are the published diplomatic record of these weeks.',
   },
   {
     topic: 'The day the war in China began',
@@ -2250,4 +2284,38 @@ export const UNCERTAINTIES = [
       'itself and by a university collection, both writing the day in the American order. The later ' +
       'conferences and the postwar frontier of Poland are the atlas’s own summary, and no source read here ' +
       'gives their dates.',
+  },
+  {
+    topic:
+      'The minute the instrument of surrender took effect, 2 September 1945',
+    range:
+      '09:25 Japan standard time comes from English Wikipedia, and the bibliography row for that article ' +
+      'already notes that no other account in this atlas’s reach gives it; the US Naval History and ' +
+      'Heritage Command prints 0925 as the close of the signing ceremony, which is not the same claim.',
+  },
+  {
+    topic:
+      'The dissolution of Manchukuo, August 1945',
+    range:
+      '20 August comes from one Wikipedia infobox; that article’s prose puts the dissolution after the ' +
+      'September surrender and the abdication on 17 August, and 18 August also circulates.',
+  },
+  {
+    topic:
+      'The date of the directive carrying General Order No. 1',
+    range:
+      'The State Department’s edition of the 1945 papers dates it “Washington, August 15, 1945”; the ' +
+      '17 August approval date follows English Wikipedia, and the 10 August origin of the 38th ' +
+      'parallel line rests on a participant’s memoir.',
+  },
+  {
+    topic:
+      'Schacht’s resignation from the Economics Ministry, November 1937',
+    range:
+      'The Nuremberg judgement records that Hjalmar Schacht went on leave from the Ministry of Economics on ' +
+      '5 September 1937 and resigned as Economics Minister on 16 November 1937, whereas other reference ' +
+      'accounts print 26 November 1937 (when the resignation was publicly announced). Both the judgement, ' +
+      'the contemporary FRUS record and Wikipedia agree on 20 January 1939 for his dismissal as ' +
+      'President of the Reichsbank, so the card is dated 20 January 1939 and leaves the November 1937 ' +
+      'day in the note.',
   },];

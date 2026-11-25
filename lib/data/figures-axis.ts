@@ -34,7 +34,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bio: {
       primary: 'Hitler was the dictator of Germany who started the Second World War and ordered the killing of millions of Jewish and other people.',
       secondary: 'Hitler came to power in 1933 by legal means and quickly made himself a dictator. He broke the Treaty of Versailles, rearmed, took Austria and Czechoslovakia, and attacked Poland in 1939. He directed strategy personally and increasingly erratically, and killed himself in Berlin on 30 April 1945.',
-      university: 'Hitler’s dictatorship operated through the polycratic competition of rival party and state agencies, with his authority as the source of legitimacy rather than systematic administration. His ideological commitments — racial war in the east, the destruction of "Judeo-Bolshevism" — were not incidental to strategy but its organising framework, which is why German decision-making repeatedly subordinated economic and military logic to ideological priority.',
+      university: 'Hitler’s dictatorship operated through the polycratic competition of rival party and state agencies, with his authority as the source of legitimacy rather than systematic administration. His ideological commitments — racial war in the east, the destruction of “Judeo-Bolshevism” — were not incidental to strategy but its organising framework, which is why German decision-making repeatedly subordinated economic and military logic to ideological priority.',
     },
   },
   {
@@ -59,7 +59,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bloc: 'axis',
     bio: {
       primary: 'Goebbels was in charge of propaganda. He used radio, films and newspapers to make people support Hitler.',
-      secondary: 'As Minister of Public Enlightenment and Propaganda, Goebbels controlled press, radio, film and culture, and after 1943 pushed for "total war" and mass mobilisation. His diaries are a key source for how decisions were made and justified inside the regime.',
+      secondary: 'As Minister of Public Enlightenment and Propaganda, Goebbels controlled press, radio, film and culture, and after 1943 pushed for “total war” and mass mobilisation. His diaries are a key source for how decisions were made and justified inside the regime.',
       university: 'Goebbels illustrates the regime’s reliance on achieved consensus rather than pure coercion: propaganda worked by confirming what audiences already believed. His organisational role after Stalingrad — the Sportpalast speech of 18 February 1943 and the appointment as General Plenipotentiary for Total War in 1944 — marks the regime’s late and partial mobilisation of the civilian economy.',
     },
   },
@@ -125,7 +125,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bio: {
       primary: 'Manstein was the German general who planned the 1940 attack through the Ardennes, and later the general who stabilised the German front in the east after Stalingrad.',
       secondary: 'Manstein’s plan for the 1940 campaign — attack through the Ardennes and cut the Allied armies off in the north — became the basis of the French defeat. He took Sevastopol, then the attack on Leningrad, and in early 1943 recovered the eastern front at Kharkov.',
-      university: 'Manstein is the most studied case of the tension between operational brilliance and strategic criminality: he issued and enforced the Reichenau Order, and his commands were sites of mass murder. His memoir, Lost Victories, shaped Western Cold War narratives of an apolitical Wehrmacht and a "clean" eastern campaign, and has been substantially criticised by later archival research.',
+      university: 'Manstein is the most studied case of the tension between operational brilliance and strategic criminality: he issued and enforced the Reichenau Order, and his commands were sites of mass murder. His memoir, Lost Victories, shaped Western Cold War narratives of an apolitical Wehrmacht and a “clean” eastern campaign, and has been substantially criticised by later archival research.',
     },
   },
   {
@@ -136,22 +136,22 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     country: 'Germany',
     bloc: 'axis',
     bio: {
-      primary: 'Rommel was a German commander in North Africa, famous for attacking fast. People on both sides called him the "Desert Fox".',
+      primary: 'Rommel was a German commander in North Africa, famous for attacking fast. People on both sides called him the “Desert Fox”.',
       secondary: 'Rommel took command of the Deutsches Afrikakorps in 1941 and pushed the British back to Egypt before being stopped at El Alamein. In 1944 he was responsible for the coast of northern France and concluded the invasion could not be repelled once the Allies got ashore. In October 1944 he was forced to commit suicide for his links to the 20 July plotters.',
-      university: 'The "Rommel myth" — apolitical, chivalrous, misunderstood by Hitler — was constructed by British and American propaganda during the war for its propaganda value, and consolidated by B. H. Liddell Hart’s postwar editing and publication of Rommel’s papers, a text Rommel himself shaped to exculpate himself. Recent scholarship emphasises his genuine commitment to National Socialism, his use of African and Jewish labour, and the practical limits imposed by logistics rather than by genius.',
+      university: 'The “Rommel myth” — apolitical, chivalrous, misunderstood by Hitler — was constructed by British and American propaganda during the war for its propaganda value, and consolidated by B. H. Liddell Hart’s postwar editing and publication of Rommel’s papers, a text Rommel himself shaped to exculpate himself. Recent scholarship emphasises his genuine commitment to National Socialism, his use of African and Jewish labour, and the practical limits imposed by logistics rather than by genius.',
     },
   },
   {
     id: 'model',
     name: 'Walter Model',
     birthDeath: '1891-1945',
-    role: 'Field Marshal; "Hitler’s fireman", commander in the west 1944',
+    role: 'Field Marshal; “Hitler’s fireman”, commander in the west 1944',
     country: 'Germany',
     bloc: 'axis',
     bio: {
-      primary: 'Model was known as Hitler’s "fireman" because he was always sent to places where the German line was about to break.',
+      primary: 'Model was known as Hitler’s “fireman” because he was always sent to places where the German line was about to break.',
       secondary: 'Model helped contain the Soviet offensive at Orel in 1943, took command of Army Group Centre during the collapse of Bagration in June 1944, and then commanded Army Group B in the Ardennes Offensive. He killed himself in the Ruhr pocket in April 1945.',
-      university: 'Model is the strongest example of the regime’s "militant-loyal" general: an efficient operational commander who fully accepted National Socialist aims, and who enforced the scorched-earth and evacuation policies in the occupied east with unusual rigour.',
+      university: 'Model is the strongest example of the regime’s “militant-loyal” general: an efficient operational commander who fully accepted National Socialist aims, and who enforced the scorched-earth and evacuation policies in the occupied east with unusual rigour.',
     },
   },
   {
@@ -164,7 +164,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bio: {
       primary: 'Rundstedt was the senior-most German general. He commanded the armies that defeated Poland and France.',
       secondary: 'Rundstedt commanded Army Group South in Poland and Army Group A in France, and was commander-in-chief in the west in 1944. He was dismissed by Hitler in 1944 and again in March 1945, the last time for telling him the war could not be won.',
-      university: 'His relationship with the regime illustrates the conservative officer corps’ progression from contempt for Hitler to complicity and finally fatalism. At his 1945 British internment interrogation he gave the classic account of "military honour" that later critics have challenged against the documentary record of criminal orders.',
+      university: 'His relationship with the regime illustrates the conservative officer corps’ progression from contempt for Hitler to complicity and finally fatalism. At his 1945 British internment interrogation he gave the classic account of “military honour” that later critics have challenged against the documentary record of criminal orders.',
     },
   },
   {
@@ -255,7 +255,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bio: {
       primary: 'Hoth commanded tank armies in the drive on Moscow and in the attempt to rescue the army trapped at Stalingrad.',
       secondary: 'He led the Third Panzer Group through Belarus in 1941, the Seventeenth Army toward Rostov late in 1941, and Fourth Panzer Army, first to the Volga and then in the failed December 1942 relief attempt.',
-      university: 'Hoth’s order of the day of 17 November 1941 to the Seventeenth Army spelled out that the war in the east was a fight of ideologies demanding "unpunished acts of brutality" against "Asiatic" methods; it is one of the clearest documents of deliberate criminalisation at army level.',
+      university: 'Hoth’s order of the day of 17 November 1941 to the Seventeenth Army spelled out that the war in the east was a fight of ideologies demanding “unpunished acts of brutality” against “Asiatic” methods; it is one of the clearest documents of deliberate criminalisation at army level.',
     },
   },
   {
@@ -268,7 +268,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bio: {
       primary: 'Leeb commanded the German army group that advanced on Leningrad and took part in the blockade of the city.',
       secondary: 'Army Group North reached the approaches to Leningrad in September 1941; in January 1942 he was replaced and at the High Command Trial in 1948 he was sentenced to three years’ imprisonment, time served, and was released at the end of the trial.',
-      university: 'Leeb’s case turns on the Barbarossa decree — the military justice decree Keitel issued on 13 May 1941, which exempted offences against "enemy civilians" from military justice. He transmitted it to Army Group North while objecting that it breached international law, and was convicted for transmitting it and for its criminal application by subordinate units. The "Severity Order" usually attached to his name is Reichenau’s order of October 1941, issued in Army Group South.',
+      university: 'Leeb’s case turns on the Barbarossa decree — the military justice decree Keitel issued on 13 May 1941, which exempted offences against “enemy civilians” from military justice. He transmitted it to Army Group North while objecting that it breached international law, and was convicted for transmitting it and for its criminal application by subordinate units. The “Severity Order” usually attached to his name is Reichenau’s order of October 1941, issued in Army Group South.',
     },
   },
   {
@@ -307,7 +307,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bio: {
       primary: 'List commanded the German armies that invaded Yugoslavia and Greece, and later the drive towards the oilfields of the Caucasus.',
       secondary: 'He commanded Army Group A during Operation Blue in 1942 and was dismissed by Hitler over the Caucasus advance. At the Hostages’ Trial he was sentenced to life imprisonment for reprisal killings in Serbia and Greece; released on health grounds in 1952.',
-      university: 'The Hostages’ Trial (United States v. Wilhelm List, 1947-48) produced the leading judicial treatment of the reprisal doctrine, rejecting unlimited hostage-killing ratios and formulating the "reason to know" test of a commander’s duty to prevent atrocities, a limit later echoed in international criminal law.',
+      university: 'The Hostages’ Trial (United States v. Wilhelm List, 1947-48) produced the leading judicial treatment of the reprisal doctrine, rejecting unlimited hostage-killing ratios and formulating the “reason to know” test of a commander’s duty to prevent atrocities, a limit later echoed in international criminal law.',
     },
   },
   {
@@ -333,7 +333,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bio: {
       primary: 'Keitel was the head of Hitler’s military headquarters. He signed the orders of the war, including the illegal ones, and was executed after the war.',
       secondary: 'As head of OKW he transmitted and countersigned the Commissar Order, the Night and Fog Decree and the Commando Order. He signed the instrument of surrender in Berlin on 8 May 1945 and was executed at Nuremberg.',
-      university: 'Keitel is the paradigm of "Loyal General" who substituted formal authority for judgement; his signature converted policy into law within the armed forces, which made him, in the tribunal’s words, a willing instrument. His defence — that his position was merely clerical — is contradicted by his presence at the deliberations.',
+      university: 'Keitel is the paradigm of “Loyal General” who substituted formal authority for judgement; his signature converted policy into law within the armed forces, which made him, in the tribunal’s words, a willing instrument. His defence — that his position was merely clerical — is contradicted by his presence at the deliberations.',
     },
   },
   {
@@ -346,7 +346,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bio: {
       primary: 'Von Choltitz was the German commander in Paris in 1944. He surrendered the city instead of destroying it as Hitler ordered.',
       secondary: 'He was given command of Greater Paris as the Allies approached and, after the uprising of 19-25 August, surrendered without destroying the bridges and the city’s infrastructure. Hitler asked in fury whether Paris was burning.',
-      university: 'Choltitz’s postwar self-presentation as the "saviour of Paris" is now widely contested: he had no practical means to hold the city and demolition was logistically impossible before the German position collapsed. His own 1950 memoir ...brennt Paris?, and the 1965 bestseller and 1966 film Is Paris Burning? by Larry Collins and Dominique Lapierre that drew on it, are treated as constructed memory rather than evidence.',
+      university: 'Choltitz’s postwar self-presentation as the “saviour of Paris” is now widely contested: he had no practical means to hold the city and demolition was logistically impossible before the German position collapsed. His own 1950 memoir ...brennt Paris?, and the 1965 bestseller and 1966 film Is Paris Burning? by Larry Collins and Dominique Lapierre that drew on it, are treated as constructed memory rather than evidence.',
     },
   },
   {
@@ -359,7 +359,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bio: {
       primary: 'Von dem Bach-Zelewski led the German units that crushed the Warsaw Uprising in 1944 and killed some 150,000 to 200,000 civilians.',
       secondary: 'He commanded the forces of the Warsaw suppression, including the notorious Dirlewanger and Kaminski brigades, and later testified at Nuremberg about the scale of the killings he had organised.',
-      university: 'His career links anti-partisan warfare, the mass shooting programme and the deliberate terror of 1944: he openly described "the extermination of a whole people" as a military operation, and the postwar German courts’ failure to punish him exposed the continuity of judicial personnel after 1945.',
+      university: 'His career links anti-partisan warfare, the mass shooting programme and the deliberate terror of 1944: he openly described “the extermination of a whole people” as a military operation, and the postwar German courts’ failure to punish him exposed the continuity of judicial personnel after 1945.',
     },
   },
   {
@@ -385,7 +385,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bio: {
       primary: 'Mussolini made himself dictator of Italy and allied with Hitler. He was thrown out of office in 1943 and killed by Italian partisans in 1945.',
       secondary: 'Mussolini built the first Fascist regime in Europe and entered the war in June 1940 expecting a short victory. Italian defeats in Greece and North Africa forced German intervention; the Grand Council removed him on 25 July 1943, and after being installed by the Germans as head of the Salò Republic he was captured and shot in April 1945.',
-      university: 'Mussolini’s foreign policy is usually read as the search for prestige and a Mediterranean empire, ungrounded in economic or military capacity — "a war of choice with a war of inadequacy". The regime’s dependence on Germany after 1941 also makes Italy the key case for studying "secondary-axis" agency, including the Italian refusal to deport Jews in its own zones of occupation.',
+      university: 'Mussolini’s foreign policy is usually read as the search for prestige and a Mediterranean empire, ungrounded in economic or military capacity — “a war of choice with a war of inadequacy”. The regime’s dependence on Germany after 1941 also makes Italy the key case for studying “secondary-axis” agency, including the Italian refusal to deport Jews in its own zones of occupation.',
     },
   },
   {
@@ -463,7 +463,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bio: {
       primary: 'Antonescu was the military dictator of Romania. He joined Hitler’s war against the Soviet Union to recover land lost in 1940, and his army took part in the killing of Jews.',
       secondary: 'After the territorial losses of 1940 — Bessarabia and northern Bukovina to the USSR, northern Transylvania to Hungary — Antonescu took power, aligned with Germany, and entered the war in June 1941. Romanian troops committed massacres in Bessarabia, Bukovina and Odessa, and deported Jews into Transnistria. He was overthrown on 23 August 1944 and executed in 1946.',
-      university: 'Romania’s case is decisive for the question of local initiative in the Holocaust: the Romanian government’s own orders produced mass shooting and deportation without German direction, though German practice radicalised policy. The historiography, shaped by the "Ioanid Report" of 2004, has since 1989 moved from minimisation to open reckoning.',
+      university: 'Romania’s case is decisive for the question of local initiative in the Holocaust: the Romanian government’s own orders produced mass shooting and deportation without German direction, though German practice radicalised policy. The historiography, shaped by the “Ioanid Report” of 2004, has since 1989 moved from minimisation to open reckoning.',
     },
   },
   {
@@ -476,7 +476,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bio: {
       primary: 'Tiso was a Catholic priest who became the leader of a Slovak state that was set up with Germany’s help and that sent tens of thousands of Slovak Jews to the camps.',
       secondary: 'He proclaimed Slovak independence in March 1939 and led a clerical-fascist state that participated in the invasion of Poland and the attack on the USSR, and deported about 57,000 Slovak Jews in 1942. He was executed in 1947 after a Slovak national court trial.',
-      university: 'Tiso’s case is the most contested in modern Slovak memory politics: the "Tiso cult" of the post-1989 right versus the view of a client-state leader responsible for deportation. The theological and legal justifications he advanced have been studied as a case study in moral legitimisation of discriminatory policy by religious authority.',
+      university: 'Tiso’s case is the most contested in modern Slovak memory politics: the “Tiso cult” of the post-1989 right versus the view of a client-state leader responsible for deportation. The theological and legal justifications he advanced have been studied as a case study in moral legitimisation of discriminatory policy by religious authority.',
     },
   },
   {
@@ -501,7 +501,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bloc: 'occupied',
     bio: {
       primary: 'Schuschnigg was the chancellor of Austria when Hitler forced it to join Germany. He was arrested and spent years in a concentration camp.',
-      secondary: 'Under pressure after Hitler’s ultimatum he agreed to appoint Seyss-Inquart as interior minister and cancelled a planned plebiscite; on 12 March 1938 German troops entered. He was arrested, imprisoned, and held in "honourary" captivity in Dachau and Sachsenhausen.',
+      secondary: 'Under pressure after Hitler’s ultimatum he agreed to appoint Seyss-Inquart as interior minister and cancelled a planned plebiscite; on 12 March 1938 German troops entered. He was arrested, imprisoned, and held in “honourary” captivity in Dachau and Sachsenhausen.',
       university: 'The Berchtesgaden meeting of 12 February 1938 and the following eleven days are a standard case in the study of coercion short of war: Schuschnigg’s calculation that resistance meant civil war and German intervention determined the bloodless form of the Anschluss.',
     },
   },
@@ -514,7 +514,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bloc: 'allies',
     bio: {
       primary: 'Winkelman commanded the Dutch army during the five days of fighting in May 1940, when Germany invaded the Netherlands.',
-      secondary: 'The Dutch army, largely unmechanised and equipped for a defence-in-depth of the "Fortress Holland" water line, was overcome after the German airborne attacks and the bombing of Rotterdam on 14 May. He signed the capitulation on 15 May.',
+      secondary: 'The Dutch army, largely unmechanised and equipped for a defence-in-depth of the “Fortress Holland” water line, was overcome after the German airborne attacks and the bombing of Rotterdam on 14 May. He signed the capitulation on 15 May.',
       university: 'The Dutch defeat illustrates the limits of a neutrality strategy in an industrialised war: five days of resistance, about 2,300 military dead, and the deliberate use of terror bombing to compel capitulation, which German doctrine later claimed as legal and which the Dutch government contested at Nuremberg.',
     },
   },
@@ -567,7 +567,7 @@ export const FIGURES_AXIS: HistoricalFigure[] = [
     bio: {
       primary: 'Darlan was the French admiral who commanded the French navy after France surrendered in 1940, and who in North Africa in 1942 ordered French troops to stop fighting the Allies and to join them instead.',
       secondary: 'Darlan ran the Vichy government from February 1941 to April 1942 and kept the French fleet out of the war, which is why the British attacked it at Mers-el-Kébir in July 1940. In November 1942, with Allied landings in North Africa and German troops marching into unoccupied France, he ordered a ceasefire and co-operated with the Allies, bringing tens of thousands of French troops over to their side at a stroke. He was shot dead in Algiers on 24 December 1942 by a young royalist.',
-      university: 'The "Darlan deal" of November 1942 - Eisenhower’s arrangement with the most senior French authority on the spot, negotiated through Robert Murphy and the American consulate in Algiers - is the founding case in the argument about the moral cost of Realpolitik in coalition warfare: the acceptance of a collaborationist administrator to save Allied lives, at the price of the political credibility of the war aims, with consequences at the Casablanca conference in January 1943, where the insistence on unconditional surrender was in part an answer to the criticism. What is disputed is how far Darlan’s authority was real, since Vichy disavowed him and his orders carried weight only through his personal prestige and the shock of the German occupation of the free zone.',
+      university: 'The “Darlan deal” of November 1942 - Eisenhower’s arrangement with the most senior French authority on the spot, negotiated through Robert Murphy and the American consulate in Algiers - is the founding case in the argument about the moral cost of Realpolitik in coalition warfare: the acceptance of a collaborationist administrator to save Allied lives, at the price of the political credibility of the war aims, with consequences at the Casablanca conference in January 1943, where the insistence on unconditional surrender was in part an answer to the criticism. What is disputed is how far Darlan’s authority was real, since Vichy disavowed him and his orders carried weight only through his personal prestige and the shock of the German occupation of the free zone.',
     },
   },
 ];

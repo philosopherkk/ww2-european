@@ -9,6 +9,9 @@
  * Lines show advance, not retreat — a dashed line reading in one direction
  * cannot tell you which way an army was moving, so withdrawals (Dunkirk's
  * beaches excepted, since that was an embarkation) are left to the events.
+ *
+ * Almost every line here is an army on the ground. `domain` marks the few that
+ * are not: a convoy's passage, or the track of a raid or a drop.
  */
 export type Side = 'german' | 'japanese' | 'soviet' | 'western';
 
@@ -20,6 +23,14 @@ export interface CampaignLine {
   side: Side;
   from: string;
   to: string;
+  /**
+   * What moved. Leaving it out means 'land', which is every line written so
+   * far, so no existing entry needs changing. 'sea' is a ship's or convoy's
+   * route between ports; 'air' is the track of a raid or an airborne drop. The
+   * colour still comes from `side`, but the dash and the row in the Key change
+   * with it, and no ring is drawn on either.
+   */
+  domain?: 'land' | 'sea' | 'air';
   /** Ordered waypoints of the axis of advance. */
   path: [number, number][];
   summary: string;
@@ -134,6 +145,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     name: 'Evacuation of the British and French armies',
     operation: 'Dynamo',
     side: 'western',
+    domain: 'sea',
     from: '1940-05-26',
     to: '1940-06-04',
     path: [
@@ -339,7 +351,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [36.81, 10.18], // Tunis, taken 7 May 1943
     ],
     summary:
-      'Montgomery broke the Axis position on 2 November after ten days of deliberate "crumbling", and pursued 2,300 km to Tunisia. It was won by material: air superiority, mine-breaching flails, and guns and tanks outnumbering the Axis roughly two to one — a fact British propaganda later smoothed over. The pursuit was repeatedly nearly defeated by weather and supply rather than by the enemy, and some 20,000-30,000 Axis troops were flown or shipped out of Tunisia to fight again in Italy. The campaign ended on 13 May 1943 with some 250,000 Axis prisoners.',
+      'Montgomery broke the Axis position on 2 November after ten days of deliberate “crumbling”, and pursued 2,300 km to Tunisia. It was won by material: air superiority, mine-breaching flails, and guns and tanks outnumbering the Axis roughly two to one — a fact British propaganda later smoothed over. The pursuit was repeatedly nearly defeated by weather and supply rather than by the enemy, and some 20,000-30,000 Axis troops were flown or shipped out of Tunisia to fight again in Italy. The campaign ended on 13 May 1943 with some 250,000 Axis prisoners.',
     strength: 'Eighth Army ~195,000 men and ~1,000 tanks; Panzerarmee Afrika ~104,000 men, a third of them German, and ~400 serviceable tanks',
   },
   {
@@ -388,7 +400,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [40.85, 14.27], // Naples, entered on 1 October, its minesweepers having failed to wreck the port
     ],
     summary:
-      'The armistice announced on 8 September caught the Italian army with no orders: Rome fell to German units within two days, and some 650,000 Italian soldiers were disarmed and sent to the Reich as "military internees" rather than given prisoner-of-war status. At Salerno the Fifth Army was almost thrown back into the sea by three panzer divisions, and was saved by naval gunfire and air power. Kesselring then fought a delaying campaign on ground of his own choosing, which is why Italy was still not over in April 1945.',
+      'The armistice announced on 8 September caught the Italian army with no orders: Rome fell to German units within two days, and some 650,000 Italian soldiers were disarmed and sent to the Reich as “military internees” rather than given prisoner-of-war status. At Salerno the Fifth Army was almost thrown back into the sea by three panzer divisions, and was saved by naval gunfire and air power. Kesselring then fought a delaying campaign on ground of his own choosing, which is why Italy was still not over in April 1945.',
     strength: 'Fifth Army ~150,000 men at Salerno; the German Tenth Army counterattacked with three panzer divisions',
   },
   {
@@ -424,7 +436,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [52.26, 21.05], // Praga, the Warsaw suburb on the east bank, where the front stood until January 1945
     ],
     summary:
-      'The largest German defeat of the war, and almost the largest battle: four successive encirclements destroyed Army Group Centre in ten days, at the same moment as the Normandy break-out and on the anniversary of Barbarossa. The Red Army used deception and a combined-arms "deep battle" method it had taken two years to learn, and advanced 600 km. Partisans cut the railways behind the front on the night of 19 June. Its end is where the postwar map of Europe was decided: the 4th Tank Corps was counterattacked at Luków and Radzymin in the first days of August, the spearhead was spent, and the front stood on the Vistula until January 1945, with Praga taken only on 14 September. Whether Stalin halted because he could not advance or because he chose not to is still argued; the fact both sides accept is that the Red Army stood 30 km from the Warsaw Uprising, which began on 1 August, and did not reach it. The Germans crushed the Uprising street by street, which destroyed Poland’s non-communist resistance before the communist government took power in 1944-45.',
+      'The largest German defeat of the war, and almost the largest battle: four successive encirclements destroyed Army Group Centre in ten days, at the same moment as the Normandy break-out and on the anniversary of Barbarossa. The Red Army used deception and a combined-arms “deep battle” method it had taken two years to learn, and advanced 600 km. Partisans cut the railways behind the front on the night of 19 June. Its end is where the postwar map of Europe was decided: the 4th Tank Corps was counterattacked at Luków and Radzymin in the first days of August, the spearhead was spent, and the front stood on the Vistula until January 1945, with Praga taken only on 14 September. Whether Stalin halted because he could not advance or because he chose not to is still argued; the fact both sides accept is that the Red Army stood 30 km from the Warsaw Uprising, which began on 1 August, and did not reach it. The Germans crushed the Uprising street by street, which destroyed Poland’s non-communist resistance before the communist government took power in 1944-45.',
     strength:
       'Soviet: 1,670,300 men, 3,841 tanks and 1,977 assault guns at the start. Army Group Centre: 486,493 combat troops, about 849,000 in all, with 118 tanks; it lost 25-28 divisions and was destroyed as a fighting force',
   },
@@ -492,7 +504,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [47.56, 6.86], // the Belfort gap, where 1st French Army turned east towards the Rhine
     ],
     summary:
-      'The landings in Provence — "Anvil" cut down and delayed by Churchill, who wanted the effort in the Balkans instead — put 94,000 men ashore on the first day and 500,000 by mid-September, with the port of Marseille working from October, which is why the Allied advance across France could be supplied at all. The Germans withdrew from western France in orderly fashion rather than fight, so the campaign’s real prize was logistical. Much of the infantry was French — many of them North African and West African troops of the French First Army — and their contribution to the liberation of France was played down in French memory for decades.',
+      'The landings in Provence — “Anvil” cut down and delayed by Churchill, who wanted the effort in the Balkans instead — put 94,000 men ashore on the first day and 500,000 by mid-September, with the port of Marseille working from October, which is why the Allied advance across France could be supplied at all. The Germans withdrew from western France in orderly fashion rather than fight, so the campaign’s real prize was logistical. Much of the infantry was French — many of them North African and West African troops of the French First Army — and their contribution to the liberation of France was played down in French memory for decades.',
     strength: '~94,000 assault troops and ~1,800 aircraft; ~90,000 German defenders in the south of France',
   },
   {
@@ -617,7 +629,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [47.48, 18.98], // the Buda heights west of the Danube, the last German-Hungarian position
     ],
     summary:
-      'The city was encircled on 26 December and the relief attempts failed: two panzer attacks from the west ran out of fuel and infantry inside three weeks. The Hungarian and German garrison refused to surrender and the siege lasted fifty days of street fighting that destroyed most of what remained of the city and killed some 38,000 civilians. About 25,000 Jews who had been shut into the "international ghettos" of central Budapest were freed when Soviet troops arrived; in the ten weeks before that the Arrow Cross regime had shot some 10,000-15,000 Budapest Jews, many of them on the ice of the Danube bank.',
+      'The city was encircled on 26 December and the relief attempts failed: two panzer attacks from the west ran out of fuel and infantry inside three weeks. The Hungarian and German garrison refused to surrender and the siege lasted fifty days of street fighting that destroyed most of what remained of the city and killed some 38,000 civilians. About 25,000 Jews who had been shut into the “international ghettos” of central Budapest were freed when Soviet troops arrived; in the ten weeks before that the Arrow Cross regime had shot some 10,000-15,000 Budapest Jews, many of them on the ice of the Danube bank.',
     strength: '2nd and 3rd Ukrainian Fronts; a garrison of about 79,000 German and Hungarian troops, of whom roughly 40,000 were taken prisoner',
   },
 
@@ -714,7 +726,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [47.83, 35.14], // Zaporizhzhia, the last German bridgehead on the river, cleared on 29 October
     ],
     summary:
-      'The largest river-crossing operation of the war, on a front 750 km wide, against a river 1-2 km broad with the Germans holding the far bank. Troops crossed at night in boats, barrels and anything that floated, and held bridgeheads of a few hundred metres under counter-attack until the heavy equipment could be ferried over; casualty rates in the crossing companies often ran above fifty per cent. Germany’s "Eastern Wall" on the west bank was turned at Kremenchug and broken at Zaporizhzhia, and Kiev fell on 6 December. The Ukrainian grain, coal and manganese came back into Soviet hands, which is the economic reason 1943 matters as much as Stalingrad.',
+      'The largest river-crossing operation of the war, on a front 750 km wide, against a river 1-2 km broad with the Germans holding the far bank. Troops crossed at night in boats, barrels and anything that floated, and held bridgeheads of a few hundred metres under counter-attack until the heavy equipment could be ferried over; casualty rates in the crossing companies often ran above fifty per cent. Germany’s “Eastern Wall” on the west bank was turned at Kremenchug and broken at Zaporizhzhia, and Kiev fell on 6 December. The Ukrainian grain, coal and manganese came back into Soviet hands, which is the economic reason 1943 matters as much as Stalingrad.',
     strength: 'Four Soviet fronts ~2.65 million men; ~1.25 million German troops on a front they could not hold everywhere',
   },
   {
@@ -729,7 +741,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [49.07, 30.98], // Zvenigorodka, where the pincers closed on 28 January
     ],
     summary:
-      'Two Ukrainian fronts met at Zvenigorodka and shut some 60,000 Germans in a pocket 80 km across — the first "cauldron" in the term Soviet staff work used, and the model for the larger ones that followed. Manstein again attacked outwards to relieve it and again failed; the garrison broke out on the night of 16-17 February towards German lines, abandoning its wounded and its heavy guns, and several thousand were killed crossing the frozen Lysyanka in the snow. Stalin ordered 25,000 German prisoners to march in chains through Moscow, an insult the German army could not answer.',
+      'Two Ukrainian fronts met at Zvenigorodka and shut some 60,000 Germans in a pocket 80 km across — the first “cauldron” in the term Soviet staff work used, and the model for the larger ones that followed. Manstein again attacked outwards to relieve it and again failed; the garrison broke out on the night of 16-17 February towards German lines, abandoning its wounded and its heavy guns, and several thousand were killed crossing the frozen Lysyanka in the snow. Stalin ordered 25,000 German prisoners to march in chains through Moscow, an insult the German army could not answer.',
     strength: '2nd and 6th Ukrainian Fronts ~500,000 men and ~1,700 tanks',
   },
   {
@@ -947,6 +959,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     name: 'The battle for Crete: the first great airborne assault',
     operation: 'Merkur',
     side: 'german',
+    domain: 'air',
     from: '1941-05-20',
     to: '1941-06-01',
     path: [
@@ -964,6 +977,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     id: 'dodecanese_1943',
     name: 'The Dodecanese: the last campaign in the Aegean',
     side: 'german',
+    domain: 'sea',
     from: '1943-09-08',
     to: '1943-11-22',
     path: [
@@ -1089,6 +1103,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     name: 'The Channel Dash: Brest to Germany in daylight under the RAF',
     operation: 'Cerberus',
     side: 'german',
+    domain: 'sea',
     from: '1942-02-11',
     to: '1942-02-13',
     path: [

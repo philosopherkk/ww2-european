@@ -20,6 +20,7 @@ import type { CampaignLine, Side } from '@/lib/data';
 import {
   CAMPAIGN_LINES,
   EVENT_BY_ID,
+  EVENTS,
   STATUS_META,
   STATUS_ORDER,
   SNAPSHOT_NOTES,
@@ -35,11 +36,18 @@ import { REGION_BY_ID, type Region } from '@/lib/regions';
 import { PLACES } from '@/lib/data/places';
 import {
   campaignVisible,
+  DOMAIN_ORDER,
+  LINE_DOMAIN_META,
+  lineDashOf,
+  lineDomainOf,
   longDate,
+  MONTH_INDEX,
+  MONTHS,
   monthEndDate,
+  monthKeyOf,
   nearestSnapshot,
   SIDE_META,
-  SNAPSHOTS,
+  type LineDomain,
 } from '@/lib/site';
 
 /* The border files are GeoJSON: coordinates are [lng, lat], Leaflet wants [lat, lng]. */
@@ -129,6 +137,19 @@ function progressThrough(line: CampaignLine, monthKey: string) {
 
 const SIDE_ORDER: Side[] = ['german', 'japanese', 'soviet', 'western'];
 
+const ASIA_FRONTS = new Set(['china', 'china_burma_india', 'pacific']);
+
+function defaultRegionFor(monthKey: string): Region {
+  const evs = EVENTS.filter((e) => monthKeyOf(e.date) === monthKey);
+  const lines = CAMPAIGN_LINES.filter((l) => campaignVisible(l, monthKey));
+  if (evs.length === 0 && lines.length === 0) return 'europe';
+  const allAsiaEvents = evs.every((e) => e.fronts.every((f) => ASIA_FRONTS.has(f)));
+  const allAsiaLines = lines.every((l) => l.path.every(([lat, lng]) => lng > 65 || lat < 15));
+  if (!allAsiaEvents || !allAsiaLines) return 'europe';
+  const spansPacific = lines.some((l) => l.path.some(([, lng]) => lng > 150 || lng < -100));
+  return spansPacific ? 'world' : 'asia';
+}
+
 interface Props {
   monthKey: string;
   showCampaigns: boolean;
@@ -166,11 +187,15 @@ export default function MapBrowser({
     () => nearestSnapshot(monthKey),
     [monthKey]
   );
+  const showEuropeanSnapshot = isEarlier;
+  const monthLabel = MONTHS[MONTH_INDEX[monthKey]]?.label ?? monthKey;
+  const autoRegion = useMemo(() => defaultRegionFor(monthKey), [monthKey]);
+  const [manualRegion, setManualRegion] = useState<Region | null>(null);
+  const region = manualRegion ?? autoRegion;
   const [data, setData] = useState<FeatureCollection | null>(null);
   const [errorInfo, setErrorInfo] = useState<{ file: string; message: string } | null>(null);
   const [showNote, setShowNote] = useState(false);
   const [zoom, setZoom] = useState(4);
-  const [region, setRegion] = useState<Region>('europe');
   const [world, setWorld] = useState<WorldCollection | null>(null);
   // The key is open on wide screens and tucked behind a button on phones and tablets,
   // where an open key would cover a third of the map.
@@ -267,18 +292,22 @@ export default function MapBrowser({
    * the pin vanishing under it. */
   const [hoverId, setHoverId] = useState<string | null>(null);
   const [openId, setOpenId] = useState<string | null>(null);
-  const leaveTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const [leaving, setLeaving] = useState(false);
   const enterLine = useCallback((id: string) => {
-    if (leaveTimer.current) clearTimeout(leaveTimer.current);
+    setLeaving(false);
     setHoverId(id);
   }, []);
   const leaveLine = useCallback(() => {
-    if (leaveTimer.current) clearTimeout(leaveTimer.current);
-    leaveTimer.current = setTimeout(() => setHoverId(null), 220);
+    setLeaving(true);
   }, []);
-  useEffect(() => () => {
-    if (leaveTimer.current) clearTimeout(leaveTimer.current);
-  }, []);
+  useEffect(() => {
+    if (!leaving) return;
+    const t = setTimeout(() => {
+      setHoverId(null);
+      setLeaving(false);
+    }, 220);
+    return () => clearTimeout(t);
+  }, [leaving]);
 
   /* A line popup is longer than the pinned phone map is tall, which pushed its
    * close button off the top of the screen; capped, it scrolls instead. The top
@@ -306,14 +335,30 @@ export default function MapBrowser({
   }, [highlightLineIds, focusedId]);
 
   const presentStatuses = useMemo(() => {
-    const worldSet = region === 'europe' ? new Set() : new Set(worldStatuses.values());
-    return STATUS_ORDER.filter((s) => worldSet.has(s) || territories.some((t) => t.status === s));
-  }, [territories, worldStatuses, region]);
+    const worldSet = new Set(worldStatuses.values());
+    return STATUS_ORDER.filter(
+      (s) => worldSet.has(s) || (showEuropeanSnapshot && territories.some((t) => t.status === s))
+    );
+  }, [territories, worldStatuses, showEuropeanSnapshot]);
 
   const presentSides = useMemo(
     () => SIDE_ORDER.filter((s) => lines.some((l) => l.side === s)),
     [lines]
   );
+
+  /* Which elements are on screen: the Key shows a dash row only for a line the
+   * reader can actually see, and the sea and air rows are what tell them a dash
+   * is a ship's route or a route flown, not an army's axis. The land row is
+   * shown only once there is something to contrast it with: until a route at sea
+   * or a route flown is on screen it would be a new sentence in the Key that
+   * answers no question, and every month's Key would change on the day this
+   * ships. Drop the last line of the filter to make it permanent. */
+  const keyDomains = useMemo(() => {
+    const set = new Set<LineDomain>();
+    lines.forEach((l) => set.add(lineDomainOf(l)));
+    const present = DOMAIN_ORDER.filter((d) => set.has(d));
+    return present.some((d) => d !== 'land') ? present : present.filter((d) => d !== 'land');
+  }, [lines]);
 
   const note = SNAPSHOT_NOTES[snapshot.date];
   const worldNote = worldNoteFor(monthKey, snapshot.date);
@@ -325,15 +370,19 @@ export default function MapBrowser({
       <div className="text-[13px]">
         <div className="flex items-center justify-between gap-2">
           <p className="min-w-0 leading-snug text-stone-800">
-            <span className="font-semibold">Borders as of {snapshot.label}</span>
-            {gapMonths > 0 && (
-              <span className="text-stone-600">
-                {' '}
-                · {gapMonths} {gapMonths === 1 ? 'month' : 'months'} {isEarlier ? 'before' : 'after'}
-                <span className="sr-only"> the month you picked — the dataset records{' '}
-                {SNAPSHOTS.length} dated states, and the map always shows the nearest one dated
-                on or before your month, or, only for the first three months of 1938, the state
-                that follows them. The months in between are described in the events</span>
+            {showEuropeanSnapshot ? (
+              <>
+                <span className="font-semibold">Borders as of {snapshot.label}</span>
+                {gapMonths > 0 && (
+                  <span className="text-stone-600">
+                    {' '}
+                    — {gapMonths} {gapMonths === 1 ? 'month' : 'months'} earlier than {monthLabel}.
+                  </span>
+                )}
+              </>
+            ) : (
+              <span className="font-semibold">
+                No European border state is published for {monthLabel}.
               </span>
             )}
           </p>
@@ -350,9 +399,15 @@ export default function MapBrowser({
             </button>
           )}
         </div>
+        {!showEuropeanSnapshot && (
+          <p className="mt-1 text-xs leading-snug text-stone-600">
+            Austria was still an independent state; the earliest European snapshot is April 1938, so
+            European fills are left off here and fighting appears on the world layer and China line.
+          </p>
+        )}
         {showNote && note && (
           <div className="mt-2 space-y-2 rounded-lg border border-stone-200 bg-white p-2.5 text-xs leading-relaxed text-stone-700">
-            <p>{note}</p>
+            <p>{showEuropeanSnapshot ? note : `Earliest European state (${snapshot.label}, not drawn on ${monthLabel}): ${note}`}</p>
             {worldNote && (
               <p>
                 <span className="font-semibold">Outside Europe. </span>
@@ -400,9 +455,9 @@ export default function MapBrowser({
             className={detailed ? 'basemap-tiles basemap-detailed' : 'basemap-tiles'}
           />
 
-          {/* Modern outlines for the rest of the world, under the Stanford layer: its
-              polygons sit in the default overlay pane above this one. */}
-          {showBorders && region !== 'europe' && (
+          {/* Modern outlines outside the Stanford layer, under the monthly European
+              polygons so Europe sits on top where a dated state is drawn. */}
+          {showBorders && (
             <Pane name="world" style={{ zIndex: 395 }}>
               {worldTerritories.map((t) => {
                 const status = worldStatuses.get(t.key) ?? 'unknown';
@@ -431,8 +486,8 @@ export default function MapBrowser({
                         </p>
                         {keyNote && <p>{keyNote}</p>}
                         <p className="pt-1 text-xs text-stone-600">
-                          Status as recorded for {snapshot.label}, for the territory as a whole.
-                          The outline is today&rsquo;s, not the frontier of the time.
+                          Status as recorded for {monthLabel}, for the territory as a whole. The
+                          outline is today&rsquo;s, not the frontier of the time.
                         </p>
                       </div>
                     </Popup>
@@ -443,6 +498,7 @@ export default function MapBrowser({
           )}
 
           {showBorders &&
+            showEuropeanSnapshot &&
             territories.map((t) => {
               const meta = STATUS_META[t.status];
               return t.polys.map((rings, i) => (
@@ -496,6 +552,8 @@ export default function MapBrowser({
           <Pane name="campaigns" style={{ zIndex: 450 }}>
           {lines.map((line) => {
             const side = SIDE_META[line.side];
+            const domain = LINE_DOMAIN_META[lineDomainOf(line)];
+            const showsProgress = lineDomainOf(line) === 'land';
             const progress = progressThrough(line, monthKey);
             const tip = pointAlong(line.path, progress);
             const active = activeIds.has(line.id);
@@ -522,7 +580,7 @@ export default function MapBrowser({
                     color: side.color,
                     weight: active ? 6 : 3.5,
                     opacity: dimmed ? 0.3 : 1,
-                    dashArray: active ? undefined : '8 6',
+                    dashArray: active ? undefined : lineDashOf(line),
                   }}
                 />
                 {/* A wide, invisible copy of the line carries the hover and the
@@ -550,7 +608,7 @@ export default function MapBrowser({
                       </span>
                     )}
                     <span className="mt-0.5 block text-[10px] font-normal text-stone-700">
-                      Schematic axis through named places; the ring is an interpolated position by date.
+                      {domain.tooltip}
                     </span>
                   </Tooltip>
                   <Popup autoPanPaddingTopLeft={[10, 52]} autoPanPaddingBottomRight={[10, 10]}>
@@ -564,6 +622,7 @@ export default function MapBrowser({
                         style={{ color: side.color }}
                       >
                         {side.label}
+                        {lineDomainOf(line) !== 'land' ? ` · ${domain.label}` : ''}
                         {line.operation ? ` · ${line.operation}` : ''}
                       </p>
                       <p className="text-xs text-stone-600">
@@ -598,27 +657,28 @@ export default function MapBrowser({
                           {line.strength}
                         </p>
                       )}
-                      <p className="pt-1 text-xs text-stone-600">
-                        This is a schematic axis of advance through named places, not a surveyed daily
-                        front line. The ring marks an interpolated position along that axis by date,
-                        not a documented map reference for that morning. Event pins sit on the named
-                        place nearest the event, not on a surveyed grid reference.
-                      </p>
+                      <p className="pt-1 text-xs text-stone-600">{domain.caveat}</p>
                     </div>
                   </Popup>
                 </Polyline>
-                <CircleMarker
-                  center={tip}
-                  radius={5}
-                  interactive={false}
-                  pathOptions={{
-                    color: side.color,
-                    fillColor: '#fff',
-                    fillOpacity: dimmed ? 0.4 : 1,
-                    opacity: dimmed ? 0.4 : 1,
-                    weight: 2.5,
-                  }}
-                />
+                {/* The ring is a position along the line by date, which is a
+                    claim about ground an advance had crossed. A convoy was
+                    either at port or on its way, and a route flown is not a
+                    front, so no ring is drawn at sea or in the air. */}
+                {showsProgress && (
+                  <CircleMarker
+                    center={tip}
+                    radius={5}
+                    interactive={false}
+                    pathOptions={{
+                      color: side.color,
+                      fillColor: '#fff',
+                      fillOpacity: dimmed ? 0.4 : 1,
+                      opacity: dimmed ? 0.4 : 1,
+                      weight: 2.5,
+                    }}
+                  />
+                )}
                 {active &&
                   [...pins.entries()].map(([at, ids]) => {
                     const stressed = ids.includes(hoverEventId ?? '');
@@ -705,7 +765,7 @@ export default function MapBrowser({
 
         <div className="absolute right-2 top-2 z-[450] flex items-start gap-1.5 lg:hidden">
           <span className="rounded-md border border-stone-300 bg-white/90 px-2 py-1 text-[11px] font-semibold leading-none text-stone-800 shadow-sm backdrop-blur">
-            Borders as of {snapshot.label}
+            {showEuropeanSnapshot ? `Borders as of ${snapshot.label}` : 'No 1937–early 38 borders'}
           </span>
           {onToggleTall && (
             <button
@@ -720,9 +780,9 @@ export default function MapBrowser({
           )}
         </div>
 
-        <RegionToggle region={region} onChange={setRegion} />
+        <RegionToggle region={region} onChange={setManualRegion} />
 
-        {!data && !error && (
+        {showEuropeanSnapshot && !data && !error && (
           <div className="absolute inset-0 z-[500] flex items-center justify-center bg-stone-100/80 text-sm text-stone-700">
             Loading {snapshot.label} borders…
           </div>
@@ -760,10 +820,26 @@ export default function MapBrowser({
                         y2="3"
                         stroke={SIDE_META[side].color}
                         strokeWidth="3"
-                        strokeDasharray="5 3"
+                        strokeDasharray="8 6"
                       />
                     </svg>
                     {SIDE_META[side].label}
+                  </li>
+                ))}
+                {keyDomains.map((domain) => (
+                  <li key={domain} className="flex items-center gap-2 leading-tight">
+                    <svg width="22" height="6" aria-hidden className="shrink-0">
+                      <line
+                        x1="0"
+                        y1="3"
+                        x2="22"
+                        y2="3"
+                        stroke="#44403c"
+                        strokeWidth="3"
+                        strokeDasharray={LINE_DOMAIN_META[domain].dash}
+                      />
+                    </svg>
+                    {LINE_DOMAIN_META[domain].keyLabel}
                   </li>
                 ))}
                 {showCampaigns && lines.length === 0 && (
@@ -798,11 +874,12 @@ export default function MapBrowser({
       {/* Always visible, never behind a disclosure: the snapshot caveat is part of the
           map (PACK B 1A). */}
       <p className="text-xs leading-relaxed text-stone-600">
-        The colours are one dated state ({snapshot.label}), not the month&rsquo;s daily front.
-        Frontiers changed on particular days, sometimes several times in a month; the event cards
-        name the changes in between. Outside Europe the outlines are today&rsquo;s, coloured for the
-        month you select, so a whole country takes the colour of the power that held most of it.
-        Select a country or a line for details.
+        {showEuropeanSnapshot
+          ? `The European colours are one dated state (${snapshot.label}), not the month’s daily front. Frontiers changed on particular days, sometimes several times in a month; the event cards name the changes in between.`
+          : `No European border snapshot is drawn for ${monthLabel} because the earliest published state is April 1938, after the Anschluss.`}{' '}
+        Outside the European dataset the outlines are today&rsquo;s, coloured for the month you
+        select, so a whole country takes the colour of the power that held most of it. Select a
+        country or a line for details.
       </p>
     </div>
   );
@@ -840,6 +917,10 @@ function ViewController({ region }: { region: Region }) {
     map.setMaxBounds(v.bounds);
     if (first.current) {
       first.current = false;
+      if (region !== 'europe') {
+        if (v.fit) map.fitBounds(v.bounds, { animate: false, padding: [8, 8] });
+        else map.setView(v.center, v.zoom, { animate: false });
+      }
       return;
     }
     if (v.fit) map.fitBounds(v.bounds, { animate: true, duration: 0.8, padding: [8, 8] });

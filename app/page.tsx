@@ -52,7 +52,6 @@ const MapBrowser = dynamic(() => import('@/components/MapBrowser'), {
 const START = MONTHS.findIndex((m) => m.key === '1939-09');
 
 const WW1_BASE = process.env.NEXT_PUBLIC_WW1_URL ?? 'https://ww1-european.vercel.app';
-const WW2_BASE = process.env.NEXT_PUBLIC_WW2_URL ?? 'https://ww2-european.vercel.app';
 
 type Tab = 'map' | 'people' | 'numbers' | 'sources';
 
@@ -238,8 +237,8 @@ export default function Home() {
       ...present.filter((l) => (LINKS_BY_LINE[l.id] ?? []).length === 0),
     ];
   }, [monthKey]);
-  const [allLinesOpen, setAllLinesOpen] = useState(false);
-  useEffect(() => setAllLinesOpen(false), [monthKey]);
+  const [allLinesOpenMonth, setAllLinesOpenMonth] = useState<string | null>(null);
+  const allLinesOpen = allLinesOpenMonth === monthKey;
 
   const visibleEvents = useMemo(() => {
     if (scope === 'war') return EVENTS;
@@ -435,7 +434,7 @@ export default function Home() {
               aria-label="Map"
               className="contents min-w-0 lg:flex lg:flex-col lg:gap-2 lg:sticky lg:top-[6rem] lg:h-[calc(100vh-14rem)] xl:h-[calc(100vh-10.5rem)] lg:min-h-[480px]"
             >
-              <div className="no-scrollbar -mx-3 flex gap-1.5 overflow-x-auto px-3 pb-0.5 sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0">
+              <div className="flex flex-wrap gap-1.5 pb-0.5">
                 <Toggle
                   on={showBorders}
                   onClick={() => setShowBorders((v) => !v)}
@@ -527,7 +526,7 @@ export default function Home() {
                 <section className="rounded-xl border border-stone-300 bg-white p-3">
                   <button
                     type="button"
-                    onClick={() => setAllLinesOpen((v) => !v)}
+                    onClick={() => setAllLinesOpenMonth((m) => (m === monthKey ? null : monthKey))}
                     aria-expanded={allLinesOpen}
                     className="flex w-full items-center justify-between gap-2 text-left"
                   >
@@ -592,7 +591,7 @@ export default function Home() {
                   {!allLinesOpen && linesForMonth.length > 6 && (
                     <button
                       type="button"
-                      onClick={() => setAllLinesOpen(true)}
+                      onClick={() => setAllLinesOpenMonth(monthKey)}
                       className="pt-2 text-xs font-semibold text-sky-800 underline decoration-sky-800/40 underline-offset-2"
                     >
                       Show all {linesForMonth.length} lines
@@ -857,7 +856,7 @@ function Toggle({
       type="button"
       onClick={onClick}
       aria-pressed={on}
-      className={`inline-flex h-9 shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full border px-3 text-sm font-medium ${
+      className={`inline-flex h-11 shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full border px-3 text-sm font-medium sm:h-9 ${
         on
           ? 'border-stone-800 bg-stone-800 text-white'
           : 'border-stone-300 bg-white text-stone-600 hover:bg-stone-100'
