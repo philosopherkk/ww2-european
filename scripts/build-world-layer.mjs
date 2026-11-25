@@ -48,7 +48,36 @@ const MIN_AREA_KM2 = 8; // parts below this go, except the largest part of each 
 const DECIMALS = 3;
 const SLIVER_KM2 = 5000; // pieces smaller than this inside the Stanford box are coast mismatch, not land
 
-/** Extent of the Stanford layers: west, south, east, north. */
+/** Extent of the Stanford layers: west, south, east, north.
+ *
+ * This is NOT the geometric cut. The cut is `stanfordFootprint()` below, the union of
+ * every snapshot the per-month build writes, so it follows CLIP in build-border-data.mjs
+ * on its own and needs no editing when CLIP moves. This box drives only the sliver test:
+ * `insideBox` decides where a leftover piece smaller than SLIVER_KM2 is coast mismatch
+ * between two datasets and gets dropped, while the same size piece outside the box is
+ * real land and is kept.
+ *
+ * It deliberately does NOT follow CLIP east to 66.5 E. Built both ways on 25 Nov 2026 and
+ * compared on a 0.05 degree grid over the band between the two cuts
+ * (audit/mapfix/log/my-water-check-ww2-extra.txt): the wider box keeps two parts fewer of
+ * the merged Soviet layer, 1,267 parts across the file become 1,265, and it leaves 31 grid
+ * samples of the Nenets coast near 64.0-64.9 E at 69.3-69.6 N unpainted that the shipped
+ * box paints, every one of them dry land to the independent Natural Earth coast. It
+ * colours nothing that the shipped box leaves blank. Keeping the box at 62 E costs nothing
+ * either, because the overlap with the month layer is removed by the footprint, not here.
+ *
+ * What DOES have to follow CLIP is the published world.json, because the footprint is
+ * built from whatever snapshot files are on disk. After CLIP moved from 62 E to 66.5 E,
+ * the old world.json against the new month layers painted 182 of 222,196 grid samples
+ * twice, all of them in the Kola and Nenets band between the two cuts. The rebuilt pair
+ * leaves three samples painted twice - 36.80 N 36.25 E, 36.85 N 36.30 E in the Hatay
+ * strip, and 47.50 N 47.50 E at the mouth of the Volga, all three of which the two
+ * datasets have always disagreed about - and none unpainted. The battery that measures
+ * this is audit/mapfix/src/paint-battery.mjs: one run per snapshot over -25,33,70,71.5.
+ *
+ * (`insideBox` also trims 0.1 from the north edge, which is what has always kept Jan
+ * Mayen out of this layer while the box top sits at 71.)
+ */
 const BOX = [-24.5, 34.6, 62, 71];
 
 /** ADM0 codes of the countries the Stanford layers already draw. */
@@ -72,8 +101,11 @@ async function load(name) {
   return JSON.parse(fs.readFileSync(file, 'utf8'));
 }
 
-/** Union of every polygon in every Stanford snapshot. */
-function stanfordFootprint() {
+/** Union of every polygon in every Stanford snapshot, taken out of the Natural Earth
+ * layer, which is what keeps the two layers from painting the same land twice. It is the
+ * raw union, with no buffer: widening it would cut into land that only the Natural Earth
+ * layer has, west of where the 1938-1945 borders actually run.
+ */function stanfordFootprint() {
   const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, 'public/data/borders/manifest.json'), 'utf8'));
   const polys = [];
   for (const snap of manifest.snapshots) {

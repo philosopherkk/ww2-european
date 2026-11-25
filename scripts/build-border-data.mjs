@@ -62,7 +62,55 @@ const label = (iso) => `${MONTH_NAMES[Number(iso.slice(5, 7)) - 1]} ${iso.slice(
 
 // European theatre extent (lng/lat). Reaches past Arkhangelsk and includes
 // Moscow so the Eastern Front is visible; North Africa sits below as backdrop.
-const CLIP = [-25, 33, 62, 71];
+//
+// The east edge was 62 E until 25 Nov 2026, when a reader reported that the box cut the
+// Soviet Union off in a straight line. It did. Walking the built layer at 0.05 degrees
+// (audit/mapfix/src/edge-by-band.mjs, output in log/ww2-edge-by-band-mine.txt), the
+// published file has no vertex east of 62 E at all, and the same walk finds painted land at
+// exactly 62.000 E at 66, 67, 68 and 69 N, where the coast further south sits between 57.8
+// and 61.5 E: a sawn edge, not a coastline. In the new file the easternmost vertices are
+// 65.14 E in the 66 N band, 66.10 E at 67 N, 65.65 E at 68 N and 64.98 E at 69 N, the
+// furthest of them 66.096 E at 67.659 N, which is the Kola coast east of the Rybachy
+// peninsula, the Northern Dvina and Mezen mouths and the Nenets coast up to Vaygach
+// Strait. 66.5 E is just past the furthest the source draws, so nothing is left on the
+// wrong side of the cut.
+//
+// That is the whole of the cut. The same walk gives the source's easternmost land
+// anywhere south of 66 N as 61.500 E, at 51 N, and the bands from 33 N to 66 N are
+// unchanged in every figure between the old file and the new one: the Yamal, the Ob and
+// the Gydan are not in this dataset at any longitude, and no clip makes them appear. The
+// modern-outlines layer draws them at the Asia and World extents, so the blank that
+// remains north-west of the Urals is a limit of the per-month source and not of this box.
+//
+// Built over a quarter-degree grid against the previous files, all twelve months at once
+// (log/my-water-check-east2.txt), each month gains 179 points of coloured land, 2,148 in
+// all, and not one of them is water: every gained point is ground the modern-outlines
+// layer already colours. That is why nothing changes at the Asia and World extents and
+// everything changes in the Europe view, where only this layer draws. One point per month
+// does lose its colour, always the same one at 59.50 E 64.50 N. At 0.01 degrees over
+// 64.35-64.55 N 59.40-59.65 E (log/my-pechora-bend.txt) the old file paints 91 of the 169
+// samples and the new one 82, with 11 gained and 20 lost: the wider clip lets the
+// simplifier take a shortcut across a bend of the Pechora. The cost is 3,561 KB of border
+// files becoming 3,578 KB.
+//
+// The north edge stays at 71 N. A build at 71.5 N was measured the same way
+// (log/my-water-check-n715.txt): 405 more coloured samples across the twelve months, 360
+// of them coast the modern layer agrees is land, and 45 of them open sea the modern layer
+// leaves blank - four spots in every month, two off Nordkinn at 25.50 E and 27.25 E on
+// 71.00 N, two in the bay south of Novaya Zemlya's tip at 53.00 E 71.00 N and 53.50 E
+// 71.25 N. What the 360 buy is the last of Nordkinn: Norway's own vertices stop at
+// 71.000 N in the shipped file and reach 71.184 N in that build. That is the same fault
+// this change is meant to remove, brought in on a smaller scale, so the edge stays at
+// 71 N and the flat top it gives the coast is disclosed in the sources list instead.
+//
+// Higher still the source has nothing useful to add. At 82 N the April 1942 file grows
+// from 313 KB to 342 KB, and what appears is Franz Josef Land, 32 of 1,089 samples painted
+// in a box at 81.5-81.9 N 54-60 E, with 0 of 441 in a box over the New Siberian Islands at
+// 73-75 N 138-150 E, so most of that taller box is empty ocean, and Norway reaches
+// 80.508 N there because the source does hold Spitsbergen. The strait that divides Novaya
+// Zemlya stays water in that build too - 2 of 77 samples at 0.01 degrees - so the note in
+// an earlier pass blaming this build for filling it was wrong, and has gone.
+const CLIP = [-25, 33, 66.5, 71];
 
 // Kept at a finer tolerance because the blanket cut-off below would delete them.
 const KEEP_TINY = { Malta: { tolerance: 0.002, minAreaKm2: 3, decimals: 4 } };
