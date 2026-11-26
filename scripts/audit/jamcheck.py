@@ -197,6 +197,19 @@ def split_suspects(text, known, common=None):
     return out
 
 
+# Real English the atlas uses and /usr/share/dict/words does not contain: it is American, it is thin,
+# and it has no `cameramen`, no `minelayer` and no `neighbourhood`. Every one of these was read by hand
+# in the sentence it occurred in before it was listed here. Without the list a scan of the shipped trees
+# prints 16 lines of noise on every run, and a gate that cries wolf gets skimmed — which is exactly how
+# a real defect in the middle of that noise gets waved through. It is an EXACT-TOKEN list, it is counted
+# out loud on every run, and it cannot rescue anything not exactly on it: `mineface` is not on it.
+KNOWN_COMPOUNDS = {
+    "backdated", "smokescreen", "dockworkers", "foreseen", "cameramen", "codenamed", "downloaded",
+    "website", "readout", "keyword", "minelayer", "neighbourhood", "refetchable", "javascript",
+    "disorganisation", "geocodes",
+}
+
+
 def check(label, fields, known, common=None, published=None):
     """Two verdicts, because the gate can tell them apart and pretending otherwise would be a lie.
 
@@ -208,6 +221,7 @@ def check(label, fields, known, common=None, published=None):
     """
     bad = 0
     live = []
+    suppressed = set()
     for field, text in fields:
         if not isinstance(text, str):
             continue
@@ -225,6 +239,9 @@ def check(label, fields, known, common=None, published=None):
             if published and key in published:
                 live.append((key, field, disp))
                 continue
+            if key in KNOWN_COMPOUNDS:
+                suppressed.add(key)
+                continue
             bad += 1
             print("  JAM %-10s %s: %s" % (kind, field, disp.replace("\n", " ")[:90]))
     for key, field, disp in live:
@@ -233,6 +250,10 @@ def check(label, fields, known, common=None, published=None):
     verdict = "%d suspected jams" % bad if bad else "clean"
     if live:
         verdict += ", %d published-here-only to read" % len(live)
+    if suppressed:
+        # Say what was silenced. A suppression that is not printed is how a gate starts lying.
+        verdict += ", %d known compound(s) suppressed (%s)" % (
+            len(suppressed), ", ".join(sorted(suppressed)))
     print("%s: %s" % (label, verdict))
     return bad
 
@@ -294,6 +315,9 @@ def selftest():
         "hitler", "proclaimed", "short", "ring", "stops", "town", "next", "arriving",
         # "lies" is in the SHIPPED corpus, not in /usr/share/dict/words — the -ies arm below needs it.
         "lies", "filed", "his", "were", "day",
+        # The allow-list arm needs one half of each listed word in the CORPUS, because a suspect needs a
+        # half the project really uses. Without these the arm reports "clean" for the wrong reason.
+        "mine", "site", "dated", "spring", "after", "he", "drove", "through", "was",
     }
     known = known_words() | FIXTURE_CORPUS
     common = FIXTURE_CORPUS | SHORT_WORDS
@@ -357,6 +381,25 @@ def selftest():
            and any(a in known and b in known for a, b in [("rep", "lies")]))
     print("  -ies arm exercises the widening: %s" % ("ok" if pre else "VACUOUS"))
     ok = ok and pre
+    # The compound allow-list must be EXACT-TOKEN and its suppression must be PRINTED. Plant a real
+    # weld beside two listed words: exactly one may fail, and the run must say it suppressed two. The
+    # guard first proves the two listed words are detected at all in this fixture — otherwise the arm
+    # goes quiet for the wrong reason and reads as a pass, which is the failure mode I keep meeting.
+    import contextlib
+    import io
+    guarded = split_suspects("the website was backdated last spring", known, common)
+    guarded_toks = {t for t, _ in guarded}
+    buf = io.StringIO()
+    with contextlib.redirect_stdout(buf):
+        n = check("fixture", [("note", "he drove through the mineface after the website was "
+                                       "backdated")], known, common)
+    cap = buf.getvalue()
+    listed_ok = {"website", "backdated"} <= guarded_toks
+    list_ok = (n == 1 and "mineface" in cap and "2 known compound(s) suppressed" in cap)
+    print("  the allow-list is exact-token and says what it silenced: %s%s"
+          % ("ok" if list_ok else "FAIL %r -> %r" % (n, cap.strip()[:160]),
+             "" if listed_ok else "  (ARM VACUOUS: website/backdated are not suspects in this fixture)"))
+    ok = ok and list_ok and listed_ok
     # A dump may NEVER vouch for the file it is vocabulary for. This is the bug that made me report a
     # weld I had just PROVEN live on https://ww1-european.vercel.app as clean: I passed the target as
     # ".../ww1-european/scripts/audit/ww1.json" (built from $s="ww1") and the SAME file as
