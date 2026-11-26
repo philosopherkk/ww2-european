@@ -44,6 +44,12 @@ def repo_for(site):
     """The checkout whose prose this run measures. REPO_DIR applies only to the site it was named
     for (REPO_SITE=<ww1|ww2>, defaulting to the site being gated), so gating a ww2 worktree cannot
     quietly re-measure ww1's caps off the same tree."""
+    # REPO_DIR_WW1 / REPO_DIR_WW2 name a tree per site, which is what a worktree PAIR needs: my content
+    # branches live in wt-ww2-uslines and wt-ww1-uslines at the same time, and a single REPO_DIR can
+    # only redirect one of them, so gating the pair used to print a wrong-tree refusal.
+    per_site = os.environ.get("REPO_DIR_" + site.upper())
+    if per_site:
+        return os.path.abspath(per_site)
     if os.environ.get("REPO_DIR") and os.environ.get("REPO_SITE", site) == site:
         return os.path.abspath(os.environ["REPO_DIR"])
     name = "WW1-European" if site == "ww1" else "ww2-european"
@@ -55,6 +61,21 @@ def repo_for(site):
 
 
 REPOS = {s: repo_for(s) for s in ("ww1", "ww2")}
+
+
+def sites_to_measure():
+    """Which sites this run gates. BOTH unless ONLY=<site> narrows it for a worktree run — and a
+    narrowed run must SAY so out loud, because "0 fields over the cap" for one site is not a verdict
+    on the other. This gate has already been burned once by printing a confident nothing.
+    """
+    only = (os.environ.get("ONLY") or "").strip().lower()
+    if not only:
+        return ("ww1", "ww2")
+    if only not in ("ww1", "ww2"):
+        raise SystemExit(f"FAIL: ONLY={only!r} is neither ww1 nor ww2 — refusing to guess the site")
+    other = "ww1" if only == "ww2" else "ww2"
+    print(f"NOTE: ONLY={only} — {other} is NOT measured by this run and has no verdict here.")
+    return (only,)
 
 
 def newest_data_file(site):
@@ -194,6 +215,28 @@ def selftest():
     bad += 0 if ok else 1
     shutil.rmtree(bare, ignore_errors=True)
     shutil.rmtree(lonely, ignore_errors=True)
+    # ONLY must narrow, refuse nonsense, and never imply the other site was measured.
+    saved = {k: os.environ.get(k) for k in ("ONLY", "REPO_DIR_WW2")}
+    os.environ["ONLY"] = "ww2"
+    narrowed = sites_to_measure() == ("ww2",)
+    os.environ["ONLY"] = "everything"
+    try:
+        sites_to_measure()
+        guessed = True
+    except SystemExit:
+        guessed = False
+    os.environ["REPO_DIR_WW2"] = "/Users/ka-kinpoon/Project/WW2/wt-some-ww2-worktree"
+    per_site_ok = (repo_for("ww2").endswith("wt-some-ww2-worktree")
+                   and repo_for("ww1").endswith("WW1-European"))
+    for k, v in saved.items():
+        os.environ.pop(k, None)
+        if v is not None:
+            os.environ[k] = v
+    for label, ok in (("ONLY=ww2 narrows to one site and says the other has no verdict", narrowed),
+                      ("ONLY=<nonsense> is refused rather than guessed", not guessed),
+                      ("REPO_DIR_WW2 redirects ww2 only, ww1 stays the checkout", per_site_ok)):
+        print(f"  {'ok  ' if ok else 'FAIL'} {label}")
+        bad += 0 if ok else 1
     print("SELFTEST passed: an over-cap field is caught; a missing, stale or wrong-tree dump is a refusal"
           if not bad else f"SELFTEST FAILED ({bad})")
     return 1 if bad else 0
@@ -202,7 +245,7 @@ def selftest():
 tot, missing = 0, 0
 if os.environ.get("SELFTEST") == "1":
     sys.exit(selftest())
-for tag in ("ww1", "ww2"):
+for tag in sites_to_measure():
     rows = check(tag)
     if rows is None:
         missing += 1
