@@ -1,0 +1,5 @@
+# dumps are build products of a tree; a committed one is a stale one
+ww1.json
+ww2.json
+cache*/
+*.tmp
