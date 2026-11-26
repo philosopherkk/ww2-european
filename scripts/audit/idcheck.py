@@ -56,6 +56,17 @@ def check(item, shipped_by_site):
     return notes
 
 
+# The input for the fixture self-test: the two drafts of 26 Nov that had to be withdrawn because
+# another writer already had those ids in progress (audit/us-lines/WITHDRAWN-shipped-elsewhere.json
+# is the original file; it is repeated here so --selftest-only runs in any job directory).
+WITHDRAWN_FIXTURE = [
+    {"id": "myitkyina_1944", "from": "1944-05-17", "to": "1944-08-03",
+     "name": "Northern Burma: Ledo to Myitkyina", "war": "ww2"},
+    {"id": "st_mihiel_1918", "from": "1918-09-12", "to": "1918-09-16",
+     "name": "Saint-Mihiel: the salient closed", "war": "ww1"},
+]
+
+
 def fixture_selftest():
     """A gate's self-test carries its own data. This one used to assert against whatever dumps happened
     to be in the directory, which tested the tree: once my own lines were in the tree the assertion
@@ -64,7 +75,8 @@ def fixture_selftest():
                                           'name': 'Myitkyina: the lead-to-Mine road'}},
                'ww1': {'st_mihiel_1918': {'id': 'st_mihiel_1918', 'from': '1918-09-12', 'to': '1918-09-16',
                                           'name': 'Saint-Mihiel: the salient closed'}}}
-    withdrawn = json.load(open(os.path.join(ROOT, 'WITHDRAWN-shipped-elsewhere.json')))
+    withdrawn = json.load(open(os.path.join(ROOT, 'WITHDRAWN-shipped-elsewhere.json'))) \
+        if os.path.exists(os.path.join(ROOT, 'WITHDRAWN-shipped-elsewhere.json')) else WITHDRAWN_FIXTURE
     caught = [n for it in withdrawn for n in check(it, fixture) if 'ALREADY SHIPPED' in n]
     # The negative arm matters as much: a gate that flagged everything would also pass the positive arm.
     clean = check({'id': 'normandy_breakout_1944', 'from': '1944-07-25', 'to': '1944-08-30',
@@ -80,24 +92,41 @@ if '--selftest-only' in sys.argv:
     fixture_selftest()
     raise SystemExit(0)
 
+def payload_files():
+    """Which payloads this run checks. A one-site job is a legitimate shape, so a payload file that was
+    never written is skipped with a printed note; a job with NO payload at all is a mistake and stays a
+    refusal, because silently checking nothing is the failure mode this set of gates exists to stop."""
+    pay = os.environ.get('PAYLOAD')
+    if pay:
+        return [(pay, 'payload')], 'payload'
+    files, wanted = [], set()
+    for site in ('ww2', 'ww1'):
+        path = os.path.join(ROOT, 'findings-%s.json' % site)
+        if os.path.exists(path):
+            files.append((path, site))
+            wanted.add(site)
+        else:
+            print('== %s: no payload at %s — nothing proposed there, or the path is wrong' % (site, path))
+    if not files:
+        raise SystemExit('REFUSE: no findings-ww2.json or findings-ww1.json in %s' % ROOT)
+    return files, wanted
+
+
+FILES, WANTED = payload_files()
+PAYLOAD_SITES = bool(os.environ.get('PAYLOAD'))
+
+# 2. read a shipped-line dump only for the sites that have a payload. With an explicit PAYLOAD the run
+# checks BOTH sites, which is how the withdrawn drafts were caught: a WW2 draft can restate a WW1 line.
 SHIPPED = {}
-for site in ('ww2', 'ww1'):
+for site in (('ww2', 'ww1') if PAYLOAD_SITES else WANTED):
     path = os.path.join(HERE, '%s.json' % site)
     if not os.path.exists(path):
-        raise SystemExit('REFUSE: no shipped-line dump at %s. Put one there with dump.mjs, or run '
-                         '--selftest-only (which needs no tree at all).' % path)
+        raise SystemExit('REFUSE: no shipped-line dump at %s. Put one there with dump.mjs (run it '
+                         'against the tree you are proposing into), or use --selftest-only, which '
+                         'needs no tree at all.' % path)
     live = json.load(open(path))
     SHIPPED[site] = {c['id']: c for c in live['CAMPAIGN_LINES'] + live.get('MARCH_LINES', [])}
 
-PAYLOAD = os.environ.get('PAYLOAD')
-FILES = ([(PAYLOAD, 'payload')] if PAYLOAD else
-         [(os.path.join(ROOT, 'findings-%s.json' % s), s) for s in ('ww2', 'ww1')])
-
-# POST_APPLY=1 is the mode for after the lines are in the tree, and it is a different question. Run
-# against a tree that already contains the payload, every one of the payload's own ids is "ALREADY
-# SHIPPED" — 11 self-collisions here — which is noise that would hide the one thing worth seeing: a
-# collision with a line the payload did NOT propose. So the payload's own ids are expected, counted
-# separately, and stated on stdout rather than silently dropped.
 POST_APPLY = os.environ.get('POST_APPLY') == '1'
 proposed = set()
 for path, _ in FILES:
@@ -124,7 +153,7 @@ for path, label in FILES:
         if not notes:
             print('  ok %-26s %s..%s' % (it['id'], it['from'], it['to']))
 
-if not PAYLOAD:
+if not os.environ.get('PAYLOAD'):
     fixture_selftest()
 
 if bad:
