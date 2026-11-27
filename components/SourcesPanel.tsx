@@ -1,5 +1,5 @@
-import type { ReactNode } from 'react';
 'use client';
+import type { ReactNode } from 'react';
 
 import { ChevronDown } from 'lucide-react';
 import { SOURCES, UNCERTAINTIES, FIGURES, FIGURE_BY_ID } from '@/lib/data';
