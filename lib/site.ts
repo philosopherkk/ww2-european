@@ -309,7 +309,7 @@ export const LEVELS: { id: Level; label: string; short: string; hint: string }[]
  */
 export const BLOC_META: Record<
   Bloc,
-  { label: string; color: string; blurb: string }
+  { label: string; color: string; textColor?: string; blurb: string }
 > = {
   central: {
     label: 'Central Powers',
@@ -329,12 +329,14 @@ export const BLOC_META: Record<
   co_belligerent: {
     label: 'Joined later',
     color: '#6E7F2B',
+    textColor: '#4F5B1F',
     blurb:
       'States that came in after 1914, each for its own reasons: Italy in 1915, Portugal and Romania in 1916, the United States and Greece in 1917.',
   },
   neutral: {
     label: 'Neutral',
     color: '#8C979B',
+    textColor: '#656D70',
     blurb:
       'The Netherlands, Scandinavia, Switzerland and Spain stayed out of the fighting, and traded and were blockaded all the same.',
   },

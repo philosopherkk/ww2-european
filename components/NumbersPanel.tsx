@@ -253,7 +253,7 @@ function Figure({
   active?: boolean;
 }) {
   return (
-    <div className={`rounded-lg px-2.5 py-2 ${active ? 'bg-stone-800 text-white' : 'bg-stone-100'}`}>
+    <div className={`min-w-0 rounded-lg px-2.5 py-2 ${active ? 'bg-stone-800 text-white' : 'bg-stone-100'}`}>
       <dt className={`text-xs ${active ? 'text-stone-300' : 'text-stone-600'}`}>{label}</dt>
       <dd className="text-[15px] font-bold tabular-nums">{value}</dd>
     </div>
@@ -291,7 +291,7 @@ function CountryRow({
         </div>
         <span
           className="rounded-full px-2.5 py-0.5 text-xs font-semibold text-white"
-          style={{ background: BLOC_META[stat.bloc].color }}
+          style={{ background: BLOC_META[stat.bloc].textColor ?? BLOC_META[stat.bloc].color }}
         >
           {BLOC_META[stat.bloc].label}
         </span>
@@ -315,7 +315,7 @@ function CountryRow({
         </div>
       </div>
 
-      <dl className="mt-3 grid grid-cols-3 gap-1.5">
+      <dl className="mt-3 grid grid-cols-1 gap-1.5 sm:grid-cols-3">
         <Figure label="Peak under arms" value={formatMillions(stat.peakForces)} />
         <Figure
           label="Military dead"

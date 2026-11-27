@@ -93,6 +93,10 @@ export const CAMPAIGN_EVENT_LINKS: CampaignEventLink[] = [
   { line: 'czech_legion_1918', event: 'kazan_taken_1918', at: 3 },
   { line: 'western_front_1918', event: 'mons_last_morning_1918', at: 6 },
   { line: 'brest_litovsk_1918', event: 'treaty_brest_litovsk', at: 4 },
+  { line: 'jutland_1916', event: 'battle_of_jutland', at: 1 },
+  { line: 'dardanelles_naval_1915', event: 'dardanelles_naval_assault', at: 2 },
+  { line: 'st_mihiel_1918', event: 'st_mihiel_offensive_1918', at: 2 },
+  { line: 'zeppelin_raids_1915_18', event: 'first_zeppelin_raid_on_england', at: 0 },
 ];
 
 export const LINKS_BY_LINE: Record<string, CampaignEventLink[]> = {};

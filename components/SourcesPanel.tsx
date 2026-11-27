@@ -1,6 +1,6 @@
 'use client';
-import type { ReactNode } from 'react';
 
+import type { ReactNode } from 'react';
 import { ChevronDown } from 'lucide-react';
 import {
   FIGURES,
@@ -34,7 +34,7 @@ const MAP_LIMITS: { head: string; body: string }[] = [
   {
     head: 'The Italy–Austria-Hungary frontier is drawn on the Isonzo front',
     body:
-      'In July 1914 the border ran east of Trieste: Trieste, Duino, Monfalcone, Cormons and Gradisca d’Isonzo were in Austria-Hungary. The source used for this map draws the fighting line of 1915–17 instead, which runs east of the 1914 frontier in that sector, so those places are painted Italian in every month, including the first, and the test point for Grado falls in the same source gap that swallows Venice. The line does not carry the same error everywhere: further up the Isonzo, Kobarid stays inside Austria-Hungary, and Görz does too at the point our test uses. So it is not one uniform shift that a nudge could repair, and this site will not invent a replacement frontier. Trento, Bolzano, Pula, Rijeka and Ljubljana are on the Habsburg side, as they should be.',
+      'In July 1914 the border ran east of Trieste: Trieste, Duino, Monfalcone, Cormons and Gradisca d’Isonzo were in Austria-Hungary. The source used for this map draws the fighting line of 1915–17 instead, which runs east of the 1914 frontier in that sector, so those places are painted Italian in every month, including the first. Grado is a different defect, and a worse one: the source has no ring for the island at all — the nearest small ring lies 2.27 km away — so the tested point reads as water while the mainland behind it reads Italian, and no build setting draws it. The line does not carry the same error everywhere: further up the Isonzo, Kobarid stays inside Austria-Hungary, and Görz does too at the point our test uses. So it is not one uniform shift that a nudge could repair, and this site will not invent a replacement frontier. Trento, Bolzano, Pula, Rijeka and Ljubljana are on the Habsburg side, as they should be.',
   },
   {
     head: 'A whole country is one colour, so occupation is invisible',
@@ -44,12 +44,12 @@ const MAP_LIMITS: { head: string; body: string }[] = [
   {
     head: 'Land with no colour is outside this dataset',
     body:
-      'The source has 29 features: the states of Europe plus Algeria, Tunisia, Libya, Morocco, Egypt and Iran. This map keeps 22 of them, and the seven it drops carry no political colour anywhere — Egypt, Iran, Algeria, Tunisia, Libya, Morocco and Liechtenstein. That is a choice, not a limit: those six large shapes are in the data and this atlas declines to draw them, because a single July-1914 polygon for Egypt or Persia would imply a settled frontier that the war itself was redrawing. The whole of Arabia is blank for the other reason, which is that the source has no feature for it at all. The lines that run on over that land are still drawn, because they can be placed against the coastline, but the reader should know they are running over ground this map cannot classify. Cyprus is coloured British because the source puts it inside the United Kingdom feature, which is right enough: it was administered from Britain from 1878 and annexed on 5 November 1914. The chips of country names under an event card are a separate list and follow the events, not the outlines: India, whose troops fought at Gallipoli and up the Tigris, and Mexico, which Germany tried to bring into the war in January 1917, are named on cards and drawn nowhere on this map.',
+      'The source has 29 features: the states of Europe plus Algeria, Tunisia, Libya, Morocco, Egypt and Iran. This map keeps 22 of them, and the seven it drops carry no political colour anywhere — Egypt, Iran, Algeria, Tunisia, Libya, Morocco and Liechtenstein. That is a choice, not a limit: those six large shapes are in the data and this atlas declines to draw them, because a single July-1914 polygon for Egypt or Persia would imply a settled frontier that the war itself was redrawing. The Ottoman polygon covers the Hejaz, Asir and Yemen along the Red Sea coast and the south-west (including Medina, Mecca and Sanaa); central and eastern Arabia — Najd, the Empty Quarter and Hadhramaut — are blank because the source has no polygon there. The lines that run on over that land are still drawn, because they can be placed against the coastline, but the reader should know they are running over ground this map cannot classify. Cyprus is coloured British because the source puts it inside the United Kingdom feature, which is right enough: it was administered from Britain from 1878 and annexed on 5 November 1914. The chips of country names under an event card are a separate list and follow the events, not the outlines: India, whose troops fought at Gallipoli and up the Tigris, and Mexico, which Germany tried to bring into the war in January 1917, are named on cards and drawn nowhere on this map.',
   },
   {
     head: 'What the coloured area reaches, and what it still misses',
     body:
-      'The box runs from 25° W to 120° E and from 12.5° N in the Gulf of Aden to 82° N; inside it the source’s own outlines are used whole. Until 25 November 2026 it stopped at the 34th meridian, the 45th parallel and 71.5° N, which is why Palestine, Mesopotamia, the Caucasus, the steppe east of Poland and the Arctic islands carried no colour at all. Widening it added no state and made no new claim: it only stopped discarding land the source itself draws. That widening took the shape from 330 pieces and 35,633 vertices to 418 and 42,409, and the file from 640 KB to 761 KB, 257 KB over the wire. A quarter-degree sweep of those two builds — 106,299 points — found 13,070 newly coloured and none lost. So Rafah, Gaza, Beersheba, Jerusalem, Amman, Aqaba, Damascus, Mosul, Baghdad, Basra and Erzurum are now drawn as Ottoman, and Astrakhan, Orenburg, Baku, Ganja, Ashgabat, Merv and Tashkent as Russian; the Canaries come out Spanish and Madeira Portuguese, while the Azores sit west of the box and stay blank. One asymmetry comes with widening the box, and it is the atlas’s, not ours: the source labels a separate polygon of about 25,400 km² in the Rif, between 6.25° and 2.35° W and 34.35° and 35.92° N, as Spain, so this map paints Spanish colour south of the Strait — as it did before the box widened, since that piece was always inside it — while Fez, a degree below its southern edge, stays blank because the atlas draws French Algeria and Tunisia as their own features and this map keeps only the European polities. Nothing here was moved or redrawn to make the two agree. The box now reaches past the source’s own furthest Russian vertex, 113.9° E in Siberia: 490 polygons and 49,363 vertices, 865 KB on disk and 291 KB over the wire, another 126 KB for ground nothing in this timeline narrates, paid so that no country ends on a straight cut. What the new 82° N edge does buy is the high Arctic: the published file now paints Russian land as far north as 81.85° N, 59.05° E, which is Franz Josef Land, and Novaya Zemlya north to it, where the old file stopped at 71.5° N. What is still blank, and why: Suez, Port Said and El Arish, Tabriz and Tehran, Algiers, Tunis, Tripoli and Fez are in the source and are dropped by the choice described above. Aden, Riyadh and Kuwait City, and the khanate oases of Khiva and Bukhara — Kunya-Urgench, Karshi, Termez, Dushanbe — are blank because the source has no feature for them, which produces the strangest result on this map: Nukus, on the Amu Darya, is Russian, and the oasis town 20 km to its north is nothing. Bear Island, Longyearbyen in Spitsbergen and Reykjavik are blank for the same reason; so are the tip of North Cape and the tip of the Kanin Peninsula, where a coastline drawn at one part in 110 million has no room for a headland.',
+      'The box runs from 25° W to 120° E and from 12.5° N in the Gulf of Aden to 82° N; inside it the source’s own outlines are used whole. Until 25 November 2026 it stopped at the 34th parallel, the 45th meridian and 71.5° N, which is why Palestine, Mesopotamia, the Caucasus, the steppe east of Poland and the Arctic islands carried no colour at all. Widening it added no state and made no new claim: it only stopped discarding land the source itself draws. That widening took the shape from 330 pieces and 35,633 vertices to 418 and 42,409, and the file from 640 KB to 761 KB; the lagoon rule described below took it to 423 pieces and 42,527 vertices, 763 KB, 258 KB over the wire. A quarter-degree sweep of those two builds — 106,299 points — found 13,070 newly coloured and none lost. So Rafah, Gaza, Beersheba, Jerusalem, Amman, Aqaba, Damascus, Mosul, Baghdad, Basra and Erzurum are now drawn as Ottoman, and Astrakhan, Orenburg, Baku, Ganja, Ashgabat, Merv and Tashkent as Russian; the Canaries come out Spanish and Madeira Portuguese, while the Azores sit west of the box and stay blank. One asymmetry comes with widening the box, and it is the atlas’s, not ours: the source labels a separate polygon of about 25,400 km² in the Rif, between 6.25° and 2.35° W and 34.35° and 35.92° N, as Spain, so this map paints Spanish colour south of the Strait — as it did before the box widened, since that piece was always inside it — while Fez, 0.32° (about 36 km) below its southern edge, stays blank because the atlas draws French Algeria and Tunisia as their own features and this map keeps only the European polities. Nothing here was moved or redrawn to make the two agree. The two extents this site cannot paint, the Americas and the world, have no button at all rather than a button that shows only the basemap. The box now reaches past the source’s own furthest Russian vertex, 113.9° E in Siberia: 421 pieces and 49,481 vertices, 867 KB on disk and 291 KB over the wire, another 126 KB for ground nothing in this timeline narrates, paid so that no country ends on a straight cut. What the new 82° N edge does buy is the high Arctic: the published file now paints Russian land as far north as 81.85° N, 59.05° E, which is Franz Josef Land, and Novaya Zemlya north to it, where the old file stopped at 71.5° N. What is still blank, and why: Suez, Port Said and El Arish, Tabriz and Tehran, Algiers, Tunis, Tripoli and Fez are in the source and are dropped by the choice described above. Aden, Riyadh and Kuwait City, and the khanate oases of Khiva and Bukhara — Kunya-Urgench, Karshi, Termez, Dushanbe — are blank because the source has no feature for them, which produces the strangest result on this map: Nukus, on the Amu Darya, is Russian, and the oasis town 20 km to its north is nothing. Bear Island, Longyearbyen in Spitsbergen and Reykjavik are blank for the same reason; so are the tip of North Cape and a stretch of coast west of the Kanin Peninsula around 59.5°–61.2° E, where the source leaves out headlands and coastal bays.',
   },
   {
     head: 'Lakes and straits are not cut out',
@@ -59,7 +59,7 @@ const MAP_LIMITS: { head: string; body: string }[] = [
   {
     head: 'Small places were dropped',
     body:
-      'Island rings under 25 km² were removed to keep the file small enough to serve, which is why the Venetian lagoon’s sandbars are not drawn as land, and Malta, Kos and most of the Dodecanese are not in the source at all. Lemnos is drawn, as Greek, and so is Mudros Bay, where the armistice that ended the war with the Ottoman Empire was signed on 30 October 1918. Liechtenstein is in the source but left out here. Monaco, San Marino, Andorra, Vatican City and Iceland are simply not in the source.',
+      'Island rings under 25 km² were removed to keep the file small enough to serve — and fifteen pieces in the published file already measure under that line, the smallest 12.9 km², because the floor is measured on the source’s ring before simplification and simplification can shrink a ring below the line it passed. The Venetian lagoon is the one deliberate exception, and it is a box, not a list of names: a ring under the cut is kept if its centre falls between 12.15 and 12.75° E and 45.25 and 45.75° N and it reaches 3 km², and it is then simplified more finely than the rest of the file. Five rings come through, of 3.4, 5.3, 6.8, 7.8 and 15 km², which takes the published shape to 423 pieces and 42,527 vertices, 763 KB, 258 KB over the wire; four of the five are now the four smallest pieces in the file. Nothing was taken away to get them: the same 22 polities, the same 11 holes, no ring removed. One of the five is the historic city of Venice itself, centred on 12.33° E 45.44° N, and the border test now asserts the city rather than waiving it; the source does not label its lagoon rings, so this map does not claim to know which of the other four is the Lido, Murano or Pellestrina. On screen the five are 0.3 to 1.0 pixels across in the Europe view — painted, but not really visible at a glance — and the lagoon only reads as a lagoon once the reader zooms well in: at half the map’s maximum zoom they are roughly 5 to 15 pixels across. The thin sandbars, and Chioggia, for which the source has no ring at all, are still not drawn. Malta plus several smaller Aegean islands (such as Kalymnos, Leros, Imbros and Kastellorizo) are not in the source at all; Rhodes and Kos are present inside the Greek polygon. Lemnos is drawn, as Greek, and so is Mudros Bay, where the armistice that ended the war with the Ottoman Empire was signed on 30 October 1918. Liechtenstein is in the source but left out here. Monaco, San Marino, Andorra, Vatican City and Iceland are simply not in the source.',
   },
   {
     head: 'One island in the source is labelled wrongly',
@@ -77,7 +77,7 @@ const MAP_LIMITS: { head: string; body: string }[] = [
       'The source records the name of each polity and nothing else: no alliances, no occupations, no dates. The allegiance you see comes from a change-point table written for this site in lib/data/status.ts and checked against the references below, one entry per polity for the month in which the change happened. Snapshots are dated the last day of the month, so the colour on the map and the events listed beside it describe the same moment.',
   },
   {
-    head: 'Solid lines are held fronts, dashed lines are movements',
+    head: 'Solid lines are held fronts, dashed lines are movements or sea routes',
     body:
       'A solid line was held by the side named on it for the whole period shown, and carries no ring, because putting a “how far the advance got” dot on the Aisne in October 1917 would be a lie about a place where almost nobody advanced. A dashed line is the whole axis of an operation, and its ring marks roughly where that operation had got to by the month you are reading. There are three line colours — Central Powers, Entente and associated, and Russian — because Russia leaves the war inside the span of this map, and a Russian line in the Entente colour would read as British or French in 1918.',
   },
@@ -92,9 +92,9 @@ const MAP_LIMITS: { head: string; body: string }[] = [
       'A line is opened by hovering or tapping it, and no zoom this site offers makes every line long enough to aim at. In September 1918, on the two screen sizes this site is tested at, the Fifth Ypres line measures 2 by 2 px on a phone looking at Europe and is down to a pixel or less once the whole world is in frame, and the Amiens line is 4 by 2 px on a phone. The pursuit towards Damascus, which is 15 by 16 px on a desktop looking at Europe, is 2 by 2 px on a phone at the world extent. At that zoom the renderer also drops the intermediate points, so a line built from four or five named places is drawn as its two endpoints. Nothing is hidden: the pins on those lines open their entries as usual, every line is named in the month list, and the events carry what a two-pixel line cannot.',
   },
   {
-    head: 'Sea and air war has no lines',
+    head: 'Most sea and air war has no lines',
     body:
-      'Lines are ground axes. Jutland, the U-boat campaigns, the Zeppelin and Gotha raids on England, the minefields and the blockade are carried by the events, because a fleet has no axis of advance and a ship’s wake is not a front. The Dardanelles in 1915 is the one partial exception: the strait and the beachheads are places, so they can be joined, but the fleet’s sweeps up the strait on 18 March are not drawn.',
+      'Almost every line is a ground front or advance, so the U-boat campaigns, the Zeppelin and Gotha raids, the minefields and the blockade are carried by the events. Two sea routes with documented endpoints are drawn with the sea dash and no progress ring: Jutland (Scapa Flow and Wilhelmshaven to the Skagerrak) and the Dardanelles naval assault of February–March 1915.',
   },
   {
     head: 'This map stops at the armistice, not the peace',
@@ -118,6 +118,7 @@ const SECTIONS = [
 ];
 
 const CARD = 'scroll-mt-16 rounded-xl border border-stone-300 bg-white p-4 shadow-sm sm:p-5';
+
 /**
  * The bibliography holds markdown italics, because that is how a book title is written down:
  * `_Cataclysm: The First World War as Political Tragedy_`. Printed as plain text a reader sees the
@@ -142,6 +143,7 @@ function citationText(citation: string): ReactNode {
   if (last < citation.length) parts.push(citation.slice(last));
   return parts.length === 1 && typeof parts[0] === 'string' ? parts[0] : parts;
 }
+
 
 export default function SourcesPanel() {
   return (
@@ -246,7 +248,7 @@ export default function SourcesPanel() {
           ))}
         </div>
         <details className="mt-3">
-          <summary className="cursor-pointer text-sm font-semibold text-stone-700">
+          <summary className="min-h-6 cursor-pointer py-1 text-sm font-semibold text-stone-700">
             The {NOTED_MONTHS.length} months with a note of their own
           </summary>
           <ul className="mt-2 space-y-1.5 text-[13px] leading-relaxed text-stone-700">
@@ -279,12 +281,12 @@ export default function SourcesPanel() {
             <li key={s.citation} className="border-l-2 border-stone-300 pl-3">
               <p className="text-[15px] font-medium leading-snug text-stone-900">{citationText(s.citation)}</p>
               <p className="text-xs text-stone-600">{s.publisher}</p>
-              <p className="mt-0.5 text-[13px] leading-snug text-stone-700">{s.usedFor}</p>
+              <p className="mt-0.5 break-words text-[13px] leading-snug text-stone-700">{s.usedFor}</p>
               <a
                 href={s.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block break-all py-1.5 text-xs text-blue-700 underline hover:text-blue-900"
+                className="inline-block break-all py-2 text-xs text-blue-700 underline hover:text-blue-900"
               >
                 {s.url}
               </a>
@@ -312,7 +314,7 @@ export default function SourcesPanel() {
           the first named after the person; those choices are listed below so you can check them.
         </p>
         <details className="mt-3">
-          <summary className="cursor-pointer text-sm font-semibold text-stone-700">
+          <summary className="min-h-6 cursor-pointer py-1 text-sm font-semibold text-stone-700">
             Every photograph and its credit
           </summary>
           <ul className="mt-2 space-y-1 text-[13px] leading-snug text-stone-700">

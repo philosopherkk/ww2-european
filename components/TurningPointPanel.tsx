@@ -49,6 +49,13 @@ export default function TurningPointPanel({
         </div>
       )}
 
+      {tp.mapNote && (
+        <p className="mt-2.5 flex gap-1.5 rounded-lg border border-amber-800/20 bg-white/70 px-2.5 py-2 text-sm leading-relaxed text-stone-700">
+          <MapPin size={15} className="mt-1 shrink-0 text-amber-900" aria-hidden />
+          <span>{tp.mapNote}</span>
+        </p>
+      )}
+
       <details className="group mt-3 border-t border-amber-800/20 pt-2">
         <summary className="flex min-h-9 cursor-pointer list-none items-center gap-1.5 text-sm font-semibold text-amber-900 [&::-webkit-details-marker]:hidden">
           <ChevronDown
@@ -62,13 +69,6 @@ export default function TurningPointPanel({
           <span className="font-semibold">What it did not settle. </span>
           {tp.unsettled[level]}
         </p>
-
-        {tp.mapNote && (
-          <p className="mt-2 flex gap-1.5 text-sm leading-relaxed text-stone-700">
-            <MapPin size={15} className="mt-1 shrink-0" aria-hidden />
-            <span>{tp.mapNote}</span>
-          </p>
-        )}
 
         <p className="mt-2 flex items-start gap-1.5 text-xs leading-relaxed text-stone-600">
           <BookOpen size={13} className="mt-0.5 shrink-0" aria-hidden />

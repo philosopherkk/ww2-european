@@ -71,7 +71,7 @@ export default function PeoplePanel({ level, focusId, onFocus, onOpenEvent }: Pr
             </div>
             <span
               className="rounded-full px-2.5 py-0.5 text-xs font-semibold text-white"
-              style={{ background: BLOC_META[figure.bloc].color }}
+              style={{ background: BLOC_META[figure.bloc].textColor ?? BLOC_META[figure.bloc].color }}
             >
               {BLOC_META[figure.bloc].label}
             </span>
@@ -160,7 +160,7 @@ export default function PeoplePanel({ level, focusId, onFocus, onOpenEvent }: Pr
           />
         </label>
         <div
-          className="no-scrollbar -mx-3 flex gap-1.5 overflow-x-auto px-3 sm:mx-0 sm:flex-wrap sm:px-0"
+          className="flex flex-wrap gap-1.5"
           role="group"
           aria-label="Filter by side"
         >
@@ -216,7 +216,7 @@ export default function PeoplePanel({ level, focusId, onFocus, onOpenEvent }: Pr
                   <p className="mt-1 line-clamp-2 text-sm leading-snug text-stone-700">{f.role}</p>
                   <p
                     className="mt-1.5 text-xs font-semibold"
-                    style={{ color: BLOC_META[f.bloc].color }}
+                    style={{ color: BLOC_META[f.bloc].textColor ?? BLOC_META[f.bloc].color }}
                   >
                     {BLOC_META[f.bloc].label}
                   </p>

@@ -1689,4 +1689,31 @@ export const EVENTS_1918: WW1Event[] = [
       },
     },
   },
-];
+  {
+    id: 'st_mihiel_offensive_1918',
+    date: '1918-09-12',
+    precision: 'day',
+    title: 'The first offensive of the American army, in its own cause',
+    kind: 'offensive',
+    fronts: ['western'],
+    countries: ['France', 'Germany', 'United States'],
+    note: 'The independent account for the theatre gives over 13,000 prisoners and 466 guns taken in 36 hours, and puts the cost at 5,000 German killed and wounded against 7,000 American casualties. The encyclopaedia puts the French corps at the apex in the town on 15 September with 4,000 prisoners — another corps on another day, so the two totals are not a disagreement, and neither belongs in the account of the battle. The 2,900 guns are the independent account’s figure, the 1,481 aircraft the encyclopaedia’s, and the day of the attack is printed by both. Metz is the object the plan projected and was never reached.',
+    mapNote: 'The pin is at Saint-Mihiel, the apex of the salient that blocked communications between Nancy and Verdun.',
+    levels: {
+      primary: {
+        cause: 'The salient had been in German hands from early in the war, and the American army wanted ground of its own on which to fight a battle of its own.',
+        what: 'American corps attacked on the flanks of the salient while French troops attacked its tip, and the German defenders had begun to withdraw before the attack was delivered.',
+        consequence: 'The ground was taken in two days, the offensive was then halted, and the American units were withdrawn for the Meuse-Argonne offensive.',
+      },
+      secondary: {
+        cause: 'The salient had been in German hands since 1914, the independent account for the theatre records, and the encyclopaedia says it blocked communications between Nancy and Verdun. The garrison, the same encyclopaedia records, was desperately short of manpower and had begun a step-by-step withdrawal the day before the offensive began. Pershing had had to persuade Foch to permit an American attack on the salient at all, and the independent account records that he had generally resisted feeding American troops into the frontline as they became available, preferring to concentrate them in a single army.',
+        what: 'The offensive began on 12 September with a threefold assault: the main attack against the south face by two American corps, a secondary thrust against the west face by V Corps, and a holding attack at the apex by the French II Colonial Corps. The independent account for the theatre gives the attack two corps and a barrage from 2,900 guns, with French tanks and a French colonial division, and has the defenders caught by surprise; the encyclopaedia counts 1,481 aircraft over the front, the largest air operation of the war.',
+        consequence: 'The two wings met on the second morning and every objective inside the salient was in hand by the evening, the encyclopaedia records; the advance was then halted so that American units could be withdrawn for the Meuse-Argonne offensive. The independent account for the theatre has Foch ending the American offensive and the army moved to the Argonne Forest, where it would make its main contribution to the fighting on that front. The attack on Metz, which the plan projected, was never delivered.',
+      },
+      university: {
+        cause: 'The wedge lay inside the French lines, and the German attack that made it had left the rail and road communications into Verdun restricted. The case was not one of prestige alone: the encyclopaedia has the American commander reckoning that an attack in the region of Saint-Mihiel, Metz and Verdun would have a significant effect on the German army, and that a continuation on to the German railroad centre at Metz would be devastating. The independent account for the theatre records that he had generally resisted British and French attempts to feed American troops into the frontline as soon as they were available, preferring to concentrate them in a single army; and the encyclopaedia records that he had to persuade Foch, the supreme Allied commander, to permit an American attack on the salient.',
+        what: 'The assault was threefold: the main blow against the south face by the American I and IV Corps, a secondary thrust against the west face by V Corps along the heights of the Meuse, and a holding attack against the apex by the French II Colonial Corps so that the enemy could not get away. The enveloping thrusts were to drive into the salient and join at the village of Vigneulles. The garrison had eight divisions and a brigade in the line and was desperately short of manpower; it had begun a step-by-step withdrawal the day before, and the independent account has it caught by surprise, outnumbered, out of position and its position collapsed. The push on to Metz that the plan projected was never made, and the ground the attack met was ground the enemy was leaving.',
+        consequence: 'The American army had the battle it had argued for: the encyclopaedia calls it the first large offensive launched mainly by its own troops, and the independent account for the theatre the first major independent American offensive of the war. It was also the largest air operation of the war: the encyclopaedia counts 1,481 aircraft over the front, about forty per cent of them American-flown. Yet the victory had much to do with the defender’s own choice — the garrison was short of manpower and, in the independent account’s words, was about to abandon the salient in order to withdraw to the Hindenburg Line. The offensive was halted so that units could be withdrawn for the Meuse-Argonne offensive, and the army was moved to the Argonne Forest, where the fighting that followed was of another order.',
+      },
+    },
+  },];

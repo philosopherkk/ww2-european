@@ -9,7 +9,7 @@ three times over for three reading levels.
 
 | Part | Contents |
 | --- | --- |
-| Map & timeline | 53 months on a slider, one July 1914 geometry coloured by who is at war with whom, 42 campaign lines and 12 march lines (solid for held fronts, dashed for offensives underway that month), 16 turning-point panels for the months in which the colours change, click any country or line for detail |
+| Map & timeline | 53 months on a slider, one July 1914 geometry coloured by who is at war with whom, 45 campaign lines and 12 march lines (solid for held fronts, dashed for offensives underway that month), 16 turning-point panels for the months in which the colours change, click any country or line for detail |
 | Events | 158 events, each split into **why it happened**, **what happened** and **what followed** |
 | People | 72 biographies, each with a period photograph, from emperors and field marshals to pashas, prime ministers, a nurse and two revolutionaries |
 | Numbers | Population, mobilisation and casualty tables for 16 states, with ranges wherever historians disagree and a note on each figure saying whether influenza deaths are inside it or outside |

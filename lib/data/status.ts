@@ -123,7 +123,7 @@ export const STATUS_META: Record<TerritoryStatus, StatusMeta> = {
     color: '#FFFFFF',
     stroke: '#78716C',
     legend:
-      'A territory the status table has never heard of. Land with no fill at all is outside this border dataset: everything south of the 34th parallel (Egypt, Palestine, the Hejaz), everything east of the 45th meridian (Persia, Baku and the Caspian), the North African coast, Iceland and Malta, and every state that appeared in 1918 inside the old imperial shapes.',
+      'A territory the status table has never heard of. Land with no fill at all is outside the kept dataset: territories dropped by choice (Egypt, Iran, Algeria, Tunisia, Libya, Morocco and Liechtenstein), central and eastern Arabia, Iceland and Malta, and every state that appeared in 1918 inside the old imperial shapes.',
   },
 };
 

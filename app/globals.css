@@ -82,9 +82,33 @@ body {
     font-size: 16px;
   }
   .leaflet-control-attribution {
-    font-size: 9px;
+    font-size: 11px;
     max-width: 70%;
   }
+  .leaflet-control-attribution a {
+    display: inline-block;
+    padding: 2px 6px;
+  }
+}
+
+/* Leaflet's attribution strip is a CONTROL, so it paints above the marker pane and swallows every pin it
+   overlaps: at 390 px in Asia the strip measures 173x39 over a 364x285 map, and the Coral Sea and Java Sea
+   pins sit underneath it — no tooltip, no click (shot/mypin390.cjs reads elementFromPoint there as
+   DIV.leaflet-control-attribution, with the badge mounted exactly 0 px from its projected waypoint). The
+   credit has to stay visible, so the strip is not moved: the strip itself stops taking the pointer and the
+   two links keep their own tap target. Disclosure unchanged, pins underneath reachable again. */
+.leaflet-control-attribution {
+  pointer-events: none;
+}
+.leaflet-control-attribution a {
+  pointer-events: auto;
+}
+
+.map-popup .leaflet-popup-close-button {
+  min-width: 40px;
+  min-height: 40px;
+  display: grid;
+  place-items: center;
 }
 
 :focus-visible {

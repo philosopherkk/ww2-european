@@ -50,6 +50,11 @@ const EXPECTED = [
   ['Cherbourg', -1.62, 49.64, 'France'],
   ['Rome', 12.5, 41.9, 'Italy'],
   ['Milan', 9.19, 45.46, 'Italy'],
+  // Venice reads Italy only because of the TINY_BOXES allow-list in the build: the city
+  // islands are 3-8 km² rings inside the 25 km² cut. If that rule is ever removed, this
+  // line fails and says so, instead of the defect hiding in the warn list.
+  ['Venice', 12.335, 45.438, 'Italy'],
+  ['Lido di Venezia', 12.371, 45.415, 'Italy'],
   ['Udine', 13.235, 46.06, 'Italy'],
   ['Vienna', 16.37, 48.21, 'Austria-Hungary'],
   ['Budapest', 19.04, 47.5, 'Austria-Hungary'],
@@ -96,7 +101,6 @@ const KNOWN_SOURCE_DEFECTS = [
   ['Monfalcone', 13.534, 45.802, 'Austria-Hungary'],
   ['Grado', 13.395, 45.674, 'Austria-Hungary'],
   ['Trieste', 13.77, 45.65, 'Austria-Hungary'],
-  ['Venice', 12.335, 45.438, 'Italy'], // the city islands fall under the 25 km² cut-off
 ];
 
 const gj = JSON.parse(fs.readFileSync(FILE, 'utf8'));

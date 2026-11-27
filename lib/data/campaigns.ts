@@ -66,7 +66,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     operation: 'Siegfriedstellung / Alberich',
     side: 'central',
     from: '1917-03-20',
-    to: '1918-03-20',
+    to: '1918-03-21',
     kind: 'front',
     path: [
       [51.13, 2.75], // Nieuwpoort, the unchanged northern end
@@ -99,7 +99,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     name: 'The Eastern Front after the Great Retreat',
     side: 'russia',
     from: '1915-09-30',
-    to: '1916-06-03',
+    to: '1916-06-04',
     kind: 'front',
     path: [
       [56.95, 24.11], // Riga, still Russian, the head of the Gulf of the same name
@@ -163,7 +163,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     name: 'The Italian front on the Soča, Adriatic to the Stelvio',
     side: 'entente',
     from: '1916-08-09',
-    to: '1917-10-23',
+    to: '1917-10-24',
     kind: 'front',
     path: [
       [45.8, 13.53], // Monfalcone, the only point where the line touched the sea
@@ -181,7 +181,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     name: 'The Piave line, after Caporetto',
     side: 'entente',
     from: '1917-11-10',
-    to: '1918-10-23',
+    to: '1918-10-24',
     kind: 'front',
     path: [
       [45.53, 12.65], // Jesolo, the coast behind the river mouth
@@ -201,7 +201,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     name: 'The Macedonian front, the Struma to Korçë',
     side: 'entente',
     from: '1916-11-21',
-    to: '1918-09-13',
+    to: '1918-09-15',
     kind: 'front',
     path: [
       [41.21, 22.75], // Lake Doiran, the Bulgarian positions above the Aegean end
@@ -873,4 +873,77 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     summary:
       'The Czechoslovak Legion was Czech and Slovak volunteers fighting on the Entente side to win Allied support for an independent Bohemian state and for Slovakia. After Russia withdrew from the war it was marching east, strung out along the Trans-Siberian railway from Penza to Vladivostok, and in the spring of 1918 it was fighting the Bolshevik government: by June along the railway east of Penza, by mid-July from Samara to Irkutsk, and on 6 and 7 August it took Kazan and the Imperial gold reserve there. The Red Army retook Kazan on 10 September and Samara about a month later, which is where this line stops. Only the western end of the Legion’s road is shown, and even that is uncoloured ground: this map has no border data east of the 45th meridian, and the railway runs on through Yekaterinburg to Vladivostok.',
   },
-];
+  /* ---- Naval and AEF lines added from all-lines audit ---- */
+  {
+    id: 'jutland_1916',
+    name: 'Jutland 1916: the two fleets’ anchorages and the action',
+    side: 'central',
+    kind: 'advance',
+    domain: 'sea',
+    from: '1916-05-31',
+    to: '1916-06-01',
+    path: [
+      [58.9, -3.05], // Scapa Flow, where the Grand Fleet lay
+      [56.7, 5.9], // the action, at the position the article prints
+      [53.5286, 8.1056], // Wilhelmshaven, where the German fleet assembled
+    ],
+    summary:
+      'Scheer took the High Seas Fleet out of the Jade and Wilhelmshaven to draw out and destroy part of the Grand Fleet before the battle fleet at Scapa Flow could intervene; the British read German signals and sailed first. The fleets met in the Skagerrak on 31 May – 1 June 1916 in an inconclusive action before Scheer withdrew via Horns Reef.',
+    strength:
+      'History of War gives the losses as one German battlecruiser, one pre-dreadnought, four light cruisers and five destroyers, against three British battlecruisers, four armoured cruisers and eight destroyers.',
+  },
+  {
+    id: 'dardanelles_naval_1915',
+    name: 'The Dardanelles 1915: forcing the Narrows by sea',
+    operation: 'Dardanelles naval operations',
+    side: 'entente',
+    kind: 'advance',
+    domain: 'sea',
+    from: '1915-02-19',
+    to: '1915-03-18',
+    path: [
+      [39.8219, 26.0289], // Tenedos (Bozcaada), off the entrance
+      [40.04, 26.18], // waypoint 1
+      [40.1519, 26.4056], // the Narrows, from Chanak across the strait
+    ],
+    summary:
+      'Allied warships attempted to force the Dardanelles without a landing, beginning with probes off Kumkale on 19 February 1915 against Ottoman shore batteries and minefields guarding the Narrows. On 18 March eighteen capital ships attacked in three waves, failed to clear the mines under fire, lost Bouvet and abandoned the naval attempt.',
+    strength:
+      'Eighteen capital ships (two in reserve) formed in three waves for the assault of 18 March 1915.',
+  },
+  {
+    id: 'st_mihiel_1918',
+    name: 'Saint-Mihiel 1918: Hannonville, Thiaucourt, Saint-Mihiel',
+    operation: 'Saint-Mihiel',
+    side: 'entente',
+    kind: 'advance',
+    from: '1918-09-12',
+    to: '1918-09-16',
+    path: [
+      [49.0408, 5.6592], // Hannonville-sous-les-Côtes, on the northern arm
+      [48.95, 5.87], // waypoint 1
+      [48.8892, 5.5436], // Saint-Mihiel, the tip of the salient, at the position the article prints
+    ],
+    summary:
+      'The salient south of Verdun had been in German hands since 1914; the American First Army and French corps attacked on 12 September 1918 towards Hannonville, Thiaucourt and Saint-Mihiel to pinch off the salient as the Germans began withdrawing. The ring marks an interpolated position along this axis by date.',
+    strength:
+      'First American Army, supported by French corps under General John J. Pershing’s command.',
+  },
+  {
+    id: 'zeppelin_raids_1915_18',
+    name: 'Zeppelin raids on Britain from Great Yarmouth to London',
+    side: 'central',
+    domain: 'air',
+    from: '1915-01-19',
+    to: '1918-08-05',
+    kind: 'advance',
+    path: [
+      [52.6071742, 1.7314845], // Great Yarmouth
+      [52.7538673, 0.3954774], // King’s Lynn
+      [51.5074456, -0.1277653], // London
+    ],
+    summary:
+      'The airship campaign against Britain opened on the night of 19/20 January 1915, when two German naval airships dropped their bombs on Great Yarmouth and King’s Lynn, killing four people and injuring sixteen. London was the object the German navy built its bombing campaign around, and 557 people were killed and 1,358 were injured in the raids that followed. A raid is a night and a track rather than a held position, so no progress ring is drawn here: the line is shown from the first night of the campaign to the last night dated for it.',
+    strength:
+      'Two naval airships on the first night, four people killed and sixteen injured then; 557 killed and 1,358 injured in the airship raids over the war',
+  },];

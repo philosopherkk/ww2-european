@@ -57,9 +57,19 @@
  *    outline from Natural Earth 1:50m (public domain) is unioned with the source
  *    ring, so the ring only gains the land its chords had cut off. Nothing else
  *    in the United Kingdom feature is touched.
- *  - the Venetian lagoon is a hole in the mainland ring and its sandbars are not
- *    drawn as land, so the Lido and Chioggia are uncoloured at any threshold
- *    that keeps the file small.
+ *  - the Venetian lagoon is a hole in the mainland ring. Its main islands were not
+ *    drawn at all — the city of Venice itself, the Lido, Murano and Pellestrina sat
+ *    uncoloured in every month, which reads as water under the fifth city of Italy.
+ *    They are drawn now, by the coordinate allow-list in TINY_BOXES below: five rings
+ *    of 3.4 to 15 km², +2,117 B and +118 vertices, +5 parts. Measured as the short axis
+ *    of the bounding box times the pixels per degree: 0.3 to 1.0 px in the Europe view
+ *    (zoom 4), 1.1 to 3.8 px at zoom 6 and 4.6 to 15.2 px at zoom 8, the closest this
+ *    map goes. So the city is painted at every zoom but is only legible close in, which
+ *    is what the sources list says rather than what this build lets us promise. The thin
+ *    sandbars are still not drawn. Neither is anything south of the lagoon: a census of
+ *    every ring whose centre falls in 45.10–45.90 N, 12.00–12.90 E finds none between
+ *    45.10 and 45.37 N, so Chioggia is not a matter of the floor at all — the source
+ *    has no ring there for any build to keep.
  *
  * The single geometry file is a deliberate choice, not laziness: no freely
  * licensed dataset exists that subdivides the Russian and Habsburg empires
@@ -151,6 +161,46 @@ const ISO3 = {
 const MIN_ISLAND_KM2 = 25;
 const SIMPLIFY_TOLERANCE = 0.01;
 
+/**
+ * The one exception to MIN_ISLAND_KM2, and it is a COORDINATE allow-list, not a
+ * name list: a ring smaller than 25 km² survives if its centroid falls inside one
+ * of these boxes and it reaches the box's own area floor, and it is then simplified
+ * at the box's own tolerance. Outside a box every ring is decided and simplified
+ * exactly as before, so the global rule and the global tolerance are untouched.
+ *
+ * Why a box and not a lower global floor, measured on 25 Nov 2026 with the check
+ * script as the judge (each build was copied over the shipped file, checked, and
+ * the shipped bytes restored, and the control profile reproduced the shipped file
+ * byte for byte, so the deltas below are the honest cost of each):
+ *   - this box at a 3 km² floor:      +2,117 B (0.28%), 418 parts -> 423, 5 rings;
+ *   - the same box at 1 km²:          +3,606 B, +13 parts;
+ *   - 5 km² EVERYWHERE:               +71,596 B, +608 parts;
+ *   - 1 km² everywhere:               +176,325 B, +1,928 parts.
+ * So the global floor stays at 25 and the lagoon is rescued on its own merits: the
+ * five rings are Venice itself (6.8 km²), the Lido (8.1), Murano, Pellestrina and
+ * one more, and the check script's Venice test stops being a waived warning and
+ * becomes a real assertion. The tolerance in a box has to be finer than the global
+ * 0.01° (about 1.1 km), or a 3 km² island is simplified away again: at 0.01° this
+ * box rescues only 2 parts and the lagoon still reads as water.
+ */
+const TINY_BOXES = [
+  { label: 'Venetian lagoon', box: [12.15, 45.25, 12.75, 45.75], minAreaKm2: 3, tolerance: 0.002 },
+];
+
+/** The box a ring's centroid falls in, if any. A ring turf cannot measure rescues nothing. */
+function tinyRule(ringCoords) {
+  try {
+    const c = turf.centroid(turf.polygon([ringCoords])).geometry.coordinates;
+    for (const t of TINY_BOXES) {
+      const [w, s, e, n] = t.box;
+      if (c[0] >= w && c[0] <= e && c[1] >= s && c[1] <= n) return t;
+    }
+  } catch {
+    /* not a ring the check script can measure, so it is dropped as before */
+  }
+  return null;
+}
+
 // Theatre extent (lng/lat): west, south, east, north.
 //
 // This was [-25, 34, 45, 71.5] until 25 Nov 2026, and 45 E and 34 N are the edges
@@ -222,18 +272,38 @@ function roundCoords(coords) {
   return coords.map(roundCoords);
 }
 
-/** Rings smaller than MIN_ISLAND_KM2 are dropped. */
-function dropSmallRings(poly) {
+/**
+ * Decides and simplifies one polygon at a time, in the source's order, so a ring
+ * outside a TINY_BOXES box is bit-identical to what the previous build wrote and a
+ * ring inside one gets that box's area floor and tolerance. Returns the multipolygon
+ * and how many rings the box rescued, which is printed at the end of the run.
+ */
+function keepAndSimplify(poly) {
   const polys = poly.geometry.type === 'MultiPolygon' ? poly.geometry.coordinates : [poly.geometry.coordinates];
-  const kept = polys.filter((rings) => {
+  const out = [];
+  let saved = 0;
+  for (const rings of polys) {
+    let areaKm2 = NaN;
     try {
-      return turf.area(turf.polygon(rings)) / 1e6 >= MIN_ISLAND_KM2;
+      areaKm2 = turf.area(turf.polygon(rings)) / 1e6;
     } catch {
-      return false;
+      continue; // a ring that cannot be measured is dropped, as it always was
     }
-  });
-  if (!kept.length) return null;
-  return turf.multiPolygon(kept);
+    const rule = areaKm2 < MIN_ISLAND_KM2 ? tinyRule(rings[0]) : null;
+    if (areaKm2 < MIN_ISLAND_KM2 && !rule) continue;
+    if (rule && areaKm2 < rule.minAreaKm2) continue;
+    saved += rule ? 1 : 0;
+    const piece = turf.simplify(turf.polygon(rings), {
+      tolerance: rule ? rule.tolerance : SIMPLIFY_TOLERANCE,
+      highQuality: true,
+    });
+    const g = piece?.geometry;
+    if (!g) continue;
+    const rs = g.type === 'MultiPolygon' ? g.coordinates.flat() : [g.coordinates];
+    for (const r of rs) out.push(r);
+  }
+  if (!out.length) return [null, 0];
+  return [turf.multiPolygon(out), saved];
 }
 
 let naturalEarth = null;
@@ -289,9 +359,10 @@ function prepare(feature) {
   poly = turf.bboxClip(poly, CLIP);
   if (name === 'Spain') poly = dropRingsSouthOf(poly, DROP_SPAIN_SOUTH_OF);
   if (!poly) return null;
-  poly = dropSmallRings(poly);
+  let saved = 0;
+  [poly, saved] = keepAndSimplify(poly);
   if (!poly) return null;
-  poly = turf.simplify(poly, { tolerance: SIMPLIFY_TOLERANCE, highQuality: true });
+  rescued.push([name, saved]);
   poly.geometry.coordinates = roundCoords(poly.geometry.coordinates);
   poly.properties = {
     name,
@@ -338,6 +409,9 @@ function months() {
   }
   return out;
 }
+
+/** Which feature rescued how many sub-MIN_ISLAND_KM2 rings through TINY_BOXES, for the log. */
+const rescued = [];
 
 const src = await loadSource();
 naturalEarth = await loadNaturalEarth();
@@ -389,3 +463,8 @@ console.log(
   `${fs.statSync(path.join(OUT, '1914-07-01.json')).size >> 10} KB, ${manifest.snapshots.length} monthly snapshot entries`
 );
 console.log(names.join(', '));
+const savedTotal = rescued.reduce((n, [, k]) => n + k, 0);
+console.log(
+  `island floor ${MIN_ISLAND_KM2} km², ${TINY_BOXES.length} allow-list box(es), ` +
+  `${savedTotal} ring(s) rescued: ${rescued.filter(([, k]) => k).map(([n, k]) => `${n} ${k}`).join(', ') || 'none'}`
+);

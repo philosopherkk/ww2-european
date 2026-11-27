@@ -150,13 +150,19 @@ export interface CampaignLine {
    * order, and the map marks how far the advance had got by the selected month.
    * 'front' is a line held: waypoints lie along the front in geographical
    * order and no progress marker is drawn.
+   *
+   * A sea or air line keeps 'advance' (or omits the field) rather than growing a
+   * third value here, because `domain` is what the map reads for those: the dash
+   * comes from LINE_DOMAIN_META, the Key gives them a class of their own, no ring
+   * is drawn, and the kind label and its sentence are only rendered on land lines.
+   * A `naval` kind would therefore change nothing a reader sees.
    */
   kind?: 'advance' | 'front';
   /**
-   * What moved. 'land' is the default and is the only value every line here
-   * has had so far, so leaving it out means land and changes nothing. 'sea' is
-   * a ship's or convoy's route; 'air' is a raid, bombing run or airborne drop.
-   * The dash changes with it, and so does the row the Key shows.
+   * What moved. 'land' is the default, so omitting it changes nothing and most
+   * lines here omit it. 'sea' is a ship's or convoy's route, or a fleet's sortie;
+   * 'air' is a raid, bombing run or airborne drop. The dash changes with it, and
+   * so does the row the Key shows, and no ring is drawn on either.
    */
   domain?: 'land' | 'sea' | 'air';
   /** Ordered waypoints as [lat, lng] of real places, each one geocoded. */

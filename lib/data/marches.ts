@@ -101,7 +101,7 @@ export const MARCH_LINES: CampaignLine[] = [
     id: 'march_tenth_army_soissons',
     name: 'Mangin’s Tenth Army from Villers-Cotterêts to Soissons',
     side: 'entente',
-    from: '1918-07-18',
+    from: '1918-07-15',
     to: '1918-08-06',
     kind: 'advance',
     path: [
@@ -109,7 +109,7 @@ export const MARCH_LINES: CampaignLine[] = [
       place('Soissons'),
     ],
     summary:
-      'The Second Marne event says that on 18 July 1918 Mangin’s Tenth Army, with Franco-American divisions, struck the west side of the salient, and it names the counter-stroke at Soissons. The line runs from Villers-Cotterêts, already a waypoint on the Blücher advance, to Soissons, already a place marker. Belleau Wood and the Vesle, named in the same battle, have no coordinates here.',
+      'The Second Marne event says that on 18 July 1918 Mangin’s Tenth Army, with Franco-American divisions, struck the west side of the salient, and it names the counter-stroke at Soissons. The line runs from Villers-Cotterêts, already a waypoint on the Blücher advance, to Soissons, already a place marker. Belleau Wood and the Vesle, named in the same battle, have no coordinates here. The dates below run from 15 July, the day the battle opened on the Reims side, although this stroke itself began on 18 July.',
   },
   {
     id: 'march_serbian_belgrade',

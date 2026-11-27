@@ -931,6 +931,118 @@ export const SOURCES: Source[] = [  {
       'The Romania enters the war card credits this book with the view that Bulgaria declared war only ' +
       'after attacking on 31 August 1916. UNVERIFIED: the volume’s text was not read, so the row records ' +
       'which book the note means, not the passage. The rival days are in the note and in the uncertainties.',
+  },
+  {
+    citation: 'Rickard, J., “Battle of Jutland, 31 May–1 June 1916”, “Gallipoli: Naval Operations”, and “Battle of St. Mihiel, 12–13 September 1918”, _History of War_.',
+    publisher: 'History of War (historyofwar.org)',
+    url: 'https://www.historyofwar.org/articles/battles_jutland.html',
+    usedFor:
+      'Second publisher for the Jutland ship losses and Scapa Flow anchorage, the eighteen capital ships of the 18 March 1915 Dardanelles assault (battles_gallipoli.html), and the Saint-Mihiel offensive (battles_st_mihiel.html).',
+  },  {
+    citation:
+      '“Battle of Saint-Mihiel”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Battle_of_Saint-Mihiel',
+    usedFor:
+      'What the attack was meant to lead to, and what it did not lead to: the plan looked on to the ' +
+      'fortified city of Metz, and the attack on Metz was never delivered; why the battle had to be ' +
+      'argued for at all: the encyclopaedia has Pershing persuading Foch, the supreme Allied commander, to ' +
+      'permit an American attack on the salient; that the garrison was already leaving: short of ' +
+      'manpower, the Germans had begun a step-by-step withdrawal from the salient the day before the ' +
+      'offensive began; the day the offensive opened, 12 September, in the encyclopaedia’s own account of ' +
+      'the attack, with the threefold shape of the assault; the French corps that took the apex and ' +
+      'entered the town on 15 September, and the prisoners it reported. The prisoner totals do not agree ' +
+      'between the publishers, so they stand under For the record and not in the account of the battle; ' +
+      'why the wedge was worth attacking: the encyclopaedia records the salient as blocking communications ' +
+      'between Nancy and Verdun; what the offensive was meant to lead to and what it did lead to: the ' +
+      'attack on Metz was not delivered, and the Americans were turned towards Sedan and the ' +
+      'Meuse-Argonne; what the encyclopaedia calls the battle: the first large offensive launched mainly ' +
+      'by the United States Army, and the fact that it caught the Germans retreating; the formation of ' +
+      'the attack: the encyclopaedia prints the corps employed on the faces of the salient and the French ' +
+      'corps held at the apex; the opening of the attack, and the face the main blow fell on: the south ' +
+      'face, by two American corps; the face of the salient the secondary blow fell on, and the corps ' +
+      'that delivered it along the heights of the Meuse; the part the French corps was given: a holding ' +
+      'attack against the apex of the salient, so that the garrison could not get away; how the attack ' +
+      'was shaped: the enveloping thrusts were to drive into the salient and join at the village of ' +
+      'Vigneulles while the French corps at the tip kept the garrison pinned down; the garrison the ' +
+      'attack met: eight divisions and a brigade in the line with about two divisions in reserve, ' +
+      'desperately short of manpower; how fast the ground was taken: the two wings joined on the second ' +
+      'morning, and every objective inside the salient was in hand by the evening; why the offensive ' +
+      'stopped where it did: the advance was halted so that American units could be withdrawn for the ' +
+      'Meuse-Argonne offensive; why the wedge mattered to the railways: the encyclopaedia records the ' +
+      'restricted rail and road communications into Verdun imposed by the German attack that made the ' +
+      'salient, and a continuation on to the railroad centre at Metz; what the American commander ' +
+      'expected the battle to do, in the encyclopaedia’s own words: an attack in the region of the town, ' +
+      'Metz and Verdun to affect the German army significantly; the air fight in numbers, and the ' +
+      'standing the encyclopaedia gives it: the largest air operation of the war; who flew the aircraft ' +
+      'of the battle, and for what: about forty per cent American-flown, the rest British, French and ' +
+      'Italian; how the salient was made, and when: the German attack on Verdun in 1914 which took the ' +
+      'town and was stopped south of the fortress city.',
+  },
+  {
+    citation:
+      'Rickard, J, “Battle of Saint Mihiel, 12-13 September 1918”, _historyofwar.org_',
+    publisher:
+      'historyofwar.org — independent military history site',
+    url:
+      'https://www.historyofwar.org/articles/battles_st_mihiel.html',
+    usedFor:
+      'How long the ground had been in German hands, and the state of the war when the attack came: the ' +
+      'independent account gives 1914 and a German army already in retreat; that the Germans were on the ' +
+      'point of giving the salient up in order to fall back on the Hindenburg Line — which is why the ' +
+      'attack met a garrison that was leaving, not one that was holding; the argument behind the battle: ' +
+      'the independent account has Pershing resisting attempts to feed American troops into the line as ' +
+      'they arrived, preferring to concentrate them in a single army; the day of the battle, 12 September ' +
+      '1918, printed in the heading of the independent account — a second publisher for the date; the ' +
+      'force the attack was made with in the independent account: two corps, a barrage from 2,900 guns, ' +
+      'French tanks and a French colonial division; the order of events: the German retreat began on 11 ' +
+      'September and the Americans attacked the next morning; how the attack landed, in the independent ' +
+      'account: a garrison caught by surprise, out of position, whose position collapsed; what the two ' +
+      'days cost in the independent account’s reckoning: prisoners and guns taken, and the killed and ' +
+      'wounded on both sides — another reckoning from the one the encyclopaedia’s box carries; what the ' +
+      'independent account calls the battle: the first major independent American offensive of the First ' +
+      'World War, a second publisher for the standing the encyclopaedia gives it; where the American army ' +
+      'went after the salient: the independent account for the theatre has Foch ending the offensive and ' +
+      'the Americans moved to the Argonne Forest, a second publisher for the move that followed the ' +
+      'battle; the prisoner total the independent account for the theatre gives for the first thirty-six ' +
+      'hours. Under For the record, because the figure the encyclopaedia gives is for another unit on ' +
+      'another day.',
+  },
+  {
+    citation:
+      'Charles Dusch, “Zeppelin (Airship)”, _1914-1918-online: International Encyclopedia of the First ' +
+      'World War_, version 1.0 of 25 January 2019',
+    publisher:
+      'Freie Universität Berlin',
+    url:
+      'https://web.archive.org/web/20251120002039/https://encyclopedia.1914-1918-online.net/article/zeppelin-airship/',
+    usedFor:
+      'The first naval airship attack on Britain, the two ships, the two towns, and what it cost; the same ' +
+      'cost, as the 1914-1918 encyclopedia puts it; the same, as the 1914-1918 encyclopedia puts it, and ' +
+      'the first airship to reach the capital; the same two totals, in the airship article written for the ' +
+      '1914-1918 encyclopedia; the losses among the airships over the whole war, as the 1914-1918 ' +
+      'encyclopedia counts them; when this article says the naval airship attacks ended, which is why the ' +
+      'end of this line is in the uncertainty list. The waypoint of “Zeppelin raids on Britain from Great ' +
+      'Yarmouth to London” is King’s Lynn.',
+  },
+  {
+    citation:
+      '“German bombing of Britain, 1914–1918”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/German_bombing_of_Britain,_1914%E2%80%931918',
+    usedFor:
+      'The same night in the article on the German bombing of Britain, with the aim on the Humber and the ' +
+      'weather that moved the ships south; the cost of the first night, and the damage returns. London as ' +
+      'an objective: the imperial order that allowed it and the date the Kaiser accepted it; where the ' +
+      'campaign against Britain begins, and that both services mounted it; why the raids are called by one ' +
+      'builder’s name although Schütte-Lanz airships served too; the totals for the campaign: the number ' +
+      'of raids, the bombs dropped and the tonnage carried; the last raid of the campaign, which fixes the ' +
+      'last month this line is drawn in. The waypoints of “Zeppelin raids on Britain from Great Yarmouth ' +
+      'to London” are Great Yarmouth and London.',
   },];
 
 export interface Uncertainty {
@@ -1247,4 +1359,69 @@ export const UNCERTAINTIES: Uncertainty[] = [
       'thirteen days behind the calendar used here. The card is dated 11 June at month precision, and ' +
       'the map fills Greece as Entente from July 1917.',
   },
-];
+  {
+    topic:
+      'Ship counts, mine counts and Saint-Mihiel dates on the new 1915–18 lines',
+    range:
+      'For Jutland, the 151-combat-ship Grand Fleet total is from English Wikipedia alone; for the Dardanelles naval assault, the 370 mines and 639 Bouvet dead are from Wikipedia alone; and for Saint-Mihiel, Wikipedia dates the battle 12–16 September 1918 and counts 110,000 French troops alongside the AEF, while History of War heads it 12–13 September.',
+  },
+  {
+    topic:
+      'Prisoners taken at Saint-Mihiel, 12 to 15 September 1918',
+    range:
+      'The encyclopaedia prints 4,000 prisoners taken when the French colonial corps entered the town on ' +
+      '15 September; the independent account prints over 13,000 in the first thirty-six hours. No prisoner ' +
+      'figure is printed in the account of the battle.',
+  },
+  {
+    topic:
+      'Whether the Saint-Mihiel offensive was still needed',
+    range:
+      'The independent account alone has the Germans on the point of abandoning the salient to fall back ' +
+      'to the Hindenburg Line, and the encyclopaedia alone sets out the restricted rail and road ' +
+      'communications behind the front that shaped the American plan.',
+  },
+  {
+    topic:
+      'The deeper object of the Saint-Mihiel plan',
+    range:
+      'Only the encyclopaedia prints the capture of Metz as what the attack was meant to lead to, and that ' +
+      'it was not realised because the supreme commander turned the American troops towards Sedan and the ' +
+      'next offensive.',
+  },
+  {
+    topic:
+      'The losses at Saint-Mihiel, 12 to 15 September 1918',
+    range:
+      'The independent account gives over 13,000 prisoners and 466 guns taken in the first 36 hours, and ' +
+      '5,000 German killed and wounded against 7,000 American casualties; the encyclopaedia prints 4,000 ' +
+      'prisoners taken by the corps that entered the town on 15 September. These are not the same ' +
+      'measures, and none of them is in the account of the battle.',
+  },
+  {
+    topic:
+      'When the Zeppelin campaign ended',
+    range:
+      'The line ends on 5 August 1918, the date the Wikipedia article gives for the last Zeppelin raid on ' +
+      'Britain, in which it counts four airships reaching the Midlands and the north of England. The ' +
+      '1914-1918 encyclopedia article used for the same line says naval airship attacks continued until ' +
+      '1917, and dates the British attack that destroyed airships at their base at Tondern to July 1918. ' +
+      'No number of airships is given for the last raid, because the two do not agree on the force.',
+  },
+  {
+    topic:
+      'Whether the first raid night was 19 or 20 January 1915',
+    range:
+      'The line begins on 19 January 1915, and the summary keeps the night as both articles write it, ' +
+      '19/20 January. Both date the attack to that night rather than to one calendar day, and a line has ' +
+      'to be given one date to begin on, so the earlier of the two is used.',
+  },
+  {
+    topic:
+      'Which towns the first raid actually bombed',
+    range:
+      'Great Yarmouth and King’s Lynn are drawn because both are named for the first night and both lie on ' +
+      'the coast road to London. The Wikipedia article also names Sheringham and villages in Norfolk ' +
+      'around them, and gives the aim of the night as the Humber, from which strong winds diverted the two ' +
+      'ships south. The night was a scattered one, so what is drawn here is a simplification of it.',
+  },];
