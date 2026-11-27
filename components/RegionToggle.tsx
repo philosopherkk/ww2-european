@@ -27,7 +27,7 @@ export default function RegionToggle({
           onClick={() => onChange(r.id)}
           aria-pressed={region === r.id}
           aria-label={r.label}
-          className={`inline-flex h-9 items-center gap-1 px-2 sm:px-2.5 ${
+          className={`inline-flex min-h-11 items-center gap-1 px-2 sm:h-9 sm:min-h-9 sm:px-2.5 ${
             region === r.id ? 'bg-stone-800 text-white' : 'hover:bg-stone-100'
           }`}
         >

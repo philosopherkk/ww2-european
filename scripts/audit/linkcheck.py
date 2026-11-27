@@ -205,6 +205,12 @@ if __name__ == '__main__':
     if os.environ.get('SELFTEST') == '1':
         sys.exit(selftest())
     refused, total = 0, 0
+    # A second positional used to fall straight through into the loop below and die in a KeyError from
+    # REPOS[site], which reads as a gate crash, not a refusal. The tree is chosen with REPO=<tree>.
+    for arg in sys.argv[1:]:
+        if arg not in ('ww1', 'ww2'):
+            sys.exit(f'unknown argument {arg!r} — the sites are ww1/ww2 and the tree to measure is '
+                     f'REPO=<checkout>, never a second positional')
     for site in sys.argv[1:] or ['ww1', 'ww2']:
         got = run_site(site)
         if got is None:

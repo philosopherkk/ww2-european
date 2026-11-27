@@ -81,6 +81,36 @@ interface WorldCollection {
   features: WorldFeature[];
 }
 
+/**
+ * The numbered event pin. The icon is cached by its html on purpose: react-leaflet builds a fresh
+ * L.divIcon for <Marker> on every render, and it calls setIcon whenever that object is not the previous
+ * one (react-leaflet/lib/Marker.js:12). Leaflet reuses the marker DIV but rewrites its innerHTML
+ * (leaflet/src/layer/marker/DivIcon.js:53), which replaces the badge under the finger. When that lands
+ * between mousedown and mouseup — leaving a line starts a 220 ms timer that re-renders, and clicking a
+ * card and then a pin re-renders on the card's blur — Chrome fires no click at all, and the pin cannot
+ * be opened. Identical html returns the identical object, so setIcon runs only when the badge must
+ * actually look different. Proven by shot/mypinfix.cjs.
+ */
+const PIN_ICONS = new Map<string, L.DivIcon>();
+function pinIcon(html: string) {
+  let icon = PIN_ICONS.get(html);
+  if (!icon) {
+    if (PIN_ICONS.size > 400) PIN_ICONS.clear();
+    PIN_ICONS.set(html, (icon = L.divIcon({ className: '', html, iconSize: [0, 0] })));
+  }
+  return icon;
+}
+
+/** The gold ring is the highlight for the card being hovered or focused. It is written onto the badge
+ *  element instead of being baked into the icon html for the same reason: any html change makes Leaflet
+ *  replace the badge, and the click that changed focus would always be the click it destroyed. */
+const PIN_SHADOW = '0 1px 4px rgba(0,0,0,.45)';
+const PIN_SHADOW_STRESSED = `0 0 0 4px #fbbf24, ${PIN_SHADOW}`;
+function setPinRing(marker: L.Marker | null, stressed: boolean) {
+  const badge = marker?.getElement()?.firstElementChild;
+  if (badge instanceof HTMLElement) badge.style.boxShadow = stressed ? PIN_SHADOW_STRESSED : PIN_SHADOW;
+}
+
 const toLatLngRings = (rings: Ring[]) =>
   rings.map((ring) => ring.map(([lng, lat]) => [lat, lng] as LatLng));
 
@@ -431,7 +461,7 @@ export default function MapBrowser({
         )}
       </div>
 
-      <div className="sticky top-[var(--bar-h,5.2rem)] isolate z-30 h-[var(--map-h,50vh)] overflow-hidden rounded-xl border border-stone-300 bg-stone-100 shadow-sm lg:relative lg:top-auto lg:z-auto lg:h-auto lg:min-h-0 lg:flex-1">
+      <div className="sticky top-[var(--bar-h,5.2rem)] isolate z-30 h-[var(--map-h,50vh)] overflow-hidden rounded-xl border border-stone-300 bg-stone-100 shadow-sm lg:relative lg:top-auto lg:z-auto lg:h-auto lg:min-h-[240px] lg:flex-1">
         <MapContainer
           center={[50.5, 14]}
           zoom={4}
@@ -447,7 +477,7 @@ export default function MapBrowser({
           className="h-full w-full"
         >
           <ZoomReporter onZoom={setZoom} />
-          <MapResizer />
+          <MapResizer mapLabel={`Map of the Second World War in ${monthLabel}`} />
           <ViewController region={region} />
           {/* CARTO's basemaps began demanding an API key and now serve a watermarked
               "API KEY REQUIRED" tile, and Wikimedia's tileserver answers a public
@@ -545,7 +575,7 @@ export default function MapBrowser({
                       {domain.tooltip}
                     </span>
                   </Tooltip>
-                  <Popup autoPanPaddingTopLeft={[10, 52]} autoPanPaddingBottomRight={[10, 10]}>
+                  <Popup className="map-popup" autoPanPaddingTopLeft={[10, 52]} autoPanPaddingBottomRight={[10, 10]}>
                     <div
                       className="space-y-1 overflow-y-auto pb-1 pr-1 pt-1 text-sm [&_p]:!my-0"
                       style={{ maxHeight: popupMaxHeight }}
@@ -571,7 +601,7 @@ export default function MapBrowser({
                                 <button
                                   type="button"
                                   onClick={() => onOpenEvent?.(l.event)}
-                                  className="text-left text-xs text-sky-800 underline decoration-sky-800/40 underline-offset-2 hover:decoration-sky-800"
+                                  className="inline-block min-h-6 py-1 text-left text-xs text-sky-800 underline decoration-sky-800/40 underline-offset-2 hover:decoration-sky-800"
                                 >
                                   {EVENT_BY_ID[l.event].title}
                                   <span className="text-stone-600">
@@ -622,11 +652,10 @@ export default function MapBrowser({
                         key={`${line.id}-pin-${at}`}
                         position={line.path[at]}
                         zIndexOffset={1000}
-                        icon={L.divIcon({
-                          className: '',
-                          html: `<span style="position:absolute;transform:translate(-50%,-50%);display:grid;place-items:center;min-width:22px;height:22px;padding:0 5px;box-sizing:border-box;border:2.5px solid #1c1917;border-radius:999px;background:${side.color};color:#fff;font:700 11px/1 system-ui,sans-serif;white-space:nowrap;box-shadow:${stressed ? '0 0 0 4px #fbbf24,' : ''}0 1px 4px rgba(0,0,0,.45)">${label}</span>`,
-                          iconSize: [0, 0],
-                        })}
+                        ref={(m: L.Marker | null) => setPinRing(m, stressed)}
+                        icon={pinIcon(
+                          `<span style="position:absolute;transform:translate(-50%,-50%);display:grid;place-items:center;min-width:22px;height:22px;padding:0 5px;box-sizing:border-box;border:2.5px solid #1c1917;border-radius:999px;background:${side.color};color:#fff;font:700 11px/1 system-ui,sans-serif;white-space:nowrap;box-shadow:${PIN_SHADOW}">${label}</span>`,
+                        )}
                         eventHandlers={{
                           mouseover: () => enterLine(line.id),
                           mouseout: leaveLine,
@@ -645,7 +674,7 @@ export default function MapBrowser({
                             </span>
                           ))}
                         </Tooltip>
-                        <Popup>
+                        <Popup className="map-popup">
                           <div className="space-y-1 text-sm">
                             <p className="text-xs font-semibold uppercase tracking-wide text-stone-600">
                               {line.name}
@@ -655,7 +684,7 @@ export default function MapBrowser({
                                 key={id}
                                 type="button"
                                 onClick={() => onOpenEvent?.(id)}
-                                className="block text-left text-sm font-medium text-sky-800 underline decoration-sky-800/40 underline-offset-2 hover:decoration-sky-800"
+                                className="inline-block min-h-6 py-1 text-left text-sm font-medium text-sky-800 underline decoration-sky-800/40 underline-offset-2 hover:decoration-sky-800"
                               >
                                 {EVENT_BY_ID[id].title}
                               </button>
@@ -820,14 +849,15 @@ export default function MapBrowser({
 }
 
 /** The map box changes height (pinned, taller, rotated phone); tell Leaflet. */
-function MapResizer() {
+function MapResizer({ mapLabel }: { mapLabel: string }) {
   const map = useMap();
   useEffect(() => {
     const el = map.getContainer();
+    el.setAttribute('aria-label', mapLabel);
     const ro = new ResizeObserver(() => map.invalidateSize());
     ro.observe(el);
     return () => ro.disconnect();
-  }, [map]);
+  }, [map, mapLabel]);
   return null;
 }
 
@@ -934,7 +964,7 @@ const TerritoryBorders = memo(function TerritoryBorders({
                 <span className="text-xs font-semibold">{t.name}</span>
                 <span className="block text-[11px] font-normal">{meta.label}</span>
               </Tooltip>
-              <Popup>
+              <Popup className="map-popup">
                 <div className="space-y-1 text-sm">
                   <p className="text-base font-semibold">{t.name}</p>
                   <p className="font-medium" style={{ color: meta.stroke }}>
@@ -972,7 +1002,7 @@ const TerritoryBorders = memo(function TerritoryBorders({
                 <span className="text-xs font-semibold">{t.name}</span>
                 <span className="block text-[11px] font-normal">{meta.label}</span>
               </Tooltip>
-              <Popup>
+              <Popup className="map-popup">
                 <div className="space-y-1 text-sm">
                   <p className="text-base font-semibold">{t.name}</p>
                   <p className="font-medium" style={{ color: meta.stroke }}>
@@ -1002,4 +1032,3 @@ const TerritoryBorders = memo(function TerritoryBorders({
     </>
   );
 });
-

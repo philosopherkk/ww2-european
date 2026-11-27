@@ -92,7 +92,6 @@ export const PLACES: Place[] = [
   { name: 'Radzymin', lat: 52.42, lng: 21.18 },
   { name: 'Praga', lat: 52.26, lng: 21.05 },
   { name: 'Kovel', lat: 51.21, lng: 24.71 },
-  { name: 'Lwów / Lviv', lat: 49.84, lng: 24.03 },
   { name: 'Dębica', lat: 50.05, lng: 21.41 },
   { name: 'Sandomierz', lat: 50.68, lng: 21.75 },
   { name: 'Tiraspol', lat: 47.05, lng: 29.63 },

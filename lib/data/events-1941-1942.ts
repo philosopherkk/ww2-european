@@ -1444,4 +1444,172 @@ export const EVENTS_1941_1942: WW2Event[] = [
       }
     }
   },
-];
+  {
+    id: 'anglo_iraqi_war_1941',
+    date: '1941-05-02',
+    precision: 'day',
+    title: 'Iraq 1941: the coup in Baghdad that brought Britain back in',
+    kind: 'battle',
+    fronts: ['middle_east'],
+    countries: ['United Kingdom', 'India', 'Germany', 'Italy', 'Australia'],
+    note: 'Wikipedia puts the coup on 1 April 1941, the day after the Regent fled Baghdad for Habbaniya, and gives 18 April for the arrival of the first convoy at Basra; the official history gives 3 April for the coup and brings the convoy’s ships in on the morning after the first flights on 17 April. Wikipedia has the mayor of Baghdad sign an armistice at four in the morning on 31 May on a bridge over the Washash Canal. The two accounts count the Golden Square differently too: four senior military commanders in Wikipedia, four prominent army and air force officers in the official history.',
+    mapNote: 'Baghdad sits at the far end of the line drawn from Basra, which is the way the relief columns reached Habbaniya and then the capital.',
+    levels: {
+      primary: {
+        cause: 'A new government in Baghdad led by Rashid Ali al-Gaylani turned against Britain in April 1941 and let German and Italian aircraft land in Iraq.',
+        what: 'Iraqi troops surrounded the airbase at Habbaniya. British and Indian columns came from Basra and from Palestine, broke the siege, took Mosul and reached Baghdad by the end of May.',
+        consequence: 'Britain occupied Iraq again and put back a government that would cooperate. The oil, the pipelines and the route to India were safe for the rest of the war.',
+      },
+      secondary: {
+        cause: 'The 1937 treaty let Britain keep bases at Basra and Habbaniya, which Iraqi nationalists hated. Rashid Ali took power in early April 1941 with the backing of senior officers known as the Golden Square, after the Regent fled the capital.',
+        what: 'Habbaniya, held mostly by training-school aircraft and levies, survived from 2 May while a column under Colonel Kingstone pushed west from Palestine. German aircraft flew into Mosul, which fell on 30 May. Rashid Ali fled to Iran that night and an armistice was signed the next morning.',
+        consequence: 'Iraq became a British base again, and the victory made an invasion of Vichy-held Syria possible from the east. A British-backed government later declared war on Germany.',
+      },
+      university: {
+        cause: 'Iraq had been mandated to Britain and granted independence in 1932, but the 1937 treaty reserved British base rights at Shaibah near Basra and at Habbaniya on the Euphrates, two staging posts on the air route between Egypt and India, and the obligation to let British forces move in wartime. Rashid Ali, an officer of 1941 nationalist sympathies, used the Anglo-Egyptian crisis and Rommel’s threat to the Delta to argue that the British position was collapsing.',
+        what: 'The fighting was decided by airfields and by time. Habbaniya’s Air Training School aircraft flew on improvised armament until relief arrived, while Kingcol, assembled in Palestine, crossed the desert to the Mujara bridge rather than risk Ramadi. German air support arrived late and unhelped, through Syrian airfields that Vichy France had opened to the Axis after the Fall of France. Mosul was taken on 30 May, and Rashid Ali and his supporters crossed into Persia the same evening.',
+        consequence: 'The campaign cost Britain little and gave it a flank for Operation Exporter, the Iraqi oil for the Mediterranean theatre and a land route to Persia that mattered once Germany attacked the Soviet Union. Historians have treated the affair as a colonial episode that turned into a strategic asset; the nationalist movement it left behind was not destroyed but only postponed.',
+      },
+    },
+  },
+  {
+    id: 'syria_lebanon_1941',
+    date: '1941-06-08',
+    precision: 'day',
+    title: 'Syria and Lebanon 1941: Britain fights Free France’s enemies, and Frenchmen',
+    kind: 'battle',
+    fronts: ['middle_east'],
+    countries: ['United Kingdom', 'India', 'Australia', 'France', 'Germany', 'Italy'],
+    figures: ['de_gaulle'],
+    note: 'Wikipedia puts the request for an armistice on 10 July, with the convention signed at Acre on 14 July; Playfair gives the same date for the signature at Acre by General Wilson and General de Verdilhac, and notes that General Catroux could not sign because Vichy would have nothing to do with the Free French, so he signed a separate document. Casualties, which the accounts do not agree on, are not given here. Wikipedia counts 5,668 men of the Vichy force who went over to the Free French, and 37,563 military and civilian personnel sent back to France in eight convoys after the convention.',
+    mapNote: 'The line runs from the Palestine frontier to Beirut on the coast and inland to Damascus, which were the two objectives the invasion was given.',
+    levels: {
+      primary: {
+        cause: 'Syria and Lebanon were held by French troops loyal to Vichy, which let German and Italian aircraft use the airfields there on their way to attack Iraq.',
+        what: 'In June and July 1941 British, Indian, Australian, Free French and other troops invaded from Palestine and Jordan, fighting Vichy French forces along the coast road to Beirut and inland to Damascus.',
+        consequence: 'Syria and Lebanon passed to the Free French, the Axis lost its airfields, and the northern flank of the British position in the Middle East was secure for the campaigns to come.',
+      },
+      secondary: {
+        cause: 'After the Fall of France the Mandate had been obeyed by the Vichy government, which allowed Axis aircraft into Syria. Once the revolt in Iraq was crushed, Britain could not leave a base for the Luftwaffe so close to Palestine, Egypt and the oil route.',
+        what: 'The invasion began on 8 June along three lines towards Beirut, Damascus and Rayak. Vichy troops defended stubbornly, counterattacked at Merdjayoun and held the Litani, but by 10 July Australian troops were on the edge of Beirut and the French asked for terms. The convention was signed at Acre on 14 July.',
+        consequence: 'The convention let the Vichy garrison go home, and part of the force went over to the Free French instead. Syria and Lebanon were left in the hands of de Gaulle’s supporters, with independence promised to the states of the Mandate.',
+      },
+      university: {
+        cause: 'The campaign rested on a strategic fear rather than on evidence of an Axis build-up: that Syria, administered by the High Commissioner under the Vichy regime, would become a base for German air power over Palestine, the Iraqi oilfields and the routes to Egypt and India. Admiral Darlan’s agreement to let Axis aircraft refuel in Syria after the Iraq fighting supplied the immediate provocation, while de Gaulle pressed for an operation that would give the Free French their first territory.',
+        what: 'Operation Exporter was mounted in haste with inadequate transport, and its first phase was held up on all three axes. The defence of the Litani, the counterattack at Merdjayoun and the fighting for Damour and Kissoué showed that the Vichy force was neither small nor willing to surrender, and the advance on Beirut along the coast road only succeeded after air and sea bombardment. The Armistice of Saint-Jean-d’Acre, signed on 14 July, ended the fighting.',
+        consequence: 'The occupation cost Britain a division it badly needed in the Western Desert and left the Levant states to their independence in 1943, which de Gaulle had promised and Britain distrusted. Post-war French historiography has treated the campaign as a civil war between Frenchmen, and British accounts as a strategic necessity; both agree the estimates of Vichy strength and intention were wrong when the plan was made.',
+      },
+    },
+  },
+  {
+    id: 'persia_1941',
+    date: '1941-08-25',
+    precision: 'day',
+    title: 'Anglo-Soviet invasion of Iran: the Gulf ports, the oilfields and the railway are occupied',
+    kind: 'invasion',
+    fronts: ['middle_east'],
+    countries: ['United Kingdom', 'India', 'Soviet Union', 'Iran', 'Iraq'],
+    note: 'The date given is 25 August 1941, the day the invasion began. The account followed here dates the fall of the government and the Shah’s abdication to 28 August; Wikipedia dates the abdication to 16 September, after the Allies refused to withdraw and put terms to his son. No casualties are given for this operation, because no account here gives any.',
+    mapNote: 'The line runs inland from Basra, the base the attack moved from, to Khorramshahr on the waterway and on to Ahvaz and its oilfields. Ahvaz is where the card is pinned. The sea crossing to the Caspian is drawn as a separate line.',
+    levels: {
+      primary: {
+        cause: 'Iran kept German engineers and technicians after becoming neutral, and the Allies feared its oil would fall into German hands. Both also wanted a secure route for supplies to the Soviet Union, at war with Germany since June 1941.',
+        what: 'British forces from Iraq crossed the border on 25 August 1941 and Soviet columns came in from the north. The division from Basra took Khorramshahr on the waterway and pushed on towards Ahvaz and its oilfields, meeting little opposition.',
+        consequence: 'Iran was occupied for the rest of the war. Its Gulf ports and its railway became the route by which American and British supplies reached the Soviet Union, and Reza Shah went into exile in favour of his son.',
+      },
+      secondary: {
+        cause: 'Two diplomatic notes had been delivered to the Iranian government before the invasion, and the demands in them had not been met; pressure on Iran and on the Shah had led to increased tensions and to anti-British rallies in Tehran. The aim behind the operation was the route: the vital supply line from the Persian Gulf to the Caspian, by which it was hoped to send material aid to the Russians, was in danger of being interrupted and might well be closed altogether.',
+        what: 'The operation was launched by Quinan, commanding the troops in Iraq, and began on 25th August, and he was first to occupy the oilfields at Ahwaz, near the head of the Persian Gulf. The division that advanced from Basra took Qasr Sheikh and carried Khorramshahr next to Abadan on the same day, and reached Ahvaz by the early morning of 27 August, where an attack on the defences around the city was at first repelled. On 28th August all resistance ceased; the Persian Government fell; the Shah abdicated in favour of his son.',
+        consequence: 'Iran was occupied for the rest of the war, and its ports and railway carried supplies to the Soviet Union. The base the attack had moved from was no afterthought: the security of Basra and of its sea communications was held to be essential, and India was preparing the area as a base. Traffic grew until the Mediterranean route opened in 1943, after which the crossing was less needed.',
+      },
+      university: {
+        cause: 'The objects were chosen narrowly: the oil and the railway, not the country. The British hoped to capture Ahvaz and then drive north into Zagros Mountains passes to reach Qazvin, where they would link up with British troops in central Iran and Soviet troops from the north, and the British and Soviet forces met at Sanandaj on 30 August and at Qazvin on 31 August. Basra had been developed as a base because the security of Basra and of its sea communications was held to be essential, and India was preparing the area as a base; the Gulf end of the railway was where that base and that route met.',
+        what: 'The invasion was a surprise attack described by Allied forces as rapid and conducted with ease, and the fighting that mattered was short. At Khorramshahr the sloop Yarra surprised the Iranian sloop Babr and sank it at its dock; ashore the division from Basra carried the town and Abadan on 25 August, and at Ahvaz the entrenched defence General Mohammad Shahbakhti had prepared halted the Indian Army advance until 29 August, when word reached the Iranian commanders that their government had accepted a ceasefire. The dates the two accounts give for that fall differ, and both are recorded here rather than resolved: the official history puts the end of resistance, the fall of the government and the abdication together on 28 August, and Wikipedia puts the abdication on 16 September.',
+        consequence: 'The occupation made the corridor, and the corridor, not the fighting that produced it, is why the operation is remembered. The official history’s judgement is that the supply line from the Gulf to the Caspian was the object that the operations in the area were built around: it was thought to be in danger of being closed as early as 1941, it was threatened again by the German advance into the Caucasus in 1942, and it was eased by the opening of the Mediterranean in 1943. What the occupation and the blockade did to Iran and to its people is outside the two accounts followed here.',
+      },
+    },
+  },
+  {
+    id: 'east_africa_1941',
+    date: '1941-01-19',
+    precision: 'day',
+    title: 'East Africa 1941: the offensive delivered from Sudan and from Kenya',
+    kind: 'battle',
+    fronts: ['east_africa'],
+    countries: ['United Kingdom', 'India', 'South Africa', 'Italy', 'Ethiopia'],
+    note: 'No casualties are given for this campaign, because the only account that gives any counts the whole war in East Africa rather than the offensive of these two lines, and keeps its totals in a table. The dates given are the two accounts’ own.',
+    mapNote: 'Two lines are drawn for the campaign: one from Gallabat to Massawa by Kassala, Agordat, Keren and Asmara, and one north from Kismayu. The two are never joined.',
+    levels: {
+      primary: {
+        cause: 'Italy had taken Ethiopia before the war began, and from there its armies threatened Sudan, Kenya and the Red Sea. After the Italian advances of 1940 were held, British, Indian, African and South African troops counterattacked from the Sudan and from Kenya in January 1941.',
+        what: 'From Sudan they took Agordat, then Keren, Asmara and the port of Massawa. From Kenya they took Kismayu and Mogadishu in February and pressed north to Addis Ababa, which fell in early April.',
+        consequence: 'Italian East Africa collapsed in the spring of 1941, the threat to shipping in the Red Sea was ended, and Emperor Haile Selassie entered his capital again in May 1941, after an exile that had begun in May 1936.',
+      },
+      secondary: {
+        cause: 'The conquest of Ethiopia had left a large Italian army in East Africa, but it had outrun its supply, and in November 1940 the order came to evacuate Kassala, Gallabat and Maiurno. Wavell planned an attack into Eritrea from Sudan and into Italian Somaliland from Kenya, on two separate lines of communication.',
+        what: 'The advance north from Sudan took Agordat on 1 February 1941, and from Agordat there was no practicable way to Asmara save by the main road through Keren. Keren was attacked in February and taken on 27 March; the port of Massawa fell on 8 April. In the south Kismayu was taken on 14 February and Mogadishu on 25 February, and Addis Ababa fell on 6 April.',
+        consequence: 'The Italian surrender in Eritrea ended organised resistance there and fulfilled the British objective of ending the threat to Red Sea shipping. On 11 April 1941 Roosevelt rescinded the status of the Red Sea as a combat zone under the Neutrality Acts, which freed American ships to carry supplies by that route.',
+      },
+      university: {
+        cause: 'East Africa was the one theatre where Britain could attack in 1941 with a smaller force, because the Italian position was a logistical fiction: a conquered empire held by a railway with no through capacity, cut off once Aden and the Red Sea were closed to its traffic. The two British axes therefore ran on their own lines of communication, the northern one resolving as a series of set-piece battles and the southern one as a long pursuit across Italian Somaliland.',
+        what: 'The northern axis was decided at Keren, where the road to Asmara passes between hills: two direct assaults by 4th and 5th Indian Divisions in February were held, and the attack was delivered again on 15 March after an air bombardment by squadrons 14, 47, 223 and 237 and the guns of both divisions. Keren fell on 27 March and Massawa on 8 April. In the south the Italian Somaliland garrison gave way so quickly that Mogadishu was occupied unopposed; no line is drawn here between the two axes, because the country between them had neither roads nor fighting.',
+        consequence: 'The campaign is usually read as proof that the Italian armies could be beaten, and more recently as a question of logistics and air power rather than numbers. It was also the only theatre where a conquered state was restored, and the Emperor’s entry into Addis Ababa on 5 May gave the war a public symbol no other campaign supplied. What the liberation left unsettled — who governed Ethiopia afterwards — proved harder than the campaign.',
+      },
+    },
+  },
+  {
+    id: 'keren_1941',
+    date: '1941-03-15',
+    precision: 'day',
+    title: 'Keren: the battle that opened the road to Asmara',
+    kind: 'battle',
+    fronts: ['east_africa'],
+    countries: ['United Kingdom', 'India', 'Italy'],
+    note: 'The official history gives the cost as 536 British killed and 3,229 wounded, and 3,000 Italians killed on General Frusci’s own reckoning. The second account counts the fighting as a battle of 53 days, from 3 February. The same chapter gives the troops in Eritrea at the end of December 1940 as three colonial divisions and three colonial brigades.',
+    mapNote: 'Keren is on the line between Agordat and Asmara, where the only good road north passes through the hills. That is why the battle of the campaign was fought here.',
+    levels: {
+      primary: {
+        cause: 'The road from Sudan to Asmara runs through Keren, where it passes between hills. The Italian army dug in there to stop the British advance coming up from Agordat.',
+        what: 'Two attacks in February were thrown back with heavy loss. The attackers brought in another brigade and more guns, and the assault came on 15 March after an air bombardment of the gun areas; the Italians were driven out of Keren on 27 March.',
+        consequence: 'Asmara fell within a week and the port of Massawa surrendered on 8 April. That ended the Italian threat to shipping in the Red Sea, which was what the campaign was fought for.',
+      },
+      secondary: {
+        cause: 'Two roads joined at Agordat and went on through Keren, the only route to Asmara, and General Frusci held that route with colonial divisions and brigades. Platt disliked a head-on attack but there was no other practicable way of reaching Asmara.',
+        what: '4th and 5th Indian Divisions attacked from 3 February and were held: one position was taken and lost twice, an attempt on another just failed, and the attack was not renewed. The first half of February went to patrols, reconnaissance and bombing the railway between Asmara and Keren. The assault came again on 15 March, with an air bombardment by Nos. 14, 47, 223 and 237 Squadrons and the guns of both divisions, and by 7 a.m. on 27 March the air reported the enemy clearing Keren.',
+        consequence: 'The battle was not the last of the campaign but it was decisive, because the Italians withdrew much of their artillery yet never fought with the same determination again. Asmara and Massawa followed in quick succession, and the Indian formations were soon claimed by Syria and the Western Desert.',
+      },
+      university: {
+        cause: 'Keren was won by artillery and air power against an army that could replace nothing it lost. Platt was under pressure to finish in Eritrea so that formations could go back to the Western Desert, which is why a frontal attack was repeated rather than turned: the road to Arresa was examined as an alternative and judged fit only to support a small force.',
+        what: 'The fighting is usually described as a single battle, beginning with the first clash in February. The February assaults cost enough that the commander refused to renew them; the preparation that followed was a matter of guns, air photographs and bringing up the 9th Indian Infantry Brigade and the 51st (Middle East) Commando in secret. When the attack came on 15 March it was delivered by 4th Indian Division after an intense bombardment of the gun areas, and the tanks entered Keren on the morning of 27 March.',
+        consequence: 'Keren settled the Red Sea in British hands at the moment the convoy route to Egypt mattered most, before the German attack on the Soviet Union opened a second route through Iran. The battle has entered Indian and South African military memory as well as British, and the fighting in Eritrea is one of the few parts of the war in Africa where the outcome was never in doubt after the second month.',
+      },
+    },
+  },
+  {
+    id: 'addis_ababa_1941',
+    date: '1941-04-06',
+    precision: 'day',
+    title: 'Addis Ababa: the pursuit from Kenya ends at the Ethiopian capital',
+    kind: 'liberation',
+    fronts: ['east_africa'],
+    countries: ['United Kingdom', 'India', 'South Africa', 'Ethiopia', 'Italy'],
+    note: 'The day given is the day the capital was captured, 6 April 1941, which both accounts give; the Emperor’s entry is dated 5 May. Wikipedia runs this campaign to 27 November 1941 and records guerrilla warfare in Ethiopia after that, and its casualty totals are for the whole theatre, so none of them is given here. The official history puts the length of the pursuit at over 1,000 miles, and Wikipedia dates the Emperor’s flight from the capital to 5 May 1936 and adds that 5 May has been kept in Ethiopia as Liberation Day since 1951; no second account here gives any of those three.',
+    mapNote: 'Addis Ababa is the far end of the line drawn up from Kismayu and Mogadishu, where the pursuit from Kenya ended. The road north to Asmara is not drawn, because that is the other axis of the campaign and is drawn separately.',
+    levels: {
+      primary: {
+        cause: 'The attack north from Kenya had taken Kismayu and Mogadishu in February and kept going. Addis Ababa was the Ethiopian capital and the place the roads and the railway ran through, on which the Italian armies in East Africa depended.',
+        what: 'The pursuit came all the way from Kenya and reached the capital at the beginning of April. The city was captured on 6 April 1941, and the Italian troops cut off to the west surrendered a few days later.',
+        consequence: 'The Emperor entered his capital again on 5 May, the day the official history gives. The roads that had carried Italian reinforcements now carried troops and transport back towards Egypt.',
+      },
+      secondary: {
+        cause: 'The advance from Kenya began later than the one from Sudan. Wavell doubted whether the capture of the capital would achieve any great strategical purpose, and agreed to press on only when General Cunningham asked to be allowed to go forward because he thought it could be taken easily and that, with the success in Eritrea, it might move the Italians to leave East Africa altogether.',
+        what: 'By 30 March Cunningham felt certain he would soon take the city, and a message from Wavell for the Duke of Aosta was dropped on Addis Ababa from the air. The capital fell on 6 April, the same day the Emperor entered Debra Markos to the north after a small force cleared the way; Keren had fallen on 27 March and Massawa followed on 8 April, just after the capital was entered.',
+        consequence: 'The road network now ran the other way: Cunningham was ordered north to secure the main road to Asmara, along which reinforcements and transport could pass on their way to Egypt. One country at least had been liberated from Fascist domination and had had its rightful ruler restored, and that is the outcome the official history singles out from the whole campaign.',
+      },
+      university: {
+        cause: 'The capital was worth taking as a communications centre rather than as a fortress. The Italian garrisons that held western Ethiopia were spaced along the main Gojjam road in a wide arc from the southern end of Lake Tana through Dangila and Debra Markos to Addis Ababa, and the Patriot rising that the British had tried to foster depended on the same arc; penning those garrisons in was the object the plans were built around.',
+        what: 'The capture rests on a decision taken at the second moment. The commander-in-chief had judged the capital strategically unimportant and allowed the pursuit to continue on his subordinate’s assurance that it was easy and might end the campaign, which is what it did. The air war moved in behind the advancing troops: enemy fighters worked from the Addis Ababa area, refuelling at intermediate landing grounds to reach the forward airfields, while bombers attacked traffic on the roads through Dessie and the brigades with no passable road to the west were cut off and surrendered.',
+        consequence: 'East Africa is usually treated as a side show that produced a useful example, and the official history’s judgement is that one country at least had been liberated from Fascist domination and had had its rightful ruler restored. What the restored state was to become was settled elsewhere and later. The Emperor came back at the head of an armed movement, whose men gathered in the capital heavily armed with captured Italian weapons to hear the proclamation of his return; the years after 1941 turned on that, and no line on a map of campaigns shows it.',
+      },
+    },
+  },];

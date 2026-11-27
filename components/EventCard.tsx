@@ -141,13 +141,14 @@ export default function EventCard({
               <Section label={headings.cause} text={text.cause} />
               <Section label={headings.what} text={text.what} />
               <Section label={headings.consequence} text={text.consequence} />
-              {event.note && (
-                <p className="rounded-lg border border-stone-200 bg-stone-50 px-3 py-2.5 text-sm leading-relaxed text-stone-700">
-                  <span className="font-semibold text-stone-700">For the record: </span>
-                  {event.note}
-                </p>
-              )}
             </>
+          )}
+
+          {event.note && (
+            <p className="rounded-lg border border-stone-200 bg-stone-50 px-3 py-2.5 text-sm leading-relaxed text-stone-700">
+              <span className="font-semibold text-stone-700">For the record: </span>
+              {event.note}
+            </p>
           )}
 
           {event.mapNote && (

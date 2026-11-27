@@ -1,6 +1,6 @@
 'use client';
-import type { ReactNode } from 'react';
 
+import type { ReactNode } from 'react';
 import { ChevronDown } from 'lucide-react';
 import { SOURCES, UNCERTAINTIES, FIGURES, FIGURE_BY_ID } from '@/lib/data';
 import { PORTRAITS } from '@/lib/data/portraits';
@@ -20,12 +20,12 @@ const MAP_LIMITS: { head: string; body: string }[] = [
   {
     head: 'Where the coloured area stops, and why it stops there',
     body:
-      'Two layers put colour on this map: a per-month border layer for the European theatre, and a modern-outlines layer that draws where that one does not. The per-month layer is cut to a box, and until 25 November 2026 that box ended at 62° E. Walking the published file shows what that did: between 66° N and 69° N it painted land out to exactly 62.000° E at every degree of latitude, a sawn edge running across the Kola Peninsula and the Nenets coast instead of a coastline. The dataset holds ground further out in that band, so the box now ends at 66.5° E, just past the furthest it reaches. The same walk on the file published today gives 65.1° E at 66° N, 66.1° E at 67° N, 65.7° E at 68° N and 65.0° E at 69° N: 179 more quarter-degree points of coast in each of the twelve monthly maps. Every one of them is land — checked against an independent map of the modern world, none of the newly coloured ground is sea — and the twelve files together grew by half a per cent.',
+      'Two layers put colour on this map: a per-month border layer for the European theatre, and a modern-outlines layer that draws where that one does not. The per-month layer is cut to a box, and until 25 November 2026 that box ended at 62° E. Walking the published file on a quarter-degree grid shows what that did: between 66° N and 69° N the old file stopped at 47.60° E, 49.10° E, 61.25° E and 61.25° E, a sawn cut running across the Kola Peninsula and the Nenets coast instead of a coastline. The dataset holds ground further out in that band, so the eastern bound now ends at 66.5° E, just past the furthest it reaches. The same walk on the file published today gives 65.1° E at 66° N, 66.1° E at 67° N, 65.7° E at 68° N and 65.0° E at 69° N: 178 more quarter-degree points of coast in each of the twelve monthly maps. Every one of them is land — checked against an independent map of the modern world, none of the newly coloured ground is sea — and total painted coverage on a 0.1° grid grew by 0.48%.',
   },
   {
     head: 'The straight edge is gone; the blank steppe is not',
     body:
-      'The same walk finds the easternmost land the source holds anywhere south of 66° N at 61.5° E, at 51° N, and it is the same after the widening: the Yamal, the Ob and the Gydan are not in that dataset at any longitude, and no box makes them appear. Outside the European dataset, the modern-outlines layer paints North Africa, the Levant, Iraq, Iran, Iceland and the steppe east of the Urals at every extent using modern country outlines. The north edge stays at 71° N. Raising it to 71.5° N was built and measured: thirty more points of coast in each month, and four in every month of that is open sea in the Barents and Kara seas north of the coast, which is the same fault we are removing, only shorter. A box taken to 82° N was also built and measured: the April 1942 file grows from 313 KB to 342 KB, and the only new land is Franz Josef Land and the north end of Novaya Zemlya — the New Siberian Islands are not in that dataset at any longitude either, so most of that taller box is blank ocean. One small thing was lost in the widening. A quarter-degree point a month at 59.5° E 64.5° N, a river channel where the simplifier now takes a shortcut, is no longer coloured; looked at a hundredth of a degree, the new file gains eleven points of bank there as it loses twenty, which is about six square kilometres of riverbank given up for eleven taken.',
+      'The same walk finds the easternmost painted ground south of 66° N at 66.25° E (at 65.75° N), and it is the same after the widening: the Yamal, the Ob and the Gydan are not in that dataset at any longitude, and no box makes them appear. Outside the European dataset, the modern-outlines layer paints North Africa, the Levant, Iraq, Iran, Iceland and the steppe east of the Urals at every extent using modern country outlines. The north edge stays at 71° N. Raising it to 71.5° N was built and measured: thirty more points of coast in each month, and four in every month of that is open sea in the Barents and Kara seas north of the coast, which is the same fault we are removing, only shorter. A box taken to 82° N was also built and measured: the April 1942 file grows from 313 KB to 342 KB, and the only new land is Franz Josef Land and the north end of Novaya Zemlya — the New Siberian Islands are not in that dataset at any longitude either, so most of that taller box is blank ocean. One small thing was lost in the widening. A quarter-degree point a month at 59.5° E 64.5° N, a river channel where the simplifier now takes a shortcut, is no longer coloured; looked at a hundredth of a degree, the new file gains eleven points of bank there as it loses twenty, which is about six square kilometres of riverbank given up for eleven taken.',
   },
   {
     head: 'The modern outlines carry no water either',
@@ -119,6 +119,7 @@ const SECTIONS = [
 ];
 
 const CARD = 'scroll-mt-16 rounded-xl border border-stone-300 bg-white p-4 shadow-sm sm:p-5';
+
 /**
  * The bibliography holds markdown italics, because that is how a book title is written down:
  * `_Cataclysm: The First World War as Political Tragedy_`. Printed as plain text a reader sees the
@@ -143,6 +144,7 @@ function citationText(citation: string): ReactNode {
   if (last < citation.length) parts.push(citation.slice(last));
   return parts.length === 1 && typeof parts[0] === 'string' ? parts[0] : parts;
 }
+
 
 export default function SourcesPanel() {
   return (
@@ -239,7 +241,7 @@ export default function SourcesPanel() {
           ))}
         </div>
         <details className="mt-3">
-          <summary className="cursor-pointer text-sm font-semibold text-stone-700">
+          <summary className="min-h-6 cursor-pointer py-1 text-sm font-semibold text-stone-700">
             The {SNAPSHOTS.length} dated map states
           </summary>
           <ul className="mt-2 grid gap-x-4 gap-y-1 text-sm text-stone-700 sm:grid-cols-2">
@@ -265,12 +267,12 @@ export default function SourcesPanel() {
             <li key={s.citation} className="border-l-2 border-stone-300 pl-3">
               <p className="text-[15px] font-medium leading-snug text-stone-900">{citationText(s.citation)}</p>
               <p className="text-xs text-stone-600">{s.publisher}</p>
-              <p className="mt-0.5 text-[13px] leading-snug text-stone-700">{s.usedFor}</p>
+              <p className="mt-0.5 break-words text-[13px] leading-snug text-stone-700">{s.usedFor}</p>
               <a
                 href={s.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block break-all py-1.5 text-xs text-blue-700 underline hover:text-blue-900"
+                className="inline-block break-all py-2 text-xs text-blue-700 underline hover:text-blue-900"
               >
                 {s.url}
               </a>
@@ -311,7 +313,7 @@ export default function SourcesPanel() {
           those choices are listed below so you can check them.
         </p>
         <details className="mt-3">
-          <summary className="cursor-pointer text-sm font-semibold text-stone-700">
+          <summary className="min-h-6 cursor-pointer py-1 text-sm font-semibold text-stone-700">
             Every photograph and its credit
           </summary>
           <ul className="mt-2 space-y-1 text-[13px] leading-snug text-stone-700">

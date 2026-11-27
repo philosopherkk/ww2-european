@@ -11,7 +11,7 @@ of China in July 1937 and runs through Burma, the Mediterranean and the Pacific 
 
 | Part | Contents |
 | --- | --- |
-| Map & timeline | 99 months on a slider (July 1937 to September 1945), borders coloured by who held the territory, 103 campaign and movement lines, turning-point panels on the twenty-two months when the war or the map changed, click any country or line for detail |
+| Map & timeline | 99 months on a slider (July 1937 to September 1945), borders coloured by who held the territory, 110 campaign and movement lines, turning-point panels on the twenty-two months when the war or the map changed, click any country or line for detail |
 | Events | 212 events, each split into **why it happened**, **what happened** and **what followed** |
 | People | 76 biographies, from heads of state to partisans, economists and camp survivors |
 | Numbers | Population, armed-forces and casualty tables, with ranges where historians disagree |

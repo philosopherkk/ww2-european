@@ -310,6 +310,11 @@ export const FRONT_META: Record<Front, { label: string; color: string }> = {
   pacific: { label: 'Pacific & Asia', color: '#0F766E' },
   china: { label: 'China', color: '#A16207' },
   china_burma_india: { label: 'China, Burma & India', color: '#A16207' },
+  // The Levant and the Horn, which the Mediterranean chip was standing in for. No card
+  // carries either front yet; both colours were picked for white chip text (9.65:1 and
+  // 7.08:1) and to sit away from the eleven colours already in use.
+  middle_east: { label: 'Middle East', color: '#831843' },
+  east_africa: { label: 'East Africa', color: '#3F6212' },
   americas: { label: 'The Americas', color: '#0369A1' },
 };
 
@@ -345,13 +350,13 @@ export function formatMillions(value: number): string {
 
 export const BLOC_META: Record<
   Bloc,
-  { label: string; color: string }
+  { label: string; color: string; textColor?: string }
 > = {
   axis: { label: 'Axis', color: '#A93226' },
   allies: { label: 'Western Allies', color: '#2E6F9E' },
-  soviet: { label: 'Soviet Union', color: '#C8791A' },
-  co_belligerent: { label: 'Co-belligerent / neutral', color: '#6E7F2B' },
+  soviet: { label: 'Soviet Union', color: '#C8791A', textColor: '#905713' },
+  co_belligerent: { label: 'Co-belligerent / neutral', color: '#6E7F2B', textColor: '#4F5B1F' },
   collaboration: { label: 'Collaboration', color: '#8B5E3C' },
   occupied: { label: 'Occupied', color: '#5B6B73' },
-  neutral: { label: 'Neutral', color: '#8C979B' },
+  neutral: { label: 'Neutral', color: '#8C979B', textColor: '#656D70' },
 };

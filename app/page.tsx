@@ -36,8 +36,6 @@ import {
   WW1_MONTH_KEYS,
 } from '@/lib/site';
 
-/* Leaflet touches `window` as soon as it loads, so the map is only ever
- * mounted in the browser. */
 /* Non-map tabs pull in ~335 KB of bibliography, statistics and biography data, so load them on demand. */
 const PeoplePanel = dynamic(() => import('@/components/PeoplePanel'), {
   loading: () => <PanelLoading label="Loading people…" />,
@@ -57,6 +55,8 @@ function PanelLoading({ label }: { label: string }) {
   );
 }
 
+/* Leaflet touches `window` as soon as it loads, so the map is only ever
+ * mounted in the browser. */
 const MapBrowser = dynamic(() => import('@/components/MapBrowser'), {
   ssr: false,
   loading: () => (
@@ -204,6 +204,10 @@ export default function Home() {
         e.preventDefault();
         go(1);
       } else if (e.key === ' ' && tab === 'map') {
+        if (el?.closest('button, a[href], [role="tab"], summary')) return;
+        e.preventDefault();
+        setPlaying((p) => !p);
+      } else if ((e.key === 'p' || e.key === 'P') && tab === 'map') {
         e.preventDefault();
         setPlaying((p) => !p);
       } else if (e.key === 'Escape') {
@@ -509,7 +513,12 @@ export default function Home() {
             >
               <div className="mb-3 space-y-2">
                 <div className="flex items-end justify-between gap-3">
-                  <h2 className="min-w-0 font-serif text-2xl font-semibold leading-none text-stone-900">
+                  <h2
+                    role="status"
+                    aria-live="polite"
+                    aria-atomic="true"
+                    className="min-w-0 font-serif text-2xl font-semibold leading-none text-stone-900"
+                  >
                     {scope === 'month'
                       ? month.label
                       : scope === 'year'
@@ -531,7 +540,7 @@ export default function Home() {
                       type="button"
                       onClick={() => setScope(s.id)}
                       aria-pressed={scope === s.id}
-                      className={`h-9 text-sm font-medium ${
+                      className={`h-11 text-sm font-medium sm:h-9 ${
                         scope === s.id
                           ? 'bg-stone-800 text-white'
                           : 'text-stone-700 hover:bg-stone-100'
@@ -596,7 +605,7 @@ export default function Home() {
                                     <button
                                       type="button"
                                       onClick={() => openEventFrom(ev.id)}
-                                      className="text-left text-xs text-sky-800 underline decoration-sky-800/40 underline-offset-2 hover:decoration-sky-800"
+                                      className="inline-block min-h-6 py-1 text-left text-xs text-sky-800 underline decoration-sky-800/40 underline-offset-2 hover:decoration-sky-800"
                                     >
                                       {ev.title}
                                       <span className="text-stone-600">
@@ -748,15 +757,13 @@ function TabButtons({
     return (
       <nav
         className="hidden flex-1 justify-center gap-1 xl:flex"
-        role="tablist"
         aria-label="Main sections"
       >
         {TABS.map(({ id, label, icon: Icon }) => (
           <button
             key={id}
             type="button"
-            role="tab"
-            aria-selected={tab === id}
+            aria-current={tab === id ? 'page' : undefined}
             onClick={() => onChange(id)}
             className={`inline-flex items-center gap-2 rounded-lg px-3.5 py-2 text-sm font-medium ${
               tab === id
@@ -773,7 +780,6 @@ function TabButtons({
   return (
     <nav
       className="fixed inset-x-0 bottom-0 z-[600] border-t border-stone-300 bg-white/95 pb-[env(safe-area-inset-bottom)] shadow-[0_-2px_8px_rgb(0_0_0/0.06)] backdrop-blur xl:hidden"
-      role="tablist"
       aria-label="Sections"
     >
       <div className="mx-auto grid max-w-xl grid-cols-5">
@@ -781,8 +787,7 @@ function TabButtons({
           <button
             key={id}
             type="button"
-            role="tab"
-            aria-selected={tab === id}
+            aria-current={tab === id ? 'page' : undefined}
             onClick={() => onChange(id)}
             className={`flex flex-col items-center gap-0.5 border-t-2 pb-2 pt-2 text-xs font-medium ${
               tab === id ? 'border-red-800 text-red-900' : 'border-transparent text-stone-600'

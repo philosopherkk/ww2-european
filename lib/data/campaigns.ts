@@ -24,8 +24,8 @@ export interface CampaignLine {
   from: string;
   to: string;
   /**
-   * What moved. Leaving it out means 'land', which is every line written so
-   * far, so no existing entry needs changing. 'sea' is a ship's or convoy's
+   * What moved. Leaving it out means 'land', which 100 of the 110 lines are,
+   * so no existing entry needed changing. 'sea' is a ship's or convoy's
    * route between ports; 'air' is the track of a raid or an airborne drop. The
    * colour still comes from `side`, but the dash and the row in the Key change
    * with it, and no ring is drawn on either.
@@ -392,7 +392,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     id: 'italy_1943',
     name: 'Salerno and Naples: the first lodgement on the continent',
     side: 'western',
-    from: '1943-09-09',
+    from: '1943-09-08',
     to: '1943-10-01',
     path: [
       [38.1, 15.65], // Reggio Calabria, crossed on 3 September by the Eighth Army
@@ -653,15 +653,15 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     id: 'third_kharkov_1943',
     name: 'Manstein’s counter-stroke: the third battle of Kharkov',
     side: 'german',
-    from: '1943-02-20',
+    from: '1943-02-19',
     to: '1943-03-15',
     path: [
-      [50.6, 36.59], // Belgorod, lost in February and recovered in the days after Kharkov fell
-      [49.82, 36.06], // Merefa, on the railway south-west of Kharkov
-      [49.99, 36.23], // Kharkov, taken after four days of street fighting
+      [49.82, 36.06], // Merefa, on the railway south-west of Kharkov, the jump-off ground
+      [49.99, 36.23], // Kharkov, retaken on 15 March after four days of street fighting
+      [50.6, 36.59], // Belgorod, recovered in the days after Kharkov fell
     ],
     summary:
-      'The operational masterpiece of the German war, and the reason the front in the east was restored after Stalingrad. Manstein refused Hitler’s order to stand fast, gave ground deliberately to stretch the Soviet advance — whose tank corps had run out of fuel and infantry — and then struck the exposed flank of the Soviet South-Western Front with two panzer corps. Kharkov was retaken on 15 March and Belgorod recovered in the days that followed, leaving the Kursk salient that would be fought over in July. The human cost of the same months went the other way: some 500,000 Soviet casualties in the winter battles, and a German retreat punctuated by the demolition of everything left behind.',
+      'The operational masterpiece of the German war, and the reason the front in the east was restored after Stalingrad. Manstein refused Hitler’s order to stand fast, gave ground deliberately to stretch the Soviet advance — whose tank corps had run out of fuel and infantry — and then struck the exposed flank of the Soviet South-Western Front with two panzer corps. Kharkov was retaken on 15 March and Belgorod recovered in the days that followed, leaving the Kursk salient that would be fought over in July. The human cost of the same months went the other way: some 500,000 Soviet casualties in the winter battles, and a German retreat punctuated by the demolition of everything left behind. The waypoints run north through the city to Belgorod, the order they fell.',
     strength:
       'Manstein’s ~125,000 men with about 350 serviceable tanks, including the II SS Panzer Corps, whose Totenkopf division came from the Leningrad sector while Das Reich refitted in the west; the Voronezh and Southwestern Fronts had ~210,000 men in the engaged armies, low on fuel. Losses: 86,469 Soviet, about 11,500 German',
   },
@@ -842,7 +842,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     id: 'prague_1945',
     name: 'The Prague Offensive: the last operation of the war in Europe',
     side: 'soviet',
-    from: '1945-05-06',
+    from: '1945-05-05',
     to: '1945-05-11',
     path: [
       [50.63, 13.83], // the Teplice pass in the Bohemian mountains, 1st Ukrainian Front
@@ -924,7 +924,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     name: 'Gazala to El Alamein: Tobruk lost and the retreat of 1942',
     side: 'german',
     from: '1942-05-26',
-    to: '1942-06-30',
+    to: '1942-07-27',
     path: [
       [32.14, 23.36], // Gazala, the minefields, attacked on 26 May
       [31.61, 23.50], // Bir Hakeim, which the Free French held for two weeks before withdrawing
@@ -1131,12 +1131,12 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     to: '1941-10-16',
     path: [
       [46.86, 29.61], // Tiraspol, on the Dniester, the jump-off line of the Romanian Fourth Army
+      [46.48, 30.73], // Odessa, invested from land on 8 August and held until 16 October
       [46.98, 31.99], // Mykolaiv, taken 13 August by the German Eleventh Army on the left flank
       [46.54, 33.41], // Kherson, taken 30 August, cutting the port and the marshes behind it
-      [46.48, 30.73], // Odessa, invested from land on 8 August and held until 16 October
     ],
     summary:
-      'Romania joined the attack on the Soviet Union in order to recover Bessarabia and Bukovina, which the USSR had taken in 1940; by August the Romanian Fourth Army had reached the Southern Bug and was investing Odessa, the Black Sea Fleet’s base. The attackers expected a short siege and got two months of siege and frontal assaults, at a cost of about 92,500 Romanian casualties. The city was evacuated by sea on 16 October — an operation the Soviets repeated on a larger scale at Sevastopol — and the defenders were withdrawn to the Crimea. The consequence was strategic: Romania had committed 340,000 men to take a city it could not hold, the Axis right flank was stretched to the Sea of Azov, and the Crimea, not wholly taken until July 1942, became the place where German and Romanian armies were destroyed twice.',
+      'Romania joined the attack on the Soviet Union in order to recover Bessarabia and Bukovina, which the USSR had taken in 1940; by August the Romanian Fourth Army had reached the Southern Bug and was investing Odessa, the Black Sea Fleet’s base. The attackers expected a short siege and got two months of siege and frontal assaults, at a cost of about 92,500 Romanian casualties. The city was evacuated by sea on 16 October — an operation the Soviets repeated on a larger scale at Sevastopol — and the defenders were withdrawn to the Crimea. The consequence was strategic: Romania had committed 340,000 men to take a city it could not hold, the Axis right flank was stretched to the Sea of Azov, and the Crimea, not wholly taken until July 1942, became the place where German and Romanian armies were destroyed twice. The waypoints run west to east: the city, then the coast cut behind it.',
     strength:
       'Romanian Fourth Army, ~160,000 men at the start and ~340,000 committed in all, with the German Eleventh Army on its left; the Odessa Defensive District ~34,500 men at the start and ~86,000 in total',
   },
@@ -1630,6 +1630,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     id: 'central_pacific_1943',
     name: 'Central Pacific 1943–44: the Gilberts to the Marshalls',
     side: 'western',
+    domain: 'sea',
     from: '1943-11-20',
     to: '1944-02-03',
     path: [
@@ -1639,7 +1640,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [11.5, 162.333], // Enewetak
     ],
     summary:
-      'The US advance across the central Pacific: Makin and Tarawa in the Gilberts on 20–23 November 1943, then Kwajalein from 31 January 1944, with the campaign reaching Enewetak by February 1944. The line points at the next ring of islands rather than the daily landings. This is a schematic axis of advance through named places, not a surveyed daily front line. The ring marks an interpolated position along that axis by date, not a documented map reference for that morning.',
+      'The US advance across the central Pacific: Makin and Tarawa in the Gilberts on 20–23 November 1943, then Kwajalein from 31 January 1944, with the campaign reaching Enewetak by February 1944. The line points at the next ring of islands rather than the daily landings.',
   },
   {
     id: 'imphal_1944_japanese',
@@ -1763,4 +1764,186 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
     summary:
       'The river arm of the campaign for Wuhan, which the sources date 11 June to 27 October 1938: Japanese naval landing forces came up the Yangtze past Anqing and fought for Jiujiang before moving on the three cities of Wuhan, taking Wuchang and Hankou on 26 October and Hanyang on the 27th. This is a schematic axis of advance through named places, not a surveyed daily front line. The ring marks an interpolated position along that axis by date, not a documented map reference for that morning.',
   },
-];
+  /* ---- Sea, air and Burma-Pacific lines added from all-lines audit ---- */
+  {
+    id: 'dragoon_convoy_1944',
+    name: 'Dragoon: the convoy crossing to the Riviera',
+    operation: 'Anvil / Dragoon',
+    side: 'western',
+    domain: 'sea',
+    from: '1944-08-15',
+    to: '1944-08-28',
+    path: [
+      [40.85, 14.27], // waypoint 0
+      [40.634, 14.841], // Salerno
+      [43.2275, 6.6625], // the assault area off the Riviera, as the article prints it
+      [43.12, 5.93], // waypoint 3
+      [43.3, 5.37], // waypoint 4
+    ],
+    summary:
+      'The assault lift for Dragoon loaded at Naples and Salerno while French formations came round from Oran; exclusive of naval crews the convoys carried about 151,000 troops and vehicles across to the Riviera assault area, then west to Toulon (15–28 August 1944) and Marseille (21–28 August).',
+    strength:
+      'About 151,000 troops in the initial assault convoys (576,833 in the wider invasion force as later totals count it), with some 21,400 vehicles in the US Army campaign record.',
+  },
+  {
+    id: 'philippine_sea_1944',
+    name: 'The Philippine Sea: the Mobile Fleet’s sortie',
+    operation: 'A-Go',
+    side: 'japanese',
+    domain: 'sea',
+    from: '1944-06-19',
+    to: '1944-06-20',
+    path: [
+      [5.2, 120.0833], // Tawi Tawi, Sulu Archipelago
+      [12.5875, 124.1964], // San Bernardino Strait
+      [20, 130], // the action, at the position the article prints
+    ],
+    summary:
+      'The 1st Mobile Fleet moved to Tawi Tawi in the Sulu Archipelago for Operation A-Go, sailed eastward through the San Bernardino Strait, and fought the carrier battle in the Philippine Sea on 19–20 June 1944, eliminating the Japanese navy’s ability to conduct large-scale carrier actions.',
+  },
+  {
+    id: 'coral_sea_1942',
+    name: 'The Coral Sea: Tulagi and the road to Port Moresby',
+    operation: 'MO',
+    side: 'japanese',
+    domain: 'sea',
+    from: '1942-05-03',
+    to: '1942-05-08',
+    path: [
+      [-4.2, 152.1833], // Rabaul
+      [-9.1014, 160.1467], // Tulagi, Florida Islands
+      [-13.333, 154.35], // the carrier battle south of Rossel Island
+      [-9.4431, 147.1795], // Port Moresby
+    ],
+    summary:
+      'Operation MO ran out of Rabaul: Japanese forces occupied Tulagi on 3–4 May while the Port Moresby invasion convoy left Rabaul on 4 May by way of the Jomard Passage. The carrier battle in the Coral Sea stopped the seaborne landing on Port Moresby.',
+  },
+  {
+    id: 'java_sea_1942',
+    name: 'The Java Sea: the ABDA sortie of 27 February',
+    operation: 'Java Sea operation',
+    side: 'western',
+    domain: 'sea',
+    from: '1942-02-27',
+    to: '1942-02-27',
+    path: [
+      [-7.2458, 112.7378], // Soerabaja
+      [-5, 111], // the action, at the position the article prints
+      [-6.1309, 106.8779], // Tandjong Priok, Batavia
+    ],
+    summary:
+      'The Allied striking force lay split between Soerabaja and Tandjong Priok with strong Japanese forces between them, and sortied into the Java Sea on 27 February 1942 to intercept the invasion convoys, suffering a decisive defeat.',
+  },
+  {
+    id: 'myitkyina_1944',
+    name: 'Myitkyina 1944: Kamaing, Mogaung, Myitkyina',
+    operation: 'Narwhal / Myitkyina',
+    side: 'western',
+    from: '1944-05-17',
+    to: '1944-08-03',
+    path: [
+      [26.7442, 97.6886], // Kamaing
+      [26.3941, 97.7028], // Mogaung
+      [25.383, 97.4], // waypoint 2
+    ],
+    summary:
+      'Whoever held the Myitkyina–Mogaung area held the road and air route to China, with the 1944 campaign fought through the Hukawng and Mogaung valleys. The siege of Myitkyina ran from 17 May to 3 August 1944, the airfield falling first and the town held until August. The ring marks an interpolated position along this axis by date.',
+  },
+  {
+    id: 'hump_airlift_1942_45',
+    name: 'The Hump: Assam to Kunming by air',
+    operation: 'The Hump',
+    side: 'western',
+    domain: 'air',
+    from: '1942-04-08',
+    to: '1945-08-31',
+    path: [
+      [27.4839, 95.3964], // Dinjan, Assam
+      [25.383, 97.4], // waypoint 1
+      [24.8833, 102.8333], // Kunming
+    ],
+    summary:
+      'After Burma fell, Allied transport aircraft flew supplies from Dinjan in Assam over the mountains via Myitkyina to Kunming from 8 April 1942 until the end of the war in 1945, keeping Nationalist China supplied by air.',
+  },
+  {
+    id: 'burma_1945',
+    name: 'Burma 1945: Kalewa, Meiktila, Rangoon',
+    operation: 'Capital / Dracula',
+    side: 'western',
+    from: '1944-12-04',
+    to: '1945-05-03',
+    path: [
+      [23.3, 94.1833], // Kalewa, on the Chindwin
+      [20.8833, 95.95], // Meiktila
+      [21.9831, 96.0844], // waypoint 2
+      [16.795, 96.16], // waypoint 3
+    ],
+    summary:
+      'Fourteenth Army opened the Irrawaddy campaign on 4 December 1944 from the Kalewa bridgehead; in March 1945 a mobile strike seized Meiktila behind the Japanese lines below Mandalay. Mandalay fell, and Rangoon was entered unopposed on 2 May 1945 as the Japanese withdrew. The ring marks an interpolated position along this axis by date.',
+  },
+  {
+    id: 'persia_1941',
+    name: 'The invasion of Iran: from Basra into Khuzestan',
+    side: 'western',
+    from: '1941-08-25',
+    to: '1941-09-17',
+    path: [
+      [30.4952371, 47.8090981], // Basra
+      [30.4748457, 48.2428548], // Khorramshahr
+      [31.3230637, 48.67932], // Ahvaz
+    ],
+    summary:
+      'The column from Iraq crossed the Shatt al-Arab from Basra on 25 August 1941, took the town opposite Abadan and destroyed the Iranian gunboats on the Karun, and pushed on to the oil refinery town of Ahvaz, which was one of the objects the invasion was planned around. The line stops at Ahvaz, because that is the furthest place on this axis either account gives as occupied; the intention of driving north through the Zagros passes to meet the Soviets at Qazvin is recorded as an intention. The columns that came south from the Caucasus are not drawn, and neither is the traffic this route carried afterwards, which has a line of its own.',
+    strength:
+      'Iraqforce, with the 8th Indian Division and brigades of the 10th Indian Division, against the Iranian southern garrison, whose small navy on the Karun was destroyed on the first day',
+  },
+  {
+    id: 'persian_corridor',
+    name: 'The Persian Corridor: the Caspian crossing to Baku and Makhachkala',
+    side: 'western',
+    domain: 'sea',
+    from: '1941-10-01',
+    to: '1945-05-31',
+    path: [
+      [36.6508069, 51.5034126], // Nowshahr
+      [40.3755885, 49.8328009], // Baku
+      [42.9830241, 47.5048717], // Makhachkala
+    ],
+    summary:
+      'Stores that came up the Gulf and across Iran by rail and road were handed to ships on the Iranian Caspian shore and carried across to Baku and Makhachkala, the Soviet ports the account followed names as where that ferry ran. Only the water crossing is drawn, because it is the part of the route no other line here covers: the overland stage from Basra through Khuzestan is the axis the 1941 invasion line already draws, and the rail traffic north of Ahvaz is not shown anywhere. The port given is the one named as the main outlet for supplies shipped across the Caspian, and the same account lists several other crossing points on both shores.',
+  },
+  {
+    id: 'east_africa_1941',
+    name: 'The Sudan axis: from Gallabat and Kassala to Massawa',
+    side: 'western',
+    from: '1941-01-19',
+    to: '1941-04-08',
+    path: [
+      [12.9600399, 36.1488802], // Gallabat
+      [15.452011, 36.3770699], // Kassala
+      [15.5499995, 37.8863302], // Agordat
+      [15.780477, 38.453606], // Keren
+      [15.3389667, 38.9326763], // Asmara
+      [15.6031828, 39.4636974], // Massawa
+    ],
+    summary:
+      'The advance began from the Sudan frontier, where the Italians had taken Kassala and the frontier post of Gallabat in 1940 and withdrawn from both in November. From Kassala two routes ran north-west to Agordat, and from Agordat, where they joined, there was no practicable way to Asmara except the main road through Keren, which is why the battle of the campaign was fought there. Massawa, the port, was the last place on the axis and fell on 8 April 1941, after Keren had fallen. The line begins at Gallabat because that is where the fighting on this frontier started, not because troops marched from it in 1941.',
+    strength:
+      '4th and 5th Indian Divisions, with the 9th Indian Infantry Brigade and the 51st (Middle East) Commando brought up for the final assault, against the colonial divisions and brigades holding Eritrea',
+  },
+  {
+    id: 'somalia_1941',
+    name: 'The Kenya axis: Kismayu, Mogadishu and the pursuit to Addis Ababa',
+    side: 'western',
+    from: '1941-02-14',
+    to: '1941-04-06',
+    path: [
+      [-0.3602433, 42.5409025], // Kismayu
+      [2.0349312, 45.3419183], // Mogadishu
+      [9.0358119, 38.7524315], // Addis Ababa
+    ],
+    summary:
+      'The advance from Kenya began in Italian Somaliland, took Kismayu on 14 February and Mogadishu on 25 February, and then turned north-west across the country to Addis Ababa, which fell on 6 April. The pursuit crossed the whole of Italian Somaliland and met little opposition, which is why this axis is drawn as three places rather than a chain of battles. The two axes of the campaign were never joined on the ground: this line ends at the Ethiopian capital, and the Sudan axis is drawn separately, because the country between them had neither roads nor fighting.',
+    strength:
+      'The 11th and 12th African Divisions and the 23rd (Nigerian) Brigade, with South African air support, against the Italian Somaliland garrison, whose ships were scuttled or captured at Kismayu',
+  },];

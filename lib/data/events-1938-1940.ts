@@ -17,6 +17,8 @@ export type Front =
   | 'pacific'
   | 'china'
   | 'china_burma_india'
+  | 'middle_east'
+  | 'east_africa'
   | 'americas';
 
 export type Kind =

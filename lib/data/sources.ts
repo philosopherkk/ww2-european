@@ -1774,6 +1774,627 @@ export const SOURCES: Source[] = [
       'https://www.ibiblio.org/hyperwar/UN/UK/UK-NWE-Flanders/UK-NWE-Flanders-16.html',
     usedFor:
       'The British official history’s record of the cross-Channel evacuation from Dunkirk to Dover and England during Operation Dynamo.',
+  },
+  {
+    citation: 'US Army in World War II & US Navy Combat Narratives (Riviera, Marianas, Coral Sea, Java Sea, CBI), hosted by ibiblio HyperWar.',
+    publisher: 'US Army Center of Military History / Office of Naval Intelligence, via ibiblio HyperWar',
+    url: 'https://www.ibiblio.org/hyperwar/USA/USA-E-Riviera/USA-E-Riviera-5.html',
+    usedFor:
+      'Convoy lift figures for Dragoon (151,000 troops and 21,400 vehicles), the Mobile Fleet at Tawi Tawi and San Bernardino Strait, the Coral Sea Jomard Passage approach, the Java Sea anchorages at Soerabaja and Tandjong Priok, and the Burma/Hump route operations (USA-P-Marianas, USN-CN-Coral, USN-CN-Java, USA-CBI-Command, USA-CBI-Time).',
+  },  {
+    citation:
+      '“Battle of the Coral Sea”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Battle_of_the_Coral_Sea',
+    usedFor:
+      'The two objectives the battle was fought over, the port of Port Moresby and the seaplane base at ' +
+      'Tulagi, and the fact that the action on 8 May left the Japanese with the better of the exchange in ' +
+      'tonnage while the invasion fleet turned back; the judgement printed about the result: a tactical ' +
+      'victory for Japan in ships sunk, and a strategic one for the Allies. Only this publisher gives that ' +
+      'reading, so it stands under For the record rather than in the account of the battle; that the ' +
+      'invasion fleet for Port Moresby was recalled once the carriers had lost their air group, which is ' +
+      'the reason the atlas treats the battle as turning on carrier air cover rather than on the ships ' +
+      'lost; the four days the battle ran, 4 to 8 May 1942, as the article’s own first sentence keeps ' +
+      'them; the day given for the battle, in the encyclopaedia’s caption for its photograph of the ' +
+      'American carrier Lexington blowing up: 8 May 1942 — the day the combat narrative for the theatre ' +
+      'also gives, in its own prose; what the exchange on 8 May cost: the Japanese carrier Shokaku ' +
+      'damaged, the American carrier Yorktown damaged, and the Lexington so badly that she was scuttled. ' +
+      'Under For the record, since only this publisher gives that tally; the opening of the campaign: the ' +
+      'landings on Tulagi on 3 and 4 May and the American carrier strike that damaged and sank the ' +
+      'warships supporting them; why the two fleets never closed: the American strikes through the day ' +
+      'found nothing, because the Japanese fleet lay just outside the distance the scouts could reach; ' +
+      'the distinction the encyclopaedia draws for the battle, in its own opening words: no ship sighted ' +
+      'another, and none fired on another; what the battle did to the Japanese carrier force a month ' +
+      'later: the damage to one carrier and the air losses of the other kept both out of the next battle.',
+  },
+  {
+    citation:
+      '_The Battle of the Coral Sea_ (US Navy Combat Narrative, transcribed at the HyperWar archive), ' +
+      'heading: “The Battle of the Coral Sea May 4th to May 8th”',
+    publisher:
+      'US Army in World War II / US Navy Combat Narratives, via the HyperWar archive',
+    url:
+      'https://www.ibiblio.org/hyperwar/USN/USN-CN-Coral/USN-CN-Coral-1.html',
+    usedFor:
+      'The first day of the campaign as the American narrative keeps it: intelligence at 1900 on 3 May ' +
+      'that Japanese troops were going ashore at Tulagi from transports in the harbour; the Allied ' +
+      'expectation of what Japan was about to do: that a major movement out of Rabaul would take the form ' +
+      'of a sea-borne invasion of Port Moresby, or the Lower Solomons, or both. A second publisher for the ' +
+      'object of the movement; the combat narrative’s own heading for the engagement, running it from 4 ' +
+      'to 8 May — a second publisher for the four days the battle is kept to.',
+  },
+  {
+    citation:
+      '_The Battle of the Coral Sea_ (US Navy Combat Narrative, transcribed at the HyperWar archive), ' +
+      'heading: “The Action at Tulagi May 4”',
+    publisher:
+      'US Army in World War II / US Navy Combat Narratives, via the HyperWar archive',
+    url:
+      'https://www.ibiblio.org/hyperwar/USN/USN-CN-Coral/USN-CN-Coral-2.html',
+    usedFor:
+      'The American carrier attack on Tulagi on 4 May, the force’s position that morning off Guadalcanal, ' +
+      'and the ships found fleeing from the harbour; what the 4 May strike found when it reached the ' +
+      'anchorage: gunboats, a cargo ship standing out of Tulagi Harbour, a seaplane tender and a destroyer ' +
+      'between Tulagi and Savo Island.',
+  },
+  {
+    citation:
+      '_The Battle of the Coral Sea_ (US Navy Combat Narrative, transcribed at the HyperWar archive), ' +
+      'heading: “The Action of May 8th”',
+    publisher:
+      'US Army in World War II / US Navy Combat Narratives, via the HyperWar archive',
+    url:
+      'https://www.ibiblio.org/hyperwar/USN/USN-CN-Coral/USN-CN-Coral-4.html',
+    usedFor:
+      'The day given for the battle: the combat narrative for the theatre calls 8 May the climax, the day ' +
+      'the two air attack groups struck each other, so the day is printed twice over.',
+  },
+  {
+    citation:
+      'Rickard, J, “Battle of the Coral Sea, 3-8 May 1942”, _historyofwar.org_',
+    publisher:
+      'historyofwar.org — independent military history site',
+    url:
+      'https://www.historyofwar.org/articles/battles_coral_sea.html',
+    usedFor:
+      'The end of the American carrier Lexington on 8 May: sunk by torpedoes from one of her own ' +
+      'destroyers after she had to be abandoned. A second publisher for what the day cost; the turn in ' +
+      'Japanese planning that gave Operation MO its urgency, in the independent account: the naval staff ' +
+      'had their way first, and the raid on Tokyo ended the argument; why the loss tallies are not added ' +
+      'up: the independent account for the theatre records that each side claimed more than it had sunk; ' +
+      'the independent account of the bomb hits on the Japanese carrier — a second publisher for the ' +
+      'damage given in the account of the day; that the convoy for Port Moresby was ordered back while ' +
+      'the battle was still being fought, which the encyclopaedia records and the independent account for ' +
+      'the theatre dates to the night of 7 May; the objective of Operation MO as an independent account ' +
+      'keeps it — the invasion of Port Moresby — the third publisher for the aim the battle was fought ' +
+      'over; the place the battle came to have: the first major Japanese setback of the war. A publisher ' +
+      'independent of the other two, and a second for the days the fighting is kept to.',
+  },
+  {
+    citation:
+      '“Battle of the Java Sea”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Battle_of_the_Java_Sea',
+    usedFor:
+      'The day of the action and the scale of the loss: a decisive defeat for the Allied fleet on 27 ' +
+      'February 1942, and the destruction of the ABDA fleet which followed over the next days; the ' +
+      'flagship lost: that a torpedo from the heavy cruiser Haguro struck the Dutch light cruiser De ' +
+      'Ruyter, which sank as the flooding grew, killing the commanding admiral; what the defeat cost the ' +
+      'Allies beyond the ships: the Allied fleet dissolved as a fighting force, the Dutch navy was ' +
+      'scuttled at home, and Japan took the whole of the Dutch East Indies; the composition of the ' +
+      'Combined Striking Force the sortie was made with — two heavy cruisers, three light cruisers and ' +
+      'nine destroyers — and the object of the sortie, the Japanese troop convoy. That order of battle ' +
+      'stands under For the record, since only this publisher gives it; the second Allied cruiser lost ' +
+      'that night, struck by a torpedo and sunk with almost all her crew — the second of the two cruisers ' +
+      'named as lost by the American narrative; what the sortie was for, and the day it was made: the ' +
+      'encyclopaedia has the main Allied naval force sailing northeast from Surabaya on 27 February to ' +
+      'intercept a convoy of the Japanese eastern invasion force, which is the second publisher for the ' +
+      'account’s statement of the object; the same weakness from the second publisher: crews of several ' +
+      'navies with no experience of each other’s doctrine, and a language barrier at the flagship; that ' +
+      'the force was found by a Japanese floatplane as it left port, before the two fleets met; the ' +
+      'encyclopaedia’s own loss table for the action, on both sides: the Allied cruisers and destroyers ' +
+      'sunk, and the much smaller list it gives for the Japanese escort.',
+  },
+  {
+    citation:
+      '_The Java Sea Campaign_ (US Navy Combat Narrative, transcribed at the HyperWar archive), heading: ' +
+      'THE BATTLE OF THE JAVA SEA, 23 FEBRUARY 27',
+    publisher:
+      'US Army in World War II / US Navy Combat Narratives, via the HyperWar archive',
+    url:
+      'https://www.ibiblio.org/hyperwar/USN/USN-CN-Java/USN-CN-JavaSea-15.html',
+    usedFor:
+      'Why the Allied fleet put to sea: the American narrative states plainly that the attempt to stop the ' +
+      'expedition coming in from the north-east is what brought on the battle; the combat narrative for ' +
+      'the theatre keeps the action to 27 February, day by day and hour by hour — a second publisher for ' +
+      'the day given for the battle; the span the combat narrative for the theatre itself gives the ' +
+      'battle — five days, 23 to 27 February. It stands under For the record, since the day given for the ' +
+      'battle is the day of the daylight action; why the fleet could not manoeuvre as one: that it was ' +
+      'made of ships of four nations with little chance to train together or to work out a common ' +
+      'doctrine; the signal book: that there were no flag signals or signal books the squadrons shared, ' +
+      'and no tactical plans beyond the most rudimentary; the state of the destroyers when they sailed: ' +
+      'that they had not been able to fuel the afternoon before and their supply was low, and that the ' +
+      'fuel lines at Soerabaja had been cut by bombing; that the striking force gave up the action and ' +
+      'turned back to the south on the afternoon of the 27th, and that a torpedo attack covered that ' +
+      'retirement; that the destroyers were sent in to cover the break-off, the American officer ' +
+      'concerned judging a torpedo attack the best way to cover the retirement, and the loss list the ' +
+      'campaign history gives: the two cruisers and three destroyers.',
+  },
+  {
+    citation:
+      '_The Java Sea Campaign_ (US Navy Combat Narrative, transcribed at the HyperWar archive), heading: ' +
+      'AFTERMATH OF BATTLE',
+    publisher:
+      'US Army in World War II / US Navy Combat Narratives, via the HyperWar archive',
+    url:
+      'https://www.ibiblio.org/hyperwar/USN/USN-CN-Java/USN-CN-JavaSea-16.html',
+    usedFor:
+      'The result as the American narrative records it: the Japanese kept the Allied striking force from ' +
+      'the convoys; the ships the Allies lost: the cruisers De Ruyter and Java and three destroyers, with ' +
+      'the judgement that the losses were unendurable. A second publisher for the loss of those five ' +
+      'ships; the campaign history’s own loss list for the fighting of 27 February: the two named ' +
+      'cruisers and the three named destroyers, and its verdict on what the loss amounted to; the same ' +
+      'passage’s estimate of what the enemy paid, given as a hedge rather than a total: two or three ' +
+      'cruisers and at least two or three destroyers badly hit, some of them probably sunk.',
+  },
+  {
+    citation:
+      '“Battle of the Philippine Sea”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Battle_of_the_Philippine_Sea',
+    usedFor:
+      'The part the submarines played before the air battle: two of the largest Japanese fleet carriers ' +
+      'were torpedoed and sunk by American submarines during the battle; the name the air fighting took ' +
+      'among the American aviators, and the reason for it — the disproportion of the loss ratio. Under For ' +
+      'the record, since no second publisher prints the day’s loss figures; what the battle did to ' +
+      'Japanese carrier aviation: a year spent rebuilding the carrier air groups, destroyed in two days. ' +
+      'The ground on which the outcome of the battle is described; the two days the battle lasted, 19 and ' +
+      '20 June 1944, in the article’s own first sentence; why the Japanese fleet came out at all: the ' +
+      'American fleet was heading for Saipan, and the Japanese saw a chance to fight it. Read with the ' +
+      'Marine history, which has the same trigger from the submarine reports of 15 June; the day the ' +
+      'American landings on Saipan began, 15 June 1944, printed here and by the independent account for ' +
+      'the theatre; where the Japanese expected the next blow, and how thinly the island group they came ' +
+      'to fight for was held; the battle as it looked to the Americans that week, and what the same page ' +
+      'says it cost the Japanese carrier air arm for good; what was destroyed with the aircraft: the ' +
+      'trained pilots and the reserves with them; how few pilots were left afterwards, in the ' +
+      'encyclopaedia’s own measure; what the crippled carriers were good for afterwards, and where that ' +
+      'was shown: the decisions the Japanese made in the next great battle, and the turn to suicide attack ' +
+      'from the land; how the American carrier force itself came through the day, in the encyclopaedia’s ' +
+      'comparison with the next battle.',
+  },
+  {
+    citation:
+      '_Campaign in the Marianas_ (HyperWar: US Army in World War II), chapter VII: Supporting Arms and ' +
+      'Operations — Battle of the Philippine Sea',
+    publisher:
+      'US Army in World War II / US Navy Combat Narratives, via the HyperWar archive',
+    url:
+      'https://www.ibiblio.org/hyperwar/USA/USA-P-Marianas/USA-P-Marianas-7.html',
+    usedFor:
+      'How the battle was brought on: submarines east of the Philippine Islands reporting from 15 June ' +
+      'that a Japanese fleet was massing to relieve Saipan. A second publisher for the link between the ' +
+      'landings and the fleet’s sortie; that the battle decided the fate of the landings as much as of ' +
+      'the fleet: the troop transports stood well east of Saipan until the battle was over; the ' +
+      'retirement of the Mobile Fleet to Truk and the diversion of most of its carrier air strength to ' +
+      'Rabaul, where two thirds of it was lost. A second publisher for the collapse of Japan’s carrier air ' +
+      'power; the name the day kept among American aviators, and how the day ended for the Japanese air ' +
+      'crews — a second publisher for the nickname.',
+  },
+  {
+    citation:
+      '_Campaign in the Marianas_ (HyperWar: US Army in World War II), Part Four: Guam, chapter XV: Plans ' +
+      'and Preparations',
+    publisher:
+      'US Army in World War II / US Navy Combat Narratives, via the HyperWar archive',
+    url:
+      'https://www.ibiblio.org/hyperwar/USA/USA-P-Marianas/USA-P-Marianas-15.html',
+    usedFor:
+      'The day the air battle was fought, 19 June, and the name it took, both printed in the combat ' +
+      'narrative’s account of the fighting over Guam that morning — a second publisher for the day given ' +
+      'for the battle.',
+  },
+  {
+    citation:
+      'Rickard, J, “Battle of the Philippine Sea, 19-20 June 1944”, _historyofwar.org_',
+    publisher:
+      'historyofwar.org — independent military history site',
+    url:
+      'https://www.historyofwar.org/articles/battles_philippine_sea.html',
+    usedFor:
+      'The day of the Saipan landings in the independent account, and what the operation was meant to ' +
+      'take; the Japanese carrier air strength at the start of the battle, as the independent account for ' +
+      'the theatre reckons it. Under For the record, since no second publisher prints the same total; ' +
+      'what was left flyable at the end of the first day, in the same reckoning, and why the loss is ' +
+      'described as the destruction of an air force rather than of ships; the independent account of the ' +
+      'submarine attack on the Japanese fleet while its aircraft were still taking off, the second ' +
+      'publisher for the underwater part of the battle; that the fleet carrier hit by the submarine was ' +
+      'lost later the same day, which is what makes a single submarine hit a battle-deciding fact rather ' +
+      'than a nuisance; the nickname, the two days and the scale of the result, from a publisher ' +
+      'independent of both the encyclopaedia and the Marine history — a third for the name the day kept, ' +
+      'and and a second for the battle being a crushing American victory.',
+  },
+  {
+    citation:
+      '“Siege of Myitkyina”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Siege_of_Myitkyina',
+    usedFor:
+      'The end of the siege: that on 3 August the garrison’s commander ordered the town abandoned and ' +
+      'killed himself, obeying in the letter an order to defend the place to the death, while Chinese and ' +
+      'American troops cleared the ground. A second publisher for the day given for the town’s fall; ' +
+      'whose plan the rapid march on the town was, and why the airstrip beside it mattered to it: an ' +
+      'invaluable source of supplies and air cover in the jungle fighting of the theatre. Under For the ' +
+      'record, since only the encyclopaedia names him here; why the place mattered: the capture of the ' +
+      'town and its airfield is what allowed the Ledo Road to be opened, joining the old Burma Road to ' +
+      'China; the surprise with which the airfield was taken: the garrison, not knowing where the ' +
+      'attacking troops were, poured gasoline over the airfield and fell back into the town itself; the ' +
+      'object of the whole advance, which was the airstrip beside the town rather than the town, because ' +
+      'it could carry supplies and air cover into the jungle theatre; the day the encyclopaedia gives for ' +
+      'the capture of the northern airfield, and the easing of Japanese resistance in the week after it; ' +
+      'how the troops to hold the field were brought in — by transport aircraft — and how spent the units ' +
+      'already on the ground were; what the fighting for the town did to the Chinese units engaged in it, ' +
+      'in the encyclopaedia’s own words.',
+  },
+  {
+    citation:
+      'Charles F. Romanus and Riley Sunderland, _Stilwell’s Command Problems_ (US Army in World War II: ' +
+      'China-Burma-India Theater, transcribed at the HyperWar archive), chapter VI: The Drive for Myitkyina',
+    publisher:
+      'US Army in World War II / US Navy Combat Narratives, via the HyperWar archive',
+    url:
+      'https://www.ibiblio.org/hyperwar/USA/USA-CBI-Command/USA-CBI-Command-6.html',
+    usedFor:
+      'The day the principal airstrip at Myitkyina was seized, 17 May, and the effect on South East Asia ' +
+      'Command. Only this publisher gives that day, so it stands under For the record and not in the ' +
+      'account of the battle; the campaign history’s own verdict on the long argument over whether the ' +
+      'place could be taken at all; the purpose the campaign history for the theatre gives for taking the ' +
+      'town, in its own words: an air effort from bases in China behind the operations in the Pacific.',
+  },
+  {
+    citation:
+      'Charles F. Romanus and Riley Sunderland, _Stilwell’s Command Problems_ (US Army in World War II: ' +
+      'China-Burma-India Theater, transcribed at the HyperWar archive), chapter XI: The China Crisis of ' +
+      '1944',
+    publisher:
+      'US Army in World War II / US Navy Combat Narratives, via the HyperWar archive',
+    url:
+      'https://www.ibiblio.org/hyperwar/USA/USA-CBI-Command/USA-CBI-Command-11.html',
+    usedFor:
+      'The campaign history for the theatre refers to Myitkyina as a place the Chinese had held since 3 ' +
+      'August, so the day of the town’s fall is printed twice over.',
+  },
+  {
+    citation:
+      'Charles F. Romanus and Riley Sunderland, _Stilwell’s Command Problems_ (US Army in World War II: ' +
+      'China-Burma-India Theater, transcribed at the HyperWar archive), chapter I: The Last Preparations',
+    publisher:
+      'US Army in World War II / US Navy Combat Narratives, via the HyperWar archive',
+    url:
+      'https://www.ibiblio.org/hyperwar/USA/USA-CBI-Command/USA-CBI-Command-1.html',
+    usedFor:
+      'Why the town was fought for: the campaign history for the theatre makes holding the ' +
+      'Myitkyina-Mogaung area the precondition of the Ledo Road and the pipeline to China, as the ' +
+      'encyclopaedia also states; why the airfield mattered to the airlift before it was taken: the ' +
+      'enemy’s fighters pushed the transports on to a longer route, flown higher, at the price of fuel and ' +
+      'cargo; what the planners expected the field to do for the airlift once it was in Allied hands: a ' +
+      'wider and lower way over the range.',
+  },
+  {
+    citation:
+      'Charles F. Romanus and Riley Sunderland, _Stilwell’s Command Problems_ (US Army in World War II: ' +
+      'China-Burma-India Theater, transcribed at the HyperWar archive), chapter V: The Burma Campaign in ' +
+      'the Balance',
+    publisher:
+      'US Army in World War II / US Navy Combat Narratives, via the HyperWar archive',
+    url:
+      'https://www.ibiblio.org/hyperwar/USA/USA-CBI-Command/USA-CBI-Command-5.html',
+    usedFor:
+      'The monsoon as the limit on the campaign in north Burma, and the doubt in the British staffs ' +
+      'whether the road could be brought forward in time. That doubt is one account’s reading, so it ' +
+      'stands under For the record.',
+  },
+  {
+    citation:
+      'Charles F. Romanus and Riley Sunderland, _Stilwell’s Command Problems_ (US Army in World War II: ' +
+      'China-Burma-India Theater, transcribed at the HyperWar archive), chapter XII: The End of CBI Theater',
+    publisher:
+      'US Army in World War II / US Navy Combat Narratives, via the HyperWar archive',
+    url:
+      'https://www.ibiblio.org/hyperwar/USA/USA-CBI-Command/USA-CBI-Command-12.html',
+    usedFor:
+      'How soon the road the town had been taken for was finished. The date is the campaign history’s for ' +
+      'the theatre, and stands under For the record; the tonnage the campaign history for the theatre ' +
+      'prints for the airlift — 3,706 long tons for the whole of 1942 and 61,151 tons for 1943 — figures ' +
+      'that can be attributed only to that publisher, since the publishers do not count in the same way; ' +
+      'the best single month of the airlift, in the American campaign history, and which organisations ' +
+      'flew it — the air transport command, the Chinese airline under government contract and other ' +
+      'contract carriers; how the road and the airlift ended up side by side: what the campaign history ' +
+      'says happened to the jam in the Assam line of communications by the end of 1944.',
+  },
+  {
+    citation:
+      'Louis Morton, _Time Runs Out in CBI_ (US Army in World War II: China-Burma-India Theater, ' +
+      'transcribed at the HyperWar archive), chapter III: Beginning the Fall Campaign in North Burma',
+    publisher:
+      'US Army in World War II / US Navy Combat Narratives, via the HyperWar archive',
+    url:
+      'https://www.ibiblio.org/hyperwar/USA/USA-CBI-Time/USA-CBI-Time-3.html',
+    usedFor:
+      'Another volume of the same campaign history for the theatre, the one that covers the fall campaign ' +
+      'in north Burma: the day it puts the town’s fall, and the training the Chinese divisions took in ' +
+      'hand after it.',
+  },
+  {
+    citation:
+      '“The Hump”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/The_Hump',
+    usedFor:
+      'The two losses that made the airlift necessary: the fall of Rangoon and the Japanese seizure of ' +
+      'Myitkyina on 8 May 1942, which between them cut the Allied access to the Burma Road; when the ' +
+      'airlift started and why: the operation opened in April 1942 after Japanese forces closed the Burma ' +
+      'Road, and flew daily until it was scaled down from August 1945; the consequence of that day: the ' +
+      'loss of the town, coming with the loss of Rangoon, is what cut the Allied access to the Burma Road ' +
+      'and made the airlift necessary; the total carried over the whole lift: about 650,000 tons in 42 ' +
+      'months, at a cost in aircraft and crews. Under For the record and under What is still argued over, ' +
+      'since no second publisher prints a comparable total; where the airlift got its name, the ' +
+      'encyclopaedia’s account of the pilots’ word for the range they crossed, which the official air ' +
+      'force history also gives; the encyclopaedia’s own statement that air was the only practicable way ' +
+      'to keep China supplied, which makes the point the official air force history makes about the route ' +
+      'being a theatre’s sole means of supply a fact two publishers reach separately; the route the ' +
+      'airlift replaced: the encyclopaedia records the Burma Road as the only land route left after the ' +
+      'Japanese cut it — a second publisher for air being the only way in; the height the crossings were ' +
+      'made at: the encyclopaedia prints often 15,000 feet, and the air force history for the route gives ' +
+      'no figure for height, so the number stands under For the record and out of the account of the ' +
+      'lifting; where the ferries actually flew from: the fields the British laid out in Assam, and when ' +
+      'they were ready; what made the crossing dangerous, as the encyclopaedia lists it: the charts, the ' +
+      'navigation aids and the weather reports the crews did not have.',
+  },
+  {
+    citation:
+      '_Services Around the World_ (The Army Air Forces in World War II, Volume VII, transcribed at the ' +
+      'HyperWar archive), chapter V: Airline to China',
+    publisher:
+      'US Army in World War II / US Navy Combat Narratives, via the HyperWar archive',
+    url:
+      'https://www.ibiblio.org/hyperwar/AAF/VII/AAF-VII-5.html',
+    usedFor:
+      'What the route carried: that for nearly three years every vehicle, gallon of fuel, weapon, round of ' +
+      'ammunition, typewriter and ream of paper that reached Free China came in by air from India; the ' +
+      'Air Transport Command’s own standing for this route among all its lines: no other airway was the ' +
+      'sole means by which a combat theatre was fed; the opening of the lift: twenty-six aircraft and ' +
+      'crews sent forward from Morrison Field in Florida to India between 19 April and 13 May 1942. A ' +
+      'second publisher for the April 1942 opening; how small the lift was at first: 85 tons carried to ' +
+      'China in July 1942 by a handful of C-47s, with about 221 tons flown the same month by the China ' +
+      'National Aviation Corporation. Under For the record and under What is still argued over, since no ' +
+      'second publisher gives these figures; what gave the route its name: the main range the pilots ' +
+      'crossed, the path between Assam and the Chinese side of the frontier, often at fifteen thousand ' +
+      'feet; the Air Forces’ own dated reference for the start of the ferry service’s operations, 20 May ' +
+      '1942, which is why the month stands and not a first day of the airlift; why the airlift began, in ' +
+      'the words of the air force history for the theatre: the fall of Rangoon in March 1942 cut off the ' +
+      'flow of supplies by land over the Burma Road, and there remained only the air.',
+  },
+  {
+    citation:
+      'Louis Morton, _Time Runs Out in CBI_ (US Army in World War II: China-Burma-India Theater, ' +
+      'transcribed at the HyperWar archive), chapter X: Role of the India-Burma Base',
+    publisher:
+      'US Army in World War II / US Navy Combat Narratives, via the HyperWar archive',
+    url:
+      'https://www.ibiblio.org/hyperwar/USA/USA-CBI-Time/USA-CBI-Time-10.html',
+    usedFor:
+      'The American end of the deadline for Rangoon: the Joint Chiefs reserved the right to transfer ' +
+      'resources to China if the city did not fall before the monsoon began. A second publisher for the ' +
+      'weather the campaign was fought against; why the port mattered to the reopening of the overland ' +
+      'route to China, which Stilwell had pressed for from 1942 on as the prewar line of communications ' +
+      'from Rangoon to Kunming; the race as the campaign history for the theatre describes it: the land ' +
+      'advance was meant to reach Rangoon before the amphibious attack then set for 2 May. A second ' +
+      'publisher for a May date, and the reason no single day is printed for the capture; the day the ' +
+      'campaign history for the theatre gives for the occupation of the city, 3 May, one day after the ' +
+      'amphibious assault it says was set for 2 May — the reason the spread of days is left under What is ' +
+      'still argued over rather than settled on the map; that the garrison had already left when the town ' +
+      'was taken — the official history’s own words are that the Japanese were gone — which is the second ' +
+      'publisher’s account of an empty town, the first being the encyclopaedia’s; the decision to take ' +
+      'the capital by assault from the sea and the air, and the day the assault was set for, which is what ' +
+      'the account of the plan rests on.',
+  },
+  {
+    citation:
+      '“Operation Dracula”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Operation_Dracula',
+    usedFor:
+      'The deadline the campaign ran against: the plan was revived in March 1945 because Rangoon had to be ' +
+      'taken before the monsoon, which was expected in the second week of May, to keep the lines of ' +
+      'communication of the armies in Burma open; the day the city was found empty: patrols on the ' +
+      'morning of 1 May reported that the Japanese had withdrawn. That is the day given for the ' +
+      'occupation; the spread of days is under What is still argued over; the landings on 2 May, the day ' +
+      'the assault division came ashore on both banks of the Rangoon river, which the official history ' +
+      'also gives as the date the amphibious attack was set for; that the monsoon broke on the same day ' +
+      'it was reached, earlier than the planners had allowed for — the fact that makes the capture a race ' +
+      'won by days rather than weeks; that the garrison had left several days before the assault and the ' +
+      'division occupied the city and its docks without opposition; how far the landward column had to ' +
+      'come, and what slowed it: the fight at Pegu between the coastal road and the seaborne plan; what ' +
+      'the troops who came in by air and sea actually did at the mouth of the river, in the ' +
+      'encyclopaedia’s own words, including the casualties they took from their own bombing; how the ' +
+      'empty city was confirmed before the assault: the aircraft that saw nobody, and the message on the ' +
+      'roof of the jail; what the withdrawing garrison left behind, which the account of the battle has ' +
+      'to answer for: the looting after the government went, and the jail the Japanese fired; how the ' +
+      'city met the troops who arrived, and the order they were asked to restore.',
+  },
+  {
+    citation:
+      '“Anglo-Iraqi War”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Anglo-Iraqi_War',
+    usedFor:
+      'The opening of the air attack on 2 May 1941; the Iraqi investment of RAF Habbaniya; the first ' +
+      'British reinforcements landed at Basra in April 1941. German air support based on Mosul; the ' +
+      'armistice that ended the fighting; the day Wikipedia gives, and the four officers.',
+  },
+  {
+    citation:
+      '“The Middle East Series, Volume II: The Middle East Eastwards, May to September 1941, chapter 9: ' +
+      'Iraq, May 1941”, _Military History Series — HyperWar Foundation_',
+    publisher:
+      'HyperWar / Military History Series',
+    url:
+      'https://www.ibiblio.org/hyperwar/UN/UK/UK-Med-II/UK-Med-2-9.html',
+    usedFor:
+      'The treaty base rights at Basra and Habbaniya; the Luftwaffe detachment at Mosul. Rashid Ali fled ' +
+      'Iraq on 30 May 1941; why Iraq mattered as a route to Egypt; the day the official history gives for ' +
+      'the coup.',
+  },
+  {
+    citation:
+      '“Syria–Lebanon campaign”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Syria-Lebanon_campaign',
+    usedFor:
+      'The strategic reason for the invasion. Beirut was within reach when the French asked for an ' +
+      'armistice. Damascus as an objective of the invasion; the men of the Vichy force who went over to ' +
+      'the Free French; who was sent home under the convention.',
+  },
+  {
+    citation:
+      '“The Middle East Series, Volume II: The Middle East Eastwards, May to September 1941, chapter 10: ' +
+      'Syria and Lebanon, June–July 1941”, _Military History Series — HyperWar Foundation_',
+    publisher:
+      'HyperWar / Military History Series',
+    url:
+      'https://www.ibiblio.org/hyperwar/UN/UK/UK-Med-II/UK-Med-2-10.html',
+    usedFor:
+      'The campaign opened on 8 June 1941; the three airfields the campaign was to take; the convention at ' +
+      'Acre of 14 July 1941. Vichy France held the Mandate after 1940.',
+  },
+  {
+    citation:
+      '“The Middle East Series, Volume II: The Middle East Eastwards, May to September 1941, chapter 13: ' +
+      'Persia, August–September 1941”, _Military History Series — HyperWar Foundation_',
+    publisher:
+      'HyperWar / Military History Series',
+    url:
+      'https://www.ibiblio.org/hyperwar/UN/UK/UK-Med-II/UK-Med-2-13.html',
+    usedFor:
+      'Why the route mattered, in the official history; the objective of the attack from Iraq; the day the ' +
+      'operation began; how the official history dates the collapse; why the port at the head of the Gulf ' +
+      'mattered; how large the base at Basra was being made; the same route as the invasion was planned, ' +
+      'in the official history; the day the invasion began; the oilfields as a first objective; why the ' +
+      'province was worth invading for; the route as the Allies planned it in 1941.',
+  },
+  {
+    citation:
+      '“Anglo-Soviet invasion of Iran”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Anglo-Soviet_invasion_of_Iran',
+    usedFor:
+      'The division’s line of advance from Basra; how soon Ahvaz was reached; the one place where the ' +
+      'advance was stopped; how the attack was described by those who made it; the naval part of the day ' +
+      'at Khorramshahr; what was intended after Ahvaz; a different date for the abdication; who prepared ' +
+      'the defence at Ahvaz; how the fighting at Ahvaz stopped; where the two advances met, and in which ' +
+      'order; the pressure on Iran before the invasion; the formations that crossed from Basra; the fight ' +
+      'on the Karun on the first day; the plan north from Ahvaz, stated as a plan. The waypoints of “The ' +
+      'invasion of Iran: from Basra into Khuzestan” are Basra, Khorramshahr and Ahvaz.',
+  },
+  {
+    citation:
+      '“The Middle East Series, Volume I: The War in the Middle East 1939–1942, chapter 21: East Africa ' +
+      'and the Somalilands”, _Military History Series — HyperWar Foundation_',
+    publisher:
+      'HyperWar / Military History Series',
+    url:
+      'https://www.ibiblio.org/hyperwar/UN/UK/UK-Med-I/UK-Med-I-21.html',
+    usedFor:
+      'Why Keren had to be taken to reach Asmara; the day the battle of Agordat was decided; what the ' +
+      'victory made possible; the pursuit that reached the capital; the judgement about whether the ' +
+      'capital was worth attacking; the Emperor’s return to the capital; what the capture made possible ' +
+      'for the rest of the war; the official history’s judgement on the campaign; the road arc the capital ' +
+      'sat at the end of. Agordat carried on 1 February 1941, where the two routes from Kassala joined; ' +
+      'the ground the axis starts from; the two routes to Agordat; why the axis had to go through Keren; ' +
+      'the last two places on the axis; the pursuit from Somaliland to the Ethiopian capital. The ' +
+      'waypoints of “The Sudan axis: from Gallabat and Kassala to Massawa” are Gallabat, Kassala, Agordat, ' +
+      'Keren and Massawa. The waypoint of “The Kenya axis: Kismayu, Mogadishu and the pursuit to Addis ' +
+      'Ababa” is Addis Ababa.',
+  },
+  {
+    citation:
+      '“East African campaign (World War II)”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/East_African_campaign_(World_War_II)',
+    usedFor:
+      'The retreat from Agordat on the night of 31 January/1 February, in Wikipedia; what was at stake in ' +
+      'the theatre, in Wikipedia; the quality of the troops holding Eritrea, in Wikipedia; the ground, in ' +
+      'Wikipedia; the fall of Keren, and the length of the fighting, in Wikipedia; the same date in ' +
+      'Wikipedia; the armed return, in photographs of the capital; both in one note of Wikipedia’s own: ' +
+      'the day the Emperor left the capital, and the day Ethiopia keeps now; the fall of Keren in ' +
+      'Wikipedia. Mogadishu taken without a fight. Addis Ababa, 6 April 1941; the ships at Kismayu. The ' +
+      'waypoint of “The Kenya axis: Kismayu, Mogadishu and the pursuit to Addis Ababa” is Mogadishu.',
+  },
+  {
+    citation:
+      '“The Middle East Series, Volume I: The War in the Middle East 1939–1942, chapter 23: The Battle of ' +
+      'Keren”, _Military History Series — HyperWar Foundation_',
+    publisher:
+      'HyperWar / Military History Series',
+    url:
+      'https://www.ibiblio.org/hyperwar/UN/UK/UK-Med-I/UK-Med-I-23.html',
+    usedFor:
+      'What the Italians judged after the attack on Gallabat in November 1940; why the attack had to be ' +
+      'delivered here; the Italian forces in Eritrea; the alternative to a frontal attack, and why it was ' +
+      'rejected; what the weeks before the final assault were spent on; the bombardment that opened the ' +
+      'final assault on 15 March 1941; the cost of the battle; the Italian troops in Eritrea, in the ' +
+      'account that alone gives them. The waypoint of “The Sudan axis: from Gallabat and Kassala to ' +
+      'Massawa” is Asmara.',
+  },
+  {
+    citation:
+      '“Persian Corridor”, _Wikipedia_',
+    publisher:
+      'Wikimedia Foundation',
+    url:
+      'https://en.wikipedia.org/wiki/Persian_Corridor',
+    usedFor:
+      'How the stores moved through Iran; the Caspian stage of the route; the Caspian port the supplies ' +
+      'left from; the water crossing to the Soviet Union; how the route came into Allied hands; the ' +
+      'command that ran the traffic; the equipment sent to work the railway; the rolling stock supplied ' +
+      'for the line; why the traffic grew in 1943; the tonnage share, in the article’s own words; the ' +
+      'crossing this line draws; the stages this line does not draw. The waypoints of “The Persian ' +
+      'Corridor: the Caspian crossing to Baku and Makhachkala” are Nowshahr, Baku and Makhachkala.',
+  },
+  {
+    citation:
+      '“The Middle East Series, Volume I: The War in the Middle East 1939–1942, chapter 22: The Middle ' +
+      'East, June 1940 to June 1941 (the southern and eastern flanks)”, _Military History Series — ' +
+      'HyperWar Foundation_',
+    publisher:
+      'HyperWar / Military History Series',
+    url:
+      'https://www.ibiblio.org/hyperwar/UN/UK/UK-Med-I/UK-Med-I-22.html',
+    usedFor:
+      'How near the city the advance was at the end of March; the day the capital fell, in the official ' +
+      'history; the garrisons cut off by the fall of the city; the air war that followed the capture. ' +
+      'Kismayu taken on 14 February 1941. The waypoint of “The Kenya axis: Kismayu, Mogadishu and the ' +
+      'pursuit to Addis Ababa” is Kismayu.',
   },];
 
 /** Figures that are genuinely disputed, shown so readers know the range. */
@@ -2318,4 +2939,269 @@ export const UNCERTAINTIES = [
       'the contemporary FRUS record and Wikipedia agree on 20 January 1939 for his dismissal as ' +
       'President of the Reichsbank, so the card is dated 20 January 1939 and leaves the November 1937 ' +
       'day in the note.',
+  },
+  {
+    topic:
+      'Orders of battle and losses on the Coral Sea, Java Sea, Philippine Sea and Hump lines',
+    range:
+      'Wikipedia lists 650,000 tons over 42 months for the Hump airlift, 2,300 Allied killed and 5 warships sunk at the Java Sea, 7 fleet and 8 light carriers at the Philippine Sea, and 2 fleet carriers with 128 aircraft at the Coral Sea; the HyperWar official volumes reached here confirm the anchorages, passages, and operational dates without repeating those totals, so the figures sit here rather than on the map lines.',
+  },  {
+    topic:
+      'The day of the Tulagi landings, 3 to 4 May 1942',
+    range:
+      'The encyclopaedia gives 3–4 May and dates the landings themselves to 3 May; the combat narrative ' +
+      'for the neighbouring theatre has the ships in Tulagi Harbor gone on 4 May, the day the American ' +
+      'carriers struck. The card prints the attack, not the landing day.',
+  },
+  {
+    topic:
+      'Whether the Coral Sea was a Japanese tactical victory',
+    range:
+      'The encyclopaedia says the battle was a tactical victory for Japan in terms of ships sunk and a ' +
+      'strategic check overall; the independent account calls it the first major Japanese setback of the ' +
+      'war. The card prints the check, not the verdict.',
+  },
+  {
+    topic:
+      'The end of the Java Sea action and the destroyers lost',
+    range:
+      'The combat narrative for the theatre puts the action ended by 5 p. m. local time on 27 February and ' +
+      'names the destroyers Kortenaer, Electra and Jupiter among the losses; no other account reachable ' +
+      'from here gives either.',
+  },
+  {
+    topic:
+      'Flag Officer Doorman’s death',
+    range:
+      'The encyclopaedia kills him with his own ship, which went down to progressive flooding over several ' +
+      'hours; the campaign history for the theatre lists the ship among the lost without the officer, and ' +
+      'no account here fixes the hour or the position.',
+  },
+  {
+    topic:
+      'What the Japanese escort lost, 27 February 1942',
+    range:
+      'The campaign history for the theatre hedges it at two or three cruisers and at least two or three ' +
+      'destroyers severely hit, some of them probably sunk; the encyclopaedia’s loss table for the same ' +
+      'action gives 36 killed and three destroyers and one transport damaged. Neither total is printed in ' +
+      'the account of the battle.',
+  },
+  {
+    topic:
+      'The Japanese carrier losses on 19 June 1944',
+    range:
+      'The combat narrative for the theatre prints 90 per cent of the air groups destroyed in two days; ' +
+      'the independent account prints 430 aircraft available and 102 left in one carrier division, and a ' +
+      'fleet carrier sunk by a submarine at 16.28. No two of these figures are the same measure, so the ' +
+      'card prints none of them.',
+  },
+  {
+    topic:
+      'Where the 1st Mobile Fleet retired after the Philippine Sea',
+    range:
+      'The combat narrative for the theatre has the fleet’s commander retiring to Truk after most of his ' +
+      'carrier air strength had been diverted to Rabaul and two thirds of it lost there; no other account ' +
+      'here covers the retirement.',
+  },
+  {
+    topic:
+      'The Myitkyina airfield’s first assault, 17 May 1944',
+    range:
+      'The combat narrative for the theatre dates the seizure of the principal airstrip to 17 May and ' +
+      'calls it a stunning surprise to South East Asia Command; the campaign history for the theatre does ' +
+      'not give the day, so the card’s account of the fighting does not either.',
+  },
+  {
+    topic:
+      'The death of the Japanese commander at Myitkyina',
+    range:
+      'The encyclopaedia alone has General Genzo Mizukami ordering the town abandoned on 3 August and ' +
+      'taking his own life.',
+  },
+  {
+    topic:
+      'When the Hump airlift began',
+    range:
+      'The encyclopaedia begins the operation in April 1942, after the Burma Road was blocked; the air ' +
+      'force history for the route dates the India-China Ferrying Service to 20 May 1942 and the first ' +
+      'drafts of aircraft to 19 April to 13 May 1942; the campaign history for the theatre has 85 tons ' +
+      'delivered in July 1942. This site’s line begins on 8 April 1942.',
+  },
+  {
+    topic:
+      'The tonnage flown over the Hump',
+    range:
+      'The encyclopaedia gives about 650,000 tons over 42 months; the campaign history for the theatre ' +
+      'gives 3,706 long tons for all of 1942, 61,151 tons for 1943 and 35,131 tons in October 1944 alone; ' +
+      'the air force history has 85 tons in July 1942. These are not the same totals and none is printed ' +
+      'in the account of the route.',
+  },
+  {
+    topic:
+      'The day Rangoon was occupied, 1 to 3 May 1945',
+    range:
+      'The campaign history for the theatre has the troops landing on the morning of 1 May and Rangoon ' +
+      'occupied the day after, 3 May; the encyclopaedia has patrols finding the town empty on the morning ' +
+      'of 1 May and the assault divisions landing on 2 May. The card is dated to the month.',
+  },
+  {
+    topic:
+      'The day Rashid Ali seized power',
+    range:
+      'The official history puts the seizure of power on 3 April 1941; Wikipedia puts it on 1 April, the ' +
+      'day after the Regent fled Baghdad for RAF Habbaniya. Both accounts give April, and the card is ' +
+      'dated 2 May 1941, the day the air attack began, so no other day in the campaign turns on the ' +
+      'difference.',
+  },
+  {
+    topic:
+      'The day Reza Shah abdicated',
+    range:
+      'The line begins on 25 August 1941, the day the invasion began. The official history dates the fall ' +
+      'of the government and the Shah’s abdication to 28 August; Wikipedia dates the abdication to 16 ' +
+      'September. Neither day is given as a date, because the month is the same either way, and this list ' +
+      'is where the disagreement is kept.',
+  },
+  {
+    topic:
+      'Casualties of the invasion',
+    range:
+      'No casualties are given for this operation, because neither account gives any. The operation is ' +
+      'described as moving against little opposition except at Ahvaz, where an attack was repelled by ' +
+      'tanks and infantry before the news of the government’s fall reached the defenders.',
+  },
+  {
+    topic:
+      'The end of the East African campaign',
+    range:
+      'The two lines end at 8 April and 6 April 1941, which is where they stop, and the campaign is not ' +
+      'dated on the map. Wikipedia dates the campaign from 10 June 1940 to 27 November 1941, with ' +
+      'guerrilla warfare after that, and the last fighting was in Ethiopia and not on either of these axes.',
+  },
+  {
+    topic:
+      'Casualties and strength in East Africa',
+    range:
+      'No figures are given beside the lines. The only account that gives any gives campaign-wide totals ' +
+      'in an infobox, including 1,154 killed and 74,550 wounded or sick among the British and Imperial ' +
+      'forces and 16,966 Italians killed, and states that the figures for Italian East Africa exclude two ' +
+      'fronts; those numbers cover more than the offensive drawn here, and no comparable figure is given ' +
+      'for the offensive drawn here.',
+  },
+  {
+    topic:
+      'Italian losses at Keren',
+    range:
+      'Only one figure for the Italian dead is given anywhere here, and it is the Eritrean commander’s own ' +
+      'reckoning of 3,000 killed, from the same account as the British figures. No other account here ' +
+      'gives Italian losses for this battle, and prisoners are counted differently by the two accounts, so ' +
+      'no Italian total appears on the map.',
+  },
+  {
+    topic:
+      'When the battle of Keren began',
+    range:
+      'The date given is 15 March 1941, the day the bombardment and the final assault were delivered. The ' +
+      'official history describes fighting from 3 February, and Wikipedia calls the whole thing a battle ' +
+      'of 53 days, which counts from the first clashes in that month. Both are said in the text above.',
+  },
+  {
+    topic:
+      'How much of the aid the corridor carried',
+    range:
+      'No percentage is given beside the route. The only account that states one gives 7.9 million long ' +
+      'tons of the 17.5 million shipped, about 45 per cent, and the totals kept by the Soviet, British and ' +
+      'American records differ, so it is kept in this list rather than in the text, as that account’s own.',
+  },
+  {
+    topic:
+      'Which ports the corridor used',
+    range:
+      'The line draws one Caspian crossing only, from Nowshahr, because that is the port named as the main ' +
+      'one for supplies shipped across the Caspian. The same account lists Bushehr and Bandar Shahpur, and ' +
+      'Basra and Umm Qasr in Iraq, as the main inbound Gulf ports, and Bandar Anzali, Bandar Abbas, ' +
+      'Chabahar, Amir Abad and others as corridor ports besides, so one crossing shown is a ' +
+      'simplification, and is stated here.',
+  },
+  {
+    topic:
+      'The harbour, road and railway works on the route',
+    range:
+      'No mileage of new road, rail or harbour work is given. The account followed here lists the ' +
+      'locomotives and about 3,000 items of rolling stock and states that American and British crews ' +
+      'worked the trains and trucks, and gives no construction totals, so none is given.',
+  },
+  {
+    topic:
+      'Whether the capital was worth attacking',
+    range:
+      'The date given is the day of the capture, not the argument about it. The official history records ' +
+      'that the commander-in-chief doubted the capture would achieve any great strategical purpose and ' +
+      'allowed the advance to continue when his subordinate asked to press on; no second account records ' +
+      'that exchange, so it is told here as one account’s version of a decision.',
+  },
+  {
+    topic:
+      'How complete a liberation this was',
+    range:
+      'The capital fell in April 1941, and the same account dates the campaign to 27 November 1941 with ' +
+      'guerrilla warfare in Ethiopia after that. Western Ethiopia, where the garrisons on the Gojjam road ' +
+      'stood, was not cleared when the city was entered, and the last fighting in the country was months ' +
+      'later and hundreds of miles to the north.',
+  },
+  {
+    topic:
+      'How far north the column from Iraq got before resistance stopped',
+    range:
+      'The line stops at Ahvaz, which is the furthest place on this axis that either account gives as an ' +
+      'objective reached. Both record that the plan was to drive on through the Zagros passes to Qazvin, ' +
+      'there to meet the Soviets coming south; ground held beyond Ahvaz before the fighting ceased is not ' +
+      'stated by either, so it is not drawn.',
+  },
+  {
+    topic:
+      'Which Caspian port carried the corridor’s traffic',
+    range:
+      'The crossing is drawn from Nowshahr because that is the port named as the main one for supplies ' +
+      'shipped out across the Caspian. The same account also lists Bandar Anzali, Bandar Abbas, Chabahar, ' +
+      'Amir Abad and Bandar Torkoman among the corridor’s ports, and other accounts give the greater share ' +
+      'to Bandar Pahlavi, so the single Caspian crossing drawn here leaves those others out. On the Soviet ' +
+      'shore the same account names two destinations, and both are drawn.',
+  },
+  {
+    topic:
+      'The dates the corridor line is drawn for',
+    range:
+      'The line is drawn from October 1941, after the invasion and the first through traffic, to the end ' +
+      'of the war in Europe, because that is the period for which the route was worked as a supply line. ' +
+      'The account followed here gives no month for the opening or the closing of the route, so the two ' +
+      'ends of the line are chosen from the events that bound it and are not given as dates taken from a ' +
+      'page.',
+  },
+  {
+    topic:
+      'The Italian order of battle in Eritrea',
+    range:
+      'No order of battle is given beside the line. The official history gives the dispositions at the end ' +
+      'of December 1940 as three colonial divisions and three colonial brigades in Eritrea under General ' +
+      'Frusci, and three colonial brigades at Gallabat and Metemma. Those are the troops available when ' +
+      'the attack was planned, not a count in the field in January 1941, and no other account gives them.',
+  },
+  {
+    topic:
+      'Where the Sudan axis begins on the map',
+    range:
+      'The line begins at Gallabat, on the frontier, because the fighting that led up to this offensive ' +
+      'began with the frontier posts, and the official history names Gallabat among the ground lost in ' +
+      '1940 and proposed for attack in November. The advance of January 1941 itself started from Kassala, ' +
+      'which is the second place on the line.',
+  },
+  {
+    topic:
+      'The date Mogadishu was entered',
+    range:
+      'The line prints no date for Mogadishu. The official history puts the capture of Kismayu and ' +
+      'Mogadishu together in the same February advance and gives the pursuit that followed as over 1,000 ' +
+      'miles; only Wikipedia dates the entry to 25 February 1941, and no other account here gives the day, ' +
+      'so the text says later in the month instead of a date.',
   },];

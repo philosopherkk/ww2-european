@@ -2149,4 +2149,32 @@ export const EVENTS_1943_1945: WW2Event[] = [
       }
     }
   },
-];
+  {
+    id: 'persian_corridor_1943',
+    date: '1943-01-01',
+    precision: 'month',
+    title: 'The Persian Corridor: supplies for the Soviet Union across Iran',
+    kind: 'home_front',
+    fronts: ['middle_east'],
+    countries: ['United Kingdom', 'United States', 'Soviet Union', 'Iran'],
+    figures: ['roosevelt', 'stalin'],
+    note: 'The tonnage share is the Wikipedia article’s own: 7.9 of the 17.5 million long tons of American Lend-Lease, 45 per cent, sent through Iran. No other account repeats it, so it stays out of the text.',
+    mapNote: 'The crossing drawn here is the Caspian one: stores carried up the Gulf and across Iran were loaded on ships on the Iranian shore and landed at Baku and Makhachkala.',
+    levels: {
+      primary: {
+        cause: 'After Germany attacked the Soviet Union in June 1941, Britain and the United States promised war supplies to the Red Army. One practical way to deliver them ran through Iran, from the Persian Gulf to the Caspian Sea.',
+        what: 'Ships unloaded at ports on the Gulf, and the stores went north by rail and in long truck convoys across Iran. Some were reloaded onto ships to cross the Caspian Sea, and others went forward by road the whole way.',
+        consequence: 'The corridor carried supplies to the Soviet Union until the war ended, and it tied Iran to the Allied war effort completely: its communications and its railway were worked by foreign armies for the rest of the war.',
+      },
+      secondary: {
+        cause: 'The route began in the United States and Britain with ships sailing out and back around the Cape of Good Hope to the Persian Gulf, and it existed because the Trans-Iranian railway offered a way to move supplies from the Gulf into the Soviet Union. To use it, Britain and the Soviet Union pressured neutral Iran and, in August 1941, invaded, arrested the monarch, sent him into exile and took control of Iran’s communications and the railway.',
+        what: 'Most of the supplies arrived by ship at Gulf ports and went north by railroad or in long truck convoys, and were then handed to ships for the Caspian crossing. The American forces running the traffic were first the Iran-Iraq Service Command, later the Persian Gulf Service Command, and the equipment sent to work the demanding railway included large numbers of American diesel locomotives, better suited to it than steam, and about 3,000 items of rolling stock.',
+        consequence: 'Once the Axis powers were cleared from the Mediterranean in 1943, cargo convoys could run through the Suez Canal and the Red Sea to Iran, which shortened the passage and enlarged the flow. The political price was paid by Iranians, whose country had been neutral and whose ports, roads and trains were then worked for another power’s war.',
+      },
+      university: {
+        cause: 'The corridor is the strongest argument that in Lend-Lease the second route mattered more than the celebrated one, because tonnage that avoided the U-boat and the winter was worth more than a shorter map line. How much of the total went this way is not settled between the accounts, and the share claimed for it is one of the uncertainties listed here.',
+        what: 'Operationally this was a transport command, not a campaign: American and British railroad crews worked the trains and the trucks, traffic that had been organised as the Iran-Iraq Service Command became the Persian Gulf Service Command, and the goods ranged from trucks to canned food. Ships of the Caspian flotilla took the stores forward to Baku or Makhachkala, the only stage of the whole route that can be followed as a line of its own.',
+        consequence: 'The corridor has two histories that are rarely read together. One is logistical, and its numbers are still disputed between the totals the three powers kept. The other is that a neutral state was invaded so that a supply route could open, its monarch removed and its economy redirected: Wikipedia states that plainly, and no line on a map of campaigns can show it.',
+      },
+    },
+  },];
