@@ -3,18 +3,9 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { Bloc, CountryStat, Level } from '@/lib/data';
 import { BLOCS, COUNTRY_STATS } from '@/lib/data';
-import { formatMillions, STAT_YEARS } from '@/lib/site';
+import { BLOC_META, formatMillions, STAT_YEARS } from '@/lib/site';
 
 const BLOC_ORDER: Bloc[] = ['allies', 'soviet', 'axis', 'co_belligerent'];
-const BLOC_COLOR: Record<Bloc, string> = {
-  axis: '#A93226',
-  allies: '#2E6F9E',
-  soviet: '#C8791A',
-  co_belligerent: '#6E7F2B',
-  collaboration: '#8B5E3C',
-  occupied: '#5B6B73',
-  neutral: '#8C979B',
-};
 
 type SortKey = 'forces' | 'population' | 'militaryDeaths' | 'civilianDeaths' | 'name';
 
@@ -175,12 +166,12 @@ export default function NumbersPanel({ initialYear, level }: { initialYear: numb
             <li key={bloc}>
               <div className="flex items-baseline justify-between gap-3">
                 <span className="font-semibold text-stone-800">{BLOCS[bloc].label}</span>
-                <span className="font-bold tabular-nums" style={{ color: BLOC_COLOR[bloc] }}>
+                <span className="font-bold tabular-nums" style={{ color: BLOC_META[bloc].color }}>
                   {forces > 0 ? `${forces.toFixed(1)} m` : 'n/a'}
                 </span>
               </div>
               <div className="mt-1">
-                <Bar value={forces} max={maxBlocForces} color={BLOC_COLOR[bloc]} />
+                <Bar value={forces} max={maxBlocForces} color={BLOC_META[bloc].color} />
               </div>
               <p className="mt-1 text-xs text-stone-600">
                 {names.join(', ') || 'no member state with figures for this year'}
@@ -223,7 +214,7 @@ export default function NumbersPanel({ initialYear, level }: { initialYear: numb
                 key={b}
                 active={blocFilter === b}
                 onClick={() => setBlocFilter(blocFilter === b ? 'all' : b)}
-                color={BLOC_COLOR[b]}
+                color={BLOC_META[b].color}
               >
                 {BLOCS[b]?.label ?? b}
               </Pill>
@@ -290,7 +281,7 @@ function CountryRow({
   return (
     <article
       className="rounded-xl border border-stone-300 border-l-4 bg-white p-4 shadow-sm"
-      style={{ borderLeftColor: BLOC_COLOR[stat.bloc] }}
+      style={{ borderLeftColor: BLOC_META[stat.bloc].color }}
     >
       <div className="flex flex-wrap items-start justify-between gap-x-3 gap-y-1">
         <div>
@@ -299,7 +290,7 @@ function CountryRow({
         </div>
         <span
           className="rounded-full px-2.5 py-0.5 text-xs font-semibold text-white"
-          style={{ background: BLOC_COLOR[stat.bloc] }}
+          style={{ background: BLOC_META[stat.bloc].color }}
         >
           {BLOCS[stat.bloc]?.label ?? stat.bloc}
         </span>
@@ -318,7 +309,7 @@ function CountryRow({
             <p className="text-sm text-stone-700">Armed forces</p>
             <p className="font-bold tabular-nums text-stone-900">{formatMillions(forces)}</p>
           </div>
-          <Bar value={forces} max={maxForces} color={BLOC_COLOR[stat.bloc]} />
+          <Bar value={forces} max={maxForces} color={BLOC_META[stat.bloc].color} />
           {note && <p className="mt-1 text-xs leading-snug text-stone-600">{note}</p>}
         </div>
       </div>

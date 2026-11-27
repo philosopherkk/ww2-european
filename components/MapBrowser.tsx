@@ -1,6 +1,6 @@
 'use client';
 
-import { Fragment, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { Fragment, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   CircleMarker,
   MapContainer,
@@ -16,7 +16,7 @@ import {
 } from 'react-leaflet';
 import L from 'leaflet';
 import { ChevronDown, Info, ListTree, Maximize2, Minimize2 } from 'lucide-react';
-import type { CampaignLine, Side } from '@/lib/data';
+import type { CampaignLine, Side, TerritoryStatus } from '@/lib/data';
 import {
   CAMPAIGN_LINES,
   EVENT_BY_ID,
@@ -152,6 +152,8 @@ function defaultRegionFor(monthKey: string): Region {
 
 interface Props {
   monthKey: string;
+  manualRegion?: Region | null;
+  onRegionChange?: (r: Region) => void;
   showCampaigns: boolean;
   showBorders: boolean;
   /** Keep the modern place names legible under the territory fills. */
@@ -172,6 +174,8 @@ interface Props {
 
 export default function MapBrowser({
   monthKey,
+  manualRegion: controlledRegion,
+  onRegionChange,
   showCampaigns,
   showBorders,
   detailed,
@@ -190,7 +194,9 @@ export default function MapBrowser({
   const showEuropeanSnapshot = isEarlier;
   const monthLabel = MONTHS[MONTH_INDEX[monthKey]]?.label ?? monthKey;
   const autoRegion = useMemo(() => defaultRegionFor(monthKey), [monthKey]);
-  const [manualRegion, setManualRegion] = useState<Region | null>(null);
+  const [localRegion, setLocalRegion] = useState<Region | null>(null);
+  const manualRegion = controlledRegion !== undefined ? controlledRegion : localRegion;
+  const setManualRegion = onRegionChange ?? setLocalRegion;
   const region = manualRegion ?? autoRegion;
   const [data, setData] = useState<FeatureCollection | null>(null);
   const [errorInfo, setErrorInfo] = useState<{ file: string; message: string } | null>(null);
@@ -269,17 +275,25 @@ export default function MapBrowser({
   );
 
   /* Converting ~19,000 vertices is the expensive part of a render, so it is
-   * done once per snapshot and reused while the reader toggles layers. */
-  const territories = useMemo(() => {
+   * done once per fetched geometry file and reused while the reader toggles layers
+   * or steps months within the same snapshot. */
+  const territoryGeoms = useMemo(() => {
     if (!data) return [];
     return data.features.map((f) => ({
       name: f.properties.name,
-      status: statusFor(snapshot.date, f.properties.name),
       headOfState: f.properties.headOfState,
       govtInExile: f.properties.govtInExile,
       polys: toLatLngPolys(f.geometry),
     }));
-  }, [data, snapshot.date]);
+  }, [data]);
+
+  const territoryStatuses = useMemo(
+    () =>
+      new Map<string, TerritoryStatus>(
+        territoryGeoms.map((t) => [t.name, statusFor(snapshot.date, t.name)])
+      ),
+    [territoryGeoms, snapshot.date]
+  );
 
   const lines: CampaignLine[] = useMemo(
     () => (showCampaigns ? CAMPAIGN_LINES.filter((l) => campaignVisible(l, monthKey)) : []),
@@ -336,10 +350,9 @@ export default function MapBrowser({
 
   const presentStatuses = useMemo(() => {
     const worldSet = new Set(worldStatuses.values());
-    return STATUS_ORDER.filter(
-      (s) => worldSet.has(s) || (showEuropeanSnapshot && territories.some((t) => t.status === s))
-    );
-  }, [territories, worldStatuses, showEuropeanSnapshot]);
+    const europeSet = showEuropeanSnapshot ? new Set(territoryStatuses.values()) : null;
+    return STATUS_ORDER.filter((s) => worldSet.has(s) || Boolean(europeSet?.has(s)));
+  }, [territoryStatuses, worldStatuses, showEuropeanSnapshot]);
 
   const presentSides = useMemo(
     () => SIDE_ORDER.filter((s) => lines.some((l) => l.side === s)),
@@ -455,96 +468,17 @@ export default function MapBrowser({
             className={detailed ? 'basemap-tiles basemap-detailed' : 'basemap-tiles'}
           />
 
-          {/* Modern outlines outside the Stanford layer, under the monthly European
-              polygons so Europe sits on top where a dated state is drawn. */}
-          {showBorders && (
-            <Pane name="world" style={{ zIndex: 395 }}>
-              {worldTerritories.map((t) => {
-                const status = worldStatuses.get(t.key) ?? 'unknown';
-                const meta = STATUS_META[status];
-                const keyNote = WORLD_KEY_NOTES[t.key];
-                return (
-                  <Polygon
-                    key={t.key}
-                    positions={t.positions}
-                    pathOptions={{
-                      color: meta.stroke,
-                      weight: 0.8,
-                      fillColor: meta.color,
-                      fillOpacity: detailed ? 0.2 : 0.52,
-                    }}
-                  >
-                    <Tooltip sticky direction="center" opacity={1}>
-                      <span className="text-xs font-semibold">{t.name}</span>
-                      <span className="block text-[11px] font-normal">{meta.label}</span>
-                    </Tooltip>
-                    <Popup>
-                      <div className="space-y-1 text-sm">
-                        <p className="text-base font-semibold">{t.name}</p>
-                        <p className="font-medium" style={{ color: meta.stroke }}>
-                          {meta.label}
-                        </p>
-                        {keyNote && <p>{keyNote}</p>}
-                        <p className="pt-1 text-xs text-stone-600">
-                          Status as recorded for {monthLabel}, for the territory as a whole. The
-                          outline is today&rsquo;s, not the frontier of the time.
-                        </p>
-                      </div>
-                    </Popup>
-                  </Polygon>
-                );
-              })}
-            </Pane>
-          )}
-
-          {showBorders &&
-            showEuropeanSnapshot &&
-            territories.map((t) => {
-              const meta = STATUS_META[t.status];
-              return t.polys.map((rings, i) => (
-                <Polygon
-                  key={`${snapshot.date}-${t.name}-${i}`}
-                  positions={rings}
-                  pathOptions={{
-                    color: meta.stroke,
-                    weight: 1,
-                    fillColor: meta.color,
-                    fillOpacity: detailed ? 0.2 : 0.52,
-                  }}
-                >
-                  {/* Colour is never the only channel: the status is spelled out
-                      in this tooltip, in the popup, and in the legend. */}
-                  <Tooltip sticky direction="center" opacity={1}>
-                    <span className="text-xs font-semibold">{t.name}</span>
-                    <span className="block text-[11px] font-normal">{meta.label}</span>
-                  </Tooltip>
-                  <Popup>
-                    <div className="space-y-1 text-sm">
-                      <p className="text-base font-semibold">{t.name}</p>
-                      <p className="font-medium" style={{ color: meta.stroke }}>
-                        {meta.label}
-                      </p>
-                      {t.headOfState && (
-                        <p>
-                          <span className="text-stone-600">Head of state / authority: </span>
-                          {t.headOfState}
-                        </p>
-                      )}
-                      {t.govtInExile && (
-                        <p>
-                          <span className="text-stone-600">Government in exile: </span>
-                          {t.govtInExile}
-                        </p>
-                      )}
-                      <p className="pt-1 text-xs text-stone-600">
-                        Status as recorded for {snapshot.label}. Land with no colour is outside
-                        this border dataset, not empty.
-                      </p>
-                    </div>
-                  </Popup>
-                </Polygon>
-              ));
-            })}
+          <TerritoryBorders
+            showBorders={showBorders}
+            showEuropeanSnapshot={showEuropeanSnapshot}
+            detailed={detailed}
+            worldTerritories={worldTerritories}
+            worldStatuses={worldStatuses}
+            territoryGeoms={territoryGeoms}
+            territoryStatuses={territoryStatuses}
+            monthLabel={monthLabel}
+            snapshotLabel={snapshot.label}
+          />
 
           {/* Army lines live in their own pane above the territories. The border
               polygons are added after their file loads, so in the shared overlay
@@ -937,3 +871,135 @@ function ZoomReporter({ onZoom }: { onZoom: (zoom: number) => void }) {
   });
   return null;
 }
+
+interface WorldTerritoryGeom {
+  key: string;
+  name: string;
+  positions: LatLng[][][];
+}
+
+interface TerritoryGeom {
+  name: string;
+  headOfState: string | null;
+  govtInExile: string | null;
+  polys: LatLng[][][];
+}
+
+/**
+ * Territory fills stay isolated from hover/zoom state so moving the cursor across a
+ * campaign line never re-reconciles 220+ country polygons, and each MultiPolygon is
+ * mounted once per polity rather than once per ring.
+ */
+const TerritoryBorders = memo(function TerritoryBorders({
+  showBorders,
+  showEuropeanSnapshot,
+  detailed,
+  worldTerritories,
+  worldStatuses,
+  territoryGeoms,
+  territoryStatuses,
+  monthLabel,
+  snapshotLabel,
+}: {
+  showBorders: boolean;
+  showEuropeanSnapshot: boolean;
+  detailed: boolean;
+  worldTerritories: WorldTerritoryGeom[];
+  worldStatuses: Map<string, TerritoryStatus>;
+  territoryGeoms: TerritoryGeom[];
+  territoryStatuses: Map<string, TerritoryStatus>;
+  monthLabel: string;
+  snapshotLabel: string;
+}) {
+  if (!showBorders) return null;
+  return (
+    <>
+      <Pane name="world" style={{ zIndex: 395 }}>
+        {worldTerritories.map((t) => {
+          const status = worldStatuses.get(t.key) ?? 'unknown';
+          const meta = STATUS_META[status];
+          const keyNote = WORLD_KEY_NOTES[t.key];
+          return (
+            <Polygon
+              key={t.key}
+              positions={t.positions}
+              pathOptions={{
+                color: meta.stroke,
+                weight: 0.8,
+                fillColor: meta.color,
+                fillOpacity: detailed ? 0.2 : 0.52,
+              }}
+            >
+              <Tooltip sticky direction="center" opacity={1}>
+                <span className="text-xs font-semibold">{t.name}</span>
+                <span className="block text-[11px] font-normal">{meta.label}</span>
+              </Tooltip>
+              <Popup>
+                <div className="space-y-1 text-sm">
+                  <p className="text-base font-semibold">{t.name}</p>
+                  <p className="font-medium" style={{ color: meta.stroke }}>
+                    {meta.label}
+                  </p>
+                  {keyNote && <p>{keyNote}</p>}
+                  <p className="pt-1 text-xs text-stone-600">
+                    Status as recorded for {monthLabel}, for the territory as a whole. The
+                    outline is today&rsquo;s, not the frontier of the time.
+                  </p>
+                </div>
+              </Popup>
+            </Polygon>
+          );
+        })}
+      </Pane>
+
+      {showEuropeanSnapshot &&
+        territoryGeoms.map((t) => {
+          const meta = STATUS_META[territoryStatuses.get(t.name) ?? 'unknown'];
+          return (
+            <Polygon
+              key={t.name}
+              positions={t.polys}
+              pathOptions={{
+                color: meta.stroke,
+                weight: 1,
+                fillColor: meta.color,
+                fillOpacity: detailed ? 0.2 : 0.52,
+              }}
+            >
+              {/* Colour is never the only channel: the status is spelled out
+                  in this tooltip, in the popup, and in the legend. */}
+              <Tooltip sticky direction="center" opacity={1}>
+                <span className="text-xs font-semibold">{t.name}</span>
+                <span className="block text-[11px] font-normal">{meta.label}</span>
+              </Tooltip>
+              <Popup>
+                <div className="space-y-1 text-sm">
+                  <p className="text-base font-semibold">{t.name}</p>
+                  <p className="font-medium" style={{ color: meta.stroke }}>
+                    {meta.label}
+                  </p>
+                  {t.headOfState && (
+                    <p>
+                      <span className="text-stone-600">Head of state / authority: </span>
+                      {t.headOfState}
+                    </p>
+                  )}
+                  {t.govtInExile && (
+                    <p>
+                      <span className="text-stone-600">Government in exile: </span>
+                      {t.govtInExile}
+                    </p>
+                  )}
+                  <p className="pt-1 text-xs text-stone-600">
+                    Status as recorded for {snapshotLabel}. Land with no colour is outside
+                    this border dataset, not empty.
+                  </p>
+                </div>
+              </Popup>
+            </Polygon>
+          );
+        })}
+    </>
+  );
+});
+

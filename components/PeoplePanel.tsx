@@ -6,17 +6,7 @@ import type { Bloc, Level } from '@/lib/data';
 import { EVENTS, FIGURES, FIGURE_BY_ID } from '@/lib/data';
 import { PORTRAITS } from '@/lib/data/portraits';
 import { FigurePortrait } from './FigurePortrait';
-import { longDate } from '@/lib/site';
-
-const BLOC_META: Record<Bloc, { label: string; color: string }> = {
-  axis: { label: 'Axis', color: '#A93226' },
-  allies: { label: 'Western Allies', color: '#2E6F9E' },
-  soviet: { label: 'Soviet Union', color: '#C8791A' },
-  co_belligerent: { label: 'Co-belligerent / neutral', color: '#6E7F2B' },
-  collaboration: { label: 'Collaboration', color: '#8B5E3C' },
-  occupied: { label: 'Occupied', color: '#5B6B73' },
-  neutral: { label: 'Neutral', color: '#8C979B' },
-};
+import { BLOC_META, longDate } from '@/lib/site';
 
 interface Props {
   level: Level;

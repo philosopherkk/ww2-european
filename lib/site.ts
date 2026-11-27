@@ -1,5 +1,5 @@
 import manifest from '@/public/data/borders/manifest.json';
-import type { CampaignLine, Front, Kind, Level } from '@/lib/data';
+import type { Bloc, CampaignLine, Front, Kind, Level } from '@/lib/data';
 
 /**
  * The whole timeline runs from July 1937 to September 1945, month by month.
@@ -342,3 +342,16 @@ export function formatMillions(value: number): string {
   const thousands = Math.round(value * 1000);
   return `${thousands.toLocaleString('en-GB')} thousand`;
 }
+
+export const BLOC_META: Record<
+  Bloc,
+  { label: string; color: string }
+> = {
+  axis: { label: 'Axis', color: '#A93226' },
+  allies: { label: 'Western Allies', color: '#2E6F9E' },
+  soviet: { label: 'Soviet Union', color: '#C8791A' },
+  co_belligerent: { label: 'Co-belligerent / neutral', color: '#6E7F2B' },
+  collaboration: { label: 'Collaboration', color: '#8B5E3C' },
+  occupied: { label: 'Occupied', color: '#5B6B73' },
+  neutral: { label: 'Neutral', color: '#8C979B' },
+};
