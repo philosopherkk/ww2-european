@@ -270,7 +270,7 @@ export default function MapBrowser({
   // The shapes never move in this dataset, so the geometry caveat is stated for
   // every month; the month's own note is appended when there is one.
   const monthNote = SNAPSHOT_NOTES[snapshot.date];
-  const note = `${monthNote ? `${GEOMETRY_NOTE} ${monthNote}` : GEOMETRY_NOTE} The coloured ground runs from the Atlantic to the 70th meridian and from 12.5° N in the Gulf of Aden to 82° N, which is more than Europe, so the region buttons change the view; where the source has no shape at all, an extent shows the basemap and any campaign lines only.`;
+  const note = `${monthNote ? `${GEOMETRY_NOTE} ${monthNote}` : GEOMETRY_NOTE} The coloured ground runs from the Atlantic to 113.9° E in Siberia and from 12.5° N in the Gulf of Aden to 82° N, which is more than Europe, so the region buttons change the view; where the source has no shape at all, an extent shows the basemap and any campaign lines only.`;
   const showMarkers = showPlaces && zoom >= 7;
 
   return (

@@ -158,14 +158,15 @@ const SIMPLIFY_TOLERANCE = 0.01;
 // reaches 113.9 E, so Ekaterinburg, Baku and Tashkent sat off the map; its Ottoman
 // Empire reaches 48.6 E and 12.7 N, so Palestine, Arabia and Ottoman Mesopotamia
 // sat off it too — Jerusalem, Gaza, Kut and Basra are places this site tells
-// stories about, and they had no border under them at all. The box now runs to
-// 70 E and down to 12.5 N: the furthest east any line waypoint of this site goes is
-// 49.11 E, on the Czech Legion's line at Samara, and the furthest south is Aqaba at
-// 29.53 N, so the map now reaches well past everything it narrates and the Levant
-// and Mesopotamia sit whole inside it. What is left is one straight edge, at 70 E
-// in the Kazakh steppe, 21 degrees east of the furthest line. Going on to the
-// source's own 113.9 E costs another 16% of the file (257 KB to 298 KB gzipped, 418
-// polygons to 490) for land no line or card of this site reaches, so it stops there.
+// stories about, and they had no border under them at all. The box was widened to
+// 70 E and 12.5 N on 25 Nov 2026, which left one straight edge at 70 E in the
+// Kazakh steppe: the reader could see the Russia fill stop dead on a meridian.
+//
+// On 27 Nov 2026 KK called for that last straight edge to go. The east bound is
+// now 120 E, past the source's own furthest vertex at 113.92 E, so nothing is cut
+// and the edge is the source's own coast. The cost is real and is stated in the
+// sources panel: another 16% over the 70 E build for land no line of this site
+// reaches. It is paid so the map does not show a sawn border.
 //
 // Measured cost of the wider box, counted on the two published files: 330 parts and
 // 35,633 vertices become 418 and 42,409, and 640 KB and 215 KB gzipped become 761 KB and
@@ -184,7 +185,7 @@ const SIMPLIFY_TOLERANCE = 0.01;
 //
 // What is still outside, and deliberately so, is in SourcesPanel: the source's
 // Egypt, Iran, Libya, Algeria, Tunisia and Morocco are not painted here at all.
-const CLIP = [-25, 12.5, 70, 82];
+const CLIP = [-25, 12.5, 120, 82];
 
 // The source stores every vertex with about fifteen significant digits. Four
 // decimals is five metres, far inside the simplify tolerance above, and it takes
