@@ -206,8 +206,8 @@ export default function SourcesPanel() {
           The outlines come from one published file: Jack Kavanagh,{' '}
           <em>Map of Europe, c. 1914</em> (University College Dublin, Zenodo, DOI 10.5281/
           zenodo.20119653, CC BY 4.0), a purpose-made boundary map of the July 1914 states of Europe
-          at high resolution. It is fetched once, clipped to the box named below (25° W to the 70th
-          meridian, 12.5° N in the Gulf of Aden to 82° N), simplified and
+          at high resolution. It is fetched once, clipped to the box named below (25° W to 120° E,
+          12.5° N in the Gulf of Aden to 82° N), simplified and
           served as a static GeoJSON file from this site. One correction is made to it: the source
           draws the east coast of Ireland as straight chords across the bays, which left Dublin
           outside the United Kingdom, so the island’s coastline is completed from Natural Earth
