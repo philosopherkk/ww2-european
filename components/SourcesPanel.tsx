@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 'use client';
 
 import { ChevronDown } from 'lucide-react';
@@ -118,6 +119,30 @@ const SECTIONS = [
 ];
 
 const CARD = 'scroll-mt-16 rounded-xl border border-stone-300 bg-white p-4 shadow-sm sm:p-5';
+/**
+ * The bibliography holds markdown italics, because that is how a book title is written down:
+ * `_Cataclysm: The First World War as Political Tragedy_`. Printed as plain text a reader sees the
+ * underscores, so each balanced pair becomes <em> and everything else is returned unchanged.
+ *
+ * A pair is emphasis only when it delimits a phrase from the surrounding text: neither underscore may sit
+ * inside a word. `world_countries_1938` is a file name the reader has to type, so its underscores stay,
+ * which is where markdown and a bibliography disagree and the bibliography wins.
+ */
+function citationText(citation: string): ReactNode {
+  const parts: ReactNode[] = [];
+  const re = /_([^_\s][^_]*?)_/g;
+  const insideWord = (i: number) => /[\p{L}\p{N}]/u.test(citation[i] ?? '');
+  let last = 0;
+  for (let m = re.exec(citation); m; m = re.exec(citation)) {
+    const end = m.index + m[0].length;
+    if (insideWord(m.index - 1) || insideWord(end)) continue;
+    if (m.index > last) parts.push(citation.slice(last, m.index));
+    parts.push(<em key={m.index}>{m[1]}</em>);
+    last = end;
+  }
+  if (last < citation.length) parts.push(citation.slice(last));
+  return parts.length === 1 && typeof parts[0] === 'string' ? parts[0] : parts;
+}
 
 export default function SourcesPanel() {
   return (
@@ -238,7 +263,7 @@ export default function SourcesPanel() {
         <ul className="mt-3 space-y-3">
           {SOURCES.map((s) => (
             <li key={s.citation} className="border-l-2 border-stone-300 pl-3">
-              <p className="text-[15px] font-medium leading-snug text-stone-900">{s.citation}</p>
+              <p className="text-[15px] font-medium leading-snug text-stone-900">{citationText(s.citation)}</p>
               <p className="text-xs text-stone-600">{s.publisher}</p>
               <p className="mt-0.5 text-[13px] leading-snug text-stone-700">{s.usedFor}</p>
               <a
