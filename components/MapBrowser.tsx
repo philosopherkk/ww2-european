@@ -1,6 +1,6 @@
 'use client';
 
-import { Fragment, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { Fragment, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   CircleMarker,
   MapContainer,
@@ -16,7 +16,7 @@ import {
 } from 'react-leaflet';
 import L from 'leaflet';
 import { ChevronDown, Info, ListTree, Maximize2, Minimize2 } from 'lucide-react';
-import type { CampaignLine, Side } from '@/lib/data';
+import type { CampaignLine, Side, TerritoryStatus } from '@/lib/data';
 import { CAMPAIGN_LINES, EVENT_BY_ID, GEOMETRY_NOTE, MARCH_LINES, STATUS_META, STATUS_ORDER, SNAPSHOT_NOTES, statusFor } from '@/lib/data';
 import RegionToggle from '@/components/RegionToggle';
 import { LINKS_BY_LINE } from '@/lib/data/campaign-events';
@@ -117,6 +117,8 @@ const SIDE_ORDER: Side[] = ['central', 'entente', 'russia'];
 
 interface Props {
   monthKey: string;
+  region?: Region;
+  onRegionChange?: (r: Region) => void;
   showCampaigns: boolean;
   showBorders: boolean;
   /** Keep the modern place names legible under the territory fills. */
@@ -137,6 +139,8 @@ interface Props {
 
 export default function MapBrowser({
   monthKey,
+  region: controlledRegion,
+  onRegionChange,
   showCampaigns,
   showBorders,
   detailed,
@@ -153,7 +157,9 @@ export default function MapBrowser({
   const [errorInfo, setErrorInfo] = useState<{ file: string; message: string } | null>(null);
   const [showNote, setShowNote] = useState(false);
   const [zoom, setZoom] = useState(4);
-  const [region, setRegion] = useState<Region>('europe');
+  const [localRegion, setLocalRegion] = useState<Region>('europe');
+  const region = controlledRegion ?? localRegion;
+  const setRegion = onRegionChange ?? setLocalRegion;
   // The key is open on wide screens and tucked behind a button on phones and tablets,
   // where an open key would cover a third of the map.
   const [keyOpen, setKeyOpen] = useState(
@@ -182,16 +188,24 @@ export default function MapBrowser({
     };
   }, [snapshot.file]);
 
-  /* Converting ~19,000 vertices is the expensive part of a render, so it is
-   * done once per snapshot and reused while the reader toggles layers. */
-  const territories = useMemo(() => {
+  /* Converting ~49,000 vertices is the expensive part of a render, so it is
+   * done once when 1914-07-01.json loads and reused while the reader steps
+   * months or toggles layers — only the status map recomputes per month. */
+  const territoryGeoms = useMemo(() => {
     if (!data) return [];
     return data.features.map((f) => ({
       name: f.properties.name,
-      status: statusFor(snapshot.date, f.properties.name),
       polys: toLatLngPolys(f.geometry),
     }));
-  }, [data, snapshot.date]);
+  }, [data]);
+
+  const territoryStatuses = useMemo(
+    () =>
+      new Map<string, TerritoryStatus>(
+        territoryGeoms.map((t) => [t.name, statusFor(snapshot.date, t.name)])
+      ),
+    [territoryGeoms, snapshot.date]
+  );
 
   const lines: CampaignLine[] = useMemo(
     () =>
@@ -249,10 +263,10 @@ export default function MapBrowser({
     return ids;
   }, [highlightLineIds, focusedId]);
 
-  const presentStatuses = useMemo(
-    () => STATUS_ORDER.filter((s) => territories.some((t) => t.status === s)),
-    [territories]
-  );
+  const presentStatuses = useMemo(() => {
+    const active = new Set(territoryStatuses.values());
+    return STATUS_ORDER.filter((s) => active.has(s));
+  }, [territoryStatuses]);
 
   /* One legend entry per side and per class of line actually on the map this
      * month: a side that both holds a front and attacks somewhere needs both
@@ -313,8 +327,8 @@ export default function MapBrowser({
           zoomSnap={0.5}
           scrollWheelZoom
           maxBounds={[
-            [28, -16],
-            [70, 50],
+            [30, -34],
+            [74, 68],
           ]}
           maxBoundsViscosity={0.8}
           className="h-full w-full"
@@ -332,45 +346,22 @@ export default function MapBrowser({
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             subdomains="abc"
+            noWrap
+            bounds={[
+              [-85.0511, -180],
+              [85.0511, 180],
+            ]}
             key={detailed ? 'detailed-basemap' : 'faded-basemap'}
             className={detailed ? 'basemap-tiles basemap-detailed' : 'basemap-tiles'}
           />
 
-          {showBorders &&
-            territories.map((t) => {
-              const meta = STATUS_META[t.status];
-              return t.polys.map((rings, i) => (
-                <Polygon
-                  key={`${snapshot.date}-${t.name}-${i}`}
-                  positions={rings}
-                  pathOptions={{
-                    color: meta.stroke,
-                    weight: 1,
-                    fillColor: meta.color,
-                    fillOpacity: detailed ? 0.2 : 0.52,
-                  }}
-                >
-                  {/* Colour is never the only channel: the status is spelled out
-                      in this tooltip, in the popup, and in the legend. */}
-                  <Tooltip sticky direction="center" opacity={1}>
-                    <span className="text-xs font-semibold">{t.name}</span>
-                    <span className="block text-[11px] font-normal">{meta.label}</span>
-                  </Tooltip>
-                  <Popup>
-                    <div className="space-y-1 text-sm">
-                      <p className="text-base font-semibold">{t.name}</p>
-                      <p className="font-medium" style={{ color: meta.stroke }}>
-                        {meta.label}
-                      </p>
-                      <p className="pt-1 text-xs text-stone-600">
-                        Frontier of July 1914, status as recorded for {snapshot.label}. Land with
-                        no colour is outside this border dataset, not empty.
-                      </p>
-                    </div>
-                  </Popup>
-                </Polygon>
-              ));
-            })}
+          <TerritoryBorders
+            showBorders={showBorders}
+            detailed={detailed}
+            territoryGeoms={territoryGeoms}
+            territoryStatuses={territoryStatuses}
+            snapshotLabel={snapshot.label}
+          />
 
           {/* Army lines live in their own pane above the territories. The border
               polygons are added after their file loads, so in the shared overlay
@@ -727,6 +718,10 @@ function ViewController({ region }: { region: Region }) {
     map.setMaxBounds(v.bounds);
     if (first.current) {
       first.current = false;
+      if (region !== 'europe') {
+        if (v.fit) map.fitBounds(v.bounds, { animate: false, padding: [8, 8] });
+        else map.setView(v.center, v.zoom, { animate: false });
+      }
       return;
     }
     if (v.fit) map.fitBounds(v.bounds, { animate: true, duration: 0.8, padding: [8, 8] });
@@ -734,3 +729,68 @@ function ViewController({ region }: { region: Region }) {
   }, [region, map]);
   return null;
 }
+
+interface TerritoryGeom {
+  name: string;
+  polys: LatLng[][][];
+}
+
+/**
+ * One Polygon per polity (rather than one per ring) and keyed stably by polity name so
+ * month changes restyle via setStyle instead of unmounting 490 layers, and hovering a
+ * campaign line never re-reconciles the borders.
+ */
+const TerritoryBorders = memo(function TerritoryBorders({
+  showBorders,
+  detailed,
+  territoryGeoms,
+  territoryStatuses,
+  snapshotLabel,
+}: {
+  showBorders: boolean;
+  detailed: boolean;
+  territoryGeoms: TerritoryGeom[];
+  territoryStatuses: Map<string, TerritoryStatus>;
+  snapshotLabel: string;
+}) {
+  if (!showBorders) return null;
+  return (
+    <>
+      {territoryGeoms.map((t) => {
+        const meta = STATUS_META[territoryStatuses.get(t.name) ?? 'unknown'];
+        return (
+          <Polygon
+            key={t.name}
+            positions={t.polys}
+            pathOptions={{
+              color: meta.stroke,
+              weight: 1,
+              fillColor: meta.color,
+              fillOpacity: detailed ? 0.2 : 0.52,
+            }}
+          >
+            {/* Colour is never the only channel: the status is spelled out
+                in this tooltip, in the popup, and in the legend. */}
+            <Tooltip sticky direction="center" opacity={1}>
+              <span className="text-xs font-semibold">{t.name}</span>
+              <span className="block text-[11px] font-normal">{meta.label}</span>
+            </Tooltip>
+            <Popup>
+              <div className="space-y-1 text-sm">
+                <p className="text-base font-semibold">{t.name}</p>
+                <p className="font-medium" style={{ color: meta.stroke }}>
+                  {meta.label}
+                </p>
+                <p className="pt-1 text-xs text-stone-600">
+                  Frontier of July 1914, status as recorded for {snapshotLabel}. Land with
+                  no colour is outside this border dataset, not empty.
+                </p>
+              </div>
+            </Popup>
+          </Polygon>
+        );
+      })}
+    </>
+  );
+});
+

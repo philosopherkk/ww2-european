@@ -19,14 +19,12 @@ import {
   type LucideIcon,
 } from 'lucide-react';
 import EventCard from '@/components/EventCard';
-import NumbersPanel from '@/components/NumbersPanel';
-import PeoplePanel from '@/components/PeoplePanel';
-import SourcesPanel from '@/components/SourcesPanel';
 import TurningPointPanel from '@/components/TurningPointPanel';
 import type { Level } from '@/lib/data';
 import { CAMPAIGN_LINES, EVENT_BY_ID, EVENTS, MARCH_LINES } from '@/lib/data';
 import { LINKS_BY_EVENT, LINKS_BY_LINE } from '@/lib/data/campaign-events';
 import { turningPointFor } from '@/lib/data/turning-points';
+import { REGION_BY_ID, type Region } from '@/lib/regions';
 import {
   campaignVisible,
   LEVELS,
@@ -41,6 +39,25 @@ import {
 
 /* Leaflet touches `window` as soon as it loads, so the map is only ever
  * mounted in the browser. */
+/* Non-map tabs pull in ~280 KB of bibliography, statistics and biography data, so load them on demand. */
+const PeoplePanel = dynamic(() => import('@/components/PeoplePanel'), {
+  loading: () => <PanelLoading label="Loading people…" />,
+});
+const NumbersPanel = dynamic(() => import('@/components/NumbersPanel'), {
+  loading: () => <PanelLoading label="Loading figures…" />,
+});
+const SourcesPanel = dynamic(() => import('@/components/SourcesPanel'), {
+  loading: () => <PanelLoading label="Loading sources…" />,
+});
+
+function PanelLoading({ label }: { label: string }) {
+  return (
+    <div className="rounded-xl border border-stone-300 bg-white p-6 text-sm text-stone-600">
+      {label}
+    </div>
+  );
+}
+
 const MapBrowser = dynamic(() => import('@/components/MapBrowser'), {
   ssr: false,
   loading: () => (
@@ -99,6 +116,7 @@ export default function Home() {
   const [playing, setPlaying] = useState(false);
   const [focusFigure, setFocusFigure] = useState<string | null>(null);
   const [openEvent, setOpenEvent] = useState<string | null>(null);
+  const [region, setRegion] = useState<Region>('europe');
   // Army-movement line under the cursor on the map, and the event card under
   // the cursor in the list: each lights up what the other is linked to.
   const [hoverLine, setHoverLine] = useState<string | null>(null);
@@ -157,6 +175,10 @@ export default function Home() {
       if (t === 'map' || t === 'people' || t === 'numbers' || t === 'sources') setTab(t);
       const ev = q.get('event');
       if (ev && EVENT_BY_ID[ev]) setOpenEvent(ev);
+      const reg = q.get('region')?.toLowerCase();
+      if (reg && reg in REGION_BY_ID && !(REGION_BY_ID[reg as Region] as { hidden?: boolean }).hidden) {
+        setRegion(reg as Region);
+      }
       setUrlHydrated(true);
     }, 0);
     return () => window.clearTimeout(id);
@@ -171,8 +193,10 @@ export default function Home() {
     url.searchParams.set('tab', tab);
     if (openEvent && EVENT_BY_ID[openEvent]) url.searchParams.set('event', openEvent);
     else url.searchParams.delete('event');
+    if (region !== 'europe') url.searchParams.set('region', region);
+    else url.searchParams.delete('region');
     window.history.replaceState(null, '', url.toString());
-  }, [monthKey, level, tab, openEvent, urlHydrated]);
+  }, [monthKey, level, tab, openEvent, region, urlHydrated]);
 
   // Keyboard: arrows step the months, space plays the timeline on the map tab,
   // escape closes an open card. None of it fires while a control has focus.
@@ -475,6 +499,8 @@ export default function Home() {
               <div className="contents lg:block lg:min-h-0 lg:flex-1">
                 <MapBrowser
                   monthKey={monthKey}
+                  region={region}
+                  onRegionChange={setRegion}
                   showCampaigns={showCampaigns}
                   showBorders={showBorders}
                   detailed={detailed}
