@@ -1,0 +1,118 @@
+{
+  "lines": [
+    {
+      "id": "french_advance_charleroi_waterloo",
+      "name": "French advance, 15–18 June 1815",
+      "from": "1815-06-15",
+      "to": "1815-06-18",
+      "domain": "land",
+      "mover": "France",
+      "operation": null,
+      "waypoints": [
+        {
+          "name": "Charleroi",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Waterloo_campaign"
+        },
+        {
+          "name": "Quatre Bras / Quatre-Bras",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Waterloo_campaign"
+        },
+        {
+          "name": "Ligny",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Waterloo_campaign"
+        },
+        {
+          "name": "Waterloo",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Waterloo_campaign"
+        }
+      ],
+      "path": [
+        [
+          50.4116233,
+          4.444528
+        ],
+        [
+          50.5714372,
+          4.4533151
+        ],
+        [
+          50.5126287,
+          4.5757572
+        ],
+        [
+          50.7175395,
+          4.3977588
+        ]
+      ],
+      "summary": "The French army crossed the Sambre at Charleroi on 15 June 1815, fought at Quatre Bras and Ligny on 16 June, and was defeated at Waterloo on 18 June. This is a schematic axis through named places, not a surveyed front.",
+      "strength": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Waterloo_campaign",
+          "publisher": "Wikipedia",
+          "quote": "Hostilities started on 15 June when the French drove in the Prussian outposts and crossed the river Sambre at Charleroi placing their forces between the cantonment areas of Wellington's army (to the west) and Blücher's army to the east."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Waterloo_campaign",
+          "publisher": "Wikipedia",
+          "quote": "On 16 June the French prevailed with Marshal Ney commanding the left wing of the French army holding Wellington at the Battle of Quatre Bras and Napoleon defeating Blücher at the Battle of Ligny"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Waterloo_campaign",
+          "publisher": "Wikipedia",
+          "quote": "The next day the Battle of Waterloo proved to be the decisive battle of the campaign."
+        },
+        {
+          "url": "https://www.nam.ac.uk/explore/battle-waterloo",
+          "publisher": "National Army Museum",
+          "quote": "Napoleon crossed the River Sambre on 15 June, entering what is now Belgium."
+        },
+        {
+          "url": "https://www.nam.ac.uk/explore/battle-waterloo",
+          "publisher": "National Army Museum",
+          "quote": "The next day, the main part of his army defeated the Prussians at Ligny and drove them into retreat."
+        },
+        {
+          "url": "https://www.nam.ac.uk/explore/battle-waterloo",
+          "publisher": "National Army Museum",
+          "quote": "That same day, Wellington beat off a separate French attack on the crossroads at Quatre Bras."
+        },
+        {
+          "url": "https://www.nam.ac.uk/explore/battle-waterloo",
+          "publisher": "National Army Museum",
+          "quote": "The Battle of Waterloo was fought on 18 June 1815 between Napoleon’s French Army and a coalition led by the Duke of Wellington and Marshal Blücher."
+        },
+        {
+          "url": "https://royalarmouries.org/objects-and-stories/stories/waterloo-1815",
+          "publisher": "Royal Armouries",
+          "quote": "15 June 1815 Defeat at Charleroi General Ziethen’s Prussian I Corps are evicted from the city of Charleroi by the French."
+        },
+        {
+          "url": "https://royalarmouries.org/objects-and-stories/stories/waterloo-1815",
+          "publisher": "Royal Armouries",
+          "quote": "On Friday 16th June, Napoleon's forces met the Prussians at the Battle of Ligny, and after heavy fighting the Prussian army was forced to retreat towards Wavre."
+        },
+        {
+          "url": "https://royalarmouries.org/objects-and-stories/stories/waterloo-1815",
+          "publisher": "Royal Armouries",
+          "quote": "the Anglo-Dutch army met the French, commanded by Marshal Ney, at the Battle of Quatre Bras."
+        },
+        {
+          "url": "https://waterloocommittee.be/battle.php?view=chronology",
+          "publisher": "Comité Royal de Waterloo",
+          "quote": "L'empereur est à Charleroi le 15."
+        },
+        {
+          "url": "https://waterloocommittee.be/battle.php?view=chronology",
+          "publisher": "Comité Royal de Waterloo",
+          "quote": "sous le maréchal Ney, rencontre aux Quatre-Bras des éléments de l'armée de Wellington et ne peut s'emparer du carrefour."
+        },
+        {
+          "url": "https://waterloocommittee.be/battle.php?view=chronology",
+          "publisher": "Comité Royal de Waterloo",
+          "quote": "La journée du dimanche 18 juin, à 11 h 30, la bataille débute par une attaque de diversion, menée par la division du Prince Jérôme, frère de Napoléon, contre la ferme d’Hougoumont."
+        }
+      ]
+    }
+  ]
+}

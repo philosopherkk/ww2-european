@@ -1,0 +1,28 @@
+{
+  "links": [
+    {
+      "line": "french_advance_charleroi_waterloo",
+      "event": "sambre_crossing_charleroi",
+      "at": 0,
+      "want": "Charleroi"
+    },
+    {
+      "line": "french_advance_charleroi_waterloo",
+      "event": "battle_of_quatre_bras",
+      "at": 1,
+      "want": "Quatre Bras / Quatre-Bras"
+    },
+    {
+      "line": "french_advance_charleroi_waterloo",
+      "event": "battle_of_ligny",
+      "at": 2,
+      "want": "Ligny"
+    },
+    {
+      "line": "french_advance_charleroi_waterloo",
+      "event": "battle_of_waterloo",
+      "at": 3,
+      "want": "Waterloo"
+    }
+  ]
+}

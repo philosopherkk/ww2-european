@@ -1,0 +1,445 @@
+{
+  "period": "long-nineteenth",
+  "batch": 1,
+  "items": [
+    {
+      "id": "sambre_crossing_charleroi",
+      "date": "1815-06-15",
+      "precision": "day",
+      "title": "The French cross the Sambre at Charleroi",
+      "kind": "invasion",
+      "fronts": [
+        "france_and_low_countries"
+      ],
+      "countries": [
+        "France",
+        "Prussia",
+        "United Kingdom of the Netherlands"
+      ],
+      "figures": [
+        "napoleon_bonaparte",
+        "duke_of_wellington",
+        "gebhard_von_blucher"
+      ],
+      "note": "One account places the frontier crossing at Thuin, near Charleroi, and names General Ziethen as the Prussian commander driven from the city. The French strength at the frontier is printed as 128,000, and the same account also prints 124,000 to 126,000.",
+      "levels": {
+        "primary": {
+          "cause": "Napoleon had returned from exile in March 1815 and chose to attack the coalition armies in the Netherlands before they could join.",
+          "what": "On 15 June 1815 the French army crossed the Sambre at Charleroi and stood between the Prussian army and Wellington’s army.",
+          "consequence": "The two coalition armies were still apart, and the next day each met the French in a separate battle."
+        },
+        "secondary": {
+          "cause": "Napoleon left exile and was back in Paris in March 1815. The coalition would not accept his return, and he chose to strike the two armies already in the Netherlands before the rest could arrive.",
+          "what": "On 15 June 1815 the French crossed the Sambre and took Charleroi. The move was meant to keep Blücher’s Prussians and Wellington’s army from joining, and to fight them one at a time.",
+          "consequence": "Charleroi was in French hands that day. On 16 June the French fought the Prussians at Ligny and Wellington’s army at Quatre Bras, still as two battles."
+        },
+        "university": {
+          "cause": "Only the Prussian army and Wellington’s army were close enough to fight at once. Napoleon attacked them before the other coalition armies could cross into France.",
+          "what": "On 15 June 1815 the French army crossed the Sambre at Charleroi and pushed in between those two armies.",
+          "consequence": "The separation was brief. The next day the French were already fighting at Ligny and at Quatre Bras."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Waterloo_campaign",
+          "publisher": "Wikipedia",
+          "quote": "Hostilities started on 15 June when the French drove in the Prussian outposts and crossed the river Sambre at Charleroi placing their forces between the cantonment areas of Wellington's army (to the west) and Blücher's army to the east."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Waterloo_campaign",
+          "publisher": "Wikipedia",
+          "quote": "Napoleon returned from his exile on the island of Elba on 1 March 1815, King Louis XVIII fled Paris on 19 March, and Napoleon entered Paris the next day."
+        },
+        {
+          "url": "https://www.nam.ac.uk/explore/battle-waterloo",
+          "publisher": "National Army Museum",
+          "quote": "Napoleon crossed the River Sambre on 15 June, entering what is now Belgium."
+        },
+        {
+          "url": "https://www.nam.ac.uk/explore/battle-waterloo",
+          "publisher": "National Army Museum",
+          "quote": "The French Emperor Napoleon Bonaparte had escaped from exile in March 1815 and returned to power."
+        },
+        {
+          "url": "https://www.nam.ac.uk/explore/battle-waterloo",
+          "publisher": "National Army Museum",
+          "quote": "15 June 1815 Napoleon’s army invades Belgium"
+        },
+        {
+          "url": "https://royalarmouries.org/objects-and-stories/stories/waterloo-1815",
+          "publisher": "Royal Armouries",
+          "quote": "15 June 1815 Defeat at Charleroi General Ziethen’s Prussian I Corps are evicted from the city of Charleroi by the French."
+        },
+        {
+          "url": "https://waterloocommittee.be/battle.php?view=chronology",
+          "publisher": "Comité Royal de Waterloo",
+          "quote": "L'empereur est à Charleroi le 15."
+        },
+        {
+          "url": "https://waterloocommittee.be/battle.php?view=chronology",
+          "publisher": "Comité Royal de Waterloo",
+          "quote": "Napoléon est à Paris le 20 mars 1815."
+        }
+      ],
+      "uncertainties": [
+        {
+          "topic": "frontier crossing beside Charleroi",
+          "range": "Thuin",
+          "single_family": true
+        },
+        {
+          "topic": "Prussian commander driven from Charleroi",
+          "range": "General Ziethen",
+          "single_family": true
+        },
+        {
+          "topic": "French strength at the frontier",
+          "range": "128,000 on two accounts; the encyclopaedia strength line also prints 124,000 to 126,000"
+        }
+      ]
+    },
+    {
+      "id": "battle_of_ligny",
+      "date": "1815-06-16",
+      "precision": "day",
+      "title": "Battle of Ligny",
+      "kind": "battle",
+      "fronts": [
+        "france_and_low_countries"
+      ],
+      "countries": [
+        "France",
+        "Prussia"
+      ],
+      "figures": [
+        "napoleon_bonaparte",
+        "gebhard_von_blucher",
+        "marshal_grouchy"
+      ],
+      "note": "One account gives Prussian losses at Ligny as over 20,000 men, and French losses as about half that number.",
+      "levels": {
+        "primary": {
+          "cause": "Napoleon meant to defeat Blücher’s Prussian army at once, before it could join Wellington’s.",
+          "what": "On 16 June 1815 the main French army defeated the Prussians at Ligny and drove them into retreat.",
+          "consequence": "The Prussians fell back from Ligny, and on 17 June Wellington retreated towards Waterloo."
+        },
+        "secondary": {
+          "cause": "The French plan was to strike the two coalition armies separately. Ligny was the attack on the Prussians, fought on the same day as Quatre Bras.",
+          "what": "On 16 June 1815 Napoleon’s army fought the Prussians at Ligny. After heavy fighting the Prussian army retreated towards Wavre.",
+          "consequence": "On 17 June Wellington fell back towards Waterloo. The Prussians had retreated, but they were able to march to that battlefield on 18 June."
+        },
+        "university": {
+          "cause": "Beating the Prussians first was how Napoleon hoped to keep the two coalition armies apart.",
+          "what": "He defeated Blücher at Ligny on 16 June 1815, and the Prussian army retreated towards Wavre.",
+          "consequence": "That retreat did not end the Prussian part in the campaign. The army was on the field at Waterloo on 18 June."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Waterloo_campaign",
+          "publisher": "Wikipedia",
+          "quote": "On 16 June the French prevailed with Marshal Ney commanding the left wing of the French army holding Wellington at the Battle of Quatre Bras and Napoleon defeating Blücher at the Battle of Ligny"
+        },
+        {
+          "url": "https://www.nam.ac.uk/explore/battle-waterloo",
+          "publisher": "National Army Museum",
+          "quote": "The next day, the main part of his army defeated the Prussians at Ligny and drove them into retreat."
+        },
+        {
+          "url": "https://www.nam.ac.uk/explore/battle-waterloo",
+          "publisher": "National Army Museum",
+          "quote": "The Prussians lost over 20,000 men. French casualties were only half that number."
+        },
+        {
+          "url": "https://royalarmouries.org/objects-and-stories/stories/waterloo-1815",
+          "publisher": "Royal Armouries",
+          "quote": "On Friday 16th June, Napoleon's forces met the Prussians at the Battle of Ligny, and after heavy fighting the Prussian army was forced to retreat towards Wavre."
+        },
+        {
+          "url": "https://waterloocommittee.be/battle.php?view=chronology",
+          "publisher": "Comité Royal de Waterloo",
+          "quote": "bat les Prussiens sur le champ de bataille de Ligny"
+        },
+        {
+          "url": "https://waterloocommittee.be/battle.php?view=chronology",
+          "publisher": "Comité Royal de Waterloo",
+          "quote": "Blücher a promis à son allié britannique de se replier sur Wavre."
+        }
+      ],
+      "uncertainties": [
+        {
+          "topic": "Ligny casualties",
+          "range": "Prussian losses over 20,000; French losses about half that",
+          "single_family": true
+        }
+      ]
+    },
+    {
+      "id": "battle_of_quatre_bras",
+      "date": "1815-06-16",
+      "precision": "day",
+      "title": "Battle of Quatre Bras",
+      "kind": "battle",
+      "fronts": [
+        "france_and_low_countries"
+      ],
+      "countries": [
+        "France",
+        "United Kingdom of the Netherlands"
+      ],
+      "figures": [
+        "marshal_ney",
+        "duke_of_wellington",
+        "napoleon_bonaparte"
+      ],
+      "note": "",
+      "levels": {
+        "primary": {
+          "cause": "Marshal Ney led the French against the crossroads at Quatre Bras while Napoleon fought the Prussians at Ligny.",
+          "what": "On 16 June 1815 Wellington’s army held the crossroads, and Ney’s attack did not take them.",
+          "consequence": "Wellington still held Quatre Bras when the day ended, and on 17 June his army fell back towards Waterloo."
+        },
+        "secondary": {
+          "cause": "Ney commanded the French left. His part on 16 June was the crossroads at Quatre Bras, while Napoleon fought Blücher at Ligny.",
+          "what": "On 16 June 1815 Wellington’s army held Quatre Bras against Ney. D’Erlon’s corps marched between that field and Ligny and fought in neither battle.",
+          "consequence": "The crossroads remained with Wellington that evening. The defeat of the Prussians at Ligny still sent his army back towards Waterloo on 17 June."
+        },
+        "university": {
+          "cause": "Quatre Bras and Ligny were fought on the same afternoon, and D’Erlon’s corps spent the day between them.",
+          "what": "One account calls Quatre Bras a tactical victory for Wellington. Another says neither army was forced from the field. Both have Ney fail to take the crossroads.",
+          "consequence": "Holding the crossroads did not let Wellington stay. On 17 June he fell back towards the ridge near Waterloo."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Waterloo_campaign",
+          "publisher": "Wikipedia",
+          "quote": "On 16 June the French prevailed with Marshal Ney commanding the left wing of the French army holding Wellington at the Battle of Quatre Bras and Napoleon defeating Blücher at the Battle of Ligny"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Waterloo_campaign",
+          "publisher": "Wikipedia",
+          "quote": "D'Erlon's I Corps wandered between both battles contributing to neither Quatre Bras nor to Ligny."
+        },
+        {
+          "url": "https://www.nam.ac.uk/explore/battle-waterloo",
+          "publisher": "National Army Museum",
+          "quote": "That same day, Wellington beat off a separate French attack on the crossroads at Quatre Bras."
+        },
+        {
+          "url": "https://www.nam.ac.uk/explore/battle-waterloo",
+          "publisher": "National Army Museum",
+          "quote": "an entire French corps to march back and forth between Ligny and Quatre Bras without attacking either force."
+        },
+        {
+          "url": "https://royalarmouries.org/objects-and-stories/stories/waterloo-1815",
+          "publisher": "Royal Armouries",
+          "quote": "the Anglo-Dutch army met the French, commanded by Marshal Ney, at the Battle of Quatre Bras."
+        },
+        {
+          "url": "https://royalarmouries.org/objects-and-stories/stories/waterloo-1815",
+          "publisher": "Royal Armouries",
+          "quote": "After a fiercely contested battle at Quatre Bras, neither side was forced from the field."
+        },
+        {
+          "url": "https://royalarmouries.org/objects-and-stories/stories/waterloo-1815",
+          "publisher": "Royal Armouries",
+          "quote": "Wellington gained a tactical victory, whilst Napoleon gained a strategic one"
+        },
+        {
+          "url": "https://royalarmouries.org/objects-and-stories/stories/waterloo-1815",
+          "publisher": "Royal Armouries",
+          "quote": "Marshal Ney recalls General D'Erlon's I Corp, who spends the time wandering uselessly between Quatre Bras and Ligny."
+        },
+        {
+          "url": "https://waterloocommittee.be/battle.php?view=chronology",
+          "publisher": "Comité Royal de Waterloo",
+          "quote": "sous le maréchal Ney, rencontre aux Quatre-Bras des éléments de l'armée de Wellington et ne peut s'emparer du carrefour."
+        }
+      ],
+      "uncertainties": [
+        {
+          "topic": "Quatre Bras result",
+          "range": "tactical victory for Wellington; neither side forced from the field"
+        }
+      ]
+    },
+    {
+      "id": "battle_of_waterloo",
+      "date": "1815-06-18",
+      "precision": "day",
+      "title": "Battle of Waterloo",
+      "kind": "battle",
+      "fronts": [
+        "france_and_low_countries"
+      ],
+      "countries": [
+        "France",
+        "Prussia",
+        "United Kingdom of the Netherlands"
+      ],
+      "figures": [
+        "napoleon_bonaparte",
+        "duke_of_wellington",
+        "gebhard_von_blucher",
+        "marshal_ney",
+        "marshal_grouchy",
+        "gneisenau"
+      ],
+      "note": "Beside the 68,000 given for Wellington’s army, one account adds 156 guns, and gives Napoleon 72,000 men and 246 guns after detaching 33,000 men. It gives French losses as nearly 40,000 and allied losses as 22,000, and a Prussian strength of 48,000. The same encyclopaedia page that gives a French frontier strength of 128,000 also gives the French 124,000 to 126,000, Wellington 107,000, and Blücher 123,000. The first attack is timed at 11:30 and at midday. Abdication is put on 22 June, or at the allied entry into Paris on 7 July. Surrender to the British is put on 15 July, or told with that entry.",
+      "mapNote": "The accounts place the fighting on a ridge near the village of Waterloo.",
+      "levels": {
+        "primary": {
+          "cause": "Wellington chose to stand near Waterloo on 18 June and to wait until the Prussians, beaten at Ligny, could reach him.",
+          "what": "On 18 June 1815 the French attacked Wellington’s line. The arrival of the Prussians completed Napoleon’s defeat.",
+          "consequence": "Prussian cavalry pursued the French through the night. On 7 July the allied armies entered Paris."
+        },
+        "secondary": {
+          "cause": "After Ligny, Wellington fell back in the rain on 17 June to a ridge near Waterloo, counting on the Prussians to come to him.",
+          "what": "On 18 June 1815 Napoleon attacked Wellington’s army on that ridge. Blücher’s Prussians reached the field, the French were defeated, and Prussian cavalry harried them through the night.",
+          "consequence": "Gneisenau directed the Prussian pursuit after the defeat. The allies entered Paris on 7 July, and Napoleon was afterwards exiled to St Helena."
+        },
+        "university": {
+          "cause": "Wellington stood because the Prussians had promised to come. Rain had fallen before the attack, and the accounts do not agree on the hour it began.",
+          "what": "One account starts the battle at half past eleven with a diversion against Hougoumont. Another says Napoleon waited until midday for the ground to dry. Two accounts number Wellington’s army at 68,000 men. They agree the Prussian arrival on 18 June turned the battle.",
+          "consequence": "One account dates Napoleon’s abdication to 22 June 1815. Another places the abdication at the allied entry into Paris on 7 July. Both accounts have the allies enter Paris on 7 July, and both have him exiled to St Helena."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Waterloo_campaign",
+          "publisher": "Wikipedia",
+          "quote": "The next day the Battle of Waterloo proved to be the decisive battle of the campaign."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Waterloo_campaign",
+          "publisher": "Wikipedia",
+          "quote": "On the night of 17 June the Anglo-allied army turned and prepared for battle on a gentle escarpment, about 1 mile (1.6 km) south of the village of Waterloo"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Waterloo_campaign",
+          "publisher": "Wikipedia",
+          "quote": "The two Coalition armies entered Paris on 7 July."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Waterloo_campaign",
+          "publisher": "Wikipedia",
+          "quote": "an energetic pursuit during the night of 18 June, under the guidance of Marshal Gneisenau"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Waterloo_campaign",
+          "publisher": "Wikipedia",
+          "quote": "was forced to abdicate on 22 June"
+        },
+        {
+          "url": "https://www.nam.ac.uk/explore/battle-waterloo",
+          "publisher": "National Army Museum",
+          "quote": "The Battle of Waterloo was fought on 18 June 1815 between Napoleon’s French Army and a coalition led by the Duke of Wellington and Marshal Blücher."
+        },
+        {
+          "url": "https://www.nam.ac.uk/explore/battle-waterloo",
+          "publisher": "National Army Museum",
+          "quote": "Wellington decided to stand and fight on 18 June until the Prussians could arrive."
+        },
+        {
+          "url": "https://www.nam.ac.uk/explore/battle-waterloo",
+          "publisher": "National Army Museum",
+          "quote": "The Anglo-Allied army had 68,000 men and 156 guns."
+        },
+        {
+          "url": "https://www.nam.ac.uk/explore/battle-waterloo",
+          "publisher": "National Army Museum",
+          "quote": "Having detached 33,000 men to follow the Prussians after Ligny, Napoleon had 72,000 men and 246 guns at Waterloo."
+        },
+        {
+          "url": "https://www.nam.ac.uk/explore/battle-waterloo",
+          "publisher": "National Army Museum",
+          "quote": "Napoleon lost nearly 40,000 men killed, wounded or captured. The Allies suffered 22,000 casualties."
+        },
+        {
+          "url": "https://www.nam.ac.uk/explore/battle-waterloo",
+          "publisher": "National Army Museum",
+          "quote": "The 48,000-strong Prussian Army"
+        },
+        {
+          "url": "https://www.nam.ac.uk/explore/battle-waterloo",
+          "publisher": "National Army Museum",
+          "quote": "This continued all night, with the French harried by the Prussian cavalry."
+        },
+        {
+          "url": "https://www.nam.ac.uk/explore/battle-waterloo",
+          "publisher": "National Army Museum",
+          "quote": "was forced to abdicate when the Allies entered Paris on 7 July."
+        },
+        {
+          "url": "https://www.nam.ac.uk/explore/battle-waterloo",
+          "publisher": "National Army Museum",
+          "quote": "The French commander Marshal Ney called for reinforcements to push home his advantage."
+        },
+        {
+          "url": "https://royalarmouries.org/objects-and-stories/stories/waterloo-1815",
+          "publisher": "Royal Armouries",
+          "quote": "After a night of intense rain, Napoleon advanced on Sunday 18th June, delaying his onslaught until midday to allow the ground to dry out."
+        },
+        {
+          "url": "https://royalarmouries.org/objects-and-stories/stories/waterloo-1815",
+          "publisher": "Royal Armouries",
+          "quote": "upon the arrival of Blücher and the Prussian army the battle was swung in the Coalition's favour."
+        },
+        {
+          "url": "https://royalarmouries.org/objects-and-stories/stories/waterloo-1815",
+          "publisher": "Royal Armouries",
+          "quote": "Gneisenau took command of the pursuit of the French army after the battle"
+        },
+        {
+          "url": "https://waterloocommittee.be/battle.php?view=chronology",
+          "publisher": "Comité Royal de Waterloo",
+          "quote": "les 68 000 hommes des forces britanniques et hollando-belges se replient en bon ordre vers la position choisie."
+        },
+        {
+          "url": "https://waterloocommittee.be/battle.php?view=chronology",
+          "publisher": "Comité Royal de Waterloo",
+          "quote": "La journée du dimanche 18 juin, à 11 h 30, la bataille débute par une attaque de diversion, menée par la division du Prince Jérôme, frère de Napoléon, contre la ferme d’Hougoumont."
+        }
+      ],
+      "uncertainties": [
+        {
+          "topic": "Wellington army strength",
+          "range": "68,000 on 17 June and at the battle; guns 156 are not repeated"
+        },
+        {
+          "topic": "French strength and guns at Waterloo",
+          "range": "72,000 men and 246 guns after detaching 33,000",
+          "single_family": true
+        },
+        {
+          "topic": "Waterloo casualties",
+          "range": "French nearly 40,000; allies 22,000",
+          "single_family": true
+        },
+        {
+          "topic": "Prussian strength named with the march to Waterloo",
+          "range": "48,000",
+          "single_family": true
+        },
+        {
+          "topic": "campaign strength line",
+          "range": "French 124,000 to 126,000; Wellington 107,000; Blücher 123,000; total 230,000",
+          "single_family": true
+        },
+        {
+          "topic": "hour the attack began",
+          "range": "11:30; midday"
+        },
+        {
+          "topic": "abdication day",
+          "range": "22 June 1815; tied to the allied entry into Paris on 7 July"
+        },
+        {
+          "topic": "surrender day",
+          "range": "15 July 1815; told with the 7 July entry into Paris"
+        }
+      ]
+    }
+  ]
+}

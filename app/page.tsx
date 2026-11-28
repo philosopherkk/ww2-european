@@ -18,6 +18,7 @@ import {
   Users,
   type LucideIcon,
 } from 'lucide-react';
+import ErasMenu from '@/components/ErasMenu';
 import EventCard from '@/components/EventCard';
 import TurningPointPanel from '@/components/TurningPointPanel';
 import type { Level } from '@/lib/data';
@@ -304,7 +305,7 @@ export default function Home() {
       className="pb-nav min-h-screen bg-stone-100 text-stone-900"
       style={{ '--bar-h': `${barH}px` } as React.CSSProperties}
     >
-      <header className="bg-stone-900 text-stone-50">
+      <header className="relative z-[600] bg-stone-900 text-stone-50">
         <div className="mx-auto flex max-w-[1400px] flex-wrap items-center gap-x-5 gap-y-2 px-3 py-2.5 sm:px-4 xl:flex-nowrap xl:py-3">
           <div className="w-full min-w-0 xl:w-auto">
             <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-stone-500">
@@ -318,7 +319,10 @@ export default function Home() {
                 {MONTHS[0].label} – {MONTHS[LAST].label}
                 <span className="hidden sm:inline"> · month by month</span>
               </p>
-              <WarSwitch href={ww1Href} near={WW1_MONTH_KEYS[ww1Idx]} className="flex xl:hidden" />
+              <div className="flex items-center gap-2">
+                <ErasMenu />
+                <WarSwitch href={ww1Href} near={WW1_MONTH_KEYS[ww1Idx]} className="flex xl:hidden" />
+              </div>
             </div>
           </div>
 

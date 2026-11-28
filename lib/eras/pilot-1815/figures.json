@@ -1,0 +1,396 @@
+{
+  "period": "long-nineteenth",
+  "items": [
+    {
+      "id": "napoleon_bonaparte",
+      "name": "Napoleon Bonaparte",
+      "birthDeath": "",
+      "role": "commander",
+      "country": "France",
+      "allegiance": "France",
+      "note": "One account says he was born in Corsica in 1769 and gives his life as 1769 to 1821. Another gives the day of his death as 5 May 1821, and also says May 1821, and does not give a birth year.",
+      "bio": {
+        "primary": "Napoleon returned from exile in March 1815, led the French across the Sambre, and was defeated at Waterloo on 18 June.",
+        "secondary": "Napoleon left Elba and was in Paris in March 1815. He then led the French army across the Sambre at Charleroi, defeated the Prussians at Ligny, and attacked Wellington at Waterloo on 18 June. The Prussian arrival helped to break his army. He died in 1821, in exile on St Helena.",
+        "university": "The day he gave up the throne is not the same in every account. One dates the abdication to 22 June 1815, and another places it when the allies entered Paris on 7 July. Both agree that the allies entered Paris on 7 July, and that he died in 1821 while in exile."
+      },
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Waterloo_campaign",
+          "publisher": "Wikipedia",
+          "quote": "Napoleon returned from his exile on the island of Elba on 1 March 1815, King Louis XVIII fled Paris on 19 March, and Napoleon entered Paris the next day."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Waterloo_campaign",
+          "publisher": "Wikipedia",
+          "quote": "Hostilities started on 15 June when the French drove in the Prussian outposts and crossed the river Sambre at Charleroi placing their forces between the cantonment areas of Wellington's army (to the west) and Blücher's army to the east."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Waterloo_campaign",
+          "publisher": "Wikipedia",
+          "quote": "Napoleon was exiled to the island of Saint Helena where he died on 5 May 1821."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Waterloo_campaign",
+          "publisher": "Wikipedia",
+          "quote": "was forced to abdicate on 22 June"
+        },
+        {
+          "url": "https://www.nam.ac.uk/explore/battle-waterloo",
+          "publisher": "National Army Museum",
+          "quote": "The French Emperor Napoleon Bonaparte had escaped from exile in March 1815 and returned to power."
+        },
+        {
+          "url": "https://www.nam.ac.uk/explore/battle-waterloo",
+          "publisher": "National Army Museum",
+          "quote": "The Battle of Waterloo was fought on 18 June 1815 between Napoleon’s French Army and a coalition led by the Duke of Wellington and Marshal Blücher."
+        },
+        {
+          "url": "https://www.nam.ac.uk/explore/battle-waterloo",
+          "publisher": "National Army Museum",
+          "quote": "was forced to abdicate when the Allies entered Paris on 7 July."
+        },
+        {
+          "url": "https://royalarmouries.org/objects-and-stories/stories/waterloo-1815",
+          "publisher": "Royal Armouries",
+          "quote": "Emperor of the French, Napoleon Bonaparte (1769-1821)"
+        },
+        {
+          "url": "https://royalarmouries.org/objects-and-stories/stories/waterloo-1815",
+          "publisher": "Royal Armouries",
+          "quote": "Napoleon Bonaparte was born in Corsica in 1769, and joined the French army in 1785 as an artillery officer."
+        },
+        {
+          "url": "https://waterloocommittee.be/battle.php?view=chronology",
+          "publisher": "Comité Royal de Waterloo",
+          "quote": "Napoléon est à Paris le 20 mars 1815."
+        },
+        {
+          "url": "https://waterloocommittee.be/battle.php?view=chronology",
+          "publisher": "Comité Royal de Waterloo",
+          "quote": "L'empereur est à Charleroi le 15."
+        }
+      ],
+      "uncertainties": [
+        {
+          "topic": "birth",
+          "range": "1769 in Corsica",
+          "single_family": true
+        },
+        {
+          "topic": "death day",
+          "range": "5 May 1821; also printed as May 1821",
+          "single_family": true
+        },
+        {
+          "topic": "death year",
+          "range": "1821"
+        },
+        {
+          "topic": "abdication day",
+          "range": "22 June 1815; tied to the allied entry into Paris on 7 July"
+        }
+      ]
+    },
+    {
+      "id": "duke_of_wellington",
+      "name": "Arthur Wellesley, Duke of Wellington",
+      "birthDeath": "",
+      "role": "commander",
+      "country": "Britain",
+      "allegiance": "Anglo-allied army",
+      "note": "One account gives his life as 1769 to 1852.",
+      "bio": {
+        "primary": "The Duke of Wellington commanded the allied army in the Netherlands, held Quatre Bras on 16 June 1815, and fought at Waterloo on 18 June.",
+        "secondary": "Wellington’s army met Marshal Ney at the Quatre Bras crossroads on 16 June and held its ground. After the Prussian defeat at Ligny he fell back, and on 18 June he stood near Waterloo until the Prussians arrived and the French were defeated.",
+        "university": "At Quatre Bras one account gives him a tactical victory, while another says neither army was driven off the field. Both agree that Ney did not take the crossroads, and that Wellington then fought at Waterloo on 18 June."
+      },
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Waterloo_campaign",
+          "publisher": "Wikipedia",
+          "quote": "The Anglo-allied army was commanded by the Duke of Wellington and the Prussian army by Field Marshal Graf von Blücher"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Waterloo_campaign",
+          "publisher": "Wikipedia",
+          "quote": "Arthur Wellesley, Duke of Wellington Gebhard Leberecht von Blücher"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Waterloo_campaign",
+          "publisher": "Wikipedia",
+          "quote": "On 16 June the French prevailed with Marshal Ney commanding the left wing of the French army holding Wellington at the Battle of Quatre Bras and Napoleon defeating Blücher at the Battle of Ligny"
+        },
+        {
+          "url": "https://www.nam.ac.uk/explore/battle-waterloo",
+          "publisher": "National Army Museum",
+          "quote": "an Anglo-Allied force, under Field Marshal the Duke of Wellington"
+        },
+        {
+          "url": "https://www.nam.ac.uk/explore/battle-waterloo",
+          "publisher": "National Army Museum",
+          "quote": "That same day, Wellington beat off a separate French attack on the crossroads at Quatre Bras."
+        },
+        {
+          "url": "https://www.nam.ac.uk/explore/battle-waterloo",
+          "publisher": "National Army Museum",
+          "quote": "Wellington decided to stand and fight on 18 June until the Prussians could arrive."
+        },
+        {
+          "url": "https://royalarmouries.org/objects-and-stories/stories/waterloo-1815",
+          "publisher": "Royal Armouries",
+          "quote": "those commanded by the Duke of Wellington and Field Marshal Blücher."
+        },
+        {
+          "url": "https://royalarmouries.org/objects-and-stories/stories/waterloo-1815",
+          "publisher": "Royal Armouries",
+          "quote": "Arthur Wellesley, Duke of Wellington, receives word at a ball in Brussels"
+        },
+        {
+          "url": "https://royalarmouries.org/objects-and-stories/stories/waterloo-1815",
+          "publisher": "Royal Armouries",
+          "quote": "Wellington gained a tactical victory, whilst Napoleon gained a strategic one"
+        },
+        {
+          "url": "https://royalarmouries.org/objects-and-stories/stories/waterloo-1815",
+          "publisher": "Royal Armouries",
+          "quote": "After a fiercely contested battle at Quatre Bras, neither side was forced from the field."
+        },
+        {
+          "url": "https://royalarmouries.org/objects-and-stories/stories/waterloo-1815",
+          "publisher": "Royal Armouries",
+          "quote": "the Duke of Wellington (1769 - 1852)"
+        }
+      ],
+      "uncertainties": [
+        {
+          "topic": "birth and death",
+          "range": "1769 to 1852",
+          "single_family": true
+        }
+      ]
+    },
+    {
+      "id": "gebhard_von_blucher",
+      "name": "Gebhard Leberecht von Blücher",
+      "birthDeath": "",
+      "role": "commander",
+      "country": "Prussia",
+      "allegiance": "Prussia",
+      "note": "One account gives his life as 1742 to 1819, and styles him Prince of Wahlstadt.",
+      "bio": {
+        "primary": "Field Marshal Blücher commanded the Prussians at Ligny, where they were defeated on 16 June 1815, and he was with them at Waterloo on 18 June.",
+        "secondary": "Blücher’s army was beaten at Ligny on 16 June and retreated towards Wavre. On 18 June he and the Prussians reached Waterloo, and their arrival turned the battle against Napoleon.",
+        "university": "The Prussian retreat after Ligny ran towards Wavre, and from there to Wellington’s ridge. Blücher is named with that army both at the defeat and at the arrival on 18 June which decided Waterloo."
+      },
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Waterloo_campaign",
+          "publisher": "Wikipedia",
+          "quote": "The Anglo-allied army was commanded by the Duke of Wellington and the Prussian army by Field Marshal Graf von Blücher"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Waterloo_campaign",
+          "publisher": "Wikipedia",
+          "quote": "Arthur Wellesley, Duke of Wellington Gebhard Leberecht von Blücher"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Waterloo_campaign",
+          "publisher": "Wikipedia",
+          "quote": "On 16 June the French prevailed with Marshal Ney commanding the left wing of the French army holding Wellington at the Battle of Quatre Bras and Napoleon defeating Blücher at the Battle of Ligny"
+        },
+        {
+          "url": "https://www.nam.ac.uk/explore/battle-waterloo",
+          "publisher": "National Army Museum",
+          "quote": "the Prussians, led by Field Marshal Gebhard von Blücher"
+        },
+        {
+          "url": "https://www.nam.ac.uk/explore/battle-waterloo",
+          "publisher": "National Army Museum",
+          "quote": "The next day, the main part of his army defeated the Prussians at Ligny and drove them into retreat."
+        },
+        {
+          "url": "https://www.nam.ac.uk/explore/battle-waterloo",
+          "publisher": "National Army Museum",
+          "quote": "The Battle of Waterloo was fought on 18 June 1815 between Napoleon’s French Army and a coalition led by the Duke of Wellington and Marshal Blücher."
+        },
+        {
+          "url": "https://royalarmouries.org/objects-and-stories/stories/waterloo-1815",
+          "publisher": "Royal Armouries",
+          "quote": "Field Marshal Gebhard Leberecht von Blucher, Prince of Wahlstadt (1742-1819)"
+        },
+        {
+          "url": "https://royalarmouries.org/objects-and-stories/stories/waterloo-1815",
+          "publisher": "Royal Armouries",
+          "quote": "On Friday 16th June, Napoleon's forces met the Prussians at the Battle of Ligny, and after heavy fighting the Prussian army was forced to retreat towards Wavre."
+        },
+        {
+          "url": "https://royalarmouries.org/objects-and-stories/stories/waterloo-1815",
+          "publisher": "Royal Armouries",
+          "quote": "upon the arrival of Blücher and the Prussian army the battle was swung in the Coalition's favour."
+        },
+        {
+          "url": "https://waterloocommittee.be/battle.php?view=chronology",
+          "publisher": "Comité Royal de Waterloo",
+          "quote": "Blücher a promis à son allié britannique de se replier sur Wavre."
+        }
+      ],
+      "uncertainties": [
+        {
+          "topic": "birth and death",
+          "range": "1742 to 1819",
+          "single_family": true
+        },
+        {
+          "topic": "title",
+          "range": "Prince of Wahlstadt",
+          "single_family": true
+        }
+      ]
+    },
+    {
+      "id": "marshal_ney",
+      "name": "Marshal Ney",
+      "birthDeath": "",
+      "role": "commander",
+      "country": "France",
+      "allegiance": "France",
+      "note": "At Waterloo, one account has him call for reinforcements against Wellington’s centre. Another has him lead repeated cavalry charges. His personal name Michel is printed in only one account.",
+      "bio": {
+        "primary": "Marshal Ney attacked the crossroads at Quatre Bras on 16 June 1815, and Wellington’s army kept him from taking it.",
+        "secondary": "Ney commanded the French at Quatre Bras while Napoleon fought at Ligny. He did not secure the crossroads. On 18 June he was again in action at Waterloo.",
+        "university": "At Quatre Bras, Wellington is credited with a tactical victory in one account, while another says neither army was forced from the field. Ney also fought at Waterloo on 18 June. The particular moments given for him there are not the same from account to account."
+      },
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Waterloo_campaign",
+          "publisher": "Wikipedia",
+          "quote": "On 16 June the French prevailed with Marshal Ney commanding the left wing of the French army holding Wellington at the Battle of Quatre Bras and Napoleon defeating Blücher at the Battle of Ligny"
+        },
+        {
+          "url": "https://www.nam.ac.uk/explore/battle-waterloo",
+          "publisher": "National Army Museum",
+          "quote": "The French commander Marshal Ney called for reinforcements to push home his advantage."
+        },
+        {
+          "url": "https://royalarmouries.org/objects-and-stories/stories/waterloo-1815",
+          "publisher": "Royal Armouries",
+          "quote": "the Anglo-Dutch army met the French, commanded by Marshal Ney, at the Battle of Quatre Bras."
+        },
+        {
+          "url": "https://royalarmouries.org/objects-and-stories/stories/waterloo-1815",
+          "publisher": "Royal Armouries",
+          "quote": "After a fiercely contested battle at Quatre Bras, neither side was forced from the field."
+        },
+        {
+          "url": "https://waterloocommittee.be/battle.php?view=chronology",
+          "publisher": "Comité Royal de Waterloo",
+          "quote": "sous le maréchal Ney, rencontre aux Quatre-Bras des éléments de l'armée de Wellington et ne peut s'emparer du carrefour."
+        }
+      ],
+      "uncertainties": [
+        {
+          "topic": "personal name",
+          "range": "Michel",
+          "single_family": true
+        },
+        {
+          "topic": "Waterloo actions",
+          "range": "called for reinforcements; led cavalry charges",
+          "single_family": true
+        }
+      ]
+    },
+    {
+      "id": "marshal_grouchy",
+      "name": "Marshal Grouchy",
+      "birthDeath": "",
+      "role": "commander",
+      "country": "France",
+      "allegiance": "France",
+      "note": "One account gives his detachment as 30,000 men and, elsewhere on the same page, as 40,000. His personal name Emmanuel is printed in only one account.",
+      "bio": {
+        "primary": "Marshal Grouchy was sent to pursue the Prussians after Ligny, and he did not bring that wing to Waterloo on 18 June.",
+        "secondary": "On 17 June Napoleon left Grouchy to follow the Prussians while the main army went after Wellington. Grouchy’s wing was still away when Waterloo was decided, and it met Prussians at Wavre.",
+        "university": "He was given the pursuit of the Prussians after their defeat at Ligny. That pursuit did not stop them reaching Wellington. The size of the force printed for him is not even steady inside the account that gives it, so no figure is repeated."
+      },
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Waterloo_campaign",
+          "publisher": "Wikipedia",
+          "quote": "On 17 June, Napoleon left Grouchy with the right wing of the French army to pursue the Prussians while he took the reserves and command of the left wing of the army to pursue Wellington towards Brussels."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Waterloo_campaign",
+          "publisher": "Wikipedia",
+          "quote": "Grouchy with the right wing of the army engaged a Prussian rearguard at the simultaneous Battle of Wavre"
+        },
+        {
+          "url": "https://royalarmouries.org/objects-and-stories/stories/waterloo-1815",
+          "publisher": "Royal Armouries",
+          "quote": "Napoleon dispatches Marshal Grouchy and 30,000 men to pursue the Prussians."
+        },
+        {
+          "url": "https://royalarmouries.org/objects-and-stories/stories/waterloo-1815",
+          "publisher": "Royal Armouries",
+          "quote": "under the command of Marshal Grouchy. His corps were involved in the pursuit of the Prussians after the Battle of Ligny, and therefore was not actually present at Waterloo. They eventually caught up with the Prussians on the 18th June at Wavre"
+        },
+        {
+          "url": "https://royalarmouries.org/objects-and-stories/stories/waterloo-1815",
+          "publisher": "Royal Armouries",
+          "quote": "He was dispatched with a force of 40,000 men to chase, harry, and defeat the retreating Prussians after the Battle of Ligny"
+        },
+        {
+          "url": "https://royalarmouries.org/objects-and-stories/stories/waterloo-1815",
+          "publisher": "Royal Armouries",
+          "quote": "Coming to Napoleon's aid at Waterloo on the 18th June may well have swung the battle in Napoleon's favour, but Grouchy failed to do so."
+        }
+      ],
+      "uncertainties": [
+        {
+          "topic": "detachment strength",
+          "range": "30,000 and 40,000, both on one page",
+          "single_family": true
+        },
+        {
+          "topic": "personal name",
+          "range": "Emmanuel",
+          "single_family": true
+        }
+      ]
+    },
+    {
+      "id": "gneisenau",
+      "name": "Gneisenau",
+      "birthDeath": "",
+      "role": "commander",
+      "country": "Prussia",
+      "allegiance": "Prussia",
+      "note": "One account calls him Blücher’s chief of staff and a general. Another calls him a marshal during the night pursuit.",
+      "bio": {
+        "primary": "Gneisenau directed the Prussian pursuit of the French after Waterloo on the night of 18 June 1815.",
+        "secondary": "After the French defeat at Waterloo he took the Prussian pursuit. That pursuit ran through the night of 18 June.",
+        "university": "Two accounts place him over the Prussian pursuit after Waterloo, and both tie that pursuit to the night of the victory. They do not give him the same rank."
+      },
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Waterloo_campaign",
+          "publisher": "Wikipedia",
+          "quote": "an energetic pursuit during the night of 18 June, under the guidance of Marshal Gneisenau"
+        },
+        {
+          "url": "https://royalarmouries.org/objects-and-stories/stories/waterloo-1815",
+          "publisher": "Royal Armouries",
+          "quote": "Gneisenau took command of the pursuit of the French army after the battle"
+        }
+      ],
+      "uncertainties": [
+        {
+          "topic": "rank",
+          "range": "marshal; general and chief of staff"
+        }
+      ]
+    }
+  ],
+  "skipped": []
+}
