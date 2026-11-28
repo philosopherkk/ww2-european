@@ -1043,7 +1043,45 @@ export const SOURCES: Source[] = [  {
       'of raids, the bombs dropped and the tonnage carried; the last raid of the campaign, which fixes the ' +
       'last month this line is drawn in. The waypoints of “Zeppelin raids on Britain from Great Yarmouth ' +
       'to London” are Great Yarmouth and London.',
-  },];
+  },
+  {
+    citation: '“Lawrence of Arabia: The man behind the robes”, National Army Museum',
+    publisher: 'National Army Museum, London',
+    url: 'https://www.nam.ac.uk/explore/lawrence-arabia-man-behind-robes',
+    usedFor:
+      'Lawrence posted to the Hejaz in 1916 as liaison with the Arab tribes and with Emir Feisal; Aqaba on 6 July 1917; Tafileh in January 1918; attacks on the railway towards Palestine; and Damascus on 1 October 1918, entered beside Allenby’s forces.',
+  },
+  {
+    citation: '“Egypt and Palestine campaign”, National Army Museum',
+    publisher: 'National Army Museum, London',
+    url: 'https://www.nam.ac.uk/explore/egypt-and-palestine-campaign',
+    usedFor:
+      'The Arab Revolt, begun the previous June, wearing down Ottoman strength by the time Allenby attacked at Beersheba.',
+  },
+  {
+    citation:
+      '“The Arab Revolt, 1916–18”, NZ History (Internet Archive capture, 21 February 2024)',
+    publisher: 'New Zealand Ministry for Culture and Heritage',
+    url:
+      'https://web.archive.org/web/20240221185438/https://nzhistory.govt.nz/war/ottoman-empire/arab-revolt',
+    usedFor:
+      'The proclamation at Mecca on 10 June 1916; Feisal’s raids on the Hejaz railway through 1917; the Medina garrison given as 12,000; Aqaba dated June 1917 here, against 6 July in the other accounts; and Damascus on 1 October 1918, with the argument about who arrived first left open. The live page refused the fetch, so this capture is the copy that was read.',
+  },
+  {
+    citation: '“Arab Revolt”, _Wikipedia_',
+    publisher: 'Wikimedia Foundation',
+    url: 'https://en.wikipedia.org/wiki/Arab_Revolt',
+    usedFor:
+      'The rising initiated at Mecca on 10 June 1916; Aqaba on 6 July after an overland attack; attacks on the Hejaz railway; and the January 1918 defeat of an Ottoman force at Tafilah. The loss figures in that last sentence are this page’s alone.',
+  },
+  {
+    citation: '“Siege of Medina”, _Wikipedia_',
+    publisher: 'Wikimedia Foundation',
+    url: 'https://en.wikipedia.org/wiki/Siege_of_Medina',
+    usedFor:
+      'The siege dated from 10 June 1916 to 10 January 1919, and 12,000 Ottoman troops pinned in Medina. The closing day is this page’s alone, so it stays in the note.',
+  },
+];
 
 export interface Uncertainty {
   /** Topic of the disputed figure */
@@ -1209,7 +1247,7 @@ export const UNCERTAINTIES: Uncertainty[] = [
   },
   {
     topic: 'Damascus in October 1918: which day, and who was there first',
-    range: 'The city’s fall on 1 October 1918 has three families: the capture article, the campaign account which pairs Daraa on 27 September with Damascus on 1 October, and _The Times History of the War_, which writes of troops entering on 30 September to 1 October; the Australian War Memorial’s table of battles, whose stated source is the official committee’s list of engagements, prints Damascus on 1 October 1918. What is disputed is the order of entry. The capture article puts the 3rd Light Horse Brigade in the city at 05:00 on 1 October and quotes Hew Strachan’s and Hewick Hughes’s editing of Allenby’s papers for an instruction from general headquarters to let Prince Faisal’s force in first, even though the Egyptian Expeditionary Force had won the battle and reached Damascus before the Arabs; the independent war-history account has the Turks losing control on 30 September, the first troops of the Arab Revolt entering on 1 October and the first of Allenby’s men on 2 October. This site dates the event and does not rank the troops, because the dispute is about orders and hours rather than about the capture.',
+    range: 'The city’s fall on 1 October 1918 has three families: the capture article, the campaign account which pairs Daraa on 27 September with Damascus on 1 October, and _The Times History of the War_, which writes of troops entering on 30 September to 1 October; the Australian War Memorial’s table of battles, whose stated source is the official committee’s list of engagements, prints Damascus on 1 October 1918. What is disputed is the order of entry. The capture article puts the 3rd Light Horse Brigade in the city at 05:00 on 1 October and quotes Hew Strachan’s and Hewick Hughes’s editing of Allenby’s papers for an instruction from general headquarters to let Prince Faisal’s force in first, even though the Egyptian Expeditionary Force had won the battle and reached Damascus before the Arabs; the independent war-history account has the Turks losing control on 30 September, the first troops of the Arab Revolt entering on 1 October and the first of Allenby’s men on 2 October. This site dates the event and does not rank the troops, because the dispute is about orders and hours rather than about the capture. Two further pages leave the order open. The National Army Museum has the Arab troops entering with Allenby’s forces on 1 October 1918. A New Zealand history has them meeting Australian Light Horsemen coming in from another side, and says the debate over who was first has continued.',
   },
   {
     topic: 'Daraa: 27 or 28 September 1918',
@@ -1334,7 +1372,28 @@ export const UNCERTAINTIES: Uncertainty[] = [
       'Encyclopaedia Britannica with the day and with the phrase of a fortified post; re-reading the ' +
       'encyclopedia for this batch, the passage in its World War I material was not on the page, and the ' +
       'treatment that remains gives no day and no fortification. The credit has been removed from the ' +
-      'note. Whether Aqaba was a fortified post at all is a separate question the card declines to answer.',
+      'note. Whether Aqaba was a fortified post at all is a separate question the card declines to answer. A ' +
+      'New Zealand history dates the capture to June 1917. The museum and the revolt article give 6 July, ' +
+      'which is the day used. The place is not called fortified.',
+  },
+  {
+    topic: 'Medina: the day the siege ended, and the size of the garrison',
+    range:
+      'Two histories give the Ottoman garrison of Medina as 12,000 men: the New Zealand account, which ' +
+      'names General Fakhri Pasha in command of that garrison, and the siege article, which speaks of ' +
+      'pinning 12,000 Ottomans in the city. The day the siege ended is the siege article’s alone, 10 ' +
+      'January 1919. The fighting account still says only that the city was held through the war.',
+  },
+  {
+    topic: 'Tafileh, January 1918: the day, the spelling, and the losses',
+    range:
+      'The National Army Museum and the revolt article both place a defeat of an Ottoman force at Tafileh ' +
+      'in January 1918, with T. E. Lawrence present. The museum spells the town Tafileh and calls the ' +
+      'fight a defensive battle turned into a rout. The revolt article spells it Tafilah, calls it one of ' +
+      'the largest set-piece battles of the revolt, and prints over 1,000 Ottoman casualties for the loss ' +
+      'of forty men. Neither gives a day inside the month, so the card is dated to January, and the ' +
+      'losses are not printed in the account. The town is not on the line from Aqaba to Damascus, and no ' +
+      'path was added.',
   },
   {
     topic:

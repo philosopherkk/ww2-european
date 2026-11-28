@@ -78,6 +78,7 @@ const WW2_MONTH_KEYS: string[] = Array.from({ length: 99 }, (_, i) => {
 });
 
 const WW2_BASE = process.env.NEXT_PUBLIC_WW2_URL ?? 'https://ww2-european.vercel.app';
+const ERA_HREF = `${WW2_BASE}/era/long-nineteenth`;
 
 type Tab = 'map' | 'people' | 'numbers' | 'sources';
 
@@ -330,6 +331,13 @@ export default function Home() {
               <p className="text-xs text-stone-400">
                 {MONTHS[0].label} – {MONTHS[LAST].label}
                 <span className="hidden sm:inline"> · month by month</span>
+                <span className="text-stone-500"> · </span>
+                <a
+                  href={ERA_HREF}
+                  className="font-medium text-stone-200 underline decoration-stone-500 underline-offset-2 hover:text-white"
+                >
+                  Waterloo, 1815
+                </a>
               </p>
               <WarSwitch href={ww2Href} near={WW2_MONTH_KEYS[ww2Idx]} className="flex xl:hidden" />
             </div>

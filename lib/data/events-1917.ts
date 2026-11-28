@@ -563,8 +563,7 @@ export const EVENTS_1917: WW1Event[] = [
         cause: 'The Arab Revolt, begun at Mecca in 1916, needed a port. Aqaba, on the Red Sea, was held by the ' +
           'Ottomans and faced the sea. The attackers came from inland instead.',
         what: 'On 6 July 1917 Arab forces, with T. E. Lawrence, took Aqaba from the landward side. The ' +
-          'National Army Museum gives that day. A reference work agrees the capture was in July and does ' +
-          'not, by itself, fix the day.',
+          'National Army Museum gives that day. Another account of the revolt gives 6 July as well.',
         consequence: 'The revolt had a Red Sea port close to the Palestine front. Supplies could come in by ship, ' +
           'and the Arab force sat on the flank of the Ottoman army in Palestine. Mecca had been the ' +
           'start. Aqaba made the revolt a front.',
@@ -576,11 +575,9 @@ export const EVENTS_1917: WW1Event[] = [
           'attack to come from the sea. Lawrence and the Arab forces with him crossed the desert and came ' +
           'down to the town from inland.',
         what: 'They took the port on 6 July 1917. The National Army Museum states that day and names ' +
-          'Lawrence. Britannica records the capture of a fortified Ottoman post by Arab irregulars led by ' +
-          'him in July 1917, without a day of its own. A foundation note on one of his letters also dates ' +
-          'the capture to 6 July. This card uses the day the Museum and that letter-note share. It does ' +
-          'not call the port heavily fortified. Fortified is the word Britannica uses, and it is not a ' +
-          'count of guns.',
+          'Lawrence. Another account of the revolt also gives 6 July. A foundation note on one of his ' +
+          'letters also dates the capture to 6 July. This card uses the day the Museum and that ' +
+          'letter-note share. It does not describe the defences.',
         consequence: 'Aqaba gave the revolt a harbour the Royal Navy could supply, close to the coming British ' +
           'offensive into Palestine. It also gave the Arab forces a base that was not Medina and not ' +
           'Mecca. The political weight was as large as the military one: a port in Arab hands supported ' +
@@ -594,12 +591,9 @@ export const EVENTS_1917: WW1Event[] = [
           'version. Arab participants, and the Ottoman garrison, are thinner in the English-language ' +
           'record. The operational idea, an inland approach to a port that looked seaward, does not ' +
           'depend on his legend to be true.',
-        what: 'The day rests on the National Army Museum and on a dated letter-note, with Britannica ' +
-          'supporting July and the fact of a capture by Arab irregulars under Lawrence. That is enough ' +
-          'for 6 July and not enough for a description of the defences. Britannica says fortified. ' +
-          'Another note says heavily fortified. Neither is an order of battle, so this card does not use ' +
-          'the stronger phrase and does not treat fortified as a measured claim about works and guns. No ' +
-          'strength is stated for either side.',
+        what: 'The day rests on the National Army Museum and on a dated letter-note, and another account of ' +
+          'the revolt also gives 6 July. That is enough for the day and not enough for a description of ' +
+          'the defences. No strength is stated for either side, and the place is not called fortified.',
         consequence: 'The port changed the supply of the revolt and the flank of the Ottoman line in southern ' +
           'Palestine. It did not decide who would rule the region. Sykes-Picot, the Hussein-McMahon ' +
           'letters and, later in this same year, the Balfour Declaration were already, or were about to ' +
@@ -1171,7 +1165,12 @@ export const EVENTS_1917: WW1Event[] = [
         },
       secondary:
         {
-          cause: 'Gaza, on the coast, had been fortified from the south as well as the west, so an attack from the seaward side hit prepared trenches over open waterless ground. Beersheba, inland, was the junction of the roads and the only reliable water for the Turkish garrison of Gaza, but it was held by about 4,400 rifles with a small garrison of artillery, because the Turks did not expect an attack across the seventy miles of desert from the Qattara area.',
+          cause: 'Gaza, on the coast, had been fortified from the south as well as the west, so an attack from ' +
+            'the seaward side hit prepared trenches over open waterless ground. Beersheba, inland, was ' +
+            'the junction of the roads and the only reliable water for the Turkish garrison of Gaza, but ' +
+            'it was held by about 4,400 rifles with a small garrison of artillery, because the Turks did ' +
+            'not expect an attack across the seventy miles of desert from the Qattara area. To the east, ' +
+            'Feisal’s force was raiding the Hejaz railway.',
           what: 'Allenby massed five infantry and four mounted divisions, about 47,500 riflemen and 15,000 ' +
             'troopers, and marched them north in secret by railway and a desert pipeline. On 31 October ' +
             'infantry took the outer defences at sunset, and the Australian 4th Light Horse rode the last ' +

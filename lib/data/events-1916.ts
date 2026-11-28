@@ -513,7 +513,23 @@ export const EVENTS_1916: WW1Event[] = [
     fronts: ['middle_east', 'politics'],
     countries: ['Ottoman Empire', 'United Kingdom'],
     figures: ['husayn_mecca', 'feisal'],
-    note: 'Hussein bin Ali’s forces attacked Medina on 5 June, but the revolt proper is dated to 10 June 1916, the day he ordered his supporters against the Ottoman garrison at Mecca. Hussein had about 50,000 men under arms, of whom fewer than 10,000 had rifles; the fighting in Mecca went on for more than a month of street fighting against outnumbered but far better armed Ottoman troops. The revolt’s flag was designed by Mark Sykes. Against the McMahon–Hussein correspondence of ten letters from July 1915 to March 1916, in which Britain agreed to recognise Arab independence after the war, stands the Sykes-Picot Agreement initialled the previous winter. In the background, the executions of Arab nationalist leaders in Damascus, following arrests and torture in Damascus and Beirut, had persuaded Hussein that he was next; Ottoman repression in Syria is one reason the revolt spread slowly there. On the wider front, the battle of Romani on 3–5 August 1916 was the last Central Powers ground attack on the Suez Canal, where the 52nd Lowland Division and the ANZAC Mounted Division defeated the Asia Corps and an Ottoman division, the ANZAC Mounted Division losing more than 300 men; the fall of Kut to the Ottomans in April had made the defence of Egypt look precarious, and by 1918 the rebels had taken Damascus.',
+    note: 'Hussein bin Ali’s forces attacked Medina on 5 June, but the revolt proper is dated to 10 June ' +
+      '1916, the day he ordered his supporters against the Ottoman garrison at Mecca. Hussein had about ' +
+      '50,000 men under arms, of whom fewer than 10,000 had rifles; the fighting in Mecca went on for ' +
+      'more than a month of street fighting against outnumbered but far better armed Ottoman troops. The ' +
+      'revolt’s flag was designed by Mark Sykes. Against the McMahon–Hussein correspondence of ten ' +
+      'letters from July 1915 to March 1916, in which Britain agreed to recognise Arab independence after ' +
+      'the war, stands the Sykes-Picot Agreement initialled the previous winter. In the background, the ' +
+      'executions of Arab nationalist leaders in Damascus, following arrests and torture in Damascus and ' +
+      'Beirut, had persuaded Hussein that he was next; Ottoman repression in Syria is one reason the ' +
+      'revolt spread slowly there. On the wider front, the battle of Romani on 3–5 August 1916 was the ' +
+      'last Central Powers ground attack on the Suez Canal, where the 52nd Lowland Division and the ANZAC ' +
+      'Mounted Division defeated the Asia Corps and an Ottoman division, the ANZAC Mounted Division ' +
+      'losing more than 300 men; the fall of Kut to the Ottomans in April had made the defence of Egypt ' +
+      'look precarious, and by 1918 the rebels had taken Damascus. One history gives the siege of Medina ' +
+      'as lasting until 10 January 1919. That closing day has not been found in a second history, so the ' +
+      'fighting account still says only that the city was held through the war. Two histories give the ' +
+      'Ottoman garrison as 12,000 men.',
     levels: {
       primary: {
         cause: 'The Arabs of the Hejaz, ruled by the Ottoman Empire, had been punished for wanting to govern themselves, and their leader Hussein bin Ali feared he would be next. Britain promised to recognise Arab independence if the Arabs rose against the Ottomans.',
@@ -531,7 +547,13 @@ export const EVENTS_1916: WW1Event[] = [
       },
       university: {
         cause: 'The revolt is best understood as a negotiation conducted by warfare: Hussein’s aim was a Hashemite state recognised by Britain, Britain’s was the immobilisation of Ottoman forces in a theatre where it could not commit divisions of its own, and the two calculations were never reconciled in writing, which is why the McMahon letters, Sykes-Picot and the Balfour Declaration could all be cited later as the governing commitment.',
-        what: 'Militarily the revolt was a guerrilla campaign against a railway garrison rather than a field army: Fakhri Pasha held Medina throughout the war against a siege and repeated raids, while the main body of the revolt lay in attacks on the Hejaz railway and in the uprisings that followed Allenby’s advance. Casualty figures for the Arab side are poorly recorded, and the sources give strength in terms of rifles rather than men, which tells one everything about its character.',
+        what: 'Militarily the revolt was a guerrilla campaign against a railway garrison rather than a field ' +
+          'army: Fakhri Pasha held Medina throughout the war against a siege and repeated raids, while ' +
+          'the main body of the revolt lay in attacks on the Hejaz railway, meant to keep Ottoman troops ' +
+          'on that line and away from the British advance in Palestine, and in the uprisings that ' +
+          'followed Allenby’s advance. Casualty figures for the Arab side are poorly recorded, and the ' +
+          'sources give strength in terms of rifles rather than men, which tells one everything about its ' +
+          'character.',
         consequence: 'Historiography has moved from Lawrence’s romantic account towards a structural one, in which the revolt’s real significance was Ottoman overstretch in the Hejaz and the postwar settlement that cancelled the Arab expectations it had created. The bitterness dated from 1916, not from 1920, because the contradiction between British promises was already in existence when the first shot was fired at Mecca.',
       },
     },

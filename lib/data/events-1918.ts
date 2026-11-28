@@ -60,6 +60,49 @@ export const EVENTS_1918: WW1Event[] = [
       'was 5 January 1918. Source checked: English Wikipedia, “Fourteen Points”.',
   },
   {
+    id: 'tafileh_1918',
+    date: '1918-01-01',
+    precision: 'month',
+    kind: 'battle',
+    title: 'Arab forces defeat an Ottoman force at Tafileh',
+    fronts: ['middle_east'],
+    countries: ['Ottoman Empire', 'United Kingdom'],
+    figures: ['lawrence'],
+    mapNote:
+      'Tafileh is not on the line drawn from Aqaba to Damascus, so this fight is not given a path of its own.',
+    levels: {
+      primary: {
+        cause:
+          'The Arab revolt had taken the Red Sea port of Aqaba in July 1917 and was still fighting the Ottoman army.',
+        what:
+          'In January 1918 Arab forces, including T. E. Lawrence, defeated an Ottoman force at Tafileh.',
+        consequence:
+          'The Ottoman force at Tafileh was defeated. The revolt had won a battle, and the fighting was not over.',
+      },
+      secondary: {
+        cause:
+          'Aqaba, taken in July 1917, had given the revolt a port. Through 1917 Arab parties raided the Hejaz railway, and Medina had not fallen.',
+        what:
+          'In January 1918 Arab forces, with T. E. Lawrence, defeated an Ottoman force at Tafileh. The museum calls that finish a rout after a defensive fight. The other description calls it one of the largest set-piece battles of the revolt.',
+        consequence:
+          'The losses printed with one description are left out. Both agree on January 1918, on Tafileh, and on an Ottoman defeat.',
+      },
+      university: {
+        cause:
+          'The fight at Tafileh is told as a battle, not only as a raid on the railway, and the two descriptions do not match.',
+        what:
+          'The National Army Museum says that at Tafileh in January 1918 Lawrence and the Arabs turned a defensive battle into a rout of the Turkish forces. The other description says that in January 1918 Arab forces, including Lawrence, defeated a large Ottoman force at the Battle of Tafilah.',
+        consequence:
+          'Neither description gives a day within January, so only the month is given. One description prints losses on both sides. The museum page does not, so no number is used.',
+      },
+    },
+    note:
+      'The museum spells the place Tafileh and calls the fight a defensive battle turned into a rout. The other ' +
+      'description spells it Tafilah, calls it one of the largest set-piece battles of the revolt, and prints ' +
+      'over 1,000 Ottoman casualties for the loss of forty men. Those figures are not on the museum page, and ' +
+      'neither description gives a day inside January, so the account above keeps the month and prints no losses.',
+  },
+  {
     id: 'german_january_strikes_1918',
     date: '1918-01-28',
     precision: 'day',

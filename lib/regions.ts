@@ -17,9 +17,11 @@ export interface RegionView {
    * box at both test widths: the Americas box painted 0 of 74,868 samples and the
    * World box 0 of 167,518, because the geometry file is clipped to 12.5-82 N and
    * -25-70 E and there is no world-status layer here. The three remaining buttons each
-   * paint real ground: Europe 59%, Asia 24% (the Caucasus, Persia, the Ottoman east),
-   * Africa 17% — that box reaches 58 E, which is where the Levant and Arabia sit, so it
-   * shows the eastern end of the theatre rather than colonies the source lacks.
+   * paint real ground: Europe 59% and Africa 17%. Africa’s box reaches 58 E, which is
+   * where the Levant and Arabia sit, so it shows the eastern end of the theatre rather
+   * than colonies the source lacks. Asia frames the Ottoman theatre — Anatolia, the
+   * Levant, Mesopotamia, Sinai and the Hejaz, with Gallipoli inside the frame — rather
+   * than the whole continent.
    */
   hidden?: boolean;
 }
@@ -42,12 +44,13 @@ export const REGIONS: RegionView[] = [
     id: 'asia',
     label: 'Asia',
     short: 'AS',
-    center: [32, 105],
-    zoom: 3,
-    minZoom: 2,
+    // Ottoman theatre: Gallipoli and Anatolia through Mesopotamia, Sinai and the Hejaz.
+    center: [31, 37],
+    zoom: 5,
+    minZoom: 3,
     bounds: [
-      [-12, 35],
-      [62, 180],
+      [18, 22],
+      [44, 52],
     ],
     fit: true,
   },

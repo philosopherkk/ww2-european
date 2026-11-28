@@ -168,7 +168,8 @@ export const FIGURES_SOUTH: HistoricalFigure[] = [
     country: 'Hejaz',
     bloc: 'entente',
     bio: {
-      primary: 'Husayn was the Sharif of Mecca, keeper of Islam’s holiest cities. He began the Arab revolt against the Ottomans in 1916.',
+      primary: 'Husayn was the Sharif of Mecca, keeper of Islam’s holiest cities. On 10 June 1916 he proclaimed ' +
+        'the Arab revolt against the Ottomans at Mecca.',
       secondary: 'The sultan had appointed him sharif in 1908, and relations with Istanbul broke down as the Committee of Union and Progress brought troops within reach of Mecca. In ten letters with the British high commissioner in Egypt, Sir Henry McMahon, he asked for recognition of an Arab state and McMahon agreed, excepting “portions of Syria lying to the west of the districts of Damascus, Homs, Hama and Aleppo”. The revolt began on 10 June 1916 with an attack on the Ottoman garrison at Mecca, which fell in July; in November he was proclaimed King of the Arabs.',
       university: 'The first argument is what was promised, since McMahon’s excluded phrase never mentions Palestine, which lies far to the south of the four cities named, and so the Arab reading that Palestine was included and the British reading that it was reserved are called irreconcilable. Elie Kedourie argued that the letters were no treaty, though Lloyd George and Balfour described them as one before the Council of Four in 1919, and James Barr suggests McMahon was caught by his own drafting, since the Arabic version lost its qualifying sense. The second argument is whether this was a national rising at all, since his proclamation defended the Hejaz’s historic rights and Islam rather than a nation, the first stage was fought with Hejazi forces only, and Arabs in Syria and Iraq did not rise.',
     },
@@ -182,7 +183,12 @@ export const FIGURES_SOUTH: HistoricalFigure[] = [
     bloc: 'entente',
     bio: {
       primary: 'Faisal led the Arab force that marched north from the Hejaz to Damascus. The Syrians made him king in 1920, and the French drove him out.',
-      secondary: 'He was a leader of the revolt from June 1916 and, with T. E. Lawrence as his liaison, moved his force north along the railway instead of spending it on the siege of Medina. Aqaba fell in July 1917, giving the revolt a seaport, and his troops reached Damascus in October 1918, a day ahead of Allenby’s main army, where he at once set up an Arab administration. A Syrian congress proclaimed him king in March 1920 and the French ended that state within months; in 1921 the British made him king of Iraq under a mandate.',
+      secondary: 'He was a leader of the revolt from June 1916 and, with T. E. Lawrence as his liaison, moved his ' +
+        'force north along the railway instead of spending it on the siege of Medina. Aqaba fell in July ' +
+        '1917, giving the revolt a seaport, and his troops reached Damascus on 1 October 1918, in an ' +
+        'entry whose order is disputed, where he set up an Arab administration. A Syrian congress ' +
+        'proclaimed him king in March 1920 and the French ended that state within months; in 1921 the ' +
+        'British made him king of Iraq under a mandate.',
       university: 'The debate is over which failure explains him, the loss of Syria or the building of Iraq. The sympathetic reading makes him a man cheated by the settlement, who accepted the Balfour Declaration and the mandates in the hope of British support and was expelled by France in 1920 with Britain unwilling to fight for him, Iraq being the compensation, and it rests on the plain fact that the McMahon correspondence, Sykes–Picot and the Balfour Declaration could not all be honoured at once. The sceptical reading notes that the state at Damascus rested on troops the Hashemites had raised with British arms and gold, that the proclamation of 1920 was not matched by a force able to fight the French army that marched in, and that his following in Iraq was narrower than the map of the mandate.',
     },
   },
@@ -194,8 +200,15 @@ export const FIGURES_SOUTH: HistoricalFigure[] = [
     country: 'United Kingdom',
     bloc: 'entente',
     bio: {
-      primary: 'Lawrence was a British officer with the Arab revolt against the Ottomans. He came home famous as Lawrence of Arabia.',
-      secondary: 'He had been an archaeologist and had surveyed the Negev for the army, and in October 1916 he was sent to the Hejaz to judge which of Husayn’s sons was worth supporting. His importance was strategy rather than command, since he persuaded the Arabs not to wear themselves out against the garrison of Medina but to strike north at the railway. He took part in the surprise overland attack that took Aqaba on 6 July 1917, reached Damascus within hours of its fall in October 1918, and wrote his account of the revolt, Seven Pillars of Wisdom.',
+      primary: 'From 1916 to 1918 Lawrence was the British liaison with Emir Feisal’s Arab force against the ' +
+        'Ottomans. He helped take Aqaba in July 1917 and raid the Hejaz railway, and came home famous as ' +
+        'Lawrence of Arabia.',
+      secondary: 'He had been an archaeologist and had surveyed the Negev for the army, and in October 1916 he was ' +
+        'sent to the Hejaz to judge which of Husayn’s sons was worth supporting. His importance was ' +
+        'strategy rather than command, since he persuaded the Arabs not to wear themselves out against ' +
+        'the garrison of Medina but to strike north at the railway. He took part in the surprise overland ' +
+        'attack that took Aqaba on 6 July 1917, reached Damascus on 1 October 1918 amid a disputed entry, ' +
+        'and wrote his account of the revolt, Seven Pillars of Wisdom.',
       university: 'Whether the military effect matched the mythology can be put in figures, since the Hashemite field force is reckoned at about 30,000 men in June 1916 and rather more than 50,000 by October 1918, against an Ottoman strength in the same theatre that grew from some 6,500 in May 1916 to about 25,000 with 340 guns by September 1918. The defence of his worth is that the revolt secured Allenby’s flank, absorbed Ottoman troops who had to guard and repair the railway, and produced in Damascus an Arab government that made France fight for its mandate. The myth was made by Lowell Thomas’s shows from 1919, which promoted him from a supporting role in Allenby’s story to its co-star, and by Seven Pillars of Wisdom itself, whose literary authority means his own account is still much of the evidence.',
     },
   },

@@ -744,20 +744,44 @@ function ZoomReporter({ onZoom }: { onZoom: (zoom: number) => void }) {
 function ViewController({ region }: { region: Region }) {
   const map = useMap();
   const first = useRef(true);
+  const lockBounds = useRef<(() => void) | null>(null);
   useEffect(() => {
     const v = REGION_BY_ID[region];
+    const opening = first.current;
+    first.current = false;
     map.setMinZoom(v.minZoom);
-    map.setMaxBounds(v.bounds);
-    if (first.current) {
-      first.current = false;
-      if (region !== 'europe') {
-        if (v.fit) map.fitBounds(v.bounds, { animate: false, padding: [8, 8] });
-        else map.setView(v.center, v.zoom, { animate: false });
-      }
+    if (lockBounds.current) {
+      map.off('moveend', lockBounds.current);
+      lockBounds.current = null;
+    }
+    // The container already opens on Europe, with that extent as its limit.
+    if (opening && region === 'europe') {
+      map.setMaxBounds(v.bounds);
       return;
     }
-    if (v.fit) map.fitBounds(v.bounds, { animate: true, duration: 0.8, padding: [8, 8] });
+    // Lift the previous limit first. Leaving it in place pans the map back
+    // inside the old box and cancels the flight, so Europe cannot be reached
+    // again after Asia.
+    map.setMaxBounds([
+      [-85, -180],
+      [85, 180],
+    ]);
+    const lock = () => {
+      map.off('moveend', lock);
+      if (lockBounds.current === lock) lockBounds.current = null;
+      map.setMaxBounds(v.bounds);
+    };
+    lockBounds.current = lock;
+    map.on('moveend', lock);
+    if (v.fit) map.fitBounds(v.bounds, { animate: !opening, duration: 0.8, padding: [8, 8] });
+    else if (opening) map.setView(v.center, v.zoom, { animate: false });
     else map.flyTo(v.center, v.zoom, { duration: 0.8 });
+    return () => {
+      if (lockBounds.current === lock) {
+        map.off('moveend', lock);
+        lockBounds.current = null;
+      }
+    };
   }, [region, map]);
   return null;
 }
