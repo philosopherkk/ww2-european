@@ -1,3 +1,4 @@
+import { ANTIQUITY_FIGURES } from '@/lib/eras/people';
 import type { EraEpisode, EraEvent, EraPeriod } from '@/lib/eras/types';
 
 const teutoburg: EraEvent = {
@@ -8,7 +9,7 @@ const teutoburg: EraEvent = {
   kind: 'battle',
   fronts: ['german_lands'],
   countries: ['Roman Empire', 'Germanic tribes'],
-  figures: [],
+  figures: ['arminius', 'publius_varus'],
   note: 'One account dates the fighting 8–11 September of the year 9, and calls present-day Kalkriese the likely ground. Another says the Seventeenth, Eighteenth, and Nineteenth legions were destroyed, and that Varus was forced to kill himself.',
   levels: {
     primary: {
@@ -41,7 +42,7 @@ const adrianople: EraEvent = {
   kind: 'battle',
   fronts: ['balkans'],
   countries: ['Roman Empire', 'Germanic tribes'],
-  figures: [],
+  figures: ['valens', 'fritigern'],
   note: 'One account calls the winners Germanic tribes. Another calls the result a Gothic victory. The day, and the names Valens and Fritigern, are shared.',
   levels: {
     primary: {
@@ -72,7 +73,7 @@ const episode: EraEpisode = {
   monthLabel: 'Year 9 – 378',
   events: [teutoburg, adrianople],
   lines: [],
-  figures: [],
+  figures: ANTIQUITY_FIGURES,
   links: [],
 };
 

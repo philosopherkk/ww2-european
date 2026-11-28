@@ -285,6 +285,92 @@ const santaAnna: EraFigure = {
   ],
 };
 
+const arminius: EraFigure = {
+  id: 'arminius',
+  name: 'Arminius',
+  role: 'leader',
+  country: 'Germanic tribes',
+  allegiance: 'Germanic tribes',
+  note: 'One account calls him a Cheruscian noble. Another calls him a Germanic chieftain who had served with the Roman auxilia. The days 8 to 11 September are printed in only one account.',
+  bio: {
+    primary:
+      'In September of the year 9, Arminius led Germanic tribes who defeated the Roman army of Varus in the Teutoburg Forest.',
+    secondary:
+      'Arminius led a coalition of Germanic tribes against the Roman army of Varus. In September of the year 9 they defeated that army in the Teutoburg Forest. Varus killed himself after the defeat.',
+    university:
+      'Arminius led the Germanic force that fought Varus in the Teutoburg Forest. In September of the year 9 that force defeated the Roman army. Both accounts record a Germanic victory, and both say that Varus killed himself.',
+  },
+  sources: [
+    { url: 'https://www.livius.org/articles/battle/teutoburg-forest-9-ce/', publisher: 'Livius' },
+    { url: 'https://en.wikipedia.org/wiki/Battle_of_the_Teutoburg_Forest', publisher: 'Wikipedia' },
+  ],
+};
+
+const publiusVarus: EraFigure = {
+  id: 'publius_varus',
+  name: 'Varus',
+  role: 'commander',
+  country: 'Roman Empire',
+  allegiance: 'Roman Empire',
+  note: 'The accounts do not spell his family name the same way. One says he was forced to kill himself.',
+  bio: {
+    primary:
+      'In September of the year 9, Varus’s Roman army was defeated by Arminius in the Teutoburg Forest, and Varus killed himself.',
+    secondary:
+      'Varus led the Roman army in the Teutoburg Forest. In September of the year 9 a Germanic force led by Arminius defeated that army. Varus killed himself.',
+    university:
+      'Varus was the Roman commander at the Teutoburg Forest. In September of the year 9 the Germanic force led by Arminius defeated his army. He killed himself after that defeat.',
+  },
+  sources: [
+    { url: 'https://www.livius.org/articles/battle/teutoburg-forest-9-ce/', publisher: 'Livius' },
+    { url: 'https://en.wikipedia.org/wiki/Battle_of_the_Teutoburg_Forest', publisher: 'Wikipedia' },
+  ],
+};
+
+const valens: EraFigure = {
+  id: 'valens',
+  name: 'Valens',
+  role: 'ruler',
+  country: 'Roman Empire',
+  allegiance: 'Roman Empire',
+  note: 'One account calls him the East-Roman emperor and the winners Germanic tribes. Another calls him the Roman emperor and the result a Gothic victory.',
+  bio: {
+    primary:
+      'On 9 August 378 the Roman emperor Valens was defeated near Adrianople, and he died in the battle.',
+    secondary:
+      'Valens, the Roman emperor, met Fritigern’s army near Adrianople. On 9 August 378 the Romans were defeated. Valens died in that battle.',
+    university:
+      'Valens is named as the Roman emperor who commanded near Adrianople. On 9 August 378 his army met the force led by Fritigern and was defeated. Valens died in the battle.',
+  },
+  sources: [
+    { url: 'https://www.livius.org/articles/battle/adrianople/', publisher: 'Livius' },
+    { url: 'https://en.wikipedia.org/wiki/Battle_of_Adrianople', publisher: 'Wikipedia' },
+  ],
+};
+
+const fritigern: EraFigure = {
+  id: 'fritigern',
+  name: 'Fritigern',
+  role: 'leader',
+  country: 'Germanic tribes',
+  allegiance: 'Germanic tribes',
+  note: 'One account calls his army Germanic rebels. Another calls the victory Gothic, and names Goths among those he led.',
+  bio: {
+    primary:
+      'On 9 August 378 Fritigern led the army that defeated the Romans of the emperor Valens near Adrianople.',
+    secondary:
+      'Fritigern led the army that met the Roman emperor Valens near Adrianople. On 9 August 378 that army defeated the Romans. Valens died in the battle.',
+    university:
+      'Fritigern is named as the leader of the army that fought Valens near Adrianople. On 9 August 378 his army defeated the Romans, and Valens died. The accounts do not give his side the same name.',
+  },
+  sources: [
+    { url: 'https://www.livius.org/articles/battle/adrianople/', publisher: 'Livius' },
+    { url: 'https://en.wikipedia.org/wiki/Battle_of_Adrianople', publisher: 'Wikipedia' },
+  ],
+};
+
+export const ANTIQUITY_FIGURES: EraFigure[] = [arminius, publiusVarus, valens, fritigern];
+
 export const HIGH_MEDIEVAL_FIGURES: EraFigure[] = [williamOfNormandy, haroldOfEngland];
 
 export const LATE_MEDIEVAL_FIGURES: EraFigure[] = [henryV];
