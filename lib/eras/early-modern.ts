@@ -113,7 +113,7 @@ const culloden: EraEvent = {
   kind: 'battle',
   fronts: ['british_isles'],
   countries: ['Britain', 'Jacobites'],
-  figures: [],
+  figures: ['charles_edward_stuart', 'duke_of_cumberland'],
   levels: {
     primary: {
       cause: 'Prince Charles Edward Stuart led a Jacobite army against the Duke of Cumberland’s British force.',

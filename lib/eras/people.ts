@@ -604,6 +604,50 @@ const louisXIV: EraFigure = {
   ],
 };
 
+const charlesEdwardStuart: EraFigure = {
+  id: 'charles_edward_stuart',
+  name: 'Charles Edward Stuart',
+  role: 'commander',
+  country: 'Jacobites',
+  allegiance: 'Jacobites',
+  note: 'One account calls the battle the climax of the rising of 1745–46. Another says the defeat ended the rising of 1745.',
+  bio: {
+    primary:
+      'On 16 April 1746 Prince Charles Edward Stuart’s Jacobite army was defeated by the Duke of Cumberland at Culloden, near Inverness.',
+    secondary:
+      'Prince Charles Edward Stuart led a Jacobite army that sought the throne. On 16 April 1746 the Duke of Cumberland’s British army defeated that force at Culloden, near Inverness.',
+    university:
+      'Prince Charles Edward Stuart led the Jacobite army against the Duke of Cumberland. On 16 April 1746 that army was defeated at Culloden, near Inverness. The fight belongs to the Jacobite rising of 1745.',
+  },
+  sources: [
+    { url: 'https://www.nam.ac.uk/explore/battle-culloden', publisher: 'National Army Museum' },
+    { url: 'https://www.britishbattles.com/jacobite-rebellion/battle-of-culloden/', publisher: 'British Battles' },
+    { url: 'https://en.wikipedia.org/wiki/Battle_of_Culloden', publisher: 'Wikipedia' },
+  ],
+};
+
+const dukeOfCumberland: EraFigure = {
+  id: 'duke_of_cumberland',
+  name: 'Duke of Cumberland',
+  role: 'commander',
+  country: 'Britain',
+  allegiance: 'Britain',
+  note: 'One account calls him the son of George II.',
+  bio: {
+    primary:
+      'On 16 April 1746 the Duke of Cumberland’s British army defeated Prince Charles Edward Stuart’s Jacobite force at Culloden, near Inverness.',
+    secondary:
+      'The Duke of Cumberland commanded the British army sent against the Jacobite rising. On 16 April 1746 he defeated Prince Charles Edward Stuart at Culloden, near Inverness.',
+    university:
+      'The Duke of Cumberland led the British force at Culloden. On 16 April 1746 he defeated the Jacobite army of Prince Charles Edward Stuart near Inverness.',
+  },
+  sources: [
+    { url: 'https://www.nam.ac.uk/explore/battle-culloden', publisher: 'National Army Museum' },
+    { url: 'https://www.britishbattles.com/jacobite-rebellion/battle-of-culloden/', publisher: 'British Battles' },
+    { url: 'https://en.wikipedia.org/wiki/Battle_of_Culloden', publisher: 'Wikipedia' },
+  ],
+};
+
 export const EARLY_MODERN_FIGURES: EraFigure[] = [
   philipII,
   elizabethI,
@@ -616,6 +660,8 @@ export const EARLY_MODERN_FIGURES: EraFigure[] = [
   charlesCornwallis,
   dukeOfMarlborough,
   louisXIV,
+  charlesEdwardStuart,
+  dukeOfCumberland,
 ];
 
 export const LONG_NINETEENTH_FIGURES: EraFigure[] = [santaAnna, robertELee];
