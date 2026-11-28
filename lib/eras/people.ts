@@ -488,7 +488,29 @@ const robertTheBruce: EraFigure = {
   ],
 };
 
-export const LATE_MEDIEVAL_FIGURES: EraFigure[] = [robertTheBruce, henryV];
+const edwardIII: EraFigure = {
+  id: 'edward_iii',
+  name: 'Edward III',
+  role: 'ruler',
+  country: 'England',
+  allegiance: 'England',
+  note: 'One account spells the battlefield Creçy. The others spell it Crécy.',
+  bio: {
+    primary:
+      'On 26 August 1346 King Edward III’s English army defeated the French at Crécy in the Hundred Years War.',
+    secondary:
+      'Edward III led an English army into France in the Hundred Years War. On 26 August 1346 that army defeated the French at Crécy.',
+    university:
+      'Edward III commanded the English army at Crécy. On 26 August 1346 it defeated the French army of Philip VI in the Hundred Years War. The result was an English victory.',
+  },
+  sources: [
+    { url: 'https://www.britishbattles.com/one-hundred-years-war/battle-of-crecy/', publisher: 'British Battles' },
+    { url: 'https://www.encyclopedia.com/history/modern-europe/wars-and-battles/battle-crecy', publisher: 'Encyclopedia.com' },
+    { url: 'https://en.wikipedia.org/wiki/Battle_of_Cr%C3%A9cy', publisher: 'Wikipedia' },
+  ],
+};
+
+export const LATE_MEDIEVAL_FIGURES: EraFigure[] = [robertTheBruce, edwardIII, henryV];
 
 export const EARLY_MODERN_FIGURES: EraFigure[] = [
   philipII,

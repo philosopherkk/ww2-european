@@ -44,7 +44,7 @@ const crecy: EraEvent = {
   kind: 'battle',
   fronts: ['france_and_low_countries'],
   countries: ['England', 'France'],
-  figures: [],
+  figures: ['edward_iii'],
   levels: {
     primary: {
       cause: 'Edward III had led an English army into France in the Hundred Years War.',
