@@ -18,7 +18,7 @@ import {
   Users,
   type LucideIcon,
 } from 'lucide-react';
-import ErasMenu from '@/components/ErasMenu';
+import EraWarSwitch from '@/components/EraWarSwitch';
 import EventCard from '@/components/EventCard';
 import TurningPointPanel from '@/components/TurningPointPanel';
 import type { Level } from '@/lib/data';
@@ -319,10 +319,12 @@ export default function Home() {
                 {MONTHS[0].label} – {MONTHS[LAST].label}
                 <span className="hidden sm:inline"> · month by month</span>
               </p>
-              <div className="flex items-center gap-2">
-                <ErasMenu />
-                <WarSwitch href={ww1Href} near={WW1_MONTH_KEYS[ww1Idx]} className="flex xl:hidden" />
-              </div>
+              <EraWarSwitch
+                current="/"
+                ww1Href={ww1Href}
+                ww1Title={`Open the First World War site near ${WW1_MONTH_KEYS[ww1Idx]} — the same point in that war`}
+                className="flex shrink-0 xl:hidden"
+              />
             </div>
           </div>
 
@@ -351,7 +353,12 @@ export default function Home() {
             ))}
           </div>
 
-          <WarSwitch href={ww1Href} near={WW1_MONTH_KEYS[ww1Idx]} className="hidden xl:flex" />
+          <EraWarSwitch
+            current="/"
+            ww1Href={ww1Href}
+            ww1Title={`Open the First World War site near ${WW1_MONTH_KEYS[ww1Idx]} — the same point in that war`}
+            className="hidden xl:flex"
+          />
         </div>
       </header>
 
@@ -716,30 +723,6 @@ export default function Home() {
       </footer>
 
       <TabButtons tab={tab} onChange={setTab} variant="bottom" level={level} onLevel={setLevel} />
-    </div>
-  );
-}
-
-function WarSwitch({ href, near, className }: { href: string; near: string; className: string }) {
-  return (
-    <div
-      className={`shrink-0 items-stretch overflow-hidden rounded-lg border border-stone-600 ${className}`}
-      role="group"
-      aria-label="War"
-    >
-      <a
-        href={href}
-        title={`Open the First World War site near ${near} — the same point in that war`}
-        className="px-3 py-1.5 text-sm font-medium text-stone-300 hover:bg-stone-800 hover:text-white xl:py-1.5"
-      >
-        WW1
-      </a>
-      <span
-        aria-current="page"
-        className="bg-stone-50 px-3 py-1.5 text-sm font-bold text-stone-900 xl:py-1.5"
-      >
-        WW2
-      </span>
     </div>
   );
 }

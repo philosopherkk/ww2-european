@@ -2,9 +2,14 @@
 
 import { Fragment, useEffect, useMemo } from 'react';
 import { CircleMarker, MapContainer, Polyline, Popup, TileLayer, useMap } from 'react-leaflet';
+import { REGION_BY_ID } from '@/lib/regions';
 import type { EraLine, EraLink } from '@/lib/eras/types';
 
 const LINE_COLOR = '#1e3a5f';
+const AMERICA_BOUNDS = REGION_BY_ID.america.bounds;
+const EUROPE_DEFAULT: [number, number] = [50, 10];
+
+export type EraMapExtent = 'auto' | 'america' | 'world';
 
 interface Placed {
   name: string;
@@ -30,18 +35,41 @@ function placedOn(line: EraLine, links: EraLink[]): Placed[] {
   return out;
 }
 
-function FitToPoints({ points }: { points: [number, number][] }) {
+function Frame({
+  extent,
+  yearPoints,
+  activePoints,
+  allPoints,
+}: {
+  extent: EraMapExtent;
+  yearPoints: [number, number][];
+  activePoints: [number, number][];
+  allPoints: [number, number][];
+}) {
   const map = useMap();
   useEffect(() => {
-    if (points.length === 0) return;
-    const fit = () => {
+    const frame = () => {
       map.invalidateSize();
-      map.fitBounds(points, { padding: [28, 28] });
+      if (extent === 'america') {
+        map.fitBounds(AMERICA_BOUNDS, { padding: [12, 12] });
+        return;
+      }
+      if (extent === 'world') {
+        if (allPoints.length > 0) map.fitBounds(allPoints, { padding: [28, 28], maxZoom: 4 });
+        else map.setView([20, 10], 2);
+        return;
+      }
+      const pts = activePoints.length > 0 ? activePoints : yearPoints;
+      if (pts.length === 0) {
+        map.setView(EUROPE_DEFAULT, 4);
+        return;
+      }
+      map.fitBounds(pts, { padding: [28, 28], maxZoom: pts.length === 1 ? 6 : 8 });
     };
-    fit();
-    window.addEventListener('resize', fit);
-    return () => window.removeEventListener('resize', fit);
-  }, [map, points]);
+    frame();
+    window.addEventListener('resize', frame);
+    return () => window.removeEventListener('resize', frame);
+  }, [map, extent, yearPoints, activePoints, allPoints]);
   return null;
 }
 
@@ -49,23 +77,48 @@ export default function EraMap({
   lines,
   links,
   activeEventId,
+  yearEventIds,
+  extent,
   onPickEvent,
 }: {
   lines: EraLine[];
   links: EraLink[];
   activeEventId: string | null;
+  yearEventIds: string[];
+  extent: EraMapExtent;
   onPickEvent: (id: string) => void;
 }) {
   const drawn = useMemo(
     () => lines.map((line) => ({ line, points: placedOn(line, links) })),
     [lines, links]
   );
-  const positions = useMemo<[number, number][]>(
+  const allPoints = useMemo<[number, number][]>(
     () => drawn.flatMap((item) => item.points.map((point) => [point.lat, point.lng] as [number, number])),
     [drawn]
   );
-  const center: [number, number] = positions[0] ?? [50, 10];
-  const zoom = positions.length > 0 ? 8 : 4;
+  const yearIds = useMemo(() => new Set(yearEventIds), [yearEventIds]);
+  const yearPoints = useMemo<[number, number][]>(
+    () =>
+      drawn.flatMap((item) =>
+        item.points
+          .filter((point) => point.eventId != null && yearIds.has(point.eventId))
+          .map((point) => [point.lat, point.lng] as [number, number])
+      ),
+    [drawn, yearIds]
+  );
+  const activePoints = useMemo<[number, number][]>(
+    () =>
+      activeEventId == null
+        ? []
+        : drawn.flatMap((item) =>
+            item.points
+              .filter((point) => point.eventId === activeEventId)
+              .map((point) => [point.lat, point.lng] as [number, number])
+          ),
+    [drawn, activeEventId]
+  );
+  const center: [number, number] = yearPoints[0] ?? EUROPE_DEFAULT;
+  const zoom = yearPoints.length > 0 ? 6 : 4;
 
   return (
     <MapContainer
@@ -79,7 +132,7 @@ export default function EraMap({
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       />
-      <FitToPoints points={positions} />
+      <Frame extent={extent} yearPoints={yearPoints} activePoints={activePoints} allPoints={allPoints} />
       {drawn.map(({ line, points }) => {
         const path = points.map((point) => [point.lat, point.lng] as [number, number]);
         return (

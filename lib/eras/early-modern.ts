@@ -1,3 +1,8 @@
+import {
+  EARLY_MODERN_AMERICAS,
+  EARLY_MODERN_LINES,
+  EARLY_MODERN_LINKS,
+} from '@/lib/eras/americas';
 import type { EraEpisode, EraEvent, EraPeriod } from '@/lib/eras/types';
 
 const armada: EraEvent = {
@@ -136,10 +141,10 @@ const episode: EraEpisode = {
   id: 'early-modern-battles',
   title: 'Armada, Naseby, Blenheim, and Culloden',
   monthLabel: '1588 – April 1746',
-  events: [armada, naseby, blenheim, culloden],
-  lines: [],
+  events: [armada, naseby, blenheim, culloden, ...EARLY_MODERN_AMERICAS],
+  lines: EARLY_MODERN_LINES,
   figures: [],
-  links: [],
+  links: EARLY_MODERN_LINKS,
 };
 
 export const EARLY_MODERN: EraPeriod = {

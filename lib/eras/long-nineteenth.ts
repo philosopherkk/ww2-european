@@ -1,3 +1,8 @@
+import {
+  LONG_NINETEENTH_AMERICAS,
+  LONG_NINETEENTH_LINES,
+  LONG_NINETEENTH_LINKS,
+} from '@/lib/eras/americas';
 import batchFile from '@/lib/eras/pilot-1815/batch-01.json';
 import figuresFile from '@/lib/eras/pilot-1815/figures.json';
 import linesFile from '@/lib/eras/pilot-1815/lines.json';
@@ -36,6 +41,7 @@ const FRONTS: readonly EraFront[] = [
   'black_sea',
   'anatolia_and_levant',
   'maghreb',
+  'americas',
   'politics',
 ];
 
@@ -164,10 +170,10 @@ const waterloo: EraEpisode = {
   id: 'waterloo-1815',
   title: 'Waterloo, 1815',
   monthLabel: eraSpanMonthLabel(from, to),
-  events: batchFile.items.map(toEvent),
-  lines,
+  events: [...batchFile.items.map(toEvent), ...LONG_NINETEENTH_AMERICAS],
+  lines: [...lines, ...LONG_NINETEENTH_LINES],
   figures: figuresFile.items.map(toFigure),
-  links: linksFile.links.map(toLink),
+  links: [...linksFile.links.map(toLink), ...LONG_NINETEENTH_LINKS],
 };
 
 export const LONG_NINETEENTH: EraPeriod = {

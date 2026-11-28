@@ -43,6 +43,7 @@ export type EraFront =
   | 'black_sea'
   | 'anatolia_and_levant'
   | 'maghreb'
+  | 'americas'
   | 'politics';
 
 export type EraDomain = 'land' | 'sea';

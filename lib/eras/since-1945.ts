@@ -1,3 +1,4 @@
+import { SINCE_1945_AMERICAS, SINCE_1945_LINES, SINCE_1945_LINKS } from '@/lib/eras/americas';
 import type { EraEpisode, EraEvent, EraPeriod } from '@/lib/eras/types';
 
 const hungary: EraEvent = {
@@ -109,10 +110,10 @@ const episode: EraEpisode = {
   id: 'since-1945-wars',
   title: 'Hungary, Czechoslovakia, and Ukraine',
   monthLabel: 'November 1956 – February 2022',
-  events: [hungary, czechoslovakia, ukraine],
-  lines: [],
+  events: [hungary, czechoslovakia, ukraine, ...SINCE_1945_AMERICAS],
+  lines: SINCE_1945_LINES,
   figures: [],
-  links: [],
+  links: SINCE_1945_LINKS,
 };
 
 export const SINCE_1945: EraPeriod = {

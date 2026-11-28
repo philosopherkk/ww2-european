@@ -5,11 +5,24 @@ import { eraMenuLinks } from '@/lib/eras';
 
 const WW1_BASE = process.env.NEXT_PUBLIC_WW1_URL ?? 'https://ww1-european.vercel.app';
 
-export default function ErasMenu({ current }: { current?: string }) {
+export default function ErasMenu({
+  current,
+  grouped = false,
+}: {
+  current?: string;
+  /** Sit in the Eras / WW1 / WW2 group, without a border of its own. */
+  grouped?: boolean;
+}) {
   const links = eraMenuLinks(WW1_BASE);
+  const onEra = Boolean(current?.startsWith('/era/'));
+  const summaryClass = grouped
+    ? `flex h-full cursor-pointer list-none items-center gap-1 rounded-l-lg px-2 py-1.5 text-sm font-medium sm:px-2.5 [&::-webkit-details-marker]:hidden ${
+        onEra ? 'bg-stone-50 text-stone-900' : 'text-stone-200 hover:bg-stone-800 hover:text-white'
+      }`
+    : 'flex cursor-pointer list-none items-center gap-1 rounded-lg border border-stone-600 px-2 py-1.5 text-sm font-medium text-stone-200 hover:bg-stone-800 hover:text-white sm:px-2.5 [&::-webkit-details-marker]:hidden';
   return (
-    <details className="relative">
-      <summary className="flex cursor-pointer list-none items-center gap-1 rounded-lg border border-stone-600 px-2.5 py-1.5 text-sm font-medium text-stone-200 hover:bg-stone-800 hover:text-white [&::-webkit-details-marker]:hidden">
+    <details className={grouped ? 'relative flex' : 'relative'}>
+      <summary className={summaryClass}>
         Eras
         <ChevronDown size={14} aria-hidden />
       </summary>
