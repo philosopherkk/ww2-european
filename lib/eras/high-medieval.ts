@@ -9,7 +9,7 @@ const stamford: EraEvent = {
   kind: 'battle',
   fronts: ['british_isles'],
   countries: ['England', 'Norway'],
-  figures: [],
+  figures: ['harold_hardrada', 'tostig'],
   levels: {
     primary: {
       cause: 'Hardrada, King of Norway, brought a Viking army into England to take the crown, with Tostig beside him.',

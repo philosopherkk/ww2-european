@@ -415,7 +415,54 @@ const abdAlRahman: EraFigure = {
 
 export const EARLY_MEDIEVAL_FIGURES: EraFigure[] = [charlesMartel, abdAlRahman];
 
-export const HIGH_MEDIEVAL_FIGURES: EraFigure[] = [williamOfNormandy, haroldOfEngland];
+const haroldHardrada: EraFigure = {
+  id: 'harold_hardrada',
+  name: 'Harold Hardrada',
+  role: 'ruler',
+  country: 'Norway',
+  allegiance: 'Norway',
+  note: 'One account spells him Harold Hardrada. The other spells him Harald Hardrada.',
+  bio: {
+    primary:
+      'On 25 September 1066 King Harold defeated Hardrada, King of Norway, at Stamford Bridge, and Hardrada was killed.',
+    secondary:
+      'Hardrada, King of Norway, came to take the English throne, with Tostig beside him. On 25 September 1066 King Harold defeated that army at Stamford Bridge. Hardrada was killed.',
+    university:
+      'One account spells him Harold Hardrada, and the other Harald Hardrada. He was King of Norway, and he came for the English throne with Tostig. On 25 September 1066 he was defeated at Stamford Bridge and killed.',
+  },
+  sources: [
+    { url: 'https://www.britishbattles.com/norman-conquest/battle-of-stamford-bridge/', publisher: 'British Battles' },
+    { url: 'https://en.wikipedia.org/wiki/Battle_of_Stamford_Bridge', publisher: 'Wikipedia' },
+  ],
+};
+
+const tostig: EraFigure = {
+  id: 'tostig',
+  name: 'Tostig',
+  role: 'commander',
+  country: 'England',
+  allegiance: 'Norway',
+  note: 'One account gives him the family name Godwinson. Another calls him an earl.',
+  bio: {
+    primary:
+      'On 25 September 1066 Tostig, brother of King Harold, was killed at Stamford Bridge beside Hardrada of Norway.',
+    secondary:
+      'Tostig, King Harold’s brother, joined Hardrada of Norway in the attempt on the English throne. On 25 September 1066 they were defeated at Stamford Bridge. Tostig was killed.',
+    university:
+      'Tostig was the brother of the English king, and he fought with Hardrada of Norway. On 25 September 1066 King Harold defeated them at Stamford Bridge, and Tostig was killed.',
+  },
+  sources: [
+    { url: 'https://www.britishbattles.com/norman-conquest/battle-of-stamford-bridge/', publisher: 'British Battles' },
+    { url: 'https://en.wikipedia.org/wiki/Battle_of_Stamford_Bridge', publisher: 'Wikipedia' },
+  ],
+};
+
+export const HIGH_MEDIEVAL_FIGURES: EraFigure[] = [
+  williamOfNormandy,
+  haroldOfEngland,
+  haroldHardrada,
+  tostig,
+];
 
 export const LATE_MEDIEVAL_FIGURES: EraFigure[] = [henryV];
 
