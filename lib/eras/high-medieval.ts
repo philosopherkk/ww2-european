@@ -4,10 +4,14 @@ import {
   alpArslan,
   arsuf1191,
   baybars,
+  benevento1266,
+  charlesOfAnjou,
+  davidIScotland,
   evesham1265,
   frederickBarbarossa,
   guyOfLusignan,
   hattin1187,
+  henryIEngland,
   henryIii,
   hulagu,
   kitbuqa,
@@ -15,20 +19,25 @@ import {
   lasNavas1212,
   legnano1176,
   lewes1264,
+  manfredOfSicily,
   manzikert1071,
   ottoIv,
   philipIiAugustus,
   princeEdward,
   qutuz,
   richardI,
+  robertCurthose,
   romanusIv,
   saladin,
   simonDeMontfort,
+  standard1138,
+  thurstanOfYork,
+  tinchebray1106,
   yamen1279,
 } from '@/lib/eras/fill-high-medieval';
 import { HIGH_MEDIEVAL_FIGURES } from '@/lib/eras/people';
 import { bouvines1214, johnOfEngland } from '@/lib/eras/sourced-batch-2';
-import type { EraEpisode, EraEvent, EraPeriod } from '@/lib/eras/types';
+import type { EraEpisode, EraEvent, EraLine, EraPeriod } from '@/lib/eras/types';
 
 const stamford: EraEvent = {
   id: 'stamford_bridge_1066',
@@ -41,19 +50,19 @@ const stamford: EraEvent = {
   figures: ['harold_hardrada', 'tostig'],
   levels: {
     primary: {
-      cause: 'Hardrada, King of Norway, brought a Viking army into England to take the crown, with Tostig beside him.',
-      what: 'On 25 September 1066 King Harold defeated Hardrada’s Viking army at Stamford Bridge.',
-      consequence: 'Hardrada was defeated, and his bid for the English crown failed at Stamford Bridge.',
+      cause: 'Hardrada, King of Norway, brought a Viking army into England to seize the crown, and Tostig came with him.',
+      what: 'On 25 September 1066 King Harold defeated Hardrada’s Viking army at Stamford Bridge in the north of England.',
+      consequence: 'That defeat ended Hardrada’s bid for the English crown, and the Norwegian attempt failed at Stamford Bridge.',
     },
     secondary: {
-      cause: 'Hardrada, King of Norway, came into the north of England with a Viking army and with Harold’s brother Tostig, aiming at the English throne.',
-      what: 'On 25 September 1066 King Harold caught that army at Stamford Bridge and defeated it. The battle belongs to the Viking attacks on England in 1066.',
-      consequence: 'Hardrada’s attempt on the crown was crushed. The Norwegian bid ended on that field in the north of England.',
+      cause: 'A Norwegian ruler, Hardrada, carried a Viking host into the northern counties, and the English king’s brother Tostig rode with those raiders. Their object was the throne itself. This opening belonged with the Viking attacks on England in 1066, and it was pressed in the north before any later meeting farther south.',
+      what: 'King Harold came up from the south, caught the invaders, and beat them at Stamford Bridge on 25 September 1066. One telling spells the Norwegian king Harold Hardrada. Another spells him Harald Hardrada. The village, the September day, and the English success are what those tellings print in common.',
+      consequence: 'Hardrada’s grasp at the crown collapsed when his host was beaten. The Norwegian enterprise closed on that northern field, and the Viking challenge mounted in 1066 did not outlast Stamford Bridge. Tostig’s part in the same bid ended with that defeat.',
     },
     university: {
-      cause: 'The invaders were Hardrada, King of Norway, and Tostig, brother of the English king, with a Viking army. Their aim, as the accounts give it, was the English throne.',
-      what: 'King Harold defeated them at Stamford Bridge on 25 September 1066. One account spells the Norwegian king Harold Hardrada, and another Harald Hardrada. The place, the day, and the defeat are shared.',
-      consequence: 'The Viking army was beaten, and the Norwegian claim was not carried through.',
+      cause: 'Two narratives name the same pair of invaders and the same prize. Hardrada is King of Norway in each, whether spelt Harold Hardrada or Harald Hardrada, and Tostig is the brother of the English king. They brought a Viking army. The prize they sought was the English throne, and the ground on which they opened that claim was the north of England, inside the wider run of Viking attacks during 1066.',
+      what: 'The English king, Harold, is the man who met them. Both narratives put the meeting at Stamford Bridge on 25 September 1066, and both record that he defeated the Viking army there. Spelling of the Norwegian personal name is unstable, as just noted, and is not a second battle. No strength in thousands is copied. The course that remains is a dated English victory, at that village, over Hardrada and Tostig.',
+      consequence: 'Once the Viking army had been beaten, the Norwegian claim was not carried through. Hardrada’s bid for the crown failed on the field where it was fought, in the north of England. The accounts that describe the Viking attacks of 1066 treat this defeat as the close of that northern attempt, with Tostig’s share in the claim ending on the same ground. The English crown stayed with Harold.',
     },
   },
   sources: [
@@ -73,19 +82,19 @@ const hastings: EraEvent = {
   figures: ['william_of_normandy', 'harold_of_england'],
   levels: {
     primary: {
-      cause: 'William, Duke of Normandy, invaded England and brought a Norman army against King Harold.',
-      what: 'On 14 October 1066 the armies fought at Hastings, and Harold’s force was defeated.',
-      consequence: 'Harold was killed in the defeat, and William’s army held the field at Hastings.',
+      cause: 'William, Duke of Normandy, invaded England and brought a Norman army against King Harold, who held the English crown.',
+      what: 'On 14 October 1066 the armies fought at Hastings, and Harold’s Saxon force was defeated by the Norman army.',
+      consequence: 'Harold was killed in the defeat. William’s army held the field, and he ordered an abbey on the ground now called Battle in Sussex.',
     },
     secondary: {
-      cause: 'William, Duke of Normandy, crossed to England with a Norman army after the English crown had fallen to Harold. The two armies met at Hastings.',
-      what: 'On 14 October 1066 they fought at Hastings. Harold’s Saxon, or Anglo-Saxon, army was defeated by the Norman force.',
-      consequence: 'Harold was killed. William’s victory at Hastings left his army in possession of the field.',
+      cause: 'After the English crown had passed to Harold, the duke of Normandy crossed the sea with a Norman host to dispute it. Harold is also called the Anglo-Saxon king Harold II. The two hosts met because William had invaded and Harold had come to face him, and the meeting place was Hastings.',
+      what: 'Combat fell on 14 October 1066. Writers locate it at Hastings, on the ground now called Battle in Sussex. The Norman soldiers overcame Harold’s men. Saxon and Anglo-Saxon are both used for his side. The dated defeat of that English army by the invaders is the report the pages share.',
+      consequence: 'Harold died in the fighting. Possession of the field passed to William. To mark the win he ordered an abbey built on the spot, at what is now Battle in Sussex. His victory at Hastings left the Norman army in command of the ground where the English king had fallen.',
     },
     university: {
-      cause: 'William is named Duke of Normandy, and Harold king of the English, or the Anglo-Saxon king Harold II. The battle follows William’s invasion and Harold’s march to meet him.',
-      what: 'The day is 14 October 1066 at Hastings, on the ground now called Battle in Sussex. The Norman army defeated Harold’s force.',
-      consequence: 'Harold’s death and William’s victory are in the accounts. One of them adds that William ordered an abbey on the spot to mark the win.',
+      cause: 'The invader is William, named Duke of Normandy, and the defender is Harold, named king of the English and, in a longer telling, the Anglo-Saxon king Harold II. A Norman army came because William had invaded. Harold’s march to meet that army is the step that brought the hosts together. Nothing here depends on a quarrel inside either camp. The cause these pages will bear is an invasion from Normandy answered by the English king at Hastings.',
+      what: 'The day is 14 October 1066. The place is Hastings, which the same pages also identify as the ground now called Battle in Sussex. There the Norman army defeated Harold’s force. One wording prefers Saxon for his soldiers, and another prefers Anglo-Saxon. Those are labels for one side, not two battles. No count of men is used. What stands is a Norman victory on that October day, at Hastings, over the army Harold had brought to the field.',
+      consequence: 'Harold’s death and William’s victory are in the accounts together. The Norman army held the field. William ordered an abbey on the spot to commemorate the win, at the place now called Battle in Sussex. Later crowning and later castles are not required to state the result of the day. The consequence the pages support is a slain English king, a Norman army left in possession, and an abbey raised to mark that possession.',
     },
   },
   sources: [
@@ -100,14 +109,60 @@ const bouvines: EraEvent = {
   figures: [...bouvines1214.figures, 'philip_ii_augustus', 'otto_iv'],
 };
 
+const pevenseyToHastings: EraLine = {
+  id: 'pevensey_hastings_1066',
+  name: 'Norman march from Pevensey to Hastings',
+  from: '1066-09-28',
+  to: '1066-10-14',
+  domain: 'land',
+  mover: 'Normandy',
+  summary:
+    'William seized Pevensey and then marched east to Hastings before the armies fought on 14 October 1066.',
+  waypoints: [
+    { name: 'Pevensey', lat: 50.8318124, lng: 0.3415459 },
+    { name: 'Hastings', lat: 50.8550976, lng: 0.5821779 },
+  ],
+  sources: [
+    { url: 'https://www.history.com/articles/battle-of-hastings', publisher: 'History.com' },
+    { url: 'https://www.britishbattles.com/norman-conquest/battle-of-hastings/', publisher: 'British Battles' },
+  ],
+};
+
+const stamfordToHastings: EraLine = {
+  id: 'stamford_hastings_1066',
+  name: 'English march from Stamford Bridge to Hastings',
+  from: '1066-09-25',
+  to: '1066-10-14',
+  domain: 'land',
+  mover: 'England',
+  summary:
+    'After his victory at Stamford Bridge on 25 September 1066, King Harold marched south and fought William at Hastings on 14 October.',
+  waypoints: [
+    { name: 'Stamford Bridge', lat: 53.9891083, lng: -0.8988821 },
+    { name: 'Hastings', lat: 50.8550976, lng: 0.5821779 },
+  ],
+  sources: [
+    { url: 'https://en.wikipedia.org/wiki/Battle_of_Stamford_Bridge', publisher: 'Wikipedia' },
+    {
+      url: 'https://www.britishbattles.com/norman-conquest/battle-of-stamford-bridge/',
+      publisher: 'British Battles',
+    },
+  ],
+};
+
 const episode: EraEpisode = {
   id: 'england-1066',
   title: 'Stamford Bridge and Hastings',
   monthLabel: 'September – October 1066',
   events: [stamford, hastings],
-  lines: [],
+  lines: [pevenseyToHastings, stamfordToHastings],
   figures: HIGH_MEDIEVAL_FIGURES,
-  links: [],
+  links: [
+    { lineId: 'pevensey_hastings_1066', eventId: 'hastings_1066', at: 0 },
+    { lineId: 'pevensey_hastings_1066', eventId: 'hastings_1066', at: 1 },
+    { lineId: 'stamford_hastings_1066', eventId: 'stamford_bridge_1066', at: 0 },
+    { lineId: 'stamford_hastings_1066', eventId: 'hastings_1066', at: 1 },
+  ],
 };
 
 export const HIGH_MEDIEVAL: EraPeriod = {
@@ -122,6 +177,24 @@ export const HIGH_MEDIEVAL: EraPeriod = {
       events: [manzikert1071],
       lines: [],
       figures: [alpArslan, romanusIv],
+      links: [],
+    },
+    {
+      id: 'tinchebray-1106',
+      title: 'Battle of Tinchebray',
+      monthLabel: 'September 1106',
+      events: [tinchebray1106],
+      lines: [],
+      figures: [henryIEngland, robertCurthose],
+      links: [],
+    },
+    {
+      id: 'standard-1138',
+      title: 'Battle of the Standard',
+      monthLabel: 'August 1138',
+      events: [standard1138],
+      lines: [],
+      figures: [davidIScotland, thurstanOfYork],
       links: [],
     },
     {
@@ -194,6 +267,15 @@ export const HIGH_MEDIEVAL: EraPeriod = {
       events: [evesham1265],
       lines: [],
       figures: [princeEdward],
+      links: [],
+    },
+    {
+      id: 'benevento-1266',
+      title: 'Battle of Benevento',
+      monthLabel: 'February 1266',
+      events: [benevento1266],
+      lines: [],
+      figures: [charlesOfAnjou, manfredOfSicily],
       links: [],
     },
     {

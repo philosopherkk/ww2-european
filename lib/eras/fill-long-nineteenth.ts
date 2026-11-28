@@ -862,3 +862,363 @@ export const botha: EraFigure = {
     }
   ]
 };
+
+export const leipzig1813: EraEvent = {
+  "id": "leipzig_1813",
+  "date": "1813-10",
+  "precision": "month",
+  "title": "Battle of Leipzig",
+  "kind": "battle",
+  "fronts": [
+    "german_lands"
+  ],
+  "countries": [
+    "France",
+    "Austria",
+    "Prussia",
+    "Russia",
+    "Sweden"
+  ],
+  "figures": [
+    "karl_von_schwarzenberg"
+  ],
+  "note": "One account dates the fighting 16 to 19 October 1813 and names Gebhard von Blücher among the coalition leaders. The other dates an opening attack to 16 October, calls that first day a draw, and does not print 19 October or Blücher. Both call the battle the largest and the bloodiest of the Napoleonic Wars, and both say Napoleon was forced to abdicate and was exiled to Elba. One dates that exile to May 1814. One account calls Karl von Schwarzenberg commander-in-chief in Germany. The other lists him with Tsar Alexander I and Emperor Francis I among the leaders. Printed strengths do not match.",
+  "levels": {
+    "primary": {
+      "cause": "In October 1813 a coalition of Austria, Prussia, Russia, and Sweden closed on Napoleon’s French army at Leipzig in Saxony.",
+      "what": "Karl von Schwarzenberg was among the coalition leaders, and the French army was decisively defeated at Leipzig.",
+      "consequence": "Napoleon’s French army lost at Leipzig, and the success in that October battle belonged to the coalition."
+    },
+    "secondary": {
+      "cause": "Napoleon had rebuilt a French army after the retreat from Russia and had carried the fighting into Germany. Austria, Prussia, Russia, and Sweden assembled a coalition against him. During October 1813 that coalition, with Karl von Schwarzenberg among its leaders, advanced on Leipzig in Saxony. The city was the meeting point both accounts describe. This was a chosen concentration of armies, not a patrol that blundered into an ambush on a side road.",
+      "what": "The struggle at Leipzig belongs to October 1813. Coalition troops attacked the French, and Napoleon’s army was decisively beaten. Karl von Schwarzenberg is named with the allied leadership in each account. No single run of days is printed alike, so the month is the time kept. Rolls of men and guns disagree and stay out of the telling.",
+      "consequence": "The French defeat was decisive. Later losses of thrones, a dated exit from the city, and a list of every allied prince are not the same from account to account. What remains is the beating of Napoleon’s army by the coalition, and Karl von Schwarzenberg’s place among the commanders on the winning side."
+    },
+    "university": {
+      "cause": "Two narratives place the 1813 German campaign’s crisis at Leipzig in Saxony, after Napoleon had rebuilt a host thinned by the Russian disaster. They agree the opponents were Austria, Prussia, Russia, and Sweden, and that Karl von Schwarzenberg stood with the coalition leadership. They do not agree his office. A battle article calls him commander-in-chief in Germany and also names Gebhard von Blücher, Tsar Alexander I, and the Swedish crown prince Charles John. A shorter history lists Schwarzenberg with Tsar Alexander I and Emperor Francis I, and it never prints Blücher. The commander-in-chief label and the Prussian marshal stay out. The cause kept is the coalition’s October advance on Leipzig, Schwarzenberg among its leaders, against Napoleon’s French army.",
+      "what": "Both narratives call the action the Battle of Leipzig and set it in October 1813. A battle article runs the dates from 16 to 19 October. The shorter history dates an opening attack to 16 October, calls that first day a draw, and does not print the 19th, so no span of days is copied. Each reaches a decisive French defeat, and each calls the struggle the largest and the bloodiest battle of the Napoleonic Wars. Strength tables refuse to match and are omitted. The course both support is that October battle at Leipzig, the coalition’s defeat of Napoleon’s army, and Karl von Schwarzenberg among the allied leaders.",
+      "consequence": "Each narrative treats Leipzig as a decisive coalition success against Napoleon, followed by his abdication and exile to Elba. They separate on the calendar of that sequel. The battle article dates the exile to May 1814, says he was compelled to return to France, and says the Confederation of the Rhine dissolved. The shorter history gives no May date and no Rhine confederacy. Those extras are omitted. No casualty total is shared. The result recorded is the decisive defeat of Napoleon’s French army at Leipzig in October 1813, his later abdication and exile, and a coalition leadership that included Karl von Schwarzenberg."
+    }
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Leipzig",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.history.com/articles/battle-of-leipzig",
+      "publisher": "History.com"
+    }
+  ]
+};
+
+export const balaclava1854: EraEvent = {
+  "id": "balaclava_1854",
+  "date": "1854-10-25",
+  "precision": "day",
+  "title": "Battle of Balaclava",
+  "kind": "battle",
+  "fronts": [
+    "black_sea"
+  ],
+  "countries": [
+    "Britain",
+    "France",
+    "Turkey",
+    "Russia"
+  ],
+  "figures": [
+    "lord_lucan",
+    "lord_cardigan",
+    "james_scarlett"
+  ],
+  "note": "One account calls the result indecisive and names Canrobert for the French. The other calls Balaclava a strategic defeat, says the Russians held the ground they had attacked, and names General Saint-Arnaud for the French army. One styles James Scarlett a general. The other styles him Major General Sir James Scarlett. One styles Lucan as Lord Lucan. The other styles him Lieutenant General Lord Lucan. The Russian assault commander is Pavel Liprandi in one account and General Liprandi in the other. Printed strengths differ.",
+  "levels": {
+    "primary": {
+      "cause": "During the Crimean War a Russian force advanced on the British base at Balaclava, where Lord Lucan commanded the British cavalry.",
+      "what": "On 25 October 1854 Lord Cardigan’s Light Brigade and James Scarlett’s Heavy Brigade each made a charge at Balaclava.",
+      "consequence": "Balaclava is remembered for the Charge of the Light Brigade and the Charge of the Heavy Brigade."
+    },
+    "secondary": {
+      "cause": "Allied soldiers were besieging the Russian port of Sevastopol, and their British stores lay at Balaclava on the southern Crimean coast. A Russian column came on to seize that base. Britain, France, and Turkey had men in the field. Lord Lucan commanded the British cavalry division. Lord Cardigan led its Light Brigade, and James Scarlett led its Heavy Brigade. The approach was an attack on the harbour base, not a meeting of lost patrols.",
+      "what": "The fighting is dated 25 October 1854. Russian cavalry and infantry pressed the outer defences. James Scarlett’s Heavy Brigade charged, and Lord Cardigan’s Light Brigade charged towards the Russian guns. A line of Highland infantry, called the Thin Red Line, also stood in the battle. Distances, squadron lists, and the wording of a written order are not the same in both accounts, so they are left aside.",
+      "consequence": "No shared verdict names a single winner. One label is a draw of sorts, and another is a reverse, so neither is copied. What both accounts keep is the day’s fame: the Charge of the Light Brigade under Lord Cardigan, and the Charge of the Heavy Brigade under James Scarlett, fought for the base at Balaclava."
+    },
+    "university": {
+      "cause": "Two narratives set this Crimean action on 25 October 1854, while the allies besieged Sevastopol and a Russian force struck at the British base of Balaclava. They agree Lord Lucan commanded the British cavalry division, Lord Cardigan the Light Brigade, and James Scarlett the Heavy Brigade. Styles differ. One prints General James Scarlett and Lord Lucan. The other prints Major General Sir James Scarlett and Lieutenant General Lord Lucan. The French commander is Canrobert in one narrative and General Saint-Arnaud in the other, so neither name is chosen. The cause kept is the Russian advance on Balaclava and Lucan’s cavalry, with Cardigan and Scarlett over the two brigades.",
+      "what": "Both narratives describe charges by the Heavy Brigade and the Light Brigade, and both name the Thin Red Line. One says Scarlett’s horsemen defeated the greater part of a cavalry advance and that Cardigan’s brigade then charged after a misread order from Raglan. The other announces the same three episodes in its heading and, in the commanders’ lines, assigns the brigades to Sir James Scarlett and Lord Cardigan, without adopting that misread order as a shared explanation. Valley lengths, gun counts, and Turkish redoubts are fuller on one side than the other, so no measurement is copied. The course both support is the pair of brigade charges at Balaclava on 25 October 1854, under James Scarlett and Lord Cardigan, within Lord Lucan’s cavalry.",
+      "consequence": "The verdicts refuse to match. One summary prints indecisive. The other says a strategic defeat, adds that the Russians took seven guns and kept the ground they had attacked, and still records Balaclava as a British battle honour because of the charges. Neither indecisive nor strategic defeat is adopted, and the gun tally is not repeated. Pursuit, harbour loss, and a later siege battery lie outside the shared close. What both support is that the day is known for the Charge of the Light Brigade and the Charge of the Heavy Brigade, led by Lord Cardigan and James Scarlett."
+    }
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Balaclava",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.britishbattles.com/crimean-war/battle-of-balaclava/",
+      "publisher": "British Battles"
+    }
+  ]
+};
+
+export const ulundi1879: EraEvent = {
+  "id": "ulundi_1879",
+  "date": "1879-07-04",
+  "precision": "day",
+  "title": "Battle of Ulundi",
+  "kind": "battle",
+  "fronts": [
+    "africa"
+  ],
+  "countries": [
+    "Britain",
+    "Zulu Kingdom"
+  ],
+  "figures": [
+    "lord_chelmsford"
+  ],
+  "note": "One account calls the war the Anglo-Zulu War and the day its last battle, and it names the Zulu commander Ziwedu kaMpande. The other calls it the Zulu War and the final battle, and it names Cetshwayo as the Zulu king opposite Chelmsford. The battlefield command is not assigned, because those names differ. Both say Cetshwayo was captured on 28 August 1879. One gives 4,200 British and 1,000 Africans against 12,000 to 15,000. The other gives 17,000 British and native troops against some 24,000 Zulus.",
+  "levels": {
+    "primary": {
+      "cause": "Lord Chelmsford led a British army to the Zulu capital of Ulundi to fight the Zulu army gathered there.",
+      "what": "On 4 July 1879 the British troops defeated that Zulu army at Ulundi.",
+      "consequence": "The British held the success, and the Zulu army lost the battle at its capital."
+    },
+    "secondary": {
+      "cause": "Fighting in Zululand had not finished, and Lord Chelmsford brought a British column against the royal capital at Ulundi. Zulu regiments gathered to oppose him. One account styles him a lieutenant general. The shared opening is his deliberate march on that capital, with a Zulu army waiting, rather than a skirmish found by accident on the track. No headcount of either side is settled, so none is repeated.",
+      "what": "The action is dated 4 July 1879 at Ulundi. Chelmsford’s soldiers advanced in a hollow square, met the Zulu army, and defeated it. The royal capital was taken. One account says the kraal was burned. The other says it was destroyed. Those verbs are not the same, so the shared fact is that the capital fell with the army. The work of the day is that British victory.",
+      "consequence": "The Zulu army was beaten, and the British held Ulundi. A formal title for the war is not the same in the two accounts, so it is not fixed here. The opponent’s personal name is also not the same, and it is omitted. What both support is a British success on 4 July 1879 under Lord Chelmsford, and the defeat of the Zulu army at the capital."
+    },
+    "university": {
+      "cause": "Two narratives send Lord Chelmsford towards Ulundi at the head of British soldiers, meaning to meet a Zulu army at the royal capital. They split on the war’s name and on the leader opposite him. A reference article calls the conflict the Anglo-Zulu War and prints Ziwedu kaMpande in the commanders’ line. A regimental history calls it the Zulu War and prints Cetshwayo, the Zulu King. Those personal names are different strings, so neither enters the fighting. A lieutenant-general’s rank is explicit in the regimental history. The reference article uses Lord Chelmsford. Buller appears in the approach in both, and Wolseley appears in one as a successor already on his way. Both men already have lives elsewhere, and neither is retold. The cause kept is Chelmsford’s advance on the Zulu capital against the Zulu army.",
+      "what": "The dated action is 4 July 1879 at Ulundi. Both narratives give the British the victory, Lord Chelmsford the command, and a hollow square as the formation of the advance. One adds mounted troops folding inside the square, a half-hour of fire, and a lancer charge. The other does not fix that half-hour. One calls the day the last battle of the Anglo-Zulu War. The other calls it the final battle of the Zulu War. The war’s formal title is not identical, so it is not merged. One says the royal kraal was burned. The other says it was destroyed. Strengths diverge sharply and are omitted. The course both describe is Chelmsford’s defeat of the Zulu army at Ulundi that day.",
+      "consequence": "Each narrative ends the day as a British success that broke the Zulu army in the field, and each says Cetshwayo was captured on 28 August 1879. They still do not agree who commanded the Zulu army during the battle itself, so that command is not assigned. A wave of chiefly surrenders is fuller in one account than the other and is left out. Casualty lines do not match. The consequence they share is Lord Chelmsford’s victory at Ulundi on 4 July 1879 and Cetshwayo’s capture on 28 August."
+    }
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Ulundi",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.britishbattles.com/zulu-war/battle-of-ulundi/",
+      "publisher": "British Battles"
+    }
+  ]
+};
+
+export const adwa1896: EraEvent = {
+  "id": "adwa_1896",
+  "date": "1896-03-01",
+  "precision": "day",
+  "title": "Battle of Adwa",
+  "kind": "battle",
+  "fronts": [
+    "africa"
+  ],
+  "countries": [
+    "Ethiopia",
+    "Italy"
+  ],
+  "figures": [
+    "menelik_ii",
+    "oreste_baratieri"
+  ],
+  "note": "One account calls the war the First Italo-Ethiopian War, names the Treaty of Wuchale, and styles the Italian commander General Oreste Baratieri. The other calls him the Italian commanding officer, describes a treaty of 1889 whose Italian and Amharic wordings disagreed, and does not print Wuchale or the rank of general. One dates a telegram from the Italian prime minister to 25 February 1896. Strengths appear in one account, from 73,000 to 100,000 against 14,519 to 17,770, and are not repeated.",
+  "levels": {
+    "primary": {
+      "cause": "Emperor Menelik II led Ethiopia against an Italian force commanded by Oreste Baratieri near the town of Adwa.",
+      "what": "On 1 March 1896 the Ethiopian army overpowered Baratieri’s Italian troops at Adwa.",
+      "consequence": "The Italian force was defeated, and the victory at Adwa secured Ethiopia’s independence."
+    },
+    "secondary": {
+      "cause": "Italy was pressing a colonial claim on Ethiopia, and a treaty between them had been read in two incompatible ways. Emperor Menelik II ruled Ethiopia. Oreste Baratieri commanded the Italian troops sent against him. By the start of March 1896 those troops had moved to the neighbourhood of Adwa. The quarrel both accounts open with is that treaty dispute and Baratieri’s advance, not a private raid.",
+      "what": "The battle was fought on 1 March 1896 near the town of Adwa. An Ethiopian army under Menelik II met Baratieri’s Italian force and overpowered it. One account gives the Italian rank of general and a colonial column divided on rough ground. The other stresses a large and well-armed Ethiopian host. Rank, ground, and weapon descriptions are not required for the shared event. The day’s work is the Ethiopian defeat of the Italians at Adwa.",
+      "consequence": "Italy’s attack failed, and Ethiopia kept its independence. A later treaty town and a fallen ministry in Rome are told in one account only, so they are not added. No table of the dead is copied. The result both accounts support is Menelik II’s victory over Oreste Baratieri at Adwa on 1 March 1896, and the independence that victory secured."
+    },
+    "university": {
+      "cause": "Two narratives open on an Italian attempt to dominate Ethiopia and on a treaty the two sides did not read alike. One names the Treaty of Wuchale and the First Italo-Ethiopian War. The other describes an 1889 agreement, an Italian text and an Amharic text, and does not print Wuchale. Emperor Menelik II is the Ethiopian sovereign in both. Oreste Baratieri is the Italian commander in both, though only one adds the rank of general and only one prints a prime minister’s telegram of 25 February urging him on. Those extras stay out. What both support is Menelik’s Ethiopia facing Baratieri’s Italian force near Adwa.",
+      "what": "The shared date is 1 March 1896, and the shared place is the town of Adwa. One narrative says the Italian columns became separated on difficult ground and were overwhelmed. The other says the Italian troops and their auxiliaries were overpowered by a large, well-armed Ethiopian force, and it places Emperor Menelik II at the battle. Column paths and auxiliary troops are not in both, so they are omitted. Strengths are printed as ranges on one side only. The course both describe is an Ethiopian victory over Baratieri’s command at Adwa that day, under Menelik II.",
+      "consequence": "Each narrative makes the day a decisive Ethiopian success that protected Ethiopian independence. They part company afterward. One records a treaty of recognition signed after the fighting. The other describes Italian prisoners taken to the capital and a wider anti-colonial inspiration. Those sequels are not the same story, so they are dropped. Casualty ranges do not match a second account. The consequence kept is the defeat of Oreste Baratieri’s Italian force by Menelik II’s army at Adwa on 1 March 1896, and the independence Ethiopia held because of it."
+    }
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Adwa",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.history.com/articles/battle-adwa-ethiopia-africa-colonization",
+      "publisher": "History.com"
+    }
+  ]
+};
+
+export const karlVonSchwarzenberg: EraFigure = {
+  "id": "karl_von_schwarzenberg",
+  "name": "Karl von Schwarzenberg",
+  "role": "commander",
+  "country": "Austria",
+  "allegiance": "Austria",
+  "note": "One account calls him commander-in-chief in Germany and commander of the Army of Bohemia. The other calls him an Austrian field marshal and lists him with Tsar Alexander I and Emperor Francis I. Both name Karl von Schwarzenberg among the coalition leaders at Leipzig in October 1813, and both record a decisive defeat of Napoleon’s French army.",
+  "bio": {
+    "primary": "Karl von Schwarzenberg was an Austrian commander in the coalition that decisively defeated Napoleon’s French army at Leipzig in October 1813.",
+    "secondary": "During October 1813 the coalition of Austria, Prussia, Russia, and Sweden fought Napoleon at Leipzig in Saxony. Karl von Schwarzenberg is named among the leaders of that coalition. The French army was decisively defeated. One account adds a commander-in-chief’s office and an Army of Bohemia. The other calls him a field marshal and sets him beside two emperors. Those offices are not both required. His life here is the Leipzig command and the victory.",
+    "university": "Schwarzenberg enters both narratives of Leipzig as Karl von Schwarzenberg, an Austrian leader of the coalition against Napoleon in October 1813. One narrative’s note calls him commander-in-chief in Germany and commander of the Army of Bohemia, and it places Gebhard von Blücher, Tsar Alexander I, and Charles John beside the allied names. The other calls him an Austrian field marshal and writes that the allied host was led by Tsar Alexander I, by him, and by Emperor Francis I, with no Blücher. The unique offices and the missing marshal stay out of the shared life. What both support is his place in the coalition leadership at the decisive defeat of Napoleon’s French army at Leipzig."
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Leipzig",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.history.com/articles/battle-of-leipzig",
+      "publisher": "History.com"
+    }
+  ]
+};
+
+export const lordLucan: EraFigure = {
+  "id": "lord_lucan",
+  "name": "Lord Lucan",
+  "role": "commander",
+  "country": "Britain",
+  "allegiance": "Britain",
+  "note": "One account says Lord Lucan’s Cavalry Division was camped to defend the British base. The other says Lieutenant General Lord Lucan commanded the British Cavalry Division. Both place him over that division at Balaclava on 25 October 1854, with Lord Cardigan and James Scarlett under him at the head of the two brigades.",
+  "bio": {
+    "primary": "Lord Lucan commanded the British cavalry division at Balaclava on 25 October 1854, over the brigades of Lord Cardigan and James Scarlett.",
+    "secondary": "At Balaclava, on the southern Crimean coast, the British cavalry formed a division under Lord Lucan. Lord Cardigan commanded the Light Brigade within it, and James Scarlett commanded the Heavy Brigade. The date of the battle is 25 October 1854. One account adds the rank of lieutenant general and a camp site in the South Valley. The other uses Lord Lucan and the cavalry division. The life keeps the shared command of that division on the day of the two charges.",
+    "university": "Lucan is the cavalry officer both accounts place over the British horsemen at Balaclava. One says Lord Lucan’s Cavalry Division camped at the western end of the South Valley for the defence of the base. The other says Lieutenant General Lord Lucan commanded the British Cavalry Division, with Major General Lord Cardigan over the Light Brigade and Major General Sir James Scarlett over the Heavy Brigade. The lieutenant-general rank, the valley camp, and the word Sir are not in both wordings, so they are not part of the name. The battle day they share is 25 October 1854. His life is that divisional command, with Cardigan and Scarlett leading the brigades that charged."
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Balaclava",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.britishbattles.com/crimean-war/battle-of-balaclava/",
+      "publisher": "British Battles"
+    }
+  ]
+};
+
+export const lordCardigan: EraFigure = {
+  "id": "lord_cardigan",
+  "name": "Lord Cardigan",
+  "role": "commander",
+  "country": "Britain",
+  "allegiance": "Britain",
+  "note": "One account calls him Lord Cardigan, commander of the Light Brigade. The other calls him Major General Lord Cardigan. Both give him that brigade at Balaclava on 25 October 1854 and place the Charge of the Light Brigade on that day.",
+  "bio": {
+    "primary": "Lord Cardigan commanded the Light Brigade at Balaclava and led it in the Charge of the Light Brigade on 25 October 1854.",
+    "secondary": "The Light Brigade at Balaclava was Lord Cardigan’s command, inside the cavalry division of Lord Lucan. On 25 October 1854 that brigade charged during the battle, an episode both accounts call the Charge of the Light Brigade. One account adds the rank of major general. The other does not need it for the name. A written order and a quarrel with Lucan are fuller in one telling than the other, so they are not the life. The life is his command of the brigade that charged.",
+    "university": "Cardigan is named in each narrative as the officer over the Light Brigade at Balaclava on 25 October 1854. One calls him Lord Cardigan and describes the charge as the result of a misinterpreted order carried to Lucan. The other calls him Major General Lord Cardigan and lists the Charge of the Light Brigade among the three famous episodes of the day, beside the Heavy Brigade and the Thin Red Line. The major-general rank and the story of the misread order are not both stated in the same way, so neither becomes the whole of the life. What both support is that he commanded the Light Brigade and that the charge bearing that name was made under him."
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Balaclava",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.britishbattles.com/crimean-war/battle-of-balaclava/",
+      "publisher": "British Battles"
+    }
+  ]
+};
+
+export const jamesScarlett: EraFigure = {
+  "id": "james_scarlett",
+  "name": "James Scarlett",
+  "role": "commander",
+  "country": "Britain",
+  "allegiance": "Britain",
+  "note": "One account prints General James Scarlett. The other prints Major General Sir James Scarlett. Both give him the Heavy Brigade at Balaclava on 25 October 1854. The Charge of the Heavy Brigade is named in both.",
+  "bio": {
+    "primary": "James Scarlett commanded the Heavy Brigade at Balaclava and led its charge on 25 October 1854.",
+    "secondary": "James Scarlett commanded the British Heavy Brigade at Balaclava, in Lord Lucan’s cavalry division. On 25 October 1854 that brigade charged, and both accounts treat the Charge of the Heavy Brigade as one of the day’s great episodes. One account adds Sir and the rank of major general. The other says General James Scarlett. The extra title is not in both, so the life uses the personal name they share and the brigade he led into the charge.",
+    "university": "Scarlett’s command is the Heavy Brigade at Balaclava, dated 25 October 1854 in each narrative. One calls him General James Scarlett and says his horsemen charged and defeated the greater part of a Russian cavalry advance. The other calls him Major General Sir James Scarlett and names the Charge of the Heavy Brigade beside the Thin Red Line and the Light Brigade. Sir, the major-general rank, and the claim that the greater part of the cavalry was defeated are not printed in both, so they are not merged into one sentence of praise. The shared record is that James Scarlett commanded the Heavy Brigade and that its charge was fought under him that day."
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Balaclava",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.britishbattles.com/crimean-war/battle-of-balaclava/",
+      "publisher": "British Battles"
+    }
+  ]
+};
+
+export const lordChelmsford: EraFigure = {
+  "id": "lord_chelmsford",
+  "name": "Lord Chelmsford",
+  "role": "commander",
+  "country": "Britain",
+  "allegiance": "Britain",
+  "note": "One account prints Lord Chelmsford beside Ziwedu kaMpande. The other prints Lieutenant General Lord Chelmsford against Cetshwayo. Both give him the British command at Ulundi on 4 July 1879 and a British victory over the Zulu army. The Zulu opponent’s name is not shared.",
+  "bio": {
+    "primary": "Lord Chelmsford commanded the British army that defeated the Zulu army at Ulundi on 4 July 1879.",
+    "secondary": "Lord Chelmsford led the British column that marched on the Zulu capital of Ulundi. On 4 July 1879 his troops defeated the Zulu army there. One account calls him a lieutenant general and names a Zulu king opposite him. The other names a different Zulu leader in the commanders’ line and still calls the result a British victory. Because those opponent names disagree, this life does not pick one. It keeps his command of the army that won at Ulundi.",
+    "university": "Chelmsford is the British officer both narratives credit with the victory at Ulundi on 4 July 1879. One lists Lord Chelmsford opposite Ziwedu kaMpande and calls the day the last battle of the Anglo-Zulu War. The other says Lieutenant General Lord Chelmsford destroyed the army of the Zulu King Cetshwayo and calls the day the final battle of the Zulu War, with the winner line given to the British. The lieutenant-general rank can be noted once, but the Zulu names cannot be reconciled, so the life has no opponent’s personal name. Strengths and a later capture date sit on single accounts and are omitted. Remembered here is the commander of the British army that beat the Zulu army at the capital."
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Ulundi",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.britishbattles.com/zulu-war/battle-of-ulundi/",
+      "publisher": "British Battles"
+    }
+  ]
+};
+
+export const menelikIi: EraFigure = {
+  "id": "menelik_ii",
+  "name": "Menelik II",
+  "role": "commander",
+  "country": "Ethiopia",
+  "allegiance": "Ethiopia",
+  "note": "One account calls him Emperor Menelik II, head of the Ethiopian Empire at Adwa. The other calls him Emperor Negus Menelik II and Ethiopia’s emperor. Both place him with the Ethiopian victory over Oreste Baratieri’s Italian force on 1 March 1896.",
+  "bio": {
+    "primary": "Menelik II was the Ethiopian emperor whose army defeated Oreste Baratieri’s Italian force at Adwa on 1 March 1896.",
+    "secondary": "Menelik II ruled Ethiopia when an Italian force under Oreste Baratieri advanced to Adwa. On 1 March 1896 the Ethiopian army overpowered those troops. One account adds the title Negus beside emperor. The other says emperor and places the empire under him. The extra title is not used. A treaty quarrel lies behind the campaign in both accounts, but its formal name is not the same, so the life stays with his command at the victory.",
+    "university": "Both narratives of Adwa name Menelik II as the Ethiopian emperor on the winning side. One says the Ethiopian Empire under Emperor Menelik II fought an Italian colonial force led by General Oreste Baratieri on 1 March 1896 near the town. The other calls him Emperor Negus Menelik II at the Battle of Adwa and Ethiopia’s emperor, and it says the Italian attack was overpowered by a large Ethiopian force that secured independence. Negus, the colonial-force label, and a general’s rank for Baratieri are not shared as a single string, so the life uses Menelik II, emperor, and the victory. Treaty titles differ and are omitted. His place is the sovereign whose army beat Baratieri at Adwa and held Ethiopian independence."
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Adwa",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.history.com/articles/battle-adwa-ethiopia-africa-colonization",
+      "publisher": "History.com"
+    }
+  ]
+};
+
+export const oresteBaratieri: EraFigure = {
+  "id": "oreste_baratieri",
+  "name": "Oreste Baratieri",
+  "role": "commander",
+  "country": "Italy",
+  "allegiance": "Italy",
+  "note": "One account prints General Oreste Baratieri. The other prints Italian commanding officer Oreste Baratieri and does not add general. Both give him the Italian force defeated by Menelik II’s army at Adwa on 1 March 1896.",
+  "bio": {
+    "primary": "Oreste Baratieri commanded the Italian force that Menelik II’s Ethiopian army defeated at Adwa on 1 March 1896.",
+    "secondary": "Oreste Baratieri commanded the Italian troops who advanced to Adwa against Ethiopia. Emperor Menelik II’s army met them on 1 March 1896 and overpowered them. One account gives Baratieri the rank of general and calls the force colonial. The other calls him the Italian commanding officer and does not print that rank. The life uses the personal name both accounts give and the defeat at Adwa.",
+    "university": "Baratieri is the Italian officer both narratives place at the head of the force beaten at Adwa. One calls him General Oreste Baratieri and says he led a colonial column that divided on difficult ground on 1 March 1896. The other calls him the Italian commanding officer Oreste Baratieri, says he considered a retreat and then advanced, and dates the fighting to that same March day, when his men were overpowered. The rank of general, the retreat he weighed, and the broken columns are not in both, so they are dropped. Menelik II is the emperor opposite him in each account. The life is Baratieri’s command of the Italian force that lost at Adwa."
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Adwa",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.history.com/articles/battle-adwa-ethiopia-africa-colonization",
+      "publisher": "History.com"
+    }
+  ]
+};

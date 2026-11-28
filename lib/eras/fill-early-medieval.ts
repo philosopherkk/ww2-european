@@ -761,3 +761,213 @@ export const louisTheYounger: EraFigure = {
     { url: 'https://www.encyclopedia.com/history/news-wires-white-papers-and-books/chapter-one-world-events-selected-occurrences-outside-muslim-world', publisher: 'Encyclopedia.com' },
   ],
 };
+
+export const battleOfTertry: EraEvent = {
+  id: 'battle_of_tertry_687',
+  date: '0687',
+  precision: 'year',
+  title: 'Battle of Tertry',
+  kind: 'battle',
+  fronts: ['france_and_low_countries'],
+  countries: ['Franks'],
+  figures: ['pepin_ii'],
+  levels: {
+    primary: {
+      cause:
+        'In 687 Pepin II, called Pepin of Herstal and also Pepin of Heristal, fought the Neustrians at Tertry, spelled Tetry in one account.',
+      what:
+        'He defeated the Neustrians. One account sets Burgundy beside Neustria, and the other does not, so the shared enemy is the Neustrian host.',
+      consequence:
+        'After the victory Pepin became mayor of the palaces of Austrasia and Neustria. A decade of wider union is told in only one account.',
+    },
+    secondary: {
+      cause:
+        'The battle of 687 is Tertry in the longer record and Tetry in the shorter. Pepin II is the winner both records name, of Herstal on one page and of Heristal on the other. The men he beat are the Neustrians. A grandfather, Pepin of Landen, is printed only in the shorter record. Two opposing leaders are printed only in the longer record. Those names are not the cause. The cause both records give is Pepin’s fight with the Neustrians at that place in 687.',
+      what:
+        'Pepin defeated the Neustrian host and his own side held the result. The shorter record stops at the defeat of the Neustrians and at the office he then took. The longer record adds Burgundy to the losing side and names the rivals he routed. Burgundy and those rivals are single, so they are not the description of the fighting. The description they share is Pepin’s victory over the Neustrians at Tertry in 687.',
+      consequence:
+        'The office that followed is mayor of the palaces of Austrasia and Neustria, which both records give him. The shorter record also says he unified the northern Frankish kingdom across the next decade. The longer record extends the same mayorship to Burgundy and does not tell that decade. The decade and Burgundy are each single. The result kept is the Neustrian defeat and Pepin’s mayorship over Austrasia and Neustria.',
+    },
+    university: {
+      cause:
+        'The Frankish battle of 687 set Pepin II against the Neustrians. His name is printed Pepin of Herstal and also Pepin of Heristal, and the place is printed Tertry and also Tetry. A shorter narrative adds his grandfather, Pepin of Landen, and a longer one adds the enemy mayor and the king who came with that mayor. Neither the grandfather nor those two opponents is named twice, so neither enters the cause. Nor does a claim that the war grew from an old feud, which one narrative alone supplies. The cause retained is Pepin’s meeting with the Neustrians at that battle in 687.',
+      what:
+        'Command on the winning side rests with Pepin in both narratives, and the beaten people are the Neustrians. One narrative calls the success a routing and says his Austrasians held the field, adding Burgundy to the losers. The other states the defeat and moves on to the office he gained. The Somme is named beside the place in the longer narrative alone. No strength is printed in both. The course they share is a completed fight in 687 in which Pepin defeated the Neustrians.',
+      consequence:
+        'Beating the Neustrians brought Pepin the mayorship of Austrasia and Neustria, the sequel both narratives allow. One narrative then stretches his authority across a decade and calls the result a unification of the northern kingdom. The other stretches the same office over Burgundy and is silent on that decade. The decade, the extra realm, and any later marriage are not asserted together. What remains is the Neustrian defeat at Tertry in 687 and the mayorship over Austrasia and Neustria that Pepin held afterwards.',
+    },
+  },
+  sources: [
+    { url: 'https://en.wikipedia.org/wiki/Battle_of_Tertry', publisher: 'Wikipedia' },
+    { url: 'https://www.encyclopedia.com/history/news-wires-white-papers-and-books/chapter-one-world-events-selected-occurrences-outside-muslim-world', publisher: 'Encyclopedia.com' },
+  ],
+  note: 'Both accounts date the battle to 687 and say Pepin II, of Herstal and also of Heristal, defeated the Neustrians at Tertry, spelled Tetry in one account, and became mayor of Austrasia and Neustria. Burgundy and two rival names are in one account. A grandfather and a decade of union are in the other.',
+};
+
+export const battleOfHingstonDown: EraEvent = {
+  id: 'battle_of_hingston_down_838',
+  date: '0838',
+  precision: 'year',
+  title: 'Battle of Hingston Down',
+  kind: 'battle',
+  fronts: ['british_isles'],
+  countries: ['Wessex', 'Vikings'],
+  figures: ['ecgberht'],
+  levels: {
+    primary: {
+      cause:
+        'In 838 Ecgberht, also called Egbert, defeated Vikings and their Cornish allies at Hingston Down.',
+      what:
+        'The Vikings are also called Danes. One account calls Ecgberht king of Wessex and the victory West Saxon. The other calls the success a major victory.',
+      consequence:
+        'The Cornish and the Viking army were beaten. A probable site in Cornwall, and a sea journey before the fight, are told in only one account.',
+    },
+    secondary: {
+      cause:
+        'Hingston Down, in 838, set Ecgberht against Vikings who had Cornish allies. One record spells him Egbert and calls the Vikings Danes as well. The other spells him Ecgberht, calls him king of Wessex, and calls his men West Saxons. A sea landing among the Cornish, and a probable placing of the down inside Cornwall, are in the longer record only. The cause both records give is his battle with those Viking and Cornish allies in 838.',
+      what:
+        'Ecgberht won. The shorter record calls the result a major victory over invading Vikings and their Cornish Briton allies. The longer record calls it a West Saxon victory and says both the Cornish and the Danes were put to flight. A chronicle sentence inside the longer record supplies the flight. The Briton label and the flight are each fuller than the overlap. The action both records describe is his defeat of the Vikings and the Cornish at Hingston Down.',
+      consequence:
+        'The allied force lost the field. Neither record names a Cornish king or a Viking captain, so no enemy commander is given. One record ends at the victory. The other says the fight was the last recorded battle between the Cornish and the West Saxons, a sequel the shorter record does not tell. That sequel is omitted. The result they share is Ecgberht’s victory at Hingston Down in 838.',
+    },
+    university: {
+      cause:
+        'The West Saxon victory of 838 is the Battle of Hingston Down. The winner is Ecgberht in one narrative and Egbert in the other. He is called king of Wessex where the longer narrative introduces him, and the shorter narrative uses the name Egbert for the man who won. The enemies are Vikings, also called Danes, together with Cornish allies, called Cornish Britons in the shorter narrative and West Welsh inside a chronicle passage of the longer one. A voyage to the Cornish coast, and doubt about which down was the field, belong to the longer narrative alone. The cause retained is Ecgberht’s battle, in 838, with that Viking and Cornish alliance.',
+      what:
+        'Both narratives give Ecgberht the victory over the combined force. One calls the success major and stops. The other says the West Saxons put the Cornish and the Danes to flight, and it quotes a year-entry for that flight. Flight, a West Saxon label, and the quotation are not required for the shared course, because the shorter narrative does not print them. No count of ships or of men is shared. The course both narratives describe is the defeat, at Hingston Down in 838, of the Vikings and their Cornish allies.',
+      consequence:
+        'The alliance was beaten, and that is the result both narratives allow. A longer narrative adds that this was the last recorded battle of its kind between the Cornish and the West Saxons, and that a later Cornish king was subject to Wessex. The shorter narrative has none of that sequel. Enemy personal names are absent from both. A claim about where in the south-west the down lay is confined to the longer narrative and is marked there as probable, so it is not stated. What remains is Ecgberht’s victory at Hingston Down in 838.',
+    },
+  },
+  sources: [
+    { url: 'https://en.wikipedia.org/wiki/Battle_of_Hingston_Down', publisher: 'Wikipedia' },
+    { url: 'https://www.encyclopedia.com/history/news-wires-white-papers-and-books/chapter-one-world-events-selected-occurrences-outside-muslim-world', publisher: 'Encyclopedia.com' },
+  ],
+  note: 'Both accounts date the battle to 838 and say Ecgberht, also Egbert, defeated Vikings, also called Danes, and their Cornish allies at Hingston Down. One calls him king of Wessex and says the site was probably in Cornwall. The other calls the victory major and does not name a county.',
+};
+
+export const battleOfRiade: EraEvent = {
+  id: 'battle_of_riade_933',
+  date: '0933',
+  precision: 'year',
+  title: 'Battle of Riade',
+  kind: 'battle',
+  fronts: ['german_lands'],
+  countries: ['Germany', 'Magyars'],
+  figures: ['henry_the_fowler'],
+  levels: {
+    primary: {
+      cause:
+        'In 933 King Henry I, called the Fowler, defeated the Magyars at Riade on the Unstrut River.',
+      what:
+        'One account calls him a German king. The other places him over East Francia and also calls that realm the Kingdom of Germany. The Magyars lost.',
+      consequence:
+        'The Magyar army was beaten at Riade. A day in March, a huge invading number, and two German armies are each told in only one account.',
+    },
+    secondary: {
+      cause:
+        'Riade, in 933, is the field where King Henry I, the Fowler, met a Magyar army. Both records place that field on the Unstrut. One calls him a German king and says the Magyars had invaded. The other calls him king in East Francia, a realm it also styles the Kingdom of Germany, and it adds further names for the battle. A day in March is printed once. The cause both records give is Henry’s battle with the Magyars at Riade on the Unstrut in 933.',
+      what:
+        'Henry defeated the Magyars. The shorter record says they were crushed. The longer record says they fled when his horsemen came on, and that the place of the fighting is unidentified even though the river is named. An unknown town, a night withdrawal, and a camp at Riade rather than the field itself are in the longer record only. The action both records describe is his victory over the Magyars at Riade on the Unstrut.',
+      consequence:
+        'The Magyars lost. One record gives them a strength of nearly one hundred thousand and says two German armies crushed them. The other gives no shared figure and does not count the German hosts. The number and the pair of armies are single, so they are not the result. A March day is likewise single. The result kept is the Magyar defeat at Riade in 933.',
+    },
+    university: {
+      cause:
+        'The Magyar defeat of 933 was fought at Riade on the Unstrut under King Henry I, whom both narratives call the Fowler. One narrative styles him a German king and begins from an invasion. The other styles him king of East Francia, notes that the same realm can be called the Kingdom of Germany, and opens on a refused tribute of the previous year. That tribute, a synod, and a nine-year truce are absent from the shorter narrative, so they are not the cause. A numbered day in March is likewise confined to the longer narrative. The cause retained is Henry’s meeting with the Magyars at Riade on the Unstrut in 933.',
+      what:
+        'Henry’s army beat the Magyars. The shorter narrative calls the success a crushing defeat by German forces and does not describe the manoeuvres. The longer narrative, following a contemporary writer, has light troops screen a charge of heavy horse and has the Magyars flee. Those movements, an unidentified town, and rival claims to the spot are not in the shorter narrative, so they are not the description. Further names, Merseburg among them, occur in the longer narrative alone. The course both narratives describe is the victory at Riade on the Unstrut in 933.',
+      consequence:
+        'The Magyar host was defeated, and that is the sequel both narratives allow. One narrative adds a vast total of invaders and a pair of German armies. The other withholds a common total, treats the exact ground as unknown, and even has the victors hail Henry as emperor on the field, a salute the shorter narrative does not print. The total, the pair of armies, the imperial shout, and the March day are each single. No Magyar captain is named in both. What remains is Henry’s defeat of the Magyars at Riade on the Unstrut in 933.',
+    },
+  },
+  sources: [
+    { url: 'https://en.wikipedia.org/wiki/Battle_of_Riade', publisher: 'Wikipedia' },
+    { url: 'https://www.encyclopedia.com/history/news-wires-white-papers-and-books/chapter-one-world-events-selected-occurrences-outside-muslim-world', publisher: 'Encyclopedia.com' },
+  ],
+  note: 'Both accounts date the battle to 933 and say King Henry I, the Fowler, defeated the Magyars at Riade on the Unstrut. One gives 15 March, calls the ground unidentified, and places him over East Francia. The other calls him a German king and gives the Magyars a strength the first account does not share.',
+};
+
+export const pepinIi: EraFigure = {
+  id: 'pepin_ii',
+  name: 'Pepin II',
+  role: 'ruler',
+  country: 'Franks',
+  allegiance: 'Franks',
+  note: 'One account spells the place Tetry and the name Heristal, and it adds a grandfather. The other spells Herstal and Tertry, and it adds Burgundy. Both give him the Neustrian defeat in 687 and the mayorship of Austrasia and Neustria.',
+  bio: {
+    primary:
+      'Pepin II, also called Pepin of Herstal and Pepin of Heristal, defeated the Neustrians at Tertry in 687 and became mayor of Austrasia and Neustria.',
+    secondary:
+      'Pepin II is the commander who beat the Neustrians in 687 at the battle called Tertry and also Tetry. One record styles him Pepin of Heristal and says he then became mayor of the palaces of Austrasia and Neustria. The other styles him Pepin of Herstal and says the king had to recognise that mayorship, while also naming Burgundy. The grandfather, the decade of union, and Burgundy are each single. The life they share is the victory over the Neustrians and the mayorship of Austrasia and Neustria.',
+    university:
+      'Pepin II, printed of Herstal and also of Heristal, won at Tertry in 687, a place one narrative spells Tetry. Both narratives make him the man who defeated the Neustrians and then held the mayorship of Austrasia and Neustria. A shorter narrative adds his grandfather and a decade spent unifying the northern kingdom. A longer narrative adds Burgundy, an enemy mayor, and a king in the losing host, and it says the king was forced to recognise the office. Those extras are not all present twice. What the pair allow is his command in 687, the Neustrian defeat, and the mayorship over Austrasia and Neustria.',
+  },
+  sources: [
+    { url: 'https://en.wikipedia.org/wiki/Battle_of_Tertry', publisher: 'Wikipedia' },
+    { url: 'https://www.encyclopedia.com/history/news-wires-white-papers-and-books/chapter-one-world-events-selected-occurrences-outside-muslim-world', publisher: 'Encyclopedia.com' },
+  ],
+};
+
+export const ecgberht: EraFigure = {
+  id: 'ecgberht',
+  name: 'Ecgberht',
+  role: 'ruler',
+  country: 'Wessex',
+  allegiance: 'Wessex',
+  note: 'One account spells him Egbert and calls the victory major. The other spells him Ecgberht, king of Wessex, and says the site was probably in Cornwall. Both give him the victory over Vikings and Cornish allies at Hingston Down in 838.',
+  bio: {
+    primary:
+      'Ecgberht, also called Egbert, defeated the Vikings and their Cornish allies at Hingston Down in 838.',
+    secondary:
+      'Ecgberht is the leader who won at Hingston Down in 838. One record spells him Egbert and calls the beaten men invading Vikings, or Danes, with Cornish Briton allies. The other spells him Ecgberht, king of Wessex, and says the West Saxons put Cornish men and Danes to flight. A sea journey and a probable Cornish down are in the longer record only. The life they share is his victory over the Vikings and the Cornish at Hingston Down.',
+    university:
+      'The victor at Hingston Down in 838 is Ecgberht, also printed Egbert. Both narratives give him the defeat of a Viking force, called Danes as well, that fought with Cornish allies. One narrative styles the success major and does not give him a royal title in that sentence. The other calls him king of Wessex and says his West Saxons drove the allies off. A landing from the sea, doubt about the hillside, and a claim that the war then ended are in the longer narrative alone. What both affirm is his command and his victory at Hingston Down in 838.',
+  },
+  sources: [
+    { url: 'https://en.wikipedia.org/wiki/Battle_of_Hingston_Down', publisher: 'Wikipedia' },
+    { url: 'https://www.encyclopedia.com/history/news-wires-white-papers-and-books/chapter-one-world-events-selected-occurrences-outside-muslim-world', publisher: 'Encyclopedia.com' },
+  ],
+};
+
+export const henryTheFowler: EraFigure = {
+  id: 'henry_the_fowler',
+  name: 'Henry the Fowler',
+  role: 'ruler',
+  country: 'Germany',
+  allegiance: 'Germany',
+  note: 'One account calls him a German king and gives the Magyars a number. The other calls him king of East Francia, dates a day in March, and says the spot is unknown. Both call him Henry I, the Fowler, and say he defeated the Magyars at Riade on the Unstrut in 933.',
+  bio: {
+    primary:
+      'King Henry I, called the Fowler, defeated the Magyars at Riade on the Unstrut in 933.',
+    secondary:
+      'Henry I, the Fowler, is the king who beat the Magyars at Riade on the Unstrut in 933. One record calls him a German king and says the invaders were crushed, giving them a strength the other record does not share. The other calls him king in East Francia, also styled a German kingdom, and says the exact spot is unknown. A March day is single. The life they share is his victory over the Magyars at Riade in 933.',
+    university:
+      'Henry I, whom both narratives call the Fowler, commanded the army that defeated the Magyars at Riade on the Unstrut in 933. A shorter narrative makes him a German king and crushes a vast invading host with two armies. A longer narrative makes him king of East Francia, withholds a common total, and treats the ground as unidentified while still naming the river. A day in March, an imperial shout on the field, and the tale of a refused tribute belong to single narratives. What both affirm is his kingship, the byname, and the Magyar defeat at Riade in 933.',
+  },
+  sources: [
+    { url: 'https://en.wikipedia.org/wiki/Battle_of_Riade', publisher: 'Wikipedia' },
+    { url: 'https://www.encyclopedia.com/history/news-wires-white-papers-and-books/chapter-one-world-events-selected-occurrences-outside-muslim-world', publisher: 'Encyclopedia.com' },
+  ],
+};
+
+export const odoTheGreat: EraFigure = {
+  id: 'odo_the_great',
+  name: 'Odo the Great',
+  role: 'ruler',
+  country: 'Aquitaine',
+  allegiance: 'Aquitaine',
+  note: 'One account calls him duke of Aquitaine and a leader beside Charles Martel. The other places the duchy under him and says Charles led the victory. Both name Odo the Great at Tours in October 732, when Abd al-Rahman was killed and the Umayyad army retreated.',
+  bio: {
+    primary:
+      'Odo the Great is named with Aquitaine at the Battle of Tours in October 732, when Charles Martel’s force defeated and killed Abd al-Rahman al-Ghafiqi.',
+    secondary:
+      'Odo the Great stands with the Aquitanian side at Tours in October 732. One record calls him duke of Aquitaine and says he led that side beside Charles Martel. The other says the duchy stood under him and lists him among the commanders, while the sentence of victory names Charles. Abd al-Rahman al-Ghafiqi was killed, and the Umayyad army retreated. A later weakening of Odo is told once. The life they share is his place with Aquitaine at that October victory.',
+    university:
+      'Odo the Great is the Aquitanian figure both narratives name at the Battle of Tours in October 732. One narrative calls him duke and says the Christian force was led by Charles Martel and by Odo. The other places an independent duchy under him, near the ground between Tours and Poitiers, and it names Charles Martel as the leader of the victory over Abd al-Rahman al-Ghafiqi, who was killed. The Umayyad army retreated. A claim that Odo came out weakened, and any kinship for Charles, are in single narratives. What both affirm is Odo’s Aquitanian place at the October battle Charles won.',
+  },
+  sources: [
+    { url: 'https://en.wikipedia.org/wiki/Battle_of_Tours', publisher: 'Wikipedia' },
+    { url: 'https://www.thecollector.com/battle-of-tours/', publisher: 'TheCollector' },
+  ],
+};

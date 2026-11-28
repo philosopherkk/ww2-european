@@ -8,9 +8,11 @@ import { horatioNelson, trafalgar1805 } from '@/lib/eras/sourced-batch-3';
 import { austerlitz1805, isandlwana1879 } from '@/lib/eras/sourced-batch-4';
 import { aliwal1846, rorkesDrift1879 } from '@/lib/eras/sourced-batch-5';
 import {
+  adwa1896,
   alma1854,
   assaye1803,
   ayubKhan,
+  balaclava1854,
   borodino1812,
   botha,
   burrows,
@@ -23,13 +25,21 @@ import {
   harrySmith,
   herbertKitchener,
   ibrahimBey,
+  jamesScarlett,
   johnChard,
+  karlVonSchwarzenberg,
+  leipzig1813,
   littleBighorn1876,
+  lordCardigan,
+  lordChelmsford,
+  lordLucan,
   lordRaglan,
   maiwand1880,
+  menelikIi,
   mikhailKutuzov,
   muradBey,
   omdurman1898,
+  oresteBaratieri,
   princeMenshikov,
   pyramids1798,
   ranjodhSingh,
@@ -37,6 +47,7 @@ import {
   saintArnaud,
   sittingBull,
   telElKebir1882,
+  ulundi1879,
   villeneuve,
 } from '@/lib/eras/fill-long-nineteenth';
 import { LONG_NINETEENTH_FIGURES } from '@/lib/eras/people';
@@ -305,8 +316,26 @@ const round3: EraEpisode = {
   links: [],
 };
 
+const round4: EraEpisode = {
+  id: 'long-nineteenth-round4',
+  title: 'Leipzig, Balaclava, Ulundi, and Adwa',
+  monthLabel: 'October 1813 – March 1896',
+  events: [leipzig1813, balaclava1854, ulundi1879, adwa1896],
+  lines: [],
+  figures: [
+    karlVonSchwarzenberg,
+    lordLucan,
+    lordCardigan,
+    jamesScarlett,
+    lordChelmsford,
+    menelikIi,
+    oresteBaratieri,
+  ],
+  links: [],
+};
+
 export const LONG_NINETEENTH: EraPeriod = {
   id: 'long-nineteenth',
   label: 'Long nineteenth century',
-  episodes: [waterloo, trafalgar, austerlitz, aliwal, isandlwana, later, fill, round2, round3],
+  episodes: [waterloo, trafalgar, austerlitz, aliwal, isandlwana, later, fill, round2, round3, round4],
 };

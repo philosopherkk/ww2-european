@@ -1,4 +1,4 @@
-import type { EraEvent, EraFigure } from '@/lib/eras/types';
+import type { EraEvent, EraFigure, EraLine, EraLink } from '@/lib/eras/types';
 
 export const milvianBridge312: EraEvent = {
   "id": "milvian_bridge_312",
@@ -674,20 +674,20 @@ export const carthage238: EraEvent = {
   "note": "One account dates the fight to about April 238 and spells the governor Capelianus. The other dates 12 May 238, spells him Capellianus, and calls the action a skirmish as well as a battle. Gordian I’s death by his own hand follows in both.",
   "levels": {
     "primary": {
-      "cause": "In 238 Capelianus, governor of Numidia, marched on Carthage against Gordian II, who led the defence.",
-      "what": "Near Carthage the governor’s troops defeated Gordian II’s militia, and Gordian II was killed.",
-      "consequence": "Gordian II died in the defeat at Carthage, and his father Gordian I then took his own life."
+      "cause": "In 238 Capelianus, governor of Numidia, marched on Carthage, where Gordian II led the defence.",
+      "what": "Near the city the governor’s troops defeated that militia, and Gordian II was killed.",
+      "consequence": "Gordian I, the dead man’s father, then took his own life after the news from Carthage.",
     },
     "secondary": {
-      "cause": "Gordian II was a Roman emperor in Africa when Capelianus, governor of Numidia, brought troops against him at Carthage in 238. One record spells the governor Capelianus, speaks of a grudge and a lawsuit, and dates the battle to about April. The other record spells him Capellianus, calls him an ally of Maximinus, and dates 12 May. The cause kept here is the governor’s march on Carthage and Gordian II’s command of the defence in 238.",
-      "what": "The two forces met at Carthage. Gordian II led a militia and was killed. One record says the armies met near the city, that the militia lacked training, and that the result was a victory for Maximinus’s side. The other record calls the fight a skirmish, quotes a description of it as a battle, and says the governor’s troops were too much for the small militia defending Carthage. April and 12 May are not both in either record. The course both records support is Gordian II’s death at Carthage in 238.",
-      "consequence": "Gordian II was dead, and the defence of Carthage had failed. Both records then say that his father, Gordian I, took his own life on hearing the news. One record says he committed suicide. The other says he hanged himself. The senate’s later choice of a boy emperor appears in a single record. The result kept here is the killing of Gordian II and the father’s suicide in 238."
+      "cause": "Gordian II held imperial power in Africa when the governor of Numidia brought soldiers to Carthage. That governor is Capelianus in one spelling and Capellianus in the other, but both give him Numidia and the march. The defenders he met were a militia under the younger emperor. The year of the march is 238, and the city both name is Carthage.",
+      "what": "The militia was beaten and Gordian II died in the fighting. One narrative stresses untrained townsmen and a meeting near the city. The other calls the contact a skirmish, quotes an older voice that says battle, and stresses how small the defending band was. Training, size, and the choice of label are extra. The action both describe is the governor’s success and the death of Gordian II at Carthage.",
+      "consequence": "The defence collapsed with the son’s death. Both narratives then have Gordian I die by his own hand when he learned the news. One says he committed suicide. The other says he hanged himself. The method is not shared as a single word, yet a self-inflicted death is. A later choice of emperors in Rome is told once. The result kept here is the killing of Gordian II and his father’s death by his own act in 238.",
     },
     "university": {
-      "cause": "The fight at Carthage belongs to the year 238, inside a Roman civil quarrel. Gordian II held imperial power and commanded the men who came out to defend the city. Opposite him was the governor of Numidia, spelled Capelianus in one narrative and Capellianus in the other, who marched his troops on Carthage. A battle narrative adds a lawsuit and a grudge, and it offers about April as the date. A study of the Gordians calls the governor an ally of Maximinus and prints 12 May. The month and the spelling are not shared, so they are not the cause. The cause is the governor’s attack on Carthage and Gordian II’s decision to meet it in 238.",
-      "what": "Gordian II was defeated and killed near Carthage. His force is a militia in both narratives. One narrative stresses untrained townsmen, a meeting near the city, and a success for the side loyal to Maximinus. The other narrative calls the same contact a skirmish, quotes an older voice that says battle, and stresses a small defending militia overwhelmed by the governor’s men. Training, size, and the choice between skirmish and battle are therefore left aside. What both narratives describe is a fight at Carthage in 238 in which the Numidian governor’s troops killed Gordian II.",
-      "consequence": "The Gordianic defence had collapsed with the death of Gordian II. Both narratives then have Gordian I die by his own hand once the son’s fate was known. One narrative says he committed suicide. The other says he hanged himself, and it dates the pair’s end to 12 May after twenty-two days of rule. A new choice of emperors in Rome is told on one side only. The result that remains is Gordian II’s death at Carthage in 238 and his father’s suicide."
-    }
+      "cause": "The Carthage fight sits inside a Roman civil quarrel in 238. Gordian II commanded the men who came out from the city. Opposite him was the Numidian governor, written Capelianus in a battle narrative and Capellianus in a study of the Gordians. The battle narrative adds a private lawsuit and a grudge, and it offers about April. The study calls the governor an ally of Maximinus and prints 12 May. Lawsuit, alliance, month, and the doubled consonant are not the cause they share. The shared cause is the governor’s attack on Carthage and Gordian II’s decision to meet it.",
+      "what": "Gordian II was defeated and killed. His force is a militia in both narratives. One stresses men without training and a victory for the side loyal to Maximinus. The other calls the same contact a skirmish as well as a battle and stresses a small militia overwhelmed by the governor’s soldiers. Whether the day fell in April or on 12 May is printed in only one narrative each, so the day stays out. What both describe is a fight at Carthage in 238 in which the Numidian governor’s troops killed Gordian II.",
+      "consequence": "Once the son had fallen, the father’s reign ended by his own doing. A battle narrative uses the word suicide and leaves the month as about April. A study of the house says he hanged himself on 12 May, after twenty-two days of rule. The senate’s later choice of a boy emperor is on one side only. Method, calendar day, and the length of the reign are therefore set aside. The result that remains is Gordian II’s death at Carthage in 238 and Gordian I’s death by his own hand.",
+    },
   },
   "sources": [
     {
@@ -1056,3 +1056,281 @@ export const syagrius: EraFigure = {
     }
   ]
 };
+
+export const lugdunum197: EraEvent = {
+  "id": "lugdunum_197",
+  "date": "0197-02-19",
+  "precision": "day",
+  "title": "Battle of Lugdunum",
+  "kind": "battle",
+  "fronts": [
+    "france_and_low_countries",
+  ],
+  "countries": [
+    "Roman Empire",
+  ],
+  "figures": [
+    "septimius_severus",
+    "clodius_albinus",
+  ],
+  "note": "One account also writes Claudius Albinus in its opening, calls him a usurper, and says a first clash came at Tinurtium, modern Tournus. The other spells him Clodius, calls him emperor, and says the January clash was in the Saône valley. Both give 19 February 197, Lugdunum or Lyon, a victory for Septimius Severus, and a death by Albinus’s own hand.",
+  "mapNote": "Severus defeated Albinus at Lugdunum, modern Lyon, on 19 February 197, and Albinus died there by his own hand.",
+  "levels": {
+    "primary": {
+      "cause": "On 19 February 197 the Roman emperor Septimius Severus faced Clodius Albinus at Lugdunum, the city now called Lyon.",
+      "what": "Severus defeated him, and Albinus took his own life in that city.",
+      "consequence": "The rival who had held Lyon was dead, and Severus’s army had won the battle.",
+    },
+    "secondary": {
+      "cause": "Septimius Severus and Clodius Albinus were rival Roman claimants when their armies met in Gaul. One narrative has Albinus fall back on Lugdunum after an earlier clash at Tinurtium. The other has him lose a January fight in the Saône valley and retire to his headquarters at Lyon. Those earlier place-names are not the same, so they are not the cause. The cause both give is the decisive meeting at that city on 19 February 197.",
+      "what": "The fighting went to Severus. Albinus then died by his own act. A battle narrative says he fled into Lugdunum and took his own life, and it afterwards has the body thrown into the Rhône. A life of Albinus says he was trapped in a house on the bank of the Rhône and committed suicide, and that the city was sacked. The sack and the treatment of the corpse are each told once. The course both support is Severus’s victory and Albinus’s suicide at Lyon on that February day.",
+      "consequence": "Albinus’s challenge ended on the field and in his own death. One narrative says the victory made Severus sole emperor, and it adds a beheading of the corpse and executions in the senate. The life of Albinus instead records a condemnation of his memory after the sack. Sole rule, the beheading, and that condemnation are not in both. The result they share is Severus victorious at Lugdunum on 19 February 197, and Albinus dead by his own hand.",
+    },
+    "university": {
+      "cause": "The name of Severus’s rival is not written in one way. A battle narrative’s opening calls him Claudius Albinus and a usurper, while the same narrative’s title line and a separate life call him Clodius Albinus, and that life calls him emperor from 193. The office is therefore disputed even though both agree he commanded the army Severus fought. One narrative places a preliminary clash at Tinurtium, which it glosses as Tournus. The life places a January 197 clash in the Saône valley and then a retreat to Lyon. Because those first places differ, neither town is treated as the shared approach. The shared approach is the city of Lugdunum, called Lyon in both accounts, on 19 February 197.",
+      "what": "Severus won a hard fight and Albinus did not leave the city alive. The battle narrative says the struggle lasted more than a day and that ancient numbers for the armies are vague, then has Albinus take his own life inside Lugdunum. The life says he was defeated again on 19 February, trapped in a house beside the Rhône, and that he committed suicide. Length of the fighting and the house are one-sided details. Suicide beside that river, in the city both name, is the common action. What both affirm is a victory for Septimius Severus and the self-inflicted death of Clodius Albinus.",
+      "consequence": "What the victory purchased is told more largely on one side than the other. The battle narrative says Severus was at last the only emperor, sent the rival’s head to Rome, and punished senators who had backed the loser. The life stops at the sack, the suicide, and a formal condemnation of Albinus’s memory, and it judges him a capable man who lacked Severus’s ruthlessness. Head, senate, and that character sketch are not required for the shared result. The shared result is the end of Albinus’s armed claim at Lyon on 19 February 197.",
+    },
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Lugdunum",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.livius.org/articles/person/clodius-albinus/",
+      "publisher": "Livius"
+    },
+    {
+      "url": "https://www.livius.org/articles/person/septimius-severus/",
+      "publisher": "Livius"
+    },
+  ]
+};
+
+export const chrysopolis324: EraEvent = {
+  "id": "chrysopolis_324",
+  "date": "0324-09-18",
+  "precision": "day",
+  "title": "Battle of Chrysopolis",
+  "kind": "battle",
+  "fronts": [
+    "anatolia_and_levant",
+    "balkans",
+  ],
+  "countries": [
+    "Roman Empire",
+  ],
+  "figures": [
+    "constantine_i",
+    "licinius",
+  ],
+  "note": "One account spells the earlier city Adrianople and calls Chrysopolis modern Üsküdar. The other spells it Adrianopel and does not give the modern name. Both order that earlier defeat before Chrysopolis on 18 September 324. Exile at Thessaloniki and an execution in 325 appear in one account. The other says Licinius was spared at first and executed later.",
+  "mapNote": "Licinius was defeated near Adrianople and then at Chrysopolis on 18 September 324.",
+  "levels": {
+    "primary": {
+      "cause": "On 18 September 324 Constantine fought Licinius at Chrysopolis, after an earlier defeat of Licinius near Adrianople.",
+      "what": "Constantine’s soldiers defeated Licinius in the battle at Chrysopolis on 18 September 324.",
+      "consequence": "Licinius gave up the war after the defeat, and he was later put to death.",
+    },
+    "secondary": {
+      "cause": "Constantine and Licinius were rival Roman emperors in 324. Before the land battle at Chrysopolis, Constantine’s son Crispus beat Licinius’s fleet. One narrative calls that naval fight the Battle of the Hellespont. The other says Crispus defeated an admiral named Amandus. The sea fight is shared either way. So is the order that follows: Licinius was already beaten near Adrianople, and then the armies met at Chrysopolis.",
+      "what": "On 18 September 324 Constantine defeated Licinius at Chrysopolis. A battle narrative has Constantine cross to the Asian shore and attack, and it calls the place modern Üsküdar, opposite Byzantium. A life of Constantine says only that Licinius was defeated near Adrianopel and at Chrysopolis on that date, and that he fled toward Asia. The crossing, the modern name, and the spelling Adrianopel are not all in both. The action both record is the defeat at Chrysopolis on 18 September 324.",
+      "consequence": "Licinius did not keep his throne. One narrative says he surrendered, was spared at first, and was executed later after a charge of treason, and that his son was killed the next year. A life of Constantine says he resigned, was exiled to Thessaloniki, and was executed in 325. The city of exile, the year of the execution, and the son’s fate are one-sided. The result they share is that Licinius lost at Chrysopolis, ceased to rule, and was afterwards killed.",
+    },
+    "university": {
+      "cause": "The war of 324 is the frame both narratives give. Constantine is the emperor who carried the attack. Licinius is the emperor who received it. A battle narrative inserts Martinian as a co-emperor whose troops may not have reached Licinius in time, and it describes a crossing of the Bosphorus after Crispus had destroyed the Licinian fleet at the Hellespont. A life of Constantine compresses the same season into a naval victory by Crispus over Amandus and then two land defeats, near Adrianopel and at Chrysopolis. Martinian, the strait, and the admiral’s name are not common. The common cause is Constantine’s campaign against Licinius, with Adrianople standing before Chrysopolis, and Crispus’s naval success before the final land battle.",
+      "what": "The dated battle is 18 September 324 at Chrysopolis. The battle narrative adds pagan standards on Licinius’s side and the labarum on Constantine’s, then a direct attack and heavy losses, with a retreat of the survivors toward Nicomedia. None of those colours, numbers, or the retreat town appear in the life. The life’s contribution is the pairing of the Chrysopolis defeat with the earlier one near Adrianopel, inside the same year. Standards, casualty talk, and Nicomedia stay outside the shared course. What remains is Constantine’s victory over Licinius at Chrysopolis on that September day, following the defeat near Adrianople.",
+      "consequence": "Ending the war and ending Licinius’s life are both in the sources, but not on the same calendar line. The battle narrative says the defeat closed the civil war, that Licinius surrendered and was initially spared, and that execution came later, after treason was alleged. The life says he fled toward Asia, resigned, was exiled to Thessaloniki, and was executed in 325, and it adds the foundation of Constantinople in the same season. The new capital and the exile city are not in both. The consequence they share is the loss of Licinius’s power after Chrysopolis and his subsequent death.",
+    },
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Chrysopolis",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.livius.org/articles/person/constantine-the-great/",
+      "publisher": "Livius"
+    },
+  ]
+};
+
+export const julianPersia363: EraEvent = {
+  "id": "julian_persia_363",
+  "date": "0363",
+  "precision": "year",
+  "title": "Julian’s Persian expedition",
+  "kind": "invasion",
+  "fronts": [
+    "asia",
+  ],
+  "countries": [
+    "Roman Empire",
+    "Sasanian Empire",
+  ],
+  "figures": [
+    "julian",
+    "shapur_ii",
+  ],
+  "note": "One account says Julian did not besiege Ctesiphon, places his death in a skirmish at Samarra, and dates the expedition from March to July 363. The other says he besieged the city but did not take it, and that in June 363 he was wounded in battle and died in his tent. Both say the capital was not taken and that he died of wounds.",
+  "levels": {
+    "primary": {
+      "cause": "In 363 the Roman emperor Julian led his army to Ctesiphon, capital of the Sasanian king Shapur II.",
+      "what": "The city was not taken, and Julian died of wounds while the campaign was still being fought.",
+      "consequence": "Jovian, the next emperor, made peace, and Nisibis passed to the Sasanians.",
+    },
+    "secondary": {
+      "cause": "Julian’s last campaign was aimed at Shapur II. Both narratives bring the Roman army up to Ctesiphon and agree that the capital stayed in Sasanian hands. They also agree that Shapur’s side stripped the country as the Romans moved, a scorched-earth policy that left the invaders short of supplies. One narrative says Julian burned his own supply fleet. The other says he destroyed his ships so the army could not retreat. The shared cause of the late crisis is that approach to Ctesiphon under Shapur II in 363, with food already failing.",
+      "what": "Julian did not take Ctesiphon, and he did not survive the campaign. A battle narrative says he refused a siege, then died of wounds in a skirmish on the retreat, at Samarra. A study of Shapur II says the Romans besieged Ctesiphon without taking it, and that in June 363 Persian forces defeated the Romans, Julian being wounded and dying in his tent. Siege or no siege, the place of the wound, and the month are not agreed. The course both describe is an untaken capital and a Roman emperor dead of wounds in 363.",
+      "consequence": "Jovian was chosen emperor after Julian and accepted a peace the Roman side calls shameful or unfavourable. Both narratives include Nisibis among the places given up. One adds Singara and speaks of several frontier fortresses. The other adds eastern Mesopotamia, Armenia, and fifteen fortresses, and it names the Persian who carried the terms. Those extras are not required. The result they share is Julian dead, Ctesiphon untaken, and a peace under Jovian that handed Nisibis to Shapur II’s realm.",
+    },
+    "university": {
+      "cause": "The year 363 holds Julian’s Persian campaign and Shapur II’s defence. A battle narrative has Julian leave Antioch on 5 March, send a northern detachment toward Armenia, and bring the main army down the Euphrates to the walls of Ctesiphon, where a Sasanian force was already arrayed. A study of the Sasanian king has him answer with scorched earth after Julian destroyed the Roman ships, and it speaks of an initial success at Antioch in March only as the reason for a boastful Roman inscription. Departure town, Armenian ally, and that inscription are not the shared cause. The shared cause is Julian’s attack toward Ctesiphon in 363 against Shapur II, conducted while the countryside was being stripped of food.",
+      "what": "Whether Ctesiphon was besieged is an open disagreement. The battle narrative says Julian won a fight outside the walls, judged the capital impregnable, and did not attempt a siege. The study says he laid siege and that disorder among the Romans kept the city from being taken. Both, however, leave the capital untaken. The death is likewise told twice and not in the same words. One has a skirmish wound at Samarra during the retreat. The other has a June battle, a spear wound, and death in a tent, and it records an eyewitness who says an enemy hand struck him. Samarra, June, and the weapon stay with the narrative that prints them. What both affirm is that Julian died of wounds in 363 without having taken Ctesiphon.",
+      "consequence": "The peace that followed is a Roman surrender of territory, not a Sasanian evacuation. Jovian, newly chosen, accepted terms both narratives treat as humiliating. Nisibis is named in each. A battle narrative also transfers Singara and says the terms saved a worn-out army from destruction. A study of Shapur adds Armenia and fifteen fortresses, and it calls the decree shameful in the Roman authors’ own Latin. Counts of fortresses and the Armenian cession are not in both. The consequence they share is Julian’s death, an untaken Ctesiphon, and Jovian’s peace ceding Nisibis to the Sasanians.",
+    },
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Julian%27s_Persian_expedition",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.iranicaonline.org/articles/shapur-ii/",
+      "publisher": "Encyclopaedia Iranica"
+    },
+  ]
+};
+
+export const septimiusSeverus: EraFigure = {
+  "id": "septimius_severus",
+  "name": "Septimius Severus",
+  "role": "emperor",
+  "country": "Roman Empire",
+  "allegiance": "Roman Empire",
+  "note": "One account calls the victory the moment Severus became sole emperor. The other does not use that phrase. Both say he defeated Clodius Albinus at Lugdunum, or Lyon, on 19 February 197, and that Albinus then died by his own hand.",
+  "bio": {
+    "primary": "On 19 February 197 Septimius Severus defeated Clodius Albinus at Lugdunum, and Albinus took his own life.",
+    "secondary": "Septimius Severus was the Roman emperor who beat Clodius Albinus at Lugdunum, modern Lyon, on 19 February 197. A battle narrative has the rival fall back on that city and die by his own hand after the defeat. A life of Albinus has the final fight at Lyon on the same day, followed by suicide. The life they share is his victory at that city and the rival’s death by his own act.",
+    "university": "Septimius Severus is the commander whose army ended Clodius Albinus’s challenge on 19 February 197. One narrative, which also writes Claudius in a single sentence, says the win made Severus the only emperor and describes a corpse beheaded and shown to the troops. A life of the rival says Severus’s soldiers sacked Lyon and that Albinus killed himself in a house by the Rhône, after which the senate condemned his memory. Sole rule, the displayed head, and the condemnation of memory are not in both. What both affirm is Severus’s victory over Albinus at Lugdunum on 19 February 197 and that rival’s suicide.",
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Lugdunum",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.livius.org/articles/person/clodius-albinus/",
+      "publisher": "Livius"
+    },
+    {
+      "url": "https://www.livius.org/articles/person/septimius-severus/",
+      "publisher": "Livius"
+    },
+  ]
+};
+
+export const clodiusAlbinus: EraFigure = {
+  "id": "clodius_albinus",
+  "name": "Clodius Albinus",
+  "role": "emperor",
+  "country": "Roman Empire",
+  "allegiance": "Roman Empire",
+  "note": "One account’s opening calls him Claudius Albinus and a usurper. A life calls him Decimus Clodius Albinus and emperor from 193 to 197. Both say he was defeated at Lyon on 19 February 197 and died by his own hand.",
+  "bio": {
+    "primary": "Clodius Albinus was defeated by Septimius Severus at Lyon on 19 February 197, and he took his own life.",
+    "secondary": "Clodius Albinus commanded the army that Septimius Severus defeated on 19 February 197. A battle narrative sets the defeat at Lugdunum, which it also calls Lyon, and says he fled into the city and took his own life. His own life says he lost a fight in the Saône valley in January, fell back on Lyon, was beaten again on 19 February, and committed suicide. The January valley is not in the battle narrative. The life they share is the command against Severus, the defeat at Lyon, and a death by his own hand.",
+    "university": "Clodius Albinus is the rival Severus destroyed at Lyon. A battle narrative’s first sentence calls him Claudius and a usurper, then later uses Clodius, and it grants Severus the title of sole emperor after the suicide. The life gives the full name Decimus Clodius Albinus, dates his imperial claim from 193, and says he invaded Gaul in 196 with the British legions before the defeat and the suicide beside the Rhône. British legions, the year 193, and the usurper label are not all shared. The battle narrative and the life do agree on the 19 February defeat at Lyon and on the suicide. That agreement is the life recorded here.",
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Lugdunum",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.livius.org/articles/person/clodius-albinus/",
+      "publisher": "Livius"
+    },
+    {
+      "url": "https://www.livius.org/articles/person/septimius-severus/",
+      "publisher": "Livius"
+    },
+  ]
+};
+
+export const licinius: EraFigure = {
+  "id": "licinius",
+  "name": "Licinius",
+  "role": "emperor",
+  "country": "Roman Empire",
+  "allegiance": "Roman Empire",
+  "note": "One account exiles him to Thessaloniki and dates his execution to 325. The other says he surrendered, was spared at first, and was executed later. Both say Constantine defeated him near Adrianople and at Chrysopolis on 18 September 324.",
+  "bio": {
+    "primary": "On 18 September 324 Licinius was defeated by Constantine at Chrysopolis, after an earlier defeat near Adrianople.",
+    "secondary": "Licinius was a Roman emperor whom Constantine defeated in 324. A life of Constantine places one defeat near Adrianople and another at Chrysopolis on 18 September, after Crispus had beaten Licinius’s admiral at sea. A battle narrative keeps that order, Adrianople then Chrysopolis, and the same day. He then lost his throne. The life says he resigned and was exiled. The battle narrative says he surrendered. The life they share is the pair of defeats and the loss of power after Chrysopolis.",
+    "university": "Licinius is the emperor Constantine overcame at the end of their war in 324. Both accounts put a defeat near Adrianople before the defeat at Chrysopolis on 18 September, and both give Crispus a naval victory beforehand. A life of Constantine then has Licinius flee toward Asia, resign, go into exile at Thessaloniki, and die by execution in 325. A battle narrative has him retreat toward Nicomedia, surrender, receive a pardon, and later be executed for treason, with his son killed the following year. Exile, Nicomedia, the pardon, and the son are not in both. What both affirm is Licinius’s defeat at Chrysopolis on 18 September 324 and his death after he had ceased to rule.",
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Chrysopolis",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.livius.org/articles/person/constantine-the-great/",
+      "publisher": "Livius"
+    },
+  ]
+};
+
+export const shapurIi: EraFigure = {
+  "id": "shapur_ii",
+  "name": "Shapur II",
+  "role": "king",
+  "country": "Sasanian Empire",
+  "allegiance": "Sasanian Empire",
+  "note": "One account says Julian besieged Ctesiphon and died in his tent in June 363. The other says there was no siege, and that he died of a skirmish wound at Samarra. Both say Shapur II’s capital was not taken, that Julian died of wounds, and that the peace ceded Nisibis.",
+  "bio": {
+    "primary": "In 363 Shapur II, the Sasanian king, faced Julian at Ctesiphon. The city was not taken, and Julian died of wounds.",
+    "secondary": "Shapur II ruled the Sasanians when Julian’s army reached Ctesiphon in 363 and failed to take it. Both narratives say Julian died of wounds. A study of Shapur says Persian forces defeated the Romans in June and that Julian died in his tent. A battle narrative says Shapur’s army avoided a pitched battle, used scorched earth, and that Julian died in a skirmish on the retreat. The month and the shape of the last fight are not shared. The life they share is his defence in 363, an untaken capital, and Julian’s death of wounds.",
+    "university": "Shapur II is the Sasanian king against whom Julian marched in 363. A study in his name says the Roman siege of Ctesiphon failed, that scorched earth left the invaders hungry, and that June brought a Persian victory in which Julian was mortally wounded. A battle narrative denies the siege, has the Romans win a fight outside the walls and then turn away, and places the mortal wound in a later skirmish at Samarra. Siege, Samarra, and June belong to single narratives. Both then bring in Jovian and a peace that cedes Nisibis. What both affirm is Shapur II’s survival of the attack on Ctesiphon, Julian’s death of wounds, and the gain of Nisibis.",
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Julian%27s_Persian_expedition",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.iranicaonline.org/articles/shapur-ii/",
+      "publisher": "Encyclopaedia Iranica"
+    },
+  ]
+};
+
+const adrianopleChrysopolis324: EraLine = {
+  id: 'adrianople_chrysopolis_324',
+  name: 'From Adrianople to Chrysopolis',
+  from: '0324-09-18',
+  to: '0324-09-18',
+  domain: 'land',
+  mover: 'Constantine I',
+  summary: 'Constantine defeated Licinius near Adrianople and then at Chrysopolis on 18 September 324.',
+  waypoints: [
+    { name: 'Adrianople', lat: 41.6759327, lng: 26.5587225 },
+    { name: 'Chrysopolis', lat: 41.0265498, lng: 29.0151321 },
+  ],
+  sources: [
+    { url: 'https://en.wikipedia.org/wiki/Battle_of_Chrysopolis', publisher: 'Wikipedia' },
+    { url: 'https://www.livius.org/articles/person/constantine-the-great/', publisher: 'Livius' },
+  ],
+};
+
+const adrianopleChrysopolisLinks: EraLink[] = [
+  { lineId: 'adrianople_chrysopolis_324', eventId: 'chrysopolis_324', at: 0 },
+  { lineId: 'adrianople_chrysopolis_324', eventId: 'chrysopolis_324', at: 1 },
+];
+
+export const ANTIQUITY_ROUND4_LINES: EraLine[] = [adrianopleChrysopolis324];
+
+export const ANTIQUITY_ROUND4_LINKS: EraLink[] = adrianopleChrysopolisLinks;
+

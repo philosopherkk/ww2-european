@@ -737,7 +737,7 @@ export const koreanWar1950: EraEvent = {
   fronts: ["asia"],
   countries: ["North Korea", "South Korea", "United States"],
   figures: ["harry_s_truman"],
-  note: "One page says the invaders headed toward Seoul and that President Truman dispatched land, air, and sea forces in what he called a police action. The other says Seoul fell on 28 June and that on 27 June he ordered air and sea forces only. Kim Il-sung, Syngman Rhee, and Douglas MacArthur are named in only one page, so none receives a life. A ceasefire day of 27 July 1953, troop shares, and casualty totals are not stated above.",
+  note: "One page says the invaders headed toward Seoul and that President Truman dispatched land, air, and sea forces in what he called a police action. The other says Seoul fell on 28 June and that on 27 June he ordered air and sea forces only. Kim Il-sung and Syngman Rhee are named in only one page, so neither receives a life. Douglas MacArthur is named for this June decision on only one page, so that June decision is not a life of his. A ceasefire day of 27 July 1953, troop shares, and casualty totals are not stated above.",
   levels: {
     primary: {
       cause: "After the Second World War, Korea was divided into a Soviet occupation zone in the north and an American zone in the south.",
@@ -854,5 +854,196 @@ export const saddamHussein: EraFigure = {
   ],
 };
 
-export const SINCE_1945_FILL_EVENTS: EraEvent[] = [dienBienPhu1954, bayOfPigs1961, soweto1976, india1947, suez1956, berlinWall1961, prc1949, koreanWar1950, kuwait1990];
-export const SINCE_1945_FILL_FIGURES: EraFigure[] = [hoChiMinh, fidelCastro, dwightDEisenhower, hectorPieterson, hastingsNdlovu, samNzima, tsietsiMashinini, jawaharlalNehru, mahatmaGandhi, gamalAbdelNasser, walterUlbricht, janosKadar, leonidBrezhnev, vladimirPutin, margaretThatcher, leopoldoGaltieri, jeremyMoore, ianMckay, maoZedong, harrySTruman, saddamHussein];
+
+
+export const israel1948: EraEvent = {
+  id: "israel_1948",
+  date: "1948-05-14",
+  precision: "day",
+  title: "David Ben-Gurion proclaims the State of Israel",
+  kind: "succession",
+  fronts: ["anatolia_and_levant"],
+  countries: ["Israel"],
+  figures: ["david_ben_gurion"],
+  note: "One account calls him chairman of the Jewish Agency, places the proclamation in Tel Aviv, and says he became Israel’s first premier. The other calls him the head of the Jewish Agency and says President Harry S. Truman recognised the new nation the same day. Premier, Tel Aviv, and Truman’s recognition are not stated above. Truman already has a life, so none is added here.",
+  levels: {
+    primary: {
+      cause: "Britain’s mandate in Palestine was about to end, and the Jewish Agency was ready to proclaim a state.",
+      what: "On 14 May 1948 David Ben-Gurion proclaimed the State of Israel and brought that state into being.",
+      consequence: "The State of Israel had been proclaimed, and David Ben-Gurion was the man who declared it.",
+    },
+    secondary: {
+      cause: "A British mandate over Palestine was reaching its last hours. The body that spoke for the new country is the Jewish Agency in both records, though one calls its speaker a chairman and the other its head. Guns after the British withdrawal, and a claim that he became premier, are each printed in a single record. The cause both records share is the expiring mandate and an Agency prepared to announce a state.",
+      what: "Both records date the act to 14 May 1948. David Ben-Gurion then made the State of Israel public. A popular record places him in Tel Aviv and says he proclaims the state. A diplomatic record says he proclaimed its establishment and does not name the city. Tel Aviv is therefore not treated as agreed. The act both print is his proclamation of the State of Israel on that May day.",
+      consequence: "Once the proclamation had been made, the State of Israel was the state he had announced. One record says he became the first premier, and that the United States recognised the new nation. The other names President Truman for a recognition the same day and does not give Ben-Gurion that office. Truman already has a life, so none is added. Premier and the American recognition stay outside the result, which is the state he proclaimed.",
+    },
+    university: {
+      cause: "Two narratives reach the same May morning from different shelves. The popular narrative lingers on a mandate’s final hours, a chairman, and a city where guns could be heard after British soldiers left. The diplomatic narrative introduces the head of the Jewish Agency and a Washington argument over trusteeship that did not stop the announcement. Chairman, the guns, the soldiers’ departure, and that trusteeship argument are each told once. What both sustain is narrower: Britain’s mandate in Palestine was ending, and the Jewish Agency was about to declare a state.",
+      what: "The calendar day in both narratives is 14 May 1948, and the speaker is David Ben-Gurion. On that day he brought the State of Israel into public existence. One narrative has him do it in Tel Aviv and adds a phrase about two thousand years. The other has him proclaim the establishment and never mentions the city or that span of centuries. Those extras fail to appear twice. Stripped of them, the act is his declaration of the State of Israel on 14 May 1948.",
+      consequence: "The new state does not stay hypothetical past the declaration in either narrative. One then makes him premier and reports recognition by the United States. The other names President Harry S. Truman for a recognition delivered the same day and is silent on any premiership. Truman’s part is already told elsewhere, so he is not given a second life. The result both narratives support is the State of Israel, proclaimed by David Ben-Gurion on 14 May 1948.",
+    },
+  },
+  sources: [
+    {
+      url: "https://www.history.com/this-day-in-history/may-14/state-of-israel-proclaimed",
+      publisher: "History.com",
+    },
+    {
+      url: "https://history.state.gov/milestones/1945-1952/creation-israel",
+      publisher: "Office of the Historian",
+    },
+  ],
+};
+
+export const davidBenGurion: EraFigure = {
+  id: "david_ben_gurion",
+  name: "David Ben-Gurion",
+  role: "Jewish Agency leader",
+  country: "Israel",
+  allegiance: "Israel",
+  note: "One page calls him chairman and Israel’s first premier, and it places him in Tel Aviv. The other calls him the head of the Jewish Agency and does not give him the premiership. President Truman’s recognition that day is in only one page, and Truman already has a life.",
+  bio: {
+    primary: "On 14 May 1948 David Ben-Gurion proclaimed the State of Israel for the Jewish Agency, and that proclamation brought the state into being.",
+    secondary: "David Ben-Gurion is the man both records name when the State of Israel was proclaimed on 14 May 1948. He spoke for the Jewish Agency. One record calls him its chairman, sets the scene in Tel Aviv, and says he became the first premier. The other calls him the head of the Agency and does not mention the city or that office. Chairman, Tel Aviv, and the premiership are not in both records. This life keeps the May day, the Agency, and his proclamation of the state.",
+    university: "The life that survives the two narratives is the speaker of 14 May 1948. He is David Ben-Gurion. Each narrative has him bring the State of Israel into public being, and each attaches him to the Jewish Agency, one as chairman and one as its head. Beyond the name and the day the portraits split. One adds Tel Aviv, a phrase about two thousand years, and the premiership. The other is silent on that city and that office, and it names President Truman for a recognition the same day. Truman already has a life, so he is not retold here. What remains is Ben-Gurion, the Agency, and the proclamation of the state.",
+  },
+  sources: [
+    {
+      url: "https://www.history.com/this-day-in-history/may-14/state-of-israel-proclaimed",
+      publisher: "History.com",
+    },
+    {
+      url: "https://history.state.gov/milestones/1945-1952/creation-israel",
+      publisher: "Office of the Historian",
+    },
+  ],
+};
+
+export const inchon1950: EraEvent = {
+  id: "inchon_1950",
+  date: "1950-09-15",
+  precision: "day",
+  title: "Forces under MacArthur land at Inchon",
+  kind: "battle",
+  fronts: ["asia"],
+  countries: ["United States", "North Korea"],
+  figures: ["douglas_macarthur"],
+  note: "One account spells the port Incheon, dates the battle from 15 to 19 September 1950, and calls MacArthur general of the army. The other spells it Inchon, says the Marines had secured it by early evening on 15 September, and calls him U.N. supreme commander. The closing day, the evening, and the two titles are not stated above. A later removal from command is printed in one account and is not part of this landing.",
+  levels: {
+    primary: {
+      cause: "Douglas MacArthur pressed for a landing at Inchon that would get behind the North Korean army.",
+      what: "On 15 September 1950 forces under Douglas MacArthur landed at Inchon, on the west coast of Korea.",
+      consequence: "The landing at Inchon was carried out, and MacArthur was the commander both accounts name for it.",
+    },
+    secondary: {
+      cause: "The Korean War was under way, and a landing behind the North Korean line was the stroke Douglas MacArthur insisted on. One record says the place had been criticised as too risky and that he, as U.N. supreme commander, insisted anyway. The other says he was the driving force and overcame the misgivings of more cautious generals. The risky ground is in both. His insistence on Inchon is the cause they share.",
+      what: "On 15 September 1950 the landing at Inchon began. One record says U.S. Marines landed on the west coast, overcame moderate resistance, and had secured the port by early evening. The other says the battle began that day and ended on 19 September, and it spells the city Incheon. The evening success and the later closing day are not the same, so neither is adopted. The course both records give is the landing, opened on 15 September under MacArthur.",
+      consequence: "The landing had put forces ashore at Inchon and cut into the North Korean position. One record says the stroke cut the North Korean forces in two and opened a push towards Seoul. The other says the city was secured after bombardment and that the northern army then collapsed. Seoul, the prisoner totals, and the speed of that collapse are not matched. The result both support is the landing at Inchon, commanded by Douglas MacArthur.",
+    },
+    university: {
+      cause: "Two narratives present the landing as a gamble that one commander forced through. The popular narrative says advisers thought Inchon too risky, and that Douglas MacArthur, styled U.N. supreme commander, insisted on carrying it out. The reference narrative calls him general of the army, commander of the United Nations and South Korean forces, and the driving force who overcame cautious generals and unfavourable terrain. Supreme commander, general of the army, and the terrain phrase are not a single shared title. What both sustain is his pressure for a landing at Inchon in the face of doubt.",
+      what: "The opening day both narratives name is 15 September 1950. Forces then landed at Inchon. The popular narrative, which uses that spelling, says U.S. Marines came ashore on the west coast of Korea and had overcome moderate resistance by early evening. The reference narrative says the battle began on 15 September and ended on the 19th, and it also spells the port Incheon. Evening security and a four-day span fail to appear twice. Beaches, ships, and a corps name are likewise single-narrative. The action both will carry is the landing opened on 15 September 1950 under Douglas MacArthur.",
+      consequence: "The assault does not stall on the beaches in either narrative. One says it cut the North Korean forces in two and that a United Nations force then pushed inland towards Seoul. The other says Incheon was secured and that the northern army collapsed within a month, with a prisoner figure it alone prints. Seoul, the month, and that figure are not shared, so they stay out of the result. A later dismissal of MacArthur is printed in one narrative and is not this landing. What remains is the Inchon landing he had driven.",
+    },
+  },
+  sources: [
+    {
+      url: "https://www.history.com/this-day-in-history/september-15/u-s-forces-land-at-inchon",
+      publisher: "History.com",
+    },
+    {
+      url: "https://en.wikipedia.org/wiki/Battle_of_Inchon",
+      publisher: "Wikipedia",
+    },
+  ],
+};
+
+export const douglasMacarthur: EraFigure = {
+  id: "douglas_macarthur",
+  name: "Douglas MacArthur",
+  role: "commander",
+  country: "United States",
+  allegiance: "United Nations",
+  note: "One page calls him U.N. supreme commander and says he insisted on Inchon. The other calls him general of the army and the driving force of the operation. The titles are not folded into one office. He is named for the 25 June invasion on only one of those earlier pages, so that June decision is not this life. A later removal from command is printed once and is left out.",
+  bio: {
+    primary: "On 15 September 1950 Douglas MacArthur’s forces landed at Inchon, the landing he had insisted on carrying out.",
+    secondary: "Douglas MacArthur is the commander both records name for the landing at Inchon on 15 September 1950. One calls him U.N. supreme commander and says he insisted on the landing though it was judged too risky. The other calls him general of the army and the driving force who overcame more cautious generals. The two titles are not the same wording, so this life does not pick one office. It keeps the September day, Inchon, and his command of the landing.",
+    university: "MacArthur enters both narratives as the officer who drove the Inchon landing, not as a name on a list alone. On 15 September 1950 the landing opened, and he is the commander each narrative attaches to it. One styles him U.N. supreme commander and has him insist after the site was criticised. The other styles him general of the army, in command of United Nations and South Korean forces, and calls him the driving force over unfavourable ground. Those titles and the ground phrase are not printed the same way twice. A dismissal the following year appears in a single narrative and is not retold. His part is the landing he forced on 15 September 1950.",
+  },
+  sources: [
+    {
+      url: "https://www.history.com/this-day-in-history/september-15/u-s-forces-land-at-inchon",
+      publisher: "History.com",
+    },
+    {
+      url: "https://en.wikipedia.org/wiki/Battle_of_Inchon",
+      publisher: "Wikipedia",
+    },
+  ],
+};
+
+export const afghanistan1979: EraEvent = {
+  id: "afghanistan_1979",
+  date: "1979-12-24",
+  precision: "day",
+  title: "The Soviet Union invades Afghanistan",
+  kind: "invasion",
+  fronts: ["asia"],
+  countries: ["Soviet Union", "Afghanistan"],
+  figures: ["babrak_karmal"],
+  note: "One account dates the start to 24 December 1979, prints aircraft and division totals, and dates Babrak Karmal’s installation to 27 December. The other says the invasion began on Christmas Eve, at the end of December 1979, that Soviet troops killed Hafizullah Amin, and that Karmal was installed as a puppet head. Christmas Eve in that December is 24 December. The 27th, the killing, the puppet wording, and the totals are not stated above.",
+  levels: {
+    primary: {
+      cause: "The Soviet Union moved to take control in Afghanistan and to place its own man over the government in Kabul.",
+      what: "On 24 December 1979 the Soviet Union invaded Afghanistan and sent its troops into the country.",
+      consequence: "Soviet forces took hold in Afghanistan, and Babrak Karmal was installed as head of government.",
+    },
+    secondary: {
+      cause: "Moscow moved troops into Afghanistan in order to hold Kabul and to install a government it could rely on. One record says the pretext was a friendship treaty of 1978. The other sets the move at the end of a year of plots inside the Afghan capital. The treaty and those plots are each told once. The cause both records share is a Soviet decision to invade and to put a new head over the government.",
+      what: "The invasion began on 24 December 1979. One record prints that date and describes an airlift into Kabul. The other says the invasion began on Christmas Eve and that Soviet troops then held Kabul and large parts of the country. Christmas Eve, in that December, is the same day. Aircraft totals, a palace assault, and the word immediately are not in both records. The course they share is the Soviet invasion of Afghanistan, opened on that December day, with Kabul among the places taken.",
+      consequence: "Soviet forces were in Afghanistan, and Babrak Karmal was installed as head of government. One record dates that installation to a later day in December and calls him the exiled leader of a party faction. The other says he was installed when the invasion began and calls him a puppet. The later day, the faction, and the puppet label are not both printed, so none is adopted. The result both support is his installation as head of government in the invasion.",
+    },
+    university: {
+      cause: "Two narratives reach the December entry from a capital Moscow no longer trusted, and they do not tell the distrust in the same words. The popular narrative offers a friendship treaty as the stated pretext and then describes a night airlift. The diplomatic narrative spends its length on rival factions, on Hafizullah Amin’s rise, and on a decision in Moscow to replace the men in Kabul, before saying the invasion began on Christmas Eve. The treaty, Amin’s earlier purges, and the faction names are each told once. What both sustain is a Soviet choice to invade Afghanistan and to change the government.",
+      what: "One narrative dates the opening to 24 December 1979 and has transport aircraft lift troops into Kabul, which it says was secured within a few days. The other says that at the end of December the Soviet Union sent thousands of troops and immediately assumed control of Kabul, and that the invasion began on Christmas Eve. The few days and the word immediately do not match, so the timing of the city’s fall is not agreed. Aircraft counts and a named palace are single-narrative. Christmas Eve in that account is 24 December. The action both will carry is the Soviet invasion, begun that day, taking in Kabul.",
+      consequence: "Karmal’s installation is the political end both narratives attach to the entry, and they do not date it alike. The popular narrative waits until 27 December, calls him an exiled faction leader, and says ground forces also came from the north. The diplomatic narrative says Soviet troops killed Amin and installed Karmal as a puppet head, in the sentences that follow Christmas Eve. The 27th, the killing, the puppet word, and the northern columns are not shared statements. Amin is named in both, but not for the same act, so he is not given a life. What remains is Karmal installed as head of government in the invasion.",
+    },
+  },
+  sources: [
+    {
+      url: "https://www.history.com/this-day-in-history/december-24/soviet-tanks-roll-into-afghanistan",
+      publisher: "History.com",
+    },
+    {
+      url: "https://history.state.gov/milestones/1977-1980/soviet-invasion-afghanistan",
+      publisher: "Office of the Historian",
+    },
+  ],
+};
+
+export const babrakKarmal: EraFigure = {
+  id: "babrak_karmal",
+  name: "Babrak Karmal",
+  role: "head of government",
+  country: "Afghanistan",
+  allegiance: "Afghanistan",
+  note: "One page dates his installation to 27 December 1979 and calls him the exiled leader of the Parcham faction. The other says he was installed as a puppet head when the invasion began on Christmas Eve, and that Hafizullah Amin was killed. The 27th, the faction title, and the killing are not one story.",
+  bio: {
+    primary: "Babrak Karmal was installed as Afghanistan’s head of government when the Soviet Union invaded in December 1979.",
+    secondary: "Babrak Karmal is the man both records name as the head of government installed in the Soviet invasion of Afghanistan. The invasion began on 24 December 1979, which one record prints as that date and the other as Christmas Eve. One record dates his installation to a later day and calls him an exiled party leader. The other places the installation with the invasion and calls him a puppet. Those extras are not in both records. This life keeps his installation as head of government in that invasion.",
+    university: "Karmal’s life, as far as the two narratives walk together, is the installation, not the command of the Soviet columns. The invasion began on 24 December 1979. One narrative then waits until 27 December to seat him, styling him the exiled leader of a faction, and it sends ground forces in from the north on that later day. The other seats him in the sentences that follow Christmas Eve, after Amin is killed, and calls the new head a puppet. The later day, the killing, and the puppet word are each told once. Amin is not given a life, because the narratives do not assign him the same act. What remains is Karmal, installed as Afghanistan’s head of government in the invasion.",
+  },
+  sources: [
+    {
+      url: "https://www.history.com/this-day-in-history/december-24/soviet-tanks-roll-into-afghanistan",
+      publisher: "History.com",
+    },
+    {
+      url: "https://history.state.gov/milestones/1977-1980/soviet-invasion-afghanistan",
+      publisher: "Office of the Historian",
+    },
+  ],
+};
+
+export const SINCE_1945_FILL_EVENTS: EraEvent[] = [dienBienPhu1954, bayOfPigs1961, soweto1976, india1947, suez1956, berlinWall1961, prc1949, koreanWar1950, kuwait1990, israel1948, inchon1950, afghanistan1979];
+export const SINCE_1945_FILL_FIGURES: EraFigure[] = [hoChiMinh, fidelCastro, dwightDEisenhower, hectorPieterson, hastingsNdlovu, samNzima, tsietsiMashinini, jawaharlalNehru, mahatmaGandhi, gamalAbdelNasser, walterUlbricht, janosKadar, leonidBrezhnev, vladimirPutin, margaretThatcher, leopoldoGaltieri, jeremyMoore, ianMckay, maoZedong, harrySTruman, saddamHussein, davidBenGurion, douglasMacarthur, babrakKarmal];

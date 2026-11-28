@@ -782,3 +782,343 @@ export const LATE_MEDIEVAL_ROUND3_FIGURES: EraFigure[] = [
 export const LATE_MEDIEVAL_ROUND3_LINES: EraLine[] = [valognesFormigny1450];
 
 export const LATE_MEDIEVAL_ROUND3_LINKS: EraLink[] = valognesFormignyLinks;
+
+const nevillesCross1346: EraEvent = {
+  id: "nevilles_cross_1346",
+  date: "1346-10-17",
+  precision: "day",
+  title: "Battle of Neville’s Cross",
+  kind: "battle",
+  fronts: ["british_isles"],
+  countries: ["England", "Scotland"],
+  figures: ["david_ii", "ralph_neville", "henry_percy"],
+  note: "One account calls the struggle the Second War of Scottish Independence. The other does not use Second. One says Ralph Neville led the English. The other names him with Henry Percy and the archbishop of York. That archbishop is William Zouche in one account and Walter de la Zouche in the other. One account calls David II the son of Robert the Bruce. Strengths differ. A story that the king was found under a bridge is in one account.",
+  levels: {
+    primary: {
+      cause: "King David II led a Scottish army into northern England, and Ralph Neville was among the English commanders who faced him near Durham.",
+      what: "On 17 October 1346 the English defeated David II’s army at Neville’s Cross, and the king of Scots was captured.",
+      consequence: "The Scottish attack failed. David II was a prisoner, and the English army of Ralph Neville held the field near Durham.",
+    },
+    secondary: {
+      cause: "David II, king of Scots, invaded northern England and brought his army to Durham. The English commanders named against him include Ralph Neville. One page says the English army was led by Ralph Neville, Lord Neville. The other names Henry Percy and Ralph Neville together, with the archbishop of York. The archbishop’s personal name is not the same on the two pages, so it is not used here. The cause they share is David’s invasion and the English decision to fight him at Durham.",
+      what: "Both pages date the battle to 17 October 1346 and place it at Durham in the north of England. One page calls the spot Neville’s Cross, half a mile west of the city. The other says Durham. David II’s Scots were defeated. He was captured. One page speaks of the capture of their king. The other speaks of David’s capture and of the loss of several Scottish leaders. Strengths are printed and do not match, so no total is given. The action both describe is the English victory and the capture of David II.",
+      consequence: "The defeat was crushing for the Scots, and their king did not leave the field a free man. Ralph Neville’s side held the ground. One page says most of the Scottish leadership was killed or captured. The other says several military leaders were lost. The wider ransom and a long truce are in a single page, so they are not the result stated here. What remains is the English victory at Durham and David II a prisoner.",
+    },
+    university: {
+      cause: "Two narratives bring King David II and a Scottish army against a northern English force in the autumn of 1346. They agree the ground was at Durham. They do not agree a single style for the English command. A shorter telling says Ralph Neville, Lord Neville, led the English. A longer list names Henry Percy, Ralph Neville, and the archbishop of York, whose personal name is William on one page and Walter on the other. That personal name is dropped. One telling calls the war a second war of Scottish independence and ties the invasion to a French request. The other does not use the numeral and does not tell that request in the same words. The cause that remains is David’s invasion of the north and the English stand under Neville near Durham.",
+      what: "17 October 1346 is the date in each narrative. Neville’s Cross is the name one narrative gives the hill west of Durham, after an older stone cross. The other is content to say Durham in the north of England. A new cross raised after the victory is in a single narrative and is not the battle. Numbers for either host are unlike, and none is kept. The fighting itself is a Scottish defeat. David II was taken. One narrative later pictures him found beneath a bridge, a detail the other does not share, so the manner of the capture is not stated. The course they support is the day’s battle near Durham, the English victory, and the king of Scots made a prisoner.",
+      consequence: "Both narratives treat the end of the day as a heavy Scottish defeat and the capture of David II. Leadership around him was also lost, though one narrative says most were killed or taken and the other says several leaders were lost, which is why no single verb is forced on every man. Ralph Neville remains the English commander both pages name, with Henry Percy beside him on both. Any ransom, a border truce of many years, and the claim that Scotland was left helpless are each fuller than the shared sentence. They stay out. The consequence kept is the failed invasion, David a captive, and the English holding the field at Durham.",
+    },
+  },
+  sources: [
+    {
+      url: "https://en.wikipedia.org/wiki/Battle_of_Neville%27s_Cross",
+      publisher: "Wikipedia",
+    },
+    {
+      url: "https://www.britishbattles.com/scottish-war-of-independence/battle-of-nevilles-cross/",
+      publisher: "British Battles",
+    },
+  ],
+};
+
+const barnet1471: EraEvent = {
+  id: "barnet_1471",
+  date: "1471-04-14",
+  precision: "day",
+  title: "Battle of Barnet",
+  kind: "battle",
+  fronts: ["british_isles"],
+  countries: ["England"],
+  figures: ["earl_of_warwick"],
+  note: "One account calls 14 April Easter Day. The other says Edward left London on Easter Saturday and reached Barnet that evening. One says Yorkist soldiers killed Warwick while he retreated. The other says he was killed trying to reach his horse. One calls him the kingmaker. Troop numbers differ, and Lord Montagu’s death is in one account.",
+  levels: {
+    primary: {
+      cause: "In the Wars of the Roses the Earl of Warwick led a Lancastrian army against King Edward IV near Barnet.",
+      what: "On 14 April 1471 the armies clashed in thick fog at Barnet, north of London, and Edward IV’s Yorkists defeated the Earl of Warwick.",
+      consequence: "The Yorkists won decisively. The Earl of Warwick was killed, and Edward IV’s army held the field.",
+    },
+    secondary: {
+      cause: "Warwick had stood with Edward IV and then turned to Lancaster during the Wars of the Roses. He brought an army against the king who had come back to England. One page calls him the kingmaker and a former ally. The other says he changed sides after the king’s secret marriage and his policy. Richard, Duke of Gloucester, was with Edward. The cause they share is Warwick’s Lancastrian army facing Edward IV near Barnet, north of London.",
+      what: "Both pages date the fighting to 14 April 1471 and place it at Barnet in Hertfordshire, north of London. Edward IV commanded the Yorkists. The Earl of Warwick commanded the Lancastrians. Fog lay over the ground. One page says the hosts clashed in a thick fog at dawn. The other says guns fired in the night did little because of the fog, the Yorkist camp being closer than the gunners had reckoned. The shared action is that day’s battle in the fog, closed by Edward’s defeat of Warwick.",
+      consequence: "The Yorkist success was decisive, and Warwick was killed. One page says Yorkist soldiers killed him while he retreated. The other says he died trying to reach his horse. The manner is not the same, so this result keeps the death and not a chosen blow. A further fight at Tewkesbury is used by one page to explain the throne, and it is not repeated as Barnet’s own result. What remains is the Yorkist victory and Warwick dead on the field.",
+    },
+    university: {
+      cause: "Each narrative sets 14 April 1471 inside the Wars of the Roses, with Edward IV at the head of the Yorkist host and the Earl of Warwick at the head of the Lancastrian host. One narrative calls the Sunday Easter Day and the place a small Hertfordshire town north of London. The other has the king leave London on Easter Saturday and reach Barnet that evening, so the feast-word is not fixed to a single sentence. Richard, Duke of Gloucester, is named beside Edward in each narrative, and one adds that this brother later reigned as Richard III. Counts of men differ and are omitted. The cause the narratives allow is the armed meeting itself, Warwick against the king who had returned.",
+      what: "Fog belongs to both narratives, but not to the same hour. One describes a dawn clash in thick fog after the armies had drawn close in the dark. The other describes a night bombardment that failed, the fog and a nearer Yorkist camp spoiling the aim. Oxford, Hastings, Somerset and Exeter are named in the arrays, yet the two lists are not the same roster, so no full order of battle is stated. Easter wording and any clock of the first shot stay out for the same reason. The course supported here is the fight at Barnet on 14 April 1471 and Edward IV’s defeat of Warwick’s army.",
+      consequence: "Both narratives end the day as a decisive Yorkist victory and record Warwick’s death. They do not record it alike. Soldiers of the winning side, striking him in the retreat, are one version. A death while he tried to reach his horse, with Lord Montagu also slain, is the other. Montagu, the horse, and the retreat are therefore left out of the result, and only the killing of Warwick remains. One narrative then ties the throne to a later victory at Tewkesbury. That sequel is a different battle. The result stated for Barnet is narrower: the Yorkists won, and the earl who had led the Lancastrians was killed.",
+    },
+  },
+  sources: [
+    {
+      url: "https://en.wikipedia.org/wiki/Battle_of_Barnet",
+      publisher: "Wikipedia",
+    },
+    {
+      url: "https://www.britishbattles.com/wars-of-the-roses/battle-of-barnet/",
+      publisher: "British Battles",
+    },
+  ],
+};
+
+const tewkesbury1471: EraEvent = {
+  id: "tewkesbury_1471",
+  date: "1471-05-04",
+  precision: "day",
+  title: "Battle of Tewkesbury",
+  kind: "battle",
+  fronts: ["british_isles"],
+  countries: ["England"],
+  figures: ["edward_prince_of_wales", "margaret_of_anjou"],
+  note: "The British Battles fact line prints 4 May 1461. The heading of that page, and the Wikipedia page, print 4 May 1471. One account says the prince was killed during the battle or executed afterwards. The other gives a tradition that he was captured and stabbed, and a report that he died in the fighting. One account calls Henry VI’s death murder in the Tower. The other says he was likely murdered, and that the official cause was melancholy. Margaret’s landing at Weymouth is in one account. Troop numbers differ.",
+  levels: {
+    primary: {
+      cause: "In the Wars of the Roses King Edward IV led the Yorkists against a Lancastrian army that included Edward, Prince of Wales.",
+      what: "On 4 May 1471 Edward IV’s army defeated the Lancastrians at Tewkesbury, and the Prince of Wales died.",
+      consequence: "The Yorkist victory was decisive. Queen Margaret of Anjou was captured, and King Henry VI died soon afterwards in the Tower.",
+    },
+    secondary: {
+      cause: "After Barnet, Queen Margaret of Anjou and the Lancastrian lords still had an army in the field, and Edward IV marched to meet it. The prince with that army was Edward, Prince of Wales, son of Henry VI. One page sets the ground at Tewkesbury in Gloucestershire on the Severn. The other sets it at Tewkesbury in Gloucestershire. The cause they share is Edward IV’s pursuit of that Lancastrian army to Tewkesbury in the Wars of the Roses.",
+      what: "Both pages place a decisive battle at Tewkesbury on 4 May 1471, and both treat the year 1471 as the year of the heading and the narrative. Edward IV commanded the Yorkists and completely defeated the Lancastrians. Edward, Prince of Wales, died. One page says he was killed in the battle or executed afterwards. The other repeats a tradition that he was captured and stabbed, and also a report that he died in the fighting. The shared action is the Yorkist victory that day and the prince’s death.",
+      consequence: "Margaret of Anjou was captured after the defeat. Henry VI, already a prisoner, died in the Tower soon afterwards. One page calls that death murder. The other says he was likely murdered, while an official account blamed melancholy, and it also names the Tower. The manner is not one agreed sentence, so the result keeps the death in the Tower and not a verdict. The shared result is the Yorkist win, the prince dead, Margaret a captive, and Henry VI dead in the Tower.",
+    },
+    university: {
+      cause: "The campaign sits in the Wars of the Roses, after Warwick’s defeat, with Margaret of Anjou and a Lancastrian army still to be fought. Edward IV is the Yorkist king in each narrative. Edward, Prince of Wales, is named with the Lancastrian side, and one narrative calls his leadership nominal beside the Duke of Somerset, Lord Wenlock and the Earl of Devonshire. The other names those lords with him as well. A fact line on one page prints 4 May 1461, while the same page’s heading, and the other page throughout, print 4 May 1471. The stray year is recorded and not used. The cause kept is Edward’s march against that Lancastrian army at Tewkesbury.",
+      what: "The day used here is 4 May 1471, the date on which the narratives agree once the single fact-line year is set aside. Tewkesbury in Gloucestershire is the place. One narrative adds the River Severn and the nearness of Wales. The other describes a position south of the town, with the Avon and the Severn in rear. Those river details are richer than the shared sentence, so the action stays with the town and the day. Edward IV’s army won. The Prince of Wales died, whether in the press of the fight or by execution after capture: the pages do not choose one manner between them. That death, and the Yorkist victory, are the action both support.",
+      consequence: "Margaret of Anjou passed into Yorkist hands after the battle. One narrative shows her captured and names the picture of that capture. The other has the captive queen beside Edward when he entered London. The chariot and the day of that entry are in a single narrative, so they are not the result. Henry VI died in the Tower shortly after the field. One narrative states murder. The other says the death was likely murder, gives melancholy as the official cause, and in a later sentence has him die in the Tower that night. Because the manner is hedged on one side and plain on the other, this result says only that he died there soon afterwards. The result they share is the decisive Yorkist victory, the prince dead, Margaret captured, and Henry VI dead in the Tower.",
+    },
+  },
+  sources: [
+    {
+      url: "https://en.wikipedia.org/wiki/Battle_of_Tewkesbury",
+      publisher: "Wikipedia",
+    },
+    {
+      url: "https://www.britishbattles.com/wars-of-the-roses/battle-of-tewkesbury/",
+      publisher: "British Battles",
+    },
+  ],
+};
+
+const earlOfWarwick: EraFigure = {
+  id: "earl_of_warwick",
+  name: "Earl of Warwick",
+  role: "commander",
+  country: "England",
+  allegiance: "Lancaster",
+  note: "One account calls him Warwick the Kingmaker. The other calls him Richard Neville, Earl of Warwick. One says Yorkist soldiers killed him while he retreated. The other says he was killed trying to reach his horse.",
+  bio: {
+    primary: "On 14 April 1471 the Earl of Warwick led the Lancastrian army at Barnet, was defeated by Edward IV, and was killed.",
+    secondary: "The Earl of Warwick commanded the Lancastrians at Barnet in the Wars of the Roses. One page calls him the kingmaker and Edward’s former ally. The other gives him the name Richard Neville and says he had left the Yorkist cause. On 14 April 1471 his army met Edward IV north of London, in fog, and was beaten. He was killed. One page says Yorkist soldiers killed him as he retreated. The other says he died trying to reach his horse. This life is his command that day, the defeat, and his death.",
+    university: "Warwick is the Lancastrian commander both narratives set against Edward IV at Barnet on 14 April 1471. One styles him the kingmaker and a man who had once been the king’s ally. The other calls him Richard Neville, Earl of Warwick, and traces his breach with Edward to marriage and policy before the return from exile. Those paths into the battle are not one story, so the life does not pick a single motive. Fog is present in each narrative. The Yorkists won. Warwick was killed, either by soldiers in the retreat or while making for his horse, and the two manners are left unresolved. Richard, Duke of Gloucester, is named on the king’s side and is not this life. What remains is the earl who led the Lancastrians at Barnet and died in their defeat.",
+  },
+  sources: [
+    {
+      url: "https://en.wikipedia.org/wiki/Battle_of_Barnet",
+      publisher: "Wikipedia",
+    },
+    {
+      url: "https://www.britishbattles.com/wars-of-the-roses/battle-of-barnet/",
+      publisher: "British Battles",
+    },
+  ],
+};
+
+const edwardPrinceOfWales: EraFigure = {
+  id: "edward_prince_of_wales",
+  name: "Edward, Prince of Wales",
+  role: "commander",
+  country: "England",
+  allegiance: "Lancaster",
+  note: "One account says he was killed during the battle or executed after it. The other gives a tradition that he was captured and stabbed, and a report that he died in the fighting. A fact line on one page prints 4 May 1461. The heading of that page, and the other page, print 4 May 1471.",
+  bio: {
+    primary: "On 4 May 1471 Edward, Prince of Wales, was with the Lancastrian army at Tewkesbury, and he died when Edward IV won.",
+    secondary: "Edward, Prince of Wales, was the Lancastrian heir, son of Henry VI, at Tewkesbury in the Wars of the Roses. On 4 May 1471 King Edward IV defeated that army. The prince died. One page says he was killed during the battle or executed after it. The other tells a tradition that he was captured and stabbed, and another report that he died in the fighting. A fact line on one page prints 1461, while the narrative uses 1471. This life keeps 4 May 1471, his place with the Lancastrians, and his death.",
+    university: "The prince named with the Lancastrian army at Tewkesbury is Edward, Prince of Wales, son of Henry VI and Margaret of Anjou. Both narratives put him at the battle that Edward IV won. One calls his command nominal and sets Somerset, Wenlock and Devonshire over the divisions. The other names him among the Lancastrian leaders who were killed in the battle or executed afterwards. A single fact line prints 4 May 1461, against 4 May 1471 in the heading of that same page and throughout the other. The life uses 1471. How he died is not a shared sentence: the press of battle, a later execution, or a stabbing after capture all appear. The life therefore says he died, and it does not choose the blow. His part is the heir who stood with Lancaster at Tewkesbury and did not survive the defeat.",
+  },
+  sources: [
+    {
+      url: "https://en.wikipedia.org/wiki/Battle_of_Tewkesbury",
+      publisher: "Wikipedia",
+    },
+    {
+      url: "https://www.britishbattles.com/wars-of-the-roses/battle-of-tewkesbury/",
+      publisher: "British Battles",
+    },
+  ],
+};
+
+const margaretOfAnjou: EraFigure = {
+  id: "margaret_of_anjou",
+  name: "Margaret of Anjou",
+  role: "ruler",
+  country: "England",
+  allegiance: "Lancaster",
+  note: "One account has her land at Weymouth. The other has her sail from France and later enter London as a captive. Both say she was captured after the Yorkist victory.",
+  bio: {
+    primary: "Queen Margaret of Anjou was with the Lancastrian cause at Tewkesbury, and after Edward IV’s victory on 4 May 1471 she was captured.",
+    secondary: "Margaret of Anjou was queen to Henry VI and with the Lancastrian army that Edward IV defeated at Tewkesbury on 4 May 1471. Her son, Edward, Prince of Wales, died there. She was captured after the battle. One page shows that capture in the account of the campaign. The other says the captive queen was beside Edward when he later passed through London. The port where she landed, and the day of the London entry, are not told in both. This life is her place with that army and her capture after the Yorkist victory.",
+    university: "Margaret of Anjou is the Lancastrian queen both narratives attach to the Tewkesbury campaign. One has her land at Weymouth after Barnet, gather men, and march with Somerset. The other has her sail from France, hear of Barnet, and stay with the army that Edward IV then beat. A harbour and a night’s lodging appear in a single narrative, so they are not the life. On 4 May 1471 the Yorkists won at Tewkesbury and her son, the Prince of Wales, died. Margaret was taken. One narrative labels the capture itself. The other shows her a captive at Edward’s side in London, without making that procession the only proof. Henry VI’s death in the Tower is a separate end and is not retold as hers. Her part is the queen who stood with the Lancastrian army and was captured after its defeat.",
+  },
+  sources: [
+    {
+      url: "https://en.wikipedia.org/wiki/Battle_of_Tewkesbury",
+      publisher: "Wikipedia",
+    },
+    {
+      url: "https://www.britishbattles.com/wars-of-the-roses/battle-of-tewkesbury/",
+      publisher: "British Battles",
+    },
+  ],
+};
+
+const davidIi: EraFigure = {
+  id: "david_ii",
+  name: "David II",
+  role: "ruler",
+  country: "Scotland",
+  allegiance: "Scotland",
+  note: "One account calls him the son of Robert the Bruce. The other does not. One calls the war the Second War of Scottish Independence. Troop numbers differ. A story that he was found under a bridge is in one account.",
+  bio: {
+    primary: "On 17 October 1346 King David II led a Scottish army to Durham, was defeated at Neville’s Cross, and was captured.",
+    secondary: "David II was king of Scots. He invaded northern England and fought at Neville’s Cross, by Durham, on 17 October 1346. Ralph Neville was among the English commanders, with Henry Percy also named. The English defeated David’s army and captured him. One page calls him the son of Robert the Bruce. The other does not use that parentage in the same sentence. Troop numbers differ. This life is the king who invaded, lost at Durham, and was taken prisoner.",
+    university: "The Scottish king at Neville’s Cross is David II. Both narratives date his defeat to 17 October 1346 and place it at Durham, and both say he was captured. One calls the field Neville’s Cross, just west of the city, and the war a second war of independence. The other says Durham in the north of England and calls him, in that telling alone, the son of Robert the Bruce. The numeral and the parentage are therefore not part of the life. Ralph Neville and Henry Percy are the English names the pages share. A story of the king found under a bridge, a long imprisonment, and a ransom belong to single narratives and are omitted. What remains is the king who led the invasion, lost the battle, and passed into English hands.",
+  },
+  sources: [
+    {
+      url: "https://en.wikipedia.org/wiki/Battle_of_Neville%27s_Cross",
+      publisher: "Wikipedia",
+    },
+    {
+      url: "https://www.britishbattles.com/scottish-war-of-independence/battle-of-nevilles-cross/",
+      publisher: "British Battles",
+    },
+  ],
+};
+
+const ralphNeville: EraFigure = {
+  id: "ralph_neville",
+  name: "Ralph Neville",
+  role: "commander",
+  country: "England",
+  allegiance: "England",
+  note: "One account says he led the English army and calls him Lord Neville. The other names him with Henry Percy and the archbishop of York. The archbishop is William Zouche in one account and Walter de la Zouche in the other.",
+  bio: {
+    primary: "On 17 October 1346 Ralph Neville was an English commander at Neville’s Cross, where David II was defeated and captured.",
+    secondary: "Ralph Neville commanded on the English side at Neville’s Cross, near Durham, on 17 October 1346. King David II had invaded with a Scottish army. One page says Neville led the English. The other names him with Henry Percy and the archbishop of York. The archbishop is not given the same personal name on both pages. The English won, and David was captured. This life is Neville’s command in that victory, not a list of every officer beside him.",
+    university: "Ralph Neville is the English captain both narratives name at the fight by Durham on 17 October 1346. One narrative says he led the army and calls him Lord Neville. The other sets him with Henry Percy and with an archbishop of York, William in one spelling and Walter in the other, so the archbishop’s name is not fixed and is left out. David II, king of Scots, was defeated and captured. A cross built to mark the day is told once and is not this life. Nor is any total of men, the figures being unlike. Neville’s part is the command he held when the English broke David’s invasion and took the king.",
+  },
+  sources: [
+    {
+      url: "https://en.wikipedia.org/wiki/Battle_of_Neville%27s_Cross",
+      publisher: "Wikipedia",
+    },
+    {
+      url: "https://www.britishbattles.com/scottish-war-of-independence/battle-of-nevilles-cross/",
+      publisher: "British Battles",
+    },
+  ],
+};
+
+const henryPercy: EraFigure = {
+  id: "henry_percy",
+  name: "Henry Percy",
+  role: "commander",
+  country: "England",
+  allegiance: "England",
+  note: "One account calls him Lord Henry Percy. The other says Henry Percy. Both name him with Ralph Neville among the English commanders.",
+  bio: {
+    primary: "Henry Percy was an English commander at Neville’s Cross on 17 October 1346, when David II was defeated and captured.",
+    secondary: "Henry Percy is named with Ralph Neville among the English commanders at Neville’s Cross, by Durham, on 17 October 1346. One page calls him Lord Henry Percy. The other says Henry Percy. David II’s Scottish army was defeated and the king was captured. The archbishop of York is also listed, under personal names that do not match, so he is not part of this life. Percy’s life here is that shared command in the English victory.",
+    university: "Both narratives of Neville’s Cross include Henry Percy on the English side with Ralph Neville. One styles him Lord Henry Percy in the list of captains. The other writes Henry Percy beside Neville and the archbishop of York. The battle they describe is 17 October 1346 at Durham, a defeat of King David II and his capture. Percy is not given a separate exploit that both pages tell, so this life does not invent one. It keeps the office they do share: he was one of the English commanders when the invasion failed and the king of Scots was taken. Strengths, the archbishop’s disputed personal name, and any later ransom stay out.",
+  },
+  sources: [
+    {
+      url: "https://en.wikipedia.org/wiki/Battle_of_Neville%27s_Cross",
+      publisher: "Wikipedia",
+    },
+    {
+      url: "https://www.britishbattles.com/scottish-war-of-independence/battle-of-nevilles-cross/",
+      publisher: "British Battles",
+    },
+  ],
+};
+
+const saintLoFormigny1450: EraLine = {
+  id: 'saint_lo_formigny_1450',
+  name: 'French march from Saint-Lô to Formigny',
+  from: '1450-04-14',
+  to: '1450-04-15',
+  domain: 'land',
+  mover: 'France',
+  summary: 'Arthur de Richemont, Constable of France, reached Saint-Lô and marched on to Formigny, where the French defeated Sir Thomas Kyriell on 15 April 1450.',
+  waypoints: [
+    { name: 'Saint-Lô', lat: 49.115808, lng: -1.0909278 },
+    { name: 'Formigny', lat: 49.3326678, lng: -0.8925427 },
+  ],
+  sources: [
+    { url: 'https://en.wikipedia.org/wiki/Battle_of_Formigny', publisher: 'Wikipedia' },
+    { url: 'https://www.britishbattles.com/one-hundred-years-war/battle-of-formigny/', publisher: 'British Battles' },
+  ],
+};
+
+const saintVaastCrecy1346: EraLine = {
+  id: 'saint_vaast_crecy_1346',
+  name: 'English chevauchée from Saint-Vaast-la-Hougue to Crécy',
+  from: '1346-08-26',
+  to: '1346-08-26',
+  domain: 'land',
+  mover: 'England',
+  summary: 'Edward III’s English army landed at Saint-Vaast-la-Hougue, took Caen, and fought at Crécy-en-Ponthieu, where it defeated the French on 26 August 1346.',
+  waypoints: [
+    { name: 'Saint-Vaast-la-Hougue', lat: 49.5877016, lng: -1.2662184 },
+    { name: 'Caen', lat: 49.1813403, lng: -0.3635615 },
+    { name: 'Crécy-en-Ponthieu', lat: 50.2521463, lng: 1.8840662 },
+  ],
+  sources: [
+    { url: 'https://en.wikipedia.org/wiki/Battle_of_Cr%C3%A9cy', publisher: 'Wikipedia' },
+    { url: 'https://www.britishbattles.com/one-hundred-years-war/battle-of-crecy/', publisher: 'British Battles' },
+  ],
+};
+
+const harfleurAzincourt1415: EraLine = {
+  id: 'harfleur_azincourt_1415',
+  name: 'English march from Harfleur to Azincourt',
+  from: '1415-10-25',
+  to: '1415-10-25',
+  domain: 'land',
+  mover: 'England',
+  summary: 'Henry V’s English army marched from Harfleur towards Calais and on 25 October 1415 defeated the French at Azincourt.',
+  waypoints: [
+    { name: 'Harfleur', lat: 49.5075158, lng: 0.200141 },
+    { name: 'Azincourt', lat: 50.4632937, lng: 2.1284519 },
+  ],
+  sources: [
+    { url: 'https://en.wikipedia.org/wiki/Battle_of_Agincourt', publisher: 'Wikipedia' },
+    { url: 'https://www.britishbattles.com/one-hundred-years-war/battle-of-agincourt/', publisher: 'British Battles' },
+  ],
+};
+
+const round4Links: EraLink[] = [
+  { lineId: 'saint_lo_formigny_1450', eventId: 'formigny_1450', at: 0 },
+  { lineId: 'saint_lo_formigny_1450', eventId: 'formigny_1450', at: 1 },
+  { lineId: 'saint_vaast_crecy_1346', eventId: 'crecy_1346', at: 0 },
+  { lineId: 'saint_vaast_crecy_1346', eventId: 'crecy_1346', at: 1 },
+  { lineId: 'saint_vaast_crecy_1346', eventId: 'crecy_1346', at: 2 },
+  { lineId: 'harfleur_azincourt_1415', eventId: 'agincourt_1415', at: 0 },
+  { lineId: 'harfleur_azincourt_1415', eventId: 'agincourt_1415', at: 1 },
+];
+
+export const LATE_MEDIEVAL_ROUND4_EVENTS: EraEvent[] = [
+  nevillesCross1346, barnet1471, tewkesbury1471,
+];
+
+export const LATE_MEDIEVAL_ROUND4_FIGURES: EraFigure[] = [
+  davidIi, ralphNeville, henryPercy, earlOfWarwick, edwardPrinceOfWales, margaretOfAnjou,
+];
+
+export const LATE_MEDIEVAL_ROUND4_LINES: EraLine[] = [
+  saintLoFormigny1450, saintVaastCrecy1346, harfleurAzincourt1415,
+];
+
+export const LATE_MEDIEVAL_ROUND4_LINKS: EraLink[] = round4Links;

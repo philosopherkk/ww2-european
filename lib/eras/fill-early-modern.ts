@@ -1,4 +1,4 @@
-import type { EraEvent, EraFigure } from '@/lib/eras/types';
+import type { EraEvent, EraFigure, EraLine, EraLink } from '@/lib/eras/types';
 
 export const sekigahara1600: EraEvent = {
   "id": "sekigahara_1600",
@@ -1040,3 +1040,383 @@ export const jamesIi: EraFigure = {
     }
   ]
 };
+
+export const poltava1709: EraEvent = {
+  "id": "poltava_1709",
+  "date": "1709",
+  "precision": "year",
+  "title": "Battle of Poltava",
+  "kind": "battle",
+  "fronts": [
+    "eastern_europe"
+  ],
+  "countries": [
+    "Russia",
+    "Sweden"
+  ],
+  "figures": [
+    "peter_i",
+    "charles_xii"
+  ],
+  "note": "One account dates the battle 8 July 1709 and names Carl Gustaf Rehnskiöld as commander of the Swedish army that day. The other dates it 27 June 1709 and does not name him. Both place the defeat in 1709 and send Charles XII into exile in the Ottoman Empire.",
+  "levels": {
+    "primary": {
+      "cause": "Charles XII of Sweden led an invasion of Russia, and Tsar Peter I was the ruler who stood against him.",
+      "what": "In 1709 the Swedish army was defeated at Poltava, and Charles XII’s campaign came to an end.",
+      "consequence": "Charles XII then left that war and went into exile in the Ottoman Empire."
+    },
+    "secondary": {
+      "cause": "Sweden and Russia were already at war when Charles XII brought a Swedish army onto Russian soil. He aimed the march at Moscow, was forced off that road, and turned south into Ukraine. Winter in 1708 and 1709 stopped the advance for a season. Peter I remained the Russian ruler through the whole of that campaign. The course the two accounts carry from the invasion to the battlefield is the decision at Poltava in 1709.",
+      "what": "Poltava in 1709 was a defeat for the Swedish army. One account says Peter I commanded the Russians that day and that Carl Gustaf Rehnskiöld commanded the Swedes. The other calls the result a decisive Swedish defeat and the end of Charles’s effort in Ukraine, and it does not name a separate Swedish general. What both record is a Russian victory over the Swedes at that place in that year.",
+      "consequence": "The defeat finished Charles XII’s campaign. He went into exile in the Ottoman Empire. One account adds a ride to the Dnieper with a small party, a surrender by the rest, and a return to Sweden years later. The other ends the campaign at that exile, and later mentions an Ottoman war encouraged by him. What both record is the Swedish loss and Charles’s exile in the Ottoman Empire."
+    },
+    "university": {
+      "cause": "Poltava closes a stretch of the Swedish war against Russia, not a quarrel that began on the morning of the fight. Charles XII is the king who led the invasion. Peter I is the tsar opposite him. One narrative also calls him Peter the Great. Each one describes a march pointed at Moscow, a forced abandonment of that aim, a turn south into Ukraine, and a pause through the winter of 1708 and 1709. Scorched earth, surprise attacks, and a frost called the coldest then recorded in Europe are told in a single narrative. They are not needed here. The cause the narratives share is Charles’s invasion, drawn off from Moscow and carried into Ukraine, against the Russia of Peter I, with the decision left until 1709.",
+      "what": "The narratives agree on the place and on the year, and they give the result to Russia. They do not agree on the day. One prints 8 July 1709, puts Peter I in command of the Russian army, and sets Carl Gustaf Rehnskiöld over the Swedes. The other prints 27 June and calls the action a decisive defeat of the Swedish forces, closing Charles’s campaign in Ukraine. A siege before the fighting, a Cossack ally, and the strengths of the two hosts appear in the battle narrative alone. No common day can be taken from that clash, so the battle is dated by the year 1709 alone. The place, the year, and the defeat of the Swedish army stand without it.",
+      "consequence": "Exile in the Ottoman Empire is the sequel both narratives give Charles XII once Poltava is lost. One follows a small party over a river, records a capitulation by the remainder of the army, and much later a homecoming to Sweden. The other states the exile and, in a following season, an Ottoman conflict stirred up by the exile, without those movements. A head-count of the party, a five-year stay, and a December return are not printed in both, so they are not stated as common fact. The consequence the narratives support together is the end of the Swedish campaign and Charles XII’s exile in the Ottoman Empire."
+    }
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Poltava",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.newworldencyclopedia.org/entry/Peter_the_Great",
+      "publisher": "New World Encyclopedia"
+    }
+  ]
+};
+
+export const peterI: EraFigure = {
+  "id": "peter_i",
+  "name": "Peter I",
+  "role": "ruler",
+  "country": "Russia",
+  "allegiance": "Russia",
+  "note": "One account dates Poltava 8 July 1709 and says he commanded the Russian army, against Carl Gustaf Rehnskiöld. The other dates it 27 June 1709 and calls him Peter the Great, without naming that Swedish general. Both place his side’s victory in 1709.",
+  "bio": {
+    "primary": "Peter I was the Russian tsar whose side defeated Charles XII’s Swedish army at Poltava in 1709.",
+    "secondary": "Peter I, also called Peter the Great, ruled Russia against Charles XII. Charles invaded, made for Moscow, and was turned aside into Ukraine, where the winter of 1708 and 1709 stalled the advance. In 1709 the Swedish army was beaten at Poltava and Charles went into exile in the Ottoman Empire. One account of the battle says Peter commanded the Russian army that day. His life names the defeat and the exile without a separate Swedish general. The career both records support is his resistance to that invasion and the victory of 1709.",
+    "university": "Peter I is the Russian ruler these narratives follow into the Swedish war, and both of them also know him as Peter the Great. Charles XII carried an invasion towards Moscow, lost that line of advance, and passed into Ukraine, where winter in 1708 and 1709 halted him. The decision came at Poltava in 1709, a defeat for the Swedish army and the opening of Charles’s exile in the Ottoman Empire. One narrative of the field says Peter commanded in person and names Carl Gustaf Rehnskiöld over the Swedes, dating the day 8 July. The life dates the same battle 27 June and does not print that general. The day and the general stay out of the life stated here. What the two records support is Peter’s place as the tsar whose Russia broke Charles’s campaign at Poltava in 1709."
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Poltava",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.newworldencyclopedia.org/entry/Peter_the_Great",
+      "publisher": "New World Encyclopedia"
+    }
+  ]
+};
+
+export const charlesXii: EraFigure = {
+  "id": "charles_xii",
+  "name": "Charles XII",
+  "role": "ruler",
+  "country": "Sweden",
+  "allegiance": "Sweden",
+  "note": "One account dates Poltava 8 July 1709 and says Carl Gustaf Rehnskiöld commanded the Swedish army that day, while Charles escaped. The other dates it 27 June 1709 and calls the defeat the end of Charles’s campaign. The day stays out of the life.",
+  "bio": {
+    "primary": "Charles XII of Sweden invaded Russia and, after the defeat at Poltava in 1709, went into exile in the Ottoman Empire.",
+    "secondary": "Charles XII was the Swedish king who carried the war into Russia. He marched towards Moscow, was forced away from that aim, and entered Ukraine. Winter in 1708 and 1709 halted him. In 1709 his army was defeated at Poltava, the campaign ended, and he went into exile in the Ottoman Empire. One account names Carl Gustaf Rehnskiöld as the Swedish commander on the day and dates it 8 July. The other dates 27 June and does not name that general. The life they share is the invasion, the defeat at Poltava in 1709, and the exile.",
+    "university": "Charles XII is the Swedish king whose invasion of Russia these narratives bring to Poltava. He pointed the march at Moscow, could not keep that direction, and turned south into Ukraine, where the winter of 1708 and 1709 stopped the advance. In 1709 the Swedish army was defeated and his campaign closed. He then lived in exile in the Ottoman Empire. One field narrative dates the battle 8 July, gives the Swedish command that day to Carl Gustaf Rehnskiöld, and follows a small party away from the field. The life of his opponent dates the battle 27 June and speaks only of a decisive defeat and the exile. Those extras, and the disputed day, are not the life. The life both records support is his invasion, its defeat at Poltava in 1709, and the exile that followed."
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Poltava",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.newworldencyclopedia.org/entry/Peter_the_Great",
+      "publisher": "New World Encyclopedia"
+    }
+  ]
+};
+
+export const rocroi1643: EraEvent = {
+  "id": "rocroi_1643",
+  "date": "1643",
+  "precision": "year",
+  "title": "Battle of Rocroi",
+  "kind": "battle",
+  "fronts": [
+    "france_and_low_countries"
+  ],
+  "countries": [
+    "France",
+    "Spain"
+  ],
+  "figures": [
+    "great_conde"
+  ],
+  "note": "One account dates the battle 19 May 1643 and names Francisco de Melo as the Spanish commander. The other gives the year 1643 without that day or that name. One calls the victor the Duke of Enghien, later the Great Condé. The other also gives Louis II de Bourbon and Duc d’Enghien.",
+  "levels": {
+    "primary": {
+      "cause": "France and Spain were fighting in the Thirty Years’ War, and the Duke of Enghien led a French army.",
+      "what": "In 1643 the Great Condé defeated the Spanish army at the Battle of Rocroi.",
+      "consequence": "The Spanish force was beaten, and the victory at Rocroi belonged to France."
+    },
+    "secondary": {
+      "cause": "The Thirty Years’ War still had France in the field against Spain when the armies met at Rocroi. The French were led by the Duke of Enghien, whom both accounts also call the Great Condé. One account adds that he was twenty-one and that the Spanish general was Francisco de Melo. The other gives him the name Louis II de Bourbon, Prince de Condé, and Duc d’Enghien, and it does not name the Spanish general. The cause they share is a French army under that prince, set against a Spanish army, in 1643.",
+      "what": "The battle was fought at Rocroi in 1643, and the Great Condé defeated the Spanish. One account dates the day 19 May, soon after a new king came to the French throne, and it dwells on the Spanish infantry. The other gives the year, the place, and the Spanish defeat, and it says the victory led on towards negotiations. The pike formations and the May day are not in both. The course both record is a French victory over the Spanish at Rocroi in 1643.",
+      "consequence": "Spain’s army lost the field at Rocroi, and the Great Condé’s French army won it. One account treats that loss as the end of a long Spanish reputation in battle and the start of French predominance. The other treats the victory as a step that led to negotiations among the powers still in the war. Those wider judgements are not the same, so neither is stated as the result. The result both accounts support is the defeat of the Spanish army at Rocroi in 1643."
+    },
+    "university": {
+      "cause": "Rocroi belongs to the Thirty Years’ War, with France engaged against Spain. The prince at the head of the French army is the Duke of Enghien in one narrative and, in both, the man remembered as the Great Condé. The fuller style Louis II de Bourbon, Prince de Condé, and Duc d’Enghien is printed in the war narrative. The battle narrative adds his youth and the name Francisco de Melo for the Spanish command. Youth and that Spanish name are not common property. What the narratives share is a French army under the Great Condé, facing a Spanish army, in the war, in 1643.",
+      "what": "Both narratives place a French victory over Spain at Rocroi in 1643 and attach it to the Great Condé. They do not share a calendar day. The battle narrative prints 19 May 1643 and describes the shock to the Spanish infantry formations that had dominated European fields. The war narrative prints the year and says the defeat led towards talks. The May date, the infantry legend, and the talks are each in one narrative only, so the fighting is not dated more finely than the year. The action they both describe is the Great Condé’s defeat of the Spanish at Rocroi in 1643.",
+      "consequence": "The Spanish army was defeated, and the French side under the Great Condé held the success. Beyond that point the narratives part. One carries the victory forward as a blow to Spanish military standing and a mark of rising French weight in Europe. The other carries it forward into negotiations that belong to the closing of the wider war. A shattered reputation and a conference table are not the same claim, and neither is required by both texts. The consequence they support together is France’s defeat of the Spanish army at Rocroi in 1643, under the Great Condé."
+    }
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Rocroi",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.newworldencyclopedia.org/entry/Thirty_Years%27_War",
+      "publisher": "New World Encyclopedia"
+    }
+  ]
+};
+
+export const greatConde: EraFigure = {
+  "id": "great_conde",
+  "name": "The Great Condé",
+  "role": "commander",
+  "country": "France",
+  "allegiance": "France",
+  "note": "One account calls him the Duke of Enghien, later the Great Condé, and dates Rocroi 19 May 1643, naming Francisco de Melo opposite him. The other calls him Louis II de Bourbon, Prince de Condé and Duc d’Enghien, and gives the year 1643.",
+  "bio": {
+    "primary": "In 1643 the Great Condé, also called the Duke of Enghien, defeated a Spanish army at Rocroi.",
+    "secondary": "The Great Condé commanded the French at Rocroi during the Thirty Years’ War. Both accounts give him that victory over the Spanish in 1643, and both also know him as Duke of Enghien. One account dates the day 19 May, calls him twenty-one, and names Francisco de Melo on the Spanish side. The other calls him Louis II de Bourbon, Prince de Condé, and says the victory led towards negotiations. The life they share is his command of the French army that defeated the Spanish at Rocroi in 1643.",
+    "university": "Later memory knows this prince as the Great Condé, but the pages do not introduce him with one label. A battle narrative offers a young Duke of Enghien, sets Francisco de Melo opposite him, and ties the morning to 19 May. A war narrative prefers Louis II de Bourbon, adds Duc d’Enghien, and walks onward from the field into talks among the remaining powers. Age, the opposing general, the May morning, and those talks are each printed once. Kept by both pages is his leadership when France beat a Spanish army at Rocroi in 1643, during the Thirty Years’ War."
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Rocroi",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.newworldencyclopedia.org/entry/Thirty_Years%27_War",
+      "publisher": "New World Encyclopedia"
+    }
+  ]
+};
+
+export const dettingen1743: EraEvent = {
+  "id": "dettingen_1743",
+  "date": "1743-06-27",
+  "precision": "day",
+  "title": "Battle of Dettingen",
+  "kind": "battle",
+  "fronts": [
+    "german_lands"
+  ],
+  "countries": [
+    "Britain",
+    "Hanover",
+    "Austria",
+    "France"
+  ],
+  "figures": [
+    "george_ii",
+    "duke_of_noailles",
+    "duke_of_gramont"
+  ],
+  "note": "One account says the Earl of Stair held operational control and calls the king’s command nominal. The other says George II took command on 19 June and set Stair’s views aside. Both date the battle 27 June 1743, with the king present, and name the Dukes of Noailles and Gramont on the French side.",
+  "levels": {
+    "primary": {
+      "cause": "In the War of the Austrian Succession, King George II’s British, Hanoverian and Austrian army faced a French army under the Duke of Noailles.",
+      "what": "On 27 June 1743 that allied army defeated the French at Dettingen, and George II led his troops in the battle.",
+      "consequence": "The French were beaten, and this was the last battle a reigning British monarch led in person."
+    },
+    "secondary": {
+      "cause": "The War of the Austrian Succession set a French army against troops of Britain, Hanover and Austria. George II, king in Britain and elector in Hanover, was with the allies. The Duke of Noailles commanded the French, and the Duke of Gramont led French troops at the village. One account gives operational control to the Earl of Stair and calls the king’s command nominal. The other says the king took command on 19 June. The cause both support is that allied army, with George II, facing Noailles.",
+      "what": "On 27 June 1743 the allies defeated the French at Dettingen, by the River Main. George II led his men, and both accounts call this the last time a reigning British monarch led troops in battle. One account posts Gramont, called Noailles’s nephew, on the road with a large force. The other says Gramont crossed the Main towards the village and left the ground he had been told to hold. The dated victory and the two French names are what both record.",
+      "consequence": "France lost the day and George II’s allies won it. Both accounts treat the battle as the last a reigning British monarch led in person. One adds that the wider war barely shifted and calls the day a happy escape. The other records rejoicing in Britain and a withdrawal to Hanau rather than a pursuit. Those sequels differ. The result they share is the allied victory at Dettingen on 27 June 1743, with the king leading his troops."
+    },
+    "university": {
+      "cause": "Dettingen is an action of the War of the Austrian Succession. The allied side joined British, Hanoverian and Austrian troops. George II stood with them, king in Britain and elector in Hanover. Opposite them the Duke of Noailles commanded the French army, and the Duke of Gramont commanded a body of it at the village. The narratives disagree about who directed the allies. One gives operational control to the Earl of Stair and calls the royal command nominal. The other says that on 19 June the king took the command and would not hear Stair. The June date of that arrival is not in both. The cause they share is nevertheless clear: an allied army with George II present, against the French army of Noailles, Gramont among its officers.",
+      "what": "The day both narratives print is 27 June 1743, at Dettingen near the Main. The allied army defeated the French. George II is the monarch who led troops there, and each narrative calls the occasion the last of its kind for a reigning British king. Gramont is the French officer posted at the village. One narrative makes him Noailles’s nephew, with a printed strength, holding the road to Hanau. The other has him cross the river and advance beyond the ravine he had been told to keep in front. Those particulars of the ground stay with the narrative that gives them. The action common to both is the allied victory on that June day, the king with the army, Noailles in French command, and Gramont on the French side at the village.",
+      "consequence": "The French defeat and the allied victory are the military result. Both narratives then mark the reigning monarch’s personal leadership as the last such case. They do not mark the political result in the same words. One says the day scarcely moved the larger war. The other speaks of celebration in Britain and of the army falling back on Hanau instead of pressing the beaten French. A quotation that calls the day a happy escape belongs to one narrative only. The consequence stated here is the one both support: victory for George II’s allies at Dettingen on 27 June 1743, remembered as the last battle a reigning British monarch led."
+    }
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Dettingen",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.nam.ac.uk/explore/battle-dettingen",
+      "publisher": "National Army Museum"
+    }
+  ]
+};
+
+export const georgeIi: EraFigure = {
+  "id": "george_ii",
+  "name": "George II",
+  "role": "king",
+  "country": "Britain",
+  "allegiance": "Britain",
+  "note": "One account calls his command nominal and gives operational control to the Earl of Stair. The other says he took command on 19 June and ignored Stair. Both place him at Dettingen on 27 June 1743 as the last reigning British monarch to lead troops in battle.",
+  "bio": {
+    "primary": "On 27 June 1743 King George II led allied troops at Dettingen and defeated the French, the last reigning British monarch to do so.",
+    "secondary": "George II, King of Great Britain and Elector of Hanover, was with the allied army of British, Hanoverian and Austrian troops in the War of the Austrian Succession. On 27 June 1743 that army defeated the French of the Duke of Noailles at Dettingen, and George led his men. Both accounts call it the last time a reigning British monarch led troops in battle. One says the Earl of Stair held operational control. The other says George took command on 19 June. The life they share is his presence and leadership at that victory.",
+    "university": "This king held Britain and the Hanoverian electorate together in his own person, and the narratives put him beside a mixed allied host facing France. The June day in 1743 ended with his soldiers beating the Duke of Noailles. Each page marks the occasion as the final one on which a monarch then reigning took the field. They quarrel about Stair. One reduces the royal role and leaves operations with the earl. The other has the king seize direction on the nineteenth and refuse the earl’s counsel. That quarrel is recorded, not smoothed over. What remains is George at Dettingen, at the head of a winning allied host, in the last royal command of its kind."
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Dettingen",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.nam.ac.uk/explore/battle-dettingen",
+      "publisher": "National Army Museum"
+    }
+  ]
+};
+
+export const dukeOfNoailles: EraFigure = {
+  "id": "duke_of_noailles",
+  "name": "Duke of Noailles",
+  "role": "commander",
+  "country": "France",
+  "allegiance": "France",
+  "note": "One account gives his personal name as Adrien Maurice de Noailles and calls Gramont his nephew. The other calls him the Duke of Noailles and says Gramont led the main force. Both make him the French commander defeated at Dettingen on 27 June 1743.",
+  "bio": {
+    "primary": "The Duke of Noailles commanded the French army that George II’s allies defeated at Dettingen on 27 June 1743.",
+    "secondary": "The Duke of Noailles commanded the French in the War of the Austrian Succession at Dettingen. On 27 June 1743 an allied army of British, Hanoverian and Austrian troops, with King George II, defeated that French army. The Duke of Gramont served under Noailles at the village. One account names Noailles as Adrien Maurice and calls Gramont his nephew. The other describes Noailles cutting the allied supply line and sending Gramont towards the village. The life both accounts support is his command of the French army beaten at Dettingen that day.",
+    "university": "Noailles is the French commander at Dettingen in both narratives. He directed the army which the allies, British, Hanoverian and Austrian, with George II, defeated on 27 June 1743. Gramont is named with him as a subordinate French officer at the village. One narrative supplies the personal name Adrien Maurice de Noailles, a kinship with Gramont, and a troop figure for the detachment on the road. The other follows Noailles as he closed the roads by the Main and ordered Gramont to the village, then records that Gramont did not keep the station he had been given. The personal name, the kinship, and the order he gave are not all shared. His part that both narratives support is command of the French army which lost at Dettingen on 27 June 1743."
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Dettingen",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.nam.ac.uk/explore/battle-dettingen",
+      "publisher": "National Army Museum"
+    }
+  ]
+};
+
+export const dukeOfGramont: EraFigure = {
+  "id": "duke_of_gramont",
+  "name": "Duke of Gramont",
+  "role": "commander",
+  "country": "France",
+  "allegiance": "France",
+  "note": "One account calls him Louis de Gramont, nephew of Noailles, with 23,000 men on the road to Hanau. The other says he led Noailles’s main force across the Main towards Dettingen and left the ravine he had been told to keep. Both place him in French command at the village on 27 June 1743.",
+  "bio": {
+    "primary": "The Duke of Gramont led French troops under the Duke of Noailles at Dettingen on 27 June 1743, and the French were defeated.",
+    "secondary": "The Duke of Gramont was a French commander at Dettingen under the Duke of Noailles. On 27 June 1743 the allied army of George II defeated the French there. One account says Gramont, Noailles’s nephew, held the road through the village with a large detachment. The other says he led the main force across the River Main towards the village and advanced beyond the ravine Noailles had ordered him to keep in front. The life they share is his command of French troops at Dettingen on the day the allies won.",
+    "university": "Gramont is the French officer both narratives place at the village of Dettingen on 27 June 1743, in the army of the Duke of Noailles. That army was defeated by the allies with King George II. The narratives do not describe his station in the same words. One calls him Louis de Gramont, Noailles’s nephew, and posts a numbered force under him on the road to Hanau. The other has him cross the Main at the head of the main body and then abandon the boggy ravine he had been told to keep before his line. The personal name, the kinship, the number, and the ravine are each from one narrative. The life both support is his command of French troops at Dettingen in Noailles’s army on the day of the allied victory."
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Dettingen",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.nam.ac.uk/explore/battle-dettingen",
+      "publisher": "National Army Museum"
+    }
+  ]
+};
+
+export const medinaSidonia: EraFigure = {
+  "id": "medina_sidonia",
+  "name": "Duke of Medina Sidonia",
+  "role": "commander",
+  "country": "Spain",
+  "allegiance": "Spain",
+  "note": "One account spells the title Medina Sidonia and gives the personal name Alonso de Guzmán. The other spells Medina-Sidonia and prints a fleet of 130 ships. Both say he commanded the Armada that sailed from Lisbon in May 1588.",
+  "bio": {
+    "primary": "The Duke of Medina Sidonia commanded the Spanish Armada that sailed from Lisbon in May 1588 against England.",
+    "secondary": "Philip II of Spain gave command of the Armada to the Duke of Medina Sidonia. In May 1588 that fleet sailed from Lisbon to invade the England of Elizabeth I and to restore Catholicism. Storms damaged ships, the invasion failed, and the fleet was defeated. One account calls him Alonso de Guzmán and says he was to join the Duke of Parma. The other hyphenates the title and prints 130 ships. The life both accounts support is his command of the fleet that left Lisbon in May 1588 and did not conquer England.",
+    "university": "Medina Sidonia is the aristocrat both narratives name as commander of the Spanish fleet of 1588. Philip II appointed him. The fleet left Lisbon in May, bound against Elizabeth I’s England, with a Catholic restoration among the aims that are stated. Storms hurt the ships, and the invasion failed. One narrative gives the personal name Alonso de Guzmán, Duke of Medina Sidonia, and orders to sail the Channel and meet Parma’s army. The other writes Medina-Sidonia, numbers the fleet at 130, and dwells on fireships and the fight off Gravelines. The personal name, the hyphen, the number, and that coastal fight are not the life stated in common. The life they share is command of the Armada which sailed from Lisbon in May 1588 and was defeated."
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Spanish_Armada",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.history.com/articles/spanish-armada",
+      "publisher": "History.com"
+    }
+  ]
+};
+
+export const princeRupert: EraFigure = {
+  "id": "prince_rupert",
+  "name": "Prince Rupert",
+  "role": "commander",
+  "country": "England",
+  "allegiance": "Royalists",
+  "note": "One account says Prince Rupert commanded the royalist army while Charles I was present, with Cromwell as Fairfax’s deputy. The other says the New Model Army destroyed the royalist army under Charles I and Prince Rupert. Both place him at Naseby on 14 June 1645.",
+  "bio": {
+    "primary": "Prince Rupert commanded royalist troops at Naseby on 14 June 1645, where Fairfax’s New Model Army destroyed the king’s army.",
+    "secondary": "Prince Rupert was a royalist commander at Naseby in the English Civil War. On 14 June 1645 Sir Thomas Fairfax’s Parliamentary New Model Army destroyed the royalist army of Charles I in Northamptonshire. One account says Rupert commanded that royalist army while the king was present. The other places the destroyed army under Charles I and Prince Rupert together. The life they share is his command on the royalist side at Naseby on the day that army was destroyed.",
+    "university": "Rupert stands on the royalist side of this Northamptonshire fight. Parliament’s new army, under Fairfax, had left a siege and come north. On the June day in 1645 that army broke the king’s force. One page keeps Charles watching while Rupert directed the royalist host, and it ranks Cromwell as Fairfax’s second. The other sets Rupert beside the king over the men who were destroyed, and it names Cromwell with Fairfax. Because that deputy’s rank is unstable, it is left out. What both pages give Rupert is a royalist command in the army Fairfax destroyed at Naseby on 14 June 1645, during the English Civil War."
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Naseby",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.britishbattles.com/english-civil-war/battle-of-naseby/",
+      "publisher": "British Battles"
+    }
+  ]
+};
+
+export const aschaffenburgHanau1743: EraLine = {
+  "id": "aschaffenburg_hanau_1743",
+  "name": "Allied march from Aschaffenburg to Hanau",
+  "from": "1743-06",
+  "to": "1743-06-27",
+  "domain": "land",
+  "mover": "Britain",
+  "summary": "In June 1743 George II’s allied army was at Aschaffenburg and moved towards Hanau. On 27 June it defeated the French at Dettingen, on that movement.",
+  "waypoints": [
+    {
+      "name": "Aschaffenburg",
+      "lat": 49.9706701,
+      "lng": 9.1384857
+    },
+    {
+      "name": "Hanau",
+      "lat": 50.132881,
+      "lng": 8.9169797
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Dettingen",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.nam.ac.uk/explore/battle-dettingen",
+      "publisher": "National Army Museum"
+    }
+  ]
+};
+
+export const aschaffenburgHanauLinks: EraLink[] = [
+  {
+    "lineId": "aschaffenburg_hanau_1743",
+    "eventId": "dettingen_1743",
+    "at": 0
+  },
+  {
+    "lineId": "aschaffenburg_hanau_1743",
+    "eventId": "dettingen_1743",
+    "at": 1
+  }
+];

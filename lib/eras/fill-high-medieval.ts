@@ -896,3 +896,281 @@ export const richardI: EraFigure = {
     },
   ],
 };
+
+export const tinchebray1106: EraEvent = {
+  id: "tinchebray_1106",
+  date: "1106-09-28",
+  precision: "day",
+  title: "Battle of Tinchebray",
+  kind: "battle",
+  fronts: ["france_and_low_countries"],
+  countries: ["England", "Normandy"],
+  figures: ["henry_i_england", "robert_curthose"],
+  note: "One account spells the place Tinchebrai, near Vire, and says the fight lasted barely an hour because Henry had a great advantage in numbers. It lists later prisons at Wareham, Devizes, Bristol, and Cardiff. The other spells Tinchebray, names Robert Curthose, and says he was held at Devizes and then in Wales until his death at Cardiff in 1134. Bayeux, Caen, and an investiture dispute appear only in that longer account.",
+  levels: {
+    primary: {
+      cause: "Henry I and his elder brother, Robert of Normandy, had disputed England and Normandy since William II died in 1100.",
+      what: "On 28 September 1106, while Henry was besieging the castle, his army defeated Robert at Tinchebray in Normandy and captured him.",
+      consequence: "Robert was imprisoned in England, and Henry’s victory left him in control of Normandy.",
+    },
+    secondary: {
+      cause: "From 1100, when William II died, the two brothers quarrelled over who should hold England and who should hold Normandy. Henry I was king in England. Robert, the elder, was duke in Normandy. In 1106 Henry set out to end that quarrel by force, and he opened the campaign by laying siege to a castle at Tinchebray.",
+      what: "Robert chose to fight rather than wait. On 28 September 1106 the armies met at Tinchebray, also written Tinchebrai, in Normandy. Henry’s side won. Robert was taken. One page calls him Robert of Normandy, and another Robert Curthose. The day, the Norman place, the elder brother, and his capture are the points both pages print.",
+      consequence: "The captured duke was carried to England and kept in prison. With Robert no longer free to rule, Henry completed his hold on Normandy and joined it to the kingdom he already had. The succession quarrel that had run since 1100 was settled by that imprisonment and by Henry’s control of the duchy.",
+    },
+    university: {
+      cause: "The quarrel is a succession dispute between Henry I and his elder brother after the death of William II in 1100. Henry held the English crown. Robert held Normandy, and the pages call him both Robert of Normandy and Robert Curthose. Henry invaded the duchy to settle the dispute. The fight grew out of a siege: he was investing a castle at the Norman town, and Robert came up to challenge him. No other motive is required by the two accounts.",
+      what: "The action fell on 28 September 1106 at that town in Normandy. One account spells it Tinchebrai, and the other Tinchebray, noting Tinchebrai as an alternative. Henry’s army defeated Robert’s. Robert was captured on the field. A claim that the fighting lasted barely an hour, and a claim of vast numerical superiority, sit in a single account and are not used here. The course both accounts allow is a dated Norman battle, a victory for Henry, and the capture of his elder brother.",
+      consequence: "Robert was imprisoned in England, so the duchy no longer had its duke at large. Henry’s victory is described as completing his conquest of Normandy and as leaving the duchy in his control. The political issue between the brothers, open since 1100, closed with that result. Later castles of confinement, a death in 1134, and a son’s later claim are each told on one side only. What the pages share is imprisonment in England and Henry in possession of Normandy.",
+    },
+  },
+  sources: [
+    {
+      url: "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/tinchebrai-battle",
+      publisher: "Encyclopedia.com",
+    },
+    {
+      url: "https://en.wikipedia.org/wiki/Battle_of_Tinchebray",
+      publisher: "Wikipedia",
+    },
+  ],
+};
+
+export const standard1138: EraEvent = {
+  id: "standard_1138",
+  date: "1138-08-22",
+  precision: "day",
+  title: "Battle of the Standard",
+  kind: "battle",
+  fronts: ["british_isles"],
+  countries: ["England", "Scotland"],
+  figures: ["david_i_scotland", "thurstan_of_york"],
+  note: "One account places Cowton Moor south of Darlington and says the English force was under Thurstan and Raoul, bishop of Durham, that the saints’ banners included St Cuthbert, and that the fight was not decisive because David kept the northern counties until his death at Carlisle in 1153. The other places the moor near Northallerton, names William of Aumale as the English commander on the day, and says Thurstan raised the army by preaching. It also calls the fight the Battle of Northallerton.",
+  mapNote: "Cowton Moor in Yorkshire is the ground named for the fight. One account places that moor south of Darlington, and another near Northallerton.",
+  levels: {
+    primary: {
+      cause: "While Stephen and Matilda contested England, David I of Scotland led an army into Yorkshire against the English.",
+      what: "On 22 August 1138 an English force defeated David’s Scots at Cowton Moor, in the fight called the Battle of the Standard.",
+      consequence: "The Scottish army was beaten. Banners of York, Beverley, and Ripon, raised over the English line, gave the battle its name.",
+    },
+    secondary: {
+      cause: "England was divided by the struggle of King Stephen and the Empress Matilda, and David I of Scotland used that division to come south. He brought a Scottish army into Yorkshire. An English force gathered to meet him, with Thurstan, archbishop of York, deeply involved in raising it. The campaign was a northern intervention in a civil war, not a raid without a political aim.",
+      what: "The armies met on 22 August 1138 at Cowton Moor in Yorkshire. The English force defeated the Scots under David. One page situates the moor near Northallerton, and another south of Darlington, so the shared ground is Cowton Moor itself. The English line was marked by consecrated banners of York, Beverley, and Ripon, which is why the day is called the Battle of the Standard.",
+      consequence: "David’s army lost the field. The name of the battle preserves those banners rather than a town. He remained a king with business in the north of England after the defeat, but the accounts do not agree how far that business still reached, and that disagreement is left aside. The shared result is a Scottish defeat on that August day at Cowton Moor.",
+    },
+    university: {
+      cause: "The setting both narratives give is the English succession quarrel between Stephen and Matilda. David I, king of Scotland, intervened from the north and brought his army into Yorkshire. Thurstan, archbishop of York, is the churchman tied to the English response, whether as the man under whom a local force is said to have served or as the archbishop who laboured to raise it. A bishop of Durham and a named baron appear in single accounts and are not treated as joint commanders here. The cause worth keeping is David’s intervention in that civil war, met by an English force associated with the archbishop.",
+      what: "Fighting came on 22 August 1138. Both pages call the ground Cowton Moor and place it in Yorkshire. They do not share the nearest town: one says south of Darlington, and the other near Northallerton. The English defeated David’s Scottish army. Over the English position flew banners linked to York, Beverley, and Ripon, and both pages derive the name Battle of the Standard from those banners. A further saint’s banner, and the alternative title Battle of Northallerton, are each in one page only. The course that remains is a dated English victory on Cowton Moor over the king of Scotland.",
+      consequence: "The Scots were repelled. The standard of banners is the memorial the name itself keeps. What David did in the north afterwards is told differently: one page says the encounter was not decisive and that he retained the northern counties, while another says he enlarged his power in Northern England in spite of the defeat. Those sequels are not the same sentence. The consequence the pages can bear together is the defeat of his army at Cowton Moor on 22 August 1138, under the name given by the banners.",
+    },
+  },
+  sources: [
+    {
+      url: "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/standard-battle",
+      publisher: "Encyclopedia.com",
+    },
+    {
+      url: "https://en.wikipedia.org/wiki/Battle_of_the_Standard",
+      publisher: "Wikipedia",
+    },
+  ],
+};
+
+export const benevento1266: EraEvent = {
+  id: "benevento_1266",
+  date: "1266-02-26",
+  precision: "day",
+  title: "Battle of Benevento",
+  kind: "battle",
+  fronts: ["italy"],
+  countries: ["Anjou", "Kingdom of Sicily"],
+  figures: ["charles_of_anjou", "manfred_of_sicily"],
+  note: "One page says Manfred had ruled as king of Sicily and Naples from 1258, and that Charles established Angevin rule after the victory. Another calls Manfred the last Hohenstaufen king and says the defeat ended that dynasty’s rule in Italy. A papal life dates the slaying 26 February and says Clement had financed Charles’s expedition. The crowning in 1266 is told as a reward before the battle is named, so it is not described here as a result of the day.",
+  levels: {
+    primary: {
+      cause: "Charles of Anjou, brother of Louis IX, brought an army against Manfred, king of Sicily, for that kingdom.",
+      what: "On 26 February 1266 Charles’s army defeated Manfred at Benevento, and Manfred was killed on the field.",
+      consequence: "Manfred’s death left the kingdom to Charles, and Angevin rule began in Naples and Sicily.",
+    },
+    secondary: {
+      cause: "The papacy backed Charles of Anjou, count of Anjou and brother of Louis IX of France, against Manfred in the kingdom of Sicily. Manfred had been king there from 1258. Charles came into southern Italy with an army to take that crown from him. The quarrel was over who would rule Sicily and Naples, with Rome supporting the French prince.",
+      what: "The armies met at Benevento on 26 February 1266. Charles’s men defeated Manfred’s. Manfred was killed. One account says he was slain that February day. Another says Charles’s army defeated and killed him at Benevento in 1266. The place, the year, the victor, and the death of the Sicilian king are shared, and the February day is in more than one of the pages.",
+      consequence: "With Manfred dead, Charles was left king of Sicily, a title dated from 1266. Angevin rule was established in Naples and Sicily. The kingdom he had come to win passed to him by that victory and by the death of the king who had held it since 1258.",
+    },
+    university: {
+      cause: "Charles of Anjou is the French prince these pages set against Manfred, king of Sicily and Naples since 1258. Charles was count of Anjou and brother of Louis IX. Papal policy stands behind his expedition: one account has a pope offer him the crown, and another has Clement finance the campaign and confirm him in the kingdom. He entered the south to fight Manfred for that realm. The cause the pages share is not a private feud. It is a backed invasion aimed at the Sicilian king.",
+      what: "Benevento is the battle, fought on 26 February 1266. Charles’s army defeated Manfred there, and Manfred was killed. Wording differs between slain, killed, and a defeat in which he died, but not the outcome or the place. A river beside the town, a grandson’s rival claim, and the label Hohenstaufen are each developed on a single page and are not required for the course of the day. What stands is a February victory at Benevento for Charles, and the death of Manfred.",
+      consequence: "Charles became king of Sicily, the reign dated 1266 to 1285, and Angevin rule took hold in Naples and Sicily. Manfred’s kingship, begun in 1258, ended on the field. One page treats the victory as the start of that Angevin hold. Another ties his death directly to Charles’s assumption of the Sicilian crown. A coronation told in the same year, but placed before the fighting in one notice, is not used as the day’s result. The shared consequence is Manfred dead and Charles king in the realm they had fought over.",
+    },
+  },
+  sources: [
+    {
+      url: "https://en.wikipedia.org/wiki/Battle_of_Benevento",
+      publisher: "Wikipedia",
+    },
+    {
+      url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/clement-iv-pope",
+      publisher: "Encyclopedia.com",
+    },
+    {
+      url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/italy-catholic-church",
+      publisher: "Encyclopedia.com",
+    },
+  ],
+};
+
+export const henryIEngland: EraFigure = {
+  id: "henry_i_england",
+  name: "Henry I",
+  role: "ruler",
+  country: "England",
+  allegiance: "England",
+  note: "One life calls him the youngest son of William the Conqueror and gives a birth in 1068. The other calls him the fourth son and does not print that birth year. Both date his English reign from 1100 to 1135 and his hold on Normandy from the victory of 1106.",
+  bio: {
+    primary: "Henry I, king of England, defeated his elder brother Robert at Tinchebray on 28 September 1106 and took Normandy.",
+    secondary: "He was a son of William the Conqueror and king of England from 1100 until his death in 1135. His elder brother Robert held Normandy. In 1105 and 1106 Henry invaded the duchy and, on 28 September 1106, defeated Robert at Tinchebray, also written Tinchebrai. Robert was imprisoned. Henry ruled Normandy from that victory for the rest of his life, joining the duchy to the crown he already wore.",
+    university: "Henry I is the English king these lives place opposite Robert, duke of Normandy and his elder brother. The reign in England runs from 1100 to 1135. How many older brothers he had is not agreed: one life says he was the youngest son of William the Conqueror, and another that he was the fourth, so neither number is used as a rank. What both lives do is send him into Normandy in 1106 and give him the victory at Tinchebray, spelt Tinchebrai in one of them, on 28 September. Robert was captured and imprisoned. From that point Henry held the duchy as well as England. Later wars with a nephew’s supporters are outside this life. The part that remains is the king who beat his brother at Tinchebray and kept Normandy.",
+  },
+  sources: [
+    {
+      url: "https://www.encyclopedia.com/people/history/british-and-irish-history-biographies/henry-i",
+      publisher: "Encyclopedia.com",
+    },
+    {
+      url: "https://en.wikipedia.org/wiki/Henry_I_of_England",
+      publisher: "Wikipedia",
+    },
+  ],
+};
+
+export const robertCurthose: EraFigure = {
+  id: "robert_curthose",
+  name: "Robert Curthose",
+  role: "ruler",
+  country: "Normandy",
+  allegiance: "Normandy",
+  note: "One life calls him the eldest son of William the Conqueror and dates a birth between 1051 and 1053. It says Normandy was absorbed into England’s possession and that captivity lasted until his death. The battle notice calls him Robert of Normandy, says his army was destroyed, and lists prisons at Wareham, Devizes, Bristol, and Cardiff, without the birth years.",
+  bio: {
+    primary: "Robert Curthose, duke of Normandy, was defeated by his brother Henry I at Tinchebray on 28 September 1106 and imprisoned.",
+    secondary: "He was the elder brother of Henry I and duke of Normandy, also called Robert of Normandy. On 28 September 1106 he fought Henry at Tinchebray and lost. He was captured and kept in prison in England. The duchy passed out of his hands and into Henry’s. This life is the duke whose defeat and captivity ended his rule in Normandy.",
+    university: "Robert Curthose is the name on his own life, and Robert of Normandy is the name on the battle notice. Both mean the duke, elder brother of Henry I. He held Normandy until the campaign of 1106. At Tinchebray, also written Tinchebrai, on 28 September 1106, Henry defeated him and he was taken. Imprisonment in England followed, and he did not return to rule the duchy. One page says the captivity lasted the rest of his life, and another lists a chain of castles, so the shared fact is the imprisonment itself rather than a single prison or a year of death. Normandy remained with Henry. What these pages support is his defeat at Tinchebray, his capture, and the loss of the duchy.",
+  },
+  sources: [
+    {
+      url: "https://en.wikipedia.org/wiki/Robert_Curthose",
+      publisher: "Wikipedia",
+    },
+    {
+      url: "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/tinchebrai-battle",
+      publisher: "Encyclopedia.com",
+    },
+  ],
+};
+
+export const davidIScotland: EraFigure = {
+  id: "david_i_scotland",
+  name: "David I of Scotland",
+  role: "ruler",
+  country: "Scotland",
+  allegiance: "Scotland",
+  note: "One account says he wanted Northumbria and Cumbria, that the fight was not decisive, and that he kept the northern counties and died at Carlisle in 1153. The other says he backed his niece Matilda against Stephen and enlarged his power in Northern England despite the defeat. A birth in 1084 is in that life only.",
+  bio: {
+    primary: "David I, king of Scotland, led the army that the English defeated at the Battle of the Standard on 22 August 1138.",
+    secondary: "He was king of Scotland when Stephen and Matilda were fighting over England, and he brought a Scottish army into Yorkshire. On 22 August 1138 that army was defeated at Cowton Moor, the Battle of the Standard. Thurstan, archbishop of York, was bound up with the English force that beat him. The defeat is the centre of this life. What he still held in the north afterwards is told differently and is not repeated as a single result.",
+    university: "David I of Scotland is the king both accounts name at the head of the Scottish army in 1138. The English quarrel of Stephen and Matilda is the opening they share for his intervention, though they do not share one list of the lands he wanted. He crossed into Yorkshire. On 22 August 1138, at Cowton Moor, an English force defeated him in the battle named for the banners, the Battle of the Standard. The archbishop of York, Thurstan, is part of the English story of that day. One page then says the loss was not decisive and that the northern counties stayed with David. Another says he widened his power in the north even so. Those sequels conflict, so the life stops at the defeat itself: the king of Scotland whose army lost at Cowton Moor on that August day.",
+  },
+  sources: [
+    {
+      url: "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/standard-battle",
+      publisher: "Encyclopedia.com",
+    },
+    {
+      url: "https://en.wikipedia.org/wiki/David_I_of_Scotland",
+      publisher: "Wikipedia",
+    },
+    {
+      url: "https://en.wikipedia.org/wiki/Battle_of_the_Standard",
+      publisher: "Wikipedia",
+    },
+  ],
+};
+
+export const thurstanOfYork: EraFigure = {
+  id: "thurstan_of_york",
+  name: "Thurstan of York",
+  role: "commander",
+  country: "England",
+  allegiance: "England",
+  note: "One account says the English force was under Thurstan and Raoul, bishop of Durham. The other says William of Aumale commanded on the day and that Thurstan raised the army by preaching that resistance was God’s work. The mast, the pyx, and the Italian name carroccio are in that second account only.",
+  bio: {
+    primary: "Thurstan, archbishop of York, raised the English force that defeated David I of Scotland at the Battle of the Standard on 22 August 1138.",
+    secondary: "He was archbishop of York when David I brought a Scottish army to Cowton Moor in Yorkshire. The English who fought there on 22 August 1138 went under banners of York, Beverley, and Ripon, and the day took its name, the Battle of the Standard, from those banners. Thurstan is the churchman both accounts tie to that English army, which defeated the Scots. Whether he stood as its commander or as the man who gathered it is not told the same way.",
+    university: "Thurstan of York is the archbishop named whenever these pages explain the English side at Cowton Moor. One of them places a local force under him, together with the bishop of Durham. The other gives the command on the field to a baron and credits Thurstan with raising the soldiers, preaching that to resist the Scots was a holy duty. That split stays out of the rank he is given here. What both pages allow is his part in bringing an English army to the Battle of the Standard, fought on 22 August 1138, and the defeat of King David I. The banners of York, Beverley, and Ripon, which named the battle, belong to the same English array. His life in this war is that work, and the victory won by the force he is attached to.",
+  },
+  sources: [
+    {
+      url: "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/standard-battle",
+      publisher: "Encyclopedia.com",
+    },
+    {
+      url: "https://en.wikipedia.org/wiki/Battle_of_the_Standard",
+      publisher: "Wikipedia",
+    },
+  ],
+};
+
+export const charlesOfAnjou: EraFigure = {
+  id: "charles_of_anjou",
+  name: "Charles of Anjou",
+  role: "ruler",
+  country: "Anjou",
+  allegiance: "Anjou",
+  note: "One life gives his years as 1227 to 1285 and calls him the youngest brother of Louis IX, count of Provence as well as Anjou. The other calls him the youngest son of Louis VIII and Blanche of Castile, and count of Maine. Crusades to Egypt and Tunisia, and the later war with Conradin, sit in single accounts.",
+  bio: {
+    primary: "Charles of Anjou, brother of Louis IX, defeated and killed Manfred at Benevento on 26 February 1266 and became king of Sicily.",
+    secondary: "He was count of Anjou and brother of Louis IX of France. Backed by the papacy, he led an army against Manfred, king of Sicily. On 26 February 1266 at Benevento that army won, and Manfred was killed. Charles was king of Sicily from 1266. The life these pages share is the count who beat Manfred at Benevento and took the Sicilian crown.",
+    university: "Charles of Anjou, also called Charles I, is the prince set against Manfred in the kingdom of Sicily. He held Anjou, and he was brother to Louis IX. Papal support for his expedition is explicit: a pope offered the crown, and Clement financed the campaign in which Manfred was slain. On 26 February 1266 his army defeated Manfred at Benevento and Manfred died. Kingship of Sicily is dated from 1266, and one account carries it to 1285 and adds Naples. Angevin rule in the south is the political result attached to the victory. A birth year, a claim to be the youngest son, and a countship of Provence or Maine are each in one life only. What remains is his command at Benevento, the death of Manfred, and the Sicilian crown that followed.",
+  },
+  sources: [
+    {
+      url: "https://www.encyclopedia.com/reference/encyclopedias-almanacs-transcripts-and-maps/charles-i-king-naples-and-sicily",
+      publisher: "Encyclopedia.com",
+    },
+    {
+      url: "https://en.wikipedia.org/wiki/Charles_I_of_Anjou",
+      publisher: "Wikipedia",
+    },
+    {
+      url: "https://en.wikipedia.org/wiki/Battle_of_Benevento",
+      publisher: "Wikipedia",
+    },
+  ],
+};
+
+export const manfredOfSicily: EraFigure = {
+  id: "manfred_of_sicily",
+  name: "Manfred of Sicily",
+  role: "ruler",
+  country: "Kingdom of Sicily",
+  allegiance: "Kingdom of Sicily",
+  note: "One life calls him the natural son of Frederick II, regent from 1254, and the last Hohenstaufen king. It gives a birth in 1232 at Venosa. The other calls him king of Sicily and Naples from 1258 and does not give that parentage or birth. Both place his death at Benevento in 1266, at the hands of Charles of Anjou’s army.",
+  bio: {
+    primary: "Manfred, king of Sicily from 1258, was defeated and killed by Charles of Anjou’s army at Benevento on 26 February 1266.",
+    secondary: "He ruled as king of Sicily and Naples from 1258, after a period as regent in the south. Charles of Anjou, backed by the papacy, brought an army against him. At Benevento on 26 February 1266 that army defeated Manfred and killed him. His kingship ended on the field. The life shared here is the Sicilian king who fell at Benevento.",
+    university: "Manfred is the king of Sicily these pages set against Charles of Anjou. One account says he had governed as regent and had been king of Sicily and Naples from 1258. Another calls him king of Sicily from that same year until his death, and adds a Hohenstaufen parentage that the shorter notice does not. The parentage stays aside. In 1266 Charles’s army met him at Benevento. He was defeated and killed on 26 February 1266. Angevin rule in Naples and Sicily followed his death. A birthplace, a nephew’s claim, and the fate of his body are each in one life. What the pages support together is his kingship from 1258 and his death at Benevento when Charles’s army won.",
+  },
+  sources: [
+    {
+      url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/italy-catholic-church",
+      publisher: "Encyclopedia.com",
+    },
+    {
+      url: "https://en.wikipedia.org/wiki/Manfred_of_Sicily",
+      publisher: "Wikipedia",
+    },
+    {
+      url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/clement-iv-pope",
+      publisher: "Encyclopedia.com",
+    },
+  ],
+};
