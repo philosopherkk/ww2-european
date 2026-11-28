@@ -560,6 +560,50 @@ export const LATE_MEDIEVAL_FIGURES: EraFigure[] = [
   richardIII,
 ];
 
+const dukeOfMarlborough: EraFigure = {
+  id: 'duke_of_marlborough',
+  name: 'Duke of Marlborough',
+  role: 'commander',
+  country: 'England',
+  allegiance: 'England',
+  note: 'One account calls him captain-general of the English and Dutch forces, and gives his name as John Churchill. The day is printed as 13 August 1704 and as 2 August 1704. One page prints both and marks 2 August as old style.',
+  bio: {
+    primary:
+      'In August 1704 the Duke of Marlborough led the allied army that defeated the French force at Blenheim in the War of the Spanish Succession.',
+    secondary:
+      'The Duke of Marlborough led the allied army in the War of the Spanish Succession. In August 1704 that army defeated the French force at Blenheim.',
+    university:
+      'John Churchill, Duke of Marlborough, commanded the allied army at Blenheim in the War of the Spanish Succession. In August 1704 that army defeated the French force.',
+  },
+  sources: [
+    { url: 'https://www.nam.ac.uk/explore/battle-blenheim', publisher: 'National Army Museum' },
+    { url: 'https://www.britishbattles.com/war-of-the-spanish-succession/battle-of-blenheim/', publisher: 'British Battles' },
+    { url: 'https://en.wikipedia.org/wiki/Battle_of_Blenheim', publisher: 'Wikipedia' },
+  ],
+};
+
+const louisXIV: EraFigure = {
+  id: 'louis_xiv',
+  name: 'Louis XIV',
+  role: 'ruler',
+  country: 'France',
+  allegiance: 'France',
+  note: 'The day of the defeat is printed as 13 August 1704 and as 2 August 1704. He is not named as the commander on the field.',
+  bio: {
+    primary:
+      'Louis XIV was King of France. In August 1704 the French force at Blenheim was defeated in the War of the Spanish Succession.',
+    secondary:
+      'Louis XIV was King of France in the War of the Spanish Succession. In August 1704 the French force at Blenheim was defeated by the allied army.',
+    university:
+      'Louis XIV was King of France during the War of the Spanish Succession. In August 1704 the French force at Blenheim, with its Bavarian ally, was defeated by the allied army.',
+  },
+  sources: [
+    { url: 'https://www.nam.ac.uk/explore/battle-blenheim', publisher: 'National Army Museum' },
+    { url: 'https://www.britishbattles.com/war-of-the-spanish-succession/battle-of-blenheim/', publisher: 'British Battles' },
+    { url: 'https://en.wikipedia.org/wiki/Battle_of_Blenheim', publisher: 'Wikipedia' },
+  ],
+};
+
 export const EARLY_MODERN_FIGURES: EraFigure[] = [
   philipII,
   elizabethI,
@@ -570,6 +614,8 @@ export const EARLY_MODERN_FIGURES: EraFigure[] = [
   marquisDeMontcalm,
   johnBurgoyne,
   charlesCornwallis,
+  dukeOfMarlborough,
+  louisXIV,
 ];
 
 export const LONG_NINETEENTH_FIGURES: EraFigure[] = [santaAnna, robertELee];

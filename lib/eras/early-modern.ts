@@ -79,7 +79,7 @@ const blenheim: EraEvent = {
   kind: 'battle',
   fronts: ['german_lands'],
   countries: ['England', 'France'],
-  figures: [],
+  figures: ['duke_of_marlborough', 'louis_xiv'],
   note: 'One account dates the battle 13 August 1704. Another dates it 2 August 1704. A third prints 13 August and, beside it, O.S. 2 August 1704.',
   levels: {
     primary: {
