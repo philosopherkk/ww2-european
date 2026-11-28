@@ -464,7 +464,31 @@ export const HIGH_MEDIEVAL_FIGURES: EraFigure[] = [
   tostig,
 ];
 
-export const LATE_MEDIEVAL_FIGURES: EraFigure[] = [henryV];
+const robertTheBruce: EraFigure = {
+  id: 'robert_the_bruce',
+  name: 'Robert the Bruce',
+  role: 'ruler',
+  country: 'Scotland',
+  allegiance: 'Scotland',
+  note: 'One account also calls him Robert de Bruce. The other also calls him King Robert I.',
+  bio: {
+    primary:
+      'On 23 and 24 June 1314 Robert the Bruce, King of Scots, led the army that defeated the English at Bannockburn.',
+    secondary:
+      'Robert the Bruce was King of Scots. On 23 and 24 June 1314 the Scottish army he led fought the English at Bannockburn and defeated them.',
+    university:
+      'Robert the Bruce, King of Scots, commanded the Scottish army at Bannockburn against the English army of Edward II. The fighting ran across 23 and 24 June 1314. The result was a Scottish victory.',
+  },
+  sources: [
+    {
+      url: 'https://www.britishbattles.com/scottish-war-of-independence/battle-of-bannockburn/',
+      publisher: 'British Battles',
+    },
+    { url: 'https://en.wikipedia.org/wiki/Battle_of_Bannockburn', publisher: 'Wikipedia' },
+  ],
+};
+
+export const LATE_MEDIEVAL_FIGURES: EraFigure[] = [robertTheBruce, henryV];
 
 export const EARLY_MODERN_FIGURES: EraFigure[] = [
   philipII,

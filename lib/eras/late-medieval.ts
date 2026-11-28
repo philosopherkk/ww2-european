@@ -9,7 +9,7 @@ const bannockburn: EraEvent = {
   kind: 'battle',
   fronts: ['british_isles'],
   countries: ['Scotland', 'England'],
-  figures: [],
+  figures: ['robert_the_bruce'],
   levels: {
     primary: {
       cause: 'Robert the Bruce led a Scottish army against an English army in the fight for Scotland.',
