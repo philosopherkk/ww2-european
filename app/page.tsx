@@ -18,6 +18,7 @@ import {
   Users,
   type LucideIcon,
 } from 'lucide-react';
+import ErasMenu from '@/components/ErasMenu';
 import EventCard from '@/components/EventCard';
 import TurningPointPanel from '@/components/TurningPointPanel';
 import type { Level } from '@/lib/data';
@@ -738,22 +739,24 @@ export default function Home() {
 }
 
 function WarSwitch({ href, near, className }: { href: string; near: string; className: string }) {
+  const segment = 'px-2 py-1.5 text-sm sm:px-3';
   return (
     <div
-      className={`shrink-0 items-stretch overflow-hidden rounded-lg border border-stone-600 ${className}`}
+      className={`shrink-0 items-stretch rounded-lg border border-stone-600 ${className}`}
       role="group"
-      aria-label="War"
+      aria-label="Eras and wars"
     >
+      <ErasMenu current="/" grouped />
       <span
         aria-current="page"
-        className="bg-stone-50 px-3 py-1.5 text-sm font-bold text-stone-900 xl:py-1.5"
+        className={`${segment} border-l border-stone-600 bg-stone-50 font-bold text-stone-900`}
       >
         WW1
       </span>
       <a
         href={href}
         title={`Open the Second World War site near ${near} — the same point in that war`}
-        className="px-3 py-1.5 text-sm font-medium text-stone-300 hover:bg-stone-800 hover:text-white xl:py-1.5"
+        className={`${segment} rounded-r-lg border-l border-stone-600 font-medium text-stone-300 hover:bg-stone-800 hover:text-white`}
       >
         WW2
       </a>
