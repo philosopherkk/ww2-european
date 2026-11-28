@@ -3,6 +3,7 @@ import {
   LONG_NINETEENTH_LINES,
   LONG_NINETEENTH_LINKS,
 } from '@/lib/eras/americas';
+import { LONG_NINETEENTH_FIGURES } from '@/lib/eras/people';
 import batchFile from '@/lib/eras/pilot-1815/batch-01.json';
 import figuresFile from '@/lib/eras/pilot-1815/figures.json';
 import linesFile from '@/lib/eras/pilot-1815/lines.json';
@@ -172,7 +173,7 @@ const waterloo: EraEpisode = {
   monthLabel: eraSpanMonthLabel(from, to),
   events: [...batchFile.items.map(toEvent), ...LONG_NINETEENTH_AMERICAS],
   lines: [...lines, ...LONG_NINETEENTH_LINES],
-  figures: figuresFile.items.map(toFigure),
+  figures: [...figuresFile.items.map(toFigure), ...LONG_NINETEENTH_FIGURES],
   links: [...linksFile.links.map(toLink), ...LONG_NINETEENTH_LINKS],
 };
 

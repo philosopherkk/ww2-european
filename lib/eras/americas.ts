@@ -14,7 +14,7 @@ const tenochtitlan: EraEvent = {
   kind: 'siege',
   fronts: ['americas'],
   countries: ['Spain', 'Aztec empire'],
-  figures: [],
+  figures: ['hernan_cortes'],
   note: 'One account dates the siege from 22 May 1521, and another from 26 May. Both place the capture on 13 August 1521. One account adds that the emperor was taken and the city levelled.',
   levels: {
     primary: {
@@ -50,7 +50,7 @@ const cajamarca: EraEvent = {
   kind: 'battle',
   fronts: ['americas'],
   countries: ['Spain', 'Inca empire'],
-  figures: [],
+  figures: ['francisco_pizarro', 'atahualpa'],
   note: 'One account says Pizarro had fewer than 200 men against several thousand, and that Atahualpa was later killed. The other account does not print those figures.',
   levels: {
     primary: {
@@ -86,7 +86,7 @@ const quebec: EraEvent = {
   kind: 'battle',
   fronts: ['americas'],
   countries: ['Britain', 'France'],
-  figures: [],
+  figures: ['james_wolfe', 'marquis_de_montcalm'],
   note: 'One account says the defeat led to the British capture of Canada. Another names the ground the Plains of Abraham.',
   levels: {
     primary: {
@@ -122,7 +122,7 @@ const saratoga: EraEvent = {
   kind: 'battle',
   fronts: ['americas'],
   countries: ['United States', 'Britain'],
-  figures: [],
+  figures: ['john_burgoyne'],
   note: 'One account dates the fighting from 19 September to 7 October 1777 and calls 19 September an American victory. Another calls the 19 September fight at Freeman’s Farm a British victory, and dates Burgoyne’s surrender 17 October.',
   levels: {
     primary: {
@@ -158,7 +158,7 @@ const yorktown: EraEvent = {
   kind: 'siege',
   fronts: ['americas'],
   countries: ['United States', 'France', 'Britain'],
-  figures: [],
+  figures: ['charles_cornwallis'],
   note: 'One account dates the siege from 28 September 1781 and calls it the decisive engagement of the American Revolution. Another says that in March 1782 Parliament resolved not to continue the war.',
   levels: {
     primary: {
@@ -198,7 +198,7 @@ const alamo: EraEvent = {
   kind: 'battle',
   fronts: ['americas'],
   countries: ['Mexico', 'Texas'],
-  figures: [],
+  figures: ['antonio_lopez_de_santa_anna'],
   note: 'One account times the assault at about 5:00 a.m. and prints about 1,800 assault troops. The other dates the siege from 23 February to 6 March 1836.',
   levels: {
     primary: {
@@ -234,7 +234,7 @@ const gettysburg: EraEvent = {
   kind: 'battle',
   fronts: ['americas'],
   countries: ['United States', 'Confederacy'],
-  figures: [],
+  figures: ['robert_e_lee'],
   note: 'One account calls Gettysburg the turning point of the Civil War and prints a single-hour loss of over 5,000 for Lee. The other says the war did not end there, and it does not print that total. The fighting ran from 1 to 3 July 1863.',
   levels: {
     primary: {

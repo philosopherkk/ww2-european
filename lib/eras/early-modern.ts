@@ -3,6 +3,7 @@ import {
   EARLY_MODERN_LINES,
   EARLY_MODERN_LINKS,
 } from '@/lib/eras/americas';
+import { EARLY_MODERN_FIGURES } from '@/lib/eras/people';
 import type { EraEpisode, EraEvent, EraPeriod } from '@/lib/eras/types';
 
 const armada: EraEvent = {
@@ -13,7 +14,7 @@ const armada: EraEvent = {
   kind: 'invasion',
   fronts: ['british_isles'],
   countries: ['Spain', 'England'],
-  figures: [],
+  figures: ['philip_ii', 'elizabeth_i'],
   note: 'One account prints the fleet as 130 ships. The other account does not print that total.',
   levels: {
     primary: {
@@ -143,7 +144,7 @@ const episode: EraEpisode = {
   monthLabel: '1588 – April 1746',
   events: [armada, naseby, blenheim, culloden, ...EARLY_MODERN_AMERICAS],
   lines: EARLY_MODERN_LINES,
-  figures: [],
+  figures: EARLY_MODERN_FIGURES,
   links: EARLY_MODERN_LINKS,
 };
 

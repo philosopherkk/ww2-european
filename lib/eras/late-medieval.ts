@@ -1,3 +1,4 @@
+import { LATE_MEDIEVAL_FIGURES } from '@/lib/eras/people';
 import type { EraEpisode, EraEvent, EraPeriod } from '@/lib/eras/types';
 
 const bannockburn: EraEvent = {
@@ -76,7 +77,7 @@ const agincourt: EraEvent = {
   kind: 'battle',
   fronts: ['france_and_low_countries'],
   countries: ['England', 'France'],
-  figures: [],
+  figures: ['henry_v'],
   levels: {
     primary: {
       cause: 'Henry V had brought an English army into France during the Hundred Years War.',
@@ -138,7 +139,7 @@ const episode: EraEpisode = {
   monthLabel: 'June 1314 – August 1485',
   events: [bannockburn, crecy, agincourt, bosworth],
   lines: [],
-  figures: [],
+  figures: LATE_MEDIEVAL_FIGURES,
   links: [],
 };
 

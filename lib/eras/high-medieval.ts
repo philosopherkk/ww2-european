@@ -1,3 +1,4 @@
+import { HIGH_MEDIEVAL_FIGURES } from '@/lib/eras/people';
 import type { EraEpisode, EraEvent, EraPeriod } from '@/lib/eras/types';
 
 const stamford: EraEvent = {
@@ -40,7 +41,7 @@ const hastings: EraEvent = {
   kind: 'battle',
   fronts: ['british_isles'],
   countries: ['Normandy', 'England'],
-  figures: [],
+  figures: ['william_of_normandy', 'harold_of_england'],
   levels: {
     primary: {
       cause: 'William, Duke of Normandy, invaded England and brought a Norman army against King Harold.',
@@ -71,7 +72,7 @@ const episode: EraEpisode = {
   monthLabel: 'September – October 1066',
   events: [stamford, hastings],
   lines: [],
-  figures: [],
+  figures: HIGH_MEDIEVAL_FIGURES,
   links: [],
 };
 
