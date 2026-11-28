@@ -1,4 +1,10 @@
 import {
+  aljubarrota1385Links,
+  aljubarrota1385Place,
+  ankara1402Links,
+  ankara1402Place,
+  granada1492Links,
+  granada1492Place,
   LATE_MEDIEVAL_FILL_EVENTS,
   LATE_MEDIEVAL_FILL_FIGURES,
   LATE_MEDIEVAL_ROUND2_EVENTS,
@@ -11,6 +17,8 @@ import {
   LATE_MEDIEVAL_ROUND4_FIGURES,
   LATE_MEDIEVAL_ROUND4_LINES,
   LATE_MEDIEVAL_ROUND4_LINKS,
+  poitiers1356Links,
+  poitiers1356Place,
 } from '@/lib/eras/fill-late-medieval';
 import { LATE_MEDIEVAL_FIGURES } from '@/lib/eras/people';
 import { constantineXi, constantinople1453, mehmedIi } from '@/lib/eras/sourced-batch-2';
@@ -225,18 +233,18 @@ export const LATE_MEDIEVAL: EraPeriod = {
       title: 'Ankara, Grunwald, and Granada',
       monthLabel: 'July 1402 – January 1492',
       events: LATE_MEDIEVAL_FILL_EVENTS,
-      lines: [],
+      lines: [ankara1402Place, granada1492Place],
       figures: LATE_MEDIEVAL_FILL_FIGURES,
-      links: [],
+      links: [...ankara1402Links, ...granada1492Links],
     },
     {
       id: 'poitiers-aljubarrota-castillon',
       title: 'Poitiers, Aljubarrota, and Castillon',
       monthLabel: 'September 1356 – July 1453',
       events: LATE_MEDIEVAL_ROUND2_EVENTS,
-      lines: [],
+      lines: [poitiers1356Place, aljubarrota1385Place],
       figures: LATE_MEDIEVAL_ROUND2_FIGURES,
-      links: [],
+      links: [...poitiers1356Links, ...aljubarrota1385Links],
     },
     {
       id: 'halidon-formigny-towton',

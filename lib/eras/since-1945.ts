@@ -48,7 +48,7 @@ import {
   sharpeville1960,
   williamKHarrison,
 } from '@/lib/eras/sourced-batch';
-import type { EraEpisode, EraEvent, EraPeriod } from '@/lib/eras/types';
+import type { EraEpisode, EraEvent, EraLine, EraLink, EraPeriod } from '@/lib/eras/types';
 
 const hungary: EraEvent = {
   id: 'budapest_1956',
@@ -156,6 +156,24 @@ const ukraine: EraEvent = {
   ],
 };
 
+const budapest1956Place: EraLine = {
+  id: 'budapest_1956_place',
+  name: 'Budapest',
+  from: '1956-11-04',
+  to: '1956-11-04',
+  domain: 'land',
+  mover: 'Soviet Union',
+  summary: 'On 4 November 1956 Soviet tanks entered Budapest and attacked the Hungarian uprising.',
+  waypoints: [{ name: 'Budapest', lat: 47.4978789, lng: 19.0402383 }],
+  sources: hungary.sources,
+};
+
+const budapest1956Link: EraLink = {
+  lineId: 'budapest_1956_place',
+  eventId: 'budapest_1956',
+  at: 0,
+};
+
 const episode: EraEpisode = {
   id: 'since-1945-wars',
   title: 'Hungary, Czechoslovakia, and Ukraine',
@@ -179,7 +197,7 @@ const episode: EraEpisode = {
         : event,
     ),
   ],
-  lines: SINCE_1945_LINES,
+  lines: [...SINCE_1945_LINES, budapest1956Place],
   figures: [
     imreNagy,
     alexanderDubcek,
@@ -191,7 +209,7 @@ const episode: EraEpisode = {
     jeremyMoore,
     ianMckay,
   ],
-  links: SINCE_1945_LINKS,
+  links: [...SINCE_1945_LINKS, budapest1956Link],
 };
 
 const wider: EraEpisode = {

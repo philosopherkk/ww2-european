@@ -779,9 +779,25 @@ export const LATE_MEDIEVAL_ROUND3_FIGURES: EraFigure[] = [
   edwardIv, dukeOfSomerset, thomasKyriell, arthurDeRichemont, jeanDeClermont, archibaldDouglas,
 ];
 
-export const LATE_MEDIEVAL_ROUND3_LINES: EraLine[] = [valognesFormigny1450];
+const towton1461Place: EraLine = {
+  id: 'towton_1461_place',
+  name: 'Towton',
+  from: '1461-03-29',
+  to: '1461-03-29',
+  domain: 'land',
+  mover: 'England',
+  summary: 'On 29 March 1461 the Yorkist army won the battle at Towton in Yorkshire.',
+  waypoints: [{ name: 'Towton', lat: 53.8498331, lng: -1.26347 }],
+  sources: towton1461.sources,
+};
 
-export const LATE_MEDIEVAL_ROUND3_LINKS: EraLink[] = valognesFormignyLinks;
+const towton1461Links: EraLink[] = [
+  { lineId: 'towton_1461_place', eventId: 'towton_1461', at: 0 },
+];
+
+export const LATE_MEDIEVAL_ROUND3_LINES: EraLine[] = [valognesFormigny1450, towton1461Place];
+
+export const LATE_MEDIEVAL_ROUND3_LINKS: EraLink[] = [...valognesFormignyLinks, ...towton1461Links];
 
 const nevillesCross1346: EraEvent = {
   id: "nevilles_cross_1346",
@@ -1117,8 +1133,89 @@ export const LATE_MEDIEVAL_ROUND4_FIGURES: EraFigure[] = [
   davidIi, ralphNeville, henryPercy, earlOfWarwick, edwardPrinceOfWales, margaretOfAnjou,
 ];
 
-export const LATE_MEDIEVAL_ROUND4_LINES: EraLine[] = [
-  saintLoFormigny1450, saintVaastCrecy1346, harfleurAzincourt1415,
+const tewkesbury1471Place: EraLine = {
+  id: 'tewkesbury_1471_place',
+  name: 'Tewkesbury',
+  from: '1471-05-04',
+  to: '1471-05-04',
+  domain: 'land',
+  mover: 'England',
+  summary: 'On 4 May 1471 Edward IV’s army defeated the Lancastrians at Tewkesbury, and the Prince of Wales died.',
+  waypoints: [{ name: 'Tewkesbury', lat: 51.9937857, lng: -2.1549574 }],
+  sources: tewkesbury1471.sources,
+};
+
+const tewkesbury1471Links: EraLink[] = [
+  { lineId: 'tewkesbury_1471_place', eventId: 'tewkesbury_1471', at: 0 },
 ];
 
-export const LATE_MEDIEVAL_ROUND4_LINKS: EraLink[] = round4Links;
+export const LATE_MEDIEVAL_ROUND4_LINES: EraLine[] = [
+  saintLoFormigny1450, saintVaastCrecy1346, harfleurAzincourt1415,
+  tewkesbury1471Place,
+];
+
+export const LATE_MEDIEVAL_ROUND4_LINKS: EraLink[] = [...round4Links, ...tewkesbury1471Links];
+
+export const ankara1402Place: EraLine = {
+  id: 'ankara_1402_place',
+  name: 'Ankara',
+  from: '1402-07',
+  to: '1402-07',
+  domain: 'land',
+  mover: 'Timurid Empire',
+  summary: 'In July 1402 Timur’s army defeated the Ottoman force of Bayezid I at Ankara.',
+  waypoints: [{ name: 'Ankara', lat: 39.9207759, lng: 32.8540497 }],
+  sources: ankara1402.sources,
+};
+
+export const ankara1402Links: EraLink[] = [
+  { lineId: 'ankara_1402_place', eventId: 'ankara_1402', at: 0 },
+];
+
+export const granada1492Place: EraLine = {
+  id: 'granada_1492_place',
+  name: 'Granada',
+  from: '1492-01-02',
+  to: '1492-01-02',
+  domain: 'land',
+  mover: 'Spain',
+  summary: 'On 2 January 1492 King Boabdil surrendered Granada to Ferdinand and Isabella.',
+  waypoints: [{ name: 'Granada', lat: 37.1734995, lng: -3.5995337 }],
+  sources: granada1492.sources,
+};
+
+export const granada1492Links: EraLink[] = [
+  { lineId: 'granada_1492_place', eventId: 'granada_1492', at: 0 },
+];
+
+export const poitiers1356Place: EraLine = {
+  id: 'poitiers_1356_place',
+  name: 'Poitiers',
+  from: '1356-09-19',
+  to: '1356-09-19',
+  domain: 'land',
+  mover: 'England',
+  summary: 'On 19 September 1356 the Black Prince’s men defeated King John II’s army near Poitiers.',
+  waypoints: [{ name: 'Poitiers', lat: 46.5802596, lng: 0.340196 }],
+  sources: poitiers1356.sources,
+};
+
+export const poitiers1356Links: EraLink[] = [
+  { lineId: 'poitiers_1356_place', eventId: 'poitiers_1356', at: 0 },
+];
+
+export const aljubarrota1385Place: EraLine = {
+  id: 'aljubarrota_1385_place',
+  name: 'Aljubarrota',
+  from: '1385-08-14',
+  to: '1385-08-14',
+  domain: 'land',
+  mover: 'Portugal',
+  summary: 'On 14 August 1385 the Portuguese defeated King John I of Castile at Aljubarrota.',
+  waypoints: [{ name: 'Aljubarrota', lat: 39.5663818, lng: -8.9305256 }],
+  sources: aljubarrota1385.sources,
+};
+
+export const aljubarrota1385Links: EraLink[] = [
+  { lineId: 'aljubarrota_1385_place', eventId: 'aljubarrota_1385', at: 0 },
+];

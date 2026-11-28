@@ -14,6 +14,8 @@ import {
   ayubKhan,
   balaclava1854,
   borodino1812,
+  borodinoMoscow1812,
+  borodinoMoscow1812Links,
   botha,
   burrows,
   colenso1899,
@@ -226,14 +228,30 @@ const waterloo: EraEpisode = {
   links: [...linksFile.links.map(toLink), ...LONG_NINETEENTH_LINKS],
 };
 
+const sedan1870Place: EraLine = {
+  id: 'sedan_1870_place',
+  name: 'Sedan',
+  from: '1870-09',
+  to: '1870-09',
+  domain: 'land',
+  mover: 'Germany',
+  summary: 'In September 1870 the German armies won at Sedan, and Napoleon III was captured there.',
+  waypoints: [{ name: 'Sedan', lat: 49.7033759, lng: 4.9433409 }],
+  sources: sedan1870.sources,
+};
+
+const sedan1870Links: EraLink[] = [
+  { lineId: 'sedan_1870_place', eventId: 'sedan_1870', at: 0 },
+];
+
 const later: EraEpisode = {
   id: 'after-waterloo',
   title: 'Sedan and Port Arthur',
   monthLabel: 'September 1870 – 1905',
   events: [sedan1870, portArthur1904],
-  lines: [],
+  lines: [sedan1870Place],
   figures: [napoleonIii, theodoreRoosevelt],
-  links: [],
+  links: sedan1870Links,
 };
 
 const trafalgar: EraEpisode = {
@@ -301,9 +319,9 @@ const round2: EraEpisode = {
   title: 'The Pyramids, Assaye, and Borodino',
   monthLabel: 'July 1798 – September 1812',
   events: [pyramids1798, assaye1803, borodino1812],
-  lines: [],
+  lines: [borodinoMoscow1812],
   figures: [muradBey, ibrahimBey, mikhailKutuzov],
-  links: [],
+  links: borodinoMoscow1812Links,
 };
 
 const round3: EraEpisode = {

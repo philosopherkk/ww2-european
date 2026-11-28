@@ -1420,3 +1420,67 @@ export const aschaffenburgHanauLinks: EraLink[] = [
     "at": 1
   }
 ];
+
+export const diu1509Place: EraLine = {
+  "id": "diu_1509_place",
+  "name": "Diu",
+  "from": "1509-02",
+  "to": "1509-02",
+  "domain": "sea",
+  "mover": "Portugal",
+  "summary": "In February 1509 Francisco de Almeida’s Portuguese fleet defeated a coalition off the Indian town of Diu.",
+  "waypoints": [{ "name": "Diu", "lat": 20.7137783, "lng": 70.9853635 }],
+  "sources": diu1509.sources
+};
+
+export const diu1509Links: EraLink[] = [
+  { "lineId": "diu_1509_place", "eventId": "diu_1509", "at": 0 }
+];
+
+export const panipat1526Place: EraLine = {
+  "id": "panipat_1526_place",
+  "name": "Panipat",
+  "from": "1526-04-21",
+  "to": "1526-04-21",
+  "domain": "land",
+  "mover": "Mughals",
+  "summary": "On 21 April 1526 Babur defeated and killed Ibrahim at the First Battle of Panipat.",
+  "waypoints": [{ "name": "Panipat", "lat": 29.391272, "lng": 76.9771681 }],
+  "sources": panipat1526.sources
+};
+
+export const panipat1526Links: EraLink[] = [
+  { "lineId": "panipat_1526_place", "eventId": "panipat_1526", "at": 0 }
+];
+
+export const sekigahara1600Place: EraLine = {
+  "id": "sekigahara_1600_place",
+  "name": "Sekigahara",
+  "from": "1600-10-21",
+  "to": "1600-10-21",
+  "domain": "land",
+  "mover": "Japan",
+  "summary": "On 21 October 1600 Tokugawa Ieyasu’s army defeated Mitsunari’s coalition at Sekigahara.",
+  "waypoints": [{ "name": "Sekigahara", "lat": 35.3624035, "lng": 136.4680349 }],
+  "sources": sekigahara1600.sources
+};
+
+export const sekigahara1600Links: EraLink[] = [
+  { "lineId": "sekigahara_1600_place", "eventId": "sekigahara_1600", "at": 0 }
+];
+
+export const poltava1709Place: EraLine = {
+  "id": "poltava_1709_place",
+  "name": "Poltava",
+  "from": "1709",
+  "to": "1709",
+  "domain": "land",
+  "mover": "Russia",
+  "summary": "In 1709 the Swedish army was defeated at Poltava, and Charles XII’s campaign came to an end.",
+  "waypoints": [{ "name": "Poltava", "lat": 49.5897423, "lng": 34.5507948 }],
+  "sources": poltava1709.sources
+};
+
+export const poltava1709Links: EraLink[] = [
+  { "lineId": "poltava_1709_place", "eventId": "poltava_1709", "at": 0 }
+];

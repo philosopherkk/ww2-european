@@ -1307,30 +1307,70 @@ export const shapurIi: EraFigure = {
   ]
 };
 
-const adrianopleChrysopolis324: EraLine = {
-  id: 'adrianople_chrysopolis_324',
-  name: 'From Adrianople to Chrysopolis',
-  from: '0324-09-18',
-  to: '0324-09-18',
+const jerusalem70Point: EraLine = {
+  id: 'jerusalem_70_place',
+  name: 'Jerusalem',
+  from: '0070',
+  to: '0070',
   domain: 'land',
-  mover: 'Constantine I',
-  summary: 'Constantine defeated Licinius near Adrianople and then at Chrysopolis on 18 September 324.',
-  waypoints: [
-    { name: 'Adrianople', lat: 41.6759327, lng: 26.5587225 },
-    { name: 'Chrysopolis', lat: 41.0265498, lng: 29.0151321 },
-  ],
+  mover: 'Rome',
+  summary: 'In the year 70 Titus commanded the Roman army that besieged Jerusalem and burned part of the city.',
+  waypoints: [{ name: 'Jerusalem', lat: 31.7788472, lng: 35.2257856 }],
   sources: [
-    { url: 'https://en.wikipedia.org/wiki/Battle_of_Chrysopolis', publisher: 'Wikipedia' },
-    { url: 'https://www.livius.org/articles/person/constantine-the-great/', publisher: 'Livius' },
+    {
+      url: 'https://web.archive.org/web/20180309201117/https://www.britannica.com/event/Siege-of-Jerusalem-70',
+      publisher: 'Britannica',
+    },
+    {
+      url: 'https://web.archive.org/web/20220502163609/https://www.worldhistory.org/article/1993/the-siege-of-jerusalem-in-70-ce/',
+      publisher: 'World History Encyclopedia',
+    },
   ],
 };
 
-const adrianopleChrysopolisLinks: EraLink[] = [
-  { lineId: 'adrianople_chrysopolis_324', eventId: 'chrysopolis_324', at: 0 },
-  { lineId: 'adrianople_chrysopolis_324', eventId: 'chrysopolis_324', at: 1 },
+const milvianBridge312Point: EraLine = {
+  id: 'milvian_bridge_312_place',
+  name: 'Milvian Bridge',
+  from: '0312',
+  to: '0312',
+  domain: 'land',
+  mover: 'Roman Empire',
+  summary: 'In 312 Constantine won at the Milvian Bridge, and Maxentius was killed.',
+  waypoints: [{ name: 'Milvian Bridge', lat: 41.935515, lng: 12.4669694 }],
+  sources: milvianBridge312.sources,
+};
+
+const soissons486Point: EraLine = {
+  id: 'soissons_486_place',
+  name: 'Soissons',
+  from: '0486',
+  to: '0486',
+  domain: 'land',
+  mover: 'Franks',
+  summary: 'In 486 Clovis I defeated Syagrius at Soissons, and the Franks had the victory.',
+  waypoints: [{ name: 'Soissons', lat: 49.3837621, lng: 3.327613 }],
+  sources: soissons486.sources,
+};
+
+export const ANTIQUITY_WIDER_PLACE_LINES: EraLine[] = [jerusalem70Point];
+
+export const ANTIQUITY_WIDER_PLACE_LINKS: EraLink[] = [
+  { lineId: 'jerusalem_70_place', eventId: 'jerusalem_70', at: 0 },
 ];
 
-export const ANTIQUITY_ROUND4_LINES: EraLine[] = [adrianopleChrysopolis324];
+export const ANTIQUITY_FILL_PLACE_LINES: EraLine[] = [milvianBridge312Point];
 
-export const ANTIQUITY_ROUND4_LINKS: EraLink[] = adrianopleChrysopolisLinks;
+export const ANTIQUITY_FILL_PLACE_LINKS: EraLink[] = [
+  { lineId: 'milvian_bridge_312_place', eventId: 'milvian_bridge_312', at: 0 },
+];
+
+export const ANTIQUITY_ROUND3_PLACE_LINES: EraLine[] = [soissons486Point];
+
+export const ANTIQUITY_ROUND3_PLACE_LINKS: EraLink[] = [
+  { lineId: 'soissons_486_place', eventId: 'soissons_486', at: 0 },
+];
+
+export const ANTIQUITY_ROUND4_LINES: EraLine[] = [];
+
+export const ANTIQUITY_ROUND4_LINKS: EraLink[] = [];
 

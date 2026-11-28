@@ -1,4 +1,4 @@
-import type { EraEvent, EraFigure } from '@/lib/eras/types';
+import type { EraEvent, EraFigure, EraLine, EraLink } from '@/lib/eras/types';
 
 export const littleBighorn1876: EraEvent = {
   "id": "little_bighorn_1876",
@@ -1222,3 +1222,23 @@ export const oresteBaratieri: EraFigure = {
     }
   ]
 };
+
+export const borodinoMoscow1812: EraLine = {
+  id: 'borodino_moscow_1812',
+  name: 'Borodino to Moscow',
+  from: '1812-09-07',
+  to: '1812-09',
+  domain: 'land',
+  mover: 'France',
+  summary: 'On 7 September 1812 the armies fought at Borodino. Kutuzov’s army then left the field, and the French occupied Moscow.',
+  waypoints: [
+    { name: 'Borodino', lat: 55.5280334, lng: 35.8198885 },
+    { name: 'Moscow', lat: 55.7505412, lng: 37.6174782 },
+  ],
+  sources: borodino1812.sources,
+};
+
+export const borodinoMoscow1812Links: EraLink[] = [
+  { lineId: 'borodino_moscow_1812', eventId: 'borodino_1812', at: 0 },
+  { lineId: 'borodino_moscow_1812', eventId: 'borodino_1812', at: 1 },
+];

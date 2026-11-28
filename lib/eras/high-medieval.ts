@@ -150,6 +150,86 @@ const stamfordToHastings: EraLine = {
   ],
 };
 
+function battlePoint(
+  id: string,
+  name: string,
+  eventId: string,
+  date: string,
+  mover: string,
+  summary: string,
+  lat: number,
+  lng: number,
+  domain: EraLine['domain'],
+  sources: EraLine['sources'],
+): { line: EraLine; links: EraEpisode['links'] } {
+  return {
+    line: {
+      id,
+      name,
+      from: date,
+      to: date,
+      domain,
+      mover,
+      summary,
+      waypoints: [{ name, lat, lng }],
+      sources,
+    },
+    links: [{ lineId: id, eventId, at: 0 }],
+  };
+}
+
+const hattinPoint = battlePoint(
+  'hattin_1187_place',
+  'Hattin',
+  'hattin_1187',
+  '1187-07-04',
+  'Ayyubid Sultanate',
+  'On 4 July 1187 Saladin defeated Guy’s Christian army at Hattin.',
+  32.7982445,
+  35.4595528,
+  'land',
+  hattin1187.sources,
+);
+
+const lewesPoint = battlePoint(
+  'lewes_1264_place',
+  'Lewes',
+  'lewes_1264',
+  '1264-05-14',
+  'England',
+  'On 14 May 1264 Montfort’s smaller army defeated the king’s forces at Lewes.',
+  50.8741265,
+  0.0121129,
+  'land',
+  lewes1264.sources,
+);
+
+const eveshamPoint = battlePoint(
+  'evesham_1265_place',
+  'Evesham',
+  'evesham_1265',
+  '1265-08-04',
+  'England',
+  'On 4 August 1265 the royal army caught Montfort at Evesham, and the earl was killed.',
+  52.0940158,
+  -1.9483083,
+  'land',
+  evesham1265.sources,
+);
+
+const beneventoPoint = battlePoint(
+  'benevento_1266_place',
+  'Benevento',
+  'benevento_1266',
+  '1266-02-26',
+  'Anjou',
+  'On 26 February 1266 Charles’s army defeated Manfred at Benevento, and Manfred was killed on the field.',
+  41.1295587,
+  14.7824639,
+  'land',
+  benevento1266.sources,
+);
+
 const episode: EraEpisode = {
   id: 'england-1066',
   title: 'Stamford Bridge and Hastings',
@@ -211,9 +291,9 @@ export const HIGH_MEDIEVAL: EraPeriod = {
       title: 'Battle of Hattin',
       monthLabel: 'July 1187',
       events: [hattin1187],
-      lines: [],
+      lines: [hattinPoint.line],
       figures: [saladin, guyOfLusignan],
-      links: [],
+      links: hattinPoint.links,
     },
     {
       id: 'arsuf-1191',
@@ -256,27 +336,27 @@ export const HIGH_MEDIEVAL: EraPeriod = {
       title: 'Battle of Lewes',
       monthLabel: 'May 1264',
       events: [lewes1264],
-      lines: [],
+      lines: [lewesPoint.line],
       figures: [simonDeMontfort, henryIii],
-      links: [],
+      links: lewesPoint.links,
     },
     {
       id: 'evesham-1265',
       title: 'Battle of Evesham',
       monthLabel: 'August 1265',
       events: [evesham1265],
-      lines: [],
+      lines: [eveshamPoint.line],
       figures: [princeEdward],
-      links: [],
+      links: eveshamPoint.links,
     },
     {
       id: 'benevento-1266',
       title: 'Battle of Benevento',
       monthLabel: 'February 1266',
       events: [benevento1266],
-      lines: [],
+      lines: [beneventoPoint.line],
       figures: [charlesOfAnjou, manfredOfSicily],
-      links: [],
+      links: beneventoPoint.links,
     },
     {
       id: 'yamen-1279',
