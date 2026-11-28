@@ -1,3 +1,4 @@
+import { EARLY_MEDIEVAL_FIGURES } from '@/lib/eras/people';
 import type { EraEpisode, EraEvent, EraPeriod } from '@/lib/eras/types';
 
 const tours: EraEvent = {
@@ -8,7 +9,7 @@ const tours: EraEvent = {
   kind: 'battle',
   fronts: ['france_and_low_countries'],
   countries: ['Franks', 'Umayyad'],
-  figures: [],
+  figures: ['charles_martel', 'abd_al_rahman'],
   levels: {
     primary: {
       cause: 'An Umayyad army under Abd al-Rahman met Charles Martel’s Frankish force near Tours.',
@@ -38,7 +39,7 @@ const episode: EraEpisode = {
   monthLabel: 'October 732',
   events: [tours],
   lines: [],
-  figures: [],
+  figures: EARLY_MEDIEVAL_FIGURES,
   links: [],
 };
 

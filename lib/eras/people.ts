@@ -371,6 +371,50 @@ const fritigern: EraFigure = {
 
 export const ANTIQUITY_FIGURES: EraFigure[] = [arminius, publiusVarus, valens, fritigern];
 
+const charlesMartel: EraFigure = {
+  id: 'charles_martel',
+  name: 'Charles Martel',
+  role: 'commander',
+  country: 'Franks',
+  allegiance: 'Franks',
+  note: 'One account prints the day as 10 October 732. The other gives October 732 and does not print a day.',
+  bio: {
+    primary:
+      'In October 732 Charles Martel led a Frankish army that defeated Abd al-Rahman’s Umayyad force between Tours and Poitiers.',
+    secondary:
+      'Charles Martel led Frankish and Aquitanian troops against an Umayyad army. In October 732 they fought between Tours and Poitiers. His side won, and the Umayyad army retreated.',
+    university:
+      'Charles Martel led the Frankish and Aquitanian army. In October 732 it defeated the Umayyad army of Abd al-Rahman between Tours and Poitiers, and that army retreated. A claim that the battle decided the religion of Europe is printed in only one account.',
+  },
+  sources: [
+    { url: 'https://www.thecollector.com/battle-of-tours/', publisher: 'TheCollector' },
+    { url: 'https://en.wikipedia.org/wiki/Battle_of_Tours', publisher: 'Wikipedia' },
+  ],
+};
+
+const abdAlRahman: EraFigure = {
+  id: 'abd_al_rahman',
+  name: 'Abd al-Rahman',
+  role: 'commander',
+  country: 'Umayyad',
+  allegiance: 'Umayyad',
+  note: 'Both accounts also call him al-Ghafiqi. One prints the day as 10 October 732. The other gives October 732 and does not print a day.',
+  bio: {
+    primary:
+      'In October 732 Abd al-Rahman led the Umayyad army that Charles Martel defeated between Tours and Poitiers, and he was killed.',
+    secondary:
+      'Abd al-Rahman commanded the Umayyad army at Tours. In October 732 Charles Martel’s Frankish force defeated him between Tours and Poitiers. He was killed, and his army retreated.',
+    university:
+      'Abd al-Rahman, also called al-Ghafiqi, led the Umayyad army. In October 732 Charles Martel’s Frankish and Aquitanian force defeated that army between Tours and Poitiers. Abd al-Rahman was killed, and the Umayyad army retreated.',
+  },
+  sources: [
+    { url: 'https://www.thecollector.com/battle-of-tours/', publisher: 'TheCollector' },
+    { url: 'https://en.wikipedia.org/wiki/Battle_of_Tours', publisher: 'Wikipedia' },
+  ],
+};
+
+export const EARLY_MEDIEVAL_FIGURES: EraFigure[] = [charlesMartel, abdAlRahman];
+
 export const HIGH_MEDIEVAL_FIGURES: EraFigure[] = [williamOfNormandy, haroldOfEngland];
 
 export const LATE_MEDIEVAL_FIGURES: EraFigure[] = [henryV];
