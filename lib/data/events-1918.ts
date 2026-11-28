@@ -124,7 +124,7 @@ export const EVENTS_1918: WW1Event[] = [
     date: '1918-02-18',
     precision: 'day',
     kind: 'offensive',
-    title: 'Eleven days: the German drive into the Baltic and Ukraine',
+    title: 'The German drive into the Baltic and Ukraine',
     fronts: ['eastern'],
     countries: ['Germany', 'Russia', 'Ukraine', 'Finland', 'Austria-Hungary'],
     figures: ['kuhlmann', 'trotsky', 'lenin', 'mannerheim_carl'],
@@ -148,7 +148,7 @@ export const EVENTS_1918: WW1Event[] = [
           'the Bread Peace, gave Ukraine recognition and borders in exchange for food, and infuriated the ' +
           'Bolsheviks, who regarded Ukraine as theirs. Trotsky refused to recognise the Ukrainian ' +
           'delegation and broke off the talks on 10 February.',
-        what: 'Operation Faustschlag, the Eleven Days’ War, opened on 18 February with 53 divisions: one ' +
+        what: 'Operation Faustschlag opened on 18 February with 53 divisions: one ' +
           'force from Pskov towards Narva, the others towards Smolensk and Kiev. Daugavpils fell on day ' +
           'one, Minsk on 21 February, Kiev on 2 March. The armies covered over 240 kilometres in a week, ' +
           'to within 160 kilometres of Petrograd; the Soviet government moved to Moscow. Resistance was ' +
@@ -256,8 +256,13 @@ export const EVENTS_1918: WW1Event[] = [
           'on 9 February, and confirmed Finnish independence. An August 1918 protocol set the indemnity ' +
           'at six billion marks. Germany kept troops in the occupied east through the war to hold the ' +
           'gain.',
-        consequence:
-          'The settlement was a dictatorship over the east which lasted eleven months. It gave the White movement a unifying grievance and opened the rift between the Bolsheviks and the left social revolutionaries, whose representatives left the Council of People’s Commissars and then rose in the July uprising. It also freed over a million German soldiers to be moved west in the spring, though they had to be replaced by garrisons in the occupied land. One clause of the armistice of 11 November 1918 abrogated the treaty; the Soviet legislature annulled it on 13 November.',
+        consequence: 'The settlement was a dictatorship over the east which lasted eight months. It gave the White ' +
+          'movement a unifying grievance and opened the rift between the Bolsheviks and the left social ' +
+          'revolutionaries, whose representatives left the Council of People’s Commissars and then rose ' +
+          'in the July uprising. It also freed over a million German soldiers to be moved west in the ' +
+          'spring, though they had to be replaced by garrisons in the occupied land. One clause of the ' +
+          'armistice of 11 November 1918 abrogated the treaty; the Soviet legislature annulled it on 13 ' +
+          'November.',
       },
       university: {
         cause:

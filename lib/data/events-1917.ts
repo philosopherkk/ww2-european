@@ -695,7 +695,7 @@ export const EVENTS_1917: WW1Event[] = [
       primary:
         {
           cause: 'Romania joined the war in 1916 and was overrun in four months. Only the north-east, Moldavia, was left, held by a thin front along the Siret river with the last ports and railways behind it.',
-          what: 'On 5 August the Germans shelled for eight hours and used poison gas, breaking in where the ' +
+          what: 'On 6 August the Germans shelled for eight hours and used poison gas, breaking in where the ' +
             'Russian trenches were shallow. The Russians fell back, and Romanian divisions marched ' +
             'straight into the gap. All month the front moved by a kilometre or two.',
           consequence: 'The Germans never broke through, and the battle died out on 3 September with Moldavia still in Allied hands. The German and Austro-Hungarian army lost more men than the Romanians and Russians together.',
@@ -891,13 +891,17 @@ export const EVENTS_1917: WW1Event[] = [
             'stand-down with no fighting. Kornilov was dismissed and imprisoned, Krymov killed himself, ' +
             'and Kerensky, having destroyed the officer corps he had counted on, restructured his ' +
             'government into a Directorate and proclaimed Russia a republic on 14 September new style.',
-          consequence: 'September 1917 is the pivot of the whole Russian war. The moderate socialists who defended the government were discredited with it, the officer corps was purged a second time, the army’s political leadership was emptied out, and the Bolsheviks obtained legal existence, armed Red Guards and the credit of having stopped a coup. Six weeks later they took power almost without opposition.',
+          consequence: 'September 1917 is the pivot of the whole Russian war. The moderate socialists who defended ' +
+            'the government were discredited with it, the officer corps was purged a second time, the ' +
+            'army’s political leadership was emptied out, and the Bolsheviks obtained legal existence, ' +
+            'armed Red Guards and the credit of having stopped a coup. In November they took power almost ' +
+            'without opposition.',
         },
       university:
         {
           cause: 'The affair is a case study in how far a revolution can turn on a communication failure, and historians have argued it for a century: a coup, a “semantics coup”, a provocation by Kerensky, or a misunderstanding engineered by an agent, Lvov, who had his own reasons for the message he carried. Which version a writer accepts depends largely on how much weight they give to letters, telegrams and memoirs written after 1921 by the men who lost.',
           what: 'The documentary record is thin and hostile to itself. Kerensky and Kornilov gave contradictory accounts of what was agreed and when, both written in emigration; the telegram that supposedly ordered the march is disputed; there was no battle, so there is no battlefield record, no reliable casualty list and no unit history to appeal to. The dates are themselves a problem, since the same four days are “the end of August” in Russian old style and 10–13 September in the calendar used by every Western narrative.',
-          consequence: 'What scholarship has settled on is the effect rather than the intention: whatever Kornilov meant, the collapse of the march handed the Bolsheviks the argument that counter-revolution was coming and that only soviets and armed workers could stop it, and it discredited the officers as a class in the eyes of the soldier-councillors. Readings of October 1917 as a coup or as a mass movement both rest on what happened in these five weeks.',
+          consequence: 'What scholarship has settled on is the effect rather than the intention: whatever Kornilov meant, the collapse of the march handed the Bolsheviks the argument that counter-revolution was coming and that only soviets and armed workers could stop it, and it discredited the officers as a class in the eyes of the soldier-councillors. Readings of October 1917 as a coup or as a mass movement both rest on what happened in these weeks.',
         },
     },
   },
@@ -995,7 +999,12 @@ export const EVENTS_1917: WW1Event[] = [
             '24,500 soldiers under General Oskar von Hutier, with the 42nd Division in the first wave, ' +
             'against some 24,000 Russians, backed by ten dreadnoughts, a battlecruiser, fifty torpedo ' +
             'boats, six submarines and 102 aircraft.',
-          what: 'Mine-clearing and fire against the coastal batteries came first, and on 12 October the battleships engaged Russian ships in the gulf while the 42nd Division came ashore at Tagalaht bay. Saaremaa was cleared by 16 October; Hiiumaa, attempted twice before, was taken on 13 October; and the fighting in the Suur Strait, the Battle of Moon Sound, cost the Russians the pre-dreadnought Slava and the destroyer Grom and forced the fleet to withdraw. Russian units surrendered in thousands and Muhu was evacuated on 20 October.',
+          what: 'Mine-clearing and fire against the coastal batteries came first, and on 12 October the ' +
+            'battleships engaged Russian ships in the gulf while the 42nd Division came ashore at ' +
+            'Tagalaht bay. Saaremaa was cleared by 16 October; Hiiumaa, attempted twice before, was taken ' +
+            'on 17 October; and the fighting in the Suur Strait, the Battle of Moon Sound, cost the ' +
+            'Russians the pre-dreadnought Slava and the destroyer Grom and forced the fleet to withdraw. ' +
+            'Russian units surrendered in thousands and Muhu was evacuated on 20 October.',
           consequence: 'Albion cost Germany about 210 dead and gave it 20,000 prisoners, 141 guns and the Baltic islands, with the road to Petrograd open by sea and land. It fixed the terms of the Eastern Front before the talks started: the Bolshevik government negotiated from October and signed an armistice on 15 December, and in March 1918 gave up the Baltic provinces, Poland and Ukraine at Brest-Litovsk. Later naval writers took the operation as the first modern joint amphibious assault.',
         },
       university:
@@ -1098,9 +1107,9 @@ export const EVENTS_1917: WW1Event[] = [
           what: 'On 24 October 1917 German troops came over the mountains in fog with gas. In small parties ' +
             'they went round the strong points into the Italian rear. The lines broke; divisions ' +
             'surrendered or went home. The retreat lasted nearly four weeks, about 150 kilometres.',
-          consequence: 'Italy lost a third of its army and the government fell. British and French divisions arrived ' +
-            'from the west too late to fight. Armando Diaz replaced Cadorna, and the Piave army was ' +
-            'better fed and given leave, and better treated than the one that broke.',
+          consequence: 'Italy lost nearly half its army and the government fell. British and French divisions ' +
+            'arrived from the west too late to fight. Armando Diaz replaced Cadorna, and the Piave army ' +
+            'was better fed and given leave, and better treated than the one that broke.',
         },
       secondary:
         {
@@ -1127,7 +1136,12 @@ export const EVENTS_1917: WW1Event[] = [
       university:
         {
           cause: 'The argument is about why the Italian army broke, and it has gone on for ninety years. Cadorna’s own postwar defence blamed the soldiers and shifted the fault to “defeatism” in the rear; Italian left-wing historians from 1918 onwards blamed the officers, the treatment of conscripts from the south, and the failure to build defensive depth; later military historians put the weight on tactics, since Caporetto is where German infiltration tactics worked best of all.',
-          what: 'The numbers are the main source problem. Italian casualties are variously given at about 300,000, of which about 265,000 were prisoners or men who simply went home, and the reduction of effective strength from about 1,800,000 to about 1,000,000 is the figure most accounts use; both rest on records kept by a government that had an interest in the size of the disaster. Austrian and German records are more detailed about their own assault troops than about the prisoners taken, and the German contribution — six divisions, and how far the victory was German rather than Austro-Hungarian — is still contested between German, Austrian and Italian accounts.',
+          what: 'The numbers are the main source problem. The reduction of effective strength from about ' +
+            '1,800,000 to about 1,000,000 is the figure most accounts use, and it rests on records kept ' +
+            'by a government that had an interest in the size of the disaster. Austrian and German ' +
+            'records are more detailed about their own assault troops than about the prisoners taken, and ' +
+            'the German contribution — six divisions, and how far the victory was German rather than ' +
+            'Austro-Hungarian — is still contested between German, Austrian and Italian accounts.',
           consequence: 'Caporetto sits in two debates. In Italian historiography it is the “civil war” question in wartime, the moment when a liberal state and its peasant conscripts came apart, and the reason national memory of 1918 is divided. In the history of tactics it is a data point in the argument about whether the German 1918 methods were a real revolutionary system or a temporary advantage that the Allies absorbed and copied — the same argument made about Cambrai, fought three weeks later, where the defenders used the same methods in reverse.',
         },
     },

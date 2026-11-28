@@ -1,0 +1,154 @@
+{
+ "items": [
+  {
+   "id": "jutland_1916",
+   "field": "strength",
+   "claim": "History of War gives the losses as one German battlecruiser, one pre-dreadnought, four light cruisers and five destroyers, against three British battlecruisers, four armoured cruisers and eight destroyers.",
+   "value": "1",
+   "single_family": true,
+   "sources": [
+    {
+     "url": "https://www.historyofwar.org/articles/battles_jutland.html",
+     "publisher": "History of War (historyofwar.org)",
+     "quote": "The Germans lost one battlecruiser, one pre-Dreadnought, four light cruisers and five destroyers, while the British lost three battlecruisers, four armoured cruisers, and eight destroyers."
+    }
+   ]
+  },
+  {
+   "id": "jutland_1916",
+   "field": "strength",
+   "claim": "History of War gives the losses as one German battlecruiser, one pre-dreadnought, four light cruisers and five destroyers, against three British battlecruisers, four armoured cruisers and eight destroyers.",
+   "value": "3",
+   "single_family": true,
+   "sources": [
+    {
+     "url": "https://www.historyofwar.org/articles/battles_jutland.html",
+     "publisher": "History of War (historyofwar.org)",
+     "quote": "The Germans lost one battlecruiser, one pre-Dreadnought, four light cruisers and five destroyers, while the British lost three battlecruisers, four armoured cruisers, and eight destroyers."
+    }
+   ]
+  },
+  {
+   "id": "jutland_1916",
+   "field": "strength",
+   "claim": "History of War gives the losses as one German battlecruiser, one pre-dreadnought, four light cruisers and five destroyers, against three British battlecruisers, four armoured cruisers and eight destroyers.",
+   "value": "4",
+   "single_family": true,
+   "sources": [
+    {
+     "url": "https://www.historyofwar.org/articles/battles_jutland.html",
+     "publisher": "History of War (historyofwar.org)",
+     "quote": "The Germans lost one battlecruiser, one pre-Dreadnought, four light cruisers and five destroyers, while the British lost three battlecruisers, four armoured cruisers, and eight destroyers."
+    }
+   ]
+  },
+  {
+   "id": "jutland_1916",
+   "field": "strength",
+   "claim": "History of War gives the losses as one German battlecruiser, one pre-dreadnought, four light cruisers and five destroyers, against three British battlecruisers, four armoured cruisers and eight destroyers.",
+   "value": "5",
+   "single_family": true,
+   "sources": [
+    {
+     "url": "https://www.historyofwar.org/articles/battles_jutland.html",
+     "publisher": "History of War (historyofwar.org)",
+     "quote": "The Germans lost one battlecruiser, one pre-Dreadnought, four light cruisers and five destroyers, while the British lost three battlecruisers, four armoured cruisers, and eight destroyers."
+    }
+   ]
+  },
+  {
+   "id": "jutland_1916",
+   "field": "strength",
+   "claim": "History of War gives the losses as one German battlecruiser, one pre-dreadnought, four light cruisers and five destroyers, against three British battlecruisers, four armoured cruisers and eight destroyers.",
+   "value": "8",
+   "single_family": false,
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Jutland",
+     "publisher": "Wikipedia",
+     "quote": "Strength Total: 151 combat ships 28 dreadnought battleships 9 battlecruisers 8 armoured cruisers 26 li"
+    },
+    {
+     "url": "https://www.historyofwar.org/articles/battles_jutland.html",
+     "publisher": "History of War (historyofwar.org)",
+     "quote": "The Germans lost one battlecruiser, one pre-Dreadnought, four light cruisers and five destroyers, while the British lost three battlecruisers, four armoured cruisers, and eight destroyers."
+    }
+   ]
+  },
+  {
+   "id": "dardanelles_naval_1915",
+   "field": "summary",
+   "claim": "On 18 March eighteen capital ships attacked in three waves, failed to clear the mines under fire, lost Bouvet and abandoned the naval attempt.",
+   "value": "3",
+   "single_family": true,
+   "sources": [
+    {
+     "url": "https://www.historyofwar.org/articles/battles_gallipoli.html",
+     "publisher": "History of War (historyofwar.org)",
+     "quote": "The third and final naval assault was made on 18 March with eighteen capital ships (two in reserve) formed in three waves."
+    }
+   ]
+  },
+  {
+   "id": "dardanelles_naval_1915",
+   "field": "summary",
+   "claim": "On 18 March eighteen capital ships attacked in three waves, failed to clear the mines under fire, lost Bouvet and abandoned the naval attempt.",
+   "value": "18",
+   "single_family": true,
+   "sources": [
+    {
+     "url": "https://www.historyofwar.org/articles/battles_gallipoli.html",
+     "publisher": "History of War (historyofwar.org)",
+     "quote": "The third and final naval assault was made on 18 March with eighteen capital ships (two in reserve) formed in three waves."
+    }
+   ]
+  },
+  {
+   "id": "dardanelles_naval_1915",
+   "field": "strength",
+   "claim": "Eighteen capital ships (two in reserve) formed in three waves for the assault of 18 March 1915.",
+   "value": "2",
+   "single_family": false,
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Naval_operations_in_the_Dardanelles_campaign",
+     "publisher": "Wikipedia",
+     "quote": "depended on ten minefields, with 370 mines laid near the Narrows. On 19 February 1915, two destroyers were sent in to probe the straits and the first shot was fired from Kumkal"
+    },
+    {
+     "url": "https://www.historyofwar.org/articles/battles_gallipoli.html",
+     "publisher": "History of War (historyofwar.org)",
+     "quote": "The third and final naval assault was made on 18 March with eighteen capital ships (two in reserve) formed in three waves."
+    }
+   ]
+  },
+  {
+   "id": "dardanelles_naval_1915",
+   "field": "strength",
+   "claim": "Eighteen capital ships (two in reserve) formed in three waves for the assault of 18 March 1915.",
+   "value": "3",
+   "single_family": true,
+   "sources": [
+    {
+     "url": "https://www.historyofwar.org/articles/battles_gallipoli.html",
+     "publisher": "History of War (historyofwar.org)",
+     "quote": "The third and final naval assault was made on 18 March with eighteen capital ships (two in reserve) formed in three waves."
+    }
+   ]
+  },
+  {
+   "id": "dardanelles_naval_1915",
+   "field": "strength",
+   "claim": "Eighteen capital ships (two in reserve) formed in three waves for the assault of 18 March 1915.",
+   "value": "18",
+   "single_family": true,
+   "sources": [
+    {
+     "url": "https://www.historyofwar.org/articles/battles_gallipoli.html",
+     "publisher": "History of War (historyofwar.org)",
+     "quote": "The third and final naval assault was made on 18 March with eighteen capital ships (two in reserve) formed in three waves."
+    }
+   ]
+  }
+ ]
+}
