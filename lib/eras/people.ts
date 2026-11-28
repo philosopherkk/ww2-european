@@ -510,7 +510,55 @@ const edwardIII: EraFigure = {
   ],
 };
 
-export const LATE_MEDIEVAL_FIGURES: EraFigure[] = [robertTheBruce, edwardIII, henryV];
+const henryTudor: EraFigure = {
+  id: 'henry_tudor',
+  name: 'Henry Tudor',
+  role: 'commander',
+  country: 'England',
+  allegiance: 'England',
+  note: 'One account also calls him Earl of Richmond.',
+  bio: {
+    primary:
+      'On 22 August 1485 Henry Tudor defeated King Richard III at Bosworth Field in the Wars of the Roses, and Richard died.',
+    secondary:
+      'Henry Tudor met King Richard III in the Wars of the Roses. On 22 August 1485 Tudor’s army defeated Richard at Bosworth Field. Richard died, and the Tudor dynasty was established.',
+    university:
+      'Henry Tudor led the army that fought King Richard III at Bosworth Field in the Wars of the Roses. On 22 August 1485 he defeated Richard, who died in the battle. That victory established the Tudor dynasty.',
+  },
+  sources: [
+    { url: 'https://www.britishbattles.com/wars-of-the-roses/battle-of-bosworth-field/', publisher: 'British Battles' },
+    { url: 'https://en.wikipedia.org/wiki/Battle_of_Bosworth_Field', publisher: 'Wikipedia' },
+  ],
+};
+
+const richardIII: EraFigure = {
+  id: 'richard_iii',
+  name: 'Richard III',
+  role: 'ruler',
+  country: 'England',
+  allegiance: 'England',
+  note: 'One account calls him the last English monarch to fall in battle.',
+  bio: {
+    primary:
+      'On 22 August 1485 King Richard III was defeated by Henry Tudor at Bosworth Field in the Wars of the Roses, and he died.',
+    secondary:
+      'King Richard III fought Henry Tudor at Bosworth Field in the Wars of the Roses. On 22 August 1485 Richard’s army was defeated, and Richard died.',
+    university:
+      'Richard III was the English king who fought Henry Tudor at Bosworth Field. On 22 August 1485, in the Wars of the Roses, Tudor’s army defeated him. Richard died in the battle.',
+  },
+  sources: [
+    { url: 'https://www.britishbattles.com/wars-of-the-roses/battle-of-bosworth-field/', publisher: 'British Battles' },
+    { url: 'https://en.wikipedia.org/wiki/Battle_of_Bosworth_Field', publisher: 'Wikipedia' },
+  ],
+};
+
+export const LATE_MEDIEVAL_FIGURES: EraFigure[] = [
+  robertTheBruce,
+  edwardIII,
+  henryV,
+  henryTudor,
+  richardIII,
+];
 
 export const EARLY_MODERN_FIGURES: EraFigure[] = [
   philipII,

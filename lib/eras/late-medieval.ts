@@ -109,7 +109,7 @@ const bosworth: EraEvent = {
   kind: 'battle',
   fronts: ['british_isles'],
   countries: ['England'],
-  figures: [],
+  figures: ['henry_tudor', 'richard_iii'],
   levels: {
     primary: {
       cause: 'Henry Tudor met King Richard III in battle during the Wars of the Roses.',
