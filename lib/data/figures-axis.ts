@@ -1,4 +1,5 @@
 export interface FigureBio {
+  story?: string;
   primary: string;
   secondary: string;
   university: string;

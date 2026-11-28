@@ -49,6 +49,8 @@ export interface WW2Event {
   fronts: Front[];
   countries: string[];
   levels: Record<Level, LevelText>;
+  /** Shorter retelling. Absent until a sourced story is compiled. */
+  story?: LevelText;
   figures?: string[];
   /** Figures/scholarly note, most useful at university level. */
   note?: string;

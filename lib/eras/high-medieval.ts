@@ -1,4 +1,33 @@
+import {
+  ainJalut1260,
+  alfonsoViii,
+  alpArslan,
+  arsuf1191,
+  baybars,
+  evesham1265,
+  frederickBarbarossa,
+  guyOfLusignan,
+  hattin1187,
+  henryIii,
+  hulagu,
+  kitbuqa,
+  kublaiKhan,
+  lasNavas1212,
+  legnano1176,
+  lewes1264,
+  manzikert1071,
+  ottoIv,
+  philipIiAugustus,
+  princeEdward,
+  qutuz,
+  richardI,
+  romanusIv,
+  saladin,
+  simonDeMontfort,
+  yamen1279,
+} from '@/lib/eras/fill-high-medieval';
 import { HIGH_MEDIEVAL_FIGURES } from '@/lib/eras/people';
+import { bouvines1214, johnOfEngland } from '@/lib/eras/sourced-batch-2';
 import type { EraEpisode, EraEvent, EraPeriod } from '@/lib/eras/types';
 
 const stamford: EraEvent = {
@@ -66,6 +95,11 @@ const hastings: EraEvent = {
   ],
 };
 
+const bouvines: EraEvent = {
+  ...bouvines1214,
+  figures: [...bouvines1214.figures, 'philip_ii_augustus', 'otto_iv'],
+};
+
 const episode: EraEpisode = {
   id: 'england-1066',
   title: 'Stamford Bridge and Hastings',
@@ -79,5 +113,97 @@ const episode: EraEpisode = {
 export const HIGH_MEDIEVAL: EraPeriod = {
   id: 'high-medieval',
   label: 'High medieval',
-  episodes: [episode],
+  episodes: [
+    episode,
+    {
+      id: 'manzikert-1071',
+      title: 'Battle of Manzikert',
+      monthLabel: 'August 1071',
+      events: [manzikert1071],
+      lines: [],
+      figures: [alpArslan, romanusIv],
+      links: [],
+    },
+    {
+      id: 'legnano-1176',
+      title: 'Battle of Legnano',
+      monthLabel: 'May 1176',
+      events: [legnano1176],
+      lines: [],
+      figures: [frederickBarbarossa],
+      links: [],
+    },
+    {
+      id: 'hattin-1187',
+      title: 'Battle of Hattin',
+      monthLabel: 'July 1187',
+      events: [hattin1187],
+      lines: [],
+      figures: [saladin, guyOfLusignan],
+      links: [],
+    },
+    {
+      id: 'arsuf-1191',
+      title: 'Battle of Arsuf',
+      monthLabel: 'September 1191',
+      events: [arsuf1191],
+      lines: [],
+      figures: [richardI],
+      links: [],
+    },
+    {
+      id: 'las-navas-1212',
+      title: 'Battle of Las Navas de Tolosa',
+      monthLabel: 'July 1212',
+      events: [lasNavas1212],
+      lines: [],
+      figures: [alfonsoViii],
+      links: [],
+    },
+    {
+      id: 'bouvines-1214',
+      title: 'Battle of Bouvines',
+      monthLabel: '1214',
+      events: [bouvines],
+      lines: [],
+      figures: [johnOfEngland, philipIiAugustus, ottoIv],
+      links: [],
+    },
+    {
+      id: 'ain-jalut-1260',
+      title: 'Battle of Ain Jalut',
+      monthLabel: 'September 1260',
+      events: [ainJalut1260],
+      lines: [],
+      figures: [baybars, qutuz, kitbuqa, hulagu],
+      links: [],
+    },
+    {
+      id: 'lewes-1264',
+      title: 'Battle of Lewes',
+      monthLabel: 'May 1264',
+      events: [lewes1264],
+      lines: [],
+      figures: [simonDeMontfort, henryIii],
+      links: [],
+    },
+    {
+      id: 'evesham-1265',
+      title: 'Battle of Evesham',
+      monthLabel: 'August 1265',
+      events: [evesham1265],
+      lines: [],
+      figures: [princeEdward],
+      links: [],
+    },
+    {
+      id: 'yamen-1279',
+      title: 'Battle of Yamen',
+      monthLabel: 'March 1279',
+      events: [yamen1279],
+      lines: [],
+      figures: [kublaiKhan],
+      links: [],
+    },
+  ],
 };

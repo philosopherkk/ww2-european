@@ -1,4 +1,41 @@
+import {
+  arabSiege717,
+  athelstan,
+  battleOfAndernach,
+  battleOfBachDang,
+  battleOfBrunanburh,
+  battleOfFontenoy,
+  battleOfGuadalete,
+  battleOfLechfeld,
+  battleOfTalas,
+  battleOfYarmouk,
+  charlesTheBald,
+  gaoXianzhi,
+  constantineIi,
+  edmund,
+  heraclius,
+  khalidIbnAlWalid,
+  leoIii,
+  lothairI,
+  louisTheGerman,
+  louisTheYounger,
+  ngoQuyen,
+  olafOfDublin,
+  ottoI,
+  owainOfStrathclyde,
+  roderic,
+  tariqIbnZiyad,
+  ziyadIbnSalih,
+} from '@/lib/eras/fill-early-medieval';
 import { EARLY_MEDIEVAL_FIGURES } from '@/lib/eras/people';
+import {
+  alfredOfWessex,
+  charlemagne,
+  charlemagneEmperor800,
+  edington878,
+  guthrum,
+  lindisfarne793,
+} from '@/lib/eras/sourced-batch';
 import type { EraEpisode, EraEvent, EraPeriod } from '@/lib/eras/types';
 
 const tours: EraEvent = {
@@ -35,16 +72,46 @@ const tours: EraEvent = {
 
 const episode: EraEpisode = {
   id: 'tours-732',
-  title: 'Battle of Tours',
-  monthLabel: 'October 732',
-  events: [tours],
+  title: 'Tours to Edington',
+  monthLabel: 'October 732 – 878',
+  events: [tours, lindisfarne793, charlemagneEmperor800, edington878],
   lines: [],
-  figures: EARLY_MEDIEVAL_FIGURES,
+  figures: [...EARLY_MEDIEVAL_FIGURES, alfredOfWessex, guthrum, charlemagne],
+  links: [],
+};
+
+const wider: EraEpisode = {
+  id: 'constantinople-talas-lechfeld',
+  title: 'Constantinople, Talas, and Lechfeld',
+  monthLabel: '717 – August 955',
+  events: [arabSiege717, battleOfTalas, battleOfLechfeld],
+  lines: [],
+  figures: [leoIii, gaoXianzhi, ziyadIbnSalih, ottoI],
+  links: [],
+};
+
+const roundTwo: EraEpisode = {
+  id: 'yarmouk-brunanburh-bach-dang',
+  title: 'Yarmouk, Brunanburh, and Bạch Đằng',
+  monthLabel: '15 August 636 – 938',
+  events: [battleOfYarmouk, battleOfBrunanburh, battleOfBachDang],
+  lines: [],
+  figures: [khalidIbnAlWalid, heraclius, athelstan, edmund, constantineIi, owainOfStrathclyde, olafOfDublin, ngoQuyen],
+  links: [],
+};
+
+const roundThree: EraEpisode = {
+  id: 'guadalete-fontenoy-andernach',
+  title: 'Guadalete, Fontenoy, and Andernach',
+  monthLabel: 'July 711 – 8 October 876',
+  events: [battleOfGuadalete, battleOfFontenoy, battleOfAndernach],
+  lines: [],
+  figures: [tariqIbnZiyad, roderic, lothairI, charlesTheBald, louisTheGerman, louisTheYounger],
   links: [],
 };
 
 export const EARLY_MEDIEVAL: EraPeriod = {
   id: 'early-medieval',
   label: 'Early medieval',
-  episodes: [episode],
+  episodes: [episode, wider, roundTwo, roundThree],
 };

@@ -18,10 +18,16 @@ import {
   Users,
   type LucideIcon,
 } from 'lucide-react';
-import EraWarSwitch from '@/components/EraWarSwitch';
+import ErasMenu from '@/components/ErasMenu';
 import EventCard from '@/components/EventCard';
+import StorySteps from '@/components/StorySteps';
 import TurningPointPanel from '@/components/TurningPointPanel';
-import type { Level } from '@/lib/data';
+import {
+  isReadingLevel,
+  readStoredReadingLevel,
+  writeStoredReadingLevel,
+  type ReadingLevel,
+} from '@/lib/reading-level';
 import { CAMPAIGN_LINES, EVENT_BY_ID, EVENTS } from '@/lib/data';
 import { LINKS_BY_EVENT, LINKS_BY_LINE } from '@/lib/data/campaign-events';
 import { turningPointFor } from '@/lib/data/turning-points';
@@ -34,7 +40,6 @@ import {
   MONTHS,
   monthKeyOf,
   SIDE_META,
-  WW1_MONTH_KEYS,
 } from '@/lib/site';
 
 /* Non-map tabs pull in ~335 KB of bibliography, statistics and biography data, so load them on demand. */
@@ -69,8 +74,6 @@ const MapBrowser = dynamic(() => import('@/components/MapBrowser'), {
 
 const START = MONTHS.findIndex((m) => m.key === '1939-09');
 
-const WW1_BASE = process.env.NEXT_PUBLIC_WW1_URL ?? 'https://ww1-european.vercel.app';
-
 type Tab = 'map' | 'people' | 'numbers' | 'sources';
 
 const TABS: { id: Tab; label: string; short: string; icon: LucideIcon }[] = [
@@ -98,7 +101,11 @@ type Scope = (typeof SCOPES)[number]['id'];
 
 export default function Home() {
   const [monthIdx, setMonthIdx] = useState(START === -1 ? 0 : START);
-  const [level, setLevel] = useState<Level>('secondary');
+  const [level, setLevel] = useState<ReadingLevel>('secondary');
+  const chooseLevel = useCallback((next: ReadingLevel) => {
+    setLevel(next);
+    writeStoredReadingLevel(next);
+  }, []);
   const [tab, setTab] = useState<Tab>('map');
   const [scope, setScope] = useState<Scope>('month');
   const [showCampaigns, setShowCampaigns] = useState(true);
@@ -129,8 +136,6 @@ export default function Home() {
   const monthKey = month.key;
   const turningPoint = turningPointFor(monthKey);
   const monthYear = Number(monthKey.slice(0, 4));
-  const ww1Idx = Math.round((monthIdx / Math.max(1, MONTHS.length - 1)) * (WW1_MONTH_KEYS.length - 1));
-  const ww1Href = `${WW1_BASE}/?m=${WW1_MONTH_KEYS[ww1Idx]}`;
 
   const go = useCallback(
     (delta: number) => {
@@ -162,7 +167,13 @@ export default function Home() {
       const m = q.get('month');
       if (m && m in MONTH_INDEX) setMonthIdx(MONTH_INDEX[m]);
       const l = q.get('level');
-      if (l === 'primary' || l === 'secondary' || l === 'university') setLevel(l);
+      if (isReadingLevel(l)) {
+        setLevel(l);
+        writeStoredReadingLevel(l);
+      } else {
+        const stored = readStoredReadingLevel();
+        if (stored) setLevel(stored);
+      }
       const t = q.get('tab');
       if (t === 'map' || t === 'people' || t === 'numbers' || t === 'sources') setTab(t);
       const ev = q.get('event');
@@ -286,6 +297,34 @@ export default function Home() {
     return out;
   }, [visibleEvents]);
 
+  const storyFocus = useMemo(() => {
+    if (level !== 'story' || !openEvent) return null;
+    const link = (LINKS_BY_EVENT[openEvent] ?? [])[0];
+    if (!link) return null;
+    const line = CAMPAIGN_LINES.find((item) => item.id === link.line);
+    const point = line?.path[link.at];
+    if (!point || !Number.isFinite(point[0]) || !Number.isFinite(point[1])) return null;
+    return [point[0], point[1]] as [number, number];
+  }, [level, openEvent]);
+
+  const stepStory = useCallback(
+    (delta: number) => {
+      const ids = visibleEvents.map((event) => event.id);
+      if (ids.length === 0) return;
+      const current = openEvent && ids.includes(openEvent) ? ids.indexOf(openEvent) : -1;
+      const next = Math.min(ids.length - 1, Math.max(0, current + delta));
+      const id = ids[next];
+      if (!id) return;
+      setOpenEvent(id);
+      setHoverEvent(id);
+      window.requestAnimationFrame(() => {
+        document.getElementById(`event-${id}`)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      });
+    },
+    [visibleEvents, openEvent]
+  );
+  const storyIndex = openEvent ? visibleEvents.findIndex((event) => event.id === openEvent) : -1;
+
   // The month bar is taller where the year marks show, so the pinned map
   // measures it instead of guessing.
   useEffect(() => {
@@ -319,12 +358,7 @@ export default function Home() {
                 {MONTHS[0].label} – {MONTHS[LAST].label}
                 <span className="hidden sm:inline"> · month by month</span>
               </p>
-              <EraWarSwitch
-                current="/"
-                ww1Href={ww1Href}
-                ww1Title={`Open the First World War site near ${WW1_MONTH_KEYS[ww1Idx]} — the same point in that war`}
-                className="flex shrink-0 xl:hidden"
-              />
+              <ErasMenu current="/" className="flex shrink-0 xl:hidden" />
             </div>
           </div>
 
@@ -340,7 +374,7 @@ export default function Home() {
                 key={l.id}
                 type="button"
                 title={l.hint}
-                onClick={() => setLevel(l.id)}
+                onClick={() => chooseLevel(l.id)}
                 aria-pressed={level === l.id}
                 className={`flex-1 px-3 py-2 text-sm font-medium xl:flex-none xl:px-3.5 xl:py-1.5 ${
                   level === l.id
@@ -353,12 +387,7 @@ export default function Home() {
             ))}
           </div>
 
-          <EraWarSwitch
-            current="/"
-            ww1Href={ww1Href}
-            ww1Title={`Open the First World War site near ${WW1_MONTH_KEYS[ww1Idx]} — the same point in that war`}
-            className="hidden xl:flex"
-          />
+          <ErasMenu current="/" className="hidden shrink-0 xl:flex" />
         </div>
       </header>
 
@@ -512,6 +541,7 @@ export default function Home() {
                   highlightLineIds={highlightLineIds}
                   onLineHover={setHoverLine}
                   hoverEventId={hoverEvent}
+                  focusPoint={level === 'story' ? storyFocus : null}
                   onOpenEvent={openEventFrom}
                 />
               </div>
@@ -646,6 +676,14 @@ export default function Home() {
               )}
 
               <div className="space-y-2.5 pb-2">
+                {level === 'story' && (
+                  <StorySteps
+                    index={storyIndex}
+                    count={visibleEvents.length}
+                    onBack={() => stepStory(-1)}
+                    onNext={() => stepStory(1)}
+                  />
+                )}
                 {visibleEvents.length === 0 && (
                   <p className="rounded-xl border border-dashed border-stone-300 bg-white p-4 text-sm leading-relaxed text-stone-600">
                     Nothing dated to {month.label} in this database. Use the year or whole-war view,
@@ -673,6 +711,7 @@ export default function Home() {
                         <EventCard
                           event={e}
                           level={level}
+                          onLevelChange={chooseLevel}
                           linked={linkedEventIds.has(e.id)}
                           defaultOpen={openEvent === e.id}
                           onOpenFigure={(id) => {
@@ -692,6 +731,7 @@ export default function Home() {
         {tab === 'people' && (
           <PeoplePanel
             level={level}
+            onLevelChange={chooseLevel}
             focusId={focusFigure}
             onFocus={setFocusFigure}
             onOpenEvent={openEventFrom}
@@ -722,7 +762,7 @@ export default function Home() {
         </div>
       </footer>
 
-      <TabButtons tab={tab} onChange={setTab} variant="bottom" level={level} onLevel={setLevel} />
+      <TabButtons tab={tab} onChange={setTab} variant="bottom" level={level} onLevel={chooseLevel} />
     </div>
   );
 }
@@ -737,8 +777,8 @@ function TabButtons({
   tab: Tab;
   onChange: (t: Tab) => void;
   variant: 'header' | 'bottom';
-  level?: Level;
-  onLevel?: (l: Level) => void;
+  level?: ReadingLevel;
+  onLevel?: (l: ReadingLevel) => void;
 }) {
   if (variant === 'header') {
     return (
@@ -792,7 +832,7 @@ function TabButtons({
 
 /* The reading level lives in the bottom bar on phones so it costs no space at
  * the top; the three choices open in a small panel above the bar. */
-function LevelPicker({ level, onLevel }: { level: Level; onLevel: (l: Level) => void }) {
+function LevelPicker({ level, onLevel }: { level: ReadingLevel; onLevel: (l: ReadingLevel) => void }) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -810,7 +850,7 @@ function LevelPicker({ level, onLevel }: { level: Level; onLevel: (l: Level) => 
       document.removeEventListener('keydown', onKey);
     };
   }, [open]);
-  const current = LEVELS.find((l) => l.id === level) ?? LEVELS[1];
+  const current = LEVELS.find((l) => l.id === level) ?? LEVELS.find((l) => l.id === 'secondary') ?? LEVELS[0];
   return (
     <div ref={ref} className="relative">
       <button

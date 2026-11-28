@@ -73,11 +73,24 @@ const MENU_ORDER: EraPeriodId[] = [
   'since-1945',
 ];
 
+/** Beside the scholarly label. Not a replacement, and not used for the two wars. */
+const PLAIN_NAME: Record<EraPeriodId, string> = {
+  antiquity: 'Ancient World',
+  'early-medieval': 'Early Kingdoms',
+  'high-medieval': 'Knights and Castles',
+  'late-medieval': 'Late Middle Ages',
+  'early-modern': 'Ships and Empires',
+  'long-nineteenth': 'Revolutions and Industry',
+  'since-1945': 'Modern World',
+};
+
 export interface EraMenuLink {
   id: string;
   label: string;
   href: string;
   detail: string;
+  /** Everyday name beside the period. The two war maps have none. */
+  plain?: string;
 }
 
 function periodDetail(id: EraPeriodId): string {
@@ -110,6 +123,7 @@ export function eraMenuLinks(ww1Base: string): EraMenuLink[] {
       label: bound.label,
       href: `/era/${id}`,
       detail: periodDetail(id),
+      plain: PLAIN_NAME[id],
     });
   }
   return links;

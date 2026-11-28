@@ -38,6 +38,30 @@ export function eraKindLabel(kind: EraKind): string {
   }
 }
 
+/** Same marks the war maps use where the kind already exists there. */
+export function eraKindEmoji(kind: EraKind): string {
+  switch (kind) {
+    case 'battle':
+      return '⚔️';
+    case 'siege':
+      return '🛡️';
+    case 'treaty':
+      return '📜';
+    case 'rising':
+      return '✊';
+    case 'succession':
+      return '👑';
+    case 'invasion':
+      return '🪖';
+    case 'diplomacy':
+      return '🤝';
+    default: {
+      const exhaustive: never = kind;
+      return exhaustive;
+    }
+  }
+}
+
 export function eraLongDate(iso: string, precision: EraPrecision): string {
   if (precision === 'year') {
     const year = Number(iso.slice(0, 4));

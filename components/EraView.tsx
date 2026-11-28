@@ -3,10 +3,23 @@
 import dynamic from 'next/dynamic';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { ChevronDown, ChevronLeft, ChevronRight, Globe2, MapPin, Pause, Play, Users } from 'lucide-react';
-import EraWarSwitch from '@/components/EraWarSwitch';
+import ErasMenu from '@/components/ErasMenu';
+import LevelUpButton from '@/components/LevelUpButton';
+import ListenButton from '@/components/ListenButton';
+import StorySteps from '@/components/StorySteps';
 import type { EraMapExtent } from '@/components/EraMap';
-import { eraKindLabel, eraLongDate } from '@/lib/eras/format';
-import type { EraEvent, EraFigure, EraLevel, EraPeriod } from '@/lib/eras/types';
+import { eraKindEmoji, eraKindLabel, eraLongDate } from '@/lib/eras/format';
+import type { EraEvent, EraFigure, EraLevelText, EraPeriod } from '@/lib/eras/types';
+import {
+  bioForLevel,
+  isReadingLevel,
+  LEVELS,
+  readStoredReadingLevel,
+  speechText,
+  textForLevel,
+  writeStoredReadingLevel,
+  type ReadingLevel,
+} from '@/lib/reading-level';
 
 const EraMap = dynamic(() => import('@/components/EraMap'), {
   ssr: false,
@@ -17,13 +30,12 @@ const EraMap = dynamic(() => import('@/components/EraMap'), {
   ),
 });
 
-const LEVELS: { id: EraLevel; short: string }[] = [
-  { id: 'primary', short: 'Primary' },
-  { id: 'secondary', short: 'Secondary' },
-  { id: 'university', short: 'University' },
-];
-
-const HEADINGS: Record<EraLevel, { cause: string; what: string; consequence: string }> = {
+const HEADINGS: Record<ReadingLevel, { cause: string; what: string; consequence: string }> = {
+  story: {
+    cause: 'Why',
+    what: 'What happened',
+    consequence: 'What happened next',
+  },
   primary: {
     cause: 'Why it happened',
     what: 'What happened',
@@ -58,7 +70,12 @@ export default function EraView({ period }: { period: EraPeriod }) {
   const hasAmericas = events.some((event) => event.fronts.includes('americas'));
 
   const [yearIdx, setYearIdx] = useState(0);
-  const [level, setLevel] = useState<EraLevel>('secondary');
+  const [level, setLevel] = useState<ReadingLevel>('secondary');
+  const [levelReady, setLevelReady] = useState(false);
+  const chooseLevel = useCallback((next: ReadingLevel) => {
+    setLevel(next);
+    writeStoredReadingLevel(next);
+  }, []);
   const [openIds, setOpenIds] = useState<string[]>([]);
   const [activeId, setActiveId] = useState<string | null>(null);
   const [playing, setPlaying] = useState(false);
@@ -105,6 +122,29 @@ export default function EraView({ period }: { period: EraPeriod }) {
     },
     [years.length]
   );
+
+  useEffect(() => {
+    const id = window.setTimeout(() => {
+      const query = new URLSearchParams(window.location.search);
+      const storedLevel = query.get('level');
+      if (isReadingLevel(storedLevel)) {
+        setLevel(storedLevel);
+        writeStoredReadingLevel(storedLevel);
+      } else {
+        const stored = readStoredReadingLevel();
+        if (stored) setLevel(stored);
+      }
+      setLevelReady(true);
+    }, 0);
+    return () => window.clearTimeout(id);
+  }, []);
+
+  useEffect(() => {
+    if (!levelReady) return;
+    const url = new URL(window.location.href);
+    url.searchParams.set('level', level);
+    window.history.replaceState(null, '', url.toString());
+  }, [level, levelReady]);
 
   useEffect(() => {
     if (!playing) return;
@@ -156,6 +196,25 @@ export default function EraView({ period }: { period: EraPeriod }) {
     setPlaying(false);
   }
 
+  const stepStory = useCallback(
+    (delta: number) => {
+      const ids = visible.map((event) => event.id);
+      if (ids.length === 0) return;
+      const current = activeId && ids.includes(activeId) ? ids.indexOf(activeId) : -1;
+      const next = Math.min(ids.length - 1, Math.max(0, current + delta));
+      const id = ids[next];
+      if (!id) return;
+      setExtent('auto');
+      setActiveId(id);
+      setOpenIds((open) => (open.includes(id) ? open : [...open, id]));
+      window.setTimeout(() => {
+        document.getElementById(`era-event-${id}`)?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }, 0);
+    },
+    [visible, activeId]
+  );
+  const storyIndex = activeId ? visible.findIndex((event) => event.id === activeId) : -1;
+
   function openEvent(id: string) {
     const event = events.find((item) => item.id === id);
     if (event) {
@@ -189,7 +248,7 @@ export default function EraView({ period }: { period: EraPeriod }) {
                 <span className="text-stone-500"> · </span>
                 {period.label}
               </p>
-              <EraWarSwitch current={`/era/${period.id}`} className="flex shrink-0 xl:hidden" />
+              <ErasMenu current={`/era/${period.id}`} className="flex shrink-0 xl:hidden" />
             </div>
           </div>
           {years.length > 0 && (
@@ -202,7 +261,7 @@ export default function EraView({ period }: { period: EraPeriod }) {
                 <button
                   key={item.id}
                   type="button"
-                  onClick={() => setLevel(item.id)}
+                  onClick={() => chooseLevel(item.id)}
                   aria-pressed={level === item.id}
                   className={`px-2 py-1.5 text-sm font-medium sm:px-3.5 ${
                     level === item.id
@@ -215,7 +274,7 @@ export default function EraView({ period }: { period: EraPeriod }) {
               ))}
             </div>
           )}
-          <EraWarSwitch current={`/era/${period.id}`} className="hidden xl:flex" />
+          <ErasMenu current={`/era/${period.id}`} className="hidden shrink-0 xl:flex" />
         </div>
       </header>
 
@@ -324,39 +383,13 @@ export default function EraView({ period }: { period: EraPeriod }) {
                 extent={hasAmericas ? extent : 'auto'}
                 onPickEvent={openEvent}
               />
-              {hasAmericas && (
-                <div
-                  role="group"
-                  aria-label="Map extent"
-                  className="absolute bottom-7 right-2 z-[450] flex max-w-[calc(100%-6rem)] overflow-hidden rounded-full border border-stone-300 bg-white/95 text-[11px] font-semibold text-stone-800 shadow-md backdrop-blur sm:bottom-8 sm:text-xs"
-                >
-                  <button
-                    type="button"
-                    onClick={() => setExtent('america')}
-                    aria-pressed={extent === 'america'}
-                    aria-label="America"
-                    className={`inline-flex min-h-11 items-center gap-1 px-2 sm:h-9 sm:min-h-9 sm:px-2.5 ${
-                      extent === 'america' ? 'bg-stone-800 text-white' : 'hover:bg-stone-100'
-                    }`}
-                  >
-                    <span className="sm:hidden">AM</span>
-                    <span className="hidden sm:inline">America</span>
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setExtent('world')}
-                    aria-pressed={extent === 'world'}
-                    aria-label="World"
-                    className={`inline-flex min-h-11 items-center gap-1 px-2 sm:h-9 sm:min-h-9 sm:px-2.5 ${
-                      extent === 'world' ? 'bg-stone-800 text-white' : 'hover:bg-stone-100'
-                    }`}
-                  >
-                    <Globe2 size={13} aria-hidden />
-                    <span className="sm:hidden">WLD</span>
-                    <span className="hidden sm:inline">World</span>
-                  </button>
-                </div>
-              )}
+              <ContinentLabels
+                extent={extent}
+                hasAmericas={hasAmericas}
+                onEurope={() => setExtent('auto')}
+                onAmericas={() => setExtent('america')}
+                onWorld={() => setExtent('world')}
+              />
             </div>
             {marchLines.length === 0 ? (
               <p className="mt-2 text-sm leading-relaxed text-stone-700">No march is drawn.</p>
@@ -376,11 +409,20 @@ export default function EraView({ period }: { period: EraPeriod }) {
           </section>
 
           <div className="flex flex-col gap-3">
+            {level === 'story' && (
+              <StorySteps
+                index={storyIndex}
+                count={visible.length}
+                onBack={() => stepStory(-1)}
+                onNext={() => stepStory(1)}
+              />
+            )}
             {visible.map((event) => (
               <EventArticle
                 key={event.id}
                 event={event}
                 level={level}
+                onLevelChange={chooseLevel}
                 open={openIds.includes(event.id)}
                 active={activeId === event.id}
                 figuresById={figuresById}
@@ -417,31 +459,56 @@ export default function EraView({ period }: { period: EraPeriod }) {
   );
 }
 
+function ownStory(story: EraLevelText | undefined): story is EraLevelText {
+  return Boolean(story && story.cause.trim() && story.what.trim() && story.consequence.trim());
+}
+
+function eraTier(event: EraEvent, id: ReadingLevel): EraLevelText | null {
+  switch (id) {
+    case 'story':
+      return ownStory(event.story) ? event.story : null;
+    case 'primary':
+    case 'secondary':
+    case 'university':
+      return event.levels[id];
+    default: {
+      const exhaustive: never = id;
+      return exhaustive;
+    }
+  }
+}
+
 function EventArticle({
   event,
   level,
+  onLevelChange,
   open,
   active,
   figuresById,
   onToggle,
 }: {
   event: EraEvent;
-  level: EraLevel;
+  level: ReadingLevel;
+  onLevelChange: (level: ReadingLevel) => void;
   open: boolean;
   active: boolean;
   figuresById: Map<string, EraFigure>;
   onToggle: () => void;
 }) {
-  const text = event.levels[level];
-  const headings = HEADINGS[level];
+  const storyShell = level === 'story';
+  const shown: ReadingLevel = storyShell && !ownStory(event.story) ? 'primary' : level;
+  const text = textForLevel(event.levels, event.story, level);
+  const headings = HEADINGS[shown];
   const people = event.figures.flatMap((id) => {
     const figure = figuresById.get(id);
     return figure ? [figure] : [];
   });
+  const compare = LEVELS.filter((item) => item.id !== 'story' || ownStory(event.story));
 
   return (
     <article
       id={`era-event-${event.id}`}
+      data-reading-level={level}
       className={`overflow-hidden rounded-xl border border-l-4 bg-white shadow-sm ${
         active ? 'border-stone-700 ring-2 ring-amber-400' : 'border-stone-300'
       }`}
@@ -454,10 +521,13 @@ function EventArticle({
         className="flex w-full items-start gap-3 px-3.5 py-3 text-left hover:bg-stone-50"
       >
         <span className="min-w-0 flex-1">
-          <span className="text-xs font-medium text-stone-600">
+          <span className="flex items-center gap-1.5 text-xs font-medium text-stone-600">
+            <span aria-hidden className={storyShell ? 'text-3xl leading-none' : 'text-sm leading-none'}>
+              {eraKindEmoji(event.kind)}
+            </span>
             {eraLongDate(event.date, event.precision)} · {eraKindLabel(event.kind)}
           </span>
-          <span className="mt-0.5 block font-serif text-lg font-semibold leading-snug text-stone-900 sm:text-xl">
+          <span className={`mt-0.5 block font-serif font-semibold leading-snug text-stone-900 ${storyShell ? 'text-2xl' : 'text-lg sm:text-xl'}`}>
             {event.title}
           </span>
           {!open && <span className="mt-1 line-clamp-2 text-sm leading-snug text-stone-600">{text.what}</span>}
@@ -471,9 +541,10 @@ function EventArticle({
       </button>
       {open && (
         <div className="space-y-4 border-t border-stone-200 px-3.5 py-3.5">
-          <Section label={headings.cause} text={text.cause} />
-          <Section label={headings.what} text={text.what} />
-          <Section label={headings.consequence} text={text.consequence} />
+          {storyShell && <ListenButton text={speechText(text)} />}
+          <Section label={headings.cause} text={text.cause} story={storyShell} />
+          <Section label={headings.what} text={text.what} story={storyShell} />
+          <Section label={headings.consequence} text={text.consequence} story={storyShell} />
           {event.note && (
             <p className="rounded-lg border border-stone-200 bg-stone-50 px-3 py-2.5 text-sm leading-relaxed text-stone-700">
               <span className="font-semibold text-stone-700">For the record: </span>
@@ -501,6 +572,25 @@ function EventArticle({
               ))}
             </div>
           )}
+          <LevelUpButton level={level} onChange={onLevelChange} large={storyShell} />
+          <details className="rounded-lg border border-stone-200 bg-stone-50 px-3 py-2 text-sm text-stone-700">
+            <summary className="cursor-pointer font-medium text-stone-800">For a parent: compare reading levels</summary>
+            <div className="mt-3 space-y-3">
+              {compare.map((item) => {
+                const block = eraTier(event, item.id);
+                if (!block) return null;
+                const labels = HEADINGS[item.id];
+                return (
+                  <div key={item.id} className="space-y-2">
+                    <p className="text-xs font-bold uppercase tracking-wider text-stone-600">{item.label}</p>
+                    <Section label={labels.cause} text={block.cause} story={false} />
+                    <Section label={labels.what} text={block.what} story={false} />
+                    <Section label={labels.consequence} text={block.consequence} story={false} />
+                  </div>
+                );
+              })}
+            </div>
+          </details>
           <SourceList sources={event.sources} />
         </div>
       )}
@@ -508,14 +598,24 @@ function EventArticle({
   );
 }
 
-function FigureArticle({ figure, level }: { figure: EraFigure; level: EraLevel }) {
+function FigureArticle({ figure, level }: { figure: EraFigure; level: ReadingLevel }) {
   return (
     <article id={`era-figure-${figure.id}`} className="rounded-xl border border-stone-300 bg-white px-3.5 py-3 shadow-sm">
       <h3 className="font-serif text-lg font-semibold text-stone-900">{figure.name}</h3>
       <p className="text-xs text-stone-600">
         {figure.role} · {figure.country} · {figure.allegiance}
       </p>
-      <p className="mt-2 text-[15px] leading-relaxed text-stone-800">{figure.bio[level]}</p>
+      <p className={`mt-2 leading-relaxed text-stone-800 ${level === 'story' ? 'text-lg' : 'text-[15px]'}`}>
+        {bioForLevel(
+          {
+            primary: figure.bio.primary,
+            secondary: figure.bio.secondary,
+            university: figure.bio.university,
+            story: figure.story,
+          },
+          level,
+        )}
+      </p>
       {figure.note && (
         <p className="mt-2 rounded-lg border border-stone-200 bg-stone-50 px-3 py-2.5 text-sm leading-relaxed text-stone-700">
           <span className="font-semibold text-stone-700">For the record: </span>
@@ -526,13 +626,99 @@ function FigureArticle({ figure, level }: { figure: EraFigure; level: EraLevel }
   );
 }
 
-function Section({ label, text }: { label: string; text: string }) {
+function Section({ label, text, story = false }: { label: string; text: string; story?: boolean }) {
   return (
     <div>
       <h4 className="text-xs font-bold uppercase tracking-wider text-stone-600">{label}</h4>
-      <p className="mt-1 text-[15px] leading-relaxed text-stone-800">{text}</p>
+      <p className={`mt-1 leading-relaxed text-stone-800 ${story ? 'text-lg' : 'text-[15px]'}`}>{text}</p>
     </div>
   );
+}
+
+function ContinentLabels({
+  extent,
+  hasAmericas,
+  onEurope,
+  onAmericas,
+  onWorld,
+}: {
+  extent: EraMapExtent;
+  hasAmericas: boolean;
+  onEurope: () => void;
+  onAmericas: () => void;
+  onWorld: () => void;
+}) {
+  const labels = [
+    { id: 'europe', label: 'Europe' },
+    { id: 'asia', label: 'Asia' },
+    { id: 'africa', label: 'Africa' },
+    { id: 'americas', label: 'Americas' },
+    { id: 'oceania', label: 'Oceania' },
+    { id: 'world', label: 'World' },
+  ] as const;
+  return (
+    <div
+      role="group"
+      aria-label="Map extent"
+      className="absolute bottom-7 right-2 z-[450] flex max-w-[calc(100%-1rem)] flex-wrap justify-end gap-1 rounded-xl border border-stone-300 bg-white/95 p-1 text-[11px] font-semibold text-stone-800 shadow-md backdrop-blur sm:bottom-8 sm:text-xs"
+    >
+      {labels.map((item) => {
+        const pressable = item.id === 'europe' || (hasAmericas && (item.id === 'americas' || item.id === 'world'));
+        const pressed =
+          (item.id === 'europe' && extent === 'auto') ||
+          (item.id === 'americas' && extent === 'america') ||
+          (item.id === 'world' && extent === 'world');
+        if (!pressable) {
+          return (
+            <span key={item.id} className="inline-flex min-h-9 items-center px-2 text-stone-400">
+              {item.label}
+            </span>
+          );
+        }
+        return (
+          <button
+            key={item.id}
+            type="button"
+            aria-pressed={pressed}
+            onClick={() => pickContinent(item.id, onEurope, onAmericas, onWorld)}
+            className={`inline-flex min-h-9 items-center gap-1 rounded-lg px-2 ${
+              pressed ? 'bg-stone-800 text-white' : 'hover:bg-stone-100'
+            }`}
+          >
+            {item.id === 'world' && <Globe2 size={13} aria-hidden />}
+            {item.label}
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
+function pickContinent(
+  id: 'europe' | 'asia' | 'africa' | 'americas' | 'oceania' | 'world',
+  onEurope: () => void,
+  onAmericas: () => void,
+  onWorld: () => void,
+) {
+  switch (id) {
+    case 'europe':
+      onEurope();
+      return;
+    case 'americas':
+      onAmericas();
+      return;
+    case 'world':
+      onWorld();
+      return;
+    case 'asia':
+    case 'africa':
+    case 'oceania':
+      return;
+    default: {
+      const exhaustive: never = id;
+      return exhaustive;
+    }
+  }
 }
 
 function SourceList({ sources }: { sources: EraEvent['sources'] }) {

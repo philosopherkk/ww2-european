@@ -199,6 +199,8 @@ interface Props {
   onLineHover?: (id: string | null) => void;
   /** Event pinned on a line, hovered in the list, so its own pin can be stressed. */
   hoverEventId?: string | null;
+  /** Existing waypoint for the story step. Null when the event has no linked point. */
+  focusPoint?: [number, number] | null;
   onOpenEvent?: (id: string) => void;
 }
 
@@ -215,6 +217,7 @@ export default function MapBrowser({
   highlightLineIds,
   onLineHover,
   hoverEventId = null,
+  focusPoint = null,
   onOpenEvent,
 }: Props) {
   const { snapshot, gapMonths, isEarlier } = useMemo(
@@ -479,6 +482,7 @@ export default function MapBrowser({
           <ZoomReporter onZoom={setZoom} />
           <MapResizer mapLabel={`Map of the Second World War in ${monthLabel}`} />
           <ViewController region={region} />
+          <FocusFlyer point={focusPoint} />
           {/* CARTO's basemaps began demanding an API key and now serve a watermarked
               "API KEY REQUIRED" tile, and Wikimedia's tileserver answers a public
               deployment's referrer with a 403 HTML page that Chrome then blocks as an
@@ -858,6 +862,17 @@ function MapResizer({ mapLabel }: { mapLabel: string }) {
     ro.observe(el);
     return () => ro.disconnect();
   }, [map, mapLabel]);
+  return null;
+}
+
+/** Flies to a waypoint the event is already linked to. A point outside the current frame is left alone. */
+function FocusFlyer({ point }: { point: [number, number] | null }) {
+  const map = useMap();
+  useEffect(() => {
+    if (!point) return;
+    if (!map.getBounds().contains(point)) return;
+    map.flyTo(point, Math.max(map.getZoom(), 5), { duration: 0.8 });
+  }, [map, point]);
   return null;
 }
 

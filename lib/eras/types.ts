@@ -44,6 +44,8 @@ export type EraFront =
   | 'anatolia_and_levant'
   | 'maghreb'
   | 'americas'
+  | 'asia'
+  | 'africa'
   | 'politics';
 
 export type EraDomain = 'land' | 'sea';
@@ -71,6 +73,8 @@ export interface EraEvent {
   note?: string;
   mapNote?: string;
   levels: Record<EraLevel, EraLevelText>;
+  /** Shorter retelling. Absent until a sourced story is compiled. */
+  story?: EraLevelText;
   sources: EraSource[];
 }
 
@@ -101,6 +105,8 @@ export interface EraFigure {
   allegiance: string;
   note?: string;
   bio: Record<EraLevel, string>;
+  /** Shorter retelling. Absent until a sourced story is compiled. */
+  story?: string;
   sources: EraSource[];
 }
 

@@ -2,7 +2,7 @@
 
 import { BookOpen, ChevronDown, Flag, MapPin } from 'lucide-react';
 import { EVENT_BY_ID } from '@/lib/data';
-import type { Level } from '@/lib/data';
+import { proseLevel, type ReadingLevel } from '@/lib/reading-level';
 import type { TurningPoint } from '@/lib/data/turning-points';
 
 /**
@@ -19,10 +19,11 @@ export default function TurningPointPanel({
   onOpenEvent,
 }: {
   tp: TurningPoint;
-  level: Level;
+  level: ReadingLevel;
   onOpenEvent: (id: string) => void;
 }) {
   const known = tp.eventIds.map((id) => EVENT_BY_ID[id]).filter(Boolean);
+  const shown = proseLevel(level);
   return (
     <aside className="mb-3 rounded-xl border border-amber-800/40 bg-amber-50 p-3.5">
       <p className="flex items-start gap-1.5 text-xs font-bold uppercase tracking-wider text-amber-900">
@@ -31,7 +32,7 @@ export default function TurningPointPanel({
       </p>
       <p className="mt-2 text-[15px] leading-relaxed text-stone-800">
         <span className="font-semibold">Why this month matters. </span>
-        {tp.matters[level]}
+        {tp.matters[shown]}
       </p>
 
       {known.length > 0 && (
@@ -67,7 +68,7 @@ export default function TurningPointPanel({
         </summary>
         <p className="mt-1.5 text-[15px] leading-relaxed text-stone-800">
           <span className="font-semibold">What it did not settle. </span>
-          {tp.unsettled[level]}
+          {tp.unsettled[shown]}
         </p>
 
         <p className="mt-2 flex items-start gap-1.5 text-xs leading-relaxed text-stone-600">

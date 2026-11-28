@@ -1,4 +1,47 @@
 import { SINCE_1945_AMERICAS, SINCE_1945_LINES, SINCE_1945_LINKS } from '@/lib/eras/americas';
+import {
+  bayOfPigs1961,
+  berlinWall1961,
+  dienBienPhu1954,
+  dwightDEisenhower,
+  fidelCastro,
+  gamalAbdelNasser,
+  harrySTruman,
+  hastingsNdlovu,
+  hectorPieterson,
+  hoChiMinh,
+  ianMckay,
+  india1947,
+  janosKadar,
+  jawaharlalNehru,
+  jeremyMoore,
+  koreanWar1950,
+  kuwait1990,
+  leonidBrezhnev,
+  leopoldoGaltieri,
+  mahatmaGandhi,
+  maoZedong,
+  margaretThatcher,
+  prc1949,
+  saddamHussein,
+  samNzima,
+  soweto1976,
+  suez1956,
+  tsietsiMashinini,
+  vladimirPutin,
+  walterUlbricht,
+} from '@/lib/eras/fill-since-1945';
+import {
+  alexanderDubcek,
+  cubaQuarantine1962,
+  imreNagy,
+  johnFKennedy,
+  koreanArmistice1953,
+  namIl,
+  nikitaKhrushchev,
+  sharpeville1960,
+  williamKHarrison,
+} from '@/lib/eras/sourced-batch';
 import type { EraEpisode, EraEvent, EraPeriod } from '@/lib/eras/types';
 
 const hungary: EraEvent = {
@@ -9,7 +52,8 @@ const hungary: EraEvent = {
   kind: 'invasion',
   fronts: ['eastern_europe'],
   countries: ['Soviet Union', 'Hungary'],
-  figures: [],
+  figures: ['imre_nagy', 'janos_kadar'],
+  note: 'Imre Nagy, the Hungarian prime minister, announced the Soviet attack and said that Hungarian troops were fighting. An execution two years later is printed in one account of that morning and is not stated above.',
   levels: {
     primary: {
       cause: 'A Hungarian uprising in 1956 had taken to the streets of Budapest against Soviet power.',
@@ -44,8 +88,8 @@ const czechoslovakia: EraEvent = {
   kind: 'invasion',
   fronts: ['eastern_europe'],
   countries: ['Warsaw Pact', 'Czechoslovakia'],
-  figures: [],
-  note: 'One account dates the invasion to the night of 20 August 1968 and prints approximately 200,000 troops and 5,000 tanks. Another dates it 20–21 August 1968 and places the crossing at about 11 pm on the 20th. The troop figures are not the same, so none is given above.',
+  figures: ['alexander_dubcek', 'leonid_brezhnev'],
+  note: 'One account dates the invasion to the night of 20 August 1968 and prints approximately 200,000 troops and 5,000 tanks. Another dates it 20–21 August 1968 and places the crossing at about 11 pm on the 20th. The troop figures are not the same, so none is given above. Alexander Dubček, the first secretary, was taken to Moscow after the invasion.',
   levels: {
     primary: {
       cause: 'The Prague Spring had opened a period of liberalisation in communist Czechoslovakia.',
@@ -80,7 +124,7 @@ const ukraine: EraEvent = {
   kind: 'invasion',
   fronts: ['eastern_europe'],
   countries: ['Russia', 'Ukraine'],
-  figures: [],
+  figures: ['vladimir_putin'],
   note: 'One account prints a casualty total and a share of territory occupied. Those figures are not repeated here.',
   levels: {
     primary: {
@@ -110,14 +154,90 @@ const episode: EraEpisode = {
   id: 'since-1945-wars',
   title: 'Hungary, Czechoslovakia, and Ukraine',
   monthLabel: 'November 1956 – February 2022',
-  events: [hungary, czechoslovakia, ukraine, ...SINCE_1945_AMERICAS],
+  events: [
+    hungary,
+    czechoslovakia,
+    ukraine,
+    ...SINCE_1945_AMERICAS.map((event) =>
+      event.id === 'falklands_1982'
+        ? {
+            ...event,
+            figures: [
+              ...event.figures,
+              'margaret_thatcher',
+              'leopoldo_galtieri',
+              'jeremy_moore',
+              'ian_mckay',
+            ],
+          }
+        : event,
+    ),
+  ],
   lines: SINCE_1945_LINES,
-  figures: [],
+  figures: [
+    imreNagy,
+    alexanderDubcek,
+    janosKadar,
+    leonidBrezhnev,
+    vladimirPutin,
+    margaretThatcher,
+    leopoldoGaltieri,
+    jeremyMoore,
+    ianMckay,
+  ],
   links: SINCE_1945_LINKS,
+};
+
+const wider: EraEpisode = {
+  id: 'since-1945-wider',
+  title: 'Korea, Sharpeville, and Cuba',
+  monthLabel: 'July 1953 – October 1962',
+  events: [koreanArmistice1953, sharpeville1960, cubaQuarantine1962],
+  lines: [],
+  figures: [williamKHarrison, namIl, johnFKennedy, nikitaKhrushchev],
+  links: [],
+};
+
+const widerWorld: EraEpisode = {
+  id: 'since-1945-asia-africa-americas',
+  title: 'Dien Bien Phu, the Bay of Pigs, and Soweto',
+  monthLabel: 'May 1954 – June 1976',
+  events: [dienBienPhu1954, bayOfPigs1961, soweto1976],
+  lines: [],
+  figures: [
+    hoChiMinh,
+    fidelCastro,
+    dwightDEisenhower,
+    hectorPieterson,
+    hastingsNdlovu,
+    samNzima,
+    tsietsiMashinini,
+  ],
+  links: [],
+};
+
+const chinaKoreaKuwait: EraEpisode = {
+  id: 'since-1945-china-korea-kuwait',
+  title: 'China, Korea, and Kuwait',
+  monthLabel: 'October 1949 – August 1990',
+  events: [prc1949, koreanWar1950, kuwait1990],
+  lines: [],
+  figures: [maoZedong, harrySTruman, saddamHussein],
+  links: [],
+};
+
+const suezBerlinIndia: EraEpisode = {
+  id: 'since-1945-suez-berlin-india',
+  title: 'India, Suez, and the Berlin Wall',
+  monthLabel: 'August 1947 – August 1961',
+  events: [india1947, suez1956, berlinWall1961],
+  lines: [],
+  figures: [jawaharlalNehru, mahatmaGandhi, gamalAbdelNasser, walterUlbricht],
+  links: [],
 };
 
 export const SINCE_1945: EraPeriod = {
   id: 'since-1945',
   label: 'Since 1945',
-  episodes: [episode],
+  episodes: [episode, wider, widerWorld, suezBerlinIndia, chinaKoreaKuwait],
 };

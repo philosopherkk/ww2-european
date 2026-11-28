@@ -2,20 +2,23 @@
 
 import { useMemo, useState } from 'react';
 import { ArrowLeft, Search } from 'lucide-react';
-import type { Bloc, Level } from '@/lib/data';
+import type { Bloc } from '@/lib/data';
 import { EVENTS, FIGURES, FIGURE_BY_ID } from '@/lib/data';
 import { PORTRAITS } from '@/lib/data/portraits';
 import { FigurePortrait } from './FigurePortrait';
+import LevelUpButton from './LevelUpButton';
+import { bioForLevel, type ReadingLevel } from '@/lib/reading-level';
 import { BLOC_META, longDate } from '@/lib/site';
 
 interface Props {
-  level: Level;
+  level: ReadingLevel;
+  onLevelChange: (level: ReadingLevel) => void;
   focusId: string | null;
   onFocus: (id: string | null) => void;
   onOpenEvent: (id: string) => void;
 }
 
-export default function PeoplePanel({ level, focusId, onFocus, onOpenEvent }: Props) {
+export default function PeoplePanel({ level, onLevelChange, focusId, onFocus, onOpenEvent }: Props) {
   const [query, setQuery] = useState('');
   const [bloc, setBloc] = useState<Bloc | 'all'>('all');
   const figure = focusId ? FIGURE_BY_ID[focusId] : null;
@@ -92,18 +95,12 @@ export default function PeoplePanel({ level, focusId, onFocus, onOpenEvent }: Pr
             </p>
           )}
 
-          <p className="mt-4 text-base leading-relaxed text-stone-800">{figure.bio[level]}</p>
-
-          {level !== 'university' && (
-            <details className="mt-3 rounded-md border border-stone-200 bg-stone-50 p-2.5">
-              <summary className="cursor-pointer text-xs font-semibold text-stone-700">
-                The scholarly version
-              </summary>
-              <p className="mt-2 text-[13px] leading-relaxed text-stone-700">
-                {figure.bio.university}
-              </p>
-            </details>
-          )}
+          <p className={`mt-4 leading-relaxed text-stone-800 ${level === 'story' ? 'text-lg' : 'text-base'}`}>
+            {bioForLevel(figure.bio, level)}
+          </p>
+          <div className="mt-3">
+            <LevelUpButton level={level} onChange={onLevelChange} large={level === 'story'} />
+          </div>
         </div>
 
         <div className="mx-auto max-w-3xl">

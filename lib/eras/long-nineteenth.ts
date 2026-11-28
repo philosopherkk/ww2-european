@@ -3,6 +3,42 @@ import {
   LONG_NINETEENTH_LINES,
   LONG_NINETEENTH_LINKS,
 } from '@/lib/eras/americas';
+import { napoleonIii, portArthur1904, sedan1870, theodoreRoosevelt } from '@/lib/eras/sourced-batch';
+import { horatioNelson, trafalgar1805 } from '@/lib/eras/sourced-batch-3';
+import { austerlitz1805, isandlwana1879 } from '@/lib/eras/sourced-batch-4';
+import { aliwal1846, rorkesDrift1879 } from '@/lib/eras/sourced-batch-5';
+import {
+  alma1854,
+  assaye1803,
+  ayubKhan,
+  borodino1812,
+  botha,
+  burrows,
+  colenso1899,
+  crazyHorse,
+  cuthbertCollingwood,
+  garnetWolseley,
+  georgeCuster,
+  gonvilleBromhead,
+  harrySmith,
+  herbertKitchener,
+  ibrahimBey,
+  johnChard,
+  littleBighorn1876,
+  lordRaglan,
+  maiwand1880,
+  mikhailKutuzov,
+  muradBey,
+  omdurman1898,
+  princeMenshikov,
+  pyramids1798,
+  ranjodhSingh,
+  redversBuller,
+  saintArnaud,
+  sittingBull,
+  telElKebir1882,
+  villeneuve,
+} from '@/lib/eras/fill-long-nineteenth';
 import { LONG_NINETEENTH_FIGURES } from '@/lib/eras/people';
 import batchFile from '@/lib/eras/pilot-1815/batch-01.json';
 import figuresFile from '@/lib/eras/pilot-1815/figures.json';
@@ -43,6 +79,8 @@ const FRONTS: readonly EraFront[] = [
   'anatolia_and_levant',
   'maghreb',
   'americas',
+  'asia',
+  'africa',
   'politics',
 ];
 
@@ -177,8 +215,98 @@ const waterloo: EraEpisode = {
   links: [...linksFile.links.map(toLink), ...LONG_NINETEENTH_LINKS],
 };
 
+const later: EraEpisode = {
+  id: 'after-waterloo',
+  title: 'Sedan and Port Arthur',
+  monthLabel: 'September 1870 – 1905',
+  events: [sedan1870, portArthur1904],
+  lines: [],
+  figures: [napoleonIii, theodoreRoosevelt],
+  links: [],
+};
+
+const trafalgar: EraEpisode = {
+  id: 'trafalgar-1805',
+  title: 'Battle of Trafalgar',
+  monthLabel: 'October 1805',
+  events: [
+    {
+      ...trafalgar1805,
+      figures: [...trafalgar1805.figures, 'villeneuve', 'cuthbert_collingwood'],
+    },
+  ],
+  lines: [],
+  figures: [horatioNelson, villeneuve, cuthbertCollingwood],
+  links: [],
+};
+
+const austerlitz: EraEpisode = {
+  id: 'austerlitz-1805',
+  title: 'Battle of Austerlitz',
+  monthLabel: 'December 1805',
+  events: [austerlitz1805],
+  lines: [],
+  figures: [],
+  links: [],
+};
+
+const isandlwana: EraEpisode = {
+  id: 'isandlwana-1879',
+  title: 'Battle of Isandlwana',
+  monthLabel: 'January 1879',
+  events: [
+    isandlwana1879,
+    { ...rorkesDrift1879, figures: ['john_chard', 'gonville_bromhead'] },
+  ],
+  lines: [],
+  figures: [johnChard, gonvilleBromhead],
+  links: [],
+};
+
+const fill: EraEpisode = {
+  id: 'long-nineteenth-fill',
+  title: 'The Little Bighorn, Maiwand, and Omdurman',
+  monthLabel: 'June 1876 – September 1898',
+  events: [littleBighorn1876, maiwand1880, omdurman1898],
+  lines: [],
+  figures: [georgeCuster, sittingBull, crazyHorse, ayubKhan, burrows, herbertKitchener],
+  links: [],
+};
+
+const aliwal: EraEpisode = {
+  id: 'aliwal-1846',
+  title: 'Battle of Aliwal',
+  monthLabel: 'January 1846',
+  events: [
+    { ...aliwal1846, figures: ['harry_smith', 'ranjodh_singh'] },
+  ],
+  lines: [],
+  figures: [harrySmith, ranjodhSingh],
+  links: [],
+};
+
+const round2: EraEpisode = {
+  id: 'long-nineteenth-round2',
+  title: 'The Pyramids, Assaye, and Borodino',
+  monthLabel: 'July 1798 – September 1812',
+  events: [pyramids1798, assaye1803, borodino1812],
+  lines: [],
+  figures: [muradBey, ibrahimBey, mikhailKutuzov],
+  links: [],
+};
+
+const round3: EraEpisode = {
+  id: 'long-nineteenth-round3',
+  title: 'The Alma, Tel-el-Kebir, and Colenso',
+  monthLabel: 'September 1854 – December 1899',
+  events: [alma1854, telElKebir1882, colenso1899],
+  lines: [],
+  figures: [lordRaglan, saintArnaud, princeMenshikov, garnetWolseley, redversBuller, botha],
+  links: [],
+};
+
 export const LONG_NINETEENTH: EraPeriod = {
   id: 'long-nineteenth',
   label: 'Long nineteenth century',
-  episodes: [waterloo],
+  episodes: [waterloo, trafalgar, austerlitz, aliwal, isandlwana, later, fill, round2, round3],
 };

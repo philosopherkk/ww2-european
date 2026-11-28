@@ -1,8 +1,9 @@
 'use client';
 
 import { useEffect, useMemo, useRef, useState } from 'react';
-import type { Bloc, CountryStat, Level } from '@/lib/data';
+import type { Bloc, CountryStat } from '@/lib/data';
 import { BLOCS, COUNTRY_STATS } from '@/lib/data';
+import { showsSimpleNumbers, type ReadingLevel } from '@/lib/reading-level';
 import { BLOC_META, formatMillions, STAT_YEARS } from '@/lib/site';
 
 const BLOC_ORDER: Bloc[] = ['allies', 'soviet', 'axis', 'co_belligerent'];
@@ -56,7 +57,7 @@ function Pill({
   );
 }
 
-export default function NumbersPanel({ initialYear, level }: { initialYear: number; level: Level }) {
+export default function NumbersPanel({ initialYear, level }: { initialYear: number; level: ReadingLevel }) {
   // The panel owns its year; the parent remounts it with `key={monthYear}` when
   // the reader steps into a different year of the timeline.
   const [year, setYear] = useState(initialYear);
@@ -275,7 +276,7 @@ function CountryRow({
   note?: string;
   maxPopulation: number;
   maxForces: number;
-  level: Level;
+  level: ReadingLevel;
   highlight: SortKey;
 }) {
   return (
@@ -328,7 +329,7 @@ function CountryRow({
         />
       </dl>
 
-      {level === 'primary' ? (
+      {showsSimpleNumbers(level) ? (
         <p className="mt-3 rounded-lg bg-stone-50 px-3 py-2 text-sm leading-relaxed text-stone-700">
           {stat.simple}
         </p>

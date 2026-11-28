@@ -8,10 +8,12 @@ const WW1_BASE = process.env.NEXT_PUBLIC_WW1_URL ?? 'https://ww1-european.vercel
 export default function ErasMenu({
   current,
   grouped = false,
+  className = '',
 }: {
   current?: string;
-  /** Sit in the Eras / WW1 / WW2 group, without a border of its own. */
+  /** Sit in a shared control group, without a border of its own. */
   grouped?: boolean;
+  className?: string;
 }) {
   const links = eraMenuLinks(WW1_BASE);
   const onEra = Boolean(current?.startsWith('/era/'));
@@ -21,12 +23,12 @@ export default function ErasMenu({
       }`
     : 'flex cursor-pointer list-none items-center gap-1 rounded-lg border border-stone-600 px-2 py-1.5 text-sm font-medium text-stone-200 hover:bg-stone-800 hover:text-white sm:px-2.5 [&::-webkit-details-marker]:hidden';
   return (
-    <details className={grouped ? 'relative flex' : 'relative'}>
+    <details className={`${grouped ? 'relative flex' : 'relative'} ${className}`}>
       <summary className={summaryClass}>
-        Eras
+        Era
         <ChevronDown size={14} aria-hidden />
       </summary>
-      <div className="absolute right-0 z-[800] mt-1 max-h-[70vh] w-72 overflow-auto rounded-lg border border-stone-600 bg-stone-900 py-1 text-left shadow-lg">
+      <div className="absolute right-0 z-[800] mt-1 max-h-[70vh] w-[min(24rem,calc(100vw-1.5rem))] overflow-auto rounded-lg border border-stone-600 bg-stone-900 py-1 text-left shadow-lg">
         {links.map((item) => (
           <span key={item.id}>
             {item.id === 'ww1' && (
@@ -41,7 +43,10 @@ export default function ErasMenu({
                 current === item.href ? 'bg-stone-800 text-white' : 'text-stone-200'
               }`}
             >
-              <span className="block text-sm font-medium">{item.label}</span>
+              <span className="block text-sm font-medium leading-snug">
+                {item.label}
+                {item.plain ? <span className="font-normal text-stone-400"> — {item.plain}</span> : null}
+              </span>
               <span className="block text-[11px] text-stone-500">{item.detail}</span>
             </a>
           </span>

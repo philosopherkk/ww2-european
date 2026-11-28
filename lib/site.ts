@@ -1,5 +1,5 @@
 import manifest from '@/public/data/borders/manifest.json';
-import type { Bloc, CampaignLine, Front, Kind, Level } from '@/lib/data';
+import type { Bloc, CampaignLine, Front, Kind } from '@/lib/data';
 
 /**
  * The whole timeline runs from July 1937 to September 1945, month by month.
@@ -276,26 +276,7 @@ export function campaignVisible(line: CampaignLine, monthKey: string): boolean {
  * Reading levels, fronts and event kinds
  * ------------------------------------------------------------------ */
 
-export const LEVELS: { id: Level; label: string; short: string; hint: string }[] = [
-  {
-    id: 'primary',
-    label: 'Primary school',
-    short: 'Primary',
-    hint: 'Ages 7-11 · short sentences, no jargon',
-  },
-  {
-    id: 'secondary',
-    label: 'Secondary school',
-    short: 'Secondary',
-    hint: 'Ages 12-16 · names, dates and cause and effect',
-  },
-  {
-    id: 'university',
-    label: 'University',
-    short: 'University',
-    hint: 'Historiography, arguments over numbers, and sources',
-  },
-];
+export { LEVELS } from '@/lib/reading-level';
 
 export const FRONT_META: Record<Front, { label: string; color: string }> = {
   western: { label: 'Western front', color: '#1D4E89' },
