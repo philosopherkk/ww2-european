@@ -648,6 +648,48 @@ const dukeOfCumberland: EraFigure = {
   ],
 };
 
+const thomasFairfax: EraFigure = {
+  id: 'thomas_fairfax',
+  name: 'Sir Thomas Fairfax',
+  role: 'commander',
+  country: 'England',
+  allegiance: 'Parliament',
+  note: 'Both accounts also say the royalist army was destroyed.',
+  bio: {
+    primary:
+      'On 14 June 1645 Sir Thomas Fairfax’s New Model Army defeated King Charles I’s royalist army at Naseby in Northamptonshire.',
+    secondary:
+      'Sir Thomas Fairfax led Parliament’s New Model Army in the English Civil War. On 14 June 1645 that army defeated King Charles I’s royalist force at Naseby in Northamptonshire.',
+    university:
+      'Sir Thomas Fairfax commanded the Parliamentary New Model Army. On 14 June 1645, in the English Civil War, he defeated the royalist army of King Charles I at Naseby in Northamptonshire.',
+  },
+  sources: [
+    { url: 'https://www.britishbattles.com/english-civil-war/battle-of-naseby/', publisher: 'British Battles' },
+    { url: 'https://en.wikipedia.org/wiki/Battle_of_Naseby', publisher: 'Wikipedia' },
+  ],
+};
+
+const charlesI: EraFigure = {
+  id: 'charles_i',
+  name: 'Charles I',
+  role: 'ruler',
+  country: 'England',
+  allegiance: 'Royalists',
+  note: 'Both accounts also say his royalist army was destroyed.',
+  bio: {
+    primary:
+      'On 14 June 1645 King Charles I’s royalist army was defeated by Sir Thomas Fairfax’s New Model Army at Naseby in Northamptonshire.',
+    secondary:
+      'King Charles I’s royalist army fought in the English Civil War. On 14 June 1645 Sir Thomas Fairfax’s New Model Army defeated that force at Naseby in Northamptonshire.',
+    university:
+      'Charles I was the king whose royalist army met Sir Thomas Fairfax at Naseby. On 14 June 1645, in the English Civil War, the New Model Army defeated that royalist force in Northamptonshire.',
+  },
+  sources: [
+    { url: 'https://www.britishbattles.com/english-civil-war/battle-of-naseby/', publisher: 'British Battles' },
+    { url: 'https://en.wikipedia.org/wiki/Battle_of_Naseby', publisher: 'Wikipedia' },
+  ],
+};
+
 export const EARLY_MODERN_FIGURES: EraFigure[] = [
   philipII,
   elizabethI,
@@ -662,6 +704,8 @@ export const EARLY_MODERN_FIGURES: EraFigure[] = [
   louisXIV,
   charlesEdwardStuart,
   dukeOfCumberland,
+  thomasFairfax,
+  charlesI,
 ];
 
 export const LONG_NINETEENTH_FIGURES: EraFigure[] = [santaAnna, robertELee];

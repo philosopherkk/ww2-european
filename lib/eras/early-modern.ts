@@ -47,7 +47,7 @@ const naseby: EraEvent = {
   kind: 'battle',
   fronts: ['british_isles'],
   countries: ['England'],
-  figures: [],
+  figures: ['thomas_fairfax', 'charles_i'],
   levels: {
     primary: {
       cause: 'King Charles I’s royalist army and Parliament’s New Model Army were at war in England.',
