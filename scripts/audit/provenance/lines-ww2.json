@@ -1,0 +1,214 @@
+{
+ "items": [
+  {
+   "id": "dragoon_convoy_1944",
+   "field": "summary",
+   "claim": "The assault lift for Dragoon loaded at Naples and Salerno while French formations came round from Oran; exclusive of naval crews the convoys carried about 151,000 troops and vehicles across to the Riviera assault area, then west to Toulon (15–28 August 1944) and Marseille (21–28 August).",
+   "value": "151,000",
+   "single_family": true,
+   "sources": [
+    {
+     "url": "https://www.ibiblio.org/hyperwar/USA/USA-E-Riviera/USA-E-Riviera-5.html",
+     "publisher": "US Army / HyperWar (ibiblio)",
+     "quote": "the convoys carried roughly 151,000 troops and some 21,400 trucks, tanks, tank destroyers, prime-movers, bulldozers, tractors, and other vehicles. Included in these totals were about 40,850 men and 2,610 vehicles of the First French Army that were to start unloading on D plus 1."
+    }
+   ]
+  },
+  {
+   "id": "dragoon_convoy_1944",
+   "field": "strength",
+   "claim": "About 151,000 troops in the initial assault convoys (576,833 in the wider invasion force as later totals count it), with some 21,400 vehicles in the US Army campaign record.",
+   "value": "151,000",
+   "single_family": true,
+   "sources": [
+    {
+     "url": "https://www.ibiblio.org/hyperwar/USA/USA-E-Riviera/USA-E-Riviera-5.html",
+     "publisher": "US Army / HyperWar (ibiblio)",
+     "quote": "the convoys carried roughly 151,000 troops and some 21,400 trucks, tanks, tank destroyers, prime-movers, bulldozers, tractors, and other vehicles. Included in these totals were about 40,850 men and 2,610 vehicles of the First French Army that were to start unloading on D plus 1."
+    }
+   ]
+  },
+  {
+   "id": "compass_1940",
+   "field": "summary",
+   "claim": "A five-day raid by O’Connor’s Western Desert Force turned into a 500-mile pursuit.",
+   "value": "5",
+   "single_family": false,
+   "sources": [
+    {
+     "url": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Med-I/UK-Med-I-14.html",
+     "publisher": "Playfair, The Mediterranean and Middle East, Vol. I (HMSO, via HyperWar)",
+     "quote": "it ought to be possible to stage an operation lasting four or five days by making full use of the capacity of the British and Indian troops"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Operation_Compass",
+     "publisher": "Wikimedia Foundation",
+     "quote": "advanced from Mersa Matruh in Egypt on a five-day raid against the Italian positions of the 10th Army"
+    }
+   ]
+  },
+  {
+   "id": "compass_1940",
+   "field": "summary",
+   "claim": "A five-day raid by O’Connor’s Western Desert Force turned into a 500-mile pursuit.",
+   "value": "500",
+   "single_family": true,
+   "sources": [
+    {
+     "url": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Med-I/UK-Med-I-19.html",
+     "publisher": "Playfair, The Mediterranean and Middle East, Vol. I (HMSO, via HyperWar)",
+     "quote": "advanced 500 strenuous miles and totally destroyed an army of ten divisions, for a loss of 500 killed, 1,373 wounded, and 55 missing"
+    }
+   ]
+  },
+  {
+   "id": "compass_1940",
+   "field": "summary",
+   "claim": "Ten weeks of fighting destroyed an army: 133,000 prisoners, 420 tanks and 845 guns, for about 1,900 British casualties.",
+   "value": "10",
+   "single_family": true,
+   "sources": [
+    {
+     "url": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Med-I/UK-Med-I-19.html",
+     "publisher": "Playfair, The Mediterranean and Middle East, Vol. I (HMSO, via HyperWar)",
+     "quote": "The campaign which began at Nibeiwa and Sidi Barrani and ended ten weeks later at Beda Fomm"
+    }
+   ]
+  },
+  {
+   "id": "compass_1940",
+   "field": "summary",
+   "claim": "Ten weeks of fighting destroyed an army: 133,000 prisoners, 420 tanks and 845 guns, for about 1,900 British casualties.",
+   "value": "133,000",
+   "single_family": true,
+   "note": "Playfair prints 130,000 prisoners. The Wikipedia infobox prints 133,298 and the article prints over 138,000. No page fetched prints 133,000.",
+   "sources": [
+    {
+     "url": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Med-I/UK-Med-I-19.html",
+     "publisher": "Playfair, The Mediterranean and Middle East, Vol. I (HMSO, via HyperWar)",
+     "quote": "The captures were 130,000 prisoners; 180 medium tanks and more than 200 light; and 845 guns of the size of field guns and above."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Operation_Compass",
+     "publisher": "Wikimedia Foundation",
+     "quote": "5,500+ killed 10,000 wounded 133,298"
+    }
+   ]
+  },
+  {
+   "id": "compass_1940",
+   "field": "summary",
+   "claim": "Ten weeks of fighting destroyed an army: 133,000 prisoners, 420 tanks and 845 guns, for about 1,900 British casualties.",
+   "value": "845",
+   "single_family": false,
+   "sources": [
+    {
+     "url": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Med-I/UK-Med-I-19.html",
+     "publisher": "Playfair, The Mediterranean and Middle East, Vol. I (HMSO, via HyperWar)",
+     "quote": "The captures were 130,000 prisoners; 180 medium tanks and more than 200 light; and 845 guns of the size of field guns and above."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Operation_Compass",
+     "publisher": "Wikimedia Foundation",
+     "quote": "420 tanks 845 guns 564 aircraft"
+    }
+   ]
+  },
+  {
+   "id": "compass_1940",
+   "field": "summary",
+   "claim": "Ten weeks of fighting destroyed an army: 133,000 prisoners, 420 tanks and 845 guns, for about 1,900 British casualties.",
+   "value": "420",
+   "single_family": true,
+   "note": "Playfair prints 180 medium tanks and more than 200 light, not 420.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Operation_Compass",
+     "publisher": "Wikimedia Foundation",
+     "quote": "420 tanks 845 guns 564 aircraft"
+    },
+    {
+     "url": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Med-I/UK-Med-I-19.html",
+     "publisher": "Playfair, The Mediterranean and Middle East, Vol. I (HMSO, via HyperWar)",
+     "quote": "180 medium tanks and more than 200 light; and 845 guns of the size of field guns and above."
+    }
+   ]
+  },
+  {
+   "id": "compass_1940",
+   "field": "summary",
+   "claim": "for about 1,900 British casualties.",
+   "value": "1,900",
+   "single_family": true,
+   "note": "Wikipedia prints 1,900 killed and wounded. Playfair prints 500 killed, 1,373 wounded and 55 missing, and does not print 1,900.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Operation_Compass",
+     "publisher": "Wikimedia Foundation",
+     "quote": "The WDF suffered casualties of 1,900 men killed and wounded"
+    },
+    {
+     "url": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Med-I/UK-Med-I-19.html",
+     "publisher": "Playfair, The Mediterranean and Middle East, Vol. I (HMSO, via HyperWar)",
+     "quote": "for a loss of 500 killed, 1,373 wounded, and 55 missing"
+    }
+   ]
+  },
+  {
+   "id": "compass_1940",
+   "field": "strength",
+   "claim": "Western Desert Force ~36,000 men and 275 mostly light tanks; the Italian Tenth Army ~150,000 men with 400 guns, of which about 130,000 were captured",
+   "value": "36,000",
+   "single_family": true,
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Operation_Compass",
+     "publisher": "Wikimedia Foundation",
+     "quote": "with about 36,000 men, advanced from Mersa Matruh in Egypt on a five-day raid"
+    }
+   ]
+  },
+  {
+   "id": "compass_1940",
+   "field": "strength",
+   "claim": "Western Desert Force ~36,000 men and 275 mostly light tanks",
+   "value": "275",
+   "single_family": true,
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Operation_Compass",
+     "publisher": "Wikimedia Foundation",
+     "quote": "36,000 men 275 tanks 120 guns"
+    }
+   ]
+  },
+  {
+   "id": "compass_1940",
+   "field": "strength",
+   "claim": "the Italian Tenth Army ~150,000 men",
+   "value": "150,000",
+   "single_family": true,
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Operation_Compass",
+     "publisher": "Wikimedia Foundation",
+     "quote": "which had about 150,000 troops in fortified posts around Sidi Barrani"
+    }
+   ]
+  },
+  {
+   "id": "compass_1940",
+   "field": "strength",
+   "claim": "of which about 130,000 were captured",
+   "value": "130,000",
+   "single_family": true,
+   "sources": [
+    {
+     "url": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Med-I/UK-Med-I-19.html",
+     "publisher": "Playfair, The Mediterranean and Middle East, Vol. I (HMSO, via HyperWar)",
+     "quote": "The captures were 130,000 prisoners; 180 medium tanks and more than 200 light; and 845 guns of the size of field guns and above."
+    }
+   ]
+  }
+ ]
+}

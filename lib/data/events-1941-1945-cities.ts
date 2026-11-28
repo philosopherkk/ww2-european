@@ -11,7 +11,7 @@ export const EVENTS_CITIES_1941_1945: WW2Event[] = [
     id: 'budapest_falls',
     date: '1945-02-13',
     precision: 'day',
-    title: 'Budapest falls after a seven-week siege',
+    title: 'Budapest falls on 13 February 1945',
     kind: 'battle',
     fronts: ['eastern'],
     countries: ['Hungary', 'Germany', 'Soviet Union', 'Romania'],
@@ -31,7 +31,7 @@ export const EVENTS_CITIES_1941_1945: WW2Event[] = [
       },
       secondary: {
         cause:
-          'Hitler refused to authorise a withdrawal and declared Budapest a fortress city, and the defence was given to the IX SS Mountain Corps under Karl Pfeffer-Wildenbruch. The Soviet encirclement was completed on 26 December 1944, sealing German and Hungarian troops inside a city whose civilian population of about 800,000 had not been evacuated. Of the roughly 79,000 men enclosed, some 38,000 were Hungarians.',
+          'Hitler refused to authorise a withdrawal, and the defence was given to the IX SS Mountain Corps under Karl Pfeffer-Wildenbruch. The Soviet encirclement was completed on 26 December 1944, sealing German and Hungarian troops inside a city whose civilian population of about 800,000 had not been evacuated. Of the roughly 79,000 men enclosed, some 38,000 were Hungarians.',
         what:
           'Three relief attacks, Operations Konrad I to III, were launched in January from between the Danube and Lake Balaton and came to within a few dozen kilometres of the ring without breaking it. The defenders were pushed back across the Danube as the Germans destroyed the bridges behind them, the Chain Bridge among them. On 11 February some 28,000 men broke out from Castle Hill and most of them were killed; only 600 to 700 reached the German lines. Soviet troops took the last pockets on 13 February.',
         consequence:
@@ -39,7 +39,7 @@ export const EVENTS_CITIES_1941_1945: WW2Event[] = [
       },
       university: {
         cause:
-          'The siege is the fullest test in these sources of Hitler’s fortress policy, and the two accounts show the same incoherence in it: a garrison forbidden to leave a city declared a fortress, while the relief attacks were thrown in from ground too weak to support them. The composition of the force enclosed made that worse, since of roughly 79,000 men some 38,000 were Hungarian troops, and the fighting in the city was therefore not only a German battle.',
+          'The siege is the fullest test in these sources of Hitler’s refusal to let a garrison leave, and the two accounts show the same incoherence in it: a garrison forbidden to leave the city, while the relief attacks were thrown in from ground too weak to support them. The composition of the force enclosed made that worse, since of roughly 79,000 men some 38,000 were Hungarian troops, and the fighting in the city was therefore not only a German battle.',
         what:
           'The two accounts agree on the operational sequence and on the order of magnitude of the loss: the ring closed on 26 December 1944, three relief attacks followed in January, the breakout began on the evening of 11 February and organised resistance ended on the 13th; the garrison was about 79,000 men, and some 38,000 of the city’s 800,000 civilians died. They frame the beginning differently, one from the Soviet ultimatum of 29 December and one from the closing of the ring, and they count the length of the fighting from different starting points — which is a reminder that even a heavily documented siege has a contested first day.',
         consequence:
@@ -106,20 +106,20 @@ export const EVENTS_CITIES_1941_1945: WW2Event[] = [
           'Two German armies held the Balkans, Army Group E in the south and the Second Panzer Army in Yugoslavia, and both had to get clear as the Red Army came through Serbia. Belgrade lay across their road out.',
         what:
           'The Belgrade operation was fought from 14 to 20 October 1944, and on the last of those days Yugoslav Partisan and Soviet troops took the city. The assault was made by the Soviet 3rd Ukrainian Front together with the Partisans.',
-        consequence:
-          'The German administration which had held the city was gone, and with it the Serbian collaborationist government of Milan Nedić which had governed under it. What the Partisans made of the city belongs to Yugoslav history rather than to this battle.',
+        consequence: 'The German administration which had held the city was gone. What the Partisans made of the ' +
+          'city belongs to Yugoslav history rather than to this battle.',
       },
       secondary: {
         cause:
-          'The Soviet offensive through eastern Serbia was part of a plan made by the headquarters of the 3rd Ukrainian Front and the Partisans, and its object was to shut the road by which the German armies in the Balkans would have to withdraw. Belgrade lay across that road where it passed the rivers. The garrison was German, with Serbian collaborationist troops in it, and the German government had just dissolved the collaborationist government of Milan Nedić and taken the administration of the city itself.',
+          'The Soviet offensive through eastern Serbia was part of a plan made by the headquarters of the 3rd Ukrainian Front and the Partisans, and its object was to shut the road by which the German armies in the Balkans would have to withdraw. Belgrade lay across that road where it passed the rivers. The garrison was German, with Serbian collaborationist troops in it.',
         what:
           'The fighting for the city began on 14 October and ended on 20 October, when Partisan and Soviet troops entered it. Divisions named for Krajina, Slavonia, Serbia and Vojvodina were among the troops in the assault, and the commanders on file are the Soviet General Vladimir Zhdanov and the Yugoslav General Peko Dapčević.',
         consequence:
-          'The German occupation of Serbia ended with the city, and the collaborationist government which had administered it had already been dissolved and had gone with the retreating armies. What the capture meant for the country is an argument which belongs to the politics of the postwar years rather than to this battle.',
+          'The German occupation of Serbia ended with the city. What the capture meant for the country is an argument which belongs to the politics of the postwar years rather than to this battle.',
       },
       university: {
         cause:
-          'Belgrade is the rare capture in this war which was made by a country’s own partisans with a Soviet army at their side, and the arrangement is easier to describe than to weigh. The German decision to dissolve the Nedić government and run the city directly as the attack approached is the clearest evidence on file of what the collaborationist administration had come to be worth to the power which had set it up; it also removed the only body which could have handed the city over in an orderly way. A battle fought by two armies with two different political objects is bound to be dated and counted two ways afterwards, which is what happened here.',
+          'Belgrade is the rare capture in this war which was made by a country’s own partisans with a Soviet army at their side, and the arrangement is easier to describe than to weigh. A battle fought by two armies with two different political objects is bound to be dated and counted two ways afterwards, which is what happened here.',
         what:
           'The accounts differ in a way which shows what each of them is for. One is a narrative of the assault, with the units named, the days counted and the fighting in the streets followed hour by hour, so it records the river crossings, the fortress troops and the German dead. The other is an operational summary in which the Belgrade operation is one move in a much larger offensive, and its totals come from the armies that planned it. So the two can agree on the dates and differ about the strength of the garrison, the size of the Partisan force and the losses: they are counting different things, one men killed in a city, the other the outcome of a front-level operation.',
         consequence:
@@ -144,14 +144,15 @@ export const EVENTS_CITIES_1941_1945: WW2Event[] = [
       primary: {
         cause:
           'The breakout from Normandy cut the Channel ports off one after another, and Hitler had ordered them held as fortresses. The Allied armies needed harbours on the Continent to supply the armies they were pushing forward with.',
-        what:
-          'British infantry of I Corps, with the specialist armour of the 79th Armoured Division, attacked Le Havre on 10 September 1944 after a heavy bombardment by sea and air. The garrison of about 11,000 men surrendered on 12 September.',
-        consequence:
-          'The harbour had been so badly damaged that the port was not open again for weeks. About 50,000 French civilians were still in the town when the attack began.',
+        what: 'British infantry of I Corps, with the specialist armour of the 79th Armoured Division, ' +
+          'attacked Le Havre on 10 September 1944 after a heavy bombardment by sea and air. The garrison ' +
+          'surrendered on 12 September.',
+        consequence: 'The harbour had been so badly damaged that the port was not open again for weeks.',
       },
       secondary: {
-        cause:
-          'Every port on the Channel coast was strongly held once the advance had passed it, and Hitler ordered them made into fortresses. Le Havre was defended by about 11,000 men under Colonel Hermann-Eberhard Wildermuth, and about 50,000 of its people had not been evacuated. The Allies wanted the harbour delivered in working order to supply the armies in Europe, and the Germans were working to leave them nothing.',
+        cause: 'Every port on the Channel coast was strongly held once the advance had passed it, and Hitler ' +
+          'ordered them made into fortresses. The Allies wanted the harbour delivered in working order to ' +
+          'supply the armies in Europe, and the Germans were working to leave them nothing.',
         what:
           'Warships and aircraft bombarded the port before the assault, and Bomber Command put in an effort of its own. On 10 September the British I Corps — the 49th and 51st Divisions, with the specialist armour of the 79th Armoured Division against the strongpoints and the anti-tank ditch — attacked from the north-east. The columns fought in on 12 September, and the garrison commander surrendered that morning.',
         consequence:
@@ -159,7 +160,7 @@ export const EVENTS_CITIES_1941_1945: WW2Event[] = [
       },
       university: {
         cause:
-          'The attack was mounted to capture a harbour and was itself one of the things that destroyed it. The Allies wanted the facilities working and the defenders meant to leave them none, and the means chosen to break a fortress in two days — big-gun ships, Bomber Command, specialist armour — were not means which spare a port. Both accounts record the same trade-off without agreeing on the tonnage or the toll: the fire which made the assault cheap for the attackers is the fire which wrecked the thing the assault was fought for. It is worth adding that the garrison commander asked to be allowed to move the civilians out before the end, and that the request came to nothing, so the 50,000 people left in the town were there because of orders given on both sides.',
+          'The attack was mounted to capture a harbour and was itself one of the things that destroyed it. The Allies wanted the facilities working and the defenders meant to leave them none, and the means chosen to break a fortress in two days — big-gun ships, Bomber Command, specialist armour — were not means which spare a port. Both accounts record the same trade-off without agreeing on the tonnage or the toll: the fire which made the assault cheap for the attackers is the fire which wrecked the thing the assault was fought for. It is worth adding that the garrison commander asked to be allowed to move the civilians out before the end, and that the request came to nothing, so the civilians left in the town were there because of orders given on both sides.',
         what:
           'The accounts differ in the way official histories differ, and most of it is in the accounting rather than the events. The prisoners are counted one way by the account of the battle and another by the account of the ports, which includes the non-combatants, so the garrison changes size between them; the tonnage of bombs moves according to whether it is counted against the port or against its outer defences; and one account gives four thousand tons to the bomber force where the other gives a figure of the same size to the guns of two capital ships. A prisoner count is a decision about whom to count, and a bomb tonnage is a decision about what to count, and a reader who takes either number without the other has chosen a side in a dispute the sources themselves do not have.',
         consequence:
@@ -184,8 +185,9 @@ export const EVENTS_CITIES_1941_1945: WW2Event[] = [
       primary: {
         cause:
           'The Axis army had invested Tobruk in April 1941, and the port held on in its rear. The British Eighth Army attacked on 18 November 1941 to raise the siege and clear Cyrenaica.',
-        what:
-          'The garrison broke out through the perimeter on 21 November and held the ground it had won while the armoured battle moved away behind it. On 26 November it took the El Duda ridge, and that night its troops met New Zealanders.',
+        what: 'The garrison broke out through the perimeter on 21 November and held the ground it had won ' +
+          'while the armoured battle moved away behind it. At the end of the month it fought for the El ' +
+          'Duda ridge and met New Zealanders there.',
         consequence:
           'The siege was lifted in December 1941, but not on the day the relief and the garrison met: the investment was renewed first, and the accounts differ over which day in December the siege really ended.',
       },

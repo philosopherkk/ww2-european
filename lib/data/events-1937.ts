@@ -61,8 +61,9 @@ export const EVENTS_1937: WW2Event[] = [
         cause:
           'Japan’s army had taken north China by rail, and the next prize was the ports. Shanghai was where China’s factories, its customs revenue and the foreign concessions were, so losing it quickly was not an option the government could accept.',
         what: 'In August 1937 China chose to fight a set-piece battle for Shanghai, and Japan answered by landing army divisions at the coast. The two sides fought through the city and its suburbs for three months before China withdrew.',
-        consequence:
-          'Shanghai fell and Nanjing with it a month later, but the three months bought the government time to move factories and officials inland, and the war moved into the Chinese interior where Japan’s supply lines could not reach.',
+        consequence: 'Shanghai fell, and Nanjing with it before the year was out, but the three months bought the ' +
+          'government time to move factories and officials inland, and the war moved into the Chinese ' +
+          'interior where Japan’s supply lines could not reach.',
       },
       secondary: {
         cause:
@@ -74,7 +75,11 @@ export const EVENTS_1937: WW2Event[] = [
       university: {
         cause:
           'Two readings of the Chinese decision have run for forty years. One, long standard in English, takes the battle as Chiang Kai-shek’s deliberate choice to trade space for time and to force the war to be decided where Japan’s logistics were longest; the other, argued from Chinese archives by historians working in Taipei and Beijing, treats it as a reaction to events in the city and to the impossibility of withdrawing without losing the regime’s own revenue base. What both agree on is the operational consequence: an industrial battle of attrition fought by a government with no ammunition industry, against a power with command of the sea and the air.',
-        what: 'The battle ran in phases — attacks on the existing Japanese position, the landing of Japanese divisions at the coast and inland of it, then the outflanking landing in November that ended Chinese positions north of the city. Air operations were fought over the delta from the first week, and the bombing of foreign and Chinese river shipping brought protests from Washington, London and Tokyo into the diplomatic record of the same weeks. Chinese armies in the field are commonly put near three quarters of a million, Japanese landings at a tenth of that at the start and far more by November; the figures move between sources, which is why they are not printed on the card.',
+        what: 'The battle ran in phases — attacks on the existing Japanese position, the landing of Japanese ' +
+          'divisions at the coast and inland of it, then the outflanking landing in November that ended ' +
+          'Chinese positions north of the city. Air operations were fought over the delta from the first ' +
+          'week, and the bombing of foreign and Chinese river shipping brought protests from Washington, ' +
+          'London and Tokyo into the diplomatic record of the same weeks.',
         consequence:
           'The campaign fixed the pattern of the rest of the war: Japan took the cities, the ports and the railways and could not move far beyond them, and the Nationalist government, based inland from Chongqing, depended on imports through Burma and over the Hump to remain a belligerent at all. The collapse of the retreat also produced the disaster at Nanjing, and the atrocity there set the terms of Chinese resistance to any negotiated peace.',
       },
@@ -125,8 +130,8 @@ export const EVENTS_1937: WW2Event[] = [
     fronts: ['china'],
     countries: ['China', 'Japan'],
     figures: [],
-    mapNote:
-      'A marching line runs up the Yangtze from Anqing through Jiujiang to Wuhan for the October 1938 advance. The flood that preceded it is drawn nowhere: a breached dike is not a border.',
+    mapNote: 'A marching line runs up the Yangtze from Anqing through Jiujiang to Wuhan for the October 1938 ' +
+      'advance.',
     note: 'The card’s month and the halt that follows it are carried by two publishers outside Wikipedia in this atlas’s reach. The US Army official history of the China-Burma-India theater states both the capture and its consequence: “After the capture of Canton and Hankow in October 1938, the Japanese paused to consolidate their positions. The Chinese seized the opportunity to raise a series of obstacles ahead of the river lines and mountain barriers of west and south China…”. The article on the battle dates the campaign 11 June to 27 October 1938, gives a Japanese victory, and prints the end: “The Japanese Army captured Wuchang and Hankou on 26 October and captured Hanyang on the 27th, which concluded the campaign in Wuhan.” It separately treats the fighting in Guangzhou in the same campaign; the article on Guangzhou gives the city’s coordinates used by the marching line and dates its fall to the same month. Two details are held out of the card’s text because Wikipedia carries them alone here: the exact day the last Chinese troops left, and the breach of the Yellow River dikes at Huayukou, which the article on the flood dates to the night of 9 June 1938 and attributes to Nationalist demolition, with death tolls ranging from tens of thousands to most of a million. That flood delayed the Japanese advance and killed Chinese civilians by the hundred thousand; no publisher outside Wikipedia in this atlas’s reach prints it, so it is in the uncertainties list rather than on the card. The Chinese flood deliberately destroyed the autumn harvest and the seed grain across three provinces; see the entry in the uncertainties list.',
     levels: {
       primary: {
@@ -137,11 +142,16 @@ export const EVENTS_1937: WW2Event[] = [
           'Japan held the coast, the ports and the rivers, and had no more strength to push inland. The war settled into a stalemate that lasted until 1944, with the government inland at Chongqing and supplied from outside.',
       },
       secondary: {
-        cause:
-          'China had breached the Yellow River dikes in June to flood the plain between the north Chinese railway line and the Yangtze, an act that destroyed the communications of both armies and the harvest and homes of the people living in the flood. It bought time. Japan answered by taking the offensive the other way: a great pincer on Wuhan, up the river past Jiujiang and along the north bank, and a parallel advance south of the river. Canton was taken at the same time to cut the government’s sea supply into Guangdong.',
+        cause: 'Japan took the offensive in two directions: a great pincer on Wuhan, up the river past ' +
+          'Jiujiang and along the north bank, and a parallel advance south of the river. Canton was taken ' +
+          'at the same time to cut the government’s sea supply into Guangdong.',
         what: 'The campaign ran from June into October: north of the Yangtze, in the Dabie Mountains, on the river, and in the air, where the Chinese air force was fought to exhaustion and Japanese bombing killed civilians in the city. Wuhan was invested from north and south and evacuated at the end of October, the garrison withdrawing in better order than at Nanjing. Canton fell almost simultaneously. The US Army history records what followed: the Japanese halted to consolidate, and the Chinese built new obstacles ahead of the river lines and the mountain barriers of the interior.',
-        consequence:
-          'The war of movement in China ended. Japan had fought itself to the limit of what its army and merchant marine could hold, and took no more large offensive in China for six years. The Nationalist government, based at Chongqing and blockaded, became dependent on supplies carried over the Hump from India and along the Burma road, which is why the fall of Burma in 1942 was felt in China as a strategic disaster. The Communists’ base areas behind Japanese lines in the north grew through the same stalemate.',
+        consequence: 'The war of movement in China ended. Japan had fought itself to the limit of what its army and ' +
+          'merchant marine could hold, and took no more large offensive in China until 1944. The ' +
+          'Nationalist government, based at Chongqing and blockaded, became dependent on supplies carried ' +
+          'over the Hump from India and along the Burma road, which is why the fall of Burma in 1942 was ' +
+          'felt in China as a strategic disaster. The Communists’ base areas behind Japanese lines in the ' +
+          'north grew through the same stalemate.',
       },
       university: {
         cause:

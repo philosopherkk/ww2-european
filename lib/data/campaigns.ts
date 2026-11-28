@@ -992,7 +992,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
   },
   {
     id: 'iraq_1941',
-    name: 'The Anglo-Iraqi war: the coup in Baghdad crushed in five weeks',
+    name: 'The Anglo-Iraqi war: the coup in Baghdad crushed, May 1941',
     side: 'western',
     from: '1941-05-02',
     to: '1941-05-31',
@@ -1004,7 +1004,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [33.32, 44.37], // Baghdad, entered on 31 May; Rashid al-Kilani fled the same night
     ],
     summary:
-      'A nationalist coup led by Rashid Ali al-Kaylani — “the Golden Square”, four colonels with army backing — closed Iraq’s oil to Britain and massed troops opposite the RAF base at Habbaniya, which was attacked on 30 May by a force of 1,200 men and old biplanes. Hitler and Mussolini sent aircraft in through Vichy Syria, and 200 German and Italian machines operated from Mosul, which is why this forgotten campaign mattered: it put Axis air power within reach of the Iraqi oil that ran the Mediterranean war. Britain attacked from Basra and from Transjordan, took Baghdad on 31 May, and then had to fight Vichy forces in Syria next door. The settlement left a British-backed government in Baghdad and Iraqi troops re-equipped for the common cause against Germany.',
+      'A nationalist coup led by Rashid Ali al-Gaylani — “the Golden Square”, four colonels with army backing — closed Iraq’s oil to Britain and massed troops opposite the RAF base at Habbaniya. Hitler and Mussolini sent aircraft in through Vichy Syria, and 200 German and Italian machines operated from Mosul, which is why this forgotten campaign mattered: it put Axis air power within reach of the Iraqi oil that ran the Mediterranean war. Britain attacked from Basra and from Transjordan, took Baghdad on 31 May, and then had to fight Vichy forces in Syria next door. The settlement left a British-backed government in Baghdad and Iraqi troops re-equipped for the common cause against Germany.',
     strength:
       'Basra Force, Habforce and the 10th Indian Division, with about 100 aircraft; four Iraqi divisions with some 30,000 men, plus about 100 German and Italian aircraft flown in through Syria',
   },
@@ -1142,7 +1142,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
   },
   {
     id: 'crimea_1941',
-    name: 'The Crimea taken, 1941: the isthmuses forced in three weeks',
+    name: 'The Crimea taken, 1941',
     side: 'german',
     from: '1941-09-26',
     to: '1941-11-16',
@@ -1152,7 +1152,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [44.95, 34.1], // Simferopol, the capital, entered on 1 November; the siege of Sevastopol is drawn separately
     ],
     summary:
-      'The Crimea was worth taking because its airfields could raid the Romanian oilfields and the Black Sea Fleet’s bases, and it was attackable only across two narrow isthmuses — which is why a small German force with Romanian support forced Perekop and Ishun in nine days and then drove down the peninsula. The Soviet 51st Separate Army was cut in two at Dzhankoy and lost the peninsula in three weeks, except for Sevastopol, which held out for another eight months. Kerch was taken on 16 November, so the whole peninsula was in Axis hands except the fortress. That over-confidence cost the Axis dear: the amphibious landing at Feodosia a month later showed the Crimea could be entered from the sea, and in 1942 and 1944 the peninsula produced two of the largest Axis defeats of the war.',
+      'The Crimea was worth taking because its airfields could raid the Romanian oilfields and the Black Sea Fleet’s bases, and it was attackable only across two narrow isthmuses — which is why a small German force with Romanian support forced Perekop and Ishun and then drove down the peninsula. The Soviet 51st Separate Army was cut in two at Dzhankoy and lost the peninsula, except for Sevastopol, which held out for another eight months. Kerch was taken on 16 November, so the whole peninsula was in Axis hands except the fortress. That over-confidence cost the Axis dear: the amphibious landing at Feodosia a month later showed the Crimea could be entered from the sea, and in 1942 and 1944 the peninsula produced two of the largest Axis defeats of the war.',
     strength:
       'Manstein’s Eleventh Army, understrength, with two Romanian armies on its flanks; the 51st Separate Army and the Crimean Front, whose losses in the following eight months ran to hundreds of thousands',
   },
@@ -1287,7 +1287,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
   },
   {
     id: 'vyborg_sortavala_1944',
-    name: 'The Karelian Isthmus: the Mannerheim Line broken in ten days',
+    name: 'The Karelian Isthmus: the front line and the VT line broken in ten days',
     side: 'soviet',
     from: '1944-06-10',
     to: '1944-07-10',
@@ -1296,7 +1296,7 @@ export const CAMPAIGN_LINES: CampaignLine[] = [
       [61.7, 30.69], // Sortavala, on the Ladoga shore, on 2 July, as the line fell back to 1940 borders
     ],
     summary:
-      'Finland had gone to war alongside Germany in 1941 to recover the territory lost in 1939-40, and by the summer of 1944 Stalin wanted the old frontier restored and Finland out of the war. The offensive of 10 June smashed the VT line and then the main line in ten days, took Vyborg on 20 June and forced the Finnish army to stand on the 1940 frontier. Finland asked for an armistice on 22 June, refused German terms, and by September had signed one — which meant German troops in Finland became enemies, and the Wehrmacht burned Lapland on its way out. This is the least-noticed front of 1944: it removed Germany’s northern ally, its nickel supplies and its U-boat bases, and it decided that Finland, unlike the Baltic states, kept its independence.',
+      'Finland had gone to war alongside Germany in 1941 to recover the territory lost in 1939-40, and by the summer of 1944 Stalin wanted the old frontier restored and Finland out of the war. The offensive of 10 June smashed the main line and then the VT line in ten days, took Vyborg on 20 June and forced the Finnish army to stand on the 1940 frontier. Finland asked for an armistice on 22 June, refused German terms, and by September had signed one — which meant German troops in Finland became enemies, and the Wehrmacht burned Lapland on its way out. This is the least-noticed front of 1944: it removed Germany’s northern ally, its nickel supplies and its U-boat bases, and it decided that Finland, unlike the Baltic states, kept its independence.',
     strength:
       'Leningrad Front’s assault armies, with overwhelming artillery and air support, against the Finnish III Army on the isthmus; Finnish casualties in the summer fighting were about 10,000',
   },

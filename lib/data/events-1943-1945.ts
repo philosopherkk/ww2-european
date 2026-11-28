@@ -76,12 +76,17 @@ export const EVENTS_1943_1945: WW2Event[] = [
       secondary: {
         cause: 'Army Group Africa had to hold the Mareth Line with three understrength panzer divisions, and Rommel hoped a surprise blow would disorder Montgomery’s preparations and delay the coming assault.',
         what: 'The attack of 6 March was made by 15th and 21st Panzer and the Italian 132nd Armoured Division “Ariete” against a defence built around massed anti-tank guns. Ultra had warned Montgomery, who moved armour and guns forward in the night; the Axis tanks found a wall of fire, and the attack was given up at dusk.',
-        consequence: 'It was the last battle Rommel commanded in Africa. The failure cost irreplaceable tanks and left Army Group Africa on the defensive for the battles of Mareth and the Mareth breakthrough, the US II Corps setback at Kasserine, and the final surrender in May.',
+        consequence: 'It was the last battle Rommel commanded in Africa. The failure cost irreplaceable tanks and ' +
+          'left Army Group Africa on the defensive for the battles of Mareth and the final surrender in ' +
+          'May.',
       },
       university: {
         cause: 'A spoiling attack was the only option open to a commander whose divisions were below establishment and whose ammunition and fuel had to come through a shrinking port system under allied air attack. Rommel’s operational logic — dislocate the attacker before he is ready — assumed tactical surprise that signals intelligence had already denied him.',
         what: 'Medenine is a clean illustration of the relationship between Ultra and Eighth Army doctrine: foreknowledge converted into a deliberate anti-tank ambush, with some 500 six-pounders sited in depth and armour used as a manoeuvre reserve, rather than into a pre-emptive attack of one’s own. The Desert Air Force’s effort and the failure of the Regia Aeronautica and Luftwaffe to affect the gun-line show how far the air balance had moved.',
-        consequence: 'Medenine, Kasserine Pass three weeks later and Mareth fixed the shape of the Tunisia campaign. It also left a lasting intelligence problem: Montgomery’s handling of the warning prompted Brooke’s rebuke over source protection, and it sharpened the postwar debate about how far Ultra shortened the North African campaign.',
+        consequence: 'Kasserine Pass, Medenine and Mareth fixed the shape of the Tunisia campaign. It also left a ' +
+          'lasting intelligence problem: Montgomery’s handling of the warning prompted Brooke’s rebuke ' +
+          'over source protection, and it sharpened the postwar debate about how far Ultra shortened the ' +
+          'North African campaign.',
       },
     },
   },
@@ -375,10 +380,21 @@ export const EVENTS_1943_1945: WW2Event[] = [
       secondary: {
         cause: 'By the autumn of 1943 the SS had killed nearly all the Jews of the Lublin district in Operation Reinhard, but tens of thousands were still alive as forced labourers in camps at Majdanek, Trawniki and Poniatowa, because the German war economy wanted their work. The Warsaw Ghetto Uprising of spring 1943 and the prisoner revolts at Treblinka in August and Sobibór in October changed the calculation: Himmler decided that no Jewish prisoner should be left alive to fight, whatever the loss of labour.',
         what: 'At Majdanek on 3 November 1943 the prisoners were woken at five and the camp had been surrounded during the night. Jewish prisoners were separated from the others and shot into trenches dug by prisoners themselves, while loudspeakers played music beside the killing site; 18,400 people were dead by early evening. About 6,000 were killed at Trawniki the same day, and on 4 November the same units murdered the 14,500 prisoners of Poniatowa, where a resistance group had a few weapons. Small groups were left alive to burn the bodies and were then shot.',
-        consequence: 'About 40,000 people were murdered in two days, the single largest massacre of Jews of the war, and Operation Reinhard was finished: the Lublin district was declared free of Jews. The killing also removed the labour force the Germans had insisted on keeping, which shows that in the SS’s ordering of priorities the destruction of Jewish life outran the needs of armaments. The destruction of the camps and the opening of the graves for cremation were part of the same operation, intended to leave no evidence for the Red Army that was already at the Vistula.',
+        consequence: 'About 40,000 people were murdered in two days, the single largest massacre of Jews of the war, ' +
+          'and Operation Reinhard was finished: the Lublin district was declared free of Jews. The ' +
+          'killing also removed the labour force the Germans had insisted on keeping, which shows that in ' +
+          'the SS’s ordering of priorities the destruction of Jewish life outran the needs of armaments. ' +
+          'The destruction of the camps and the opening of the graves for cremation were part of the same ' +
+          'operation, intended to leave no evidence before the front arrived.',
       },
       university: {
-        cause: 'Harvest Festival sits at the junction of two historiographies that are usually kept apart: the military history of the Soviet autumn campaign of 1943 and the history of the Holocaust. The timing is not incidental. The Red Army reached the Dnieper and the Vistula in September and October, the Lublin district was about to become a battlefield, and the SS had already begun Sonderkommando 1005, the work of opening mass graves and burning the bodies. Himmler’s order followed a series of uprisings in ghettos and extermination camps which the SS feared would spread to the labour camps.',
+        cause: 'Harvest Festival sits at the junction of two historiographies that are usually kept apart: the ' +
+          'military history of the Soviet autumn campaign of 1943 and the history of the Holocaust. The ' +
+          'timing is not incidental. The Red Army reached the Dnieper in September and October, while the ' +
+          'Lublin district was still well behind the front, and the SS had already begun Sonderkommando ' +
+          '1005, the work of opening mass graves and burning the bodies. Himmler’s order followed a ' +
+          'series of uprisings in ghettos and extermination camps which the SS feared would spread to the ' +
+          'labour camps.',
         what: 'The operation was carried out by the same personnel and with the same methods as Reinhard itself - police battalions, Ukrainian Hiwi auxiliaries, Trawniki-trained guards, and deception at the point of death - and its scale, about 40,000 victims, exceeded any single Reinhard camp’s monthly killing. It is also a test of the argument about German “manpower”: the SS killed 18,400 people at Majdanek in a single day with only a few hundred extra guards, which is possible only because the victims had been disarmed, starving and separated for a year.',
         consequence: 'The massacre has been comparatively slow to enter the literature, partly because it had no camp name attached to it and no monument, and partly because the three sites were Polish state grounds where Soviet investigations set the framing. The recent German reconstruction, based on the police and SS payment records and on the trenches themselves, has fixed the dates and the numbers and given the operation its place as the end of Reinhard rather than as an appendix to Sobibór.',
       },
@@ -993,7 +1009,10 @@ export const EVENTS_1943_1945: WW2Event[] = [
         consequence: 'The line the armies agreed on became the border between two German states. Families were left on opposite sides of it, and the four powers kept meeting in a city on the wrong side of it.',
       },
       secondary: {
-        cause: 'The occupation zones had been settled in the London Protocol of 1944 and confirmed at Yalta, and their boundaries had been worked out in detail beforehand; the fronts of May 1945, by contrast, were the accident of which army got there first. Soviet forces had advanced well past the agreed zonal line in Thuringia and Saxony, while the Western powers had reached Mecklenburg, which the Soviet army was to occupy.',
+        cause: 'The occupation zones had been settled in the London Protocol of 1944 and confirmed at Yalta, ' +
+          'and their boundaries had been worked out in detail beforehand; the fronts of May 1945, by ' +
+          'contrast, were the accident of which army got there first. American and British forces had ' +
+          'reached ground the Soviet army was to occupy, in Thuringia, Saxony and Mecklenburg.',
         what: 'In the first days of July 1945 the American armies fell back from Thuringia and Saxony and the British from Mecklenburg, whose capital Schwerin was handed over to the Soviet army; Soviet forces, which had withdrawn from parts of western Saxony, moved into the country vacated. In the same weeks the French occupation zone and the French sector of Berlin were organised, and the four powers took up the sectors of the capital allotted to them.',
         consequence: 'The withdrawal turned a military line of contact into a political frontier: the inner German border of the Cold War ran along the zone boundaries fixed by July 1945, and the crossings later built on it were placed on lines drawn in this paperwork. The Western armies gave up, without a shot fired, the ground from which they might have contested the Soviet position inside Germany.',
       },
@@ -1309,7 +1328,9 @@ export const EVENTS_1943_1945: WW2Event[] = [
         consequence: 'It showed that the Red Army could now encircle large forces anywhere it chose. It also showed that Hitler had learned a little from Stalingrad - he let them try to escape.',
       },
       secondary: {
-        cause: 'Manstein’s “backhand blow” at Kharkov in March 1943 had left a Soviet salient pointing west at Korsun; the Soviets cut it off from both sides, and Hitler would not release the troops early enough to avoid the trap.',
+        cause: 'Manstein’s “backhand blow” at Kharkov in March 1943 had left a German salient pointing west at ' +
+          'Korsun; the Soviets cut it off from both sides, and Hitler would not release the troops early ' +
+          'enough to avoid the trap.',
         what: 'The fighting was made hideous by the rasputitsa - thaw turned the ground into deep mud, so nothing with wheels could move and the pocket had to be supplied by air, which it could not be. The breakout columns were machine-gunned in the open at the river crossings.',
         consequence: 'The loss of these divisions cost the German army trained officers and NCOs it could not replace, and it opened the way to the Soviet advance into Romania and to the Jassy-Kishinev encirclement of August 1944, which is visible on this map as a change of colour.',
       },
@@ -1702,7 +1723,9 @@ export const EVENTS_1943_1945: WW2Event[] = [
     levels: {
       primary: {
         cause: 'Berlin was 60 kilometres away, and the Germans held three high ridges and a flooded river in the way. Everything the Red Army had was put into breaking through.',
-        what: 'On 16 April 1945 a huge attack began, with a bombardment of guns that lasted nearly an hour and hundreds of searchlights shone forward to blind the defenders. It failed, and thousands of soldiers died on the first day.',
+        what: 'On 16 April 1945 a huge attack began, with a bombardment of guns that lasted forty minutes and ' +
+          'about 140 searchlights shone forward to blind the defenders. It failed, and thousands of ' +
+          'soldiers died on the first day.',
         consequence: 'The breakthrough came two days later, and Berlin was surrounded by 24 April. The fighting in the city itself lasted until the beginning of May and cost hundreds of thousands of lives.',
       },
       secondary: {
@@ -1878,7 +1901,8 @@ export const EVENTS_1943_1945: WW2Event[] = [
       secondary: {
         cause: 'The campaign aimed to secure the Mediterranean sea routes and to put pressure on Italy after the North African victory.',
         what: 'British and American forces fought up the island while German and Italian troops defended successive lines and then evacuated across the strait; Messina fell on 17 August.',
-        consequence: 'Mussolini was deposed a week later and the Allies prepared to land on the Italian mainland, but the German army remained in the war in Italy for another twenty months.',
+        consequence: 'Mussolini had already been deposed, on 25 July, and the Allies prepared to land on the Italian ' +
+          'mainland, but the German army remained in the war in Italy for another twenty months.',
       },
       university: {
         cause: 'The campaign showed both the strength of Allied amphibious power and its limits: the island could be taken, but the evacuation of Axis forces meant that Italy would not be cleared by a single stroke.',
@@ -1893,13 +1917,15 @@ export const EVENTS_1943_1945: WW2Event[] = [
     id: 'zhitomir_1943',
     date: '1943-12-24',
     precision: 'day',
-    title: 'Zhitomir-Berdichev: Vatutin’s winter offensive drives 200 kilometres west',
+    title: 'Zhitomir-Berdichev: Vatutin’s winter offensive drives up to 200 kilometres west',
     kind: 'battle',
     fronts: ['eastern'],
     countries: ['Soviet Union', 'Germany'],
     figures: ['manstein'],
     note: 'The Zhitomir-Berdichev offensive was the first of the winter campaigns that made up the Dnieper-Carpathian operation, and it ran from 24 December 1943 to 14 January 1944. The Kiev bridgehead won in November overhung the German right in south-western Ukraine, and German attempts to cut it from the south of Zhitomir were the immediate occasion for the Soviet attack. General of Army Nikolai Vatutin’s 1st Ukrainian Front struck on 24 December along the Kiev-Zhitomir highway and the Fastov-Kazatin railway with the 1st Guards Army, the 18th Army and the 38th Army, on a front of about 300 kilometres, against Erhard Raus’s 4th Panzer Army; Hans-Valentin Hube’s 1st Panzer Army was on its left. The offensive opened with a breakthrough, and Soviet troops advanced 80 to 200 kilometres, taking Berdichev on 5 January and clearing the Kiev and Zhitomir regions; the push to the Upper Bug was checked and by February the line had stabilised south-west of Berdichev and Kazatin. Losses from the records of Army Group South, held at the Bundesarchiv, give the 4th Panzer Army 3,284 killed, 13,160 wounded, 4,663 missing and 1,462 frostbitten between 21 December and 31 January, with 1st Panzer Army losing 15,224 men in January alone; across the two armies about 13,500 men were killed or missing and some 40,000 in all. The 1st Ukrainian Front lost 23,163 killed or missing and 76,855 wounded, about 100,000 in total, in Glantz’s figures. The frostbite returns in the German records are a measure of the conditions in which the winter campaign was fought.',
-    mapNote: 'Zhitomir is on the Kiev road, at the line the attack started from. The advance carried the front 80 to 200 kilometres further west, to Berdichev and Kazatin; the border drawn for this month is a snapshot, not the line of 24 December.',
+    mapNote: 'The attack started from the Kiev bridgehead. The advance carried the front 80 to 200 kilometres ' +
+      'west, to Berdichev and Kazatin; the border drawn for this month is a snapshot, not the line of 24 ' +
+      'December.',
     levels: {
       primary: {
         cause: 'After taking the far bank of the Dnieper near Kiev, the Soviet army attacked again in winter to push the German army out of Ukraine.',
@@ -1909,12 +1935,23 @@ export const EVENTS_1943_1945: WW2Event[] = [
       secondary: {
         cause: 'The Kiev bridgehead, won in November 1943, projected west into the ground from which Army Group South’s right flank was supplied, and German counterattacks south of Zhitomir were meant to cut it off and retake the city. Vatutin instead proposed to strike first, and the Stavka supported an operation that would clear right-bank Ukraine while the German army was still reconstituting after the Dnieper battle. The 4th Panzer Army opposite was short of armour, and its divisions had been fighting continuously since August.',
         what: 'The offensive began on 24 December 1943 with the 1st Guards, 18th and 38th Armies attacking along the Kiev-Zhitomir highway and the Fastov-Kazatin railway across about 300 kilometres. The breakthrough came quickly and the pursuit carried the front 80 to 200 kilometres west; Berdichev fell on 5 January. The push to the Upper Bug was checked, and the line settled south-west of Berdichev in February. German losses over December and January were about 40,000, including 13,500 killed or missing; the Soviet front lost about 100,000, of whom 23,163 were killed or missing.',
-        consequence: 'Right-bank Ukraine was cleared in a three-month winter campaign, and the Soviet front line moved to ground from which the 1944 offensives into Galicia and Romania could start. The operation also shows the cost of winter pursuit: the German returns record thousands of frostbite casualties alongside the killed and wounded, and Soviet losses were four times the German ones. Vatutin’s front was the northern anchor of the Dnieper-Carpathian operation, which by spring had pushed Army Group South back behind the old Romanian border of 1940.',
+        consequence: 'Right-bank Ukraine was cleared in a three-month winter campaign, and the Soviet front line ' +
+          'moved to ground from which the 1944 offensives into Galicia and Romania could start. The ' +
+          'operation also shows the cost of winter pursuit: the German returns record thousands of ' +
+          'frostbite casualties alongside the killed and wounded, and Soviet losses were about two and a ' +
+          'half times the German ones. Vatutin’s front was the northern anchor of the Dnieper-Carpathian ' +
+          'operation, which by spring had pushed Army Group South back behind the old Romanian border of ' +
+          '1940.',
       },
       university: {
         cause: 'The winter 1943-44 campaigns on the southern flank have been under-studied in English because the literature concentrates on Kursk and the Dnieper, yet they decided the front line the Allies and Soviets met in 1945. The Soviet planning followed deep-operation practice: successive operations, no operational pause, and a pursuit ordered while the breakthrough was still developing. German sources - the Bundesarchiv personnel returns of the 4th and 1st Panzer Armies - make the loss rates measurable, and they are the strongest evidence against the claim that the German army’s defeats in the west were compensated by Soviet attrition in the east.',
         what: 'Two features matter analytically. The attack was launched across a 300-kilometre front rather than on a narrow axis, which produced a wide advance but no encirclement of the German armies; the German withdrawal preserved formations even while losing material. And the record of frostbite - 1,462 casualties in one army in six weeks - belongs to the same history as mobility and supply, since both armies were operating beyond their logistics in deep winter with no winter clothing in the German case.',
-        consequence: 'The campaign fixed the sector in which the Soviet offensive of the summer of 1944 would fall, and it drained the panzer formations that could not be replaced before Bagration. Soviet losses of about 100,000 in three months also illustrate the exchange rate the Stavka accepted, and the campaign’s commander did not live to the summer: Vatutin was ambushed by UPA partisans far behind the front near Ostroh on 28 February 1944 and died of his wounds weeks later.'
+        consequence: 'The campaign fixed the sector in which the Soviet offensive of the summer of 1944 would fall, ' +
+          'and it drained the panzer formations that could not be replaced before Bagration. Soviet ' +
+          'losses of about 100,000 in that offensive also illustrate the exchange rate the Stavka ' +
+          'accepted, and the campaign’s commander did not live to the summer: Vatutin was ambushed by UPA ' +
+          'partisans far behind the front near Ostroh on 28 February 1944 and died of his wounds weeks ' +
+          'later.'
       },
     },
   },

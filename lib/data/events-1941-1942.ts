@@ -66,7 +66,9 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['eastern'],
     countries: ['Germany', 'Soviet Union', 'Romania', 'Finland', 'Hungary', 'Italy'],
     figures: ['hitler', 'stalin', 'zhukov', 'brauchitsch'],
-    note: 'Germany and its allies committed about 3.8 million men, 3,350 tanks, 7,200 guns and 2,700 aircraft along a 2,900 km front. The western Soviet military districts had about 2.68 million men engaged; Soviet losses in 1941 alone exceeded 3 million prisoners.',
+    note: 'Germany and its allies committed about 3.8 million men, 3,350 tanks, 7,200 guns and 2,700 aircraft ' +
+      'along a 2,900 km front. The western Soviet military districts had about 2.68 million men engaged; ' +
+      'Soviet prisoners taken in 1941 alone exceeded 3 million.',
     levels: {
       primary: {
         cause: 'Hitler had always wanted land in the east for Germans and hated the communist Soviet Union.',
@@ -562,12 +564,17 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['mediterranean'],
     countries: ['United Kingdom', 'Italy', 'Egypt', 'Australia', 'Germany'],
     figures: [],
-    note: 'Operation Compass, planned as a five-day raid by 36,000 men under O’Connor, took Bardia on 5 January with 38,000 prisoners and Tobruk on 22 January with 25,000 more; by 7 February, when Benghazi fell, some 130,000 Italian prisoners had been taken for 2,000 British casualties. The advance was stopped in February because Greece had priority, and Rommel’s first counter-attack in March took most of the ground back.',
+    note: 'Operation Compass, planned as a five-day raid by 36,000 men under O’Connor, took Bardia on 5 ' +
+      'January and Tobruk on 22 January with 25,000 prisoners; by 7 February, when Benghazi fell, some ' +
+      '130,000 Italian prisoners had been taken for 2,000 British casualties. The advance was stopped in ' +
+      'February because Greece had priority, and Rommel’s first counter-attack in March took most of the ' +
+      'ground back.',
     levels: {
       primary: {
         cause: 'Italy had attacked Egypt from Libya, and the much smaller British army in Egypt decided to attack back rather than wait.',
         what: 'In January 1941 British, Indian and Australian troops stormed the fortified port of Tobruk and took 25,000 Italian soldiers prisoner in two days.',
-        consequence: 'In six weeks Italy lost its whole army in North Africa - and then had to be rescued by Germany, which sent Rommel and his tanks in February.',
+        consequence: 'In six weeks Italy lost the army it had in Cyrenaica - and then had to be rescued by Germany, ' +
+          'which sent Rommel and his tanks in February.',
       },
       secondary: {
         cause: 'The Italian Tenth Army had advanced into Egypt in September 1940 and then dug in around Sollum and Tobruk, holding a fortified camp rather than a defensive line, with poor transport and obsolete tanks.',
@@ -704,20 +711,20 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['mediterranean', 'air_war'],
     countries: ['Germany', 'United Kingdom', 'Greece', 'New Zealand', 'Australia'],
     figures: [],
-    note: 'About 22,000 Fallschirmjager and glider troops were dropped on 20 May 1941 against some 40,000 British, Dominion and Greek troops, and the island fell on 1 June after fierce fighting around Maleme airfield. German airborne losses were about 6,000 killed and wounded, of which some 4,000 fell in the first two days; the Allies lost some 1,750 killed, about 10,000 taken prisoner - many of them troops evacuated from the Greek mainland - and eleven warships sunk by air attack, including the cruisers Gloucester, Fiji, Calcutta and the destroyers Kelly, Greyhound, Kashmir, Juno, Kipling. Hitler forbade further large-scale airborne operations after the island was taken.',
+    note: 'About 22,000 Fallschirmjäger and glider troops were dropped on 20 May 1941 against some 40,000 British, Dominion and Greek troops, and the island fell on 1 June after fierce fighting around Maleme airfield. German airborne losses were about 6,000 killed and wounded, of which some 4,000 fell in the first two days; the Allies lost some 1,750 killed, about 10,000 taken prisoner - many of them troops evacuated from the Greek mainland - and eleven warships sunk by air attack, including the cruisers Gloucester, Fiji, Calcutta and the destroyers Kelly, Greyhound, Kashmir, Juno, Kipling. Hitler forbade further large-scale airborne operations after the island was taken.',
     levels: {
       primary: {
         cause: 'Germany had taken Greece, and the island of Crete was the base from which British ships and planes could attack the routes Germany needed in the eastern Mediterranean.',
-        what: 'In May 1941 Germany dropped thousands of paratroopers from aeroplanes and gliders onto Crete. After a week of hard fighting, and with the Luftwaffe doing the work of an artillery corps, the island fell.',
+        what: 'In May 1941 Germany dropped thousands of paratroopers from aeroplanes and gliders onto Crete. After twelve days of hard fighting the island fell.',
         consequence: 'Germany lost so many paratroopers that Hitler never attempted a big airborne landing again. The British navy lost eleven warships to bombing in these waters.',
       },
       secondary: {
         cause: 'Crete shortened the range of British bombers attacking the Ploiesti oil fields and lay across the sea route to Libya. German air transport had to be used because the Royal Navy controlled the sea approach, and the island’s small number of airfields meant the attack had to be vertical.',
-        what: 'The assault went in on 20 May without a single airfield captured; the Maleme sector held only because a New Zealand counter-attack was recalled. Cruising warships within range of dive-bombers, and without fighter cover from Egypt, were sunk in daylight.',
+        what: 'The assault went in on 20 May. By the afternoon of the 21st the airfield at Maleme was in German hands. Cruising warships within range of dive-bombers, and without fighter cover from Egypt, were sunk in daylight.',
         consequence: 'Crete is the reason the Allies built airfields rather than trusted navies in the Mediterranean, and the reason Germany’s airborne force became a ground formation. Churchill called it “a black day for the British navy”; the reality was the navy’s evacuation of 16,500 men under air attack.',
       },
       university: {
-        cause: 'The battle is the central case for signals intelligence in the campaign: Ultra decrypts gave Wavell and Freyberg the German order of battle and dates, and the failure was in force mix and communications rather than in warning - which makes Crete the companion case to Mechelen in January.',
+        cause: 'Crete lay across the sea route to Libya and shortened the range of bombers aimed at the Ploiesti oil fields. Ultra decrypts gave Wavell and Freyberg the German order of battle and the dates, and the failure was in the force sent and in communications, not in the warning.',
         what: 'Its consequences were doctrinal on both sides: Germany concluded that mass airborne assault was no longer viable, while the Allies drew the opposite lesson and built large airborne armies, which were then used - and lost - in Operation Market Garden in 1944.',
         consequence: 'Crete also has a distinctive place in social memory: the Cretan civilian resistance of 1941-44, the Kidnapping of General Kreipe in 1944, and the German reprisals made the island a lasting site of commemoration, and the German memorial at Maleme was a diplomatic issue for decades.',
       },
@@ -732,7 +739,12 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['atlantic'],
     countries: ['Germany', 'United Kingdom'],
     figures: ['raeder'],
-    note: 'After sinking Hood with 1,415 of her crew lost on 24 May, Bismarck was shadowed, torpedoed in the stern by a Swordfish from Ark Royal on 26 May, and brought to action by Rodney and King George V on the morning of 27 May; of her complement of about 2,200 only some 110 men were rescued. The loss of Hood produced the order to “sink the Bismarck”, and the operation involved some 42 warships. After this the German surface fleet’s capital ships were used for commerce raiding in the Arctic or stayed in home water.',
+    note: 'After sinking Hood with 1,415 of her crew lost on 24 May, Bismarck was shadowed, torpedoed in the ' +
+      'stern by a Swordfish from Ark Royal on 26 May, and brought to action by Rodney and King George V ' +
+      'on the morning of 27 May; of her complement of about 2,200 only some 110 men were rescued. The ' +
+      'loss of Hood produced the order to “sink the Bismarck”, and the operation involved some 42 ' +
+      'warships. After this the German surface fleet’s capital ships were used for commerce raiding in ' +
+      'the Arctic or stayed in home waters.',
     levels: {
       primary: {
         cause: 'Germany’s biggest new battleship had just sunk a famous British battlecruiser, so the Royal Navy was determined to find and destroy her.',
@@ -742,7 +754,9 @@ export const EVENTS_1941_1942: WW2Event[] = [
       secondary: {
         cause: 'The Bismarck and Prinz Eugen left Bergen at 19:30 on 21 May, entered the Denmark Strait on 23 May and fought the Hood action on 24 May to attack the North Atlantic convoys, the route on which Britain depended for food, oil and munitions.',
         what: 'The sinking of Hood on 24 May made pursuit a matter of prestige; a Catalina found her, and a torpedo from Ark Royal jammed her steering on the evening of 26 May, so that she had to be fought going in circles at 10 knots.',
-        consequence: 'The Battle of the Atlantic was decided by the U-boat and the air, not by capital ships, and after 27 May 1941 Raeder’s surface strategy was effectively dead - which is the context for the Channel Dash of February and the Norwegian fjords of 1942-44.',
+        consequence: 'The Battle of the Atlantic was decided by the U-boat and the air, not by capital ships, and ' +
+          'after 27 May 1941 Raeder’s surface strategy was effectively dead — which is the context for ' +
+          'the Channel Dash of February 1942 and the Norwegian fjords of 1942-44.',
       },
       university: {
         cause: 'The engagement is a clean test of the role of reconnaissance and communications in naval war: the Royal Navy won because it had the air, the decrypts - Bismarck’s own radio traffic and the Enigma keys used by the supply network - and the interior lines.',
@@ -1453,7 +1467,8 @@ export const EVENTS_1941_1942: WW2Event[] = [
     fronts: ['middle_east'],
     countries: ['United Kingdom', 'India', 'Germany', 'Italy', 'Australia'],
     note: 'Wikipedia puts the coup on 1 April 1941, the day after the Regent fled Baghdad for Habbaniya, and gives 18 April for the arrival of the first convoy at Basra; the official history gives 3 April for the coup and brings the convoy’s ships in on the morning after the first flights on 17 April. Wikipedia has the mayor of Baghdad sign an armistice at four in the morning on 31 May on a bridge over the Washash Canal. The two accounts count the Golden Square differently too: four senior military commanders in Wikipedia, four prominent army and air force officers in the official history.',
-    mapNote: 'Baghdad sits at the far end of the line drawn from Basra, which is the way the relief columns reached Habbaniya and then the capital.',
+    mapNote: 'Baghdad sits at the far end of the line drawn from Basra. The column that relieved Habbaniya ' +
+      'crossed the desert from Palestine.',
     levels: {
       primary: {
         cause: 'A new government in Baghdad led by Rashid Ali al-Gaylani turned against Britain in April 1941 and let German and Italian aircraft land in Iraq.',
@@ -1462,13 +1477,28 @@ export const EVENTS_1941_1942: WW2Event[] = [
       },
       secondary: {
         cause: 'The 1937 treaty let Britain keep bases at Basra and Habbaniya, which Iraqi nationalists hated. Rashid Ali took power in early April 1941 with the backing of senior officers known as the Golden Square, after the Regent fled the capital.',
-        what: 'Habbaniya, held mostly by training-school aircraft and levies, survived from 2 May while a column under Colonel Kingstone pushed west from Palestine. German aircraft flew into Mosul, which fell on 30 May. Rashid Ali fled to Iran that night and an armistice was signed the next morning.',
+        what: 'Habbaniya, held mostly by training-school aircraft and levies, survived from 2 May while a ' +
+          'column under Brigadier Kingstone crossed the desert from Palestine. German aircraft flew into ' +
+          'Mosul, which fell on 30 May. Rashid Ali fled to Iran that night and an armistice was signed ' +
+          'the next morning.',
         consequence: 'Iraq became a British base again, and the victory made an invasion of Vichy-held Syria possible from the east. A British-backed government later declared war on Germany.',
       },
       university: {
-        cause: 'Iraq had been mandated to Britain and granted independence in 1932, but the 1937 treaty reserved British base rights at Shaibah near Basra and at Habbaniya on the Euphrates, two staging posts on the air route between Egypt and India, and the obligation to let British forces move in wartime. Rashid Ali, an officer of 1941 nationalist sympathies, used the Anglo-Egyptian crisis and Rommel’s threat to the Delta to argue that the British position was collapsing.',
-        what: 'The fighting was decided by airfields and by time. Habbaniya’s Air Training School aircraft flew on improvised armament until relief arrived, while Kingcol, assembled in Palestine, crossed the desert to the Mujara bridge rather than risk Ramadi. German air support arrived late and unhelped, through Syrian airfields that Vichy France had opened to the Axis after the Fall of France. Mosul was taken on 30 May, and Rashid Ali and his supporters crossed into Persia the same evening.',
-        consequence: 'The campaign cost Britain little and gave it a flank for Operation Exporter, the Iraqi oil for the Mediterranean theatre and a land route to Persia that mattered once Germany attacked the Soviet Union. Historians have treated the affair as a colonial episode that turned into a strategic asset; the nationalist movement it left behind was not destroyed but only postponed.',
+        cause: 'Iraq had been mandated to Britain and granted independence in 1932, but the 1937 treaty left ' +
+          'the Royal Air Force its bases at Shaibah, by Basra, and at Habbaniya on the Euphrates, on the ' +
+          'air route from Egypt to India, and the right to move forces through the country in wartime. ' +
+          'Rashid Ali, backed by nationalist officers, used the Anglo-Egyptian crisis and Rommel’s threat ' +
+          'to the Delta to argue that the British position was collapsing.',
+        what: 'The fighting was decided by airfields and by time. Habbaniya’s Air Training School aircraft ' +
+          'flew on improvised armament until relief arrived, while Kingcol, assembled in Palestine, ' +
+          'crossed the desert to the Mujara bridge rather than risk Ramadi. German air support arrived ' +
+          'too late to help, through Syrian airfields that Vichy France had opened to the Axis after the ' +
+          'Fall of France. Mosul was taken on 30 May, and Rashid Ali and his supporters crossed into Iran ' +
+          'the same evening.',
+        consequence: 'The campaign cost Britain little and gave it a flank for Operation Exporter, the Iraqi oil for ' +
+          'the Mediterranean theatre and a land route to Iran that mattered once Germany attacked the ' +
+          'Soviet Union. Historians have treated the affair as a colonial episode that turned into a ' +
+          'strategic asset; the nationalist movement it left behind was not destroyed but only postponed.',
       },
     },
   },
@@ -1482,10 +1512,13 @@ export const EVENTS_1941_1942: WW2Event[] = [
     countries: ['United Kingdom', 'India', 'Australia', 'France', 'Germany', 'Italy'],
     figures: ['de_gaulle'],
     note: 'Wikipedia puts the request for an armistice on 10 July, with the convention signed at Acre on 14 July; Playfair gives the same date for the signature at Acre by General Wilson and General de Verdilhac, and notes that General Catroux could not sign because Vichy would have nothing to do with the Free French, so he signed a separate document. Casualties, which the accounts do not agree on, are not given here. Wikipedia counts 5,668 men of the Vichy force who went over to the Free French, and 37,563 military and civilian personnel sent back to France in eight convoys after the convention.',
-    mapNote: 'The line runs from the Palestine frontier to Beirut on the coast and inland to Damascus, which were the two objectives the invasion was given.',
+    mapNote: 'The invasion was given three objectives: the airfields at Beirut, Damascus and Rayak. The line ' +
+      'drawn here runs to Beirut and inland to Damascus.',
     levels: {
       primary: {
-        cause: 'Syria and Lebanon were held by French troops loyal to Vichy, which let German and Italian aircraft use the airfields there on their way to attack Iraq.',
+        cause: 'Syria and Lebanon were held by French troops loyal to Vichy, the government that had made ' +
+          'peace with Germany, and German and Italian aircraft used the airfields there on their way to ' +
+          'attack Iraq.',
         what: 'In June and July 1941 British, Indian, Australian, Free French and other troops invaded from Palestine and Jordan, fighting Vichy French forces along the coast road to Beirut and inland to Damascus.',
         consequence: 'Syria and Lebanon passed to the Free French, the Axis lost its airfields, and the northern flank of the British position in the Middle East was secure for the campaigns to come.',
       },

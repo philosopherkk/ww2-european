@@ -279,7 +279,16 @@ export const EVENTS: WW2Event[] = [
     fronts: ['politics'],
     countries: ['Poland', 'United Kingdom', 'Germany'],
     figures: ['hitler'],
-    note: 'The agreement of 25 August replaced the unilateral guarantee Britain had given on 30 March 1939, which had been extended to Greece and Romania on 13 April after the invasion of Albania. It promised mutual military assistance if either party were attacked by “a European power” — a form of words written with Germany in mind which deliberately did not name it. The German attack was due to start at four in the morning on 26 August. A German sabotage group that had not received the order to stand down struck the Mosty rail junction and the Jablunkov Pass in Silesia during the night of 25-26 August, and was repelled by Polish troops on the morning of the 26th; the German side described the whole affair as an incident “caused by an insane individual”. A day later Hitler was still trying to keep Britain out, pledging that Wehrmacht forces could be placed at the disposal of the British Empire.',
+    note: 'The agreement of 25 August replaced the unilateral guarantee Britain had given on 31 March 1939, ' +
+      'which had been extended to Greece and Romania on 13 April after the invasion of Albania. It ' +
+      'promised mutual military assistance if either party were attacked by “a European power” — a form ' +
+      'of words written with Germany in mind which deliberately did not name it. The German attack was ' +
+      'due to start at four in the morning on 26 August. A German sabotage group that had not received ' +
+      'the order to stand down struck the Mosty rail junction and the Jablunkov Pass in Silesia during ' +
+      'the night of 25-26 August, and was repelled by Polish troops on the morning of the 26th; the ' +
+      'German side described the whole affair as an incident “caused by an insane individual”. A day ' +
+      'later Hitler was still trying to keep Britain out, pledging that Wehrmacht forces could be placed ' +
+      'at the disposal of the British Empire.',
     mapNote: 'Look at the frontier drawn for April 1939: Danzig appears there as a polity of its own, the corridor and Katowice as Polish. By the snapshot of October 1939 Danzig and Bydgoszcz are inside Germany and Warsaw lies in the General Government — because the alliance did not hold.',
     levels: {
       primary: {
@@ -288,7 +297,11 @@ export const EVENTS: WW2Event[] = [
         consequence: 'Germany attacked Poland on 1 September, and Britain and France declared war two days later. This treaty is the reason the war in Europe was not a war of Poland and Germany alone.',
       },
       secondary: {
-        cause: 'Britain’s guarantee of 30 March 1939 had been a one-sided promise, and Poland had little faith in it after the Western powers and the Soviet Union failed to agree a joint plan in Moscow that summer; Britain had refused to let Soviet troops enter Poland, which left no military plan that could work. Two days after the Nazi-Soviet pact, London and Warsaw replaced the guarantee with a treaty of mutual assistance, and the staff talks it required began at once.',
+        cause: 'Britain’s guarantee of 31 March 1939 had been a one-sided promise, and Poland had little faith ' +
+          'in it after the Western powers and the Soviet Union failed to agree a joint plan in Moscow ' +
+          'that summer; Britain had refused to let Soviet troops enter Poland, which left no military ' +
+          'plan that could work. Two days after the Nazi-Soviet pact, London and Warsaw replaced the ' +
+          'guarantee with a treaty of mutual assistance, and the staff talks it required began at once.',
         what: 'The agreement bound each state to give military aid if the other were attacked by a European power, and a supplementary protocol worked out how. On the same day Hitler moved the invasion from 26 August to 1 September, having seen the British commitment and hints from London and Warsaw that Danzig might be negotiated. A German sabotage unit that had not been told to stop attacked the Mosty rail junction in Silesia on 26 August and was driven off by Polish troops.',
         consequence: 'The invasion went in a week later, along a frontier every map had already drawn, and the treaty did what it said: Britain and France were at war with Germany on 3 September. What it left unanswered was the question that mattered in 1939 and in 1944 — what help could physically arrive in Poland, and from which direction.',
       },
@@ -811,8 +824,10 @@ export const EVENTS: WW2Event[] = [
     note: 'Beneš handed over to General Jan Syrovy on 5 October and left for the United States on 22 October; he was never formally deposed and remained the recognised president of the government-in-exile after 1941. Slovakia received autonomy on 7 October under Jozef Tiso’s Hlinka Party; Carpatho-Ukraine was proclaimed autonomous in October and was occupied by Hungary only on 15 March 1939; the First Vienna Award of 2 November had given Hungary southern Slovakia and the southern strip of Carpathian Ruthenia. Poland had taken Teschen Silesia on 2 October 1938.',
     levels: {
       primary: {
-        cause: 'A few days after Munich, the Czech president went away, and the parts of the country that Germany, Poland and Hungary had been promised were taken.',
-        what: 'In October 1938 Slovakia was allowed to govern itself, Poland took a strip of land in the north-east, and Hungary took the south of Slovakia.',
+        cause: 'A few days after Munich, the Czech president went away, and Poland took the strip it had been ' +
+          'promised.',
+        what: 'In October 1938 Slovakia was allowed to govern itself. Hungary was promised the south of ' +
+          'Slovakia, and took it the following month.',
         consequence: 'The Czechoslovak state that had existed since 1918 stopped existing in anything but name, and there was nothing left to defend.',
       },
       secondary: {
@@ -1234,7 +1249,9 @@ export const EVENTS: WW2Event[] = [
     levels: {
       primary: {
         cause: 'The Nazi government wanted Jews out of German business and jobs, and in 1938 it wrote that demand into a string of new laws.',
-        what: 'In the summer of 1938 Jewish doctors were banned from most medical practice, Jewish-owned shops and firms were closed down, and everyone had to carry an identity card marked with the letter J.',
+        what: 'In the summer of 1938 Jewish doctors were banned from most medical practice, Jewish-owned ' +
+          'shops and firms were closed down, and every Jewish man and woman had to carry an identity card ' +
+          'marked with the letter J.',
         consequence: 'Families who had lived in Germany for centuries lost their work and their savings, which made it harder to get out - and easier for neighbours to take what was left.',
       },
       secondary: {
@@ -1266,7 +1283,10 @@ export const EVENTS: WW2Event[] = [
         consequence: 'The Czechs made generous concessions too late, and Britain’s policy taught Hitler that threats worked.',
       },
       secondary: {
-        cause: 'The British government did not believe Czechoslovakia could be defended and did not want a war in 1938 over what many ministers thought was a legitimate minority grievance. Pressure was therefore applied to Prague, which had no British guarantee, rather than to Berlin, which did.',
+        cause: 'The British government did not believe Czechoslovakia could be defended and did not want a war ' +
+          'in 1938 over what many ministers thought was a legitimate minority grievance. Pressure was ' +
+          'therefore applied to Prague, which had no British guarantee, rather than to Berlin, which was ' +
+          'asked for nothing.',
         what: 'Runciman’s mission was not a negotiation but a lever: he reported to London rather than mediating, and his team argued that the frontier was indefensible without the Sudeten fortifications - which was true, and which was Berlin’s own argument.',
         consequence: 'The mission bought time for Germany’s timetable, and it left the Czechs with a settled conviction that Western security promises were unreliable - a belief that shaped Czech policy after 1945 as much as Soviet occupation did.',
       },
@@ -1289,7 +1309,8 @@ export const EVENTS: WW2Event[] = [
     note: 'Emil Hácha, former president of the Constitutional Court, was elected president of the rump state on 30 November 1938, and Rudolf Beran formed the government on 1 December. There was no general election: the National Assembly authorised rule by presidential decree on 15 December 1938 and never met again, and the only ballot of the winter was for the new Slovak Diet on 18 December 1938, held on a single “Party of National Unity” list with the Communists banned; the state had taken the hyphenated name Czecho-Slovakia under the autonomy constitution of 22 November. The Second Republic had no army to speak of, no fortifications, and no possibility of acting against Germany. Hácha, ill and threatened in Berlin on 14-15 March 1939, signed the declaration creating the Protectorate; he lived through the war in internal exile, was tried and convicted in October 1945 and sentenced to life imprisonment, and died in Prague’s Pankrác prison on 26 June 1946 in circumstances still debated.',
     levels: {
       primary: {
-        cause: 'After Munich, what was left of Czechoslovakia held an election - but only one list of candidates was allowed, and some parties were banned.',
+        cause: 'After Munich, the only ballot left in Czechoslovakia was in Slovakia, and only one list of ' +
+          'candidates was allowed.',
         what: 'In December 1938 Slovakia, the one part of the country allowed a vote, chose a single national list, and the rump state renamed itself to give the Slovaks a say.',
         consequence: 'The country that had been the only democracy in central Europe had become a weakened authoritarian state, which is why it could not resist when Germany took the rest in March 1939.',
       },
@@ -1328,7 +1349,9 @@ export const EVENTS: WW2Event[] = [
       },
       university: {
         cause: 'The “prophecy” formula is the strongest single text in the intentionalist case, and functionalists answer that public threats do not establish an administrative decision; the recent treatment of the question by Saul Friedländer and Peter Longerich, and the documentary work of the German historians’ institute, has shifted weight towards the view that Hitler drove the policy personally.',
-        what: 'The philological detail matters: the different published texts, the date of the speech, and the three wartime repetitions are documented, and the repetitions are made at moments of decision and near-decision - December 1941, January 1942, and in the middle of the deportations.',
+        what: 'The philological detail matters: the different published texts, the date of the speech, and ' +
+          'the three wartime repetitions are documented, on 30 January 1941, on 30 January 1942 and on 30 ' +
+          'January 1943.',
         consequence: 'It is also a methodological warning: the regime’s language was not mere propaganda but a programme with a public audit trail, which is why the “they did not know” defence fails in so many postwar trials, and why historians read the speeches alongside the Reichsbahn transport timetables rather than instead of them.',
       },
     },
@@ -1878,7 +1901,7 @@ export const EVENTS: WW2Event[] = [
     note: 'On 18 June 1940, the day after Pétain’s armistice broadcast, Charles de Gaulle spoke on the BBC in London and told the French not to accept defeat; only a small minority heard the broadcast at the time. He was not yet the recognised leader of Free France — that position was built over the following years and confirmed in 1944 — and the appeal mattered first as a claim that France could continue the war from abroad.',
     levels: {
       primary: {
-        cause: 'France had signed an armistice and its government told the French people to stop fighting.',
+        cause: 'France’s government had asked for an armistice and told the French people to stop fighting.',
         what: 'A French general in London, Charles de Gaulle, spoke on the radio and told the French not to give up.',
         consequence: 'A few people heard him at first, but his appeal became the beginning of Free France.',
       },
@@ -1888,7 +1911,8 @@ export const EVENTS: WW2Event[] = [
         consequence: 'Free France grew slowly and was weakened by quarrels with other French factions, but de Gaulle’s claim to speak for France was eventually accepted by the Allies in 1944.',
       },
       university: {
-        cause: 'The appeal is a founding act of political legitimacy as much as a military event: it asserted that a government that had signed an armistice no longer represented the French Republic.',
+        cause: 'The appeal is a founding act of political legitimacy as much as a military event: it asserted ' +
+          'that a government that had asked for an armistice no longer represented the French Republic.',
         what: 'The speech was poorly transmitted and little heard; its importance was created afterwards, through the institutions of Free France, the Resistance and the liberation of Paris in August 1944.',
         consequence: 'Historians disagree about how much de Gaulle represented French opinion in 1940 and how much he imposed himself with Allied backing; both are needed to explain why his claim eventually prevailed.',
       },
@@ -1978,8 +2002,8 @@ export const EVENTS: WW2Event[] = [
         "consequence": "Japan made no further border attacks. The border stood as the Soviets and Mongolians claimed it, a neutrality pact followed in April 1941, and Japan turned south towards Southeast Asia and the American fleet instead of north into Siberia."
       },
       "secondary": {
-        "cause": "Japan had occupied Manchuria in 1931 and built up the puppet state Manchukuo, whose western border with Mongolia was disputed. The Kwantung Army tested the frontier at Lake Khasan in 1938 and again in 1939, when Mongolian cavalry and Soviet units faced each other over grazing land by the Khalkhin Gol. For Tokyo the incident was local; for Manchukuo’s army it was a chance to push the frontier east. The Soviets could not ignore it: Mongolia was their buffer, and an attack on it risked a war on two fronts while Germany threatened Europe.",
-        "what": "May and June 1939 saw small engagements escalate: Japanese and Manchurian forces crossed the river, a Soviet counterattack in July nearly encircled them, and a full Japanese assault in late July was thrown back with heavy losses. Both sides built up by rail, the Soviets over 600 kilometres from their nearest base. On 20 August 1939, five days after the Nazi-Soviet pact, Zhukov opened a major offensive with artillery and air preparation and armoured thrusts on three axes. By 31 August the encircled Japanese 23rd Division was destroyed, and Japan asked for a stop to the fighting.",
+        "cause": "Japan had occupied Manchuria in 1931 and built up the puppet state Manchukuo, whose western border with Mongolia was disputed. The Kwantung Army tested the frontier at Lake Khasan in 1938 and again in 1939, when Mongolian cavalry and Soviet units faced Japanese troops over grazing land by the Khalkhin Gol. For Tokyo the incident was local; for Manchukuo’s army it was a chance to push the frontier west. The Soviets could not ignore it: Mongolia was their buffer, and an attack on it risked a war on two fronts while Germany threatened Europe.",
+        "what": "May and June 1939 saw small engagements escalate: Japanese and Manchurian forces crossed the river, a Soviet counterattack in July nearly encircled them, and a full Japanese assault in late July was thrown back with heavy losses. Both sides built up by rail, the Soviets over 600 kilometres from their nearest base. On 20 August 1939, three days before the Nazi-Soviet pact, Zhukov opened a major offensive with artillery and air preparation and armoured thrusts on three axes. By 31 August the encircled Japanese 23rd Division was destroyed, and Japan asked for a stop to the fighting.",
         "consequence": "The fighting ended on 16 September 1939 with the border enforced as the Soviets and Mongolians claimed it. The 23rd Division was destroyed and Japanese losses were heavy; the episode discredited the Kwantung Army and the “strike north” idea of attacking Siberia. Zhukov’s tactics were used again at Stalingrad, and in April 1941 the two countries signed a neutrality pact."
       },
       "university": {
